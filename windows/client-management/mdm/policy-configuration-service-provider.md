@@ -135,23 +135,23 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -175,22 +175,22 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -217,22 +217,22 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -262,22 +262,22 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -304,22 +304,22 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -344,24 +344,22 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -385,22 +383,22 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1109,26 +1107,24 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -1154,22 +1150,22 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1196,22 +1192,22 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1239,24 +1235,24 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -1284,23 +1280,23 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -1326,22 +1322,22 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1368,23 +1364,23 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -1425,23 +1421,23 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -1465,23 +1461,23 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -1516,22 +1512,22 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1558,22 +1554,22 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1600,22 +1596,22 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1723,23 +1719,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -1765,24 +1761,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -1807,24 +1803,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -1934,22 +1930,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -1978,24 +1974,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2022,24 +2018,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2062,24 +2058,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2101,24 +2097,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2138,24 +2134,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2208,24 +2204,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2256,23 +2252,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
@@ -2305,20 +2301,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
@@ -2349,23 +2347,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -2398,24 +2396,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2438,23 +2436,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -2478,23 +2476,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -2518,23 +2516,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -2560,24 +2558,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2630,24 +2628,24 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2679,24 +2677,24 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2741,24 +2739,24 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2790,22 +2788,22 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -2908,24 +2906,24 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2944,24 +2942,24 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -2987,23 +2985,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -3033,23 +3031,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -3073,23 +3071,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -3151,22 +3149,22 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -3191,22 +3189,22 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -3235,23 +3233,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -3281,24 +3279,24 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -3352,23 +3350,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -3405,25 +3403,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -3449,21 +3445,21 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3498,21 +3494,21 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3539,23 +3535,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -3590,21 +3586,21 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3633,15 +3629,14 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3650,7 +3645,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -3681,24 +3675,24 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -3729,23 +3723,23 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
@@ -3771,24 +3765,24 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -3813,24 +3807,24 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -3972,22 +3966,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -4007,22 +4001,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -4049,24 +4043,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -4092,23 +4086,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4194,23 +4188,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4238,23 +4232,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4282,23 +4276,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4326,23 +4320,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4370,23 +4364,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4414,23 +4408,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4458,23 +4452,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4502,23 +4496,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4546,23 +4540,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4590,23 +4584,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4634,23 +4628,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4678,23 +4672,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4722,23 +4716,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4765,23 +4759,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4808,23 +4802,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4847,23 +4841,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4886,23 +4880,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4931,23 +4925,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -4976,23 +4970,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5025,23 +5019,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5069,23 +5063,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5118,23 +5112,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5173,23 +5167,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5222,23 +5216,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5267,23 +5261,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5313,23 +5307,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5370,23 +5364,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5411,23 +5405,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5452,25 +5446,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5502,23 +5494,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5545,23 +5537,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5586,23 +5578,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5627,23 +5619,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5668,23 +5660,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5709,23 +5701,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5750,23 +5742,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5790,25 +5782,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5837,25 +5827,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5881,25 +5869,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5924,25 +5910,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -5967,23 +5951,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6010,23 +5994,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6051,23 +6035,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6165,23 +6149,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6217,23 +6201,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6263,24 +6247,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6316,24 +6300,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6396,24 +6380,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6444,24 +6428,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6494,24 +6478,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6535,23 +6519,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6576,23 +6560,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6631,24 +6615,24 @@ The number of authentication failures allowed before the device will be wiped. A
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6677,24 +6661,24 @@ The number of authentication failures allowed before the device will be wiped. A
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6721,25 +6705,23 @@ The number of authentication failures allowed before the device will be wiped. A
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6829,24 +6811,24 @@ The number of authentication failures allowed before the device will be wiped. A
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6880,24 +6862,24 @@ The number of authentication failures allowed before the device will be wiped. A
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -6948,21 +6930,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -6994,25 +6978,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -7044,25 +7026,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -7085,24 +7065,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7126,24 +7104,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7167,24 +7143,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7208,24 +7182,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7249,24 +7221,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7290,24 +7260,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7551,23 +7519,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -7601,22 +7569,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7645,22 +7613,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7706,22 +7674,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7750,23 +7718,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -7796,23 +7764,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -7836,22 +7804,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -7905,23 +7873,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -7949,23 +7917,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -7995,23 +7963,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -8048,23 +8016,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -8094,23 +8062,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -8177,23 +8145,23 @@ Enables or disables Windows Tips / soft landing.
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -8222,23 +8190,23 @@ Enables or disables Windows Tips / soft landing.
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -8266,22 +8234,22 @@ Enables or disables Windows Tips / soft landing.
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12118,23 +12086,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -12158,23 +12126,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -12206,14 +12174,14 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -12248,23 +12216,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -12291,22 +12259,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12334,22 +12302,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12393,23 +12361,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -12447,22 +12415,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12491,22 +12459,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12526,22 +12494,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12561,22 +12529,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12606,22 +12574,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12641,22 +12609,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12676,22 +12644,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12711,22 +12679,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12755,22 +12723,22 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12956,22 +12924,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -12998,22 +12966,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13041,22 +13009,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13084,22 +13052,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13119,22 +13087,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13154,22 +13122,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13189,22 +13157,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13232,22 +13200,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13267,22 +13235,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13302,22 +13270,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13337,22 +13305,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13380,22 +13348,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13415,22 +13383,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13450,22 +13418,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13485,22 +13453,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13528,22 +13496,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13563,22 +13531,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13598,22 +13566,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13633,22 +13601,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13676,22 +13644,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13711,22 +13679,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13746,22 +13714,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13781,22 +13749,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13824,22 +13792,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13859,22 +13827,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13894,22 +13862,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13929,22 +13897,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -13972,22 +13940,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14007,22 +13975,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14042,22 +14010,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14077,22 +14045,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14120,22 +14088,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14155,22 +14123,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14190,22 +14158,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14225,22 +14193,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14268,22 +14236,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14303,22 +14271,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14338,22 +14306,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14373,22 +14341,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14416,22 +14384,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14451,22 +14419,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14486,22 +14454,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14521,22 +14489,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14564,22 +14532,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14599,22 +14567,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14634,22 +14602,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14669,22 +14637,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14712,22 +14680,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14747,22 +14715,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14782,22 +14750,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14817,22 +14785,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14860,22 +14828,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14895,22 +14863,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14930,22 +14898,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -14965,22 +14933,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15000,22 +14968,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15035,22 +15003,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15070,22 +15038,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15105,22 +15073,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15148,22 +15116,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15183,22 +15151,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15218,22 +15186,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15253,22 +15221,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15296,22 +15264,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15331,22 +15299,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15366,22 +15334,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15401,22 +15369,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15446,22 +15414,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15481,22 +15449,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15516,22 +15484,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15551,22 +15519,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15594,22 +15562,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15629,22 +15597,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15664,22 +15632,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -15699,22 +15667,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16111,22 +16079,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16153,24 +16121,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -16195,22 +16163,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16237,22 +16205,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16277,22 +16245,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16321,22 +16289,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16365,22 +16333,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16405,22 +16373,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16451,23 +16419,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -16491,24 +16459,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -16540,23 +16508,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -16586,23 +16554,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -16626,24 +16594,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -16670,23 +16638,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -16716,23 +16684,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -16765,23 +16733,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
@@ -16805,24 +16773,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -16856,22 +16824,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16904,23 +16872,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -16944,22 +16912,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -16984,22 +16952,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -17024,23 +16992,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17068,23 +17036,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17112,23 +17080,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17156,23 +17124,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17200,23 +17168,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17240,22 +17208,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -17284,23 +17252,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17324,22 +17292,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -17366,25 +17334,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17433,24 +17399,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -17475,25 +17439,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17517,25 +17479,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17559,25 +17519,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -17601,22 +17559,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -17648,23 +17606,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18081,23 +18039,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18150,22 +18108,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -18192,20 +18150,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
@@ -18236,22 +18196,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -18287,22 +18247,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
@@ -18336,22 +18296,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -18378,21 +18338,21 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -18475,22 +18435,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -18517,22 +18477,22 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -18589,25 +18549,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18656,21 +18614,21 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -18702,23 +18660,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18748,23 +18706,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18794,23 +18752,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18840,23 +18798,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18886,23 +18844,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18932,23 +18890,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -18978,23 +18936,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19029,25 +18987,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19088,23 +19044,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19132,23 +19088,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19176,23 +19132,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19220,23 +19176,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19282,21 +19238,21 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19347,21 +19303,21 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19403,21 +19359,21 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19447,23 +19403,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19495,24 +19451,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -19547,24 +19503,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -19630,24 +19586,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -19674,24 +19630,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -19715,24 +19671,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -19819,21 +19775,21 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19868,23 +19824,23 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -19903,23 +19859,21 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20007,24 +19961,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20050,25 +20004,23 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -20106,23 +20058,21 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20160,23 +20110,21 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20212,24 +20160,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20257,24 +20205,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20294,24 +20242,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20337,24 +20285,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20374,24 +20322,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20420,24 +20368,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20471,24 +20419,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20563,24 +20511,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20610,24 +20558,24 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20670,23 +20618,21 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20738,24 +20684,24 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20786,23 +20732,23 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -20839,24 +20785,24 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -20881,21 +20827,21 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -20927,22 +20873,22 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
@@ -20969,21 +20915,21 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -21007,26 +20953,24 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -21050,24 +20994,24 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -21090,23 +21034,23 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -21131,23 +21075,23 @@ Example
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -21220,23 +21164,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -21258,26 +21202,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -21298,26 +21240,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -21342,23 +21282,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
@@ -21380,26 +21320,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Business</th>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -21417,10 +21355,24 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>EAS</th>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
 </tr>
 </table>
 <!--EndSKU-->
@@ -21444,23 +21396,23 @@ ADMX Info:
 <!--StartSKU-->
 <table>
 <tr>
-	<th>Mobile</th>
-	<th>Pro</th>
-	<th>MobileEnterprise</th>
-	<th>Enterprise</th>
 	<th>Home</th>
-	<th>IoTCore</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
 	<th>Education</th>
-	<th>EAS</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
