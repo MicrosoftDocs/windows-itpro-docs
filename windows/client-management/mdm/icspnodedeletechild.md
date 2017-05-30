@@ -1,15 +1,13 @@
 ---
 title: ICSPNode DeleteChild
 description: ICSPNode DeleteChild
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8cf3663d-a4cf-4d11-b03a-f1d096ad7f9c
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # ICSPNode::DeleteChild

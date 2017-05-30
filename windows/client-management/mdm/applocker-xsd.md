@@ -1,15 +1,13 @@
 ---
 title: AppLocker XSD
 description: Here's the XSD for the AppLocker CSP.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 70CF48DD-AD7D-4BCF-854F-A41BFD95F876
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # AppLocker XSD

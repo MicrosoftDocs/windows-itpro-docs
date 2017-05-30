@@ -1,15 +1,13 @@
 ---
 title: ClientCertificateInstall DDF file
 description: ClientCertificateInstall DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7F65D045-A750-4CDE-A1CE-7D152AA060CA
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # ClientCertificateInstall DDF file

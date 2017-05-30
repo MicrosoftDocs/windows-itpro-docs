@@ -1,15 +1,13 @@
 ---
 title: EnterpriseAssignedAccess CSP
 description: EnterpriseAssignedAccess CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5F88E567-77AA-4822-A0BC-3B31100639AA
-ms.author: windows-hardware-design-content
+ms.author: maricia
 ms.date: 05/02/2017
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # EnterpriseAssignedAccess CSP
