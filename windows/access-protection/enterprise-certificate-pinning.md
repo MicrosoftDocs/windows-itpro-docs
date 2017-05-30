@@ -79,7 +79,7 @@ For help with formatting Pin Rules, see [Representing a Date in XML](#representi
 
 #### PinRule Element    
 
-The **PinRule** element can have the following attributes: 
+The **PinRule** element can have the following attributes. 
 
 | Attribute | Description | Required |
 |-----------|-------------|----------|
@@ -89,7 +89,7 @@ The **PinRule** element can have the following attributes:
 
 #### Certificate element 
 
-The **Certificate** element can have the following attributes:
+The **Certificate** element can have the following attributes.
 
 | Attribute | Description | Required |
 |-----------|-------------|----------|
@@ -100,29 +100,12 @@ The **Certificate** element can have the following attributes:
 
 #### Site element
 
-The **Site** element can have the following attributes:
+The **Site** element can have the following attributes.
 
-- **Domain** 
-
-    Contains the DNS name to be matched for this pin rule. 
-    When creating the certificate trust list, the parser normalizes the input name string value as follows:
-        - If the DNS name has a leading "*" it is removed.
-        - Non-ASCII DNS name are converted to ASCII Puny Code.
-        - Upper case ASCII characters are converted to lower case.
-
-    If the normalized name has a leading ".", then, wildcard left hand label matching is enabled. 
-    For example, ".xyz.com" would match "abc.xyz.com".
-
-    **Required?** Yes.
-
-- **AllSubdomains**
-
-    By default, wildcard left hand label matching is restricted to a single left hand label. 
-    This attribute can be set to "true" to enable wildcard matching of all of the left hand labels. 
-    
-    For example, setting this attribute would also match "123.abc.xyz.com" for the ".xyz.com" domain value.
-    
-    **Required?** No. 
+| Attribute | Description | Required |
+|-----------|-------------|----------|
+| **Domain** | Contains the DNS name to be matched for this pin rule. When creating the certificate trust list, the parser normalizes the input name string value as follows: <br>- If the DNS name has a leading "*" it is removed. <br>- Non-ASCII DNS name are converted to ASCII Puny Code. <br>- Upper case ASCII characters are converted to lower case. <br>If the normalized name has a leading ".", then, wildcard left hand label matching is enabled. For example, ".xyz.com" would match "abc.xyz.com". | Yes.|
+| **AllSubdomains** | By default, wildcard left hand label matching is restricted to a single left hand label. This attribute can be set to "true" to enable wildcard matching of all of the left-hand labels.<br>For example, setting this attribute would also match "123.abc.xyz.com" for the ".xyz.com" domain value.| No.|
     
 ### Create a Pin Rules Certificate Trust List
 
