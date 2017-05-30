@@ -4,15 +4,12 @@ description: Server requirements for using OMA DM to manage Windows devices
 MS-HAID:
 - 'p\_phDeviceMgmt.server\_requirements\_for\_oma\_dm'
 - 'p\_phDeviceMgmt.server\_requirements\_windows\_mdm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5b90b631-62a6-4949-b53a-01275fd304b2
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Server requirements for using OMA DM to manage Windows devices

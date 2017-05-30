@@ -1,6 +1,11 @@
 { 
 "redirections": [
 {
+"source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
+"redirect_url": "/education/windows/switch-to-pro-education",
+"redirect_document_id": true 
+},
+{
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
 "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
 "redirect_document_id": false 

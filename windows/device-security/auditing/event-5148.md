@@ -15,7 +15,7 @@ author: Mir0sh
 -   Windows Server 2016
 
 
-In most circumstances, this event occurs very rarely. It is designed to be generated when an ICPM DoS attack starts or was detected.
+In most circumstances, this event occurs very rarely. It is designed to be generated when an ICMP DoS attack starts or was detected.
 
 There is no example of this event in this document.
 
