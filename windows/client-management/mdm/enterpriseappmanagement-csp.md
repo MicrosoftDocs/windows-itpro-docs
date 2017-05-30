@@ -3,7 +3,6 @@ title: EnterpriseAppManagement CSP
 description: EnterpriseAppManagement CSP
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

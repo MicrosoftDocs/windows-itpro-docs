@@ -3,7 +3,6 @@ title: RemoteWipe DDF file
 description: RemoteWipe DDF file
 ms.assetid: 10ec4fb7-f911-4d0c-9a8f-e96bf5faea0c
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

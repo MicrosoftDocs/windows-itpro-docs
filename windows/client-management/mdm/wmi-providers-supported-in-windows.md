@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.wmi\_providers\_supported\_in\_windows'
 ms.assetid: 7D533044-AAD7-4B8F-B71B-9D52C15A168A
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.server\_requirements\_windows\_mdm'
 ms.assetid: 5b90b631-62a6-4949-b53a-01275fd304b2
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

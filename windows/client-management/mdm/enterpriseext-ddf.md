@@ -3,7 +3,6 @@ title: EnterpriseExt DDF
 description: EnterpriseExt DDF
 ms.assetid: 71BF81D4-FBEC-4B03-BF99-F7A5EDD4F91B
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

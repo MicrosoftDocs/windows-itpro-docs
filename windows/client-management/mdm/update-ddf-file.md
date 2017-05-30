@@ -3,7 +3,6 @@ title: Update DDF file
 description: Update DDF file
 ms.assetid: E236E468-88F3-402A-BA7A-834ED38DD388
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

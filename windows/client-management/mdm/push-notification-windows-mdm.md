@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.push\_notification\_windows\_mdm'
 ms.assetid: 9031C4FE-212A-4481-A1B0-4C3190B388AE
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
