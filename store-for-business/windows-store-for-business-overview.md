@@ -309,11 +309,36 @@ Microsoft Store for Business and Education is currently available in these marke
    <tr align="left">
      <td>
         <ul>
-            <li>Brazil</li>
-            <li>India</li>
             <li>Russia</li>
+        </ul>
+    </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+        <th align="center">Support for free apps and Minecraft: Education Edition</th>
+   </tr>
+   <tr align="left">
+     <td>
+        <ul>
+            <li>Albania</li>
+            <li>Armenia</li>
+            <li>Azerbaijan</li>
+            <li>Belarus</li>
+            <li>Bosnia</li>
+            <li>Brazil</li>
+            <li>Georgia</li>
+            <li>India</li>
+            <li>Kazakhstan</li>
+            <li>Korea</li>
+            <li>Kyrgyzstan</li>
+            <li>Moldova</li>
             <li>Taiwan</li>
+            <li>Tajikistan</li>
+            <li>Turkmenistan</li>
             <li>Ukraine</li>
+            <li>Uzbekistan</li>
         </ul>
     </td>
    </tr>
