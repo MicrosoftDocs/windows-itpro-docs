@@ -71,115 +71,32 @@ Each PinRule element contains a sequence of one or more Site elements and a sequ
 The PinRules element can have the following attributes. 
 For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml) or [Representing a Duration in XML](#representing-a-duration-in-xml). 
 
-- **Duration** or **NextUpdate**
-
-    Specifies when the Pin Rules will expire. 
-    Either is required. 
-    **NextUpdate** takes precedence if both are specified. 
-    
-    **Duration**, represented as an XML TimeSpan data type, does not allow years and months. 
-    You represent the **NextUpdate** attribute as a XML DateTime data type in UTC. 
-    
-    **Required?** Yes. At least one is required.
-
-- **LogDuration** or **LogEndDate**
-
-    Configures auditing only to extend beyond the expiration of enforcing the Pin Rules.
-    
-    **LogEndDate**, represented as an XML DateTime data type in UTC, takes precedence if both are specified. 
-    
-    You represent **LogDuration** as an XML TimeSpan data type, which does not allow years and months. 
-    
-    If neither attribute is specified, auditing expiration uses **Duration** or **NextUpdate** attributes.
-    
-    **Required?** No.
-
-- **ListIdentifier**
-
-    Provides a friendly name for the list of pin rules. 
-    Windows does not use this attribute for certificate pinning enforcement, however it is included when the pin rules are converted to a certificate trust list (CTL).
-
-    **Required?** No.
+| Attribute | Description | Required |
+|-----------|-------------|----------|
+|  **Duration** or **NextUpdate** | Specifies when the Pin Rules will expire. Either is required. **NextUpdate** takes precedence if both are specified. <br>  **Duration**, represented as an XML TimeSpan data type, does not allow years and months. You represent the **NextUpdate** attribute as a XML DateTime data type in UTC.  | **Required?** Yes. At least one is required. |
+| **LogDuration** or **LogEndDate** | Configures auditing only to extend beyond the expiration of enforcing the Pin Rules. <br>  **LogEndDate**, represented as an XML DateTime data type in UTC, takes precedence if both are specified. <br>  You represent **LogDuration** as an XML TimeSpan data type, which does not allow years and months. <br>  If neither attribute is specified, auditing expiration uses **Duration** or **NextUpdate** attributes. | No. | 
+| **ListIdentifier** | Provides a friendly name for the list of pin rules. Windows does not use this attribute for certificate pinning enforcement, however it is included when the pin rules are converted to a certificate trust list (CTL). | No. |
 
 #### PinRule Element    
 
 The **PinRule** element can have the following attributes: 
 
-- **Name**
-
-    Uniquely identifies the **PinRule**. 
-    Windows uses this attribute to identify the element for a parsing error or for verbose output. 
-    The attribute is not included in the generated certificate trust list (CTL).
-
-    **Required?** Yes.
-
-- **Error**
-
-    Describes the action Windows performs when it encounters a PIN mismatch. 
-    You can choose from the following string values:
-        - **Revoked** - Windows reports the certificate protecting the site as if it was revoked. This typically prevents the user from accessing the site.
-        - **InvalidName** - Windows reports the certificate protecting the site as if the name on the certificate does not match the name of the site. This typically results in prompting the user before accessing the site.
-        - **None** - The default value.  No error is returned. You can use this setting to audit the pin rules without introducing any user friction.      
-
-    **Required?** No.
-
-- **Log**  
-
-    A Boolean value represent as string that equals **true** or **false**. 
-    By default, logging is enabled (**true**).
-
-    **Required?** No.
+| Attribute | Description | Required |
+|-----------|-------------|----------|
+| **Name**  | Uniquely identifies the **PinRule**. Windows uses this attribute to identify the element for a parsing error or for verbose output. The attribute is not included in the generated certificate trust list (CTL). | Yes.|
+| **Error** | Describes the action Windows performs when it encounters a PIN mismatch. You can choose from the following string values: <br>- **Revoked** - Windows reports the certificate protecting the site as if it was revoked. This typically prevents the user from accessing the site. <br>- **InvalidName** - Windows reports the certificate protecting the site as if the name on the certificate does not match the name of the site. This typically results in prompting the user before accessing the site. <br>- **None** - The default value.  No error is returned. You can use this setting to audit the pin rules without introducing any user friction. | No. |
+| **Log** | A Boolean value represent as string that equals **true** or **false**. By default, logging is enabled (**true**). | No. |
 
 #### Certificate element 
 
 The **Certificate** element can have the following attributes:
 
-- **File**
-
-    Path to a file containing one or more certificates. 
-    Where the certificate(s) can be encoded as:
-        - single certificate
-        - p7b
-        - sst.
-
-    These files can also be Base64 formatted. 
-    All **Site** elements included in the same **PinRule** element can match any of these certificates.
-    
-    **Required?** Yes (File, Directory or Base64 must be present).
-
-- **Directory** 
-
-    Path to a directory containing one or more of the above certificate files. 
-    Skips any files not containing any certificates.    
-
-    **Required?** Yes (File, Directory or Base64 must be present).
-
-- **Base64**
-
-    Base64 encoded certificate(s). 
-    Where the certificate(s) can be encoded as:
-        - single certificate
-        - p7b
-        - sst.
-
-    This allows the certificates to be included in the XML file without a file directory dependency.
-
-    > [!Note]
-    > You can use **certutil -encode** to a .cer file into base64. You can then use Notepad to copy and paste the base64 encoded certificate into the pin rule.    
-
-    **Required?** Yes (File, Directory or Base64 must be present).
-
-- **EndDate** 
-
-    Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule.  
-
-    If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element’s certificates.
-
-    If the current time is past the **EndDate**, then, when creating the certificate trust list (CTL), the parser outputs a warning message and exclude the certificate(s) from the Pin Rule in the generated CTL.
-
-    For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml).
-
-    **Required?** No. 
+| Attribute | Description | Required |
+|-----------|-------------|----------|
+| **File**  | Path to a file containing one or more certificates.  Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br>- sst <br> These files can also be Base64 formatted.  All **Site** elements included in the same **PinRule** element can match any of these certificates. | Yes (File, Directory or Base64 must be present). |
+| **Directory** | Path to a directory containing one or more of the above certificate files. Skips any files not containing any certificates. | Yes (File, Directory or Base64 must be present). | 
+| **Base64** | Base64 encoded certificate(s). Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br> - sst <br> This allows the certificates to be included in the XML file without a file directory dependency. <br> Note: <br> You can use **certutil -encode** to convert a .cer file into base64. You can then use Notepad to copy and paste the base64 encoded certificate into the pin rule.  | Yes (File, Directory or Base64 must be present). |
+| **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element’s certificates.<br> If the current time is past the **EndDate**, then, when creating the certificate trust list (CTL), the parser outputs a warning message and exclude the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml).
 
 #### Site element
 
@@ -301,10 +218,6 @@ Sign-in to the reference computer using domain administrator equivalent credenti
 ## Additional Pin Rules Logging
 
 To assist in constructing certificate pinning rules, you can configure the **PinRulesLogDir** setting under the certificate chain configuration registry key to include a parent directory to log pin rules.
-
-```code
-HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType0\CertDllCreateCertificateChainEngine\Config
-```
 
 | Name | Value |
 |------|-------|
