@@ -133,16 +133,28 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -161,16 +173,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -191,16 +215,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -224,16 +260,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -254,16 +302,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -282,17 +342,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -310,16 +383,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1022,17 +1107,30 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1054,16 +1152,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1084,16 +1194,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1115,16 +1237,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1148,16 +1282,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1178,16 +1324,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1208,16 +1366,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1253,16 +1423,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1281,16 +1463,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1320,16 +1514,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1350,16 +1556,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1380,16 +1598,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1491,16 +1721,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1521,16 +1763,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1551,16 +1805,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1666,16 +1932,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1698,16 +1976,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1730,16 +2020,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1758,16 +2060,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1785,16 +2099,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1810,16 +2136,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1868,16 +2206,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1904,16 +2254,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1941,15 +2303,26 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1974,16 +2347,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2011,16 +2396,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2039,16 +2436,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2067,16 +2476,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2095,16 +2516,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2125,16 +2558,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2183,16 +2628,28 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2220,16 +2677,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2270,16 +2739,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2307,16 +2788,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2413,16 +2906,28 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2437,16 +2942,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2468,16 +2985,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2502,16 +3031,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2530,16 +3071,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2596,16 +3149,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2624,16 +3189,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2656,16 +3233,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2690,16 +3279,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2749,16 +3350,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2790,17 +3403,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2821,16 +3447,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2858,16 +3496,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2887,16 +3537,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2926,16 +3588,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2957,17 +3631,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2992,16 +3679,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3028,16 +3727,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3058,16 +3769,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3088,16 +3811,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3235,16 +3970,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3258,16 +4005,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3288,16 +4047,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3319,16 +4090,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3409,16 +4192,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3441,16 +4236,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3473,16 +4280,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3505,16 +4324,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3537,16 +4368,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3569,16 +4412,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3601,16 +4456,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3633,16 +4500,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3665,16 +4544,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3697,16 +4588,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3729,16 +4632,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3761,16 +4676,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3793,16 +4720,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3824,16 +4763,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3855,16 +4806,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3882,16 +4845,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3909,16 +4884,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3942,16 +4929,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3975,16 +4974,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4012,16 +5023,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4044,16 +5067,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4081,16 +5116,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4124,16 +5171,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4161,16 +5220,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4194,16 +5265,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4228,16 +5311,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4273,16 +5368,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4302,16 +5409,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4331,17 +5450,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4368,16 +5500,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4399,16 +5543,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4428,16 +5584,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4457,16 +5625,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4486,16 +5666,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4515,16 +5707,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4544,16 +5748,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4572,17 +5788,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4606,17 +5835,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4637,17 +5879,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4667,17 +5922,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4697,16 +5965,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4728,16 +6008,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4757,16 +6049,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4859,16 +6163,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4899,16 +6215,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4933,16 +6261,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4974,16 +6314,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5042,16 +6394,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5078,16 +6442,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5116,16 +6492,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5145,16 +6533,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5174,16 +6574,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5217,16 +6629,28 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5251,16 +6675,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5283,17 +6719,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Business: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5378,16 +6827,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5417,16 +6878,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5473,15 +6946,26 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5508,17 +6992,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5545,17 +7042,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5573,17 +7083,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5601,17 +7124,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5629,17 +7165,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5657,17 +7206,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5685,17 +7247,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5713,17 +7288,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5961,16 +7549,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5999,16 +7599,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6031,16 +7643,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6080,16 +7704,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6112,16 +7748,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6146,16 +7794,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6174,16 +7834,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6231,16 +7903,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6263,16 +7947,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6297,16 +7993,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6338,16 +8046,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6372,16 +8092,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6443,16 +8175,28 @@ Enables or disables Windows Tips / soft landing.
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6476,16 +8220,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6508,16 +8264,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10348,16 +12116,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10376,16 +12156,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10412,16 +12204,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10442,16 +12246,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10473,16 +12289,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10504,16 +12332,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10551,16 +12391,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10593,16 +12445,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10625,16 +12489,28 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10648,16 +12524,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10671,16 +12559,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10704,16 +12604,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10727,16 +12639,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10750,16 +12674,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10773,16 +12709,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10805,16 +12753,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -10994,16 +12954,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11024,16 +12996,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11055,16 +13039,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11086,16 +13082,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11109,16 +13117,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11132,16 +13152,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11155,16 +13187,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11186,16 +13230,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11209,16 +13265,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11232,16 +13300,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11255,16 +13335,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11286,16 +13378,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11309,16 +13413,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11332,16 +13448,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11355,16 +13483,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11386,16 +13526,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11409,16 +13561,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11432,16 +13596,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11455,16 +13631,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11486,16 +13674,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11509,16 +13709,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11532,16 +13744,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11555,16 +13779,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11586,16 +13822,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11609,16 +13857,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11632,16 +13892,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11655,16 +13927,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11686,16 +13970,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11709,16 +14005,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11732,16 +14040,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11755,16 +14075,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11786,16 +14118,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11809,16 +14153,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11832,16 +14188,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11855,16 +14223,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11886,16 +14266,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11909,16 +14301,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11932,16 +14336,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11955,16 +14371,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11986,16 +14414,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12009,16 +14449,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12032,16 +14484,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12055,16 +14519,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12086,16 +14562,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12109,16 +14597,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12132,16 +14632,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12155,16 +14667,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12186,16 +14710,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12209,16 +14745,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12232,16 +14780,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12255,16 +14815,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12286,16 +14858,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12309,16 +14893,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12332,16 +14928,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12355,16 +14963,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12378,16 +14998,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12401,16 +15033,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12424,16 +15068,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12447,16 +15103,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12478,16 +15146,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12501,16 +15181,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12524,16 +15216,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12547,16 +15251,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12578,16 +15294,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12601,16 +15329,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12624,16 +15364,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12647,16 +15399,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12680,16 +15444,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12703,16 +15479,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12726,16 +15514,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12749,16 +15549,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12780,16 +15592,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12803,16 +15627,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12826,16 +15662,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12849,16 +15697,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13249,16 +16109,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13279,16 +16151,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13309,16 +16193,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13339,16 +16235,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13367,16 +16275,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13399,16 +16319,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13431,16 +16363,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13459,16 +16403,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13493,16 +16449,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13521,16 +16489,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13558,16 +16538,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13592,16 +16584,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13620,16 +16624,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13652,16 +16668,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13686,16 +16714,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13723,16 +16763,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13751,16 +16803,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13790,16 +16854,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13826,16 +16902,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13854,16 +16942,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13882,16 +16982,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13910,16 +17022,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13942,16 +17066,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13974,16 +17110,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14006,16 +17154,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14038,16 +17198,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14066,16 +17238,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14098,16 +17282,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14126,16 +17322,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14156,17 +17364,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14210,17 +17431,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14239,17 +17473,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14268,17 +17515,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14297,17 +17557,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14326,16 +17599,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14361,16 +17646,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14782,16 +18079,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14839,16 +18148,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14869,15 +18190,26 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14902,16 +18234,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14941,16 +18285,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14978,16 +18334,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15008,16 +18376,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15093,16 +18473,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15123,16 +18515,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15183,17 +18587,30 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15237,16 +18654,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15271,16 +18700,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15305,16 +18746,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15339,16 +18792,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15373,16 +18838,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15407,16 +18884,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15441,16 +18930,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15475,16 +18976,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15514,17 +19027,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15560,16 +19086,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15592,16 +19130,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15624,16 +19174,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15656,16 +19218,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15706,16 +19280,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15759,16 +19345,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15803,16 +19401,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15835,16 +19445,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15871,16 +19493,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15911,16 +19545,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15982,16 +19628,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16014,16 +19672,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16043,16 +19713,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16135,16 +19817,28 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16172,16 +19866,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16195,17 +19901,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16286,16 +20005,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16317,17 +20048,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16360,17 +20104,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16401,17 +20158,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16440,16 +20210,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16473,16 +20255,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16498,16 +20292,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16529,16 +20335,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16554,16 +20372,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16588,16 +20418,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16627,16 +20469,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16707,16 +20561,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16742,16 +20608,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16790,17 +20668,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16845,16 +20736,28 @@ Example
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16881,16 +20784,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16922,16 +20837,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16952,16 +20879,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16986,16 +20925,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17016,16 +20967,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17042,17 +21005,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17072,16 +21048,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17100,16 +21088,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17129,16 +21129,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17206,16 +21218,28 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17232,17 +21256,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17259,17 +21296,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17290,16 +21340,28 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17316,17 +21378,30 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Business</th>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17340,9 +21415,14 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17362,21 +21442,32 @@ SKU Support:
 
 <!--EndDescription-->
 <!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
+<table>
+<tr>
+	<th>Mobile</th>
+	<th>Pro</th>
+	<th>MobileEnterprise</th>
+	<th>Enterprise</th>
+	<th>Home</th>
+	<th>IoTCore</th>
+	<th>Education</th>
+	<th>EAS</th>
+</tr>
+<tr>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+</tr>
+</table>
 <!--EndSKU-->
 <!--EndPolicy-->
 <hr/>
 <!--EndPolicies-->
-
 
 
 ## Examples
