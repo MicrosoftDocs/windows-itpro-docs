@@ -142,7 +142,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -152,9 +151,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -182,7 +181,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -192,9 +190,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -224,7 +222,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -234,9 +231,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -269,7 +266,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -279,9 +275,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -311,7 +307,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -321,9 +316,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -351,7 +346,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -361,9 +355,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -390,7 +384,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -400,9 +393,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1114,7 +1107,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1124,9 +1116,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1157,7 +1149,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -1167,9 +1158,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1199,7 +1190,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1209,9 +1199,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1242,7 +1232,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1252,9 +1241,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1287,7 +1276,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1297,9 +1285,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1329,7 +1317,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1339,9 +1326,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1371,7 +1358,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1381,9 +1367,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1428,7 +1414,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1438,9 +1423,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1468,7 +1453,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1478,9 +1462,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1519,7 +1503,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1529,9 +1512,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1561,7 +1544,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1571,9 +1553,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1603,7 +1585,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1613,9 +1594,9 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1726,7 +1707,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1736,9 +1716,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1768,7 +1748,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -1778,9 +1757,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1810,7 +1789,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -1820,9 +1798,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1937,7 +1915,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1947,9 +1924,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1981,7 +1958,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -1991,9 +1967,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2025,7 +2001,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2035,9 +2010,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2065,7 +2040,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2075,9 +2049,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2104,7 +2078,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2114,9 +2087,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2141,7 +2114,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2151,9 +2123,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2211,7 +2183,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2221,9 +2192,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2259,7 +2230,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2269,9 +2239,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2308,7 +2278,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2318,9 +2287,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2354,7 +2323,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2364,9 +2332,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2403,7 +2371,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2413,9 +2380,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2443,7 +2410,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2453,9 +2419,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2483,7 +2449,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2493,9 +2458,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2523,7 +2488,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2533,9 +2497,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2565,7 +2529,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -2575,9 +2538,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2635,7 +2598,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2645,9 +2607,9 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2684,7 +2646,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2694,9 +2655,9 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2746,7 +2707,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2756,9 +2716,9 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2795,7 +2755,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -2805,9 +2764,9 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2913,7 +2872,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -2923,9 +2881,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2949,7 +2907,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -2959,9 +2916,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2992,7 +2949,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3002,9 +2958,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3038,7 +2994,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3048,9 +3003,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3078,7 +3033,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3088,9 +3042,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3156,7 +3110,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3166,9 +3119,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3196,7 +3149,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3206,9 +3158,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3240,7 +3192,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3250,9 +3201,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3286,7 +3237,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3296,9 +3246,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3357,7 +3307,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3367,9 +3316,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3410,7 +3359,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3420,9 +3368,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3452,7 +3400,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3462,9 +3409,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3501,7 +3448,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3511,9 +3457,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3542,7 +3488,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3552,9 +3497,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3593,7 +3538,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3603,9 +3547,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3636,7 +3580,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -3646,9 +3589,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3682,7 +3625,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3692,9 +3634,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3730,7 +3672,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3740,9 +3681,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3772,7 +3713,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3782,9 +3722,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3814,7 +3754,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3824,9 +3763,9 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3973,7 +3912,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -3983,9 +3921,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4008,7 +3946,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -4018,9 +3955,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4050,7 +3987,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -4060,9 +3996,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4093,7 +4029,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4103,9 +4038,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4195,7 +4130,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4205,9 +4139,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4239,7 +4173,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4249,9 +4182,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4283,7 +4216,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4293,9 +4225,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4327,7 +4259,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4337,9 +4268,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4371,7 +4302,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4381,9 +4311,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4415,7 +4345,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4425,9 +4354,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4459,7 +4388,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4469,9 +4397,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4503,7 +4431,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4513,9 +4440,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4547,7 +4474,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4557,9 +4483,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4591,7 +4517,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4601,9 +4526,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4635,7 +4560,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4645,9 +4569,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4679,7 +4603,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4689,9 +4612,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4723,7 +4646,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4733,9 +4655,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4766,7 +4688,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4776,9 +4697,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4809,7 +4730,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4819,9 +4739,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4848,7 +4768,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4858,9 +4777,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4887,7 +4806,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4897,9 +4815,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4932,7 +4850,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4942,9 +4859,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4977,7 +4894,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -4987,9 +4903,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5026,7 +4942,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5036,9 +4951,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5070,7 +4985,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5080,9 +4994,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5119,7 +5033,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5129,9 +5042,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5174,7 +5087,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5184,9 +5096,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5223,7 +5135,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5233,9 +5144,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5268,7 +5179,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5278,9 +5188,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5314,7 +5224,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5324,9 +5233,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5371,7 +5280,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -5381,9 +5289,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5412,7 +5320,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5422,9 +5329,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5453,7 +5360,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5463,9 +5369,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5501,7 +5407,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5511,9 +5416,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5544,7 +5449,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5554,9 +5458,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5585,7 +5489,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5595,9 +5498,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5626,7 +5529,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5636,9 +5538,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5667,7 +5569,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5677,9 +5578,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5708,7 +5609,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5718,9 +5618,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5749,7 +5649,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5759,9 +5658,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5789,7 +5688,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5799,9 +5697,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5834,7 +5732,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5844,9 +5741,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5876,7 +5773,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5886,9 +5782,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5917,7 +5813,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5927,9 +5822,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5958,7 +5853,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -5968,9 +5862,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6001,7 +5895,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6011,9 +5904,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6042,7 +5935,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6052,9 +5944,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6156,7 +6048,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6166,9 +6057,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6208,7 +6099,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6218,9 +6108,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6254,7 +6144,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6264,9 +6153,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6307,7 +6196,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6317,9 +6205,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6387,7 +6275,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6397,9 +6284,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6435,7 +6322,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6445,9 +6331,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6485,7 +6371,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6495,9 +6380,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6526,7 +6411,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6536,9 +6420,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6567,7 +6451,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6577,9 +6460,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6622,7 +6505,6 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6632,9 +6514,9 @@ The number of authentication failures allowed before the device will be wiped. A
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6668,7 +6550,6 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6678,9 +6559,9 @@ The number of authentication failures allowed before the device will be wiped. A
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6712,7 +6593,6 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6722,9 +6602,9 @@ The number of authentication failures allowed before the device will be wiped. A
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6818,7 +6698,6 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6828,9 +6707,9 @@ The number of authentication failures allowed before the device will be wiped. A
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6869,7 +6748,6 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -6879,9 +6757,9 @@ The number of authentication failures allowed before the device will be wiped. A
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6937,7 +6815,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6947,9 +6824,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6985,7 +6862,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -6995,9 +6871,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7033,7 +6909,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7043,9 +6918,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7072,7 +6947,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7082,9 +6956,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7111,7 +6985,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7121,9 +6994,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7150,7 +7023,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7160,9 +7032,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7189,7 +7061,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7199,9 +7070,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7228,7 +7099,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7238,9 +7108,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7267,7 +7137,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7277,9 +7146,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7526,7 +7395,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7536,9 +7404,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7576,7 +7444,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7586,9 +7453,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7620,7 +7487,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7630,9 +7496,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7681,7 +7547,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7691,9 +7556,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7725,7 +7590,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7735,9 +7599,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7771,7 +7635,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7781,9 +7644,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7811,7 +7674,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7821,9 +7683,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7880,7 +7742,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7890,9 +7751,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7924,7 +7785,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7934,9 +7794,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7970,7 +7830,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -7980,9 +7839,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -8023,7 +7882,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -8033,9 +7891,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -8069,7 +7927,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -8079,9 +7936,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -8152,7 +8009,6 @@ Enables or disables Windows Tips / soft landing.
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -8162,9 +8018,9 @@ Enables or disables Windows Tips / soft landing.
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -8197,7 +8053,6 @@ Enables or disables Windows Tips / soft landing.
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -8207,9 +8062,9 @@ Enables or disables Windows Tips / soft landing.
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -8241,7 +8096,6 @@ Enables or disables Windows Tips / soft landing.
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -8251,9 +8105,9 @@ Enables or disables Windows Tips / soft landing.
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12093,7 +11947,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12103,9 +11956,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12133,7 +11986,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12143,9 +11995,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12181,7 +12033,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -12191,9 +12042,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12223,7 +12074,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12233,9 +12083,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12266,7 +12116,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12276,9 +12125,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12309,7 +12158,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12319,9 +12167,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12368,7 +12216,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12378,9 +12225,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12422,7 +12269,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12432,9 +12278,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12466,7 +12312,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12476,9 +12321,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12501,7 +12346,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12511,9 +12355,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12536,7 +12380,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12546,9 +12389,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12581,7 +12424,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12591,9 +12433,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12616,7 +12458,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12626,9 +12467,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12651,7 +12492,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12661,9 +12501,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12686,7 +12526,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12696,9 +12535,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12730,7 +12569,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12740,9 +12578,9 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12931,7 +12769,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -12941,9 +12778,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12973,7 +12810,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -12983,9 +12819,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13016,7 +12852,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13026,9 +12861,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13059,7 +12894,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13069,9 +12903,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13094,7 +12928,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13104,9 +12937,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13129,7 +12962,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13139,9 +12971,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13164,7 +12996,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13174,9 +13005,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13207,7 +13038,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13217,9 +13047,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13242,7 +13072,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13252,9 +13081,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13277,7 +13106,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13287,9 +13115,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13312,7 +13140,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13322,9 +13149,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13355,7 +13182,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13365,9 +13191,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13390,7 +13216,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13400,9 +13225,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13425,7 +13250,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13435,9 +13259,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13460,7 +13284,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13470,9 +13293,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13503,7 +13326,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13513,9 +13335,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13538,7 +13360,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13548,9 +13369,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13573,7 +13394,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13583,9 +13403,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13608,7 +13428,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13618,9 +13437,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13651,7 +13470,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13661,9 +13479,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13686,7 +13504,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13696,9 +13513,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13721,7 +13538,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13731,9 +13547,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13756,7 +13572,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13766,9 +13581,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13799,7 +13614,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13809,9 +13623,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13834,7 +13648,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13844,9 +13657,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13869,7 +13682,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13879,9 +13691,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13904,7 +13716,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13914,9 +13725,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13947,7 +13758,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13957,9 +13767,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13982,7 +13792,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -13992,9 +13801,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14017,7 +13826,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14027,9 +13835,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14052,7 +13860,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14062,9 +13869,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14095,7 +13902,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14105,9 +13911,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14130,7 +13936,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14140,9 +13945,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14165,7 +13970,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14175,9 +13979,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14200,7 +14004,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14210,9 +14013,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14243,7 +14046,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14253,9 +14055,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14278,7 +14080,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14288,9 +14089,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14313,7 +14114,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14323,9 +14123,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14348,7 +14148,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14358,9 +14157,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14391,7 +14190,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14401,9 +14199,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14426,7 +14224,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14436,9 +14233,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14461,7 +14258,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14471,9 +14267,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14496,7 +14292,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14506,9 +14301,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14539,7 +14334,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14549,9 +14343,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14574,7 +14368,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14584,9 +14377,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14609,7 +14402,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14619,9 +14411,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14644,7 +14436,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14654,9 +14445,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14687,7 +14478,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14697,9 +14487,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14722,7 +14512,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14732,9 +14521,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14757,7 +14546,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14767,9 +14555,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14792,7 +14580,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14802,9 +14589,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14835,7 +14622,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14845,9 +14631,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14870,7 +14656,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14880,9 +14665,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14905,7 +14690,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14915,9 +14699,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14940,7 +14724,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14950,9 +14733,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14975,7 +14758,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -14985,9 +14767,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15010,7 +14792,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15020,9 +14801,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15045,7 +14826,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15055,9 +14835,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15080,7 +14860,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15090,9 +14869,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15123,7 +14902,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15133,9 +14911,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15158,7 +14936,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15168,9 +14945,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15193,7 +14970,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15203,9 +14979,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15228,7 +15004,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15238,9 +15013,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15271,7 +15046,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15281,9 +15055,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15306,7 +15080,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15316,9 +15089,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15341,7 +15114,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15351,9 +15123,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15376,7 +15148,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15386,9 +15157,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15421,7 +15192,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15431,9 +15201,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15456,7 +15226,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15466,9 +15235,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15491,7 +15260,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15501,9 +15269,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15526,7 +15294,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15536,9 +15303,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15569,7 +15336,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15579,9 +15345,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15604,7 +15370,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15614,9 +15379,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15639,7 +15404,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15649,9 +15413,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15674,7 +15438,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -15684,9 +15447,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16086,7 +15849,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16096,9 +15858,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16128,7 +15890,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16138,9 +15899,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16170,7 +15931,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16180,9 +15940,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16212,7 +15972,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16222,9 +15981,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16252,7 +16011,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16262,9 +16020,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16296,7 +16054,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16306,9 +16063,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16340,7 +16097,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16350,9 +16106,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16380,7 +16136,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16390,9 +16145,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16426,7 +16181,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16436,9 +16190,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16466,7 +16220,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16476,9 +16229,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16515,7 +16268,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16525,9 +16277,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16561,7 +16313,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16571,9 +16322,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16601,7 +16352,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16611,9 +16361,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16645,7 +16395,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16655,9 +16404,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16691,7 +16440,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16701,9 +16449,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16740,7 +16488,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16750,9 +16497,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16780,7 +16527,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16790,9 +16536,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16831,7 +16577,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -16841,9 +16586,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16879,7 +16624,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16889,9 +16633,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16919,7 +16663,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16929,9 +16672,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16959,7 +16702,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -16969,9 +16711,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16999,7 +16741,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17009,9 +16750,9 @@ ADMX Info:
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17043,7 +16784,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17053,9 +16793,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17087,7 +16827,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17097,9 +16836,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17131,7 +16870,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17141,9 +16879,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17175,7 +16913,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17185,9 +16922,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17215,7 +16952,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17225,9 +16961,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17259,7 +16995,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17269,9 +17004,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17299,7 +17034,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17309,9 +17043,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17341,7 +17075,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17351,9 +17084,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17406,7 +17139,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17416,9 +17148,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17446,7 +17178,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17456,9 +17187,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17486,7 +17217,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17496,9 +17226,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17526,7 +17256,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17536,9 +17265,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17566,7 +17295,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
@@ -17576,9 +17304,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17613,7 +17341,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -17623,9 +17350,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18046,7 +17773,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18056,9 +17782,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18115,7 +17841,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18125,9 +17850,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18157,7 +17882,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18167,9 +17891,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18203,7 +17927,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18213,9 +17936,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18254,7 +17977,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18264,9 +17986,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18303,7 +18025,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18313,9 +18034,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18345,7 +18066,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18355,9 +18075,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18442,7 +18162,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18452,9 +18171,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18484,7 +18203,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18494,9 +18212,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18556,7 +18274,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18566,9 +18283,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18621,7 +18338,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18631,9 +18347,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18667,7 +18383,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18677,9 +18392,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18713,7 +18428,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18723,9 +18437,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18759,7 +18473,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18769,9 +18482,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18805,7 +18518,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18815,9 +18527,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18851,7 +18563,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18861,9 +18572,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18897,7 +18608,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18907,9 +18617,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18943,7 +18653,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -18953,9 +18662,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18994,7 +18703,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19004,9 +18712,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19051,7 +18759,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19061,9 +18768,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19095,7 +18802,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19105,9 +18811,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19139,7 +18845,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19149,9 +18854,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19183,7 +18888,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19193,9 +18897,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19245,7 +18949,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19255,9 +18958,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19310,7 +19013,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19320,9 +19022,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19366,7 +19068,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19376,9 +19077,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19410,7 +19111,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19420,9 +19120,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19458,7 +19158,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19468,9 +19167,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19510,7 +19209,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19520,9 +19218,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19593,7 +19291,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19603,9 +19300,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19637,7 +19334,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19647,9 +19343,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19678,7 +19374,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19688,9 +19383,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19782,7 +19477,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19792,9 +19486,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19831,7 +19525,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19841,9 +19534,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19866,7 +19559,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19876,9 +19568,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19968,7 +19660,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -19978,9 +19669,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20011,7 +19702,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20021,9 +19711,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20065,7 +19755,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20075,9 +19764,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20117,7 +19806,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20127,9 +19815,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20167,7 +19855,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20177,9 +19864,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20212,7 +19899,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20222,9 +19908,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20249,7 +19935,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20259,9 +19944,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20292,7 +19977,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20302,9 +19986,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20329,7 +20013,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20339,9 +20022,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20375,7 +20058,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20385,9 +20067,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20426,7 +20108,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20436,9 +20117,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20518,7 +20199,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20528,9 +20208,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20565,7 +20245,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20575,9 +20254,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20625,7 +20304,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20635,9 +20313,9 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20691,7 +20369,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20701,9 +20378,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20739,7 +20416,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20749,9 +20425,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20792,7 +20468,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20802,9 +20477,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20834,7 +20509,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20844,9 +20518,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20880,7 +20554,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20890,9 +20563,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20922,7 +20595,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20932,9 +20604,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20960,7 +20632,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -20970,9 +20641,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21001,7 +20672,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21011,9 +20681,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21041,7 +20711,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21051,9 +20720,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21082,7 +20751,6 @@ Example
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21092,9 +20760,9 @@ Example
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21171,7 +20839,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21181,9 +20848,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21209,7 +20876,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21219,9 +20885,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21247,7 +20913,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21257,9 +20922,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21289,7 +20954,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21299,9 +20963,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21327,7 +20991,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21337,9 +21000,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21362,7 +21025,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td></td>
@@ -21372,9 +21034,9 @@ ADMX Info:
 	<td></td>
 	<td></td>
 	<td></td>
-	<td></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -21403,7 +21065,6 @@ ADMX Info:
 	<th>Education</th>
 	<th>Mobile</th>
 	<th>MobileEnterprise</th>
-	<th>IoTCore</th>
 </tr>
 <tr>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
@@ -21413,9 +21074,9 @@ ADMX Info:
 	<td><img alt="check mark" src="images/CheckMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
 </tr>
 </table>
+
 <!--EndSKU-->
 <!--EndPolicy-->
 <hr/>
