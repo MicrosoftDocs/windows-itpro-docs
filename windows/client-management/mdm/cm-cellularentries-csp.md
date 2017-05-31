@@ -3,7 +3,6 @@ title: CM\_CellularEntries CSP
 description: CM\_CellularEntries CSP
 ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

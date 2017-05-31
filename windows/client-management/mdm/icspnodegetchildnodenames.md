@@ -3,7 +3,6 @@ title: ICSPNode GetChildNodeNames
 description: ICSPNode GetChildNodeNames
 ms.assetid: dc057f2b-282b-49ac-91c4-bb83bd3ca4dc
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

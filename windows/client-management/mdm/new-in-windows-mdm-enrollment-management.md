@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
 ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -881,6 +880,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Ownership</li>
 </ul>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">MDM support for Windows 10 S</td>
+<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
+<ul>
+<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
+<li>[Policy CSP](policy-configuration-service-provider.md)</li>
+</ul>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1219,6 +1226,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Deviceidentifier</li>
 <li>Tenantidentifier</li>
 <li>Ownership</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">MDM support for Windows 10 S</td>
+<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
+<ul>
+<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
+<li>[Policy CSP](policy-configuration-service-provider.md)</li>
 </ul>
 </td></tr>
 </tbody>

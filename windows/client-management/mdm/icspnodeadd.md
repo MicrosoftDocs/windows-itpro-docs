@@ -3,7 +3,6 @@ title: ICSPNode Add
 description: ICSPNode Add
 ms.assetid: 5f03d350-c82b-4747-975f-385fd8b5b3a8
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

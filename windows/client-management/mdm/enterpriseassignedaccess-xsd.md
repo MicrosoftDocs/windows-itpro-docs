@@ -3,7 +3,6 @@ title: EnterpriseAssignedAccess XSD
 description: EnterpriseAssignedAccess XSD
 ms.assetid: BB3B633E-E361-4B95-9D4A-CE6E08D67ADA
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

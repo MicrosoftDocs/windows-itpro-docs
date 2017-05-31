@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
 ms.assetid: DEB98FF3-CC5C-47A1-9277-9EF939716C87
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

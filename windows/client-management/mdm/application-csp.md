@@ -3,7 +3,6 @@ title: APPLICATION configuration service provider
 description: APPLICATION configuration service provider
 ms.assetid: 0705b5e9-a1e7-4d70-a73d-7f758ffd8099
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -3,7 +3,6 @@ title: EMAIL2 CSP
 description: EMAIL2 CSP
 ms.assetid: bcfc9d98-bc2e-42c6-9b81-0b5bf65ce2b8
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

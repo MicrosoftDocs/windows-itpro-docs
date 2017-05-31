@@ -3,7 +3,6 @@ title: Policy CSP
 description: Policy CSP
 ms.assetid: 4F3A1134-D401-44FC-A583-6EDD3070BA4F
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -107,6 +106,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the unique ID of the app ADMX file that contains the preference to import.
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
+
+> [!Note]  
+> The policies supported in Windows 10 S is the same as in Windows 10 Pro, except that policies under AppliationsDefaults are not suppported in Windows 10 S.
 
 <!--StartPolicies-->
 <hr/>
