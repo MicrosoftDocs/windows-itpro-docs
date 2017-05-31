@@ -130,13 +130,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -174,13 +174,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -213,13 +213,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -254,13 +254,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -298,13 +298,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -339,13 +339,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -378,13 +378,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1051,13 +1051,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -1139,13 +1139,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1181,13 +1181,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1222,13 +1222,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1264,13 +1264,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1308,13 +1308,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1349,13 +1349,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1390,13 +1390,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1446,13 +1446,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1485,13 +1485,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1535,13 +1535,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1576,13 +1576,13 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1689,13 +1689,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1739,13 +1739,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1780,13 +1780,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -1906,13 +1906,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1947,13 +1947,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1990,13 +1990,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2033,13 +2033,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -2072,13 +2072,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2110,13 +2110,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2167,13 +2167,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2215,13 +2215,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2262,13 +2262,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2310,13 +2310,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2355,13 +2355,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2403,13 +2403,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2442,13 +2442,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2481,13 +2481,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2520,13 +2520,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2582,13 +2582,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2630,13 +2630,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -2698,13 +2698,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2739,13 +2739,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2861,13 +2861,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2904,13 +2904,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2939,13 +2939,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -2981,13 +2981,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3026,13 +3026,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3101,13 +3101,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3142,13 +3142,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3181,13 +3181,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3224,13 +3224,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3294,13 +3294,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3339,13 +3339,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -3391,13 +3391,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3432,13 +3432,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3480,13 +3480,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3520,13 +3520,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3570,13 +3570,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -3612,13 +3612,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3657,13 +3657,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3704,13 +3704,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3745,13 +3745,13 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3905,13 +3905,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3944,13 +3944,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -3978,13 +3978,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -4019,13 +4019,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4119,13 +4119,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4162,13 +4162,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4205,13 +4205,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4248,13 +4248,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4291,13 +4291,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4334,13 +4334,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4377,13 +4377,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4420,13 +4420,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4463,13 +4463,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4506,13 +4506,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4549,13 +4549,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4592,13 +4592,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4635,13 +4635,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4678,13 +4678,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4720,13 +4720,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4762,13 +4762,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4800,13 +4800,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4838,13 +4838,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4882,13 +4882,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4926,13 +4926,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -4974,13 +4974,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5017,13 +5017,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5065,13 +5065,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5119,13 +5119,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5167,13 +5167,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5211,13 +5211,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5256,13 +5256,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5312,13 +5312,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5352,13 +5352,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5392,13 +5392,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5439,13 +5439,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5481,13 +5481,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5521,13 +5521,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5561,13 +5561,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5601,13 +5601,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5641,13 +5641,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5681,13 +5681,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5720,13 +5720,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5764,13 +5764,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5805,13 +5805,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5845,13 +5845,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5885,13 +5885,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -5927,13 +5927,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -6033,13 +6033,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6080,13 +6080,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6131,13 +6131,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6176,13 +6176,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6228,13 +6228,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6307,13 +6307,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6354,13 +6354,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6403,13 +6403,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -6443,13 +6443,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -6483,13 +6483,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6537,13 +6537,13 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6582,13 +6582,13 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -6625,13 +6625,13 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6730,13 +6730,13 @@ The number of authentication failures allowed before the device will be wiped. A
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6802,13 +6802,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -6847,13 +6847,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -6894,13 +6894,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -6941,19 +6941,19 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -6979,19 +6979,19 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -7017,19 +7017,19 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication.
 
 <p style="margin-left: 20px">The datatype is a string. 
 
@@ -7055,19 +7055,19 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -7093,19 +7093,19 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point.
 
 <p style="margin-left: 20px">The datatype is an integer. 
 
@@ -7131,19 +7131,19 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -7383,13 +7383,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7427,13 +7427,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7476,13 +7476,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7505,21 +7505,6 @@ ADMX Info:
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
-
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy turns on Find My Device feature.  
-        
-<p style="margin-left: 20px">When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com.  
-
-<p style="margin-left: 20px">When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work.  
-
-
-
-
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
 <a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
 
 <!--StartSKU-->
@@ -7534,13 +7519,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7579,13 +7564,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7622,13 +7607,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7667,13 +7652,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7731,13 +7716,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7774,13 +7759,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -7817,13 +7802,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -7862,13 +7847,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -7914,13 +7899,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -8002,13 +7987,13 @@ The Windows welcome experience feature introduces onboard users to Windows; for 
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -8041,13 +8026,13 @@ Enables or disables Windows Tips / soft landing.
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -8085,13 +8070,13 @@ Enables or disables Windows Tips / soft landing.
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -11940,13 +11925,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -11979,13 +11964,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -12018,13 +12003,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -12065,13 +12050,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -12106,13 +12091,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12148,13 +12133,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12209,13 +12194,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12267,13 +12252,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12301,13 +12286,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12344,13 +12329,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12378,13 +12363,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12412,13 +12397,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12456,13 +12441,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12490,13 +12475,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12524,13 +12509,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12558,13 +12543,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12760,13 +12745,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12801,13 +12786,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -12842,13 +12827,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12884,13 +12869,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12926,13 +12911,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12960,13 +12945,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -12994,13 +12979,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13028,13 +13013,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13070,13 +13055,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13104,13 +13089,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13138,13 +13123,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13172,13 +13157,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13214,13 +13199,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13248,13 +13233,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13282,13 +13267,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13316,13 +13301,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13358,13 +13343,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13392,13 +13377,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13426,13 +13411,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13460,13 +13445,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13502,13 +13487,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13536,13 +13521,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13570,13 +13555,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13604,13 +13589,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13646,13 +13631,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13680,13 +13665,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13714,13 +13699,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13748,13 +13733,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13790,13 +13775,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13824,13 +13809,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13858,13 +13843,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13892,13 +13877,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13934,13 +13919,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -13968,13 +13953,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14002,13 +13987,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14036,13 +14021,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14078,13 +14063,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14112,13 +14097,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14146,13 +14131,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14180,13 +14165,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14222,13 +14207,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14256,13 +14241,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14290,13 +14275,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14324,13 +14309,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14366,13 +14351,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14400,13 +14385,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14434,13 +14419,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14468,13 +14453,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14510,13 +14495,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14544,13 +14529,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14578,13 +14563,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14612,13 +14597,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14654,13 +14639,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14688,13 +14673,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14722,13 +14707,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14756,13 +14741,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14790,13 +14775,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14824,13 +14809,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14858,13 +14843,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14892,13 +14877,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14934,13 +14919,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -14968,13 +14953,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -15002,13 +14987,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -15036,13 +15021,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15078,13 +15063,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15112,13 +15097,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15146,13 +15131,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15180,13 +15165,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15224,13 +15209,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15258,13 +15243,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15292,13 +15277,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -15326,13 +15311,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -15368,13 +15353,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -15402,13 +15387,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -15436,13 +15421,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -15836,13 +15821,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -15881,13 +15866,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -15922,13 +15907,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -15963,13 +15948,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16004,13 +15989,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16043,13 +16028,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16086,13 +16071,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16129,13 +16114,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16168,13 +16153,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16213,13 +16198,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16252,13 +16237,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -16300,13 +16285,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16345,13 +16330,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16384,13 +16369,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16427,13 +16412,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -16472,13 +16457,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16520,13 +16505,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16559,13 +16544,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16609,13 +16594,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -16656,13 +16641,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16695,13 +16680,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16734,13 +16719,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -16773,13 +16758,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -16816,13 +16801,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -16859,13 +16844,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -16902,13 +16887,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -16945,13 +16930,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -16984,13 +16969,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -17027,13 +17012,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -17066,13 +17051,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -17107,13 +17092,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -17171,13 +17156,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -17210,13 +17195,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -17249,13 +17234,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -17288,13 +17273,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -17327,13 +17312,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -17758,13 +17743,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -17827,13 +17812,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -17873,13 +17858,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -17914,13 +17899,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -17959,13 +17944,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -18009,13 +17994,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -18057,13 +18042,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -18098,13 +18083,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -18194,13 +18179,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -18253,13 +18238,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18334,13 +18319,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -18370,13 +18355,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18415,13 +18400,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18460,13 +18445,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18505,13 +18490,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18550,13 +18535,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18595,13 +18580,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18640,13 +18625,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18685,13 +18670,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18746,13 +18731,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18791,13 +18776,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18834,13 +18819,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18877,13 +18862,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -18936,13 +18921,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -19000,13 +18985,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -19045,13 +19030,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -19100,13 +19085,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -19143,13 +19128,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -19190,13 +19175,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -19280,13 +19265,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -19323,13 +19308,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -19366,13 +19351,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -19406,13 +19391,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -19509,13 +19494,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -19557,13 +19542,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -19648,13 +19633,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -19692,13 +19677,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -19734,13 +19719,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -19787,13 +19772,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -19838,13 +19823,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -19887,13 +19872,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -19931,13 +19916,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -19967,13 +19952,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
 
@@ -20009,13 +19994,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -20045,13 +20030,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20090,13 +20075,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20178,13 +20163,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20231,13 +20216,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20297,13 +20282,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -20336,13 +20321,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20401,13 +20386,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -20459,13 +20444,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20500,13 +20485,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20541,13 +20526,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20586,13 +20571,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20627,13 +20612,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -20664,13 +20649,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -20704,13 +20689,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -20743,13 +20728,13 @@ Example
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -20827,13 +20812,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -20871,13 +20856,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -20908,13 +20893,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -20945,13 +20930,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -20986,13 +20971,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
 
@@ -21034,13 +21019,13 @@ ADMX Info:
 	<th>MobileEnterprise</th>
 </tr>
 <tr>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="check mark" src="images/CheckMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
-	<td><img alt="cross mark" src="images/CrossMark.png"></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -21057,6 +21042,7 @@ ADMX Info:
 
 
 
+
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -21065,13 +21051,10 @@ ADMX Info:
 <!--StartIoTCore-->
 ## IoT Core Support  
 
-[ApplicationDefaults/DefaultAssociationsConfiguration](#applicationdefaults-defaultassociationsconfiguration)  
 [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
 [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
-[Authentication/AllowSecondaryAuthenticationDevice](#authentication-allowsecondaryauthenticationdevice)  
 [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
 [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
-[Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)  
 [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
 [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
 [Browser/AllowAutofill](#browser-allowautofill)  
@@ -21093,26 +21076,16 @@ ADMX Info:
 [Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
 [Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
 [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
-[Location/EnableLocation](#location-enablelocation)  
 [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
 [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
 [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
 [System/AllowEmbeddedMode](#system-allowembeddedmode)  
-[System/AllowFontProviders](#system-allowfontproviders)  
 [System/AllowStorageCard](#system-allowstoragecard)  
 [System/TelemetryProxy](#system-telemetryproxy)  
 [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
 [Update/AllowUpdateService](#update-allowupdateservice)  
-[Update/BranchReadinessLevel](#update-branchreadinesslevel)  
-[Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)  
-[Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)  
-[Update/ExcludeWUDriversInQualityUpdate](#update-excludewudriversinqualityupdate)  
 [Update/PauseDeferrals](#update-pausedeferrals)  
-[Update/PauseFeatureUpdates](#update-pausefeatureupdates)  
-[Update/PauseFeatureUpdatesStartTime](#update-PauseFeatureUpdatesStartTime)  
-[Update/PauseQualityUpdates](#update-pausequalityupdates)  
-[Update/PauseQualityUpdatesStartTime](#update-PauseQualityUpdatesStartTime)  
 [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
 [Update/RequireUpdateApproval](#update-requireupdateapproval)  
 [Update/ScheduledInstallDay](#update-scheduledinstallday)  
@@ -21121,11 +21094,7 @@ ADMX Info:
 [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
 [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 [Wifi/AllowWiFi](#wifi-allowwifi)  
-[Wifi/AllowWiFiDirect](#wifi-allowwifidirect)  
 [Wifi/WLANScanMode](#wifi-wlanscanmode)  
-[WirelessDisplay/AllowProjectionFromPC](#wirelessdisplay-allowprojectionfrompc)  
-[WirelessDisplay/AllowProjectionFromPCOverInfrastructure](#wirelessdisplay-allowprojectionfrompcoverinfrastructure)  
-[WirelessDisplay/AllowProjectionToPCOverInfrastructure](#wirelessdisplay-Allowprojectiontopcoverinfrastructure)  
 <!--EndIoTCore-->
 
 <!--StartEAS-->
@@ -21152,6 +21121,7 @@ ADMX Info:
 [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
 [Wifi/AllowWiFi](#wifi-allowwifi)  
 <!--EndEAS-->
+
 
 
 ## Examples
