@@ -25,6 +25,13 @@ Understand what data fields are exposed as part of the alerts API and how they m
 
 
 ##	Alert API fields and portal mapping
+The following table lists the available fields exposed in the alerts API payload. It shows examples for the populated values and a reference on how data is reflected on the portal.
+
+
+The ArcSight field column contains the default mapping between the Windows Defender ATP fields and the built-in fields in ArcSight.
+
+The mapping file is available for download when you enable the SIEM integration feature in the portal and can be modified to match your organization needs.
+
 Field numbers match the numbers in the images below.
 
 <table style="table-layout:fixed;width:100%" >
@@ -263,9 +270,7 @@ Field numbers match the numbers in the images below.
 </table>
 
 
-![Image of alert with numbers](images/atp-siem-mapping1.png)
-
-![Image of alert with numbers](images/1.png)
+![Image of alert with numbers](images/atp-alert-page.png)
 
 ![Image of alert details pane with numbers](images/atp-siem-mapping13.png)
 
