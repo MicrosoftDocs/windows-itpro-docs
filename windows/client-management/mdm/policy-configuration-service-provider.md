@@ -21046,6 +21046,12 @@ ADMX Info:
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
+
+Footnote:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+
 <!--EndPolicies-->
 
 <!--StartIoTCore-->
