@@ -21,29 +21,14 @@ The TPM Services Group Policy settings are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-| Setting         | Windows 10, version 1607 and Windows Server 2016 | Windows 10, version 1511 and Windows 10, version 1507 |
-|-----------------|--------------------------------------------------|-------------------------------------------------------|
-| [Turn on TPM backup to Active Directory Domain Services](#turn-on-tpm-backup-to-active-directory-domain-services) |           | X      |
-| [Configure the list of blocked TPM commands](#configure-the-list-of-blocked-tpm-commands)              | X         | X      |
-| [Ignore the default list of blocked TPM commands](#ignore-the-default-list-of-blocked-tpm-commands)          | X         | X      |
-| [Ignore the local list of blocked TPM commands](#ignore-the-local-list-of-blocked-tpm-commands)            | X         | X      |
-| [Configure the level of TPM owner authorization information available to the operating system](#configure-the-level-of-tpm-owner-authorization-information-available-to-the-operating-system) | X         | X      |
-| [Standard User Lockout Duration](#standard-user-lockout-duration)                           | X         | X      |
-| [Standard User Individual Lockout Threshold](#standard-user-individual-lockout-threshold)               | X         | X      |
-| [Standard User Total Lockout Threshold](#standard-user-total-lockout-threshold)                         | X         | X      |
+### Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0
 
-### Turn on TPM backup to Active Directory Domain Services
+Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. Setting this policy will take effect only if: a) the TPM was originally prepared using a version of Windows after Windows 10 Version 1607, and b) the System has a TPM 2.0. 
 
-This policy setting allows you to manage the Active Directory Domain Services (AD DS) backup of TPM owner information.
+Note that enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this group policy. The only way for the disabled setting of this policy to take effect on a system where it was once enabled is to: 
+a) disable it from group policy and b) clear the TPM on the system.
 
-TPM owner information includes a cryptographic hash of the TPM owner password. Certain TPM commands can be run only by the TPM owner. This hash authorizes the TPM to run these commands.
-
-> [!IMPORTANT]
-> The **Turn on TPM backup to Active Directory Domain Services** is not available in the Windows 10, version 1607 and Windows Server 2016 and later versions of the ADMX files.
-
-If you enable this policy setting, TPM owner information will be automatically and silently backed up to AD DS when you use Windows to set or change a TPM owner password. When this policy setting is enabled, a TPM owner password cannot be set or changed unless the computer is connected to the domain and the AD DS backup succeeds.
-
-If you disable or do not configure this policy setting, TPM owner information will not be backed up to AD DS.
+**The following Group Policy settings were introduced in Window 10:**
 
 ### Configure the list of blocked TPM commands
 
@@ -163,6 +148,13 @@ An authorization failure occurs each time a standard user sends a command to the
 An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the TPM Management Console (tpm.msc). Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
 
 If you do not configure this policy setting, a default value of 9 is used. A value of zero means that the operating system will not allow standard users to send commands to the TPM, which might cause an authorization failure.
+
+> [!IMPORTANT]
+> The **Turn on TPM backup to Active Directory Domain Services** is not available in the Windows 10, version 1607 and Windows Server 2016 and later versions of the ADMX files.
+
+If you enable this policy setting, TPM owner information will be automatically and silently backed up to AD DS when you use Windows to set or change a TPM owner password. When this policy setting is enabled, a TPM owner password cannot be set or changed unless the computer is connected to the domain and the AD DS backup succeeds.
+
+If you disable or do not configure this policy setting, TPM owner information will not be backed up to AD DS.
 
 ## Related topics
 
