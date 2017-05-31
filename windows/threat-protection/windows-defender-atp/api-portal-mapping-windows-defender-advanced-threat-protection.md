@@ -278,9 +278,9 @@ Field numbers match the numbers in the images below.
 
 ![Image of alert timeline with numbers](images/atp-siem-mapping4.png)
 
-![Image browser URL](images/atp-mapping5.png)
-
 ![Image machine view](images/atp-mapping6.png)
+
+![Image browser URL](images/atp-mapping5.png)
 
 ![Image actor alert](images/atp-mapping7.png)
 
