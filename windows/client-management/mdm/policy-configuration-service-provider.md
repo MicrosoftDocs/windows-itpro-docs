@@ -21065,94 +21065,93 @@ ADMX Info:
 <!--StartIoTCore-->
 ## IoT Core Support  
 
-<a href="applicationdefaults-defaultassociationsconfiguration">ApplicationDefaults/DefaultAssociationsConfiguration</a>  
-<a href="applicationmanagement-allowdeveloperunlock">ApplicationManagement/AllowDeveloperUnlock</a>  
-<a href="authentication-allowfastreconnect">Authentication/AllowFastReconnect</a>  
-<a href="authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>  
-<a href="bluetooth-allowadvertising">Bluetooth/AllowAdvertising</a>  
-<a href="bluetooth-allowdiscoverablemode">Bluetooth/AllowDiscoverableMode</a>  
-<a href="bluetooth-allowprepairing">Bluetooth/AllowPrepairing</a>  
-<a href="bluetooth-localdevicename">Bluetooth/LocalDeviceName</a>  
-<a href="bluetooth-servicesallowedlist">Bluetooth/ServicesAllowedList</a>  
-<a href="browser-allowautofill">Browser/AllowAutofill</a>  
-<a href="browser-allowbrowser">Browser/AllowBrowser</a>  
-<a href="browser-allowcookies">Browser/AllowCookies</a>  
-<a href="browser-allowdonottrack">Browser/AllowDoNotTrack</a>  
-<a href="browser-allowinprivate">Browser/AllowInPrivate</a>  
-<a href="browser-allowpasswordmanager">Browser/AllowPasswordManager</a>  
-<a href="browser-allowpopups">Browser/AllowPopups</a>  
-<a href="browser-allowsearchsuggestionsinaddressbar">Browser/AllowSearchSuggestionsinAddressBar</a>  
-<a href="browser-enterprisemodesitelist">Browser/EnterpriseModeSiteList</a>  
-<a href="browser-enterprisesitelistserviceurl">Browser/EnterpriseSiteListServiceUrl</a>  
-<a href="browser-sendintranettraffictointernetexplorer">Browser/SendIntranetTraffictoInternetExplorer</a>  
-<a href="camera-allowcamera">Camera/AllowCamera</a>  
-<a href="connectivity-allowbluetooth">Connectivity/AllowBluetooth</a>  
-<a href="connectivity-allowcellulardataroaming">Connectivity/AllowCellularDataRoaming</a>  
-<a href="connectivity-allownfc">Connectivity/AllowNFC</a>  
-<a href="connectivity-allowusbconnection">Connectivity/AllowUSBConnection</a>  
-<a href="connectivity-allowvpnovercellular">Connectivity/AllowVPNOverCellular</a>  
-<a href="connectivity-allowvpnroamingovercellular">Connectivity/AllowVPNRoamingOverCellular</a>  
-<a href="dataprotection-allowdirectmemoryaccess">DataProtection/AllowDirectMemoryAccess</a>  
-<a href="location-enablelocation">Location/EnableLocation</a>  
-<a href="security-allowaddprovisioningpackage">Security/AllowAddProvisioningPackage</a>  
-<a href="security-allowremoveprovisioningpackage">Security/AllowRemoveProvisioningPackage</a>  
-<a href="security-requiredeviceencryption">Security/RequireDeviceEncryption</a>  
-<a href="security-requireprovisioningpackagesignature">Security/RequireProvisioningPackageSignature</a>  
-<a href="system-allowembeddedmode">System/AllowEmbeddedMode</a>  
-<a href="system-allowfontproviders">System/AllowFontProviders</a>  
-<a href="system-allowstoragecard">System/AllowStorageCard</a>  
-<a href="system-telemetryproxy">System/TelemetryProxy</a>  
-<a href="update-allownonmicrosoftsignedupdate">Update/AllowNonMicrosoftSignedUpdate</a>  
-<a href="update-allowupdateservice">Update/AllowUpdateService</a>  
-<a href="update-branchreadinesslevel">Update/BranchReadinessLevel</a>  
-<a href="update-deferfeatureupdatesperiodindays">Update/DeferFeatureUpdatesPeriodInDays</a>  
-<a href="update-deferqualityupdatesperiodindays">Update/DeferQualityUpdatesPeriodInDays</a>  
-<a href="update-excludewudriversinqualityupdate">Update/ExcludeWUDriversInQualityUpdate</a>  
-<a href="update-pausedeferrals">Update/PauseDeferrals</a>  
-<a href="update-pausefeatureupdates">Update/PauseFeatureUpdates</a>  
-<a href="update-PauseFeatureUpdatesStartTime">Update/PauseFeatureUpdatesStartTime</a>  
-<a href="update-pausequalityupdates">Update/PauseQualityUpdates</a>  
-<a href="update-PauseQualityUpdatesStartTime">Update/PauseQualityUpdatesStartTime</a>  
-<a href="update-requiredeferupgrade">Update/RequireDeferUpgrade</a>  
-<a href="update-requireupdateapproval">Update/RequireUpdateApproval</a>  
-<a href="update-scheduledinstallday">Update/ScheduledInstallDay</a>  
-<a href="update-scheduledinstalltime">Update/ScheduledInstallTime</a>  
-<a href="update-updateserviceurl">Update/UpdateServiceUrl</a>  
-<a href="wifi-allowautoconnecttowifisensehotspots">Wifi/AllowAutoConnectToWiFiSenseHotspots</a>  
-<a href="wifi-allowinternetsharing">Wifi/AllowInternetSharing</a>  
-<a href="wifi-allowwifi">Wifi/AllowWiFi</a>  
-<a href="wifi-allowwifidirect">Wifi/AllowWiFiDirect</a>  
-<a href="wifi-wlanscanmode">Wifi/WLANScanMode</a>  
-<a href="wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>  
-<a href="wirelessdisplay-allowprojectionfrompcoverinfrastructure">WirelessDisplay/AllowProjectionFromPCOverInfrastructure</a>  
-<a href="wirelessdisplay-Allowprojectiontopcoverinfrastructure">WirelessDisplay/AllowProjectionToPCOverInfrastructure</a>  
+[ApplicationDefaults/DefaultAssociationsConfiguration](#applicationdefaults-defaultassociationsconfiguration)  
+[ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
+[Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
+[Authentication/AllowSecondaryAuthenticationDevice](#authentication-allowsecondaryauthenticationdevice)  
+[Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
+[Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
+[Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)  
+[Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
+[Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
+[Browser/AllowAutofill](#browser-allowautofill)  
+[Browser/AllowBrowser](#browser-allowbrowser)  
+[Browser/AllowCookies](#browser-allowcookies)  
+[Browser/AllowDoNotTrack](#browser-allowdonottrack)  
+[Browser/AllowInPrivate](#browser-allowinprivate)  
+[Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
+[Browser/AllowPopups](#browser-allowpopups)  
+[Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
+[Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
+[Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
+[Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
+[Camera/AllowCamera](#camera-allowcamera)  
+[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+[Connectivity/AllowNFC](#connectivity-allownfc)  
+[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+[Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
+[Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
+[DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
+[Location/EnableLocation](#location-enablelocation)  
+[Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
+[Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
+[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+[Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
+[System/AllowEmbeddedMode](#system-allowembeddedmode)  
+[System/AllowFontProviders](#system-allowfontproviders)  
+[System/AllowStorageCard](#system-allowstoragecard)  
+[System/TelemetryProxy](#system-telemetryproxy)  
+[Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
+[Update/AllowUpdateService](#update-allowupdateservice)  
+[Update/BranchReadinessLevel](#update-branchreadinesslevel)  
+[Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)  
+[Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)  
+[Update/ExcludeWUDriversInQualityUpdate](#update-excludewudriversinqualityupdate)  
+[Update/PauseDeferrals](#update-pausedeferrals)  
+[Update/PauseFeatureUpdates](#update-pausefeatureupdates)  
+[Update/PauseFeatureUpdatesStartTime](#update-PauseFeatureUpdatesStartTime)  
+[Update/PauseQualityUpdates](#update-pausequalityupdates)  
+[Update/PauseQualityUpdatesStartTime](#update-PauseQualityUpdatesStartTime)  
+[Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
+[Update/RequireUpdateApproval](#update-requireupdateapproval)  
+[Update/ScheduledInstallDay](#update-scheduledinstallday)  
+[Update/ScheduledInstallTime](#update-scheduledinstalltime)  
+[Update/UpdateServiceUrl](#update-updateserviceurl)  
+[Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
+[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+[Wifi/AllowWiFi](#wifi-allowwifi)  
+[Wifi/AllowWiFiDirect](#wifi-allowwifidirect)  
+[Wifi/WLANScanMode](#wifi-wlanscanmode)  
+[WirelessDisplay/AllowProjectionFromPC](#wirelessdisplay-allowprojectionfrompc)  
+[WirelessDisplay/AllowProjectionFromPCOverInfrastructure](#wirelessdisplay-allowprojectionfrompcoverinfrastructure)  
+[WirelessDisplay/AllowProjectionToPCOverInfrastructure](#wirelessdisplay-Allowprojectiontopcoverinfrastructure)  
 <!--EndIoTCore-->
 
 <!--StartEAS-->
 ## Can be set using Exchange Active Sync (EAS)  
 
-<a href="browser-allowbrowser">Browser/AllowBrowser</a>  
-<a href="camera-allowcamera">Camera/AllowCamera</a>  
-<a href="connectivity-allowbluetooth">Connectivity/AllowBluetooth</a>  
-<a href="connectivity-allowcellulardataroaming">Connectivity/AllowCellularDataRoaming</a>  
-<a href="connectivity-allowusbconnection">Connectivity/AllowUSBConnection</a>  
-<a href="devicelock-allowsimpledevicepassword">DeviceLock/AllowSimpleDevicePassword</a>  
-<a href="devicelock-alphanumericdevicepasswordrequired">DeviceLock/AlphanumericDevicePasswordRequired</a>  
-<a href="devicelock-devicepasswordenabled">DeviceLock/DevicePasswordEnabled</a>  
-<a href="devicelock-devicepasswordexpiration">DeviceLock/DevicePasswordExpiration</a>  
-<a href="devicelock-devicepasswordhistory">DeviceLock/DevicePasswordHistory</a>  
-<a href="devicelock-maxdevicepasswordfailedattempts">DeviceLock/MaxDevicePasswordFailedAttempts</a>  
-<a href="devicelock-maxinactivitytimedevicelock">DeviceLock/MaxInactivityTimeDeviceLock</a>  
-<a href="devicelock-mindevicepasswordcomplexcharacters">DeviceLock/MinDevicePasswordComplexCharacters</a>  
-<a href="devicelock-mindevicepasswordlength">DeviceLock/MinDevicePasswordLength</a>  
-<a href="search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>  
-<a href="security-requiredeviceencryption">Security/RequireDeviceEncryption</a>  
-<a href="system-allowstoragecard">System/AllowStorageCard</a>  
-<a href="system-telemetryproxy">System/TelemetryProxy</a>  
-<a href="wifi-allowinternetsharing">Wifi/AllowInternetSharing</a>  
-<a href="wifi-allowwifi">Wifi/AllowWiFi</a>  
+[Browser/AllowBrowser](#browser-allowbrowser)  
+[Camera/AllowCamera](#camera-allowcamera)  
+[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+[DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+[DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+[DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+[DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
+[DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+[DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+[DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+[DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+[DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
+[Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+[System/AllowStorageCard](#system-allowstoragecard)  
+[System/TelemetryProxy](#system-telemetryproxy)  
+[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+[Wifi/AllowWiFi](#wifi-allowwifi)  
 <!--EndEAS-->
-
 
 
 ## Examples
