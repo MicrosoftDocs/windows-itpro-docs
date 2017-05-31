@@ -22,9 +22,9 @@ Audit Other Object Access Events allows you to monitor operations with scheduled
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                           |
 |-------------------|-----------------|-----------------|------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing first of all because of scheduled tasks events.<br>We recommend Failure auditing to get events about possible ICPM DoS attack. |
-| Member Server     | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing first of all because of scheduled tasks events.<br>We recommend Failure auditing to get events about possible ICPM DoS attack. |
-| Workstation       | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing first of all because of scheduled tasks events.<br>We recommend Failure auditing to get events about possible ICPM DoS attack. |
+| Domain Controller | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing first of all because of scheduled tasks events.<br>We recommend Failure auditing to get events about possible ICMP DoS attack. |
+| Member Server     | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing first of all because of scheduled tasks events.<br>We recommend Failure auditing to get events about possible ICMP DoS attack. |
+| Workstation       | Yes             | Yes             | Yes              | Yes              | We recommend Success auditing first of all because of scheduled tasks events.<br>We recommend Failure auditing to get events about possible ICMP DoS attack. |
 
 **Events List:**
 
