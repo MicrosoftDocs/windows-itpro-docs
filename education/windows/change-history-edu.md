@@ -12,6 +12,12 @@ author: CelesteDG
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## May 2017
+
+| New or changed topic | Description |
+| --- | ---- |
+| [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education. |
+
 ## RELEASE: Windows 10, version 1703 (Creators Update)
 
 | New or changed topic | Description|
@@ -35,7 +41,7 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 
 | New or changed topic | Description |
 | --- | --- |
-| [Upgrade Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md) | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. |
+| [Upgrade Windows 10 Pro to Pro Education from Windows Store for Business] | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. As of May 2017, this topic has been replaced with [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md). |
 
 ## November 2016
 

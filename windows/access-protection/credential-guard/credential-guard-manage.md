@@ -97,7 +97,7 @@ If you enable Credential Guard by using Group Policy, the steps to enable Window
 You can also enable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.0.ps1 -Enable -AutoReboot
+DG_Readiness_Tool_v3.2.ps1 -Enable -AutoReboot
 ```
 
 ### Credential Guard deployment in virtual machines
@@ -126,7 +126,7 @@ You can view System Information to check that Credential Guard is running on a P
 You can also check that Credential Guard is running by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.0.ps1 -Ready
+DG_Readiness_Tool_v3.2.ps1 -Ready
 ```
 
 > [!NOTE]
@@ -194,7 +194,7 @@ For more info on virtualization-based security and Device Guard, see [Device Gua
 You can also disable Credential Guard by using the [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337).
 
 ```
-DG_Readiness_Tool_v3.0.ps1 -Disable -AutoReboot
+DG_Readiness_Tool_v3.2.ps1 -Disable -AutoReboot
 ```
 
 #### Disable Credential Guard for a virtual machine

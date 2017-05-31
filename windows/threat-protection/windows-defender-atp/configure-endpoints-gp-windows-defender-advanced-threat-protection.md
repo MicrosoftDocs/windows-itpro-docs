@@ -28,7 +28,7 @@ localizationpriority: high
 ## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint Management** on the **Navigation pane**.
+    a.  Click **Endpoint management** on the **Navigation pane**.
 
     b.  Select **Group Policy**, click **Download package** and save the .zip file.
 
@@ -74,6 +74,31 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 >[!NOTE]
 > If you don't set a value, the default value is to enable sample collection.
 
+### Configure reporting frequency settings
+Windows Defender ATP reporting frequency was tested over a large number of machines and is optimized to provide a recommended balance between speed and performance.
+
+In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
+
+> [!NOTE]
+> Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
+
+For each endpoint, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
+
+The configuration is set through the following registry key entry:
+
+```
+Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Name: "latency"
+Value: Normal or Expedite
+```
+Where:<br>
+Key type is a string. <br>
+Possible values are:
+- Normal - sets reporting frequency from the endpoint to Normal mode for the optimal speed and performance balance
+- Expedite - sets reporting frequency from the endpoint to Expedite mode
+
+The default value in case the registry key doesn’t exist is Normal.
+
 ### Offboard endpoints
 For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
@@ -82,7 +107,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint Management** on the **Navigation pane**.
+    a. Click **Endpoint management** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 
@@ -104,16 +129,20 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 9.	Click **OK** and close any open GPMC windows.
 
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+
+
 ## Monitor endpoint configuration
 With Group Policy there isn’t an option to monitor deployment of policies on the endpoints. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor endpoints using the portal
 1.	Go to the [Windows Defender ATP portal](https://securitycenter.windows.com/).
-2.	Click **Machines view**.
+2.	Click **Machines list**.
 3.	Verify that endpoints are appearing.
 
 > [!NOTE]
-> It can take several days for endpoints to start showing on the **Machines view**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
+> It can take several days for endpoints to start showing on the **Machines list**. This includes the time it takes for the policies to be distributed to the endpoint, the time it takes before the user logs on, and the time it takes for the endpoint to start reporting.
 
 
 ## Related topics

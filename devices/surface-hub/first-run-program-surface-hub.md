@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: surfacehub
-author: TrudyHa
+author: jdeckerms
 localizationpriority: medium
 ---
 
@@ -34,7 +34,8 @@ The normal procedure goes through six steps:
 
 Each of these sections also contains information about paths you might take when something is different. For example, most Surface Hubs will use a wired network connection, but some of them will be set up with wireless instead. Details are described where appropriate.
 
->**Note**  You should have the separate keyboard that came with your Surface Hub set up and ready before beginning. See the Surface Hub Setup Guide for details.
+>[!NOTE]
+>You should have the separate keyboard that came with your Surface Hub set up and ready before beginning. See the Surface Hub Setup Guide for details.
 
  
 
@@ -43,9 +44,10 @@ Each of these sections also contains information about paths you might take when
 
 This is the first screen you'll see when you power up the Surface Hub for the first time. It's where you input localization information for your device.
 
->**Note**  This is also where you begin the optional process of deploying a provisioning package. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) if that's what you're doing.
+>[!NOTE]
+>This is also where you begin the optional process of deploying a provisioning package. See [Create provisioning packages](provisioning-packages-for-certificates-surface-hub.md) if that's what you're doing.
 
- 
+ Select a language and the initial setup options are displayed.
 
 ![Image showing ICD options checklist.](images/setuplocale.png)
 
@@ -82,7 +84,8 @@ This screen is shown only if the device fails to detect a wired network. If you 
 
 -   You can select one of the wireless networks shown. If the network is secured, you'll be taken to a login page. See [Wireless network setup](#wireless) for details.
 -   Click **Skip this step** to skip connecting to a network. You'll be taken to the [Set up for you page](#set-up-for-you).
-    **Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+    >[!NOTE]
+    >If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including system updates and email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
      
 
@@ -142,7 +145,8 @@ When you click **Next**, the device will attempt to connect to the proxy server.
 
 You can skip connecting to a network by selecting **Skip this step**. You'll be taken to the [Set up for you page](#set-up-for-you).
 
->**Note**  If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
+>[!NOTE]
+>If you skip this, the device will not have a network connection, and nothing that requires a network connection will work on your Surface Hub, including things like email and calendar synchronization. You can connect to a wireless network later using Settings (see [Wireless network managment](wireless-network-management-for-surface-hub.md)).
 
  
 
@@ -168,7 +172,8 @@ The settings shown on the page have already been made, and can't be changed unti
 
 On this page, the Surface Hub will ask for credentials for the device account that you previously configured. (See [Create and test a device account](create-and-test-a-device-account-surface-hub.md).) The Surface Hub will attempt to discover various properties of the account, and may ask for more information on another page if it does not succeed.
 
->**Note**  This section does not cover specific errors that can happen during first run. See [Troubleshoot Surface Hub](troubleshoot-surface-hub.md) for more information on errors.
+>[!NOTE]
+>This section does not cover specific errors that can happen during first run. See [Troubleshoot Surface Hub](troubleshoot-surface-hub.md) for more information on errors.
 
 
 ![Image showing Enter device account info page.](images/setupdeviceacct.png)
@@ -298,6 +303,9 @@ While either of the names can be changed later, keep in mind that:
 -   The friendly name should be recognizable and different so that people can distinguish one Surface Hub from another when trying to wirelessly connect.
 -   If you decide to domain join the device, the device name must not be the same as any other device on the account’s Active Directory domain. The device can't join the domain if it is using the same name as another domain-joined device.
 
+>[!NOTE]
+>If you want to enable [Miracast over Infrastructure](miracast-over-infrastructure.md), the device name needs to be discoverable via DNS. You can achieve this by either allowing your Surface Hub to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the Surface Hub's device name.
+
 ## <a href="" id="setup-admins"></a>Set up admins for this device page
 
 
@@ -305,7 +313,8 @@ On this page, you will choose from several options for how you want to set up ad
 
 Because every Surface Hub can be used by any number of authenticated employees, settings are locked down so that they can't change from session to session. Only admins can configure the settings on the device, and on this page, you’ll choose which type of admins have that privilege.
 
->**Note**  The purpose of this page is primarily to determine who can configure the device from the device’s UI; that is, who can actually visit a device, log in, open up the Settings app, and make changes to the Settings.
+>[!NOTE]
+>The purpose of this page is primarily to determine who can configure the device from the device’s UI; that is, who can actually visit a device, log in, open up the Settings app, and make changes to the Settings.
 
  
 
@@ -326,6 +335,9 @@ This is what happens when you choose an option.
 -   **Use Microsoft Azure Active Directory**
 
     Clicking this option allows you to join the device to Azure AD. Once you click **Next**, the device will restart to apply some settings, and then you’ll be taken to the [Use Microsoft Azure Active Directory](#use-microsoft-azure) page and asked to enter credentials that can allow you to join Azure AD. After joining, admins from the joined organization will be able to use the Settings app. The specific people that will be allowed depends on your Azure AD subscription and how you’ve configured the settings for your Azure AD organization.
+    
+    >[!IMPORTANT]
+    >If you join Surface Hub to Azure AD during first-run setup, single sign-on (SSO) for Office apps will not work properly. Users will have to sign in to each Office app individually.
 
 -   **Use Active Directory Domain Services**
 
@@ -337,7 +349,8 @@ This is what happens when you choose an option.
 
     Note that a local admin must have physical access to the Surface Hub to log in.
 
->**Note**  After you finish this process, you won't be able to change the device's admin option unless you reset the device.
+>[!NOTE]
+>After you finish this process, you won't be able to change the device's admin option unless you reset the device.
 
  
 
@@ -382,7 +395,7 @@ Once the device has been domain joined, you must specify a security group from t
 The following input is required:
 
 -   **Domain:** This is the fully qualified domain name (FQDN) of the domain that you want to join. A security group from this domain can be used to manage the device.
--   **User name:** The user name of an account that has sufficient permission to join the specified domain.
+-   **User name:** The user name of an account that has sufficient permission to join the specified domain. This account must be a computer object.
 -   **Password:** The password for the account.
 
 After the credentials are verified, you will be asked to type a security group name. This input is required.
@@ -395,7 +408,8 @@ Using the provided domain, account credentials from the [Use Active Directory Do
 
 If the join is successful, you'll see the **Enter a security group** page. When you click the **Select** button on this page, the device will search for the specified security group on your domain. If found, the group will be verified. Click **Finish** to complete the first run process.
 
->**Note**  If you domain join the Surface Hub, you can't unjoin the device without resetting it.
+>[!NOTE]
+>If you domain join the Surface Hub, you can't unjoin the device without resetting it.
 
  
 
@@ -420,7 +434,8 @@ This page will attempt to create a new admin account using the credentials that 
 ## <a href="" id="update-surface-hub"></a>Update the Surface Hub
 
 
->**Important**  Before you do the updates, make sure you read [Save your BitLocker key](save-bitlocker-key-surface-hub.md) in order to make sure you have a backup of the key.
+>[!IMPORTANT]
+>Before you do the updates, make sure you read [Save your BitLocker key](save-bitlocker-key-surface-hub.md) in order to make sure you have a backup of the key.
 
  
 
