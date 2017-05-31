@@ -1,15 +1,12 @@
 ---
 title: Get offline license
 description: The Get offline license operation retrieves the offline license information of a product from the Windows Store for Business.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 08DAD813-CF4D-42D6-A783-994A03AEE051
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Get offline license

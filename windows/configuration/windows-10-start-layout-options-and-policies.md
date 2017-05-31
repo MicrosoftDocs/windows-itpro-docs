@@ -64,7 +64,7 @@ There are three categories of apps that might be pinned to a taskbar:
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
  >[!NOTE]
- >The earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+ >We recommend using [the layoutmodification.xml method](configure-windows-10-taskbar.md) to configure taskbar options, rather than the earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file.
    
 The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 

@@ -1,15 +1,12 @@
 ---
 title: EnterpriseExt DDF
 description: EnterpriseExt DDF
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71BF81D4-FBEC-4B03-BF99-F7A5EDD4F91B
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # EnterpriseExt DDF

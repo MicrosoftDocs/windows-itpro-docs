@@ -1,15 +1,12 @@
 ---
 title: RemoteLock CSP
 description: RemoteLock CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # RemoteLock CSP

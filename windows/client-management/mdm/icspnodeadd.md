@@ -1,15 +1,12 @@
 ---
 title: ICSPNode Add
 description: ICSPNode Add
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5f03d350-c82b-4747-975f-385fd8b5b3a8
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # ICSPNode::Add

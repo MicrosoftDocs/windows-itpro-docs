@@ -1,15 +1,12 @@
 ---
 title: AllJoynManagement DDF
 description: AllJoynManagement DDF
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 540C2E60-A041-4749-A027-BBAF0BB046E4
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # AllJoynManagement DDF
