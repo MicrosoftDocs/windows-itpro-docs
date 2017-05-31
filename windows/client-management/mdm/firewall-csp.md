@@ -241,6 +241,6 @@ If not specified - a new rule is disabled by default.</p>
 <p style="margin-left: 20px">Specifies the friendly name of the rule. The string must not contain the "|" character.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="name" id="TBD"></a>**FirewallRules/_FirewallRuleName_/Name**
+<a href="name" id="name"></a>**FirewallRules/_FirewallRuleName_/Name**
 <p style="margin-left: 20px">Name of the rule.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
