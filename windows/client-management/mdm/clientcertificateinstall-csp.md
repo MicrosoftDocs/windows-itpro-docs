@@ -1,15 +1,12 @@
 ---
 title: ClientCertificateInstall CSP
 description: ClientCertificateInstall CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: B624EB73-2972-47F2-9D7E-826D641BF8A7
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # ClientCertificateInstall CSP

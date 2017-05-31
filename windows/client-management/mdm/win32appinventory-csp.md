@@ -1,15 +1,12 @@
 ---
 title: Win32AppInventory CSP
 description: Win32AppInventory CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: C0DEDD51-4EAD-4F8E-AEE2-CBE9658BCA22
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Win32AppInventory CSP

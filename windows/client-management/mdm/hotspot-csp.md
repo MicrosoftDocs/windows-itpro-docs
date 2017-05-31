@@ -1,15 +1,12 @@
 ---
 title: HotSpot CSP
 description: HotSpot CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ec49dec1-fa79-420a-a9a7-e86668b3eebf
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # HotSpot CSP

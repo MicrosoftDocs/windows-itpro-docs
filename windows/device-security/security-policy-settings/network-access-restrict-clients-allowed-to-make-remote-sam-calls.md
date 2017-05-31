@@ -1,4 +1,4 @@
----
+﻿---
 title: Network access - Restrict clients allowed to make remote calls to SAM
 description: Security policy setting that controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database.
 ms.prod: w10
@@ -6,7 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
+author: justinha
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM
@@ -23,64 +23,77 @@ author: brianlic-msft
 -   Windows Server 2008 R2 with [KB 4012218](https://support.microsoft.com/en-us/help/4012218/march-2017-preview-of-monthly-quality-rollup-for-windows-7-sp1-and-windows-server-2008-r2-sp1) installed
 
 
-The **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database. The setting was first supported by Windows 10 version 1607 and Windows Server 2016 (RTM) and can be configured on earlier Windows client and server operating systems by installing updates from the the KB articles listed in **Applies to** section of this topic. 
+The **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database and Active Directory. 
+The setting was first supported by Windows 10 version 1607 and Windows Server 2016 (RTM) and can be configured on earlier Windows client and server operating systems by installing updates from the the KB articles listed in **Applies to** section of this topic. 
 
-This topic describes the default values for this security policy setting in different versions of Windows, related events, and how to enable audit mode before constraining the security principals that are allowed to remotely enumerate users and groups in the SAM so that your environment remains secure without adversely impacting application compatibility. 
+This topic describes the default values for this security policy setting in different versions of Windows.
+By default, computers beginning with Windows 10 version 1607 and Windows Server 2016 are more restrictive than earlier versions of Windows. 
+This means that if you have a mix of computers, such as member servers that run both Windows Server 2016 and Windows Server 2012 R2, the servers that run Windows Server 2016 may fail to enumerate accounts by default where the servers that run Windows Server 2012 R2 succeed.
+
+This topic also covers related events, and how to enable audit mode before constraining the security principals that are allowed to remotely enumerate users and groups so that your environment remains secure without impacting application compatibility. 
 
 ## Reference
 
-The SAMRPC protocol makes it possible for a low privileged user to query a machine on a network for data. For example, a user can use SAMRPC to enumerate users, including privileged accounts such as local or domain administrators, or to enumerate groups and group memberships from the local SAM and Active Directory. This information can provide important context and serve as a starting point for an attacker to compromise a domain or networking environment. 
+The SAMRPC protocol makes it possible for a low privileged user to query a machine on a network for data. 
+For example, a user can use SAMRPC to enumerate users, including privileged accounts such as local or domain administrators, or to enumerate groups and group memberships from the local SAM and Active Directory. 
+This information can provide important context and serve as a starting point for an attacker to compromise a domain or networking environment. 
 
-To mitigate this risk, you can configure the **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting to force the security accounts manager (SAM) to do an access check against remote calls. The access check allows or denies remote RPC connections to SAM and Active Directory for users and groups that you define. 
+To mitigate this risk, you can configure the **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting to force the security accounts manager (SAM) to do an access check against remote calls. 
+The access check allows or denies remote RPC connections to SAM and Active Directory for users and groups that you define. 
 
-By default, the **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting is not defined. If you define it, you can edit the default Security Descriptor Definition Language (SDDL) string to explicitly allow or deny users and groups to make remote calls to the SAM. If the policy setting is left blank after the policy is defined, the policy is not enforced.   
+By default, the **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting is not defined. 
+If you define it, you can edit the default Security Descriptor Definition Language (SDDL) string to explicitly allow or deny users and groups to make remote calls to the SAM. 
+If the policy setting is left blank after the policy is defined, the policy is not enforced.   
 
-The default security descriptor on computers beginning with Windows 10 version 1607 and Windows Server 2016 allows only the local (built-in) Administrators group remote access to SAM on non-domain controllers, and allows Everyone access on domain controllers. You can edit the default security descriptor to allow or deny other users and groups, including the built-in Administrators.
+The default security descriptor on computers beginning with Windows 10 version 1607 and Windows Server 2016 allows only the local (built-in) Administrators group remote access to SAM on non-domain controllers, and allows Everyone access on domain controllers. 
+You can edit the default security descriptor to allow or deny other users and groups, including the built-in Administrators.
 
-The default security descriptor on computers that run earlier versions of Windows does not restrict any remote calls to SAM, but an administrator can edit the security descriptor to enforce restrictions. This less restrictive default allows for testing the impact of enabling restrictions on existing applications.
+The default security descriptor on computers that run earlier versions of Windows does not restrict any remote calls to SAM, but an administrator can edit the security descriptor to enforce restrictions. 
+This less restrictive default allows for testing the impact of enabling restrictions on existing applications.
 
-This means that if you have a mix of computers, such as servers that run both Windows Server 2016 and Windows Server 2012 R2, the servers that run Windows Server 2016 may fail to enumerate accounts by default where the servers that run Windows Server 2012 R2 succeed.
+## Policy and Registry Names
 
-## Possible values
--  Not defined
--  Defined, along with the security descriptor for users and groups who are allowed or denied remote access to local SAM and Active directory using SAMRPC. 
+|   |   |
+|----|---|
+| Policy Name | Network access: Restrict clients allowed to make remote calls to SAM |
+| Location | Computer Configuration\|Windows Settings\|Security Settings\|Local Policies\|Security Options |
+| Possible values | <br>- Not defined <br>- Defined, along with the security descriptor for users and groups who are allowed or denied to use SAMRPC to remotely access either the local SAM or Active Directory. |
+| Registry location | `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam` |
+| Registry type | REG_SZ |
+| Registry value | A string that will contain the SDDL of the security descriptor to be deployed. |
 
-## Location
+The Group Policy setting is only available on computers that run Windows Server 2016 or Windows 10, version 1607 and later. 
+This is the only option to configure this setting by using a user interface (UI).
 
-Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options
-
-This policy setting controls a string that will contain the SDDL of the security descriptor to be deployed to the following registry setting:
-
-HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam
+On computers that run earlier versions of Windows, you need to edit the registry setting directly or use Group Policy Preferences. 
+To avoid setting it manually in this case, you can configure the GPO itself on a computer that runs Windows Server 2016 or Windows 10, version 1607 or later and have it apply to all computers within the scope of the GPO because the same registry key exists on every computer after the corresponding KB is installed. 
 
 > [!NOTE] 
-This policy is implemented similarly to other Network access policies in that there is a single policy element at the registry path listed. There is no notion of a local policy versus an enterprise policy; there is just one policy setting and whichever writes last wins. For example, suppose a local administrator configures this setting as part of a local policy using the Local Security Policy snap-in (Secpol.msc), which edits that same registry path. If an enterprise administrator configures this setting as part of an enterprise GPO, that enterprise GPO will overwrite the same registry path. 
+> This policy is implemented similarly to other "Network access" policies in that there is a single policy element at the registry path listed. There is no notion of a local policy versus an enterprise policy; there is just one policy setting and whichever writes last wins. 
+
+> For example, suppose a local administrator configures this setting as part of a local policy using the Local Security Policy snap-in (Secpol.msc), which edits that same registry path. If an enterprise administrator configures this setting as part of an enterprise GPO, that enterprise GPO will overwrite the same registry path. 
 
 ## Default values
-Beginning with Windows 10, version 1607 and Windows Server 2016, computers have hard-coded and more restrictive default values than earlier versions of Windows. The different default values help strike a balance where recent Windows versions are more secure by default and older versions don’t undergo any disruptive behavior changes. Computers that run earlier versions of Windows do not perform any access check by default. That includes domain controllers and non-domain controllers. This allows administrators to test whether applying the same restriction (that is, granting READ_CONTROL access only to members of the local Administrators group) will cause compatibility problems for existing applications before implementing this security policy setting in a production environment. 
+Beginning with Windows 10, version 1607 and Windows Server 2016, computers have hard-coded and more restrictive default values than earlier versions of Windows. 
+The different default values help strike a balance where recent Windows versions are more secure by default and older versions don’t undergo any disruptive behavior changes. 
+Administrators can test whether applying the same restriction earlier versions of Windows will cause compatibility problems for existing applications before implementing this security policy setting in a production environment. 
 
 In other words, the hotfix in each KB article provides the necessary code and functionality, but you need to configure the restriction after you install the hotfix—no restrictions are enabled by default after the hotfix is installed on earlier versions of Windows.
 
-### Default values beginning with Windows 10 version 1607 and Windows Server 2016 
-The following default values apply to computers beginning with Windows Server 2016 and Windows 10, version 1607. The default security descriptor for non-domain controllers grants RC access (READ_CONTROL, also known as STANDARD_RIGHTS_READ) only to members of the local (built-in) Administrators group.
-
-
 | |Default SDDL	|Translated SDDL| Comments
 |---|---|---|---|
-|Domain controller (reading Active Directory|“”|-|Everyone has read permissions to preserve compatibility.
-|Non-domain controller|(O:SYG:SYD:(A;;RC;;;BA)| Owner: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>Primary group: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>DACL: <br>•	Revision: 0x02 <br>•	Size: 0x0020 <br>•	Ace Count: 0x001 <br>•	Ace[00]------------------------- AceType:0x00 <br> (ACCESS_ALLOWED_ACE_TYPE)<br> AceSize:0x0018 <br> InheritFlags:0x00 <br> Access Mask:0x00020000 <br> AceSid: BUILTIN\Administrators (Alias) (S-1-5-32-544) <br><br> SACL: Not present |Only members of the local (built-in) Administrators group get access.|
-
-### Default values for earlier versions of Windows
-
-The following sections explain how to enable audit only mode to test the restriction while using applications you plan to run. 
+|Windows Server 2016 domain controller (reading Active Directory)|“”|-|Everyone has read permissions to preserve compatibility.|
+|Earlier domain controller |-|-|No access check is performed by default.|
+|Windows 10, version 1607 non-domain controller|(O:SYG:SYD:(A;;RC;;;BA)| Owner: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>Primary group: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>DACL: <br>•	Revision: 0x02 <br>•	Size: 0x0020 <br>•	Ace Count: 0x001 <br>•	Ace[00]------------------------- <br> &nbsp;&nbsp;AceType:0x00 <br> &nbsp;&nbsp;(ACCESS\_ALLOWED_ACE_TYPE)<br> &nbsp;&nbsp;AceSize:0x0018 <br> &nbsp;&nbsp;InheritFlags:0x00 <br> &nbsp;&nbsp;Access Mask:0x00020000 <br> &nbsp;&nbsp;AceSid: BUILTIN\Administrators (Alias) (S-1-5-32-544) <br><br> &nbsp;&nbsp;SACL: Not present |Grants RC access (READ_CONTROL, also known as STANDARD_RIGHTS_READ) only to members of the local (built-in) Administrators group. |
+|Earlier non-domain controller |-|-|No access check is performed by default.|
 
 ## Policy management
 
-This section explains how to configure audit-only mode, how to analyze related events that are logged when the Network access: Restrict clients allowed to make remote calls to SAM security policy setting is enabled, and how to configure event throttling to prevent flooding the event log.
+This section explains how to configure audit-only mode, how to analyze related events that are logged when the **Network access: Restrict clients allowed to make remote calls to SAM** security policy setting is enabled, and how to configure event throttling to prevent flooding the event log.
 
 ### Audit only mode
 
-Audit only mode configures the SAM interface to do the access check against the currently configured security descriptor but will not fail the call if the access check fails. Instead, the call will be allowed, but the SAM interface will log an event describing what would have happened if the feature had been enabled. This provides administrators a way to test their applications before enabling the policy in production. Audit only mode is not configured by default. To configure it, add the following registry setting.
+Audit only mode configures the SAMRPC protocol to do the access check against the currently configured security descriptor but will not fail the call if the access check fails. Instead, the call will be allowed, but SAMRPC will log an event describing what would have happened if the feature had been enabled. This provides administrators a way to test their applications before enabling the policy in production. Audit only mode is not configured by default. To configure it, add the following registry setting.
 
 |Registry|Details|
 |---|---|
@@ -95,9 +108,7 @@ Audit only mode configures the SAM interface to do the access check against the 
 There are corresponding events that indicate when remote calls to the SAM are restricted, what accounts attempted to read from the SAM database, and more. The following workflow is recommended to identify applications that may be affected by restricting remote calls to SAM:
 1.	Dump event logs to a common share. 
 2.	Parse them with the [Events 16962 - 16969 Reader](https://gallery.technet.microsoft.com/Events-16962-16969-Reader-2eae5f1d) script. 
-3.	Look for the following events: <br>
-•	For domain controllers, events are logged in the Directory Services log in Event Viewer with event source Directory-Service-SAM (from Event ID 16962 to 16969, as listed in the following table). <br>
-•	For non-domain controllers, the same event IDs are logged in the System log with event source Directory-Service-SAM. 
+3.	Review Event IDs 16962 to 16969, as listed in the following table, in the System log with event source Directory-Service-SAM.
 4.	Identify which security contexts are enumerating users or groups in the SAM database. 
 5.	Prioritize the callers, determine if they should be allowed or not, then include the allowed callers in the SDDL string.
 

@@ -1,15 +1,12 @@
 ---
 title: Office DDF
 description: This topic shows the OMA DM device description framework (DDF) for the Office configuration service provider. DDF files are used only with OMA DM provisioning XML.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid:
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Office DDF

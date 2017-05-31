@@ -1,15 +1,12 @@
 ---
 title: AppLocker CSP
 description: AppLocker CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # AppLocker CSP
