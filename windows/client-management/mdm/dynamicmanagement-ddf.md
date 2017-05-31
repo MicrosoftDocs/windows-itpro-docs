@@ -1,15 +1,12 @@
 ---
 title: DynamicManagement DDF file
 description: DynamicManagement DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7e266db0-2fd9-4412-b428-4550f41a1738
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # DynamicManagement DDF file

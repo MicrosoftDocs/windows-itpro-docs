@@ -1,15 +1,12 @@
 ---
 title: RootCATrustedCertificates DDF file
 description: RootCATrustedCertificates DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 06D8787B-D3E1-4D4B-8A21-8045A8F85C1C
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # RootCATrustedCertificates DDF file

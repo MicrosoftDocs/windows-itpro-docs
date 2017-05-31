@@ -1,15 +1,12 @@
 ---
 title: Maps DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the Maps configuration service provider. This CSP was added in Windows 10, version 1511.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: EF22DBB6-0578-4FD0-B8A6-19DC03288FAF
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Maps DDF file

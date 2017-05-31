@@ -1,15 +1,12 @@
 ---
 title: APPLICATION configuration service provider
 description: APPLICATION configuration service provider
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0705b5e9-a1e7-4d70-a73d-7f758ffd8099
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # APPLICATION configuration service provider
