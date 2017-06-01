@@ -32,6 +32,9 @@ Update Compliance has the following requirements:
     <TR><TD>Online Crash Analysis	<TD>oca.telemetry.microsoft.com
     </TABLE>
 
+ 4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
+
+
 ## Add Update Compliance to Microsoft Operations Management Suite
 
 Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 

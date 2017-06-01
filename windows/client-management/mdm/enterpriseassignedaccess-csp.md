@@ -16,9 +16,8 @@ The EnterpriseAssignedAccess configuration service provider allows IT administra
 
 > **Note**   The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
 
- 
 
-For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](https://msdn.microsoft.com/library/windows/hardware/mt186983).
+To use an app to create a lockdown XML see [Use the Lockdown Designer app to create a Lockdown XML file](https://docs.microsoft.com/en-us/windows/configuration/mobile-devices/mobile-lockdown-designer). For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](https://msdn.microsoft.com/library/windows/hardware/mt186983). 
 
 The following diagram shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
 
