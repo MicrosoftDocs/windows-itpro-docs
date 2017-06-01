@@ -671,7 +671,7 @@ The following example is provided to show proper format and should not be taken 
 	<CmdID>110</CmdID>
 	<Item>
 		<Target>
-			<LocURI>./Device/Vendor/MSFT/BitLocker/DisableWarningForOtherDiskEncryption</LocURI>
+			<LocURI>./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption</LocURI>
 		</Target>
 		<Meta>
 			<Format xmlns="syncml:metinf">int</Format>
