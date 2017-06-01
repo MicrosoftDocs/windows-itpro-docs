@@ -73,16 +73,23 @@ MBR2GPT: Validation completed successfully
 
 In the following example:
 
-1. The current disk partition layout is displayed prior to conversion - three partitions are present on the MBR disk (disk 0): a system reserved partition, a Windows partition, and a recovery partition. A DVD-ROM is also present as volume 0.
+1. Using DiskPart, the current disk partition layout is displayed prior to conversion - three partitions are present on the MBR disk (disk 0): a system reserved partition, a Windows partition, and a recovery partition. A DVD-ROM is also present as volume 0.
 2. The OS volume is selected, partitions are listed, and partition details are displayed for the OS partition. The [MBR partition type](https://msdn.microsoft.com/library/windows/desktop/aa363990.aspx) is **07** corresponding to the installable file system (IFS) type. 
 2. The MBR2GPT tool is used to convert disk 0.
-3. The DISKPART tool displays that disk 0 is now using the GPT format.
+3. The DiskPart tool displays that disk 0 is now using the GPT format.
 4. The new disk layout is displayed - four partitions are present on the GPT disk: three are identical to the previous partitions and one is the new EFI system partition (volume 3).
 5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx) of **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type. 
 
 >As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
 
 ```
+X:\>DiskPart
+
+Microsoft DiskPart version 10.0.15048.0
+
+Copyright (C) Microsoft Corporation.
+On computer: MININT-K71F13N
+
 DISKPART> list volume
 
   Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
@@ -140,7 +147,7 @@ MBR2GPT: Fixing drive letter mapping
 MBR2GPT: Conversion completed successfully
 MBR2GPT: Before the new system can boot properly you need to switch the firmware to boot to UEFI mode!
 
-X:\>diskpart
+X:\>DiskPart
 
 Microsoft DiskPart version 10.0.15048.0
 
@@ -364,9 +371,16 @@ You can also view the partition type of a disk by opening the Disk Management to
 ![Volumes](images/mbr2gpt-volume.PNG)
 
 
-If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the diskpart tool. To determine the partition style, type **diskpart** and then type **list disk**. See the following example:
+If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the DiskPart tool. To determine the partition style from a command line, type **diskpart** and then type **list disk**. See the following example:
 
 ```
+X:\>DiskPart
+
+Microsoft DiskPart version 10.0.15048.0
+
+Copyright (C) Microsoft Corporation.
+On computer: MININT-K71F13N
+
 DISKPART> list disk
 
   Disk ###  Status         Size     Free     Dyn  Gpt
