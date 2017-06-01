@@ -44,7 +44,7 @@ This diagram shows the correct pinout used for an RJ-11 (6P6C) to DB9 cable.
 
 Room control systems use common meeting-room scenarios for commands. Commands originate from the room control system, and are communicated over a serial connection to a Surface Hub. Commands are ASCII based, and the Surface Hub will acknowledge when state changes occur.
 
-The following command modifiers are available. Commands terminate with a new line character (/n). Responses can come at any time in response to state changes not triggered directly by a management port command.
+The following command modifiers are available. Commands terminate with a new line character (\n). Responses can come at any time in response to state changes not triggered directly by a management port command.
 
 | Modifier | Result |
 | --- | --- |
