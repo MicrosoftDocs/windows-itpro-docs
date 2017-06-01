@@ -159,7 +159,7 @@ Once you enable the setting to switch to Windows 10 Pro Education, the switch wi
 
 **To turn on the automatic switch to Windows 10 Pro Education**
 
-1. Sign in to [Microsoft Store for Education](https://businessstore.microsoft.com/) with your work or school account.
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your work or school account.
 
   If this is the first time you're signing into the Microsoft Store for Education, you'll be prompted to accept the Microsoft Store for Education Terms of Use.
 
@@ -341,7 +341,7 @@ Once the automatic switch to Windows 10 Pro Education is turned off, the change 
 
 **To roll back Windows 10 Pro Education to Windows 10 Pro**
 
-1. Log in to [Microsoft Store for Business](https://businessstore.microsoft.com/en-us/Store/Apps) with your school or work account, or follow the link from the notification email to turn off the automatic switch.
+1. Log in to [Microsoft Store for Education](https://educationstore.microsoft.com/) with your school or work account, or follow the link from the notification email to turn off the automatic switch.
 2. Select **Manage > Benefits** and locate the section **Windows 10 Pro Education** and follow the link.
 3. In the **Revert to Windows 10 Pro** page, click **Revert to Windows 10 Pro**.
 
