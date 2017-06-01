@@ -1,15 +1,12 @@
 ---
 title: ICSPNode GetValue
 description: ICSPNode GetValue
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: c684036d-98be-4659-8ce8-f72436a39b90
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # ICSPNode::GetValue

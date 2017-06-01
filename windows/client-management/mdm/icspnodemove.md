@@ -1,15 +1,12 @@
 ---
 title: ICSPNode Move
 description: ICSPNode Move
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: efb359c3-5c86-4975-bf6f-a1c33922442a
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # ICSPNode::Move

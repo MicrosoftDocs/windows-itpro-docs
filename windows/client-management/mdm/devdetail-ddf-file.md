@@ -1,15 +1,12 @@
 ---
 title: DevDetail DDF file
 description: DevDetail DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 645fc2b5-2d2c-43b1-9058-26bedbe9f00d
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # DevDetail DDF file
