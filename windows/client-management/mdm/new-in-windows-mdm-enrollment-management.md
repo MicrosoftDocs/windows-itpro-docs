@@ -880,6 +880,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Ownership</li>
 </ul>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">MDM support for Windows 10 S</td>
+<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
+<ul>
+<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
+<li>[Policy CSP](policy-configuration-service-provider.md)</li>
+</ul>
+</td></tr>
 </tbody>
 </table> 
 
@@ -1223,6 +1231,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in the next major update to Windows 10.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">MDM support for Windows 10 S</td>
+<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
+<ul>
+<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
+<li>[Policy CSP](policy-configuration-service-provider.md)</li>
+</ul>
 </td></tr>
 </tbody>
 </table>

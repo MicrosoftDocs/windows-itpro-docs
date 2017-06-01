@@ -107,6 +107,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
+> [!Note]  
+> The policies supported in Windows 10 S is the same as in Windows 10 Pro, except that policies under AppliationsDefaults are not suppported in Windows 10 S.
+
 <!--StartPolicies-->
 <hr/>
 
@@ -115,6 +118,29 @@ The following diagram shows the Policy configuration service provider in tree fo
 <!--StartPolicy-->
 <a href="" id="abovelock-allowactioncenternotifications"></a>**AboveLock/AllowActionCenterNotifications**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -132,22 +158,33 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="abovelock-allowcortanaabovelock"></a>**AboveLock/AllowCortanaAboveLock**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether or not the user can interact with Cortana using speech while the system is locked. If you enable or don’t configure this setting, the user can interact with Cortana using speech while the system is locked. If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
 
@@ -160,22 +197,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="abovelock-allowtoasts"></a>**AboveLock/AllowToasts**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow toast notifications above the device lock screen.
 
@@ -190,22 +238,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="accounts-allowaddingnonmicrosoftaccountsmanually"></a>**Accounts/AllowAddingNonMicrosoftAccountsManually**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether user is allowed to add non-MSA email accounts.
 
@@ -223,22 +282,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="accounts-allowmicrosoftaccountconnection"></a>**Accounts/AllowMicrosoftAccountConnection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
 
@@ -253,22 +323,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="accounts-allowmicrosoftaccountsigninassistant"></a>**Accounts/AllowMicrosoftAccountSignInAssistant**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins the ability to disable the "Microsoft Account Sign-In Assistant" (wlidsvc) NT service.
 
@@ -281,23 +362,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies a list of the domains that are allowed to sync email on the device.
 
@@ -309,18 +400,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="activexcontrols-approvedinstallationsites"></a>**ActiveXControls/ApprovedInstallationSites**  
@@ -960,6 +1039,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="applicationdefaults-defaultassociationsconfiguration"></a>**ApplicationDefaults/DefaultAssociationsConfiguration**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml), and then needs to be  base64 encoded before being added to SyncML.
  
@@ -1021,23 +1123,33 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether non Windows Store apps are allowed.
 
@@ -1053,22 +1165,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-allowappstoreautoupdate"></a>**ApplicationManagement/AllowAppStoreAutoUpdate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether automatic update of apps from Windows Store are allowed.
 
@@ -1083,22 +1206,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether developer unlock is allowed.
 
@@ -1114,22 +1248,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -1147,22 +1292,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether multiple users of the same app can share data.
 
@@ -1177,22 +1333,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-allowstore"></a>**ApplicationManagement/AllowStore**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether app store is allowed at the device.
 
@@ -1207,22 +1374,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-applicationrestrictions"></a>**ApplicationManagement/ApplicationRestrictions**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
@@ -1252,22 +1430,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-disablestoreoriginatedapps"></a>**ApplicationManagement/DisableStoreOriginatedApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that disables the launch of all apps from Windows Store that came pre-installed or were downloaded.
 
@@ -1280,22 +1469,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows disabling of the retail catalog and only enables the Private store.
 
@@ -1319,22 +1519,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-restrictappdatatosystemvolume"></a>**ApplicationManagement/RestrictAppDataToSystemVolume**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether application data is restricted to the system drive.
 
@@ -1349,22 +1560,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether the installation of applications is restricted to the system drive.
 
@@ -1379,18 +1601,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="attachmentmanager-donotpreservezoneinformation"></a>**AttachmentManager/DoNotPreserveZoneInformation**  
@@ -1467,6 +1677,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="authentication-alloweapcertsso"></a>**Authentication/AllowEAPCertSSO**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -1490,22 +1723,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="authentication-allowfastreconnect"></a>**Authentication/AllowFastReconnect**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows EAP Fast Reconnect from being attempted for EAP Method TLS.
 
@@ -1520,22 +1764,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="authentication-allowsecondaryauthenticationdevice"></a>**Authentication/AllowSecondaryAuthenticationDevice**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows secondary authentication devices to work with Windows.
 
@@ -1550,18 +1805,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="autoplay-disallowautoplayfornonvolumedevices"></a>**Autoplay/DisallowAutoplayForNonVolumeDevices**  
@@ -1651,6 +1894,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="bitlocker-encryptionmethod"></a>**Bitlocker/EncryptionMethod**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the BitLocker Drive Encryption method and cipher strength.
 
@@ -1665,22 +1931,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="bluetooth-allowadvertising"></a>**Bluetooth/AllowAdvertising**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether the device can send out Bluetooth advertisements.
 
@@ -1697,22 +1974,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="bluetooth-allowdiscoverablemode"></a>**Bluetooth/AllowDiscoverableMode**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether other Bluetooth-enabled devices can discover the device.
 
@@ -1729,22 +2017,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="bluetooth-allowprepairing"></a>**Bluetooth/AllowPrepairing**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
 
@@ -1757,22 +2056,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="bluetooth-localdevicename"></a>**Bluetooth/LocalDeviceName**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Sets the local Bluetooth device name.
 
@@ -1784,22 +2094,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="bluetooth-servicesallowedlist"></a>**Bluetooth/ServicesAllowedList**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}.
 
@@ -1809,18 +2130,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
@@ -1846,6 +2155,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="browser-allowautofill"></a>**Browser/AllowAutofill**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether autofill on websites is allowed.
 
@@ -1867,22 +2199,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowbrowser"></a>**Browser/AllowBrowser**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop. For desktop devices, use the [AppLocker CSP](applocker-csp.md) instead.
@@ -1903,22 +2246,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowcookies"></a>**Browser/AllowCookies**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether cookies are allowed.
 
@@ -1940,21 +2294,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowdevelopertools"></a>**Browser/AllowDeveloperTools**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -1973,22 +2339,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowdonottrack"></a>**Browser/AllowDoNotTrack**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether Do Not Track headers are allowed.
 
@@ -2010,22 +2387,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowextensions"></a>**Browser/AllowExtensions**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Microsoft Edge extensions are allowed.
 
@@ -2038,22 +2426,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowflash"></a>**Browser/AllowFlash**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10. Specifies whether Adobe Flash can run in Microsoft Edge.
 
@@ -2066,22 +2465,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowflashclicktorun"></a>**Browser/AllowFlashClickToRun**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether users must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
 
@@ -2094,22 +2504,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowinprivate"></a>**Browser/AllowInPrivate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether InPrivate browsing is allowed on corporate networks.
 
@@ -2124,18 +2545,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
@@ -2161,6 +2570,29 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartPolicy-->
 <a href="" id="browser-allowpasswordmanager"></a>**Browser/AllowPasswordManager**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether saving and managing passwords locally on the device is allowed.
 
@@ -2182,22 +2614,33 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowpopups"></a>**Browser/AllowPopups**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether pop-up blocker is allowed or enabled.
 
@@ -2219,18 +2662,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
@@ -2255,6 +2686,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="browser-allowsearchsuggestionsinaddressbar"></a>**Browser/AllowSearchSuggestionsinAddressBar**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether search suggestions are allowed in the address bar.
 
@@ -2269,22 +2723,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowsmartscreen"></a>**Browser/AllowSmartScreen**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether Windows Defender SmartScreen is allowed.
 
@@ -2306,18 +2771,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
@@ -2396,6 +2849,29 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartPolicy-->
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -2412,22 +2888,33 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-enterprisesitelistserviceurl"></a>**Browser/EnterpriseSiteListServiceUrl**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!IMPORTANT]
 > This policy (introduced in Windows 10, version 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist).
@@ -2436,22 +2923,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-firstrunurl"></a>**Browser/FirstRunURL**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -2467,22 +2965,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-homepages"></a>**Browser/HomePages**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -2501,22 +3010,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-preventaccesstoaboutflagsinmicrosoftedge"></a>**Browser/PreventAccessToAboutFlagsInMicrosoftEdge**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether users can access the about:flags page, which is used to change developer settings and to enable experimental features.
 
@@ -2529,18 +3049,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
@@ -2581,6 +3089,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="browser-preventsmartscreenpromptoverride"></a>**Browser/PreventSmartScreenPromptOverride**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about potentially malicious websites.
 
@@ -2595,22 +3126,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-preventsmartscreenpromptoverrideforfiles"></a>**Browser/PreventSmartScreenPromptOverrideForFiles**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about downloading unverified files. Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from downloading unverified files. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about unverified files and lets them continue the download process.
 
@@ -2623,22 +3165,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-preventusinglocalhostipaddressforwebrtc"></a>**Browser/PreventUsingLocalHostIPAddressForWebRTC**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -2655,22 +3208,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -2689,18 +3253,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
@@ -2730,6 +3282,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="browser-showmessagewhenopeningsitesininternetexplorer"></a>**Browser/ShowMessageWhenOpeningSitesInInternetExplorer**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -2748,22 +3323,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.
 
@@ -2789,23 +3375,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="camera-allowcamera"></a>**Camera/AllowCamera**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Disables or enables the camera.
 
@@ -2820,22 +3416,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allowbluetooth"></a>**Connectivity/AllowBluetooth**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to enable Bluetooth or restrict access.
 
@@ -2857,22 +3464,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allowcellulardata"></a>**Connectivity/AllowCellularData**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
 
@@ -2886,22 +3504,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allowcellulardataroaming"></a>**Connectivity/AllowCellularDataRoaming**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows cellular data roaming on the device. Device reboot is not required to enforce the policy.
 
@@ -2925,22 +3554,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allowconnecteddevices"></a>**Connectivity/AllowConnectedDevices**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -2956,23 +3596,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allownfc"></a>**Connectivity/AllowNFC**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -2991,22 +3641,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -3027,22 +3688,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allowvpnovercellular"></a>**Connectivity/AllowVPNOverCellular**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies what type of underlying connections VPN is allowed to use.
 
@@ -3057,22 +3729,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-allowvpnroamingovercellular"></a>**Connectivity/AllowVPNRoamingOverCellular**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Prevents the device from connecting to VPN when the device roams over cellular networks.
 
@@ -3087,18 +3770,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="connectivity-hardeneduncpaths"></a>**Connectivity/HardenedUNCPaths**  
@@ -3222,6 +3893,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="cryptography-allowfipsalgorithmpolicy"></a>**Cryptography/AllowFipsAlgorithmPolicy**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 
@@ -3234,22 +3928,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="cryptography-tlsciphersuites"></a>**Cryptography/TLSCipherSuites**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
 
@@ -3257,22 +3962,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="dataprotection-allowdirectmemoryaccess"></a>**DataProtection/AllowDirectMemoryAccess**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug PCI ports with no children devices until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.
 
@@ -3287,22 +4003,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="dataprotection-legacyselectivewipeid"></a>**DataProtection/LegacySelectiveWipeID**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!IMPORTANT]
 > This policy may change in a future release. It may be used for testing purposes, but should not be used in a production environment at this time.
@@ -3318,18 +4045,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="datausage-setcost3g"></a>**DataUsage/SetCost3G**  
@@ -3392,6 +4107,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="defender-allowarchivescanning"></a>**Defender/AllowArchiveScanning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3408,22 +4146,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowbehaviormonitoring"></a>**Defender/AllowBehaviorMonitoring**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3440,22 +4189,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowcloudprotection"></a>**Defender/AllowCloudProtection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3472,22 +4232,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowemailscanning"></a>**Defender/AllowEmailScanning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3504,22 +4275,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowfullscanonmappednetworkdrives"></a>**Defender/AllowFullScanOnMappedNetworkDrives**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3536,22 +4318,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowfullscanremovabledrivescanning"></a>**Defender/AllowFullScanRemovableDriveScanning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3568,22 +4361,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowioavprotection"></a>**Defender/AllowIOAVProtection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3600,22 +4404,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowintrusionpreventionsystem"></a>**Defender/AllowIntrusionPreventionSystem**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3632,22 +4447,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowonaccessprotection"></a>**Defender/AllowOnAccessProtection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3664,22 +4490,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowrealtimemonitoring"></a>**Defender/AllowRealtimeMonitoring**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3696,22 +4533,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowscanningnetworkfiles"></a>**Defender/AllowScanningNetworkFiles**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3728,22 +4576,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowscriptscanning"></a>**Defender/AllowScriptScanning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3760,22 +4619,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-allowuseruiaccess"></a>**Defender/AllowUserUIAccess**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3792,22 +4662,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3823,22 +4704,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3854,22 +4746,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3881,22 +4784,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-excludedpaths"></a>**Defender/ExcludedPaths**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3908,22 +4822,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-excludedprocesses"></a>**Defender/ExcludedProcesses**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3941,22 +4866,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -3974,22 +4910,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-realtimescandirection"></a>**Defender/RealTimeScanDirection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4011,22 +4958,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-scanparameter"></a>**Defender/ScanParameter**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4043,22 +5001,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-schedulequickscantime"></a>**Defender/ScheduleQuickScanTime**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4080,22 +5049,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-schedulescanday"></a>**Defender/ScheduleScanDay**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4123,22 +5103,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-schedulescantime"></a>**Defender/ScheduleScanTime**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4160,22 +5151,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-signatureupdateinterval"></a>**Defender/SignatureUpdateInterval**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4193,22 +5195,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-submitsamplesconsent"></a>**Defender/SubmitSamplesConsent**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4227,22 +5240,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="defender-threatseveritydefaultaction"></a>**Defender/ThreatSeverityDefaultAction**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
@@ -4272,22 +5296,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-doabsolutemaxcachesize"></a>**DeliveryOptimization/DOAbsoluteMaxCacheSize**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4301,22 +5336,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-doallowvpnpeercaching"></a>**DeliveryOptimization/DOAllowVPNPeerCaching**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4330,23 +5376,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dodownloadmode"></a>**DeliveryOptimization/DODownloadMode**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4367,22 +5423,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dogroupid"></a>**DeliveryOptimization/DOGroupId**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4398,22 +5465,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-domaxcacheage"></a>**DeliveryOptimization/DOMaxCacheAge**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4427,22 +5505,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-domaxcachesize"></a>**DeliveryOptimization/DOMaxCacheSize**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4456,22 +5545,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-domaxdownloadbandwidth"></a>**DeliveryOptimization/DOMaxDownloadBandwidth**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4485,22 +5585,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-domaxuploadbandwidth"></a>**DeliveryOptimization/DOMaxUploadBandwidth**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4514,22 +5625,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dominbackgroundqos"></a>**DeliveryOptimization/DOMinBackgroundQos**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4543,22 +5665,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dominbatterypercentageallowedtoupload"></a>**DeliveryOptimization/DOMinBatteryPercentageAllowedToUpload**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4571,23 +5704,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-domindisksizeallowedtopeer"></a>**DeliveryOptimization/DOMinDiskSizeAllowedToPeer**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4605,23 +5748,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dominfilesizetocache"></a>**DeliveryOptimization/DOMinFileSizeToCache**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4636,23 +5789,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dominramallowedtopeer"></a>**DeliveryOptimization/DOMinRAMAllowedToPeer**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Business, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4666,23 +5829,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-domodifycachedrive"></a>**DeliveryOptimization/DOModifyCacheDrive**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4696,22 +5869,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-domonthlyuploaddatacap"></a>**DeliveryOptimization/DOMonthlyUploadDataCap**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4727,22 +5911,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
@@ -4756,18 +5951,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="desktop-preventuserredirectionofprofilefolders"></a>**Desktop/PreventUserRedirectionOfProfileFolders**  
@@ -4838,6 +6021,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -4858,22 +6064,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -4898,22 +6115,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
 
@@ -4932,22 +6160,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
 
@@ -4973,22 +6212,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether device lock is enabled.
 
@@ -5041,22 +6291,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies when the password expires (in days).
 
@@ -5077,22 +6338,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies how many passwords can be stored in the history that can’t be used.
 
@@ -5115,22 +6387,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
@@ -5144,22 +6427,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-enforcelockscreenprovider"></a>**DeviceLock/EnforceLockScreenProvider**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Restricts lock screen image to a specific lock screen provider. Users will not be able change this provider.
 
@@ -5173,22 +6467,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
@@ -5216,22 +6521,33 @@ The number of authentication failures allowed before the device will be wiped. A
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 
@@ -5250,22 +6566,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-maxinactivitytimedevicelockwithexternaldisplay"></a>**DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked while connected to an external display.
 
@@ -5282,23 +6609,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Business: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password.
 
@@ -5377,22 +6714,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the minimum number or characters required in the PIN or password.
 
@@ -5416,18 +6764,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**  
@@ -5454,6 +6790,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -5472,21 +6831,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 
@@ -5507,23 +6878,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 
@@ -5544,25 +6925,35 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="enterprisecloudprint-cloudprintoauthauthority"></a>**EnterpriseCloudPrint/CloudPrintOAuthAuthority**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -5572,25 +6963,35 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="enterprisecloudprint-cloudprintoauthclientid"></a>**EnterpriseCloudPrint/CloudPrintOAuthClientId**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -5600,25 +7001,35 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="enterprisecloudprint-cloudprintresourceid"></a>**EnterpriseCloudPrint/CloudPrintResourceId**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication.
 
 <p style="margin-left: 20px">The datatype is a string. 
 
@@ -5628,25 +7039,35 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="enterprisecloudprint-cloudprinterdiscoveryendpoint"></a>**EnterpriseCloudPrint/CloudPrinterDiscoveryEndPoint**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -5656,25 +7077,35 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="enterprisecloudprint-discoverymaxprinterlimit"></a>**EnterpriseCloudPrint/DiscoveryMaxPrinterLimit**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point.
 
 <p style="margin-left: 20px">The datatype is an integer. 
 
@@ -5684,25 +7115,35 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="enterprisecloudprint-mopriadiscoveryresourceid"></a>**EnterpriseCloudPrint/MopriaDiscoveryResourceId**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication. This policy must target ./User, otherwise it fails.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -5712,19 +7153,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**  
@@ -5943,6 +7371,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -5960,22 +7411,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether Cortana is allowed on the device. If you enable or don’t configure this setting, Cortana is allowed on the device. If you disable this setting, Cortana is turned off. When Cortana is off, users will still be able to use search to find items on the device.
 
@@ -5998,22 +7460,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows users to turn on/off device discovery UX.
 
@@ -6030,37 +7503,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
-
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy turns on Find My Device feature.  
-        
-<p style="margin-left: 20px">When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com.  
-
-<p style="margin-left: 20px">When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work.  
-
-
-
-
-<!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow the user to delete the workplace account using the workplace control panel.
 
@@ -6079,22 +7548,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -6111,22 +7591,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -6145,22 +7636,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows all Windows sync settings on the device. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
 
@@ -6173,18 +7675,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
@@ -6214,6 +7704,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -6230,22 +7743,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
@@ -6262,22 +7786,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -6296,22 +7831,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -6337,22 +7883,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only available for Windows 10 Enterprise and Windows 10 Education.
@@ -6371,18 +7928,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
@@ -6430,6 +7975,29 @@ The Windows welcome experience feature introduces onboard users to Windows; for 
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 Enables or disables Windows Tips / soft landing.
 
@@ -6442,22 +8010,33 @@ Enables or disables Windows Tips / soft landing.
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only available for Windows 10 Enterprise and Windows 10 Education.
@@ -6475,22 +8054,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Prevents devices from showing feedback questions from Microsoft.
 
@@ -6507,18 +8097,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="games-allowadvancedgamingservices"></a>**Games/AllowAdvancedGamingServices**  
@@ -10335,6 +11913,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="licensing-allowwindowsentitlementreactivation"></a>**Licensing/AllowWindowsEntitlementReactivation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables or Disable Windows license reactivation on managed devices.
 
@@ -10347,22 +11948,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="licensing-disallowkmsclientonlineavsvalidation"></a>**Licensing/DisallowKMSClientOnlineAVSValidation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
 
@@ -10375,22 +11987,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="location-enablelocation"></a>**Location/EnableLocation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Optional policy that allows for IT admin to preconfigure whether or not Location Service's Device Switch is enabled or disabled for the device. Setting this policy is not required for Location Services to function. This policy controls a device wide state that affects all users, apps, and services ability to find the device's latitude and longitude on a map. There is a separate user switch that defines whether the location service is allowed to retrieve a position for the current user. In order to retrieve a position for a specific user, both the Device Switch and the User Switch must be enabled. If either is disabled, positions cannot be retrieved for the user. The user can later change both the User Switch and the Device Switch through the user interface on the Settings -> Privacy -> Location page.
 
@@ -10411,22 +12034,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="lockdown-allowedgeswipe"></a>**LockDown/AllowEdgeSwipe**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the user to invoke any system user interface by swiping in from any screen edge using touch.
 
@@ -10441,22 +12075,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="maps-allowofflinemapsdownloadovermeteredconnection"></a>**Maps/AllowOfflineMapsDownloadOverMeteredConnection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the download and update of map data over metered connections.
 
@@ -10472,22 +12117,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="maps-enableofflinemapsautoupdate"></a>**Maps/EnableOfflineMapsAutoUpdate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Disables the automatic download and update of map data.
 
@@ -10503,18 +12159,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
@@ -10538,6 +12182,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="messaging-allowmessagesync"></a>**Messaging/AllowMessageSync**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables text message back up and restore and Messaging Everywhere. This policy allows an organization to disable these features to avoid information being stored on servers outside of their control.
 
@@ -10550,18 +12217,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
@@ -10585,6 +12240,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="networkisolation-enterprisecloudresources"></a>**NetworkIsolation/EnterpriseCloudResources**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the **EnterpriseInternalProxyServers** policy. This domain list is a pipe-separated list of cloud resources. Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address. For example, **&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|**.
 
@@ -10592,22 +12270,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="networkisolation-enterpriseiprange"></a>**NetworkIsolation/EnterpriseIPRange**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Sets the enterprise IP ranges that define the computers in the enterprise network. Data that comes from those computers will be considered part of the enterprise and protected. These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of IPv4 and IPv6 ranges. For example:
 
@@ -10624,22 +12313,33 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="networkisolation-enterpriseiprangesareauthoritative"></a>**NetworkIsolation/EnterpriseIPRangesAreAuthoritative**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
 
@@ -10647,22 +12347,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="networkisolation-enterpriseinternalproxyservers"></a>**NetworkIsolation/EnterpriseInternalProxyServers**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This is the comma-separated list of internal proxy servers. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the **EnterpriseCloudResources** policy to force traffic to the matched cloud resources through these proxies.
 
@@ -10670,22 +12381,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="networkisolation-enterprisenetworkdomainnames"></a>**NetworkIsolation/EnterpriseNetworkDomainNames**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This is the list of domains that comprise the boundaries of the enterprise. Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to. This is a comma-separated list of domains, for example "contoso.sharepoint.com, Fabrikam.com".
 
@@ -10703,22 +12425,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="networkisolation-enterpriseproxyservers"></a>**NetworkIsolation/EnterpriseProxyServers**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This is a comma-separated list of proxy servers. Any server on this list is considered non-enterprise. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59".
 
@@ -10726,22 +12459,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="networkisolation-enterpriseproxyserversareauthoritative"></a>**NetworkIsolation/EnterpriseProxyServersAreAuthoritative**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
 
@@ -10749,22 +12493,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="networkisolation-neutralresources"></a>**NetworkIsolation/NeutralResources**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">List of domain names that can used for work or personal resource.
 
@@ -10772,22 +12527,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="notifications-disallownotificationmirroring"></a>**Notifications/DisallowNotificationMirroring**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that turns off notification mirroring.
 
@@ -10804,18 +12570,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="power-allowstandbywhensleepingpluggedin"></a>**Power/AllowStandbyWhenSleepingPluggedIn**  
@@ -10979,6 +12733,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="privacy-allowautoacceptpairingandprivacyconsentprompts"></a>**Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
 
@@ -10993,22 +12770,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-allowinputpersonalization"></a>**Privacy/AllowInputPersonalization**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Updated in the next major update of Windows 10. Allows the usage of cloud based speech services for Cortana, dictation, or Store applications. Setting this policy to 1, lets Microsoft use the user's voice data to improve cloud speech services for all users.
 
@@ -11023,22 +12811,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-disableadvertisingid"></a>**Privacy/DisableAdvertisingId**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables or disables the Advertising ID.
 
@@ -11054,22 +12853,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo"></a>**Privacy/LetAppsAccessAccountInfo**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access account information.
 
@@ -11085,22 +12895,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo-forceallowtheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
@@ -11108,22 +12929,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo-forcedenytheseapps"></a>**Privacy/LetAppsAccessAccountInfo_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
@@ -11131,22 +12963,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessaccountinfo-userincontroloftheseapps"></a>**Privacy/LetAppsAccessAccountInfo_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the account information privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
@@ -11154,22 +12997,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar"></a>**Privacy/LetAppsAccessCalendar**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access the calendar.
 
@@ -11185,22 +13039,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar-forceallowtheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
@@ -11208,22 +13073,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar-forcedenytheseapps"></a>**Privacy/LetAppsAccessCalendar_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
@@ -11231,22 +13107,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscalendar-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCalendar_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the calendar privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
@@ -11254,22 +13141,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory"></a>**Privacy/LetAppsAccessCallHistory**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access call history.
 
@@ -11285,22 +13183,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory-forceallowtheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
@@ -11308,22 +13217,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory-forcedenytheseapps"></a>**Privacy/LetAppsAccessCallHistory_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
@@ -11331,22 +13251,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscallhistory-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCallHistory_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the call history privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
@@ -11354,22 +13285,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera"></a>**Privacy/LetAppsAccessCamera**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access the camera.
 
@@ -11385,22 +13327,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera-forceallowtheseapps"></a>**Privacy/LetAppsAccessCamera_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
@@ -11408,22 +13361,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera-forcedenytheseapps"></a>**Privacy/LetAppsAccessCamera_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
@@ -11431,22 +13395,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscamera-userincontroloftheseapps"></a>**Privacy/LetAppsAccessCamera_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
@@ -11454,22 +13429,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts"></a>**Privacy/LetAppsAccessContacts**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access contacts.
 
@@ -11485,22 +13471,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts-forceallowtheseapps"></a>**Privacy/LetAppsAccessContacts_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
@@ -11508,22 +13505,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts-forcedenytheseapps"></a>**Privacy/LetAppsAccessContacts_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
@@ -11531,22 +13539,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesscontacts-userincontroloftheseapps"></a>**Privacy/LetAppsAccessContacts_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
@@ -11554,22 +13573,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail"></a>**Privacy/LetAppsAccessEmail**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access email.
 
@@ -11585,22 +13615,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail-forceallowtheseapps"></a>**Privacy/LetAppsAccessEmail_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
@@ -11608,22 +13649,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail-forcedenytheseapps"></a>**Privacy/LetAppsAccessEmail_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
@@ -11631,22 +13683,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessemail-userincontroloftheseapps"></a>**Privacy/LetAppsAccessEmail_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
@@ -11654,22 +13717,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation"></a>**Privacy/LetAppsAccessLocation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access location.
 
@@ -11685,22 +13759,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation-forceallowtheseapps"></a>**Privacy/LetAppsAccessLocation_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
@@ -11708,22 +13793,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation-forcedenytheseapps"></a>**Privacy/LetAppsAccessLocation_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
@@ -11731,22 +13827,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesslocation-userincontroloftheseapps"></a>**Privacy/LetAppsAccessLocation_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
@@ -11754,22 +13861,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging"></a>**Privacy/LetAppsAccessMessaging**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can read or send messages (text or MMS).
 
@@ -11785,22 +13903,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging-forceallowtheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
@@ -11808,22 +13937,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging-forcedenytheseapps"></a>**Privacy/LetAppsAccessMessaging_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
@@ -11831,22 +13971,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmessaging-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMessaging_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
@@ -11854,22 +14005,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone"></a>**Privacy/LetAppsAccessMicrophone**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access the microphone.
 
@@ -11885,22 +14047,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone-forceallowtheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
@@ -11908,22 +14081,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone-forcedenytheseapps"></a>**Privacy/LetAppsAccessMicrophone_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
@@ -11931,22 +14115,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmicrophone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMicrophone_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
@@ -11954,22 +14149,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion"></a>**Privacy/LetAppsAccessMotion**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access motion data.
 
@@ -11985,22 +14191,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion-forceallowtheseapps"></a>**Privacy/LetAppsAccessMotion_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
@@ -12008,22 +14225,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion-forcedenytheseapps"></a>**Privacy/LetAppsAccessMotion_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
@@ -12031,22 +14259,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessmotion-userincontroloftheseapps"></a>**Privacy/LetAppsAccessMotion_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
@@ -12054,22 +14293,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications"></a>**Privacy/LetAppsAccessNotifications**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access notifications.
 
@@ -12085,22 +14335,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications-forceallowtheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
@@ -12108,22 +14369,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications-forcedenytheseapps"></a>**Privacy/LetAppsAccessNotifications_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
@@ -12131,22 +14403,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessnotifications-userincontroloftheseapps"></a>**Privacy/LetAppsAccessNotifications_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
@@ -12154,22 +14437,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone"></a>**Privacy/LetAppsAccessPhone**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can make phone calls.
 
@@ -12185,22 +14479,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone-forceallowtheseapps"></a>**Privacy/LetAppsAccessPhone_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
@@ -12208,22 +14513,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone-forcedenytheseapps"></a>**Privacy/LetAppsAccessPhone_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
@@ -12231,22 +14547,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessphone-userincontroloftheseapps"></a>**Privacy/LetAppsAccessPhone_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
@@ -12254,22 +14581,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios"></a>**Privacy/LetAppsAccessRadios**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps have access to control radios.
 
@@ -12285,22 +14623,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios-forceallowtheseapps"></a>**Privacy/LetAppsAccessRadios_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
@@ -12308,22 +14657,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios-forcedenytheseapps"></a>**Privacy/LetAppsAccessRadios_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
@@ -12331,22 +14691,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccessradios-userincontroloftheseapps"></a>**Privacy/LetAppsAccessRadios_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
@@ -12354,22 +14725,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks"></a>**Privacy/LetAppsAccessTasks**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can access tasks.
 
@@ -12377,22 +14759,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks-forceallowtheseapps"></a>**Privacy/LetAppsAccessTasks_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
@@ -12400,22 +14793,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks-forcedenytheseapps"></a>**Privacy/LetAppsAccessTasks_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
@@ -12423,22 +14827,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstasks-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTasks_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
@@ -12446,22 +14861,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices"></a>**Privacy/LetAppsAccessTrustedDevices**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can access trusted devices.
 
@@ -12477,22 +14903,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-forceallowtheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
@@ -12500,22 +14937,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-forcedenytheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
@@ -12523,22 +14971,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsaccesstrusteddevices-userincontroloftheseapps"></a>**Privacy/LetAppsAccessTrustedDevices_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
@@ -12546,22 +15005,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo"></a>**Privacy/LetAppsGetDiagnosticInfo**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Force allow, force deny or give user control of apps that can get diagnostic information about other running apps.
 
@@ -12577,22 +15047,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-forceallowtheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
@@ -12600,22 +15081,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-forcedenytheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
@@ -12623,22 +15115,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsgetdiagnosticinfo-userincontroloftheseapps"></a>**Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
@@ -12646,22 +15149,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground"></a>**Privacy/LetAppsRunInBackground**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can run in the background.
 
@@ -12679,22 +15193,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground-forceallowtheseapps"></a>**Privacy/LetAppsRunInBackground_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are able to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
@@ -12702,22 +15227,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground-forcedenytheseapps"></a>**Privacy/LetAppsRunInBackground_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied the ability to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
@@ -12725,22 +15261,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappsruninbackground-userincontroloftheseapps"></a>**Privacy/LetAppsRunInBackground_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the background apps privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
@@ -12748,22 +15295,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices"></a>**Privacy/LetAppsSyncWithDevices**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Windows apps can sync with devices.
 
@@ -12779,22 +15337,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices-forceallowtheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceAllowTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
@@ -12802,22 +15371,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices-forcedenytheseapps"></a>**Privacy/LetAppsSyncWithDevices_ForceDenyTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
@@ -12825,22 +15405,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="privacy-letappssyncwithdevices-userincontroloftheseapps"></a>**Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'sync with devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
@@ -12848,18 +15439,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**  
@@ -13230,6 +15809,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="search-allowindexingencryptedstoresoritems"></a>**Search/AllowIndexingEncryptedStoresOrItems**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files.
 
@@ -13248,22 +15850,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-allowsearchtouselocation"></a>**Search/AllowSearchToUseLocation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether search can leverage location information.
 
@@ -13278,22 +15891,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the use of diacritics.
 
@@ -13308,22 +15932,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-alwaysuseautolangdetection"></a>**Search/AlwaysUseAutoLangDetection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to always use automatic language detection when indexing content and properties.
 
@@ -13338,22 +15973,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-disablebackoff"></a>**Search/DisableBackoff**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">If enabled, the search indexer backoff feature will be disabled. Indexing will continue at full speed even when system activity is high. If disabled, backoff logic will be used to throttle back indexing activity when system activity is high. Default is disabled.
 
@@ -13366,22 +16012,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-disableremovabledriveindexing"></a>**Search/DisableRemovableDriveIndexing**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy setting configures whether or not locations on removable drives can be added to libraries.
 
@@ -13398,22 +16055,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-preventindexinglowdiskspacemb"></a>**Search/PreventIndexingLowDiskSpaceMB**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 2147483647 MB.
 
@@ -13430,22 +16098,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-preventremotequeries"></a>**Search/PreventRemoteQueries**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index..
 
@@ -13458,22 +16137,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="search-safesearchpermissions"></a>**Search/SafeSearchPermissions**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -13492,22 +16182,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-allowaddprovisioningpackage"></a>**Security/AllowAddProvisioningPackage**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow the runtime configuration agent to install provisioning packages.
 
@@ -13520,22 +16221,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-allowautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/AllowAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy has been deprecated in Windows 10, version 1607
@@ -13557,22 +16269,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-allowmanualrootcertificateinstallation"></a>**Security/AllowManualRootCertificateInstallation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -13591,22 +16314,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-allowremoveprovisioningpackage"></a>**Security/AllowRemoveProvisioningPackage**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow the runtime configuration agent to remove provisioning packages.
 
@@ -13619,22 +16353,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-antitheftmode"></a>**Security/AntiTheftMode**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -13651,22 +16396,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-preventautomaticdeviceencryptionforazureadjoineddevices"></a>**Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -13685,22 +16441,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-requiredeviceencryption"></a>**Security/RequireDeviceEncryption**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile. In Windows 10 for desktop, you can query encryption status by using the [DeviceStatus CSP](devicestatus-csp.md) node **DeviceStatus/Compliance/EncryptionCompliance**.
@@ -13722,22 +16489,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-requireprovisioningpackagesignature"></a>**Security/RequireProvisioningPackageSignature**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether provisioning packages must have a certificate signed by a device trusted authority.
 
@@ -13750,22 +16528,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="security-requireretrievehealthcertificateonboot"></a>**Security/RequireRetrieveHealthCertificateOnBoot**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to retrieve and post TCG Boot logs, and get or cache an encrypted or signed Health Attestation Report from the Microsoft Health Attestation Service (HAS) when a device boots or reboots.
 
@@ -13789,22 +16578,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -13825,22 +16625,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to change Data Sense settings.
 
@@ -13853,22 +16664,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to change date and time settings.
 
@@ -13881,22 +16703,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows editing of the device name.
 
@@ -13909,22 +16742,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: No  
--   Education: No  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -13941,22 +16785,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -13973,22 +16828,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -14005,22 +16871,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -14037,22 +16914,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to change VPN settings.
 
@@ -14065,22 +16953,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -14097,22 +16996,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows user to change account settings.
 
@@ -14125,22 +17035,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout.  In this version of Windows 10, supported additional calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
 
@@ -14155,23 +17076,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703.  Allows IT Admins to either  prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo".  Multiple page identifiers are separated by semicolons.
 
@@ -14209,23 +17140,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="smartscreen-enableappinstallcontrol"></a>**SmartScreen/EnableAppInstallControl**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
@@ -14238,23 +17179,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="smartscreen-enablesmartscreeninshell"></a>**SmartScreen/EnableSmartScreenInShell**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
 
@@ -14267,23 +17218,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="smartscreen-preventoverrideforfilesinshell"></a>**SmartScreen/PreventOverrideForFilesInShell**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
 
@@ -14296,23 +17257,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="speech-allowspeechmodelupdate"></a>**Speech/AllowSpeechModelUpdate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether the device will receive updates to the speech recognition and speech synthesis models. A speech model contains data used by the speech engine to convert audio to text (or vice-versa). The models are periodically updated to improve accuracy and performance. Models are non-executable data files. If enabled, the device will periodically check for updated speech models and then download them from a Microsoft service using the Background Internet Transfer Service (BITS).
 
@@ -14325,22 +17296,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: Yes  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -14360,18 +17342,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hideapplist"></a>**Start/HideAppList**  
@@ -14761,6 +17731,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!IMPORTANT]
 > This node is set on a per-user basis and must be accessed using the following paths:
@@ -14781,18 +17774,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="storage-enhancedstoragedevices"></a>**Storage/EnhancedStorageDevices**  
@@ -14819,6 +17800,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
@@ -14838,22 +17842,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether set general purpose device to be in embedded mode.
 
@@ -14868,21 +17883,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is not supported in Windows 10, version 1607.
@@ -14901,22 +17928,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Boolean policy setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. If you enable this setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text. If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally-installed fonts.
 
@@ -14940,22 +17978,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-allowlocation"></a>**System/AllowLocation**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow app access to the Location service.
 
@@ -14977,22 +18026,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Controls whether the user is allowed to use the storage card for device storage. This setting prevents programmatic access to the storage card.
 
@@ -15007,22 +18067,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow the device to send diagnostic and usage telemetry data, such as Watson.
 
@@ -15092,22 +18163,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
 
@@ -15122,18 +18204,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
@@ -15156,6 +18226,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
 
@@ -15182,19 +18275,6 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**  
@@ -15227,6 +18307,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows you to specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests. The format for this setting is *&lt;server&gt;:&lt;port&gt;*. The connection is made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data will not be transmitted and will remain on the local device.
 
@@ -15236,22 +18339,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowimelogging"></a>**TextInput/AllowIMELogging**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15270,22 +18384,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowimenetworkaccess"></a>**TextInput/AllowIMENetworkAccess**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15304,22 +18429,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowinputpanel"></a>**TextInput/AllowInputPanel**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15338,22 +18474,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowjapaneseimesurrogatepaircharacters"></a>**TextInput/AllowJapaneseIMESurrogatePairCharacters**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15372,22 +18519,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowjapaneseivscharacters"></a>**TextInput/AllowJapaneseIVSCharacters**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15406,22 +18564,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowjapanesenonpublishingstandardglyph"></a>**TextInput/AllowJapaneseNonPublishingStandardGlyph**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15440,22 +18609,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowjapaneseuserdictionary"></a>**TextInput/AllowJapaneseUserDictionary**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15474,22 +18654,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowkeyboardtextsuggestions"></a>**TextInput/AllowKeyboardTextSuggestions**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15513,19 +18704,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**  
@@ -15541,6 +18719,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="textinput-allowlanguagefeaturesuninstall"></a>**TextInput/AllowLanguageFeaturesUninstall**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15559,22 +18760,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-excludejapaneseimeexceptjis0208"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15591,22 +18803,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-excludejapaneseimeexceptjis0208andeudc"></a>**TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15623,22 +18846,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="textinput-excludejapaneseimeexceptshiftjis"></a>**TextInput/ExcludeJapaneseIMEExceptShiftJIS**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > The policy is only enforced in Windows 10 for desktop.
@@ -15655,18 +18889,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="timelanguagesettings-allowset24hourclock"></a>**TimeLanguageSettings/AllowSet24HourClock**  
@@ -15687,6 +18909,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -15705,18 +18950,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
@@ -15740,6 +18973,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -15758,22 +19014,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -15802,22 +19069,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
@@ -15834,22 +19112,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -15870,22 +19159,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -15910,18 +19210,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
@@ -15965,6 +19253,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -15981,22 +19292,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
@@ -16013,22 +19335,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16042,22 +19375,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16134,22 +19478,33 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
@@ -16171,22 +19526,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
 
@@ -16194,19 +19560,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
@@ -16268,6 +19621,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
@@ -16285,22 +19661,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in the April service release of Windows 10, version 1607. Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="#update-updateserviceurlalternate">alternate download URL</a>).
 
@@ -16316,23 +19703,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: No  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
@@ -16359,23 +19756,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
@@ -16400,23 +19807,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16439,22 +19856,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education.
@@ -16472,22 +19900,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-PauseFeatureUpdatesStartTime"></a>**Update/PauseFeatureUpdatesStartTime**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
 
@@ -16497,22 +19936,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16528,22 +19978,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-PauseQualityUpdatesStartTime"></a>**Update/PauseQualityUpdatesStartTime**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
 
@@ -16553,22 +20014,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16587,22 +20059,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16626,18 +20109,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
@@ -16680,6 +20151,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16706,22 +20200,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16741,18 +20246,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
@@ -16777,6 +20270,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips the check for battery level to ensure that the reboot will happen at ScheduledInstallTime.
 
@@ -16789,23 +20305,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -16844,22 +20370,33 @@ Example
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
@@ -16880,18 +20417,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
@@ -16907,6 +20432,29 @@ SKU Support:
 <!--StartPolicy-->
 <a href="" id="wifi-allowautoconnecttowifisensehotspots"></a>**Wifi/AllowAutoConnectToWiFiSenseHotspots**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow the device to automatically connect to Wi-Fi hotspots.
 
@@ -16921,22 +20469,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wifi-allowinternetsharing"></a>**Wifi/AllowInternetSharing**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow internet sharing.
 
@@ -16951,22 +20510,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wifi-allowmanualwificonfiguration"></a>**Wifi/AllowManualWiFiConfiguration**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
 
@@ -16985,22 +20555,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wifi-allowwifi"></a>**Wifi/AllowWiFi**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow WiFi connection.
 
@@ -17015,22 +20596,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): Yes  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wifi-allowwifidirect"></a>**Wifi/AllowWiFiDirect**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allow WiFi Direct connection..
 
@@ -17041,23 +20633,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wifi-wlanscanmode"></a>**Wifi/WLANScanMode**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow an enterprise to control the WLAN scanning behavior and how aggressively devices should be actively scanning for Wi-Fi networks to get devices connected.
 
@@ -17071,22 +20673,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="windowsinkworkspace-allowsuggestedappsinwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowSuggestedAppsInWindowsInkWorkspace**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Show recommended app suggestions in the ink workspace.
 
@@ -17099,22 +20712,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="windowsinkworkspace-allowwindowsinkworkspace"></a>**WindowsInkWorkspace/AllowWindowsInkWorkspace**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether to allow the user to access the ink workspace.
 
@@ -17128,18 +20752,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="windowslogon-disablelockscreenappnotifications"></a>**WindowsLogon/DisableLockScreenAppNotifications**  
@@ -17188,6 +20800,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="windowslogon-hidefastuserswitching"></a>**WindowsLogon/HideFastUserSwitching**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to hide the Switch account button on the sign-in screen, Start, and the Task Manager. If you enable this policy setting, the Switch account button is hidden from the user who is attempting to sign-in or is signed in to the computer that has this policy applied. If you disable or do not configure this policy setting, the Switch account button is accessible to the user in the three locations.
 
@@ -17205,22 +20840,33 @@ ADMX Info:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowprojectionfrompc"></a>**WirelessDisplay/AllowProjectionFromPC**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
 
@@ -17231,23 +20877,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowprojectionfrompcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionFromPCOverInfrastructure**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
 
@@ -17258,23 +20914,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowprojectiontopc"></a>**WirelessDisplay/AllowProjectionToPC**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow turning off the projection to a PC.
 
@@ -17289,22 +20955,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-Allowprojectiontopcoverinfrastructure"></a>**WirelessDisplay/AllowProjectionToPCOverInfrastructure**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
 
@@ -17315,19 +20992,6 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Business: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: Yes  
--   Mobile Enterprise: Yes  
--   IoT Core: Yes  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver"></a>**WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver**  
@@ -17339,15 +21003,33 @@ SKU Support:
 
 
 <!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Can be set using Exchange Active Sync (EAS): No  
-
-<!--EndSKU-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="wirelessdisplay-requirepinforpairing"></a>**WirelessDisplay/RequirePinForPairing**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allow or disallow requirement for a PIN for pairing.
 
@@ -17360,22 +21042,91 @@ SKU Support:
 
 
 
-<!--EndDescription-->
-<!--StartSKU-->
-SKU Support:  
--   Home: No  
--   Pro: Yes  
--   Enterprise: Yes  
--   Education: Yes  
--   Mobile: No  
--   Mobile Enterprise: No  
--   IoT Core: No  
--   Can be set using Exchange Active Sync (EAS): No  
 
-<!--EndSKU-->
+<!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
+
+Footnote:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+
 <!--EndPolicies-->
+
+<!--StartIoTCore-->
+## IoT Core Support  
+
+[ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
+[Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
+[Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
+[Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
+[Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
+[Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
+[Browser/AllowAutofill](#browser-allowautofill)  
+[Browser/AllowBrowser](#browser-allowbrowser)  
+[Browser/AllowCookies](#browser-allowcookies)  
+[Browser/AllowDoNotTrack](#browser-allowdonottrack)  
+[Browser/AllowInPrivate](#browser-allowinprivate)  
+[Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
+[Browser/AllowPopups](#browser-allowpopups)  
+[Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
+[Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
+[Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
+[Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
+[Camera/AllowCamera](#camera-allowcamera)  
+[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+[Connectivity/AllowNFC](#connectivity-allownfc)  
+[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+[Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
+[Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
+[DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
+[Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
+[Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
+[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+[Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
+[System/AllowEmbeddedMode](#system-allowembeddedmode)  
+[System/AllowStorageCard](#system-allowstoragecard)  
+[System/TelemetryProxy](#system-telemetryproxy)  
+[Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
+[Update/AllowUpdateService](#update-allowupdateservice)  
+[Update/PauseDeferrals](#update-pausedeferrals)  
+[Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
+[Update/RequireUpdateApproval](#update-requireupdateapproval)  
+[Update/ScheduledInstallDay](#update-scheduledinstallday)  
+[Update/ScheduledInstallTime](#update-scheduledinstalltime)  
+[Update/UpdateServiceUrl](#update-updateserviceurl)  
+[Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
+[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+[Wifi/AllowWiFi](#wifi-allowwifi)  
+[Wifi/WLANScanMode](#wifi-wlanscanmode)  
+<!--EndIoTCore-->
+
+<!--StartEAS-->
+## Can be set using Exchange Active Sync (EAS)  
+
+[Browser/AllowBrowser](#browser-allowbrowser)  
+[Camera/AllowCamera](#camera-allowcamera)  
+[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+[DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+[DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+[DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+[DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
+[DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+[DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+[DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+[DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+[DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
+[Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+[System/AllowStorageCard](#system-allowstoragecard)  
+[System/TelemetryProxy](#system-telemetryproxy)  
+[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+[Wifi/AllowWiFi](#wifi-allowwifi)  
+<!--EndEAS-->
 
 
 
