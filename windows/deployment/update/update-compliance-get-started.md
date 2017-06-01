@@ -10,7 +10,7 @@ author: greg-lindsay
 
 # Get started with Update Compliance
 
-This topic explains the steps necessary to configure your environment for Windows Analytics: Update Compliance. 
+This topic explains the steps necessary to configure your environment for Windows Analytics: Update Compliance.
 
 Steps are provided in sections that follow the recommended setup process:
 1.	Ensure that [prerequisites](#update-compliance-prerequisites) are met.
@@ -19,25 +19,25 @@ Steps are provided in sections that follow the recommended setup process:
 
 ## Update Compliance Prerequisites
 
-Update Compliance has the following requirements: 
-1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
-2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization). 
+Update Compliance has the following requirements:
+1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops).
+2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization).
 3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for different aspects of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
 
-    <TABLE BORDER=1>
-    <TR><TD BGCOLOR="#cceeff">Service<TD BGCOLOR="#cceeff">Endpoint
-    <TR><TD>Connected User Experience and Telemetry component<TD>v10.vortex-win.data.microsoft.com
-    <BR>settings-win.data.microsoft.com
-    <TR><TD>Windows Error Reporting	<TD>watson.telemetry.microsoft.com
-    <TR><TD>Online Crash Analysis	<TD>oca.telemetry.microsoft.com
-    </TABLE>
+  <TABLE BORDER=1>
+  <TR><TD BGCOLOR="#cceeff">Service<TD BGCOLOR="#cceeff">Endpoint
+  <TR><TD>Connected User Experience and Telemetry component<TD>v10.vortex-win.data.microsoft.com
+  <BR>settings-win.data.microsoft.com
+  <TR><TD>Windows Error Reporting	<TD>watson.telemetry.microsoft.com
+  <TR><TD>Online Crash Analysis	<TD>oca.telemetry.microsoft.com
+  </TABLE>
 
- 4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
+4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
 
 
 ## Add Update Compliance to Microsoft Operations Management Suite
 
-Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
+Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/).
 
 If you are already using OMS, you’ll find Update Compliance in the Solutions Gallery. Select the **Update Compliance** tile in the gallery and then click **Add** on the solution's details page. Update Compliance is now visible in your workspace.
 
@@ -55,7 +55,7 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
     <A HREF="images/uc-03.png"><img src="images/uc-03a.png"></A>
     <TABLE>
 
-3.	Create a new OMS workspace. 
+3.	Create a new OMS workspace.
 
     <P><TABLE BORDER=1><TR><TD>
     <A HREF="images/uc-04.png"><img src="images/uc-04a.png"></A>
@@ -79,7 +79,7 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
     <A HREF="images/uc-07.png"><img src="images/uc-07a.png"></A>
     <TABLE>
 
-7.	Select the **Update Compliance** tile in the gallery and then select **Add** on the solution’s details page. You might need to scroll to find **Update Compliance**. The solution is now visible on your workspace. 
+7.	Select the **Update Compliance** tile in the gallery and then select **Add** on the solution’s details page. You might need to scroll to find **Update Compliance**. The solution is now visible on your workspace.
 
     <P><TABLE BORDER=1><TR><TD>
     <A HREF="images/uc-08.png"><img src="images/uc-08a.png"></A>
@@ -103,7 +103,7 @@ After you are subscribed to OMS Update Compliance and your devices have a Commer
 
 ## Deploy your Commercial ID to your Windows 10 devices
 
-In order for your devices to show up in Windows Analytics: Update Compliance, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
+In order for your devices to show up in Windows Analytics: Update Compliance, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM).
 
 - Using Group Policy<BR><BR>
     Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
