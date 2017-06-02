@@ -65,7 +65,7 @@ These countries can provide their VAT number or local equivalent in **Payments &
 
 |Market| Tax identifier |
 |------|----------------|
-| Brazil | CPNJ (required) |
+| Brazil | CNPJ (required) |
 | India | CST ID, VAT ID (both are optional) |
 | Taiwan | VAT ID (optional) |
 
