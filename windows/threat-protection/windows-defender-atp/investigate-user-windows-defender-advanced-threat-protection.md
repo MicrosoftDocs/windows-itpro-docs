@@ -31,13 +31,21 @@ You can find user account information in the following views:
 A clickable user account link is available in these views, that will take you to the user account details page where more details about the user account are shown.
 
 When you investigate a user account entity, you'll see:
-- User account details and Logged on machines
+- User account details, Advanced Threat Analytics (ATA) alerts, and Logged on machines
 - Alerts related to this user
 - Observed in organization (machines logged on to)
 
-![Image of the user account entity details page](images/atp-user-details-view.png)
 
-The user account entity details and logged on machines section display various attributes about the user account. You'll see details such as when the user was first and last seen and the total number of machines the user logged on to. You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
+[TAKEN FROM MOCK ONLY!!! JOEY: UPDATE WITH ACTUAL WHEN READY!!!]
+![Image of the user account entity details page](images/atp-user-view-ata.png)
+
+The user account entity details, ATA alerts, and logged on machines sections display various attributes about the user account.
+
+The user entity tile provides details such as when the user was first and last seen. You can also contact the user using the link provided on the tile. [JOEY: CHECK IF THIS IS CORRECT.]
+
+If you have enabled the ATA feature and there are alerts related to the user, you can click on the link that will take you to the ATA page where more information about the alerts are provided. The ATA tile also provides details such as the last AD site, total group memberships, and login failure associated with the user.
+
+You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
 
 The **Alerts related to this user** section provides a list of alerts that are associated with the user account. This list  is a filtered view of the [Alert queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows alerts where the user context is the selected user account, the date when the last activity was detected, a short description of the alert, the machine associated with the alert, the alert's severity, the alert's status in the queue, and who is assigned the alert.
 
