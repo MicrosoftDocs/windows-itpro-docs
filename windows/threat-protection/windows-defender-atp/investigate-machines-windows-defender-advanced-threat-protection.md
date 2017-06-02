@@ -34,15 +34,22 @@ You can click on affected machines whenever you see them in the portal to open a
 - Any IP address or domain details view
 
 When you investigate a specific machine, you'll see:
--	Machine details, Logged on users, and Machine Reporting
+-	Machine details, Advanced Threat Analytics (ATA) alerts, Logged on users, and Machine Reporting
 - Alerts related to this machine
 - Machine timeline
 
-![Image of machine details page](images/atp-machine-details-view.png)
+[TAKEN FROM MOCK ONLY!! JOEY: UPDATE WITH ACTUAL WHEN READY!!]
+![Image of machine details page](images/atp-machine-view-ata.png)
 
-The machine details, total logged on users and machine reporting sections display various attributes about the machine. You’ll see details such as machine name, health state, actions you can take on the machine, and others. For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
+The machine details, Advanced Threat Analytics alerts, total logged on users, and machine reporting sections display various attributes about the machine. You’ll see details such as machine name, health state, actions you can take on the machine, and others.
 
-You'll also see other information such as domain, operating system (OS) and build, total logged on users and who frequently and less frequently logged on, IP address, and how long it's been reporting sensor data to the Windows Defender ATP service.
+For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
+
+From this view, you'll see other information such as domain, operating system (OS) and build, ATA alerts, total logged on users and who frequently and less frequently logged on, IP address, and how long it's been reporting sensor data to the Windows Defender ATP service.
+
+[DRAFT ON ATA BELOW!!!]
+
+If you have enabled the Advanced Threat Analytics feature and there are alerts on the machine, you can click on the link that will take you to the ATA page where more information about the alerts are provided.
 
 Clicking on the number of total logged on users in the Logged on users tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
 
