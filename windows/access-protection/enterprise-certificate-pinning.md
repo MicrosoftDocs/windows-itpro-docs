@@ -189,9 +189,12 @@ Sign-in to the reference computer using domain administrator equivalent credenti
 8.	Right-click the **Registry** node and click **New**.
 9.	In the **New Registry Properties** dialog box, select **Update** from the **Action** list.  Select **HKEY_LOCAL_MACHINE** from the **Hive** list.
 10.	For the **Key Path**, click **…** to launch the **Registry Item Browser**.  Navigate to the following registry key and select the **PinRules** registry value name:
+
     HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType0\CertDllCreateCertificateChainEngine\Config  
+
     Click **Select** to close the **Registry Item Browser**.
-11.	The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REGBINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Click **OK** to save your settings and close the dialog box.
+    
+11.	The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REG\_BINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Click **OK** to save your settings and close the dialog box.
 
     ![PinRules Properties](images/enterprise-certificate-pinning-pinrules-properties.png)
     
