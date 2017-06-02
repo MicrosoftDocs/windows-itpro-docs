@@ -73,6 +73,7 @@ When you've completed all the required steps, you should see onboarded servers i
 
 
 ## Offboard server endpoints
+To offboard the server, you must uninstall the agent from the server. After you uninstall the agent, the server will no longer send sensor data to Windows Defender ATP.
 
 For more information, see [To disable an agent](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents#to-disable-an-agent).
 
