@@ -487,7 +487,7 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Russia 
 
 ### Support for free apps and Minecraft: Education Edition
-Customers in these markets can Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition.  
+Customers in these markets can use Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition.  
 - Brazil
 - Taiwan
 - Ukraine 
