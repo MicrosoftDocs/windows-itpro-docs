@@ -25,7 +25,7 @@ Ensure the following prerequisites are met before using site discovery:
 
 1. Install the prerequisite KBs to add Site Discovery support and the latest fixes from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx). Install the following:
    - For Windows 7 and Windows 8.1 - March, 2017 Security Monthly Rollup
-   - For Windows 10 - April 2017 Cumulative Update
+   - For Windows 10 - Cumulative Update for Windows 10 Version 1607 (KB4015217) 
 2. Enable Internet Explorer data collection, which is disabled by default. The best way to enable it is to modify the [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md) to allow Internet Explorer data collection before you run it. In addition, to enable Site Discovery on Windows 10 set **Enhanced Telemetry Level** for the Feedback and Diagnostics setting (Privacy > Feedback & Diagnostics settings), and enable **Page Prediction within Internet Explorer 11**.
 
     If necessary, you can also enable data collection by creating the following registry entry. 
