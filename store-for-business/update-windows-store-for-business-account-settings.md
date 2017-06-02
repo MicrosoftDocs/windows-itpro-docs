@@ -61,13 +61,13 @@ Taxes for Microsoft Store for Business purchases are determined by your business
 - Switzerland
 - United Kingdom
 
-These countries can provide their VAT number or local equivalent in **Payments & billing**. However, they can only acquire free apps.  
+These countries can provide their VAT number or local equivalent in **Payments & billing**.   
 
 |Market| Tax identifier |
 |------|----------------|
-| Brazil | CPNJ (required), CCMID  (optional) |
-| India | CST ID, VAT ID |
-| Taiwan | Unified business number|
+| Brazil | CPNJ (required) |
+| India | CST ID, VAT ID (both are optional) |
+| Taiwan | VAT ID (optional) |
 
 ### Tax-exempt status 
 
