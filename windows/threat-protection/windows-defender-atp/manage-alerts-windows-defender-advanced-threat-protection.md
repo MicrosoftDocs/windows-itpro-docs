@@ -85,6 +85,7 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
   - Alert title
   - Indicator of compromise (IOC)
   - Suppression conditions
+
     > [!NOTE]
     > The SHA1 of the alert cannot be modified
 5. Specify the action and scope on the alert. You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. You can also specify to suppress the alert on the machine only or the whole organization.
