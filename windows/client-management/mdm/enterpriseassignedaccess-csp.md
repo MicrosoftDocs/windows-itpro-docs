@@ -16,9 +16,8 @@ The EnterpriseAssignedAccess configuration service provider allows IT administra
 
 > **Note**   The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
 
- 
 
-For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](https://msdn.microsoft.com/library/windows/hardware/mt186983).
+To use an app to create a lockdown XML see [Use the Lockdown Designer app to create a Lockdown XML file](https://docs.microsoft.com/en-us/windows/configuration/mobile-devices/mobile-lockdown-designer). For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](https://msdn.microsoft.com/library/windows/hardware/mt186983). 
 
 The following diagram shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
 
@@ -44,137 +43,103 @@ When using the AssignedAccessXml in the EnterpriseAssignedAccess CSP through an 
 
 When using the AssignedAccessXml in a provisioning package using the Windows Imaging and Configuration Designer (ICD) tool, do not use escaped characters.
 
- 
+Entry | Description
+----------- | ------------
+ActionCenter | You can enable or disable the Action Center (formerly known as Notification Center) on the device. Set to true to enable the Action Center, or set to false to disable the Action Center.
+ActionCenter | Example: `<ActionCenter enabled="true"></ActionCenter>`
+ActionCenter | In Windows 10, when the Action Center is disabled, Above Lock notifications and toasts are also disabled. When the Action Center is enabled, the following policies are also enabled;  **AboveLock/AllowActionCenterNotifications** and **AboveLock/AllowToasts**. For more information about these policies, see [Policy CSP](policy-configuration-service-provider.md)
+ActionCenter | You can also add the following optional attributes to the ActionCenter element to override the default behavior: **aboveLockToastEnabled** and **actionCenterNotificationEnabled**. Valid values are 0 (policy disabled), 1 (policy enabled), and -1 (not set, policy enabled). In this example, the Action Center is enabled and both policies are disabled.: `<ActionCenter enabled="true" aboveLockToastEnabled="0" actionCenterNotificationEnabled="0"/>`
+ActionCenter | These optional attributes are independent of each other. In this example, Action Center is enabled, the notifications policy is disabled, and the toast policy is enabled by default because it is not set. `<ActionCenter enabled="true" actionCenterNotificationEnabled="0"/>`
+StartScreenSize | Specify the size of the Start screen. In addition to 4/6 columns, you can also use 4/6/8 depending on screen resolutions. Valid values: **Small** - sets the width to 4 columns on device with short axis &lt;400epx or 6 columns on devices with short axis &gt;=400epx. **Large** - sets the width to 6 columns on devices with short axis &lt;400epx or 8 columns on devices with short axis &gt;=400epx.
+StartScreenSize | If you have existing lockdown XML, you must update it if your device has &gt;=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4. Example: `<StartScreenSize>Large</StartScreenSize>`
+Application | Provide the product ID for each app that will be available on the device. You can find the product ID for a locally developed app in the AppManifest.xml file of the app. For the list of product ID and AUMID see [ProductIDs in Windows 10 Mobile](#productid).
+Application | To turn on the notification for a Windows app, you must include the application's AUMID in the lockdown XML. However, the user can change the setting at any time from user interface. Example: `<Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"/>`
+Application | <img src="images/enterpriseassignedaccess-csp.png" alt="modern app notification" />
+Application | Include PinToStart to display an app on the Start screen. For apps pinned to the Start screen, identify a tile size (small, medium, or large), and a location. The size of a small tile is 1 column x 1 row, a medium tile is 2 x 2, and a large tile is 4 x 2. For the tile location, the first value indicates the column and the second value indicates the row. A value of 0 (zero) indicates the first column, a value of 1 indicates the second column, and so on. Include autoRun as an attribute to configure the application to run automatically.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Entry</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="vertical-align:top"><p>ActionCenter</p></td>
-<td><p>You can enable or disable the Action Center (formerly known as Notification Center) on the device. Set to true to enable the Action Center, or set to false to disable the Action Center.</p>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;ActionCenter enabled=&quot;true&quot;&gt;&lt;/ActionCenter&gt;</code></pre>
-<p>In Windows 10, when the Action Center is disabled, Above Lock notifications and toasts are also disabled. When the Action Center is enabled, the following policies are also enabled:</p>
-<ul>
-<li>AboveLock/AllowActionCenterNotifications</li>
-<li>AboveLock/AllowToasts</li>
-</ul>
-<p>For more information about these policies, see [Policy CSP](policy-configuration-service-provider.md)</p>
-<p>You can also add the following optional attributes to the ActionCenter element to override the default behavior:</p>
-<ul>
-<li>aboveLockToastEnabled</li>
-<li>actionCenterNotificationEnabled</li>
-</ul>
-<p>Valid values are 0 (policy disabled), 1 (policy enabled), and -1 (not set, policy enabled).</p>
-<p>In this example, the Action Center is enabled and both policies are disabled.</p>
-<pre class="syntax" space="preserve"><code>&lt;ActionCenter enabled=&quot;true&quot; aboveLockToastEnabled=&quot;0&quot; actionCenterNotificationEnabled=&quot;0&quot;/&gt;</code></pre>
-<p>These optional attributes are independent of each other.</p>
-<p>In this example, Action Center is enabled, the notifications policy is disabled, and the toast policy is enabled by default because it is not set.</p>
-<pre class="syntax" space="preserve"><code>&lt;ActionCenter enabled=&quot;true&quot; actionCenterNotificationEnabled=&quot;0&quot;/&gt;</code></pre></td>
-</tr>
-<tr class="even">
-<td style="vertical-align:top"><p>StartScreenSize</p></td>
-<td><p>Specify the size of the Start screen. In addition to 4/6 columns, you can also use 4/6/8 depending on screen resolutions.</p>
-<p>Valid values:</p>
-<ul>
-<li><strong>Small</strong> sets the width to 4 columns on device with short axis &lt;400epx or 6 columns on devices with short axis &gt;=400epx.</li>
-<li><strong>Large</strong> sets the width to 6 columns on devices with short axis &lt;400epx or 8 columns on devices with short axis &gt;=400epx.</li>
-</ul>
-<p>If you have existing lockdown XML, you must update it if your device has &gt;=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4.</p>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;StartScreenSize&gt;Large&lt;/StartScreenSize&gt;</code></pre></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align:top"><p>Application</p></td>
-<td><p>Provide the product ID for each app that will be available on the device.</p>
-<p>You can find the product ID for a locally developed app in the AppManifest.xml file of the app. For the list of product ID and AUMID see [ProductIDs in Windows 10 Mobile](#productid).</p>
-<p>To turn on the notification for a Windows app, you must include the application's AUMID in the lockdown XML. However, the user can change the setting at any time from user interface.</p>
-<pre class="syntax" space="preserve"><code>&lt;Application productId=&quot;{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}&quot; aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail&quot;/&gt;</code></pre>
-<img src="images/enterpriseassignedaccess-csp.png" alt="modern app notification" />
-<p>Include PinToStart to display an app on the Start screen. For apps pinned to the Start screen, identify a tile size (small, medium, or large), and a location. The size of a small tile is 1 column x 1 row, a medium tile is 2 x 2, and a large tile is 4 x 2.</p>
-<p>For the tile location, the first value indicates the column and the second value indicates the row. A value of <strong>0</strong> indicates the first column, a value of <strong>1</strong> indicates the second column, and so on.</p>
-<p>Include autoRun as an attribute to configure the application to run automatically.</p>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;Application productId=&quot;{2A4E62D8-8809-4787-89F8-69D0F01654FB}&quot; autoRun=&quot;true&quot;&gt;
-   &lt;PinToStart&gt;
-      &lt;Size&gt;Large&lt;/Size&gt;
-      &lt;Location&gt;
-         &lt;LocationX&gt;0&lt;/LocationX&gt;
-         &lt;LocationY&gt;2&lt;/LocationY&gt;
-      &lt;/Location&gt;
-   &lt;/PinToStart&gt;
-&lt;/Application&gt;</code></pre>
-<p>Multiple App Packages enable multiple apps to exist inside the same package. Since ProductIds identify packages and not applications, specifying a ProductId is not enough to distinguish between individual apps inside a multiple app package. Trying to include application from a multiple app package with just a ProductId can result in unexpected behavior.</p>
-<p>To support pinning applications in multiple app packages, use an AUMID parameter in lockdown XML. For the list of product ID and AUMID, see [ProductIDs in Windows 10 Mobile](#productid). The following example shows how to pin both Outlook mail and Outlook calendar.</p>
-<pre class="syntax" space="preserve"><code>&lt;Apps&gt;
-    &lt;!-- Outlook Calendar --&gt;
-    &lt;Application productId=&quot;{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}&quot; 
-aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar&quot;&gt;
-        &lt;PinToStart&gt;
-            &lt;Size&gt;Large&lt;/Size&gt;
-            &lt;Location&gt;
-                &lt;LocationX&gt;1&lt;/LocationX&gt;
-                &lt;LocationY&gt;4&lt;/LocationY&gt;
-            &lt;/Location&gt;
-        &lt;/PinToStart&gt;
-    &lt;/Application&gt;
-    &lt;!-- Outlook Mail--&gt;
-    &lt;Application productId=&quot;{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}&quot; 
-aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail&quot;&gt;
-        &lt;PinToStart&gt;
-            &lt;Size&gt;Large&lt;/Size&gt;
-            &lt;Location&gt;
-                &lt;LocationX&gt;1&lt;/LocationX&gt;
-                &lt;LocationY&gt;6&lt;/LocationY&gt;
-            &lt;/Location&gt;
-        &lt;/PinToStart&gt;
-    &lt;/Application&gt;
-&lt;/Apps&gt;</code></pre></td>
-</tr>
-<tr class="even">
-<td style="vertical-align:top"><p>Folder</p></td>
-<td><p>A folder should be contained in &lt;Applications/&gt; node among with other &lt;Application/&gt; nodes, it shares most grammar with the Application Node, <strong>folderId</strong> is mandatory, <strong>folderName</strong> is optional, which is the folder name displayed on Start. <strong>folderId</strong> is a unique unsigned integer for each folder.</p>
-<p>For example:</p>
-<pre class="syntax" space="preserve"><code>&lt;Application folderId=&quot;4&quot; folderName=&quot;foldername&quot;&gt;
-    &lt;PinToStart&gt;
-        &lt;Size&gt;Large&lt;/Size&gt;
-        &lt;Location&gt;
-            &lt;LocationX&gt;0&lt;/LocationX&gt;
-            &lt;LocationY&gt;2&lt;/LocationY&gt;
-        &lt;/Location&gt;
-    &lt;/PinToStart&gt;
-&lt;/Application&gt;</code></pre>
-<p>An application that belongs in the folder would add an optional attribute <strong>ParentFolderId</strong>, which maps to <strong>folderId</strong> of the folder. In this case, the location of this application will be located inside the folder.</p>
-<pre class="syntax" space="preserve"><code>&lt;Application productId=&quot;{2A4E62D8-8809-4787-89F8-69D0F01654FB}&quot;&gt;
-    &lt;PinToStart&gt;
-        &lt;Size&gt;Medium&lt;/Size&gt;
-        &lt;Location&gt;
-            &lt;LocationX&gt;0&lt;/LocationX&gt;
-            &lt;LocationY&gt;0&lt;/LocationY&gt;
-        &lt;/Location&gt;
-        &lt;ParentFolderId&gt;2&lt;/ParentFolderId&gt;
-    &lt;/PinToStart&gt;
-&lt;/Application&gt;</code></pre></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align:top"><p>Settings</p></td>
-<td><p><strong>Settings pages</strong></p>
-<p>Starting in Windows 10, version 1511, you can specify the following settings pages in the lockdown XML file.</p>
-<div class="alert">
-<strong>Important</strong>  Do not specify a group entry without a page entry because it will cause an undefined behavior.
-</div>
-<div>
- 
-</div>
+Application example:
+``` syntax
+<Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}" autoRun="true">
+   <PinToStart>
+      <Size>Large</Size>
+      <Location>
+         <LocationX>0</LocationX>
+         <LocationY>2</LocationY>
+      </Location>
+   </PinToStart>
+</Application>
+```
+
+Entry | Description
+----------- | ------------
+Application | Multiple App Packages enable multiple apps to exist inside the same package. Since ProductIds identify packages and not applications, specifying a ProductId is not enough to distinguish between individual apps inside a multiple app package. Trying to include application from a multiple app package with just a ProductId can result in unexpected behavior. To support pinning applications in multiple app packages, use an AUMID parameter in lockdown XML. For the list of product ID and AUMID, see [ProductIDs in Windows 10 Mobile](#productid). The following example shows how to pin both Outlook mail and Outlook calendar.
+
+Application example:
+``` syntax
+<Apps>
+    <!-- Outlook Calendar -->
+    <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" 
+aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar">
+        <PinToStart>
+            <Size>Large</Size>
+            <Location>
+                <LocationX>1</LocationX>
+                <LocationY>4</LocationY>
+            </Location>
+        </PinToStart>
+    </Application>
+    <!-- Outlook Mail-->
+    <Application productId="{A558FEBA-85D7-4665-B5D8-A2FF9C19799B}" 
+aumid="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail">
+        <PinToStart>
+            <Size>Large</Size>
+            <Location>
+                <LocationX>1</LocationX>
+                <LocationY>6</LocationY>
+            </Location>
+        </PinToStart>
+    </Application>
+</Apps>
+```
+
+Entry | Description
+----------- | ------------
+Folder | A folder should be contained in &lt;Applications/&gt; node among with other &lt;Application/&gt; nodes, it shares most grammar with the Application Node, **folderId** is mandatory, **folderName** is optional, which is the folder name displayed on Start. **folderId** is a unique unsigned integer for each folder.
+
+Folder example:
+``` syntax
+<Application folderId="4" folderName="foldername">
+    <PinToStart>
+        <Size>Large</Size>
+        <Location>
+            <LocationX>0</LocationX>
+            <LocationY>2</LocationY>
+        </Location>
+    </PinToStart>
+</Application>
+```
+An application that belongs in the folder would add an optional attribute **ParentFolderId**, which maps to **folderId** of the folder. In this case, the location of this application will be located inside the folder.
+
+``` syntax
+<Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
+    <PinToStart>
+        <Size>Medium</Size>
+        <Location>
+            <LocationX>0</LocationX>
+            <LocationY>0</LocationY>
+        </Location>
+        <ParentFolderId>2</ParentFolderId>
+    </PinToStart>
+</Application>
+```
+
+Entry | Description
+----------- | ------------
+Settings | Starting in Windows 10, version 1511, you can specify the following settings pages in the lockdown XML file.
+
+> [!Important]  
+> Do not specify a group entry without a page entry because it will cause an undefined behavior.
+
 <ul>
 <li>System (main menu) - SettingsPageGroupPCSystem
 <ul>
@@ -278,9 +243,14 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 <li>Extensibility - SettingsPageExtensibility</li>
 </ul></li>
 </ul>
-<p><strong>Quick action settings</strong></p>
-<p>Starting in Windows 10, version 1511, you can specify the following quick action settings in the lockdown XML file. The following list shows the quick action settings and settings page dependencies (group and page). </p>
-<p>Note:  Only Windows 10, versions 1511 and 1607, the dependent settings group and pages are automatically added when the quick action item is specified in the lockdown XML. This statement does not apply to Windows 10, version 1703.</p>
+
+**Quick action settings**  
+
+Starting in Windows 10, version 1511, you can specify the following quick action settings in the lockdown XML file. The following list shows the quick action settings and settings page dependencies (group and page).
+
+> [!Note]  
+> Only Windows 10, versions 1511 and 1607, the dependent settings group and pages are automatically added when the quick action item is specified in the lockdown XML. This statement does not apply to Windows 10, version 1703.
+
 <ul>
 <li><p>SystemSettings_System_Display_QuickAction_Brightness</p>
 <p>Dependencies - SettingsPageSystemDisplay, SettingsPageDisplay</p></li>
@@ -315,277 +285,265 @@ aumid=&quot;microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowsl
 <li><p>SystemSettings_QuickAction_Camera</p>
 <p>Dependencies - none</p></li>
 </ul>
-<p>In this example, all settings pages and quick action settings are allowed. An empty &lt;Settings&gt; node indicates that none of the settings are blocked.</p>
-<pre class="syntax" space="preserve"><code>&lt;Settings&gt;
-&lt;/Settings&gt;</code></pre>
-<p>In this example, all System setting pages are enabled. Note that the System page group is added as well as all of the System subpage names.</p>
-<pre class="syntax" space="preserve"><code>&lt;Settings&gt; 
-  &lt;System name=&quot;SettingsPageGroupPCSystem&quot; /&gt; 
-  &lt;System name=&quot;SettingsPageDisplay&quot; /&gt; 
-  &lt;System name=&quot;SettingsPageAppsNotifications&quot; /&gt;
-  &lt;System name=&quot;SettingsPageCalls&quot; /&gt;
-  &lt;System name=&quot;SettingsPageMessaging&quot; /&gt; 
-  &lt;System name=&quot;SettingsPageBatterySaver&quot; /&gt; 
-  &lt;System name=&quot;SettingsPageStorageSenseStorageOverview&quot; /&gt;
-  &lt;System name=&quot;SettingsPageGroupPCSystemDeviceEncryption&quot; /&gt; 
-  &lt;System name=&quot;SettingsPageDrivingMode&quot; /&gt; 
-  &lt;System name=&quot;SettingsPagePCSystemInfo&quot; /&gt; 
- &lt;/Settings&gt;</code></pre>
-<p>To remove access to all of the settings in the system, the settings application would simply not be listed in the app list for a particular role.</p></td>
-</tr>
-<tr class="even">
-<td style="vertical-align:top"><p>Buttons</p></td>
-<td><p>The following list identifies the hardware buttons on the device that you can lock down in <strong>ButtonLockdownList</strong>. When a user taps a button that is in the lockdown list, nothing will happen.</p>
+
+In this example, all settings pages and quick action settings are allowed. An empty \<Settings> node indicates that none of the settings are blocked.  
+
+``` syntax
+<Settings>
+</Settings>
+```
+
+In this example, all System setting pages are enabled. Note that the System page group is added as well as all of the System subpage names.  
+
+``` syntax
+<Settings> 
+  <System name="SettingsPageGroupPCSystem" /> 
+  <System name="SettingsPageDisplay" /> 
+  <System name="SettingsPageAppsNotifications" />
+  <System name="SettingsPageCalls" />
+  <System name="SettingsPageMessaging" /> 
+  <System name="SettingsPageBatterySaver" /> 
+  <System name="SettingsPageStorageSenseStorageOverview" />
+  <System name="SettingsPageGroupPCSystemDeviceEncryption" /> 
+  <System name="SettingsPageDrivingMode" /> 
+  <System name="SettingsPagePCSystemInfo" /> 
+ </Settings>
+```
+
+Entry | Description
+----------- | ------------
+Buttons | The following list identifies the hardware buttons on the device that you can lock down in <strong>ButtonLockdownList</strong>. When a user taps a button that is in the lockdown list, nothing will happen.
+ 
 <ul>
 <li><p>Start</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Lock down of the Start button only prevents the press and hold event.</p>
-</div>
-<div>
- 
-</div></li>
 <li><p>Back</p></li>
 <li><p>Search</p></li>
 <li><p>Camera</p></li>
 <li><p>Custom1</p></li>
 <li><p>Custom2</p></li>
-<li><p>Custom3</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Custom buttons are hardware buttons that can be added to devices by OEMs.</p>
-</div>
-<div>
- 
-</div></li>
+<li><p>Custom3</p></li>
 </ul>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;Buttons&gt;
-   &lt;ButtonLockdownList&gt;
-      &lt;!-- Lockdown all buttons --&gt;
-         &lt;Button name=&quot;Search&quot;&gt;
-         &lt;/Button&gt;
-         &lt;Button name=&quot;Camera&quot;&gt;
-         &lt;/Button&gt;
-         &lt;Button name=&quot;Custom1&quot;&gt;
-         &lt;/Button&gt;
-         &lt;Button name=&quot;Custom2&quot;&gt;
-         &lt;/Button&gt;
-         &lt;Button name=&quot;Custom3&quot;&gt;
-         &lt;/Button&gt;
-   &lt;/ButtonLockdownList&gt;</code></pre>
-<p>The Search and custom buttons can be <em>remapped</em> or configured to open a specific application. Button remapping takes effect for the device and applies to all users.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>The lockdown settings for a button, per user role, will apply regardless of the button mapping.</p>
-</div>
-<div>
- 
-</div>
-<div class="alert">
-<strong>Warning</strong>  
-<p>Button remapping can enable a user to open an application that is not in the Allow list. Use button lock down to prevent application access for a user role.</p>
-</div>
-<div>
- 
-</div>
-<p>To remap a button in lockdown XML, you supply the button name, the button event (typically &quot;press&quot;), and the product ID for the application the button will open.</p>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;ButtonRemapList&gt;
-   &lt;Button name=&quot;Search&quot;&gt;
-      &lt;ButtonEvent name=&quot;Press&quot;&gt;
-         &lt;!-- Alarms --&gt;
-         &lt;Application productId=&quot;{08179793-ED2E-45EA-BA12-BDE3EE9C3CE3}&quot; parameters=&quot;&quot; /&gt;
-          &lt;/ButtonEvent&gt;
-   &lt;/Button&gt;
-&lt;/ButtonRemapList&gt;</code></pre>
-<p><strong>Disabling navigation buttons</strong></p>
-<p>To disable navigation buttons (such as Home or Back) in lockdown XML, you supply the name (for example, Start) and button event (typically &quot;press&quot;).</p>
-<p>The following section contains a sample lockdown XML file that shows how to disable navigation buttons.</p>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;HandheldLockdown version=&quot;1.0&quot; &gt;
-    &lt;Default&gt;
-        &lt;ActionCenter enabled=&quot;false&quot; /&gt;
-        &lt;Apps&gt;
-            &lt;!-- Settings --&gt;
-            &lt;Application productId=&quot;{2A4E62D8-8809-4787-89F8-69D0F01654FB}&quot;&gt;
-                &lt;PinToStart&gt;
-                    &lt;Size&gt;Large&lt;/Size&gt;
-                    &lt;Location&gt;
-                        &lt;LocationX&gt;0&lt;/LocationX&gt;
-                        &lt;LocationY&gt;0&lt;/LocationY&gt;
-                    &lt;/Location&gt;
-                &lt;/PinToStart&gt;
-            &lt;/Application&gt;
 
-            &lt;!-- Phone Apps --&gt;
-            &lt;Application productId=&quot;{F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7}&quot;&gt;
-                &lt;PinToStart&gt;
-                    &lt;Size&gt;Small&lt;/Size&gt;
-                    &lt;Location&gt;
-                        &lt;LocationX&gt;2&lt;/LocationX&gt;
-                        &lt;LocationY&gt;2&lt;/LocationY&gt;
-                    &lt;/Location&gt;
-                &lt;/PinToStart&gt;
-            &lt;/Application&gt;
-        &lt;/Apps&gt;
-        &lt;Buttons&gt;
-            &lt;ButtonLockdownList&gt;
-                &lt;Button name=&quot;Start&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Back&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Search&quot;&gt;
-                    &lt;ButtonEvent name=&quot;All&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Camera&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Custom1&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Custom2&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Custom3&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-            &lt;/ButtonLockdownList&gt;
-            &lt;ButtonRemapList /&gt;
-        &lt;/Buttons&gt;
-        &lt;MenuItems&gt;
-            &lt;DisableMenuItems/&gt;
-        &lt;/MenuItems&gt;
-        &lt;Settings&gt;
-        &lt;/Settings&gt;
-        &lt;Tiles&gt;
-            &lt;EnableTileManipulation/&gt;
-        &lt;/Tiles&gt;
-        &lt;StartScreenSize&gt;Small&lt;/StartScreenSize&gt;
-    &lt;/Default&gt;
-&lt;/HandheldLockdown&gt;</code></pre></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align:top"><p>MenuItems</p></td>
-<td><p>Use <strong>DisableMenuItems</strong> to prevent use of the context menu, which is displayed when a user presses and holds an application in the All Programs list. You can include this entry in the default profile and in any additional user role profiles that you create.</p>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;MenuItems&gt;
-   &lt;DisableMenuItems/&gt;
-&lt;/MenuItems&gt;</code></pre>
-<div class="alert">
-<strong>Important</strong>  
-<p>If <strong>DisableMenuItems</strong> is not included in a profile, users of that profile can uninstall apps.</p>
-</div>
-<div>
- 
-</div></td>
-</tr>
-<tr class="even">
-<td style="vertical-align:top"><p>Tiles</p></td>
-<td><p><strong>Turning-on tile manipulation</strong></p>
-<p>By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile.</p>
-<p>If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile.</p>
-<div class="alert">
-<strong>Important</strong>  
-<p>If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile.</p>
-</div>
-<div>
- 
-</div>
-<p>The following sample file contains configuration for enabling tile manipulation.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Tile manipulation is disabled when you don’t have a <code>&lt;Tiles&gt;</code> node in lockdown XML, or if you have a <code>&lt;Tiles&gt;</code> node but don’t have the <code>&lt;EnableTileManipulation/&gt;</code> node.</p>
-</div>
-<div>
- 
-</div>
-<p>Example:</p>
-<pre class="syntax" space="preserve"><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;HandheldLockdown version=&quot;1.0&quot; &gt;
-    &lt;Default&gt;
-        &lt;ActionCenter enabled=&quot;false&quot; /&gt;
-        &lt;Apps&gt;
-            &lt;!-- Settings --&gt;
-            &lt;Application productId=&quot;{2A4E62D8-8809-4787-89F8-69D0F01654FB}&quot;&gt;
-                &lt;PinToStart&gt;
-                    &lt;Size&gt;Large&lt;/Size&gt;
-                    &lt;Location&gt;
-                        &lt;LocationX&gt;0&lt;/LocationX&gt;
-                        &lt;LocationY&gt;0&lt;/LocationY&gt;
-                    &lt;/Location&gt;
-                &lt;/PinToStart&gt;
-            &lt;/Application&gt;
+> [!Note]  
+> Lock down of the Start button only prevents the press and hold event.  
+>
+> Custom buttons are hardware buttons that can be added to devices by OEMs.
 
-            &lt;!-- Phone Apps --&gt;
-            &lt;Application productId=&quot;{F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7}&quot;&gt;
-                &lt;PinToStart&gt;
-                    &lt;Size&gt;Small&lt;/Size&gt;
-                    &lt;Location&gt;
-                        &lt;LocationX&gt;2&lt;/LocationX&gt;
-                        &lt;LocationY&gt;2&lt;/LocationY&gt;
-                    &lt;/Location&gt;
-                &lt;/PinToStart&gt;
-            &lt;/Application&gt;
-        &lt;/Apps&gt;
-        &lt;Buttons&gt;
-            &lt;ButtonLockdownList&gt;
-                &lt;Button name=&quot;Start&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Back&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Search&quot;&gt;
-                    &lt;ButtonEvent name=&quot;All&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Camera&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Custom1&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Custom2&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-                &lt;Button name=&quot;Custom3&quot;&gt;
-                    &lt;ButtonEvent name=&quot;Press&quot; /&gt;
-                    &lt;ButtonEvent name=&quot;PressAndHold&quot; /&gt;
-                &lt;/Button&gt;
-            &lt;/ButtonLockdownList&gt;
-            &lt;ButtonRemapList /&gt;
-        &lt;/Buttons&gt;
-        &lt;MenuItems&gt;
-            &lt;DisableMenuItems/&gt;
-        &lt;/MenuItems&gt;
-        &lt;Settings&gt;
-        &lt;/Settings&gt;
-        &lt;Tiles&gt;
-            &lt;EnableTileManipulation/&gt;
-        &lt;/Tiles&gt;
-        &lt;StartScreenSize&gt;Small&lt;/StartScreenSize&gt;
-    &lt;/Default&gt;
-&lt;/HandheldLockdown&gt;</code></pre></td>
-</tr>
-<tr class="odd">
-<td style="vertical-align:top"><p>CSP Runner</p></td>
-<td><p>Allows CSPs to be executed on the device per user role. You can use this to implement role specific policies, such as changing the color scheme when an admin logs on the device, or to set configurations per role.</p></td>
-</tr>
-</tbody>
-</table>
+Buttons example: 
+``` syntax
+<Buttons>
+   <ButtonLockdownList>
+      <!-- Lockdown all buttons -->
+         <Button name="Search">
+         </Button>
+         <Button name="Camera">
+         </Button>
+         <Button name="Custom1">
+         </Button>
+         <Button name="Custom2">
+         </Button>
+         <Button name="Custom3">
+         </Button>
+   </ButtonLockdownList>
+```
+The Search and custom buttons can be <em>remapped</em> or configured to open a specific application. Button remapping takes effect for the device and applies to all users.
 
+> [!Note]  
+> The lockdown settings for a button, per user role, will apply regardless of the button mapping.  
+>
+> Button remapping can enable a user to open an application that is not in the Allow list. Use button lock down to prevent application access for a user role.
+
+To remap a button in lockdown XML, you supply the button name, the button event (typically &quot;press&quot;), and the product ID for the application the button will open.
+
+``` syntax
+<ButtonRemapList>
+   <Button name="Search">
+      <ButtonEvent name="Press">
+         <!-- Alarms -->
+         <Application productId="{08179793-ED2E-45EA-BA12-BDE3EE9C3CE3}" parameters="" />
+          </ButtonEvent>
+   </Button>
+</ButtonRemapList>
+```
+**Disabling navigation buttons**  
+To disable navigation buttons (such as Home or Back) in lockdown XML, you supply the name (for example, Start) and button event (typically "press").
+
+The following section contains a sample lockdown XML file that shows how to disable navigation buttons.
+
+``` syntax
+<?xml version="1.0" encoding="utf-8"?>
+<HandheldLockdown version="1.0" >
+    <Default>
+        <ActionCenter enabled="false" />
+        <Apps>
+            <!-- Settings -->
+            <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
+                <PinToStart>
+                    <Size>Large</Size>
+                    <Location>
+                        <LocationX>0</LocationX>
+                        <LocationY>0</LocationY>
+                    </Location>
+                </PinToStart>
+            </Application>
+
+            <!-- Phone Apps -->
+            <Application productId="{F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7}">
+                <PinToStart>
+                    <Size>Small</Size>
+                    <Location>
+                        <LocationX>2</LocationX>
+                        <LocationY>2</LocationY>
+                    </Location>
+                </PinToStart>
+            </Application>
+        </Apps>
+        <Buttons>
+            <ButtonLockdownList>
+                <Button name="Start">
+                    <ButtonEvent name="Press" />
+                </Button>
+                <Button name="Back">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Search">
+                    <ButtonEvent name="All" />
+                </Button>
+                <Button name="Camera">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Custom1">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Custom2">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Custom3">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+            </ButtonLockdownList>
+            <ButtonRemapList />
+        </Buttons>
+        <MenuItems>
+            <DisableMenuItems/>
+        </MenuItems>
+        <Settings>
+        </Settings>
+        <Tiles>
+            <EnableTileManipulation/>
+        </Tiles>
+        <StartScreenSize>Small</StartScreenSize>
+    </Default>
+</HandheldLockdown>
+```
+
+Entry | Description
+----------- | ------------
+MenuItems | Use **DisableMenuItems** to prevent use of the context menu, which is displayed when a user presses and holds an application in the All Programs list. You can include this entry in the default profile and in any additional user role profiles that you create.
+
+> [!Important]  
+> If **DisableMenuItems** is not included in a profile, users of that profile can uninstall apps.
+
+MenuItems example:
+
+``` syntax
+<MenuItems>
+   <DisableMenuItems/>
+</MenuItems>
+```
+
+Entry | Description
+----------- | ------------
+Tiles | **Turning-on tile manipulation** - By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile. If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile.
+
+> [!Important]  
+>  If a device is turned off then back on, the tiles reset to their predefined layout. If a device has only one profile, the only way to reset the tiles is to turn off then turn on the device. If a device has multiple profiles, the device resets the tiles to the predefined layout based on the logged-in user’s profile.
+
+The following sample file contains configuration for enabling tile manipulation.
+
+> [!Note]  
+> Tile manipulation is disabled when you don’t have a `<Tiles>` node in lockdown XML, or if you have a `<Tiles>` node but don’t have the `<EnableTileManipulation>` node.
+
+``` syntax
+<?xml version="1.0" encoding="utf-8"?>
+<HandheldLockdown version="1.0" >
+    <Default>
+        <ActionCenter enabled="false" />
+        <Apps>
+            <!-- Settings -->
+            <Application productId="{2A4E62D8-8809-4787-89F8-69D0F01654FB}">
+                <PinToStart>
+                    <Size>Large</Size>
+                    <Location>
+                        <LocationX>0</LocationX>
+                        <LocationY>0</LocationY>
+                    </Location>
+                </PinToStart>
+            </Application>
+
+            <!-- Phone Apps -->
+            <Application productId="{F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7}">
+                <PinToStart>
+                    <Size>Small</Size>
+                    <Location>
+                        <LocationX>2</LocationX>
+                        <LocationY>2</LocationY>
+                    </Location>
+                </PinToStart>
+            </Application>
+        </Apps>
+        <Buttons>
+            <ButtonLockdownList>
+                <Button name="Start">
+                    <ButtonEvent name="Press" />
+                </Button>
+                <Button name="Back">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Search">
+                    <ButtonEvent name="All" />
+                </Button>
+                <Button name="Camera">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Custom1">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Custom2">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+                <Button name="Custom3">
+                    <ButtonEvent name="Press" />
+                    <ButtonEvent name="PressAndHold" />
+                </Button>
+            </ButtonLockdownList>
+            <ButtonRemapList />
+        </Buttons>
+        <MenuItems>
+            <DisableMenuItems/>
+        </MenuItems>
+        <Settings>
+        </Settings>
+        <Tiles>
+            <EnableTileManipulation/>
+        </Tiles>
+        <StartScreenSize>Small</StartScreenSize>
+    </Default>
+</HandheldLockdown>
+```
+
+Entry | Description
+----------- | ------------
+CSP Runner | Allows CSPs to be executed on the device per user role. You can use this to implement role specific policies, such as changing the color scheme when an admin logs on the device, or to set configurations per role.
  
 
 <a href="" id="lockscreenwallpaper-"></a>**LockscreenWallpaper/**  
@@ -733,6 +691,8 @@ Not supported in Windows 10. Use doWipePersistProvisionedData in [RemoteWipe CS
 
 <a href="" id="clock-timezone-"></a>**Clock/TimeZone/**  
 An integer that specifies the time zone of the device. The following table shows the possible values.
+
+Supported operations are Get and Replace.
 
 <table>
 <colgroup>
@@ -1161,9 +1121,6 @@ An integer that specifies the time zone of the device. The following table shows
 </tbody>
 </table>
 
- 
-
-Supported operations are Get and Replace.
 
 <a href="" id="locale-language-"></a>**Locale/Language/**  
 The culture code that identifies the language to display on a device, and specifies the formatting of numbers, currencies, time, and dates. For language values, see [Locale IDs Assigned by Microsoft](http://go.microsoft.com/fwlink/p/?LinkID=189567).
@@ -1171,8 +1128,6 @@ The culture code that identifies the language to display on a device, and specif
 The language setting is configured in the Default User profile only.
 
 > **Note**  Apply the Locale ID only after the corresponding language packs are built into and supported for the OS image running on the device. The specified language will be applied as the phone language and a restart may be required.
-
- 
 
 Supported operations are Get and Replace.
 

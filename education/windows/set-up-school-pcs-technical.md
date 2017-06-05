@@ -70,7 +70,7 @@ To make this as seamless as possible, in your Azure AD tenant:
 
     ![Set maximum number of devices per user to unlimited](images/azuread_usersandgroups_devicesettings_maxnumberofdevicesperuser.png)
 
-- Clear your Azure AD tokens from time to time. Your tenant can only have 50 automated Azure AD tokens active at any one time.
+- Clear your Azure AD tokens from time to time. Your tenant can only have 500 automated Azure AD tokens active at any one time.
 
     In the Azure portal, select **Azure Active Directory**. Go to **Users and groups > All users** and look at the list of user names. User names that start with **package_** followed by a string of letters and numbers. These are the user accounts that are created automatically for the tokens and you can safely delete these. 
 
