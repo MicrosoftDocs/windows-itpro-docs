@@ -1,15 +1,12 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # EnterpriseModernAppManagement CSP

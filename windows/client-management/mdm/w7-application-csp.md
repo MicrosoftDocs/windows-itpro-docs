@@ -1,15 +1,12 @@
 ---
 title: w7 APPLICATION CSP
 description: w7 APPLICATION CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 10f8aa16-5c89-455d-adcd-d7fb45d4e768
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # w7 APPLICATION CSP

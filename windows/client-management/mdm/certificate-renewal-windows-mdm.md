@@ -4,15 +4,12 @@ description: The enrolled client certificate expires after a period of use.
 MS-HAID:
 - 'p\_phdevicemgmt.certificate\_renewal'
 - 'p\_phDeviceMgmt.certificate\_renewal\_windows\_mdm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F910C50C-FF67-40B0-AAB0-CA7CE02A9619
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Certificate Renewal

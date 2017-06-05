@@ -1,15 +1,12 @@
 ---
 title: RootCATrustedCertificates CSP
 description: RootCATrustedCertificates CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F2F25DEB-9DB3-40FB-BC3C-B816CE470D61
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # RootCATrustedCertificates CSP

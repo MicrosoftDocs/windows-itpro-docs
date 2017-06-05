@@ -1,15 +1,12 @@
 ---
 title: Device HealthAttestation CSP
 description: Device HealthAttestation CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # Device HealthAttestation CSP
