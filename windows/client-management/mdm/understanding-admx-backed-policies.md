@@ -240,17 +240,13 @@ This section describes sample SyncML for the various ADMX elements like Text, Mu
 
 ### <a href="" id="how-a-group-policy-policy-category-path-and-name-are-mapped-to-a-mdm-area-and-policy-name"></a>How a Group Policy policy category path and name are mapped to a MDM area and policy name
 
-Below is the internal OS mapping of a Group Policy to a MDM area and name. This is part of a set of Windows manifests (extension **wm.xml**) that when compiled parses out the associated ADMX file, finds the specified Group Policy policy and stores that definition (metadata) in the MDM Policy CSP client store.  ADMX backed policies are organized hierarchically. Their scope can be **machine**, **user**, or have a scope of **both**. When the MDM policy is referred to through a SyncML command and the Policy CSP URI, as shown below, this metadata is referenced and determines what registry keys are set or removed. Machine-scope policies are referenced via .\Device and the user scope policies via .\User. 
+Below is the internal OS mapping of a Group Policy to a MDM area and name. This is part of a set of Windows manifest that when compiled parses out the associated ADMX file, finds the specified Group Policy policy and stores that definition (metadata) in the MDM Policy CSP client store.  ADMX backed policies are organized hierarchically. Their scope can be **machine**, **user**, or have a scope of **both**. When the MDM policy is referred to through a SyncML command and the Policy CSP URI, as shown below, this metadata is referenced and determines what registry keys are set or removed. Machine-scope policies are referenced via .\Device and the user scope policies via .\User. 
 
 `./[Device|User]/Vendor/MSFT/Policy/Config/[config|result]/<area>/<policy>`
 
-The **wm.xml** for each mapped area can be found in its own directory under:
-
-`\\SDXROOT\onecoreuap\admin\enterprisemgmt\policymanager\policydefinition\`
-
 Note that the data payload of the SyncML needs to be encoded so that it does not conflict with the boilerplate SyncML XML tags. Use this online tool for encoding and encoding the policy data [Coder's Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii)
 
-**Snippet of wm.xml for AppVirtualization area:**
+**Snippet of manifest for AppVirtualization area:**
 
 ```XML
 <identity xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00"  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" owner="Microsoft" namespace="Windows-DeviceManagement-PolicyDefinition" name="AppVirtualization">
