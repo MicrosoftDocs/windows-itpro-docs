@@ -34,14 +34,6 @@ In Windows 10, version 1703 we introduced the new Windows Defender Security Cent
 > [!NOTE]
 > Settings configured with management tools, such as Group Policy, Microsoft Intune, or System Center Configuration Manager, will generally take precedence over the settings in the Windows Defender Security Center. Review the settings for each feature in its appropriate library. Each of the sections described in this topic include links to configuration options for IT administrators and security operations personnel.
 
-Access the Windows Defender Security Center:
-- Right-click the icon in the notification area on the taskbar and click **Open**.
-
-    ![](images/security-center-taskbar.png)
-- Search the Start menu for **Windows Defender Security Center**.
-
-    ![](images/security-center-start-menu.png)
-
 
 Many settings that were previously part of the individual features and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
@@ -53,35 +45,57 @@ The app includes the settings and status for the following security features:
 - App & browser control, covering Windows Defender SmartScreen settings
 - Family options, which include a number of parental controls along with tips and information for keeping kids safe online
 
+## Open the Windows Defender Security Center
+- Right-click the icon in the notification area on the taskbar and click **Open**.
 
-The Windows Defender Security Center operates as a separate app or process from each of these individual features, and will display notifications through the Action Center.
+    ![Screen shot of the Shield icon for the Windows Defender Security Center in the bottom Windows task bar](images/security-center-taskbar.png)
+- Search the Start menu for **Windows Defender Security Center**.
 
-> [!IMPORTANT]
-> Disabling any one of the features individually will not disable the entire Windows Defender Security Center.
+    ![Screen shot of the Start menu showing the results of a search for Windows Defender Security Center, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
+
+
+## How the Windows Defender Security Center works with Windows security features
+
+
+> [!IMPORTANT] 
+> Individually disabling any of the services will not disable the other services or the Windows Defender Security Center itself.
+
+The Windows Defender Security Center operates as a separate app or process from each of the individual features, and will display notifications through the Action Center. 
+
+It acts as a collector or single place to see the status and perform some configuration for each of the features.
+
+Disabling any of the individual features (through Group Policy or other management tools such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Defender Security Center. The Windows Defender Security Center itself will still run and show status for the other security features.
 
 For example, [using a 3rd party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus). However, the Windows Defender Security Center will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Firewall.
 
+If you attempt to disable the Windows Defender Security Center, an error notification will appear in the Action Center:
+
+![Notification that Windows Defender Security Center service has been turned off](images/security-center-turned-off.png)
+
+In this case, you should re-enable the Windows Defender Security Center service. If you are using a 3rd party antivirus that is up-to-date and provides real-time protection, this will be indicated under the **Virus & threat protection** section. Windows Defender Antivirus will disable itself.
+
+## More information
 
 See the following links for more information on the features in the Windows Defender Security Center:
 - Windows Defender Antivirus
-    - IT administrators and IT pros can get configuration guidance from the [Windows Defender Antivirus in the Windows Defender Security Center topic](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-security-center) and the [Windows Defender Antivirus documentation library](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
-    - Home users can learn more at the [Windows Defender Antivirus site](https://www.microsoft.com/en-us/windows/windows-defender) and the [Safety & Security Center](https://www.microsoft.com/en-us/safety)
-- Device performance & health,
-    - ???
-    - Home users - asked Seo Young
+    - IT administrators and IT pros can get configuration guidance from the [Windows Defender Antivirus in the Windows Defender Security Center topic](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus) and the [Windows Defender Antivirus documentation library](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+    - Home users can learn more at the [Virus & threat protection in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4012987/windows-10-virus-threat-protection-windows-defender-security-center)
+- Device performance & health
+    - It administrators and IT pros can [configure the Load and unload device drivers security policy setting](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/load-and-unload-device-drivers), and learn how to [deploy drivers during Windows 10 deployment using System Center Configuration Manager](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager)
+    - Home users can learn more at the [Track your device and performance health in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4012986/windows-defender-track-your-device-performance-health)
 - Windows Firewall
     - IT administrators and IT pros can get configuration guidance from the [Windows Firewall with Advanced Security documentation library](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security)
-    - Home users can learn more at ??? (asked Seo Young)
+    - Home users can learn more at the [Firewall & network protection in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4012988/windows-10-firewall-network-protection-windows-defender-security-center)
 - Windows Defender SmartScreen
     - IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
-    - Home users - asking Seo Young
+    - Home users can learn more at the [App & browser control in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4013218/windows-10-app-browser-control-in-windows-defender)
 - Family options, which include a number of parental controls along with tips and information for keeping kids safe online
-    - Home users can learn more at (asked Seo Young)
+    - Home users can learn more at the [Help protection your family online in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4013209/windows-10-protect-your-family-online-in-windows-defender)
 
 
 
 >[!NOTE]
->The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection.md).
+>The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
 
 
