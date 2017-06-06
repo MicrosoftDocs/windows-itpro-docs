@@ -14,15 +14,15 @@ This topic explains the steps necessary to configure your environment for Window
 
 Steps are provided in sections that follow the recommended setup process:
 1.	Ensure that [prerequisites](#update-compliance-prerequisites) are met.
-2.	[Add Update Compliance](#add-update-compliance-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite
-3.	[Deploy your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices
+2.	[Add Update Compliance](#add-update-compliance-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite.
+3.	[Deploy your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices.
 
-## Update Compliance Prerequisites
+## Update Compliance prerequisites
 
 Update Compliance has the following requirements: 
 1. Update Compliance is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
 2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization). 
-3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for different aspects of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
+3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the telemetry services](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
 
     <TABLE BORDER=1>
     <TR><TD BGCOLOR="#cceeff">Service<TD BGCOLOR="#cceeff">Endpoint
@@ -37,13 +37,13 @@ Update Compliance has the following requirements:
 
 ## Add Update Compliance to Microsoft Operations Management Suite
 
-Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
+Update Compliance is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
 
 If you are already using OMS, you’ll find Update Compliance in the Solutions Gallery. Select the **Update Compliance** tile in the gallery and then click **Add** on the solution's details page. Update Compliance is now visible in your workspace.
 
 If you are not yet using OMS, use the following steps to subscribe to OMS Update Compliance:
 
-1.	Go to [Operations Management Suite’s page](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
+1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
 
     <P><TABLE BORDER=1><TR><TD>
     <A HREF="images/uc-02.png"><img src="images/uc-02a.png"></A>
@@ -79,7 +79,7 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
     <A HREF="images/uc-07.png"><img src="images/uc-07a.png"></A>
     <TABLE>
 
-7.	Select the **Update Compliance** tile in the gallery and then select **Add** on the solution’s details page. You might need to scroll to find **Update Compliance**. The solution is now visible on your workspace. 
+7.	Select the **Update Compliance** tile in the gallery and then select **Add** on the solution’s details page. You might need to scroll to find **Update Compliance**. The solution is now visible in your workspace. 
 
     <P><TABLE BORDER=1><TR><TD>
     <A HREF="images/uc-08.png"><img src="images/uc-08a.png"></A>
