@@ -21,6 +21,10 @@
       - name: Client management
         tocHref: /windows/client-management/
         topicHref: /windows/client-management/index
+        items:
+        - name: Mobile Device Management
+          tocHref: /windows/client-management/mdm
+          topicHref: /windows/client-management/mdm/index
       - name: Access protection
         tocHref: /windows/access-protection/
         topicHref: /windows/access-protection/index

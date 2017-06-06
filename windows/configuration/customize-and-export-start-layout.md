@@ -6,7 +6,7 @@ keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 
@@ -121,6 +121,9 @@ When you have the Start layout that you want your users to see, use the [Export-
     </tr>
     </tbody>
     </table>
+
+>[!IMPORTANT]
+>If the Start layout that you export contains tiles for desktop (Win32) apps or .url links, **Export-StartLayout** will use **DesktopApplicationLinkPath** in the resulting file. Use a text or XML editor to change **DesktopApplicationLinkPath** to **DesktopApplicationID**. See [Specify Start tiles](start-layout-xml-desktop.md#specify-start-tiles) for details on using the app ID in place of the link path. 
 
 ## Configure a partial Start layout
 

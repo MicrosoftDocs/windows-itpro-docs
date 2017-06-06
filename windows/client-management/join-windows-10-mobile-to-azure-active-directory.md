@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 
@@ -191,7 +191,7 @@ To see the Notebooks that your Azure AD account has access to, tap **More Notebo
 ## Use Windows Store for Business
 
 
-[Windows Store for Business](/microsoft-store/index) allows you to specify applications to be available to your users in the Windows Store application. These applications show up on a tab titled for your company. Applications approved in the Windows Store for Business portal can be installed by users.
+[Microsoft Store for Business](/microsoft-store/index) allows you to specify applications to be available to your users in the Windows Store application. These applications show up on a tab titled for your company. Applications approved in the Microsoft Store for Business portal can be installed by users.
 
 ![company tab on store](images/aadjwsfb.jpg)
 

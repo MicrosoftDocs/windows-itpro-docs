@@ -12,6 +12,11 @@ author: eross-msft
 # Change history for Internet Explorer 11
 This topic lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10 and Windows 10 Mobile.
 
+## April 2017
+|New or changed topic | Description |
+|----------------------|-------------|
+|[Enterprise Mode for Internet Explorer 11](enterprise-mode-overview-for-ie11.md)|Updates to the Enterprise Mode section to include info about the Enterprise Mode Site List Portal. |
+
 ## March 2017
 |New or changed topic | Description |
 |----------------------|-------------|

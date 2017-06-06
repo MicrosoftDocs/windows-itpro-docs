@@ -57,7 +57,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscrition. You can access the Office 365 admin portal directly from the Microsoft Store for Business and Eduction. 
+- Admins can add or remove user accounts in the Office 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Microsoft Store for Business and Education. 
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
@@ -79,7 +79,7 @@ For more information, see [Sign up for the Store for Business](sign-up-windows-s
 
 ## Set up
 
-After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign WSFB roles. These are the roles and their permissions.
+After your admin signs up for the Store for Business, they can assign roles to other employees in your company. The admin needs Azure AD User Admin permissions to assign Microsoft Store for Business and Education roles. These are the roles and their permissions.
 
 | Permission | Account settings | Acquire apps | Distribute apps | Device Guard signing |
 | ---------- | ---------------- | ------------ | --------------- | -------------------- |
@@ -129,7 +129,7 @@ App distribution is handled through two channels, either through the Store for B
 - Scoped content distribution – Ability to scope content distribution to specific groups of employees.
 - Install apps for employees – Employees are not responsible for installing apps. Management tool installs apps for employees.
 
-Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata,management tools can enable portals or apps as a destination for employees to acquire apps.
+Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata, management tools can enable portals or apps as a destination for employees to acquire apps.
 
 For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
 
@@ -137,7 +137,7 @@ For more information, see [Distribute apps to your employees from the Store for 
 
 Once you are signed up with the Business store and have purchased apps, Admins can manage Store for Business settings and inventory.
 
-**Manage Store for Business settings**
+**Manage Microsoft Store for Business settings**
 - Assign and change roles for employees or groups
 - Device Guard signing
 - Register a management server to deploy and install content
@@ -155,8 +155,195 @@ For more information, see [Manage settings in the Store for Business](manage-set
 
 ## Supported markets
 
-Store for Business is currently available in these markets.
+Microsoft Store for Business and Education is currently available in these markets.
 
+<!--- <table>
+   <tr>
+        <th align="center" colspan="4">Support for free and paid apps</th>
+   </tr>
+   <tr align="left">
+     <td>
+        <ul>
+            <li>Algeria</li>
+            <li>Angola</li>
+            <li>Argentina</li>
+            <li>Australia</li>
+            <li>Austria</li>
+            <li>Bahamas</li>
+            <li>Bahrain</li>
+            <li>Bangladesh</li>
+            <li>Barbados</li>
+            <li>Belgium</li>
+            <li>Belize</li>
+            <li>Bermuda</li>
+            <li>Bhutan</li>
+            <li>Bolivia</li>
+            <li>Botswana</li>
+            <li>Brunei Darussalam</li>
+            <li>Bulgaria</li>
+            <li>Cambodia</li>
+            <li>Cameroon</li>
+            <li>Canada</li>
+            <li>Republic of Cabo Verde</li>
+            <li>Cayman Islands</li>
+            <li>Chile</li>
+            <li>Colombia</li>
+            <li>Costa Rica</li>
+            <li>C&ocirc;te D'ivoire</li>
+            <li>Croatia</li>
+            <li>Cur&ccedil;ao</li>
+            <li>Cyprus</li>
+        </ul>
+    </td>
+     <td>
+        <ul>
+            <li>Czech Republic</li>
+            <li>Denmark</li>
+            <li>Dominican Republic</li>
+            <li>Ecuador</li>
+            <li>Egypt</li>
+            <li>El Salvador</li>
+            <li>Estonia</li>
+            <li>Faroe Islands</li>
+            <li>Fiji</li>
+            <li>Finland</li>
+            <li>France</li>
+            <li>Germany</li>
+            <li>Ghana</li>
+            <li>Greece</li>
+            <li>Guadeloupe</li>
+            <li>Guatemala</li>
+            <li>Honduras</li>
+            <li>Hong Kong SAR</li>
+            <li>Hungary</li>
+            <li>Iceland</li>
+            <li>Indonesia</li>
+            <li>Iraq</li>
+            <li>Ireland</li>
+            <li>Israel</li>
+            <li>Italy</li>
+            <li>Jamaica</li>
+            <li>Japan</li>
+            <li>Jordan</li>
+            <li>Kenya</li> 
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Kuwait</li>
+            <li>Latvia</li>
+            <li>Lebanon</li>
+            <li>Libya</li>
+            <li>Liechtenstein</li>
+            <li>Lithuania</li>
+            <li>Luxembourg</li>
+            <li>Malaysia</li>
+            <li>Malta</li>
+            <li>Mauritius</li>
+            <li>Mexico</li>
+            <li>Mongolia</li>
+            <li>Montenegro</li>
+            <li>Morocco</li>
+            <li>Mozambique</li>
+            <li>Namibia</li>
+            <li>Netherlands</li>
+            <li>New Zealand</li>
+            <li>Nicaragua</li>
+            <li>Nigeria</li>
+            <li>Norway</li>
+            <li>Oman</li>
+            <li>Pakistan</li>
+            <li>Palestinian Authority</li>
+            <li>Panama</li>
+            <li>Paraguay</li>
+            <li>Peru</li>
+            <li>Philippines</li>
+            <li>Poland</li>          
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Portugal</li>
+            <li>Puerto Rico</li>
+            <li>Qatar</li>
+            <li>Romania</li>
+            <li>Rwanda</li>
+            <li>Saint Kitts and Nevis</li>
+            <li>Saudi Arabia</li>
+            <li>Senegal</li>
+            <li>Serbia</li>
+            <li>Singapore</li>
+            <li>Slovakia</li>
+            <li>Slovenia</li>
+            <li>South Africa</li>
+            <li>Spain</li>
+            <li>Sweden</li>
+            <li>Switzerland</li>
+            <li>Tanzania</li>
+            <li>Thailand</li>
+            <li>Trinidad and Tobago</li>
+            <li>Tunisia</li>
+            <li>Turkey</li>
+            <li>Uganda</li>
+            <li>United Arab Emirates</li>
+            <li>United Kingdom</li>
+            <li>United States</li>           
+        </ul>
+    </td>
+    <td>
+        <ul>
+            <li>Uruguay</li>
+            <li>Viet Nam</li>
+            <li>Virgin Islands, U.S.</li>
+            <li>Zambia</li>
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
+        </ul>
+    </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+        <th align="center">Support for free apps only</th>
+   </tr>
+   <tr align="left">
+     <td>
+        <ul>
+            <li>Russia</li>
+        </ul>
+    </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+        <th align="center">Support for free apps and Minecraft: Education Edition</th>
+   </tr>
+   <tr align="left">
+     <td>
+        <ul>
+            <li>Albania</li>
+            <li>Armenia</li>
+            <li>Azerbaijan</li>
+            <li>Belarus</li>
+            <li>Bosnia</li>
+            <li>Brazil</li>
+            <li>Georgia</li>
+            <li>India</li>
+            <li>Kazakhstan</li>
+            <li>Korea</li>
+            <li>Kyrgyzstan</li>
+            <li>Moldova</li>
+            <li>Taiwan</li>
+            <li>Tajikistan</li>
+            <li>Turkmenistan</li>
+            <li>Ukraine</li>
+            <li>Uzbekistan</li>
+        </ul>
+    </td>
+   </tr>
+</table> -->
+### Support for free and paid apps
 <table>
    <tr>
         <th align="center" colspan="4">Support for free and paid apps</th>
@@ -294,22 +481,29 @@ Store for Business is currently available in these markets.
    </tr>
 </table>
 
-<table>
-   <tr>
-        <th align="center">Support for free apps only</th>
-   </tr>
-   <tr align="left">
-     <td>
-        <ul>
-            <li>Brazil</li>
-            <li>India</li>
-            <li>Russia</li>
-            <li>Taiwan</li>
-            <li>Ukraine</li>
-        </ul>
-    </td>
-   </tr>
-</table>
+### Support for free apps
+Customers in these markets can use Microsoft Store for Business and Education to acquire free apps:
+- India
+- Russia 
+
+### Support for free apps and Minecraft: Education Edition
+Customers in these markets can use Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition:  
+- Brazil
+- Taiwan
+- Ukraine 
+
+This table summarize what customers can purchase, depending on which Microsoft Store they are using. 
+
+| Store | Free apps | Minecraft: Education Edition |
+| ----- | --------- | ---------------------------- |
+| Microsoft Store for Business | supported | not supported |
+| Microsoft Store for Education | supported | supported; invoice payment required |
+
+> [!NOTE]
+> **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
+- Admins can acquire free apps from **Microsoft Store for Education**.
+- Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
+- Teachers, or people with the Basic Purachaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice
 

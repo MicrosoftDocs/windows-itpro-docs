@@ -6,7 +6,7 @@ keywords: ["start screen", "start menu"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: jdeckerMS
+author: jdeckerms
 localizationpriority: high
 ---
 
@@ -64,7 +64,7 @@ There are three categories of apps that might be pinned to a taskbar:
 * Apps pinned by the enterprise, such as in an unattended Windows setup
 
  >[!NOTE]
- >The earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file is deprecated in Windows 10, version 1607.
+ >We recommend using [the layoutmodification.xml method](configure-windows-10-taskbar.md) to configure taskbar options, rather than the earlier method of using [TaskbarLinks](https://go.microsoft.com/fwlink/p/?LinkId=761230) in an unattended Windows setup file.
    
 The following example shows how apps will be pinned - Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using XML to the right (green square).
 
@@ -97,7 +97,7 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 * If the user didn't pin the app and the app is in the updated layout file, the app will be pinned to the right.
 * New apps specified in updated layout file are pinned to right of user's pinned apps.
   
-[Learn how to onfigure Windows 10 taskbar](configure-windows-10-taskbar.md).
+[Learn how to configure Windows 10 taskbar](configure-windows-10-taskbar.md).
 
 ## Related topics
 

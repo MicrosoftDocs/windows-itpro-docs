@@ -36,7 +36,7 @@ A reinstalled or renamed machine will generate a new machine entity in Windows D
 **Machine was offboarded**</br>
 If the machine was offboarded it will still appear in machines list. After 7 days, the machine health state should change to inactive.
 
-Do you expect a machine to be in ‘Active’ status? [Open a CSS ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
+Do you expect a machine to be in ‘Active’ status? [Open a support ticket ticket](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
 ## Misconfigured machines
 Misconfigured machines can further be classified to:
