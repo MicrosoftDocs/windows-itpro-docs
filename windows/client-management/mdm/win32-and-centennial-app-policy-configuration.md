@@ -24,8 +24,27 @@ author: nickbrower
 
 Starting in Windows 10, version 1703, you can import ADMX files (also called ADMX ingestion) and set those ADMX-backed policies for Win32 and Desktop Bridge apps by using Windows 10 Mobile Device Management (MDM) on desktop SKUs. The ADMX files that define policy information can be ingested to your device by using the Policy CSP URI, `./Device/Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. The ingested ADMX file is then processed into MDM policies.
 
-When the ADMX policies are imported, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys.
+When the ADMX policies are imported, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys, except for the following locations:
 
+- Software\Policies\Microsoft\Office\
+- Software\Microsoft\Office\
+- Software\Microsoft\Windows\CurrentVersion\Explorer\
+- Software\Microsoft\Internet Explorer\
+- software\policies\microsoft\shared tools\proofing tools\
+- software\policies\microsoft\imejp\
+- software\policies\microsoft\ime\shared\
+- software\policies\microsoft\shared tools\graphics filters\
+- software\policies\microsoft\windows\currentversion\explorer\
+- software\policies\microsoft\softwareprotectionplatform\
+- software\policies\microsoft\officesoftwareprotectionplatform\
+- software\policies\microsoft\windows\windows search\preferences\
+- software\policies\microsoft\exchange\
+- software\microsoft\shared tools\proofing tools\
+- software\microsoft\shared tools\graphics filters\
+- software\microsoft\windows\windows search\preferences\
+- software\microsoft\exchange\
+- software\policies\microsoft\vba\security\
+- software\microsoft\onedrive 
 
 ## <a href="" id="ingesting-an-app-admx-file"></a>Ingesting an app ADMX file
 
