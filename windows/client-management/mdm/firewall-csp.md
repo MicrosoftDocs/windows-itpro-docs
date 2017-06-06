@@ -267,7 +267,7 @@ If not specified - a new rule is disabled by default.</p>
 <p style="margin-left: 20px">Specifies the list of authorized local users for the app container. This is a string in Security Descriptor Definition Language (SDDL) format.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="" id="status">**FirewallRules/_FirewallRuleName_/Status**
+<a href="" id="status"></a>**FirewallRules/_FirewallRuleName_/Status**
 <p style="margin-left: 20px">Provides information about the specific verrsion of the rule in deployment for monitoring purposes.</p>
 <p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
