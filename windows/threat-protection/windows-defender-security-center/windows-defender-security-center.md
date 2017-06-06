@@ -29,13 +29,13 @@ In Windows 10, version 1703 we introduced the new Windows Defender Security Cent
 
 
 
+
 ![](images/security-center-home.png)
 
-> [!NOTE]
-> Settings configured with management tools, such as Group Policy, Microsoft Intune, or System Center Configuration Manager, will generally take precedence over the settings in the Windows Defender Security Center. Review the settings for each feature in its appropriate library. Each of the sections described in this topic include links to configuration options for IT administrators and security operations personnel.
 
 
-Many settings that were previously part of the individual features and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
+
+Many settings that were previously part of the individual features and main Windows Settings have been combined and moved to the new app, which is installed out-of-the-box as part of Windows 10, version 1703.
 
 The app includes the settings and status for the following security features:
 
@@ -45,6 +45,9 @@ The app includes the settings and status for the following security features:
 - App & browser control, covering Windows Defender SmartScreen settings
 - Family options, which include a number of parental controls along with tips and information for keeping kids safe online
 
+> [!IMPORTANT]
+> The Windows Defender Security Center is not the same feature as the [Windows Security Center service, which provides limited antivirus, firewall, and Windows updates configuration](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA). Disabling that service, or configuring its associated Group Policy settings, will have no effect on the new Windows Defender Security Center.
+
 ## Open the Windows Defender Security Center
 - Right-click the icon in the notification area on the taskbar and click **Open**.
 
@@ -53,6 +56,9 @@ The app includes the settings and status for the following security features:
 
     ![Screen shot of the Start menu showing the results of a search for Windows Defender Security Center, the first option with a large shield symbol is selected](images/security-center-start-menu.png)
 
+
+> [!NOTE]
+> Settings configured with management tools, such as Group Policy, Microsoft Intune, or System Center Configuration Manager, will generally take precedence over the settings in the Windows Defender Security Center. Review the settings for each feature in its appropriate library. Links for both home user and enterprise or commercial audiences are listed below.
 
 ## How the Windows Defender Security Center works with Windows security features
 
@@ -64,15 +70,13 @@ The Windows Defender Security Center operates as a separate app or process from 
 
 It acts as a collector or single place to see the status and perform some configuration for each of the features.
 
-Disabling any of the individual features (through Group Policy or other management tools such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Defender Security Center. The Windows Defender Security Center itself will still run and show status for the other security features.
+Disabling any of the individual features (through Group Policy or other management tools, such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Defender Security Center. The Windows Defender Security Center itself will still run and show status for the other security features.
 
 For example, [using a 3rd party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus). However, the Windows Defender Security Center will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Firewall.
 
-If you attempt to disable the Windows Defender Security Center, an error notification will appear in the Action Center:
+The presence of the 3rd party antivirus will be indicated under the **Virus & threat protection** section in the Windows Defender Security Center.
 
-![Notification that Windows Defender Security Center service has been turned off](images/security-center-turned-off.png)
 
-In this case, you should re-enable the Windows Defender Security Center service. If you are using a 3rd party antivirus that is up-to-date and provides real-time protection, this will be indicated under the **Virus & threat protection** section. Windows Defender Antivirus will disable itself.
 
 ## More information
 
