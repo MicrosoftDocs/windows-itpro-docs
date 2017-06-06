@@ -160,35 +160,40 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
 - By using a path to a shortcut link (.lnk file) to a Windows desktop application.
 
-    To pin a Windows desktop application through this method, you must first add the .lnk file in the specified location when the device first boots. 
+  >[!NOTE]
+  >In Start layouts for Windows 10, version 1703, you should use **DesktopApplicationID** rather than **DesktopApplicationLinkPath** if you are using Group Policy or MDM to apply the start layout and the application was installed after the user's first sign-in.
 
-    The following example shows how to pin the Command Prompt:
+  To pin a Windows desktop application through this method, you must first add the .lnk file in the specified location when the device first boots. 
 
-    ```XML
-    <start:DesktopApplicationTile
+  The following example shows how to pin the Command Prompt:
+
+  ```XML
+  <start:DesktopApplicationTile
           DesktopApplicationLinkPath="%appdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk"
           Size="2x2"
           Row="0"
           Column="4"/>
-    ```
+  ```
     
-    You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
+  You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
-    If you are pointing to a third-party Windows desktop application, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".
+  If you are pointing to a third-party Windows desktop application and the layout is being applied before the first boot, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".
 
 - By using the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
-    To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app. 
+  You can use the [Get-StartApps cmdlet](https://technet.microsoft.com/library/dn283402.aspx) on a PC that has the application pinned to Start to obtain the app ID.
 
-    The following example shows how to pin the Internet Explorer Windows desktop application:
+  To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app. 
 
-    ```XML
+  The following example shows how to pin the Internet Explorer Windows desktop application:
+
+  ```XML
     <start:DesktopApplicationTile
           DesktopApplicationID="Microsoft.Windows.Explorer"
           Size="2x2"
           Row="0"
           Column="2"/>
-    ```
+  ```
     
 
 You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile.
@@ -204,6 +209,9 @@ The following example shows how to create a tile of the Web site's URL, which yo
           Row="0"
           Column="2"/>
 ```
+
+>[!NOTE]
+>In Windows 10, version 1703, **Export-StartLayout** will use **DesktopApplicationLinkPath** for the .url shortcut. You must change **DesktopApplicationLinkPath** to **DesktopApplicationID** and provide the URL.
 
 #### start:SecondaryTile
 
@@ -273,6 +281,9 @@ The following example shows how to modify your LayoutModification.xml file to ad
 
 You can use the **AppendOfficeSuite** tag to add the in-box installed Office suite of apps to Start.
 
+>[!NOTE]
+>The OEM must have installed Office for this tag to work.
+
 The following example shows how to add the **AppendOfficeSuite** tag to your LayoutModification.xml file to append the full Universal Office suite to Start:
 
 ```XML
@@ -288,6 +299,9 @@ The following example shows how to add the **AppendOfficeSuite** tag to your Lay
 #### AppendDownloadOfficeTile
 
 You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the Download Office tile to Start and the download tile will appear at the bottom right-hand side of the second group.
+
+>[!NOTE]
+>The OEM must have installed the Office trial installer for this tag to work.
 
 The following example shows how to add the **AppendDownloadOfficeTile** tag to your LayoutModification.xml file:
 
