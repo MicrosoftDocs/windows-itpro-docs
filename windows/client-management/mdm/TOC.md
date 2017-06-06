@@ -142,6 +142,7 @@
 #### [EnterpriseModernAppManagement XSD](enterprisemodernappmanagement-xsd.md)
 ### [FileSystem CSP](filesystem-csp.md)
 ### [Firewall CSP](firewall-csp.md)
+#### [Firewall DDF file](firewall-ddf-file.md)
 ### [HealthAttestation CSP](healthattestation-csp.md)
 #### [HealthAttestation DDF](healthattestation-ddf.md)
 ### [HotSpot CSP](hotspot-csp.md)

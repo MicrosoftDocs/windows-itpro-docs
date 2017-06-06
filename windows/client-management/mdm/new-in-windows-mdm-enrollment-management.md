@@ -1180,6 +1180,17 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)</td>
 <td style="vertical-align:top">Added a list of registry locations that ingested policies are allowed to write to.</td>
 </tr>
+<tr class="odd">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top">Added the following nodes:
+<ul>
+<li>Profiles</li>
+<li>Direction</li>
+<li>InterfaceTypes</li>
+<li>EdgeTraversal</li>
+<li>Status</li>
+</ul>
+Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </tbody>
 </table>
 
