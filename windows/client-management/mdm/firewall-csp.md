@@ -217,6 +217,11 @@ The following diagram shows the Firewall configuration service provider in tree 
 If not specified - a new rule is disabled by default.</p>
 <p style="margin-left: 20px">Boolean value. Supported operations are Add, Get, Replace, and Delete.</p>
 
+<a href="" id="profiles"></a>**FirewallRules_FirewallRuleName_/Profiles**
+<p style="margin-left: 20px">Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See FW_PROFILE_TYPE for the bitmasks that are used to identify profile types.</p>
+
+<p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
+
 <a href="" id="action"></a>**FirewallRules/_FirewallRuleName_/Action**
 <p style="margin-left: 20px">Specifies the action for the rule.</p>
 <p style="margin-left: 20px">Supported operation is Get.</p>
@@ -229,13 +234,42 @@ If not specified - a new rule is disabled by default.</p>
 </ul>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
+<a href="" id="direction"></a>**FirewallRules/_FirewallRuleName_/Direction**
+<p style="margin-left: 20px">Comma separated list. The rule is enabled based on the traffic direction as following. Supported values:</p>
+<ul>
+<li>IN - the rule applies to inbound traffic.</li>
+<li>OUT - the rule applies to outbound traffic.</li>
+<li>If not specified, the default is IN.</li>
+</ul>
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+
+<a href="" id="interfacetypes"></a>**FirewallRules/FirewallRuleName/InterfaceTypes**
+<p style="margin-left: 20px">Comma separated list of interface types. Valid values:</p>
+<ul>
+<li>RemoteAccess</li>
+<li>Wireless</li>
+<li>MobileBroadband</li>
+<li>All</li>
+</ul>
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+
 <a href="" id="icmptypesandcodes"></a>**FirewallRules/_FirewallRuleName_/IcmpTypesAndCodes**
 <p style="margin-left: 20px">List of ICMP types and codes separated by semicolon. "\*" indicates all ICMP types and codes.<</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
+<a href="" id="edgetraversal"></a>**FirewallRules/_FirewallRuleName_/EdgeTraversal**
+<p style="margin-left: 20px">Indicates whether edge traversal is enabled or disabled for this rule.</p>
+<p style="margin-left: 20px">The EdgeTraversal setting indicates that specific inbound traffic is allowed to tunnel through NATs and other edge devices using the Teredo tunneling technology. In order for this setting to work correctly, the application or service with the inbound firewall rule needs to support IPv6. The primary application of this setting allows listeners on the host to be globally addressable through a Teredo IPv6 address.</p>
+<p style="margin-left: 20px">New rules have the EdgeTraversal property disabled by default.</p>
+<p style="margin-left: 20px">Boolean value. Supported operations are Add, Get, Replace, and Delete.</p>
+
 <a href="" id="localuserauthorizedlist"></a>**FirewallRules/_FirewallRuleName_/LocalUserAuthorizedList**
 <p style="margin-left: 20px">Specifies the list of authorized local users for the app container. This is a string in Security Descriptor Definition Language (SDDL) format.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
+
+<a href="" id="status"></a>**FirewallRules/_FirewallRuleName_/Status**
+<p style="margin-left: 20px">Provides information about the specific verrsion of the rule in deployment for monitoring purposes.</p>
+<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
 
 <a href="" id="friendlyname"></a>**FirewallRules/_FirewallRuleName_/FriendlyName**
 <p style="margin-left: 20px">Specifies the friendly name of the rule. The string must not contain the "|" character.</p>
