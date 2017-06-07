@@ -3,7 +3,6 @@ title: EnterpriseModernAppManagement CSP
 description: EnterpriseModernAppManagement CSP
 ms.assetid: 9DD0741A-A229-41A0-A85A-93E185207C42
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

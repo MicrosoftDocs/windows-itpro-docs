@@ -3,7 +3,6 @@ title: DMAcc DDF file
 description: DMAcc DDF file
 ms.assetid: 44dc99aa-2a85-498b-8f52-a81863765606
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

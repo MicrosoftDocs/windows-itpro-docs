@@ -2,7 +2,6 @@
 title: EnterpriseAppVManagement DDF file
 description: EnterpriseAppVManagement DDF file
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -3,7 +3,6 @@ title: WindowsAdvancedThreatProtection DDF file
 description: WindowsAdvancedThreatProtection DDF file
 ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

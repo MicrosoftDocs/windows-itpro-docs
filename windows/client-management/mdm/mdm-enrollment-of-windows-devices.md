@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.mdm\_enrollment\_of\_windows\_devices'
 ms.assetid: 4651C81B-D2D6-446A-AA24-04D01C1D0883
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

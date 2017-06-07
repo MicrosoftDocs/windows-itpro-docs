@@ -3,7 +3,6 @@ title: SecureAssessment DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the SecureAssessment configuration service provider. DDF files are used only with OMA DM provisioning XML.
 ms.assetid: 68D17F2A-FAEA-4608-8727-DBEC1D7BE48A
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

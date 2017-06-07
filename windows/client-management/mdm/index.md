@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.mobile\_device\_management\_windows\_mdm'
 ms.assetid: 50ac90a7-713e-4487-9cb9-b6d6fdaa4e5b
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

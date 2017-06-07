@@ -3,7 +3,6 @@ title: RootCATrustedCertificates DDF file
 description: RootCATrustedCertificates DDF file
 ms.assetid: 06D8787B-D3E1-4D4B-8A21-8045A8F85C1C
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

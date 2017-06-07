@@ -6,7 +6,6 @@ MS-HAID:
 ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 description: 
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

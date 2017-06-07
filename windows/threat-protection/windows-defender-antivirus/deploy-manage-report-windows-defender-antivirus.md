@@ -33,7 +33,7 @@ You'll also see additional links for:
 - Reporting on Windows Defender Antivirus protection
 
 > [!IMPORTANT]
-> In most cases, Windows 10 will disable Windows Defender Antivirus if it finds another antivirus product running and up-to-date. You must disable or uninstall third-party antivirus products before Windows Defender Antivirus will be functioning. If you re-enable or install third-part antivirus products, then Windows 10 will automatically disable Windows Defender Antivirus.
+> In most cases, Windows 10 will disable Windows Defender Antivirus if it finds another antivirus product running and up-to-date. You must disable or uninstall third-party antivirus products before Windows Defender Antivirus will be functioning. If you re-enable or install third-party antivirus products, then Windows 10 will automatically disable Windows Defender Antivirus. 
 
 
 Tool|Deployment options (<a href="#fn2" id="ref2">2</a>)|Management options (network-wide configuration and policy or baseline deployment) ([3](#fn3))|Reporting options  
@@ -84,6 +84,6 @@ Topic | Description
 ---|---
 [Deploy and enable Windows Defender Antivirus protection](deploy-windows-defender-antivirus.md) | While the client is installed as a core part of Windows 10, and traditional deployment does not apply, you will still need to enable the client on your endpoints with System Center Configuration Manager, Microsoft Intune, or Group Policy Objects.
 [Manage Windows Defender Antivirus updates and apply baselines](manage-updates-baselines-windows-defender-antivirus.md) | There are two parts to updating Windows Defender Antivirus: updating the client on endpoints (product updates), and updating definitions (protection updates). You can update definitions in a number of ways, using System Center Configuration Manager, Group Policy, PowerShell, and WMI.
-[Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md) | You can use System Center Configuration Manager, a third-party SIEM product (by consuming Windows event logs), or Microsoft Intune to monitor protection status and create reports about endpoint protection
+[Monitor and report on Windows Defender Antivirus protection](report-monitor-windows-defender-antivirus.md) | You can use System Center Configuration Manager, the Update Compliance add-in for Microsoft Operations Management Suite, a third-party SIEM product (by consuming Windows event logs), or Microsoft Intune to monitor protection status and create reports about endpoint protection
 
 

@@ -6,7 +6,6 @@ MS-HAID:
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
 ms.assetid: 9C42064F-091C-4901-BC73-9ABE79EE4224
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
@@ -851,6 +850,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added a section describing SyncML examples of various ADMX elements.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)</td>
+<td style="vertical-align:top">New topic.</td>
+</tr>
+<tr class="odd">
 <td style="vertical-align:top">[Deploy and configure App-V apps using MDM](appv-deploy-and-config.md)</td>
 <td style="vertical-align:top"><p>Added a new topic describing how to deploy and configure App-V apps using MDM.</p>
 </td></tr>
@@ -879,6 +882,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Deviceidentifier</li>
 <li>Tenantidentifier</li>
 <li>Ownership</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">MDM support for Windows 10 S</td>
+<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
+<ul>
+<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
+<li>[Policy CSP](policy-configuration-service-provider.md)</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1151,6 +1162,38 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### June 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)</td>
+<td style="vertical-align:top">Added a list of registry locations that ingested policies are allowed to write to.</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top">Added the following nodes:
+<ul>
+<li>Profiles</li>
+<li>Direction</li>
+<li>InterfaceTypes</li>
+<li>EdgeTraversal</li>
+<li>Status</li>
+</ul>
+Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
+</tbody>
+</table>
+
 ### May 2017
 
 <table>
@@ -1209,7 +1252,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>EnterpriseDataProtection/RetrieveByCount/Type</li>
 </ul>
 </td></tr>
-<tr class="even">
+<tr class="odd">
 <td style="vertical-align:top">[Connecting your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connecting-your-windows-10-based-device-to-work-using-a-deep-link)</td>
 <td style="vertical-align:top"><p>Added following deep link parameters to the table:</p>
 <ul>
@@ -1219,6 +1262,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Deviceidentifier</li>
 <li>Tenantidentifier</li>
 <li>Ownership</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in the next major update to Windows 10.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">MDM support for Windows 10 S</td>
+<td style="vertical-align:top"><p>Updated the following topics to indicate MDM support in Windows 10 S.</p>
+<ul>
+<li>[Configuration service provider reference](configuration-service-provider-reference.md)</li>
+<li>[Policy CSP](policy-configuration-service-provider.md)</li>
 </ul>
 </td></tr>
 </tbody>

@@ -3,7 +3,6 @@ title: IConfigServiceProvider2
 description: IConfigServiceProvider2
 ms.assetid: 8deec0fb-59a6-4d08-8ddb-6d0d3d868a10
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

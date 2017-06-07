@@ -3,7 +3,6 @@ title: Device HealthAttestation CSP
 description: Device HealthAttestation CSP
 ms.assetid: 6F2D783C-F6B4-4A81-B9A2-522C4661D1AC
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows

@@ -3,7 +3,6 @@ title: SharedPC DDF file
 description: SharedPC DDF file
 ms.assetid: 70234197-07D4-478E-97BB-F6C651C0B970
 ms.author: maricia
-ms.date: 05/02/2017
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
