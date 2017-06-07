@@ -51,12 +51,16 @@ There are two ways to switch from Windows 10 S to Windows 10 Pro Education, outl
 
     **Key acquisition options:**
     - **Volume Licensing customers** -  For schools with active Microsoft Volume Licensing agreements, global admins can obtain free MAK keys for Windows 10 Pro Education. 
+
         > [!NOTE]
         > Windows 10 S is a Qualified OS (QOS) for Academic Volume Licensing only. 
+        
     - **Non-Volume Licensing customers** - For schools without an active Microsoft Volume Licensing agreement, the global admin can contact CSS, fill out a form and provide a proof of purchase to receive MAK keys for Windows 10 Pro Education.
 
-    **Key distribution options:**
-    You can find step-by-step info on how to use each of the options described here in [Switch options from Windows 10 S to Windows 10 Pro Education](#switch-options-from-windows-10-s-to-windows-10-pro-education).
+  **Key distribution options:**
+  
+  You can find step-by-step info on how to use each of the options described here in [Switch options from Windows 10 S to Windows 10 Pro Education](#switch-options-from-windows-10-s-to-windows-10-pro-education).
+
     - **Bulk key distribution** - You can apply MAK keys to switch the operating system on select devices or groups of devices using one of these methods:
         - Use Microsoft Intune for Education. See [Switch using Intune for Education](#switch-using-intune-for-education) for details on how to do this. 
         - Use Windows Configuration Designer to create a provisioning package that will provision the switch on the device(s). See [Switch using Windows Configuration Designer](#switch-using-windows-configuration-designer) for details on how to do this.
