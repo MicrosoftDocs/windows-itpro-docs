@@ -36,12 +36,12 @@ author: iaanw
 
 Windows Defender Antivirus is available on Windows Server 2016. In some instances it is referred to as Endpoint Protection - however, the protection engine is the same.
 
-See [Windows Defender Overview for Windows Server](https://technet.microsoft.com/windows-server-docs/security/windows-defender/windows-defender-overview-windows-server) for more information on enabling the client interface and configuring roles and specific server features.
+See the [Windows Defender Overview for Windows Server](https://technet.microsoft.com/windows-server-docs/security/windows-defender/windows-defender-overview-windows-server) for more information on enabling the client interface and configuring roles and specific server features.
 
 While the functionality, configuration, and management is largely the same for Windows Defender AV either on Windows 10 or Windows Server 2016, there are a few key differences:
 
 - In Windows Server 2016, [automatic exclusions](configure-server-exclusions-windows-defender-antivirus.md) are applied based on your defined Server Role.
-- In Windows Server 2016, [Windows Defender AV will not disable itself if you are running another antivirus product](windows-defender-antivirus-on-windows-server-2016.md).
+- In Windows Server 2016, Windows Defender AV will not disable itself if you are running another antivirus product.
 
 
 ## Related topics
