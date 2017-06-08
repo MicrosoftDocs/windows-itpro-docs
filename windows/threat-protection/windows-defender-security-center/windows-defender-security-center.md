@@ -46,7 +46,7 @@ The app includes the settings and status for the following security features:
 - Family options, which include a number of parental controls along with tips and information for keeping kids safe online
 
 > [!IMPORTANT]
-> The Windows Defender Security Center is not the same feature as the [Windows Security Center service, which provides limited antivirus, firewall, and Windows updates configuration](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA). Disabling that service, or configuring its associated Group Policy settings, will have no effect on the new Windows Defender Security Center.
+> The Windows Defender Security Center is not the same feature as the [Windows Security Center service, which provides limited antivirus, firewall, and Windows updates configuration](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA). 
 
 ## Open the Windows Defender Security Center
 - Right-click the icon in the notification area on the taskbar and click **Open**.
