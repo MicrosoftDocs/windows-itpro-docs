@@ -46,62 +46,59 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
 
 
-[![Update Compliance architecture](images/uc-02.png)](images/uc-02a.png)
-
-
-
-    \<A HREF="images/uc-02.png"><img src="images/uc-02a.png"></A>
+   [![](images/uc-02.png)](images/uc-02a.png)
 
 
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
 
 
-    <A HREF="images/uc-03.png"><img src="images/uc-03a.png"></A>
+    [![](images/uc-03.png)](images/uc-03a.png)
 
 
 3.	Create a new OMS workspace. 
 
 
-    <A HREF="images/uc-04.png"><img src="images/uc-04a.png"></A>
+    [![](images/uc-04.png)](images/uc-04a.png)
  
 4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Click **Create**.
 
 
-    <A HREF="images/uc-05.png"><img src="images/uc-05a.png"></A>
+    [![](images/uc-05.png)](images/uc-05a.png)
 
 
 5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow [this guide](https://blogs.technet.microsoft.com/upgradeanalytics/2016/11/08/linking-operations-management-suite-workspaces-to-microsoft-azure/) to create and link an Azure subscription to an OMS workspace.
 
 
-    <A HREF="images/uc-06.png"><img src="images/uc-06a.png"></A>
+    [![](images/uc-06.png)](images/uc-06a.png)
 
 
 6.	To add the Update Compliance solution to your workspace, go to the Solutions Gallery.
 
 
-    <A HREF="images/uc-07.png"><img src="images/uc-07a.png"></A>
+    [![](images/uc-07.png)](images/uc-07a.png)
 
 
 7.	Select the **Update Compliance** tile in the gallery and then select **Add** on the solution’s details page. You might need to scroll to find **Update Compliance**. The solution is now visible in your workspace. 
 
  
-    <A HREF="images/uc-08.png"><img src="images/uc-08a.png"></A>
+    [![](images/uc-08.png)](images/uc-08a.png)
 
 
 8.	Click the **Update Compliance** tile to configure the solution. The **Settings Dashboard** opens.
 
 
-    <A HREF="images/uc-09.png"><img src="images/uc-09a.png"></A>
+    [![](images/uc-09.png)](images/uc-09a.png)
 
 
 9.	Click **Subscribe** to subscribe to OMS Update Compliance. You will then need to distribute your Commercial ID across all your organization’s devices. More information on the Commercial ID is provided below.
 
 
-    <A HREF="images/uc-10.png"><img src="images/uc-10a.png"></A>
+    [![](images/uc-10.png)](images/uc-10a.png)
 
 
 After you are subscribed to OMS Update Compliance and your devices have a Commercial ID, you will begin receiving data. It will typically take 24 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
 
+>[!NOTE]
 >You can unsubscribe from the Update Compliance solution if you no longer want to monitor your organization’s devices. User device data will continue to be shared with Microsoft while the opt-in keys are set on user devices and the proxy allows traffic.
 
 ## Deploy your Commercial ID to your Windows 10 devices
