@@ -26,7 +26,7 @@ We need your business address, email contact, and tax-exemption certificates tha
 
 Before purchasing apps that have a fee, you need to add or update your organization's business address, and contact email address. 
 
-We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through the Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in the Microsoft Store for Business and Microsoft Store for Education. If we don’t have an address, we’ll ask you to enter it during your first purchase. 
+We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don’t have an address, we’ll ask you to enter it during your first purchase. 
 
 We need an email address in case we need to contact you about your Microsoft Store for Business and Education account. This email account should reach the admin for your organization’s Office 365 or Azure AD tenant that is used with Microsoft Store. 
 
@@ -35,7 +35,7 @@ We need an email address in case we need to contact you about your Microsoft Sto
 2. Click **Manage**, click **Payments & billing**, and then click **Edit**.
 
 ## Organization tax information   
-Taxes for Windows Store for Business purchases are determined by your business address. Businesses in these countries can provide their VAT number or local equivalent:
+Taxes for Microsoft Store for Business purchases are determined by your business address. Businesses in these countries can provide their VAT number or local equivalent:
 - Austria
 - Belgium
 - Croatia
@@ -61,13 +61,13 @@ Taxes for Windows Store for Business purchases are determined by your business a
 - Switzerland
 - United Kingdom
 
-These countries can provide their VAT number or local equivalent in **Payments & billing**. However, they can only acquire free apps.  
+These countries can provide their VAT number or local equivalent in **Payments & billing**.   
 
 |Market| Tax identifier |
 |------|----------------|
-| Brazil | CPNJ (required), CCMID  (optional) |
-| India | CST ID, VAT ID |
-| Taiwan | Unified business number|
+| Brazil | CNPJ (required) |
+| India | CST ID, VAT ID (both are optional) |
+| Taiwan | VAT ID (optional) |
 
 ### Tax-exempt status 
 
@@ -99,7 +99,7 @@ For example:<br>
 ($1.29 X .095) X 100 = $12.25
 
 ## Payment options
-You can purchase apps from the Windows Store for Business using your credit card. You can enter your credit card information on Account Information, or when you purchase an app. We currently accept these credit cards: 
+You can purchase apps from Microsoft Store for Business using your credit card. You can enter your credit card information on Account Information, or when you purchase an app. We currently accept these credit cards: 
 1. VISA 
 2. MasterCard 
 3. Discover 
@@ -136,7 +136,7 @@ Once you click **Next**, the information you provided will be validated with a
 
 Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on the Store for Business licensing model, see [licensing model](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).
 
-Admins can decide whether or not offline licenses are shown for apps in Windows Store for Business. 
+Admins can decide whether or not offline licenses are shown for apps in Microsoft Store. 
 
 **To set offline license visibility**
 
@@ -148,5 +148,3 @@ You have the following distribution options for offline-licensed apps:
 - Include the app in a provisioning package, and then use it as part of imaging a device.
 - Distribute the app through a management tool. 
 For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-with-management-tool.md).
-
-

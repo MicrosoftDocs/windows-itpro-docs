@@ -24,12 +24,12 @@ localizationpriority: high
 You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the endpoints.
 
-If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an endpoint onboarding or connectivity problem.
+If you have completed the endpoint onboarding process and don't see endpoints in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, it might indicate an endpoint onboarding or connectivity problem.
 
 ## Troubleshoot onboarding when deploying with Group Policy
 Deployment with Group Policy is done by running the onboarding script on the endpoints.  The Group Policy console does not indicate if the deployment has succeeded or not.
 
-If you have completed the endpoint onboarding process and don't see endpoints in the [Machines view](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
+If you have completed the endpoint onboarding process and don't see endpoints in the [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md) after an hour, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
 
 If the script completes successfully, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
 
@@ -43,7 +43,7 @@ When onboarding endpoints using the following versions of System Center Configur
 
 Deployment with the above-mentioned versions of System Center Configuration Manager is done by running the onboarding script on the endpoints. You can track the deployment in the Configuration Manager Console.
 
-If the deployment fails, you can check the output of the script on the endpoints. For more information, see [Troubleshoot onboarding when deploying with a script on the endpoint](#troubleshoot-onboarding-when-deploying-with-a-script-on-the-endpoint).
+If the deployment fails, you can check the output of the script on the endpoints.
 
 If the onboarding completed successfully but the endpoints are not showing up in the **Machines list** after an hour, see [Troubleshoot onboarding issues on the endpoint](#troubleshoot-onboarding-issues-on-the-endpoint) for additional errors that might occur.
 
@@ -64,7 +64,7 @@ Event ID | Error Type | Resolution steps
 :---|:---|:---
 5 | Offboarding data was found but couldn't be deleted | Check the permissions on the registry, specifically ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```.
 10 | Onboarding data couldn't be written to registry |  Check the permissions on the registry, specifically<br> ```HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat```.<br>Verify that the script was ran as an administrator.
-15 |  Failed to start SENSE service |Check the service status (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights).
+15 |  Failed to start SENSE service |Check the service health (```sc query sense``` command). Make sure it's not in an intermediate state (*'Pending_Stopped'*, *'Pending_Running'*) and try to run the script again (with administrator rights). <br> <br> If the endpoint is running Windows 10, version 1607 and running the command `sc query sense` returns `START_PENDING`, reboot the machine. If rebooting the machine doesn't address the issue, upgrade to KB4015217 and try onboarding again.
 15 | Failed to start SENSE service | If the message of the error is: System error 577 has occurred. You need to enable the Windows Defender ELAM driver, see [Ensure that Windows Defender is not disabled by a policy](#ensure-that-windows-defender-is-not-disabled-by-a-policy) for instructions.
 30 |  The script failed to wait for the service to start running | The service could have taken more time to start or has encountered errors while trying to start. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
 35 |  The script failed to find needed onboarding status registry value | When the SENSE service starts for the first time, it writes onboarding status to the registry location<br>```HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status```.<br>The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors on endpoints with Event viewer](event-error-codes-windows-defender-advanced-threat-protection.md).
@@ -82,13 +82,13 @@ Use the following tables to understand the possible causes of issues while onboa
 - Known issues with non-compliance table
 - Mobile Device Management (MDM) event logs table
 
-If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint Management** section of the portal, and run it in an elevated command prompt.  
+If none of the event logs and troubleshooting steps work, download the Local script from the **Endpoint management** section of the portal, and run it in an elevated command prompt.  
 
 **Microsoft Intune error codes and OMA-URIs**:
 
 Error Code Hex | Error Code Dec | Error Description | OMA-URI | Possible cause and troubleshooting steps
 :---|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding |  **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
+0x87D1FDE8 | -2016281112 | Remediation failed | Onboarding <br> Offboarding | **Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <br><br> **Troubleshooting steps:** <br> Check the event IDs in the [View agent onboarding errors in the endpoint event log](#view-agent-onboarding-errors-in-the-endpoint-event-log) section. <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
  | | | Onboarding <br> Offboarding <br> SampleSharing | **Possible cause:** Windows Defender ATP Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <br><br> **Troubleshooting steps:** Ensure that the following registry key exists: ```HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection```. <br> <br> If it doesn't exist, open an elevated command and add the key.
  | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <br><br> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](#troubleshoot-windows-defender-advanced-threat-protection-onboarding-issues). <br><br> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](https://msdn.microsoft.com/library/windows/hardware/mt632120%28v=vs.85%29.aspx).
  | | | All | **Possible cause:** Attempt to deploy Windows Defender ATP on non-supported SKU/Platform, particularly Holographic SKU. <br><br> Currently is supported platforms:  Enterprise, Education, and Professional. <br> Server is not supported.

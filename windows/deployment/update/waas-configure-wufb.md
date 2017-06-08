@@ -44,7 +44,7 @@ With Windows Update for Business, you can set a device to be on either the Curre
 | GPO for version 1607 and above: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Updates > **Select when Feature Updates are received** | \Policies\Microsoft\Windows\WindowsUpdate\BranchReadinessLevel |
 | GPO for version 1511: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Defer Upgrades and Updates** | \Policies\Microsoft\Windows\WindowsUpdate\DeferUpgrade |
 | MDM for version 1607 and above: </br>../Vendor/MSFT/Policy/Config/Update/</br>**BranchReadinessLevel** | \Microsoft\PolicyManager\default\Update\BranchReadinessLevel |
-| MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**RequireDeferredUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpgrade |
+| MDM for version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**RequireDeferUpgrade** | \Microsoft\PolicyManager\default\Update\RequireDeferUpgrade |
 
 Starting with version 1703, users are able to configure their device's branch readiness level, by going to **Settings > Update & security > Windows Update > Advanced options**.
 

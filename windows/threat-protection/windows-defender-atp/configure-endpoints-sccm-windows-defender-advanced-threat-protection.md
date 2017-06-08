@@ -24,11 +24,14 @@ localizationpriority: high
 
 <span id="sccm1606"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
+System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
+
+>[!NOTE]
+> If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
 
 <span id="sccm1602"/>
 ## Configure endpoints using System Center Configuration Manager earlier versions
-You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in the following System Center Configuration Manager versions:
+You can use existing System Center Configuration Manager functionality to create a policy to configure your endpoints. This is supported in the following System Center Configuration Manager versions:
 
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
@@ -39,7 +42,7 @@ You can use System Center Configuration Manager’s existing functionality to cr
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint Management** on the **Navigation pane**.
+    a. Click **Endpoint management** on the **Navigation pane**.
 
     b. Select **System Center Configuration Manager 2012/2012 R2/1511/1602**, click **Download package**, and save the .zip file.
 
@@ -61,7 +64,7 @@ This rule should be a *remediating* compliance rule configuration item that sets
 
 The configuration is set through the following registry key entry:
 
-```text
+```
 Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
 Name: "AllowSampleCollection"
 Value: 0 or 1
@@ -76,6 +79,31 @@ The default value in case the registry key doesn’t exist is 1.
 
 For more information about System Center Configuration Manager Compliance see [Compliance Settings in Configuration Manager](https://technet.microsoft.com/library/gg681958.aspx).
 
+### Configure reporting frequency settings
+Windows Defender ATP reporting frequency was tested over a large number of machines and is optimized to provide a recommended balance between speed and performance.
+
+In cases where high-value assets or machines are at high risk, you can configure the reporting frequency to expedite mode, allowing the machine to report at a higher frequency.
+
+> [!NOTE]
+> Using the Expedite mode might have an impact on the machine's battery usage and actual bandwidth used for sensor data. You should consider this when these measures are critical.
+
+For each endpoint, you can configure a registry key value that determines how frequent a machine reports sensor data to the portal.
+
+The configuration is set through the following registry key entry:
+
+```
+Path: “HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection”
+Name: "latency"
+Value: Normal or Expedite
+```
+Where:<br>
+Key type is a string. <br>
+Possible values are:
+- Normal - sets reporting frequency from the endpoint to Normal mode for the optimal speed and performance balance
+- Expedite - sets reporting frequency from the endpoint to Expedite mode
+
+The default value in case the registry key doesn’t exist is Normal.
+
 
 ### Offboard endpoints
 
@@ -86,7 +114,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint Management** on the **Navigation pane**.
+    a. Click **Endpoint management** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 
@@ -94,11 +122,13 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
-3. Import the configuration package by following the steps in the [How to Create Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682112.aspx#BKMK_Import) topic.
-
-4. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
+3. Deploy the package by following the steps in the [How to Deploy Packages and Programs in Configuration Manager](https://technet.microsoft.com/library/gg682178.aspx) topic.
 
     a. Choose a predefined device collection to deploy the package to.
+
+> [!IMPORTANT]
+> Offboarding causes the machine to stop sending sensor data to the portal but data from the machine, including reference to any alerts it has had will be retained for up to 6 months.
+
 
 ### Monitor endpoint configuration
 Monitoring with SCCM consists of two parts:

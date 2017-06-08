@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
-author: jdeckerMS
+author: jdeckerms
 ---
 
 # Use the Lockdown Designer app to create a Lockdown XML file
@@ -15,7 +15,7 @@ author: jdeckerMS
 
 Windows 10 Mobile allows enterprises to lock down a device, define multiple user roles, and configure custom layouts on a device. For example, the enterprise can lock down a device so that only applications and settings in an allow list are available. This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile. 
 
-When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. 
+When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. You can deploy the lockdown XML file by [adding it to a provisioning package](lockdown-xml.md#add-lockdown-xml-to-a-provisioning-package) or [by using mobile device management (MDM)](lockdown-xml.md#push-lockdown-xml-using-mdm).
 
 The Lockdown Designer app helps you configure and create a lockdown XML file that you can apply to devices running Windows 10 Mobile, version 1703, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Lockdown Designer also validates the XML. Using Lockdown Designer is easier than [manually creating a lockdown XML file](lockdown-xml.md).
 

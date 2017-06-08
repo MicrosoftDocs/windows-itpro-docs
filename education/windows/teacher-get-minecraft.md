@@ -17,7 +17,7 @@ author: trudyha
 
 Learn how teachers can get and distribute Minecraft: Education Edition.
 
-## Add Minecraft to your Windows Store for Business 
+## Add Minecraft to your Microsoft Store for Education 
 
 1. Go to [http://education.minecraft.net/](http://education.minecraft.net/) and select **GET STARTED**.
 
@@ -27,15 +27,15 @@ Learn how teachers can get and distribute Minecraft: Education Edition.
 
     <!-- ![Enter school email address](images/enter-email.png) -->
     
-3. Select **Get the app**. This will take you to the Windows Store for Business to download the app. You will also receive an email with instructions and a link to the Store.
+3. Select **Get the app**. This will take you to Microsoft Store for Ecucation to download the app. You will also receive an email with instructions and a link to the Store.
 
     <!-- ![You can get the app now](images/get-the-app.png) -->
 
-4. Sign in to Windows Store for Business with your email address.
+4. Sign in to Microsoft Store for Education with your email address.
 
-5. Read and accept the Windows Store for Business Service Agreement, and then select **Next**.
+5. Read and accept the Microsoft Store for Business and Education Service Agreement, and then select **Next**.
 
-6. **Minecraft: Education Edition** opens in the Windows Store for Business. Select **Get the app**. This places **Minecraft: Education Edition** in your Windows Store for Business inventory.
+6. **Minecraft: Education Edition** opens in the Microsoft Store for Education. Select **Get the app**. This places **Minecraft: Education Edition** in your Microsoft Store inventory.
 
     ![Get Minecraft app in Store](images/minecraft-get-the-app.png)
     
@@ -43,7 +43,7 @@ If you need additional licenses for **Minecraft: Education Edition**, see [Purch
     
 ## Distribute Minecraft
 
-After Minecraft: Education Edition is added to your Windows Store for Business inventory, you have three options:
+After Minecraft: Education Edition is added to your Microsoft Store for Education inventory, you have three options:
 
 - You can install the app on your PC.
 - You can assign the app to others.  
@@ -54,7 +54,7 @@ After Minecraft: Education Edition is added to your Windows Store for Business i
 ### Install for me
 You can install the app on your PC. This gives you a chance to work with the app before using it with your students.   
 
-1. Sign in to Windows Store for Business. 
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Install**.
 
     ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
@@ -65,7 +65,7 @@ You can install the app on your PC. This gives you a chance to work with the app
 Enter email addresses for your students, and each student will get an email with a link to install the app. This option is best for older, more tech-savvy students who will always use the same PC at school. 
 
 **To assign to others**
-1. Sign in to Windows Store for Business. 
+1. Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**.
 
     ![Minecraft Education Edition product page](images/mc-install-for-me-teacher.png)
@@ -95,7 +95,7 @@ Students will receive an email with a link that will install the app on their PC
 
     ![Windows Store app showing access to My Library](images/minecraft-private-store.png) 
 
-      When students click **My Libarary** they'll find apps assigned to them.
+      When students click **My Library** they'll find apps assigned to them.
 
     ![My Library for example student](images/minecraft-my-library.png)  
 
@@ -131,7 +131,6 @@ You'll download a .zip file, extract the files, and then use one of the files to
 
     ![Windows Store app showing access to My Library](images/mc-dnld-others-teacher.png)
  
-
 2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
 3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  
 4. **Install app**. Use the USB drive to copy the Minecraft folder to each Windows 10 PC where you want to install Minecraft: Education Edition. Open Minecraft: Education Edition folder, right-click **InstallMinecraftEducationEdition.bat** and click **Run as administrator**. 
@@ -155,11 +154,9 @@ If you are still having trouble installing the app, you can get more help on our
 
 ## Related topics
 
-[Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md) </br>
-Learn about overall Windows Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.
-
+[Working with Microsoft Store for Education](education-scenarios-store-for-business.md) </br>
+Learn about overall Microsoft Store for Business management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.
 [Get Minecraft: Education Edition](get-minecraft-for-education.md)
-
 [For IT admins: get Minecraft: Education Edition](school-get-minecraft.md)
 
 
