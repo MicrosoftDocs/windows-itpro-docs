@@ -15954,6 +15954,376 @@ ADMX Info:
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the Documents shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the Downloads shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the File Explorer shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the HomeGroup shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the Music shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the Network shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the Pictures shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the Settings shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy controls the visibility of the Videos shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
+-   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 
 <!--StartSKU-->
