@@ -184,25 +184,20 @@ MDM settings for Whiteboard collaboration use the **AppManagement/AppStore** nod
 
 The value for each setting can be **True** or **False**. The default value for each setting is **False**. 
 
+The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/` and the string from the **OMA URI** column in the table. For example, the full OMA URI for **Enable sign-in** is `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableSignIn`.
+
 
 | Setting | Details | OMA URI | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
 | --- | ---- | --- |---- | --- | --- |
-| Enable sign-in | Users can sign in and authenticate | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableSignIn  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable sign-in | Users are unable to sign in and access collaboration or education features | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/DisableSignIn 
- | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Collaboration | Users can sign in but not create or join collaborative sessions | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/DisableCollaboration 
- | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Sharing | Hide entry points for the Share button, hiding export in the Share charm and Collaboration | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/DisableSharing 
- | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Export | Users cannot send whiteboards using email, thumb drives, or other mechanisms through the Share charm | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/DisableExport  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Enable Ink to Shape | **Ink to Shape** is on by default when users open Whiteboard | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableInkShapes 
- | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Ink to Shape | **Ink to Shape** is off by default when users open Whiteboard | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/DisableInkShapes 
- | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Enable Ink to Table | **Ink to Table** is on by default when users open Whiteboard | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableInkTables 
- | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Search | Hide entry points for Bing Search | ./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/DisableSearch 
- | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Enable sign-in | Users can sign in and authenticate | EnableSignIn  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Disable sign-in | Users are unable to sign in and access collaboration or education features | DisableSignIn  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Disable Collaboration | Users can sign in but not create or join collaborative sessions | DisableCollaboration  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Disable Sharing | Hide entry points for the Share button, hiding export in the Share charm and Collaboration | DisableSharing  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Disable Export | Users cannot send whiteboards using email, thumb drives, or other mechanisms through the Share charm | DisableExport  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Enable Ink to Shape | **Ink to Shape** is on by default when users open Whiteboard | EnableInkShapes  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Disable Ink to Shape | **Ink to Shape** is off by default when users open Whiteboard | DisableInkShapes  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Enable Ink to Table | **Ink to Table** is on by default when users open Whiteboard | EnableInkTables  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Disable Search | Hide entry points for Bing Search | DisableSearch  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Generate OMA URIs for settings 
