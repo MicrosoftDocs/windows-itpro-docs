@@ -70,14 +70,16 @@ The Windows Defender Security Center uses the [Windows Security Center service](
 ## How the Windows Defender Security Center works with Windows security features
 
 
-> [!IMPORTANT] 
-> Individually disabling any of the services will not disable the other services or the Windows Defender Security Center itself.
+
 
 The Windows Defender Security Center operates as a separate app or process from each of the individual features, and will display notifications through the Action Center. 
 
 It acts as a collector or single place to see the status and perform some configuration for each of the features.
 
 Disabling any of the individual features (through Group Policy or other management tools, such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Defender Security Center. The Windows Defender Security Center itself will still run and show status for the other security features.
+
+> [!IMPORTANT] 
+> Individually disabling any of the services will not disable the other services or the Windows Defender Security Center itself.
 
 For example, [using a 3rd party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus). However, the Windows Defender Security Center will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Firewall.
 
