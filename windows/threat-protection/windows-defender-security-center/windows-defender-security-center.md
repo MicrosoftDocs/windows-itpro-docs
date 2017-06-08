@@ -45,8 +45,15 @@ The app includes the settings and status for the following security features:
 - App & browser control, covering Windows Defender SmartScreen settings
 - Family options, which include a number of parental controls along with tips and information for keeping kids safe online
 
-> [!IMPORTANT]
-> The Windows Defender Security Center is not the same feature as the [Windows Security Center service, which provides limited antivirus, firewall, and Windows updates configuration](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA). 
+
+
+The Windows Defender Security Center uses the [Windows Security Center service](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA) to provide the status and information on 3rd party antivirus and firewall products that are installed on the device. 
+
+> [!IMPORTANT] 
+> Disabling the Windows Security Center service will not disable Windows Defender AV or Windows Firewall. These will be disabled automatically when a 3rd party antivirus or firewall product is installed and kept up to date.
+
+> [!WARNING] If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Defender Security Center may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
+
 
 ## Open the Windows Defender Security Center
 - Right-click the icon in the notification area on the taskbar and click **Open**.
