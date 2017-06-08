@@ -15980,7 +15980,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the Documents shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16017,7 +16017,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the Downloads shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16054,7 +16054,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the File Explorer shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16091,7 +16091,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the HomeGroup shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16128,7 +16128,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the Music shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16165,7 +16165,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the Network shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16202,7 +16202,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16239,7 +16239,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the Pictures shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16276,7 +16276,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the Settings shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -16313,7 +16313,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">This policy controls the visibility of the Videos shortcut on the Start menu.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
