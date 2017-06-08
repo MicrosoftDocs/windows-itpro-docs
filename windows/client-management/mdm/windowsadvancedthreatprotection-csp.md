@@ -1,18 +1,13 @@
 ---
 title: WindowsAdvancedThreatProtection CSP
 description: WindowsAdvancedThreatProtection CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6C3054CA-9890-4C08-9DB6-FBEEB74699A8
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # WindowsAdvancedThreatProtection CSP
 

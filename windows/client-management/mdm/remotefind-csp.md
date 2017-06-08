@@ -1,18 +1,13 @@
 ---
 title: RemoteFind CSP
 description: The RemoteFind configuration service provider retrieves the location information for a particular device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2EB02824-65BF-4B40-A338-672D219AF5A0
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # RemoteFind CSP
 

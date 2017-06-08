@@ -1,18 +1,13 @@
 ---
 title: ICSPNodeTransactioning
 description: ICSPNodeTransactioning
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 24dc518a-4a8d-41fe-9bc6-217bbbdf6a3f
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # ICSPNodeTransactioning
 

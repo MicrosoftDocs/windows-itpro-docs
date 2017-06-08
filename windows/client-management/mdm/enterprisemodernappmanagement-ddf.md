@@ -1,18 +1,13 @@
 ---
 title: EnterpriseModernAppManagement DDF
 description: EnterpriseModernAppManagement DDF
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # EnterpriseModernAppManagement DDF
 

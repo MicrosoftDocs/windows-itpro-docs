@@ -1,18 +1,13 @@
 ---
 title: RemoteRing DDF file
 description: This topic shows the OMA DM device description framework (DDF) for the RemoteRing configuration service provider. DDF files are used only with OMA DM provisioning XML.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 6815267F-212B-4370-8B72-A457E8000F7B
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # RemoteRing DDF file
 

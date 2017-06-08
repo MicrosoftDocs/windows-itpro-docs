@@ -1,18 +1,13 @@
 ---
 title: CMPolicyEnterprise DDF file
 description: CMPolicyEnterprise DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 065EF07A-0CF3-4EE5-B620-3464A75B7EED
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # CMPolicyEnterprise DDF file
 

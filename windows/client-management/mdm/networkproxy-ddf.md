@@ -1,17 +1,12 @@
 ---
 title: NetworkProxy DDF file
 description: AppNetworkProxyLocker DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # NetworkProxy DDF file
 

@@ -1,18 +1,13 @@
 ---
 title: EnterpriseModernAppManagement XSD
 description: Here is the XSD for the application parameters.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: D393D094-25E5-4E66-A60F-B59CC312BF57
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # EnterpriseModernAppManagement XSD
 

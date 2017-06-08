@@ -1,18 +1,13 @@
 ---
 title: PolicyManager CSP
 description: PolicyManager CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # PolicyManager CSP
 
@@ -52,21 +47,28 @@ The area group that can be configured by a single technology for a single provid
 
 Supported operations are Add, Get, and Delete.
 
-<a href="" id="my--areaname---
-title: PolicyManager CSP
-description: PolicyManager CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 048427b1-6024-4660-8660-bd91c583f7f9
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
-policyname-"></a>**Device/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
+<a href="" id="my--areaname---policyname-"></a>**My/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
+Specifies the name/value pair used in the policy. The following list shows some tips to help you when configuring policies:
+
+-   Separate multistring values by the Unicode &\#xF000; in the XML file.
+
+-   End multistrings with &\#xF000; For example, One string&\#xF000;two string&\#xF000;red string&\#xF000;blue string&\#xF000;&\#xF000;. Note that a query from different caller could provide a different value as each caller could have different values for a named policy.
+
+-   In Syncml, wrap this policy with the Atomic command so that the policy settings are treated as a single transaction.
+
+-   Supported operations are Add, Get, Delete, and Replace.
+
+-   Value type is string.
+
+For possible area and policy names, see [Supported company policies](#bkmk-supportedpolicies) below.
+
+<a href="" id="device"></a>**Device**  
+Groups the evaluated policies from all providers that can be configured. Supported operations is Get.
+
+<a href="" id="device--areaname-"></a>**Device/****_&lt;AreaName&gt;_**  
+The area group that can be configured by a single technology independent of the providers. Supported operation is Get.
+
+<a href="" id="device--areaname---policyname-"></a>**Device/_&lt;AreaName&gt;_/****_&lt;PolicyName&gt;_**  
 Specifies the name/value pair used in the policy. Supported operation is Get.
 
 ## <a href="" id="bkmk-supportedpolicies"></a>List of *&lt;AreaName&gt;*/*&lt;PolicyName&gt;*

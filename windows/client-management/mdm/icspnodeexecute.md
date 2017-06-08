@@ -1,18 +1,13 @@
 ---
 title: ICSPNode Execute
 description: ICSPNode Execute
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 5916e7b7-256d-49fd-82b6-db0547a215ec
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # ICSPNode::Execute
 

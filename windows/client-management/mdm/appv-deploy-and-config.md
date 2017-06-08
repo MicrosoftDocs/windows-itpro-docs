@@ -1,17 +1,12 @@
 ---
 title: Deploy and configure App-V apps using MDM
 description: Deploy and configure App-V apps using MDM
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # Deploy and configure App-V apps using MDM
 

@@ -1,18 +1,13 @@
 ---
 title: CellularSettings CSP
 description: CellularSettings CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ce8b6f16-37ca-4aaf-98b0-306d12e326df
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # CellularSettings CSP
 

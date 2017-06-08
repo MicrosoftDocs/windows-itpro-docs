@@ -1,18 +1,13 @@
 ---
 title: CM\_CellularEntries CSP
 description: CM\_CellularEntries CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: f8dac9ef-b709-4b76-b6f5-34c2e6a3c847
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # CM\_CellularEntries CSP
 

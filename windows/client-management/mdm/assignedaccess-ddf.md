@@ -1,18 +1,13 @@
 ---
 title: AssignedAccess DDF
 description: AssignedAccess DDF
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 224FADDB-0EFD-4E5A-AE20-1BD4ABE24306
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # AssignedAccess DDF
 

@@ -1,18 +1,13 @@
 ---
 title: NodeCache CSP
 description: NodeCache CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b4dd2b0d-79ef-42ac-ab5b-ee07b3097876
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # NodeCache CSP
 

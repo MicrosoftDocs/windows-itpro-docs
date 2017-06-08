@@ -4,18 +4,13 @@ description: Disconnecting may be initiated either locally by the user from the 
 MS-HAID:
 - 'p\_phdevicemgmt.disconnecting\_from\_the\_management\_infrastructure\_\_unenrollment\_'
 - 'p\_phDeviceMgmt.disconnecting\_from\_mdm\_unenrollment'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 33B2B248-631B-451F-B534-5DA095C4C8E8
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 
 # Disconnecting from the management infrastructure (unenrollment)

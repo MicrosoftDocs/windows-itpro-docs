@@ -4,18 +4,13 @@ description: Design a custom configuration service provider
 MS-HAID:
 - 'p\_phDeviceMgmt.designing\_a\_custom\_configuration\_service\_provider'
 - 'p\_phDeviceMgmt.design\_a\_custom\_windows\_csp'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 0fff9516-a71a-4036-a57b-503ef1a81a37
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # Design a custom configuration service provider
 

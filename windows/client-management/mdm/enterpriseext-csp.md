@@ -1,18 +1,13 @@
 ---
 title: EnterpriseExt CSP
 description: EnterpriseExt CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: ACA5CD79-BBD5-4DD1-86DA-0285B93982BD
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # EnterpriseExt CSP
 
