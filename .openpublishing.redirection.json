@@ -1,59 +1,59 @@
-{ 
+{
 "redirections": [
 {
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
 "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
-"redirect_document_id": false 
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/configure-windows-defender-in-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/enable-pua-windows-defender-for-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/get-started-with-windows-defender-for-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
-"redirect_document_id": false 
+"redirect_document_id": false
 },
 {
 "source_path": "windows/keep-secure/run-cmd-scan-windows-defender-for-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/troubleshoot-windows-defender-in-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/use-powershell-cmdlets-windows-defender-for-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-block-at-first-sight.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-in-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/windows-defender-enhanced-notifications.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/configure-notifications-windows-defender-antivirus",
-"redirect_document_id": true 
+"redirect_document_id": true
 },
 {
 "source_path": "windows/keep-secure/configure-aad-windows-defender-advanced-threat-protection.md",
@@ -535,7 +535,7 @@
 "redirect_url": "/windows/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection",
 "redirect_document_id": true
 },
-{ 
+{
 "source_path": "windows/keep-secure/ad-ds-schema-extensions-to-support-tpm-backup.md",
 "redirect_url": "https://technet.microsoft.com/library/jj635854.aspx",
 "redirect_document_id": true

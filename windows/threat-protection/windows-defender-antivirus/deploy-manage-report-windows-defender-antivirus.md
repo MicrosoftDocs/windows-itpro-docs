@@ -33,7 +33,7 @@ You'll also see additional links for:
 - Reporting on Windows Defender Antivirus protection
 
 > [!IMPORTANT]
-> In most cases, Windows 10 will disable Windows Defender Antivirus if it finds another antivirus product running and up-to-date. You must disable or uninstall third-party antivirus products before Windows Defender Antivirus will be functioning. If you re-enable or install third-part antivirus products, then Windows 10 will automatically disable Windows Defender Antivirus.
+> In most cases, Windows 10 will disable Windows Defender Antivirus if it finds another antivirus product running and up-to-date. You must disable or uninstall third-party antivirus products before Windows Defender Antivirus will be functioning. If you re-enable or install third-party antivirus products, then Windows 10 will automatically disable Windows Defender Antivirus. 
 
 
 Tool|Deployment options (<a href="#fn2" id="ref2">2</a>)|Management options (network-wide configuration and policy or baseline deployment) ([3](#fn3))|Reporting options  
