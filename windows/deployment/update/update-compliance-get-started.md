@@ -46,8 +46,11 @@ If you are not yet using OMS, use the following steps to subscribe to OMS Update
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
 
 
+[![Update Compliance architecture](images/uc-02.png)](images/uc-02a.png)
 
-    <A HREF="images/uc-02.png"><img src="images/uc-02a.png"></A>
+
+
+    \<A HREF="images/uc-02.png"><img src="images/uc-02a.png"></A>
 
 
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
