@@ -19,6 +19,7 @@ Update Compliance:
 - Provides a workflow that can be used to quickly identify which devices require attention. 
 - Enables you to track deployment compliance targets for updates.
 
+>[!NOTE]
 >Information is refreshed daily so that update progress can be monitored. Changes will be displayed about 24 hours after their occurrence, so you always have a recent snapshot of your devices.
 
 In OMS, the aspects of a solution's dashboard are usually divided into <I>blades</I>. Blades are a slice of information, typically with a summarization tile and an enumeration of the items that makes up that data. All data is presented through <I>queries</I>. <I>Perspectives</I> are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 

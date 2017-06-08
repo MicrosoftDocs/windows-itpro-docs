@@ -198,6 +198,8 @@
 #### [SUPL DDF file](supl-ddf-file.md)
 ### [SurfaceHub CSP](surfacehub-csp.md)
 #### [SurfaceHub DDF file](surfacehub-ddf-file.md)
+### [TPMPolicy CSP](tpmpolicy-csp.md)
+#### [TPMPolicy DDF file](tpmpolicy-ddf-file.md)
 ### [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 #### [UnifiedWriteFilter DDF file](unifiedwritefilter-ddf.md)
 ### [Update CSP](update-csp.md)

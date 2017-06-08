@@ -35,12 +35,16 @@ In Windows 10, version 1703 (also known as the Creators Update), the Windows Def
 
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
-The app also includes the settings and status of:
+> [!IMPORTANT] 
+> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These will be disabled automatically when a 3rd party antivirus or firewall product is installed and kept up to date.
 
-- The PC (as "device health")
-- Windows Firewall
-- Windows Defender SmartScreen Filter
-- Parental and Family Controls
+> [!WARNING] 
+> If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Defender Security Center may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. 
+>It may also prevent Windows Defender AV from enabling itself if you have an old or outdated 3rd party antivirus, or if you uninstall any 3rd party antivirus products you may have previously installed. 
+>This will significantly lower the protection of your device and could lead to malware infection.
+
+
+See the [Windows Defender Security Center topic](/windows/threat-protection/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
 >[!NOTE]
 >The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).
