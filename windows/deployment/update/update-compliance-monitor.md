@@ -49,6 +49,7 @@ These steps are illustrated in following diagram:
 
 ![Update Compliance architecture](images/uc-01-wdav.png)
 
+>[!NOTE]
 >This process assumes that Windows telemetry is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started#deploy-your-commercial-id-to-your-windows-10-devices.
 
 
