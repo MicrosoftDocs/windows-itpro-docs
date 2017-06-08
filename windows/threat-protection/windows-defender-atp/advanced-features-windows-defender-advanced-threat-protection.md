@@ -34,6 +34,8 @@ This feature is only available if you have an active Office 365 E5 or the Threat
 
 When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
 
+You have the option of enabling displaying of user details and Skype for Business integration.
+
 
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
