@@ -5554,7 +5554,7 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
  
-<p style="margin-left: 20px">Turns On Virtualization Based Security(VBS) at the next reboot. Virtualization Based Security uses the Windows Hypervisor to provide support for security services. Value type is integer. Supported values:
+<p style="margin-left: 20px">Turns On Virtualization Based Security(VBS) at the next reboot. Virtualization Based Security uses the Windows Hypervisor to provide support for security services. Value type is integer. Added in the next major update to Windows 10. Supported values:
 <ul>
 <li>0 - disable Virtualization Based Security</li>
 <li>1 - enable Virtualization Based Security</li>
@@ -5589,7 +5589,7 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->Specifies the platform security level at the next reboot. Value type is interger. Supported values:
+<!--StartDescription-->Specifies the platform security level at the next reboot. Value type is interger. Added in the next major update to Windows 10. Supported values:
 <ul>
 <li>1 - Turns on VBS with Secure Boot. </li>
 <li>3 - Turns on VBS with Secure Boot and DMA. DMA requires hardware support.</li>
@@ -5628,7 +5628,7 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
  
-<p style="margin-left: 20px">This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer. Supported values:
+<p style="margin-left: 20px">This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer. Added in the next major update to Windows 10. Supported values:
 <ul>
 <li>0 - (Disabled) Turns off Credential Guard remotely if configured previously without UEFI Lock</li>
 <li>1 - (Enabled with UEFI lock) Turns on CredentialGuard with UEFI lock</li>
