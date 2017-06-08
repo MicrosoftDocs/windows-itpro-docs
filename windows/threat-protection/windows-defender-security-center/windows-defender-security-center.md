@@ -30,7 +30,7 @@ In Windows 10, version 1703 we introduced the new Windows Defender Security Cent
 
 
 
-![](images/security-center-home.png)
+![Screen shot of the Windows Defender Security Center showing that the device is protected and five icons for each of the features](images/security-center-home.png)
 
 
 
