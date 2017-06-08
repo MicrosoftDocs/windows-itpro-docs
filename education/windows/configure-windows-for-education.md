@@ -145,7 +145,7 @@ Provide an ad-free experience that is a safer, more private search option for Kâ
 ### Configurations
 
 #### IP registration for entire school network using Microsoft Edge
-Ad-free searching with Bing in Microsoft Edge can be configured at the network level. To configure this, email bicteam@microsoft.com with the subject "New Windows 10, version 1703 (Creators Update) Registration: [School District Name]" and the include the following information in the body of the email.
+Ad-free searching with Bing in Microsoft Edge can be configured at the network level. To configure this, email bingintheclassroom@microsoft.com with the subject "New Windows 10, version 1703 (Creators Update) Registration: [School District Name]" and the include the following information in the body of the email.
 
 **District information**
 - **District or School Name:**
