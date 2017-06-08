@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "windows/device-security/windows-security-baselines.md",
+"redirect_url": "https://www.microsoft.com/download/details.aspx?id=55319",
+"redirect_document_id": true 
+},
+{
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
 "redirect_document_id": true
