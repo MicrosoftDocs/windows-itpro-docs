@@ -29,11 +29,6 @@ This feature is only available if your organization uses Windows Defender Antivi
 
 If your organization satisfies this condition, the feature is enabled by default. This feature enables you to block potentially malicious files in your network. This operation will prevent it from being read, written, or executed on machines in your organization.
 
-## Run remote antivirus scan
-This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
-
-If your organization satisfies this condition, the feature is enabled by default. This feature enables you to run remove antivirus scans on machines.
-
 ## Office 365 Security Center integration
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
