@@ -15991,8 +15991,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16028,8 +16028,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16065,8 +16065,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16102,8 +16102,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16139,8 +16139,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16176,8 +16176,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16213,8 +16213,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16250,8 +16250,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16287,8 +16287,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
@@ -16324,8 +16324,8 @@ ADMX Info:
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – The shortcut should be hidden and grays out the corresponding toggle in the Settings app.
--   1 – The shortcut should be visible and grays out the corresponding toggle in the Settings app.
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
