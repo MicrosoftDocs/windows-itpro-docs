@@ -50,9 +50,9 @@ The app includes the settings and status for the following security features:
 The Windows Defender Security Center uses the [Windows Security Center service](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA) to provide the status and information on 3rd party antivirus and firewall products that are installed on the device. 
 
 > [!IMPORTANT] 
-> Disabling the Windows Security Center service will not disable Windows Defender AV or Windows Firewall. These will be disabled automatically when a 3rd party antivirus or firewall product is installed and kept up to date.
+> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These will be disabled automatically when a 3rd party antivirus or firewall product is installed and kept up to date.
 
-> [!WARNING] If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Defender Security Center may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
+> [!WARNING] If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Defender Security Center may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. It may also prevent Windows Defender AV from enabling itself if you have an old or outdated 3rd party antivirus, or if you uninstall any 3rd party antivirus products you may have previously installed. This will significantly lower the protection of your device and could lead to malware infection.
 
 
 ## Open the Windows Defender Security Center
