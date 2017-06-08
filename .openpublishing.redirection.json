@@ -11,11 +11,6 @@
 "redirect_document_id": false
 },
 {
-"source_path": "windows/threat-protection/windows-defender-antivirus/windows-defender-security-center-antivirus.md",
-"redirect_url": "/windows/threat-protection/windows-defender-security-center/windows-defender-security-center",
-"redirect_document_id": false
-},
-{
 "source_path": "windows/keep-secure/configure-windows-defender-in-windows-10.md",
 "redirect_url": "/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus",
 "redirect_document_id": true
