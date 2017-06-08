@@ -1,14 +1,11 @@
 ---
 title: BitLocker CSP
 description: BitLocker CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 # BitLocker CSP
@@ -674,7 +671,7 @@ The following example is provided to show proper format and should not be taken 
 	<CmdID>110</CmdID>
 	<Item>
 		<Target>
-			<LocURI>./Device/Vendor/MSFT/BitLocker/DisableWarningForOtherDiskEncryption</LocURI>
+			<LocURI>./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption</LocURI>
 		</Target>
 		<Meta>
 			<Format xmlns="syncml:metinf">int</Format>

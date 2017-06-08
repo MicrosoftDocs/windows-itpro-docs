@@ -4,15 +4,12 @@ description: The DMClient CSP supports the ability to configure push-initiated d
 MS-HAID:
 - 'p\_phdevicemgmt.push\_notification\_support\_for\_device\_management'
 - 'p\_phDeviceMgmt.push\_notification\_windows\_mdm'
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 9031C4FE-212A-4481-A1B0-4C3190B388AE
-ms.author: windows-hardware-design-content
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-oem
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
 ---
 
 

@@ -24,11 +24,14 @@ localizationpriority: high
 
 <span id="sccm1606"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606
-System Center Configuration Manager (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
+System Center Configuration Manager (SCCM) (current branch) version 1606, has UI integrated support for configuring and managing Windows Defender ATP on endpoints. For more information, see [Support for Windows Defender Advanced Threat Protection service](https://go.microsoft.com/fwlink/p/?linkid=823682).
+
+>[!NOTE]
+> If you’re using SCCM client version 1606 with server version 1610 or above, you must upgrade the client version to match the server version.
 
 <span id="sccm1602"/>
 ## Configure endpoints using System Center Configuration Manager earlier versions
-You can use System Center Configuration Manager’s existing functionality to create a policy to configure your endpoints. This is supported in the following System Center Configuration Manager versions:
+You can use existing System Center Configuration Manager functionality to create a policy to configure your endpoints. This is supported in the following System Center Configuration Manager versions:
 
 - System Center 2012 Configuration Manager
 - System Center 2012 R2 Configuration Manager
