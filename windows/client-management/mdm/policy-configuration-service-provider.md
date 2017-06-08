@@ -20196,31 +20196,6 @@ Footnote:
 [Wifi/WLANScanMode](#wifi-wlanscanmode)  
 <!--EndIoTCore-->
 
-<!--StartEAS-->
-## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
-
-[Browser/AllowBrowser](#browser-allowbrowser)  
-[Camera/AllowCamera](#camera-allowcamera)  
-[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
-[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
-[DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
-[DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
-[DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
-[DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
-[DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
-[DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
-[DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
-[DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
-[DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
-[Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
-[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-[System/AllowStorageCard](#system-allowstoragecard)  
-[System/TelemetryProxy](#system-telemetryproxy)  
-[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
-[Wifi/AllowWiFi](#wifi-allowwifi)  
-<!--EndEAS-->
-
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business
 
@@ -20344,6 +20319,31 @@ Footnote:
 -   [Update/PauseQualityUpdates](#update-pausequalityupdates)
 -   [Update/UpdateServiceUrl](#update-updateserviceurl)
 <!--EndSurfaceHub-->
+
+<!--StartEAS-->
+## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
+
+[Browser/AllowBrowser](#browser-allowbrowser)  
+[Camera/AllowCamera](#camera-allowcamera)  
+[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+[DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+[DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+[DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+[DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
+[DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+[DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+[DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+[DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+[DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
+[Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+[System/AllowStorageCard](#system-allowstoragecard)  
+[System/TelemetryProxy](#system-telemetryproxy)  
+[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+[Wifi/AllowWiFi](#wifi-allowwifi)  
+<!--EndEAS-->
 
 ## Examples
 
