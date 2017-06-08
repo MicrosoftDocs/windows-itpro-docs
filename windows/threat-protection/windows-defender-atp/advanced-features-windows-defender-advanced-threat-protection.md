@@ -34,9 +34,10 @@ This feature is only available if you have an active Office 365 E5 or the Threat
 
 When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
 
-You have the option of enabling displaying of user details and Skype for Business integration.
+You have the option of enabling displaying of user details and Skype for Business integration. When you enable displaying of user details, you'll be able to see user details such as: picture, name, title, and department information stored in Azure Active Directory (AAD). Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone.
 
 
+## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
 3. Click **Save preferences**.
