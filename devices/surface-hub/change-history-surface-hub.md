@@ -14,8 +14,11 @@ localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## June 2017
 
-
+| New or changed topic | Description |
+| --- | --- |
+| [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | New |
 
 ## RELEASE: Windows 10, version 1703
 
