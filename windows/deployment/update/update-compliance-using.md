@@ -19,6 +19,7 @@ Update Compliance:
 - Provides a workflow that can be used to quickly identify which devices require attention. 
 - Enables you to track deployment compliance targets for updates.
 
+>[!NOTE]
 >Information is refreshed daily so that update progress can be monitored. Changes will be displayed about 24 hours after their occurrence, so you always have a recent snapshot of your devices.
 
 In OMS, the aspects of a solution's dashboard are usually divided into <I>blades</I>. Blades are a slice of information, typically with a summarization tile and an enumeration of the items that makes up that data. All data is presented through <I>queries</I>. <I>Perspectives</I> are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 
@@ -31,7 +32,8 @@ Update Compliance has the following primary blades:
 3. [Latest and Previous Security Update Status](#latest-and-previous-security-update-status)
 4. [Overall Feature Update Status](#overall-feature-update-status)
 5. [CB, CBB, LTSB Deployment Status](#cb-cbb-ltsb-deployment-status)
-6. [List of Queries](#list-of-queries)
+6. [Windows Defender Antivirus Assessment](#wdav-assessment)
+7. [List of Queries](#list-of-queries)
 
 
 ## OS Update Overview
@@ -39,6 +41,7 @@ Update Compliance has the following primary blades:
 The first blade of OMS Update Compliance is the General **OS Update Overview** blade: 
 
 ![OS Update Overview](images/uc-11.png)
+
 
 
 This blade is divided into three sections: 
@@ -138,6 +141,133 @@ The Overall Feature Update Status blade focuses around whether or not your devic
 
 
 Devices are evaluated by OS Version (e.g., 1607) and the count of how many are Current, Not Current, and have Update Failures is displayed. Clicking on any of these counts will allow you to view all those devices, as well as select the **Update Deployment Status** perspective, described below. 
+
+<a id="wdav-assessment"></a>
+## Windows Defender Antivirus Assessment
+
+You'll notice some new tiles in the Overview blade which provide a summary of Windows Defender AV-related issues, highlighted in the following screenshot.
+
+![verview blade showing a summary of key Windows Defender Antivirus issues](images/update-compliance-wdav-overview.png)
+
+The **AV Signature** chart shows the number of devices that either have up-to-date [protection updates (also known as signatures or definitions)](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus), while the **Windows Defender AV Status** tile indicates the percentage of all assessed devices that are not updated and do not have real-time protection enabled. The Windows Defender Antivirus Assessment section provides more information that lets you investigate potential issues.
+
+If you're using [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) to protect devices in your organization and have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus), you can use this section to review the overall status of key protection features, including the number of devices that have [always-on real-time protection](/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus) and up-to-date definitions.
+
+There are two blades in the Windows Defender AV Assessment section:
+
+- Protection status
+- Threats status
+
+![Windows Defender Antivirus Assessment blade in Update Compliance](images/update-compliance-wdav-assessment.png)
+
+The **Protection Status** blade shows three key measurements:
+
+1. How many devices have old or current signatures (also known as protection updates or definitions)
+2. How many devices have the core Windows Defender AV always-on scanning feature enabled, called real-time protection
+
+
+![Windows Defender Antivirus protection status in Update Compliance](images/update-compliance-wdav-prot-status.png)
+
+See the [Manage Windows Defender AV updates and apply baselines](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus) topic for an overview on how updates work, and further information on applying updates.
+
+The **Threats Status** blade shows the following measurements:
+
+1. How many devices that have threats that have been remediated (removed or quarantined on the device)
+2. How many devices that have threats where remediation was not successful (this may indicate a manual reboot or clean is required)
+
+
+![Windows Defender Antivirus threat status in Update Compliance](images/update-compliance-wdav-threat-status.png)
+
+Devices can be in multiple states at once, as one device may have multiple threats, some of which may or may not be remediated.
+
+> [!IMPORTANT]
+> The data reported in Update Compliance can be delayed by up to 24 hours. 
+
+See the [Customize, initiate, and review the results of Windows Defender AV scans and remediation](/windows/threat-protection/windows-defender-antivirus/customize-run-review-remediate-scans-windows-defender-antivirus) topic for more information on how to perform scans and other manual remediation tasks.
+
+As with other blades in Update Compliance, clicking on a specific measurement or item will open the associated query that you can use to investigate individual devices and issues, as described below. 
+
+
+### Investigate individual devices and threats
+
+
+Click on any of the status measurements to be taken to a pre-built log query that shows the impacted devices for that status.
+
+![Sample Windows Defender AV query in Update Compliance](images/update-compliance-wdav-status-log.png)
+
+You can also find a pre-built query on the main Update Compliance screen, under the **Queries** blade, that lists devices that have not been assessed for Windows Defender AV.
+
+![Overview blade showing a summary of key Windows Defender Antivirus issues](images/update-compliance-wdav-query-not-assessed.png)
+
+
+
+
+
+
+
+
+You can further filter queries by clicking any of the measurement labels for each incident, changing the values in the query filter pane, and then clicking **Apply**.
+
+![Click the Apply button on the left pane](images/update-compliance-wdav-status-filter-apply.png)
+
+
+
+Click **+Add** at the bottom of the filter pane to open a list of filters you can apply.
+
+![Click Add to add more filters](images/update-compliance-wdav-status-add-filter.png)
+
+
+You can also click the **. . .** button next to each label to instantly filter by that label or value.
+
+![Click the elipsis icon to instantly filter by the selected label](images/update-compliance-wdav-status-filter.png)
+
+You can create your own queries by using a query string in the following format:
+
+```
+Type:<Group type> <Label>="<Value>"
+```
+
+You can use the following `<Group type>` options to scope your query:
+- `Type:WDAVStatus` to query information related to signature and real-time protection status
+- `Type:WDAVThreat` to query information about threat remediation and specific threats
+
+
+The `<Label>`, and `<Value>` fields are listed in the following table. All labels and values are case sensitive and must be entered as written below (including spaces).
+
+
+For queries that use `Type:WDAVStatus`, you can use the following labels and values.
+
+Label | Value
+---|---
+`Computer`|\<computer name>
+`ComputerID`|\<computer ID>
+`OSName`|\<Operating system name>
+`UpdateStatus`|`Not assessed` <br />`Signature up-to-date` <br />`Signature out-of-date`
+`DetailedStatus`|`Unknown` <br />`Non-Microsoft AV` <br />`No AV` <br />`AV expired` <br />`Disabled by GP` <br />`Disabled by LP` <br />`Recently disappeared`
+`ProtectionState`|`Real-time protection is off `<br />`Real-time protection is on`
+`MoreInformation`| \<free text string>
+`LastScan`| \<date and time of the last scan>
+
+
+
+For queries that use `Type:WDAVThreat`, you can use the following labels and values.
+
+ Label | Value
+ ---|---
+`Computer`|\<computer name>
+`ComputerID`|\<computer ID>
+`ThreatName`|\<detected threat name>
+`ThreatStatus`|`Remediation failed`<br/>`Remediated`
+`ThreatAction`|`Remediation pending reboot`
+`ThreatError`|`Disk full`<br/>`Network issue`<br/>`Operation aborted`
+`MoreInformation`|\<free text string>
+`LastScan`|\<date and time of the last scan>
+
+
+You can add multiple label-value pairs in the same query to refine and filter the results.
+
+![Add multiple value and name pairs in your query, separated by spaces](images/update-compliance-wdav-status-query.png)
+
 
 
 ## CB, CBB, LTSB Deployment Status
