@@ -82,7 +82,18 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DataProtection/RevokeOnUnenroll</li>
 <li>DeviceLock/DevicePasswordExpiration</li>
 <li>DeviceLock/DevicePasswordHistory</li>
+<li>Start/AllowPinnedFolderDocuments</li>
+<li>Start/AllowPinnedFolderDownloads</li>
+<li>Start/AllowPinnedFolderFileExplorer</li>
+<li>Start/AllowPinnedFolderHomeGroup</li>
+<li>Start/AllowPinnedFolderMusic</li>
+<li>Start/AllowPinnedFolderNetwork</li>
+<li>Start/AllowPinnedFolderPersonalFolder </li>
+<li>Start/AllowPinnedFolderPictures</li>
+<li>Start/AllowPinnedFolderSettings</li>
+<li>Start/AllowPinnedFolderVideos</li>
 <li>TextInput/AllowInputPanel</li>
+<li>Update/AutoRestartDeadlinePeriodInDays</li>
 <li>Update/PauseDeferrals</li>
 <li>Update/RequireDeferUpdate</li>
 <li>Update/RequireUpdateApproval</li>
