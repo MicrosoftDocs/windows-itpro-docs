@@ -32,7 +32,7 @@ The ArcSight field column contains the default mapping between the Windows Defen
 
 Field numbers match the numbers in the images below.
 
-<table style="table-layout:fixed;width:100%" >
+<table>
   <tr>
     <th class>Portal label</th>
     <th class>SIEM field name</th>
