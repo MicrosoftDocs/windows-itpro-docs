@@ -11704,6 +11704,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that turns off notification mirroring.
 
+> [!IMPORTANT]
+> This node must be accessed using the following paths:
+>
+> -   **./User/Vendor/MSFT/Policy/Config/Notifications/DisallowNotificationMirroring** to set the policy.
+> -   **./User/Vendor/MSFT/Policy/Result/Notifications/DisallowNotificationMirroring** to get the result.
+
+
 <p style="margin-left: 20px">For each user logged into the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device will not get mirrored to other devices of the same logged in user. If you disable or do not configure this policy (set value to 0) the notifications received by this user on this device will be mirrored to other devices of the same logged in user. This feature can be turned off by apps that do not want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
 
 <p style="margin-left: 20px">No reboot or service restart is required for this policy to take effect.
@@ -16071,6 +16078,376 @@ ADMX Info:
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 
 <!--StartSKU-->
@@ -16116,6 +16493,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hideapplist"></a>**Start/HideAppList**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -16141,6 +16541,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
@@ -16159,6 +16582,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -16184,6 +16630,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
@@ -16205,6 +16674,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
@@ -16223,6 +16715,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -16244,6 +16759,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -16272,6 +16810,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -16297,6 +16858,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
@@ -16315,6 +16899,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
@@ -16333,6 +16940,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
@@ -16351,6 +16981,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hidesleep"></a>**Start/HideSleep**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
@@ -16369,6 +17022,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
@@ -16387,6 +17063,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -16409,6 +17108,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -16432,6 +17154,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
@@ -19527,80 +20272,250 @@ Footnote:
 <!--EndPolicies-->
 
 <!--StartIoTCore-->
-## IoT Core Support  
+## <a href="" id="iotcore"></a>Policies Supported by IoT Core  
 
-[ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
-[Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
-[Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
-[Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
-[Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
-[Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
-[Browser/AllowAutofill](#browser-allowautofill)  
-[Browser/AllowBrowser](#browser-allowbrowser)  
-[Browser/AllowCookies](#browser-allowcookies)  
-[Browser/AllowDoNotTrack](#browser-allowdonottrack)  
-[Browser/AllowInPrivate](#browser-allowinprivate)  
-[Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
-[Browser/AllowPopups](#browser-allowpopups)  
-[Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
-[Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
-[Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
-[Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
-[Camera/AllowCamera](#camera-allowcamera)  
-[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
-[Connectivity/AllowNFC](#connectivity-allownfc)  
-[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
-[Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
-[Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
-[DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
-[Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
-[Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
-[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-[Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
-[System/AllowEmbeddedMode](#system-allowembeddedmode)  
-[System/AllowStorageCard](#system-allowstoragecard)  
-[System/TelemetryProxy](#system-telemetryproxy)  
-[Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
-[Update/AllowUpdateService](#update-allowupdateservice)  
-[Update/PauseDeferrals](#update-pausedeferrals)  
-[Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
-[Update/RequireUpdateApproval](#update-requireupdateapproval)  
-[Update/ScheduledInstallDay](#update-scheduledinstallday)  
-[Update/ScheduledInstallTime](#update-scheduledinstalltime)  
-[Update/UpdateServiceUrl](#update-updateserviceurl)  
-[Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
-[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
-[Wifi/AllowWiFi](#wifi-allowwifi)  
-[Wifi/WLANScanMode](#wifi-wlanscanmode)  
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
+-   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
+-   [Browser/AllowAutofill](#browser-allowautofill)  
+-   [Browser/AllowBrowser](#browser-allowbrowser)  
+-   [Browser/AllowCookies](#browser-allowcookies)  
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
+-   [Browser/AllowInPrivate](#browser-allowinprivate)  
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
+-   [Browser/AllowPopups](#browser-allowpopups)  
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
+-   [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
+-   [Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
+-   [Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
+-   [Camera/AllowCamera](#camera-allowcamera)  
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+-   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+-   [Connectivity/AllowNFC](#connectivity-allownfc)  
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+-   [Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
+-   [Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
+-   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
+-   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
+-   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
+-   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
+-   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
+-   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
+-   [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+-   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
+-   [System/AllowEmbeddedMode](#system-allowembeddedmode)  
+-   [System/AllowFontProviders](#system-allowfontproviders)  
+-   [System/AllowStorageCard](#system-allowstoragecard)  
+-   [System/TelemetryProxy](#system-telemetryproxy)  
+-   [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
+-   [Update/AllowUpdateService](#update-allowupdateservice)  
+-   [Update/PauseDeferrals](#update-pausedeferrals)  
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
+-   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)  
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)  
+-   [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
+-   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+-   [Wifi/AllowWiFi](#wifi-allowwifi)  
+-   [Wifi/WLANScanMode](#wifi-wlanscanmode)  
 <!--EndIoTCore-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business
+
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [Experience/AllowCortana](#experience-allowcortana)
+-   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
+-   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
+-   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
+-   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
+-   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
+-   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [System/AllowFontProviders](#system-allowfontproviders)  
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-   [Settings/AllowDateTime](#settings-allowdatetime)
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+<!--EndHoloLens-->
+
+<!--StartSurfaceHub-->
+## <a href="" id="surfacehubpolicies"></a>Policies supported by Microsoft Surface Hub
+
+-   [ApplicationDefaults/DefaultAssociationsConfiguration](#applicationdefaults-defaultassociationsconfiguration)  
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
+-   [Browser/AllowAddressBarDropdown](#browser-allowaddressbardropdown)  
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowMicrosoftCompatibilityList](#browser-allowmicrosoftcompatibilitylist)  
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Browser/ClearBrowsingDataOnExit](#browser-clearbrowsingdataonexit)  
+-   [Browser/ConfigureAdditionalSearchEngines](#browser-configureadditionalsearchengines)  
+-   [Browser/DisableLockdownOfStartPages](#browser-disablelockdownofstartpages)  
+-   [Browser/HomePages](#browser-homepages)
+-   [Browser/PreventLiveTileDataCollection](#browser-preventlivetiledatacollection)  
+-   [Browser/PreventSmartScreenPromptOverride](#browser-preventsmartscreenpromptoverride)
+-   [Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)
+-   [Browser/SetDefaultSearchEngine](#browser-setdefaultsearchengine)  
+-   [Camera/AllowCamera](#camera-allowcamera)
+-   [ConfigOperations/ADMXInstall](#configoperations-admxinstall)  
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [Connectivity/AllowConnectedDevices](#connectivity-allowconnecteddevices)  
+-   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)
+-   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
+-   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)
+-   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
+-   [Defender/AllowCloudProtection](#defender-allowcloudprotection)
+-   [Defender/AllowEmailScanning](#defender-allowemailscanning)
+-   [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)
+-   [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)
+-   [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)
+-   [Defender/AllowIOAVProtection](#defender-allowioavprotection)
+-   [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)
+-   [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)
+-   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)
+-   [Defender/AllowScriptScanning](#defender-allowscriptscanning)
+-   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)
+-   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)
+-   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)
+-   [Defender/ExcludedExtensions](#defender-excludedextensions)
+-   [Defender/ExcludedPaths](#defender-excludedpaths)
+-   [Defender/ExcludedProcesses](#defender-excludedprocesses)
+-   [Defender/PUAProtection](#defender-puaprotection)
+-   [Defender/RealTimeScanDirection](#defender-realtimescandirection)
+-   [Defender/ScanParameter](#defender-scanparameter)
+-   [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)
+-   [Defender/ScheduleScanDay](#defender-schedulescanday)
+-   [Defender/ScheduleScanTime](#defender-schedulescantime)
+-   [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)
+-   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)
+-   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)
+-   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
+-   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
+-   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
+-   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
+-   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
+-   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
+-   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
+-   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
+-   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
+-   [DeviceGuard/AllowKernelControlFlowGuard](#deviceguard-allowkernelcontrolflowguard)  
+-   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
+-   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
+-   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
+-   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
+-   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)
+-   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)
+-   [System/AllowFontProviders](#system-allowfontproviders) 
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [TextInput/AllowIMELogging](#textinput-allowimelogging)
+-   [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)
+-   [TextInput/AllowInputPanel](#textinput-allowinputpanel)
+-   [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)
+-   [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)
+-   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
+-   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
+-   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
+-   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
+-   [TimeLanguageSettings/Set24HourClock](#timelanguagesettings-set24hourclock)  
+-   [TimeLanguageSettings/SetCountry](#timelanguagesettings-setcountry)  
+-   [TimeLanguageSettings/SetLanguage](#timelanguagesettings-setlanguage)  
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/AutoRestartNotificationSchedule](#update-autorestartnotificationschedule)  
+-   [Update/AutoRestartRequiredNotificationDismissal](#update-autorestartrequirednotificationdismissal)  
+-   [Update/BranchReadinessLevel](#update-branchreadinesslevel)
+-   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
+-   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
+-   [Update/DetectionFrequency](#update-detectionfrequency)  
+-   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
+-   [Update/PauseQualityUpdates](#update-pausequalityupdates)
+-   [Update/ScheduleImminentRestartWarning](#update-scheduleimminentrestartwarning)  
+-   [Update/ScheduleRestartWarning](#update-schedulerestartwarning)  
+-   [Update/SetAutoRestartNotificationDisable](#update-setautorestartnotificationdisable)  
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Update/UpdateServiceUrlAlternate](#update-updateserviceurlalternate)  
+<!--EndSurfaceHub-->
+
 <!--StartEAS-->
-## Can be set using Exchange Active Sync (EAS)  
+## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
 
-[Browser/AllowBrowser](#browser-allowbrowser)  
-[Camera/AllowCamera](#camera-allowcamera)  
-[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
-[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
-[DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
-[DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
-[DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
-[DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
-[DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
-[DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
-[DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
-[DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
-[DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
-[Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
-[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-[System/AllowStorageCard](#system-allowstoragecard)  
-[System/TelemetryProxy](#system-telemetryproxy)  
-[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
-[Wifi/AllowWiFi](#wifi-allowwifi)  
+-   [Browser/AllowBrowser](#browser-allowbrowser)  
+-   [Camera/AllowCamera](#camera-allowcamera)  
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+-   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+-   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+-   [System/AllowStorageCard](#system-allowstoragecard)  
+-   [System/TelemetryProxy](#system-telemetryproxy)  
+-   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+-   [Wifi/AllowWiFi](#wifi-allowwifi)  
 <!--EndEAS-->
-
-
 
 ## Examples
 
