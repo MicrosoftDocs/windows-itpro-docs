@@ -11,11 +11,11 @@ localizationpriority: medium
 
 # What's new in Windows 10, version 1703 for Microsoft Surface Hub?
 
-Watch Surface Hub engineer Jordan Marchese present updates to Microsoft Surface Hub with Windows 10 Creators update. 
+Watch Surface Hub engineer Jordan Marchese present updates to Microsoft Surface Hub with Windows 10, version 1703 (Creators Update). 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=R8tX10VIgq0
 " target="_blank"><img src="http://img.youtube.com/vi/R8tX10VIgq0/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="Watch a video about Creators Update on Surface Hub" width="240" height="180" border="10" /></a>
 
 Windows 10, version 1703 (also called the Creators Update), introduces the following changes for Microsoft Surface Hub:
 
