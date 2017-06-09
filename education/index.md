@@ -207,6 +207,25 @@ author: CelesteDG
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/education/windows/education-pro-usb">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up School PCs</h3>
+                                                    <p>Use the app to create a provisioning package that you can use to quickly set up one or more Windows 10 devices.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -325,6 +344,25 @@ author: CelesteDG
                                                 <div class="cardText">
                                                     <h3>Microsoft Educator Community</h3>
                                                     <p>Connect and collaborate, find training and lessons, and do more in this hub for educators.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/education/windows/education-pro-usb">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up School PCs</h3>
+                                                    <p>Use the app to create a provisioning package that you can use to quickly set up one or more Windows 10 devices.</p>
                                                 </div>
                                             </div>
                                         </div>
