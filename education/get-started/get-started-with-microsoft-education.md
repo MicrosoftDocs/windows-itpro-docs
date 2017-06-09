@@ -118,7 +118,7 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
   ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
 
 3. Enter your Office 365 global admin credentials to apply the Intune for Education trial to your tenant.
-4. Skip ahead and follow the instructions in the walkthrough beginning with [3. Configure Microsoft Store for Education](#3-configure-microsoft-store-for-education).
+4. Skip ahead and follow the instructions in the walkthrough beginning with [4. Configure Microsoft Store for Education](#4-configure-microsoft-store-for-education).
 
 
 ## 1. Set up a new Office 365 for Education tenant
@@ -142,7 +142,7 @@ Don't have an Office 365 for Education verified tenant or just starting out? Fol
 
     You may need to fill in other information to provide that you qualify for an education tenant. Provide and submit the info to Microsoft to continue verification for your tenant.  
 
-As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [6.3 Complete Office 365 for Education setup](#63-complete-office-365-education-setup) for info.
+As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [7.3 Complete Office 365 for Education setup](#73-complete-office-365-education-setup) for info.
 
 
 ## 2. Use School Data Sync to import student data
@@ -701,7 +701,7 @@ After your cloud infrastructure is set up and you have a device management strat
 See <a href="https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc" target="_blank">Add users to Office 365</a> to learn more. Once you're done adding new users, go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a> and verify that the same users were added to the Intune for Education groups as well.
 
 ### 7.5 Connect other devices to your cloud infrastructure
-Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [5. Set up Windows 10 devices](#5-set-up-windows-10-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
+Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [6. Set up Windows 10 devices](#6-set-up-windows-10-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
 
   > [!NOTE]  
   > These steps enable users to get access to the organization's resources, but it also gives the organization some control over the device.
@@ -728,7 +728,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
   ![Device is connected to organization's MDM](images/win10_connectedtoorgmdm.png)
 
-6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [5.3 Verify the device is Azure AD joined](#53-verify-the-device-is-azure-ad-joined). 
+6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [6.3 Verify the device is Azure AD joined](#63-verify-the-device-is-azure-ad-joined). 
 
   It may take several minutes before the new device shows up so check again later.
 
