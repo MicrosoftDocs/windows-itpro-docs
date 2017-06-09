@@ -1973,6 +1973,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality. 
 
@@ -2358,6 +2381,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to use the Microsoft compatibility list in Microsoft Edge. The Microsoft compatibility list is a Microsoft-provided list that enables sites with known compatibility issues to display properly. 
 By default, the Microsoft compatibility list is enabled and can be viewed by visiting "about:compat". 
@@ -2466,6 +2512,29 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartPolicy-->
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows search engine customization for MDM-enrolled devices. Users can change their default search engine. 
   
@@ -2566,6 +2635,29 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartPolicy-->
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to clear browsing data on exiting Microsoft Edge.
 
@@ -2587,6 +2679,29 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartPolicy-->
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you to add up to 5 additional search engines for MDM-enrolled devices. 
  
@@ -2610,6 +2725,29 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartPolicy-->
 <a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Boolean value that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when the Browser/HomePages policy is in effect. 
   
@@ -2819,6 +2957,29 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartPolicy-->
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to enable or disable the First Run webpage. On the first explicit user-launch of Microsoft Edge, a First Run webpage hosted on Microsoft.com opens automatically via a FWLINK. This policy allows enterprises (such as those enrolled in a zero-emissions configuration) to prevent this page from opening.
 
@@ -2834,6 +2995,29 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartPolicy-->
 <a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Microsoft can collect information to create a Live Tile when pinning a site to Start from Microsoft Edge.
 
@@ -3005,6 +3189,29 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartPolicy-->
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you configure the default search engine for your employees. By default, your employees can change the default search engine at any time. If you want to prevent your employees from changing the default search engine that you set, you can do so by configuring the AllowSearchEngineCustomization policy.
 
@@ -7113,6 +7320,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -7348,6 +7578,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -7366,6 +7619,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -11226,6 +11502,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -11278,6 +11577,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -18165,6 +18487,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="timelanguagesettings-allowset24hourclock"></a>**TimeLanguageSettings/AllowSet24HourClock**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows for the configuration of the default clock setting to be the 24 hour format. Selecting 'Set 24 hour Clock' enables this setting. Selecting 'Locale default setting' uses the default clock as prescribed by the current locale setting.
 
@@ -18220,6 +18565,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -18272,6 +18640,41 @@ ADMX Info:
 <p style="margin-left: 20px">Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
 <p style="margin-left: 20px">The default value is 8 (8 AM).
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy defines the deadline in days after which a reboot for updates will become mandatory.
+
+<p style="margin-left: 20px">Supported values are 2-30 days.
+
+<p style="margin-left: 20px">The default value is 7 days.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18461,6 +18864,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -18477,6 +18903,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -18786,6 +19235,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -18802,6 +19274,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -18818,6 +19313,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19290,6 +19808,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19306,6 +19847,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19415,6 +19979,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
