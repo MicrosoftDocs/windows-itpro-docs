@@ -58,6 +58,11 @@ The device information file needs to be in this format:
 | column B | data type 2|
 | column C | data type 3|
 
+**Upload device list**
+1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
+2. Click **Manage**, and then click **Devices**.
+3. 
+
 ## Upload device list
 Or, keep at H2, so this shows in right rail??
 
