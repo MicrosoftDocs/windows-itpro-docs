@@ -64,7 +64,7 @@ You can configure Windows through provisioning or management tools including ind
 
 You can set all the education compliance areas through both provisioning and management tools. Additionally, these Microsoft education tools will ensure PCs that you set up are education ready:
 - [Set up School PCs](use-set-up-school-pcs-app.md)
-- Intune for Education (coming soon)
+- [Intune for Education](https://docs.microsoft.com/en-us/intune-education/available-settings)
 
 ## AllowCortana
 **AllowCortana** is a policy that enables or disables Cortana. It is a policy node in the Policy configuration service provider, [AllowCortana](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowcortana). 
