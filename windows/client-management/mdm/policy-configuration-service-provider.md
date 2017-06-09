@@ -18864,6 +18864,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -18880,6 +18903,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19189,6 +19235,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19205,6 +19274,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19221,6 +19313,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19693,6 +19808,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19709,6 +19847,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19818,6 +19979,29 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartPolicy-->
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
