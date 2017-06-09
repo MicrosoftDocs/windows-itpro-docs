@@ -30,7 +30,7 @@ In Windows 10, version 1703 we introduced the new Windows Defender Security Cent
 
 
 
-![](images/security-center-home.png)
+![Screen shot of the Windows Defender Security Center showing that the device is protected and five icons for each of the features](images/security-center-home.png)
 
 
 
@@ -45,8 +45,18 @@ The app includes the settings and status for the following security features:
 - App & browser control, covering Windows Defender SmartScreen settings
 - Family options, which include a number of parental controls along with tips and information for keeping kids safe online
 
-> [!IMPORTANT]
-> The Windows Defender Security Center is not the same feature as the [Windows Security Center service, which provides limited antivirus, firewall, and Windows updates configuration](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA). Disabling that service, or configuring its associated Group Policy settings, will have no effect on the new Windows Defender Security Center.
+
+
+The Windows Defender Security Center uses the [Windows Security Center service](https://technet.microsoft.com/en-us/library/bb457154.aspx#EDAA) to provide the status and information on 3rd party antivirus and firewall products that are installed on the device. 
+
+> [!IMPORTANT] 
+> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These will be disabled automatically when a 3rd party antivirus or firewall product is installed and kept up to date.
+
+> [!WARNING] 
+> If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Defender Security Center may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. 
+>It may also prevent Windows Defender AV from enabling itself if you have an old or outdated 3rd party antivirus, or if you uninstall any 3rd party antivirus products you may have previously installed. 
+>This will significantly lower the protection of your device and could lead to malware infection.
+
 
 ## Open the Windows Defender Security Center
 - Right-click the icon in the notification area on the taskbar and click **Open**.
@@ -63,14 +73,16 @@ The app includes the settings and status for the following security features:
 ## How the Windows Defender Security Center works with Windows security features
 
 
-> [!IMPORTANT] 
-> Individually disabling any of the services will not disable the other services or the Windows Defender Security Center itself.
+
 
 The Windows Defender Security Center operates as a separate app or process from each of the individual features, and will display notifications through the Action Center. 
 
 It acts as a collector or single place to see the status and perform some configuration for each of the features.
 
 Disabling any of the individual features (through Group Policy or other management tools, such as System Center Configuration Manager) will prevent that feature from reporting its status in the Windows Defender Security Center. The Windows Defender Security Center itself will still run and show status for the other security features.
+
+> [!IMPORTANT] 
+> Individually disabling any of the services will not disable the other services or the Windows Defender Security Center itself.
 
 For example, [using a 3rd party antivirus will disable Windows Defender Antivirus](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus). However, the Windows Defender Security Center will still run, show its icon in the taskbar, and display information about the other features, such as Windows Defender SmartScreen and Windows Firewall.
 
