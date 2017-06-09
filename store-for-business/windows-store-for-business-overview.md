@@ -488,8 +488,19 @@ Customers in these markets can use Microsoft Store for Business and Education to
 
 ### Support for free apps and Minecraft: Education Edition
 Customers in these markets can use Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition:  
+- Albania
+- Armenia
+- Azerbaijan
+- Belarus
+- Bosnia
 - Brazil
+- Georgia
+- Kazakhstan
+- Kyrgyzstan
+- Moldova
 - Taiwan
+- Tajikistan
+- Turkmenistan
 - Ukraine 
 
 This table summarize what customers can purchase, depending on which Microsoft Store they are using. 
