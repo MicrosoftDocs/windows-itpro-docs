@@ -208,7 +208,7 @@ author: CelesteDG
                                 </a>
                             </li>
                             <li>
-                                <a href="/education/windows/education-pro-usb">
+                                <a href="/education/windows/use-set-up-school-pcs-app">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -351,7 +351,7 @@ author: CelesteDG
                                 </a>
                             </li>
                             <li>
-                                <a href="/education/windows/education-pro-usb">
+                                <a href="/education/windows/use-set-up-school-pcs-app">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
