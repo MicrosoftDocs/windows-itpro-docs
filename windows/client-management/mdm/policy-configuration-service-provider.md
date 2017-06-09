@@ -17475,6 +17475,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -17527,6 +17550,41 @@ ADMX Info:
 <p style="margin-left: 20px">Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc.
 
 <p style="margin-left: 20px">The default value is 8 (8 AM).
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy defines the deadline in days after which a reboot for updates will become mandatory.
+
+<p style="margin-left: 20px">Supported values are 2-30 days.
+
+<p style="margin-left: 20px">The default value is 7 days.
 
 <!--EndDescription-->
 <!--EndPolicy-->
