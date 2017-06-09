@@ -1,18 +1,13 @@
 ---
 title: DevInfo CSP
 description: DevInfo CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: d3eb70db-1ce9-4c72-a13d-651137c1713c
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # DevInfo CSP
 

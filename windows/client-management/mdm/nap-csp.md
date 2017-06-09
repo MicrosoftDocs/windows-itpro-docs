@@ -1,18 +1,13 @@
 ---
 title: NAP CSP
 description: NAP CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 82f04492-88a6-4afd-af10-a62b8d444d21
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # NAP CSP
 

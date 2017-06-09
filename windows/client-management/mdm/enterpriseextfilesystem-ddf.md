@@ -1,18 +1,13 @@
 ---
 title: EnterpriseExtFileSystem DDF
 description: EnterpriseExtFileSystem DDF
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2D292E4B-15EE-4AEB-8884-6FEE8B92D2D1
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # EnterpriseExtFileSystem DDF
 

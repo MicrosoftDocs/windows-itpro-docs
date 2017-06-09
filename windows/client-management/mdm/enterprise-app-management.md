@@ -1,18 +1,13 @@
 ---
 title: Enterprise app management
 description: This topic covers one of the key mobile device management (MDM) features in Windows 10 for managing the lifecycle of apps across all of Windows.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 225DEE61-C3E3-4F75-BC79-5068759DFE99
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # Enterprise app management
 

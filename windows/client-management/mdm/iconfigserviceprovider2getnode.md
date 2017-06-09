@@ -1,18 +1,13 @@
 ---
 title: IConfigServiceProvider2 GetNode
 description: IConfigServiceProvider2 GetNode
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 4dc10a59-f6a2-45c0-927c-d594afc9bb91
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # IConfigServiceProvider2::GetNode
 

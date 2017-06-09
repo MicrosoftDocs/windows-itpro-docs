@@ -1,18 +1,13 @@
 ---
 title: ICSPNode GetPropertyIdentifiers
 description: ICSPNode GetPropertyIdentifiers
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8a052cd3-d74c-40c4-845f-f804b920deb4
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # ICSPNode::GetPropertyIdentifiers
 

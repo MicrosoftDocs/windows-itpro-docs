@@ -1,18 +1,13 @@
 ---
 title: Win32AppInventory DDF file
 description: Win32AppInventory DDF file
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F6BCC10B-BFE4-40AB-AEEE-34679A4E15B0
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # Win32AppInventory DDF file
 

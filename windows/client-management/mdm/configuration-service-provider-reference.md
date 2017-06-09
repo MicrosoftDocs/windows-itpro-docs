@@ -1,24 +1,28 @@
 ---
 title: Configuration service provider reference
 description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # Configuration service provider reference
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). See the [list of CSPs supported in Windows Holographic](#hololens) and the [list of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport) for additional information.
+For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224). 
+
+Additional lists:
+- [List of CSPs supported in Windows Holographic](#hololens)
+- [List of CSPs supported in Microsoft Surface Hub ](#surfacehubcspsupport)
+- [List of CSPs supported in Windows 10 IoT Core](#iotcoresupport)
+- [List of CSPs supported in Windows 10 S](#windows10s)
 
 The following tables show the configuration service providers support in Windows 10.  
 
@@ -1148,6 +1152,34 @@ The following tables show the configuration service providers support in Windows
 <!--EndCSP-->
 
 <!--StartCSP-->
+[Firewall CSP](firewall-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [HealthAttestation CSP](healthattestation-csp.md)  
 
 <!--StartSKU-->
@@ -2016,6 +2048,34 @@ The following tables show the configuration service providers support in Windows
 <!--EndCSP-->
 
 <!--StartCSP-->
+[TPMPolicy CSP](tpmpolicy-csp.md)  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+
+<!--StartCSP-->
 [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)  
 
 <!--StartSKU-->
@@ -2329,7 +2389,8 @@ The following tables show the configuration service providers support in Windows
 
  Footnotes: 
 - 1 - Added in Windows 10, version 1607
-- 2 - Added in Windows 10, version 1703
+- 2 - Added in Windows 10, version 1703  
+- 3 - Added in the next major update to Windows 10  
 
 > [!Note]  
 > You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
@@ -2341,427 +2402,7 @@ The following tables show the configuration service providers support in Windows
 The following list shows the configuration service providers supported in Windows Holographic editions.
 
 | Configuration service provider                                                                        | Windows Holographic edition      | Windows Holographic for Business edition |
-|---
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
--|---
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
--|---
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: Configuration service provider reference
-description: A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 71823658-951f-4163-9c40-c4d4adceaaec
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
--|
+|-------------------------------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------|
 | [Application CSP](application-csp.md)                                     | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
 | [AppLocker CSP](applocker-csp.md)                                         | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       |
 | [CertificateStore CSP](certificatestore-csp.md)                           | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       |
@@ -2852,3 +2493,54 @@ Footnotes:
 - [Update CSP](update-csp.md)
 - [VPNv2 CSP](vpnv2-csp.md)
 - [WiFi CSP](wifi-csp.md)
+
+## <a href="" id="windows10s"></a>CSPs supported in Windows 10 S
+
+The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that Office CSP and EnterpriseDesktop CSP are not available in Windows 10 S. Here is the list:
+
+- [ActiveSync CSP](activesync-csp.md)
+- [APPLICATION CSP](application-csp.md)
+- [AppLocker CSP](applocker-csp.md)
+- [BOOTSTRAP CSP](bootstrap-csp.md)
+- [CellularSettings CSP](cellularsettings-csp.md)
+- [CertificateStore CSP](certificatestore-csp.md)
+- [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
+- [CM_CellularEntries CSP](cm-cellularentries-csp.md)
+- [Defender CSP](defender-csp.md)
+- [DevDetail CSP](devdetail-csp.md)
+- [DeviceManageability CSP](devicemanageability-csp.md)
+- [DeviceStatus CSP](devicestatus-csp.md)
+- [DevInfo CSP](devinfo-csp.md)
+- [DiagnosticLog CSP](diagnosticlog-csp.md)
+- [DMAcc CSP](dmacc-csp.md)
+- [DMClient CSP](dmclient-csp.md)
+- [EMAIL2 CSP](email2-csp.md)
+- [EnterpriseAPN CSP](enterpriseapn-csp.md)
+- [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)
+- [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
+- [HealthAttestation CSP](healthattestation-csp.md)
+- [NAP CSP](nap-csp.md)
+- [NAPDEF CSP](napdef-csp.md)
+- [NetworkProxy CSP](networkproxy-csp.md)
+- [NodeCache CSP](nodecache-csp.md)
+- [PassportForWork CSP](passportforwork-csp.md)
+- [Policy CSP](policy-configuration-service-provider.md)
+- [Provisioning CSP](provisioning-csp.md)
+- [PROXY CSP](proxy-csp.md)
+- [PXLOGICAL CSP](pxlogical-csp.md)
+- [Reboot CSP](reboot-csp.md)
+- [RemoteFind CSP](remotefind-csp.md)
+- [RemoteWipe CSP](remotewipe-csp.md)
+- [Reporting CSP](reporting-csp.md)
+- [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
+- [SecureAssessment CSP](secureassessment-csp.md)
+- [SecurityPolicy CSP](securitypolicy-csp.md)
+- [SharedPC CSP](sharedpc-csp.md)
+- [Storage CSP](storage-csp.md)
+- [SUPL CSP](supl-csp.md)
+- [Update CSP](update-csp.md)
+- [VPNv2 CSP](vpnv2-csp.md)
+- [WiFi CSP](wifi-csp.md)
+- [Win32AppInventory CSP](win32appinventory-csp.md)
+- [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
+- [WindowsLicensing CSP](windowslicensing-csp.md)

@@ -1,18 +1,13 @@
 ---
 title: Device update management
 description: In the current device landscape of PC, tablets, phones, and IoT devices, the Mobile Device Management (MDM) solutions are becoming prevalent as a lightweight device management technology.
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: C27BAEE7-2890-4FB7-9549-A6EACC790777
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 
 # Device update management

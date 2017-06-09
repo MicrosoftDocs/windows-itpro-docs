@@ -1,18 +1,13 @@
 ---
 title: Structure of OMA DM provisioning files
 description: Structure of OMA DM provisioning files
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 7bd3ef57-c76c-459b-b63f-c5a333ddc2bc
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # Structure of OMA DM provisioning files
 

@@ -1,18 +1,13 @@
 ---
 title: ICSPNode SetValue
 description: ICSPNode SetValue
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: b218636d-fe8b-4a0f-b4e8-a621f65619d3
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # ICSPNode::SetValue
 

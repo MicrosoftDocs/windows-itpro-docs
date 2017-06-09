@@ -1,18 +1,13 @@
 ---
 title: SharedPC CSP
 description: SharedPC CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: 31273166-1A1E-4F96-B176-CB42ECB80957
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # SharedPC CSP
 

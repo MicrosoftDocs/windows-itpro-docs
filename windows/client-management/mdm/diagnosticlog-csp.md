@@ -1,18 +1,13 @@
 ---
 title: DiagnosticLog CSP
 description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # DiagnosticLog CSP
 
@@ -172,49 +167,7 @@ The supported operation is Get.
 The following table represents the possible values:
 
 | Value | Description |
-|---
-title: DiagnosticLog CSP
-description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
--|---
-title: DiagnosticLog CSP
-description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: DiagnosticLog CSP
-description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
--|
+|-------|-------------|
 | 0     | Stopped     |
 | 1     | Started     |
 
@@ -262,63 +215,7 @@ The data type is a string.
 The following table lists the possible values:
 
 | Value | Description        |
-|---
-title: DiagnosticLog CSP
-description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
--|---
-title: DiagnosticLog CSP
-description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: DiagnosticLog CSP
-description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
----
-title: DiagnosticLog CSP
-description: DiagnosticLog CSP
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: F76E0056-3ACD-48B2-BEA1-1048C96571C3
-ms.author: exists
-ms.date: 05/02/2017
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nibr
----
---|
+|-------|--------------------|
 | START | Start log tracing. |
 | STOP  | Stop log tracing   |
 

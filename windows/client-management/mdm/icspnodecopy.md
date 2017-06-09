@@ -1,18 +1,13 @@
 ---
 title: ICSPNode Copy
 description: ICSPNode Copy
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
 ms.assetid: cd5ce0bc-a08b-4f82-802d-c7ff8701b41f
-ms.author: exists
-ms.date: 05/02/2017
+ms.author: maricia
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: nibr
+author: nickbrower
 ---
-
 
 # ICSPNode::Copy
 
