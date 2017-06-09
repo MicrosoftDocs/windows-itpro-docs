@@ -11502,6 +11502,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -11554,6 +11577,29 @@ ADMX Info:
 <!--StartPolicy-->
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
