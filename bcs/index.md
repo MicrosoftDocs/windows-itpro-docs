@@ -150,7 +150,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Set up Windows 10 devices</h3>
-                                                    <p>Set up mobile devices and Windows 10 devices, and join these to your company’s Azure Active Directory.</p>
+                                                    <p>Set up Windows 10 devices, and join these to your company’s Azure Active Directory.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -164,12 +164,12 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_mobileapp.svg" alt="Set up mobile devices for BCS users" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Set up mobile devices</h3>
-                                                    <p>tbd</p>
+                                                    <p>tbSet up mobile devices for BCS usersd</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -708,7 +708,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_portal.svg" alt="Find a Microsoft-certified service provider" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -727,12 +727,12 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_reference.svg" alt="Browse the list of frequently asked questions" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Business Cloud Suite FAQ</h3>
-                                                    <p>Browse our list of Frequently Asked Questions</p>
+                                                    <p>Browse our list of Frequently Asked Questions.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -746,7 +746,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_investigate.svg" alt="Find solutions for common BCS issues" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -765,7 +765,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_support.svg" alt="Submit a technical support request for BCS" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
