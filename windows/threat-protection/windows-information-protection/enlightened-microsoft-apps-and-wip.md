@@ -65,7 +65,7 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 - Microsoft Remote Desktop
 
 ## List of WIP-Aware Microsoft apps
-Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP.
+Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP and MAM solutions.
 
 - Skype for Business
 
