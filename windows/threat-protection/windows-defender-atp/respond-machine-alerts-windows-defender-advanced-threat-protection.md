@@ -32,7 +32,7 @@ Depending on the severity of the attack and the sensitivity of the machine, you 
 
 This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
 
-On Windows 10, version 1710 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity. 
+On Windows 10, version 1710 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity.
 
 >[!NOTE]
 >You’ll be able to reconnect the machine back to the network at any time.
@@ -50,16 +50,20 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
 
 3. Select the check-box if you'd like to enable Outlook and Skype communication while the machine is isolated.
 
+  [JOEY: ADD SCREENSHOT OF CONFIRMATION DIALOG BOX]
+
 4. Type a comment (optional) and select **Yes** to take action on the machine.
   >[!NOTE]
-  >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network.
+  >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
 
   The Action center shows the submission information:
   ![Image of machine isolation](images/atp-machine-isolation.png)
 
   -	**Submission time** - Shows when the isolation action was submitted.
   -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
-  -	**Status** - Indicates any pending actions or the results of completed actions. If you enabled Outlook and Skype communication while the machine is in isolation, an indication that it has been applied will be displayed.
+  - **Exceptions** - Indicates whether Outlook and Skype for Business exceptions were enabled.
+  -	**Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
+
 
 When the isolation configuration is applied, a new event is reflected in the machine timeline.
 
@@ -80,10 +84,53 @@ Depending on the severity of the attack and the state of the machine you can cho
 3.	Type a comment (optional) and select **Yes** to take action on the file. The machine will be reconnected to the network.
 
 ## Restrict applications from running
+In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
+
+The action to restrict application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
+
+>[!NOTE]
+>You’ll be able to reverse the restriction of applications from running at any time.
+
+1. Select the machine where you'd like to restrict an application from running from. You can select or search for a machine from any of the following views:
+
+  -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
+  -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  -	**Machines list** - Select the machine name from the list of machines.
+  -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+2.	Open the **Actions** menu and select **Restrict application from running**. [I'LL UPDATE THE BUTTONS WHEN UI/UX WORDING IS FINALIZED]
+
+  [JOEY: ADD SCREEN SHOT OF BUTTON]
+
+3. Type a comment (optional) and select **Yes** to take action on the file.
+
+  [JOEY: ADD SCREEN SHOT OF CONFIRMATION]
+
+  The Action center shows the submission information:
+  ![Image of machine isolation](images/atp-machine-isolation.png)
+
+  -	**Submission time** - Shows when the isolation action was submitted.
+  -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
+  -	**Status** - Indicates any pending actions or the results of completed actions.
+
+When the application execution restriction configuration is applied, a new event is reflected in the machine timeline
+
+**Notification on machine user**:</br>
+When application restriction is being applied on the machine, the following notification is displayed to inform the user:
+
+  [JOEY: ADD SCREEN SHOT OF NOTIICATION]
 
 
 ## Undo restriction of applications from running  
+Depending on the severity of the attack and the state of the machine, you can choose reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
 
+1.	Select the machine where you restricted an application from running from.
+
+2.	Open the **Actions** menu and select **Undo restriction of application from running**. [I'LL UPDATE THE BUTTONS WHEN UI/UX WORDING IS FINALIZED]
+
+  [JOEY: ADD SCREEN SHOT]
+
+3.	Type a comment (optional) and select **Yes** to take action on the application. The machine application restriction will no longer apply on the machine.  
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
@@ -131,8 +178,11 @@ The package contains the following folders:
 
     You can also search for historical packages in the machine timeline.
 
-## Run remote Windows Defender Antivirus scan on machines
-If your organization uses Windows Defender Antivirus as the active antimalware solution, you can run antivirus scans on machines in your network.
+## Run Windows Defender Antivirus scan on machines
+As part of the investigation or response process, you can remotely initiate an Antivirus scan to help identify and remediate malware that might be present on a compromised machine.
+
+>[!NOTE]
+> A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not.
 
 1.	Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
 
@@ -152,13 +202,11 @@ If your organization uses Windows Defender Antivirus as the active antimalware s
   The Action center shows the scan information:
 [INSERT SCREEN CAPTURE OF POP UP HERE]
 
-  -	**Pending** - Indicates that the scan is yet to be done on the machine.
-  -	**Completed** - Indicates that the scan action has completed.
-  -	**Failed** - Indicates that the scan failed.
-  - **In progress** - Indicates that the scan is still ongoing.
+-	**Submission time** - Shows when the isolation action was submitted.
+-	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
+-	**Status** - Indicates any pending actions or the results of completed actions.
 
-When a scan successfully completes on the machine, a response event is added on the machine timeline. You'll also be able to view malware alerts based on the scan results.
-
+The machine timeline will include a new event, reflecting that a scan action was submitted on the machine as well as an event when a scan has completed. Windows Defender AV alerts will reflect any detections that surfaced during the scan. 
 
 ## Check activity details in Action center
 The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view if a machine was isolated and if an investigation package is available from a machine. All related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
