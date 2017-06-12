@@ -32,6 +32,8 @@ Depending on the severity of the attack and the sensitivity of the machine, you 
 
 This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
 
+On Windows 10, version 1710 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity. 
+
 >[!NOTE]
 >You’ll be able to reconnect the machine back to the network at any time.
 
@@ -76,6 +78,12 @@ Depending on the severity of the attack and the state of the machine you can cho
   ![Image of undo isolation](images/atp-undo-isolation.png)
 
 3.	Type a comment (optional) and select **Yes** to take action on the file. The machine will be reconnected to the network.
+
+## Restrict applications from running
+
+
+## Undo restriction of applications from running  
+
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
