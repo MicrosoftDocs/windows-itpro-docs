@@ -86,7 +86,7 @@ Depending on the severity of the attack and the state of the machine you can cho
 ## Restrict applications from running
 In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
-The action to restrict application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
+The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
 
 >[!NOTE]
 >You’ll be able to reverse the restriction of applications from running at any time.
@@ -107,13 +107,13 @@ The action to restrict application from running applies a code integrity policy 
   [JOEY: ADD SCREEN SHOT OF CONFIRMATION]
 
   The Action center shows the submission information:
-  ![Image of machine isolation](images/atp-machine-isolation.png)
+
 
   -	**Submission time** - Shows when the isolation action was submitted.
   -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
   -	**Status** - Indicates any pending actions or the results of completed actions.
 
-When the application execution restriction configuration is applied, a new event is reflected in the machine timeline
+When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
 
 **Notification on machine user**:</br>
 When application restriction is being applied on the machine, the following notification is displayed to inform the user:
@@ -122,7 +122,7 @@ When application restriction is being applied on the machine, the following noti
 
 
 ## Undo restriction of applications from running  
-Depending on the severity of the attack and the state of the machine, you can choose reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
+Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
 
 1.	Select the machine where you restricted an application from running from.
 
@@ -179,7 +179,7 @@ The package contains the following folders:
     You can also search for historical packages in the machine timeline.
 
 ## Run Windows Defender Antivirus scan on machines
-As part of the investigation or response process, you can remotely initiate an Antivirus scan to help identify and remediate malware that might be present on a compromised machine.
+As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
 
 >[!NOTE]
 > A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not.
@@ -190,11 +190,8 @@ As part of the investigation or response process, you can remotely initiate an A
   -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
   -	**Machines list** - Select the machine name from the list of machines.
   -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
-
 2.	Open the **Actions** menu and select **Run antivirus scan**.
-
-[INSERT SCREEN CAPTURE OF ACTION BUTTON HERE!!!]
-
+    [INSERT SCREEN CAPTURE OF ACTION BUTTON HERE!!!]
 3. Select the scan type that you'd like to run. You can choose between a quick or a full scan.
 
 4. Type a comment (optional) and select **Yes** to start the scan.
@@ -206,7 +203,7 @@ As part of the investigation or response process, you can remotely initiate an A
 -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
 -	**Status** - Indicates any pending actions or the results of completed actions.
 
-The machine timeline will include a new event, reflecting that a scan action was submitted on the machine as well as an event when a scan has completed. Windows Defender AV alerts will reflect any detections that surfaced during the scan. 
+The machine timeline will include a new event, reflecting that a scan action was submitted on the machine as well as an event when a scan has completed. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Check activity details in Action center
 The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view if a machine was isolated and if an investigation package is available from a machine. All related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
