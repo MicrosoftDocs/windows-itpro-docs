@@ -9,7 +9,7 @@ author: TrudyHa
 localizationpriority: high
 ---
 
-# Add AutoPilot profile to devices
+# Add Windows AutoPilot deployment profile to devices
 
 **Applies to**
 
@@ -19,13 +19,15 @@ localizationpriority: high
 ## What is AutoPilot
 Windows AutoPilot simplifies device set up for IT Admins. You create and apply an AutoPilot profile to your devices. When people in your organization run the out-of-box experience on the device, it installs and configures Windows based on the profile you applied to the device. 
 
-Windows AutoPilot allows you to:
-- Automatically join devices to Azure Active Directory
-- Auto-enroll devices into MDM services, such as Intune
-- Restrict the Administrator account creation
-- Create and auto-assign devices to configuration groups based on the devices' profile
-- Customize OOBE content specific to the organization
-- Link to staged deploy topic
+Windows AutoPilot deployment program sets these items:
+- Skips setup for Cortana, OneDrive, and OEM registration
+- Automatically sets up work or school accounts
+
+You can decide whether or not to set these items:
+- Skip privacy settings
+- Disable local admin account creation on the device
+
+
 
 ### AutoPilot requirements
 Verify this list ... 
@@ -47,7 +49,7 @@ You can create and apply AutoPilot profiles to these devices. The overall proces
 
 Figure 1 - AutoPilot process
 
-### Upload device list
+## Add devices
 To manage devices through Microsoft Store for Business and Education, you'll need a csv file that contains specific information about the devices. You should be able to get this from the supplier or store where you purchased the devices. 
 
 The device information file needs to be in this format:
@@ -62,9 +64,6 @@ The device information file needs to be in this format:
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
 3. 
-
-## Upload device list
-Or, keep at H2, so this shows in right rail??
 
 ## Group devices
 Info on creating groups.
