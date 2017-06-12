@@ -24,7 +24,7 @@ We recommend that you add the following URLs to the Enterprise Cloud Resources a
 ## Recommended Enterprise Cloud Resources
 This table includes the recommended URLs to add to your Enterprise Cloud Resources network setting, based on the apps you use in your organization.
 
-|If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s) |
+|If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s)|
 |-----------------------------|---------------------------------------------------------------------|
 |Office 365 for Business |<ul><li>contoso.sharepoint.com</li><li>contoso-my.sharepoint.com</li><li>contoso-files.sharepoint.com</li><li>tasks.office.com</li><li>protection.office.com</li><li>meet.lync.com</li><li>teams.microsoft.com</li></ul> |
 |Yammer |<ul><li>www.yammer.com</li><li>yammer.com</li><li>persona.yammer.com</li></ul> |
