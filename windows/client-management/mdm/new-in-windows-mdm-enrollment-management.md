@@ -14,6 +14,8 @@ author: nickbrower
 
 # What's new in MDM enrollment and management
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
@@ -640,6 +642,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>SmartScreen/EnableAppInstallControl</li>
 <li>SmartScreen/EnableSmartScreenInShell</li>
 <li>SmartScreen/PreventOverrideForFilesInShell</li>
+<li>Start/AllowPinnedFolderDocuments</li>
+<li>Start/AllowPinnedFolderDownloads</li>
+<li>Start/AllowPinnedFolderFileExplorer</li>
+<li>Start/AllowPinnedFolderHomeGroup</li>
+<li>Start/AllowPinnedFolderMusic</li>
+<li>Start/AllowPinnedFolderNetwork</li>
+<li>Start/AllowPinnedFolderPersonalFolder </li>
+<li>Start/AllowPinnedFolderPictures</li>
+<li>Start/AllowPinnedFolderSettings</li>
+<li>Start/AllowPinnedFolderVideos</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -661,6 +673,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>TextInput/AllowKeyboardTextSuggestions</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 <li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartDeadlinePeriodInDays</li>
 <li>Update/AutoRestartNotificationSchedule</li>
 <li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
@@ -892,6 +905,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[Policy CSP](policy-configuration-service-provider.md)</li>
 </ul>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[TPMPolicy CSP](tpmpolicy-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1703.</td>
+</tr>
 </tbody>
 </table> 
 
@@ -1180,7 +1197,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)</td>
 <td style="vertical-align:top">Added a list of registry locations that ingested policies are allowed to write to.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
 <td style="vertical-align:top">Added the following nodes:
 <ul>
@@ -1191,6 +1208,28 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Status</li>
 </ul>
 Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[TPMPolicy CSP](tpmpolicy-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1703.</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top">
+<p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>Start/AllowPinnedFolderDocuments</li>
+<li>Start/AllowPinnedFolderDownloads</li>
+<li>Start/AllowPinnedFolderFileExplorer</li>
+<li>Start/AllowPinnedFolderHomeGroup</li>
+<li>Start/AllowPinnedFolderMusic</li>
+<li>Start/AllowPinnedFolderNetwork</li>
+<li>Start/AllowPinnedFolderPersonalFolder </li>
+<li>Start/AllowPinnedFolderPictures</li>
+<li>Start/AllowPinnedFolderSettings</li>
+<li>Start/AllowPinnedFolderVideos</li>
+<li>Update/AutoRestartDeadlinePeriodInDays</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
