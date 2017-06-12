@@ -1,7 +1,7 @@
 ---
 title: Set up Take a Test on multiple PCs
 description: Learn how to set up and use the Take a Test app on multiple PCs.
-keywords: ["take a test", "test taking", "school"]
+keywords: take a test, test taking, school, set up on multiple PCs
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
