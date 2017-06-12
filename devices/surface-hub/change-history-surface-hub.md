@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 | New or changed topic | Description |
 | --- | --- |
 | [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | New |
+| [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md#whiteboard-collaboration-settings) | Added settings for managing Whiteboard collaboration |
 
 ## RELEASE: Windows 10, version 1703
 
