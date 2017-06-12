@@ -62,10 +62,10 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Microsoft Remote Desktop
 
-## List of unenlightened, WIP Work Only, supported Microsoft apps
-Microsoft still has apps that are unenlightened, but supported as "WIP Work Only" apps. These are apps that while not enlightened, have been tested and deemed safe for use in an enterprise with WIP.
+## List of unenlightened, but supported Microsoft apps
+Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP.
 
-- Skype for Business <!--any other ones?-->
+- Skype for Business
 
 
 ## Adding enlightened Microsoft apps to the allowed apps list
