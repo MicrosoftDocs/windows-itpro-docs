@@ -1,7 +1,7 @@
 ---
 title: Windows 10 configuration recommendations for education customers
 description: Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school.
-keywords: ["Windows 10 deployment", "recommendations", "privacy settings", "school", "education", "configurations"]
+keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations
 ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
@@ -64,7 +64,7 @@ You can configure Windows through provisioning or management tools including ind
 
 You can set all the education compliance areas through both provisioning and management tools. Additionally, these Microsoft education tools will ensure PCs that you set up are education ready:
 - [Set up School PCs](use-set-up-school-pcs-app.md)
-- Intune for Education (coming soon)
+- [Intune for Education](https://docs.microsoft.com/en-us/intune-education/available-settings)
 
 ## AllowCortana
 **AllowCortana** is a policy that enables or disables Cortana. It is a policy node in the Policy configuration service provider, [AllowCortana](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowcortana). 
@@ -145,7 +145,7 @@ Provide an ad-free experience that is a safer, more private search option for Kâ
 ### Configurations
 
 #### IP registration for entire school network using Microsoft Edge
-Ad-free searching with Bing in Microsoft Edge can be configured at the network level. To configure this, email bicteam@microsoft.com with the subject "New Windows 10, version 1703 (Creators Update) Registration: [School District Name]" and the include the following information in the body of the email.
+Ad-free searching with Bing in Microsoft Edge can be configured at the network level. To configure this, email bingintheclassroom@microsoft.com with the subject "New Windows 10, version 1703 (Creators Update) Registration: [School District Name]" and the include the following information in the body of the email.
 
 **District information**
 - **District or School Name:**
