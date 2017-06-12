@@ -11666,7 +11666,7 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Turn off the display (on battery)*
 -   GP name: *VideoPowerDownTimeOutDC_2*
--   GP path: *System/Power Management/Sleep Settings*
+-   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -11713,7 +11713,7 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Turn off the display (plugged in)*
 -   GP name: *VideoPowerDownTimeOutAC_2*
--   GP path: *System/Power Management/Sleep Settings*
+-   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
