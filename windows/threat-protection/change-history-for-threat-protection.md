@@ -17,7 +17,7 @@ This topic lists new and updated topics in the [Threat protection](index.md) doc
 [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
 [Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
 [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
-|[List of enlightened Microsoft apps for use with Windows Information Protection (WIP)](enlightened-microsoft-apps-and-wip)|Updated to include newly enlightened and supported apps.|
+|[List of enlightened Microsoft apps for use with Windows Information Protection (WIP)](windows-information-protection\enlightened-microsoft-apps-and-wip)|Updated to include newly enlightened and supported apps.|
 
 
 ## March 2017
