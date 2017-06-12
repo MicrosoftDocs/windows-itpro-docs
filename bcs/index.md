@@ -18,7 +18,7 @@ description: Learn about the product documentation and resources available for B
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
-                                        <img data-hoverimage="/media/common/i_learn-about.svg" src="/media/common/i_learn-about.svg" alt="" />
+                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/i_overview.svg" alt="Learn about BCS" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -36,7 +36,7 @@ description: Learn about the product documentation and resources available for B
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
-                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="" />
+                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="Get started using BCS" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -69,7 +69,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_get-started.svg" alt="Select the scenario that applies to you and get started with BCS" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -88,7 +88,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_tasks.svg" alt="Find out what you need to do before you get started with setup" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -107,7 +107,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_free-trial.svg" alt="Purchase BCS for your customer in the Partner Center" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -126,7 +126,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_setup.svg" alt="Set up BCS using the setup wizard" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
