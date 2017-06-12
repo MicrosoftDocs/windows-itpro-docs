@@ -31,6 +31,8 @@ Apps can be enlightened (also referred to as WIP-aware) or unenlightened (also r
 
     -   Windows **Save As** experiences only allow you to save your files as enterprise.
 
+- **WIP-Aware apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions. 
+
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:
 
@@ -62,7 +64,7 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Microsoft Remote Desktop
 
-## List of unenlightened, but supported Microsoft apps
+## List of WIP-Aware Microsoft apps
 Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP.
 
 - Skype for Business
