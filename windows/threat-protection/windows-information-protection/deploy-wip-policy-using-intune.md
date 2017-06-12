@@ -1,5 +1,5 @@
 ---
-title: Deploy your Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10)
+title: Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune (Windows 10)
 description: After you’ve created your Windows Information Protection (WIP) policy, you'll need to deploy it to your organization's enrolled devices.
 ms.assetid: 9c4a01e7-0b1c-4f15-95d0-0389f0686211
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, Intune
@@ -11,7 +11,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Deploy your Windows Information Protection (WIP) policy using Microsoft Intune
+# Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune
 **Applies to:**
 
 - Windows 10, version 1607 and later

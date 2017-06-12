@@ -1,5 +1,5 @@
 ---
-title: Create a Windows Information Protection (WIP) with enrollment policy using Microsoft Intune (Windows 10)
+title: Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune (Windows 10)
 description: Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -9,7 +9,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Create a Windows Information Protection (WIP) with enrollment policy using Microsoft Intune
+# Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune
 
 **Applies to:**
 

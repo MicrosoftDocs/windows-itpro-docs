@@ -1,5 +1,5 @@
 ---
-title: Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune (Windows 10)
+title: Associate and deploy a VPN policy for Windows Information Protection (WIP) using the classic console for Microsoft Intune (Windows 10)
 description: After you've created and deployed your Windows Information Protection (WIP) policy, you can use Microsoft Intune to create and deploy your Virtual Private Network (VPN) policy, linking it to your WIP policy.
 ms.assetid: d0eaba4f-6d7d-4ae4-8044-64680a40cf6b
 keywords: WIP, Enterprise Data Protection
@@ -11,7 +11,7 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune
+# Associate and deploy a VPN policy for Windows Information Protection (WIP) using the classic console for Microsoft Intune
 **Applies to:**
 
 - Windows 10, version 1607 and later
