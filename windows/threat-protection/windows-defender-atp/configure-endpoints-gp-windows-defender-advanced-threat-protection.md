@@ -48,6 +48,50 @@ localizationpriority: high
 
 9. Click **OK** and close any open GPMC windows.
 
+## Onboard virtual desktop infrastructure (VDI)
+You can onboard VDIs using Group Policy (GP). You can onboard VDIs using a single entry or multiple entries for each machine. The following steps will guide you on how to onboard VDIs and will highlight steps for single and multiple entry methods.
+
+1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
+
+    a.  Click **Endpoint management** on the **Navigation pane**.
+
+    b.  Select **Group Policy**, click **Download package** and save the .zip file.
+
+2. Copy the extracted files from the .zip into `golden/master` image under the path
+path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called WindowsDefenderATPOnboardingPackage containing the file WindowsDefenderATPOnboardingScript.cmd.
+
+3. Follow the following step if you're implementing a single entry method: <br>
+    **For single entry for each machine**:<br>
+    Copy the file `Onboard-NonPersistentMachine.ps1` to `golden/master` image to
+path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
+
+4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
+
+5. Depending on the method you'd like to implement, follow the appropriate steps: <br>
+  **For single entry for each machine**:<br>
+  Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. <br><br>
+  **For multiple entries for each machine**:<br>
+  Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
+
+6. (sysprep and) save golden/master image [PLEASE EXPLAIN, I'M NOT SURE I UNDERSTAND THIS STEP]
+
+7. Test your solution:
+
+  a. Create a pool with one machine.
+
+  b. Logon to machine.
+
+  c. Logoff from machine.
+
+  d. Logon to machine with another user.
+
+  e. **For single entry for each machine**: Check only one entry in the Windows Defender ATP portal.<br>
+  **For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
+
+8. Click **Machines list** on the Navigation pane.
+
+9. Use the search function by entering the machine name and select **Machine** as search type. [QUESTION TO DAN: IF USER WILL USE SEARCH FUNCTION, DO THEY REALLY NEED TO GO TO MACHINES LIST FIRST? CAN'T THEY JUST USE SEARCH FUNCTION DIRECTLY AND SKIP PRIOR STEP?]
+
 ## Additional Windows Defender ATP configuration settings
 For each endpoint, you can state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
 
