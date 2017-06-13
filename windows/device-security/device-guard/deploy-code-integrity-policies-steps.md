@@ -20,7 +20,424 @@ For an overview of the process described in the following procedures, see [Deplo
 
 The process for creating a golden code integrity policy from a reference system is straightforward. This section outlines the process that is required to successfully create a code integrity policy with Windows PowerShell. First, for this example, you must initiate variables to be used during the creation process. Rather than using variables, you can simply use the full file paths in the command. Next, you create the code integrity policy by scanning the system for installed applications. When created, the policy file is converted to binary format so that Windows can consume its contents.
 
-> **Note**&nbsp;&nbsp;Before you begin this procedure, ensure that the reference PC is clean of viruses or malware. Each piece of installed software should be validated as trustworthy before you create this policy. Also, be sure that any software that you would like to be scanned is installed on the system before you create the code integrity policy.
+> **Note**&nbsp;&nbsp;Before you begin this procedure, make sure that the reference PC is virus and malware-free,and that any software you want to be scanned is installed on the system before creating the code integrity policy. 
+
+### Scripting and applications
+
+Each installed software application should be validated as trustworthy before you create a policy. We recommend that you review the reference PC for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed, and Windows Script Host (WSH), which can be manually disabled if you do not want it to run scripts. 
+You can remove or disable such software on reference PCs used to create code integrity policies. You can also fine-tune your control by using Device Guard in combination with AppLocker, as described in [Device Guard with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
+
+Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Device Guard code integrity policies. 
+
+In certain circumstances, if the use case is appropriate, for example if your operational scenario requires elevated security, you may want to block these applications. For example, if you have a code integrity policy that trusts all Microsoft-signed applications, we recommend that you block the following applications (optional in the case of cscript.exe and wscript.exe) from running on your systems: 
+
+- bash.exe
+- bginfo.exe 
+- cdb.exe
+- cscript.exe<sup>1</sup>
+- csi.exe
+- dnx.exe
+- fsi.exe
+- kd.exe
+- lxssmanager.dll
+- msbuild.exe<sup>2</sup>
+- mshta.exe
+- ntsd.exe
+- rcsi.exe
+- windbg.exe
+- wscript.exe<sup>1</sup>
+
+<sup>1</sup> Microsoft Windows Script Host (WSH) is an automation technology for Microsoft Windows operating systems that allows scripts to load and run. It comprises two files, wscript.exe and cscript.exe. When WSH is enabled, scripts are allowed. However, when Device Guard is enabled, the functionality of WSH scripts is restricted by default. 
+
+<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+
+<sup>*</sup> Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
+
+|Name|Twitter|
+|---|---|
+|Casey Smith |@subTee| 
+|Matt Graeber | @mattifestation| 
+|Matt Nelson | @enigma0x3| 
+|Oddvar Moe |@Oddvarmoe|
+
+<br />
+
+>!Note
+>This application list is fluid and will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+
+When an application version is upgraded, you may want to add deny rules to your code integrity policies for that application’s previous, less secure versions, especially to fix a vulnerability or potential Device Guard bypass. Certain vendors may or may not intend to update their software to work with Device Guard. 
+
+To block the listed applications, you can merge this policy into your existing policy by adding the following deny rules using the Powershell Merge-CIPolicy cmdlet:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>10.0.0.0</VersionEx>
+  <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Audit Mode</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Required:Enforce Store Applications</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+  </Rules>
+  <!--EKUS-->
+  <EKUs />
+  <!--File Rules-->
+  <FileRules>
+    <Deny  ID="ID_DENY_BGINFO"        FriendlyName="bginfo.exe"         FileName="BGINFO.Exe" MinimumFileVersion = "4.21.0.0" />
+    <Deny  ID="ID_DENY_CBD"           FriendlyName="cdb.exe"            FileName="CDB.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_KD"            FriendlyName="kd.exe"             FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_WINDBG"        FriendlyName="windbg.exe"         FileName="windbg.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_MSBUILD"       FriendlyName="MSBuild.exe"        FileName="MSBuild.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_CSI"           FriendlyName="csi.exe"            FileName="csi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_DNX"           FriendlyName="dnx.exe"            FileName="dnx.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_RCSI"          FriendlyName="rcsi.exe"           FileName="rcsi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_NTSD"          FriendlyName="ntsd.exe"           FileName="ntsd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_LXSS"          FriendlyName="LxssManager.dll"    FileName="LxssManager.dll" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_BASH"          FriendlyName="bash.exe"           FileName="bash.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_FSI"           FriendlyName="fsi.exe"            FileName="fsi.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_MSHTA"         FriendlyName="mshta.exe"          FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+  </FileRules>
+  <!--Signers-->
+  <Signers />
+
+  <!--Driver Signing Scenarios-->
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Driver Signing Scenarios">
+      <ProductSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_DENY_KD" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="User Mode Signing Scenarios">
+      <ProductSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_DENY_BGINFO"/>
+          <FileRuleRef RuleID="ID_DENY_CBD"/>
+          <FileRuleRef RuleID="ID_DENY_KD"/>
+          <FileRuleRef RuleID="ID_DENY_WINDBG"/>
+          <FileRuleRef RuleID="ID_DENY_MSBUILD"/>
+          <FileRuleRef RuleID="ID_DENY_CSI"/>
+          <FileRuleRef RuleID="ID_DENY_DNX"/>
+          <FileRuleRef RuleID="ID_DENY_RCSI"/>
+          <FileRuleRef RuleID="ID_DENY_NTSD"/>
+          <FileRuleRef RuleID="ID_DENY_LXSS"/>
+          <FileRuleRef RuleID="ID_DENY_BASH"/>
+          <FileRuleRef RuleID="ID_DENY_FSI"/>
+          <FileRuleRef RuleID="ID_DENY_MSHTA"/>
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners />
+  <CiSigners />
+  <HvciOptions>0</HvciOptions>
+</SiPolicy>
+
+```
+
+### Disable Windows Script Host
+
+If you are using Device Guard code integrity policies, the policies place constraints on Powershell and WSH scripts.  When Device Guard is enabled, by default, PowerShell scripts execute in “ConstrainedLanguage” language mode, in which neither wscript.exe and cscript.exe can invoke untrusted Active X controls or COM objects. However, signed PowerShell scripts are permitted to execute in “FullLanguage” language mode, and trusted or signed wscript or cscript scripts can invoke Active X controls or COM objects. For further information on Powershell language modes, see [Language Modes](https://msdn.microsoft.com/en-us/powershell/reference/4.0/microsoft.powershell.core/about/about_language_modes).
+
+Alternatively, though script hosts are safer with Device Guard enabled, if your reference PC does not require any scripting, you may want to completely disable WSH. Disabling WSH prevents all users from running any scripts, including VBScript and JScript scripts. Note that some applications may require WSH to be enabled. You can disable WSH by configuring Device Guard code integrity policies.
+
+### Disable Windows Script Host using code integrity policies
+
+To disable Windows Script Hosting, you can simply create further deny rules to add the script hosts (wscript.exe and cscript.exe) to the list of blocked applications in your code integrity policy as follows: 
+```
+<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy" FriendlyName="Windows Recommended Deny List Policy">
+  <VersionEx>1.0.0.0</VersionEx>
+  <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Required:Enforce Store Applications</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+  </Rules>
+  
+  <!--EKUS-->
+  <EKUs />
+  
+  <!--File Rules-->
+  <FileRules>
+<Deny  ID="ID_DENY_BGINFO"        FriendlyName="bginfo.exe"                      FileName="BGINFO.Exe" MinimumFileVersion = "4.21.0.0” />
+    <Deny  ID="ID_DENY_CBD"           FriendlyName="cdb.exe"            FileName="CDB.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_KD"            FriendlyName="kd.exe"             FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_WINDBG"        FriendlyName="windbg.exe"         FileName="windbg.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_MSBUILD"       FriendlyName="MSBuild.exe"        FileName="MSBuild.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_WSCRIPT"       FriendlyName="wscript.exe"        FileName="wscript.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_CSCRIPT"       FriendlyName="cscript.exe"        FileName="cscript.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_CSI"           FriendlyName="csi.exe"            FileName="csi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_DNX"           FriendlyName="dnx.exe"            FileName="dnx.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_RCSI"          FriendlyName="rcsi.exe"           FileName="rcsi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_NTSD"          FriendlyName="ntsd.exe"           FileName="ntsd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_LXSS"          FriendlyName="LxssManager.dll"    FileName="LxssManager.dll" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_BASH"          FriendlyName="bash.exe"           FileName="bash.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_FSI"           FriendlyName="fsi.exe"            FileName="fsi.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_MSHTA"         FriendlyName="mshta.exe"          FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+  </FileRules>
+  
+  <!--Signers-->
+  <Signers>
+    
+  </Signers>
+  
+  <SigningScenarios>
+    <!--Kernel Mode Signing Scenario-->
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_KMCI" FriendlyName="Kernel Mode Signing Scenario">
+      <ProductSigners />
+    </SigningScenario>
+    
+    <!--User Mode Signing Scenario-->
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_UMCI" FriendlyName="User Mode Signing Scenario">
+      <ProductSigners>
+ 
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_DENY_BGINFO"/>
+          <FileRuleRef RuleID="ID_DENY_CBD"/>
+          <FileRuleRef RuleID="ID_DENY_KD"/>
+          <FileRuleRef RuleID="ID_DENY_WINDBG"/>
+          <FileRuleRef RuleID="ID_DENY_MSBUILD"/>
+	        <FileRuleRef RuleID="ID_DENY_WSCRIPT"/>
+          <FileRuleRef RuleID="ID_DENY_CSCRIPT"/>
+          <FileRuleRef RuleID="ID_DENY_CSI"/>
+          <FileRuleRef RuleID="ID_DENY_DNX"/>
+          <FileRuleRef RuleID="ID_DENY_RCSI"/>
+          <FileRuleRef RuleID="ID_DENY_NTSD"/>
+          <FileRuleRef RuleID="ID_DENY_LXSS"/>
+          <FileRuleRef RuleID="ID_DENY_BASH"/>
+          <FileRuleRef RuleID="ID_DENY_FSI"/>
+          <FileRuleRef RuleID="ID_DENY_MSHTA"/>
+        </FileRulesRef>
+        
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  
+  <UpdatePolicySigners />
+
+  <CiSigners />
+  
+</SiPolicy>
+
+```
+
+<br />
+
+The June 2017 Windows updates resolve a vulnerability in Powershell that allowed an attacker to bypass Device Guard code integrity policies. Powershell cmdlets cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. We recommend that you block the following Powershell cmdlets and merge this policy into your existing policy by adding the following deny rules using the Merge-CIPolicy cmdlet:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>10.0.0.0</VersionEx>
+  <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Audit Mode</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Required:Enforce Store Applications</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+  </Rules>
+  <!--EKUS-->
+  <EKUs />
+  <!--File Rules-->
+  <FileRules>
+    <Deny ID="ID_DENY_D_0" FriendlyName="Powershell 0" Hash="1AC4D8D8B672A2D74AB1815E8A3FEF6952892D1E" />
+    <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="25C57E0305E7FFB4C259D741B87F90D66BDA9801AE68A0F589D9F15D95C15821" />
+    <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="AA085BE6498D2E3F527F3D72A5D1C604508133F0CDC05AD404BB49E8E3FB1A1B" />
+    <Deny ID="ID_DENY_D_3" FriendlyName="Powershell 3" Hash="573129BCCA3C8492498C35E45676B3D348438464" />
+    <Deny ID="ID_DENY_D_4" FriendlyName="Powershell 4" Hash="FBA274406B503B464B349805149E6AA722909CC9" />
+    <Deny ID="ID_DENY_D_5" FriendlyName="Powershell 5" Hash="91459EF46223540305C42FD50DF0B3C62148A0DB70F6B588AB29D11C5750F784" />
+    <Deny ID="ID_DENY_D_6" FriendlyName="Powershell 6" Hash="BACA825D0852E2D8F3D92381D112B99B5DD56D9F" />
+    <Deny ID="ID_DENY_D_7" FriendlyName="Powershell 7" Hash="3AF2587E8B62F88DC363D7F5308EE4C1A6147338" />
+    <Deny ID="ID_DENY_D_8" FriendlyName="Powershell 8" Hash="A9E655A96A124BC361D9CC5C7663FC033AA6F6609916EFAA76B6A6E9713A0D32" />
+    <Deny ID="ID_DENY_D_9" FriendlyName="Powershell 9" Hash="8BC6761CDB3A2114DC04B3167C27CD9A8D3F8F08" />
+    <Deny ID="ID_DENY_D_10" FriendlyName="Powershell 10" Hash="11F936112832738AD9B3A1C67537D5542DE8E86856CF2A5893C4D26CF3A2C558" />
+    <Deny ID="ID_DENY_D_11" FriendlyName="Powershell 11" Hash="7DBB41B87FAA887DE456C8E6A72E09D2839FA1E7" />
+    <Deny ID="ID_DENY_D_12" FriendlyName="Powershell 12" Hash="632CC37793AC704329C943765A684F9D22DBE50A1D951CAA576E72613F4BFC82" />
+    <Deny ID="ID_DENY_D_13" FriendlyName="Powershell 13" Hash="FA2F82EAAE3E9F04E7ABCBF3BEA5403F3D7D67CE" />
+    <Deny ID="ID_DENY_D_14" FriendlyName="Powershell 14" Hash="55A114886D75A8CAD1B8B8A867D42384CF6E337E" />
+    <Deny ID="ID_DENY_D_15" FriendlyName="Powershell 15" Hash="DED853481A176999723413685A79B36DD0F120F9" />
+    <Deny ID="ID_DENY_D_16" FriendlyName="Powershell 16" Hash="D027E09D9D9828A87701288EFC91D240C0DEC2C3" />
+    <Deny ID="ID_DENY_D_17" FriendlyName="Powershell 17" Hash="46936F4F0AFE4C87D2E55595F74DDDFFC9AD94EE" />
+    <Deny ID="ID_DENY_D_18" FriendlyName="Powershell 18" Hash="5090F22BB9C0B168C7F5E9E800784A05AFCCBC4F" />
+    <Deny ID="ID_DENY_D_19" FriendlyName="Powershell 19" Hash="A920D0706FCEA648D28638E9198BCC368996B8FD" />
+    <Deny ID="ID_DENY_D_20" FriendlyName="Powershell 20" Hash="93E22F2BA6C8B1C09F100F9C0E3B06FAF2D1DDB6" />
+    <Deny ID="ID_DENY_D_21" FriendlyName="Powershell 21" Hash="943E307BE7B0B381715CA5CC0FAB7B558025BA80" />
+    <Deny ID="ID_DENY_D_22" FriendlyName="Powershell 22" Hash="DDE4D9A08514347CDE706C42920F43523FC74DEA" />
+    <Deny ID="ID_DENY_D_23" FriendlyName="Powershell 23" Hash="48092864C96C4BF9B68B5006EAEDAB8B57B3738C" />
+    <Deny ID="ID_DENY_D_24" FriendlyName="Powershell 24" Hash="7F6725BA8CCD2DAEEFD0C9590A5DF9D98642CCEA" />
+    <Deny ID="ID_DENY_D_25" FriendlyName="Powershell 25" Hash="AEBFE7497F4A1947B5CB32650843CA0F85BD56D0" />
+    <Deny ID="ID_DENY_D_26" FriendlyName="Powershell 26" Hash="8FB604CD72701B83BC265D87F52B36C6F14E5DBE" />
+    <Deny ID="ID_DENY_D_27" FriendlyName="Powershell 27" Hash="CE70309DB83C9202F45028EBEC252747F4936E6F" />
+    <Deny ID="ID_DENY_D_28" FriendlyName="Powershell 28" Hash="DE6A02520E1D7325025F2761A97D36E407E8490C" />
+    <Deny ID="ID_DENY_D_29" FriendlyName="Powershell 29" Hash="B663138BF1D91C74EB25C68378B3E68E3F9E936A" />
+    <Deny ID="ID_DENY_D_30" FriendlyName="Powershell 30" Hash="79D5991CF1ED52C7E6AE7F5FDE3F0D9240BE62F3" />
+    <Deny ID="ID_DENY_D_31" FriendlyName="Powershell 31" Hash="9D71AD914DBB2FDF793742AA63AEEF4E4A430790" />
+    <Deny ID="ID_DENY_D_32" FriendlyName="Powershell 32" Hash="7484FD78A9298DBA24AC5C882D16DB6146E53712" />
+    <Deny ID="ID_DENY_D_33" FriendlyName="Powershell 33" Hash="CE2DAA6B3E9F5DF9216F2060AFB48B7558033B66" />
+    <Deny ID="ID_DENY_D_34" FriendlyName="Powershell 34" Hash="4C4847F430305B8BF755EB09F02F3DD229F6BC2D" />
+    <Deny ID="ID_DENY_D_35" FriendlyName="Powershell 35" Hash="CC968868EDC6718DA14DDDB11228A04D5D5BD9A5" />
+    <Deny ID="ID_DENY_D_36" FriendlyName="Powershell 36" Hash="78C3C6AEF52A6A5392C55F1EC98AF18053B3087D" />
+    <Deny ID="ID_DENY_D_37" FriendlyName="Powershell 37" Hash="783FFB771F08BCF55C2EA474B5460EB65EA9444C" />
+    <Deny ID="ID_DENY_D_38" FriendlyName="Powershell 38" Hash="7386F0FFAEED9F14CB087719A82633CE341AF18C" />
+    <Deny ID="ID_DENY_D_39" FriendlyName="Powershell 39" Hash="D60BC43CAD0E2CD119F0F29BA3E85EDA6B6409B0" />
+    <Deny ID="ID_DENY_D_40" FriendlyName="Powershell 40" Hash="B303D1689ED99613E4F52CE6E5F96AAEBC3A45C3" />
+    <Deny ID="ID_DENY_D_41" FriendlyName="Powershell 41" Hash="DB5C6CB23C23BA6A3CD4FD4EC0A4DAEE3FC66500" />
+    <Deny ID="ID_DENY_D_42" FriendlyName="Powershell 42" Hash="24F46E8804F5411A1EBE7CE8454AF87C7E93A310" />
+    <Deny ID="ID_DENY_D_43" FriendlyName="Powershell 43" Hash="1194192ECDA6751D8261F17A491618E707152DA6" />
+    <Deny ID="ID_DENY_D_44" FriendlyName="Powershell 44" Hash="789D0657689DB6F0900A787BEF52A449585A92B5" />
+    <Deny ID="ID_DENY_D_45" FriendlyName="Powershell 45" Hash="C1E08AD32F680100C51F138C6C095139E7230C3B" />
+    <Deny ID="ID_DENY_D_46" FriendlyName="Powershell 46" Hash="E89C29D38F554F6CB73B5FD3D0A783CC12FFEBC3" />
+    <Deny ID="ID_DENY_D_47" FriendlyName="Powershell 47" Hash="AF37DB4C03EFB0AADB9A670FF9A656AEF8D92A2F" />
+    <Deny ID="ID_DENY_D_48" FriendlyName="Powershell 48" Hash="7749D36155F967D01ED610C777F1B3AF9F6C225B" />
+    <Deny ID="ID_DENY_D_49" FriendlyName="Powershell 49" Hash="5B5E7942233D7C8A325A429FC4F4AE281325E8F9" />
+    <Deny ID="ID_DENY_D_50" FriendlyName="Powershell 50" Hash="926DCACC6983F85A8ABBCB5EE13F3C756705A1D5" />
+    <Deny ID="ID_DENY_D_51" FriendlyName="Powershell 51" Hash="395ACEC4E5123A3EF2C5E88620F827E929CF6D32" />
+    <Deny ID="ID_DENY_D_52" FriendlyName="Powershell 52" Hash="55A9B372FF02D16127AD7D5A9C32FC666D6397ED" />
+    <Deny ID="ID_DENY_D_53" FriendlyName="Powershell 53" Hash="6FE6723A355DEB4BC6B8637A634D1B43AFA64112" />
+    <Deny ID="ID_DENY_D_54" FriendlyName="Powershell 54" Hash="8D5599B34BED4A660DACC0922F6C2F112F264758" />
+    <Deny ID="ID_DENY_D_55" FriendlyName="Powershell 55" Hash="F139A9B69295C115BDDA030ABD50354ACF90B4A6" />
+    <Deny ID="ID_DENY_D_56" FriendlyName="Powershell 56" Hash="C10A9A496BAE83272BC7257BB11E15487A51F1B6" />
+    <Deny ID="ID_DENY_D_57" FriendlyName="Powershell 57" Hash="CCFB247A3BCA9C64D82F647F3D30A3172E645F13" />
+    <Deny ID="ID_DENY_D_58" FriendlyName="Powershell 58" Hash="E8EB859531F426CC45A3CB9118F399C92054563E" />
+    <Deny ID="ID_DENY_D_59" FriendlyName="Powershell 59" Hash="3AE6766D1877340EA7F6DB1A4900501C794C3FC5" />
+    <Deny ID="ID_DENY_D_60" FriendlyName="Powershell 60" Hash="7E9AE4038C626FC16C52F95F15A86B3A4183F172" />
+    <Deny ID="ID_DENY_D_61" FriendlyName="Powershell 61" Hash="C92D4EAC917EE4842A437C54F96D87F003199DE8" />
+    <Deny ID="ID_DENY_D_62" FriendlyName="Powershell 62" Hash="66681D9171981216B31996429695931DA2A638B9" />
+    <Deny ID="ID_DENY_D_63" FriendlyName="Powershell 63" Hash="98A3F280667CE1F36AAF68B4336F2C2031002791" />
+    <Deny ID="ID_DENY_D_64" FriendlyName="Powershell 64" Hash="054BBA5AB35A3F704D62F3119CD8B8C3CBD7AEEB" />
+    <Deny ID="ID_DENY_D_65" FriendlyName="Powershell 65" Hash="9DCA54C85E4C645CB296FE3055E90255B6506A95" />
+    <Deny ID="ID_DENY_D_66" FriendlyName="Powershell 66" Hash="D3D453EBC368DF7CC2200474035E5898B58D93F1" />
+  </FileRules>
+  <!--Signers-->
+  <Signers />
+  
+  <!--Driver Signing Scenarios-->
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Auto generated policy on 06-12-2017">
+      <ProductSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_DENY_D_11" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="Auto generated policy on 06-12-2017">
+      <ProductSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_DENY_D_0" />
+          <FileRuleRef RuleID="ID_DENY_D_1" />
+          <FileRuleRef RuleID="ID_DENY_D_2" />
+          <FileRuleRef RuleID="ID_DENY_D_3" />
+          <FileRuleRef RuleID="ID_DENY_D_4" />
+          <FileRuleRef RuleID="ID_DENY_D_5" />
+          <FileRuleRef RuleID="ID_DENY_D_6" />
+          <FileRuleRef RuleID="ID_DENY_D_7" />
+          <FileRuleRef RuleID="ID_DENY_D_8" />
+          <FileRuleRef RuleID="ID_DENY_D_9" />
+          <FileRuleRef RuleID="ID_DENY_D_10" />
+          <FileRuleRef RuleID="ID_DENY_D_11" />
+          <FileRuleRef RuleID="ID_DENY_D_12" />
+          <FileRuleRef RuleID="ID_DENY_D_13" />
+          <FileRuleRef RuleID="ID_DENY_D_14" />
+          <FileRuleRef RuleID="ID_DENY_D_15" />
+          <FileRuleRef RuleID="ID_DENY_D_16" />
+          <FileRuleRef RuleID="ID_DENY_D_17" />
+          <FileRuleRef RuleID="ID_DENY_D_18" />
+          <FileRuleRef RuleID="ID_DENY_D_19" />
+          <FileRuleRef RuleID="ID_DENY_D_20" />
+          <FileRuleRef RuleID="ID_DENY_D_21" />
+          <FileRuleRef RuleID="ID_DENY_D_22" />
+          <FileRuleRef RuleID="ID_DENY_D_23" />
+          <FileRuleRef RuleID="ID_DENY_D_24" />
+          <FileRuleRef RuleID="ID_DENY_D_25" />
+          <FileRuleRef RuleID="ID_DENY_D_26" />
+          <FileRuleRef RuleID="ID_DENY_D_27" />
+          <FileRuleRef RuleID="ID_DENY_D_28" />
+          <FileRuleRef RuleID="ID_DENY_D_29" />
+          <FileRuleRef RuleID="ID_DENY_D_30" />
+          <FileRuleRef RuleID="ID_DENY_D_31" />
+          <FileRuleRef RuleID="ID_DENY_D_32" />
+          <FileRuleRef RuleID="ID_DENY_D_33" />
+          <FileRuleRef RuleID="ID_DENY_D_34" />
+          <FileRuleRef RuleID="ID_DENY_D_35" />
+          <FileRuleRef RuleID="ID_DENY_D_36" />
+          <FileRuleRef RuleID="ID_DENY_D_37" />
+          <FileRuleRef RuleID="ID_DENY_D_38" />
+          <FileRuleRef RuleID="ID_DENY_D_39" />
+          <FileRuleRef RuleID="ID_DENY_D_40" />
+          <FileRuleRef RuleID="ID_DENY_D_41" />
+          <FileRuleRef RuleID="ID_DENY_D_42" />
+          <FileRuleRef RuleID="ID_DENY_D_43" />
+          <FileRuleRef RuleID="ID_DENY_D_44" />
+          <FileRuleRef RuleID="ID_DENY_D_45" />
+          <FileRuleRef RuleID="ID_DENY_D_46" />
+          <FileRuleRef RuleID="ID_DENY_D_47" />
+          <FileRuleRef RuleID="ID_DENY_D_48" />
+          <FileRuleRef RuleID="ID_DENY_D_49" />
+          <FileRuleRef RuleID="ID_DENY_D_50" />
+          <FileRuleRef RuleID="ID_DENY_D_51" />
+          <FileRuleRef RuleID="ID_DENY_D_52" />
+          <FileRuleRef RuleID="ID_DENY_D_53" />
+          <FileRuleRef RuleID="ID_DENY_D_54" />
+          <FileRuleRef RuleID="ID_DENY_D_55" />
+          <FileRuleRef RuleID="ID_DENY_D_56" />
+          <FileRuleRef RuleID="ID_DENY_D_57" />
+          <FileRuleRef RuleID="ID_DENY_D_58" />
+          <FileRuleRef RuleID="ID_DENY_D_59" />
+          <FileRuleRef RuleID="ID_DENY_D_60" />
+          <FileRuleRef RuleID="ID_DENY_D_61" />
+          <FileRuleRef RuleID="ID_DENY_D_62" />
+          <FileRuleRef RuleID="ID_DENY_D_63" />
+          <FileRuleRef RuleID="ID_DENY_D_64" />
+          <FileRuleRef RuleID="ID_DENY_D_65" />
+          <FileRuleRef RuleID="ID_DENY_D_66" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners />
+  <CiSigners />
+  <HvciOptions>0</HvciOptions>
+</SiPolicy>
+
+```
+<br />
 
 To create a code integrity policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
 
