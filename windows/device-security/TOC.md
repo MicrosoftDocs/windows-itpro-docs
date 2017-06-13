@@ -649,6 +649,7 @@
 
 ## [Trusted Platform Module](tpm/trusted-platform-module-top-node.md)
 ### [Trusted Platform Module Overview](tpm/trusted-platform-module-overview.md)
+### [How Windows 10 uses the TPM](tpm/how-windows-uses-the-tpm.md)
 ### [TPM fundamentals](tpm/tpm-fundamentals.md)
 ### [TPM Group Policy settings](tpm/trusted-platform-module-services-group-policy-settings.md)
 ### [Back up the TPM recovery information to AD DS](tpm/backup-tpm-recovery-information-to-ad-ds.md)
