@@ -16,7 +16,7 @@ You can now make suggestions and update existing, public content with a GitHub a
 **To edit a topic**
 
 1. All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before updating or adding to any Microsoft repositories.
-If you've already contributed to topics in Microsoft repositories in the past, congratulations! You've already completed this step.
+If you've previously contributed to topics in the Microsoft repositories, congratulations! You've already completed this step.
 
 2. Go to the page on TechNet that you want to update, and then click **Edit**.
 

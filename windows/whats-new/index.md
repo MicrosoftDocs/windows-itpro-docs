@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows 10 (Windows 10)
-description: Learn about new features in Windows 10 for IT professionals, such as Enterprise Data Protection, Windows Hello, Device Guard, and more.
+description: Learn about new features in Windows 10 for IT professionals, such as Windows Information Protection, Windows Hello, Device Guard, and more.
 ms.assetid: F1867017-76A1-4761-A200-7450B96AEF44
 keywords: ["What's new in Windows 10", "Windows 10", "anniversary update", "contribute", "edit topic"]
 ms.prod: w10
