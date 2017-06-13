@@ -49,7 +49,7 @@ localizationpriority: high
 9. Click **OK** and close any open GPMC windows.
 
 ## Onboard virtual desktop infrastructure (VDI)
-You can onboard VDIs using Group Policy (GP). You can onboard VDIs using a single entry or multiple entries for each machine. The following steps will guide you on how to onboard VDIs and will highlight steps for single and multiple entry methods.
+You can onboard VDIs using Group Policy (GP). You can onboard VDIs using a single entry or multiple entries for each machine. The following steps will guide you through steps in onboarding VDIs and will highlight steps for single and multiple entries.
 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
@@ -60,7 +60,7 @@ You can onboard VDIs using Group Policy (GP). You can onboard VDIs using a singl
 2. Copy the extracted files from the .zip into `golden/master` image under the path
 path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called WindowsDefenderATPOnboardingPackage containing the file WindowsDefenderATPOnboardingScript.cmd.
 
-3. Follow the following step if you're implementing a single entry method: <br>
+3. The following step is only applicable if you're implementing a single entry for each machine: <br>
     **For single entry for each machine**:<br>
     Copy the file `Onboard-NonPersistentMachine.ps1` to `golden/master` image to
 path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
