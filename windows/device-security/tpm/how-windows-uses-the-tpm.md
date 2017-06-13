@@ -138,7 +138,7 @@ The ability to distinguish a TPM from malware acting like a TPM requires the fol
   The identity CA issues attestation identity key certificates. 
   More than one identity CA will generally see the same endorsement key certificate that can uniquely identify the TPM, but any number of attestation identity key certificates can be created to limit the information shared in other scenarios.
 
-![TPM capabilities](images/tpm-capabilities.png)
+![TPM capabilities](./images/tpm-capabilities.png)
 *Figure 1 TPM capabilities*
 
 For Windows Hello for Business, Microsoft can fill the role of the identity CA. 
@@ -223,7 +223,7 @@ The TPM provides the following way for scenarios to use the measurements recorde
 When new security features are added to Windows, Measured Boot adds security-relevant configuration information to the measurements recorded in the TPM. 
 Measured Boot enables remote attestation scenarios that reflect the system firmware and the Windows initialization state.
 
-![Remote attestation](images/tpm-remote-attestation.png)
+![Remote attestation](./images/tpm-remote-attestation.png)
 *Figure 2 Remote attestation*
 
 ## Health attestation
