@@ -56,7 +56,7 @@ The following table lists the supported elements and attributes for the LayoutMo
 | [AppendGroup](#appendgroup)</br></br>Parent:</br>RequiredStartGroups | Name | Use to specify the tiles that need to be appended to the default Start layout |
 | [start:Tile](#specify-start-tiles)</br></br>Parent:</br>AppendGroup | AppUserModelID</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Universal Windows app</br>- A Windows 8 or Windows 8.1 app</br></br>Note that AppUserModelID is case-sensitive. |
 | start:DesktopApplicationTile</br></br>Parent:</br>AppendGroup | DesktopApplicationID</br>DesktopApplicationLinkPath</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated .url file that is in a legacy Start Menu folder |
-| start:SecondaryTile</br></br>Parent:</br>AppendGroup | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile |
+| start:SecondaryTile</br></br>Parent:</br>AppendGroup | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile. Note that AppUserModelID is case-sensitive. |
 | TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to 3 default apps to the frequently used apps section in the system area |
 | Tile</br></br>Parent:</br>TopMFUApps | AppUserModelID | Use with the TopMFUApps tags to specify an app with a known AppUserModelID |
 | DesktopApplicationTile</br></br>Parent:</br>TopMFUApps | LinkFilePath | Use with the TopMFUApps tags to specify an app without a known AppUserModelID |
@@ -186,6 +186,7 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
 - By using the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
+
   You can use the [Get-StartApps cmdlet](https://technet.microsoft.com/library/dn283402.aspx) on a PC that has the application pinned to Start to obtain the app ID.
 
   To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app. 
@@ -244,7 +245,7 @@ The following table describes the other attributes that you can use with the **s
 
 | Attribute | Required/optional | Description |
 | --- | --- | --- |
-| AppUserModelID | Required | Must point to Microsoft Edge. |
+| AppUserModelID | Required | Must point to Microsoft Edge. Note that AppUserModelID is case-sensitive. |
 | TileID | Required | Must uniquely identify your Web site tile. |
 | Arguments | Required | Must contain the URL of your Web site. |
 | DisplayName | Required | Must specify the text that you want users to see. |
