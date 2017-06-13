@@ -459,6 +459,9 @@ After you've decided where your protected apps can access enterprise data on you
         - **Yes, or not configured (recommended).** Employees can choose whether a file is **Work** or **Personal** in File Explorer and the **Save As** dialog box. 
 	
         - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
+    
+        >[!Important]<br>
+        >The **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box** option is only available for Configuration Manager versions 1610 and below.
 
     - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
 	
