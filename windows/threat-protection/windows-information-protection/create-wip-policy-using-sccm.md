@@ -113,7 +113,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
 4.  Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    >[!IMPORTANT]<br>
+    >[!IMPORTANT]
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.<p>For example:<p>
     ```json
         {
@@ -124,7 +124,7 @@ If you don't know the publisher or product name, you can find them for both desk
 **To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
 1.	If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
-    >[!NOTE]<br>
+    >[!NOTE]
     >Your PC and phone must be on the same wireless network.
 
 2.	On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
@@ -141,7 +141,8 @@ If you don't know the publisher or product name, you can find them for both desk
 
 8.	Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
-    >**Important**<br>The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
+    >[!IMPORTANT]
+    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as “CN=” followed by the `windowsPhoneLegacyId`.
     >For example:<p>
     ```json
         {
@@ -464,7 +465,7 @@ After you've decided where your protected apps can access enterprise data on you
 	
         - **No.** Hides the **Personal** option from employees. Be aware that if you pick this option, apps that use the **Save As** dialog box might encrypt new files as corporate data unless a different file path is given during the original file creation. After this happens, decryption of work files becomes more difficult.
 
-        >[!IMPORTANT]<br>
+        >[!IMPORTANT]
         >The **Show the Personal option in the File ownership menus of File Explorer and the Save As dialog box** option is only available for Configuration Manager versions 1610 and below.
 
     - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
