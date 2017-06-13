@@ -73,7 +73,7 @@ When a machine is being isolated, the following notification is displayed to inf
 ![Image of no network connection](images/atp-notification-isolate.png)
 
 ## Undo machine isolation
-Depending on the severity of the attack and the state of the machine you can choose to release the machine isolation after you have verified that the compromised machine has been remediated.
+Depending on the severity of the attack and the state of the machine you can choose to release the machine from isolation after you have verified that the compromised machine has been remediated.
 
 1.	Select a machine that was previously isolated.
 
