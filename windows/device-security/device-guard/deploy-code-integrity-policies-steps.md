@@ -344,10 +344,34 @@ The June 2017 Windows updates resolve a vulnerability in Powershell that allowed
     <Deny ID="ID_DENY_D_64" FriendlyName="Powershell 64" Hash="054BBA5AB35A3F704D62F3119CD8B8C3CBD7AEEB" />
     <Deny ID="ID_DENY_D_65" FriendlyName="Powershell 65" Hash="9DCA54C85E4C645CB296FE3055E90255B6506A95" />
     <Deny ID="ID_DENY_D_66" FriendlyName="Powershell 66" Hash="D3D453EBC368DF7CC2200474035E5898B58D93F1" />
+    <Deny ID="ID_DENY_D_67" FriendlyName="Powershell 67" Hash="F29A958287788A6EEDE6035D49EF5CB85EEC40D214FDDE5A0C6CAA65AFC00EEC" />
+    <Deny ID="ID_DENY_D_68" FriendlyName="Powershell 68" Hash="84BB081141DA50B3839CD275FF34854F53AECB96CA9AEB8BCD24355C33C1E73E" />
+    <Deny ID="ID_DENY_D_69" FriendlyName="Powershell 69" Hash="8D396FEAEED1F0CA709B62B1F27EDC9CCEFF95E3473C923624362A042E91D787" />
+    <Deny ID="ID_DENY_D_70" FriendlyName="Powershell 70" Hash="7BF44433D3A606104778F64B11B92C52FC99C4BA570C50B70438275D0B587B8E" />
+    <Deny ID="ID_DENY_D_71" FriendlyName="Powershell 71" Hash="6B3CB996EC5129D345830C3D6D5C7C009372FFD9F08837E8B2572AB31E9648A5" />
+    <Deny ID="ID_DENY_D_72" FriendlyName="Powershell 72" Hash="C3A5DAB20947CA8FD092E75C25177E7BAE7884CA58710F14827144C09EA1F94B" />
+    <Deny ID="ID_DENY_D_73" FriendlyName="Powershell 73" Hash="BE3FFE10CDE8B62C3E8FD4D8198F272B6BD15364A33362BB07A0AFF6731DABA1" />
+    <Deny ID="ID_DENY_D_74" FriendlyName="Powershell 74" Hash="75288A0CF0806A68D8DA721538E64038D755BBE74B52F4B63FEE5049AE868AC0" />
+    <Deny ID="ID_DENY_D_75" FriendlyName="Powershell 75" Hash="F875E43E12685ECE0BA2D42D55A13798CE9F1FFDE3CAE253D2529F4304811A52" />
+    <Deny ID="ID_DENY_D_76" FriendlyName="Powershell 76" Hash="6D89FDD29D50C07801FB01F031CDB96E2E14288F066BD895356AE0517ABB09CE" />
+    <Deny ID="ID_DENY_D_77" FriendlyName="Powershell 77" Hash="326669C4A31E2049E3750BCF4287241BB8B555B3670D31A1ACA74C3AC598DF81" />
+    <Deny ID="ID_DENY_D_78" FriendlyName="Powershell 78" Hash="38DC1956313B160696A172074C6F5DA9852BF508F55AFB7FA079B98F2849AFB5" />
+    <Deny ID="ID_DENY_D_79" FriendlyName="Powershell 79" Hash="C6C073A80A8E76DC13E724B5E66FE4035A19CCA0C1AF3FABBC18E5185D1B66CB" />
+    <Deny ID="ID_DENY_D_80" FriendlyName="Powershell 80" Hash="9EA4BD3D8FB8F490E8099E0412F091E545AF028E3C4CAF179324B679124D1742" />
+    <Deny ID="ID_DENY_D_81" FriendlyName="Powershell 81" Hash="CD83C3C293EC4D24D3328C74881FA04AAF9CCF73E099631A9EB100BD0F384F58" />
+    <Deny ID="ID_DENY_D_82" FriendlyName="Powershell 82" Hash="74E207F539C4EAC648A5507EB158AEE9F6EA401E51808E83E73709CFA0820FDD" />
+    <Deny ID="ID_DENY_D_83" FriendlyName="Powershell 83" Hash="148972F670E18790D62D753E01ED8D22B351A57E45544D88ACE380FEDAF24A40" />
+    <Deny ID="ID_DENY_D_84" FriendlyName="Powershell 84" Hash="72E4EC687CFE357F3E681A7500B6FF009717A2E9538956908D3B52B9C865C189" />
+    <Deny ID="ID_DENY_D_85" FriendlyName="Powershell 85" Hash="F16E605B55774CDFFDB0EB99FAFF43A40622ED2AB1C011D1195878F4B20030BC" />
+    <Deny ID="ID_DENY_D_86" FriendlyName="Powershell 86" Hash="BD3139CE7553AC7003C96304F08EAEC2CDB2CC6A869D36D6F1E478DA02D3AA16" />
+    <Deny ID="ID_DENY_D_87" FriendlyName="Powershell 87" Hash="71FC552E66327EDAA72D72C362846BD80CB65EECFAE95C4D790C9A2330D95EE6" />
+    <Deny ID="ID_DENY_D_88" FriendlyName="Powershell 88" Hash="A1D1AF7675C2596D0DF977F57B54372298A56EE0F3E1FF2D974D387D7F69DD4E" />
+    <Deny ID="ID_DENY_D_89" FriendlyName="Powershell 89" Hash="0D905709AB1174F8E12A063F259A52DABE85CAEB8018985F5411F1CE9C6C99C3" />
+    <Deny ID="ID_DENY_D_90" FriendlyName="Powershell 90" Hash="939C291D4A2592209EC7664EC832670FA0AC1009F974F47489D866751F4B862F" />
   </FileRules>
   <!--Signers-->
   <Signers />
-  
+
   <!--Driver Signing Scenarios-->
   <SigningScenarios>
     <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Auto generated policy on 06-12-2017">
@@ -427,6 +451,30 @@ The June 2017 Windows updates resolve a vulnerability in Powershell that allowed
           <FileRuleRef RuleID="ID_DENY_D_64" />
           <FileRuleRef RuleID="ID_DENY_D_65" />
           <FileRuleRef RuleID="ID_DENY_D_66" />
+          <FileRuleRef RuleID="ID_DENY_D_67" />
+          <FileRuleRef RuleID="ID_DENY_D_68" />
+          <FileRuleRef RuleID="ID_DENY_D_69" />
+          <FileRuleRef RuleID="ID_DENY_D_70" />
+          <FileRuleRef RuleID="ID_DENY_D_71" />
+          <FileRuleRef RuleID="ID_DENY_D_72" />
+          <FileRuleRef RuleID="ID_DENY_D_73" />
+          <FileRuleRef RuleID="ID_DENY_D_74" />
+          <FileRuleRef RuleID="ID_DENY_D_75" />
+          <FileRuleRef RuleID="ID_DENY_D_76" />
+          <FileRuleRef RuleID="ID_DENY_D_77" />
+          <FileRuleRef RuleID="ID_DENY_D_78" />
+          <FileRuleRef RuleID="ID_DENY_D_79" />
+          <FileRuleRef RuleID="ID_DENY_D_80" />
+          <FileRuleRef RuleID="ID_DENY_D_81" />
+          <FileRuleRef RuleID="ID_DENY_D_82" />
+          <FileRuleRef RuleID="ID_DENY_D_83" />
+          <FileRuleRef RuleID="ID_DENY_D_84" />
+          <FileRuleRef RuleID="ID_DENY_D_85" />
+          <FileRuleRef RuleID="ID_DENY_D_86" />
+          <FileRuleRef RuleID="ID_DENY_D_87" />
+          <FileRuleRef RuleID="ID_DENY_D_88" />
+          <FileRuleRef RuleID="ID_DENY_D_89" />
+          <FileRuleRef RuleID="ID_DENY_D_90" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
