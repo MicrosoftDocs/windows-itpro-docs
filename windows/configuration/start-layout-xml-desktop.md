@@ -6,6 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
+ms.author: jdecker
+ms.date: 06/13/2017
 localizationpriority: high
 ---
 
@@ -143,6 +145,9 @@ You can use the **start:Tile** tag to pin any of the following apps to Start:
 - A Windows 8 app or Windows 8.1 app 
 
 To specify any one of these apps, you must set the **AppUserModelID** attribute to the application user model ID that's associated with the corresponding app. 
+
+>[!IMPORTANT]
+>**AppUserModelID** (AUMID) is case-sensitive.
 
 The following example shows how to pin the Microsoft Edge Universal Windows app:
 
