@@ -683,7 +683,8 @@ Every code integrity policy is created with audit mode enabled. After you have s
 
     ` $CIPolicyBin=$CIPolicyPath+"EnforcedDeviceGuardPolicy.bin"`
 
-    > [!Note] The initial code integrity policy that this section refers to was created in the [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer) section. If you are using a different code integrity policy, update the **CIPolicyPath** and **InitialCIPolicy** variables.
+    > [!Note] 
+    > The initial code integrity policy that this section refers to was created in the [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer) section. If you are using a different code integrity policy, update the **CIPolicyPath** and **InitialCIPolicy** variables.
 
 2. Ensure that rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) are set the way that you intend for this policy. We strongly recommend that you enable these rule options before you run any enforced policy for the first time. Enabling these options provides administrators with a pre-boot command prompt, and allows Windows to start even if the code integrity policy blocks a kernel-mode driver from running. When ready for enterprise deployment, you can remove these options.
 
