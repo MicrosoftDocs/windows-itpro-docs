@@ -20,7 +20,8 @@ For an overview of the process described in the following procedures, see [Deplo
 
 The process for creating a golden code integrity policy from a reference system is straightforward. This section outlines the process that is required to successfully create a code integrity policy with Windows PowerShell. First, for this example, you must initiate variables to be used during the creation process. Rather than using variables, you can simply use the full file paths in the command. Next, you create the code integrity policy by scanning the system for installed applications. When created, the policy file is converted to binary format so that Windows can consume its contents.
 
->[!Note] &nbsp;&nbsp;Before you begin this procedure, make sure that the reference PC is virus and malware-free,and that any software you want to be scanned is installed on the system before creating the code integrity policy. 
+> [!Note] 
+> Before you begin this procedure, make sure that the reference PC is virus and malware-free,and that any software you want to be scanned is installed on the system before creating the code integrity policy. 
 
 ### Scripting and applications
 
