@@ -8,6 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localizationpriority: high
 author: brianlic-msft
+ms.author: brianlic-msft
+ms.date: 06/13/2017
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -1691,6 +1693,10 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
     -or-
 
 -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
+
+	-and-
+
+-   Create a new REG\_DWORD registry setting in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
 
 If you're not running Windows 10, version 1607 or later, you can use the other options in this section.
 
