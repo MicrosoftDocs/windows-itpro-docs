@@ -11955,7 +11955,7 @@ ADMX Info:
 <a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**  
 
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, the next major update. Turn off the display (on battery). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (on battery). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 <p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
@@ -11979,7 +11979,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, the next major update. Turn off the display (plugged in). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (plugged in). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 <p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
@@ -12002,7 +12002,7 @@ ADMX Info:
 <a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**  
 
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, the next major update. Specify the system hibernate timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 <p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
@@ -12025,7 +12025,7 @@ ADMX Info:
 <a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**  
 
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, the next major update. Specify the system hibernate timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 <p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
@@ -12089,7 +12089,7 @@ ADMX Info:
 <a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**  
 
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, the next major update. Specify the system sleep timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 <p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
@@ -12112,7 +12112,7 @@ ADMX Info:
 <a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**  
 
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, the next major update. Specify the system sleep timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 <p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
