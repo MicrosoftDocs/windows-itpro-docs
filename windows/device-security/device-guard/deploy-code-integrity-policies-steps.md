@@ -248,9 +248,7 @@ To disable Windows Script Hosting, you can simply create further deny rules to a
 </SiPolicy>
 
 ```
-
 <br />
-
 The June 2017 Windows updates resolve a vulnerability in PowerShell that allowed an attacker to bypass Device Guard code integrity policies. Powershell cmdlets cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. We recommend that you block the following PowerShell cmdlets and merge this policy into your existing policy by adding the following deny rules using the Merge-CIPolicy cmdlet:
 
 ```
@@ -504,7 +502,7 @@ To create a code integrity policy, copy each of the following commands into an e
 
     ` New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt `
 
-    > **Notes**
+    > [!Notes] 
     
     > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the code integrity policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Device Guard. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
     
@@ -520,7 +518,8 @@ To create a code integrity policy, copy each of the following commands into an e
 
 After you complete these steps, the Device Guard binary file (DeviceGuardPolicy.bin) and original .xml file (IntialScan.xml) will be available on your desktop. You can use the binary version as a code integrity policy or sign it for additional security.
 
-> **Note**&nbsp;&nbsp;We recommend that you keep the original .xml file of the policy for use when you need to merge the code integrity policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge code integrity policies, see [Merge code integrity policies](#merge-code-integrity-policies).
+> [!Note] 
+> We recommend that you keep the original .xml file of the policy for use when you need to merge the code integrity policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge code integrity policies, see [Merge code integrity policies](#merge-code-integrity-policies).
 
 We recommend that every code integrity policy be run in audit mode before being enforced. Doing so allows administrators to discover any issues with the policy without receiving error message dialog boxes. For information about how to audit a code integrity policy, see the next section, [Audit code integrity policies](#audit-code-integrity-policies).
 
@@ -528,7 +527,8 @@ We recommend that every code integrity policy be run in audit mode before being 
 
 When code integrity policies are run in audit mode, it allows administrators to discover any applications that were missed during an initial policy scan and to identify any new applications that have been installed and run since the original policy was created. While a code integrity policy is running in audit mode, any binary that runs and would have been denied had the policy been enforced is logged in the **Applications and Services Logs\\Microsoft\\Windows\\CodeIntegrity\\Operational** event log. When these logged binaries have been validated, they can easily be added to a new code integrity policy. When the new exception policy is created, you can merge it with your existing code integrity policies.
 
-> **Note**&nbsp;&nbsp;Before you begin this process, you need to create a code integrity policy binary file. If you have not already done so, see [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer), earlier in this topic, for a step-by-step walkthrough of the process to create a code integrity policy and convert it to binary format.
+> [!Note] 
+> Before you begin this process, you need to create a code integrity policy binary file. If you have not already done so, see [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer), earlier in this topic, for a step-by-step walkthrough of the process to create a code integrity policy and convert it to binary format.
 
 **To audit a code integrity policy with local policy:**
 
@@ -536,7 +536,7 @@ When code integrity policies are run in audit mode, it allows administrators to 
 
 2.  On the computer you want to run in audit mode, open the Local Group Policy Editor by running **GPEdit.msc**.
 
-    > **Notes**
+    > [!Note]
     
     > - The computer that you will run in audit mode must be clean of viruses or malware. Otherwise, in the process that you follow after auditing the system, you might unintentionally merge in a code integrity policy that allows viruses or malware to run.
     
@@ -544,7 +544,7 @@ When code integrity policies are run in audit mode, it allows administrators to 
     
 3.  Navigate to **Computer Configuration\\Administrative Templates\\System\\Device Guard**, and then select **Deploy Code Integrity Policy**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
 
-    > **Notes**
+    > [!Note]
     
     > - The illustration shows the example file name *DeviceGuardPolicy.bin* because this name was used earlier in this topic, in [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer). Also, this policy file does not need to be copied to every system. You can instead copy the code integrity policies to a file share to which all computer accounts have access.
 
@@ -592,7 +592,8 @@ Use the following procedure after you have been running a computer with a code i
 
     ` New-CIPolicy -Audit -Level Hash -FilePath $CIAuditPolicy –UserPEs 3> CIPolicylog.txt`
 
-    > **Note**&nbsp;&nbsp;When you create policies from audit events, you should carefully consider the file rule level that you select to trust. The preceding example uses the **Hash** rule level, which is the most specific. Any change to the file (such as replacing the file with a newer version of the same file) will change the Hash value, and require an update to the policy.
+  > [!Note] 
+  > When you create policies from audit events, you should carefully consider the file rule level that you select to trust. The preceding example uses the **Hash** rule level, which is the most specific. Any change to the file (such as replacing the file with a newer version of the same file) will change the Hash value, and require an update to the policy.
 
 4.  Find and review the Device Guard audit policy .xml file that you created. If you used the example variables as shown, the filename will be **DeviceGuardAuditPolicy.xml**, and it will be on your desktop. Look for the following:
 
@@ -602,7 +603,8 @@ Use the following procedure after you have been running a computer with a code i
 
 You can now use this file to update the existing code integrity policy that you ran in audit mode by merging the two policies. For instructions on how to merge this audit policy with the existing code integrity policy, see the next section, [Merge code integrity policies](#merge-code-integrity-policies).
 
-> **Note**&nbsp;&nbsp;You may have noticed that you did not generate a binary version of this policy as you did in [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer). This is because code integrity policies created from an audit log are not intended to run as stand-alone policies but rather to update existing code integrity policies.
+> [!Note] 
+> You may have noticed that you did not generate a binary version of this policy as you did in [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer). This is because code integrity policies created from an audit log are not intended to run as stand-alone policies but rather to update existing code integrity policies.
 
 ## <a href="" id="plug-ins"></a>Use a code integrity policy to control specific plug-ins, add-ins, and modules
 
@@ -634,7 +636,8 @@ New-CIPolicy -Rules $rule -FilePath ".\BlockAddins.xml" -UserPEs
 
 When you develop code integrity policies, you will occasionally need to merge two policies. A common example is when a code integrity policy is initially created and audited. Another example is when you create a single master policy by using multiple code integrity policies previously created from golden computers. Because each computer running Windows 10 can have only one code integrity policy, it is important to properly maintain these policies. In this example, audit events have been saved into a secondary code integrity policy that you then merge with the initial code integrity policy.
 
-> **Note**&nbsp;&nbsp;The following example uses several of the code integrity policy .xml files that you created in earlier sections in this topic. You can follow this process, however, with any two code integrity policies you would like to combine.
+> [!Note] 
+> The following example uses several of the code integrity policy .xml files that you created in earlier sections in this topic. You can follow this process, however, with any two code integrity policies you would like to combine.
 
 To merge two code integrity policies, complete the following steps in an elevated Windows PowerShell session:
 
@@ -650,7 +653,8 @@ To merge two code integrity policies, complete the following steps in an elevate
 
     ` $CIPolicyBin=$CIPolicyPath+"NewDeviceGuardPolicy.bin"`
 
-    > **Note**&nbsp;&nbsp;The variables in this section specifically expect to find an initial policy on your desktop called **InitialScan.xml** and an audit code integrity policy called **DeviceGuardAuditPolicy.xml**. If you want to merge other code integrity policies, update the variables accordingly.
+  > [!Note] 
+  > The variables in this section specifically expect to find an initial policy on your desktop called **InitialScan.xml** and an audit code integrity policy called **DeviceGuardAuditPolicy.xml**. If you want to merge other code integrity policies, update the variables accordingly.
 
 2.  Use [Merge-CIPolicy](https://technet.microsoft.com/library/mt634485.aspx) to merge two policies and create a new code integrity policy:
 
@@ -666,7 +670,8 @@ Now that you have created a new code integrity policy (for example, called **New
 
 Every code integrity policy is created with audit mode enabled. After you have successfully deployed and tested a code integrity policy in audit mode and are ready to test the policy in enforced mode, complete the following steps in an elevated Windows PowerShell session:
 
-> **Note**&nbsp;&nbsp;Every code integrity policy should be tested in audit mode first. For information about how to audit code integrity policies, see [Audit code integrity policies](#audit-code-integrity-policies), earlier in this topic.
+> [!Note] 
+> Every code integrity policy should be tested in audit mode first. For information about how to audit code integrity policies, see [Audit code integrity policies](#audit-code-integrity-policies), earlier in this topic.
 
 1.  Initialize the variables that will be used:
 
@@ -678,7 +683,7 @@ Every code integrity policy is created with audit mode enabled. After you have s
 
     ` $CIPolicyBin=$CIPolicyPath+"EnforcedDeviceGuardPolicy.bin"`
 
-    > **Note**&nbsp;&nbsp;The initial code integrity policy that this section refers to was created in the [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer) section. If you are using a different code integrity policy, update the **CIPolicyPath** and **InitialCIPolicy** variables.
+    > [!Note] The initial code integrity policy that this section refers to was created in the [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer) section. If you are using a different code integrity policy, update the **CIPolicyPath** and **InitialCIPolicy** variables.
 
 2. Ensure that rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) are set the way that you intend for this policy. We strongly recommend that you enable these rule options before you run any enforced policy for the first time. Enabling these options provides administrators with a pre-boot command prompt, and allows Windows to start even if the code integrity policy blocks a kernel-mode driver from running. When ready for enterprise deployment, you can remove these options.
 
@@ -696,7 +701,8 @@ Every code integrity policy is created with audit mode enabled. After you have s
 
     ` Set-RuleOption -FilePath $EnforcedCIPolicy -Option 3 -Delete`
 
-    > **Note**&nbsp;&nbsp;To enforce a code integrity policy, you delete option 3, the **Audit Mode Enabled** option. There is no “enforced” option that can be placed in a code integrity policy.
+  > [!Note] 
+  > To enforce a code integrity policy, you delete option 3, the **Audit Mode Enabled** option. There is no “enforced” option that can be placed in a code integrity policy.
 
 5.  Use [ConvertFrom-CIPolicy](https://technet.microsoft.com/library/mt733073.aspx) to convert the new code integrity policy to binary format:
 
@@ -712,7 +718,8 @@ Signing code integrity policies by using an on-premises CA-generated certificate
 
 Before signing code integrity policies for the first time, be sure to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9` even if you're not sure whether the option is already enabled—if so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Code integrity policy rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md#code-integrity-policy-rules) in "Deploy code integrity policies: policy rules and file rules."
 
-> **Note**&nbsp;&nbsp;Signing code integrity policies is the last step in a code integrity deployment. It is much more difficult to remove a signed code integrity policy than an unsigned one. Before you deploy a signed code integrity policy to deployed client computers, be sure to test its effect on a subset of computers.
+> [!Note] 
+> Signing code integrity policies is the last step in a code integrity deployment. It is much more difficult to remove a signed code integrity policy than an unsigned one. Before you deploy a signed code integrity policy to deployed client computers, be sure to test its effect on a subset of computers.
 
 To sign a code integrity policy with SignTool.exe, you need the following components:
 
@@ -732,7 +739,8 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
     
     ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
-    > **Note**&nbsp;&nbsp;This example uses the code integrity policy that you created in the [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer) section. If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
+   > [!Note] 
+   > This example uses the code integrity policy that you created in the [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer) section. If you are signing another policy, be sure to update the **$CIPolicyPath** and **$CIPolicyBin** variables with the correct information.
 
 2.  Import the .pfx code signing certificate. Import the code signing certificate that you will use to sign the code integrity policy into the signing user’s personal store on the computer that will be doing the signing. In this example, you use the certificate that was created in [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md).
 
@@ -746,9 +754,9 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
 
     ` Add-SignerRule -FilePath $InitialCIPolicy -CertificatePath <Path to exported .cer certificate> -Kernel -User –Update`
 
-   > **Notes**&nbsp;&nbsp;*&lt;Path to exported .cer certificate&gt;* should be the full path to the certificate that you exported in step 3.
-   
-   > Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed code integrity policies, see the [Disable signed code integrity policies within Windows](#disable-signed-code-integrity-policies-within-windows) section.
+   > [!Note] 
+   > *&lt;Path to exported .cer certificate&gt;* should be  the full path to the certificate that you exported in   step 3.
+    Also, adding update signers is crucial to being able to modify or disable this policy in the future. For more information about how to disable signed code integrity policies, see the [Disable signed code integrity policies within Windows](#disable-signed-code-integrity-policies-within-windows) section.
 
 6.  Use [Set-RuleOption](https://technet.microsoft.com/library/mt634483.aspx) to remove the unsigned policy rule option:
 
@@ -762,7 +770,8 @@ If you do not have a code signing certificate, see the [Optional: Create a code 
 
     ` <Path to signtool.exe> sign -v /n "ContosoDGSigningCert" -p7 . -p7co 1.3.6.1.4.1.311.79.1 -fd sha256 $CIPolicyBin`
 
-    > **Note**&nbsp;&nbsp;The *&lt;Path to signtool.exe&gt;* variable should be the full path to the SignTool.exe utility. **ContosoDGSigningCert** is the subject name of the certificate that will be used to sign the code integrity policy. You should import this certificate to your personal certificate store on the computer you use to sign the policy.
+   > [!Note] 
+   > The *&lt;Path to signtool.exe&gt;* variable should be the full path to the SignTool.exe utility. **ContosoDGSigningCert** is the subject name of the certificate that will be used to sign the code integrity policy. You should import this certificate to your personal certificate store on the computer you use to sign the policy.
 
 9.  Validate the signed file. When complete, the commands should output a signed policy file called DeviceGuardPolicy.bin.p7 to your desktop. You can deploy this file the same way you deploy an enforced or non-enforced policy. For information about how to deploy code integrity policies, see [Deploy and manage code integrity policies with Group Policy](#deploy-and-manage-code-integrity-policies-with-group-policy).
 
@@ -780,7 +789,8 @@ If the code integrity policy was deployed by using Group Policy, the GPO that is
 
 Signed policies protect Windows from administrative manipulation as well as malware that has gained administrative-level access to the system. For this reason, signed code integrity policies are intentionally more difficult to remove than unsigned policies. They inherently protect themselves from modification or removal and therefore are difficult even for administrators to remove successfully. If the signed code integrity policy is manually enabled and copied to the CodeIntegrity folder, to remove the policy, you must complete the following steps.
 
-> **Note**&nbsp;&nbsp;For reference, signed code integrity policies should be replaced and removed from the following locations:
+> [!Note] 
+> For reference, signed code integrity policies should be replaced and removed from the following locations:
 
 -   &lt;EFI System Partition&gt;\\Microsoft\\Boot\\
 
@@ -831,9 +841,11 @@ There may be a time when signed code integrity policies cause a boot failure. Be
 
 Code integrity policies can easily be deployed and managed with Group Policy. A Device Guard administrative template will be available in Windows Server 2016 that allows you to simplify deployment of Device Guard hardware-based security features and code integrity policies. The following procedure walks you through how to deploy a code integrity policy called **DeviceGuardPolicy.bin** to a test OU called *DG Enabled PCs* by using a GPO called **Contoso GPO Test**.
 
-> **Note**&nbsp;&nbsp;This walkthrough requires that you have previously created a code integrity policy and have a computer running Windows 10 on which to test a Group Policy deployment. For more information about how to create a code integrity policy, see [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer), earlier in this topic.
+> [!Note] 
+> This walkthrough requires that you have previously created a code integrity policy and have a computer running Windows 10 on which to test a Group Policy deployment. For more information about how to create a code integrity policy, see [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer), earlier in this topic.
 
-> **Note**&nbsp;&nbsp;Signed code integrity policies can cause boot failures when deployed. We recommend that signed code integrity policies be thoroughly tested on each hardware platform before enterprise deployment.
+> [!Note] 
+> Signed code integrity policies can cause boot failures when deployed. We recommend that signed code integrity policies be thoroughly tested on each hardware platform before enterprise deployment.
 
 To deploy and manage a code integrity policy with Group Policy:
 
@@ -861,13 +873,15 @@ To deploy and manage a code integrity policy with Group Policy:
 
    In this policy setting, you specify either the local path in which the policy will exist on the client computer or a Universal Naming Convention (UNC) path that the client computers will look to retrieve the latest version of the policy. For example, with DeviceGuardPolicy.bin on the test computer, the example file path would be C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 5.
 
-    > **Note**&nbsp;&nbsp;The illustration shows the example file name *DeviceGuardPolicy.bin* because this name was used earlier in this topic, in [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer). Also, this policy file does not need to be copied to every computer. You can instead copy the code integrity policies to a file share to which all computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
+  > [!Note] 
+  > The illustration shows the example file name *DeviceGuardPolicy.bin* because this name was used earlier in this topic, in [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer). Also, this policy file does not need to be copied to every computer. You can instead copy the code integrity policies to a file share to which all computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
 
    ![Group Policy called Deploy Code Integrity Policy](images/dg-fig26-enablecode.png)
 
    Figure 5. Enable the code integrity policy
 
-    > **Note**&nbsp;&nbsp;You may have noticed that the GPO setting references a .p7b file and this example uses a .bin file for the policy. Regardless of the type of policy you deploy (.bin, .p7b, or .p7), they are all converted to SIPolicy.p7b when dropped on the client computer running Windows 10. Make your code integrity policies friendly and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.
+   > [!Note] 
+   > You may have noticed that the GPO setting references a .p7b file and this example uses a .bin file for the policy. Regardless of the type of policy you deploy (.bin, .p7b, or .p7), they are all converted to SIPolicy.p7b when dropped on the client computer running Windows 10. Make your code integrity policies friendly and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.
 
 7.  Close the Group Policy Management Editor, and then restart the Windows 10 test computer. Restarting the computer updates the code integrity policy. For information about how to audit code integrity policies, see the [Audit code integrity policies](#audit-code-integrity-policies) section.
 
