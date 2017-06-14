@@ -20,7 +20,7 @@ For an overview of the process described in the following procedures, see [Deplo
 
 The process for creating a golden code integrity policy from a reference system is straightforward. This section outlines the process that is required to successfully create a code integrity policy with Windows PowerShell. First, for this example, you must initiate variables to be used during the creation process. Rather than using variables, you can simply use the full file paths in the command. Next, you create the code integrity policy by scanning the system for installed applications. When created, the policy file is converted to binary format so that Windows can consume its contents.
 
-> **Note**&nbsp;&nbsp;Before you begin this procedure, make sure that the reference PC is virus and malware-free,and that any software you want to be scanned is installed on the system before creating the code integrity policy. 
+>[!Note] &nbsp;&nbsp;Before you begin this procedure, make sure that the reference PC is virus and malware-free,and that any software you want to be scanned is installed on the system before creating the code integrity policy. 
 
 ### Scripting and applications
 
@@ -64,12 +64,12 @@ In certain circumstances, if the use case is appropriate, for example if your op
 
 <br />
 
->!Note
+>[!Note]
 >This application list is fluid and will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
 When an application version is upgraded, you may want to add deny rules to your code integrity policies for that application’s previous, less secure versions, especially to fix a vulnerability or potential Device Guard bypass. Certain vendors may or may not intend to update their software to work with Device Guard. 
 
-To block the listed applications, you can merge this policy into your existing policy by adding the following deny rules using the Powershell Merge-CIPolicy cmdlet:
+To block the listed applications, you can merge this policy into your existing policy by adding the following deny rules using the PowerShell Merge-CIPolicy cmdlet:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -153,7 +153,7 @@ To block the listed applications, you can merge this policy into your existing p
 
 ### Disable Windows Script Host
 
-If you are using Device Guard code integrity policies, the policies place constraints on Powershell and WSH scripts.  When Device Guard is enabled, by default, PowerShell scripts execute in “ConstrainedLanguage” language mode, in which neither wscript.exe and cscript.exe can invoke untrusted Active X controls or COM objects. However, signed PowerShell scripts are permitted to execute in “FullLanguage” language mode, and trusted or signed wscript or cscript scripts can invoke Active X controls or COM objects. For further information on Powershell language modes, see [Language Modes](https://msdn.microsoft.com/en-us/powershell/reference/4.0/microsoft.powershell.core/about/about_language_modes).
+If you are using Device Guard code integrity policies, the policies place constraints on PowerShell and WSH scripts.  When Device Guard is enabled, by default, PowerShell scripts execute in “ConstrainedLanguage” language mode, in which neither wscript.exe and cscript.exe can invoke untrusted Active X controls or COM objects. However, signed PowerShell scripts are permitted to execute in “FullLanguage” language mode, and trusted or signed wscript or cscript scripts can invoke Active X controls or COM objects. For further information on PowerShell language modes, see [Language Modes](https://msdn.microsoft.com/en-us/powershell/reference/4.0/microsoft.powershell.core/about/about_language_modes).
 
 Alternatively, though script hosts are safer with Device Guard enabled, if your reference PC does not require any scripting, you may want to completely disable WSH. Disabling WSH prevents all users from running any scripts, including VBScript and JScript scripts. Note that some applications may require WSH to be enabled. You can disable WSH by configuring Device Guard code integrity policies.
 
@@ -250,7 +250,7 @@ To disable Windows Script Hosting, you can simply create further deny rules to a
 
 <br />
 
-The June 2017 Windows updates resolve a vulnerability in Powershell that allowed an attacker to bypass Device Guard code integrity policies. Powershell cmdlets cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. We recommend that you block the following Powershell cmdlets and merge this policy into your existing policy by adding the following deny rules using the Merge-CIPolicy cmdlet:
+The June 2017 Windows updates resolve a vulnerability in PowerShell that allowed an attacker to bypass Device Guard code integrity policies. Powershell cmdlets cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. We recommend that you block the following PowerShell cmdlets and merge this policy into your existing policy by adding the following deny rules using the Merge-CIPolicy cmdlet:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
