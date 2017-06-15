@@ -21,7 +21,7 @@ We want all students to have the chance to use the apps they need for success in
 In Windows 10, version 1703 (Creators Update), it is straightforward to configure Windows to be education ready.
 
 | Area | How to configure | What this does | Windows 10 Education | Windows 10 Pro Education | Windows 10 S | 
-| --- | --- | --- | --- | --- | === |
+| --- | --- | --- | --- | --- | --- |
 | **Diagnostic Data** | **SetEduPolicies** | Sets Diagnostic Data to [Basic](https://technet.microsoft.com/itpro/windows/configure/configure-windows-telemetry-in-your-organization) | This is already set | This is already set | The policy must be set |
 | **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
 | **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. You can use the **AllowCortana** policy to turn it off. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. You can use the **AllowCortana** policy to turn it off. | You can use the **AllowCortana** policy to turn it off. |
