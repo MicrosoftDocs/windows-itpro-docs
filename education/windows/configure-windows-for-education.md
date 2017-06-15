@@ -1,7 +1,7 @@
 ---
 title: Windows 10 configuration recommendations for education customers
 description: Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school.
-keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations
+keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations, accessibility, assistive technology
 ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
@@ -24,7 +24,7 @@ In Windows 10, version 1703 (Creators Update), it is straightforward to configur
 | --- | --- | --- | --- | --- | --- |
 | **Diagnostic Data** | **SetEduPolicies** | Sets Diagnostic Data to [Basic](https://technet.microsoft.com/itpro/windows/configure/configure-windows-telemetry-in-your-organization) | This is already set | This is already set | The policy must be set |
 | **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
-| **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. You can use the **AllowCortana** policy to turn it off. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. You can use the **AllowCortana** policy to turn it off. | You can use the **AllowCortana** policy to turn it off. |
+| **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. We recommend using the **AllowCortana** policy to turn it off. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. We recommend using the **AllowCortana** policy to turn it off. | We recommending using the **AllowCortana** policy to turn it off. |
 | **Safe search** | **SetEduPolicies** | Locks Bing safe search to Strict in Microsoft Edge | This is already set | This is already set | The policy must be set |
 | **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
 | **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready </br></br> * Any app can detect Windows is running in an education ready configuration through [IsEducationEnvironment](https://docs.microsoft.com/en-us/uwp/api/windows.system.profile.educationsettings) | This is already set | This is already set | The policy must be set |
@@ -72,6 +72,9 @@ You can set all the education compliance areas through both provisioning and man
 
 ## AllowCortana
 **AllowCortana** is a policy that enables or disables Cortana. It is a policy node in the Policy configuration service provider, [AllowCortana](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowcortana). 
+
+    > [!NOTE]
+    > We recommend disabling Cortana on Windows 10 education devices.
 
 Use one of these methods to set this policy.
 
