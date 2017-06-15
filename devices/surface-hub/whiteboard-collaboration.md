@@ -59,7 +59,7 @@ Whiteboard has settings that can be managed via MDM. These allow you to disable 
 
 The value for each setting can be True or False. The default value for each setting is False. 
  
-The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/` and the string from the OMA URI column in the table. For example, the full OMA URI for Enable sign-in is `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableSignIn`.
+The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/` and the string from the OMA URI column in the table. For example, the full OMA URI for **Enable sign-in** is `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableSignIn`.
 
 | Setting | Details | OMA URI | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
 | --- | ---- | --- |---- | --- | --- |
@@ -71,6 +71,13 @@ The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernApp
 Whiteboard also has other MDM settings that can be managed and set for defaults, exporting, and sharing. You can see these additional settings in [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md#whiteboard-collaboration-settings).
 
 If you don't have MDM configured with your device, you can also toggle **Allow users to sign in to Office 365 to access their meetings and files** in **Settings** > **Session & power**, which will effectively enable or disable collaboration.
+
+## How settings conflicts are resolved
+
+You might have noticed that there are several methods for controlling Whiteboard to Whiteboard collaboration: the manual setting **Allow users to sign in to Office 365 to access their meetings and files**, and the MDM settings **Enable sign-in** and **Disable sign-in**. It's important to understand what the end result will be when those settings conflict.
+
+1. The MDM setting **Disable sign-in=TRUE** overrides both **Enable sign-in=TRUE** and **Allow users to sign in to Office 365 to access their meetings and files=ON**.
+2. The MDM setting **Enable sign-in=TRUE** overrides **Allow users to sign in to Office 365 to access their meetings and files=OFF**.
 
 ## Related topics
 
