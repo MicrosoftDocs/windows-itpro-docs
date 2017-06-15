@@ -32,4 +32,5 @@
 ### [Update Microsoft Store for Business and Microsoft Store for Education account settings](/microsoft-store/update-windows-store-for-business-account-settings?toc=/microsoft-store/education/toc.json)
 ### [Manage user accounts in Microsoft Store for Business and Education](/microsoft-store/manage-users-and-groups-windows-store-for-business?toc=/microsoft-store/education/toc.json)
 ## [Troubleshoot Microsoft Store for Business](/microsoft-store/troubleshoot-windows-store-for-business?toc=/microsoft-store/education/toc.json)
+## [Notifications in Microsoft Store for Business and Education](/microsoft-store/notifications-microsoft-store-business?toc=/microsoft-store/education/toc.json)
 
