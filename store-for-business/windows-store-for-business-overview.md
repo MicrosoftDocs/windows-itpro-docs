@@ -472,7 +472,7 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>United Kingdom</li>
             <li>United States</li>
             <li>Uruguay</li>
-            <li>Viet Nam</li>
+            <li>Vietnam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
             <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
@@ -489,18 +489,11 @@ Customers in these markets can use Microsoft Store for Business and Education to
 ### Support for free apps and Minecraft: Education Edition
 Customers in these markets can use Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition:  
 - Albania
-- Armenia
-- Azerbaijan
-- Belarus
 - Bosnia
 - Brazil
 - Georgia
-- Kazakhstan
-- Kyrgyzstan
-- Moldova
+- Korea
 - Taiwan
-- Tajikistan
-- Turkmenistan
 - Ukraine 
 
 This table summarize what customers can purchase, depending on which Microsoft Store they are using. 
