@@ -8,11 +8,19 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
 author: jdeckerMS
+ms.author: jdecker
+ms.date: 06/13/2017
 ---
 
 # Change history for Client management
 
 This topic lists new and updated topics in the [Client management](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## June 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Create mandatory user profiles](mandatory-user-profile.md) | Added Windows 10, version 1703, to profile extension table |
 
 ## April 2017
 | New or changed topic | Description |
