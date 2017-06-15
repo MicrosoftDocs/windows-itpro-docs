@@ -11,6 +11,9 @@ author: nickbrower
 
 # Policy CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
@@ -11947,6 +11950,100 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (on battery). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Turn off the display (on battery)*
+-   GP name: *VideoPowerDownTimeOutDC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-displayofftimeoutpluggedin"></a>**Power/DisplayOffTimeoutPluggedIn**  
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (plugged in). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Turn off the display (plugged in)*
+-   GP name: *VideoPowerDownTimeOutAC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system hibernate timeout (on battery)*
+-   GP name: *DCHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system hibernate timeout (plugged in)*
+-   GP name: *ACHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="power-requirepasswordwhencomputerwakesonbattery"></a>**Power/RequirePasswordWhenComputerWakesOnBattery**  
 
@@ -11987,6 +12084,53 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system sleep timeout (on battery)*
+-   GP name: *DCStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system sleep timeout (plugged in)*
+-   GP name: *ACStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
 
