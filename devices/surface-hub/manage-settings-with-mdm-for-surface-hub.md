@@ -24,6 +24,9 @@ Surface Hub has been validated with Microsoft’s first-party MDM providers:
 
 You can also manage Surface Hubs using any third-party MDM provider that can communicate with Windows 10 using the MDM protocol.
 
+>[!NOTE]
+>[Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access) is not currently available for Surface Hub devices.
+
 ## <a href="" id="enroll-into-mdm"></a>Enroll a Surface Hub into MDM
 You can enroll your Surface Hubs using bulk or manual enrollment.
 
