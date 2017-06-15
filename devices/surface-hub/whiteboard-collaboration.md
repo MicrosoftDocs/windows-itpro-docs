@@ -26,6 +26,7 @@ To get Whiteboard to Whiteboard collaboration up and running, you’ll need to m
 - Currently not utilizing Office 365 Germany or Office 365 	operated by 21Vianet
 - Surface Hub needs to be updated to Windows 10, version 1607 or newer
 - Port 443 needs to be open since Whiteboard makes standard https requests
+- **Allow users to sign in to Office 365 to access their meetings and files** must be set to **On**
 
 >[!NOTE]
 >Collaborative sessions can only take place between users within the same tenant, so users outside of your organization won’t be able to join even if they have a Surface Hub.
@@ -63,6 +64,8 @@ The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernApp
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 Whiteboard also has other MDM settings that can be managed and set for defaults, exporting, and sharing. You can see these additional settings in [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md#whiteboard-collaboration-settings).
+
+If you don't have MDM configured with your device, you can also toggle **Allow users to sign in to Office 365 to access their meetings and files** in **Settings** > **Session & power**, which will effectively enable or disable collaboration.
 
 ## Related topics
 
