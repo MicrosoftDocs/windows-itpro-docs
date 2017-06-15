@@ -1,6 +1,6 @@
 ---
 title: Edit an existing topic using the Edit link
-description: Instructions about how to edit an existing topic by using the Contribute link on TechNet.
+description: Instructions about how to edit an existing topic by using the Edit link on TechNet.
 keywords: contribute, edit a topic
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -10,13 +10,13 @@ ms.sitesec: library
 # Editing existing Windows IT professional documentation
 You can now make suggestions and update existing, public content with a GitHub account and a simple click of a link.
 
->**Note**<br>
+>[!NOTE]
 >At this time, only the English (en-us) content is available for editing.
 
 **To edit a topic**
 
-1. All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before contributing to any Microsoft repositories. 
-If you've already contributed to Microsoft repositories in the past, congratulations! You've already completed this step.
+1. All contributors who are ***not*** a Microsoft employee must [sign a Microsoft Contribution Licensing Agreement (CLA)](https://cla.microsoft.com/) before updating or adding to any Microsoft repositories.
+If you've previously contributed to topics in the Microsoft repositories, congratulations! You've already completed this step.
 
 2. Go to the page on TechNet that you want to update, and then click **Edit**.
 
