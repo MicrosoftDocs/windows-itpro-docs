@@ -96,14 +96,14 @@ The following list describes the characteristics and parameters.
 
 <p style="margin-left: 20px">Supported operations is Get.
 
-<a href="" id="group"></a>**Group**  
+<a href="" id="group"></a>**DeviceTagging/Group**  
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Device group identifiers.
 
 <p style="margin-left: 20px">The data type is a string.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
-<a href="" id="criticality"></a>**Criticality**  
+<a href="" id="criticality"></a>**DeviceTagging/Criticality**  
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Asset criticality value. Supported values:  
 
 - 0 - Normal
