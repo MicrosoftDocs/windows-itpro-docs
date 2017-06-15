@@ -21,7 +21,7 @@ localizationpriority: high
 Learn the difference between enlightened and unenlightened apps, and then review the list of enlightened apps provided by Microsoft along with the text you will need to use to add them to your allowed apps list.
 
 ## Enlightened versus unenlightened apps
-Apps can be enlightened (also referred to as WIP-aware) or unenlightened (also referred to as WIP-unaware).
+Apps can be enlightened or unenlightened:
 
 -   **Enlightened apps** can differentiate between corporate and personal data, correctly determining which to protect, based on your policies.
 
@@ -44,13 +44,9 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 
 - Mobile Office apps, including Word, Excel, PowerPoint, OneNote, and Outlook Mail and Calendar
 
-- Office 365 ProPlus apps, including Word, Excel, PowerPoint, OneNote, and Outlook
-
-- OneDrive app
-
-- OneDrive sync client (OneDrive.exe, the next generation sync client)
-
 - Microsoft Photos
+
+<!-- Microsoft OneDrive -->
 
 - Groove Music
 
@@ -65,7 +61,7 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 - Microsoft Remote Desktop
 
 ## List of WIP-Aware Microsoft apps
-Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP and MAM solutions.
+Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP.
 
 - Skype for Business
 
@@ -81,14 +77,12 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 |PowerPoint Mobile |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.PowerPoint<br>**App Type:** Universal app |
 |OneNote |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.OneNote<br>**App Type:** Universal app |
 |Outlook Mail and Calendar |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** microsoft.windowscommunicationsapps<br>**App Type:** Universal app |
-|Office 365 ProPlus|Office 365 ProPlus apps are set up as a suite. You must use the [O365 ProPlus - Allow and Exempt AppLocker policy files (.zip files)](http://download.microsoft.com/download/7/0/D/70D72459-D72D-4673-B309-F480E3BEBCC9/O365%20ProPlus%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) files to turn the suite on for WIP.<br>We don't recommend setting up Office by using individual paths or publisher rules. |
 |Microsoft Photos |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Windows.Photos<br>**App Type:** Universal app |
 |Groove Music |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneMusic<br>**App Type:** Universal app |
 |Microsoft Movies & TV |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneVideo<br>**App Type:** Universal app |
 |Microsoft Messaging |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Messaging<br>**App Type:** Universal app |
 |IE11 |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** iexplore.exe<br>**App Type:** Desktop app |
-|OneDrive Sync Client |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** onedrive.exe<br>**App Type:** Desktop app|
-|OneDrive app |**Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Microsoftskydrive<br>**Product version:** 17.21.0.0 (and above) **App Type:** Universal app|
+|Microsoft OneDrive |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** onedrive.exe<br>**App Type:** Desktop app|
 |Notepad |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** notepad.exe<br>**App Type:** Desktop app |
 |Microsoft Paint |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mspaint.exe<br>**App Type:** Desktop app |
 |Microsoft Remote Desktop |**Publisher:** `O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Binary Name:** mstsc.exe<br>**App Type:** Desktop app |
