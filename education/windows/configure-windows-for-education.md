@@ -20,14 +20,14 @@ We want all students to have the chance to use the apps they need for success in
 
 In Windows 10, version 1703 (Creators Update), it is straightforward to configure Windows to be education ready.
 
-| Area | How to configure | What this does | Notes | 
-| --- | --- | --- | --- | 
-| **Diagnostic Data** | **SetEduPolicies** | Sets Diagnostic Data to [Basic](https://technet.microsoft.com/itpro/windows/configure/configure-windows-telemetry-in-your-organization) | On Windows 10 Education or Windows 10 Pro Education, this is already set |
-| **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | On Windows 10 Education or Windows 10 Pro Education, this is already set |
-| **Cortana** | **AllowCortana** | Disables Cortana | * Cortana is enabled by default on all editions in Windows 10, version 1703</br></br> * If using Windows 10 Pro Education or Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. You can use the **AllowCortana** policy to turn it off. |
-| **Safe search** | **SetEduPolicies** | Locks Bing safe search to Strict in Microsoft Edge | On Windows 10 Education or Windows 10 Pro Education, this is already set |
-| **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
-| **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready | * Any app can detect Windows is running in an education ready configuration through [IsEducationEnvironment](https://docs.microsoft.com/en-us/uwp/api/windows.system.profile.educationsettings)</br></br> * On Windows 10 Education or Windows 10 Pro Education, this is already set |
+| Area | How to configure | What this does | Windows 10 Education | Windows 10 Pro Education | Windows 10 S | 
+| --- | --- | --- | --- | --- | === |
+| **Diagnostic Data** | **SetEduPolicies** | Sets Diagnostic Data to [Basic](https://technet.microsoft.com/itpro/windows/configure/configure-windows-telemetry-in-your-organization) | This is already set | This is already set | The policy must be set |
+| **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
+| **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. You can use the **AllowCortana** policy to turn it off. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. You can use the **AllowCortana** policy to turn it off. | You can use the **AllowCortana** policy to turn it off. |
+| **Safe search** | **SetEduPolicies** | Locks Bing safe search to Strict in Microsoft Edge | This is already set | This is already set | The policy must be set |
+| **Bing search advertising** | Ad free search with Bing | Disables ads when searching the internet with Bing in Microsoft Edge | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) | Depending on your specific requirements, there are different ways to configure this as detailed in [Ad-free search with Bing](#ad-free-search-with-bing) |
+| **Apps** | **SetEduPolicies** | Preinstalled apps like Microsoft Edge, Movies & TV, Groove, and Skype become education ready </br></br> * Any app can detect Windows is running in an education ready configuration through [IsEducationEnvironment](https://docs.microsoft.com/en-us/uwp/api/windows.system.profile.educationsettings) | This is already set | This is already set | The policy must be set |
 
 
 ## Recommended configuration
@@ -41,7 +41,7 @@ It is easy to be education ready when using Microsoft products. We recommend the
 
     You can [sign up to learn more about Intune for Education](https://info.microsoft.com/US-WNDWS-CNTNT-FY17-01Jan-17-IntuneforEducationlandingpageandnurture292531_01Registration-ForminBody.html).
 
-3. On PCs running Windows 10, version 1703  (Windows 10 Pro Education or Windows 10 Education):
+3. On PCs running Windows 10, version 1703:
   1. Provision the PC using one of these methods:
     * [Provision PCs with the Set up School PCs app](use-set-up-school-pcs-app.md) - This will automatically set both **SetEduPolicies** to True and **AllowCortana** to False.
     * [Provision PCs with a custom package created with Windows Configuration Designer](https://technet.microsoft.com/en-us/itpro/windows/configure/provisioning-create-package) - Make sure to set both **SetEduPolicies** to True and **AllowCortana** to False.
