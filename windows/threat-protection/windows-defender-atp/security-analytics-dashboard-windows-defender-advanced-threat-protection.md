@@ -1,6 +1,6 @@
 ---
 title: View the Security Analytics dashboard
-description: Use the Security Analytics dashboard to assess and improve the security state of your organization by analyzing various security control tiles. Use the recommended improvement actions and retrieve list of machines that need remediation.
+description: Use the Security Analytics dashboard to assess and improve the security state of your organization by analyzing various security control tiles. Use the recommended improvement actions based on the list of machines that need remediation.
 keywords: security analytics, dashboard, antivirus recommendations, security control state, security score, score improvement
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
