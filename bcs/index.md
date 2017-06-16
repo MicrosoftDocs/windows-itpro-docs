@@ -614,83 +614,7 @@ description: Learn about the product documentation and resources available for B
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>On-premises Active Directory to Azure AD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </li>                                        
                         </ul>
                     </li>
                     <li>
@@ -698,11 +622,11 @@ description: Learn about the product documentation and resources available for B
                         <ul id="troub-support" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>Looking for help or can't find what you need? Try these resources.</p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://partnercenter.microsoft.com/partner/home">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -713,7 +637,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Find a Partner</h3>
-                                                    <p>Locate a Microsoft-certified service provider who can help you locally or remotely. </p>
+                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified service provider who can help you locally or remotely. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -731,7 +655,7 @@ description: Learn about the product documentation and resources available for B
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Business Cloud Suite FAQ</h3>
+                                                    <h3>Business Cloud Suite FAQ - Coming soon</h3>
                                                     <p>Browse our list of Frequently Asked Questions.</p>
                                                 </div>
                                             </div>
@@ -750,7 +674,7 @@ description: Learn about the product documentation and resources available for B
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Troubleshoot problems</h3>
+                                                    <h3>Troubleshoot problems - Coming soon</h3>
                                                     <p>Find solutions for common BCS issues.</p>
                                                 </div>
                                             </div>
@@ -769,52 +693,14 @@ description: Learn about the product documentation and resources available for B
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft Technical Support</h3>
+                                                    <h3>Microsoft Technical Support - Coming soon</h3>
                                                     <p>Submit a technical support request for Business Cloud Suite (charges may apply).</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </li>                           
                         </ul>
                     </li>
                     <li>
