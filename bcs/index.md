@@ -18,7 +18,7 @@ description: Learn about the product documentation and resources available for B
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
-                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/i_overview.svg" alt="Learn about BCS" />
+                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/ih_learn-about.svg" alt="Learn about BCS" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -36,11 +36,11 @@ description: Learn about the product documentation and resources available for B
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage bgdAccent1">
-                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="Get started using BCS" />
+                                        <img data-hoverimage="/media/common/ih_tools.svg" src="/media/common/ih_tools.svg" alt="Get started using BCS" />
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">For Partners and IT admins:<br />Get Started using BCS</span>
+                                    <span class="likeAnH3">For Partners and IT admins:<br />Get Started with Business Cloud Suite</span>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ description: Learn about the product documentation and resources available for B
                 <ul id="partner-it">
                     <li>
                         <a data-default="true" href="#getstarted">Get Started</a>
-                        <ul id="getstarted" class="cardsA">
+                        <ul id="getstarted" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Get started and make the move from an unmanaged mix of legacy apps, services, and devices to an always up-to-date cloud productivity suite with easy management of PCs and mobile apps.</p>
@@ -69,7 +69,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_download-install.svg" alt="Select the scenario that applies to you and get started with BCS" />
+                                                        <img src="/media/common/i_get-started.svg" alt="Select the scenario that applies to you and get started with BCS" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -245,68 +245,11 @@ description: Learn about the product documentation and resources available for B
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Create a group and assign a policy</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#device-mgmt">Device management</a>
-                        <ul id="device-mgmt" class="cardsC">
+                        <ul id="device-mgmt" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -369,68 +312,11 @@ description: Learn about the product documentation and resources available for B
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#policies">Policies</a>
-                        <ul id="policies" class="cardsC">
+                        <ul id="policies" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -443,7 +329,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_policy.svg" alt="Create a new policy" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -462,7 +348,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_code-edit.svg" alt="Edit a policy" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -481,7 +367,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_config-tools.svg" alt="Delete a policy" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -493,68 +379,11 @@ description: Learn about the product documentation and resources available for B
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#migration">Migration</a>
-                        <ul id="migration" class="cardsC">
+                        <ul id="migration" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -567,7 +396,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_search.svg" alt="Identity integration" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -586,7 +415,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_upgrade.svg" alt="Upgrade to Windows 10" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -615,7 +444,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_portal.svg" alt="Find a Microsoft-certified service provider" />
+                                                        <img src="/media/common/i_search.svg" alt="Find a Microsoft-certified service provider" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -653,7 +482,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_investigate.svg" alt="Find solutions for common BCS issues" />
+                                                        <img src="/media/common/i_debug.svg" alt="Find solutions for common BCS issues" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -688,7 +517,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#adv-mgmt">Advanced management</a>
-                        <ul id="adv-mgmt" class="cardsC">
+                        <ul id="adv-mgmt" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -701,7 +530,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_management.svg" alt="Microsoft Intune" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -720,7 +549,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/logos/logo_Windows.svg" alt="Learn more about Windows 10" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -739,69 +568,12 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_download-install.svg" alt="Add a zero-touch deployment profile" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Zero touch deployment</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Zero-touch deployment - coming soon</h3>
+                                                    <p>Add a zero-touch deployment profile to simplify device setup with Windows Autopilot.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -812,7 +584,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#general-admin">General administration</a>
-                        <ul id="general-admin" class="cardsC">
+                        <ul id="general-admin" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -825,7 +597,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_benefits.svg" alt="Add a user" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -844,7 +616,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_web.svg" alt="Add a domain" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -863,7 +635,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_protect.svg" alt="Manage passwords" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -882,7 +654,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_tools.svg" alt="Manage changes" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -901,7 +673,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_multi-connect.svg" alt="Add a group" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -920,7 +692,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_code-blocks.svg" alt="Resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -939,7 +711,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_extend.svg" alt="Billing" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -958,7 +730,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_drivers.svg" alt="Settings" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -977,7 +749,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_portal.svg" alt="Reports" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -991,7 +763,7 @@ description: Learn about the product documentation and resources available for B
                             </li>
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Not seeing what you need? Check out the <a href="https://support.office.com/en-us/article/Office-365-for-business-%25E2%2580%2593-Admin-help-17d3ff3f-3601-466e-b5a1-482b31cfb791?ui=en-US&amp;rs=en-US&amp;ad=US">Office 365 Admin Help</a> for more info. </p>
+                                    <p>Not seeing what you need? Check out the <a href="https://support.office.com/en-us/article/Office-365-for-business-%25E2%2580%2593-Admin-help-17d3ff3f-3601-466e-b5a1-482b31cfb791?ui=en-US&amp;rs=en-US&amp;ad=US" target="_blank">Office 365 Admin Help</a> for more info. </p>
                                 </div>
                             </li>
                         </ul>
@@ -1003,7 +775,7 @@ description: Learn about the product documentation and resources available for B
                 <ul id="i-worker">
                     <li>
                         <a data-default="true" href="#i-worker-1">Placeholder 1</a>
-                        <ul id="i-worker-1" class="cardsC">
+                        <ul id="i-worker-1" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Lorem ipsum…</p>
@@ -1051,7 +823,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a data-default="true" href="#i-worker-2">Placeholder 2</a>
-                        <ul id="i-worker-2" class="cardsC">
+                        <ul id="i-worker-2" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Lorem ipsum…</p>
