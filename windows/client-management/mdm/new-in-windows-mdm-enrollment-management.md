@@ -1237,6 +1237,11 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Power/HibernateTimeoutPluggedIn</li>
 <li>Power/StandbyTimeoutOnBattery</li>
 <li>Power/StandbyTimeoutPluggedIn</li>
+<li>Update/ScheduledInstallEveryWeek</li>
+<li>Update/ScheduledInstallFirstWeek</li>
+<li>Update/ScheduledInstallFourthWeek</li>
+<li>Update/ScheduledInstallSecondWeek</li>
+<li>Update/ScheduledInstallThirdWeek</li>
 </ul>
 </td></tr>
 <tr class="odd">
