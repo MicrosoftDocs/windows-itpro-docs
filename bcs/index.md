@@ -56,7 +56,7 @@ description: Learn about the product documentation and resources available for B
                 <ul id="partner-it">
                     <li>
                         <a data-default="true" href="#getstarted">Get Started</a>
-                        <ul id="getstarted" class="cardsC">
+                        <ul id="getstarted" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
