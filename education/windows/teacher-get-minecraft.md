@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
 author: trudyha
+ms.author: trudyha
 ---
 
 # For teachers - get Minecraft: Education Edition
