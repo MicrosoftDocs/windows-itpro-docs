@@ -28,11 +28,8 @@ To get Whiteboard to Whiteboard collaboration up and running, you’ll need to m
 - Currently not utilizing Office 365 Germany or Office 365 	operated by 21Vianet
 - Surface Hub needs to be updated to Windows 10, version 1607 or newer
 - Port 443 needs to be open since Whiteboard makes standard https requests
-- Users must be able to sign in to Office 365
-    - In manual settings, **Allow users to sign in to Office 365 to access their meetings and files** must be set to **On**, or
-    - [In MDM settings](manage-settings-with-mdm-for-surface-hub.md#supported-surface-hub-csp-settings), using the Surface Hub CSP, **Disable "My meetings and files" feature in Start menu** must be set to **False**
 
-
+ 
 >[!NOTE]
 >Collaborative sessions can only take place between users within the same tenant, so users outside of your organization won’t be able to join even if they have a Surface Hub.
 
@@ -70,14 +67,9 @@ The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernApp
 
 Whiteboard also has other MDM settings that can be managed and set for defaults, exporting, and sharing. You can see these additional settings in [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md#whiteboard-collaboration-settings).
 
-If you don't have MDM configured with your device, you can also toggle **Allow users to sign in to Office 365 to access their meetings and files** in **Settings** > **Session & power**, which will effectively enable or disable collaboration.
 
-## How settings conflicts are resolved
 
-You might have noticed that there are several methods for controlling Whiteboard to Whiteboard collaboration: the manual setting **Allow users to sign in to Office 365 to access their meetings and files**, and the MDM settings **Enable sign-in** and **Disable sign-in**. It's important to understand what the end result will be when those settings conflict.
 
-1. The MDM setting **Disable sign-in=TRUE** overrides both **Enable sign-in=TRUE** and **Allow users to sign in to Office 365 to access their meetings and files=ON**.
-2. The MDM setting **Enable sign-in=TRUE** overrides **Allow users to sign in to Office 365 to access their meetings and files=OFF**.
 
 ## Related topics
 
