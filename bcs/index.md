@@ -56,10 +56,10 @@ description: Learn about the product documentation and resources available for B
                 <ul id="partner-it">
                     <li>
                         <a data-default="true" href="#getstarted">Get Started</a>
-                        <ul id="getstarted" class="cardsE">
+                        <ul id="getstarted" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>Get started and make the move from an unmanaged mix of legacy apps, services, and devices to an always up-to-date cloud productivity suite with easy management of PCs and mobile apps.</p>
                                 </div>
                             </li>
                             <li>
@@ -74,13 +74,14 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Get started with Business Cloud Suite</h3>
-                                                    <p>Select the scenario that applies to you to get started with BCS setup and deployment.</p>
+                                                    <p>Learn about Business Cloud Suite (BCS), how to purchase it for your customer, and follow the setup instructions that best fits your scenario.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
+                            <!-- 
                             <li>
                                 <a href="https://support.office.com/en-us/article/Prerequisites-for-setting-up-Business-Cloud-Suite-7770e280-3a6c-436f-a157-b008a2744f51">
                                     <div class="cardSize">
@@ -176,25 +177,7 @@ description: Learn about the product documentation and resources available for B
                                     </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                           -->
                         </ul>
                     </li>
                     <li>
