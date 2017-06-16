@@ -15301,7 +15301,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 2147483647 MB.
+<p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1.
 
 <p style="margin-left: 20px">Enable this policy if computers in your environment have extremely limited hard drive space.
 

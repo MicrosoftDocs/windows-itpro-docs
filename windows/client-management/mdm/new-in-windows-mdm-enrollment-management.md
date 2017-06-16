@@ -1239,6 +1239,14 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Power/StandbyTimeoutPluggedIn</li>
 </ul>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top">Updated the CSP in Windows 10, version 1709. Added the following settings:
+<ul>
+<li>DeviceTagging/Group</li>
+<li>DeviceTagging/Criticality</li>
+</ul>
+</td></tr>
 </tbody>
 </table>
 
