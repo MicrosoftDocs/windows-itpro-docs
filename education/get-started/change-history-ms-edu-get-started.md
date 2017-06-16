@@ -18,7 +18,7 @@ This topic lists the changes in the Microsoft Education IT admin get started.
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md) | Includes the following updates: </br></br> - New configuration guidance for IT administrators to deploy Microsoft Teams.</br></br> - Updated steps for School Data Sync to show the latest workflow and user experience. |
+| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md) | Includes the following updates:</br></br> - New configuration guidance for IT administrators to deploy Microsoft Teams.</br> - Updated steps for School Data Sync to show the latest workflow and user experience. |
 
 ## May 2017
 

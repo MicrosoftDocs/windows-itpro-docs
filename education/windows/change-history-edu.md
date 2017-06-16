@@ -18,7 +18,7 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | Includes the following updates: </br></br> - New configuration guidance for IT administrators to enable students and school personnel, who use assistive technology apps not available in the Microsoft Store for Education and use devices running Windows 10 S, to be successful in the classroom and in their jobs.</br></br> - New configuration information when using Windows 10 S for education. |
+| [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | Includes the following updates:</br></br> - New configuration guidance for IT administrators to enable students and school personnel, who use assistive technology apps not available in the Microsoft Store for Education and use devices running Windows 10 S, to be successful in the classroom and in their jobs.</br> - New configuration information when using Windows 10 S for education. |
 | [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | New configuration guidance for IT administrators to enable students and school personnel, who use assistive technology apps not available in the Microsoft Store for Education and use devices running Windows 10 S, to be successful in the classroom and in their jobs. |
 | [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the recommended apps section to include information about Office 365 for Windows 10 S (Education Preview). |
 
