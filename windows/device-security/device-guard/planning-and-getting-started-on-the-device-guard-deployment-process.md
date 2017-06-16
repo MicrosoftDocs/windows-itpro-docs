@@ -38,11 +38,7 @@ This topic provides a roadmap for planning and getting started on the Device Gua
 
     For operational scenarios that require elevated security, certain applications with known Code Integrity bypasses may represent a security risk if you whitelist them in your code integrity policies. Other applications where older versions of the application had vulnerabilities also represent a risk. Therefore, you may want to deny or block such applications from your code integrity policies. For applications with vulnerabilities, once the vulnerabilities are fixed you can create a rule that only allows the fixed or newer versions of that application. The decision to allow or block applications depends on the context and on how the reference system is being used.
 
-    Security professionals collaborate with Microsoft continuously to help protect customers. With the help of their valuable reports, Microsoft has identified a list of known applications that an attacker could potentially use to bypass Device Guard code integrity policies. (See the Acknowledgments section of [Deploy code integrity policies: steps](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps)).
-Depending on the context, you may want to block these applications. To see this list of applications and for use case examples, such as disabling Windows Script Host (WHS) or disabling msbuild.exe, see Deploy code integrity policies: steps.
-
-
-
+    Security professionals collaborate with Microsoft continuously to help protect customers. With the help of their valuable reports, Microsoft has identified a list of known applications that an attacker could potentially use to bypass Device Guard code integrity policies. Depending on the context, you may want to block these applications. To view this list of applications and for use case examples, such as disabling msbuild.exe, see [Deploy code integrity policies: steps](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
 
 
 
