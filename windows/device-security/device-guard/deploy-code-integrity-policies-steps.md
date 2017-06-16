@@ -65,11 +65,11 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 >[!Note]
 >This application list is fluid and will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
-When an application version is upgraded, you may want to add deny rules to your code integrity policies for that application’s previous, less secure versions, especially to fix a vulnerability or potential Device Guard bypass. Certain vendors may or may not intend to update their software to work with Device Guard. 
+Certain software applications may allow additional code to run by design. These types of applications should be blocked by your Device Guard policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Device Guard bypass, you should add deny rules to your code integrity policies for that application’s previous, less secure versions. 
 
 Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in in-box PowerShell modules that allowed an attacker to bypass Device Guard code integrity policies. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
-Microsoft recommends that you block the following applications and PowerShell files and merge the following policy into your existing policy by adding these deny rules using the Merge-CIPolicy cmdlet:
+Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
