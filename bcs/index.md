@@ -262,7 +262,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_lock.svg" alt="Remove company data from a device" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -281,7 +281,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_setup.svg" alt="Perform factory reset on a Windows 10 device" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -294,18 +294,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/en-us/article/Prepare-for-Office-client-installation-ed34fff3-2881-4ed4-9906-1ba6bb8dd804?ui=en-US&rs=en-US&ad=US">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_download-monitor.svg" alt="Prepare for Office client installation" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Install/uninstall Office on a Windows 10 device</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Prepare for Office client installation</h3>
+                                                    <p>Use Business Cloud Suite to automatically install the 32-bit Office apps to Windows 10 computers and keep them current with updates.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -396,7 +396,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_search.svg" alt="Identity integration" />
+                                                        <img src="/media/common/i_investigate.svg" alt="Identity integration" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -591,7 +591,7 @@ description: Learn about the product documentation and resources available for B
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/en-us/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-US&ad=US">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -705,7 +705,7 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/en-us/article/Billing-in-Office-365-for-business-–-Admin-Help-ea7bf1b2-1c2f-477f-a813-313e3ce0d896?ui=en-US&rs=en-US&ad=US">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
