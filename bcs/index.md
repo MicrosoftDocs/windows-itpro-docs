@@ -69,7 +69,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_get-started.svg" alt="Select the scenario that applies to you and get started with BCS" />
+                                                        <img src="/media/common/i_download-install.svg" alt="Select the scenario that applies to you and get started with BCS" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -182,7 +182,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#user-mgmt">User management</a>
-                        <ul id="user-mgmt" class="cardsC">
+                        <ul id="user-mgmt" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -602,7 +602,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#troub-support">Troubleshooting and support</a>
-                        <ul id="troub-support" class="cardsC">
+                        <ul id="troub-support" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Looking for help or can't find what you need? Try these resources.</p>
