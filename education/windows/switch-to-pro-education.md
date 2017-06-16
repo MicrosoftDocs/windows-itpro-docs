@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
+ms.author: celested
 ---
 
 # Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S

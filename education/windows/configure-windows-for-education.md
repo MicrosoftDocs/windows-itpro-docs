@@ -6,6 +6,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
 author: CelesteDG
+ms.author: celested
 ---
 
 # Windows 10 configuration recommendations for education customers
