@@ -1242,6 +1242,9 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Update/ScheduledInstallFourthWeek</li>
 <li>Update/ScheduledInstallSecondWeek</li>
 <li>Update/ScheduledInstallThirdWeek</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
 </ul>
 </td></tr>
 <tr class="odd">
