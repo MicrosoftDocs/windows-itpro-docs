@@ -1237,6 +1237,9 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Power/HibernateTimeoutPluggedIn</li>
 <li>Power/StandbyTimeoutOnBattery</li>
 <li>Power/StandbyTimeoutPluggedIn</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
 </ul>
 </td></tr>
 <tr class="odd">
