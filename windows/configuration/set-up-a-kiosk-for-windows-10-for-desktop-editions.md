@@ -21,7 +21,7 @@ localizationpriority: high
 
 A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions. 
 
-- Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application (Windows 10 Enterprise or Education only).
+- Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer (Windows 10, version 1607 or later) to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application (Windows 10 Enterprise or Education only).
 
     or
     

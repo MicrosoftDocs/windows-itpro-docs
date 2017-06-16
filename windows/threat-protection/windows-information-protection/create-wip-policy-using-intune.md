@@ -1,5 +1,5 @@
 ---
-title: Create a Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10)
+title: Create a Windows Information Protection (WIP) with enrollment policy using the classic console for Microsoft Intune (Windows 10)
 description: Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 ms.assetid: 4b307c99-3016-4d6a-9ae7-3bbebd26e721
 ms.prod: w10
@@ -10,12 +10,12 @@ author: eross-msft
 localizationpriority: high
 ---
 
-# Create a Windows Information Protection (WIP) policy using Microsoft Intune
+# Create a Windows Information Protection (WIP) using the classic console for Microsoft Intune
 
 **Applies to:**
 
--   Windows 10, version 1703
--   Windows 10 Mobile (except Microsoft Azure Rights Management, which is only available on the desktop)
+- Windows 10, version 1607 and later
+- Windows 10 Mobile, version 1607 and later
 
 Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network.
 
@@ -39,7 +39,7 @@ During the policy-creation process in Intune, you can choose the apps you want t
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
 
 >[!Important]
->WIP-aware apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
+>Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
 #### Add a store app rule to your policy
 For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
@@ -309,13 +309,13 @@ If you're running into compatibility issues where your app is incompatible with 
 ### Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
-We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Override** or **Block**.
+We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Allow Overrides** or **Hide Overrides**.
 
 |Mode |Description |
 |-----|------------|
-|Block |WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
-|Override |WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](https://go.microsoft.com/fwlink/p/?LinkID=746459). |
-|Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
+|Hide Overrides|WIP looks for inappropriate data sharing practices and stops the employee from completing the action. This can include sharing info across non-enterprise-protected apps in addition to sharing enterprise data between other people and devices outside of your enterprise.|
+|Allow Overrides|WIP looks for inappropriate data sharing, warning employees if they do something deemed potentially unsafe. However, this management mode lets the employee override the policy and share the data, logging the action to your audit log, accessible through the [Reporting CSP](https://go.microsoft.com/fwlink/p/?LinkID=746459). |
+|Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would’ve been prompted for employee interaction while in Allow Overrides mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
 |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn’t automatically reapplied if you turn WIP protection back on.|
 
 ![Microsoft Intune, Set the protection mode for your data](images/intune-protection-mode.png)

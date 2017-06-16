@@ -1,7 +1,7 @@
 ---
 title: Windows 10 configuration recommendations for education customers
 description: Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school.
-keywords: ["Windows 10 deployment", "recommendations", "privacy settings", "school", "education", "configurations"]
+keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations
 ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
