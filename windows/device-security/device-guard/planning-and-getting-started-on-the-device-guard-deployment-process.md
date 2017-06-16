@@ -59,3 +59,5 @@ This topic provides a roadmap for planning and getting started on the Device Gua
     >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
 
     For information about enabling VBS features, see [Deploy Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md).
+
+<br />
