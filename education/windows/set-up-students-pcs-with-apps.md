@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
 author: CelesteDG
+ms.author: celested
 ---
 
 # Provision student PCs with apps

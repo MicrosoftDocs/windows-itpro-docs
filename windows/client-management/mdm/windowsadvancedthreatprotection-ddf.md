@@ -45,7 +45,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/WindowsAdvancedThreatProtection</MIME>
+            <MIME>com.microsoft/1.2/MDM/WindowsAdvancedThreatProtection</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -266,6 +266,75 @@ The XML below is the current version for this CSP.
               <MIME>text/plain</MIME>
             </DFType>
           </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DeviceTagging</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Represents Windows Defender Advanced Threat Protection configuration for managing role base access and device tagging</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFTitle>Device Tagging</DFTitle>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>Group</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Device group identifiers</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFTitle>Device Group Identifier</DFTitle>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Criticality</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Asset criticality value. 0 - Normal, 1 - Critical.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFTitle>Device Criticality</DFTitle>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
         </Node>
       </Node>
 </MgmtTree>
