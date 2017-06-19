@@ -11,6 +11,9 @@ author: nickbrower
 
 # Policy CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
 The Policy configuration service provider has the following sub-categories:
@@ -154,9 +157,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -192,9 +192,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -233,9 +230,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -278,9 +272,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 > [!NOTE]
 > This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -319,9 +310,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -358,9 +346,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   0 – Disabled.
 -   1 (default) – Manual start.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -396,9 +381,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <p style="margin-left: 20px">The default value is an empty string, which allows all email accounts on the device to sync email. Otherwise, the string should contain a pipe-separated list of domains that are allowed to sync email on the device. For example, "contoso.com|fabrikam.net|woodgrove.gov".
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -412,9 +394,6 @@ If you enable this setting, the administrator can create a list of approved Acti
 If you disable or do not configure this policy setting, ActiveX controls prompt the user for administrative credentials before installation.
 
 Note: Wild card characters cannot be used when specifying the host URLs.
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -432,8 +411,6 @@ ADMX Info:
 <!--StartDescription-->
 This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -449,8 +426,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -468,8 +443,6 @@ ADMX Info:
 <!--StartDescription-->
 Enables automatic cleanup of appv packages that were added after Windows10 anniversary release.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -486,8 +459,6 @@ ADMX Info:
 <!--StartDescription-->
 Enables scripts defined in the package manifest of configuration files that should run.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -503,8 +474,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Enables a UX to display to the user when a publishing refresh is performed on the client.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -532,9 +501,6 @@ Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the
 
 Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -550,8 +516,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -569,8 +533,6 @@ ADMX Info:
 <!--StartDescription-->
 Specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -586,8 +548,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Specifies how new packages should be loaded automatically by App-V on a specific computer.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -605,8 +565,6 @@ ADMX Info:
 <!--StartDescription-->
 Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -623,8 +581,6 @@ ADMX Info:
 <!--StartDescription-->
 Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -640,8 +596,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -677,9 +631,6 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -713,9 +664,6 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -751,9 +699,6 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -787,9 +732,6 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -825,9 +767,6 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -843,8 +782,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Specifies the path to a valid certificate in the certificate store.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -862,8 +799,6 @@ ADMX Info:
 <!--StartDescription-->
 This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -879,8 +814,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Specifies the CLSID for a compatible implementation of the IAppvPackageLocationProvider interface.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -898,8 +831,6 @@ ADMX Info:
 <!--StartDescription-->
 Specifies directory where all new applications and updates will be installed.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -915,8 +846,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Overrides source location for downloading package content.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -934,8 +863,6 @@ ADMX Info:
 <!--StartDescription-->
 Specifies the number of seconds between attempts to reestablish a dropped session.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -951,8 +878,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Specifies the number of times to retry a dropped session.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -970,8 +895,6 @@ ADMX Info:
 <!--StartDescription-->
 Specifies that streamed package contents will be not be saved to the local hard disk.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -987,8 +910,6 @@ ADMX Info:
 
 <!--StartDescription-->
 If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -1006,8 +927,6 @@ ADMX Info:
 <!--StartDescription-->
 Verifies Server certificate revocation status before streaming using HTTPS.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -1023,8 +942,6 @@ ADMX Info:
 
 <!--StartDescription-->
 Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc). Only processes whose full path matches one of these items can use virtual components.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -1119,9 +1036,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 </SyncML>
 ```
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1161,9 +1075,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1201,9 +1112,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1243,9 +1151,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   65535 (default) – Not configured.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1288,9 +1193,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1329,9 +1231,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1369,9 +1268,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1426,9 +1322,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">Value evaluation rule - The information for PolicyManager is opaque. There is no most restricted value evaluation. Whenever there is a change to the value, the device parses the node value and enforces specified policies.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1464,9 +1357,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 -   0 (default) – Enable launch of apps.
 -   1 – Disable launch of apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1515,9 +1405,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1555,9 +1442,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 -   1 – Restricted.
 
 <p style="margin-left: 20px">Most restricted value is 1.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1597,9 +1481,6 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25z
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1613,8 +1494,6 @@ If you enable this policy setting, Windows does not mark file attachments with t
 If you disable this policy setting, Windows marks file attachments with their zone information.
 
 If you do not configure this policy setting, Windows marks file attachments with their zone information.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -1638,8 +1517,6 @@ If you disable this policy setting, Windows shows the check box and Unblock butt
 
 If you do not configure this policy setting, Windows hides the check box and Unblock button.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -1661,8 +1538,6 @@ If you enable this policy setting, Windows tells the registered antivirus progra
 If you disable this policy setting, Windows does not call the registered antivirus programs when file attachments are opened.
 
 If you do not configure this policy setting, Windows does not call the registered antivirus programs when file attachments are opened.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -1719,9 +1594,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1759,9 +1631,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1801,9 +1670,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default for this policy must be on for consumer devices (defined as local or Microsoft account connected device) and off for enterprise devices (such as cloud domain-joined, cloud domain-joined in an on-premise only environment, cloud domain-joined in a hybrid environment, and BYOD).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1815,8 +1681,6 @@ This policy setting disallows AutoPlay for MTP devices like cameras or phones.
 If you enable this policy setting, AutoPlay is not allowed for MTP devices like cameras or phones.
 
 If you disable or do not configure this policy setting, AutoPlay is enabled for non-volume devices.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -1847,8 +1711,6 @@ b) Revert back to pre-Windows Vista behavior of automatically executing the auto
 
 If you disable or not configure this policy setting, Windows Vista or later will prompt the user whether autorun command is to be run.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -1878,8 +1740,6 @@ This policy setting disables Autoplay on additional types of drives. You cannot 
 If you disable or do not configure this policy setting, AutoPlay is enabled.
 
 Note: This policy setting appears in both the Computer Configuration and User Configuration folders. If the policy settings conflict, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -1927,9 +1787,6 @@ ADMX Info:
 -   6 -XTS 128
 -   7 - XTS 256
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -1969,9 +1826,6 @@ ADMX Info:
 <p style="margin-left: 20px">If this is not set or it is deleted, the default value of 1 (Allow) is used.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2013,9 +1867,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2052,9 +1903,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default)– Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2090,9 +1938,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">If this policy is not set or it is deleted, the default local radio name is used.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2126,14 +1971,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is an empty string.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowaddressbardropdown"></a>**Browser/AllowAddressBarDropdown**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality. 
 
@@ -2146,9 +2011,6 @@ ADMX Info:
 -   1 (default) – Allowed. Address bar drop-down is enabled.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2195,9 +2057,6 @@ ADMX Info:
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Save form entries** is greyed out.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2241,9 +2100,6 @@ ADMX Info:
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <p style="margin-left: 20px">When this policy is set to 0 (not allowed), the Microsoft Edge for Windows 10 Mobile tile will appear greyed out, and clicking on the tile will display a message indicating theat Internet browsing has been disabled by your administrator.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2290,9 +2146,6 @@ ADMX Info:
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Cookies** is greyed out.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2334,9 +2187,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2383,9 +2233,6 @@ ADMX Info:
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Send Do Not Track requests** is greyed out.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2421,9 +2268,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2461,9 +2305,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2499,9 +2340,6 @@ ADMX Info:
 
 -   0 – Adobe Flash content is automatically loaded and run by Microsoft Edge.
 -   1 (default) – Users must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2541,14 +2379,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowmicrosoftcompatibilitylist"></a>**Browser/AllowMicrosoftCompatibilityList**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to use the Microsoft compatibility list in Microsoft Edge. The Microsoft compatibility list is a Microsoft-provided list that enables sites with known compatibility issues to display properly. 
 By default, the Microsoft compatibility list is enabled and can be viewed by visiting "about:compat". 
@@ -2561,9 +2419,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 -   1 (default) – Enabled.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2610,9 +2465,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the settings **Offer to save password** and **Manage my saved passwords** are greyed out.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2658,14 +2510,34 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Block pop-ups** is greyed out.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-allowsearchenginecustomization"></a>**Browser/AllowSearchEngineCustomization**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows search engine customization for MDM-enrolled devices. Users can change their default search engine. 
   
@@ -2677,9 +2549,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2718,9 +2587,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2767,14 +2633,34 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to clear browsing data on exiting Microsoft Edge.
 
@@ -2791,14 +2677,34 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 2.  Close the Microsoft Edge window.
 3.  Open Microsoft Edge and start typing the same URL in address bar. Verify that it does not auto-complete from history.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-configureadditionalsearchengines"></a>**Browser/ConfigureAdditionalSearchEngines**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you to add up to 5 additional search engines for MDM-enrolled devices. 
  
@@ -2817,14 +2723,34 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-disablelockdownofstartpages"></a>**Browser/DisableLockdownOfStartPages**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Boolean value that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when the Browser/HomePages policy is in effect. 
   
@@ -2840,9 +2766,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1  – Disable lockdown of the Start pages and allow users to modify them.  
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2884,9 +2807,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   Not configured. The device checks for updates from Microsoft Update.
 -   Set to a URL location of the enterprise site list.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -2918,9 +2838,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartDescription-->
 > [!IMPORTANT]
 > This policy (introduced in Windows 10, version 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2960,9 +2877,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">The data type is a string.
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the string should contain the URL of the webpage users will see the first time Microsoft Edge is run. For example, “contoso.com”.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3005,10 +2919,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 > [!NOTE]
 > Turning this setting off, or not configuring it, sets your default Start pages to the webpages specified in App settings.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3045,14 +2955,34 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   0 (default) – Users can access the about:flags page in Microsoft Edge.
 -   1 – Users can't access the about:flags page in Microsoft Edge.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-preventfirstrunpage"></a>**Browser/PreventFirstRunPage**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to enable or disable the First Run webpage. On the first explicit user-launch of Microsoft Edge, a First Run webpage hosted on Microsoft.com opens automatically via a FWLINK. This policy allows enterprises (such as those enrolled in a zero-emissions configuration) to prevent this page from opening.
 
@@ -3063,14 +2993,34 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-preventlivetiledatacollection"></a>**Browser/PreventLiveTileDataCollection**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Microsoft can collect information to create a Live Tile when pinning a site to Start from Microsoft Edge.
 
@@ -3080,9 +3030,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1 – Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
 
 <p style="margin-left: 20px">Most restricted value is 1.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3122,9 +3069,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3160,9 +3104,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 -   0 (default) – Off.
 -   1 – On.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3203,9 +3144,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 -   0 (default) – The localhost IP address is shown.
 -   1 – The localhost IP address is hidden.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3249,14 +3187,34 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-setdefaultsearchengine"></a>**Browser/SetDefaultSearchEngine**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows you configure the default search engine for your employees. By default, your employees can change the default search engine at any time. If you want to prevent your employees from changing the default search engine that you set, you can do so by configuring the AllowSearchEngineCustomization policy.
 
@@ -3273,9 +3231,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1 - Allows you to configure the default search engine for your employees.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3318,9 +3273,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1 – Interstitial pages are shown.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3371,9 +3323,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 <li>Verify that the favorites added to Internet Explorer show up in the favorites list in Microsoft Edge.
 </ol>
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3411,9 +3360,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3460,9 +3406,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3499,9 +3442,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   0 – Do not allow the cellular data channel. The user can turn it on. This value is not supported in Windows 10, version 1511.
 -   1 (default) – Allow the cellular data channel. The user can turn it off.
 -   2 - Allow the cellular data channel. The user cannot turn it off.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3550,9 +3490,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 2.  Click on the SIM (next to the signal strength icon) and select **Properties**.
 3.  On the Properties page, select **Data roaming options**.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3591,9 +3528,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 -   1 (default) - Allow (CDP service available).
 -   0 - Disable (CDP service not available).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3636,9 +3570,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1 (default) – Allow NFC capabilities.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3684,9 +3615,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3724,9 +3652,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 -   1 (default) – VPN can use any connection, including cellular.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3766,9 +3691,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3778,9 +3700,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 This policy setting configures secure access to UNC paths.
 
 If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -3806,8 +3725,6 @@ Note: The user's domain password will be cached in the system vault when using t
 
 To configure Windows Hello for Business, use the Administrative Template policies under Windows Hello for Business.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -3829,8 +3746,6 @@ If you enable this policy setting, a domain user can't set up or sign in with a 
 If you disable or don't configure this policy setting, a domain user can set up and use a picture password.
 
 Note that the user's domain password will be cached in the system vault when using this feature.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -3856,8 +3771,6 @@ By default, the password reveal button is displayed after a user types a passwor
 
 The policy applies to all Windows components and applications that use the Windows system controls, including Internet Explorer.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -3877,8 +3790,6 @@ This policy setting controls whether administrator accounts are displayed when a
 If you enable this policy setting, all local administrator accounts on the PC will be displayed so the user can choose one and enter the correct password.
 
 If you disable this policy setting, users will always be required to type a user name and password to elevate.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -3924,9 +3835,6 @@ ADMX Info:
 -   0 (default) – Not allowed.
 -   1– Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -3957,9 +3865,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Lists the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3999,9 +3904,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4040,10 +3942,6 @@ ADMX Info:
 > [!NOTE]
 > This policy is not recommended for use in Windows 10.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4061,9 +3959,6 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 - Variable: This connection is costed on a per byte basis.
 
 If this policy setting is disabled or is not configured, the cost of 3G connections is Fixed by default.
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -4090,9 +3985,6 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 - Variable: This connection is costed on a per byte basis.
 
 If this policy setting is disabled or is not configured, the cost of 4G connections is Fixed by default.
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -4142,9 +4034,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4184,9 +4073,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4228,9 +4114,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4270,9 +4153,6 @@ ADMX Info:
 
 -   0 (default) – Not allowed.
 -   1 – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4314,9 +4194,6 @@ ADMX Info:
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4356,9 +4233,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4400,9 +4274,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4442,9 +4313,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4486,9 +4354,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4528,9 +4393,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4572,9 +4434,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4614,9 +4473,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4658,9 +4514,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4699,9 +4552,6 @@ ADMX Info:
 <p style="margin-left: 20px">Valid values: 0–100
 
 <p style="margin-left: 20px">The default value is 50.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4742,9 +4592,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 0, which keeps items in quarantine, and does not automatically remove them.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4780,9 +4627,6 @@ ADMX Info:
  
 <p style="margin-left: 20px">llows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4817,9 +4661,6 @@ ADMX Info:
 
 
 <p style="margin-left: 20px">Allows an administrator to specify a list of directory paths to ignore during a scan. Each path in the list must be separated by a **|**. For example, "C:\\Example|C:\\Example1".
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4862,9 +4703,6 @@ ADMX Info:
  
 <p style="margin-left: 20px">Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4905,9 +4743,6 @@ ADMX Info:
 -   0 (default) – PUA Protection off. Windows Defender will not protect against potentially unwanted applications.
 -   1 – PUA Protection on. Detected items are blocked. They will show in history along with other threats.
 -   2 – Audit mode. Windows Defender will detect potentially unwanted applications, but take no action. You can review information about the applications Windows Defender would have taken action against by searching for events created by Windows Defender in the Event Viewer.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4954,9 +4789,6 @@ ADMX Info:
 -   1 – Monitor incoming files.
 -   2 – Monitor outgoing files.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -4996,9 +4828,6 @@ ADMX Info:
 
 -   1 (default) – Quick scan
 -   2 – Full scan
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5044,9 +4873,6 @@ ADMX Info:
 <p style="margin-left: 20px">For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM.
 
 <p style="margin-left: 20px">The default value is 120
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5099,9 +4925,6 @@ ADMX Info:
 -   7 – Sunday
 -   8 – No scheduled scan
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5147,9 +4970,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 120.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5190,9 +5010,6 @@ ADMX Info:
 <p style="margin-left: 20px">A value of 0 means no check for new signatures, a value of 1 means to check every hour, a value of 2 means to check every two hours, and so on, up to a value of 24, which means to check every day.
 
 <p style="margin-left: 20px">The default value is 8.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5235,9 +5052,6 @@ ADMX Info:
 -   1 (default) – Send safe samples automatically.
 -   2 – Never send.
 -   3 – Send all samples automatically.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5292,9 +5106,6 @@ ADMX Info:
 -   8 – User defined
 -   10 – Block
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5332,9 +5143,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 10.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5371,9 +5179,6 @@ ADMX Info:
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 
 <p style="margin-left: 20px">The default value is 0 (FALSE).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5419,9 +5224,6 @@ ADMX Info:
 -   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5460,10 +5262,6 @@ ADMX Info:
 > [!NOTE]
 > You must use a GUID as the group ID.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5500,9 +5298,6 @@ ADMX Info:
 <p style="margin-left: 20px">Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means "unlimited"; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607.
 
 <p style="margin-left: 20px">The default value is 259200 seconds (3 days).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5541,9 +5336,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 20.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5580,9 +5372,6 @@ ADMX Info:
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.
 
 <p style="margin-left: 20px">The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5621,9 +5410,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 0, which permits unlimited possible bandwidth (optimized for minimal usage of upload bandwidth).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5661,9 +5447,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 500.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5699,9 +5482,6 @@ ADMX Info:
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on battery power. Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set is 40 (for 40%) if you allow uploads on battery.
 
 <p style="margin-left: 20px">The default value is 0. The value 0 (zero) means "not limited" and the cloud service default value will be used.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5743,10 +5523,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 32 GB.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5783,10 +5559,6 @@ ADMX Info:
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the minimum content file size in MB enabled to use Peer Caching. The value 0 means "unlimited" which means the cloud service set default value will be used. Recommended values: 1 MB to 100,000 MB.
 
 <p style="margin-left: 20px">The default value is 100 MB.
-
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5825,9 +5597,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 4 GB.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5864,9 +5633,6 @@ ADMX Info:
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path.
 
 <p style="margin-left: 20px">By default, %SystemDrive% is used to store the cache.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -5907,9 +5673,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 20.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5947,9 +5710,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -5962,8 +5722,6 @@ By default, a user can change the location of their individual profile folders l
 
 If you enable this setting, users are unable to type a new location in the Target box.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -5974,6 +5732,120 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+ 
+<p style="margin-left: 20px">Added in the next major update to Windows 10. Turns On Virtualization Based Security(VBS) at the next reboot. Virtualization Based Security uses the Windows Hypervisor to provide support for security services. Value type is integer. Supported values:
+<ul>
+<li>0 (default) - disable Virtualization Based Security</li>
+<li>1 - enable Virtualization Based Security</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->Added in the next major update to Windows 10. Specifies the platform security level at the next reboot. Value type is integer. Supported values:
+<ul>
+<li>1 (default) - Turns on VBS with Secure Boot. </li>
+<li>3 - Turns on VBS with Secure Boot and DMA. DMA requires hardware support.</li>
+</ul>
+ 
+<p style="margin-left: 20px">
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+ 
+<p style="margin-left: 20px">Added in the next major update to Windows 10. This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer. Supported values:
+<ul>
+<li>0 (default) - (Disabled) Turns off Credential Guard remotely if configured previously without UEFI Lock</li>
+<li>1 - (Enabled with UEFI lock) Turns on CredentialGuard with UEFI lock</li>
+<li>2 - (Enabled without lock) Turns on CredentialGuard without UEFI lock</li>
+
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="deviceinstallation-preventinstallationofmatchingdeviceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceIDs**  
 
@@ -5983,8 +5855,6 @@ This policy setting allows you to specify a list of Plug and Play hardware IDs a
 If you enable this policy setting, Windows is prevented from installing a device whose hardware ID or compatible ID appears in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
 If you disable or do not configure this policy setting, devices can be installed and updated as allowed or prevented by other policy settings.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -6005,8 +5875,6 @@ This policy setting allows you to specify a list of device setup class globally 
 If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server.
 
 If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -6060,9 +5928,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6110,10 +5975,6 @@ ADMX Info:
 > [!IMPORTANT]
 > If this policy is set to 1 (Allowed), the value set by **DeviceLock/ScreenTimeOutWhileLocked** is ignored. To ensure enterprise control over the screen timeout, set this policy to 0 (Not allowed) and use **DeviceLock/ScreenTimeOutWhileLocked** to set the screen timeout period.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6155,9 +6016,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -6208,8 +6066,6 @@ ADMX Info:
 > If **AlphanumericDevicePasswordRequired** is set to 0, then MinDevicePasswordLength = 4 and MinDevicePasswordComplexCharacters = 2.
 
  
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -6287,9 +6143,6 @@ ADMX Info:
 >   - MaxDevicePasswordFailedAttempts
 >   - MaxInactivityTimeDeviceLock
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6333,9 +6186,6 @@ ADMX Info:
 <p style="margin-left: 20px">If all policy values = 0 then 0; otherwise, Min policy value is the most secure value.
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -6383,9 +6233,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6423,9 +6270,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Value type is a string, which is the full image filepath and filename.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6462,9 +6306,6 @@ ADMX Info:
 
 
 <p style="margin-left: 20px">Value type is a string, which is the AppID.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -6517,9 +6358,6 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6562,9 +6400,6 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6604,9 +6439,6 @@ The number of authentication failures allowed before the device will be wiped. A
 
 -   An integer X where 0 &lt;= X &lt;= 999.
 -   0 (default) - No timeout is defined. The default of "0" is Windows Phone 7.5 parity and is interpreted by as "No timeout is defined."
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -6710,9 +6542,6 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6760,9 +6589,6 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <p style="margin-left: 20px">For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6774,8 +6600,6 @@ Disables the lock screen slide show settings in PC Settings and prevents a slide
 By default, users can enable a slide show that will run after they lock the machine.
 
 If you enable this setting, users will no longer be able to modify slide show settings in PC Settings, and no slide show will ever start.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -6827,9 +6651,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6873,9 +6694,6 @@ ADMX Info:
 
 1.   Configure the setting for an app which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -6921,9 +6739,6 @@ ADMX Info:
 1.   Configure the setting for an app which uses GDI.
 2.   Run the app and observe crisp text.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -6958,9 +6773,6 @@ ADMX Info:
 <p style="margin-left: 20px">The datatype is a string.
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//azuretenant.contoso.com/adfs".
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -6997,9 +6809,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a GUID. For example, "E1CF1107-FF90-4228-93BF-26052DD2C714".
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7034,9 +6843,6 @@ ADMX Info:
 <p style="margin-left: 20px">The datatype is a string. 
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MicrosoftEnterpriseCloudPrint/CloudPrint".
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -7073,9 +6879,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain the URL of an endpoint. For example, "https:<span></span>//cloudprinterdiscovery.contoso.com".
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7110,9 +6913,6 @@ ADMX Info:
 <p style="margin-left: 20px">The datatype is an integer. 
 
 <p style="margin-left: 20px">For Windows Mobile, the default value is 20.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -7149,9 +6949,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is an empty string. Otherwise, the value should contain a URL. For example, "http:<span></span>//MopriaDiscoveryService/CloudPrint".
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7174,8 +6971,6 @@ If you enable this policy setting, you can add specific event types to a list by
 
 If you disable or do not configure this policy setting, then the default consent settings that are applied are those specified by the user in Control Panel, or in the Configure Default Consent policy setting.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -7195,8 +6990,6 @@ This policy setting turns off Windows Error Reporting, so that reports are not c
 If you enable this policy setting, Windows Error Reporting does not send any problem information to Microsoft. Additionally, solution information is not available in Security and Maintenance in Control Panel.
 
 If you disable or do not configure this policy setting, the Turn off Windows Error Reporting policy setting in Computer Configuration/Administrative Templates/System/Internet Communication Management/Internet Communication settings takes precedence. If Turn off Windows Error Reporting is also either disabled or not configured, user settings in Control Panel for Windows Error Reporting are applied.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -7222,8 +7015,6 @@ If you do not configure this policy setting, users can change this setting in Co
 
 See also the Configure Error Reporting policy setting.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -7244,8 +7035,6 @@ If you enable this policy setting, any additional data requests from Microsoft i
 
 If you disable or do not configure this policy setting, then consent policy settings in Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting/Consent take precedence.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -7265,8 +7054,6 @@ This policy setting prevents the display of the user interface for critical erro
 If you enable this policy setting, Windows Error Reporting does not display any GUI-based error messages or dialog boxes for critical errors.
 
 If you disable or do not configure this policy setting, Windows Error Reporting displays the user interface for critical errors.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -7290,8 +7077,6 @@ If you disable or do not configure this policy setting and a log file reaches it
 
 Note: Old events may or may not be retained according to the "Backup log automatically when full" policy setting.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -7311,8 +7096,6 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
 
 If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -7334,8 +7117,6 @@ If you enable this policy setting, you can configure the maximum log file size t
 
 If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -7355,8 +7136,6 @@ This policy setting specifies the maximum size of the log file in kilobytes.
 If you enable this policy setting, you can configure the maximum log file size to be between 1 megabyte (1024 kilobytes) and 2 terabytes (2147483647 kilobytes) in kilobyte increments.
 
 If you disable or do not configure this policy setting, the maximum size of the log file will be set to the locally configured value. This value can be changed by the local administrator using the Log Properties dialog and it defaults to 20 megabytes.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -7407,9 +7186,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7456,9 +7232,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">An enterprise employee customer is going through OOBE and enjoys Cortana’s help in this process. The customer is happy to learn during OOBE that Cortana can help them be more productive, and chooses to set up Cortana before OOBE finishes. When their setup is finished, they are immediately ready to engage with Cortana to help manage their schedule and more.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7498,9 +7271,6 @@ ADMX Info:
 <p style="margin-left: 20px">When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -7544,9 +7314,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7586,9 +7353,6 @@ ADMX Info:
 
 -   0 – SIM card dialog prompt is not displayed.
 -   1 (default) – SIM card dialog prompt is displayed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -7632,9 +7396,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7671,14 +7432,34 @@ ADMX Info:
 -   0 – Sync settings is not allowed.
 -   1 (default) – Sync settings allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -7695,9 +7476,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -7739,9 +7517,6 @@ ADMX Info:
 -   0 – Task switching not allowed.
 -   1 (default) – Task switching allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7781,9 +7556,6 @@ ADMX Info:
 
 -   0 – Third-party suggestions not allowed.
 -   1 (default) – Third-party suggestions allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -7826,9 +7598,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -7879,9 +7648,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -7924,14 +7690,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -7945,14 +7731,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -7966,9 +7772,6 @@ The Windows welcome experience feature introduces onboard users to Windows; for 
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -8005,9 +7808,6 @@ Enables or disables Windows Tips / soft landing.
 
 -   0 – Disabled.
 -   1 (default) – Enabled.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -8050,9 +7850,6 @@ Enables or disables Windows Tips / soft landing.
 -   1 (default) – Windows spotlight enabled.
 -   2 – placeholder only for future extension. Using this value has no effect.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -8093,9 +7890,6 @@ Enables or disables Windows Tips / soft landing.
 -   0 (default) – Feedback notifications are not disabled. The actual state of feedback notifications on the device will then depend on what GP has configured or what the user has configured locally.
 -   1 – Feedback notifications are disabled.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -8103,9 +7897,6 @@ Enables or disables Windows Tips / soft landing.
 
 <!--StartDescription-->
 <p style="margin-left: 20px">Placeholder only. Currently not supported.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -8118,8 +7909,6 @@ This policy setting allows you to add a specific list of search providers to the
 If you enable this policy setting, the user can add and remove search providers, but only from the set of search providers specified in the list of policy keys for search providers (found under [HKCU or HKLM\Software\policies\Microsoft\Internet Explorer\SearchScopes]). Note: This list can be created from a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
 
 If you disable or do not configure this policy setting, the user can configure their list of search providers unless another policy setting restricts such configuration.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8140,8 +7929,6 @@ This policy setting controls the ActiveX Filtering feature for websites that are
 If you enable this policy setting, ActiveX Filtering is enabled by default for the user. The user cannot turn off ActiveX Filtering, although they may add per-site exceptions.
 
 If you disable or do not configure this policy setting, ActiveX Filtering is not enabled by default for the user. The user can turn ActiveX Filtering on or off.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8169,8 +7956,6 @@ Value - A number indicating whether Internet Explorer should deny or allow the a
 
 If you disable this policy setting, the list is deleted. The 'Deny all add-ons unless specifically allowed in the Add-on List' policy setting will still determine whether add-ons not in this list are assumed to be denied.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8193,8 +7978,6 @@ If you disable this policy setting, Enhanced Protected Mode will be turned off. 
 
 If you do not configure this policy, users will be able to turn on or turn off Enhanced Protected Mode on the Advanced tab of the Internet Options dialog.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8214,8 +7997,6 @@ This policy setting lets you decide whether users can turn on Enterprise Mode fo
 If you turn this setting on, users can see and use the Enterprise Mode option from the Tools menu. If you turn this setting on, but don't specify a report location, Enterprise Mode will still be available to your users, but you won't get any reports.
 
 If you disable or don't configure this policy setting, the menu option won't appear and users won't be able to run websites in Enterprise Mode.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8237,8 +8018,6 @@ If you enable this policy setting, Internet Explorer downloads the website list 
 
 If you disable or don't configure this policy setting, Internet Explorer opens all websites using Standards mode.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8258,8 +8037,6 @@ This policy setting allows you to add specific sites that must be viewed in Inte
 If you enable this policy setting, the user can add and remove sites from the list, but the user cannot remove the entries that you specify.
 
 If you disable or do not configure this policy setting, the user can add and remove sites from the list.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8281,8 +8058,6 @@ If you enable this policy setting, Internet Explorer uses the current user agent
 If you disable this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. The user cannot change this behavior through the Compatibility View Settings dialog box.
 
 If you do not configure this policy setting, Internet Explorer uses an Internet Explorer 7 user agent string (with an additional string appended) for local intranet content. Additionally, all local intranet Standards Mode pages appear in Internet Explorer 7 Standards Mode. This option results in the greatest compatibility with existing webpages, but newer content written to common Internet standards may be displayed incorrectly. This option matches the default behavior of Internet Explorer.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8310,8 +8085,6 @@ Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8337,8 +8110,6 @@ If you do not configure this template policy setting, no security level is confi
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8366,8 +8137,6 @@ Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8393,8 +8162,6 @@ If you do not configure this template policy setting, no security level is confi
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8422,8 +8189,6 @@ Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8449,8 +8214,6 @@ If you do not configure this template policy setting, no security level is confi
 Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate by comparing the settings in the active URL's zone against those in the Locked-Down equivalent zone. If you select a security level for any zone (including selecting no security), the same change should be made to the Locked-Down equivalent.
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8478,8 +8241,6 @@ Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8499,8 +8260,6 @@ This policy allows the user to go directly to an intranet site for a one-word en
 If you enable this policy setting, Internet Explorer goes directly to an intranet site for a one-word entry in the Address bar, if it is available.
 
 If you disable or do not configure this policy setting, Internet Explorer does not go directly to an intranet site for a one-word entry in the Address bar.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8528,8 +8287,6 @@ Value - A number indicating the zone with which this site should be associated f
 
 If you disable or do not configure this policy, users may choose their own site-to-zone assignments.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8551,8 +8308,6 @@ If you enable this policy setting, the user is not prompted to enable Suggested 
 If you disable this policy setting, the entry points and functionality associated with this feature are turned off.
 
 If you do not configure this policy setting, the user can turn on and turn off the Suggested Sites feature.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8580,8 +8335,6 @@ Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8608,8 +8361,6 @@ Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8635,8 +8386,6 @@ Note. Local Machine Zone Lockdown Security and Network Protocol Lockdown operate
 
 Note. It is recommended to configure template policy settings in one Group Policy object (GPO) and configure any related individual policy settings in a separate GPO. You can then use Group Policy management features (for example, precedence, inheritance, or enforce) to apply individual settings to specific targets.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8659,8 +8408,6 @@ If you disable, or do not configure this policy setting, Flash is turned on for 
 
 Note that Adobe Flash can still be disabled through the "Add-on List" and "Deny all add-ons unless specifically allowed in the Add-on List" policy settings, even if this policy setting is disabled, or not configured. However, if Adobe Flash is disabled through the "Add-on List" and "Deny all add-ons unless specifically allowed in the Add-on List" policy settings and not through this policy setting, all applications that use Internet Explorer technology to instantiate Flash object can still do so. For more information, see "Group Policy Settings in Internet Explorer 10" in the Internet Explorer TechNet library.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8681,8 +8428,6 @@ If you enable this policy setting, SmartScreen Filter warnings block the user.
 
 If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8702,8 +8447,6 @@ This policy setting determines whether the user can bypass warnings from SmartSc
 If you enable this policy setting, SmartScreen Filter warnings block the user.
 
 If you disable or do not configure this policy setting, the user can bypass SmartScreen Filter warnings.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8727,8 +8470,6 @@ If you disable this policy setting, the user must participate in the CEIP, and t
 
 If you do not configure this policy setting, the user can choose to participate in the CEIP.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8748,8 +8489,6 @@ This policy setting prevents the user from having enclosures (file attachments) 
 If you enable this policy setting, the user cannot set the Feed Sync Engine to download an enclosure through the Feed property page. A developer cannot change the download setting through the Feed APIs.
 
 If you disable or do not configure this policy setting, the user can set the Feed Sync Engine to download an enclosure through the Feed property page. A developer can change the download setting through the Feed APIs.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8772,8 +8511,6 @@ If you enable this policy setting, the browser negotiates or does not negotiate 
 If you disable or do not configure this policy setting, the user can select which encryption method the browser supports.
 
 Note: SSL 2.0 is off by default and is no longer supported starting with Windows 10 Version 1607. SSL 2.0 is an outdated security protocol, and enabling SSL 2.0 impairs the performance and functionality of TLS 1.0.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8799,8 +8536,6 @@ Starting with Windows 8, the "Welcome to Internet Explorer" webpage is not avail
 
 If you disable or do not configure this policy setting, Internet Explorer may run the First Run wizard the first time the browser is started after installation.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8825,8 +8560,6 @@ If you disable this policy setting, flip ahead with page prediction is turned on
 
 If you don't configure this setting, users can turn this behavior on or off, using the Settings charm.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8846,8 +8579,6 @@ The Home page specified on the General tab of the Internet Options dialog box is
 If you enable this policy setting, a user cannot set a custom default home page. You must specify which default home page should load on the user machine. For machines with at least Internet Explorer 7, the home page can be set within this policy to override other home page policies.
 
 If you disable or do not configure this policy setting, the Home page box is enabled and users can choose their own home page.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8869,8 +8600,6 @@ If you enable this policy setting, the user will not be able to configure proxy 
 
 If you disable or do not configure this policy setting, the user can configure proxy settings.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8890,8 +8619,6 @@ This policy setting prevents the user from changing the default search provider 
 If you enable this policy setting, the user cannot change the default search provider.
 
 If you disable or do not configure this policy setting, the user can change the default search provider.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8915,8 +8642,6 @@ If you disable or do not configure this policy setting, the user can add seconda
 
 Note: If the Disable Changing Home Page Settings policy is enabled, the user cannot add secondary home pages.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8938,8 +8663,6 @@ If you enable this policy, it prevents Internet Explorer from checking to see wh
 If you disable this policy or do not configure it, Internet Explorer checks every 30 days by default, and then notifies users if a new version is available.
 
 This policy is intended to help the administrator maintain version control for Internet Explorer by preventing users from being notified about new versions of the browser.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -8967,8 +8690,6 @@ Note:  The "Disable the Security page" policy (located in \User Configuration\Ad
 
 Also, see the "Security zones: Use only machine settings" policy.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -8995,8 +8716,6 @@ Note: The "Disable the Security page" policy (located in \User Configuration\Adm
 
 Also, see the "Security zones: Use only machine settings" policy.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9018,8 +8737,6 @@ If you enable this policy setting, Internet Explorer stops blocking outdated Act
 If you disable or don't configure this policy setting, Internet Explorer continues to block specific outdated ActiveX controls.
 
 For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9047,8 +8764,6 @@ If you disable or don't configure this policy setting, the list is deleted and I
 
 For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9070,8 +8785,6 @@ If you enable this policy setting, local sites which are not explicitly mapped i
 If you disable this policy setting, local sites which are not explicitly mapped into a zone will not be considered to be in the Intranet Zone (so would typically be in the Internet Zone).
 
 If you do not configure this policy setting, users choose whether to force local sites into the Intranet Zone.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9095,8 +8808,6 @@ If you disable this policy setting, network paths are not necessarily mapped int
 
 If you do not configure this policy setting, users choose whether network paths are mapped into the Intranet Zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9118,8 +8829,6 @@ If you enable this policy setting, users can load a page in the zone that uses M
 If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
 If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9143,8 +8852,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9164,8 +8871,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9189,8 +8894,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9212,8 +8915,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9237,8 +8938,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9260,8 +8959,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9287,8 +8984,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9310,8 +9005,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9337,8 +9030,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9360,8 +9051,6 @@ If you enable this policy setting, users can open windows and frames from othe d
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9385,8 +9074,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9409,8 +9096,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9430,8 +9115,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9455,8 +9138,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9478,8 +9159,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, Web sites from less privileged zones can open new windows in, or navigate into, this zone.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9503,8 +9182,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9526,8 +9203,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9553,8 +9228,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9576,8 +9249,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9603,8 +9274,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9626,8 +9295,6 @@ If you enable this policy setting, users can open windows and frames from othe d
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9651,8 +9318,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9675,8 +9340,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9696,8 +9359,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9721,8 +9382,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9744,8 +9403,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9769,8 +9426,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9792,8 +9447,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9819,8 +9472,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9842,8 +9493,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9869,8 +9518,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9892,8 +9539,6 @@ If you enable this policy setting, users can open windows and frames from othe d
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9917,8 +9562,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9941,8 +9584,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -9962,8 +9603,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -9987,8 +9626,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10010,8 +9647,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10035,8 +9670,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10058,8 +9691,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10085,8 +9716,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10108,8 +9737,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10135,8 +9762,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10158,8 +9783,6 @@ If you enable this policy setting, users can open windows and frames from othe d
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10183,8 +9806,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10207,8 +9828,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10228,8 +9847,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10253,8 +9870,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10276,8 +9891,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10301,8 +9914,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10324,8 +9935,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10351,8 +9960,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10374,8 +9981,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10401,8 +10006,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10424,8 +10027,6 @@ If you enable this policy setting, users can open windows and frames from othe d
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10449,8 +10050,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10473,8 +10072,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10494,8 +10091,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10519,8 +10114,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10542,8 +10135,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10567,8 +10158,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10590,8 +10179,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10617,8 +10204,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10640,8 +10225,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10667,8 +10250,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10690,8 +10271,6 @@ If you enable this policy setting, users can open windows and frames from othe d
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10715,8 +10294,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10739,8 +10316,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10760,8 +10335,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10785,8 +10358,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10808,8 +10379,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10833,8 +10402,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10856,8 +10423,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10883,8 +10448,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10906,8 +10469,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10933,8 +10494,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -10956,8 +10515,6 @@ If you enable this policy setting, users can open additional windows and frames 
 If you disable this policy setting, users cannot open other windows and frames from other domains or access applications from different domains.
 
 If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -10981,8 +10538,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11005,8 +10560,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11026,8 +10579,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11051,8 +10602,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11074,8 +10623,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11099,8 +10646,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11122,8 +10667,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11149,8 +10692,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11172,8 +10713,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11199,8 +10738,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11222,8 +10759,6 @@ If you enable this policy setting, users can open windows and frames from othe d
 If you disable this policy setting, users cannot open windows and frames to access applications from different domains.
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11247,8 +10782,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11271,8 +10804,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, ActiveX control installations will be blocked using the Notification bar. Users can click on the Notification bar to allow the ActiveX control prompt.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11292,8 +10823,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, file downloads that are not user-initiated will be blocked, and users will see the Notification bar instead of the file download dialog. Users can then click the Notification bar to allow the file download prompt.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11317,8 +10846,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, users are queried whether to allow HTML fonts to download.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11340,8 +10867,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11365,8 +10890,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will not execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11388,8 +10911,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11415,8 +10936,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11438,8 +10957,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11465,8 +10982,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11489,8 +11004,6 @@ If you disable this policy setting, users cannot open other windows and frames f
 
 If you do not configure this policy setting, users cannot open other windows and frames from different domains or access applications from different domains.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11510,8 +11023,6 @@ This policy setting allows you to restrict the search providers that appear in t
 If you enable this policy setting, the user cannot configure the list of search providers on his or her computer, and any default providers installed do not appear (including providers installed from other applications). The only providers that appear are those in the list of policy keys for search providers. Note: This list can be created through a custom administrative template file. For information about creating this custom administrative template file, see the Internet Explorer documentation on search providers.
 
 If you disable or do not configure this policy setting, the user can configure his or her list of search providers.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11535,8 +11046,6 @@ If you disable this policy setting, users cannot load a page in the zone that us
 
 If you do not configure this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11559,8 +11068,6 @@ If you disable this policy setting, ActiveX control installations will be blocke
 
 If you do not configure this policy setting, users will receive a prompt when a site instantiates an ActiveX control they do not have installed.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11580,8 +11087,6 @@ This policy setting determines whether users will be prompted for non user-initi
 If you enable this setting, users will receive a file download dialog for automatic download attempts.
 
 If you disable or do not configure this setting, users will receive a file download dialog for automatic download attempts.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11605,8 +11110,6 @@ If you disable this policy setting, HTML fonts are prevented from downloading.
 
 If you do not configure this policy setting, HTML fonts can be downloaded automatically.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11628,8 +11131,6 @@ If you enable this policy setting, Web sites from less privileged zones can open
 If you disable this policy setting, the possibly harmful navigations are prevented. The Internet Explorer security feature will be on in this zone as set by Protection from Zone Elevation feature control.
 
 If you do not configure this policy setting, a warning is issued to the user that potentially risky navigation is about to occur.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11653,8 +11154,6 @@ If you disable this policy setting, Internet Explorer will not execute unsigned 
 
 If you do not configure this policy setting, Internet Explorer will execute unsigned managed components.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11676,8 +11175,6 @@ If you enable this policy setting, the user can run scriptlets.
 If you disable this policy setting, the user cannot run scriptlets.
 
 If you do not configure this policy setting, the user can enable or disable scriptlets.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11703,8 +11200,6 @@ If you do not configure this policy setting, the user can choose whether SmartSc
 
 Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11726,8 +11221,6 @@ If you enable this policy setting, users can preserve information in the browser
 If you disable this policy setting, users cannot preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
 
 If you do not configure this policy setting, users can preserve information in the browser's history, in favorites, in an XML store, or directly within a Web page saved to disk.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11753,8 +11246,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11777,8 +11268,6 @@ If you disable this policy setting, users cannot open windows and frames to acce
 
 If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11799,8 +11288,6 @@ If you enable this policy setting, the Kerberos client searches the forests in t
 
 If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11818,9 +11305,6 @@ This policy setting controls whether a device will request claims and compound a
 If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
 If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11846,9 +11330,6 @@ Note: The Kerberos Group Policy "Kerberos client support for claims, compound au
 
 If you disable or do not configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -11868,9 +11349,6 @@ This policy setting controls the Kerberos client's behavior in validating the KD
 If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer is not joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
 
 If you disable or do not configure this policy setting, the Kerberos client requires only that the KDC certificate contain the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11895,10 +11373,6 @@ If you enable this policy setting, the Kerberos client or server uses the config
 If you disable or do not configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.
 
 Note: This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it is not advised to set this value more than 48,000 bytes.
-
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -11944,9 +11418,6 @@ ADMX Info:
 -   0 – Disable Windows license reactivation on managed devices.
 -   1 (default) – Enable Windows license reactivation on managed devices.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -11982,9 +11453,6 @@ ADMX Info:
 
 -   0 (default) – Disabled.
 -   1 – Enabled.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12030,9 +11498,6 @@ ADMX Info:
 1.   Verify that Settings -> Privacy -> Location -> Location for this device is On/Off as expected.
 2.   Use Windows Maps Application (or similar) to see if a location can or cannot be obtained.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12070,9 +11535,6 @@ ADMX Info:
 -   1 (default, not configured) - allow edge swipe.
 
 <p style="margin-left: 20px">The easiest way to verify the policy is to restart the explorer process or to reboot after the policy is applied. And then try to swipe from the right edge of the screen. The desired result is for Action Center to not be invoked by the swipe. You can also enter tablet mode and attempt to swipe from the top of the screen to rearrange. That will also be disabled.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12113,9 +11575,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12155,14 +11614,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -12173,9 +11652,6 @@ ADMX Info:
 
 -   0 - Disabled.
 -   1 (default) - Enabled.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12213,14 +11689,34 @@ ADMX Info:
 -   0 - message sync is not allowed and cannot be changed by the user.
 -   1 - message sync is allowed. The user can change this setting.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -12231,9 +11727,6 @@ ADMX Info:
 
 -   0 - Disabled.
 -   1 (default) - Enabled.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12265,9 +11758,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Contains a list of Enterprise resource domains hosted in the cloud that need to be protected. Connections to these resources are considered enterprise data. If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80). A proxy server used for this purpose must also be configured using the **EnterpriseInternalProxyServers** policy. This domain list is a pipe-separated list of cloud resources. Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address. For example, **&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|&lt;*cloudresource*&gt;|&lt;*cloudresource*&gt;,&lt;*proxy*&gt;|**.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12309,9 +11799,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
        
 ```
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12343,9 +11830,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartDescription-->
 <p style="margin-left: 20px">Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12376,9 +11860,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This is the comma-separated list of internal proxy servers. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59". These proxies have been configured by the admin to connect to specific resources on the Internet. They are considered to be enterprise network locations. The proxies are only leveraged in configuring the **EnterpriseCloudResources** policy to force traffic to the matched cloud resources through these proxies.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12421,9 +11902,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 2.  Call [IdnToAscii](https://msdn.microsoft.com/library/windows/desktop/dd318149.aspx) with IDN\_USE\_STD3\_ASCII\_RULES as the flags.
 3.  Call [IdnToUnicode](https://msdn.microsoft.com/library/windows/desktop/dd318151.aspx) with no flags set (dwFlags = 0).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12454,9 +11932,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This is a comma-separated list of proxy servers. Any server on this list is considered non-enterprise. For example "157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59".
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12489,9 +11964,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartDescription-->
 <p style="margin-left: 20px">Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12522,9 +11994,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">List of domain names that can used for work or personal resource.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12557,6 +12026,13 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that turns off notification mirroring.
 
+> [!IMPORTANT]
+> This node must be accessed using the following paths:
+>
+> -   **./User/Vendor/MSFT/Policy/Config/Notifications/DisallowNotificationMirroring** to set the policy.
+> -   **./User/Vendor/MSFT/Policy/Result/Notifications/DisallowNotificationMirroring** to get the result.
+
+
 <p style="margin-left: 20px">For each user logged into the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device will not get mirrored to other devices of the same logged in user. If you disable or do not configure this policy (set value to 0) the notifications received by this user on this device will be mirrored to other devices of the same logged in user. This feature can be turned off by apps that do not want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
 
 <p style="margin-left: 20px">No reboot or service restart is required for this policy to take effect.
@@ -12565,9 +12041,6 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 -   0 (default)– enable notification mirroring.
 -   1 – disable notification mirroring.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12581,8 +12054,6 @@ If you enable or do not configure this policy setting, Windows uses standby stat
 
 If you disable this policy setting, standby states (S1-S3) are not allowed.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -12593,6 +12064,100 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (on battery). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Turn off the display (on battery)*
+-   GP name: *VideoPowerDownTimeOutDC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-displayofftimeoutpluggedin"></a>**Power/DisplayOffTimeoutPluggedIn**  
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (plugged in). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Turn off the display (plugged in)*
+-   GP name: *VideoPowerDownTimeOutAC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system hibernate timeout (on battery)*
+-   GP name: *DCHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system hibernate timeout (plugged in)*
+-   GP name: *ACHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="power-requirepasswordwhencomputerwakesonbattery"></a>**Power/RequirePasswordWhenComputerWakesOnBattery**  
 
@@ -12602,8 +12167,6 @@ This policy setting specifies whether or not the user is prompted for a password
 If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
 If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -12625,8 +12188,6 @@ If you enable or do not configure this policy setting, the user is prompted for 
 
 If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -12637,6 +12198,53 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system sleep timeout (on battery)*
+-   GP name: *DCStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system sleep timeout (plugged in)*
+-   GP name: *ACStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
 
@@ -12659,8 +12267,6 @@ If you disable this policy setting:
 -Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -12695,8 +12301,6 @@ If you disable this policy setting:
 -Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
 -The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -12717,8 +12321,6 @@ If you enable this setting or do not configure it, users can use the "List in di
 If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.
 
 Note: This settings takes priority over the setting "Automatically publish new printers in the Active Directory".
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -12766,9 +12368,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12807,8 +12406,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
  
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12849,9 +12446,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12891,9 +12485,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12924,9 +12515,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -12959,9 +12547,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to account information. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -12992,9 +12577,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the account information privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessAccountInfo policy setting for the specified Windows apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13035,9 +12617,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13068,9 +12647,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13103,9 +12679,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to the calendar. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13136,9 +12709,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the calendar privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCalendar policy setting for the specified Windows apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13179,9 +12749,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13212,9 +12779,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are allowed access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13247,9 +12811,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are denied access to call history. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13280,9 +12841,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows apps. The user is able to control the call history privacy setting for the listed Windows apps. This setting overrides the default LetAppsAccessCallHistory policy setting for the specified Windows apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13323,9 +12881,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13356,9 +12911,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13391,9 +12943,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13424,9 +12973,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13467,9 +13013,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13500,9 +13043,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13535,9 +13075,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13568,9 +13105,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13611,9 +13145,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13644,9 +13175,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13679,9 +13207,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13712,9 +13237,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13755,9 +13277,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13788,9 +13307,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13823,9 +13339,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13856,9 +13369,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13899,9 +13409,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -13932,9 +13439,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -13967,9 +13471,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14000,9 +13501,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14043,9 +13541,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14076,9 +13571,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14111,9 +13603,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14144,9 +13633,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14187,9 +13673,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14220,9 +13703,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14255,9 +13735,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14288,9 +13765,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14331,9 +13805,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14364,9 +13835,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14399,9 +13867,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14432,9 +13897,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14475,9 +13937,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14508,9 +13967,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14543,9 +13999,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14576,9 +14029,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14619,9 +14069,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14652,9 +14099,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14687,9 +14131,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14720,9 +14161,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14755,9 +14193,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Windows apps can access tasks.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14788,9 +14223,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14823,9 +14255,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14856,9 +14285,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14899,9 +14325,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -14932,9 +14355,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -14967,9 +14387,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15000,9 +14417,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -15043,9 +14457,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15076,9 +14487,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -15111,9 +14519,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to diagnostic information about other running apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15144,9 +14549,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'get diagnostic info' privacy setting for the listed apps. This setting overrides the default LetAppsGetDiagnosticInfo policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -15189,9 +14591,6 @@ ADMX Info:
 > [!WARNING]
 > Be careful when determining which apps should have their background activity disabled. Communication apps normally update tiles and notifications through background processes. Turning off background activity for these types of apps could cause text message, email, and voicemail notifications to not function. This could also cause background email syncing to not function properly.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15222,9 +14621,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are able to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -15257,9 +14653,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied the ability to run in the background. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15290,9 +14683,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the background apps privacy setting for the listed apps. This setting overrides the default LetAppsRunInBackground policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -15333,9 +14723,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 2.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15366,9 +14753,6 @@ ADMX Info:
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -15401,9 +14785,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15435,9 +14816,6 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'sync with devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15455,8 +14833,6 @@ If you enable this policy setting, the warning message you specify overrides the
 If you disable this policy setting, the user sees the default warning message.
 
 If you do not configure this policy setting, the user sees the default warning message.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -15479,8 +14855,6 @@ If you enable this policy setting, log files are generated.
 If you disable this policy setting, log files are not generated.
 
 If you do not configure this setting, application-based settings are used.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -15511,8 +14885,6 @@ The "Maximum ticket time" policy setting sets a limit on the amount of time that
 The "Select the method for sending email invitations" setting specifies which email standard to use to send Remote Assistance invitations. Depending on your email program, you can use either the Mailto standard (the invitation recipient connects through an Internet link) or the SMAPI (Simple MAPI) standard (the invitation is attached to your email message). This policy setting is not available in Windows Vista since SMAPI is the only method supported.
 
 If you enable this policy setting you should also enable appropriate firewall exceptions to allow Remote Assistance communications.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -15567,8 +14939,6 @@ Port 135:TCP
 %WINDIR%\PCHealth\HelpCtr\Binaries\Helpctr.exe
 Allow Remote Desktop Exception
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -15593,9 +14963,6 @@ If you do not configure this policy setting, Remote Desktop Services uses the Re
 Note: You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication.
 
 You can limit the number of users who can connect simultaneously by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Limit number of connections, or by configuring the policy setting Maximum Connections by using the Remote Desktop Session Host WMI Provider.
-
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -15627,9 +14994,6 @@ Important
 
 FIPS compliance can be configured through the System cryptography. Use FIPS compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -15654,9 +15018,6 @@ If you disable this policy setting, client drive redirection is always allowed. 
 
 If you do not configure this policy setting, client drive redirection and Clipboard file copy redirection are not specified at the Group Policy level.
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -15676,8 +15037,6 @@ Controls whether passwords can be saved on this computer from Remote Desktop Con
 If you enable this setting the password saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
 
 If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -15705,9 +15064,6 @@ If you disable this policy setting, users can always log on to Remote Desktop Se
 
 If you do not configure this policy setting, automatic logon is not specified at the Group Policy level.
 
-
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -15734,8 +15090,6 @@ If the status is set to Not Configured, unsecured communication is allowed.
 
 Note: The RPC interface is used for administering and configuring Remote Desktop Services.
 
-
-
 <!--EndDescription-->
 <!--StartADMX-->
 ADMX Info:  
@@ -15759,8 +15113,6 @@ If you enable this policy setting, RPC clients will authenticate to the Endpoint
 If you do not configure this policy setting, it remains disabled.  RPC clients will not authenticate to the Endpoint Mapper Service, but they will be able to communicate with the Windows NT4 Server Endpoint Mapper Service.
 
 Note: This policy will not be applied until the system is rebooted.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -15793,8 +15145,6 @@ If you enable this policy setting, it directs the RPC server runtime to restrict
 --  "Authenticated without exceptions" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied.  No exceptions are allowed.
 
 Note: This policy setting will not be applied until the system is rebooted.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -15846,9 +15196,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15886,9 +15233,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -15928,9 +15272,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -15969,9 +15310,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16007,9 +15345,6 @@ ADMX Info:
 
 -   0 (default) – Disable.
 -   1 – Enable.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16051,9 +15386,6 @@ ADMX Info:
 -   0 (default) – Disable.
 -   1 – Enable.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16083,7 +15415,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 2147483647 MB.
+<p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1.
 
 <p style="margin-left: 20px">Enable this policy if computers in your environment have extremely limited hard drive space.
 
@@ -16093,9 +15425,6 @@ ADMX Info:
 
 -   0 – Disable.
 -   1 (default) – Enable.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16132,9 +15461,6 @@ ADMX Info:
 
 -   0 – Disable.
 -   1 (default) – Enable.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16178,9 +15504,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16216,9 +15539,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16265,9 +15585,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16310,9 +15627,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16348,9 +15662,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16391,9 +15702,6 @@ ADMX Info:
 
 -   0 – Don't allow Anti Theft Mode.
 -   1 (default) – Anti Theft Mode will follow the default device configuration (region-dependent).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16436,9 +15744,6 @@ ADMX Info:
 
 -   0 (default) – Encryption enabled.
 -   1 – Encryption disabled.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16484,10 +15789,6 @@ ADMX Info:
 > [!IMPORTANT]
 > If encryption has been enabled, it cannot be turned off by using this policy.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16523,9 +15824,6 @@ ADMX Info:
 
 -   0 (default) – Not required.
 -   1 – Required.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16574,9 +15872,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 1.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16620,10 +15915,6 @@ ADMX Info:
 > [!NOTE]
 > Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16659,9 +15950,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16699,9 +15987,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16737,9 +16022,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16781,9 +16063,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16823,9 +16102,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16867,9 +16143,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16910,9 +16183,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -16948,9 +16218,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -16992,9 +16259,6 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17030,9 +16294,6 @@ ADMX Info:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17071,9 +16332,6 @@ ADMX Info:
 -   1  – Don't show additional calendars.
 -   2  - Simplified Chinese (Lunar).
 -   3  - Traditional Chinese (Lunar).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17136,9 +16394,6 @@ ADMX Info:
 2.   Configure the policy with the following string: "hide:about".
 3.   Open System Settings again and verify that the About page is no longer accessible.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17174,9 +16429,6 @@ ADMX Info:
 
 -   0 – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
 -   1 – Turns on Application Installation Control, allowing users to only install apps from the Store.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17214,9 +16466,6 @@ ADMX Info:
 -   0 – Turns off SmartScreen in Windows.
 -   1 – Turns on SmartScreen in Windows.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17252,9 +16501,6 @@ ADMX Info:
 
 -   0 – Employees can ignore SmartScreen warnings and run malicious files.
 -   1 – Employees cannot ignore SmartScreen warnings and run malicious files.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17292,8 +16538,375 @@ ADMX Info:
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
 
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – The shortcut is hidden and disables the setting in the Settings app.
+-   1 – The shortcut is visible and disables the setting in the Settings app.
+-   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17338,14 +16951,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">If there is policy configuration conflict, the latest configuration request is applied to the device.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hideapplist"></a>**Start/HideAppList**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -17366,14 +16999,34 @@ ADMX Info:
 -   2b - If set to '2': Verify that the all apps list is collapsed, and that the Settings toggle is grayed out.
 -   2c - If set to '3': Verify that there is no way of opening the all apps list from Start, and that the Settings toggle is grayed out.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
@@ -17387,14 +17040,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -17415,14 +17088,34 @@ ADMX Info:
 5.   Check that  "Show most used apps" Settings toggle is grayed out.
 6.   Check that most used apps do not appear in Start.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
@@ -17439,14 +17132,34 @@ ADMX Info:
 > [!NOTE]
 > This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
@@ -17460,14 +17173,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Lock" is not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -17484,14 +17217,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, and verify the power button is not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -17515,14 +17268,34 @@ ADMX Info:
 8.   Repeat Step 2.
 9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -17543,14 +17316,34 @@ ADMX Info:
 5.   Check that "Show recently added apps" Settings toggle is grayed out.
 6.   Check that recently added apps do not appear in Start.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
@@ -17564,14 +17357,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
@@ -17585,14 +17398,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
@@ -17606,14 +17439,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Sign out" is not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hidesleep"></a>**Start/HideSleep**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
@@ -17627,14 +17480,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
@@ -17648,14 +17521,34 @@ ADMX Info:
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -17673,14 +17566,34 @@ ADMX Info:
 2.   Log off.
 3.   Log in, and verify that the user tile is gone from Start.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -17699,14 +17612,34 @@ ADMX Info:
 3.   Sign out/in.
 4.   Verify that all Edge assets defined in XML show up in %LOCALAPPDATA%\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState path.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
@@ -17722,9 +17655,6 @@ ADMX Info:
 3.   Verify that "Unpin from taskbar" menu does not show.
 4.   Open Start and right click on one of the app list icons.
 5.   Verify that More->Pin to taskbar menu does not show.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17770,9 +17700,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">This policy is described in [Start/StartLayout Examples](#startlayout-examples) later in this topic.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17784,8 +17711,6 @@ This policy setting configures whether or not Windows will activate an Enhanced 
 If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.
 
 If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -17838,9 +17763,6 @@ ADMX Info:
 -   1 – Allowed. Users can make their devices available for downloading and installing preview software.
 -   2 (default) – Not configured. Users can make their devices available for downloading and installing preview software.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -17878,9 +17800,6 @@ ADMX Info:
 -   1 – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17923,9 +17842,6 @@ ADMX Info:
 -   2 – Allows Microsoft to conduct full experimentations.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -17974,9 +17890,6 @@ ADMX Info:
 
 -  After a client machine is rebooted, check whether there is any network traffic from client machine to fs.microsoft.com.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18022,9 +17935,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">For example, an app's original Location setting is Off. The administrator then sets the **AllowLocation** policy to 2 (Force Location On.) The Location service starts working for that app, overriding the original setting. Later, if the administrator switches the **AllowLocation** policy back to 1 (User Control), the app will revert to using its original setting of Off.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18062,9 +17972,6 @@ ADMX Info:
 -   1 (default) – Allow a storage card.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18159,9 +18066,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18200,9 +18104,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18210,8 +18111,6 @@ ADMX Info:
 
 <!--StartDescription-->
 N/A
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -18271,9 +18170,6 @@ ADMX Info:
 2.   Restart machine.
 3.   Verify that OneDrive.exe is not running in Task Manager.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18291,8 +18187,6 @@ If you enable this policy setting, System Restore is turned off, and the System 
 If you disable or do not configure this policy setting, users can perform System Restore and configure System Restore settings through System Protection.
 
 Also, see the "Turn off System Restore configuration" policy setting. If the "Turn off System Restore" policy setting is disabled or not configured, the "Turn off System Restore configuration" policy setting is used to determine whether the option to configure System Restore is available.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -18334,9 +18228,6 @@ ADMX Info:
 <p style="margin-left: 20px">Allows you to specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests. The format for this setting is *&lt;server&gt;:&lt;port&gt;*. The connection is made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data will not be transmitted and will remain on the local device.
 
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, Connected User Experiences and Telemetry will go to Microsoft using the default proxy configuration.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18380,9 +18271,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18424,9 +18312,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18470,9 +18355,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18514,9 +18396,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18560,9 +18439,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18605,9 +18481,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18649,9 +18522,6 @@ ADMX Info:
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18700,9 +18570,6 @@ ADMX Info:
 2.  Launch the input panel/touch keyboard by touching a text input field or launching it from the taskbar. Verify that text prediction is disabled by typing some text. Text prediction on the keyboard will be disabled even if the “Show text suggestions as I type” setting is enabled in the Settings app.
 3.  Launch the handwriting tool from the touch keyboard. Verify that text prediction is disabled when you write using the tool.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18710,9 +18577,6 @@ ADMX Info:
 
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy has been deprecated.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18756,9 +18620,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18798,9 +18659,6 @@ ADMX Info:
 
 -   0 (default) – No characters are filtered.
 -   1 – All characters except JIS0208 are filtered.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18842,9 +18700,6 @@ ADMX Info:
 -   0 (default) – No characters are filtered.
 -   1 – All characters except JIS0208 and EUDC are filtered.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -18885,14 +18740,34 @@ ADMX Info:
 -   0 (default) – No characters are filtered.
 -   1 – All characters except ShiftJIS are filtered.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="timelanguagesettings-allowset24hourclock"></a>**TimeLanguageSettings/AllowSet24HourClock**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows for the configuration of the default clock setting to be the 24 hour format. Selecting 'Set 24 hour Clock' enables this setting. Selecting 'Locale default setting' uses the default clock as prescribed by the current locale setting.
 
@@ -18900,9 +18775,6 @@ ADMX Info:
 
 -   0 – Locale default setting.
 -   1 (default) – Set 24 hour clock.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -18946,14 +18818,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default is 17 (5 PM).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -18964,9 +18856,6 @@ ADMX Info:
 <p style="margin-left: 20px">Supported values are 8-18.
 
 <p style="margin-left: 20px">The default value is 18 (hours).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19010,8 +18899,40 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 8 (8 AM).
 
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
 
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy defines the deadline in days after which a reboot for updates will become mandatory.
+
+<p style="margin-left: 20px">Supported values are 2-30 days.
+
+<p style="margin-left: 20px">The default value is 7 days.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19065,9 +18986,6 @@ ADMX Info:
 
 <p style="margin-left: 20px">If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19107,9 +19025,6 @@ ADMX Info:
 
 -   0 – Not allowed or not configured.
 -   1 – Allowed. Accepts updates received through Microsoft Update.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19154,9 +19069,6 @@ ADMX Info:
 -   1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 
 <p style="margin-left: 20px">This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19205,15 +19117,34 @@ ADMX Info:
 > [!NOTE]
 > This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19225,14 +19156,34 @@ ADMX Info:
 
 <p style="margin-left: 20px">The default value is 15 (minutes).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19244,9 +19195,6 @@ ADMX Info:
 
 -   1 (default) – Auto Dismissal.
 -   2 – User Dismissal.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19288,9 +19236,6 @@ ADMX Info:
 -   16 (default) – User gets all applicable upgrades from Current Branch (CB).
 -   32 – User gets upgrades from Current Branch for Business (CBB).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19331,9 +19276,6 @@ ADMX Info:
 > [!IMPORTANT]
 > The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19370,9 +19312,6 @@ ADMX Info:
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Quality Updates for the specified number of days.
 
 <p style="margin-left: 20px">Supported values are 0-30.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19473,10 +19412,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </tbody>
 </table>
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19522,9 +19457,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19556,14 +19488,34 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19575,14 +19527,34 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">The default value is 0 days (not specified).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19594,14 +19566,34 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">The default value is 3 days.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -19612,9 +19604,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">Supported values are 2-30 days.
 
 <p style="margin-left: 20px">The default value is 7 days.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19656,10 +19645,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 (default) – Allow Windows Update drivers.
 -   1 – Exclude Windows Update drivers.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19698,9 +19683,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 -   0 (default) – Disabled.
 -   1 – Enabled.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19751,10 +19733,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19802,10 +19780,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19852,9 +19826,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">If the "Allow Telemetry" policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19896,9 +19867,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 (default) – Feature Updates are not paused.
 -   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -19931,9 +19899,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
 
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19974,9 +19939,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 (default) – Quality Updates are not paused.
 -   1 – Quality Updates are paused for 35 days or until value set back to 0, whichever is sooner.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20009,9 +19971,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
 
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20054,9 +20013,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 -   0 (default) – User gets upgrades from Current Branch.
 -   1 – User gets upgrades from Current Branch for Business.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20105,14 +20061,34 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   0 – Not configured. The device installs all applicable updates.
 -   1 – The device only installs updates that are both applicable and on the Approved Updates list. Set this policy to 1 if IT wants to control the deployment of updates on devices, such as when testing is required prior to deployment.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -20124,14 +20100,34 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">The default value is 15 (minutes).
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -20142,9 +20138,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p style="margin-left: 20px">Supported values are 2, 4, 8, 12, or 24 (hours).
 
 <p style="margin-left: 20px">The default value is 4 (hours).
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20181,7 +20174,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the day of the update installation.
 
-<p style="margin-left: 20px">The data type is a string.
+<p style="margin-left: 20px">The data type is a integer.
 
 <p style="margin-left: 20px">Supported operations are Add, Delete, Get, and Replace.
 
@@ -20196,8 +20189,180 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   6 – Friday
 -   7 – Saturday
 
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
 
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, the next major update. Enables the IT admin to schedule the update installation on the every week. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every week</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, the next major update. Enables the IT admin to schedule the update installation on the first week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every first week of the month</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, the next major update. Enables the IT admin to schedule the update installation on the fourth week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every fourth week of the month</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, the next major update. Enables the IT admin to schedule the update installation on the second week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every second week of the month</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, the next major update. Enables the IT admin to schedule the update installation on the third week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every third week of the month</li>
+</ul>
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20234,7 +20399,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the time of the update installation.
 
-<p style="margin-left: 20px">The data type is a string.
+<p style="margin-left: 20px">The data type is a integer.
 
 <p style="margin-left: 20px">Supported operations are Add, Delete, Get, and Replace.
 
@@ -20242,14 +20407,34 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">The default value is 3.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark"/><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark"/></td>
+	<td><img src="images/CheckMark.png" alt="check mark"/><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -20261,9 +20446,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 -   0 (default) – Enabled
 -   1 – Disabled
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20300,9 +20482,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 - 0 - not configured
 - 1 - configured
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20366,9 +20545,6 @@ Example
         </Replace>
 ```
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20413,9 +20589,6 @@ Example
 > If the "Alternate Download Server" Group Policy is not set, it will use the WSUS server by default to download updates.  
 > This policy is not supported on Windows RT. Setting this policy will not have any effect on Windows RT PCs.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20423,9 +20596,6 @@ Example
 
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy has been deprecated.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20465,9 +20635,6 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20505,9 +20672,6 @@ Example
 -   1 (default) – Allow the use of Internet Sharing.
 
 <p style="margin-left: 20px">Most restricted value is 0.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20550,10 +20714,6 @@ Example
 > [!NOTE]
 > Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 
-
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20592,9 +20752,6 @@ Example
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20628,9 +20785,6 @@ Example
 
 - 0 - WiFi Direct connection is not allowed.
 - 1 - WiFi Direct connection is allowed.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20669,9 +20823,6 @@ Example
 
 <p style="margin-left: 20px">Supported operations are Add, Delete, Get, and Replace.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20707,9 +20858,6 @@ Example
 
 -   0 - app suggestions are not allowed.
 -   1 (default) -allow app suggestions.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20748,9 +20896,6 @@ Example
 -   1 - ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen.
 -   2 (default) - ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20762,8 +20907,6 @@ This policy setting allows you to prevent app notifications from appearing on th
 If you enable this policy setting, no app notifications are displayed on the lock screen.
 
 If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -20784,8 +20927,6 @@ This policy setting allows you to control whether anyone can interact with avail
 If you enable this policy setting, the PC's network connectivity state cannot be changed without signing into Windows.
 
 If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.
-
-
 
 <!--EndDescription-->
 <!--StartADMX-->
@@ -20836,9 +20977,6 @@ ADMX Info:
 1.   Enable policy.
 2.   Verify that the Switch account button in Start is hidden.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20873,9 +21011,6 @@ ADMX Info:
 - 0 - your PC cannot discover or project to other devices.
 - 1 - your PC can discover and project to other devices
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20909,9 +21044,6 @@ ADMX Info:
 
 - 0 - your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct.
 - 1 - your PC can discover and project to other devices over infrastructure.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -20951,9 +21083,6 @@ ADMX Info:
 -   0 - projection to PC is not allowed. Always off and the user cannot enable it.
 -   1 (default) - projection to PC is allowed. Enabled only above the lock screen.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20988,9 +21117,6 @@ ADMX Info:
 - 0 - your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct.
 - 1 - your PC is discoverable and other devices can project to it over infrastructure.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
@@ -20998,9 +21124,6 @@ ADMX Info:
 
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703.
-
-
-
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -21040,9 +21163,6 @@ ADMX Info:
 -   0 (default) - PIN is not required.
 -   1 - PIN is required.
 
-
-
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -21055,80 +21175,250 @@ Footnote:
 <!--EndPolicies-->
 
 <!--StartIoTCore-->
-## IoT Core Support  
+## <a href="" id="iotcore"></a>Policies Supported by IoT Core  
 
-[ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
-[Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
-[Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
-[Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
-[Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
-[Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
-[Browser/AllowAutofill](#browser-allowautofill)  
-[Browser/AllowBrowser](#browser-allowbrowser)  
-[Browser/AllowCookies](#browser-allowcookies)  
-[Browser/AllowDoNotTrack](#browser-allowdonottrack)  
-[Browser/AllowInPrivate](#browser-allowinprivate)  
-[Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
-[Browser/AllowPopups](#browser-allowpopups)  
-[Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
-[Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
-[Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
-[Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
-[Camera/AllowCamera](#camera-allowcamera)  
-[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
-[Connectivity/AllowNFC](#connectivity-allownfc)  
-[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
-[Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
-[Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
-[DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
-[Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
-[Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
-[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-[Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
-[System/AllowEmbeddedMode](#system-allowembeddedmode)  
-[System/AllowStorageCard](#system-allowstoragecard)  
-[System/TelemetryProxy](#system-telemetryproxy)  
-[Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
-[Update/AllowUpdateService](#update-allowupdateservice)  
-[Update/PauseDeferrals](#update-pausedeferrals)  
-[Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
-[Update/RequireUpdateApproval](#update-requireupdateapproval)  
-[Update/ScheduledInstallDay](#update-scheduledinstallday)  
-[Update/ScheduledInstallTime](#update-scheduledinstalltime)  
-[Update/UpdateServiceUrl](#update-updateserviceurl)  
-[Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
-[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
-[Wifi/AllowWiFi](#wifi-allowwifi)  
-[Wifi/WLANScanMode](#wifi-wlanscanmode)  
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)  
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)  
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)  
+-   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)  
+-   [Browser/AllowAutofill](#browser-allowautofill)  
+-   [Browser/AllowBrowser](#browser-allowbrowser)  
+-   [Browser/AllowCookies](#browser-allowcookies)  
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)  
+-   [Browser/AllowInPrivate](#browser-allowinprivate)  
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)  
+-   [Browser/AllowPopups](#browser-allowpopups)  
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)  
+-   [Browser/EnterpriseModeSiteList](#browser-enterprisemodesitelist)  
+-   [Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
+-   [Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
+-   [Camera/AllowCamera](#camera-allowcamera)  
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+-   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+-   [Connectivity/AllowNFC](#connectivity-allownfc)  
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+-   [Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
+-   [Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
+-   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
+-   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
+-   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
+-   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
+-   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
+-   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
+-   [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+-   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
+-   [System/AllowEmbeddedMode](#system-allowembeddedmode)  
+-   [System/AllowFontProviders](#system-allowfontproviders)  
+-   [System/AllowStorageCard](#system-allowstoragecard)  
+-   [System/TelemetryProxy](#system-telemetryproxy)  
+-   [Update/AllowNonMicrosoftSignedUpdate](#update-allownonmicrosoftsignedupdate)  
+-   [Update/AllowUpdateService](#update-allowupdateservice)  
+-   [Update/PauseDeferrals](#update-pausedeferrals)  
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)  
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)  
+-   [Update/ScheduledInstallDay](#update-scheduledinstallday)  
+-   [Update/ScheduledInstallTime](#update-scheduledinstalltime)  
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)  
+-   [Wifi/AllowAutoConnectToWiFiSenseHotspots](#wifi-allowautoconnecttowifisensehotspots)  
+-   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+-   [Wifi/AllowWiFi](#wifi-allowwifi)  
+-   [Wifi/WLANScanMode](#wifi-wlanscanmode)  
 <!--EndIoTCore-->
 
+<!--StartHoloLens-->
+## <a href="" id="hololenspolicies"></a>Policies supported by Windows Holographic for Business
+
+-   [Accounts/AllowMicrosoftAccountConnection](#accounts-allowmicrosoftaccountconnection)
+-   [ApplicationManagement/AllowAllTrustedApps](#applicationmanagement-allowalltrustedapps)
+-   [ApplicationManagement/AllowAppStoreAutoUpdate](#applicationmanagement-allowappstoreautoupdate)
+-   [ApplicationManagement/AllowDeveloperUnlock](#applicationmanagement-allowdeveloperunlock)
+-   [Authentication/AllowFastReconnect](#authentication-allowfastreconnect)
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowPasswordManager](#browser-allowpasswordmanager)
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [DeviceLock/AllowIdleReturnWithoutPassword](#devicelock-allowidlereturnwithoutpassword)
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)
+-   [Experience/AllowCortana](#experience-allowcortana)
+-   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
+-   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
+-   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
+-   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
+-   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
+-   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [System/AllowFontProviders](#system-allowfontproviders)  
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)
+-   [Settings/AllowDateTime](#settings-allowdatetime)
+-   [Settings/AllowVPN](#settings-allowvpn)
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/RequireDeferUpgrade](#update-requiredeferupgrade)
+-   [Update/RequireUpdateApproval](#update-requireupdateapproval)
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+<!--EndHoloLens-->
+
+<!--StartSurfaceHub-->
+## <a href="" id="surfacehubpolicies"></a>Policies supported by Microsoft Surface Hub
+
+-   [ApplicationDefaults/DefaultAssociationsConfiguration](#applicationdefaults-defaultassociationsconfiguration)  
+-   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)
+-   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)
+-   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)
+-   [Bluetooth/LocalDeviceName](#bluetooth-localdevicename)
+-   [Bluetooth/ServicesAllowedList](#bluetooth-servicesallowedlist)
+-   [Browser/AllowAddressBarDropdown](#browser-allowaddressbardropdown)  
+-   [Browser/AllowCookies](#browser-allowcookies)
+-   [Browser/AllowDeveloperTools](#browser-allowdevelopertools)
+-   [Browser/AllowDoNotTrack](#browser-allowdonottrack)
+-   [Browser/AllowMicrosoftCompatibilityList](#browser-allowmicrosoftcompatibilitylist)  
+-   [Browser/AllowPopups](#browser-allowpopups)
+-   [Browser/AllowSearchSuggestionsinAddressBar](#browser-allowsearchsuggestionsinaddressbar)
+-   [Browser/AllowSmartScreen](#browser-allowsmartscreen)
+-   [Browser/ClearBrowsingDataOnExit](#browser-clearbrowsingdataonexit)  
+-   [Browser/ConfigureAdditionalSearchEngines](#browser-configureadditionalsearchengines)  
+-   [Browser/DisableLockdownOfStartPages](#browser-disablelockdownofstartpages)  
+-   [Browser/HomePages](#browser-homepages)
+-   [Browser/PreventLiveTileDataCollection](#browser-preventlivetiledatacollection)  
+-   [Browser/PreventSmartScreenPromptOverride](#browser-preventsmartscreenpromptoverride)
+-   [Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)
+-   [Browser/SetDefaultSearchEngine](#browser-setdefaultsearchengine)  
+-   [Camera/AllowCamera](#camera-allowcamera)
+-   [ConfigOperations/ADMXInstall](#configoperations-admxinstall)  
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)
+-   [Connectivity/AllowConnectedDevices](#connectivity-allowconnecteddevices)  
+-   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)
+-   [Cryptography/TLSCipherSuites](#cryptography-tlsciphersuites)
+-   [Defender/AllowArchiveScanning](#defender-allowarchivescanning)
+-   [Defender/AllowBehaviorMonitoring](#defender-allowbehaviormonitoring)
+-   [Defender/AllowCloudProtection](#defender-allowcloudprotection)
+-   [Defender/AllowEmailScanning](#defender-allowemailscanning)
+-   [Defender/AllowFullScanOnMappedNetworkDrives](#defender-allowfullscanonmappednetworkdrives)
+-   [Defender/AllowFullScanRemovableDriveScanning](#defender-allowfullscanremovabledrivescanning)
+-   [Defender/AllowIntrusionPreventionSystem](#defender-allowintrusionpreventionsystem)
+-   [Defender/AllowIOAVProtection](#defender-allowioavprotection)
+-   [Defender/AllowOnAccessProtection](#defender-allowonaccessprotection)
+-   [Defender/AllowRealtimeMonitoring](#defender-allowrealtimemonitoring)
+-   [Defender/AllowScanningNetworkFiles](#defender-allowscanningnetworkfiles)
+-   [Defender/AllowScriptScanning](#defender-allowscriptscanning)
+-   [Defender/AllowUserUIAccess](#defender-allowuseruiaccess)
+-   [Defender/AvgCPULoadFactor](#defender-avgcpuloadfactor)
+-   [Defender/DaysToRetainCleanedMalware](#defender-daystoretaincleanedmalware)
+-   [Defender/ExcludedExtensions](#defender-excludedextensions)
+-   [Defender/ExcludedPaths](#defender-excludedpaths)
+-   [Defender/ExcludedProcesses](#defender-excludedprocesses)
+-   [Defender/PUAProtection](#defender-puaprotection)
+-   [Defender/RealTimeScanDirection](#defender-realtimescandirection)
+-   [Defender/ScanParameter](#defender-scanparameter)
+-   [Defender/ScheduleQuickScanTime](#defender-schedulequickscantime)
+-   [Defender/ScheduleScanDay](#defender-schedulescanday)
+-   [Defender/ScheduleScanTime](#defender-schedulescantime)
+-   [Defender/SignatureUpdateInterval](#defender-signatureupdateinterval)
+-   [Defender/SubmitSamplesConsent](#defender-submitsamplesconsent)
+-   [Defender/ThreatSeverityDefaultAction](#defender-threatseveritydefaultaction)
+-   [DeliveryOptimization/DOAbsoluteMaxCacheSize](#deliveryoptimization-doabsolutemaxcachesize)
+-   [DeliveryOptimization/DOAllowVPNPeerCaching](#deliveryoptimization-doallowvpnpeercaching)
+-   [DeliveryOptimization/DODownloadMode](#deliveryoptimization-dodownloadmode)
+-   [DeliveryOptimization/DOGroupId](#deliveryoptimization-dogroupid)
+-   [DeliveryOptimization/DOMaxCacheAge](#deliveryoptimization-domaxcacheage)
+-   [DeliveryOptimization/DOMaxCacheSize](#deliveryoptimization-domaxcachesize)
+-   [DeliveryOptimization/DOMaxDownloadBandwidth](#deliveryoptimization-domaxdownloadbandwidth)
+-   [DeliveryOptimization/DOMaxUploadBandwidth](#deliveryoptimization-domaxuploadbandwidth)
+-   [DeliveryOptimization/DOMinBackgroundQos](#deliveryoptimization-dominbackgroundqos)
+-   [DeliveryOptimization/DOMinDiskSizeAllowedToPeer](#deliveryoptimization-domindisksizeallowedtopeer)
+-   [DeliveryOptimization/DOMinFileSizeToCache](#deliveryoptimization-dominfilesizetocache)
+-   [DeliveryOptimization/DOMinRAMAllowedToPeer](#deliveryoptimization-dominramallowedtopeer)
+-   [DeliveryOptimization/DOModifyCacheDrive](#deliveryoptimization-domodifycachedrive)
+-   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)
+-   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)
+-   [DeviceGuard/AllowKernelControlFlowGuard](#deviceguard-allowkernelcontrolflowguard)  
+-   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
+-   [Privacy/LetAppsGetDiagnosticInfo_UserInControlOfTheseApps](#privacy-letappsgetdiagnosticinfo-userincontroloftheseapps)  
+-   [Privacy/LetAppsRunInBackground](#privacy-letappsruninbackground)  
+-   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
+-   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
+-   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)
+-   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)
+-   [System/AllowFontProviders](#system-allowfontproviders) 
+-   [System/AllowLocation](#system-allowlocation)
+-   [System/AllowTelemetry](#system-allowtelemetry)
+-   [TextInput/AllowIMELogging](#textinput-allowimelogging)
+-   [TextInput/AllowIMENetworkAccess](#textinput-allowimenetworkaccess)
+-   [TextInput/AllowInputPanel](#textinput-allowinputpanel)
+-   [TextInput/AllowJapaneseIMESurrogatePairCharacters](#textinput-allowjapaneseimesurrogatepaircharacters)
+-   [TextInput/AllowJapaneseIVSCharacters](#textinput-allowjapaneseivscharacters)
+-   [TextInput/AllowJapaneseNonPublishingStandardGlyph](#textinput-allowjapanesenonpublishingstandardglyph)
+-   [TextInput/AllowJapaneseUserDictionary](#textinput-allowjapaneseuserdictionary)
+-   [TextInput/AllowLanguageFeaturesUninstall](#textinput-allowlanguagefeaturesuninstall)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)
+-   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)
+-   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)
+-   [TimeLanguageSettings/Set24HourClock](#timelanguagesettings-set24hourclock)  
+-   [TimeLanguageSettings/SetCountry](#timelanguagesettings-setcountry)  
+-   [TimeLanguageSettings/SetLanguage](#timelanguagesettings-setlanguage)  
+-   [Update/AllowAutoUpdate](#update-allowautoupdate)
+-   [Update/AllowUpdateService](#update-allowupdateservice)
+-   [Update/AutoRestartNotificationSchedule](#update-autorestartnotificationschedule)  
+-   [Update/AutoRestartRequiredNotificationDismissal](#update-autorestartrequirednotificationdismissal)  
+-   [Update/BranchReadinessLevel](#update-branchreadinesslevel)
+-   [Update/DeferFeatureUpdatesPeriodInDays](#update-deferfeatureupdatesperiodindays)
+-   [Update/DeferQualityUpdatesPeriodInDays](#update-deferqualityupdatesperiodindays)
+-   [Update/DetectionFrequency](#update-detectionfrequency)  
+-   [Update/PauseFeatureUpdates](#update-pausefeatureupdates)
+-   [Update/PauseQualityUpdates](#update-pausequalityupdates)
+-   [Update/ScheduleImminentRestartWarning](#update-scheduleimminentrestartwarning)  
+-   [Update/ScheduleRestartWarning](#update-schedulerestartwarning)  
+-   [Update/SetAutoRestartNotificationDisable](#update-setautorestartnotificationdisable)  
+-   [Update/UpdateServiceUrl](#update-updateserviceurl)
+-   [Update/UpdateServiceUrlAlternate](#update-updateserviceurlalternate)  
+<!--EndSurfaceHub-->
+
 <!--StartEAS-->
-## Can be set using Exchange Active Sync (EAS)  
+## <a href="" id="eas"></a>Policies that can be set using Exchange Active Sync (EAS)  
 
-[Browser/AllowBrowser](#browser-allowbrowser)  
-[Camera/AllowCamera](#camera-allowcamera)  
-[Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
-[Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
-[Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
-[DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
-[DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
-[DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
-[DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
-[DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
-[DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
-[DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
-[DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
-[DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
-[Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
-[Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
-[System/AllowStorageCard](#system-allowstoragecard)  
-[System/TelemetryProxy](#system-telemetryproxy)  
-[Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
-[Wifi/AllowWiFi](#wifi-allowwifi)  
+-   [Browser/AllowBrowser](#browser-allowbrowser)  
+-   [Camera/AllowCamera](#camera-allowcamera)  
+-   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
+-   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
+-   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
+-   [DeviceLock/AllowSimpleDevicePassword](#devicelock-allowsimpledevicepassword)  
+-   [DeviceLock/AlphanumericDevicePasswordRequired](#devicelock-alphanumericdevicepasswordrequired)  
+-   [DeviceLock/DevicePasswordEnabled](#devicelock-devicepasswordenabled)  
+-   [DeviceLock/DevicePasswordExpiration](#devicelock-devicepasswordexpiration)  
+-   [DeviceLock/DevicePasswordHistory](#devicelock-devicepasswordhistory)  
+-   [DeviceLock/MaxDevicePasswordFailedAttempts](#devicelock-maxdevicepasswordfailedattempts)  
+-   [DeviceLock/MaxInactivityTimeDeviceLock](#devicelock-maxinactivitytimedevicelock)  
+-   [DeviceLock/MinDevicePasswordComplexCharacters](#devicelock-mindevicepasswordcomplexcharacters)  
+-   [DeviceLock/MinDevicePasswordLength](#devicelock-mindevicepasswordlength)  
+-   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
+-   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
+-   [System/AllowStorageCard](#system-allowstoragecard)  
+-   [System/TelemetryProxy](#system-telemetryproxy)  
+-   [Wifi/AllowInternetSharing](#wifi-allowinternetsharing)  
+-   [Wifi/AllowWiFi](#wifi-allowwifi)  
 <!--EndEAS-->
-
-
 
 ## Examples
 

@@ -100,8 +100,8 @@ The following table defines which Windows features require TPM support.
 
 | Windows Features        | Windows 10 TPM 1.2   | Windows 10 TPM 2.0   | Details  |
 |-------------------------|----------------------|----------------------|----------|
-| Measured Boot                                | Required                 | Required                 | Measured boot requires TPM 1.2 or 2.0 and UEFI Secure boot.   |
-| Bitlocker                                    | Required                 | Required                 | TPM 1.2 or later required or a removable USB memory device such as a flash drive.  |
+| Measured Boot                                | Required                 | Required                 | Measured boot requires TPM 1.2 or 2.0 and UEFI Secure Boot.   |
+| Bitlocker                                    | Required                 | Required                 | TPM 1.2 or later required or a removable USB memory device such as a flash drive. Please note that TPM 2.0 requires UEFI Secure Boot in order for BitLocker to work properly.  |
 | Passport: Domain AADJ Join                   | Required                 | Required                 | Supports both versions of TPM, but requires TPM with HMAC and EK certificate for key attestation support.  |
 | Passport: MSA or Local Account               | Required                 | Required                 | TPM 2.0 is required with HMAC and EK certificate for key attestation support.      |
 | Device Encryption                            | Not Applicable           | Required                 | TPM 2.0 is required for all InstantGo devices.                |

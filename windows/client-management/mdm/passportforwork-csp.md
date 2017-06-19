@@ -201,9 +201,9 @@ This cloud service encrypts a recovery secret, which is stored locally on the cl
 <a href="" id="biometrics-facialfeaturesuseenhancedantispoofing--only-for---device-vendor-msft-"></a>**Biometrics/FacialFeaturesUseEnhancedAntiSpoofing** (only for ./Device/Vendor/MSFT)  
 <p style="margin-left: 20px">Boolean value used to enable or disable enhanced anti-spoofing for facial feature recognition on Windows Hello face authentication. This node was added in Windows 10, version 1511.
 
-<p style="margin-left: 20px">Default value is false. If you set this policy to true or don't configure this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. Windows Hello face authentication is disabled on devices that do not support enhanced anti-spoofing.
+<p style="margin-left: 20px">Default value is false. If you set this policy to false or don't configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
-<p style="margin-left: 20px">If you set this policy to false, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
+<p style="margin-left: 20px">If you set this policy to true, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. Windows Hello face authentication is disabled on devices that do not support enhanced anti-spoofing.
 
 <p style="margin-left: 20px">Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.
 

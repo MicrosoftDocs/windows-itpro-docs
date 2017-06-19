@@ -14,6 +14,8 @@ author: nickbrower
 
 # What's new in MDM enrollment and management
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
@@ -640,6 +642,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>SmartScreen/EnableAppInstallControl</li>
 <li>SmartScreen/EnableSmartScreenInShell</li>
 <li>SmartScreen/PreventOverrideForFilesInShell</li>
+<li>Start/AllowPinnedFolderDocuments</li>
+<li>Start/AllowPinnedFolderDownloads</li>
+<li>Start/AllowPinnedFolderFileExplorer</li>
+<li>Start/AllowPinnedFolderHomeGroup</li>
+<li>Start/AllowPinnedFolderMusic</li>
+<li>Start/AllowPinnedFolderNetwork</li>
+<li>Start/AllowPinnedFolderPersonalFolder </li>
+<li>Start/AllowPinnedFolderPictures</li>
+<li>Start/AllowPinnedFolderSettings</li>
+<li>Start/AllowPinnedFolderVideos</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -661,6 +673,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>TextInput/AllowKeyboardTextSuggestions</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 <li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartDeadlinePeriodInDays</li>
 <li>Update/AutoRestartNotificationSchedule</li>
 <li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
@@ -850,6 +863,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added a section describing SyncML examples of various ADMX elements.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)</td>
+<td style="vertical-align:top">New topic.</td>
+</tr>
+<tr class="odd">
 <td style="vertical-align:top">[Deploy and configure App-V apps using MDM](appv-deploy-and-config.md)</td>
 <td style="vertical-align:top"><p>Added a new topic describing how to deploy and configure App-V apps using MDM.</p>
 </td></tr>
@@ -888,6 +905,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>[Policy CSP](policy-configuration-service-provider.md)</li>
 </ul>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[TPMPolicy CSP](tpmpolicy-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1703.</td>
+</tr>
 </tbody>
 </table> 
 
@@ -1158,6 +1179,85 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### June 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)</td>
+<td style="vertical-align:top">Added a list of registry locations that ingested policies are allowed to write to.</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top">Added the following nodes:
+<ul>
+<li>Profiles</li>
+<li>Direction</li>
+<li>InterfaceTypes</li>
+<li>EdgeTraversal</li>
+<li>Status</li>
+</ul>
+Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[TPMPolicy CSP](tpmpolicy-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1703.</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top">
+<p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>Start/AllowPinnedFolderDocuments</li>
+<li>Start/AllowPinnedFolderDownloads</li>
+<li>Start/AllowPinnedFolderFileExplorer</li>
+<li>Start/AllowPinnedFolderHomeGroup</li>
+<li>Start/AllowPinnedFolderMusic</li>
+<li>Start/AllowPinnedFolderNetwork</li>
+<li>Start/AllowPinnedFolderPersonalFolder </li>
+<li>Start/AllowPinnedFolderPictures</li>
+<li>Start/AllowPinnedFolderSettings</li>
+<li>Start/AllowPinnedFolderVideos</li>
+<li>Update/AutoRestartDeadlinePeriodInDays</li>
+</ul>
+<p>Added the following new policies for Windows 10, version 1709:</p> 
+<ul>
+<li>Power/DisplayOffTimeoutOnBattery</li>
+<li>Power/DisplayOffTimeoutPluggedIn</li>
+<li>Power/HibernateTimeoutOnBattery</li>
+<li>Power/HibernateTimeoutPluggedIn</li>
+<li>Power/StandbyTimeoutOnBattery</li>
+<li>Power/StandbyTimeoutPluggedIn</li>
+<li>Update/ScheduledInstallEveryWeek</li>
+<li>Update/ScheduledInstallFirstWeek</li>
+<li>Update/ScheduledInstallFourthWeek</li>
+<li>Update/ScheduledInstallSecondWeek</li>
+<li>Update/ScheduledInstallThirdWeek</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top">Updated the CSP in Windows 10, version 1709. Added the following settings:
+<ul>
+<li>DeviceTagging/Group</li>
+<li>DeviceTagging/Criticality</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### May 2017
 
 <table>
@@ -1230,7 +1330,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP in the next major update to Windows 10.</p>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">MDM support for Windows 10 S</td>
@@ -1744,7 +1844,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
-<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values Windows 10, version 1709:</p>
 <ul>
 <li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
 <li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
@@ -1752,7 +1852,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
-<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+<td style="vertical-align:top"><p>In the Windows 10, version 1709, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">Updated the DDF topics.</td>

@@ -1,22 +1,33 @@
 ---
 title: Change history for Windows 10 for Education (Windows 10)
 description: New and changed topics in Windows 10 for Education
+keywords: Windows 10 education documentation, change history
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 author: CelesteDG
+ms.author: celested
 ---
 
 # Change history for Windows 10 for Education
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## June 2017
+
+| New or changed topic | Description |
+| --- | ---- |
+| [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | Includes the following updates:</br></br> - New configuration guidance for IT administrators to enable students and school personnel, who use assistive technology apps not available in the Microsoft Store for Education and use devices running Windows 10 S, to be successful in the classroom and in their jobs.</br> - New configuration information when using Windows 10 S for education. |
+| [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | New configuration guidance for IT administrators to enable students and school personnel, who use assistive technology apps not available in the Microsoft Store for Education and use devices running Windows 10 S, to be successful in the classroom and in their jobs. |
+| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the recommended apps section to include information about Office 365 for Windows 10 S (Education Preview). |
+
 ## May 2017
 
 | New or changed topic | Description |
 | --- | ---- |
 | [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md) | New. If you have an education tenant and use devices Windows 10 Pro or Windows 10 S in your schools, find out how you can opt-in to a free switch to Windows 10 Pro Education. |
+| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated. Now includes network tips and updated step-by-step instructions that show the latest updates to the app such as Wi-Fi setup. |
 
 ## RELEASE: Windows 10, version 1703 (Creators Update)
 

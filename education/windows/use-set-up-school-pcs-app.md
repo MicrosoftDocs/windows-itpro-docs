@@ -1,13 +1,14 @@
 ---
 title: Use Set up School PCs app
 description: Learn how the Set up School PCs app works and how to use it.
-keywords: shared cart, shared PC, school, set up school pcs
+keywords: shared cart, shared PC, school, Set up School PCs, overview, how to use
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
+ms.author: celested
 ---
 
 # Use the Set up School PCs app 
@@ -145,7 +146,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     ![Only skip Wi-Fi if you have a wired Ethernet connection](images/suspc_createpackage_skipwifi_modaldialog.png)
 
-5. To assign a name to the student PCs, in the **Assign a name to these student PCs** page:
+5. To assign a name to the student PCs, in the **Name these devices** page:
   1. Add a short name that Set up School PCs will use as a prefix to identify and easily manage the group of devices, apps, and other settings through your device management client. 
   
     > [!NOTE]  
@@ -191,13 +192,17 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
   3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
 
-8. In the **Add recommended apps** page, you can choose from a set of recommended Microsoft Store apps to provision. The recommended apps include Minecraft: Education Edition and several STEM and Makerspace apps.
+8. In the **Add recommended apps** page, you can choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
+  * **Office 365 for Windows 10 S (Education Preview)** - Your student PCs must be running Windows 10 S to install this app. If you try to install this app on other editions of Windows, setup will fail.
+  * **Minecraft: Education Edition** - Free trial
+  * Popular **STEM and Makerspace apps**
+
   1. Select the apps that you would like to provision and then click **Next** when you're done.
   2. Click **Skip** if you don't want to provision any apps.
 
     **Figure 6** - Select from a set of recommended Microsoft Store apps
 
-    ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps.png)
+    ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps_office061217.png)
     
     The set of recommended Microsoft Store for Education apps may vary from what we show here.
 

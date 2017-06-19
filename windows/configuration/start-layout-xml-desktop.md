@@ -6,6 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
+ms.author: jdecker
+ms.date: 06/13/2017
 localizationpriority: high
 ---
 
@@ -52,9 +54,9 @@ The following table lists the supported elements and attributes for the LayoutMo
 | RequiredStartGroupsCollection</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to contain collection of RequiredStartGroups |
 | [RequiredStartGroups](#requiredstartgroups)</br></br>Parent:</br>RequiredStartGroupsCollection | Region | Use to contain the AppendGroup tags, which represent groups that can be appended to the default Start layout |
 | [AppendGroup](#appendgroup)</br></br>Parent:</br>RequiredStartGroups | Name | Use to specify the tiles that need to be appended to the default Start layout |
-| [start:Tile](#specify-start-tiles)</br></br>Parent:</br>AppendGroup | AppUserModelID</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Universal Windows app</br>- A Windows 8 or Windows 8.1 app |
+| [start:Tile](#specify-start-tiles)</br></br>Parent:</br>AppendGroup | AppUserModelID</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Universal Windows app</br>- A Windows 8 or Windows 8.1 app</br></br>Note that AppUserModelID is case-sensitive. |
 | start:DesktopApplicationTile</br></br>Parent:</br>AppendGroup | DesktopApplicationID</br>DesktopApplicationLinkPath</br>Size</br>Row</br>Column | Use to specify any of the following:</br>- A Windows desktop application with a known AppUserModelID</br>- An application in a known folder with a link in a legacy Start Menu folder</br>- A Windows desktop application link in a legacy Start Menu folder</br>- A Web link tile with an associated .url file that is in a legacy Start Menu folder |
-| start:SecondaryTile</br></br>Parent:</br>AppendGroup | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile |
+| start:SecondaryTile</br></br>Parent:</br>AppendGroup | AppUserModelID</br>TileID</br>Arguments</br>DisplayName</br>Square150x150LogoUri</br>ShowNameOnSquare150x150Logo</br>ShowNameOnWide310x150Logo</br>Wide310x150LogoUri</br>BackgroundColor</br>ForegroundText</br>IsSuggestedApp</br>Size</br>Row</br>Column | Use to pin a Web link through a Microsoft Edge secondary tile. Note that AppUserModelID is case-sensitive. |
 | TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to 3 default apps to the frequently used apps section in the system area |
 | Tile</br></br>Parent:</br>TopMFUApps | AppUserModelID | Use with the TopMFUApps tags to specify an app with a known AppUserModelID |
 | DesktopApplicationTile</br></br>Parent:</br>TopMFUApps | LinkFilePath | Use with the TopMFUApps tags to specify an app without a known AppUserModelID |
@@ -144,6 +146,9 @@ You can use the **start:Tile** tag to pin any of the following apps to Start:
 
 To specify any one of these apps, you must set the **AppUserModelID** attribute to the application user model ID that's associated with the corresponding app. 
 
+>[!IMPORTANT]
+>**AppUserModelID** (AUMID) is case-sensitive.
+
 The following example shows how to pin the Microsoft Edge Universal Windows app:
 
  ```XML
@@ -160,35 +165,41 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
 - By using a path to a shortcut link (.lnk file) to a Windows desktop application.
 
-    To pin a Windows desktop application through this method, you must first add the .lnk file in the specified location when the device first boots. 
+  >[!NOTE]
+  >In Start layouts for Windows 10, version 1703, you should use **DesktopApplicationID** rather than **DesktopApplicationLinkPath** if you are using Group Policy or MDM to apply the start layout and the application was installed after the user's first sign-in.
 
-    The following example shows how to pin the Command Prompt:
+  To pin a Windows desktop application through this method, you must first add the .lnk file in the specified location when the device first boots. 
 
-    ```XML
-    <start:DesktopApplicationTile
+  The following example shows how to pin the Command Prompt:
+
+  ```XML
+  <start:DesktopApplicationTile
           DesktopApplicationLinkPath="%appdata%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk"
           Size="2x2"
           Row="0"
           Column="4"/>
-    ```
+  ```
     
-    You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
+  You must set the **DesktopApplicationLinkPath** attribute to the .lnk file that points to the Windows desktop application. The path also supports environment variables.
 
-    If you are pointing to a third-party Windows desktop application, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".
+  If you are pointing to a third-party Windows desktop application and the layout is being applied before the first boot, you must put the .lnk file in a legacy Start Menu directory before first boot; for example, "%APPDATA%\Microsoft\Windows\Start Menu\Programs\" or the all users profile "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\".
 
 - By using the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
-    To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app. 
 
-    The following example shows how to pin the Internet Explorer Windows desktop application:
+  You can use the [Get-StartApps cmdlet](https://technet.microsoft.com/library/dn283402.aspx) on a PC that has the application pinned to Start to obtain the app ID.
 
-    ```XML
+  To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app. 
+
+  The following example shows how to pin the Internet Explorer Windows desktop application:
+
+  ```XML
     <start:DesktopApplicationTile
           DesktopApplicationID="Microsoft.Windows.Explorer"
           Size="2x2"
           Row="0"
           Column="2"/>
-    ```
+  ```
     
 
 You can also use the **start:DesktopApplicationTile** tag as one of the methods for pinning a Web link to Start. The other method is to use a Microsoft Edge secondary tile.
@@ -204,6 +215,9 @@ The following example shows how to create a tile of the Web site's URL, which yo
           Row="0"
           Column="2"/>
 ```
+
+>[!NOTE]
+>In Windows 10, version 1703, **Export-StartLayout** will use **DesktopApplicationLinkPath** for the .url shortcut. You must change **DesktopApplicationLinkPath** to **DesktopApplicationID** and provide the URL.
 
 #### start:SecondaryTile
 
@@ -231,7 +245,7 @@ The following table describes the other attributes that you can use with the **s
 
 | Attribute | Required/optional | Description |
 | --- | --- | --- |
-| AppUserModelID | Required | Must point to Microsoft Edge. |
+| AppUserModelID | Required | Must point to Microsoft Edge. Note that AppUserModelID is case-sensitive. |
 | TileID | Required | Must uniquely identify your Web site tile. |
 | Arguments | Required | Must contain the URL of your Web site. |
 | DisplayName | Required | Must specify the text that you want users to see. |
@@ -273,6 +287,9 @@ The following example shows how to modify your LayoutModification.xml file to ad
 
 You can use the **AppendOfficeSuite** tag to add the in-box installed Office suite of apps to Start.
 
+>[!NOTE]
+>The OEM must have installed Office for this tag to work.
+
 The following example shows how to add the **AppendOfficeSuite** tag to your LayoutModification.xml file to append the full Universal Office suite to Start:
 
 ```XML
@@ -288,6 +305,9 @@ The following example shows how to add the **AppendOfficeSuite** tag to your Lay
 #### AppendDownloadOfficeTile
 
 You can use the **AppendDownloadOfficeTile** tag to append the Office trial installer to Start. This tag adds the Download Office tile to Start and the download tile will appear at the bottom right-hand side of the second group.
+
+>[!NOTE]
+>The OEM must have installed the Office trial installer for this tag to work.
 
 The following example shows how to add the **AppendDownloadOfficeTile** tag to your LayoutModification.xml file:
 

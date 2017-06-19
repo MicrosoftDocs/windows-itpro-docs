@@ -472,7 +472,7 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>United Kingdom</li>
             <li>United States</li>
             <li>Uruguay</li>
-            <li>Viet Nam</li>
+            <li>Vietnam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
             <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
@@ -482,43 +482,32 @@ Microsoft Store for Business and Education is currently available in these marke
 </table>
 
 ### Support for free apps
-<table>
-   <tr>
-        <th align="center">Support for free apps only</th>
-   </tr>
-   <tr align="left">
-     <td>
-        <ul>
-            <li>Brazil</li>
-            <li>India</li>
-            <li>Russia</li>
-        </ul>
-    </td>
-   </tr>
-</table>
+Customers in these markets can use Microsoft Store for Business and Education to acquire free apps:
+- India
+- Russia 
 
 ### Support for free apps and Minecraft: Education Edition
-<table>
-   <tr>
-        <th align="center">Support for free apps and Minecraft: Education Edition</th>
-   </tr>
-   <tr align="left">
-     <td>
-        <ul>
-            <li>Taiwan</li>
-            <li>Ukraine</li>
-        </ul>
-    </td>
-   </tr>
-</table>
- 
-**Microsoft Store for Business customers**
-- Admins can acquire free apps from **Microsoft Store for Business**.
+Customers in these markets can use Microsoft Store for Business and Education to acquire free apps and Minecraft: Education Edition:  
+- Albania
+- Bosnia
+- Brazil
+- Georgia
+- Korea
+- Taiwan
+- Ukraine 
 
-**Microsoft Store for Education customers**
+This table summarize what customers can purchase, depending on which Microsoft Store they are using. 
+
+| Store | Free apps | Minecraft: Education Edition |
+| ----- | --------- | ---------------------------- |
+| Microsoft Store for Business | supported | not supported |
+| Microsoft Store for Education | supported | supported; invoice payment required |
+
+> [!NOTE]
+> **Microsoft Store for Education customers with support for free apps and Minecraft: Education Edition**
 - Admins can acquire free apps from **Microsoft Store for Education**.
-- Admins can use an invoice to acquire **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
-- Teachers can acquire free apps, but not **Minecraft: Education Edition**. 
+- Admins need to use an invoice to purchase **Minecraft: Education Edition**. For more information, see [Invoice payment option](https://docs.microsoft.com/education/windows/school-get-minecraft#invoices). 
+- Teachers, or people with the Basic Purachaser role, can acquire free apps, but not **Minecraft: Education Edition**. 
 
 ## Privacy notice
 
