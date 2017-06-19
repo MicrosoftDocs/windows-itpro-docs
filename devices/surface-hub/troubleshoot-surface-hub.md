@@ -8,6 +8,8 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
+ms.author: jdecker
+ms.date: 06/19/2017
 localizationpriority: medium
 ---
 
