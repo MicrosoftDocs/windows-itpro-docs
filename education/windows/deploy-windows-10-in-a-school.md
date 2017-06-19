@@ -8,6 +8,7 @@ ms.pagetype: edu
 ms.sitesec: library
 localizationpriority: high
 author: craigash
+ms.author: celested
 ---
 
 # Deploy Windows 10 in a school
