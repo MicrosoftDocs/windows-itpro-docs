@@ -1,13 +1,14 @@
 ---
 title: Take a Test app technical reference
 description: The policies and settings applied by the Take a Test app.
-keywords: take a test, test taking, school
+keywords: take a test, test taking, school, policies
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
+ms.author: celested
 ---
 
 # Take a Test app technical reference 

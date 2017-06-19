@@ -3,6 +3,8 @@ title: Use fully qualified doman name with Surface Hub
 description: Troubleshoot common problems, including setup issues, Exchange ActiveSync errors.
 keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync errors"]
 author: jdeckerms
+ms.author: jdecker
+ms.date: 06/19/2017
 localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: support

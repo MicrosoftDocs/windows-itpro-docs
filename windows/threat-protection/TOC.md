@@ -1,5 +1,5 @@
 # [Threat protection](index.md)
-
+## [Windows Defender Security Center](windows-defender-security-center\windows-defender-security-center.md)
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp\windows-defender-advanced-threat-protection.md)
 ### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
 ### [Preview features](windows-defender-atp\preview-windows-defender-advanced-threat-protection.md)
@@ -134,9 +134,12 @@
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy](windows-information-protection\overview-create-wip-policy.md)
-#### [Create a Windows Information Protection (WIP) policy using Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
-##### [Deploy your Windows Information Protection (WIP) policy](windows-information-protection\deploy-wip-policy-using-intune.md)
-##### [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)
+#### [Create a Windows Information Protection (WIP) using the classic console for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
+##### [Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune.md)
+##### [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the classic console for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)
+#### [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)
+##### [Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)
+##### [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)
 #### [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](windows-information-protection\create-wip-policy-using-sccm.md)
 #### [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
 #### [Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](windows-information-protection\wip-app-enterprise-context.md)
