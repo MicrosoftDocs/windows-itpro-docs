@@ -38,7 +38,7 @@ For more information, see [Overview of Windows AutoPilot](https://review.docs.mi
 
 ## Windows AutoPilot deployment profiles in Microsoft Store for Business and Education
 You can manage new devices in Microsoft Store for Business or Microsoft Store for Education. Devices need to meet these requirements:
-- Windows 10 (version ... which???)
+- Windows 10 (versions ...)
 - Specific hardware vendor???
 - New devices that have not been through Windows out-of-box experience. 
 
@@ -48,16 +48,16 @@ You can create and apply AutoPilot deployment profiles to these devices. The ove
 
 Figure 1 - Windows AutoPilot Deployment Program process
 
-## Add devices
+## Add devices and apply AutoPilot deployment profile
 To manage devices through Microsoft Store for Business and Education, you'll need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact, or the store where you purchased the devices. Upload the .csv file to Microsoft Store to add the devices. 
 
 The device information file needs to be in this format:
 
 | Column    | Data |
 | --------- | ---- |
-| column A | data type 1|
-| column B | data type 2|
-| column C | data type 3|
+| Serial Number | data type 1|
+| Product Id | data type 2|
+| Hardware Hash | data type 3|
 
 When you add devices, you need to add them to a *device group*. Device groups allow you to apply an AutoPilot deployment profile to mutliple devices. You need to have at least one device group. The first time you add devices, you'll need to create a device group. 
 
@@ -65,17 +65,21 @@ When you add devices, you need to add them to a *device group*. Device groups al
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
 3. Click **Add devices**, navigate to the *.csv file and select it. 
-4. Type a name for a new device group, or choose one from the list, and then click **Add**. <br>  
-![Screenshot of Add devices to a group dialog. You can create a new group, or select a current group.](images/add-devices.png)
+4. Type a name for a new device group, or choose one from the list, and then click **Add**. </br>
+If you don't add devices to a group, you can select the individual devices to apply a profile to. <br>  
+![Screenshot of Add devices to a group dialog. You can create a new group, or select a current group.](images/add-devices.png)</br>
+ 
+5. Click the devices or device group that you want to manage. You need to select devices before you can apply an AutoPilot deployment profile. 
 
-You'll see your devices  
+**Apply AutoPilot deployment profile**
+1. When you have devices selected, click    
 
-## Create AutoPilot deployment profile
+## Manage AutoPilot deployment profiles
 Info on adding profiles -- need to create one to start; can have multiple; can edit later
 
-TODO: include info in this topic on managing profiles, making changes, and which devices those changes are applied to -- or -- have a separate topic on managing AutoPilot profiles
+**Create AutoPilot profile**
 
-**Add AutoPilot profile**
+**Edit AutoPilot profile**
 
-## Apply AutoPilot deployment profile
-Info on selecting devices by group or individually to apply profile
+**Delete AutoPilot profile**
+
