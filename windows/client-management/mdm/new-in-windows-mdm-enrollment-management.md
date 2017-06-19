@@ -1237,6 +1237,22 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Power/HibernateTimeoutPluggedIn</li>
 <li>Power/StandbyTimeoutOnBattery</li>
 <li>Power/StandbyTimeoutPluggedIn</li>
+<li>Update/ScheduledInstallEveryWeek</li>
+<li>Update/ScheduledInstallFirstWeek</li>
+<li>Update/ScheduledInstallFourthWeek</li>
+<li>Update/ScheduledInstallSecondWeek</li>
+<li>Update/ScheduledInstallThirdWeek</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top">Updated the CSP in Windows 10, version 1709. Added the following settings:
+<ul>
+<li>DeviceTagging/Group</li>
+<li>DeviceTagging/Criticality</li>
 </ul>
 </td></tr>
 </tbody>

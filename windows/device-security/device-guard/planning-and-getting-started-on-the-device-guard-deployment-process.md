@@ -25,11 +25,25 @@ This topic provides a roadmap for planning and getting started on the Device Gua
 3. **Review how much variety in software and hardware is needed by roles or departments**. When several departments all use the same hardware and software, you might need to deploy only one code integrity policy for them. More variety across departments might mean you need to create and manage more code integrity policies. The following questions can help you clarify how many code integrity policies to create:
     - How standardized is the hardware?<br>This can be relevant because of drivers. You could create a code integrity policy on hardware that uses a particular set of drivers, and if other drivers in your environment use the same signature, they would also be allowed to run. However, you might need to create several code integrity policies on different "reference" hardware, then merge the policies together, to ensure that the resulting policy recognizes all the drivers in your environment.
 
-    - Is there already a list of accepted applications?<br>A list of accepted applications can be used to help create a baseline code integrity policy.<br>As of Windows 10, version 1703, it might also be useful to have a list of plug-ins, add-ins, or modules that you want to allow only in a specific app (such as a line-of-business app). Similarly, it might be useful to have a list of plug-ins, add-ins, or modules that you want to block in a specific app (such as a browser).
-
     - What software does each department or role need? Should they be able to install and run other departments’ software?<br>If multiple departments are allowed to run the same list of software, you might be able to merge several code integrity policies to simplify management.
          
     - Are there departments or roles where unique, restricted software is used?<br>If one department needs to run an application that no other department is allowed, it might require a separate code integrity policy. Similarly, if only one department must run an old version of an application (while other departments allow only the newer version), it might require a separate code integrity policy.
+
+    - Is there already a list of accepted applications?<br>A list of accepted applications can be used to help create a baseline code integrity policy.<br>As of Windows 10, version 1703, it might also be useful to have a list of plug-ins, add-ins, or modules that you want to allow only in a specific app (such as a line-of-business app). Similarly, it might be useful to have a list of plug-ins, add-ins, or modules that you want to block in a specific app (such as a browser).
+
+    - As part of a threat review process, have you reviewed systems for software that can load arbitrary DLLs or run code or scripts? 
+    In day-to-day operations, your organization’s security policy may allow certain applications, code, or scripts to run on your systems depending on their role and the context. However, if your security policy requires that you run only trusted applications, code, and scripts on your systems, you may decide to lock these systems down securely with Device Guard code integrity policies. You can also fine-tune your control by using Device Guard in combination with AppLocker, as described in [Device Guard with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
+
+    Legitimate applications from trusted vendors provide valid functionality. However, an attacker could also potentially use that same functionality to run malicious executable code that could bypass code integrity policies.
+
+    For operational scenarios that require elevated security, certain applications with known Code Integrity bypasses may represent a security risk if you whitelist them in your code integrity policies. Other applications where older versions of the application had vulnerabilities also represent a risk. Therefore, you may want to deny or block such applications from your code integrity policies. For applications with vulnerabilities, once the vulnerabilities are fixed you can create a rule that only allows the fixed or newer versions of that application. The decision to allow or block applications depends on the context and on how the reference system is being used.
+
+    Security professionals collaborate with Microsoft continuously to help protect customers. With the help of their valuable reports, Microsoft has identified a list of known applications that an attacker could potentially use to bypass Device Guard code integrity policies. Depending on the context, you may want to block these applications. To view this list of applications and for use case examples, such as disabling msbuild.exe, see [Deploy code integrity policies: steps](https://technet.microsoft.com/itpro/windows/keep-secure/deploy-code-integrity-policies-steps).
+
+
+
+
+
 
 4.  **Identify LOB applications that are currently unsigned**. Although requiring signed code (through code integrity policies) protects against many threats, your organization might use unsigned LOB applications, for which the process of signing might be difficult. You might also have applications that are signed, but you want to add a secondary signature to them. If so, identify these applications, because you will need to create a catalog file for them. For a basic description of catalog files, see the table in [Introduction to Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md). For more background information about catalog files, see [Reviewing your applications: application signing and catalog files](requirements-and-deployment-planning-guidelines-for-device-guard.md#reviewing-your-applications-application-signing-and-catalog-files).
 
@@ -59,3 +73,5 @@ This topic provides a roadmap for planning and getting started on the Device Gua
     >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
 
     For information about enabling VBS features, see [Deploy Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md).
+
+<br />

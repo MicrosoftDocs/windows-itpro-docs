@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
+ms.author: celested
 ---
 
 # Set up Windows devices for education
