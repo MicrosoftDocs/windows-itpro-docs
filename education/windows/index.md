@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
+ms.author: celested
 ---
 
 # Windows 10 for Education

@@ -1229,6 +1229,31 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Start/AllowPinnedFolderVideos</li>
 <li>Update/AutoRestartDeadlinePeriodInDays</li>
 </ul>
+<p>Added the following new policies for Windows 10, version 1709:</p> 
+<ul>
+<li>Power/DisplayOffTimeoutOnBattery</li>
+<li>Power/DisplayOffTimeoutPluggedIn</li>
+<li>Power/HibernateTimeoutOnBattery</li>
+<li>Power/HibernateTimeoutPluggedIn</li>
+<li>Power/StandbyTimeoutOnBattery</li>
+<li>Power/StandbyTimeoutPluggedIn</li>
+<li>Update/ScheduledInstallEveryWeek</li>
+<li>Update/ScheduledInstallFirstWeek</li>
+<li>Update/ScheduledInstallFourthWeek</li>
+<li>Update/ScheduledInstallSecondWeek</li>
+<li>Update/ScheduledInstallThirdWeek</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top">Updated the CSP in Windows 10, version 1709. Added the following settings:
+<ul>
+<li>DeviceTagging/Group</li>
+<li>DeviceTagging/Criticality</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
@@ -1305,7 +1330,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP in the next major update to Windows 10.</p>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">MDM support for Windows 10 S</td>
@@ -1819,7 +1844,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
-<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values Windows 10, version 1709:</p>
 <ul>
 <li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
 <li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
@@ -1827,7 +1852,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
-<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+<td style="vertical-align:top"><p>In the Windows 10, version 1709, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">Updated the DDF topics.</td>
