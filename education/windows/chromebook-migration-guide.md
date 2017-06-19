@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: edu, devices
 localizationpriority: high
 author: craigash
+ms.author: celested
 ---
 
 # Chromebook migration guide
