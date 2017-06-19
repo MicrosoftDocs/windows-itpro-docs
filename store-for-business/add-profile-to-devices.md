@@ -46,7 +46,7 @@ You can create and apply AutoPilot deployment profiles to these devices. The ove
 
 ![Block diagram with main steps for using AutoPilot in Microsoft Store for Business: upload device list; group devices (this step is optional); add profile; and apply profile.](images/autopilot-process.png)
 
-Figure 1 - AutoPilot process
+Figure 1 - Windows AutoPilot Deployment Program process
 
 ## Add devices
 To manage devices through Microsoft Store for Business and Education, you'll need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact, or the store where you purchased the devices. Upload the .csv file to Microsoft Store to add the devices. 
