@@ -27,7 +27,7 @@ author: CelesteDG
                 </a>
             </li>
             <li>
-                <a href="http://aka.ms/getstartedwithmicrosofteducation">
+                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -50,13 +50,13 @@ author: CelesteDG
         <h1>Microsoft Education documentation and resources</h1>
         <ul class="pivots">
             <li>
-                <a href="#itpro">IT Pro</a>
+                <a href="#itpro">IT Admins</a>
                 <ul id="itpro">
                     <li>
                         <a href="#itpro-all"></a>
                         <ul id="itpro-all" class="cardsC">
                             <li>
-                                <a href="https://aka.ms/getstartedwithmicrosofteducation">
+                                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -132,7 +132,7 @@ author: CelesteDG
                                 </a>
                             </li>
                             <li>
-                                <a href="http://aka.ms/sdsoverview">
+                                <a href="https://support.office.com/article/Overview-of-School-Data-Sync-f3d1147b-4ade-4905-8518-508e729f2e91">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -201,6 +201,44 @@ author: CelesteDG
                                                 <div class="cardText">
                                                     <h3>Minecraft: Education Edition</h3>
                                                     <p>Learn how to get, distribute, and manage permissions for Minecraft: Education Edition.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/education/windows/use-set-up-school-pcs-app">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up School PCs</h3>
+                                                    <p>Use the app to create a provisioning package that you can use to quickly set up one or more Windows 10 devices.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://onedrive.live.com/view.aspx?resid=91F4E618548FC604!2261&ithint=file%2cdocx&app=Word&authkey=!AOgLvpbaerOOfwM">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft Teams</h3>
+                                                    <p>Make the most of Microsoft Teams and find out how to deploy, launch pilot teams, and launch Teams to the rest of your institution.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -325,6 +363,44 @@ author: CelesteDG
                                                 <div class="cardText">
                                                     <h3>Microsoft Educator Community</h3>
                                                     <p>Connect and collaborate, find training and lessons, and do more in this hub for educators.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://education.microsoft.com/courses-and-resources/resources/meet-microsoft-teams">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft Teams</h3>
+                                                    <p>Learn how the new classroom experiences in Microsoft Teams can help you manage your daily workflow more easily than ever before.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/education/windows/use-set-up-school-pcs-app">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up School PCs</h3>
+                                                    <p>Use the app to create a provisioning package that you can use to quickly set up one or more Windows 10 devices.</p>
                                                 </div>
                                             </div>
                                         </div>
