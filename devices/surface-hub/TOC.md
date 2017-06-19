@@ -31,6 +31,7 @@
 #### [Use fully qualified domain name with Surface Hub](use-fully-qualified-domain-name-surface-hub.md)
 #### [Wireless network management](wireless-network-management-for-surface-hub.md)
 ### [Install apps on your Surface Hub](install-apps-on-surface-hub.md)
+### [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) 
 ### [End a Surface Hub meeting with End session](i-am-done-finishing-your-surface-hub-meeting.md)
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md)
