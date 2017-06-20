@@ -60,6 +60,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Matt Graeber | @mattifestation| 
 |Matt Nelson | @enigma0x3| 
 |Oddvar Moe |@Oddvarmoe|
+|Alex Ionescu | @aionescu|
 
 <br />
 
