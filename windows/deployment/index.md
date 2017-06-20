@@ -10,7 +10,7 @@ author: greg-lindsay
 ---
 
 # Deploy, Upgrade and Update Windows 10
-Learn about deployment in Windows 10 for IT professionals. This includes deploying the operating system, upgrading to it from previous version and updating Windows 10.
+Learn about deployment in Windows 10 for IT professionals. This includes deploying the operating system, upgrading to it from previous versions and updating Windows 10.
 
 ## In this section
 
