@@ -29,7 +29,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depotName": "MSDN.windows-deploy"
+			}
+		}
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "windows-deploy"

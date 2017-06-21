@@ -23,7 +23,12 @@
 		"author": "jdeckerms",
 		"ms.sitesec": "library",
 		"ms.author": "jdecker",
-		"ms.date": "05/23/2017"		
+		"ms.date": "05/23/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depotName": "Win.surface-hub"
+			}
+		}
     },
     "externalReference": [
     ],
