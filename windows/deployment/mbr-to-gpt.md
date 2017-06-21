@@ -224,6 +224,7 @@ Before any change to the disk is made, MBR2GPT validates the layout and geometry
   - 16KB + 1 sector at the end of the disk
 - There are at most 3 primary partitions in the MBR partition table
 - One of the partitions is set as active and is the system partition
+- The disk does not have any extended/logical partition
 - The BCD store on the system partition contains a default OS entry pointing to an OS partition
 - The volume IDs can be retrieved for each volume which has a drive letter assigned
 - All partitions on the disk are of MBR types recognized by Windows or has a mapping specified using the /map command-line option
