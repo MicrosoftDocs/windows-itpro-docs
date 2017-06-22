@@ -38,7 +38,12 @@
 		"ms.technology": "windows",
 		"ms.topic": "article",
 		"ms.author": "brianlic",
-		"ms.date": "04/05/2017"
+		"ms.date": "04/05/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "MSDN.windows-hub"
+			}
+		}
 	},
     "fileMetadata": {},
     "template": [],
