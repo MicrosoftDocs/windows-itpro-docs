@@ -26,7 +26,7 @@
 		"ms.date": "05/23/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "Win.surface-hub"
+			  "depot_name": "Win.surface-hub"
 			}
 		}
     },

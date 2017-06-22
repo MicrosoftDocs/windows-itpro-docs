@@ -33,7 +33,7 @@
 		"breadcrumb_path": "/windows/smb/breadcrumb/toc.json",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "TechNet.smb"
+			  "depot_name": "TechNet.smb"
 			}
 		}
 	},

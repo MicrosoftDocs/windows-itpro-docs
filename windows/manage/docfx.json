@@ -32,7 +32,7 @@
     "globalMetadata": {
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "MSDN.windows-manage"
+			  "depot_name": "MSDN.windows-manage"
 			}
 		}
 	},

@@ -23,7 +23,7 @@
 		"ms.date": "04/05/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "Win.microsoft-edge"
+			  "depot_name": "Win.microsoft-edge"
 			}
 		}
     },

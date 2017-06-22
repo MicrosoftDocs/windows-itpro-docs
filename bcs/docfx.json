@@ -32,7 +32,7 @@
     "globalMetadata": {
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "TechNet.bcs"
+			  "depot_name": "TechNet.bcs"
 			}
 		}
 	},

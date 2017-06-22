@@ -37,7 +37,7 @@
 		"ms.date": "04/05/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "Win.itpro-hololens"
+			  "depot_name": "Win.itpro-hololens"
 			}
 		}
 	},

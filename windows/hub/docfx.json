@@ -41,7 +41,7 @@
 		"ms.date": "04/05/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "MSDN.windows-hub"
+			  "depot_name": "MSDN.windows-hub"
 			}
 		}
 	},

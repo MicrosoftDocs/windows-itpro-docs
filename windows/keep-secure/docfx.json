@@ -32,7 +32,7 @@
     "globalMetadata": {
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "MSDN.keep-secure"
+			  "depot_name": "MSDN.keep-secure"
 			}
 		}
 	},

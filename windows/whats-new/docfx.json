@@ -39,7 +39,7 @@
 		"ms.date": "04/05/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "MSDN.win-whats-new"
+			  "depot_name": "MSDN.win-whats-new"
 			}
 		}
 	},

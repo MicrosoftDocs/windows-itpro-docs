@@ -18,7 +18,7 @@
         "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "Win.windows"
+			  "depot_name": "Win.windows"
 			}
 		}
     },

@@ -24,7 +24,7 @@
 		"ms.date": "04/05/2017",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
-			  "depotName": "Win.internet-explorer"
+			  "depot_name": "Win.internet-explorer"
 			}
 		}
     },
