@@ -52,11 +52,9 @@ Figure 1 shows the Windows 10 startup process.
   
 ![Windows 10 startup process](./images/dn168167.boot_process(en-us,MSDN.10).png)
  
-
-
 **Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage**
 
-Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip. Fortunately, all PCs certified for use with Windows 10 have these components, and many PCs designed for earlier versions of Windows have them, as well.
+Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip. Fortunately, all Windows 10 PCs that meet Windows Hardware Compatibility Program requirements have these components, and many PCs designed for earlier versions of Windows have them as well.
 
 The sections that follow describe Secure Boot, Trusted Boot, ELAM, and Measured Boot.
 
