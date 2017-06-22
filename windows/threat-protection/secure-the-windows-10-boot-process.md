@@ -24,7 +24,7 @@ Windows 10 has multiple levels of protection for desktop apps and data, too. Wi
 
 Those are just some of the ways that Windows 10 protects you from malware. However, those security features protect you only after Windows 10 starts. Modern malware—and bootkits specifically—are capable of starting before Windows, completely bypassing operating system security, and remaining completely hidden.
 
-When you run Windows 10 on a Windows 10–certified PC or any PC that supports Unified Extensible Firmware Interface (UEFI), Trusted Boot protects your PC from malware from the moment you power on your PC until your anti-malware starts. In the unlikely event that malware does infect a PC, it can’t remain hidden; Trusted Boot can prove the system’s integrity to your infrastructure in a way that malware can’t disguise. Even on PCs without UEFI, Windows 10 provides even better startup security than previous versions of Windows.
+When you run Windows 10 on a PC or any PC that supports Unified Extensible Firmware Interface (UEFI), Trusted Boot protects your PC from malware from the moment you power on your PC until your anti-malware starts. In the unlikely event that malware does infect a PC, it can’t remain hidden; Trusted Boot can prove the system’s integrity to your infrastructure in a way that malware can’t disguise. Even on PCs without UEFI, Windows 10 provides even better startup security than previous versions of Windows.
 
 First, let’s examine what rootkits are and how they work. Then, we’ll show you how Windows 10 can protect you.
 
@@ -83,7 +83,7 @@ These requirements help protect you from rootkits while allowing you to run any 
 
 To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software cannot change the Secure Boot settings. For more information about Secure Boot, read the blog, [Protecting the pre-OS environment with UEFI](http://blogs.msdn.com/b/b8/archive/2011/09/22/protecting-the-pre-os-environment-with-uefi.aspx).
 
-Like most mobile devices, ARM-based Certified For Windows RT devices, such as the Microsoft Surface RT device, are designed to run only Windows 10. Therefore, Secure Boot cannot be turned off, and you cannot load a different operating system. Fortunately, there is a large market of ARM devices designed to run other operating systems.
+Like most mobile devices, ARM-based Certified For Windows RT devices, such as the Microsoft Surface RT device, are designed to run only Windows 8.1. Therefore, Secure Boot cannot be turned off, and you cannot load a different operating system. Fortunately, there is a large market of ARM devices designed to run other operating systems.
 
 ## Trusted Boot
 Trusted Boot takes over where Secure Boot leaves off. The bootloader verifies the digital signature of the Windows 10 kernel before loading it. The Windows 10 kernel, in turn, verifies every other component of the Windows startup process, including the boot drivers, startup files, and ELAM. If a file has been modified, the bootloader detects the problem and refuses to load the corrupted component. Often, Windows 10 can automatically repair the corrupted component, restoring the integrity of Windows and allowing the PC to start normally.
