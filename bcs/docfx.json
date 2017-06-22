@@ -29,7 +29,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "TechNet.bcs"
+			}
+		}
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "bcs"
