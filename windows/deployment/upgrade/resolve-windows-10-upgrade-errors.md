@@ -74,7 +74,7 @@ The following steps can resolve many Windows upgrade problems.
 <LI>sfc /scannow</LI>
 </UL>
 </LI>
-<LI>Update Windows so that all available recommended updates are installed.</LI>
+<LI>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update.</LI>
 <LI>Uninstall non-Microsoft antivirus software.
   <UL> 
   <LI>Use Windows Defender for protection during the upgrade. 
