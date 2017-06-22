@@ -1,8 +1,6 @@
 ---
 title: Secure the Windows 10 boot process 
 description: This article describes how Windows 10 security features helps protect your PC from malware, including rootkits and other applications
-
-which may originate from untrusted or attacker controlled font files, we’ve created the Blocking Untrusted Fonts feature.
 keywords: trusted boot, windows 10 boot proces
 ms.prod: w10
 ms.mktglfcycl: Explore
