@@ -130,6 +130,7 @@ Used by Windows to send client telemetry, Windows Defender Antivirus uses this f
 <td>
 This update uses SSL (TCP Port 443) to download manifests and upload telemetry to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
 </tr>
+
 </table>
 
 <a id="validate"></a>
@@ -185,7 +186,8 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 
     ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
 
->[!NOTE]Windows 10 releases before 1703 will have a slightly different user interface simply titled  **"Windows Defender"**, but the instructions are similar.
+>[!NOTE]
+>Versions of Windows 10 before version 1703 have a different user interface. See the [Windows Defender Antivirus in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) topic for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
 
 The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-windows-defender-antivirus.md).
 
