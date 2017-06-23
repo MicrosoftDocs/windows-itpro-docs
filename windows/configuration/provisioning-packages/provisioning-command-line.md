@@ -16,11 +16,11 @@ localizationpriority: high
 - Windows 10
 - Windows 10 Mobile
 
-You can use the Windows Configuration Designer command-line interface (CLI) to automate the building of provisioning packages and Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile or Windows 10 IoT Core (IoT Core) images. 
+You can use the Windows Configuration Designer command-line interface (CLI) to automate the building of provisioning packages. 
 
 - IT pros can use the Windows Configuration Designer CLI to require less re-tooling of existing processes. You must run the Windows Configuration Designer CLI from a command window with administrator privileges.
 
-- You must use the Windows Configuration Designer CLI and edit the customizations.xml sources to create an image and/or provisioning package with multivariant support. You need the customizations.xml file as one of the inputs to the Windows Configuration Designer CLI to build a provisioning package. For more information, see [Create a provisioning package with multivariant settings](provisioning-multivariant.md). 
+- You must use the Windows Configuration Designer CLI and edit the customizations.xml sources to create a provisioning package with multivariant support. You need the customizations.xml file as one of the inputs to the Windows Configuration Designer CLI to build a provisioning package. For more information, see [Create a provisioning package with multivariant settings](provisioning-multivariant.md). 
 
 
 
