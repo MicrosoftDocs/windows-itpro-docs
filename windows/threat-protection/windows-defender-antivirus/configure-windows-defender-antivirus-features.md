@@ -48,7 +48,7 @@ Topic | Description
 :---|:---
 [Utilize Microsoft cloud-provided protection in Windows Defender Antivirus](utilize-microsoft-cloud-protection-windows-defender-antivirus.md) | Cloud-delivered protection provides an advanced level of fast, robust antivirus detection
 [Configure behavioral, heuristic, and real-time protection](configure-protection-features-windows-defender-antivirus.md)|Enable behavior-based, heuristic, and real-time protection in Windows Defender AV
-[Configure end-user interaction with WDAM](configure-end-user-interaction-windows-defender-antivirus.md)|Configure how end-users interact with Windows Defender AV, what notifications they see, and if they can override settings
+[Configure end-user interaction with Windows Defender Antivirus](configure-end-user-interaction-windows-defender-antivirus.md)|Configure how end-users interact with Windows Defender AV, what notifications they see, and if they can override settings
 
 
 

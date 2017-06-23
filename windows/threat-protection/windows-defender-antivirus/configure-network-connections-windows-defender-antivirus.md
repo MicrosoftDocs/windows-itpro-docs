@@ -17,7 +17,7 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10, version 1703
+- Windows 10 (some instructions are only applicable for Windows 10, version 1703)
 
 **Audience**
 
@@ -147,7 +147,7 @@ Use the following argument with the Windows Defender AV command line utility (*m
 MpCmdRun - ValidateMapsConnection 
 ```
 > [!NOTE]
-> You may need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
+> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703.
 
 See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
 
@@ -184,6 +184,8 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
 
     ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
+
+>[!NOTE]Windows 10 releases before 1703 will have a slightly different user interface simply titled  **"Windows Defender"**, but the instructions are similar.
 
 The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-windows-defender-antivirus.md).
 
