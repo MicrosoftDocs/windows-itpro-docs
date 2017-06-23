@@ -84,7 +84,7 @@ For end consumers, TPM is behind the scenes but is still very relevant. TPM is u
 
 ### Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
 
--   Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx) page).
+-   Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of a existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086(v=vs.85).aspx) page). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices. Windows 10 features such as [Windows Hello for Business](https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-manage-in-organization#prerequisites) and [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations) do not require TPM 2.0. 
 
 ### IoT Core
 
