@@ -50,6 +50,9 @@ When the other Surface Hub receives the link, the recipient can tap on the link,
 
 After you’re done, you can export a copy of the Whiteboard collaboration for yourself through the Share charm and leave the board for others to continue working. 
 
+>[!TIP]
+>When you start a collaboration session, Whiteboard creates a folder named **Whiteboard App Data** in your OneDrive for Business to store your shared whiteboards. After some collaboration sessions, this folder may continue to sync or process changes indefinitely. You can fix this by choosing to not sync the **Whiteboard App Data** folder to your device. Disabling sync for this folder won't limit your ability to use Whiteboard for collaboration sessions.
+
 ## How to control and manage Whiteboard to Whiteboard collaboration
 
 Whiteboard has settings that can be managed via MDM. These allow you to disable or enable collaboration functionality in case your organization can’t meet the prerequisites or you’d rather not have your organization use this feature. 
