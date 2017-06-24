@@ -280,7 +280,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
   **Figure 14** - New profile: Sync complete - no errors
 
-  ![New profile sync complete with no errors](images/sds_profile_status_everythingok_062317)
+  ![New profile sync complete with no errors](images/sds_profile_status_everythingok_062317.png)
 
   **Figure 15** - New profile: Sync complete - with errors
 
