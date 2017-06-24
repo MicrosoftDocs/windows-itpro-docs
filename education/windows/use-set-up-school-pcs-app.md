@@ -67,6 +67,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
   > [!WARNING]  
   > Only use the provisioning package on PCs that you want to configure and lock down for students. After you apply the provisioning package to a student PC, the PC must be reset to remove the settings.
 
+  * The student PCs must be in range of the Wi-Fi network that you configured in Set up School PCs or have a wired Ethernet connection when you set them up. Otherwise, setup will fail.
   * If the PC has already been set up and you want to return to the first-run experience to apply a new package, you can reset the PC to get to a clean state and get it back to the first-run experience and ready to provision again.
 
   To do this:
@@ -91,18 +92,16 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 
     Learn more about what Set up School PCs does, including provisioning details, in [Technical reference for the Set up School PCs app](set-up-school-pcs-technical.md).
 
+## Prerequisites
 
-## Set up School PCs app step-by-step
+- [Download the latest Set up School PCs app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
+- Install the app on your work PC and make sure you're connected to your school's network. 
+- You must be an administrator on Office 365 and Azure Active Directory, and have Microsoft Store for Education configured. It's best if you sign up for and configure Intune for Education before using the Set up School PCs app.
+- Have a USB drive, 1 GB or larger, to save the provisioning package. We recommend an 8 GB or larger USB drive if you're installing Office.
 
-What you need:
+## Set up School PCs step-by-step
 
-- The **Set up School PCs** app, installed on your work PC and connected to your school's network. 
-
-  To get started, [download the latest Set up School PCs app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
-
-- A USB drive, 1 GB or larger. We recommend an 8 GB or larger USB drive if you're installing Office.
-
-### Create the provisioning package in the app
+### Create the provisioning package
 
 The **Set up School PCs** app guides you through the configuration choices for the student PCs.
 
@@ -193,8 +192,10 @@ The **Set up School PCs** app guides you through the configuration choices for t
   3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
 
 8. In the **Add recommended apps** page, you can choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
-  * **Office 365 for Windows 10 S (Education Preview)** - Your student PCs must be running Windows 10 S to install this app. If you try to install this app on other editions of Windows, setup will fail.
-  * **Minecraft: Education Edition** - Free trial
+  * **Office 365 for Windows 10 S (Education Preview)** 
+    * Office 365 for Windows 10 S will only work on student PCs running Windows 10 S. If you try to install this app on other editions of Windows, setup will fail.
+    * When adding the Office 365 for Windows 10 S to a package, the device you use to run Set up School PCs does not have to be running Windows 10 S.
+  * **Minecraft: Education Edition** - Free trial 
   * Popular **STEM and Makerspace apps**
 
   1. Select the apps that you would like to provision and then click **Next** when you're done.
