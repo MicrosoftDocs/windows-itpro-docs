@@ -102,9 +102,12 @@ To get started with Microsoft Education in a trial environment, follow these ste
 
 1. [Set up a new Office 365 for Education tenant](#1-set-up-a-new-office-365-for-education-tenant).
 
-  Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to two weeks.
+  Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to a few days.
 
-2. Click <a href="https://aka.ms/getsdspromocode" target="_blank">https://aka.ms/getsdspromocode</a> to apply a School Data Sync trial promo code to your Office 365 education tenant.
+2. Sign in to <a href="https://portal.office.com" target="_blank">https://portal.office.com</a> and:
+  1. Select **Admin > Users** and then search for your admin account. 
+  2. In the user page, select **Product licenses** and expand the **Office 365 Education** license you assigned to yourself. 
+  3. Confirm that School Data Sync is turned on.
 3. Follow the instructions in [Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
 4. Follow the instructions in [Try out Intune for Education](#schooluseso365tryi4e).
 
