@@ -108,6 +108,7 @@ To get started with Microsoft Education in a trial environment, follow these ste
   1. Select **Admin > Users** and then search for your admin account. 
   2. In the user page, select **Product licenses** and expand the **Office 365 Education** license you assigned to yourself. 
   3. Confirm that School Data Sync is turned on.
+  
 3. Follow the instructions in [Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
 4. Follow the instructions in [Try out Intune for Education](#schooluseso365tryi4e).
 
