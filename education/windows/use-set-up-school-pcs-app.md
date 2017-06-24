@@ -201,11 +201,11 @@ The **Set up School PCs** app guides you through the configuration choices for t
   1. Select the apps that you would like to provision and then click **Next** when you're done.
   2. Click **Skip** if you don't want to provision any apps.
 
-    **Figure 6** - Select from a set of recommended Microsoft Store apps
+  **Figure 6** - Select from a set of recommended Microsoft Store apps
 
-    ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps_office061217.png)
+  ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps_office061217.png)
     
-    The set of recommended Microsoft Store for Education apps may vary from what we show here.
+  The set of recommended Microsoft Store for Education apps may vary from what we show here.
 
 9. In the **Review package summary** page, make sure that all the settings you configured appear correctly.
   1. If you need to change any of the settings, you can on the sections to go back to that page and make your changes.
