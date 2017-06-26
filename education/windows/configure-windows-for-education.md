@@ -7,6 +7,7 @@ ms.sitesec: library
 localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 06/19/2017
 ---
 
 # Windows 10 configuration recommendations for education customers

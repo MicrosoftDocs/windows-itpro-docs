@@ -9,6 +9,7 @@ ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 06/26/2017
 ---
 
 # Use the Set up School PCs app 
