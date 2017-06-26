@@ -59,7 +59,7 @@ The device information file needs to be in this format:
 | Product Id | data type 2|
 | Hardware Hash | data type 3|
 
-When you add devices, you need to add them to a *device group*. Device groups allow you to apply an AutoPilot deployment profile to mutliple devices. You need to have at least one device group. The first time you add devices, you'll need to create a device group. 
+When you add devices, you need to add them to a *device group*. Device groups allow you to apply an AutoPilot deployment profile to mutliple devices. The first time you add devices to a group, you'll need to create a device group. 
 
 **Add and group devices**
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
@@ -72,14 +72,36 @@ If you don't add devices to a group, you can select the individual devices to ap
 5. Click the devices or device group that you want to manage. You need to select devices before you can apply an AutoPilot deployment profile. 
 
 **Apply AutoPilot deployment profile**
-1. When you have devices selected, click    
+1. When you have devices selected, click **AutoPilot deployment**. 
+2. Choose the AutoPilot deployment profile to apply to the selected devices. 
+> [!NOTE]
+> The first time you use AutoPilot deployment profiles, you'll need to create one. See Create AutoPilot profile. 
+3. Microsoft Store for Business applies the profile to your selected devices, and shows the profile name on **Devices**. 
 
 ## Manage AutoPilot deployment profiles
-Info on adding profiles -- need to create one to start; can have multiple; can edit later
+You can manage the AutoPiolot deployment profiles that you created in Microsoft Store for Business. You can create a new profile, editing or delete a profile. 
+
+AutoPilot deployment profiles have two main parts: default settings that can't be changed, and optional settings that you can include. 
+
+### AutoPilot deployment profiles - default settings
+These settings are configured with all AutoPilot deployment profiles:
+- Skip Cortana, OneDrive, and OEM registration setup pages
+- Automatically setup for work or school
+- Sign in experience with company or school brand 
+
+### AutoPilot deployment profiles - optional settings
+These settings are off by default. You can turn them on for your AutoPilot deployment profiles:
+- Skip privacy settings
+- Disable local admin account creation on the device
 
 **Create AutoPilot profile**
-
+1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
+2. Click **Manage**, and then click **Devices**.
+3. Click **AutoPilot deployment**, and then click **Create new profile**
 **Edit AutoPilot profile**
 
 **Delete AutoPilot profile**
+
+## Apply a different AutoPilot deployment profile to devices
+After you've applied an AutoPilot deployment profile to a device, you can remove the profile and apply a new profile. 
 
