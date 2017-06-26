@@ -126,7 +126,7 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
   ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
 
 3. Enter your Office 365 global admin credentials to apply the Intune for Education trial to your tenant.
-4. If you don't already have Microsoft Teams deployed to your tenant, you can start [3. Enable Microsoft Teams for your school](#3-enable-microsoft-teams-for-your-school) and then follow the rest of this walkthrough. 
+4. If you don't already have Microsoft Teams deployed to your tenant, you can start with [3. Enable Microsoft Teams for your school](#3-enable-microsoft-teams-for-your-school) and then follow the rest of the instructions in this walkthrough. 
 
 ## 1. Set up a new Office 365 for Education tenant
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
