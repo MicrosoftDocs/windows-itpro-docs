@@ -6,6 +6,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+ms.author: TrudyHa
+ms.date: 06/26/2107
 localizationpriority: high
 ---
 
@@ -97,8 +99,20 @@ These settings are off by default. You can turn them on for your AutoPilot deplo
 **Create AutoPilot profile**
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
-3. Click **AutoPilot deployment**, and then click **Create new profile**
+3. Click **AutoPilot deployment**, and then click **Create new profile**. 
+TBD: art
+
 **Edit AutoPilot profile**
+1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
+2. Click **Manage**, and then click **Devices**.
+3. Click **AutoPilot deployment**, click **Edit your profiles**, and then choose the profile to edit.
+TBD: art
+4. Change settings for the profile, and then click **Save**. 
+-or-
+Click **Delete profile** to delete the profile. 
+
+
+
 
 **Delete AutoPilot profile**
 
