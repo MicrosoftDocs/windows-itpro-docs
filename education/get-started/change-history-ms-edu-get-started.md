@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
+ms.date: 06/26/2017
 ---
 
 # Change history for Microsoft Education Get started

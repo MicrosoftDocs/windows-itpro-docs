@@ -1246,6 +1246,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
 </ul>
+<p>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit is only supported in Windows 10 Mobile and Mobile Enterprise.</p> 
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
