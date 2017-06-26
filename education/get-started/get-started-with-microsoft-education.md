@@ -314,7 +314,7 @@ To get started, IT administrators need to use the Office 365 Admin Center to ena
 
   ![Enable Microsoft Teams for your school](images/o365_settings_services_msteams.png)
 
-5. On the Microsoft Teams settings screen, select the license that you want to configure, **Student** or **Faculty and Staff**.
+5. On the Microsoft Teams settings screen, select the license that you want to configure, **Student** or **Faculty and Staff**. Select **Faculty and Staff**.
 
   **Figure 17** - Select the license that you want to configure
 
