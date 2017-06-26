@@ -104,27 +104,29 @@ To get started with Microsoft Education in a trial environment, follow these ste
 
   Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to a few days.
 
-2. Sign in to <a href="https://portal.office.com" target="_blank">https://portal.office.com</a> and:
+2. Once you have an education-verified tenant, click <a href="https://aka.ms/intuneforedupreviewtrial" target="_blank">https://aka.ms/intuneforedupreviewtrial</a> to apply the Intune for Education trial promo code. 
+  1. In the Intune for Education Trial page, on the upper right, click **Sign in** next to **Want to add this to an existing subscription?**.
+  2. Sign in with your global admin credentials. 
+
+3. Sign in to <a href="https://portal.office.com/adminportal" target="_blank">Office 365 admin portal</a> and:
   1. Select **Admin > Users** and then search for your admin account. 
   2. In the user page, select **Product licenses** and expand the **Office 365 Education** license you assigned to yourself. 
   3. Confirm that School Data Sync is turned on.
-  
-3. Follow the instructions in [Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
-4. Follow the instructions in [Try out Intune for Education](#schooluseso365tryi4e).
+
+3. Skip ahead and follow the rest of the instructions in this walkthrough beginning with [2. Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
 
 ### <a name="schooluseso365tryi4e"></a>Option 3: Try out Intune for Education
 Already have an Office 365 for Education verified tenant? Just sign in with your global admin credentials to apply the Intune for Education preview trial code to your tenant and follow the rest of the walkthrough.
 
 1. Click <a href="https://aka.ms/intuneforedupreviewtrial" target="_blank">https://aka.ms/intuneforedupreviewtrial</a> to get started.
-2. In the **Intune for Education Trial** page, click **Sign in**.
+2. In the **Intune for Education Trial** page, on the upper right, click **Sign in** next to **Want to add this to an existing subscription?**.
 
   **Figure 2** - Intune for Education trial sign in page
 
   ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
 
 3. Enter your Office 365 global admin credentials to apply the Intune for Education trial to your tenant.
-4. Skip ahead and follow the instructions in the walkthrough beginning with [4. Configure Microsoft Store for Education](#4-configure-microsoft-store-for-education).
-
+4. If you don't already have Microsoft Teams deployed to your tenant, you can start [3. Enable Microsoft Teams for your school](#3-enable-microsoft-teams-for-your-school) and then follow the rest of this walkthrough. 
 
 ## 1. Set up a new Office 365 for Education tenant
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
