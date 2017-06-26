@@ -40,6 +40,9 @@ To enable system, application, and driver data to be shared with Microsoft, you 
 
 Upgrade Readiness is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud based services for managing your on-premises and cloud environments. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
+>[!IMPORTANT]
+>Upgrade Readiness is a free solution.  When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure.  Upgrade Readiness data **do not** count toward OMS daily upload limits.
+
 If you are already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Select the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution's details page. Upgrade Readiness is now visible in your workspace.
 
 If you are not using OMS:

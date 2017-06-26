@@ -54,11 +54,8 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Convert PC to VM](#convert-pc-to-vm)<TD>Convert a physical computer on your network to a VM hosted in Hyper-V.<TD>30 minutes
 <TR><TD>[Resize VHD](#resize-vhd)<TD>Increase the storage capacity for one of the Windows Server VMs.<TD>5 minutes
 <TR><TD>[Configure Hyper-V](#configure-hyper-v)<TD>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<TD>15 minutes
-<<<<<<< HEAD:windows/deployment/windows-10-poc.md
 <TR><TD>[Configure service and user accounts](#configure-service-and-user-accounts)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
-=======
 <TR><TD>[Configure VMs](#configure-vms)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
->>>>>>> bb842731e73d0f219d021f0869d9b36c8aba222c:windows/deploy/windows-10-poc.md
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)<TD>Terms used in this guide.<TD>Informational
 </TABLE>

@@ -103,6 +103,7 @@ The following Group Policy settings were added in Windows 10, version 1703:
 - Windows Components\Internet Explorer\Accelerators\Restrict Accelerators to those deployed through Group Policy
 - Windows Components\Internet Explorer\Compatibility View\Turn on Internet Explorer 7 Standards Mode
 - Windows Components\Location and Sensors\Windows Location Provider\Turn off Windows Location Provider
+- Windows Components\Microsoft Account\Block all consumer Microsoft account user authentication
 - Windows Components\Microsoft Edge\Configure Autofill
 - Windows Components\Microsoft Edge\Allow Developer Tools
 - Windows Components\Microsoft Edge\Allow Developer Tools

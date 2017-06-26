@@ -74,7 +74,7 @@ The following steps can resolve many Windows upgrade problems.
 <LI>sfc /scannow</LI>
 </UL>
 </LI>
-<LI>Update Windows so that all available recommended updates are installed.</LI>
+<LI>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update.</LI>
 <LI>Uninstall non-Microsoft antivirus software.
   <UL> 
   <LI>Use Windows Defender for protection during the upgrade. 
@@ -573,7 +573,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-8000405 - 0x20007
+800040005 - 0x20007
 
 </TABLE>
 
@@ -656,6 +656,39 @@ The installation failed during the second boot phase while attempting the MIGRAT
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 [Analyze log files](#analyze-log-files) in order to determine the file, application, or driver that is not able to be migrated. Disconnect, update, remove, or replace the device or object.
+
+</TABLE>
+</TD>
+</TR>
+
+<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+8007001F - 0x3000D
+
+</TABLE>
+
+<P><TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DATA operation.  
+
+</TABLE>
+</TD>
+
+<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+
+<TABLE cellspacing=0 cellpadding=0>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+
+[Analyze log files](#analyze-log-files) in order to determine the files that are blocking data migration. 
+
+Note: This error can occur if Active Directory integrated user accounts exist on the computer, but these accounts are no longer present in Active Directory. To repair this error, delete the invalid accounts from the **Users** directory on the local computer and restart the upgrade process.
 
 </TABLE>
 </TD>

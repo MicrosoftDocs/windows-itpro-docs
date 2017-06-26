@@ -29,7 +29,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "MSDN.windows-update"
+			}
+		}
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "windows-update"

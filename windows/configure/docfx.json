@@ -29,7 +29,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "MSDN.windows-configure"
+			}
+		}
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "windows-configure"
