@@ -65,8 +65,8 @@ path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have 
 
 3. The following step is only applicable if you're implementing a single entry for each machine: <br>
     **For single entry for each machine**:<br>
-    Copy the file `Onboard-NonPersistentMachine.ps1` to `golden/master` image to
-path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
+        a. Download the file: [Onboard-NonPersistenMachine.ps1](https://go.microsoft.com/fwlink/p/?linkid=852276 ).<br>
+        b. Copy the file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
 
     >[!NOTE]
     >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer. 
