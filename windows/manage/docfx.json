@@ -29,7 +29,13 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "MSDN.windows-manage"
+			}
+		}
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "windows-manage"

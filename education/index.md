@@ -4,6 +4,8 @@ hide_bc: true
 title: Microsoft Education documentation and resources | Microsoft Docs
 description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
 author: CelesteDG
+ms.author: celested
+ms.date: ms.date: 06/12/2017
 ---
 <div id="main" class="v2">
     <div class="container">
