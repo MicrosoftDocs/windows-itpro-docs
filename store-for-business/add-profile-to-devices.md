@@ -103,3 +103,12 @@ After you've applied an AutoPilot deployment profile to a device, if you decide 
 > [!NOTE]
 > The new profile will only be applied if the device has not been started, and gone through the out-of-box experience. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device. 
 
+## AutoPilot deployment profile error messages
+Here's more info on some of the errors you might see while working with AutoPilot deployment profiles in Microsoft Store for Business and Education. 
+
+| Message Id | Message | Explanation |
+| ---------- | ------- | ----------- |
+| wadp001    | Check your file, or ask your device partner for a complete .csv file. This file is missing Serial Number and Product Id info. | placeholder |
+| wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. | placeholder |
+| wadp003    | Looks like you need more than one csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multliple .csv files. | placeholder |
+| wadp004    | Try that again. Something happened on our end. Waiting a bit might help. | placeholder | 
