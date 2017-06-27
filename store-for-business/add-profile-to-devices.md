@@ -70,8 +70,8 @@ If you don't add devices to a group, you can select the individual devices to ap
 **Apply AutoPilot deployment profile**
 1. When you have devices selected, click **AutoPilot deployment**. 
 2. Choose the AutoPilot deployment profile to apply to the selected devices.</br> 
-> [!NOTE]</br>
-> The first time you use AutoPilot deployment profiles, you'll need to create one. See Create AutoPilot profile.</br> 
+    > [!NOTE]</br>
+    > The first time you use AutoPilot deployment profiles, you'll need to create one. See Create AutoPilot profile.</br> 
 3. Microsoft Store for Business applies the profile to your selected devices, and shows the profile name on **Devices**.
 TBD: art 
 
