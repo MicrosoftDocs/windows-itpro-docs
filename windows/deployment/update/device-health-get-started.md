@@ -1,0 +1,119 @@
+---
+title: Get started with Device Health (Windows 10)
+description: Configure Device Health in OMS to see statistics on frequency and causes of crashes of devices in your network.
+keywords: Device Health, oms, operations management suite, prerequisites, requirements, monitoring, crash, drivers
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: deploy
+author: jaimeo
+---
+
+# Get started with Device Health
+
+This topic explains the steps necessary to configure your environment for Windows Analytics: Device Health. 
+
+Steps are provided in sections that follow the recommended setup process:
+1.	Ensure that [prerequisites](#device-health-prerequisites) are met.
+2.	[Add Device Health](#add-device-health-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite.
+3.	[Deploy your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices.
+
+## Device Health prerequisites
+
+Device Health has the following requirements: 
+1. Device Health is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
+2. The solution requires that **enhanced** Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [enhanced level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization). 
+3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the telemetry services](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
+
+Service | Endpoint
+--- | ---
+Connected User Experience and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
+Windows Error Reporting | watson.telemetry.microsoft.com
+Online Crash Analysis | oca.telemetry.microsoft.com
+
+[!Note]  
+> If your deployment includes devices running Windows 10 versions prior to RS2, you must bypass authentication for the endpoints in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10 RS2.
+
+
+## Add Device Health to Microsoft Operations Management Suite
+
+Device Health is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
+
+If you are already using OMS, you’ll find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace.
+
+If you are not yet using OMS, use the following steps to subscribe to OMS Device Health:
+
+1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
+
+
+   [![](images/uc-02a.png)](images/uc-02.png)
+
+
+2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
+
+
+   [![](images/uc-03a.png)](images/uc-03.png)
+
+
+3.	Create a new OMS workspace. 
+
+
+   [![](images/uc-04a.png)](images/uc-04.png)
+ 
+4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Click **Create**.
+
+
+   [![](images/uc-05a.png)](images/uc-05.png)
+
+
+5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow [this guide](https://blogs.technet.microsoft.com/upgradeanalytics/2016/11/08/linking-operations-management-suite-workspaces-to-microsoft-azure/) to create and link an Azure subscription to an OMS workspace.
+
+
+   [![](images/uc-06a.png)](images/uc-06.png)
+
+
+
+
+6.	To add Device Health to your workspace, go to the Solution Gallery, Select the **Device Health** tile and then select **Add** on the solution's detail page 
+
+ [NEED FRESH DEVICE HEALTH SHOT WITH BOX CHECKED]
+   [![](images/uc-08a.png)](images/uc-08.png)
+
+
+7.	Click the **Device Health** tile to configure the solution. The **Settings Dashboard** opens.
+
+
+   [![](images/uc-09a.png)](images/uc-09.png)
+
+
+8.	Click **Subscribe** to subscribe to OMS Device Health. You will then need to distribute your Commercial ID across all your organization’s devices. More information on the Commercial ID is provided below.
+
+
+   [![](images/uc-10a.png)](images/uc-10.png)
+
+
+After you are subscribed to OMS Device Health and your devices have a Commercial ID, you will begin receiving data. It will typically take 24-48 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
+
+>[!NOTE]
+>You can unsubscribe from the Device Health solution if you no longer want to monitor your organization’s devices. User device data will continue to be shared with Microsoft while the opt-in keys are set on user devices and the proxy allows traffic.
+
+## Deploy your Commercial ID to your Windows 10 devices and set the telemetry level
+
+In order for your devices to show up in Windows Analytics: Device Health, they must be configured with your organization’s Commercial ID. This is so that Microsoft knows that a given device is a member of your organization and to feed that device’s data back to you. There are two primary methods for widespread deployment of your Commercial ID: Group Policy and Mobile Device Management (MDM). 
+
+- Using Group Policy<BR><BR>
+    Deploying your Commercial ID using Group Policy can be accomplished by configuring domain Group Policy Objects with the Group Policy Management Editor, or by configuring local Group Policy using the Local Group Policy Editor.
+    1. In the console tree, navigate to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**
+    2. Double-click **Configure the Commercial ID**
+    3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
+
+- Using Microsoft Mobile Device Management (MDM)<BR><BR>
+[FROM MARC: Also add MDM equivalent links for all three settings in this policy (telemetry level, commercial ID, and Windows Analytics filter)]
+[in RS3 there will be an additional policy to filter enhanced telemetry to just those events needed by Windows Analytics? Matthew Reyonolds on my team can provide details.]
+[Add the policy for telemetry level. Its the same policy, but within that policy you have to set "Allow Telemetry" to "2 - Enhanced"" (in addition to "Configure the Commercial ID")]
+    Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
+
+
+## Related topics
+
+[Use Device Health to monitor Windows Updates](device-health-using.md)
