@@ -11,12 +11,11 @@ ms.date: 06/26/2107
 localizationpriority: high
 ---
 
-# Add Windows AutoPilot deployment profile to devices
+# Manage Windows device deployment with Windows AutoPilot Deployment
 
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://review.docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot?branch=dh-autopilot11975619).
 
@@ -50,10 +49,12 @@ Figure 1 - Windows AutoPilot Deployment Program process
 ## Add devices and apply AutoPilot deployment profile
 To manage devices through Microsoft Store for Business and Education, you'll need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact, or the store where you purchased the devices. Upload the .csv file to Microsoft Store to add the devices. 
 
-Columns in the device information file needs to using this naming and be in this order:
-- Column 1: Serial Number
-- Column 2: Product Id 
-- Column 3: Hardware Hash   
+Columns in the device information file needs to use this naming and be in this order:
+- Column 1: Device Serial Number
+- Column 2: Windows Product ID 
+- Column 3: Hardware Hash
+
+Add troubleshooting steps ... in case addng devices fails   
 
 When you add devices, you need to add them to a *device group*. Device groups allow you to apply an AutoPilot deployment profile to mutliple devices. The first time you add devices to a group, you'll need to create a device group. 
 
@@ -104,7 +105,10 @@ After you've applied an AutoPilot deployment profile to a device, if you decide 
 > The new profile will only be applied if the device has not been started, and gone through the out-of-box experience. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device. 
 
 ## AutoPilot deployment profile error messages
-Here's more info on some of the errors you might see while working with AutoPilot deployment profiles in Microsoft Store for Business and Education. 
+Here's more info on some of the errors you might see while working with AutoPilot deployment profiles in Microsoft Store for Business and Education.
+
+Customers will see the message id
+my toic lists the messageFor .csv file
 
 | Message Id | Message | Explanation |
 | ---------- | ------- | ----------- |
