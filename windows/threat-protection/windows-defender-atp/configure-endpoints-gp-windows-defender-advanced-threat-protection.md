@@ -60,6 +60,9 @@ You can onboard VDIs using Group Policy (GP). You can onboard VDIs using a singl
 2. Copy the extracted files from the .zip into `golden/master` image under the path
 path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called WindowsDefenderATPOnboardingPackage containing the file WindowsDefenderATPOnboardingScript.cmd.
 
+    >[!NOTE]
+    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer. 
+
 3. The following step is only applicable if you're implementing a single entry for each machine: <br>
     **For single entry for each machine**:<br>
     Copy the file `Onboard-NonPersistentMachine.ps1` to `golden/master` image to
