@@ -68,6 +68,9 @@ path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have 
     Copy the file `Onboard-NonPersistentMachine.ps1` to `golden/master` image to
 path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
 
+    >[!NOTE]
+    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer. 
+
 4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
 5. Depending on the method you'd like to implement, follow the appropriate steps: <br>
