@@ -1,10 +1,11 @@
 ---
-title: Deploy Windows 10 using System Center Configuration Manager
-description: Deploy Windows 10 in a test lab using System Center Configuration Manager 
+title: Step by step - Deploy Windows 10 using System Center Configuration Manager
+description: Deploy Windows 10 in a test lab using System Center Configuration Manager
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.pagetype: deploykeywords: deployment, automate, tools, configure, sccm, configuration manager
+ms.pagetype: deploy
+keywords: deployment, automate, tools, configure, sccm
 localizationpriority: high
 author: greg-lindsay
 ---
@@ -14,6 +15,7 @@ author: greg-lindsay
 **Applies to**
 
 -   Windows 10
+
 **Important**: This guide leverages the proof of concept (PoC) environment, and some settings that are configured in the following guides:
 - [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md)
 - [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)

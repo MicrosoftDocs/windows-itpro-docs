@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/19/2017
 ---
 
 # WindowsAdvancedThreatProtection CSP
@@ -91,6 +92,28 @@ The following list describes the characteristics and parameters.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
+<a href="" id="devicetagging"></a>**DeviceTagging**  
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Represents Windows Defender Advanced Threat Protection configuration for managing role based access and device tagging.
+
+<p style="margin-left: 20px">Supported operations is Get.
+
+<a href="" id="group"></a>**DeviceTagging/Group**  
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Device group identifiers.
+
+<p style="margin-left: 20px">The data type is a string.
+
+<p style="margin-left: 20px">Supported operations are Get and Replace.
+
+<a href="" id="criticality"></a>**DeviceTagging/Criticality**  
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Asset criticality value. Supported values:  
+
+- 0 - Normal
+- 1 - Critical
+
+<p style="margin-left: 20px">The data type is an integer.
+
+<p style="margin-left: 20px">Supported operations are Get and Replace.
+
 ## Examples
 
 
@@ -98,7 +121,7 @@ The following list describes the characteristics and parameters.
 <SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
-      <CmdID>11</CmdID>
+      <CmdID>111</CmdID>
       <Item>
         <Target>
           <LocURI>
@@ -117,7 +140,7 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-    <Get>
+        <Get>
       <CmdID>2</CmdID>
       <Item>
         <Target>
@@ -127,7 +150,7 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-    <Get>
+            <Get>
       <CmdID>3</CmdID>
       <Item>
         <Target>
@@ -137,7 +160,7 @@ The following list describes the characteristics and parameters.
         </Target>
       </Item>
     </Get>
-    <Get>
+            <Get>
       <CmdID>4</CmdID>
       <Item>
         <Target>
@@ -163,6 +186,26 @@ The following list describes the characteristics and parameters.
         <Target>
           <LocURI>
             ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Configuration/TelemetryReportingFrequency
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
+      <CmdID>11</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/DeviceTagging/Group
+          </LocURI>
+        </Target>
+      </Item>
+    </Get>
+    <Get>
+      <CmdID>12</CmdID>
+      <Item>
+        <Target>
+          <LocURI>
+            ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/DeviceTagging/Criticality
           </LocURI>
         </Target>
       </Item>

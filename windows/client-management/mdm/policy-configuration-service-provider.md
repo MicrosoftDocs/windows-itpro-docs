@@ -7,9 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/19/2017
 ---
 
 # Policy CSP
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Policy configuration service provider enables the enterprise to configure policies on Windows 10. Use this configuration service provider to configure any company policies.
 
@@ -5729,6 +5733,120 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="deviceguard-enablevirtualizationbasedsecurity"></a>**DeviceGuard/EnableVirtualizationBasedSecurity**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+ 
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services. Value type is integer. Supported values:
+<ul>
+<li>0 (default) - disable virtualization based security</li>
+<li>1 - enable virtualization based security</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="deviceguard-requireplatformsecurityfeatures"></a>**DeviceGuard/RequirePlatformSecurityFeatures**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->Added in Windows 10, version 1709. Specifies the platform security level at the next reboot. Value type is integer. Supported values:
+<ul>
+<li>1 (default) - Turns on VBS with Secure Boot. </li>
+<li>3 - Turns on VBS with Secure Boot and direct memory access (DMA). DMA requires hardware support.</li>
+</ul>
+ 
+<p style="margin-left: 20px">
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="deviceguard-lsacfgflags"></a>**DeviceGuard/LsaCfgFlags**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+ 
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This setting lets users turn on Credential Guard with virtualization-based security to help protect credentials at next reboot. Value type is integer. Supported values:
+<ul>
+<li>0 (default) - (Disabled) Turns off Credential Guard remotely if configured previously without UEFI Lock</li>
+<li>1 - (Enabled with UEFI lock) Turns on Credential Guard with UEFI lock</li>
+<li>2 - (Enabled without lock) Turns on Credential Guard without UEFI lock</li>
+
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="deviceinstallation-preventinstallationofmatchingdeviceids"></a>**DeviceInstallation/PreventInstallationOfMatchingDeviceIDs**  
 
@@ -6780,10 +6898,10 @@ ADMX Info:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
@@ -11947,6 +12065,100 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (on battery). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Turn off the display (on battery)*
+-   GP name: *VideoPowerDownTimeOutDC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-displayofftimeoutpluggedin"></a>**Power/DisplayOffTimeoutPluggedIn**  
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Turn off the display (plugged in). This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Turn off the display (plugged in)*
+-   GP name: *VideoPowerDownTimeOutAC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system hibernate timeout (on battery)*
+-   GP name: *DCHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system hibernate timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system hibernate timeout (plugged in)*
+-   GP name: *ACHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="power-requirepasswordwhencomputerwakesonbattery"></a>**Power/RequirePasswordWhenComputerWakesOnBattery**  
 
@@ -11987,6 +12199,53 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (on battery). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system sleep timeout (on battery)*
+-   GP name: *DCStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specify the system sleep timeout (plugged in). This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+
+<p style="margin-left: 20px">If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+
+<p style="margin-left: 20px">If you disable or do not configure this policy setting, users control this setting.
+
+<p style="margin-left: 20px">If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" (DeviceLock/PreventLockScreenSlideShow) policy setting can be used to disable the slide show feature.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Specify the system sleep timeout (plugged in)*
+-   GP name: *ACStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
+-   GP ADMX file name: *power.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
 
@@ -12139,7 +12398,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Updated in the next major update of Windows 10. Allows the usage of cloud based speech services for Cortana, dictation, or Store applications. Setting this policy to 1, lets Microsoft use the user's voice data to improve cloud speech services for all users.
+<p style="margin-left: 20px">Updated in Windows 10, version 1709. Allows the usage of cloud based speech services for Cortana, dictation, or Store applications. Setting this policy to 1, lets Microsoft use the user's voice data to improve cloud speech services for all users.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -15157,7 +15416,7 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 2147483647 MB.
+<p style="margin-left: 20px">Enabling this policy prevents indexing from continuing after less than the specified amount of hard drive space is left on the same drive as the index location. Select between 0 and 1.
 
 <p style="margin-left: 20px">Enable this policy if computers in your environment have extremely limited hard drive space.
 
@@ -19916,7 +20175,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the day of the update installation.
 
-<p style="margin-left: 20px">The data type is a string.
+<p style="margin-left: 20px">The data type is a integer.
 
 <p style="margin-left: 20px">Supported operations are Add, Delete, Get, and Replace.
 
@@ -19930,6 +20189,181 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 -   5 – Thursday
 -   6 – Friday
 -   7 – Saturday
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the every week. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every week</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the first week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every first week of the month</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the fourth week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every fourth week of the month</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the second week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every second week of the month</li>
+</ul>
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the third week of the month. Value type is integer. Supported values:
+<ul>
+<li>0 - no update in the schedule</li>
+<li>1 - update is scheduled every third week of the month</li>
+</ul>
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -19966,7 +20400,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">Enables the IT admin to schedule the time of the update installation.
 
-<p style="margin-left: 20px">The data type is a string.
+<p style="margin-left: 20px">The data type is a integer.
 
 <p style="margin-left: 20px">Supported operations are Add, Delete, Get, and Replace.
 

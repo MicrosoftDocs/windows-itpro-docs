@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/19/2017
 ---
 
 # WindowsLicensing CSP
@@ -162,10 +163,10 @@ The supported operation is Get.
 **CheckApplicability**
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
-    <CmdID>3</CmdID>
+    <CmdID>$CmdID$</CmdID>
     <Item>
       <Target>
         <LocURI>./Device/Vendor/MSFT/WindowsLicensing/CheckApplicability</LocURI>
@@ -189,10 +190,10 @@ The supported operation is Get.
 **Edition**
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
-      <CmdID>17</CmdID>
+      <CmdID>$CmdID$</CmdID>
         <Item>
           <Target>
             <LocURI>./Device/Vendor/MSFT/WindowsLicensing/Edition</LocURI>
@@ -207,10 +208,10 @@ The supported operation is Get.
 **LicenseKeyType**
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
-      <CmdID>17</CmdID>
+      <CmdID>$CmdID$</CmdID>
         <Item>
           <Target>
             <LocURI>./Device/Vendor/MSFT/WindowsLicensing/LicenseKeyType</LocURI>
@@ -225,10 +226,10 @@ The supported operation is Get.
 **Status**
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Get>
-      <CmdID>17</CmdID>
+      <CmdID>$CmdID$</CmdID>
         <Item>
           <Target>
             <LocURI>./Device/Vendor/MSFT/WindowsLicensing/Status</LocURI>
@@ -243,10 +244,10 @@ The supported operation is Get.
 **UpgradeEditionWithProductKey**
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
-    <CmdID>3</CmdID>
+    <CmdID>$CmdID$</CmdID>
     <Item>
       <Target>
         <LocURI>./Device/Vendor/MSFT/WindowsLicensing/UpgradeEditionWithProductKey</LocURI>
@@ -270,10 +271,10 @@ The supported operation is Get.
 **UpgradeEditionWithLicense**
 
 ``` syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
-      <CmdID>2</CmdID>
+      <CmdID>$CmdID$</CmdID>
       <Item>
         <Target>
           <LocURI>./Device/Vendor/MSFT/WindowsLicensing/UpgradeEditionWithLicense</LocURI>
