@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/27/2017
+ms.date: 06/28/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1232,6 +1232,10 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </ul>
 <p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
+<li>CredentialProviders/EnableWindowsAutoPilotResetCredentials</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
 <li>Power/DisplayOffTimeoutOnBattery</li>
 <li>Power/DisplayOffTimeoutPluggedIn</li>
 <li>Power/HibernateTimeoutOnBattery</li>
@@ -1243,9 +1247,6 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Update/ScheduledInstallFourthWeek</li>
 <li>Update/ScheduledInstallSecondWeek</li>
 <li>Update/ScheduledInstallThirdWeek</li>
-<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
-<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
-<li>DeviceGuard/LsaCfgFlags</li>
 </ul>
 <p>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit is only supported in Windows 10 Mobile and Mobile Enterprise.</p> 
 </td></tr>
