@@ -116,3 +116,5 @@ my toic lists the messageFor .csv file
 | wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. | placeholder |
 | wadp003    | Looks like you need more than one csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multliple .csv files. | placeholder |
 | wadp004    | Try that again. Something happened on our end. Waiting a bit might help. | placeholder | 
+| wadp005    | Check with your device provider for your csv file. One of the devices on your list has been claimed by another organization. | placeholder |
+| wadp006    | Try that again. Something happened on our end. Waiting a bit might help. | placeholder |
