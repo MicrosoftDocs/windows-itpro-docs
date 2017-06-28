@@ -16,14 +16,14 @@ ms.prod: w10
 Before deploying the MBAM Client installation, you must download the MBAM Group Policy Templates, which contain Group Policy settings that define MBAM implementation settings for BitLocker Drive Encryption. After downloading the templates, you then set the Group Policy settings to implement across your enterprise.
 
 ## Downloading and deploying the MDOP Group Policy templates
-
-
 MDOP Group Policy templates are available for download in a self-extracting, compressed file, grouped by technology and version.
 
 **How to download and deploy the MDOP Group Policy templates**
 
 1.  Download the MDOP Group Policy templates from [Microsoft Desktop Optimization Pack Group Policy Administrative Templates
-](https://www.microsoft.com/en-us/download/details.aspx?id=54957).
+](https://www.microsoft.com/en-us/download/details.aspx?id=55531
+
+).
 
 2.  Run the downloaded file to extract the template folders.
 
