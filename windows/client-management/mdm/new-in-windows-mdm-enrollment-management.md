@@ -969,7 +969,6 @@ The software version information from **DevDetail/SwV** does not match the versi
     -   In the SyncML, you must use lowercase product ID.
     -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
 
-    For additional details, see [ApplicationRestrictions in PolicyManager CSP](policymanager-csp.md#applicationmanagement-applicationrestrictions).
 
 -   Silverlight xaps may not install even if publisher policy is specified using Windows Phone 8.1 publisher rule. For example, Silverlight app "Level" will not install even if you specify &lt;Publisher PublisherName=”Microsoft Corporation” /&gt;.
 
