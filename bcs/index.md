@@ -63,7 +63,7 @@ description: Learn about the product documentation and resources available for B
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/en-us/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364?ui=en-US&rs=en-US&ad=US">
+                                <a href="https://support.office.com/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -74,7 +74,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Get started with Business Cloud Suite</h3>
-                                                    <p>Learn about Business Cloud Suite (BCS), how to purchase it for your customer, and follow the setup instructions that best fits your scenario.</p>
+                                                    <p>Learn about Business Cloud Suite (BCS), how to purchase it for your customer, and follow the setup instructions.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -262,12 +262,50 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_lock.svg" alt="Remove company data from a device" />
+                                                        <img src="/media/common/i_setup.svg" alt="Use Windows Autopilot to deploy Windows 10 devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Remove company data from a device</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Set up Windows 10 devices using Windows Autopilot - Coming soon</h3>
+                                                    <p>Deploy Windows 10 devices without having to "touch" the device before handing it out to employees - set the profile, hand out shrink-wrapped devices to employees, and have employees go through a customized setup experience.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/Automatically-install-or-uninstall-Office-on-Windows-10-devices-cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_download-install.svg" alt="Install or uninstall Office on Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Automatically install or uninstall Office on Windows 10 devices</h3>
+                                                    <p>Find out how to quickly and easily install Office on Windows 10 PCs from the BCS admin center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/Remove-company-data-from-devices-80bdae57-f8bc-4e40-a58c-956007117ecb">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_lock.svg" alt="Remove company data from devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Remove company data devices</h3>
+                                                    <p>Use BCS to remove company data that your users have installed on their devices.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -667,7 +705,7 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/Create-an-Office-365-group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -678,7 +716,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Add a group</h3>
-                                                    <p>tbd</p>
+                                                    <p>Create or delete groups, add or remove members in a group, and customize how they work.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -705,7 +743,7 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/en-us/article/Billing-in-Office-365-for-business-–-Admin-Help-ea7bf1b2-1c2f-477f-a813-313e3ce0d896?ui=en-US&rs=en-US&ad=US">
+                                <a href="https://support.office.com/article/Billing-in-Office-365-for-business-–-Admin-Help-ea7bf1b2-1c2f-477f-a813-313e3ce0d896">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -716,7 +754,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Billing</h3>
-                                                    <p>tbd</p>
+                                                    <p>Get admin help with billing in BCS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -763,7 +801,7 @@ description: Learn about the product documentation and resources available for B
                             </li>
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Not seeing what you need? Check out the <a href="https://support.office.com/en-us/article/Office-365-for-business-%25E2%2580%2593-Admin-help-17d3ff3f-3601-466e-b5a1-482b31cfb791?ui=en-US&amp;rs=en-US&amp;ad=US" target="_blank">Office 365 Admin Help</a> for more info. </p>
+                                    <p>Not finding the info that you need? Check out the <a href="https://support.office.com/article/Office-365-for-business-%25E2%2580%2593-Admin-help-17d3ff3f-3601-466e-b5a1-482b31cfb791" target="_blank">Office 365 Admin Help</a> for more info. </p>
                                 </div>
                             </li>
                         </ul>
