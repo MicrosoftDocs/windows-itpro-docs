@@ -1781,12 +1781,15 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the BitLocker Drive Encryption method and cipher strength.
 
+> [!NOTE]
+> XTS-AES 128-bit and XTS-AES 256-bit values are only supported on Windows 10 for desktop.
+
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   3- AES 128-bit
--   4- AES 256
--   6 -XTS 128
--   7 - XTS 256
+-   3 - AES-CBC 128-bit
+-   4 - AES-CBC 256-bit
+-   6 - XTS-AES 128-bit (Desktop only)
+-   7 - XTS-AES 256-bit (Desktop only)
 
 <!--EndDescription-->
 <!--EndPolicy-->
