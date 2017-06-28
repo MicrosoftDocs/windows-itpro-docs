@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/19/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1246,6 +1247,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
 </ul>
+<p>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit is only supported in Windows 10 Mobile and Mobile Enterprise.</p> 
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>

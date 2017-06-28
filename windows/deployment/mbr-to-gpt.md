@@ -19,10 +19,12 @@ localizationpriority: high
 
 **MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
 
+MBR2GPT.EXE is located in the **Windows\\System32** directory on a Windows 10 computer running Windows 10 version 1703 or later.
+
 You can use MBR2GPT to perform the following:
 
-- \[Within the Windows PE environment\]: Convert any attached MBR-formatted disk to GPT, including the system disk.
-- \[From within the currently running OS\]: Convert any attached MBR-formatted disk to GPT, including the system disk.
+- \[Within the Windows PE environment\]: Convert any attached MBR-formatted system disk to the GPT partition format.
+- \[From within the currently running OS\]: Convert any attached MBR-formatted system disk to the GPT partition format.
 
 >MBR2GPT is available in Windows 10 version 1703, also known as Windows 10 Creator's Update, and later versions. 
 >The tool is available in both the full OS environment and Windows PE. 
@@ -224,6 +226,7 @@ Before any change to the disk is made, MBR2GPT validates the layout and geometry
   - 16KB + 1 sector at the end of the disk
 - There are at most 3 primary partitions in the MBR partition table
 - One of the partitions is set as active and is the system partition
+- The disk does not have any extended/logical partition
 - The BCD store on the system partition contains a default OS entry pointing to an OS partition
 - The volume IDs can be retrieved for each volume which has a drive letter assigned
 - All partitions on the disk are of MBR types recognized by Windows or has a mapping specified using the /map command-line option

@@ -17,7 +17,7 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10, version 1703
+- Windows 10 (some instructions are only applicable for Windows 10, version 1703)
 
 **Audience**
 
@@ -130,6 +130,7 @@ Used by Windows to send client telemetry, Windows Defender Antivirus uses this f
 <td>
 This update uses SSL (TCP Port 443) to download manifests and upload telemetry to Microsoft that uses the following DNS endpoints:  <ul><li>vortex-win.data.microsoft.com</li><li>settings-win.data.microsoft.com</li></ul></td>
 </tr>
+
 </table>
 
 <a id="validate"></a>
@@ -147,7 +148,7 @@ Use the following argument with the Windows Defender AV command line utility (*m
 MpCmdRun - ValidateMapsConnection 
 ```
 > [!NOTE]
-> You may need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt.
+> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703.
 
 See [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender Antivirus](command-line-arguments-windows-defender-antivirus.md) for more information on how to use the *mpcmdrun.exe* utility.
 
@@ -184,6 +185,9 @@ You will also see a detection under **Quarantined threats** in the **Scan histor
 3. Under the **Quarantined threats** section, click the **See full history** label to see the detected fake malware:
 
     ![Screenshot of quarantined items in the Windows Defender Security Center app](images/defender/wdav-quarantined-history-wdsc.png)
+
+>[!NOTE]
+>Versions of Windows 10 before version 1703 have a different user interface. See the [Windows Defender Antivirus in the Windows Defender Security Center](windows-defender-security-center-antivirus.md) topic for more information about the differences between versions, and instructions on how to perform common tasks in the different interfaces.
 
 The Windows event log will also show [Windows Defender client event ID 2050](troubleshoot-windows-defender-antivirus.md).
 
