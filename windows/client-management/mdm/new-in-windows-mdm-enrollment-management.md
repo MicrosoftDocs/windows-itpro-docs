@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/28/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -968,7 +969,6 @@ The software version information from **DevDetail/SwV** does not match the versi
     -   In the SyncML, you must use lowercase product ID.
     -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
 
-    For additional details, see [ApplicationRestrictions in PolicyManager CSP](policymanager-csp.md#applicationmanagement-applicationrestrictions).
 
 -   Silverlight xaps may not install even if publisher policy is specified using Windows Phone 8.1 publisher rule. For example, Silverlight app "Level" will not install even if you specify &lt;Publisher PublisherName=”Microsoft Corporation” /&gt;.
 
@@ -1231,6 +1231,10 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </ul>
 <p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
+<li>CredentialProviders/EnableWindowsAutoPilotResetCredentials</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
 <li>Power/DisplayOffTimeoutOnBattery</li>
 <li>Power/DisplayOffTimeoutPluggedIn</li>
 <li>Power/HibernateTimeoutOnBattery</li>
@@ -1242,10 +1246,8 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Update/ScheduledInstallFourthWeek</li>
 <li>Update/ScheduledInstallSecondWeek</li>
 <li>Update/ScheduledInstallThirdWeek</li>
-<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
-<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
-<li>DeviceGuard/LsaCfgFlags</li>
 </ul>
+<p>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit is only supported in Windows 10 Mobile and Mobile Enterprise.</p> 
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
@@ -1255,6 +1257,10 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>DeviceTagging/Criticality</li>
 </ul>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
+<td style="vertical-align:top">The DynamicManagement CSP is not supported in Windows 10 Mobile and Mobile Enterprise. The table of SKU information in the [Configuration service provider reference](configuration-service-provider-reference.md) was updated.</td>
+</tr>
 </tbody>
 </table>
 

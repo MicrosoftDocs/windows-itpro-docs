@@ -15,7 +15,12 @@
     ],
     "globalMetadata": {
         "ROBOTS": "INDEX, FOLLOW",
-        "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json"
+        "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "Win.windows"
+			}
+		}
     },
     "externalReference": [
     ],
