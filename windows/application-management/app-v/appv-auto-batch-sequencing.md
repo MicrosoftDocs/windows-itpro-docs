@@ -155,6 +155,7 @@ There are 3 types of log files that occur when you sequence multiple apps at the
 - **Log.txt file**. Located in the **Output Package** folder. This file contains all code included in the NewAppVSequencerPackage cmdlet, including the allowed parameters.
 
 ### Related topics
+
 - [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
 
 - [How to install the App-V Sequencer](appv-install-the-sequencer.md)

@@ -4,81 +4,9 @@
   "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
-      "docset_name": "education",
-      "build_source_folder": "education",
-      "build_output_subfolder": "education",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "internet-explorer",
-      "build_source_folder": "browsers/internet-explorer",
-      "build_output_subfolder": "browsers/internet-explorer",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "itpro-hololens",
-      "build_source_folder": "devices/hololens",
-      "build_output_subfolder": "devices/hololens",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "mdop",
+      "docset_name": "mdop-VSTS",
       "build_source_folder": "mdop",
-      "build_output_subfolder": "mdop",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "microsoft-edge",
-      "build_source_folder": "browsers/edge",
-      "build_output_subfolder": "browsers/edge",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "smb",
-      "build_source_folder": "smb",
-      "build_output_subfolder": "smb",
+      "build_output_subfolder": "mdop-VSTS",
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": true,
@@ -92,216 +20,12 @@
       "version": 0
     },
     {
-      "docset_name": "store-for-business",
-      "build_source_folder": "store-for-business",
-      "build_output_subfolder": "store-for-business",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "surface",
-      "build_source_folder": "devices/surface",
-      "build_output_subfolder": "devices/surface",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "surface-hub",
-      "build_source_folder": "devices/surface-hub",
-      "build_output_subfolder": "devices/surface-hub",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-access-protection",
-      "build_source_folder": "windows/access-protection",
-      "build_output_subfolder": "win-access-protection",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-app-management",
-      "build_source_folder": "windows/application-management",
-      "build_output_subfolder": "win-app-management",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-client-management",
-      "build_source_folder": "windows/client-management",
-      "build_output_subfolder": "win-client-management",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-configuration",
-      "build_source_folder": "windows/configuration",
-      "build_output_subfolder": "win-configuration",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-development",
-      "build_source_folder": "windows/deployment",
-      "build_output_subfolder": "win-development",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-device-security",
-      "build_source_folder": "windows/device-security",
-      "build_output_subfolder": "win-device-security",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "windows-hub",
-      "build_source_folder": "windows/hub",
-      "build_output_subfolder": "windows-hub",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-threat-protection",
-      "build_source_folder": "windows/threat-protection",
-      "build_output_subfolder": "win-threat-protection",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "win-whats-new",
-      "build_source_folder": "windows/whats-new",
-      "build_output_subfolder": "win-whats-new",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "keep-secure",
-      "build_source_folder": "windows/keep-secure",
-      "build_output_subfolder": "keep-secure",
-      "locale": "en-us",
-      "monikers": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "version": 0
-    },
-    {
-      "docset_name": "windows-manage",
+      "docset_name": "windows-manage-VSTS",
       "build_source_folder": "windows/manage",
-      "build_output_subfolder": "windows-manage",
+      "build_output_subfolder": "windows-manage-VSTS",
       "locale": "en-us",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -312,12 +36,76 @@
       "version": 0
     },
     {
-      "docset_name": "windows-plan",
+      "docset_name": "smb-VSTS",
+      "build_source_folder": "smb",
+      "build_output_subfolder": "smb-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "surface-hub-VSTS",
+      "build_source_folder": "devices/surface-hub",
+      "build_output_subfolder": "surface-hub-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "microsoft-edge-VSTS",
+      "build_source_folder": "browsers/edge",
+      "build_output_subfolder": "microsoft-edge-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "win-development-VSTS",
+      "build_source_folder": "windows/deployment",
+      "build_output_subfolder": "win-development-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-plan-VSTS",
       "build_source_folder": "windows/plan",
-      "build_output_subfolder": "windows-plan",
+      "build_output_subfolder": "windows-plan-VSTS",
       "locale": "en-us",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -328,12 +116,12 @@
       "version": 0
     },
     {
-      "docset_name": "windows-update",
-      "build_source_folder": "windows/update",
-      "build_output_subfolder": "windows-update",
+      "docset_name": "win-client-management-VSTS",
+      "build_source_folder": "windows/client-management",
+      "build_output_subfolder": "win-client-management-VSTS",
       "locale": "en-us",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -344,12 +132,44 @@
       "version": 0
     },
     {
-      "docset_name": "windows-deploy",
+      "docset_name": "win-threat-protection-VSTS",
+      "build_source_folder": "windows/threat-protection",
+      "build_output_subfolder": "win-threat-protection-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "win-app-management-VSTS",
+      "build_source_folder": "windows/application-management",
+      "build_output_subfolder": "win-app-management-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-deploy-VSTS",
       "build_source_folder": "windows/deploy",
-      "build_output_subfolder": "windows-deploy",
+      "build_output_subfolder": "windows-deploy-VSTS",
       "locale": "en-us",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -360,12 +180,12 @@
       "version": 0
     },
     {
-      "docset_name": "windows-configure",
-      "build_source_folder": "windows/configure",
-      "build_output_subfolder": "windows-configure",
+      "docset_name": "keep-secure-VSTS",
+      "build_source_folder": "windows/keep-secure",
+      "build_output_subfolder": "keep-secure-VSTS",
       "locale": "en-us",
       "monikers": [],
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -376,12 +196,204 @@
       "version": 0
     },
     {
-      "docset_name": "bcs",
+      "docset_name": "surface-VSTS",
+      "build_source_folder": "devices/surface",
+      "build_output_subfolder": "surface-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-hub-VSTS",
+      "build_source_folder": "windows/hub",
+      "build_output_subfolder": "windows-hub-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "internet-explorer-VSTS",
+      "build_source_folder": "browsers/internet-explorer",
+      "build_output_subfolder": "internet-explorer-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "bcs-VSTS",
       "build_source_folder": "bcs",
-      "build_output_subfolder": "bcs",
+      "build_output_subfolder": "bcs-VSTS",
       "locale": "en-us",
       "monikers": [],
       "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "win-access-protection-VSTS",
+      "build_source_folder": "windows/access-protection",
+      "build_output_subfolder": "win-access-protection-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "win-device-security-VSTS",
+      "build_source_folder": "windows/device-security",
+      "build_output_subfolder": "win-device-security-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "education-VSTS",
+      "build_source_folder": "education",
+      "build_output_subfolder": "education-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "store-for-business-VSTS",
+      "build_source_folder": "store-for-business",
+      "build_output_subfolder": "store-for-business-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "win-configuration-VSTS",
+      "build_source_folder": "windows/configuration",
+      "build_output_subfolder": "win-configuration-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-update-VSTS",
+      "build_source_folder": "windows/update",
+      "build_output_subfolder": "windows-update-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "win-whats-new-VSTS",
+      "build_source_folder": "windows/whats-new",
+      "build_output_subfolder": "win-whats-new-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "itpro-hololens-VSTS",
+      "build_source_folder": "devices/hololens",
+      "build_output_subfolder": "itpro-hololens-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "windows-configure-VSTS",
+      "build_source_folder": "windows/configure",
+      "build_output_subfolder": "windows-configure-VSTS",
+      "locale": "en-us",
+      "monikers": [],
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -398,7 +410,7 @@
   "branches_to_filter": [
     ""
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/win-cpub-itpro-docs",
+  "git_repository_url_open_to_public_contributors": "https://cpubwin.visualstudio.com/_git/it-client",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "dependent_repositories": [
@@ -428,9 +440,9 @@
       "Publish",
       "Pdf"
     ]
-	
   },
   "need_generate_pdf_url_template": true,
+  "resolve_user_profile_using_github": true,
   "Targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
