@@ -29,9 +29,14 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-			"uhfHeaderId": "MSDocsHeader-WindowsIT",
-			"breadcrumb_path": "/windows/smb/breadcrumb/toc.json"
-		},
+		"uhfHeaderId": "MSDocsHeader-WindowsIT",
+		"breadcrumb_path": "/windows/smb/breadcrumb/toc.json",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "TechNet.smb"
+			}
+		}
+	},
     "fileMetadata": {},
     "template": [],
     "dest": "smb"
