@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/19/2017
 ---
 
 # Data structures for Windows Store for Business
@@ -28,6 +29,7 @@ Here's the list of data structures used in the Windows Store for Business REST A
 -   [LicenseType](#licensetype)
 -   [LocalizedProductDetail](#localizedproductdetail)
 -   [OfflineLicense](#offlinelicense)
+-   [PackageContentInfo](#packagecontentinfo)
 -   [PackageLocation](#packagelocation)
 -   [ProductArchitectures](#productarchitectures)
 -   [ProductDetails](#productdetails)
@@ -85,26 +87,22 @@ Specifies the properties of the alternate identifier.
 <table>
 <colgroup>
 <col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="66%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>seatDetails</p></td>
-<td><p>Collection of [SeatDetails](#seatdetails)</p></td>
-<td><p></p></td>
+<td><p>collection of [SeatDetails](#seatdetails)</p></td>
 </tr>
 <tr class="even">
 <td><p>failedSeatOperations</p></td>
-<td><p>Collection of [FailedSeatRequest](#failedseatrequest)</p></td>
-<td><p></p></td>
+<td><p>collection of [FailedSeatRequest](#failedseatrequest)</p></td>
 </tr>
 </tbody>
 </table>
@@ -117,31 +115,26 @@ Specifies the properties of the alternate identifier.
 <table>
 <colgroup>
 <col width="33%" />
-<col width="33%" />
-<col width="33%" />
+<col width="66%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
 <th>Type</th>
-<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>failureReason</p></td>
 <td><p>string</p></td>
-<td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>productKey</p></td>
 <td><p>[ProductKey](#productkey)</p></td>
-<td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>userName</p></td>
 <td><p>string</p></td>
-<td><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -173,7 +166,7 @@ Specifies the properties of the alternate identifier.
 <tr class="even">
 <td><p>contentId</p></td>
 <td><p>string</p></td>
-<td><p>Identifies a specific application</p></td>
+<td><p>Identifies a specific application.</p></td>
 </tr>
 <tr class="odd">
 <td><p>location</p></td>
@@ -207,12 +200,12 @@ Specifies the properties of the alternate identifier.
 </tr>
 <tr class="odd">
 <td><p>fileSize</p></td>
-<td><p>integer -64</p></td>
-<td><p></p></td>
+<td><p>integer-64</p></td>
+<td><p>Size of the file.</p></td>
 </tr>
 <tr class="even">
 <td><p>packageRank</p></td>
-<td><p>integer-3232</p></td>
+<td><p>integer-32</p></td>
 <td><p>Optional</p></td>
 </tr>
 </tbody>
@@ -225,26 +218,22 @@ Specifies the properties of the alternate identifier.
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
+<col width="66%" />
 <col width="33%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
-<th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>open</p></td>
-<td></td>
 <td><p>Open distribution policy - licenses/seats can be assigned/consumed without limit</p></td>
 </tr>
 <tr class="even">
 <td><p>restricted</p></td>
-<td></td>
 <td><p>Restricted distribution policy - licenses/seats must be assigned/consumed according to the available count</p></td>
 </tr>
 </tbody>
@@ -277,7 +266,7 @@ Specifies the properties of the alternate identifier.
 <tr class="even">
 <td><p>seatCapacity</p></td>
 <td><p>integer-64</p></td>
-<td><p>Total number of seats that have been purchased for an application</p></td>
+<td><p>Total number of seats that have been purchased for an application.</p></td>
 </tr>
 <tr class="odd">
 <td><p>availableSeats</p></td>
@@ -296,12 +285,12 @@ Specifies the properties of the alternate identifier.
 </tr>
 <tr class="even">
 <td><p>distributionPolicy</p></td>
-<td><p>InventoryDistributionPolicy</p></td>
+<td><p>[InventoryDistributionPolicy](#inventorydistributionpolicy)</p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p>status</p></td>
-<td><p>InventoryStatus</p></td>
+<td><p>[InventoryStatus](#inventorystatus)</p></td>
 <td></td>
 </tr>
 </tbody>
@@ -329,11 +318,11 @@ Specifies the properties of the alternate identifier.
 <tr class="odd">
 <td><p>continuationToken</p></td>
 <td><p>string</p></td>
-<td><p>continuationToken is only available if there is a next page</p></td>
+<td><p>Only available if there is a next page.</p></td>
 </tr>
 <tr class="even">
 <td><p>inventoryEntries</p></td>
-<td><p>collection of</p></td>
+<td><p>collection of [InventoryEntryDetails](#inventoryentrydetails)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -346,27 +335,23 @@ Specifies the properties of the alternate identifier.
 
 <table>
 <colgroup>
-<col width="33%" />
-<col width="33%" />
+<col width="66%" />
 <col width="33%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>Name</th>
-<th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>active</p></td>
-<td><p></p></td>
-<td><p>Entry is available in the organization’s inventory</p></td>
+<td><p>Entry is available in the organization’s inventory.</p></td>
 </tr>
 <tr class="even">
 <td><p>removed</p></td>
-<td><p></p></td>
-<td><p>Entry has been removed from the organization’s inventory</p></td>
+<td><p>Entry has been removed from the organization’s inventory.</p></td>
 </tr>
 </tbody>
 </table>
@@ -378,8 +363,8 @@ Specifies the properties of the alternate identifier.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="66%" />
+<col width="33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -497,43 +482,13 @@ Specifies the properties of the localized product.
 
  
 
-## ProductArchitectures
-
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>neutral</p></td>
-</tr>
-<tr class="even">
-<td><p>arm</p></td>
-</tr>
-<tr class="odd">
-<td><p>x86</p></td>
-</tr>
-<tr class="even">
-<td><p>x64</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
 ## PackageContentInfo
 
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="66%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -582,6 +537,36 @@ Specifies the properties of the localized product.
 
  
 
+## ProductArchitectures
+
+
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>neutral</p></td>
+</tr>
+<tr class="even">
+<td><p>arm</p></td>
+</tr>
+<tr class="odd">
+<td><p>x86</p></td>
+</tr>
+<tr class="even">
+<td><p>x64</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
 ## ProductDetails
 
 
@@ -611,7 +596,7 @@ Specifies the properties of the localized product.
 </tr>
 <tr class="odd">
 <td><p>supportedLanguages</p></td>
-<td><p>collection of strings</p></td>
+<td><p>collection of string</p></td>
 <td><p>The set of localized languages for an application.</p></td>
 </tr>
 <tr class="even">
@@ -644,10 +629,74 @@ Specifies the properties of the localized product.
 
  
 
+## ProductImage
+
+
+Specifies the properties of the product image.
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>location</p></td>
+<td><p>URI</p></td>
+<td><p>Location of the download image.</p></td>
+</tr>
+<tr class="even">
+<td><p>purpose</p></td>
+<td><p>string</p></td>
+<td><p>Tag for the purpose of the image, e.g. "screenshot" or "logo".</p></td>
+</tr>
+<tr class="odd">
+<td><p>height</p></td>
+<td><p>string</p></td>
+<td><p>Height of the image in pixels.</p></td>
+</tr>
+<tr class="even">
+<td><p>width</p></td>
+<td><p>string</p></td>
+<td><p>Width of the image in pixels.</p></td>
+</tr>
+<tr class="odd">
+<td><p>caption</p></td>
+<td><p>string</p></td>
+<td><p>Unlimited length.</p></td>
+</tr>
+<tr class="even">
+<td><p>backgroundColor</p></td>
+<td><p>string</p></td>
+<td><p>Format "#RRGGBB"</p></td>
+</tr>
+<tr class="odd">
+<td><p>foregroundColor</p></td>
+<td><p>string</p></td>
+<td><p>Format "#RRGGBB"</p></td>
+</tr>
+<tr class="even">
+<td><p>fileSize</p></td>
+<td><p>integer-64</p></td>
+<td><p>Size of the file.</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
 ## ProductKey
 
 
-Specifies the proerties of the product key.
+Specifies the properties of the product key.
 
 <table>
 <colgroup>
@@ -678,104 +727,6 @@ Specifies the proerties of the product key.
 
  
 
-## ProductImage
-
-
-Specifies the proerties of the product image.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>location</p></td>
-<td><p>URI</p></td>
-<td><p>Location of the download images.</p></td>
-</tr>
-<tr class="even">
-<td><p>purpose</p></td>
-<td><p>string</p></td>
-<td><p>App screenshots and icons</p></td>
-</tr>
-<tr class="odd">
-<td><p>height</p></td>
-<td><p>string</p></td>
-<td><p>Height of the image in pixels.</p></td>
-</tr>
-<tr class="even">
-<td><p>width</p></td>
-<td><p>string</p></td>
-<td><p>Width of the image in pixels.</p></td>
-</tr>
-<tr class="odd">
-<td><p>caption</p></td>
-<td><p>string</p></td>
-<td><p>Unlimited</p></td>
-</tr>
-<tr class="even">
-<td><p>backgroundColor</p></td>
-<td><p>string</p></td>
-<td><p>Format #RRGGBB</p></td>
-</tr>
-<tr class="odd">
-<td><p>foregroundColor</p></td>
-<td><p>string</p></td>
-<td><p>Format #RRGGBB</p></td>
-</tr>
-<tr class="even">
-<td><p>fileSize</p></td>
-<td><p>long</p></td>
-<td><p>Size of the file.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
-## PublisherDetails
-
-
-Specifies the proerties of the publisher details.
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>publisherName</p></td>
-<td><p>string</p></td>
-<td><p>Name of the publisher.</p></td>
-</tr>
-<tr class="even">
-<td><p>publisherWebsite</p></td>
-<td><p>string</p></td>
-<td><p>Website of the publisher.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
 ## ProductPackageDetails
 
 
@@ -799,14 +750,14 @@ Specifies the proerties of the publisher details.
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>contentId</p></td>
-<td><p>string</p></td>
-<td><p>Identifies a specific application.</p></td>
-</tr>
-<tr class="odd">
 <td><p>packageId</p></td>
 <td><p>string</p></td>
 <td></td>
+</tr>
+<tr class="odd">
+<td><p>contentId</p></td>
+<td><p>string</p></td>
+<td><p>Identifies a specific application.</p></td>
 </tr>
 <tr class="even">
 <td><p>location</p></td>
@@ -831,7 +782,7 @@ Specifies the proerties of the publisher details.
 <tr class="even">
 <td><p>packageFormat</p></td>
 <td><p>[ProductPackageFormat](#productpackageformat)</p></td>
-<td><p>appx, appxbundle, xap</p></td>
+<td><p>Extension of the package file.</p></td>
 </tr>
 <tr class="odd">
 <td><p>platforms</p></td>
@@ -839,19 +790,41 @@ Specifies the proerties of the publisher details.
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>packageId</p></td>
-<td><p>string</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
 <td><p>fileSize</p></td>
 <td><p>integer-64</p></td>
-<td><p></p></td>
+<td><p>Size of the file.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><p>packageRank</p></td>
 <td><p>integer-32</p></td>
-<td><p>optional</p></td>
+<td><p>Optional</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## ProductPackageFormat
+
+
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>appx</p></td>
+</tr>
+<tr class="even">
+<td><p>appxBundle</p></td>
+</tr>
+<tr class="odd">
+<td><p>xap</p></td>
 </tr>
 </tbody>
 </table>
@@ -890,40 +863,13 @@ Specifies the proerties of the publisher details.
 
  
 
-## ProductPackageFormat
-
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>appx</p></td>
-</tr>
-<tr class="even">
-<td><p>appxBundle</p></td>
-</tr>
-<tr class="odd">
-<td><p>xap</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
 ## ProductPlatform
 
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="66%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -943,6 +889,40 @@ Specifies the proerties of the publisher details.
 <tr class="odd">
 <td><p>maxTestedVersion</p></td>
 <td><p>[VersionInfo](#versioninfo)</p></td>
+</tr>
+</tbody>
+</table>
+
+ 
+
+## PublisherDetails
+
+
+Specifies the properties of the publisher details.
+
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>publisherName</p></td>
+<td><p>string</p></td>
+<td><p>Name of the publisher.</p></td>
+</tr>
+<tr class="even">
+<td><p>publisherWebsite</p></td>
+<td><p>string</p></td>
+<td><p>Website of the publisher.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1020,8 +1000,8 @@ Specifies the proerties of the publisher details.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="66%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1032,7 +1012,7 @@ Specifies the proerties of the publisher details.
 <tbody>
 <tr class="odd">
 <td><p>seats</p></td>
-<td><p>Collection of [SeatDetails](#seatdetails)</p></td>
+<td><p>collection of [SeatDetails](#seatdetails)</p></td>
 </tr>
 <tr class="even">
 <td><p>continuationToken</p></td>
@@ -1072,8 +1052,8 @@ Specifies the proerties of the publisher details.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="66%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1096,7 +1076,7 @@ Specifies the proerties of the publisher details.
 </tr>
 <tr class="even">
 <td><p>architectures</p></td>
-<td><p>collection of ProductArchitectures</p></td>
+<td><p>collection of [ProductArchitecture](#productarchitecture)</p></td>
 </tr>
 </tbody>
 </table>
@@ -1108,8 +1088,8 @@ Specifies the proerties of the publisher details.
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="33%" />
+<col width="66%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1120,29 +1100,19 @@ Specifies the proerties of the publisher details.
 <tbody>
 <tr class="odd">
 <td><p>major</p></td>
-<td><p>integer-23</p></td>
+<td><p>integer-32</p></td>
 </tr>
 <tr class="even">
 <td><p>minor</p></td>
-<td><p>integer-23</p></td>
+<td><p>integer-32</p></td>
 </tr>
 <tr class="odd">
 <td><p>build</p></td>
-<td><p>integer-23</p></td>
+<td><p>integer-32</p></td>
 </tr>
 <tr class="even">
 <td><p>revision</p></td>
-<td><p>integer-23</p></td>
+<td><p>integer-32</p></td>
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
-
-

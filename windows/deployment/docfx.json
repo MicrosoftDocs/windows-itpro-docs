@@ -36,7 +36,12 @@
 		"ms.technology": "windows",
 		"ms.topic": "article",
 		"ms.author": "greglin",
-		"ms.date": "04/05/2017"
+		"ms.date": "04/05/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "MSDN.win-development"
+			}
+		}
 	},
     "fileMetadata": {},
     "template": [],

@@ -18,6 +18,7 @@ This topic lists new and updated topics in the [Threat protection](index.md) doc
 [Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
 [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
 |[List of enlightened Microsoft apps for use with Windows Information Protection (WIP)](windows-information-protection\enlightened-microsoft-apps-and-wip.md)|Updated to include newly enlightened and supported apps.|
+[Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)| Updated from existing applicable and relevant Windows 8.1 content |
 
 
 ## March 2017

@@ -59,7 +59,7 @@
 ### [Provision PCs with apps](provisioning-packages/provision-pcs-with-apps.md)
 ### [Use a script to install a desktop app in provisioning packages](provisioning-packages/provisioning-script-to-install-app.md)
 ### [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-packages/provisioning-powershell.md)
-### [Windows ICD command-line interface (reference)](provisioning-packages/provisioning-command-line.md)
+### [Windows Configuration Designer command-line interface (reference)](provisioning-packages/provisioning-command-line.md)
 ### [Create a provisioning package with multivariant settings](provisioning-packages/provisioning-multivariant.md)
 ## [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md)
 ## [User Experience Virtualization (UE-V) for Windows](ue-v/uev-for-windows.md)

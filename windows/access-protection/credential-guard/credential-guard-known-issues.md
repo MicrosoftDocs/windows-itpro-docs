@@ -17,34 +17,39 @@ author: brianlic-msft
  
 Credential Guard has certain application requirements. Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when Credential Guard is enabled. For further information, see [Application requirements](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
 
-The following known issues have been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
+The following known issue has been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
 
--	KB4015217: [Credential Guard generates double bad password count on Active Directory domain-joined Windows 10 machines](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217)
+-	 [KB4015217 Credential Guard generates double bad password count on Active Directory domain-joined Windows 10 machines](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217)
 
-    This issue can potentially lead to unexpected account lockouts.
-See also Knowledge Base articles [KB4015219](https://support.microsoft.com/en-us/help/4015219/windows-10-update-kb4015219) and 
+     This issue can potentially lead to unexpected account lockouts. See also Microsoft® Knowledge Base articles [KB4015219](https://support.microsoft.com/en-us/help/4015219/windows-10-update-kb4015219) and 
 [KB4015221](https://support.microsoft.com/en-us/help/4015221/windows-10-update-kb4015221)
 
-The following issue is under investigation. For available workarounds, see the following Knowledge Base article:
--	[Installing AppSense Environment Manager on Windows 10 machines causes LSAiso.exe to exhibit high CPU usage when Credential Guard is enabled](http://www.appsense.com/kb/160525073917945) * <sup>[1]</sup>
-
-    *Registration required to access this article.
-    
-    <sup>[1]</sup> For further technical information on LSAiso.exe, see this MSDN article: [Isolated User Mode (IUM) Processes](https://msdn.microsoft.com/library/windows/desktop/mt809132(v=vs.85).aspx)
-    
 The following issue affects Cisco AnyConnect Secure Mobility Client:
 
--	[Blue screen on Windows 10 computers running Device Guard and Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692)**
+-	[Blue screen on Windows 10 computers running Device Guard and Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692) \*
 
-**Registration required to access this article. 
+*Registration required to access this article. 
 
-Products that connect to Virtualization Based Security (VBS) protected processes can cause Credential Guard-enabled Windows 10 clients to exhibit high CPU usage. For further information, see the following Knowledge Base article:
+The following issue affects McAfee Application and Change Control (MACC):
+-	[KB88869 Windows 10 machines exhibit high CPU  sage with McAfee Application and Change Control (MACC) installed when Credential Guard is enabled](https://kc.mcafee.com/corporate/index?page=content&id=KB88869) <sup>[1]</sup>
+   
 
--	KB88869: [Windows 10 machines exhibit high CPU usage with McAfee Application and Change Control (MACC) installed when Credential Guard is enabled](https://kc.mcafee.com/corporate/index?page=content&id=KB88869)
+The following issue affects AppSense Environment Manager.
+  For further information, see the following Knowledge Base article:
+-	[Installing AppSense Environment Manager on Windows 10 machines causes LSAISO.exe to exhibit high CPU usage when Credential Guard is enabled](http://www.appsense.com/kb/160525073917945) <sup>[1]</sup> \**
 
-The following issue is under investigation:
+The following issue affects Citrix applications:
+-	 Windows 10 machines exhibit high CPU usage with Citrix applications installed when Credential Guard is enabled. <sup>[1]</sup>
 
--	 Windows 10 machines exhibit high CPU usage with Citrix applications installed when Credential Guard is enabled.
+<sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Credential Guard-enabled Windows 10 or Windows Server 2016 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
+
+-	 [KB4032786 High CPU usage in the LSAISO process on Windows 10 or Windows Server 2016](https://support.microsoft.com/en-us/help/4032786)
+    
+For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](https://msdn.microsoft.com/library/windows/desktop/mt809132(v=vs.85).aspx)
+    
+
+  \** Registration is required to access this article.
+
 
 ## Vendor support
 
