@@ -7,6 +7,7 @@ ms.sitesec: library
 localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 06/19/2017
 ---
 
 # Windows 10 configuration recommendations for education customers
@@ -74,8 +75,8 @@ You can set all the education compliance areas through both provisioning and man
 ## AllowCortana
 **AllowCortana** is a policy that enables or disables Cortana. It is a policy node in the Policy configuration service provider, [AllowCortana](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowcortana). 
 
-    > [!NOTE]
-    > See the [Recommended configuration](#recommended-configuration) section for recommended Cortana settings.
+> [!NOTE]
+> See the [Recommended configuration](#recommended-configuration) section for recommended Cortana settings.
 
 Use one of these methods to set this policy.
 

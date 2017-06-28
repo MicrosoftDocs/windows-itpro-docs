@@ -36,7 +36,12 @@
 		"ms.author": "trudyha",
 		"ms.technology": "windows",
 		"ms.topic": "article",
-		"ms.date": "05/09/2017"
+		"ms.date": "05/09/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "MSDN.store-for-business"
+			}
+		}
 	},
     "fileMetadata": {},
     "template": [],
