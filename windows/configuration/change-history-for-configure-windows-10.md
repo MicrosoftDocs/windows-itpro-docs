@@ -14,6 +14,13 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## June 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Added warning about using Shell Launcher to set a custom shell with an application that launches a different process and then exits |
+| [Windows Configuration Designer command-line interface (reference)](provisioning-packages/provisioning-command-line.md) | Removed references to imaging |
+
 ## May 2017
 
 | New or changed topic | Description |

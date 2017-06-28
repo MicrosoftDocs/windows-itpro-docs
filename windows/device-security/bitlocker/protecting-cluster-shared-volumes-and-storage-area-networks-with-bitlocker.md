@@ -12,7 +12,7 @@ author: brianlic-msft
 # Protecting cluster shared volumes and storage area networks with BitLocker
 
 **Applies to**
--   Windows 10
+-   Windows Server 2016
 
 This topic for IT pros describes how to protect CSVs and SANs with BitLocker.
 
