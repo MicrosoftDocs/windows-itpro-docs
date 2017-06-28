@@ -587,11 +587,11 @@ description: Learn about the product documentation and resources available for B
                         <ul id="general-admin" class="cardsE">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>Get help on the most common admin tasks in the BCS admin center. The BCS admin center is lot like the Office 365 admin center so the admin guidance we provide for Office 365 admin center also apply to BCS.</p>
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/en-us/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-US&ad=US">
+                                <a href="https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -602,7 +602,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Add a user</h3>
-                                                    <p>tbd</p>
+                                                    <p>Add user accounts in the BCS admin center so people in your organization can sign in and access Office 365 for business.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -610,18 +610,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_web.svg" alt="Add a domain" />
+                                                        <img src="/media/common/i_web.svg" alt="Add a domain and other FAQs about domains in BCS" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Add a domain</h3>
-                                                    <p>tbd</p>
+                                                    <p>See this article to find answers to Frequently Asked Questions about domains in BCS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -629,7 +629,7 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/Admins-Reset-Office-365-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -640,7 +640,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Password management</h3>
-                                                    <p>tbd</p>
+                                                    <p>Learn how to reset passwords, set the password expiration policy, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
