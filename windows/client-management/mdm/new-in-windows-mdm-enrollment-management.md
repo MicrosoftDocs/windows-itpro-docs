@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 06/27/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1257,6 +1257,10 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>DeviceTagging/Criticality</li>
 </ul>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
+<td style="vertical-align:top">The DynamicManagement CSP is not supported in Windows 10 Mobile and Mobile Enterprise. The table of SKU information in the [Configuration service provider reference](configuration-service-provider-reference.md) was updated.</td>
+</tr>
 </tbody>
 </table>
 
