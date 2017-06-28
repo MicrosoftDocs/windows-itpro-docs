@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 06/28/2017
 ---
 
 # Policy CSP
@@ -1781,12 +1781,15 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the BitLocker Drive Encryption method and cipher strength.
 
+> [!NOTE]
+> XTS-AES 128-bit and XTS-AES 256-bit values are only supported on Windows 10 for desktop.
+
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   3- AES 128-bit
--   4- AES 256
--   6 -XTS 128
--   7 - XTS 256
+-   3 - AES-CBC 128-bit
+-   4 - AES-CBC 256-bit
+-   6 - XTS-AES 128-bit (Desktop only)
+-   7 - XTS-AES 256-bit (Desktop only)
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -3758,6 +3761,41 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="credentialproviders-enablewindowsautopilotresetcredentials"></a>**CredentialProviders/EnableWindowsAutoPilotResetCredentials**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+Added in Windows 10, version 1709. Boolean policy to enable the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. When the policy is enabled, a WNF notification is generated that would schedule a task to update the visibility of the new provider. The admin user is required to authenticate to trigger the refresh on the target device.
+
+The auto pilot reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the auto pilot reset is triggered the devices are for ready for use by information workers or students.
+
+Default value is 0.  
+
+<!--EndDescription-->
+<!--EndPolicy--> 
 <!--StartPolicy-->
 <a href="" id="credentialsui-disablepasswordreveal"></a>**CredentialsUI/DisablePasswordReveal**  
 
