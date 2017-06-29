@@ -23,8 +23,8 @@ localizationpriority: high
 
 The Antivirus optimization tile provides a list of recommendations to affected machines. Taking action on the recommendations will help improve your overall organizational security:
 
-- [Turn on Windows Defender Antivirus]()
-- [Turn on cloud-delivered protection](windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
-- [Turn on protection from potentially unwanted applications](windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
-- [Turn on real-time protection](windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
-- [Update antivirus definitions](windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md)
+- Turn on Windows Defender Antivirus
+- [Turn on cloud-delivered protection](./windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus.md)
+- [Turn on protection from potentially unwanted applications](./windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus.md)
+- [Turn on real-time protection](./windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus.md)
+- [Update antivirus definitions](./windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md)
