@@ -11,6 +11,14 @@ author: jdeckerms
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## June 2017
+
+|New or changed topic | Description |
+| --- | --- |
+|[Surface Data Eraser](microsoft-surface-data-eraser.md) | Update compatible devices, added version 3.2.36 information  |
+|[Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md) | Added version 2.0.8.0 information  |
+|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.1.15.0 information  |
+
 
 ## April 2017
 
