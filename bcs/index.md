@@ -56,7 +56,7 @@ description: Learn about the product documentation and resources available for B
                 <ul id="partner-it">
                     <li>
                         <a data-default="true" href="#getstarted">Get Started</a>
-                        <ul id="getstarted" class="cardsE">
+                        <ul id="getstarted" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Get started and make the move from an unmanaged mix of legacy apps, services, and devices to an always up-to-date cloud productivity suite with easy management of PCs and mobile apps.</p>
@@ -182,7 +182,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#user-mgmt">User management</a>
-                        <ul id="user-mgmt" class="cardsE">
+                        <ul id="user-mgmt" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -249,10 +249,10 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#device-mgmt">Device management</a>
-                        <ul id="device-mgmt" class="cardsE">
+                        <ul id="device-mgmt" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>Find help on managing your organization's devices from the BCS admin center.</p>
                                 </div>
                             </li>
                             <li>
@@ -335,10 +335,10 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#policies">Policies</a>
-                        <ul id="policies" class="cardsE">
+                        <ul id="policies" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>Configure app management and device policies for your organization.</p>
                                 </div>
                             </li>
                             <li>
@@ -348,7 +348,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_policy.svg" alt="Set device configurations for Windows 10 PCs" />
+                                                        <img src="/media/common/i_portal.svg" alt="Set device configurations for Windows 10 PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -383,7 +383,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#migration">Migration</a>
-                        <ul id="migration" class="cardsE">
+                        <ul id="migration" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -431,7 +431,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#troub-support">Troubleshooting and support</a>
-                        <ul id="troub-support" class="cardsE">
+                        <ul id="troub-support" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Looking for help or can't find what you need? Try these resources.</p>
@@ -517,7 +517,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#adv-mgmt">Advanced management</a>
-                        <ul id="adv-mgmt" class="cardsE">
+                        <ul id="adv-mgmt" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -584,7 +584,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#general-admin">General administration</a>
-                        <ul id="general-admin" class="cardsE">
+                        <ul id="general-admin" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Get help on the most common admin tasks in the BCS admin center. The BCS admin center is lot like the Office 365 admin center so the admin guidance we provide for Office 365 admin center also apply to BCS.</p>
@@ -774,26 +774,26 @@ description: Learn about the product documentation and resources available for B
                 <a href="#i-worker">Information worker</a>
                 <ul id="i-worker">
                     <li>
-                        <a data-default="true" href="#i-worker-1">Placeholder 1</a>
-                        <ul id="i-worker-1" class="cardsE">
+                        <a data-default="true" href="#i-worker-1">Set up devices</a>
+                        <ul id="i-worker-1" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Lorem ipsum…</p>
+                                    <p>Employees and other users can follow the guidance here to set up devices.</p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/Set-up-mobile-devices-for-Business-Cloud-Suite-users-d868561b-d340-4c04-a973-e2575d7f09bc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_web-apps.svg" alt="Set up mobile devices for BCS users" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Set up mobile devices for BCS users</h3>
+                                                    <p>Find out how to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by BCS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -823,7 +823,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a data-default="true" href="#i-worker-2">Placeholder 2</a>
-                        <ul id="i-worker-2" class="cardsE">
+                        <ul id="i-worker-2" class="cardsA">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Lorem ipsum…</p>
