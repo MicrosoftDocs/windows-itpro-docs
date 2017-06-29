@@ -63,6 +63,25 @@ description: Learn about the product documentation and resources available for B
                                 </div>
                             </li>
                             <li>
+                                <a href="#">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_learn-about.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Sign up for BCS</h3>
+                                                    <p>TBD - Ready to try out BCS? Find out how.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://support.office.com/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364">
                                     <div class="cardSize">
                                         <div class="cardPadding">
