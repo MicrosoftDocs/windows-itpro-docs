@@ -277,6 +277,25 @@ description: Learn about the product documentation and resources available for B
                                 </div>
                             </li>
                             <li>
+                                <a href="https://support.office.com/en-us/article/Prepare-for-Office-client-installation-ed34fff3-2881-4ed4-9906-1ba6bb8dd804?ui=en-US&rs=en-US&ad=US">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_download-monitor.svg" alt="Prepare for Office client installation" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Prepare for Office client installation</h3>
+                                                    <p>Use Business Cloud Suite to automatically install the 32-bit Office apps to Windows 10 computers and keep them current with updates.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://support.office.com/article/Automatically-install-or-uninstall-Office-on-Windows-10-devices-cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -327,25 +346,6 @@ description: Learn about the product documentation and resources available for B
                                                 <div class="cardText">
                                                     <h3>Reset Windows 10 devices to their factory settings</h3>
                                                     <p>Learn how to perform a factory reset to revert a Windows 10 device to its original settings.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/en-us/article/Prepare-for-Office-client-installation-ed34fff3-2881-4ed4-9906-1ba6bb8dd804?ui=en-US&rs=en-US&ad=US">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_download-monitor.svg" alt="Prepare for Office client installation" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Prepare for Office client installation</h3>
-                                                    <p>Use Business Cloud Suite to automatically install the 32-bit Office apps to Windows 10 computers and keep them current with updates.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -934,11 +934,11 @@ description: Learn about the product documentation and resources available for B
                 <a href="#bus-owner">Business owner</a>
                 <ul id="bus-owner">
                     <li>
-                        <a data-default="true" href="#bus-owner-1">Placeholder 1</a>
+                        <a data-default="true" href="#bus-owner-1">Get started</a>
                         <ul id="bus-owner-1" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>TBD - Introductory text</p>
+                                    <p>Learn about BCS and find out how you can start using it for your business.</p>
                                 </div>
                             </li>
                             <li>
@@ -948,12 +948,12 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_guide.svg" alt="Learn more about BCS" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Card 1</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Learn about BCS</h3>
+                                                    <p>Want to learn more about BCS and wondering whether it's the right solution for your business? Start here. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -961,18 +961,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://partnercenter.microsoft.com/partner/home">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_search.svg" alt="Find a Microsoft-certified service provider" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Card 2</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Find a Partner</h3>
+                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified service provider who can help you locally or remotely. </p>
                                                 </div>
                                             </div>
                                         </div>
