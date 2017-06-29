@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: justinha
+ms.date: 06/29/2017
 ---
 
 # How hardware-based containers help protect Windows 10
