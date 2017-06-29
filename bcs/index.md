@@ -256,25 +256,6 @@ description: Learn about the product documentation and resources available for B
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_setup.svg" alt="Use Windows Autopilot to deploy Windows 10 devices" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Set up Windows 10 devices using Windows Autopilot - Coming soon</h3>
-                                                    <p>Deploy Windows 10 devices without having to "touch" the device before handing it out to employees - set the profile, hand out shrink-wrapped devices to employees, and have employees go through a customized setup experience.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://support.office.com/article/Automatically-install-or-uninstall-Office-on-Windows-10-devices-cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -313,18 +294,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/Reset-Windows-10-devices-to-their-factory-settings-c4db6caf-74df-4734-b1dd-53e371c7a3c3">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_setup.svg" alt="Perform factory reset on a Windows 10 device" />
+                                                        <img src="/media/common/i_setup.svg" alt="Reset Windows 10 devices to their factory settings" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Perform factory reset on a Windows 10 device</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Reset Windows 10 devices to their factory settings</h3>
+                                                    <p>Learn how to perform a factory reset to revert a Windows 10 device to its original settings.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -361,18 +342,18 @@ description: Learn about the product documentation and resources available for B
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/Set-device-configurations-for-WIndows-10-PCs-bd66c26c-73a4-45a8-8642-3ea4ee7cd89d">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_policy.svg" alt="Create a new policy" />
+                                                        <img src="/media/common/i_policy.svg" alt="Set device configurations for Windows 10 PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Create a new policy</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Set device configurations for Windows 10 PCs</h3>
+                                                    <p>Learn how to create, edit, or delete an app management policy in BCS.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -380,37 +361,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/View-policies-and-devices-6b70fa27-d171-4593-8ecf-f78bb4ed2e99">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_code-edit.svg" alt="Edit a policy" />
+                                                        <img src="/media/common/i_policy.svg" alt="View policies and devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Edit a policy</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_config-tools.svg" alt="Delete a policy" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Delete a policy</h3>
-                                                    <p>tbd</p>
+                                                    <h3>View policies and devices</h3>
+                                                    <p>Use the BCS admin center to configure the policies and devices for your organization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -600,18 +562,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="/device-management/set-up-windows-10-devices-with-windows-autopilot.md">
+                                <a href="/bcs/device-management/set-up-windows-10-devices-with-windows-autopilot">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_download-install.svg" alt="Set up Windows 10 devices with Windows Autopilot" />
+                                                        <img src="/media/common/i_download-install.svg" alt="Use Windows Autopilot to deploy Windows 10 devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set up Windows 10 devices with Windows Autopilot</h3>
-                                                    <p>Learn how to use Windows Autopilot to deploy Windows 10 devices by setting a ZTD profile, customizing the OOBE experience, and enrolling the device into MDM.</p>
+                                                    <h3>Set up Windows 10 devices using Windows Autopilot</h3>
+                                                    <p>Deploy Windows 10 devices without having to "touch" the device before handing it out to employees - set the profile, hand out shrink-wrapped devices to employees, and have employees go through a customized setup experience.</p>
                                                 </div>
                                             </div>
                                         </div>
