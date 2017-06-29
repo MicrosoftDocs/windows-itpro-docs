@@ -29,6 +29,7 @@ The **Security Analytics Dashboard** displays a snapshot of:
 - Improvement opportunities
 - Antivirus - optimization
 
+![Security anlytics dashboard](images/atp-security-analytics-dashboard.png)
 
 ## Organizational security score
 The organization security score is reflective of the average score of all the Windows Defender security control properties that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
@@ -59,4 +60,4 @@ This tile shows you the exact number of machines that require the latest securit
 [EVALD / RAN - I'M NOT SURE IT'S WORTH MAKING A STAND ALONE TOPIC FOR THIS. THERE IS ONLY ONE LINE.]
 
 ### Advanced threat protection
-This tile provides a specific list of actions you can take on Windows Defender ATP. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+This tile provides a specific list of actions you can take on Windows Defender ATP to improve how endpoints provide sensor data to the Windows Defender ATP service. For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
