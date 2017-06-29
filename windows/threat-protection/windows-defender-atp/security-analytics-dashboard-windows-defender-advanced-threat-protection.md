@@ -25,14 +25,10 @@ The Security Analytics dashboard provides valuable information about the overall
 
 The **Security Analytics Dashboard** displays a snapshot of:
 - Organizational security score
-- Security converage
+- Security coverage
 - Improvement opportunities
 - Antivirus - optimization
 
-Visibility on the following Windows Defender security controls are supported:
-- Advanced threat protection
-- Antivirus
-- Security updates
 
 ## Organizational security score
 The organization security score is reflective of the average score of all the Windows Defender security control properties that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
