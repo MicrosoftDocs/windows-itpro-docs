@@ -9,6 +9,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: jobotto
+ms.date=06/29/2017
 ---
 
 # Microsoft Surface Dock Updater
