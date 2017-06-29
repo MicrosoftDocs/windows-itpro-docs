@@ -520,7 +520,7 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_debug.svg" alt="Find solutions for common BCS issues" />
+                                                        <img src="/media/common/i_tools.svg" alt="Find solutions for common BCS issues" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -600,18 +600,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="/device-management/set-up-windows-10-devices-with-windows-autopilot.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_download-install.svg" alt="Add a zero-touch deployment profile" />
+                                                        <img src="/media/common/i_download-install.svg" alt="Set up Windows 10 devices with Windows Autopilot" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Zero-touch deployment - coming soon</h3>
-                                                    <p>Add a zero-touch deployment profile to simplify device setup with Windows Autopilot.</p>
+                                                    <h3>Set up Windows 10 devices with Windows Autopilot</h3>
+                                                    <p>Learn how to use Windows Autopilot to deploy Windows 10 devices by setting a ZTD profile, customizing the OOBE experience, and enrolling the device into MDM.</p>
                                                 </div>
                                             </div>
                                         </div>
