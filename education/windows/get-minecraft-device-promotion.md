@@ -1,6 +1,6 @@
 ---
-title: Get Minecraft: Education Edition with your Windows 10 device promotion
-description: Windows 10 device promotion for Minecraft: Education Edition licenses.
+title: Get Minecraft Education Edition with your Windows 10 device promotion
+description: Windows 10 device promotion for Minecraft Education Edition licenses.
 keywords: school, Minecraft, education edition
 ms.prod: W10
 ms.mktglfcycl: plan
