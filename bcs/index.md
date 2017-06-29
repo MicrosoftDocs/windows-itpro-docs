@@ -568,12 +568,12 @@ description: Learn about the product documentation and resources available for B
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_download-install.svg" alt="Use Windows Autopilot to deploy Windows 10 devices" />
+                                                        <img src="/media/common/i_download-install.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set up Windows 10 devices using Windows Autopilot</h3>
-                                                    <p>Deploy Windows 10 devices using Windows Autopilot from the Partner Center.</p>
+                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
+                                                    <p>Deploy Windows 10 devices using Windows AutoPilot from the Partner Center.</p>
                                                 </div>
                                             </div>
                                         </div>

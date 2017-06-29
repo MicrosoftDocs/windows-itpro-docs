@@ -1,23 +1,25 @@
 --- 
-title: Set up Windows 10 devices with Windows Autopilot 
-description: Learn how to use Windows Autopilot to deploy Windows 10 devices by setting a ZTD profile, customizing the OOBE experience, and enrolling the device into MDM. 
+title: Set up Windows 10 devices with Windows AutoPilot 
+description: Learn how to use Windows AutoPilot from the Partner Center to create and automatically assign devices to configuration groups based on the device's profile, automatically join devices to Azure AD, auto-enroll devices into Microsoft Intune, and customize Windows OOBE. 
 author: CelesteDG 
 ms.author: celested 
 ms.topic: get-started article 
 ms.prod: microsoft-365-business
 Audience: microsoft-business 
-keywords: Business Cloud Suite, BCS, SMB, setup and configuration, deployment, Windows 10, Windows Autopilot
+keywords: Business Cloud Suite, BCS, SMB, setup and configuration, deployment, Windows 10, Windows AutoPilot
 ---
 
-# Set up Windows 10 devices with Windows Autopilot
+# Set up Windows 10 devices with Windows AutoPilot
 
-Windows Autopilot is the new, modern way of deploying Windows 10 across organizations of all types and sizes. Windows Autopilot is the ability for IT to deploy Windows 10 devices without having to “touch” the device before handing it out to employees. IT can set the profile, hand out shrink-wrapped brand new devices to employees, who then go through a customized Windows 10 setup experience (also known as OOBE).
+Windows AutoPilot is the new, modern way of deploying Windows 10 across organizations of all types and sizes. Windows AutoPilot enables IT to deploy Windows 10 devices without having to “touch” the device before handing it out to employees. IT can set the profile, hand out shrink-wrapped brand new devices to employees, who then go through a customized Windows 10 setup experience (also known as OOBE).
 
-You can use Windows Autopilot to:
+You can use Windows AutoPilot to:
 - **Disable local administrator permissions** for the end users setting up devices
 - **Show an organization's login page**. The organization can predefine a logon page that adds the device as a work device, and joins the device with Azure Active Directory.
 - **Streamline the out-of-box experience (OOBE)** to use just the steps and decisions required, using a zero-touch deployment (ZTD) profile.
 - **Enroll the device into MDM with Microsoft Intune** after OOBE is complete.
+
+For more information, see [Overview of Windows AutoPilot](https://docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot).
 
 ## Requirements
 
@@ -26,9 +28,9 @@ You can use Windows Autopilot to:
 - Devices must have access to the internet. When the device can’t connect, it shows the default Windows OOBE screens.
 - Enrolling the device into an MDM, such as Microsoft Intune, requires Azure Active Directory Premium.
 
-## Windows Autopilot deployment process
+## Windows AutoPilot deployment process
 
-![Windows Autopilot deployment process](media/903a8978051c335ceece3e7431c29fd4.png)
+![Windows AutoPilot deployment process](media/903a8978051c335ceece3e7431c29fd4.png)
 
 ## Add devices and apply a profile
 
