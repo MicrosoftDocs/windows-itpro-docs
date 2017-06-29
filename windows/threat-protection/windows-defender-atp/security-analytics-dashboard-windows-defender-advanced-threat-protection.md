@@ -25,7 +25,7 @@ The Security Analytics dashboard provides valuable information about the overall
 
 The **Security Analytics Dashboard** displays a snapshot of:
 - Organizational security score
-- Security controls
+- Security converage
 - Improvement opportunities
 - Antivirus - optimization
 
@@ -34,26 +34,32 @@ Visibility on the following Windows Defender security controls are supported:
 - Antivirus
 - Security updates
 
-## Organizational security score / Your organizational security score [JOEY TO UPDATE ONCE FINAL UI UPDATE IS DONE]
+## Organizational security score
 The organization security score is reflective of the average score of all the Windows Defender security control properties that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
+![Organizational security score](images/atp-org-sec-score.png)
+
+
+## Security coverage
+The security coverage tile shows a bar graph where each bar represents a Windows Defender security control. Each bars represents the various products with an indicator of the total number of machines that are well configured and those that require attention. 
+
 [JOEY: INSERT SCREENSHOT OF TILE HERE]
 
-## Security controls / Windows Defender security control state [JOEY TO UPDATE ONCE FINAL UI UPDATE IS DONE]
-The security controls shows a bar graph where each bar represents a Windows Defender security control. Bars represent the various products with an indicator of the total number of machines where protection is deployed and where attention is required. You can click on the each of the bars or states to look into the details of the security control.
-[EVALD: I ASSUMPED THE BARS ARE CLICKABLE, AND IF CLICKED, USERS WILL BE TAKEN TO SPECIFIC VIEW? IF THIS ASSUMPTION IS WRONG, I CAN REMOVE THE SENTENCE ABOVE.]
+## Improvement opportunities 
+Improve your organizational security score by taking the recommended improvement actions listed on this tile. This tile provides percentage values for each security control. The percentage values are ????? [EVALD / RAN I NEED SOME HELP HERE. I DON'T REALLY UNDERSTAND THE WHOLE PERCENTAGE THING. CAN YOU PROVIDE IN LAYMAN TERMS PLEASE.]
 
-[JOEY: INSERT SCREENSHOT OF TILE HERE]
-
-## Improvement opportunities / Your score improvement opportunity [JOEY TO UPDATE ONCE FINAL UI UPDATE IS DONE]
-Improve your organizational security by taking the recommended improvement actions listed on this tile. This tile provides percentage values for each security control. The percentage values are ????? [EVALD / RAN I NEED SOME HELP HERE. I DON'T REALLY UNDERSTAND THE WHOLE PERCENTAGE THING. CAN YOU PROVIDE IN LAYMAN TERMS PLEASE.]
+Click on each segment to see the 
 
 [JOEY: INSERT SCREENSHOT OF TILE HERE]
 
 For more information on how to optimize Windows Defender security products based on the Windows Defender ATP recommendations, see [Optimize security products](optimize-security-windows-defender-advanced-threat-protection.md). (EVALD/RAN/SMES - NOTE THAT TOPIC IS JUST A PLACEHOLDER FOR NOW. IT DOESN'T CONTAIN ANYTHING AT THE MOMENT.)
 
-## Antivirus recommendations
-This tile provides a specific list of recommendations for each security product and the total number of machines affected. You can click on the link to be taken to the Machines list and take action from there. [EVALD / RAN / DANIEL - I DON'T UNDERSTAND WHAT THE GREEN TRIANGLE IS REPRESENTING AND THE +5% ETC. CAN YOU ]
+### Antivirus optimization
+This tile provides a specific list of actions you can take on Windows Defender Antivirus to improve the security on your organization. Each action shows the exact number of endpoints where you can apply the action on.  For more information, see [Antivirus optimization](https://go.microsoft.com/fwlink/p/?linkid=851288).
 
 
-[JOEY: INSERT SCREENSHOT OF TILE HERE]
+### Security updates optimization
+This tile shows you the exact number of machines that require the latest security updates. 
+
+### Advanced threat protection
+This tile provides a specific list of actions you can take on Windows Defender ATP. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
