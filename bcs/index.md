@@ -801,18 +801,18 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/Set-up-Windows-PCs-for-Business-Cloud-Suite-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/media/common/i_download-monitor.svg" alt="Set up Windows 10 PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>TBD</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Set up Windows 10 PCs</h3>
+                                                    <p>Join your Windows 10 PC to your organization's Azure Active Directory and sync your device to start using your BCS account.</p>
                                                 </div>
                                             </div>
                                         </div>
