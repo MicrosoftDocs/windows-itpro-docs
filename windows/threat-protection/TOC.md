@@ -154,6 +154,7 @@
 #### [Using Outlook Web Access with Windows Information Protection (WIP)](windows-information-protection\using-owa-with-wip.md)
 ## [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
 ## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
+## [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md)
 ## [Secure the windows 10 boot process](secure-the-windows-10-boot-process.md)
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
