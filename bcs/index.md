@@ -62,6 +62,7 @@ description: Learn about the product documentation and resources available for B
                                     <p>Get started and make the move from an unmanaged mix of legacy apps, services, and devices to an always up-to-date cloud productivity suite with easy management of PCs and mobile apps.</p>
                                 </div>
                             </li>
+                            <!-- comment out for now. maybe surface for August 2nd 
                             <li>
                                 <a href="#">
                                     <div class="cardSize">
@@ -81,6 +82,7 @@ description: Learn about the product documentation and resources available for B
                                     </div>
                                 </a>
                             </li>
+                            -->
                             <li>
                                 <a href="https://support.office.com/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364">
                                     <div class="cardSize">
@@ -820,6 +822,25 @@ description: Learn about the product documentation and resources available for B
                                 </a>
                             </li>
                             <li>
+                                <a href="https://support.office.com/article/move-files-to-OneDrive-for-Business-eb8244aa-a302-481a-b2b5-d34e88b18ec7">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_road-map.svg" alt="Move files to OneDrive for Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Move files to OneDrive for Business</h3>
+                                                    <p>Optional. Use OneDrive for Business or a third-party tools to move files associated with your Windows profile.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://support.office.com/article/Set-up-Windows-PCs-for-Business-Cloud-Suite-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -832,6 +853,25 @@ description: Learn about the product documentation and resources available for B
                                                 <div class="cardText">
                                                     <h3>Set up Windows 10 PCs</h3>
                                                     <p>Join your Windows 10 PC to your organization's Azure Active Directory and sync your device to start using your BCS account.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/install-Windows-for-Business-Cloud-Suite-users-c654bd23-d256-4ac7-8fba-0c993bf5a771">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_download-install.svg" alt="Install Windows for BCS users" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Install Windows for BCS users</h3>
+                                                    <p>Setting up new PCs? Install Windows for BCS users.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -898,7 +938,7 @@ description: Learn about the product documentation and resources available for B
                         <ul id="bus-owner-1" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Lorem ipsum…</p>
+                                    <p>TBD - Introductory text</p>
                                 </div>
                             </li>
                             <li>
@@ -946,7 +986,7 @@ description: Learn about the product documentation and resources available for B
                         <ul id="bus-owner-2" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Lorem ipsum…</p>
+                                    <p>TBD - Introductory text</p>
                                 </div>
                             </li>
                             <li>
