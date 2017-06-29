@@ -56,7 +56,7 @@ description: Learn about the product documentation and resources available for B
                 <ul id="partner-it">
                     <li>
                         <a data-default="true" href="#getstarted">Get Started</a>
-                        <ul id="getstarted" class="cardsA">
+                        <ul id="getstarted" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Get started and make the move from an unmanaged mix of legacy apps, services, and devices to an always up-to-date cloud productivity suite with easy management of PCs and mobile apps.</p>
@@ -182,7 +182,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#user-mgmt">User management</a>
-                        <ul id="user-mgmt" class="cardsA">
+                        <ul id="user-mgmt" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -249,7 +249,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#device-mgmt">Device management</a>
-                        <ul id="device-mgmt" class="cardsA">
+                        <ul id="device-mgmt" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Find help on managing your organization's devices from the BCS admin center.</p>
@@ -335,7 +335,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#policies">Policies</a>
-                        <ul id="policies" class="cardsA">
+                        <ul id="policies" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Configure app management and device policies for your organization.</p>
@@ -383,7 +383,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#migration">Migration</a>
-                        <ul id="migration" class="cardsA">
+                        <ul id="migration" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -431,7 +431,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#troub-support">Troubleshooting and support</a>
-                        <ul id="troub-support" class="cardsA">
+                        <ul id="troub-support" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Looking for help or can't find what you need? Try these resources.</p>
@@ -517,7 +517,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#adv-mgmt">Advanced management</a>
-                        <ul id="adv-mgmt" class="cardsA">
+                        <ul id="adv-mgmt" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Introductory text about the links in this section</p>
@@ -573,7 +573,7 @@ description: Learn about the product documentation and resources available for B
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Set up Windows 10 devices using Windows Autopilot</h3>
-                                                    <p>Deploy Windows 10 devices without having to "touch" the device before handing it out to employees - set the profile, hand out shrink-wrapped devices to employees, and have employees go through a customized setup experience.</p>
+                                                    <p>Deploy Windows 10 devices using Windows Autopilot from the Partner Center.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -584,7 +584,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a href="#general-admin">General administration</a>
-                        <ul id="general-admin" class="cardsA">
+                        <ul id="general-admin" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Get help on the most common admin tasks in the BCS admin center. The BCS admin center is lot like the Office 365 admin center so the admin guidance we provide for Office 365 admin center also apply to BCS.</p>
@@ -775,7 +775,7 @@ description: Learn about the product documentation and resources available for B
                 <ul id="i-worker">
                     <li>
                         <a data-default="true" href="#i-worker-1">Set up devices</a>
-                        <ul id="i-worker-1" class="cardsA">
+                        <ul id="i-worker-1" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Employees and other users can follow the guidance here to set up devices.</p>
@@ -823,7 +823,7 @@ description: Learn about the product documentation and resources available for B
                     </li>
                     <li>
                         <a data-default="true" href="#i-worker-2">Placeholder 2</a>
-                        <ul id="i-worker-2" class="cardsA">
+                        <ul id="i-worker-2" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Lorem ipsum…</p>
