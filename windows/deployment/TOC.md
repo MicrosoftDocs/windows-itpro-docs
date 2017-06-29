@@ -41,6 +41,8 @@
 ##### [Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista](planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md)
 #### [Change history for Plan for Windows 10 deployment](planning/change-history-for-plan-for-windows-10-deployment.md)
 
+### [Overview of Windows AutoPilot](windows-10-auto-pilot.md)
+
 ### [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 
 ### [Windows 10 deployment tools reference](windows-10-deployment-tools-reference.md)

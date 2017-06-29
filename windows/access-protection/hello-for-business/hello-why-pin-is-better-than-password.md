@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Why a PIN is better than a password

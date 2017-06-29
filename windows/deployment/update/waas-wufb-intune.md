@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Walkthrough: use Microsoft Intune to configure Windows Update for Business
