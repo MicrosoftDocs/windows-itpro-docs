@@ -43,23 +43,24 @@ The organization security score is reflective of the average score of all the Wi
 ## Security coverage
 The security coverage tile shows a bar graph where each bar represents a Windows Defender security control. Each bars represents the various products with an indicator of the total number of machines that are well configured and those that require attention. 
 
-[JOEY: INSERT SCREENSHOT OF TILE HERE]
+![Security coverage](images/atp-security-coverage.png)
 
 ## Improvement opportunities 
 Improve your organizational security score by taking the recommended improvement actions listed on this tile. This tile provides percentage values for each security control. The percentage values are ????? [EVALD / RAN I NEED SOME HELP HERE. I DON'T REALLY UNDERSTAND THE WHOLE PERCENTAGE THING. CAN YOU PROVIDE IN LAYMAN TERMS PLEASE.]
 
-Click on each segment to see the 
+Click on each segment to see the recommended optimizations.
 
-[JOEY: INSERT SCREENSHOT OF TILE HERE]
+![Improvement oppportunities](images/atp-security-improvements.png)
 
-For more information on how to optimize Windows Defender security products based on the Windows Defender ATP recommendations, see [Optimize security products](optimize-security-windows-defender-advanced-threat-protection.md). (EVALD/RAN/SMES - NOTE THAT TOPIC IS JUST A PLACEHOLDER FOR NOW. IT DOESN'T CONTAIN ANYTHING AT THE MOMENT.)
 
 ### Antivirus optimization
-This tile provides a specific list of actions you can take on Windows Defender Antivirus to improve the security on your organization. Each action shows the exact number of endpoints where you can apply the action on.  For more information, see [Antivirus optimization](https://go.microsoft.com/fwlink/p/?linkid=851288).
+This tile provides a specific list of actions you can take on Windows Defender Antivirus to improve the security on your organization. Each action shows the exact number of endpoints where you can apply the action on.  For more information, see [Optimize Windows Defender Antivirus](https://go.microsoft.com/fwlink/p/?linkid=851288).
 
 
 ### Security updates optimization
 This tile shows you the exact number of machines that require the latest security updates. 
+
+[EVALD / RAN - I'M NOT SURE IT'S WORTH MAKING A STAND ALONE TOPIC FOR THIS. THERE IS ONLY ONE LINE.]
 
 ### Advanced threat protection
 This tile provides a specific list of actions you can take on Windows Defender ATP. For more information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
