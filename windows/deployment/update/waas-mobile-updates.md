@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile

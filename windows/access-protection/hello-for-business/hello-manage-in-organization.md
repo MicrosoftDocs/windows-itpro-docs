@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Manage Windows Hello for Business in your organization
