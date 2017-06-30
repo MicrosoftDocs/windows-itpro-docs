@@ -7,6 +7,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 localizationpriority: high
+ms.author: jdecker
+ms.date: 06/29/2017
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -26,6 +28,14 @@ The following guidelines may help you choose an appropriate Windows app for your
 - Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](https://msdn.microsoft.com/library/windows/hardware/mt228170.aspx#install_your_apps). 
 
 - Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch. 
+
+- Apps that are generated using the [Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) cannot be used as kiosk apps.
+
+## Guidelines for using Remote Desktop app 
+
+Kiosk apps open in full screen. When you assign [Remote Desktop](https://www.microsoft.com/store/apps/9wzdncrfj3ps) as the kiosk app, make sure the **Start connections in full screen** setting in the Remote Desktop app is set to **Off**.
+
+![Toggle Start connections in full screen to off](images/rdc.png)
 
 
 ## Guidelines for Windows apps that launch other apps
