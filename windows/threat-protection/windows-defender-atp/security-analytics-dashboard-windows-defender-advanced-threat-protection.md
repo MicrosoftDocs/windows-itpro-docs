@@ -53,11 +53,12 @@ Click on each segment to see the recommended optimizations.
 ### Antivirus optimization
 This tile provides a specific list of actions you can take on Windows Defender Antivirus to improve the security on your organization. Each action shows the exact number of endpoints where you can apply the action on.  For more information, see [Optimize Windows Defender Antivirus](https://go.microsoft.com/fwlink/p/?linkid=851288).
 
+[EVALD / RAN - I DON'T THINK IT'S WORTH MAKING A STAND ALONE TOPIC FOR THIS. I'M INCLINED TO PUT THE 4 LINKS UNDER HERE INSTEAD. WDYT?]
 
 ### Security updates optimization
 This tile shows you the exact number of machines that require the latest security updates. 
 
-[EVALD / RAN - I'M NOT SURE IT'S WORTH MAKING A STAND ALONE TOPIC FOR THIS. THERE IS ONLY ONE LINE.]
+[EVALD / RAN - I DON'T THINK IT'S WORTH MAKING A STAND ALONE TOPIC FOR THIS. THERE IS ONLY ONE LINE.]
 
 ### Advanced threat protection
 This tile provides a specific list of actions you can take on Windows Defender ATP to improve how endpoints provide sensor data to the Windows Defender ATP service. For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
