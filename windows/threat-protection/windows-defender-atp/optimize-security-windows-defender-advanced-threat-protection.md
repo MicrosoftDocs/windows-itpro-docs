@@ -27,4 +27,4 @@ The Antivirus optimization tile provides a list of recommendations to affected m
 - [Turn on cloud-delivered protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
 - [Turn on protection from potentially unwanted applications](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
 - [Turn on real-time protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
-- [Update antivirus protection and definitions](./windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md)
+- [Update antivirus protection and definitions](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md)
