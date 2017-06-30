@@ -10,7 +10,7 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 06/30/2017
+ms.date: 07/03/2017
 ---
 
 # Use School Data Sync to import student data
@@ -20,20 +20,22 @@ School Data Sync (SDS) helps you import Student Information System (SIS) data in
 Follow all the steps in this section to use SDS and sample CSV files in a trial environment. To use SDS in a production environment, see step 2 in [Try out Microsoft Education in a production environment](https://docs.microsoft.com/en-us/education/get-started/get-started-with-microsoft-education#setup-options) instead.
 
 <!-- Placeholder
+You can watch the video to see how this is done, or follow the step-by-step guide.
+
 ## Watch the video
 > [!Video https://www.youtube.com/watch?v=X7bscA-knaY]
 
 You can watch the descriptive audio version here: [Microsoft Education: Use School Data Sync to import student data (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
--->
 
 ## Follow the step-by-step guide
+-->
 
 **<a name="downloadcsvsamples"></a>Download sample school data**
 
 1. Go to the <a href="https://aka.ms/sdsscripts" target="_blank">O365-EDU-Tools GitHub site</a>.
 2. Click the green **Clone or download** button to download the SDS sample files.
 
-  **Figure 4** - Download the SDS sample files from GitHub
+  **Figure 1** - Download the SDS sample files from GitHub
 
   ![Download the SDS sample files from GitHub](images/sds_github_downloadsample.png)
 
@@ -41,7 +43,7 @@ You can watch the descriptive audio version here: [Microsoft Education: Use Scho
 4. Go to the folder where you saved the .zip and unzip the files.
 5. Open the **O365-EDU-Tools-master** folder and then open the **CSV Samples** subfolder. Confirm that you can see the following sample CSV files.
 
-  **Figure 5** - Sample CSV files
+  **Figure 2** - Sample CSV files
 
   ![Use the sample CSV files](images/sds_sample_csv_files_us_uk.png)
 
@@ -57,7 +59,7 @@ To learn more about the CSV files that are required and the info you need to inc
 1. If you haven't done so already, go to the SDS portal, <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
 2. Click **Sign in**. You will see the **Settings** option for **Manage School Data Sync**.
 
-  **Figure 6** - Settings for managing SDS
+  **Figure 3** - Settings for managing SDS
 
   ![Settings for managing SDS](images/sds_settings_manage_sds_firstsignin.png)
 
@@ -65,7 +67,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
   New menu options will appear on the left of the SDS portal.
 
-  **Figure 7** - New menu options appear after SDS is turned on
+  **Figure 4** - New menu options appear after SDS is turned on
 
   ![New menu options appear after SDS is turned on](images/sds_sds_on_newmenuitemsappear.png)
 
@@ -73,7 +75,7 @@ To learn more about the CSV files that are required and the info you need to inc
 
   This opens up the new profile setup wizard within the main page.
 
-  **Figure 8** - New SDS profile setup wizard
+  **Figure 5** - New SDS profile setup wizard
 
   ![New SDS profile setup wizard](images/sds_add_new_profile_062317.png)
 
@@ -105,7 +107,7 @@ To learn more about the CSV files that are required and the info you need to inc
   7. In the **License Options** section, check the box for **Intune for Education** to allow students and teachers to receive the Intune for Education license. This will also create the SDS dynamic groups and security groups, which will be used within Intune for Education.
   8. Click **Next**.
 
-    **Figure 9** - Sync options for the new profile
+    **Figure 6** - Sync options for the new profile
 
     ![Specify sync options for the new SDS profile](images/sds_profile_sync_options_062317.png)
 
@@ -115,7 +117,7 @@ To learn more about the CSV files that are required and the info you need to inc
   3. In the **Teacher licenses** section, choose the SKU to assign licenses for teachers. For example, **STANDARDWOFFPACK_FACULTY**.
   4. Click **Next**.
 
-    **Figure 10** - Specify options for teacher mapping
+    **Figure 7** - Specify options for teacher mapping
 
     ![Specify options for teacher mapping](images/sds_profile_teacher_options_062317.png)
 
@@ -125,14 +127,14 @@ To learn more about the CSV files that are required and the info you need to inc
   3. In the **Student licenses** section, choose the SKU to assign licenses for students. For example, **STANDARDWOFFPACK_STUDENT**.
   4. Click **Next**.
 
-    **Figure 11** - Specify options for student mapping
+    **Figure 8** - Specify options for student mapping
 
     ![Specify options for student mapping](images/sds_profile_student_options_062317.png)
 
 9. In the profile **Review** page, review the summary and confirm that the options selected are correct. 
 10. Click **Create profile**. You will see a notification that your profile is being submitted and then you will see a page for your profile. 
 
-  **Figure 12** - SDS profile page
+  **Figure 9** - SDS profile page
 
   ![SDS profile page](images/sds_profile_profilepage_settingup_062317.png) 
 
@@ -151,15 +153,15 @@ To learn more about the CSV files that are required and the info you need to inc
 
   Here are some examples of what the sync status can look like:
 
-  **Figure 13** - New profile: Sync in progress
+  **Figure 10** - New profile: Sync in progress
 
   ![Sync in progress for the new profile](images/sds_profile_status_syncinprogress_062317.png)
 
-  **Figure 14** - New profile: Sync complete - no errors
+  **Figure 11** - New profile: Sync complete - no errors
 
   ![New profile sync complete with no errors](images/sds_profile_status_everythingok_062317.png)
 
-  **Figure 15** - New profile: Sync complete - with errors
+  **Figure 12** - New profile: Sync complete - with errors
 
   ![New profile sync complete with errors](images/sds_profile_status_syncerrors_062317.png)
 
@@ -171,3 +173,7 @@ That's it for importing sample school data using SDS.
 
 > [!div class="nextstepaction"]
 > [Enable Microsoft Teams for your school](enable-microsoft-teams.md)
+
+
+## Related topic
+[Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)

@@ -10,22 +10,14 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 06/30/2017
+ms.date: 07/03/2017
 ---
 
 # Use Intune for Education to manage groups, apps, and settings
 
 Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the <a href="https://docs.microsoft.com/intune-education" target="_blank">Intune for Education documentation</a>. 
 
-## Watch the video
-> [!Video https://www.youtube.com/watch?v=c3BLoZZw3TQ]
-<!-- Placeholder
-You can watch the descriptive audio version here: [Microsoft Education: Use Intune for Education to manage groups, apps, and settings (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
--->
-
-## Follow the step-by-step guide
-
-### Example - Set up Intune for Education, buy apps from the Store, and install the apps
+## Example - Set up Intune for Education, buy apps from the Store, and install the apps
 In this walkthrough, we'll go through a sample scenario and walk you through the steps to:
 - [Use express configuration to quickly set up Intune for Education](#setupintune)
 - [Use Intune for Education to buy apps from the Microsoft Store for Education](#addappsfrommsfe)
@@ -43,6 +35,16 @@ Note that for verified education tenants, Microsoft automatically provisions you
   > [!NOTE]
   > Apps that you own in the Microsoft Store for Education are automatically available in Intune for Education. Any changes you make to your purchases get reflected in Intune for Education.
 
+You can watch the video to see how this is done, or follow the step-by-step guide.
+
+## Watch the video
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/c3BLoZZw3TQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+
+<!-- Placeholder
+You can watch the descriptive audio version here: [Microsoft Education: Use Intune for Education to manage groups, apps, and settings (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
+-->
+
+## Follow the step-by-step guide
 
 **<a name="setupintune"></a>Set up Intune for Education**
 
@@ -50,20 +52,20 @@ Intune for Education provides an **Express configuration** option so you can get
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. You will see the Intune for Education dashboard once you're logged in.
 
-  **Figure 22** - Intune for Education dashboard
+  **Figure 1** - Intune for Education dashboard
 
   ![Intune for Education dashboard](images/i4e_portal.png)
 
 2. On the dashboard, click **Launch Express Configuration**, or select the **Express configuration** option on the menu on the left.
 3. In the **Welcome to Intune for Education** screen, click **Get started**.
   
-  **Figure 23** - Click Get started to set up Intune for Education
+  **Figure 2** - Click Get started to set up Intune for Education
 
   ![Click Get Started to configure groups, apps, and settings](images/i4e_expressconfiguration_welcome.png)
 
 4. In the **Get school information (optional)** screen, it should indicate that SDS is already configured. Click **Next**.
 
-  **Figure 24** - SDS is configured
+  **Figure 3** - SDS is configured
 
   ![SDS is already configured](images/i4e_expressconfiguration_sdsconfigured.png)
 
@@ -76,7 +78,7 @@ Intune for Education provides an **Express configuration** option so you can get
   > [!TIP]
   > At the top of the screen, did you notice the **Choose group** button change to a green check mark? This means we are done with that step. If you change your mind or need to make changes, simply click on the button to go back to that step. Try it!
   >
-  > **Figure 25** - Click on the buttons to go back to that step
+  > **Figure 4** - Click on the buttons to go back to that step
   >
   > ![Click on the buttons to back to that step](images/i4e_expressconfiguration_choosebuttontogoback.png)
 
@@ -89,7 +91,7 @@ Intune for Education provides an **Express configuration** option so you can get
     > [!TIP]
     > Web apps are pushed as links in the Windows Start menu under **All apps**. If you want apps to appear in Microsoft Edge browser tabs, use the **Homepages** setting for Microsoft Edge through **Express configuration** or **Manage Users and Devices**.
 
-  **Figure 26** - Choose the apps that you want to install for the group
+  **Figure 5** - Choose the apps that you want to install for the group
 
   ![Choose apps to install for the group](images/i4e_expressconfiguration_chooseapps_selected_cropped.png)
 
@@ -99,7 +101,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
 8. In the **Choose settings** screen, we will set the settings to apply to the group. Click the reverse caret (downward-facing arrow) to expand the settings group and get more information about each setting in that settings group.
 
-  **Figure 27** - Expand the settings group to get more details
+  **Figure 6** - Expand the settings group to get more details
 
   ![Expand the settings group to get more info](images/i4e_expressconfiguration_choosesettings_expandcollapse_cropped_052217.png)
 
@@ -113,14 +115,14 @@ Intune for Education provides an **Express configuration** option so you can get
 
 10. Click **Next**. In the **Review** screen, you will see a summary of the apps and settings you selected to apply.
 
-  **Figure 29** - Review the group, apps, and settings you configured
+  **Figure 7** - Review the group, apps, and settings you configured
 
   ![Review the group, apps, and settings you configured](images/i4e_expressconfiguration_review.png)
 
 11. Click **Save** to end express configuration.
 12. You will see the **You're done!** screen which lets you choose one of two options. 
 
-  **Figure 30** - All done with Intune for Education express configuration
+  **Figure 8** - All done with Intune for Education express configuration
 
   ![Done with Intune for Education express configuration](images/i4e_expressconfiguration_alldone.png)
 
@@ -137,13 +139,13 @@ Intune for Education provides an **Express configuration** option so you can get
 
   1. In the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>, click **Apps** from the menu on the left.
 
-    **Figure 31** - Click on **Apps** to see the list of apps for your tenant
+    **Figure 9** - Click on **Apps** to see the list of apps for your tenant
 
     ![Click Apps to see the list of apps for your tenant](images/i4e_dashboard_clickapps.png)
 
   2. In the **Store apps** section, click **+ New app**. This will take you to the Microsoft Store for Education portal and you will already be signed in.
 
-    **Figure 32** - Select the option to add a new Store app
+    **Figure 10** - Select the option to add a new Store app
 
     ![Select the option to add a new Store app](images/i4e_apps_newstoreapp_selected.png)
 
@@ -162,7 +164,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
     For example, if you bought Duolingo and Khan Academy, they will show up in your inventory along with the apps that Microsoft automatically provisioned for your education tenant.
 
-    **Figure 33** - Apps inventory in Microsoft Store for Education
+    **Figure 11** - Apps inventory in Microsoft Store for Education
 
     ![Apps inventory in Store for Business](images/msfe_manageapps_inventory_grouped.png)
 
@@ -177,32 +179,32 @@ Now that you've bought the apps, use Intune for Education to specify the group t
 
 1. In the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>, click the **Groups** option from the menu on the left.
 
-  **Figure 34** - Groups page in Intune for Education
+  **Figure 12** - Groups page in Intune for Education
 
   ![Groups page in Intune for Education](images/i4e_groupspage.png)
 
 2. In the **Groups** page, select **All Users** from the list of groups on the left, and then click **Users** in the taskbar at the top of the **All Users** page. 
 
-  **Figure 35** - List of all users in the tenant
+  **Figure 13** - List of all users in the tenant
 
   ![List of all users in the tenant](images/i4e_groups_allusers_users_steps.png)
 
 3. In the taskbar at the top, select **Apps** and then click **Edit apps** to see a list of available apps.
 
-  **Figure 36** - Edit apps to assign them to users
+  **Figure 14** - Edit apps to assign them to users
 
   ![Edit apps to assign them to users](images/i4e_groups_allusers_appspage_editapps.png)
 
 4. Select the apps to deploy to the group. A blue checkmark will appear next to the apps you select. 
 
-  **Figure 37** - Select the apps to deploy to the group
+  **Figure 15** - Select the apps to deploy to the group
 
   ![Select the apps to deploy to the group](images/i4e_groups_allusers_selectappstodeploy.png)
 
 5. Once you're done, click **Save** at the bottom of the page to deploy the selected apps to the group.
 6. You'll be notified that app assignments are being updated. The updated **All Users** groups page now include the apps you selected. 
 
-  **Figure 38** - Updated list of assigned apps
+  **Figure 16** - Updated list of assigned apps
 
   ![Updated list of assigned apps](images/i4e_groups_allusers_updatedappslist.png)
 
@@ -210,3 +212,7 @@ You're now done assigning apps to all users in your tenant. It's time to set up 
 
 > [!div class="nextstepaction"]
 > [Set up Windows 10 devices](set-up-windows-10-education-devices.md)
+
+
+## Related topic
+[Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)

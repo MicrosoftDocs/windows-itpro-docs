@@ -10,7 +10,7 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 06/30/2017
+ms.date: 07/03/2017
 ---
 
 # Set up an Office 365 education tenant
@@ -20,7 +20,7 @@ Schools can use Office 365 to save time and be more productive. Built with power
 Don't have an Office 365 for Education verified tenant or just starting out? Follow these steps to set up an Office 365 for Education tenant. [Learn more about Office 365 for Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
 
 ## Watch the video
-> [!Video https://www.youtube.com/watch?v=X7bscA-knaY]
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/X7bscA-knaY?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 You can watch the descriptive audio version here: [Microsoft Education: Set up an Office 365 Education tenant (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
 
@@ -29,7 +29,7 @@ You can watch the descriptive audio version here: [Microsoft Education: Set up a
 1. Go to the <a href="https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY" target="_blank">Office 365 for Education sign up page</a> to sign up for a free subscription for your school.
 2. Create an account and a user ID and password to use to sign into your account. 
 
-  **Figure 3** - Office 365 account creation
+  **Figure 1** - Office 365 account creation
 
   ![Create an Office 365 account](images/o365_createaccount.png)
 
@@ -42,7 +42,11 @@ You can watch the descriptive audio version here: [Microsoft Education: Set up a
 
     You may need to fill in other information to provide that you qualify for an education tenant. Provide and submit the info to Microsoft to continue verification for your tenant.  
 
-As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See [7.3 Complete Office 365 for Education setup](#73-complete-office-365-education-setup) for info.
+As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See *Complete Office 365 for Education setup* in [Finish Windows 10 device setup and other tasks](finish-setup-and-other-tasks.md) for info.
 
 > [!div class="nextstepaction"]
 > [Use School Data Sync to import student data](use-school-data-sync.md)
+
+
+## Related topic
+[Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)

@@ -10,7 +10,7 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 06/26/2017
+ms.date: 07/03/2017
 ---
 
 # Get started: Deploy and manage a full cloud IT solution with Microsoft Education
@@ -102,7 +102,7 @@ Once you get an Office 365 education-verified tenant, trying out Microsoft Educa
 
 To get started with Microsoft Education in a trial environment, follow these steps.
 
-1. [Set up a new Office 365 for Education tenant](#1-set-up-a-new-office-365-for-education-tenant).
+1. [Set up a new Office 365 for Education tenant](set-up-office365-edu-tenant.md).
 
   Wait for your tenant to be education-verified before proceeding with the next step. Verification can take up to a few days.
 
@@ -115,7 +115,7 @@ To get started with Microsoft Education in a trial environment, follow these ste
   2. In the user page, select **Product licenses** and expand the **Office 365 Education** license you assigned to yourself. 
   3. Confirm that School Data Sync is turned on.
 
-3. Skip ahead and follow the rest of the instructions in this walkthrough beginning with [2. Use School Data Sync to import student data](#2-use-school-data-sync-to-import-student-data).
+3. Skip ahead and follow the rest of the instructions in this walkthrough beginning with [Use School Data Sync to import student data](use-school-data-sync.md).
 
 ### <a name="schooluseso365tryi4e"></a>Option 3: Try out Intune for Education
 Already have an Office 365 for Education verified tenant? Just sign in with your global admin credentials to apply the Intune for Education preview trial code to your tenant and follow the rest of the walkthrough.
@@ -128,28 +128,20 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
   ![Intune for Education trial sign in page](images/i4e_trialsigninpage.png)
 
 3. Enter your Office 365 global admin credentials to apply the Intune for Education trial to your tenant.
-4. If you don't already have Microsoft Teams deployed to your tenant, you can start with [3. Enable Microsoft Teams for your school](#3-enable-microsoft-teams-for-your-school) and then follow the rest of the instructions in this walkthrough. 
+4. If you don't already have Microsoft Teams deployed to your tenant, you can start with [Enable Microsoft Teams for your school](enable-microsoft-teams.md) and then follow the rest of the instructions in this walkthrough. 
 
-## 1. Set up a new Office 365 for Education tenant
+## End-to-end process
+The end-to-end process for deploying and managing a full cloud IT solution with Microsoft Education is outlined here. Depending on scenario, you may not need to implement all these steps. 
 
-## 2. Use School Data Sync to import student data
+Click the link to watch the video or follow the step-by-step guidance for each.
 
-
-## 3. Enable Microsoft Teams for your school
-
-
-## 4. Configure Microsoft Store for Education
-
-
-## 5. Use Intune for Education to manage groups, apps, and settings
-
-
-## 6. Set up Windows 10 devices
-
-
-## 7. Finish setup and other tasks
-
-
+1. [Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
+2. [Use School Data Sync to import student data](use-school-data-sync.md)
+3. [Enable Microsoft Teams for your school](enable-microsoft-teams.md)
+4. [Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
+5. [Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+6. [Set up Windows 10 education devices](set-up-windows-10-education-devices.md)
+7. [Finish Windows 10 device setup and other tasks](finish-setup-and-other-tasks.md)
 
 ## Get more info
 

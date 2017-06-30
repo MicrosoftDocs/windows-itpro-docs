@@ -10,7 +10,7 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 06/30/2017
+ms.date: 07/03/2017
 ---
 
 # Enable Microsoft Teams for your school
@@ -19,15 +19,6 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
 
 To get started, IT administrators need to use the Office 365 Admin Center to enable Microsoft Teams for your school. 
 
-<!-- Placeholder
-## Watch the video
-> [!Video https://www.youtube.com/watch?v=X7bscA-knaY]
-
-You can watch the descriptive audio version here: [Microsoft Education: Set up an Office 365 Education Tenant (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
-
-## Follow the step-by-step guide
--->
-
 **Enable Microsoft Teams for your school**
 
 1. Sign in to <a href="https://portal.office.com" target="_blank">Office 365</a> with your work or school account.
@@ -35,19 +26,19 @@ You can watch the descriptive audio version here: [Microsoft Education: Set up a
 3. Go to **Settings > Services & add-ins**.
 4. On the **Services & add-ins** page, select **Microsoft Teams**.
 
-  **Figure 16** - Select Microsoft Teams from the list of services & add-ins
+  **Figure 1** - Select Microsoft Teams from the list of services & add-ins
 
   ![Enable Microsoft Teams for your school](images/o365_settings_services_msteams.png)
 
 5. On the Microsoft Teams settings screen, select the license that you want to configure, **Student** or **Faculty and Staff**. Select **Faculty and Staff**.
 
-  **Figure 17** - Select the license that you want to configure
+  **Figure 2** - Select the license that you want to configure
 
   ![Select the Microsoft Teams license that you want to configure](images/o365_msteams_settings.png)
 
 6. After you select the license type, set the toggle to turn on Microsoft Teams for your organization.
 
-  **Figure 18** - Turn on Microsoft Teams for your organization
+  **Figure 3** - Turn on Microsoft Teams for your organization
 
   ![Turn on Microsoft Teams for your organization](images/o365_msteams_turnon.png)
 
@@ -58,3 +49,6 @@ You can find more info about how to control which users in your school can use M
 > [!div class="nextstepaction"]
 > [Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
 
+
+## Related topic
+[Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)
