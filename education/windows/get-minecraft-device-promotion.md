@@ -64,9 +64,9 @@ After that, we’ll add the appropriate number of Minecraft: Education Edition l
     
     ![Proof of purchase page with Invoice area highlighted.](images/msfe-device-promo-success.png)
       
-6. Choose a group of subscription, click **Actions**, and then click **Manage** to distribute licenses.  
+6. Click **Actions** and then click **Manage** to go to the management page for **Minecraft: Education Edition** and distribute licenses.   
 
 ## Distribute Minecraft: Education Edition licenses      
 Teachers or admins can distribute the licenses:
-- [Learn how teachers can distribute **Minecraft: Education Edition**](teacher-get-minecraft.md)
-- [Learn how IT administrators can distribute **Minecraft: Education Edition**](school-get-minecraft.md)
+- [Learn how teachers can distribute **Minecraft: Education Edition**](teacher-get-minecraft.md#distribute-minecraft)
+- [Learn how IT administrators can distribute **Minecraft: Education Edition**](school-get-minecraft.md#distribute-minecraft)
