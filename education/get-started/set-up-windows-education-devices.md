@@ -19,12 +19,11 @@ If you are setting up a Windows 10 device invidividually, and network bandwidth 
 
 You can watch the video to see how this is done, or follow the step-by-step guide.
 
-## Watch the video
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/nADWqBYvqXk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 You can watch the descriptive audio version here: [Microsoft Education: Set up a new Windows 10 education devices using the Windows setup experience (DA)](https://www.youtube.com/watch?v=_UtS1Cz2Pno)
 
-## Follow the step-by-step guide
+## To set up Windows 10 devices using OOBE
 
 1. If you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired or Ethernet connection.
 2. Go through the Windows device setup experience. On a new or reset device, this starts with the **Let's start with region. Is this right?** screen.

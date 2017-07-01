@@ -19,7 +19,7 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
 
 To get started, IT administrators need to use the Office 365 Admin Center to enable Microsoft Teams for your school. 
 
-**Enable Microsoft Teams for your school**
+## Enable Microsoft Teams for your school
 
 1. Sign in to <a href="https://portal.office.com" target="_blank">Office 365</a> with your work or school account.
 2. Click **Admin** to go to the Office 365 admin center.

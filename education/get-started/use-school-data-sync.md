@@ -30,7 +30,7 @@ You can watch the descriptive audio version here: [Microsoft Education: Use Scho
 ## Follow the step-by-step guide
 -->
 
-**<a name="downloadcsvsamples"></a>Download sample school data**
+## Download sample school data
 
 1. Go to the <a href="https://aka.ms/sdsscripts" target="_blank">O365-EDU-Tools GitHub site</a>.
 2. Click the green **Clone or download** button to download the SDS sample files.
@@ -54,7 +54,7 @@ You can watch the descriptive audio version here: [Microsoft Education: Use Scho
 
 To learn more about the CSV files that are required and the info you need to include in each file, see <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>. If you run into any issues, see <a href="https://aka.ms/sdserrors" target="_blank">School Data Sync errors and troubleshooting</a>.
 
-**<a name="usesdstoimportdata"></a>Use SDS to import student data**
+## Use SDS to import student data
 
 1. If you haven't done so already, go to the SDS portal, <a href="http://sds.microsoft.com" target="_blank">https://sds.microsoft.com</a>.
 2. Click **Sign in**. You will see the **Settings** option for **Manage School Data Sync**.

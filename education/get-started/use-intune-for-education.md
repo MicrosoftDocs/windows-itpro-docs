@@ -19,9 +19,9 @@ Intune for Education is a streamlined device management solution for educational
 
 ## Example - Set up Intune for Education, buy apps from the Store, and install the apps
 In this walkthrough, we'll go through a sample scenario and walk you through the steps to:
-- [Use express configuration to quickly set up Intune for Education](#setupintune)
-- [Use Intune for Education to buy apps from the Microsoft Store for Education](#addappsfrommsfe)
-- [Use Intune for Education to install the apps for all users in your tenant](#installappsallusers)
+- [Use express configuration to quickly set up Intune for Education](#set-up-intune-for-education)
+- [Use Intune for Education to buy apps from the Microsoft Store for Education](#add-apps-bought-from-microsoft-store-for-education)
+- [Use Intune for Education to install the apps for all users in your tenant](#install-apps-for-all-users)
 
 Note that for verified education tenants, Microsoft automatically provisions your app catalog with these apps so you will see them appear on your Intune for Education catalog even before you've bought any apps:
 - Excel 
@@ -37,17 +37,13 @@ Note that for verified education tenants, Microsoft automatically provisions you
 
 You can watch the video to see how this is done, or follow the step-by-step guide.
 
-## Watch the video
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/c3BLoZZw3TQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 <!-- Placeholder
 You can watch the descriptive audio version here: [Microsoft Education: Use Intune for Education to manage groups, apps, and settings (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
 -->
 
-## Follow the step-by-step guide
-
-**<a name="setupintune"></a>Set up Intune for Education**
-
+## Set up Intune for Education
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. You will see the Intune for Education dashboard once you're logged in.
@@ -128,8 +124,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
 13. Click **All done** or click the **X** on the upper-right corner of the screen to dismiss this screen and go back to the dashboard.
 
-
-**<a name="addappsfrommsfe"></a>Add apps bought from Microsoft Store for Education**
+## Add apps bought from Microsoft Store for Education
 
 - **Example 1 - Minecraft: Education Edition**
 
@@ -173,7 +168,7 @@ Intune for Education provides an **Express configuration** option so you can get
     > [!NOTE]  
     > You'll see in the above screenshot that some apps say that **Add is in progress**. Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps. 
 
-**<a name="installappsallusers"></a>Install apps for all users**
+## Install apps for all users
 
 Now that you've bought the apps, use Intune for Education to specify the group to install the apps for. Here, we'll show you how to install the apps you bought for all devices used by all users in your tenant. 
 

@@ -1,5 +1,5 @@
 ---
-title: Set up an Office 365 education tenant
+title: Set up an Office 365 Education tenant
 description: Learn how to use the new Microsoft Education system to set up a cloud infrastructure for your school, acquire devices and apps, and configure and deploy policies to your Windows 10 devices.
 keywords: education, Microsoft Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, School Data Sync, Microsoft Teams, Microsoft Store for Education, Azure AD, Set up School PCs
 ms.prod: w10
@@ -13,18 +13,17 @@ ms.author: celested
 ms.date: 07/03/2017
 ---
 
-# Set up an Office 365 education tenant
+# Set up an Office 365 Education tenant
 
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
 
 Don't have an Office 365 for Education verified tenant or just starting out? Follow these steps to set up an Office 365 for Education tenant. [Learn more about Office 365 for Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans).
 
-## Watch the video
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/X7bscA-knaY?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 You can watch the descriptive audio version here: [Microsoft Education: Set up an Office 365 Education tenant (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
 
-## Follow the step-by-step guide
+## To set up a new Office 365 Education tenant
 
 1. Go to the <a href="https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY" target="_blank">Office 365 for Education sign up page</a> to sign up for a free subscription for your school.
 2. Create an account and a user ID and password to use to sign into your account. 

@@ -19,14 +19,15 @@ You'll need to configure Microsoft Store for Education to accept the services ag
 
 You can watch the video to see how this is done, or follow the step-by-step guide.
 
-## Watch the video
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Jnbssq0gC_g?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+
+<!--
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/4K4hC5NchbE" frameborder="0" allowfullscreen></iframe>
+-->
 
 You can watch the descriptive audio version here: [Microsoft Education: Configure Microsoft Store for Education (DA)](https://www.youtube.com/watch?v=bStgEpHbEXw)
 
-## Follow the step-by-step guide
-
-**Associate your Microsoft Store account with Intune for Education**
+## Associate your Microsoft Store account with Intune for Education
 
 1. Sign in to <a href="https://educationstore.microsoft.com" target="_blank">Microsoft Store for Education</a>.
 2. Accept the Microsoft Store for Business and Education Services Agreement. 
