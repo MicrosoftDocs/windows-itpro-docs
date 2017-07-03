@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 06/28/2017
+ms.date: 06/30/2017
 ---
 
 # Overview of Windows AutoPilot
@@ -86,10 +86,7 @@ Options available for Windows 10, Version 1703:
 * Skipping privacy settings
 * Preventing the account used to set-up the device from getting local administrator permissions
 
-Additional options we are working on for the next Windows 10 release:
-* Skipping EULA
-* Personalizing the setup experience
-* MDM Support
+We are working to add additional options to further personalize and streamline the setup experience in future releases.
 
 To see additional details on how to customize the OOBE experience and how to follow this process, see guidance for Microsoft Store for Business or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).
 
