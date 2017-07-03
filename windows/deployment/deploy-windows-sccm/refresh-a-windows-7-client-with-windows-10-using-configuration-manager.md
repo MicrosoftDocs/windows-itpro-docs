@@ -15,7 +15,11 @@ author: mtniehaus
 
 **Applies to**
 
--   Windows 10
+-   Windows 10 versions 1507, 1511
+
+>[!IMPORTANT]
+>For instructions to deploy the most recent version of Windows 10 with Configuration Manager, see [Scenarios to deploy enterprise operating systems with System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/scenarios-to-deploy-enterprise-operating-systems). 
+>Configuration Manager 2012 and 2012 R2 provide support for Windows 10 versions 1507 and 1511 only. Later versions of Windows 10 require an updated Configuration Manager release. For a list of Configuration Manager versions and the corresponding Windows 10 client versions that are supported, see [Support for Windows 10 for System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10).
 
 This topic will show you how to use a previously created task sequence to refresh a Windows 7 SP1 client with Windows 10 using Microsoft System Center 2012 R2 Configuration Manager and Microsoft Deployment Toolkit (MDT) 2013 Update 2. When refreshing a machine to a later version, it appears as an upgrade to the end user, but technically it is not an in-place upgrade. A computer refresh also involves taking care of user data and settings from the old installation and making sure to restore those at the end of the installation. For more information, see [Refresh a Windows 7 computer with Windows 10](../deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md).
 

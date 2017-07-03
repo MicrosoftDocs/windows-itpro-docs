@@ -8,6 +8,8 @@ localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
+ms.author: daniha
+ms.date: 06/30/2017
 ---
 
 # Overview of Windows AutoPilot
@@ -73,7 +75,7 @@ $wmi = Get-WMIObject -Namespace root/cimv2/mdm/dmmap -Class MDM_DevDetail_Ext01 
 $wmi.DeviceHardwareData | Out-File "$($env:COMPUTERNAME).txt"
 ```
 >[!NOTE]
->This PowerShell script requires elevated permissions. The output format might not fit the upload method. Check out the [Microsoft Store for Business](/microsoft-store/add-profile-to-devices) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot) for additional guidance.
+>This PowerShell script requires elevated permissions. The output format might not fit the upload method. Check out the Microsoft Store for Business or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot) for additional guidance.
 
 By uploading this information to the Microsoft Store for Business or Partner Center admin portal, you'll be able to assign devices to your organization.
 Additional options and customization is available through these portals to pre-configure the devices.
@@ -84,12 +86,9 @@ Options available for Windows 10, Version 1703:
 * Skipping privacy settings
 * Preventing the account used to set-up the device from getting local administrator permissions
 
-Additional options we are working on for the next Windows 10 release:
-* Skipping EULA
-* Personalizing the setup experience
-* MDM Support
+We are working to add additional options to further personalize and streamline the setup experience in future releases.
 
-To see additional details on how to customize the OOBE experience and how to follow this process, see guidance for [Microsoft Store for Business](/microsoft-store/add-profile-to-devices) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).
+To see additional details on how to customize the OOBE experience and how to follow this process, see guidance for Microsoft Store for Business or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).
 
 ### IT-Driven
 
