@@ -1,5 +1,5 @@
 ---
-title: Add profile to manage Windows installation on devices  (Windows 10)
+title: Manage Windows device deployment with Windows AutoPilot Deployment
 description: Add an AutoPilot profile to devices. AutoPilot profiles control what is included in Windows set up experience for your employees. 
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -22,6 +22,12 @@ Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For
 ## What is Windows AutoPilot Deployment Program?
 In Microsoft Store for Business, you can manage devices for your organization and apply an *AutoPilot deployment profile* to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. 
 
+You can create and apply AutoPilot deployment profiles to these devices. The overall process looks like this. 
+
+![Block diagram with main steps for using AutoPilot in Microsoft Store for Business: upload device list; group devices (this step is optional); add profile; and apply profile.](images/autopilot-process.png)
+
+Figure 1 - Windows AutoPilot Deployment Program process
+
 AutoPilot deployment profiles have two main parts: default settings that can't be changed, and optional settings that you can include. 
 
 ### AutoPilot deployment profiles - default settings
@@ -40,23 +46,19 @@ You can manage new devices in Microsoft Store for Business or Microsoft Store fo
 - Windows 10, version 1703 or later
 - New devices that have not been through Windows out-of-box experience. 
 
-You can create and apply AutoPilot deployment profiles to these devices. The overall process looks like this. 
-
-![Block diagram with main steps for using AutoPilot in Microsoft Store for Business: upload device list; group devices (this step is optional); add profile; and apply profile.](images/autopilot-process.png)
-
-Figure 1 - Windows AutoPilot Deployment Program process
-
 ## Add devices and apply AutoPilot deployment profile
 To manage devices through Microsoft Store for Business and Education, you'll need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact, or the store where you purchased the devices. Upload the .csv file to Microsoft Store to add the devices. 
 
-Columns in the device information file needs to use this naming and be in this order:
+### Device information files
+Columns in the device information file need to use this naming and be in this order:
 - Column 1: Device Serial Number
 - Column 2: Windows Product ID 
 - Column 3: Hardware Hash
 
-Add troubleshooting steps ... in case addng devices fails   
-
 When you add devices, you need to add them to a *device group*. Device groups allow you to apply an AutoPilot deployment profile to mutliple devices. The first time you add devices to a group, you'll need to create a device group. 
+
+> [!NOTE]
+> You can only add devices to a group when you add devices to **Micrososft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in **Microsoft Store**, and add them again. 
 
 **Add and group devices**
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
@@ -73,7 +75,7 @@ If you don't add devices to a group, you can select the individual devices to ap
 2. Choose the AutoPilot deployment profile to apply to the selected devices.
  
     > [!NOTE]
-    > The first time you use AutoPilot deployment profiles, you'll need to create one. See Create AutoPilot profile.
+    > The first time you use AutoPilot deployment profiles, you'll need to create one. See [Create AutoPilot profile](#create-autopilot-profile).
      
 3. Microsoft Store for Business applies the profile to your selected devices, and shows the profile name on **Devices**.
 TBD: art 
@@ -81,7 +83,8 @@ TBD: art
 ## Manage AutoPilot deployment profiles
 You can manage the AutoPilot deployment profiles created in Microsoft Store. You can create a new profile, edit, or delete a profile. 
 
-**Create AutoPilot profile**
+### Create AutoPilot profile
+
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
 3. Click **AutoPilot deployment**, and then click **Create new profile**. 
@@ -89,7 +92,8 @@ TBD: art.
 4. Name the profile, choose the settings to include, and then click **Create**.</br>
 The new profile is added to the **AutoPilot deployment** list.  
 
-**Edit or delete AutoPilot profile**
+### Edit or delete AutoPilot profile
+
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
 3. Click **AutoPilot deployment**, click **Edit your profiles**, and then choose the profile to edit.
@@ -105,16 +109,13 @@ After you've applied an AutoPilot deployment profile to a device, if you decide 
 > The new profile will only be applied if the device has not been started, and gone through the out-of-box experience. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device. 
 
 ## AutoPilot deployment profile error messages
-Here's more info on some of the errors you might see while working with AutoPilot deployment profiles in Microsoft Store for Business and Education.
+Here's more info on some of the errors you might see while working with AutoPilot deployment profiles in **Microsoft Store for Business and Education**. 
 
-Customers will see the message id
-my toic lists the messageFor .csv file
-
-| Message Id | Message | Explanation |
-| ---------- | ------- | ----------- |
-| wadp001    | Check your file, or ask your device partner for a complete .csv file. This file is missing Serial Number and Product Id info. | placeholder |
-| wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. | placeholder |
-| wadp003    | Looks like you need more than one csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multliple .csv files. | placeholder |
-| wadp004    | Try that again. Something happened on our end. Waiting a bit might help. | placeholder | 
-| wadp005    | Check with your device provider for your csv file. One of the devices on your list has been claimed by another organization. | placeholder |
-| wadp006    | Try that again. Something happened on our end. Waiting a bit might help. | placeholder |
+| Message Id | Message explanation | 
+| ---------- | ------------------- |
+| wadp001    | Check your file, or ask your device partner for a complete .csv file. This file is missing Serial Number and Product Id info. |
+| wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. |
+| wadp003    | Looks like you need more than one csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multliple .csv files. |
+| wadp004    | Try that again. Something happened on our end. Waiting a bit might help. |
+| wadp005    | Check with your device provider for your csv file. One of the devices on your list has been claimed by another organization. |
+| wadp006    | Try that again. Something happened on our end. Waiting a bit might help. |
