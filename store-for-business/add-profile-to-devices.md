@@ -49,7 +49,7 @@ You can manage new devices in Microsoft Store for Business or Microsoft Store fo
 ## Add devices and apply AutoPilot deployment profile
 To manage devices through Microsoft Store for Business and Education, you'll need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact, or the store where you purchased the devices. Upload the .csv file to Microsoft Store to add the devices. 
 
-### Device information files
+### Device information file format
 Columns in the device information file need to use this naming and be in this order:
 - Column 1: Device Serial Number
 - Column 2: Windows Product ID 
@@ -108,7 +108,7 @@ After you've applied an AutoPilot deployment profile to a device, if you decide 
 > [!NOTE]
 > The new profile will only be applied if the device has not been started, and gone through the out-of-box experience. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device. 
 
-## AutoPilot deployment profile error messages
+## AutoPilot device information file error messages
 Here's more info on some of the errors you might see while working with AutoPilot deployment profiles in **Microsoft Store for Business and Education**. 
 
 | Message Id | Message explanation | 
