@@ -27,15 +27,10 @@ Turn on the following advanced features to get better protected from potentially
 ## Block file
 This feature is only available if your organization uses Windows Defender Antivirus as the active antimalware solution and that the cloud-based protection feature is enabled.
 
-If your organization satisfies this condition, the feature is enabled by default. This feature enables you to block potentially malicious files in your network. This operation will prevent it from being read, written, or executed on machines in your organization.
+If your organization satisfies these conditions, the feature is enabled by default. This feature enables you to block potentially malicious files in your network. This operation will prevent it from being read, written, or executed on machines in your organization.
 
-## Office 365 Security Center integration
-This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
-
-When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
-
-## Azure Active Directory details
-When you enable this feature, you'll be able to see user details including name, photo, title, and department information when investigating user account entities. You can find user account information in the following views:
+## Show user details
+When you enable this feature, you'll be able to see user details stored in Azure Active Directory including a user's picture, name, title, and department information  when investigating user account entities. You can find user account information in the following views:
 - Dashboard
 - Alert queue
 - Machine details page
@@ -45,6 +40,10 @@ For more information, see [Investigate a user account](investigate-user-windows-
 ## Skype for Business integration
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
 
+## Office 365 Threat Intelligence connection
+This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
+
+When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
 
 ## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
