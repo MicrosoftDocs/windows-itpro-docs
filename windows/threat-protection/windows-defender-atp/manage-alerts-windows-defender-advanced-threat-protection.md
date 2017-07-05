@@ -72,8 +72,8 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 
 
 ### Suppress an alert and create a new suppression rule:
+Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
 
-[JOEY: ADD SCREENSHOT WHEN READY IN STAGING!!!]
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
 2. Scroll down to the **Supression rules** section.
