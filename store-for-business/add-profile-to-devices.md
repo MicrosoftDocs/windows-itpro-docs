@@ -55,20 +55,20 @@ Columns in the device information file need to use this naming and be in this or
 - Column 2: Windows Product ID 
 - Column 3: Hardware Hash
 
-When you add devices, you need to add them to a *device group*. Device groups allow you to apply an AutoPilot deployment profile to mutliple devices. The first time you add devices to a group, you'll need to create a device group. 
+When you add devices, you need to add them to an *AutoPilot deployment group*. AutoPilot deployment groups allow you to apply an AutoPilot deployment profile to multiple devices. The first time you add devices to a group, you'll need to create an AutoPilot deployment group. 
 
 > [!NOTE]
-> You can only add devices to a group when you add devices to **Micrososft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in **Microsoft Store**, and add them again. 
+> You can only add devices to a group when you add devices to **Microsoft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in **Microsoft Store**, and add them again. 
 
 **Add and group devices**
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
 3. Click **Add devices**, navigate to the *.csv file and select it. 
-4. Type a name for a new device group, or choose one from the list, and then click **Add**. </br>
+4. Type a name for a new AutoPilot deployment group, or choose one from the list, and then click **Add**. </br>
 If you don't add devices to a group, you can select the individual devices to apply a profile to. <br>  
 ![Screenshot of Add devices to a group dialog. You can create a new group, or select a current group.](images/add-devices.png)</br>
  
-5. Click the devices or device group that you want to manage. You need to select devices before you can apply an AutoPilot deployment profile. 
+5. Click the devices or AutoPilot deployment group that you want to manage. You need to select devices before you can apply an AutoPilot deployment profile. You can switch between seeing groups or devices by clicking **View groups** or **View devices**. 
 
 **Apply AutoPilot deployment profile**
 1. When you have devices selected, click **AutoPilot deployment**. 
@@ -78,7 +78,6 @@ If you don't add devices to a group, you can select the individual devices to ap
     > The first time you use AutoPilot deployment profiles, you'll need to create one. See [Create AutoPilot profile](#create-autopilot-profile).
      
 3. Microsoft Store for Business applies the profile to your selected devices, and shows the profile name on **Devices**.
-TBD: art 
 
 ## Manage AutoPilot deployment profiles
 You can manage the AutoPilot deployment profiles created in Microsoft Store. You can create a new profile, edit, or delete a profile. 
@@ -88,7 +87,6 @@ You can manage the AutoPilot deployment profiles created in Microsoft Store. You
 1. Sign in to [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Devices**.
 3. Click **AutoPilot deployment**, and then click **Create new profile**. 
-TBD: art. 
 4. Name the profile, choose the settings to include, and then click **Create**.</br>
 The new profile is added to the **AutoPilot deployment** list.  
 
@@ -115,7 +113,7 @@ Here's more info on some of the errors you might see while working with AutoPilo
 | ---------- | ------------------- |
 | wadp001    | Check your file, or ask your device partner for a complete .csv file. This file is missing Serial Number and Product Id info. |
 | wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. |
-| wadp003    | Looks like you need more than one csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multliple .csv files. |
+| wadp003    | Looks like you need more than one csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multiple .csv files. |
 | wadp004    | Try that again. Something happened on our end. Waiting a bit might help. |
 | wadp005    | Check with your device provider for your csv file. One of the devices on your list has been claimed by another organization. |
 | wadp006    | Try that again. Something happened on our end. Waiting a bit might help. |
