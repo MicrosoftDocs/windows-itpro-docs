@@ -35,7 +35,7 @@ When you enable this feature, you'll be able to see user details stored in Azure
 - Alert queue
 - Machine details page
 
-For more information, see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection).
+For more information, see [Investigate a user account](investigate-user-windows-defender-advanced-threat-protection.md).
 
 ## Skype for Business integration
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
