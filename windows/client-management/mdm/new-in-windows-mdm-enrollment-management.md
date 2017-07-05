@@ -1241,6 +1241,14 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>Power/HibernateTimeoutPluggedIn</li>
 <li>Power/StandbyTimeoutOnBattery</li>
 <li>Power/StandbyTimeoutPluggedIn</li>
+<li>Defender/AttackSurfaceReductionOnlyExclusions</li>
+<li>Defender/AttackSurfaceReductionRules</li>
+<li>Defender/CloudBlockLevel </li>
+<li>Defender/CloudExtendedTimeout</li>
+<li>Defender/EnableGuardMyFolders</li>
+<li>Defender/EnableNetworkProtection</li>
+<li>Defender/GuardedFoldersAllowedApplications</li>
+<li>Defender/GuardedFoldersList</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
 <li>Update/ScheduledInstallFourthWeek</li>
