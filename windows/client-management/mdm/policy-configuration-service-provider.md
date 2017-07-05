@@ -4555,6 +4555,83 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-attacksurfacereductionrules"></a>**Defender/AttackSurfaceReductionRules**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting enables setting the state (Block/Audit/Off) for each Attack surface reduction (ASR) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
+
+Value type is string.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-attacksurfacereductiononlyexclusions"></a>**Defender/AttackSurfaceReductionOnlyExclusions**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to prevent Attack Surface reduction rules from matching on files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe"..
+
+Value type is string.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="defender-avgcpuloadfactor"></a>**Defender/AvgCPULoadFactor**  
 
@@ -4594,6 +4671,98 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-cloudblocklevel"></a>**Defender/CloudBlockLevel**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer.
+
+<p style="margin-left: 20px">If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
+
+p<p style="margin-left: 20px">For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
+      
+> [!Note]  
+> This feature requires the "Join Microsoft MAPS" setting enabled in order to function.  
+
+<p style="margin-left: 20px">Possible options are:  
+
+- (0x0) Default windows defender blocking level
+- (0x2) High blocking level - aggressively block unknowns while optimizing client performance (greater chance of false positives)       
+- (0x4) High+ blocking level – aggressively block unknowns and apply additional protection measures (may impact  client performance)
+- (0x6) Zero tolerance blocking level – block all unknown executables
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-cloudextendedtimeout"></a>**Defender/CloudExtendedTimeout**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
+
+<p style="margin-left: 20px">The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. 
+
+<p style="margin-left: 20px">For example, if the desired timeout is 60 seconds, specify 50 seconds in this setting, which will enable the extended cloud check feature, and will raise the total time to 60 seconds. 
+
+> [!Note]  
+> This feature depends on three other MAPS settings the must all be enabled- "Configure the 'Block at First Sight' feature; "Join Microsoft MAPS"; "Send file samples when further analysis is required".
+<!--EndDescription-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
 
@@ -4633,6 +4802,93 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-enableguardmyfolders"></a>**Defender/EnableGuardMyFolders**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the guard my folders feature. The guard my folders feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.  
+
+- 0 (default) - Off
+- 1 - Audit mode
+- 2 - Enforcement mode
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-enablenetworkprotection"></a>**Defender/EnableNetworkProtection**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy allows you to turn network protection on (block/audit) or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer.
+
+<p style="margin-left: 20px">If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit.
+<p style="margin-left: 20px">If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center.
+<p style="margin-left: 20px">If you enable this policy with the ""Audit"" option, users/apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Windows Defender Security Center.
+<p style="margin-left: 20px">If you disable this policy, users/apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Windows Defender Security Center.
+<p style="margin-left: 20px">If you do not configure this policy, network blocking will be disabled by default.
+
+<p>Valid values:
+
+- 0 (default) - Disabled
+- 1 - Enabled (block mode)
+- 2 - Enabled (audit mode)
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="defender-excludedextensions"></a>**Defender/ExcludedExtensions**  
 
@@ -4664,7 +4920,7 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop.
 
  
-<p style="margin-left: 20px">llows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
+<p style="margin-left: 20px">Allows an administrator to specify a list of file type extensions to ignore during a scan. Each file type in the list must be separated by a **|**. For example, "lib|obj".
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -4744,6 +5000,77 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-guardedfoldersallowedapplications"></a>**Defender/GuardedFoldersAllowedApplications**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows user-specified applications to the guard my folders feature. Adding an allowed application means the guard my folders feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the Unicode &#xF000; as the substring separator. 
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
+<!--StartPolicy-->
+<a href="" id="defender-guardedfolderslist"></a>**Defender/GuardedFoldersList**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>MobileEnterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the guard my folders feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the Unicode &#xF000; as the substring separator.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+
 <!--StartPolicy-->
 <a href="" id="defender-puaprotection"></a>**Defender/PUAProtection**  
 
