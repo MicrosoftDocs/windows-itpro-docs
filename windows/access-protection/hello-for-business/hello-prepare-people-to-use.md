@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Prepare people to use Windows Hello
