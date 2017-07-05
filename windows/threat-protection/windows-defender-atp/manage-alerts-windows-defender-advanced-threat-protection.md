@@ -76,7 +76,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
-2. Scroll down to the **Create supression rules** section.
+2. Scroll down to the **Create a supression rule** section.
 
     ![Image of alert status](images/atp-create-suppression-rule.png)
 
