@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/19/2017
 ---
 
 <head>
@@ -51,7 +52,7 @@ Two Azure AD MDM enrollment scenarios:
 -   Joining a device to Azure AD for company-owned devices
 -   Adding a work account to a personal device (BYOD)
 
-In both scenarios, Azure AD is responsible for authenticating the user and the device, which provides a verified unique device identifier that can be used fo MDM enrollment.
+In both scenarios, Azure AD is responsible for authenticating the user and the device, which provides a verified unique device identifier that can be used for MDM enrollment.
 
 In both scenarios, the enrollment flow provides an opportunity for the MDM service to render it's own UI, using a web view. MDM vendors should use this to render the Terms of Use (TOU), which can be different for company-owned and BYOD devices. MDM vendors can also use the web view to render additional UI elements, such as asking for a one-time PIN, if this is part of the business process of the organization.
 

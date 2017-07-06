@@ -6,6 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
+ms.date: 07/05/2017
 ---
 
 # Manage device restarts after updates
@@ -129,10 +131,10 @@ In MDM, the warning reminder is configured using [**Update/ScheduleRestartWarnin
 
 ### Engaged restart
 
-Engaged restart is the period of time when users are required to schedule a restart. When this period ends (7 days by default), Windows transitions to auto-restart outside of active hours.
+Engaged restart is the period of time when users are required to schedule a restart. Initially, Windows will auto-restart outside of working hours. Once the set period ends (7 days by default), Windows transitions to user scheduled restarts.
 
 The following settings can be adjusted for engaged restart:
-* Period of time before engaged restart transitions to auto-restart.
+* Period of time before auto-restart transitions to engaged restart.
 * The number of days that users can snooze engaged restart reminder notifications.
 * The number of days before a pending restart automatically executes outside of working hours.
 

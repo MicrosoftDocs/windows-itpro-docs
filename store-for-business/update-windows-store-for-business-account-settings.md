@@ -38,9 +38,12 @@ We need an email address in case we need to contact you about your Microsoft Sto
 Taxes for Microsoft Store for Business purchases are determined by your business address. Businesses in these countries can provide their VAT number or local equivalent:
 - Austria
 - Belgium
+- Bulgaria
 - Croatia
+- Cyprus
 - Czech Republic
 - Denmark
+- Estonia
 - Finland
 - France
 - Germany
@@ -48,6 +51,10 @@ Taxes for Microsoft Store for Business purchases are determined by your business
 - Hungary
 - Ireland
 - Italy
+- Latvia
+- Liechtenstein
+- Lithuania
+- Luxembourg
 - Malta
 - Netherlands
 - Norway
@@ -65,8 +72,10 @@ These countries can provide their VAT number or local equivalent in **Payments &
 
 |Market| Tax identifier |
 |------|----------------|
+| Australia | ABN (optional) |
 | Brazil | CNPJ (required) |
 | India | CST ID, VAT ID (both are optional) |
+| New Zealand | GST Registration number (optional) |
 | Taiwan | VAT ID (optional) |
 
 ### Tax-exempt status 

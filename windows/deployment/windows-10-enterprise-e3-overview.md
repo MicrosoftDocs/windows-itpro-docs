@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Enterprise E3 in CSP Overview
+title: Windows 10 Enterprise E3 in CSP overview
 description: Describes Windows 10 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10 Enterprise edition.
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.pagetype: mdt
 author: greg-lindsay
 ---
 
-# Windows 10 Enterprise E3 in CSP Overview
+# Windows 10 Enterprise E3 in CSP overview
 
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Windows 10 Enterprise E3 in CSP is a new offering that delivers, by subscription, exclusive features reserved for Windows 10 Enterprise edition. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
 

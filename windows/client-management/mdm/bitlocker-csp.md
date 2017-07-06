@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 07/05/2017
 ---
 
 # BitLocker CSP
@@ -112,7 +113,10 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>7 = XTS-AES 256</li>
 </ul>
 
-<p style="margin-left: 20px">  If you want to disable this policy use the following SyncML:</p>
+> [!Note]  
+> When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.  
+
+<p style="margin-left: 20px">  If you want to disable this policy use the following SyncML:</p> 
 
 ``` syntax
                           <Replace>
@@ -255,6 +259,9 @@ The following diagram shows the BitLocker configuration service provider in tree
 <li>'yy' = string of max length 900.</li>
 <li>'zz' = string of max length 500.</li>
 </ul>
+
+> [!Note]  
+> When you enable SystemDrivesRecoveryMessage, you must specify values for all three settings (pre-boot recovery screen, recovery message, and recovery URL), otherwise it will fail (500 return status). For example, if you only specify values for message and URL, you will get a 500 return status.
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors.  If you want to disable this policy use the following SyncML:</p>
 

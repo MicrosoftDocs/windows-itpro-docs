@@ -2,6 +2,7 @@
 title: Microsoft Surface Deployment Accelerator (Surface)
 description: Microsoft Surface Deployment Accelerator provides a quick and simple deployment mechanism for organizations to reimage Surface devices.
 ms.assetid: E7991E90-4AAE-44B6-8822-58BFDE3EADE4
+ms.date: 06/29/2017
 localizationpriority: high
 keywords: deploy, install, tool
 ms.prod: w10
@@ -90,6 +91,13 @@ SDA is periodically updated by Microsoft. For instructions on how these features
 
 >[!NOTE]
 >To install a newer version of SDA on a server with a previous version of SDA installed, you only need to run the installation file for the new version of SDA. The installer will handle the upgrade process automatically. If you used SDA to create a deployment share prior to the upgrade and want to use new features of the new version of SDA, you will need to create a new deployment share. SDA does not support upgrades of an existing deployment share.
+
+### Version 2.0.8.0
+This version of SDA supports deployment of the following:
+* Surface Pro
+
+>[!NOTE]
+>SDA version 2.0.8.0 includes support only for Surface Pro, and does not support other Surface devices such as Surface Pro 4 or Surface Book. To deploy these devices, please continue to use SDA version 1.96.0405.
  
 ### Version 1.96.0405
 This version of SDA adds support for the following:

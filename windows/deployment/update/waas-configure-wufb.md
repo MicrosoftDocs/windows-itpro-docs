@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Configure Windows Update for Business

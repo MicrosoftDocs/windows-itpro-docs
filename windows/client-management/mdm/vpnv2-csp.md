@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/19/2017
 ---
 
 # VPNv2 CSP
@@ -1214,7 +1215,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/EncryptionMethod</LocURI>
           </Target>
-          <Data>PFS2048</Data>
+          <Data>AES128</Data>
         </Item>
       </Add>
       <Add>
@@ -1223,7 +1224,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/IntegrityCheckMethod</LocURI>
           </Target>
-          <Data>Eap</Data>
+          <Data>SHA256</Data>
         </Item>
       </Add>
       <Add>
@@ -1232,7 +1233,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/DHGroup</LocURI>
           </Target>
-          <Data>SHA256</Data>
+          <Data>Group2</Data>
         </Item>
      </Add>
       <Add>
@@ -1241,7 +1242,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/PfsGroup</LocURI>
           </Target>
-          <Data>AES128</Data>
+          <Data>PFS2048</Data>
         </Item>
       </Add>
    

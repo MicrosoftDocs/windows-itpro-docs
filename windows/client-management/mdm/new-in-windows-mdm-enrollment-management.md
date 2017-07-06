@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 06/28/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -642,6 +643,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>SmartScreen/EnableAppInstallControl</li>
 <li>SmartScreen/EnableSmartScreenInShell</li>
 <li>SmartScreen/PreventOverrideForFilesInShell</li>
+<li>Start/AllowPinnedFolderDocuments</li>
+<li>Start/AllowPinnedFolderDownloads</li>
+<li>Start/AllowPinnedFolderFileExplorer</li>
+<li>Start/AllowPinnedFolderHomeGroup</li>
+<li>Start/AllowPinnedFolderMusic</li>
+<li>Start/AllowPinnedFolderNetwork</li>
+<li>Start/AllowPinnedFolderPersonalFolder </li>
+<li>Start/AllowPinnedFolderPictures</li>
+<li>Start/AllowPinnedFolderSettings</li>
+<li>Start/AllowPinnedFolderVideos</li>
 <li>Start/HideAppList</li>
 <li>Start/HideChangeAccountSettings</li>
 <li>Start/HideFrequentlyUsedApps</li>
@@ -663,6 +674,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>TextInput/AllowKeyboardTextSuggestions</li>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 <li>Update/ActiveHoursMaxRange</li>
+<li>Update/AutoRestartDeadlinePeriodInDays</li>
 <li>Update/AutoRestartNotificationSchedule</li>
 <li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
@@ -957,7 +969,6 @@ The software version information from **DevDetail/SwV** does not match the versi
     -   In the SyncML, you must use lowercase product ID.
     -   Do not duplicate a product ID. Messaging and Skype Video use the same product ID. Duplicates cause an error.
 
-    For additional details, see [ApplicationRestrictions in PolicyManager CSP](policymanager-csp.md#applicationmanagement-applicationrestrictions).
 
 -   Silverlight xaps may not install even if publisher policy is specified using Windows Phone 8.1 publisher rule. For example, Silverlight app "Level" will not install even if you specify &lt;Publisher PublisherName=”Microsoft Corporation” /&gt;.
 
@@ -1201,6 +1212,71 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <td style="vertical-align:top">[TPMPolicy CSP](tpmpolicy-csp.md)</td>
 <td style="vertical-align:top">New CSP added in Windows 10, version 1703.</td>
 </tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top">
+<p>Added the following new policies for Windows 10, version 1703:</p> 
+<ul>
+<li>Start/AllowPinnedFolderDocuments</li>
+<li>Start/AllowPinnedFolderDownloads</li>
+<li>Start/AllowPinnedFolderFileExplorer</li>
+<li>Start/AllowPinnedFolderHomeGroup</li>
+<li>Start/AllowPinnedFolderMusic</li>
+<li>Start/AllowPinnedFolderNetwork</li>
+<li>Start/AllowPinnedFolderPersonalFolder </li>
+<li>Start/AllowPinnedFolderPictures</li>
+<li>Start/AllowPinnedFolderSettings</li>
+<li>Start/AllowPinnedFolderVideos</li>
+<li>Update/AutoRestartDeadlinePeriodInDays</li>
+</ul>
+<p>Added the following new policies for Windows 10, version 1709:</p> 
+<ul>
+<li>CredentialProviders/EnableWindowsAutoPilotResetCredentials</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
+<li>Power/DisplayOffTimeoutOnBattery</li>
+<li>Power/DisplayOffTimeoutPluggedIn</li>
+<li>Power/HibernateTimeoutOnBattery</li>
+<li>Power/HibernateTimeoutPluggedIn</li>
+<li>Power/StandbyTimeoutOnBattery</li>
+<li>Power/StandbyTimeoutPluggedIn</li>
+<li>Defender/AttackSurfaceReductionOnlyExclusions</li>
+<li>Defender/AttackSurfaceReductionRules</li>
+<li>Defender/CloudBlockLevel </li>
+<li>Defender/CloudExtendedTimeout</li>
+<li>Defender/EnableGuardMyFolders</li>
+<li>Defender/EnableNetworkProtection</li>
+<li>Defender/GuardedFoldersAllowedApplications</li>
+<li>Defender/GuardedFoldersList</li>
+<li>Update/ScheduledInstallEveryWeek</li>
+<li>Update/ScheduledInstallFirstWeek</li>
+<li>Update/ScheduledInstallFourthWeek</li>
+<li>Update/ScheduledInstallSecondWeek</li>
+<li>Update/ScheduledInstallThirdWeek</li>
+</ul>
+<p>EnterpriseCloudPrint/DiscoveryMaxPrinterLimit is only supported in Windows 10 Mobile and Mobile Enterprise.</p> 
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)</td>
+<td style="vertical-align:top">Updated the CSP in Windows 10, version 1709. Added the following settings:
+<ul>
+<li>DeviceTagging/Group</li>
+<li>DeviceTagging/Criticality</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[DynamicManagement CSP](dynamicmanagement-csp.md)</td>
+<td style="vertical-align:top">The DynamicManagement CSP is not supported in Windows 10 Mobile and Mobile Enterprise. The table of SKU information in the [Configuration service provider reference](configuration-service-provider-reference.md) was updated.</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[CM_ProxyEntries CSP](cm-proxyentries-csp.md) and [CMPolicy CSP](cmpolicy-csp.md)</td>
+<td style="vertical-align:top">In Windows 10, version 1709, support for desktop SKUs were added to these CSPs. The table of SKU information in the [Configuration service provider reference](configuration-service-provider-reference.md) was updated.</td>
+</tr>
 </tbody>
 </table>
 
@@ -1276,7 +1352,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
-<td style="vertical-align:top"><p>Added new CSP in the next major update to Windows 10.</p>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">MDM support for Windows 10 S</td>
@@ -1790,7 +1866,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[CM_CellularEntries CSP](cm-cellularentries-csp.md)</td>
-<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values for the next major update of Windows 10:</p>
+<td style="vertical-align:top"><p>To PurposeGroups setting, added the following values Windows 10, version 1709:</p>
 <ul>
 <li>Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB </li>
 <li>Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364</li>
@@ -1798,7 +1874,7 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[CellularSettings CSP](cellularsettings-csp.md)<p>[CM_CellularEntries CSP](cm-cellularentries-csp.md)</p><p>[EnterpriseAPN CSP](enterpriseapn-csp.md)</p></td>
-<td style="vertical-align:top"><p>In the next major update of Windows 10, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
+<td style="vertical-align:top"><p>In the Windows 10, version 1709, support was added for Windows 10 Home, Pro, Enterprise, and Education editions.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">Updated the DDF topics.</td>

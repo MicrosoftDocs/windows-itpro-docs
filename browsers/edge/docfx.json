@@ -19,7 +19,13 @@
         "ROBOTS": "INDEX, FOLLOW",
 		"ms.technology": "microsoft-edge",
 		"ms.topic": "article",
-		"ms.author": "lizross"
+		"ms.author": "lizross",
+		"ms.date": "04/05/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "Win.microsoft-edge"
+			}
+		}
     },
     "externalReference": [
     ],

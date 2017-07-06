@@ -20,7 +20,13 @@
 		"ms.technology": "mdop",
 		"ms.sitesec": "library",
 		"ms.topic": "article",
-		"ms.author": "jamiet"
+		"ms.author": "jamiet",
+		"ms.date": "04/05/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "Win.mdop"
+			}
+		}
     },
     "externalReference": [
     ],

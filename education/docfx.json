@@ -19,7 +19,13 @@
 		"ms.author": "celested",
 		"audience": "windows-education",
 		"ms.topic": "article",
-		"breadcrumb_path": "/education/breadcrumb/toc.json"
+		"breadcrumb_path": "/education/breadcrumb/toc.json",
+      "ms.date": "05/09/2017",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Win.education"
+        }
+       }
     },
     "externalReference": [
     ],
