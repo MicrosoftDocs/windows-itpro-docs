@@ -49,15 +49,11 @@ The table in this section lists the main Windows Defender Antivirus client event
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
-<style>
-td {
-    vertical-align:top;
-}
-</style>
+
 
 <table>
 <tr valign="top">
-<td rowspan="3" >Event ID: 1000</td>
+<td valign="top" rowspan="3" ><b>Event ID: 1000</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -101,7 +97,7 @@ td {
 </td>
 </tr>
 <tr>
-<th rowspan="3" valign="top">Event ID: 1001</th>
+<td valign="top" rowspan="3"><b>Event ID: 1001</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -144,7 +140,7 @@ td {
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1002</th>
+<td valign="top" rowspan="3"><b>Event ID: 1002</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -189,7 +185,7 @@ td {
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1003</th>
+<td valign="top" rowspan="3"><b>%2</td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -233,7 +229,7 @@ td {
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1004</th>
+<td valign="top" rowspan="3"><b>Event ID: 1004</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -277,7 +273,7 @@ td {
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 1005</th>
+<td valign="top" rowspan="4"><b>Event ID: 1005</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -342,7 +338,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1006</th>
+<td valign="top" rowspan="3"><b>Event ID: 1006</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -416,7 +412,7 @@ UAC</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1007</th>
+<td valign="top" rowspan="3"><b>Event ID: 1007</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -471,7 +467,7 @@ UAC</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1008</th>
+<td valign="top" rowspan="3"><b>Event ID: 1008</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -529,7 +525,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1009</th>
+<td valign="top" rowspan="3"><b>Event ID: 1009</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -574,7 +570,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1010</th>
+<td valign="top" rowspan="3"><b>Event ID: 1010</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -623,7 +619,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1011</th>
+<td valign="top" rowspan="3"><b>Event ID: 1011</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -668,7 +664,7 @@ For more information please see the following:</p>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1012</th>
+<td valign="top" rowspan="3"><b>Event ID: 1012</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -717,7 +713,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1013</th>
+<td valign="top" rowspan="3"><b>Event ID: 1013</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -749,7 +745,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1014</th>
+<td valign="top" rowspan="3"><b>Event ID: 1014</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -785,7 +781,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1015</th>
+<td valign="top" rowspan="3"><b>Event ID: 1015</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -864,7 +860,7 @@ Name of the file.</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 1116</th>
+<td valign="top" rowspan="4"><b>Event ID: 1116</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -946,7 +942,7 @@ UAC</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 1117</th>
+<td valign="top" rowspan="4"><b>Event ID: 1117</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1076,7 +1072,7 @@ The above context applies to the following client and server versions:
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 1118</th>
+<td valign="top" rowspan="4"><b>Event ID: 1118</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1173,7 +1169,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 1119</th>
+<td valign="top" rowspan="4"><b>Event ID: 1119</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1316,7 +1312,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 1120</th>
+<td valign="top" rowspan="4"><b>Event ID: 1120</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1355,7 +1351,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 1150</th>
+<td valign="top" rowspan="4"><b>Event ID: 1150</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1396,7 +1392,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2000</th>
+<td valign="top" rowspan="4"><b>Event ID: 2000</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1448,7 +1444,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2001</th>
+<td valign="top" rowspan="4"><b>Event ID: 2001</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1535,7 +1531,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2002</th>
+<td valign="top" rowspan="4"><b>Event ID: 2002</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1577,7 +1573,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2003</th>
+<td valign="top" rowspan="4"><b>Event ID: 2003</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1637,7 +1633,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2004</th>
+<td valign="top" rowspan="4"><b>Event ID: 2004</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1691,7 +1687,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2005</th>
+<td valign="top" rowspan="3"><b>Event ID: 2005</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1721,7 +1717,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2006</th>
+<td valign="top" rowspan="3"><b>Event ID: 2006</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1757,7 +1753,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2007</th>
+<td valign="top" rowspan="3"><b>Event ID: 2007</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1787,7 +1783,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2010</th>
+<td valign="top" rowspan="3"><b>Event ID: 2010</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1846,7 +1842,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2011</th>
+<td valign="top" rowspan="4"><b>Event ID: 2011</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1914,7 +1910,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2012</th>
+<td valign="top" rowspan="4"><b>Event ID: 2012</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1985,7 +1981,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2013</th>
+<td valign="top" rowspan="3"><b>Event ID: 2013</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2017,7 +2013,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2020</th>
+<td valign="top" rowspan="3"><b>Event ID: 2020</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2052,7 +2048,7 @@ Name of the file.</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 2021</th>
+<td valign="top" rowspan="4"><b>Event ID: 2021</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2101,7 +2097,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2030</th>
+<td valign="top" rowspan="3"><b>Event ID: 2030</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2126,7 +2122,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2031</th>
+<td valign="top" rowspan="3"><b>Event ID: 2031</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2160,7 +2156,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2040</th>
+<td valign="top" rowspan="3"><b>Event ID: 2040</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2187,7 +2183,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2041</th>
+<td valign="top" rowspan="3"><b>Event ID: 2041</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2214,7 +2210,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 2042</th>
+<td valign="top" rowspan="3"><b>Event ID: 2042</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2241,7 +2237,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 3002</th>
+<td valign="top" rowspan="4"><b>Event ID: 3002</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2297,7 +2293,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Event ID: 3007</th>
+<td valign="top" rowspan="4"><b>Event ID: 3007</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2344,7 +2340,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5000</th>
+<td valign="top" rowspan="3"><b>Event ID: 5000</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2371,7 +2367,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5001</th>
+<td valign="top" rowspan="3"><b>Event ID: 5001</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2397,7 +2393,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5004</th>
+<td valign="top" rowspan="3"><b>Event ID: 5004</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2437,7 +2433,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5007</th>
+<td valign="top" rowspan="3"><b>Event ID: 5007</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2471,7 +2467,7 @@ New Windows Defender configuration value.</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="5">Event ID: 5008</th>
+<td valign="top" rowspan="5"><b>Event ID: 5008</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2538,7 +2534,7 @@ or Hang</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5009</th>
+<td valign="top" rowspan="3"><b>Event ID: 5009</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2565,7 +2561,7 @@ or Hang</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5010</th>
+<td valign="top" rowspan="3"><b>Event ID: 5010</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2591,7 +2587,7 @@ or Hang</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5011</th>
+<td valign="top" rowspan="3"><b>Event ID: 5011</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2616,7 +2612,7 @@ or Hang</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5012</th>
+<td valign="top" rowspan="3"><b>Event ID: 5012</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2643,7 +2639,7 @@ or Hang</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5100</th>
+<td valign="top" rowspan="3"><b>Event ID: 5100</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2676,7 +2672,7 @@ or Hang</dt>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 5101</th>
+<td valign="top" rowspan="3"><b>Event ID: 5101</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2725,7 +2721,7 @@ This section provides the following information about Windows Defender Antivirus
 Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
 <table>
 <tr>
-<th colspan="4">External error codes</th>
+<td colspan="4"><b>External error codes</b></td>
 </tr>
 <tr>
 <th>Error code</th>
@@ -2767,7 +2763,7 @@ Use the information in these tables to help troubleshoot Windows Defender Antivi
 <td>
 <p>This error indicates that there might be a problem with your security product.</p>
 </td>
-<td rowspan="4">
+<td valign="top" rowspan="4">
 <p>
 <ol>
 <li>Update the definitions. Either:<ol>
@@ -2828,7 +2824,7 @@ data that does not allow the engine to function properly.
 </td>
 </tr>
 <tr>
-<td rowspan="2">
+<td valign="top" rowspan="2">
 <p>0x80508023 
 </p>
 </td>
@@ -2846,15 +2842,15 @@ data that does not allow the engine to function properly.
 </td>
 </tr>
 <tr>
-<td rowspan="2">
+<td valign="top" rowspan="2">
 <p><b>ERR_MP_FULL_SCAN_REQUIRED 
 </b></p>
 </td>
-<td rowspan="2">
+<td valign="top" rowspan="2">
 <p>This error indicates that a full system scan might be required. 
 </p>
 </td>
-<td rowspan="2">
+<td valign="top" rowspan="2">
 <p>Run a full system scan. 
 </p>
 </td>
@@ -2980,7 +2976,7 @@ The following error codes are used during internal testing of Windows Defender A
 
 <table>
 <tr>
-<th colspan="4">Internal error codes</th>
+<td colspan="4"><b>Internal error codes</b></td>
 </tr>
 <tr>
 <th>Error code</th>
@@ -3010,10 +3006,10 @@ The following error codes are used during internal testing of Windows Defender A
 <td>
 <p><b>ERROR_MP_UI_CONSOLIDATION_BAS</b>E</p>
 </td>
-<td rowspan="34">
+<td valign="top" rowspan="34">
 <p>This is an internal error. The cause is not clearly defined.</p>
 </td>
-<td rowspan="36">
+<td valign="top" rowspan="36">
 <p>
 <ol>
 <li>Update the definitions. Either:<ol>
