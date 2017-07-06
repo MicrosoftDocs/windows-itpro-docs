@@ -49,7 +49,11 @@ The table in this section lists the main Windows Defender Antivirus client event
 4.  In the details pane, view the list of individual events to find your event.
 5.  Click the event to see specific details about an event in the lower pane, under the **General** and **Details** tabs.
 
-
+<style>
+td {
+    vertical-align:top;
+}
+</style>
 
 <table>
 <tr>
