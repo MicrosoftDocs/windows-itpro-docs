@@ -57,7 +57,7 @@ td {
 
 <table>
 <tr>
-<th rowspan="3">Event ID: 1000</th>
+<th rowspan="3" style="vertical-align:top;" >Event ID: 1000</th>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -101,7 +101,7 @@ td {
 </td>
 </tr>
 <tr>
-<th rowspan="3">Event ID: 1001</th>
+<th rowspan="3" valign="top">Event ID: 1001</th>
 <td>
 <p>Symbolic name:</p>
 </td>
