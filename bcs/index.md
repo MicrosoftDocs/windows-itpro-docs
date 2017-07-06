@@ -214,7 +214,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                        <img src="/images/bcs-user-management-add-customer-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -233,7 +233,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="Follow the links to remove a customer/user" />
+                                                        <img src="/images/bcs-user-management-remove-customer-2.svg" alt="Follow the links to remove a customer/user" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -417,7 +417,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_investigate.svg" alt="Identity integration" />
+                                                        <img src="/images/bcs-partner-identitiy-integration-1.svg" alt="Identity integration" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -436,7 +436,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_upgrade.svg" alt="Upgrade to Windows 10" />
+                                                        <img src="/images/bcs-partner-upgrade-2.svg" alt="Upgrade to Windows 10" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -618,7 +618,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_benefits.svg" alt="Add a user" />
+                                                        <img src="/images/bcs-partner-advanced-management-add-user-1.svg" alt="Add a user" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -637,7 +637,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_web.svg" alt="Add a domain and other FAQs about domains in Microsoft 365 Business" />
+                                                        <img src="/images/bcs-partner-advanced-management-add-domain-2.svg" alt="Add a domain and other FAQs about domains in Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -656,7 +656,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_protect.svg" alt="Manage passwords" />
+                                                        <img src="/images/bcs-partner-advanced-management-password-3.svg" alt="Manage passwords" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -668,6 +668,7 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            <!--
                             <li>
                                 <a href="#">
                                     <div class="cardSize">
@@ -675,7 +676,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_tools.svg" alt="Manage changes" />
+                                                        <img src="/images/bcs-partner-advanced-management- management-4_placeholder.svg" alt="Manage changes" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -687,6 +688,7 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            -->
                             <li>
                                 <a href="https://support.office.com/article/Create-an-Office-365-group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f">
                                     <div class="cardSize">
@@ -694,7 +696,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_multi-connect.svg" alt="Add a group" />
+                                                        <img src="/images/bcs-partner-advanced-management- add-group-5.svg" alt="Add a group" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -706,6 +708,7 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            <!--
                             <li>
                                 <a href="#">
                                     <div class="cardSize">
@@ -713,7 +716,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_code-blocks.svg" alt="Resources" />
+                                                        <img src="/images/bcs-partner-advanced-management-resources-6_placeholder.svg" alt="Resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -725,6 +728,7 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            -->
                             <li>
                                 <a href="https://support.office.com/article/Billing-in-Office-365-for-business-–-Admin-Help-ea7bf1b2-1c2f-477f-a813-313e3ce0d896">
                                     <div class="cardSize">
@@ -732,7 +736,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_extend.svg" alt="Billing" />
+                                                        <img src="/images/bcs-partner-advanced-management- billing-7.svg" alt="Billing" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -751,7 +755,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_drivers.svg" alt="Settings" />
+                                                        <img src="/images/bcs-partner-advanced-management-settings-8.svg" alt="Settings" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -770,7 +774,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_portal.svg" alt="Reports" />
+                                                        <img src="/images/bcs-partner-advanced-management- reports-9.svg" alt="Reports" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
