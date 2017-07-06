@@ -56,7 +56,7 @@ Windows Defender ATP lets you create suppression rules so you can limit the aler
 
 Suppression rules can be created from an existing alert.
 
-When a suppression rule is created, it will take effect from this point onwards. It will not affect existing alerts already in the queue, but new alerts triggered after the rule is created will not be displayed.
+When a suppression rule is created, it will take effect from the point when the rule is created. The rule will not affect existing alerts already in the queue prior to the rule creation. The rule will only be applied on alerts that satisfy the conditions set after the rule is created.
 
 There are two contexts for a suppression rule that you can choose from:
 
@@ -65,20 +65,38 @@ There are two contexts for a suppression rule that you can choose from:
 
 The context of the rule lets you tailor the queue to ensure that only alerts you are interested in will appear. You can use the examples in the following table to help you choose the context for a suppression rule:
 
-**Context** | **Definition** |**Example scenarios**
----|---|---
-**Suppress alert on this machine** | Alerts with the same alert title and on that specific machine only will be suppressed. <br /><br />All other alerts on that machine will not be suppressed. | <ul><li>A security researcher is investigating a malicious script that has been used to attack other machines in your organization.</li><li>A developer regularly creates PowerShell scripts for their team.</li></ul>
-**Suppress alert in my organization** | Alerts with the same alert title on any machine will be suppressed. | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>
+| **Context**                           | **Definition**                                                                                                                                              | **Example scenarios**                                                                                                                                                                                                  |
+|:--------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Suppress alert on this machine**    | Alerts with the same alert title and on that specific machine only will be suppressed. <br /><br />All other alerts on that machine will not be suppressed. | <ul><li>A security researcher is investigating a malicious script that has been used to attack other machines in your organization.</li><li>A developer regularly creates PowerShell scripts for their team.</li></ul> |
+| **Suppress alert in my organization** | Alerts with the same alert title on any machine will be suppressed.                                                                                         | <ul><li>A benign administrative tool is used by everyone in your organization.</li></ul>                                                                                                                               |
 
 
-**Suppress an alert and create a suppression rule:**
+### Suppress an alert and create a new suppression rule:
+Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
 
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
-2. Scroll down to the **Supression rules** section.
-3. Choose the context for suppressing the alert.
 
-> [!NOTE]
-> You cannot create a custom or blank suppression rule. You must start from an existing alert.
+2. Scroll down to the **Create a supression rule** section.
+
+    ![Image of alert status](images/atp-create-suppression-rule.png)
+
+3. Choose the context for suppressing the alert.
+  
+    ![Image of alert status](images/atp-new-suppression-rule.png)
+
+  > [!NOTE]
+  > You cannot create a custom or blank suppression rule. You must start from an existing alert.
+4. Specify the conditions for when the rule is applied:
+  - Alert title
+  - Indicator of compromise (IOC)
+  - Suppression conditions
+
+    > [!NOTE]
+    > The SHA1 of the alert cannot be modified
+5. Specify the action and scope on the alert. You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. You can also specify to suppress the alert on the machine only or the whole organization.
+
+6. Click **Save and close**.
+
 
 **See the list of suppression rules:**
 
