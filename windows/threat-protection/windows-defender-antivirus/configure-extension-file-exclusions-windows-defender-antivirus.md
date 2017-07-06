@@ -10,6 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 06/13/2017
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -18,6 +20,7 @@ author: iaanw
 **Applies to:**
 
 - Windows 10
+- Windows Server 2016
 
 **Audience**
 
