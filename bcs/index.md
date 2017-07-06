@@ -478,7 +478,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="support/microsoft-365-business-faqs">
+                                <a href="support/microsoft-365-business-faqs.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -583,7 +583,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="device-management/set-up-windows-10-devices-with-windows-autopilot">
+                                <a href="device-management/set-up-windows-10-devices-with-windows-autopilot.md">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
