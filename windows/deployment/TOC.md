@@ -2,7 +2,7 @@
 
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
-## [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md)
+## [Windows 10 Enterprise E3 in CSP overview](windows-10-enterprise-e3-overview.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
 
 ## [Deploy Windows 10](deploy.md)
