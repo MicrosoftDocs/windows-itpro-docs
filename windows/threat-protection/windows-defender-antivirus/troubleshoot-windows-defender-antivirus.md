@@ -56,8 +56,8 @@ td {
 </style>
 
 <table>
-<tr>
-<th rowspan="3" style="vertical-align:top;" >Event ID: 1000</th>
+<tr valign="top">
+<th rowspan="3" >Event ID: 1000</th>
 <td>
 <p>Symbolic name:</p>
 </td>
