@@ -1,5 +1,5 @@
 ---
-title: Windows 10 deployment tools reference (Windows 10)
+title: Windows 10 deployment tools (Windows 10)
 description: Learn about the tools available to deploy Windows 10.
 ms.assetid: 5C4B0AE3-B2D0-4628-9E73-606F3FAA17BB
 ms.prod: w10
@@ -8,7 +8,7 @@ ms.sitesec: library
 author: greg-lindsay
 ---
 
-# Windows 10 deployment tools reference
+# Windows 10 deployment tools
 
 
 Learn about the tools available to deploy Windows 10.
@@ -29,7 +29,7 @@ Learn about the tools available to deploy Windows 10.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>[Windows 10 deployment tools](windows-deployment-scenarios-and-tools.md)</p></td>
+<td align="left"><p>[Windows 10 deployment tools reference](windows-deployment-scenarios-and-tools.md)</p></td>
 <td align="left"><p>To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.</p></td>
 </tr>
 <tr class="even">
