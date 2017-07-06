@@ -36,7 +36,12 @@
 		"ms.technology": "windows",
 		"ms.topic": "article",
 		"ms.author": "jdecker",
-		"ms.date": "04/05/2017"
+		"ms.date": "04/05/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "MSDN.win-configuration"
+			}
+		}
 	},
     "fileMetadata": {},
     "template": [],

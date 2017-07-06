@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
+ms.date: 06/19/2017
 ---
 
 # Change history for Windows 10 for Education

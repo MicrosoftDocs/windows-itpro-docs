@@ -21,7 +21,12 @@
 		"author": "eross-msft",
 		"ms.technology": "internet-explorer",
 		"ms.topic": "article",
-		"ms.date": "04/05/2017"
+		"ms.date": "04/05/2017",
+		"_op_documentIdPathDepotMapping": {
+			"./": {
+			  "depot_name": "Win.internet-explorer"
+			}
+		}
     },
     "externalReference": [
     ],
