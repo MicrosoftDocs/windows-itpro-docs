@@ -69,7 +69,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-learn-about-1.svg" alt="Learn more about Microsoft 365 Business" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-learn-about-1.svg" alt="Learn more about Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -88,7 +88,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-get-started-1.svg" alt="Get started with Microsoft 365 Business" />
+                                                        <img src="/bcs/images/bcs-partner-get-started-1.svg" alt="Get started with Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -214,7 +214,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-user-management-add-customer-1.svg" alt="" />
+                                                        <img src="/bcs/images/bcs-user-management-add-customer-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -233,7 +233,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-user-management-remove-customer-2.svg" alt="Follow the links to remove a customer/user" />
+                                                        <img src="/bcs/images/bcs-user-management-remove-customer-2.svg" alt="Follow the links to remove a customer/user" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -283,7 +283,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-prepare-office-1.svg" alt="Prepare for Office client installation" />
+                                                        <img src="/bcs/images/bcs-partner-prepare-office-1.svg" alt="Prepare for Office client installation" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -302,7 +302,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-install-2.svg" alt="Install or uninstall Office on Windows 10 devices" />
+                                                        <img src="/bcs/images/bcs-partner-install-2.svg" alt="Install or uninstall Office on Windows 10 devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -321,7 +321,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-remove-3.svg" alt="Remove company data from devices" />
+                                                        <img src="/bcs/images/bcs-partner-remove-3.svg" alt="Remove company data from devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -340,7 +340,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-reset-windows-4.svg" alt="Reset Windows 10 devices to their factory settings" />
+                                                        <img src="/bcs/images/bcs-partner-reset-windows-4.svg" alt="Reset Windows 10 devices to their factory settings" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -369,7 +369,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set device configurations for Windows 10 PCs" />
+                                                        <img src="/bcs/images/bcs-partner-policies-set-device-config-1.svg" alt="Set device configurations for Windows 10 PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -388,7 +388,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-view-policies-2.svg" alt="View policies and devices" />
+                                                        <img src="/bcs/images/bcs-partner-policies-view-policies-2.svg" alt="View policies and devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -417,7 +417,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-identitiy-integration-1.svg" alt="Identity integration" />
+                                                        <img src="/bcs/images/bcs-partner-identitiy-integration-1.svg" alt="Identity integration" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -436,7 +436,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-upgrade-2.svg" alt="Upgrade to Windows 10" />
+                                                        <img src="/bcs/images/bcs-partner-upgrade-2.svg" alt="Upgrade to Windows 10" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -465,7 +465,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-find-partner-1.svg" alt="Find a Microsoft-certified service provider" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-find-partner-1.svg" alt="Find a Microsoft-certified service provider" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -484,7 +484,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-faq-2.svg" alt="Browse the list of frequently asked questions" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-faq-2.svg" alt="Browse the list of frequently asked questions" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -503,7 +503,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-troubleshooting-3.svg" alt="Find solutions for common Microsoft 365 Business issues" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-troubleshooting-3.svg" alt="Find solutions for common Microsoft 365 Business issues" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -522,7 +522,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -551,7 +551,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-intune-1.svg" alt="Microsoft Intune" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-intune-1.svg" alt="Microsoft Intune" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -570,7 +570,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-windows10-2.svg" alt="Learn more about Windows 10" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-windows10-2.svg" alt="Learn more about Windows 10" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -589,7 +589,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -618,7 +618,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-add-user-1.svg" alt="Add a user" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-add-user-1.svg" alt="Add a user" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -637,7 +637,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-add-domain-2.svg" alt="Add a domain and other FAQs about domains" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-add-domain-2.svg" alt="Add a domain and other FAQs about domains" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -657,7 +657,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- management-4_placeholder.svg" alt="Manage changes" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management- management-4_placeholder.svg" alt="Manage changes" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -677,7 +677,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- add-group-5.svg" alt="Add a group" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management- add-group-5.svg" alt="Add a group" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -696,7 +696,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Manage passwords" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-password-3.svg" alt="Manage passwords" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -716,7 +716,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-resources-6_placeholder.svg" alt="Resources" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-resources-6_placeholder.svg" alt="Resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -736,7 +736,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- billing-7.svg" alt="Billing" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management- billing-7.svg" alt="Billing" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -755,7 +755,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- reports-9.svg" alt="Reports" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management- reports-9.svg" alt="Reports" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -774,7 +774,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-settings-8.svg" alt="Settings" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-settings-8.svg" alt="Settings" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -813,7 +813,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-iw-devicesetup-setup-1.svg" alt="Set up mobile devices for Microsoft 365 Business users" />
+                                                        <img src="/bcs/images/bcs-iw-devicesetup-setup-1.svg" alt="Set up mobile devices for Microsoft 365 Business users" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -832,7 +832,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-iw-devicesetup-move-files-2.svg" alt="Move files to OneDrive for Business" />
+                                                        <img src="/bcs/images/bcs-iw-devicesetup-move-files-2.svg" alt="Move files to OneDrive for Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -851,7 +851,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-windows10pc-3.svg" alt="Set up Windows 10 PCs" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-windows10pc-3.svg" alt="Set up Windows 10 PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -870,7 +870,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- install-4.svg" alt="Install Windows for Microsoft 365 Business users" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management- install-4.svg" alt="Install Windows for Microsoft 365 Business users" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -952,7 +952,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-learn-about-1.svg" alt="Learn more about Microsoft 365 Business" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-learn-about-1.svg" alt="Learn more about Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -971,7 +971,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-find-partner-2.svg" alt="Find a Microsoft-certified service provider" />
+                                                        <img src="/bcs/images/bcs-partner-advanced-management-find-partner-2.svg" alt="Find a Microsoft-certified service provider" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
