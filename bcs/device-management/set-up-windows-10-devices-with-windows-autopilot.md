@@ -6,7 +6,7 @@ ms.author: celested 
 ms.topic: get-started article 
 ms.prod: microsoft-365-business
 Audience: microsoft-business 
-keywords: Business Cloud Suite, BCS, SMB, setup and configuration, deployment, Windows 10, Windows AutoPilot
+keywords: Microsoft 365 Business, SMB, setup and configuration, deployment, Windows 10, Windows AutoPilot
 ---
 
 # Set up Windows 10 devices with Windows AutoPilot
