@@ -72,13 +72,18 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
 
 
 ### Suppress an alert and create a new suppression rule:
+Create custom rules to control when alerts are suppressed, or resolved. You can control the context for when an alert is suppressed by specifying the alert title, Indicator of compromise, and the conditions. After specifying the context, you’ll be able to configure the action and scope on the alert. 
 
-[JOEY: ADD SCREENSHOT WHEN READY IN STAGING!!!]
 1. Select the alert you'd like to suppress. This brings up the **Alert management** pane.
 
-2. Scroll down to the **Supression rules** section.
+2. Scroll down to the **Create a supression rule** section.
+
+    ![Image of alert status](images/atp-create-suppression-rule.png)
 
 3. Choose the context for suppressing the alert.
+  
+    ![Image of alert status](images/atp-new-suppression-rule.png)
+
   > [!NOTE]
   > You cannot create a custom or blank suppression rule. You must start from an existing alert.
 4. Specify the conditions for when the rule is applied:
@@ -89,6 +94,8 @@ The context of the rule lets you tailor the queue to ensure that only alerts you
     > [!NOTE]
     > The SHA1 of the alert cannot be modified
 5. Specify the action and scope on the alert. You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. You can also specify to suppress the alert on the machine only or the whole organization.
+
+6. Click **Save and close**.
 
 
 **See the list of suppression rules:**

@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Assign devices to servicing branches for Windows 10 updates

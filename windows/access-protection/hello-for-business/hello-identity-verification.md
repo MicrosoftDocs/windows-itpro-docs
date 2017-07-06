@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 # Windows Hello for Business
 
