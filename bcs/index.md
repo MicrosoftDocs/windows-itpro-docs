@@ -637,31 +637,12 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-add-domain-2.svg" alt="Add a domain and other FAQs about domains in Microsoft 365 Business" />
+                                                        <img src="images/bcs-partner-advanced-management-add-domain-2.svg" alt="Add a domain and other FAQs about domains" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Add a domain</h3>
                                                     <p>See this article to find answers to Frequently Asked Questions about domains in Microsoft 365 Business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Manage passwords" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Password management</h3>
-                                                    <p>Learn how to <a href="https://support.office.com/article/Let-people-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a">reset passwords</a>, <a href="https://support.office.com/en-US/article/Set-the-password-expiration-policy-for-your-organization-0F54736F-EB22-414C-8273-498A0918678F">set the password expiration policy for your organization</a>, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -702,6 +683,25 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Add a group</h3>
                                                     <p>Create or delete groups, add or remove members in a group, and customize how they work.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Manage passwords" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Password management</h3>
+                                                    <p>Learn how to <a href="https://support.office.com/article/Let-people-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a">reset passwords</a>, <a href="https://support.office.com/en-US/article/Set-the-password-expiration-policy-for-your-organization-0F54736F-EB22-414C-8273-498A0918678F">set the password expiration policy for your organization</a>, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -749,25 +749,6 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-settings-8.svg" alt="Settings" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Common management tasks</h3>
-                                                    <p>Check these quick links for the most common admin tasks in Office 365.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -780,6 +761,25 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Reports</h3>
                                                     <p>Get groups report to see the activity overview across products in your organization.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-settings-8.svg" alt="Settings" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Common management tasks</h3>
+                                                    <p>Check these quick links for the most common admin tasks in Office 365.</p>
                                                 </div>
                                             </div>
                                         </div>
