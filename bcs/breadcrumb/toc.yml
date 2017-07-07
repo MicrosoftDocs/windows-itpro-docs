@@ -4,4 +4,8 @@
   items:
     - name: Microsoft 365 Business
       tocHref: /bcs/
-      topicHref: /microsoft-365-business/index        
+      topicHref: /microsoft-365-business/index
+      items:
+      - name: Support
+        tocHref: /bcs/support
+        topicHref: /microsoft-365-business/support/microsoft-365-business-faqs    
