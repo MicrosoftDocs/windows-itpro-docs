@@ -1,1 +1,1 @@
-# [Microsoft 365 Business Frequently Asked Questions](support/microsoft-365-business-faqs.md)
+# [Microsoft 365 Business FAQ](support/microsoft-365-business-faqs.md)
