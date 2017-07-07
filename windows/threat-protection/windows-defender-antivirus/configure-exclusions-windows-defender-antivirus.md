@@ -10,14 +10,17 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 06/13/2017
 ---
 
-# Configure and validate file, folder, and process-opened file exclusions in Windows Defender AV scans
+# Configure and validate exclusions for Windows Defender AV scans (client)
 
 
 **Applies to:**
 
 - Windows 10
+- Windows Server 2016
 
 **Audience**
 
@@ -38,6 +41,8 @@ You can exclude certain files, folders, processes, and process-opened files from
 The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md). Exclusions for process-opened files only apply to real-time protection.
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization.
+
+Windows Server 2016 also features automatic exclusions that are defined by the server roles you enable. See the [Windows Defender AV exclusions on Windows Server 2016](configure-server-exclusions-windows-defender-antivirus.md) topic for more information and a list of the automatic exclusions.
 
 >[!WARNING]
 >Defining exclusions lowers the protection offered by Windows Defender AV. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
