@@ -82,6 +82,25 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
+                                <a href="support/microsoft-365-business-faqs.md">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-faq-2.svg" alt="Browse the list of frequently asked questions" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft 365 Business FAQ</h3>
+                                                    <p>Browse our list of Frequently Asked Questions.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://support.office.com/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -471,25 +490,6 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Find a Partner</h3>
                                                     <p>Visit the Microsoft Partner Center to locate a Microsoft-certified service provider who can help you locally or remotely. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="support/microsoft-365-business-faqs.md">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-faq-2.svg" alt="Browse the list of frequently asked questions" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft 365 Business FAQ - Coming soon</h3>
-                                                    <p>Browse our list of Frequently Asked Questions.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -958,6 +958,25 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Learn about Microsoft 365 Business</h3>
                                                     <p>Want to learn more about Microsoft 365 Business and wondering whether it's the right solution for your business? Start here. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="support/microsoft-365-business-faqs.md">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-faq-2.svg" alt="Browse the list of frequently asked questions" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft 365 Business FAQ</h3>
+                                                    <p>Browse our list of Frequently Asked Questions.</p>
                                                 </div>
                                             </div>
                                         </div>
