@@ -37,7 +37,7 @@ Where can I find out more about Microsoft 365 Business?
 --------------------------------------------------------
 
 Customers and partners can visit [http://www.microsoft.com/microsoft-365/business](http://www.microsoft.com/microsoft-365/business) where they can sign up to see a demo of Microsoft 365 Business in
-action. The preview will be accessible from the web site on August 2^nd^, 2017.
+action. The preview will be accessible from the web site on August 2, 2017.
 
 Who should consider adopting Microsoft 365 Business? 
 -----------------------------------------------------
