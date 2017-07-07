@@ -460,7 +460,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Identity migration</h3>
-                                                    <p>Got on-premises AD and plan to move your organization’s identity management to the cloud? You can do a one-time sync using <a href="https://support.office.com/article/Set-up-directory-synchronization-for-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846">Azure AD Connect</a>, or, if you have an Exchange 2010/2013/2016 servers and plan to also migrate email to the cloud, you can do a one-time sync using <a href="https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-FDECCEED-0702-4AF3-85BE-F2A0013937EF">Minimal hybrid migration</a>.</p>
+                                                    <p>Got on-premises AD and plan to move your organization’s identity management to the cloud? Do a one-time sync using <a href="https://support.office.com/article/Set-up-directory-synchronization-for-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846">Azure AD Connect</a>, or, if you have Exchange servers and plan to also migrate email to the cloud, do a one-time sync using <a href="https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-FDECCEED-0702-4AF3-85BE-F2A0013937EF">Minimal hybrid migration</a>.</p>
                                                 </div>
                                             </div>
                                         </div>
