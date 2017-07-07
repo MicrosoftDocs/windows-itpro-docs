@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,6 +32,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+    "breadcrumb_path": "/bcs/breadcrumb/toc.json",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
 			  "depot_name": "TechNet.bcs"
