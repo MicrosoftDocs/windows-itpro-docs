@@ -296,7 +296,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/en-us/article/Prepare-for-Office-client-installation-ed34fff3-2881-4ed4-9906-1ba6bb8dd804?ui=en-US&rs=en-US&ad=US">
+                                <a href="https://support.office.com/article/Prepare-for-Office-client-installation-ed34fff3-2881-4ed4-9906-1ba6bb8dd804">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -426,7 +426,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="migration" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>See these articles if you've got a pre-existing setup and you're deploying Microsoft 365 Business.</p>
                                 </div>
                             </li>
                             <li>
@@ -478,7 +478,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://partnercenter.microsoft.com/partner/home">
+                                <a href="https://www.microsoft.com/solution-providers/search">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -489,7 +489,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Find a Partner</h3>
-                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified service provider who can help you locally or remotely. </p>
+                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified solution provider who can help you locally or remotely. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -541,7 +541,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="adv-mgmt" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>See these links for more in-depth information about these products and features.</p>
                                 </div>
                             </li>
                             <li>
@@ -885,26 +885,26 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
-                        <a data-default="true" href="#i-worker-2">Placeholder 2</a>
+                        <a data-default="true" href="#i-worker-2">Product help</a>
                         <ul id="i-worker-2" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Lorem ipsum…</p>
+                                    <p>When you're using Office or Windows and have a question about how to do something, you can search the product help for info. </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="http://support.office.com">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="Office help and training" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Card 1</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Office help and training</h3>
+                                                    <p>Discover everything you need to know about Office products.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -912,18 +912,18 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="http://support.microsoft.com/products/windows">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="Windows help" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Card 2</h3>
-                                                    <p>tbd</p>
+                                                    <h3>Windows help</h3>
+                                                    <p>Get help, how-to, and support info for all things Windows.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -984,18 +984,18 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://partnercenter.microsoft.com/partner/home">
+                                <a href="https://www.microsoft.com/solution-providers/search">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-find-partner-2.svg" alt="Find a Microsoft-certified service provider" />
+                                                        <img src="images/bcs-partner-advanced-management-find-partner-1.svg" alt="Find a Microsoft-certified service provider" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Find a Partner</h3>
-                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified service provider who can help you locally or remotely. </p>
+                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified solution provider who can help you locally or remotely. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1004,6 +1004,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    <!--
                     <li>
                         <a data-default="true" href="#bus-owner-2">Placeholder 2</a>
                         <ul id="bus-owner-2" class="cardsC">
@@ -1050,6 +1051,7 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            -->
                         </ul>
                     </li>
                 </ul>
