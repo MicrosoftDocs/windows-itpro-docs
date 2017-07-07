@@ -1,1 +1,1 @@
-# [Index](index.md)
+# [Microsoft 365 Business Frequently Asked Questions](support/microsoft-365-business-faqs.md)
