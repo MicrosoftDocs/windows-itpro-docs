@@ -59,7 +59,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="getstarted" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Get started and make the move from an unmanaged mix of legacy apps, services, and devices to an always up-to-date cloud productivity suite with easy management of PCs and mobile apps.</p>
+                                    <p>Learn how you can bring together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data for small and midsize businesses (SMB).</p>
                                 </div>
                             </li>
                             <li>
@@ -223,7 +223,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="user-mgmt" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Introductory text about the links in this section</p>
+                                    <p>Manage customers/users in your organization.</p>
                                 </div>
                             </li>
                             <li>
@@ -238,7 +238,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Add a new customer/user</h3>
-                                                    <p>Onboarding a new user? Use the admin center to add a new user and assign the licenses.</p>
+                                                    <p>Onboarding a new user? Use the admin center to add a new user and assign licenses.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -441,7 +441,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Identity integration</h3>
-                                                    <p>tbd</p>
+                                                    <p>Coming soon</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -527,7 +527,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Microsoft Technical Support - Coming soon</h3>
-                                                    <p>Submit a technical support request for Microsoft 365 Business (charges may apply).</p>
+                                                    <p>Submit a technical support request for Microsoft 365 Business.</p>
                                                 </div>
                                             </div>
                                         </div>
