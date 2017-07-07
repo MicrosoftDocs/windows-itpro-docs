@@ -17,7 +17,7 @@ localizationpriority: high
 
 -   Windows 10
 
-Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://review.docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot?branch=dh-autopilot11975619).
+Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
 
 ## What is Windows AutoPilot Deployment Program?
 In Microsoft Store for Business, you can manage devices for your organization and apply an *AutoPilot deployment profile* to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. 
@@ -55,7 +55,7 @@ Columns in the device information file need to use this naming and be in this or
 - Column 2: Windows Product ID 
 - Column 3: Hardware Hash
 
-When you add devices, you need to add them to an *AutoPilot deployment group*. AutoPilot deployment groups allow you to apply an AutoPilot deployment profile to multiple devices. The first time you add devices to a group, you'll need to create an AutoPilot deployment group. 
+When you add devices, you need to add them to an *AutoPilot deployment group*. Use these groups to apply AutoPilot deployment profiles to a group of devices. The first time you add devices to a group, you'll need to create an AutoPilot deployment group. 
 
 > [!NOTE]
 > You can only add devices to a group when you add devices to **Microsoft Store for Business and Education**. If you decide to reorganize devices into different groups, you'll need to delete them from **Devices** in **Microsoft Store**, and add them again. 
@@ -107,13 +107,17 @@ After you've applied an AutoPilot deployment profile to a device, if you decide 
 > The new profile will only be applied if the device has not been started, and gone through the out-of-box experience. Settings from a different profile can't be applied when another profile has been applied. Windows would need to be reinstalled on the device for the second profile to be applied to the device. 
 
 ## AutoPilot device information file error messages
-Here's more info on some of the errors you might see while working with AutoPilot deployment profiles in **Microsoft Store for Business and Education**. 
+Here's info on some of the errors you might see while working with AutoPilot deployment profiles in **Microsoft Store for Business and Education**. 
 
 | Message Id | Message explanation | 
 | ---------- | ------------------- |
 | wadp001    | Check your file, or ask your device partner for a complete .csv file. This file is missing Serial Number and Product Id info. |
 | wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. |
-| wadp003    | Looks like you need more than one csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multiple .csv files. |
+| wadp003    | Looks like you need more than one .csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multiple .csv files. |
 | wadp004    | Try that again. Something happened on our end. Waiting a bit might help. |
-| wadp005    | Check with your device provider for your csv file. One of the devices on your list has been claimed by another organization. |
+| wadp005    | Check your .csv file with your device provider. One of the devices on your list has been claimed by another organization. |
 | wadp006    | Try that again. Something happened on our end. Waiting a bit might help. |
+| wadp007    | Check the info for this device in your .csv file. The device is already registered in your organization. |
+| wadp008    | The device does not meet AutoPilot Deployment requirements. |
+| wadp009    | Check with your device provider for an update .csv file. The current file doesn’t work |
+| wadp010    | Try that again. Something happened on our end. Waiting a bit might help. |
