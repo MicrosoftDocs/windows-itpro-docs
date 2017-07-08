@@ -15,6 +15,12 @@ ms.date: 06/19/2017
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## July 2017
+
+| New or changed topic | Description |
+| --- | ---- |
+| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Added the how-to video, which shows how to use the app to create a provisioning package that you can use to set up school PCs. |
+
 ## June 2017
 
 | New or changed topic | Description |
