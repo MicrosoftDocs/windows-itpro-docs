@@ -20,7 +20,7 @@ This topic lists the changes in the Microsoft Education IT admin get started.
 | New or changed topic | Description |
 | --- | ---- |
 | [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md) | Broke up the get started guide to highlight each phase in the Microsoft Education deployment and management process. |
-| [Set up an Office 365 Education tenant](set-up-office65-edu-tenant.md) | New. Shows the video and step-by-step guide on how to set up an Office 365 for Education tenant. |
+| [Set up an Office 365 Education tenant](set-up-office365-edu-tenant.md) | New. Shows the video and step-by-step guide on how to set up an Office 365 for Education tenant. |
 | [Use School Data Sync to import student data](use-school-data-sync.md) | New. Shows the video and step-by-step guide on School Data Sync and sample CSV files to import student data in a trial environment. |
 | [Enable Microsoft Teams for your school](enable-microsoft-teams.md) | New. Shows how IT admins can enable and deploy Microsoft Teams in schools. |
 | [Configure Microsoft Store for Education](configure-microsoft-store-for-education.md) | New. Shows the video and step-by-step guide on how to accept the services agreement and ensure your Microsoft Store account is associated with Intune for Education. |
