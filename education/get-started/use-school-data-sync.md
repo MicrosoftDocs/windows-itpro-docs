@@ -19,16 +19,12 @@ School Data Sync (SDS) helps you import Student Information System (SIS) data in
 
 Follow all the steps in this section to use SDS and sample CSV files in a trial environment. To use SDS in a production environment, see step 2 in [Try out Microsoft Education in a production environment](https://docs.microsoft.com/en-us/education/get-started/get-started-with-microsoft-education#setup-options) instead.
 
-<!-- Placeholder
 You can watch the video to see how this is done, or follow the step-by-step guide.
 
-## Watch the video
-> [!Video https://www.youtube.com/watch?v=X7bscA-knaY]
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/ehSU8jr8T24?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
-You can watch the descriptive audio version here: [Microsoft Education: Use School Data Sync to import student data (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
+You can watch the descriptive audio version here: [Microsoft Education: Use School Data Sync to import student data (DA)](https://www.youtube.com/watch?v=l4b086IMtvc)
 
-## Follow the step-by-step guide
--->
 
 ## Download sample school data
 

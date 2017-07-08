@@ -39,9 +39,7 @@ You can watch the video to see how this is done, or follow the step-by-step guid
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/c3BLoZZw3TQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
-<!-- Placeholder
-You can watch the descriptive audio version here: [Microsoft Education: Use Intune for Education to manage groups, apps, and settings (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
--->
+You can watch the descriptive audio version here: [Microsoft Education: Use Intune for Education to manage groups, apps, and settings (DA)](https://youtu.be/Tejxfc4V7cQ)
 
 ## Set up Intune for Education
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
