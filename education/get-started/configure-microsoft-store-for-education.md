@@ -10,14 +10,14 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 07/03/2017
+ms.date: 07/10/2017
 ---
 
 # Configure Microsoft Store for Education
 
 You'll need to configure Microsoft Store for Education to accept the services agreement and make sure your Microsoft Store account is associated with Intune for Education.
 
-You can watch the video to see how this is done, or follow the step-by-step guide.
+You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Jnbssq0gC_g?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 

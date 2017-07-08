@@ -10,7 +10,7 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 07/03/2017
+ms.date: 07/10/2017
 ---
 
 # Use Intune for Education to manage groups, apps, and settings
@@ -35,7 +35,7 @@ Note that for verified education tenants, Microsoft automatically provisions you
   > [!NOTE]
   > Apps that you own in the Microsoft Store for Education are automatically available in Intune for Education. Any changes you make to your purchases get reflected in Intune for Education.
 
-You can watch the video to see how this is done, or follow the step-by-step guide.
+You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/c3BLoZZw3TQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 

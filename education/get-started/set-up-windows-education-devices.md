@@ -10,14 +10,14 @@ localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 07/03/2017
+ms.date: 07/10/2017
 ---
 
 # Set up Windows 10 devices using Windows OOBE
 
 If you are setting up a Windows 10 device invidividually, and network bandwidth is not an issue, you can go through the Windows 10 first-run setup experience, also known as OOBE (out-of-box-experience) to set up the device, and join it to your school's Office 365 and Azure Active Directory.
 
-You can watch the video to see how this is done, or follow the step-by-step guide.
+You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/nADWqBYvqXk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
