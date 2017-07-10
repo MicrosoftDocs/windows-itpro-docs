@@ -160,34 +160,13 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Remove a customer/user</h3>
-                                                    <p>Need to remove a user? You'll need to <a href="https://support.office.com/en-us/article/Remove-company-data-from-devices-80bdae57-f8bc-4e40-a58c-956007117ecb">remove company data from devices</a> and <a href="https://support.office.com/en-us/article/Reset-Windows-10-devices-to-their-factory-settings-c4db6caf-74df-4734-b1dd-53e371c7a3c3">reset Windows 10 devices to their factory settings</a>.</p>
+                                                    <p>Need to remove a user? You'll need to <a href="https://support.office.com/article/80bdae57-f8bc-4e40-a58c-956007117ecb">remove company data from devices</a> and <a href="https://support.office.com/article/c4db6caf-74df-4734-b1dd-53e371c7a3c3">reset Windows 10 devices to their factory settings</a>.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            <!--
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>SSPR and SSPR with write-back</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            -->
                         </ul>
                     </li>
                     <li>
@@ -199,7 +178,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Prepare-for-Office-client-installation-ed34fff3-2881-4ed4-9906-1ba6bb8dd804">
+                                <a href="https://support.office.com/article/ed34fff3-2881-4ed4-9906-1ba6bb8dd804">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -218,7 +197,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Automatically-install-or-uninstall-Office-on-Windows-10-devices-cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46">
+                                <a href="https://support.office.com/article/cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -237,7 +216,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Remove-company-data-from-devices-80bdae57-f8bc-4e40-a58c-956007117ecb">
+                                <a href="https://support.office.com/article/80bdae57-f8bc-4e40-a58c-956007117ecb">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -256,7 +235,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Reset-Windows-10-devices-to-their-factory-settings-c4db6caf-74df-4734-b1dd-53e371c7a3c3">
+                                <a href="https://support.office.com/article/c4db6caf-74df-4734-b1dd-53e371c7a3c3">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -285,7 +264,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Set-device-configurations-for-WIndows-10-PCs-bd66c26c-73a4-45a8-8642-3ea4ee7cd89d">
+                                <a href="https://support.office.com/article/bd66c26c-73a4-45a8-8642-3ea4ee7cd89d">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -304,7 +283,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/View-policies-and-devices-6b70fa27-d171-4593-8ecf-f78bb4ed2e99">
+                                <a href="https://support.office.com/article/6b70fa27-d171-4593-8ecf-f78bb4ed2e99">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -363,7 +342,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Identity migration</h3>
-                                                    <p>Got on-premises AD and plan to move your organization’s identity management to the cloud? Do a one-time sync using <a href="https://support.office.com/article/Set-up-directory-synchronization-for-Office-365-1b3b5318-6977-42ed-b5c7-96fa74b08846">Azure AD Connect</a>, or, if you have Exchange servers and plan to also migrate email to the cloud, do a one-time sync using <a href="https://support.office.com/article/Use-Minimal-Hybrid-to-quickly-migrate-Exchange-mailboxes-to-Office-365-FDECCEED-0702-4AF3-85BE-F2A0013937EF">Minimal hybrid migration</a>.</p>
+                                                    <p>Got on-premises AD and plan to move your organization’s identity management to the cloud? Do a one-time sync using <a href="https://support.office.com/article/365-1b3b5318-6977-42ed-b5c7-96fa74b08846">Azure AD Connect</a>, or, if you have Exchange servers and plan to also migrate email to the cloud, do a one-time sync using <a href="https://support.office.com/article/FDECCEED-0702-4AF3-85BE-F2A0013937EF">Minimal hybrid migration</a>.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -371,7 +350,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/en-us/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193">
+                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -534,7 +513,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec">
+                                <a href="https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -553,7 +532,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a">
+                                <a href="https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -593,7 +572,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                             -->
                             <li>
-                                <a href="https://support.office.com/article/Create-an-Office-365-group-in-the-admin-center-74a1ef8b-3844-4d08-9980-9f8f7a36000f">
+                                <a href="https://support.office.com/article/74a1ef8b-3844-4d08-9980-9f8f7a36000f">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -623,36 +602,15 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Password management</h3>
-                                                    <p>Learn how to <a href="https://support.office.com/article/Let-people-reset-their-own-passwords-in-Office-365-5bc3f460-13cc-48c0-abd6-b80bae72d04a">reset passwords</a>, <a href="https://support.office.com/en-US/article/Set-the-password-expiration-policy-for-your-organization-0F54736F-EB22-414C-8273-498A0918678F">set the password expiration policy for your organization</a>, and more.</p>
+                                                    <p>Learn how to <a href="https://support.office.com/article/5bc3f460-13cc-48c0-abd6-b80bae72d04a">reset passwords</a>, <a href="https://support.office.com/article/0F54736F-EB22-414C-8273-498A0918678F">set the password expiration policy for your organization</a>, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                            <!--
                             <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-resources-6_placeholder.svg" alt="Resources" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Resources</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            -->
-                            <li>
-                                <a href="https://support.office.com/article/Billing-in-Office-365-for-business-–-Admin-Help-ea7bf1b2-1c2f-477f-a813-313e3ce0d896">
+                                <a href="https://support.office.com/article/ea7bf1b2-1c2f-477f-a813-313e3ce0d896">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -671,7 +629,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Office-365-Reports-in-the-admin-center-Office-365-groups-a27f1a99-3557-4f85-9560-a28e3d822a40">
+                                <a href="https://support.office.com/article/a27f1a99-3557-4f85-9560-a28e3d822a40">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -690,7 +648,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91">
+                                <a href="https://support.office.com/article/46c667f7-5073-47b9-a75f-05a60cf77d91">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -710,7 +668,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Not finding the info that you need? Check out the <a href="https://support.office.com/article/Office-365-for-business-%25E2%2580%2593-Admin-help-17d3ff3f-3601-466e-b5a1-482b31cfb791" target="_blank">Office 365 Admin Help</a> for more info. </p>
+                                    <p>Not finding the info that you need? Check out the <a href="https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791" target="_blank">Office 365 Admin Help</a> for more info. </p>
                                 </div>
                             </li>
                         </ul>
@@ -748,7 +706,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/move-files-to-OneDrive-for-Business-eb8244aa-a302-481a-b2b5-d34e88b18ec7">
+                                <a href="https://support.office.com/article/eb8244aa-a302-481a-b2b5-d34e88b18ec7">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
