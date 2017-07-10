@@ -975,6 +975,20 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/ScheduledInstallFourthWeek</li>
 <li>Update/ScheduledInstallSecondWeek</li>
 <li>Update/ScheduledInstallThirdWeek</li>
+<li>WindowsDefenderSecurityCenter/CompanyName</li>
+<li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
+<li>WindowsDefenderSecurityCenter/DisableEnhancedNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableFamilyUI</li>
+<li>WindowsDefenderSecurityCenter/DisableHealthUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNetworkUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableVirusUI</li>
+<li>WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride</li>
+<li>WindowsDefenderSecurityCenter/Email</li>
+<li>WindowsDefenderSecurityCenter/EnableCustomizedToasts</li>
+<li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
+<li>WindowsDefenderSecurityCenter/Phone</li>
+<li>WindowsDefenderSecurityCenter/URL</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1270,8 +1284,27 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.</li>
 <li>When you enable SystemDrivesRecoveryMessage, you must specify values for all three settings (pre-boot recovery screen, recovery message, and recovery URL), otherwise it will fail (500 return status). For example, if you only specify values for message and URL, you will get a 500 return status.</li>
 </ul>
-</td>
-</tr>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top">
+<p>Added the following new policies for Windows 10, version 1709:</p>
+<ul>
+<li>WindowsDefenderSecurityCenter/CompanyName</li>
+<li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
+<li>WindowsDefenderSecurityCenter/DisableEnhancedNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableFamilyUI</li>
+<li>WindowsDefenderSecurityCenter/DisableHealthUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNetworkUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableVirusUI</li>
+<li>WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride</li>
+<li>WindowsDefenderSecurityCenter/Email</li>
+<li>WindowsDefenderSecurityCenter/EnableCustomizedToasts</li>
+<li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
+<li>WindowsDefenderSecurityCenter/Phone</li>
+<li>WindowsDefenderSecurityCenter/URL</li>
+</ul>
 </tbody>
 </table>
 
