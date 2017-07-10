@@ -91,8 +91,8 @@ How can I know if the hardware and software I run today is compatible with Micro
 ---------------------------------------------------------------------------------------------------
 
 If the hardware you run today runs Windows 7 Professional or later, it likely meets the minimum requirements for Microsoft 365 Business.
-Certain Windows 10 features such as Cortana, Windows Hello and multi-touch require specific hardware that is only available on newer PCs. See the [*Windows 10 Pro system
-requirements*](https://www.microsoft.com/en-us/windows/windows-10-specifications) for additional details.
+Certain Windows 10 features such as Cortana, Windows Hello and multi-touch require specific hardware that is only available on newer PCs. See the [Windows 10 Pro system
+requirements](https://www.microsoft.com/en-us/windows/windows-10-specifications) for additional details.
 
 Existing desktop (Win32) application compatibility is strong in Windows 10, with most existing applications working without any changes. Customers and their trusted IT advisors should read the recommended
 application testing process for [Windows 10 compatibility](https://docs.microsoft.com/en-us/windows/deployment/planning/windows-10-compatibility#recommended-application-testing-process)
