@@ -30,7 +30,7 @@ description: Learn about the product documentation and resources available for M
                 </a>
             </li>
             <li>
-                <a href="https://support.office.com/en-us/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364?ui=en-US&rs=en-US&ad=US">
+                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -101,7 +101,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364">
+                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -119,103 +119,6 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
-                            <!-- 
-                            <li>
-                                <a href="https://support.office.com/en-us/article/Prerequisites-for-setting-up-Business-Cloud-Suite-7770e280-3a6c-436f-a157-b008a2744f51">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_tasks.svg" alt="Find out what you need to do before you get started with setup" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Prerequisites</h3>
-                                                    <p>Learn about what you need to do before you set up and deploy Microsoft 365 Business for your organization.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/en-us/article/Purchase-Business-Cloud-Suite-from-Microsoft-Partner-Center-5abfef7b-5957-484a-b06b-a7c55e013e44">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_free-trial.svg" alt="Purchase Microsoft 365 Business for your customer in the Partner Center" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Purchase Microsoft 365 Business</h3>
-                                                    <p>If you’re a partner, purchase Microsoft 365 Business for your customer through the Microsoft Partner Center.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/en-us/article/Set-up-Business-Cloud-Suite-by-using-the-setup-wizard-6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_setup.svg" alt="Set up Microsoft 365 Business using the setup wizard" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Set up Microsoft 365 Business</h3>
-                                                    <p>Set up Microsoft 365 Business using the setup wizard, which guides you through the step-by-step process.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/en-us/article/Set-up-Windows-PCs-for-Business-Cloud-Suite-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/placeholder.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Set up Windows 10 devices</h3>
-                                                    <p>Set up Windows 10 devices, and join these to your company’s Azure Active Directory.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/en-us/article/Set-up-mobile-devices-for-Business-Cloud-Suite-users-d868561b-d340-4c04-a973-e2575d7f09bc">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_mobileapp.svg" alt="Set up mobile devices for Microsoft 365 Business users" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Set up mobile devices</h3>
-                                                    <p>tbSet up mobile devices for Microsoft 365 Business usersd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                           -->
                         </ul>
                     </li>
                     <li>
@@ -227,7 +130,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Add-users-to-Business-Cloud-Suite-96153102-1db1-4df8-bca5-38cea80b65ce">
+                                <a href="https://support.office.com/article/96153102-1db1-4df8-bca5-38cea80b65ce">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -468,7 +371,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Set-up-Windows-PCs-for-Business-Cloud-Suite-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">
+                                <a href="https://support.office.com/en-us/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -826,7 +729,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Set-up-mobile-devices-for-Business-Cloud-Suite-users-d868561b-d340-4c04-a973-e2575d7f09bc">
+                                <a href="https://support.office.com/article/d868561b-d340-4c04-a973-e2575d7f09bc">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -864,7 +767,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Set-up-Windows-PCs-for-Business-Cloud-Suite-users-2d7ff45e-0da0-4caa-89a9-48cabf41f193">
+                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -883,7 +786,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/install-Windows-for-Business-Cloud-Suite-users-c654bd23-d256-4ac7-8fba-0c993bf5a771">
+                                <a href="https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
