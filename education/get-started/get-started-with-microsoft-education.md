@@ -10,11 +10,8 @@ localizationpriority: high
 ms.pagetype: edu
 ms.date: 06/26/2017
 author: CelesteDG
-ms.author: celested
-<<<<<<< HEAD
-=======
+ms.author: CelesteDG
 ms.date: 07/10/2017
->>>>>>> bc0aae28f3293b64ef5664ec0524a73070fd7c5e
 ---
 
 # Get started: Deploy and manage a full cloud IT solution with Microsoft Education
