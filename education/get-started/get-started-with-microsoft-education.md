@@ -8,9 +8,8 @@ ms.sitesec: library
 ms.topic: hero-article
 localizationpriority: high
 ms.pagetype: edu
-ms.date: 06/26/2017
 author: CelesteDG
-ms.author: CelesteDG
+ms.author: celested
 ms.date: 07/10/2017
 ---
 
