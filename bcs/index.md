@@ -9,7 +9,6 @@ description: Learn about the product documentation and resources available for M
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1 class="screenReader">Microsoft 365 Business documentation and resources</h1>
         <ul class="cardsY panelContent featuredContent">
             <li>
                 <a href="http://www.microsoft.com/en-us/microsoft-365/business">
@@ -50,6 +49,7 @@ description: Learn about the product documentation and resources available for M
         </ul>
     </div>
     <div class="container">
+        <h1>Microsoft 365 Business documentation and resources</h1>
         <ul class="pivots">
             <li>
                 <a href="#partner-it">Partner/IT admin</a>
@@ -136,7 +136,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-user-management-add-customer-1.svg" alt="" />
+                                                        <img src="images/bcs-user-management-add-customer-1.svg" alt="Add a new user and assign licenses" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -149,7 +149,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -337,7 +337,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- management-4_placeholder.svg" alt="Identity integration" />
+                                                        <img src="images/bcs-partner-identity-manager.svg" alt="Identity integration" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -591,7 +591,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/7a5d073b-7fae-4aa5-8f96-9ecd041aba9c">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -779,7 +779,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="Office help and training" />
+                                                        <img src="images/bcs-information-product-help-office.svg" alt="Office help and training" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -798,7 +798,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="Windows help" />
+                                                        <img src="images/bcs-information-product-help-windows10.svg" alt="Windows help" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
