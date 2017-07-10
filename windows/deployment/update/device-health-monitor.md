@@ -1,5 +1,5 @@
 ---
-title: Monitor the Health of Devices with Device Health (Windows 10)
+title: Monitor the health of devices with Device Health
 description: You can use Device Health in OMS to monitor the frequency and causes of crashes and misbehaving apps on devices in your network.
 keywords: oms, operations management suite, wdav, health, log analytics
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: deploy
 author: jaimeo
 ---
 
-# Monitor the Health of Devices with Device Health Monitor
+# Monitor the health of devices with Device Health
 
 ## Introduction
 
@@ -36,7 +36,7 @@ An overview of the processes used by the Device Health solution is provided belo
  
 The Device Health architecture and data flow is summarized by the following five-step process:
 
-[VALID FOR DH OR DIFFERENT?]
+
 
 **(1)** User computers send telemetry data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
 **(2)** Telemetry data is analyzed by the Device Health Data Service.<BR>
@@ -46,7 +46,7 @@ The Device Health architecture and data flow is summarized by the following five
 
 These steps are illustrated in following diagram:
 
-[DO YOU HAVE A DIAGRAM YOU WANT TO USE HERE?]
+ [![](images/analytics-architecture.png)](images/analytics-architecture.png)
 
 >[!NOTE]
 >This process assumes that Windows telemetry is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started#deploy-your-commercial-id-to-your-windows-10-devices.
@@ -58,3 +58,4 @@ These steps are illustrated in following diagram:
 
 [Get started with Device Health](device-health-get-started.md)<BR>
 [Use Device Health to monitor Windows Updates](device-health-using.md)
+For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)

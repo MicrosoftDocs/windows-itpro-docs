@@ -1,5 +1,5 @@
 ---
-title: Using Device Health (Windows 10)
+title: Using Device Health
 description: Explains how to begin usihg Device Health.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -145,3 +145,4 @@ OMS enables you to export data to other tools. To do this, in any view that show
 ## Related topics
 
 [Get started with Update Compliance](update-compliance-get-started.md)
+For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)

@@ -1,5 +1,5 @@
 ---
-title: Get started with Device Health (Windows 10)
+title: Get started with Device Health
 description: Configure Device Health in OMS to see statistics on frequency and causes of crashes of devices in your network.
 keywords: Device Health, oms, operations management suite, prerequisites, requirements, monitoring, crash, drivers
 ms.prod: w10
@@ -117,3 +117,4 @@ In order for your devices to show up in Windows Analytics: Device Health, they m
 ## Related topics
 
 [Use Device Health to monitor Windows Updates](device-health-using.md)
+For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)
