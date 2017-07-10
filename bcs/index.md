@@ -337,7 +337,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- management-4_placeholder.svg" alt="Identity integration" />
+                                                        <img src="images/bcs-partner-identity-manager.svg" alt="Identity integration" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -779,7 +779,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-office-help.svg" alt="Office help and training" />
+                                                        <img src="images/bcs-information-product-help-office.svg" alt="Office help and training" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -798,7 +798,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-students-windows-help.svg" alt="Windows help" />
+                                                        <img src="images/bcs-information-product-help-windows10.svg" alt="Windows help" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
