@@ -532,7 +532,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a">
+                                <a href="https://support.office.com/article/365-2d2fa996-b760-411d-a5cc-190d63f13207">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -717,7 +717,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Move files to OneDrive for Business</h3>
-                                                    <p>Optional. Use OneDrive for Business or a third-party tools to move files associated with your Windows profile.</p>
+                                                    <p>Optional. Use OneDrive for Business or a third-party tool to move files associated with your Windows profile.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -802,8 +802,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Windows help</h3>
-                                                    <p>Get help, how-to, and support info for all things Windows.</p>
+                                                    <h3>Windows 10 help</h3>
+                                                    <p>Get help, how-to, and other info for all things Windows.</p>
                                                 </div>
                                             </div>
                                         </div>
