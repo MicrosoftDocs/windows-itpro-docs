@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
 localizationpriority: high
+ms.author: daniha
 ---
 
 # Quick guide to Windows as a service
