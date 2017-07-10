@@ -1,12 +1,13 @@
 --- 
 title: Microsoft 365 Business Frequently Asked Questions 
-description: Learn how to use Windows AutoPilot from the Partner Center to create and automatically assign devices to configuration groups based on the device's profile, automatically join devices to Azure AD, auto-enroll devices into Microsoft Intune, and customize Windows OOBE. 
+description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small and midsize businesses (SMB). 
 author: CelesteDG 
 ms.author: celested 
-ms.topic: get-started article 
+ms.topic: article 
 ms.prod: microsoft-365-business
 Audience: microsoft-business 
-keywords: Microsoft 365 Business, SMB, FAQ, frequently asked questions
+keywords: Microsoft 365 Business, SMB, FAQ, frequently asked questions, answers
+ms.date: 07/10/2017
 ---
 
 # Microsoft 365 Business Frequently Asked Questions
@@ -16,8 +17,7 @@ keywords: Microsoft 365 Business, SMB, FAQ, frequently asked questions
 What is Microsoft 365 Business? 
 --------------------------------
 
-Microsoft 365 Business is a new solution designed for small and midsize businesses (SMB), bringing together the best-in-class productivity and collaboration capabilities of Office 365 with device management and
-security solutions to safeguard business data.
+Microsoft 365 Business is a new solution designed for small and midsize businesses (SMB), bringing together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data.
 
 Microsoft 365 Business enables you to:
 
@@ -200,7 +200,7 @@ If you do not have a Microsoft partner, you can find one [here](https://partnerc
 What should customers consider when planning a Microsoft 365 Business deployment? 
 ----------------------------------------------------------------------------------
 
-The most direct path to a successful Microsoft 365 Business deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the [Microsoft 365 Business Getting Started](https://support.office.com/en-us/article/Get-started-with-Business-Cloud-Suite-496e690b-b75d-4ff5-bf34-cc32905d0364?ui=en-US&rs=en-US&ad=US) to assist them in their Microsoft 365 Business deployment.
+The most direct path to a successful Microsoft 365 Business deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the [Microsoft 365 Business Getting Started](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364) to assist them in their Microsoft 365 Business deployment.
 
 Does Microsoft 365 Business include the full capabilities of Microsoft Intune? 
 -------------------------------------------------------------------------------
