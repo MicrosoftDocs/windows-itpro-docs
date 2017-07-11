@@ -563,7 +563,9 @@ ms.author: celested
                             </li>
                         </ul>
                     </li>
-                <li>
+                </ul>
+            </li>
+            <li>
                 <a href="#partner">Partner</a>
                 <ul id="partner">
                     <li>
@@ -655,8 +657,6 @@ ms.author: celested
                             </li>
                         </ul>
                     </li>
-                </ul>
-            </li>
         </ul>
     </div>
 </div>
