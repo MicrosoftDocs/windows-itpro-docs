@@ -31,17 +31,17 @@ Connected User Experience and Telemetry component | v10.vortex-win.data.microsof
 Windows Error Reporting | watson.telemetry.microsoft.com
 Online Crash Analysis | oca.telemetry.microsoft.com
 
-[!Note]  
-> If your deployment includes devices running Windows 10 versions prior to RS2, you must bypass authentication for the endpoints in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10 RS2.
+>[!NOTE]  
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must bypass authentication for the endpoints in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703.
 
 
 ## Add Device Health to Microsoft Operations Management Suite
 
 Device Health is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
 
-If you are already using OMS, you’ll find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace.
+**If you are already using OMS**, you’ll find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace.
 
-If you are not yet using OMS, use the following steps to subscribe to OMS Device Health:
+**If you are not yet using OMS**, use the following steps to subscribe to OMS Device Health:
 
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
 
@@ -116,5 +116,5 @@ In order for your devices to show up in Windows Analytics: Device Health, they m
 
 ## Related topics
 
-[Use Device Health to monitor Windows Updates](device-health-using.md)
+[Use Device Health to monitor Windows Updates](device-health-using.md)<BR>
 For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)

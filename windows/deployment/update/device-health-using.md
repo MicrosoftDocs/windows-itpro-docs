@@ -40,16 +40,18 @@ This middle blade in Device Health displays the devices that crash most often. S
 
 Clicking the Frequently Crashing Devices blade opens a reliability perspective view, where you can filter data using filters in the left pane, see trends, and compare to commercial averages:
 
-![Reliability perspective](images/reliability-perspective.png)
+![Reliability perspective](images/reliability-perspective2.png)
 
 
 In this view, you can click a particular device to see the details of that particular device and for each crash recorded on it. (You can also reach this view by clicking a particular device on the Frequently Crashing Devices blade.)
 
-[FROM MARC: I'd remove descriptions; it is meant to be self-explanatory. The one thing I would add is the tip on how to get rid of a filter. E.g, if you select "Model=XXX" and apply (as mentioned before picture), their is no visual way to remove that filter. You have to notice that they query up top has changed to append (Model=XXX) - and you need to edit the query to remove that. MSIT stumbled on this and suggested we document it, so let's do that!]
 
 ![Device detail and history](images/device-crash-history.png)
 
 This displays device records sorted by date and crash details by failure ID, also sorted by date.
+
+>[!TIP]
+>Once you've applied a filter, for example by clicking a particular model or computer name in the left pane, you can remove the applied filter by manually editing the query. For example, in the device detail screenshot above, the results are filtered to a particular computer named "joes-pc". Remove the filter focusing on that one computer, just delete the string "joes-pc" in the query.
  
  
 ### Driver Induced OS Crashes
@@ -73,8 +75,6 @@ The records are sorted by the time generated and the computer. If a driver has c
 
 ![Additional driver detail and history](images/driver-deeper-detail.png)
 
-[DEFINITIONS TABLE?]
-[ONENOTE DESCRIBES CLICKTHROUGH BEHAVIOR THAT SEEMS LIKE IT'S SUPPOSED TO CHANGE FOR PUBLIC VERSION?]
 
 
 ## Windows Information Protection
@@ -144,5 +144,6 @@ OMS enables you to export data to other tools. To do this, in any view that show
 
 ## Related topics
 
-[Get started with Update Compliance](update-compliance-get-started.md)
+[Get started with Update Compliance](update-compliance-get-started.md)<BR>
+
 For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)
