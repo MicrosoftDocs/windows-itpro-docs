@@ -144,6 +144,6 @@ OMS enables you to export data to other tools. To do this, in any view that show
 
 ## Related topics
 
-[Get started with Update Compliance](update-compliance-get-started.md)<BR>
+[Get started with Device Health](device-health-get-started.md)<BR>
 
 For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)

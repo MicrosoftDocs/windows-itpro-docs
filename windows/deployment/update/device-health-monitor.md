@@ -51,7 +51,7 @@ These steps are illustrated in following diagram:
  [![](images/analytics-architecture.png)](images/analytics-architecture.png)
 
 >[!NOTE]
->This process assumes that Windows telemetry is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started#deploy-your-commercial-id-to-your-windows-10-devices.
+>This process assumes that Windows telemetry is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started#deploy-your-commercial-id-to-your-windows-10-devices).
 
 
 
@@ -60,6 +60,6 @@ These steps are illustrated in following diagram:
 
 [Get started with Device Health](device-health-get-started.md)
 
-[Use Device Health to monitor Windows Updates](device-health-using.md)
+[Use Device Health to monitor frequency and causes of device crashes](device-health-using.md)
 
 For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)

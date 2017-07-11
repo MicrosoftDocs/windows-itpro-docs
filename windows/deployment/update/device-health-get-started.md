@@ -116,5 +116,5 @@ In order for your devices to show up in Windows Analytics: Device Health, they m
 
 ## Related topics
 
-[Use Device Health to monitor Windows Updates](device-health-using.md)<BR>
+[Use Device Health to monitor frequency and causes of device crashes](device-health-using.md)<BR>
 For the latest information on Windows Analytics, including new features and usage tips, see the [Windows Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics)
