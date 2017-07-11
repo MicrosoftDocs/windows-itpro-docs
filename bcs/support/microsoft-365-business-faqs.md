@@ -5,8 +5,8 @@ author: CelesteDG 
 ms.author: celested 
 ms.topic: article 
 ms.prod: microsoft-365-business
-Audience: microsoft-business 
-keywords: Microsoft 365 Business, SMB, FAQ, frequently asked questions, answers
+audience: microsoft-business 
+keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, frequently asked questions, answers
 ms.date: 07/10/2017
 ---
 

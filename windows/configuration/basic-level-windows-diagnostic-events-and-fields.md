@@ -7,39 +7,30 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
-author: brianlic-msft
-ms.author: brianlic
+author: eross-msft
+ms.author: lizross
 ---
 
 
 # Windows 10, version 1703 basic level Windows diagnostic events and fields
 
-
  **Applies to**
 
-- Windows 10, version 1703
+- Windows 10, version 1703 and later
 
+The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information. The Basic level also helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
-The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information.
-
-The Basic level helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
-
-Use this article to learn about diagnostic events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data.
-
-You can learn more about Windows functional and diagnostic data through these articles:
-
+Use this article to learn about diagnostic events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data. You can learn more about Windows functional and diagnostic data through these articles:
 
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
 - [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
 
-
-
+>[!Note]
+>Updated July 2017 to document new and modified events. We’ve added new fields to several Appraiser events to prepare for upgrades to the next release of Windows and we’ve added a brand-new event, Census.Speech, to collect basic details about speech settings and configuration.
 
 ## Common data extensions
 
 ### Common Data Extensions.App
-
- 
 
 The following fields are available:
 
@@ -51,16 +42,12 @@ The following fields are available:
 
 ### Common Data Extensions.CS
 
- 
-
 The following fields are available:
 
 - **sig**  A common schema signature that identifies new and modified event schemas.
 
 
 ### Common Data Extensions.CUET
-
- 
 
 The following fields are available:
 
@@ -258,8 +245,23 @@ This event lists the types of objects and how many of each exist on the client d
 
 The following fields are available:
 
+- **DatasourceApplicationFile_RS3**	The total DecisionApplicationFile objects targeting the next release of Windows on this device. on this device.
+- **DatasourceDevicePnp_RS3**	The total DatasourceDevicePnp objects targeting the next release of Windows on this device.
+- **DatasourceDriverPackage_RS3**	The total DatasourceDriverPackage objects targeting the next release of Windows on this device.
+- **DataSourceMatchingInfoBlock_RS3**  The total DataSourceMatchingInfoBlock objects targeting the next release of Windows on this device.
+- **DataSourceMatchingInfoPassive_RS3**	The total DataSourceMatchingInfoPassive objects targeting the next release of Windows on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS3**	The total DataSourceMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
+- **DatasourceSystemBios_RS3**	The total DatasourceSystemBios objects targeting the next release of Windows on this device.
+- **DecisionApplicationFile_RS3**	The total DecisionApplicationFile objects targeting the next release of Windows on this device.
+- **DecisionDevicePnp_RS3**	The total DecisionDevicePnp objects targeting the next release of Windows on this device.
+- **DecisionDriverPackage_RS3**	The total DecisionDriverPackage objects targeting the next release of Windows on this device.
+- **DecisionMatchingInfoBlock_RS3**	The total DecisionMatchingInfoBlock objects targeting the next release of Windows on this device.
+- **DecisionMatchingInfoPassive_RS3**	The total DataSourceMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
+- **DecisionMatchingInfoPostUpgrade_RS3**	The total DecisionMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
+- **DecisionMediaCenter_RS3**	The total DecisionMediaCenter objects targeting the next release of Windows on this device.
+- **DecisionSystemBios_RS3**	The total DecisionSystemBios objects targeting the next release of Windows on this device.
 - **PCFP**  An ID for the system that is calculated by hashing hardware identifiers.
-- **InventoryApplicationFile**  The total InventoryApplicationFile objects that are present on this device.
+- **InventoryApplicationFile** The total InventoryApplicationFile objects that are present on this device.
 - **InventoryMediaCenter**  The total InventoryMediaCenter objects that are present on this device.
 - **InventoryLanguagePack**  The total InventoryLanguagePack objects that are present on this device.
 - **InventoryUplevelDriverPackage**  The total InventoryUplevelDriverPackage objects that are present on this device.
@@ -274,6 +276,7 @@ The following fields are available:
 - **SystemWim**  The total SystemWim objects that are present on this device
 - **SystemTouch**  The total SystemTouch objects that are present on this device.
 - **SystemWindowsActivationStatus**  The total SystemWindowsActivationStatus objects that are present on this device.
+- **Wmdrm_RS3**	The total Wmdrm objects targeting the next release of Windows on this device.
 
 
 ### Microsoft.Windows.Appraiser.General.ChecksumTotalPictureIdHashSha256
@@ -282,6 +285,21 @@ This event lists the types of objects and the hashed values of all the identifie
 
 The following fields are available:
 
+- **DatasourceApplicationFile_RS3**	The total DatasourceApplicationFile objects targeting the next release of Windows on this device.
+- **DatasourceDevicePnp_RS3**	The total DatasourceDevicePnp objects targeting the next release of Windows on this device.
+- **DatasourceDriverPackage_RS3**	The total DatasourceDriverPackage objects targeting the next release of Windows on this device.
+- **DataSourceMatchingInfoBlock_RS3**	The total DataSourceMatchingInfoBlock objects targeting the next release of Windows on this device.
+- **DataSourceMatchingInfoPassive_RS3**	The total DataSourceMatchingInfoPassive objects targeting the next release of Windows on this device.
+- **DataSourceMatchingInfoPostUpgrade_RS3**	The total DataSourceMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
+- **DatasourceSystemBios_RS3**	The total DatasourceSystemBios objects targeting the next release of Windows on this device.
+- **DecisionApplicationFile_RS3**	The total DecisionApplicationFile objects targeting the next release of Windows on this device.
+- **DecisionDevicePnp_RS3**	The total DecisionDevicePnp objects targeting the next release of Windows on this device.
+- **DecisionDriverPackage_RS3**	The total DecisionDriverPackage objects targeting the next release of Windows on this device.
+- **DecisionMatchingInfoBlock_RS3**	The total DecisionMatchingInfoBlock objects targeting the next release of Windows on this device.
+- **DecisionMatchingInfoPassive_RS3**	The total DataSourceMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
+- **DecisionMatchingInfoPostUpgrade_RS3**	The total DecisionMatchingInfoPostUpgrade objects targeting the next release of Windows on this device.
+- **DecisionMediaCenter_RS3**	The total DecisionMediaCenter objects targeting the next release of Windows on this device.
+- **DecisionSystemBios_RS3**	The total DecisionSystemBios objects targeting the next release of Windows on this device.
 - **PCFP**  An ID for the system that is calculated by hashing hardware identifiers.
 - **InventoryApplicationFile**  The SHA256 hash of InventoryApplicationFile objects that are present on this device.
 - **InventoryMediaCenter**  The SHA256 hash of InventoryMediaCenter objects that are present on this device.
@@ -298,6 +316,7 @@ The following fields are available:
 - **SystemWim**  The SHA256 hash of SystemWim objects that are present on this device.
 - **SystemTouch**  The SHA256 hash of SystemTouch objects that are present on this device.
 - **SystemWindowsActivationStatus**  The SHA256 hash of SystemWindowsActivationStatus objects that are present on this device.
+- **Wmdrm_RS3**	The total Wmdrm objects targeting the next release of Windows on this device.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileAdd
@@ -1617,15 +1636,15 @@ This event is used to gather basic speech settings on the device.
 
 The following fields are available:
 
-- **SpeechServicesEnabled**  Windows setting that represents whether a user is opted-in for speech services on the device.
-- **KWSEnabled**  Cortana setting that represents if a user has enabled the "Hey Cortana" keyword spotter (KWS).
-- **SpeakerIdEnabled**  Cortana setting that represents if keyword detection has been trained to try to respond to a single user's voice.
-- **AboveLockEnabled**  Cortana setting that represents if Cortana can be invoked when the device is locked.
-- **GPAllowInputPersonalization**  Indicates if a Group Policy setting has enabled speech functionalities.
-- **HolographicSpeechInputDisabled**  Holographic setting that represents if the attached HMD devices have speech functionality disabled by the user.
-- **HolographicSpeechInputDisabledRemote**  Indicates if a remote policy has disabled speech functionalities for the HMD devices.
-- **MDMAllowInputPersonalization**  Indicates if an MDM policy has enabled speech functionalities.
-- **RemotelyManaged**  Indicates if the device is being controlled by a remote admininistrator (MDM or Group Policy) in the context of speech functionalities.
+- **AboveLockEnabled**	Cortana setting that represents if Cortana can be invoked when the device is locked.
+- **GPAllowInputPersonalization**	Indicates if a Group Policy setting has enabled speech functionalities.
+- **HolographicSpeechInputDisabled**	Holographic setting that represents if the attached HMD devices have speech functionality disabled by the user.
+- **HolographicSpeechInputDisabledRemote**	Indicates if a remote policy has disabled speech functionalities for the HMD devices.
+- **KWSEnabled**	Cortana setting that represents if a user has enabled the "Hey Cortana" keyword spotter (KWS).
+- **MDMAllowInputPersonalization**	Indicates if an MDM policy has enabled speech functionalities.
+- **RemotelyManaged**	Indicates if the device is being controlled by a remote administrator (MDM or Group Policy) in the context of speech functionalities.
+- **SpeakerIdEnabled**	Cortana setting that represents if keyword detection has been trained to try to respond to a single user's voice.
+- **SpeechServicesEnabled**	Windows setting that represents whether a user is opted-in for speech services on the device.
 
 
 ### Census.Storage
