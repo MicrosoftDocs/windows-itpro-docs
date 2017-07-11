@@ -593,27 +593,6 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.mepn.com/MEPN/AEPSearch.aspx">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <!--
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="Take a Test API" />
-                                                    </div>
-                                                </div>
-                                                -->
-                                                <div class="cardText">
-                                                    <h3>Partner directory</h3>
-                                                    <p>Browse through the list of Microsoft Education partners worldwide who can deliver on customer licensing requirements, and provide solutions and services to current and future school needs.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://www.mepn.com/MEPN/AEPHome.aspx">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -627,7 +606,28 @@ ms.author: celested
                                                 -->
                                                 <div class="cardText">
                                                     <h3>Authorized Education Partner (AEP) home page</h3>
-                                                    <p>Access the essentials of what it takes to become an AEP.</p>
+                                                    <p>Access the essentials and find out what it takes to become an AEP.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mepn.com/MEPN/AEPSearch.aspx">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <!--
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="Take a Test API" />
+                                                    </div>
+                                                </div>
+                                                -->
+                                                <div class="cardText">
+                                                    <h3>Authorized Education Partner directory</h3>
+                                                    <p>Search through the list of Authorized Education Partners worldwide who can deliver on customer licensing requirements, and provide solutions and services to current and future school needs.</p>
                                                 </div>
                                             </div>
                                         </div>
