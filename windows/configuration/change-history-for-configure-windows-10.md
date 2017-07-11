@@ -14,6 +14,11 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## July 2017
+| New or changed topic | Description |
+| --- | --- |
+|[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)|Updated several Appraiser events and added Census.Speech.
+
 ## June 2017
 
 | New or changed topic | Description |

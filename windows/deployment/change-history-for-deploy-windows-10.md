@@ -12,6 +12,11 @@ ms.date: 06/28/2017
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10).
 
+## July 2017
+| New or changed topic | Description |
+|----------------------|-------------|
+| The table of contents for deployment topics was reorganized.
+
 ## June 2017
 | New or changed topic | Description |
 |----------------------|-------------|

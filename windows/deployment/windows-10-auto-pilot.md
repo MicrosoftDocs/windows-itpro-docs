@@ -1,6 +1,6 @@
 ---
 title: Overview of Windows AutoPilot
-description: This topic goes over Auto-Pilot and how it helps setup OOBE Windows 10 devices.
+description: This topic goes over Windows AutoPilot and how it helps setup OOBE Windows 10 devices.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -84,7 +84,7 @@ Options available for Windows 10, version 1703:
 
 We are working to add additional options to further personalize and streamline the setup experience in future releases.
 
-To see additional details on how to customize the OOBE experience and how to follow this process, see guidance for [Microsoft Store for Business](/store-for-business/add-profile-to-devices.md) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).
+To see additional details on how to customize the OOBE experience and how to follow this process, see guidance for [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).
 
 ### IT-Driven
 
