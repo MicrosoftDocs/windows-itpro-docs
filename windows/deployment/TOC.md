@@ -241,8 +241,22 @@
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
+## [Convert MBR partition to GPT](mbr-to-gpt.md)
+## [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md)
+## [Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)
+## [Add Microsoft Store for Business applications to a Windows 10 image](add-store-apps-to-image.md)
+## [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md)
 
+## [Volume Activation [client]](volume-activation/volume-activation-windows-10.md)
+### [Plan for volume activation [client]](volume-activation/plan-for-volume-activation-client.md)
+### [Activate using Key Management Service [client]](volume-activation/activate-using-key-management-service-vamt.md)
+### [Activate using Active Directory-based activation [client]](volume-activation/activate-using-active-directory-based-activation-client.md)
+### [Activate clients running Windows 10](volume-activation/activate-windows-10-clients-vamt.md)
+### [Monitor activation [client]](volume-activation/monitor-activation-client.md)
+### [Use the Volume Activation Management Tool [client]](volume-activation/use-the-volume-activation-management-tool-client.md)
+### [Appendix: Information sent to Microsoft during activation [client]](volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md)
 
+## [Change history for Deploy and Update Windows 10](change-history-for-deploy-windows-10.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
 

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
+  <defs>
+    <style>
+      .cls-1, .cls-12 {
+        fill: #80def9;
+      }
+
+      .cls-2, .cls-7, .cls-9 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #00bcf2;
+        stroke-linecap: round;
+      }
+
+      .cls-12, .cls-2, .cls-4, .cls-9 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #00bcf2;
+      }
+
+      .cls-10, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-12, .cls-4, .cls-9 {
+        stroke: #556a8a;
+      }
+
+      .cls-5 {
+        fill: #e5e5e5;
+      }
+
+      .cls-6 {
+        fill: #2bc7f4;
+      }
+
+      .cls-8 {
+        fill: #556a8a;
+      }
+
+      .cls-11 {
+        fill: #f1f2f2;
+      }
+    </style>
+  </defs>
+  <title>bcs-partner-identity-manager</title>
+  <g id="ICONS">
+    <path class="cls-1" d="M327.31,58.4a36.36,36.36,0,0,0-71.78-1.14,24.75,24.75,0,0,0-39.75,12.58,21.63,21.63,0,1,0-5.14,42.64H332.36c12.35-2.51,21.64-14,21.64-27A27,27,0,0,0,327.31,58.4Z"/>
+    <g>
+      <line class="cls-2" x1="119" y1="62" x2="193" y2="62"/>
+      <polygon class="cls-3" points="186.24 70.18 184.87 68.72 192.09 62 184.87 55.29 186.24 53.82 195.03 62 186.24 70.18"/>
+    </g>
+    <g>
+      <rect class="cls-4" x="57" y="24" width="53" height="91"/>
+      <g>
+        <rect class="cls-5" x="83" y="25" width="26" height="89"/>
+        <rect class="cls-6" x="59" y="47" width="24" height="3"/>
+        <polygon class="cls-7" points="95 33 59 33 59 36 95 36 95 33 95 33"/>
+        <polyline class="cls-7" points="95 33 59 33 59 36 95 36 95 33"/>
+        <rect class="cls-6" x="59" y="40" width="24" height="3"/>
+        <rect class="cls-6" x="59" y="33" width="24" height="3"/>
+        <rect class="cls-8" x="83" y="33" width="28" height="3"/>
+        <rect class="cls-8" x="83" y="40" width="28" height="3"/>
+        <rect class="cls-8" x="83" y="47" width="28" height="3"/>
+      </g>
+      <rect class="cls-8" x="57" y="33" width="4" height="3"/>
+      <rect class="cls-8" x="57" y="40" width="4" height="3"/>
+      <rect class="cls-8" x="57" y="47" width="4" height="3"/>
+    </g>
+    <g>
+      <circle class="cls-4" cx="112.67" cy="83.6" r="12.08"/>
+      <path class="cls-4" d="M93.35,115A19.33,19.33,0,0,1,132,115Z"/>
+    </g>
+    <g>
+      <rect class="cls-9" x="268.73" y="41.87" width="27" height="36" rx="12" ry="12"/>
+      <path class="cls-10" d="M304.73,65.87v32a2,2,0,0,1-2,2H262.69a2,2,0,0,1-2-2v-32a2,2,0,0,1,2-2h40.09A2,2,0,0,1,304.73,65.87Z"/>
+      <path class="cls-5" d="M304.73,65.87v31l-33-33h31A2,2,0,0,1,304.73,65.87Z"/>
+      <path class="cls-9" d="M304.73,97.87a2,2,0,0,1-2,2H262.69a2,2,0,0,1-2-2v-32a2,2,0,0,1,2-2h40.09a2,2,0,0,1,2,2Z"/>
+    </g>
+    <g>
+      <path class="cls-11" d="M254.1,82.49a15.33,15.33,0,1,0-5.48,7.14v5h4.86v5.6h6.4v6.4h9.6V97.31Z"/>
+      <path class="cls-9" d="M254.1,82.49a15.33,15.33,0,1,0-5.48,7.14v5h4.86v5.6h6.4v6.4h9.6V97.31Z"/>
+      <circle class="cls-12" cx="235.73" cy="71.51" r="3.24"/>
+    </g>
+  </g>
+</svg>
