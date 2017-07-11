@@ -44,15 +44,11 @@ Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML 
     </AppLockerPolicy>
 
 To use the Set-AppLockerPolicy cmdlet, first import the Applocker modules:
-
-    ```powershell
+    
     PS C:\Users\Administrator> import-module AppLocker
-    ```
 
 We will create a file (for example, clear.xml), place it in the same directory where we are executing our cmdlet, and add the preceding XML contents. Then run the following command:
-
-    ```powershell
+    
     C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
-    ```
 
 This will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.
