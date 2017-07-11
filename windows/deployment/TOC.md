@@ -258,7 +258,5 @@
 
 ## [Change history for Deploy and Update Windows 10](change-history-for-deploy-windows-10.md)
 
-
-
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
 
