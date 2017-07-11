@@ -45,6 +45,9 @@ Clicking the Frequently Crashing Devices blade opens a reliability perspective v
 
 In this view, you can click a particular device to see the details of that particular device and for each crash recorded on it. (You can also reach this view by clicking a particular device on the Frequently Crashing Devices blade.)
 
+>[!NOTE]
+> Use caution when interpreting results filtered by model or operating system version. This is very useful for troubleshooting, but might not be accurate for *comparisons* because the crashes displayed could be of different types.
+
 
 ![Device detail and history](images/device-crash-history.png)
 

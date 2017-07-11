@@ -32,7 +32,7 @@ Windows Error Reporting | watson.telemetry.microsoft.com
 Online Crash Analysis | oca.telemetry.microsoft.com
 
 >[!NOTE]  
-> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must bypass authentication for the endpoints in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703.
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** authentication for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization) for steps to exclude these endpoints.
 
 
 ## Add Device Health to Microsoft Operations Management Suite
