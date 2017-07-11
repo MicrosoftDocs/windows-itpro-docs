@@ -9,7 +9,6 @@
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 
-
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
@@ -70,9 +69,6 @@
 
 #### [Change history for Plan for Windows 10 deployment](planning/change-history-for-plan-for-windows-10-deployment.md)
 
-
-
-
 ### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 #### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
 ##### [Key features in MDT](deploy-windows-mdt/key-features-in-mdt.md)
@@ -94,8 +90,6 @@
 ##### [Use web services in MDT](deploy-windows-mdt/use-web-services-in-mdt.md)
 ##### [Use Orchestrator runbooks with MDT](deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md)
 
-
-
 ### [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 #### [Integrate Configuration Manager with MDT](deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)
 #### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
@@ -110,9 +104,6 @@
 #### [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
-
-
-
 
 ### [Windows 10 deployment tools](windows-10-deployment-tools-reference.md)
 
@@ -241,24 +232,4 @@
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
-## [Convert MBR partition to GPT](mbr-to-gpt.md)
-## [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md)
-## [Sideload apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10)
-## [Add Microsoft Store for Business applications to a Windows 10 image](add-store-apps-to-image.md)
-## [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md)
-
-## [Volume Activation [client]](volume-activation/volume-activation-windows-10.md)
-### [Plan for volume activation [client]](volume-activation/plan-for-volume-activation-client.md)
-### [Activate using Key Management Service [client]](volume-activation/activate-using-key-management-service-vamt.md)
-### [Activate using Active Directory-based activation [client]](volume-activation/activate-using-active-directory-based-activation-client.md)
-### [Activate clients running Windows 10](volume-activation/activate-windows-10-clients-vamt.md)
-### [Monitor activation [client]](volume-activation/monitor-activation-client.md)
-### [Use the Volume Activation Management Tool [client]](volume-activation/use-the-volume-activation-management-tool-client.md)
-### [Appendix: Information sent to Microsoft during activation [client]](volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md)
-
-## [Change history for Deploy and Update Windows 10](change-history-for-deploy-windows-10.md)
-
-
-
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
-
