@@ -563,6 +563,98 @@ ms.author: celested
                             </li>
                         </ul>
                     </li>
+                <li>
+                <a href="#partner">Partner</a>
+                <ul id="partner">
+                    <li>
+                        <a href="#partner-all"></a>
+                        <ul id="partner-all" class="cardsZ">
+                            <li>
+                                <a href="https://www.mepn.com">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <!--
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="UWP apps for education" />
+                                                    </div>
+                                                </div>
+                                                -->
+                                                <div class="cardText">
+                                                    <h3>Microsoft Education Partner Network</h3>
+                                                    <p>Find out the latest news and announcements for Microsoft Education partners.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mepn.com/MEPN/AEPSearch.aspx">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <!--
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="Take a Test API" />
+                                                    </div>
+                                                </div>
+                                                -->
+                                                <div class="cardText">
+                                                    <h3>Partner directory</h3>
+                                                    <p>Browse through the list of Microsoft Education partners worldwide who can deliver on customer licensing requirements, and provide solutions and services to current and future school needs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.mepn.com/MEPN/AEPHome.aspx">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <!--
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="Office Education Dev Center" />
+                                                    </div>
+                                                </div>
+                                                -->
+                                                <div class="cardText">
+                                                    <h3>Authorized Education Partner (AEP) home page</h3>
+                                                    <p>Access the essentials of what it takes to become an AEP.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.yammer.com/mepn/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <!--
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="Office Education Dev Center" />
+                                                    </div>
+                                                </div>
+                                                -->
+                                                <div class="cardText">
+                                                    <h3>Education Partner community Yammer group</h3>
+                                                    <p>Sign in with your Microsoft Partner account and join the Education Partner community private group on Yammer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
         </ul>
