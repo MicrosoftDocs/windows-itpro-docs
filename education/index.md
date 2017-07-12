@@ -570,7 +570,7 @@ ms.author: celested
                 <ul id="partner">
                     <li>
                         <a href="#partner-all"></a>
-                        <ul id="partner-all" class="cardsZ">
+                        <ul id="partner-all" class="cardsC">
                             <li>
                                 <a href="https://www.mepn.com">
                                     <div class="cardSize">
