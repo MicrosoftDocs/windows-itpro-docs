@@ -578,7 +578,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-mepn-1.svg" alt="UWP apps for education" />
+                                                        <img src="images/education-partner-mepn-1.svg" alt="Microsoft Education Partner Network" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -597,7 +597,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-aep-2.svg" alt="Office Education Dev Center" />
+                                                        <img src="images/education-partner-aep-2.svg" alt="Authorized Education Partner home page" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -616,7 +616,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-directory-3.svg" alt="Take a Test API" />
+                                                        <img src="images/education-partner-directory-3.svg" alt="Authorized Education Partner directory" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -635,7 +635,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/education-partner-yammer.svg" alt="Office Education Dev Center" />
+                                                        <img src="images/education-partner-yammer.svg" alt="Education Partner community Yammer group" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
