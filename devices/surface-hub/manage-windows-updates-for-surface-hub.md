@@ -70,9 +70,9 @@ This table gives examples of deployment rings.
 
 | Deployment ring | Ring size | Servicing branch | Deferral for feature updates | Deferral for quality updates (security fixes, drivers, and other updates) | Validation step |
 | --------- | --------- | --------- | --------- | --------- | --------- |
-| Evaluation (e.g. non-critical or test devices) | Small | Current Branch (CB) | None. Devices receive feature updates immediately after CB is released. | None. Devices receive quality updates immediately after CB is released. | Manually test and evaluate new functionality. Pause updates if there are issues. |
-| Pilot (e.g. devices used by select teams) | Medium | Current Branch for Business (CBB) | None. Devices receive feature updates immediately once CBB is released. | None. Devices receive quality updates immediately after CBB is released. | Monitor device usage and user feedback. Pause updates if there are issues. |
-| Broad deployment (e.g. most of the devices in your organization) | Large | Current Branch for Business (CBB) |  60 days after CBB is released. | 14 days after CBB is released. | Monitor device usage and user feedback. Pause updates if there are issues. |
+| Preview (e.g. non-critical or test devices) | Small | Current Branch (CB) | None. Devices receive feature updates immediately after CB is released. | None. Devices receive quality updates immediately after CB is released. | Manually test and evaluate new functionality. Pause updates if there are issues. |
+| Release (e.g. devices used by select teams) | Medium | Current Branch for Business (CBB) | None. Devices receive feature updates immediately once CBB is released. | None. Devices receive quality updates immediately after CBB is released. | Monitor device usage and user feedback. Pause updates if there are issues. |
+| Broad deployment (e.g. most of the devices in your organization) | Large | Current Branch for Business (CBB) |  120 days after CBB is released. | 7-14 days after CBB is released. | Monitor device usage and user feedback. Pause updates if there are issues. |
 | Mission critical (e.g. devices in executive boardrooms) | Small | Current Branch for Business (CBB) |  180 days after CBB is released (maximum deferral for feature updates). | 30 days after CBB is released (maximum deferral for quality updates). | Monitor device usage and user feedback. |
 
 

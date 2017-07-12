@@ -21,8 +21,8 @@ With Windows 10, you can quickly upgrade from one edition of Windows 10 to ano
 The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607. 
 
 X = unsupported <BR>
-✔ (green) = supported; reboot required<BR>
-✔ (blue) = supported; no reboot required. 
+&#x2714; (green) = supported; reboot required<BR>
+&#x2714; (blue) = supported; no reboot required
 
 
 |Method |Home > Pro |Home > Education |Pro > Education |Pro > Enterprise |Ent > Education |Mobile > Mobile Enterprise |

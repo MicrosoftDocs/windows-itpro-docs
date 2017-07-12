@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #bad80a;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-6, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #556a8a;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #a7a9ac;
+      }
+
+      .cls-4 {
+        fill: #80def9;
+      }
+
+      .cls-5 {
+        fill: #00b294;
+      }
+
+      .cls-6 {
+        fill: #00bcf2;
+      }
+
+      .cls-7 {
+        fill: #9273b6;
+      }
+    </style>
+  </defs>
+  <title>bcs-partner-advanced-management-add-user-1</title>
+  <g id="ICONS">
+    <path class="cls-1" d="M288,58.5A39.49,39.49,0,1,1,248.5,19,39.3,39.3,0,0,1,288,58.5Z"/>
+    <rect class="cls-2" x="130" y="30" width="117" height="73"/>
+    <rect class="cls-2" x="138" y="38" width="117" height="73"/>
+    <rect class="cls-2" x="146" y="46" width="117" height="73"/>
+    <line class="cls-3" x1="213" y1="71" x2="251" y2="71"/>
+    <line class="cls-3" x1="213" y1="79" x2="251" y2="79"/>
+    <line class="cls-3" x1="213" y1="87" x2="251" y2="87"/>
+    <g>
+      <circle class="cls-4" cx="182.5" cy="71" r="15"/>
+      <path class="cls-4" d="M159,110a23.51,23.51,0,1,1,47,0"/>
+    </g>
+    <circle class="cls-2" cx="133" cy="46" r="24"/>
+    <polygon class="cls-5" points="150 42 136 42 136 28 129 28 129 42 115 42 115 49 129 49 129 63 136 63 136 49 150 49 150 42"/>
+    <g>
+      <path class="cls-6" d="M112,73a12,12,0,1,1-12-12A11.94,11.94,0,0,1,112,73Z"/>
+      <path class="cls-6" d="M300,80a12,12,0,1,1-12-12A11.94,11.94,0,0,1,300,80Z"/>
+      <path class="cls-7" d="M281,102a6,6,0,1,1-6-6A6,6,0,0,1,281,102Z"/>
+      <path class="cls-7" d="M92,44a6,6,0,1,1-6-6A6,6,0,0,1,92,44Z"/>
+    </g>
+  </g>
+</svg>

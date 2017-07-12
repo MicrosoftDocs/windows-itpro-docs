@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/28/2017
+ms.date: 07/07/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -27,6 +27,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 -   [What's new in Windows 10, version 1511](#whatsnew)
 -   [What's new in Windows 10, version 1607](#whatsnew1607)
 -   [What's new in Windows 10, version 1703](#whatsnew10)
+-   [What's new in Windows 10, version 1709](#whatsnew1709)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
     -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
@@ -913,6 +914,85 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table> 
 
+## <a href="" id="whatsnew1709"></a>What's new in Windows 10, version 1709
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="even">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[CM_ProxyEntries CSP](cm-proxyentries-csp.md) and [CMPolicy CSP](cmpolicy-csp.md)</td>
+<td style="vertical-align:top">In Windows 10, version 1709, support for desktop SKUs were added to these CSPs. The table of SKU information in the [Configuration service provider reference](configuration-service-provider-reference.md) was updated.</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
+<td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
+<ul>
+<li>CredentialProviders/EnableWindowsAutoPilotResetCredentials</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
+<li>Power/DisplayOffTimeoutOnBattery</li>
+<li>Power/DisplayOffTimeoutPluggedIn</li>
+<li>Power/HibernateTimeoutOnBattery</li>
+<li>Power/HibernateTimeoutPluggedIn</li>
+<li>Power/StandbyTimeoutOnBattery</li>
+<li>Power/StandbyTimeoutPluggedIn</li>
+<li>Defender/AttackSurfaceReductionOnlyExclusions</li>
+<li>Defender/AttackSurfaceReductionRules</li>
+<li>Defender/CloudBlockLevel </li>
+<li>Defender/CloudExtendedTimeout</li>
+<li>Defender/EnableGuardMyFolders</li>
+<li>Defender/EnableNetworkProtection</li>
+<li>Defender/GuardedFoldersAllowedApplications</li>
+<li>Defender/GuardedFoldersList</li>
+<li>Update/ScheduledInstallEveryWeek</li>
+<li>Update/ScheduledInstallFirstWeek</li>
+<li>Update/ScheduledInstallFourthWeek</li>
+<li>Update/ScheduledInstallSecondWeek</li>
+<li>Update/ScheduledInstallThirdWeek</li>
+<li>WindowsDefenderSecurityCenter/CompanyName</li>
+<li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
+<li>WindowsDefenderSecurityCenter/DisableEnhancedNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableFamilyUI</li>
+<li>WindowsDefenderSecurityCenter/DisableHealthUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNetworkUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableVirusUI</li>
+<li>WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride</li>
+<li>WindowsDefenderSecurityCenter/Email</li>
+<li>WindowsDefenderSecurityCenter/EnableCustomizedToasts</li>
+<li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
+<li>WindowsDefenderSecurityCenter/Phone</li>
+<li>WindowsDefenderSecurityCenter/URL</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
 
 ## Breaking changes and known issues
 
@@ -1178,6 +1258,55 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### July 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
+<td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top">Added the following statements:.
+<ul>
+<li>When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.</li>
+<li>When you enable SystemDrivesRecoveryMessage, you must specify values for all three settings (pre-boot recovery screen, recovery message, and recovery URL), otherwise it will fail (500 return status). For example, if you only specify values for message and URL, you will get a 500 return status.</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top">
+<p>Added the following new policies for Windows 10, version 1709:</p>
+<ul>
+<li>WindowsDefenderSecurityCenter/CompanyName</li>
+<li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
+<li>WindowsDefenderSecurityCenter/DisableEnhancedNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableFamilyUI</li>
+<li>WindowsDefenderSecurityCenter/DisableHealthUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNetworkUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableVirusUI</li>
+<li>WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride</li>
+<li>WindowsDefenderSecurityCenter/Email</li>
+<li>WindowsDefenderSecurityCenter/EnableCustomizedToasts</li>
+<li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
+<li>WindowsDefenderSecurityCenter/Phone</li>
+<li>WindowsDefenderSecurityCenter/URL</li>
+</ul>
+</tbody>
+</table>
 
 ### June 2017
 

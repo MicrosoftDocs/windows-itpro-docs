@@ -228,6 +228,7 @@
 #### [TimeLanguageSettings](policy-csp-timelanguagesettings.md)
 #### [Update](policy-csp-update.md)
 #### [Wifi](policy-csp-wifi.md)
+#### [WindowsDefenderSecurityCenter](policy-csp-windowsdefendersecuritycenter.md)
 #### [WindowsInkWorkspace](policy-csp-windowsinkworkspace.md)
 #### [WindowsLogon](policy-csp-windowslogon.md)
 #### [WirelessDisplay](policy-csp-wirelessdisplay.md)
