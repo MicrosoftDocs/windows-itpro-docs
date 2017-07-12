@@ -105,8 +105,9 @@
 #### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 
-### [Windows 10 deployment tools](windows-10-deployment-tools-reference.md)
+### [Windows 10 deployment tools](windows-10-deployment-tools.md)
 
+#### [Windows 10 deployment scenarios and tools](windows-deployment-scenarios-and-tools.md)
 #### [Convert MBR partition to GPT](mbr-to-gpt.md)
 #### [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md)
 #### [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md)
