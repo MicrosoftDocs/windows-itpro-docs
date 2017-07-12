@@ -215,7 +215,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                        <img src="images/education-pro-usb.svg" alt="Set up School PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -234,7 +234,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                        <img src="images/education-ms-teams.svg" alt="Meet Microsoft Teams" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -377,7 +377,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                        <img src="images/education-ms-teams.svg" alt="Meet Microsoft Teams" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -396,7 +396,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                        <img src="images/education-pro-usb.svg" alt="Set up School PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
