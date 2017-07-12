@@ -20,7 +20,7 @@
 ### [Manage access to private store](manage-access-to-private-store.md)
 ### [Manage private store settings](manage-private-store-settings.md)
 ### [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md)
-##  [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md)
+### [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md)
 ## [Device Guard signing portal](device-guard-signing-portal.md)
 ### [Add unsigned app to code integrity policy](add-unsigned-app-to-code-integrity-policy.md)
 ### [Sign code integrity policy with Device Guard signing](sign-code-integrity-policy-with-device-guard-signing.md)
