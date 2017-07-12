@@ -17,7 +17,7 @@ description: Learn about the product documentation and resources available for M
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
-                                    <div class="cardImage bgdAccent1">
+                                    <div class="cardImage">
                                         <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/ih_learn-about.svg" alt="Learn about Microsoft 365 Business" />
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@ description: Learn about the product documentation and resources available for M
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
-                                    <div class="cardImage bgdAccent1">
+                                    <div class="cardImage">
                                         <img data-hoverimage="/media/common/ih_tools.svg" src="/media/common/ih_tools.svg" alt="Get started using Microsoft 365 Business" />
                                     </div>
                                 </div>
