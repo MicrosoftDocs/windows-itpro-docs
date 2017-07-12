@@ -15,7 +15,7 @@
 ## [Get Minecraft: Education Edition](get-minecraft-for-education.md)
 ### [For teachers: get Minecraft Education Edition](teacher-get-minecraft.md)
 ### [For IT administrators: get Minecraft Education Edition](school-get-minecraft.md)
-### [Get Minecraft: Education Edition with Windows 10 device promotion](get-minecraft-for-education.md)
+### [Get Minecraft: Education Edition with Windows 10 device promotion](get-minecraft-device-promotion.md)
 ## [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
 ## [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)
 ## [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md)
