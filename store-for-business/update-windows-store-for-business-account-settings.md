@@ -74,7 +74,7 @@ These countries can provide their VAT number or local equivalent in **Payments &
 |------|----------------|
 | Australia | ABN (optional) |
 | Brazil | CNPJ (required) |
-| India | CST ID, VAT ID (both are optional) |
+| India | GSTIN (optional), PAN ID (required) |
 | New Zealand | GST Registration number (optional) |
 | Taiwan | VAT ID (optional) |
 

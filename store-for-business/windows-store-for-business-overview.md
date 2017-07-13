@@ -317,6 +317,7 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Bosnia
 - Brazil
 - Georgia
+- India
 - Kazakhstan
 - Korea
 - Republic of Moldova
