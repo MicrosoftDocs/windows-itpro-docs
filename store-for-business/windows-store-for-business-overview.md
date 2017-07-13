@@ -305,7 +305,6 @@ Microsoft Store for Business and Education is currently available in these marke
 
 ### Support for free apps
 Customers in these markets can use Microsoft Store for Business and Education to acquire free apps:
-- India
 - Russia 
 
 ### Support for free apps and Minecraft: Education Edition
