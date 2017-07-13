@@ -21,6 +21,7 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 | New or changed topic | Description |
 | --- | --- |
 | [Windows updates](manage-windows-updates-for-surface-hub.md) | Changed deferral recommendations for Windows Updates |
+| [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Added Whiteboard URLs to prerequisites |
 
 ## June 2017
 
