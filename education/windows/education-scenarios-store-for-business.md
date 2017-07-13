@@ -6,6 +6,8 @@ ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
+searchScope:
+  - Store
 author: trudyha
 ms.author: trudyha
 ---

@@ -7,6 +7,8 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 localizationpriority: high
 author: trudyha
+searchScope:
+  - Store
 ms.author: trudyha
 ms.date: 06/29/2017
 ---
