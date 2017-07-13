@@ -172,6 +172,10 @@
 
 ## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
 
+## [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md)
+
+## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
+
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
 
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
