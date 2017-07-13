@@ -179,11 +179,4 @@
 ##### [Verify That Network Traffic Is Authenticated](windows-firewall/verify-that-network-traffic-is-authenticated.md)
 
 ## [Windows Hello for Business](hello-for-business/hello-identity-verification.md)
-### [How Windows Hello for Business works](hello-for-business/hello-how-it-works.md)
-### [Manage Windows Hello for Business in your organization](hello-for-business/hello-manage-in-organization.md)
-### [Why a PIN is better than a password](hello-for-business/hello-why-pin-is-better-than-password.md)
-### [Prepare people to use Windows Hello](hello-for-business/hello-prepare-people-to-use.md)
-### [Windows Hello and password changes](hello-for-business/hello-and-password-changes.md)
-### [Windows Hello errors during PIN creation](hello-for-business/hello-errors-during-pin-creation.md)
-### [Event ID 300 - Windows Hello successfully created](hello-for-business/hello-event-300.md)
-### [Windows Hello biometrics in the enterprise](hello-for-business/hello-biometrics-in-enterprise.md)
+

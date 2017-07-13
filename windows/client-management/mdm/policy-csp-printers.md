@@ -1,0 +1,184 @@
+---
+title: Policy CSP - Printers
+description: Policy CSP - Printers
+ms.author: maricia
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
+---
+
+# Policy CSP - Printers
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+<!--StartPolicies-->
+<hr/>
+
+## Printers policies  
+
+<!--StartPolicy-->
+<a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
+
+If you enable this policy setting:
+-Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
+-You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
+
+If you do not configure this policy setting:
+-Windows Vista client computers can point and print to any server.
+-Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
+-Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
+-Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
+
+If you disable this policy setting:
+-Windows Vista client computers can create a printer connection to any server using Point and Print.
+-Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+-Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+-Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
+-The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Point and Print Restrictions*
+-   GP name: *PointAndPrint_Restrictions_Win7*
+-   GP ADMX file name: *Printing.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="printers-pointandprintrestrictions_user"></a>**Printers/PointAndPrintRestrictions_User**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
+
+If you enable this policy setting:
+-Windows XP and later clients will only download print driver components from a list of explicitly named servers. If a compatible print driver is available on the client, a printer connection will be made. If a compatible print driver is not available on the client, no connection will be made.
+-You can configure Windows Vista clients so that security warnings and elevated command prompts do not appear when users Point and Print, or when printer connection drivers need to be updated.
+
+If you do not configure this policy setting:
+-Windows Vista client computers can point and print to any server.
+-Windows Vista computers will show a warning and an elevated command prompt when users create a printer connection to any server using Point and Print.
+-Windows Vista computers will show a warning and an elevated command prompt when an existing printer connection driver needs to be updated.
+-Windows Server 2003 and Windows XP client computers can create a printer connection to any server in their forest using Point and Print.
+
+If you disable this policy setting:
+-Windows Vista client computers can create a printer connection to any server using Point and Print.
+-Windows Vista computers will not show a warning or an elevated command prompt when users create a printer connection to any server using Point and Print.
+-Windows Vista computers will not show a warning or an elevated command prompt when an existing printer connection driver needs to be updated.
+-Windows Server 2003 and Windows XP client computers can create a printer connection to any server using Point and Print.
+-The "Users can only point and print to computers in their forest" setting applies only to Windows Server 2003 and Windows XP SP1 (and later service packs).
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Point and Print Restrictions*
+-   GP name: *PointAndPrint_Restrictions*
+-   GP ADMX file name: *Printing.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+Determines whether the computer's shared printers can be published in Active Directory.
+
+If you enable this setting or do not configure it, users can use the "List in directory" option in the Printer's Properties' Sharing tab to publish shared printers in Active Directory.
+
+If you disable this setting, this computer's shared printers cannot be published in Active Directory, and the "List in directory" option is not available.
+
+Note: This settings takes priority over the setting "Automatically publish new printers in the Active Directory".
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Allow printers to be published*
+-   GP name: *PublishPrinters*
+-   GP ADMX file name: *Printing2.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<hr/>
+
+Footnote:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+
+<!--EndPolicies-->
+

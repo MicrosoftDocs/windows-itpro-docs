@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Antivirus
-description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10.
+description: Learn how to manage, configure, and use Windows Defender AV, the built-in antimalware and antivirus product available in Windows 10 and Windows Server 2016
 keywords: windows defender antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -12,16 +12,17 @@ localizationpriority: medium
 author: iaanw
 ---
 
-# Windows Defender Antivirus in Windows 10
+# Windows Defender Antivirus in Windows 10 and Windows Server 2016
 
 **Applies to**
 -   Windows 10
+-   Windows Server 2016
 
 Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers.
 
 This library of documentation is aimed for enterprise security administrators who are either considering deployment, or have already deployed and are wanting to manage and configure Windows Defender AV on PC endpoints in their network.
 
-For more important information about running Windows Defender on a server platform, see [Windows Defender Overview for Windows Server](https://technet.microsoft.com/library/dn765478.aspx).
+For more important information about running Windows Defender on a server platform, see [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md).
 
 Windows Defender AV can be managed with:
 - System Center Configuration Manager (as System Center Endpoint Protection, or SCEP) 
@@ -57,14 +58,14 @@ See the [In this library](#in-this-library) list at the end of this topic for li
 <a id="sysreq"></a>
 ## Minimum system requirements
 
-Windows Defender has the same hardware requirements as Windows 10. For more information, see:
+Windows Defender AV has the same hardware requirements as Windows 10. For more information, see:
 -   [Minimum hardware requirements](https://msdn.microsoft.com/library/windows/hardware/dn915086.aspx)
 -   [Hardware component guidelines](https://msdn.microsoft.com/library/windows/hardware/dn915049.aspx)
 
 
 Some features require a certain version of Windows 10 - the minimum version required is specified at the top of each topic.
 
-Functionality, configuration, and management is largely the same when using Windows Defender Antivirus on Windows Server 2016, however [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
+Functionality, configuration, and management is largely the same when using Windows Defender AV on Windows Server 2016, however [there are some differences](windows-defender-antivirus-on-windows-server-2016.md).
 
 
 
@@ -73,10 +74,13 @@ Functionality, configuration, and management is largely the same when using Wind
 
 Topic | Description
 :---|:---
-[Evaluate Windows Defender Antivirus protection](evaluate-windows-defender-antivirus.md) | Evaluate the protection capabilities of Windows Defender Antivirus with a specialized evaluation guide and PowerShell script
-[Deploy, manage updates, and report on Windows Defender Antivirus](deploy-manage-report-windows-defender-antivirus.md) | While traditional client deployment is not required for Windows Defender AV, you will need to enable the service. You can also manage how protection and product updates are applies, and receive reports from Configuration Manager, Intune, and with some security information and event monitoring (SIEM) tools
-[Configure Windows Defender features](configure-windows-defender-antivirus-features.md) | Windows Defender AV has a large set of configurable features and options. You can configure options such as cloud-delivered protection, always-on monitoring and scanning, and how end-users can interact or override global policy settings
+[Windows Defender AV in the Windows Defender Security Center app](windows-defender-security-center-antivirus.md) | The Windows Defender Security Center combines the settings and notifications from the previous Windows Defender AV app and Windows Settings in one easy-to-manage place
+[Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md) | Windows Defender AV can be used on Windows Server 2016, and features the same configuration and management capabilities as the Windows 10 version - with some added features for automatic exclusions
+[Windows Defender AV compatibility](windows-defender-antivirus-compatibility.md) | Windows Defender AV operates in different modes depending on whether it detects other AV products or if you are using Windows Defender Advanced Threat Protection
+[Evaluate Windows Defender AV protection](evaluate-windows-defender-antivirus.md) | Evaluate the protection capabilities of Windows Defender Antivirus with a specialized evaluation guide and PowerShell script
+[Deploy, manage updates, and report on Windows Defender AV](deploy-manage-report-windows-defender-antivirus.md) | While traditional client deployment is not required for Windows Defender AV, you will need to enable the service. You can also manage how protection and product updates are applies, and receive reports from Configuration Manager, Intune, and with some security information and event monitoring (SIEM) tools
+[Configure Windows Defender AV features](configure-windows-defender-antivirus-features.md) | Windows Defender AV has a large set of configurable features and options. You can configure options such as cloud-delivered protection, always-on monitoring and scanning, and how end-users can interact or override global policy settings
 [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-windows-defender-antivirus.md) | You can set up scheduled scans, run on-demand scans, and configure how remediation works when threats are detected
-[Troubleshoot Windows Defender in Windows 10](troubleshoot-windows-defender-antivirus.md)|Review event IDs and error codes in Windows Defender Antivirus to determine causes of problems and troubleshoot issues
+[Review event logs and error codes to troubleshoot issues](troubleshoot-windows-defender-antivirus.md)|Review event IDs and error codes in Windows Defender Antivirus to determine causes of problems and troubleshoot issues
 [Reference topics for management and configuration tools](configuration-management-reference-windows-defender-antivirus.md)|The management and configuration tools that you can use with Windows Defender AV are listed and described here
 

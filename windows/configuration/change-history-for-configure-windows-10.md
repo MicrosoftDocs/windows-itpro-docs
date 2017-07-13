@@ -14,10 +14,16 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## July 2017
+| New or changed topic | Description |
+| --- | --- |
+|[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)|Updated several Appraiser events and added Census.Speech.
+
 ## June 2017
 
 | New or changed topic | Description |
 | --- | --- |
+| [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added guidelines for using Remote Desktop app as the kiosk app and added a general guideline that apps generated using the Desktop App Converter cannot be used for kiosk apps |
 | [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) | Added warning about using Shell Launcher to set a custom shell with an application that launches a different process and then exits |
 | [Windows Configuration Designer command-line interface (reference)](provisioning-packages/provisioning-command-line.md) | Removed references to imaging |
 

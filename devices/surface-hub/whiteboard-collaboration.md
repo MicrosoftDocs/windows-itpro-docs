@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 07/13/2017
 localizationpriority: medium
 ---
 
@@ -28,6 +28,7 @@ To get Whiteboard to Whiteboard collaboration up and running, you’ll need to m
 - Currently not utilizing Office 365 Germany or Office 365 	operated by 21Vianet
 - Surface Hub needs to be updated to Windows 10, version 1607 or newer
 - Port 443 needs to be open since Whiteboard makes standard https requests
+- Whiteboard.ms, wbd.ms, \*.onenote.com, and your company's SharePoint tenant domain URLs need to be whitelisted for proxies
 
  
 >[!NOTE]
@@ -63,9 +64,9 @@ The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernApp
 
 | Setting | Details | OMA URI | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
 | --- | ---- | --- |---- | --- | --- |
-| Enable sign-in | Users can sign in and authenticate | EnableSignIn  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable sign-in | Users are unable to sign in and access collaboration or education features | DisableSignIn  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Collaboration | Users can sign in but not create or join collaborative sessions | DisableCollaboration  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Enable sign-in | Users can sign in and authenticate | EnableSignIn  | Yes <br> [Use a custom policy.](manage-settings-with-mdm-for-surface-hub.md#example-intune)  |  Yes.<br> [Use a custom setting.](manage-settings-with-mdm-for-surface-hub.md#example-sccm) | Yes |
+| Disable sign-in | Users are unable to sign in and access collaboration or education features | DisableSignIn  | Yes <br> [Use a custom policy.](manage-settings-with-mdm-for-surface-hub.md#example-intune)  |  Yes.<br> [Use a custom setting.](manage-settings-with-mdm-for-surface-hub.md#example-sccm) | Yes |
+| Disable Collaboration | Users can sign in but not create or join collaborative sessions | DisableCollaboration  | Yes <br> [Use a custom policy.](manage-settings-with-mdm-for-surface-hub.md#example-intune)  |  Yes.<br> [Use a custom setting.](manage-settings-with-mdm-for-surface-hub.md#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 Whiteboard also has other MDM settings that can be managed and set for defaults, exporting, and sharing. You can see these additional settings in [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md#whiteboard-collaboration-settings).

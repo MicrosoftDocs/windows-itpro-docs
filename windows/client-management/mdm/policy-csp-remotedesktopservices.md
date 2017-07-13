@@ -1,0 +1,314 @@
+---
+title: Policy CSP - RemoteDesktopServices
+description: Policy CSP - RemoteDesktopServices
+ms.author: maricia
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
+---
+
+# Policy CSP - RemoteDesktopServices
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+<!--StartPolicies-->
+<hr/>
+
+## RemoteDesktopServices policies  
+
+<!--StartPolicy-->
+<a href="" id="remotedesktopservices-allowuserstoconnectremotely"></a>**RemoteDesktopServices/AllowUsersToConnectRemotely**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+This policy setting allows you to configure remote access to computers by using Remote Desktop Services.
+
+If you enable this policy setting, users who are members of the Remote Desktop Users group on the target computer can connect remotely to the target computer by using Remote Desktop Services.
+
+If you disable this policy setting, users cannot connect remotely to the target computer by using Remote Desktop Services. The target computer will maintain any current connections, but will not accept any new incoming connections.
+
+If you do not configure this policy setting, Remote Desktop Services uses the Remote Desktop setting on the target computer to determine whether the remote connection is allowed. This setting is found on the Remote tab in the System properties sheet. By default, remote connections are not allowed.
+
+Note: You can limit which clients are able to connect remotely by using Remote Desktop Services by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security\Require user authentication for remote connections by using Network Level Authentication.
+
+You can limit the number of users who can connect simultaneously by configuring the policy setting at Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections\Limit number of connections, or by configuring the policy setting Maximum Connections by using the Remote Desktop Session Host WMI Provider.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Allow users to connect remotely by using Remote Desktop Services*
+-   GP name: *TS_DISABLE_CONNECTIONS*
+-   GP ADMX file name: *terminalserver.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="remotedesktopservices-clientconnectionencryptionlevel"></a>**RemoteDesktopServices/ClientConnectionEncryptionLevel**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you are using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) is not recommended. This policy does not apply to SSL encryption.
+
+If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:
+
+* High: The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that do not support this encryption level cannot connect to RD Session Host servers.
+
+* Client Compatible: The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that do not support 128-bit encryption.
+
+* Low: The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.
+
+If you disable or do not configure this setting, the encryption level to be used for remote connections to RD Session Host servers is not enforced through Group Policy.
+
+Important
+
+FIPS compliance can be configured through the System cryptography. Use FIPS compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Set client connection encryption level*
+-   GP name: *TS_ENCRYPTION_POLICY*
+-   GP ADMX file name: *terminalserver.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="remotedesktopservices-donotallowdriveredirection"></a>**RemoteDesktopServices/DoNotAllowDriveRedirection**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+This policy setting specifies whether to prevent the mapping of client drives in a Remote Desktop Services session (drive redirection).
+
+By default, an RD Session Host server maps client drives automatically upon connection. Mapped drives appear in the session folder tree in File Explorer or Computer in the format <driveletter> on <computername>. You can use this policy setting to override this behavior.
+
+If you enable this policy setting, client drive redirection is not allowed in Remote Desktop Services sessions, and Clipboard file copy redirection is not allowed on computers running Windows Server 2003, Windows 8, and Windows XP.
+
+If you disable this policy setting, client drive redirection is always allowed. In addition, Clipboard file copy redirection is always allowed if Clipboard redirection is allowed.
+
+If you do not configure this policy setting, client drive redirection and Clipboard file copy redirection are not specified at the Group Policy level.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Do not allow drive redirection*
+-   GP name: *TS_CLIENT_DRIVE_M*
+-   GP ADMX file name: *terminalserver.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="remotedesktopservices-donotallowpasswordsaving"></a>**RemoteDesktopServices/DoNotAllowPasswordSaving**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+Controls whether passwords can be saved on this computer from Remote Desktop Connection.
+
+If you enable this setting the password saving checkbox in Remote Desktop Connection will be disabled and users will no longer be able to save passwords. When a user opens an RDP file using Remote Desktop Connection and saves his settings, any password that previously existed in the RDP file will be deleted.
+
+If you disable this setting or leave it not configured, the user will be able to save passwords using Remote Desktop Connection.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Do not allow passwords to be saved*
+-   GP name: *TS_CLIENT_DISABLE_PASSWORD_SAVING_2*
+-   GP ADMX file name: *terminalserver.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="remotedesktopservices-promptforpassworduponconnection"></a>**RemoteDesktopServices/PromptForPasswordUponConnection**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+This policy setting specifies whether Remote Desktop Services always prompts the client for a password upon connection.
+
+You can use this setting to enforce a password prompt for users logging on to Remote Desktop Services, even if they already provided the password in the Remote Desktop Connection client.
+
+By default, Remote Desktop Services allows users to automatically log on by entering a password in the Remote Desktop Connection client.
+
+If you enable this policy setting, users cannot automatically log on to Remote Desktop Services by supplying their passwords in the Remote Desktop Connection client. They are prompted for a password to log on.
+
+If you disable this policy setting, users can always log on to Remote Desktop Services automatically by supplying their passwords in the Remote Desktop Connection client.
+
+If you do not configure this policy setting, automatic logon is not specified at the Group Policy level.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Always prompt for password upon connection*
+-   GP name: *TS_PASSWORD*
+-   GP ADMX file name: *terminalserver.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="remotedesktopservices-requiresecurerpccommunication"></a>**RemoteDesktopServices/RequireSecureRPCCommunication**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+Specifies whether a Remote Desktop Session Host server requires secure RPC communication with all clients or allows unsecured communication.
+
+You can use this setting to strengthen the security of RPC communication with clients by allowing only authenticated and encrypted requests.
+
+If the status is set to Enabled, Remote Desktop Services accepts requests from RPC clients that support secure requests, and does not allow unsecured communication with untrusted clients.
+
+If the status is set to Disabled, Remote Desktop Services always requests security for all RPC traffic. However, unsecured communication is allowed for RPC clients that do not respond to the request.
+
+If the status is set to Not Configured, unsecured communication is allowed.
+
+Note: The RPC interface is used for administering and configuring Remote Desktop Services.
+
+<!--EndDescription-->
+<!--StartADMX-->
+ADMX Info:  
+-   GP english name: *Require secure RPC communication*
+-   GP name: *TS_RPC_ENCRYPTION*
+-   GP ADMX file name: *terminalserver.admx*
+
+<!--EndADMX-->
+<!--EndPolicy-->
+<hr/>
+
+Footnote:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+
+<!--EndPolicies-->
+

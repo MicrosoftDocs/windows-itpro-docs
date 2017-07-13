@@ -9,6 +9,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: jobotto
+ms.date: 06/29/2017
 ---
 
 # Microsoft Surface Dock Updater
@@ -110,6 +111,17 @@ Microsoft periodically updates Surface Dock Updater. To learn more about the app
 
 >[!Note]
 >Each update to Surface Dock firmware is included in a new version of Surface Dock Updater. To update a Surface Dock to the latest firmware, you must use the latest version of Surface Dock Updater.
+
+### Version 2.1.15.0
+*Release date: June 19, 2017*
+
+This version of Surface Dock Updater adds support for the following:
+
+* Surface Laptop
+* Surface Pro
+
+>[!NOTE]
+>The Surface Dock Updater tool is unable to run on Windows 10 S. Surface Dock devices used with Surface Laptop with Windows 10 S will receive updates natively through Windows Update. To manually update a Surface Dock for use with Surface Laptop and Windows 10 S, connect the Surface Dock to another Surface device with a Windows 10 Pro or Windows 10 Enterprise environment.
 
 ### Version 1.0.8.0
 *Release date: April 26, 2016*
