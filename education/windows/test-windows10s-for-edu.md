@@ -135,6 +135,6 @@ TBD
 ## Support 
 Thank you for trying out Windows 10 S. Your best experience will be running on a supported device as mentioned above. If you are having difficulty installing or running Windows 10 S, use the Windows **Feedback Hub** to report your experience to Microsoft. This is the best way to help make Windows 10 S a great OS.  Frequently asked technical topics are covered online on our Support website and steps to return to your previous installation of Windows 10 covered above.  If you need to talk to an agent for help with additional online resources, please click on the appropriate link below for support options.
 
-<a name="footnote1"></a><sup>1</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small>
+<a name="footnote1"></a><sup>1</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br />
 <a name="footnote2"></a><sup>2</sup> <small>Internet access fees may apply.</small>
 
