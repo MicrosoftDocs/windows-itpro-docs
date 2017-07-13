@@ -4,6 +4,8 @@ description: Provides guidance on ways to configure the OS diagnostic data, cons
 keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations, accessibility, assistive technology
 ms.mktglfcycl: plan
 ms.sitesec: library
+ms.prod: w10
+ms.pagetype: edu
 localizationpriority: high
 author: CelesteDG
 ms.author: celested

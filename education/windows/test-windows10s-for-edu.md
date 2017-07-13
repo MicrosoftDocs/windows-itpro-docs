@@ -3,6 +3,8 @@ title: Test Windows 10 S on existing Windows 10 Pro education devices
 description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 Pro education devices.
 keywords: Windows 10 S, download, try, school, education
 ms.mktglfcycl: deploy
+ms.prod: w10
+ms.pagetype: edu
 ms.sitesec: library
 localizationpriority: high
 author: CelesteDG
@@ -125,7 +127,7 @@ To use an installation media to reinstall Windows 10, follow these steps.
 14. Follow the rest of the setup instructions to finish installing Windows 10.
 
 ## Download Windows 10 S
-Ready to try Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-pre-installation-information) and all the above information. 
+Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-pre-installation-information) and all the above information. 
 
 When you're ready, you can download the Windows 10 S installer from here: **TBD - add a link**
 
@@ -133,7 +135,9 @@ When you're ready, you can download the Windows 10 S installer from here: **TBD 
 TBD
 
 ## Support 
-Thank you for trying out Windows 10 S. Your best experience will be running on a supported device as mentioned above. If you are having difficulty installing or running Windows 10 S, use the Windows **Feedback Hub** to report your experience to Microsoft. This is the best way to help make Windows 10 S a great OS.  Frequently asked technical topics are covered online on our Support website and steps to return to your previous installation of Windows 10 covered above.  If you need to talk to an agent for help with additional online resources, please click on the appropriate link below for support options.
+Thank you for testing Windows 10 S. Your best experience will be running on a supported device as mentioned above. If you are having difficulty installing or running Windows 10 S, use the Windows **Feedback Hub** to report your experience to Microsoft. This is the best way to help make Windows 10 S a great OS. Frequently asked technical topics are covered online on our Support website and steps to return to your previous installation of Windows 10 are covered above. If you need to talk to an agent for help with additional online resources, click on the appropriate link below for support options.
+* For Volume Licensing Agreement or Shape the Future program customers, go to the [Microsoft Commercial Support](https://support.microsoft.com/gp/commercialsupport) website and select the country/region in which you are seeking commercial support to contact our commercial support team.
+* If you do not have a Volume Licensing Agreement, go to the [Microsoft Support](https://support.microsoft.com/en-us/contactus/) website and choose a support option.
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
