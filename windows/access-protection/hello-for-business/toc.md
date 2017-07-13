@@ -1,6 +1,6 @@
 # [Windows Hello for Business](hello-identity-verification.md)
 
-## [Windows Hello for Business Overview](hello-overview.md)
+## [Winodws Hello for Business Overview](hello-overview.md)
 ## [How Windows Hello for Business works](hello-how-it-works.md)
 ## [Manage Windows Hello for Business in your organization](hello-manage-in-organization.md)
 ## [Why a PIN is better than a password](hello-why-pin-is-better-than-password.md)

@@ -8,7 +8,6 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.author: lizross
 localizationpriority: high
 ---
 

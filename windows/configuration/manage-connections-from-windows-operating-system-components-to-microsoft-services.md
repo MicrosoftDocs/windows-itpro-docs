@@ -296,7 +296,7 @@ After that, configure the following:
 -   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Enable Windows NTP Server** &gt; **Windows Time Service** &gt; **Configure Windows NTP Client**
     
     > [!NOTE]  
-    > This is only available on Windows 10, version 1703 and later. If you're using a previous version of Windows 10, the Group Policy setting is **Computer Configuration\\Administrative Templates\\System\\Windows Time Service\\Time Providers\\Enable Windows NTP Client**
+    > This is only available on Windows 10, version 1703 and later.
 
     -or -
 
@@ -1423,7 +1423,7 @@ In the **Background Apps** area, you can choose which apps can run in the backgr
 
 To turn off **Let apps run in the background**:
 
--   For Windows 10, version 1607 and earlier, you must turn off the feature in the UI for each app.
+-   Turn off the feature in the UI for each app.
     
      -or-
 
@@ -1690,10 +1690,11 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
 
 - **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
 
-    > [!NOTE]  
-    > This must be done within 15 minutes after Windows 10 is installed. Alternatively, you can create an image with this setting.
-    
     -or-
+
+-   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
+
+	-and-
 
 -   Create a new REG\_DWORD registry setting in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
 
