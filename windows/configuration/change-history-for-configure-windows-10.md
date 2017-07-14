@@ -8,6 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
 author: jdeckerms
+ms.author: jdecker
+ms.date: 07/13/2017
 ---
 
 # Change history for Configure Windows 10
@@ -17,7 +19,8 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 ## July 2017
 | New or changed topic | Description |
 | --- | --- |
-|[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)|Updated several Appraiser events and added Census.Speech.
+| [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Fixed Group Policy settings that were not correct. |
+|[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) | Updated several Appraiser events and added Census.Speech. |
 
 ## June 2017
 
