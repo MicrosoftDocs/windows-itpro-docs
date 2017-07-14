@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 07/14/2017
 ---
 
 # Policy CSP - Update
@@ -1110,7 +1111,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="update-PauseFeatureUpdatesStartTime"></a>**Update/PauseFeatureUpdatesStartTime**  
+<a href="" id="update-pausefeatureupdatesstarttime"></a>**Update/PauseFeatureUpdatesStartTime**  
 
 <!--StartSKU-->
 <table>
@@ -1182,7 +1183,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="update-PauseQualityUpdatesStartTime"></a>**Update/PauseQualityUpdatesStartTime**  
+<a href="" id="update-pausequalityupdatesstarttime"></a>**Update/PauseQualityUpdatesStartTime**  
 
 <!--StartSKU-->
 <table>
