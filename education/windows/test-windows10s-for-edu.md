@@ -141,7 +141,7 @@ Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Edu
 When you're ready, you can download the Windows 10 S installer from here: **TBD - add a link**
 
 ## Terms and conditions
-TBD
+**TBD** - CELA to provide written statement on what the product is licensed for that shares anything important in the Windows 10 S installer Terms and Conditions. Is this only for education customers or anyone with Windows 10 Pro or Windows 10 Pro Education?
 
 ## Support 
 Thank you for testing Windows 10 S. Your best experience will be running on a supported device as mentioned above. If you are having difficulty installing or running Windows 10 S, use the Windows **Feedback Hub** to report your experience to Microsoft. This is the best way to help make Windows 10 S a great OS. Frequently asked technical topics are covered online on our Support website and steps to return to your previous installation of Windows 10 are covered above. If you need to talk to an agent for help with additional online resources, click on the appropriate link below for support options.
