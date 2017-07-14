@@ -215,7 +215,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                        <img src="images/education-pro-usb.svg" alt="Set up School PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -234,7 +234,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                        <img src="images/education-ms-teams.svg" alt="Meet Microsoft Teams" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -377,7 +377,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-ms-teams.svg" alt="Meet Microsoft Teams" />
+                                                        <img src="images/education-ms-teams.svg" alt="Meet Microsoft Teams" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -396,7 +396,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-pro-usb.svg" alt="Set up School PCs" />
+                                                        <img src="images/education-pro-usb.svg" alt="Set up School PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -570,19 +570,17 @@ ms.author: celested
                 <ul id="partner">
                     <li>
                         <a href="#partner-all"></a>
-                        <ul id="partner-all" class="cardsZ">
+                        <ul id="partner-all" class="cardsC">
                             <li>
                                 <a href="https://www.mepn.com">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
-                                                <!--
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-uwp-apps.svg" alt="UWP apps for education" />
+                                                        <img src="images/education-partner-mepn-1.svg" alt="Microsoft Education Partner Network" />
                                                     </div>
                                                 </div>
-                                                -->
                                                 <div class="cardText">
                                                     <h3>Microsoft Education Partner Network</h3>
                                                     <p>Find out the latest news and announcements for Microsoft Education partners.</p>
@@ -597,13 +595,11 @@ ms.author: celested
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
-                                                <!--
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="Office Education Dev Center" />
+                                                        <img src="images/education-partner-aep-2.svg" alt="Authorized Education Partner home page" />
                                                     </div>
                                                 </div>
-                                                -->
                                                 <div class="cardText">
                                                     <h3>Authorized Education Partner (AEP) home page</h3>
                                                     <p>Access the essentials and find out what it takes to become an AEP.</p>
@@ -618,13 +614,11 @@ ms.author: celested
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
-                                                <!--
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-api-test.svg" alt="Take a Test API" />
+                                                        <img src="images/education-partner-directory-3.svg" alt="Authorized Education Partner directory" />
                                                     </div>
                                                 </div>
-                                                -->
                                                 <div class="cardText">
                                                     <h3>Authorized Education Partner directory</h3>
                                                     <p>Search through the list of Authorized Education Partners worldwide who can deliver on customer licensing requirements, and provide solutions and services to current and future school needs.</p>
@@ -639,13 +633,11 @@ ms.author: celested
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
-                                                <!--
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-developers-office-education.svg" alt="Office Education Dev Center" />
+                                                        <img src="images/education-partner-yammer.svg" alt="Education Partner community Yammer group" />
                                                     </div>
                                                 </div>
-                                                -->
                                                 <div class="cardText">
                                                     <h3>Education Partner community Yammer group</h3>
                                                     <p>Sign in with your Microsoft Partner account and join the Education Partner community private group on Yammer.</p>
@@ -657,6 +649,7 @@ ms.author: celested
                             </li>
                         </ul>
                     </li>
+            </li>
         </ul>
     </div>
 </div>

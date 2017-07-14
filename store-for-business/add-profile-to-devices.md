@@ -17,6 +17,9 @@ localizationpriority: high
 
 -   Windows 10
 
+> [!IMPORTANT]
+> This topic has been updated to reflect the latest functionality, which we are releasing to customers in stages. You may not see all of the options described here until you receive the update.
+
 Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
 
 ## What is Windows AutoPilot Deployment Program?
