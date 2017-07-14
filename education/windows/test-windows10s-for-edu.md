@@ -18,16 +18,16 @@ Windows 10 S gives schools the familiar, robust, and productive experiences they
 
 Test Windows 10 S on a few existing Windows 10 Pro or Windows 10 Pro Education devices with a genuine, activated license<sup>[2](#footnote2)</sup>.
 
-Windows 10 S is different from other editions of Windows 10 as everything runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Windows Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install applications from the Windows Store.
+Windows 10 S is different from other editions of Windows 10 as everything runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Windows Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install apps from the Windows Store.
 
-To install Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. Education customers must configure **SetEduPolicies** for use K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). If you installed the preview version of Office from the Windows Store, it may occasionally behave in unexpected ways. As we finalize development, your Office install will be updated automatically. 
+To install Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. Education customers must configure **SetEduPolicies** for use in K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). If you installed the preview version of Office from the Windows Store, it may occasionally behave in unexpected ways. As we finalize development, your Office install will be updated automatically. 
 
 ## Important pre-installation information
 
 Before you install Windows 10 S, be aware that non-Windows Store apps will not work, peripherals that require custom drivers may not work, and other errors may occur. In particular, Windows 10 S:
 * May not work well with certain OEM devices, and even if compatible, may cause some hardware incompatibility
 * May not be compatible with all peripherals that require custom drivers and, even if compatible, may cause aspects of the peripheral to not function
-* Has software and feature limitations compared to Windows 10 Pro or Windows 10 Pro Education, primarily that Windows 10 S is limited to Windows Store apps only
+* Has software and feature limitations compared to Windows 10 Pro or Windows 10 Pro Education, primarily that Windows 10 S is limited to Store apps only
 * Will not run current Win32 software and might result in the loss of any data associated with that software, which might include software already purchased
 * Is intended for education customers
 
@@ -35,7 +35,7 @@ Due to these reasons, we recommend that you use the installation tool from this 
 
 Before you install Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device:
 * Make sure that you updated your existing device to Windows 10, version 1703 (Creators Update) - See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703.
-* Install the latest Windows Update - To do this, go to **Settings > Update & Security > Windows Update**.
+* Install the latest Windows Update - To do this, go to **Settings > Update & security > Windows Update**.
 
 ## Supported devices
 
@@ -60,7 +60,7 @@ Back up all your data before installing Windows 10 S. Only personal files may be
 
 ## Domain join
 
-Windows 10 S does not support non-Azure Active Directory domain  accounts. Before installing Windows 10 S, you must have a local administrator account, MSA- or AAD-based account, to ensure the best experience.
+Windows 10 S does not support non-Azure Active Directory domain accounts. Before installing Windows 10 S, you must have a local administrator account, MSA- or AAD-based. If you don't have one of these accounts accessible before migration, you will not be able to log in to your device after migrating to Windows 10 S. We recommend [creating a recovery drive](#create-a-recovery-drive) before migrating to Windows 10 S in case you run into this issue.
 
 ## Installing Office applications
 
@@ -70,9 +70,18 @@ After installing Windows 10 S, use the free [Set up School PCs app](use-set-up-s
 
 If Windows 10 S is not right for you, you can switch to Windows 10 Pro or Windows 10 Pro Education.
 
-**TBD - Insert table of switching back options here**
+| Starting edition (Home, Pro, Pro Education, Enterprise, Education) | Can install Windows 10 S? | Will activate Windows 10 S? | Windows Store switch to Windows 10 Pro? | Works with Microsoft Store for Education switch to Windows 10 Pro Education? | Can utilize Office Store? | Recovery path to original OS? |
+| --- | --- | --- | --- | --- | --- | --- |
+| Windows 10 Home          | Yes | No  | Paid (will be chaged more) |     | No (click-to-run) | Create a recovery drive or use Media Creation Tool |
+| Windows 10 S             | Yes | Yes | Paid for low-end <br/> Discount free for high-end    |   |   |   |
+| Windows 10 Pro           | Yes | No  | Not applicable             |     | Yes               | Create a recovery drive or use Media Creation Tool |
+| Windows 10 Pro Education | Yes | No  | No                         |     | No                | Create a recovery drive or use Media Creation Tool |
+| Windows 10 Enterprise    | Yes | No  | No                         |     | No                | Create a recovery drive or use Media Creation Tool |
+| Windows 10 Education     | Yes | No  | No                         |     | No                | Create a recovery drive or use Media Creation Tool |
 
 Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
+
+On individual devices, you can use your existing Windows 10 Pro or Windows 10 Pro Education kley.
 
 ## Device recovery
 
@@ -91,7 +100,7 @@ To create a recovery drive, follow these steps.
 
 ### Go back to your previous edition of Windows 10
 
-Alternatively, for 10 days after you install Windows 10 S, you have the option to go back to your previous edition of Windows 10 from **Settings > Update & security > Recovery**. This will keep your personal files, but it will remove installed apps as well as any changes you made to **Settings**.
+Alternatively, for a period of 10 days after you install Windows 10 S, you have the option to go back to your previous edition of Windows 10 from **Settings > Update & security > Recovery**. This will keep your personal files, but it will remove installed apps as well as any changes you made to **Settings**.
 
 To go back, you need to:
 * Keep everything in the windows.old and $windows.~bt folders after the upgrade
@@ -109,7 +118,7 @@ If going back is not available:
 To use an installation media to reinstall Windows 10, follow these steps.
 
 1. On a working PC, go to the [Microsoft software download website](https://www.microsoft.com/en-us/software-download/windows10).
-2. Download the media creation tool and then run it.
+2. Download the Media Creation Tool and then run it.
 3. Select **Create installation media for another PC**.
 4. Choose a language, edition, and architecture (65-bit or 32-bit).
 5. Follow the steps to create an installation media and then select **Finish**.
