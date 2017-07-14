@@ -22,7 +22,7 @@ The [Microsoft Surface Dock Updater](https://www.microsoft.com/download/details.
 When you run the Microsoft Surface Dock Updater installer you will be prompted to accept an End User License Agreement (EULA).
 
 >[!NOTE]
->Updating Surface Dock firmware requires connectivity to the Surface Dock, available only on Surface Pro 3, Surface Pro 4, and Surface Book devices. A Surface Pro 3, Surface Pro 4, or Surface Book is required to successfully install Microsoft Surface Dock Updater.
+>Updating Surface Dock firmware requires connectivity to the Surface Dock, available only on Surface Pro 3, Surface Pro 4, and Surface Book devices. A Surface Pro 3, Surface Pro 4, or Surface Book is required to successfully install Microsoft Surface Dock Updater. Since version 2.1.15.0 Surface Laptop and the new Surface Pro are supported as well.
 
 ## Update a Surface Dock with Microsoft Surface Dock Updater
 
