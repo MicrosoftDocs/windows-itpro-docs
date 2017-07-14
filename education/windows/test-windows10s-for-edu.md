@@ -14,6 +14,9 @@ ms.date: 07/27/2017
 
 # Test Windows 10 S on existing Windows 10 Pro education devices
 
+**Applies to:**
+- Windows 10
+
 Windows 10 S gives schools the familiar, robust, and productive experiences they count on from Windows in an experience streamlined for security and performance in the classroom, built to work with Microsoft Education<sup>[1](#footnote1)</sup>.
 
 Test Windows 10 S on a few existing Windows 10 Pro or Windows 10 Pro Education devices with a genuine, activated license<sup>[2](#footnote2)</sup>.
