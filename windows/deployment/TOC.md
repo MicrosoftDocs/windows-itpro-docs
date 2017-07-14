@@ -9,7 +9,6 @@
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 
-
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
 #### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
@@ -70,9 +69,6 @@
 
 #### [Change history for Plan for Windows 10 deployment](planning/change-history-for-plan-for-windows-10-deployment.md)
 
-
-
-
 ### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 #### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
 ##### [Key features in MDT](deploy-windows-mdt/key-features-in-mdt.md)
@@ -94,8 +90,6 @@
 ##### [Use web services in MDT](deploy-windows-mdt/use-web-services-in-mdt.md)
 ##### [Use Orchestrator runbooks with MDT](deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md)
 
-
-
 ### [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 #### [Integrate Configuration Manager with MDT](deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)
 #### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
@@ -111,11 +105,9 @@
 #### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 
+### [Windows 10 deployment tools](windows-10-deployment-tools.md)
 
-
-
-### [Windows 10 deployment tools](windows-10-deployment-tools-reference.md)
-
+#### [Windows 10 deployment scenarios and tools](windows-deployment-scenarios-and-tools.md)
 #### [Convert MBR partition to GPT](mbr-to-gpt.md)
 #### [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md)
 #### [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md)
@@ -241,8 +233,4 @@
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
-
-
-
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
-
