@@ -63,7 +63,12 @@ Back up all your data before installing Windows 10 S. Only personal files may be
 
 ## Domain join
 
-Windows 10 S does not support non-Azure Active Directory domain accounts. Before installing Windows 10 S, you must have a local administrator account, MSA- or AAD-based. If you don't have one of these accounts accessible before migration, you will not be able to log in to your device after migrating to Windows 10 S. We recommend [creating a recovery drive](#create-a-recovery-drive) before migrating to Windows 10 S in case you run into this issue.
+Windows 10 S does not support non-Azure Active Directory domain accounts. Before installing Windows 10 S, you must have at least one of these administrator accounts:
+- Local administrator
+- Microsoft Account (MSA) administrator
+- Azure Active Directory administrator 
+
+If you don't have one of these accounts accessible before migration, you will not be able to log in to your device after migrating to Windows 10 S. We recommend [creating a recovery drive](#create-a-recovery-drive) before migrating to Windows 10 S in case you run into this issue.
 
 ## Installing Office applications
 
