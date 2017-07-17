@@ -22,6 +22,7 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 | --- | --- |
 | [Windows updates](manage-windows-updates-for-surface-hub.md) | Changed deferral recommendations for Windows Updates |
 | [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Added Whiteboard URLs to prerequisites |
+| [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md#skype-for-business-online) | Updated the Skype for Business Online requirements |
 
 ## June 2017
 
