@@ -38,8 +38,8 @@ The following tables provide more information about the hardware, firmware, and 
 ## Baseline protections
 
 |Baseline Protections            | Description                                        | Security benefits |
-|---------------------------------------------|----------------------------------------------------|----|
-| Hardware: **64-bit CPU**              | A 64-bit computer is required for the Windows hypervisor to provide VBS. |
+|--------------------------------|----------------------------------------------------|-------------------|
+| Hardware: **64-bit CPU**       | A 64-bit computer is required for the Windows hypervisor to provide VBS. |  | 
 | Hardware: **CPU virtualization extensions**,<br>plus **extended page tables** | These hardware features are required for VBS:<br>One of the following virtualization extensions:<br>• VT-x (Intel) or<br>• AMD-V<br>And:<br>• Extended page tables, also called Second Level Address Translation (SLAT). | VBS provides isolation of the secure kernel from the normal operating system. Vulnerabilities and zero-days in the normal operating system cannot be exploited because of this isolation. |
 | Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot** | See the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot) | UEFI Secure Boot helps ensure that the device boots only authorized code. This can prevent boot kits and root kits from installing and persisting across reboots.  |
 | Firmware: **Secure firmware update process**      | UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot). | UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed. |
@@ -55,10 +55,14 @@ The following tables describe additional hardware and firmware qualifications, a
 
 ### Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4
 
+| Protections for Improved Security       | Description                                        | Security benefits |
+|---------------------------------------------|----------------------------------------------------|------|
+| Text | Text | Text |
+
 
 | Protections for Improved Security       | Description                                        | Security benefits |
 |---------------------------------------------|----------------------------------------------------|------|
-| Firmware: **Securing Boot Configuration and Management** | <br>• BIOS password or stronger authentication must be supported.<br>• In the BIOS configuration, BIOS authentication must be set.<br>• There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>• In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings. | <br><br>**Security benefits**:<br>• BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>• Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
+| Firmware: **Securing Boot Configuration and Management** | <br>• BIOS password or stronger authentication must be supported.<br>• In the BIOS configuration, BIOS authentication must be set.<br>• There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>• In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings. | <br>• BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>• Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
 
 <br>
 
