@@ -1168,9 +1168,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowloadingofxamlfiles" id="internetexplorer-internetzoneallowloadingofxamlfiles">InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowloadingofxamlfileswrong" id="internetexplorer-internetzoneallowloadingofxamlfileswrong">InternetExplorer/InternetZoneAllowLoadingOfXAMLFilesWRONG</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallownetframeworkreliantcomponents" id="internetexplorer-internetzoneallownetframeworkreliantcomponents">InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents</a>
   </dd>
   <dd>
@@ -1199,12 +1196,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrolswrong1" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrolswrong1">InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrolswrong2" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrolswrong2">InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadsignedactivexcontrols" id="internetexplorer-internetzonedownloadsignedactivexcontrols">InternetExplorer/InternetZoneDownloadSignedActiveXControls</a>
@@ -1238,12 +1229,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonejavapermissions" id="internetexplorer-internetzonejavapermissions">InternetExplorer/InternetZoneJavaPermissions</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonejavapermissionswrong1" id="internetexplorer-internetzonejavapermissionswrong1">InternetExplorer/InternetZoneJavaPermissionsWRONG1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonejavapermissionswrong2" id="internetexplorer-internetzonejavapermissionswrong2">InternetExplorer/InternetZoneJavaPermissionsWRONG2</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonelaunchingapplicationsandfilesiniframe" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe">InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME</a>
@@ -1582,12 +1567,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowfontdownloads" id="internetexplorer-restrictedsiteszoneallowfontdownloads">InternetExplorer/RestrictedSitesZoneAllowFontDownloads</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowfontdownloadswrong1" id="internetexplorer-restrictedsiteszoneallowfontdownloadswrong1">InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowfontdownloadswrong2" id="internetexplorer-restrictedsiteszoneallowfontdownloadswrong2">InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG2</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowlessprivilegedsites" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites">InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites</a>
   </dd>
   <dd>
@@ -1690,21 +1669,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneusepopupblocker" id="internetexplorer-restrictedsiteszoneusepopupblocker">InternetExplorer/RestrictedSitesZoneUsePopupBlocker</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonewrong" id="internetexplorer-restrictedsiteszonewrong">InternetExplorer/RestrictedSitesZoneWRONG</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonewrong2" id="internetexplorer-restrictedsiteszonewrong2">InternetExplorer/RestrictedSitesZoneWRONG2</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonewrong3" id="internetexplorer-restrictedsiteszonewrong3">InternetExplorer/RestrictedSitesZoneWRONG3</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonewrong4" id="internetexplorer-restrictedsiteszonewrong4">InternetExplorer/RestrictedSitesZoneWRONG4</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonewrong5" id="internetexplorer-restrictedsiteszonewrong5">InternetExplorer/RestrictedSitesZoneWRONG5</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses">InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses</a>
   </dd>
   <dd>
@@ -1763,12 +1727,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonenavigatewindowsandframes" id="internetexplorer-trustedsiteszonenavigatewindowsandframes">InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonewrong1" id="internetexplorer-trustedsiteszonewrong1">InternetExplorer/TrustedSitesZoneWRONG1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonewrong2" id="internetexplorer-trustedsiteszonewrong2">InternetExplorer/TrustedSitesZoneWRONG2</a>
   </dd>
 </dl>
 
