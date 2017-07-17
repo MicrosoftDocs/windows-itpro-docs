@@ -14,16 +14,6 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-This article describes the following:
-
-- [Hardware, firmware, and software requirements for Device Guard](#hardware-firmware-and-software-requirements-for-device-guard)
-    - [Device Guard requirements for baseline protections](#device-guard-requirements-for-baseline-protections)
-    - [Device Guard requirements for improved security](#device-guard-requirements-for-improved-security)
-- [Device Guard deployment in different scenarios: types of devices](#device-guard-deployment-in-different-scenarios-types-of-devices)	
-- [Device Guard deployment in virtual machines](#device-guard-deployment-in-virtual-machines)
-- [Reviewing your applications: application signing and catalog files](#reviewing-your-applications-application-signing-and-catalog-files)
-- [Code integrity policy formats and signing](#code-integrity-policy-formats-and-signing)
-
 The information in this article is intended for IT professionals, and provides a foundation for [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
 >**Note**&nbsp;&nbsp;If you are an OEM, see the requirements information at [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).
