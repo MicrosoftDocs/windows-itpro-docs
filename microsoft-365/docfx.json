@@ -3,8 +3,7 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-		  "**/**.yml"
+          "**/*.md"
         ],
         "exclude": [
           "**/obj/**",
@@ -30,22 +29,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {
-		"breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"ms.author": "trudyha",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.date": "05/09/2017",
-    "searchScope": ["Store"],
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.store-for-business"
-			}
-		}
-	},
+    "globalMetadata": {},
     "fileMetadata": {},
     "template": [],
-    "dest": "store-for-business"
+    "dest": "microsoft-365"
   }
 }
