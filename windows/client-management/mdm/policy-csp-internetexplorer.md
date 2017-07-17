@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 07/16/2017
 ---
 
 # Policy CSP - InternetExplorer
@@ -3213,35 +3213,6 @@ ADMX Info:
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="internetexplorer-internetzoneallowloadingofxamlfileswrong"></a>**InternetExplorer/InternetZoneAllowLoadingOfXAMLFilesWRONG**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
 <a href="" id="internetexplorer-internetzoneallownetframeworkreliantcomponents"></a>**InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents**  
 
 <!--StartSKU-->
@@ -3704,64 +3675,6 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--EndADMX-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrolswrong1"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrolswrong2"></a>**InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonedownloadsignedactivexcontrols"></a>**InternetExplorer/InternetZoneDownloadSignedActiveXControls**  
@@ -4231,64 +4144,6 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--EndADMX-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-internetzonejavapermissionswrong1"></a>**InternetExplorer/InternetZoneJavaPermissionsWRONG1**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-internetzonejavapermissionswrong2"></a>**InternetExplorer/InternetZoneJavaPermissionsWRONG2**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe"></a>**InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME**  
@@ -9775,64 +9630,6 @@ ADMX Info:
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloadswrong1"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG1**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszoneallowfontdownloadswrong2"></a>**InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG2**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites"></a>**InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites**  
 
 <!--StartSKU-->
@@ -11355,151 +11152,6 @@ ADMX Info:
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszonewrong"></a>**InternetExplorer/RestrictedSitesZoneWRONG**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszonewrong2"></a>**InternetExplorer/RestrictedSitesZoneWRONG2**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszonewrong3"></a>**InternetExplorer/RestrictedSitesZoneWRONG3**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszonewrong4"></a>**InternetExplorer/RestrictedSitesZoneWRONG4**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszonewrong5"></a>**InternetExplorer/RestrictedSitesZoneWRONG5**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
 <a href="" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses"></a>**InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses**  
 
 <!--StartSKU-->
@@ -12454,64 +12106,6 @@ ADMX Info:
 -   GP ADMX file name: *inetres.admx*
 
 <!--EndADMX-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-trustedsiteszonewrong1"></a>**InternetExplorer/TrustedSitesZoneWRONG1**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="internetexplorer-trustedsiteszonewrong2"></a>**InternetExplorer/TrustedSitesZoneWRONG2**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
 
