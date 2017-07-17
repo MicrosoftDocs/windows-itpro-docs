@@ -45,9 +45,9 @@ The following tables provide more information about the hardware, firmware, and 
 > • To understand the requirements in the following tables, you will need to be familiar with the main features in Device Guard: configurable code integrity policies, virtualization-based security (VBS), and Universal Extensible Firmware Interface (UEFI) Secure Boot. For information about these features, see [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats).<br>
 > • Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new computers. 
 
-## Device Guard requirements for baseline protections
+## Baseline protections
 
-|Baseline Protections - requirement           | Description                                        |
+|Baseline Protections            | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Hardware: **64-bit CPU**              | A 64-bit computer is required for the Windows hypervisor to provide VBS. |
 | Hardware: **CPU virtualization extensions**,<br>plus **extended page tables** | **Requirements**: These hardware features are required for VBS:<br>One of the following virtualization extensions:<br>• VT-x (Intel) or<br>• AMD-V<br>And:<br>• Extended page tables, also called Second Level Address Translation (SLAT).<br><br>**Security benefits**: VBS provides isolation of the secure kernel from the normal operating system. Vulnerabilities and zero-days in the normal operating system cannot be exploited because of this isolation. |
@@ -56,25 +56,24 @@ The following tables provide more information about the hardware, firmware, and 
 | Software: **HVCI compatible drivers**       | **Requirements**: See the Windows Hardware Compatibility Program requirements under [Filter.Driver.DeviceGuard.DriverCompatibility](https://msdn.microsoft.com/library/windows/hardware/mt589732(v=vs.85).aspx).<br><br>**Security benefits**: [HVCI Compatible](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/) drivers help ensure that VBS can maintain appropriate memory permissions. This increases resistance to bypassing vulnerable kernel drivers and helps ensure that malware cannot run in kernel. Only code verified through code integrity can run in kernel mode. |
 | Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote><br>**Security benefits**: Support for VBS and for management features that simplify configuration of Device Guard. |
 
-> **Important**&nbsp;&nbsp;The preceding table lists requirements for baseline protections. The following tables list requirements for improved security. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting the requirements for improved security, to significantly strengthen the level of security that Device Guard can provide.
+> **Important**&nbsp;&nbsp;The following tables list additional qualifications for improved security. You can use Device Guard with hardware, firmware, and software that support baseline protections, even if they do not support protections for improved security. However, we strongly recommend meeting these additional qualifications to significantly strengthen the level of security that Device Guard can provide.
 
-## Device Guard requirements for improved security
+## Additional qualifications for improved security
 
-The following tables describes additional hardware and firmware requirements, and the improved security that is available when those requirements are met.
+The following tables describe additional hardware and firmware qualifications, and the improved security that is available when these qualifications are met.
 
 
 ### Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016, Technical Preview 4
 
 
-| Protections for Improved Security - requirement         | Description                                        |
+| Protections for Improved Security       | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
 | Firmware: **Securing Boot Configuration and Management** | **Requirements**:<br>• BIOS password or stronger authentication must be supported.<br>• In the BIOS configuration, BIOS authentication must be set.<br>• There must be support for protected BIOS option to configure list of permitted boot devices (for example, “Boot only from internal hard drive”) and boot device order, overriding BOOTORDER modification made by operating system.<br>• In the BIOS configuration, BIOS options related to security and boot options (list of permitted boot devices, boot order) must be secured to prevent other operating systems from starting and to prevent changes to the BIOS settings.<br><br>**Security benefits**:<br>• BIOS password or stronger authentication helps ensure that only authenticated Platform BIOS administrators can change BIOS settings. This helps protect against a physically present user with BIOS access.<br>• Boot order when locked provides protection against the computer being booted into WinRE or another operating system on bootable media. |
 
 <br>
 
-### Additional Qualification Requirements starting with Windows 10, version 1607, and Windows Server 2016
+### Additional security qualifications starting with Windows 10, version 1607, and Windows Server 2016
 
-> **Important**&nbsp;&nbsp;The following tables list requirements for improved security, beyond the level of protection described in the preceding tables. You can use Device Guard with hardware, firmware, and software that do not support the following protections for improved security. As your systems meet more requirements, more protections become available to them.
 
 | Protections for Improved Security - requirement         | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
@@ -84,9 +83,8 @@ The following tables describes additional hardware and firmware requirements, an
 
 <br>
 
-### Additional Qualification Requirements starting with Windows 10, version 1703 
+### Additional security qualifications starting with Windows 10, version 1703 
 
-The following table lists requirements for Windows 10, version 1703, which are in addition to all preceding requirements. 
 
 | Protection for Improved Security          | Description                                        |
 |---------------------------------------------|----------------------------------------------------|
