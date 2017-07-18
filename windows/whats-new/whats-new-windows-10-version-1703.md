@@ -151,7 +151,7 @@ You can read more about ransomware mitigations and detection capability in Windo
 ### Device Guard and Credential Guard
 
 Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime.
-For more information, see [Device Guard Requirements](/windows/access-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard) and [Credential Guard Security Considerations](/windows/access-protection/credential-guard//credential-guard-requirements#security-considerations).
+For more information, see [Device Guard Requirements](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard) and [Credential Guard Security Considerations](/windows/access-protection/credential-guard/credential-guard-requirements#security-considerations).
 
 ### Group Policy Security Options
 
@@ -171,9 +171,9 @@ For Windows desktops, users are able to reset a forgotten PIN through **Settings
 For more details, check out [What if I forget my PIN?](/windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password#what-if-i-forget-my-pin).
 
 ### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
-Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune.md) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune.md).
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune).
 
-You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For info, see the brand-new topic, [How to collect Windows Information Protection (WIP) audit event logs](/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs.md).
+You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For info, see the brand-new topic, [How to collect Windows Information Protection (WIP) audit event logs](/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs).
 
 ## Update
 
