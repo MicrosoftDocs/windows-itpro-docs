@@ -75,7 +75,7 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 ## Related topics
 
 
-[Change history for What's new in Windows 10](/windows/whats-new/change-history-for-what-s-new-in-windows-10.md)
+[Change history for What's new in Windows 10](/windows/whats-new/change-history-for-what-s-new-in-windows-10)
 
 [Change history for Deploy Windows 10](../change-history-for-deploy-windows-10.md)
 
