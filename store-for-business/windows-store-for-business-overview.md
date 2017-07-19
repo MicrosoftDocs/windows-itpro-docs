@@ -157,10 +157,10 @@ For more information, see [Manage settings in the Store for Business](manage-set
 
 Microsoft Store for Business and Education is currently available in these markets.
 
-### Support for free and paid apps
+### Support for free and paid products
 <table>
    <tr>
-        <th align="center" colspan="4">Support for free and paid apps</th>
+        <th align="center" colspan="4">Supports all free and paid products</th>
    </tr>
    <tr align="left">
      <td>
