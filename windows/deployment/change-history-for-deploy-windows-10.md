@@ -135,5 +135,5 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 ## Related topics
 - [Change history for Plan for Windows 10 deployment](/windows/deployment/planning/change-history-for-plan-for-windows-10-deployment)
 - [Change history for Access Protection](/windows/access-protection/change-history-for-access-protection)
-- [Change history for Access Protection](/windows/device-security/change-history-for-device-security)
-- [Change history for Access Protection](/windows/threat-protection/change-history-for-threat-protection)
+- [Change history for Device Security](/windows/device-security/change-history-for-device-security)
+- [Change history for Threat Protection](/windows/threat-protection/change-history-for-threat-protection)
