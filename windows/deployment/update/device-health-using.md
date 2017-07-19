@@ -44,15 +44,7 @@ Clicking the Frequently Crashing Devices blade opens a reliability perspective v
 
 "Commercial averages" here refers to data collected from deployments with a mix of operating system versions and device models that is similar to yours. If your crash rate is higher, there are opportunities for improvement, for example by moving to newer driver versions.
 
-In this view are a number of useful items:
 
-- Crash history records by date, aggregated  by Failure ID. The Failure ID is an internal number that is used to group crashes that are related to each other. Eventually over time, you can use the Failure ID to provide additional info. If a crash was caused by driver, some driver fields will also be populated.
-
-- Stop code: this is hex value that would be displayed on a bluescreen if you were looking directly at the affected device.
-
-- Count: the number times that particular Failure ID has occurred on that specific device *on that date*.
-
-In this view, you can click a particular device to see the details of that particular device and for each crash recorded on it. (You can also reach this view by clicking a particular device on the Frequently Crashing Devices blade.)
 
 
 >[!TIP]
@@ -64,7 +56,15 @@ In this view, you can click a particular device to see the details of that parti
 
 ![Device detail and history](images/device-crash-history.png)
 
-This displays device records sorted by date and crash details by failure ID, also sorted by date.
+This displays device records sorted by date and crash details by failure ID, also sorted by date. In this view are a number of useful items:
+
+- Crash history records by date, aggregated  by Failure ID. The Failure ID is an internal number that is used to group crashes that are related to each other. Eventually over time, you can use the Failure ID to provide additional info. If a crash was caused by driver, some driver fields will also be populated.
+
+- StopCode: this is hex value that would be displayed on a bluescreen if you were looking directly at the affected device.
+
+- Count: the number times that particular Failure ID has occurred on that specific device *on that date*.
+
+In this view, you can click a particular device to see the details of that particular device and for each crash recorded on it. (You can also reach this view by clicking a particular device on the Frequently Crashing Devices blade.)
 
  
  
