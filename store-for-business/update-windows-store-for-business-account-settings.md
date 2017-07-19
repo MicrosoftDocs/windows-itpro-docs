@@ -56,6 +56,7 @@ Taxes for Microsoft Store for Business purchases are determined by your business
 - Lithuania
 - Luxembourg
 - Malta
+- Monaco
 - Netherlands
 - Norway
 - Poland
