@@ -17,8 +17,8 @@ Learn about deployment in Windows 10 for IT professionals. This includes deploy
 |------|------------|
 |[What's new in Windows 10 deployment](deploy-whats-new.md) |See this topic for a summary of new features and some recent changes related to deploying Windows 10 in your organization. |
 |[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md) |To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task. |
-|[Windows 10 Enterprise E3 in CSP overview](deploy-whats-new.md) |Windows 10 Enterprise E3 in CSP is a new offering that delivers, by subscription, exclusive features reserved for Windows 10 Enterprise edition. |
-|[Resolve Windows 10 upgrade errors](windows-10-enterprise-e3-overview.md) |This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. |
+|[Windows 10 Enterprise E3 in CSP overview](windows-10-enterprise-e3-overview.md) |Windows 10 Enterprise E3 in CSP is a new offering that delivers, by subscription, exclusive features reserved for Windows 10 Enterprise edition. |
+|[Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) |This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. |
 
 
 ## Deploy Windows 10

@@ -656,7 +656,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 ### ClearBrowsingDataOnExit
 - **Supported versions:** Windows 10, version 1703
 
-- **Supported devices:** Both
+- **Supported devices:** Desktop
 
 - **Details:**
 
