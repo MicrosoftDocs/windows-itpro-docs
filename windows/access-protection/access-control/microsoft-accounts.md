@@ -14,19 +14,11 @@ ms.pagetype: security
 
 This topic for the IT professional explains how a Microsoft account works to enhance security and privacy for users, and how you can manage this consumer account type in your organization.
 
-Microsoft sites, services, and properties such as Windows Live, MSN, Xbox LIVE, Zune, Windows Phone, and computers running Windows 10, Windows 8.1, Windows 8, and Windows RT use a Microsoft account as a mean of identifying users. Microsoft account is the name for what was previously called Windows Live ID. It has user-defined secrets associated with it, and it consists of a unique email address and a password.
+Microsoft sites, services, and properties, as well as computers running Windows 10, can use a Microsoft account as a mean of identifying a user. Microsoft account was previously called Windows Live ID. It has user-defined secrets, and consists of a unique email address and a password.
 
-There are some benefits and considerations when using Microsoft accounts in the enterprise. For more information, see [Microsoft account in the enterprise](#bkmk-msaccountintheenterprise) later in this topic.
-
-When a user signs in with a Microsoft account, their device is connected to cloud services, and many of the settings, preferences, and apps associated with that user account can roam between devices.
-
-**Note**  
-This content applies to the operating system versions that are designated in the **Applies To** list at the beginning of this topic.
-
- 
+When a user signs in with a Microsoft account, the device is connected to cloud services. Many of the user's settings, preferences, and apps can be shared across devices.
 
 ## <a href="" id="bkmk-benefits"></a>How a Microsoft account works
-
 
 The Microsoft account allows users to sign in to websites that support this service by using a single set of credentials. Users' credentials are validated by a Microsoft account authentication server that is associated with a website. The Windows Store is an example of this association. When new users sign in to websites that are enabled to use Microsoft accounts, they are redirected to the nearest authentication server, which asks for a user name and password. Windows uses the Schannel Security Support Provider to open a Transport Level Security/Secure Sockets Layer (TLS/SSL) connection for this function. Users then have the option to use Credential Manager to store their credentials.
 
@@ -35,19 +27,17 @@ When users sign in to websites that are enabled to use a Microsoft account, a ti
 **Important**  
 Local Windows account functionality has not been removed, and it is still an option to use in managed environments.
 
- 
-
 ### How Microsoft accounts are created
 
-To prevent fraud, the Microsoft system verifies the IP address when a user creates an account. If a user tries to create multiple Microsoft accounts with the same IP address, they are stopped.
+To prevent fraud, the Microsoft system verifies the IP address when a user creates an account. A user who tries to create multiple Microsoft accounts with the same IP address is stopped.
 
-Microsoft accounts are not designed to be created in batches, for example, for a group of domain users within your enterprise.
+Microsoft accounts are not designed to be created in batches, such as for a group of domain users within your enterprise.
 
 There are two methods for creating a Microsoft account:
 
 -   **Use an existing email address**.
 
-    Users are able to use their valid email addresses to sign up for Microsoft accounts. The service turns the requesting user's email address into a Microsoft account. Users can also choose their personal password.
+    Users are able to use their valid email addresses to sign up for Microsoft accounts. The service turns the requesting user's email address into a Microsoft account. Users can also choose their personal passwords.
 
 -   **Sign up for a Microsoft email address**.
 
@@ -134,8 +124,6 @@ Users can disconnect a Microsoft account from their domain account at any time a
 
 **Note**  
 Connecting Microsoft accounts with domain accounts can limit access to some high-privileged tasks in Windows. For example, Task Scheduler will evaluate the connected Microsoft account for access and fail. In these situations, the account owner should disconnect the account.
-
- 
 
 ### <a href="" id="bkmk-provisionaccounts"></a>Provision Microsoft accounts in the enterprise
 
