@@ -19,7 +19,7 @@ Device Health:
 - Identifies drivers that are causing many devices to crash, so that they can be updated or replaced.
 
 >[!NOTE]
->Information is refreshed daily so that health status can be monitored. Changes will be displayed about 24 hours after their occurrence, so you always have a recent snapshot of your devices.
+>Information is refreshed daily so that health status can be monitored. Changes will be displayed about 24-48 hours after their occurrence, so you always have a recent snapshot of your devices.
 
 In OMS, the aspects of a solution's dashboard are usually divided into <I>blades</I>. Blades are a slice of information, typically with a summarization tile and an enumeration of the items that makes up that data. All data is presented through <I>queries</I>. <I>Perspectives</I> are also possible, wherein a given query has a unique view designed to display custom data. The terminology of blades, tiles, and perspectives will be used in the sections that follow. 
 
@@ -27,7 +27,7 @@ In OMS, the aspects of a solution's dashboard are usually divided into <I>blades
 ## Device Reliability
 
 - [Frequently Crashing Devices](#frequently-crashing-devices)
-- [Driver Induced OS Crashes](#driver-induced-OS-crashes)
+- [Driver-Induced OS Crashes](#driver-induced-OS-crashes)
 
 
 
@@ -38,33 +38,44 @@ This middle blade in Device Health displays the devices that crash most often. S
 
 ![The blade in the middle summarizes devices that crash most often](images/dev-health-main-tile.png)
 
-Clicking the Frequently Crashing Devices blade opens a reliability perspective view, where you can filter data using filters in the left pane, see trends, and compare to commercial averages:
+Clicking the Frequently Crashing Devices blade opens a reliability perspective view, where you can filter data (by using filters in the left pane), see trends, and compare to commercial averages:
 
-![Reliability perspective](images/reliability-perspective2.png)
+![Reliability perspective](images/device-reliability.png)
 
+"Commercial averages" here refers to data collected from deployments with a mix of operating system versions and device models that is similar to yours. If your crash rate is higher, there are opportunities for improvement, for example by moving to newer driver versions.
+
+In this view are a number of useful items:
+
+- Crash history records by date, aggregated  by Failure ID. The Failure ID is an internal number that is used to group crashes that are related to each other. Eventually over time, you can use the Failure ID to provide additional info. If a crash was caused by driver, some driver fields will also be populated.
+
+- Stop code: this is hex value that would be displayed on a bluescreen if you were looking directly at the affected device.
+
+- Count: the number times that particular Failure ID has occurred on that specific device *on that date*.
 
 In this view, you can click a particular device to see the details of that particular device and for each crash recorded on it. (You can also reach this view by clicking a particular device on the Frequently Crashing Devices blade.)
 
+
+>[!TIP]
+>Once you've applied a filter, for example by clicking a particular model or computer name in the left pane, you can remove the applied filter by manually editing the query. For example, in the device detail screenshot above, the results are filtered to a particular computer named "joes-pc". Remove the filter focusing on that one computer, just delete the string "joes-pc" in the query.
+
 >[!NOTE]
-> Use caution when interpreting results filtered by model or operating system version. This is very useful for troubleshooting, but might not be accurate for *comparisons* because the crashes displayed could be of different types.
+> Use caution when interpreting results filtered by model or operating system version. This is very useful for troubleshooting, but might not be accurate for *comparisons* because the crashes displayed could be of different types. The overall goal for working with crash data is to ensure that most devices have the same driver versions and that that version has a low crash rate.
 
 
 ![Device detail and history](images/device-crash-history.png)
 
 This displays device records sorted by date and crash details by failure ID, also sorted by date.
 
->[!TIP]
->Once you've applied a filter, for example by clicking a particular model or computer name in the left pane, you can remove the applied filter by manually editing the query. For example, in the device detail screenshot above, the results are filtered to a particular computer named "joes-pc". Remove the filter focusing on that one computer, just delete the string "joes-pc" in the query.
  
  
-### Driver Induced OS Crashes
+### Driver-Induced OS Crashes
 
 This blade (on the right) displays values for the number of *devices* that have crashed due to driver issues, as well as the total number of crashes altogether due to driver issues.
 
 
 ![The blade on the right summarizes devices that crash most often](images/dev-health-main-tile.png)
 
-Clicking the Driver Induced OS Crashes blade opens a driver perspective view, which shows the details for the responsible driver, trends and commercial averages for that driver, alternative versions of the driver, and tools for filtering the data.
+Clicking a listed driver on the Driver-Induced OS Crashes blade opens a driver perspective view, which shows the details for the responsible driver, trends and commercial averages for that driver, alternative versions of the driver, and tools for filtering the data.
 
 ![Driver detail and history](images/driver-detail.png)
 
@@ -72,7 +83,7 @@ Clicking through this view opens a display of still more details for the driver,
 
 - Driver properties, such as its name, version, and class
 - Information (stop code, failure ID) for each crash instance
-- A list oftThe computers on which the crash occurred and the time they occurred
+- A list of the computers on which the crash occurred and the time they occurred
 
 The records are sorted by the time generated and the computer. If a driver has caused a computer to crash on several different days, only the most recent event is shown in this view.
 
