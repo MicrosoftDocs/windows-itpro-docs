@@ -44,28 +44,13 @@ Device Health is offered as a solution in the Microsoft Operations Management Su
 **If you are not yet using OMS**, use the following steps to subscribe to OMS Device Health:
 
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
-
-
    [![](images/uc-02a.png)](images/uc-02.png)
-
-
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
-
-
    [![](images/uc-03a.png)](images/uc-03.png)
-
-
 3.	Create a new OMS workspace. 
-
-
    [![](images/uc-04a.png)](images/uc-04.png)
- 
 4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Click **Create**.
-
-
    [![](images/uc-05a.png)](images/uc-05.png)
-
-
 5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow [this guide](https://blogs.technet.microsoft.com/upgradeanalytics/2016/11/08/linking-operations-management-suite-workspaces-to-microsoft-azure/) to create and link an Azure subscription to an OMS workspace.
 
 
