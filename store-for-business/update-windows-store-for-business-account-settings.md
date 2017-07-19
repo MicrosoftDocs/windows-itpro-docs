@@ -76,6 +76,7 @@ These countries can provide their VAT number or local equivalent in **Payments &
 | Brazil | CNPJ (required) |
 | India | GSTIN (optional), PAN ID (required) |
 | New Zealand | GST Registration number (optional) |
+| Monaco | VAT ID (optional) |
 | Taiwan | VAT ID (optional) |
 
 ### Tax-exempt status 

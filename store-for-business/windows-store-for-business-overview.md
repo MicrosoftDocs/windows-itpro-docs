@@ -192,10 +192,6 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Cambodia</li>
             <li>Cameroon</li>
             <li>Canada</li>
-        </ul>
-     </td>
-     <td>
-        <ul>  
             <li>Cayman Islands</li>
             <li>Chile</li>
             <li>Colombia</li>
@@ -209,6 +205,10 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Denmark</li>
             <li>Dominican Republic</li>
             <li>Ecuador</li>
+        </ul>
+     </td>
+     <td>
+        <ul> 
             <li>Egypt</li>
             <li>El Salvador</li>
             <li>Estonia</li>
@@ -225,10 +225,6 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Greenland</li>
             <li>Guadeloupe</li>
             <li>Guatemala</li>
-        </ul>
-    </td>
-     <td>
-        <ul>
             <li>Honduras</li>
             <li>Hong Kong SAR</li>
             <li>Hungary</li>
@@ -236,7 +232,6 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Indonesia</li>
             <li>Iraq</li>
             <li>Ireland</li>
-            <li>Isle of Man</li>
             <li>Israel</li>
             <li>Italy</li>
             <li>Jamaica</li>
@@ -254,22 +249,20 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Luxembourg</li>
             <li>Macedonia</li>
             <li>Madagascar</li>
+        </ul>
+    </td>
+     <td>
+        <ul>
             <li>Malawi</li>
             <li>Malaysia</li>
             <li>Maldives</li>
-            <li>Mali</li> 
-        </ul>
-    </td>
-    <td>
-        <ul>
-            
+            <li>Mali</li>
             <li>Malta</li>
             <li>Marshall Islands</li>
             <li>Martinique</li>
             <li>Mauritius</li>
             <li>Mayotte</li>
             <li>Mexico</li>
-            <li>Monaco</li>
             <li>Mongolia</li>
             <li>Montenegro</li>
             <li>Morocco</li>
@@ -291,11 +284,6 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Paraguay</li>
             <li>Peru</li>
             <li>Philippines</li>
-                      
-        </ul>
-    </td>
-    <td>
-        <ul>
             <li>Poland</li>
             <li>Portugal</li>
             <li>Puerto Rico</li>
@@ -304,7 +292,11 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Reunion</li>
             <li>Romania</li>
             <li>Rwanda</li>
-            <li>Saint Kitts and Nevis</li>
+            <li>Saint Kitts and Nevis</li> 
+        </ul>
+    </td>
+    <td>
+        <ul>
             <li>Saint Lucia</li>
             <li>Saint Martin</li>
             <li>Saint Vincent and the Grenadines</li>
@@ -323,11 +315,7 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Suriname</li>
             <li>Sweden</li>
             <li>Switzerland</li>
-            <li>Tanzania</li>         
-        </ul>
-    </td>
-    <td>
-        <ul>
+            <li>Tanzania</li>
             <li>Thailand</li>
             <li>Timor-Leste</li>
             <li>Togo</li>
@@ -345,7 +333,7 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li>         
         </ul>
     </td>
    </tr>
@@ -367,6 +355,7 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - India
 - Kazakhstan
 - Korea
+- Monaco
 - Republic of Moldova
 - Taiwan
 - Tajikistan
