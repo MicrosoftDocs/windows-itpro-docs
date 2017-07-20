@@ -44,52 +44,37 @@ Device Health is offered as a solution in the Microsoft Operations Management Su
 **If you are not yet using OMS**, use the following steps to subscribe to OMS Device Health:
 
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
-
-
    [![](images/uc-02a.png)](images/uc-02.png)
 
 
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
-
-
    [![](images/uc-03a.png)](images/uc-03.png)
 
 
-3.	Create a new OMS workspace. 
+3.	Create a new OMS workspace.
 
+     [![](images/uc-04a.png)](images/uc-04.png)
 
-   [![](images/uc-04a.png)](images/uc-04.png)
- 
 4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Click **Create**.
 
-
-   [![](images/uc-05a.png)](images/uc-05.png)
-
+    [![](images/uc-05a.png)](images/uc-05.png)
 
 5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow [this guide](https://blogs.technet.microsoft.com/upgradeanalytics/2016/11/08/linking-operations-management-suite-workspaces-to-microsoft-azure/) to create and link an Azure subscription to an OMS workspace.
 
+    [![](images/uc-06a.png)](images/uc-06.png)
 
-   [![](images/uc-06a.png)](images/uc-06.png)
+6.	To add Device Health to your workspace, go to the Solution Gallery, Select the **Device Health** tile and then select **Add** on the solution's detail page. 
 
-
-
-
-6.	To add Device Health to your workspace, go to the Solution Gallery, Select the **Device Health** tile and then select **Add** on the solution's detail page 
-
- [NEED FRESH DEVICE HEALTH SHOT WITH BOX CHECKED]
-   [![](images/uc-08a.png)](images/uc-08.png)
-
+ 
+    [![](images/uc-08a.png)](images/uc-08.png)
 
 7.	Click the **Device Health** tile to configure the solution. The **Settings Dashboard** opens.
 
-
-   [![](images/uc-09a.png)](images/uc-09.png)
-
+    [![](images/uc-09a.png)](images/uc-09.png)
 
 8.	Click **Subscribe** to subscribe to OMS Device Health. You will then need to distribute your Commercial ID across all your organization’s devices. More information on the Commercial ID is provided below.
 
-
-   [![](images/uc-10a.png)](images/uc-10.png)
+    [![](images/uc-10a.png)](images/uc-10.png)
 
 
 After you have added Device Health and devices have a Commercial ID, you will begin receiving data. It will typically take 24-48 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
@@ -108,10 +93,7 @@ In order for your devices to show up in Windows Analytics: Device Health, they m
     3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
 
 - Using Microsoft Mobile Device Management (MDM)<BR><BR>
-[FROM MARC: Also add MDM equivalent links for all three settings in this policy (telemetry level, commercial ID, and Windows Analytics filter)]
-[in RS3 there will be an additional policy to filter enhanced telemetry to just those events needed by Windows Analytics? Matthew Reyonolds on my team can provide details.]
-[Add the policy for telemetry level. Its the same policy, but within that policy you have to set "Allow Telemetry" to "2 - Enhanced"" (in addition to "Configure the Commercial ID")]
-    Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
+Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
 
 
 ## Related topics
