@@ -29,4 +29,5 @@
 ### [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md)
 ## [Troubleshoot Microsoft Store for Business](troubleshoot-windows-store-for-business.md)
 ## [Notifications in Microsoft Store for Business and Education](notifications-microsoft-store-business.md)
+## [Change history for Microsoft Store for Business and Education](sfb-change-history.md)
 
