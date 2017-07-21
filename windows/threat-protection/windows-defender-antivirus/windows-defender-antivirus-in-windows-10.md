@@ -21,7 +21,7 @@ Windows Defender Antivirus is a built-in antimalware solution that provides secu
 
 This library of documentation is aimed for enterprise security administrators who are either considering deployment, or have already deployed and are wanting to manage and configure Windows Defender AV on PC endpoints in their network.
 
-For more important information about running Windows Defender on a server platform, see [Windows Defender Overview for Windows Server](https://technet.microsoft.com/library/dn765478.aspx).
+For more important information about running Windows Defender AV on a server platform, see [Windows Defender Overview for Windows Server](https://technet.microsoft.com/library/dn765478.aspx).
 
 Windows Defender AV can be managed with:
 - System Center Configuration Manager (as System Center Endpoint Protection, or SCEP) 
