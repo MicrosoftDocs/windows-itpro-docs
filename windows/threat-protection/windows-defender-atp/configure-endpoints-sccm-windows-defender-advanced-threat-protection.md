@@ -42,7 +42,7 @@ You can use existing System Center Configuration Manager functionality to create
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** on the **Navigation pane**.
+    a. Click **Endpoint management** > **Client management** on the **Navigation pane**.
 
     b. Select **System Center Configuration Manager 2012/2012 R2/1511/1602**, click **Download package**, and save the .zip file.
 
@@ -114,7 +114,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** on the **Navigation pane**.
+    a. Click **Endpoint management** > **Client management** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 

@@ -29,7 +29,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 ## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint management** on the **Navigation pane**.
+    a.  Click **Endpoint management** > **Client management** on the **Navigation pane**.
 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 
@@ -79,7 +79,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** on the **Navigation pane**.
+    a. Click **Endpoint management** > **Client management** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 
