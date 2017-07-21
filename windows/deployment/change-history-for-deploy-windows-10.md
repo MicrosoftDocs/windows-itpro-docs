@@ -64,18 +64,18 @@ The topics in this library have been updated for Windows 10, version 1703 (also 
 | [Step by step guide: Configure a test lab to deploy Windows 10](windows-10-poc.md) | New | 
 | [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) | New | 
 | [Deploy Windows 10 in a test lab using System Center Configuration Manager](windows-10-poc-sc-config-mgr.md) | New | 
-| [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package.md) | New (previously published in other topics) | 
-| [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package.md) | New (previously published in Hardware Dev Center on MSDN) | 
-| [Create a provisioning package with multivariant settings](/windows/configuration/provisioning-packages/provisioning-multivariant.md) | New (previously published in Hardware Dev Center on MSDN) | 
-| [How provisioning works in Windows 10](/windows/configuration/provisioning-packages/provisioning-how-it-works.md) | New (previously published in Hardware Dev Center on MSDN) | 
-| [Install Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd.md) | New (previously published in Hardware Dev Center on MSDN) |
-| [NFC-based device provisioning](/windows/configuration/mobile-devices/provisioning-nfc.md) | New (previously published in Hardware Dev Center on MSDN) | 
-| [Settings changed when you uninstall a provisioning package](/windows/configuration/provisioning-packages/provisioning-uninstall-package.md) | New (previously published in Hardware Dev Center on MSDN) | 
-| [Use a script to install a desktop app in provisioning packages](/windows/configuration/provisioning-packages/provisioning-script-to-install-app.md) | New (previously published in Hardware Dev Center on MSDN) |
-| [Windows ICD command-line interface (reference)](/windows/configuration/provisioning-packages/provisioning-command-line.md) | New (previously published in Hardware Dev Center on MSDN) |
+| [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) | New (previously published in other topics) | 
+| [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Create a provisioning package with multivariant settings](/windows/configuration/provisioning-packages/provisioning-multivariant) | New (previously published in Hardware Dev Center on MSDN) | 
+| [How provisioning works in Windows 10](/windows/configuration/provisioning-packages/provisioning-how-it-works) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Install Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) | New (previously published in Hardware Dev Center on MSDN) |
+| [NFC-based device provisioning](/windows/configuration/mobile-devices/provisioning-nfc) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Settings changed when you uninstall a provisioning package](/windows/configuration/provisioning-packages/provisioning-uninstall-package) | New (previously published in Hardware Dev Center on MSDN) | 
+| [Use a script to install a desktop app in provisioning packages](/windows/configuration/provisioning-packages/provisioning-script-to-install-app) | New (previously published in Hardware Dev Center on MSDN) |
+| [Windows ICD command-line interface (reference)](/windows/configuration/provisioning-packages/provisioning-command-line) | New (previously published in Hardware Dev Center on MSDN) |
 | [Get started with Upgrade Analytics](upgrade/upgrade-readiness-get-started.md) | Updated exit code table with suggested fixes, and added link to the Upgrade Analytics blog | 
-| [Provision PCs with common settings for initial deployment (simple provisioning)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment.md) | Instructions for applying the provisioning package moved to [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package.md) |
-| [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](/windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates.md) | Instructions for applying the provisioning package moved to [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package.md) |
+| [Provision PCs with common settings for initial deployment (simple provisioning)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment) | Instructions for applying the provisioning package moved to [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) |
+| [Provision PCs with apps and certificates for initial deployments (advanced provisioning)](/windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates) | Instructions for applying the provisioning package moved to [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) |
 
 
 ## October 2016
@@ -135,5 +135,5 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 ## Related topics
 - [Change history for Plan for Windows 10 deployment](/windows/deployment/planning/change-history-for-plan-for-windows-10-deployment)
 - [Change history for Access Protection](/windows/access-protection/change-history-for-access-protection)
-- [Change history for Access Protection](/windows/device-security/change-history-for-device-security)
-- [Change history for Access Protection](/windows/threat-protection/change-history-for-threat-protection)
+- [Change history for Device Security](/windows/device-security/change-history-for-device-security)
+- [Change history for Threat Protection](/windows/threat-protection/change-history-for-threat-protection)
