@@ -17,6 +17,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 ## July 2017
 | New or changed topic | Description |
 | --- | --- |
+| [Add image for secondary tiles](start-secondary-tiles.md) | Added XML example for Edge secondary tiles and **ImportEdgeAssets** |
 |[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)|Updated several Appraiser events and added Census.Speech.
 
 ## June 2017
