@@ -65,16 +65,12 @@ Device Health is offered as a solution in the Microsoft Operations Management Su
 
 6.	To add Device Health to your workspace, go to the Solution Gallery, Select the **Device Health** tile and then select **Add** on the solution's detail page. 
 
- 
     [![](images/uc-08a.png)](images/uc-08.png)
 
 7.	Click the **Device Health** tile to configure the solution. The **Settings Dashboard** opens.
 
     [![](images/uc-09a.png)](images/uc-09.png)
 
-8.	Click **Subscribe** to subscribe to OMS Device Health. You will then need to distribute your Commercial ID across all your organization’s devices. More information on the Commercial ID is provided below.
-
-    [![](images/uc-10a.png)](images/uc-10.png)
 
 
 After you have added Device Health and devices have a Commercial ID, you will begin receiving data. It will typically take 24-48 hours for the first data to begin appearing. The following section explains how to deploy your Commercial ID to your Windows 10 devices.
@@ -94,6 +90,85 @@ In order for your devices to show up in Windows Analytics: Device Health, they m
 
 - Using Microsoft Mobile Device Management (MDM)<BR><BR>
 Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
+
+## Perform checks to ensure and verify successful deployment
+
+While you're waiting for the initial data to populate, there are some configuration details it's worth confirming to ensure that the necessary data connections are set up properly.
+
+### Registry settings for WER
+
+Using Regedit.exe or other tools, double-check these keys and values in HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Error Reporting:
+
+- The value "Disabled" (REG_DWORD), if set, is 0.
+- The value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
+- The value "CorporateWERServer" (REG_SZ) is not configured.
+
+If you need further information on Windows Error Reporting (WER) settings, see [WER Settings](https://msdn.microsoft.com/library/windows/desktop/bb513638(v=vs.85).aspx).
+
+### Endpoint connectivity
+
+Devices must be able to reach the endpoints specified in the "Device Health prerequisites" section of this topic. 
+
+>[!NOTE]  
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** authentication for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. (If you need more information about telemetry endpoints and how to manage them, see [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization).
+
+If you are using proxy server authentication, it's worth taking extra care to check the configuration, particularly for data points which might be uploaded in the machine context versus logged-on user context. For example, some enterprises might have an authenticated proxy set up such that only data from trusted user accounts can be uploaded. In Windows 10 versions prior to Windows 10, version 1703, all report uploads will fail if the enterprise is using an authenticated proxy, because the WER uploader does not run under a user context. In Windows 10, version 1703 and later, WER can run under the context of a logged-in user, so reports will be uploaded as long as there is an active user logged in at the time of upload. 
+
+Therefore, it's important to ensure that both machine and user accounts have access to the endpoints using authentication (or to whitelist the endpoints so that outbound proxy authentication is not required).
+
+To test access as a given user, you can run this Windows PowerShell cmdlet *while logged on as that user*: 
+
+```powershell
+
+$endPoints = @(
+        'v10.vortex-win.data.microsoft.com'
+        'settings-win.data.microsoft.com'
+        'watson.telemetry.microsoft.com'
+        'oca.telemetry.microsoft.com'
+        'vortex.data.microsoft.com'
+    )
+
+$endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
+
+```
+
+If this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
+
+To test access in the machine context (requires administrative rights), run the above as SYSTEM using PSexec or Task Scheduler, as in this example:
+
+```powershell
+
+[scriptblock]$accessTest = {
+    $endPoints = @(
+        'v10.vortex-win.data.microsoft.com'
+        'settings-win.data.microsoft.com'
+        'watson.telemetry.microsoft.com'
+        'oca.telemetry.microsoft.com'
+        'vortex.data.microsoft.com'
+    )
+
+    $endPoints | %{ Test-NetConnection -ComputerName $_ -Port 443 -ErrorAction Continue } | Select-Object -Property ComputerName,TcpTestSucceeded
+}
+
+$scriptFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints.ps1"
+$outputFileFullPath = Join-Path $env:ProgramData "TestAccessToMicrosoftEndpoints_Output.txt"
+$accessTest.ToString() > $scriptFullPath
+$null > $outputFileFullPath
+$taskAction = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument "-ExecutionPolicy Bypass -Command `"&{$scriptFullPath > $outputFileFullPath}`"" 
+$taskTrigger = New-ScheduledTaskTrigger -Once -At (Get-Date).Addseconds(10)
+$task = Register-ScheduledTask -User 'NT AUTHORITY\SYSTEM' -TaskName 'MicrosoftTelemetryAccessTest' -Trigger $taskTrigger -Action $taskAction -Force
+Start-Sleep -Seconds 120
+Unregister-ScheduledTask -TaskName $task.TaskName -Confirm:$false
+Get-Content $outputFileFullPath
+
+```
+
+As in the other example, if this is successful, `TcpTestSucceeded` should return `True` for each of the endpoints.
+
+
+
+
+
 
 
 ## Related topics
