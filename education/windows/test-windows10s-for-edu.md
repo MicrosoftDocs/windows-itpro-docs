@@ -41,9 +41,14 @@ Before you install Windows 10 S, be aware that non-Windows Store apps will not w
 Due to these reasons, we recommend that you use the installation tool and avoid doing a clean install from an ISO media.
 
 Before you install Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device:
-* Make sure that you updated your existing device to Windows 10, version 1703 (Creators Update) - See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703.
+* Make sure that you updated your existing device to Windows 10, version 1703 (Creators Update).
+
+    See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703.
+
 * Install the latest Windows Update - To do this, go to **Settings > Update & security > Windows Update**.
-* Create a system backup in case you would like to return to Windows 10 Pro or Windows 10 Pro Education after trying Windows 10 S. - See [Create a recovery drive](#create-a-recovery-drive) for information on how to do this.
+* Create a system backup in case you would like to return to Windows 10 Pro or Windows 10 Pro Education after trying Windows 10 S.
+
+    See [Create a recovery drive](#create-a-recovery-drive) for information on how to do this.
 
 ## Supported devices
 
@@ -150,7 +155,7 @@ To use an installation media to reinstall Windows 10, follow these steps.
 ## Download Windows 10 S
 Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-pre-installation-information) and all the above information. 
 
-When you're ready, you can download the Windows 10 S installer by clicking this link: [![Download the Windows 10 S installer](/media/common/i_download-install.svg)](https://go.microsoft.com/fwlink/?linkid=853240)
+When you're ready, you can download the Windows 10 S installer by clicking this icon: [![Download the Windows 10 S installer](/media/common/i_download-install.svg)](https://go.microsoft.com/fwlink/?linkid=853240)
 
 ## Terms and Conditions
 Because you’re installing Windows 10 S on a running version of Windows 10 Pro or Windows 10 Pro Education, you have already accepted the Windows 10 Terms and Conditions. You are not required to accept it again and the Windows 10 installer doesn’t show a Terms and Conditions page during installation.
