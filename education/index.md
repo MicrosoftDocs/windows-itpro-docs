@@ -52,7 +52,7 @@ ms.author: celested
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_free-trial.svg" src="/media/common/i_get-started.svg" alt="Test Windows 10 S for education" />
+                                        <img data-hoverimage="/media/common/i_download-install.svg" src="/media/common/i_download-install.svg" alt="Test Windows 10 S for education" />
                                     </div>
                                 </div>
                                 <div class="cardText">
