@@ -1,6 +1,6 @@
 ---
-title: Test Windows 10 S on existing Windows 10 Pro education devices
-description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 Pro education devices.
+title: Test Windows 10 S on existing Windows 10 devices
+description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 education devices.
 keywords: Windows 10 S, download, try, school, education
 ms.mktglfcycl: deploy
 ms.prod: w10
@@ -9,17 +9,17 @@ ms.sitesec: library
 localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 07/27/2017
+ms.date: 08/01/2017
 ---
 
-# Test Windows 10 S on existing Windows 10 Pro education devices
+# Test Windows 10 S on existing Windows 10 devices
 
 **Applies to:**
-- Windows 10
+- Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, Windows 10 Enterprise
 
 Windows 10 S gives schools the familiar, robust, and productive experiences they count on from Windows in an experience streamlined for security and performance in the classroom, built to work with Microsoft Education<sup>[1](#footnote1)</sup>.
 
-Test Windows 10 S on a few existing Windows 10 Pro or Windows 10 Pro Education devices with a genuine, activated license<sup>[2](#footnote2)</sup>.
+Test Windows 10 S on a variety of individual Windows 10 devices with a genuine, activated license<sup>[2](#footnote2)</sup>.
 
 Windows 10 S is different from other editions of Windows 10 as everything runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Windows Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install apps from the Windows Store.
 
@@ -28,39 +28,53 @@ To install Office applications in a school environment, you must use the free Se
 ## Important pre-installation information
 
 Before you install Windows 10 S, be aware that non-Windows Store apps will not work, peripherals that require custom drivers may not work, and other errors may occur. In particular, Windows 10 S:
-* May not work well with certain OEM devices, and even if compatible, may cause some hardware incompatibility
+* May not work with some device drivers, which may not yet be ready for Windows 10 S
 * May not be compatible with all peripherals that require custom drivers and, even if compatible, may cause aspects of the peripheral to not function
-* Has software and feature limitations compared to Windows 10 Pro or Windows 10 Pro Education, primarily that Windows 10 S is limited to Store apps only
+* Has software and feature limitations compared to other Windows 10 editions, primarily that Windows 10 S is limited to Store apps only
 
     > [!WARNING]
-    > You can install Windows 10 S on devices running other editions of Windows 10 besides Windows 10 Pro or Windows 10 Pro Education. However, we don't recommend installing Windows 10 S on these devices as you won't be able to activate it.
+    > You can install Windows 10 S on devices running other editions of Windows 10. For more information, see [Supported devices](#supported-devices). However, we don't recommend installing Windows 10 S on Windows 10 Home devices as you won't be able to activate it.
 
 * Will not run current Win32 software and might result in the loss of any data associated with that software, which might include software already purchased
 * Is intended for education customers
 
 Due to these reasons, we recommend that you use the installation tool and avoid doing a clean install from an ISO media.
 
-Before you install Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device:
+Before you install Windows 10 S on your existing Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise device:
 * Make sure that you updated your existing device to Windows 10, version 1703 (Creators Update).
 
     See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703.
 
-* Install the latest Windows Update - To do this, go to **Settings > Update & security > Windows Update**.
-* Create a system backup in case you would like to return to Windows 10 Pro or Windows 10 Pro Education after trying Windows 10 S.
+* Install the latest Windows Update.
+
+    To do this, go to **Settings > Update & security > Windows Update**.
+
+* Create a system backup in case you would like to return to Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise after trying Windows 10 S.
 
     See [Create a recovery drive](#create-a-recovery-drive) for information on how to do this.
 
 ## Supported devices
 
-Only devices running Windows 10 Pro and Windows 10 Pro Education are supported for Windows 10 S. Other Windows 10 editions cannot be activated and are not supported. If your device is not running a genuine, activated copy of Windows 10 Pro or Windows 10 Pro Education, do not proceed with using the Windows 10 S installer.
+Devices running the following editions of Windows 10 are supported for Windows 10 S:
+* Windows 10 Pro
+* Windows 10 Pro Education
+* Windows 10 Education
+* Windows 10 Enterprise
+
+Other Windows 10 editions, such as Windows 10 Home, cannot be activated and are not supported. 
+
+If your device is not running a genuine, activated copy of a supported Windows 10 edition, do not proceed with using the Windows 10 S installer.
 
 ## Preparing your device to install drivers
 
-Make sure all drivers are installed and working properly on your device running Windows 10 Pro or Windows 10 Pro Education before installing Windows 10 S.
+Make sure all drivers are installed and working properly on your device running Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise before installing Windows 10 S.
 
 ### Supported devices and drivers
 
-Check with your device manufacturer before trying Windows 10 S on your Windows 10 Pro or Windows 10 Pro Education device to make sure the drivers are available and supported by the device manufacturer. Visit **TBD - need link** for more information.
+Check with your device manufacturer before trying Windows 10 S on your device to see if the drivers are available and supported by the device manufacturer. Visit **TBD - need link** for more information.
+
+> [!NOTE]
+> **Action item: Yoichiro Okada** - Need the link to fill in this section
 
 If you don't see your manufacturer or device model listed, proceed with caution as you may not be able to get support from your device manufacturer to install Windows 10 S and you may experience limited or incomplete functionality on Windows features, device hardware, peripherals, and others.
 
@@ -78,7 +92,10 @@ Windows 10 S does not support non-Azure Active Directory domain accounts. Before
 - Microsoft Account (MSA) administrator
 - Azure Active Directory administrator 
 
-If you don't have one of these accounts accessible before migration, you will not be able to log in to your device after migrating to Windows 10 S. We recommend [creating a recovery drive](#create-a-recovery-drive) before migrating to Windows 10 S in case you run into this issue.
+> [!WARNING]
+> If you don't have one of these administrator accounts accessible before migration, you will not be able to log in to your device after migrating to Windows 10 S. 
+
+We recommend [creating a recovery drive](#create-a-recovery-drive) before migrating to Windows 10 S in case you run into this issue.
 
 ## Installing Office applications
 
@@ -88,17 +105,20 @@ After installing Windows 10 S, use the free [Set up School PCs app](use-set-up-s
 
 If Windows 10 S is not right for you, you can switch to Windows 10 Pro or Windows 10 Pro Education.
 
-| Starting edition (Home, Pro, Pro Education, Enterprise, Education) | Can install Windows 10 S? | Will activate Windows 10 S? | Windows Store switch to Windows 10 Pro? | Works with Microsoft Store for Education switch to Windows 10 Pro Education? | Can utilize Office Store? | 
-| --- | --- | --- | --- | --- | --- | 
-| Windows 10 Home          | Yes | No  | Paid (will be chaged more) |     | No (click-to-run) | 
-| Windows 10 Pro           | Yes | No  | Not applicable             |     | Yes               | 
-| Windows 10 Pro Education | Yes | No  | No                         |     | No                | 
-| Windows 10 Enterprise    | Yes | No  | No                         |     | No                | 
-| Windows 10 Education     | Yes | No  | No                         |     | No                | 
+> [!NOTE]
+> **Action item: Lee, Ric, Will** - Since we're adding 10 Education and 10 Enterprise to the list of supported devices that can install Windows 10 S,should we retitle this section to "Switch to previously installed Windows 10 edition" or something along those lines and update the intro sentence before the table?
+> **Action item: Antoine, Tipton** - Some entries may still need to turn from "No" to "Yes". Waiting for confirmation.
 
-Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
+| Starting edition (Home, Pro, Pro Education, Enterprise, Education) | Can install Windows 10 S? | Will activate Windows 10 S? | Recommended to test | Windows Store switch to Windows 10 Pro? | Works with Microsoft Store for Education switch to Windows 10 Pro Education? | Can utilize Office Store? |
+| --- | --- | --- | --- | --- | --- | --- | 
+| Windows 10 Home          | Yes | No  | No  | Paid (will be chaged more) |     | No (click-to-run) | 
+| Windows 10 Pro           | Yes | Yes | Yes | Not applicable             |     | Yes               | 
+| Windows 10 Pro Education | Yes | No  | Yes | No                         |     | No                | 
+| Windows 10 Enterprise    | Yes | No  | Yes | No                         |     | No                | 
+| Windows 10 Education     | Yes | No  | Yes | No                         |     | No                | 
 
-On individual devices, you can use your existing Windows 10 Pro or Windows 10 Pro Education kley.
+* Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
+* On individual devices, you can use your existing Windows 10 key to switch back to the previously installed edition. If you try Windows 10 S and decide to go switch back to the previously installed edition within 10 days, you can go back to the previously installed edition using the Windows Recovery option in Settings. For more info, see [Go back to your previous edition of Windows 10](#go-back-to-your-previous-edition-of-windows-10).
 
 ## Device recovery
 
