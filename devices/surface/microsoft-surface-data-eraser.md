@@ -34,7 +34,7 @@ Compatible Surface devices include:
 
 - Surface Pro 4
 
-- Surface Pro3
+- Surface Pro 3
 
 - Surface 3
 
