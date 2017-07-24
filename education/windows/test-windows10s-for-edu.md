@@ -1,6 +1,6 @@
 ---
 title: Test Windows 10 S on existing Windows 10 devices
-description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 education devices.
+description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 devices.
 keywords: Windows 10 S, download, try, school, education
 ms.mktglfcycl: deploy
 ms.prod: w10
