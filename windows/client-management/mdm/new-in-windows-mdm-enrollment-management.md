@@ -1305,6 +1305,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>WindowsDefenderSecurityCenter/Phone</li>
 <li>WindowsDefenderSecurityCenter/URL</li>
 </ul>
+<p>Experience/AllowFindMyDevice - updated the description to include active digitizers.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
