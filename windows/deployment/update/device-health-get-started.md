@@ -32,7 +32,7 @@ Windows Error Reporting | watson.telemetry.microsoft.com
 Online Crash Analysis | oca.telemetry.microsoft.com
 
 >[!NOTE]  
-> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** authentication for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization) for steps to exclude these endpoints.
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. See [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization) for steps to exclude authentication for these endpoints.
 
 
 ## Add Device Health to Microsoft Operations Management Suite
@@ -98,23 +98,22 @@ While you're waiting for the initial data to populate, there are some configurat
 ### Check for disabled Windows Error Reporting (WER)
  
 If WER is disabled or redirected on your Windows devices, then reliability information cannot be shown in Device Health. 
-Check these settings in applicable group policies or by using Gpresult.exe under the path **Computer Configuration\Administrative Templates\Windows Components\Windows Error Reporting\**.
- 
-These group policies should **not** be Enabled.
- 
-- Disable Windows Error Reporting
-- Do not send additional data
-- Advanced Error Reporting Settings\Configure Corporate Windows Error Reporting
+
+Check these Registry settings in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Error Reporting**:
+
+- Verify that the value "Disabled" (REG_DWORD), if set, is 0.
+- Verify that the value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
+- Verify that the value "CorporateWERServer" (REG_SZ) is not configured.
  
 If you need further information on Windows Error Reporting (WER) settings, see [WER Settings](https://msdn.microsoft.com/library/windows/desktop/bb513638(v=vs.85).aspx).
-
+ 
 
 ### Endpoint connectivity
 
 Devices must be able to reach the endpoints specified in the "Device Health prerequisites" section of this topic. 
 
 >[!NOTE]  
-> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** authentication for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. (If you need more information about telemetry endpoints and how to manage them, see [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization).
+> If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** *authentication* for the endpoints listed in Step 3 of the "Device Health prerequisites" section of this topic. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. (If you need more information about telemetry endpoints and how to manage them, see [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization).
 
 If you are using proxy server authentication, it is worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
 
