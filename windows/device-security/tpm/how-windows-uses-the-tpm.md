@@ -14,27 +14,14 @@ author: brianlic-msft
 
 The Windows 10 operating system improves most existing security features in the operating system and adds groundbreaking new security features such as Device Guard and Windows Hello for Business. It places hardware-based security deeper inside the operating system than previous Windows versions had done, maximizing platform security while increasing usability. To achieve many of these security enhancements, Windows 10 makes extensive use of the Trusted Platform Module (TPM). This article offers a brief overview of the TPM, describes how it works, and discusses the benefits that TPM brings to Windows 10—as well as the cumulative security impact of running Windows 10 on a PC that contains a TPM.
 
-**In this topic:**
-
-   - TPM Overview
-   - TPM in Windows 10:
-      - Platform Crypto Provider
-      - Virtual Smart Card
-      - Windows Hello for Business
-      - BitLocker Drive Encryption
-      - Device Encryption
-      - Measured Boot
-      - Health Attestation
-      - Credential Guard
-   - Conclusion
 
 **See also:**
 
-   - [Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) 
+   - [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications) 
 
-   - [TPM Fundamentals](https://technet.microsoft.com/en-us/library/jj889441.aspx)
+   - [TPM Fundamentals](https://technet.microsoft.com/library/jj889441.aspx)
 
-   - [TPM Recommendations](https://technet.microsoft.com/itpro/windows/keep-secure/tpm-recommendations) 
+   - [TPM Recommendations](tpm-recommendations.md) 
 
 ## TPM Overview
 
@@ -169,4 +156,4 @@ The TPM adds hardware-based security benefits to Windows 10. When installed on h
 
 <br />
 
-Although some of the aforementioned features have additional hardware requirements (e.g., virtualization support), the TPM is a cornerstone of Windows 10 security. Microsoft and other industry stakeholders continue to improve the global standards associated with TPM and find more and more applications that use it to provide tangible benefits to customers. Microsoft has included support for most TPM features in its version of Windows for the Internet of Things (IoT) called [Windows 10 IoT Core](https://developer.microsoft.com/en-us/windows/iot/iotcore).  IoT devices that might be deployed in insecure physical locations and connected to cloud services like [Azure IoT Hub](https://azure.microsoft.com/en-us/documentation/services/iot-hub/) for management can use the TPM in innovative ways to address their emerging security requirements.
+Although some of the aforementioned features have additional hardware requirements (e.g., virtualization support), the TPM is a cornerstone of Windows 10 security. Microsoft and other industry stakeholders continue to improve the global standards associated with TPM and find more and more applications that use it to provide tangible benefits to customers. Microsoft has included support for most TPM features in its version of Windows for the Internet of Things (IoT) called [Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/iotcore).  IoT devices that might be deployed in insecure physical locations and connected to cloud services like [Azure IoT Hub](https://azure.microsoft.com/documentation/services/iot-hub/) for management can use the TPM in innovative ways to address their emerging security requirements.
