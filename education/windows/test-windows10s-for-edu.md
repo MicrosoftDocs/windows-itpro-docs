@@ -1,6 +1,6 @@
 ---
-title: Test Windows 10 S on existing Windows 10 devices
-description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 devices.
+title: Test Windows 10 S on existing Windows 10 education devices
+description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 education devices.
 keywords: Windows 10 S, download, try, school, education
 ms.mktglfcycl: deploy
 ms.prod: w10
@@ -12,16 +12,16 @@ ms.author: celested
 ms.date: 08/01/2017
 ---
 
-# Test Windows 10 S on existing Windows 10 devices
+# Test Windows 10 S on existing Windows 10 education devices
 
 **Applies to:**
 - Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, Windows 10 Enterprise
 
-Windows 10 S gives schools the familiar, robust, and productive experiences they count on from Windows in an experience streamlined for security and performance in the classroom, built to work with Microsoft Education<sup>[1](#footnote1)</sup>.
+The Windows 10 S self-installer will allow you to test Windows 10 S on a variety of individual Windows 10 devices (except Windows 10 Home) with a genuine, activated license<sup>[1](#footnote1)</sup>. Please test Windows 10 S on a variety of devices in your school and share your feedback with us.
 
-Test Windows 10 S on a variety of individual Windows 10 devices with a genuine, activated license<sup>[2](#footnote2)</sup>.
+Windows 10 S is built to give schools the familiar, robust, and productive experiences you count on from Windows in an experience that's been streamlined for security and performance in the classroom, and built to work with Microsoft Education<sup>[2](#footnote2)</sup>.
 
-Windows 10 S is different from other editions of Windows 10 as everything runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Windows Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install apps from the Windows Store.
+Windows 10 S is different from other editions of Windows 10 as everything that runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Windows Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install apps from the Windows Store.
 
 To install Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. Education customers must configure **SetEduPolicies** for use in K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). If you installed the preview version of Office from the Windows Store, it may occasionally behave in unexpected ways. As we finalize development, your Office install will be updated automatically. You must have an Office license to activate the applications once they are installed.
 
@@ -186,7 +186,8 @@ Thank you for testing Windows 10 S. Your best experience will be running on a su
 * If you do not have a Volume Licensing Agreement, go to the [Microsoft Support](https://support.microsoft.com/en-us/contactus/) website and choose a support option.
 
 <p>
-<a name="footnote1"></a><sup>1</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
-<a name="footnote2"></a><sup>2</sup> <small>Internet access fees may apply.</small>
+<a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
+<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
+
 </p>
 
