@@ -23,12 +23,19 @@ Windows 10 S is built to give schools the familiar, robust, and productive exper
 
 Windows 10 S is different from other editions of Windows 10 as everything that runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Windows Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install apps from the Windows Store.
 
-To install Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. Education customers must configure **SetEduPolicies** for use in K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). If you installed the preview version of Office from the Windows Store, it may occasionally behave in unexpected ways. As we finalize development, your Office install will be updated automatically. You must have an Office license to activate the applications once they are installed.
+**Configuring Windows 10 S for school use is easy:** Education customers must configure **SetEduPolicies** for use in K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). 
 
-## Important pre-installation information
+**Installing Office**: To install Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. 
 
-Before you install Windows 10 S, be aware that non-Windows Store apps will not work, peripherals that require custom drivers may not work, and other errors may occur. In particular, Windows 10 S:
-* May not work with some device drivers, which may not yet be ready for Windows 10 S
+If you install the preview version of Office from the Windows Store, it may occasionally behave in unexpected ways. As we finalize development, your Office install will be updated automatically. You must have an Office license to activate the applications once they are installed.To learn more about Office 365 for Education plans, see [FAQ: Office on Windows 10 S](https://support.office.com/article/717193b5-ff9f-4388-84c0-277ddf07fe3f).
+
+## Before you install Windows 10 S
+
+### Important information
+
+Before you install Windows 10 S, be aware that non-Windows Store apps will not work, peripherals that require custom drivers may not work, and other errors may occur. In particular, this release of Windows 10 S:
+* Is intended for education customers to test compatibility with existing hardware
+* May not work with some device drivers, which may not yet be ready for Windows 10 S and may cause some loss in functionality
 * May not be compatible with all peripherals that require custom drivers and, even if compatible, may cause aspects of the peripheral to not function
 * Has software and feature limitations compared to other Windows 10 editions, primarily that Windows 10 S is limited to Store apps only
 
@@ -36,20 +43,19 @@ Before you install Windows 10 S, be aware that non-Windows Store apps will not w
     > You can install Windows 10 S on devices running other editions of Windows 10. For more information, see [Supported devices](#supported-devices). However, we don't recommend installing Windows 10 S on Windows 10 Home devices as you won't be able to activate it.
 
 * Will not run current Win32 software and might result in the loss of any data associated with that software, which might include software already purchased
-* Is intended for education customers
 
 Due to these reasons, we recommend that you use the installation tool and avoid doing a clean install from an ISO media.
 
 Before you install Windows 10 S on your existing Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise device:
 * Make sure that you updated your existing device to Windows 10, version 1703 (Creators Update).
 
-    See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703.
+    See [Download Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and follow the instructions to update your device to Windows 10, version 1703. You can verify your current version in **Settings > System > About**.
 
 * Install the latest Windows Update.
 
     To do this, go to **Settings > Update & security > Windows Update**.
 
-* Create a system backup in case you would like to return to Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise after trying Windows 10 S.
+* Create a system backup in case you would like to return to your previously installed version of Windows 10 after trying Windows 10 S.
 
     See [Create a recovery drive](#create-a-recovery-drive) for information on how to do this.
 
@@ -61,9 +67,7 @@ Devices running the following editions of Windows 10 are supported for Windows 1
 * Windows 10 Education
 * Windows 10 Enterprise
 
-Other Windows 10 editions, such as Windows 10 Home, cannot be activated and are not supported. 
-
-If your device is not running a genuine, activated copy of a supported Windows 10 edition, do not proceed with using the Windows 10 S installer.
+Other Windows 10 editions cannot be activated and are not supported. If your device is not running one of these supported Windows 10 editions, do not proceed with using the Windows 10 S installer.
 
 ## Preparing your device to install drivers
 
@@ -76,7 +80,7 @@ Check with your device manufacturer before trying Windows 10 S on your device to
 > [!NOTE]
 > **Action item: Yoichiro Okada** - Need the link to fill in this section
 
-If you don't see your manufacturer or device model listed, proceed with caution as you may not be able to get support from your device manufacturer to install Windows 10 S and you may experience limited or incomplete functionality on Windows features, device hardware, peripherals, and others.
+If you don't see your manufacturer or device model listed, you can still proceed and provide feedback, but be aware that you may not be able to get support from your device manufacturer to install Windows 10 S and you may experience limited or incomplete functionality on Windows features, device hardware, peripherals, and others.
 
 ## Kept files
 
@@ -99,16 +103,13 @@ We recommend [creating a recovery drive](#create-a-recovery-drive) before migrat
 
 ## Installing Office applications
 
-After installing Windows 10 S, use the free [Set up School PCs app](use-set-up-school-pcs-app.md) to install Microsoft Office. You must have an Office license to activate the applications once they are installed.
+After installing Windows 10 S, use the free [Set up School PCs app](use-set-up-school-pcs-app.md) or [Intune for Education](https://www.microsoft.com/education/intune/default.aspx) to install Microsoft Office. You must have an Office license to activate the applications once they are installed.
 
-## Switch to Windows 10 Pro or Windows 10 Pro Education
 
-If Windows 10 S is not right for you, you can switch to Windows 10 Pro or Windows 10 Pro Education.
+## Switch to previously installed Windows 10 editions
 
-> [!NOTE]
-> **Action item: Lee, Ric, Will** - Since we're adding 10 Education and 10 Enterprise to the list of supported devices that can install Windows 10 S,should we retitle this section to "Switch to previously installed Windows 10 edition" or something along those lines and update the intro sentence before the table?
-> **Action item: Antoine, Tipton** - Some entries may still need to turn from "No" to "Yes". Waiting for confirmation.
-
+If Windows 10 S is not right for you, you can switch to the Windows 10 edition previously installed on your device(s).
+<!--
 | Starting edition (Home, Pro, Pro Education, Enterprise, Education) | Can install Windows 10 S? | Will activate Windows 10 S? | Recommended to test | Windows Store switch to Windows 10 Pro? | Works with Microsoft Store for Education switch to Windows 10 Pro Education? | Can utilize Office Store? |
 | --- | --- | --- | --- | --- | --- | --- | 
 | Windows 10 Home          | Yes | No  | No  | Paid (will be chaged more) |     | No (click-to-run) | 
@@ -116,9 +117,13 @@ If Windows 10 S is not right for you, you can switch to Windows 10 Pro or Window
 | Windows 10 Pro Education | Yes | No  | Yes | No                         |     | No                | 
 | Windows 10 Enterprise    | Yes | No  | Yes | No                         |     | No                | 
 | Windows 10 Education     | Yes | No  | Yes | No                         |     | No                | 
+-->
 
 * Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
-* On individual devices, you can use your existing Windows 10 key to switch back to the previously installed edition. If you try Windows 10 S and decide to go switch back to the previously installed edition within 10 days, you can go back to the previously installed edition using the Windows Recovery option in Settings. For more info, see [Go back to your previous edition of Windows 10](#go-back-to-your-previous-edition-of-windows-10).
+* On individual devices, you can use your existing Windows 10 key to switch back to the previously installed edition. If you try Windows 10 S and decide to switch back to the previously installed edition within 10 days, you can go back to the previously installed edition using the Windows Recovery option in Settings. For more info, see [Go back to your previous edition of Windows 10](#go-back-to-your-previous-edition-of-windows-10).
+
+> [!NOTE]
+> **Action items: Ric, Will, Deana, Namrata** - Please confirm if the second bullet is true. Is it only Pro or Pro Education key that will do something in an S device? Does Enterprise/Education require a reimage?
 
 ## Device recovery
 
@@ -140,8 +145,8 @@ To create a recovery drive, follow these steps.
 Alternatively, for a period of 10 days after you install Windows 10 S, you have the option to go back to your previous edition of Windows 10 from **Settings > Update & security > Recovery**. This will keep your personal files, but it will remove installed apps as well as any changes you made to **Settings**.
 
 To go back, you need to:
-* Keep everything in the windows.old and $windows.~bt folders after the upgrade
-* Remove any user accounts you added after the upgrade
+* Keep everything in the windows.old and $windows.~bt folders after the upgrade.
+* Remove any user accounts you added after the upgrade.
 
 If going back is not available:
 * Check if you can restore your PC to factory settings. This will reinstall the version of Windows that came with your PC and remove personal files, apps, and drivers you installed and any changes you made to **Settings**. Go to **Settings > Update & security > Recovery > Reset this PC > Get started** and look for **Restore factory settings**.
@@ -157,7 +162,7 @@ To use an installation media to reinstall Windows 10, follow these steps.
 1. On a working PC, go to the [Microsoft software download website](https://www.microsoft.com/en-us/software-download/windows10).
 2. Download the Media Creation Tool and then run it.
 3. Select **Create installation media for another PC**.
-4. Choose a language, edition, and architecture (65-bit or 32-bit).
+4. Choose a language, edition, and architecture (64-bit or 32-bit).
 5. Follow the steps to create an installation media and then select **Finish**.
 6. Connect the installation media that you created to your non-functional PC, and then turn it on.
 7. On the initial setup screen, enter your language and other preferences, and then select **Next**.
@@ -178,12 +183,15 @@ Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Edu
 When you're ready, you can download the Windows 10 S installer from [this Microsoft website](https://go.microsoft.com/fwlink/?linkid=853240).
 
 ## Terms and Conditions
-Because you’re installing Windows 10 S on a running version of Windows 10 Pro or Windows 10 Pro Education, you have already accepted the Windows 10 Terms and Conditions. You are not required to accept it again and the Windows 10 installer doesn’t show a Terms and Conditions page during installation.
+Because you’re installing Windows 10 S on a running version of Windows 10, you have already accepted the Windows 10 Terms and Conditions. You are not required to accept it again and the Windows 10 installer doesn’t show a Terms and Conditions page during installation.
 
 ## Support 
 Thank you for testing Windows 10 S. Your best experience will be running on a supported device as mentioned above. If you are having difficulty installing or running Windows 10 S, use the Windows **Feedback Hub** to report your experience to Microsoft. This is the best way to help make Windows 10 S a great OS. Frequently asked technical topics are covered online on our Support website and steps to return to your previous installation of Windows 10 are covered above. If you need to talk to an agent for help with additional online resources, click on the appropriate link below for support options.
 * For Volume Licensing Agreement or Shape the Future program customers, go to the [Microsoft Commercial Support](https://support.microsoft.com/gp/commercialsupport) website and select the country/region in which you are seeking commercial support to contact our commercial support team.
 * If you do not have a Volume Licensing Agreement, go to the [Microsoft Support](https://support.microsoft.com/en-us/contactus/) website and choose a support option.
+
+> [!NOTE]
+> **Action item - Shubha** - Waiting for updated support statements/input
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
