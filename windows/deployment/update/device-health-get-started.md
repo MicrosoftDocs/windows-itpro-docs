@@ -95,15 +95,19 @@ Microsoft’s Mobile Device Management can be used to deploy your Commercial ID 
 
 While you're waiting for the initial data to populate, there are some configuration details it's worth confirming to ensure that the necessary data connections are set up properly.
 
-### Registry settings for WER
-
-Using Regedit.exe or other tools, double-check these keys and values in HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Windows Error Reporting:
-
-- The value "Disabled" (REG_DWORD), if set, is 0.
-- The value "DontSendAdditionalData" (REG_DWORD), if set, is 0.
-- The value "CorporateWERServer" (REG_SZ) is not configured.
-
+### Check for disabled Windows Error Reporting (WER)
+ 
+If WER is disabled or redirected on your Windows devices, then reliability information cannot be shown in Device Health. 
+Check these settings in applicable group policies or by using Gpresult.exe under the path **Computer Configuration\Administrative Templates\Windows Components\Windows Error Reporting\**.
+ 
+These group policies should **not** be Enabled.
+ 
+- Disable Windows Error Reporting
+- Do not send additional data
+- Advanced Error Reporting Settings\Configure Corporate Windows Error Reporting
+ 
 If you need further information on Windows Error Reporting (WER) settings, see [WER Settings](https://msdn.microsoft.com/library/windows/desktop/bb513638(v=vs.85).aspx).
+
 
 ### Endpoint connectivity
 
@@ -112,7 +116,7 @@ Devices must be able to reach the endpoints specified in the "Device Health prer
 >[!NOTE]  
 > If your deployment includes devices running Windows 10 versions prior to Windows 10, version 1703, you must **exclude** authentication for the endpoints listed in Step 3. Windows Error Reporting did not support authenticating proxies until Windows 10, version 1703. (If you need more information about telemetry endpoints and how to manage them, see [Configure Windows telemetry in your organization](https://docs.microsoft.com/windows/configuration/configure-windows-telemetry-in-your-organization).
 
-If you are using proxy server authentication, it's worth taking extra care to check the configuration, particularly for data points which might be uploaded in the machine context versus logged-on user context. For example, some enterprises might have an authenticated proxy set up such that only data from trusted user accounts can be uploaded. In Windows 10 versions prior to Windows 10, version 1703, all report uploads will fail if the enterprise is using an authenticated proxy, because the WER uploader does not run under a user context. In Windows 10, version 1703 and later, WER can run under the context of a logged-in user, so reports will be uploaded as long as there is an active user logged in at the time of upload. 
+If you are using proxy server authentication, it is worth taking extra care to check the configuration. Prior to Windows 10, version 1703, WER uploads error reports in the machine context. Both user (typically authenticated) and machine (typically anonymous) contexts require access through proxy servers to the diagnostic endpoints. In Windows 10, version 1703, and later WER will attempt to use the context of the user that is logged on for proxy authentication such that only the user account requires proxy access.
 
 Therefore, it's important to ensure that both machine and user accounts have access to the endpoints using authentication (or to whitelist the endpoints so that outbound proxy authentication is not required).
 
