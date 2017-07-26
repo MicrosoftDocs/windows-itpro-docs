@@ -75,10 +75,14 @@ Make sure all drivers are installed and working properly on your device running 
 
 ### Supported devices and drivers
 
-Check with your device manufacturer before trying Windows 10 S on your device to see if the drivers are available and supported by the device manufacturer. Visit **TBD - need link** for more information.
+Check with your device manufacturer before trying Windows 10 S on your device to see if the drivers are available and supported by the device manufacturer. 
 
 > [!NOTE]
 > **Action item: Yoichiro Okada** - Need the link to fill in this section
+
+| Device manufacturer | Device(s) |
+| --- | --- |
+| Microsoft | [Surface](https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s) |
 
 If you don't see your manufacturer or device model listed, you can still proceed and provide feedback, but be aware that you may not be able to get support from your device manufacturer to install Windows 10 S and you may experience limited or incomplete functionality on Windows features, device hardware, peripherals, and others.
 
