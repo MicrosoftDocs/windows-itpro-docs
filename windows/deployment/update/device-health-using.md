@@ -8,15 +8,19 @@ ms.pagetype: deploy
 author: jaimeo
 ---
 
-# Use Device Health to monitor frequency and causes of device crashes
+# Using Device Health
 
 This section describes how to use Device Health to monitor devices deployed on your network and troubleshoot the causes if they crash.
 
 
-Device Health: 
-- Uses telemetry gathered from user devices to form an all-up view of Windows 10 devices in your organization. 
-- Displays devices that crash frequently and might need to be flattened, replaced, or otherwise fixed.
-- Identifies drivers that are causing many devices to crash, so that they can be updated or replaced.
+Device Health provides IT Pros with reports on some common problems that users might experience so that they can be proactively remediated. This decreases support calls and improves productivity.
+
+Device Health provides the following benefits:
+
+- Identification of devices that crash frequently and therefore might need to be rebuilt or replaced
+- Identification of device drivers that are causing device crashes, with suggestions of alternative versions of those drivers that might reduce the number of crashes
+- Notification of Windows Information Protection misconfigurations that send prompts to end users
+
 
 >[!NOTE]
 >Information is refreshed daily so that health status can be monitored. Changes will be displayed about 24-48 hours after their occurrence, so you always have a recent snapshot of your devices.
@@ -33,12 +37,14 @@ In OMS, the aspects of a solution's dashboard are usually divided into <I>blades
 
 ### Frequently Crashing Devices
 
-This middle blade in Device Health displays the devices that have crashed the most often in the last week. good for helping identify outliers that need to be replaced,etc.  See the following example: 
+This middle blade in Device Health displays the devices that have crashed the most often in the last week. This can help you identify unhealthy devices that might need to be rebuilt or replaced.
+
+See the following example: 
 
 
 ![The blade in the middle summarizes devices that crash most often](images/dev-health-main-tile.png)
 
-Clicking the Frequently Crashing Devices blade opens a reliability perspective view, where you can filter data (by using filters in the left pane), see trends, and compare to commercial averages:
+Clicking the header of the Frequently Crashing Devices blade opens a reliability perspective view, where you can filter data (by using filters in the left pane), see trends, and compare to commercial averages:
 
 ![Reliability perspective](images/device-reliability2.png)
 
@@ -70,7 +76,7 @@ This displays device records sorted by date and crash details by failure ID, als
  
 ### Driver-Induced OS Crashes
 
-This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, there are opportunities for improvement, for example by moving to newer driver versions. By upgrading drivers with a high crash rate, you will reduce the overall operating system crashes in your deployment.
+This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, you can reduce the overall operating system crashes in your deployment by upgrading those drivers with a high crash rate.
 
 
 ![The blade on the right summarizes devices that crash most often](images/dev-health-main-tile.png)
@@ -80,11 +86,8 @@ Clicking a listed driver on the Driver-Induced OS Crashes blade opens a driver p
 ![Driver detail and history](images/driver-detail-1.png)
 ![Driver detail and history scrolldown](images/driver-detail-2.png)
 
-This view shows:
+The driver version table can help you determine whether deploying a newer version of the driver might help you reduce the crash rate. In the example shown above, the most commonly installed driver version (19.15.1.5) has a crash rate of about one-half of one percent--this is low, so this driver is probably fine. However, driver version 19.40.0.3 has a crash rate of almost 20%. If that driver had been widely deployed, updating it would substantially reduce the overal number of crashes in your organization.
 
-- Driver properties, such as its name, version, and class
-- Trend of crashes over time
-- Crash information by driver version. This data helps you ensure that the most widely deployed version has a reasonably low crash rate; if not, you should look into updating the driver to one showing a lower crash rate.
 
 
 

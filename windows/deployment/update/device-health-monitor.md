@@ -41,8 +41,8 @@ The Device Health architecture and data flow is summarized by the following five
 
 
 **(1)** User computers send telemetry data to a secure Microsoft data center using the Microsoft Data Management Service.<BR>
-**(2)** Telemetry data is analyzed by the Device Health Data Service.<BR>
-**(3)** Telemetry data is pushed from the Device Health Data Service to your OMS workspace.<BR>
+**(2)** Telemetry data is analyzed by the Microsoft Telemetry Service.<BR>
+**(3)** Telemetry data is pushed from the Microsoft Telemetry Service to your OMS workspace.<BR>
 **(4)** Telemetry data is available in the Device Health solution.<BR>
 **(5)** You are now able to proactively monitor Device Health issues in your environment.<BR>
 
