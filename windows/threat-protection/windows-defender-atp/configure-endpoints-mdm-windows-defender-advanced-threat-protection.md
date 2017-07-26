@@ -33,7 +33,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Select **Endpoint management** > **Client management** on the **Navigation pane**.
+    a.  Select **Endpoint management** on the **Navigation pane**.
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
