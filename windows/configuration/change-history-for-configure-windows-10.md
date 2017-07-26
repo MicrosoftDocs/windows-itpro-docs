@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 | --- | --- |
 | [Add image for secondary tiles](start-secondary-tiles.md) | Added XML example for Edge secondary tiles and **ImportEdgeAssets** |
 | [Customize and export Start layout](customize-and-export-start-layout.md) | Added explanation for tile behavior when the app is not installed |
+| [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access |
 |[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)|Updated several Appraiser events and added Census.Speech. |
 
 ## June 2017
