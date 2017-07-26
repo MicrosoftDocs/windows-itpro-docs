@@ -16,6 +16,12 @@ ms.date: 06/13/2017
 
 This topic lists new and updated topics in the [Client management](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## July 2017 
+
+| New or changed topic | Description |
+| --- | --- |
+| [Group Policy settings that apply only to Windows 10 Enterprise and Education Editions](group-policies-for-enterprise-and-education-editions.md) | Added that Start layout policy setting can be applied to Windows 10 Pro, version 1703 |
+
 ## June 2017
 
 | New or changed topic | Description |
