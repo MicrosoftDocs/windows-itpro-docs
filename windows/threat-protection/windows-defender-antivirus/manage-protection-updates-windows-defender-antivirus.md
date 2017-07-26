@@ -10,6 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: medium
 author: iaanw
+msft.author: iawilt
 ---
 
 # Manage the sources for Windows Defender Antivirus protection updates
