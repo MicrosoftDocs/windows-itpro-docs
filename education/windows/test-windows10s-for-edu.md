@@ -69,7 +69,7 @@ Devices running the following editions of Windows 10 are supported for Windows 1
 
 Other Windows 10 editions cannot be activated and are not supported. If your device is not running one of these supported Windows 10 editions, do not proceed with using the Windows 10 S installer.
 
-## Preparing your device to install drivers
+### Preparing your device to install drivers
 
 Make sure all drivers are installed and working properly on your device running Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise before installing Windows 10 S.
 
@@ -178,7 +178,7 @@ To use an installation media to reinstall Windows 10, follow these steps.
 14. Follow the rest of the setup instructions to finish installing Windows 10.
 
 ## Download Windows 10 S
-Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-pre-installation-information) and all the above information. 
+Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-information) and all the above information. 
 
 When you're ready, you can download the Windows 10 S installer from [this Microsoft website](https://go.microsoft.com/fwlink/?linkid=853240).
 
@@ -186,12 +186,30 @@ When you're ready, you can download the Windows 10 S installer from [this Micros
 Because you’re installing Windows 10 S on a running version of Windows 10, you have already accepted the Windows 10 Terms and Conditions. You are not required to accept it again and the Windows 10 installer doesn’t show a Terms and Conditions page during installation.
 
 ## Support 
-Thank you for testing Windows 10 S. Your best experience will be running on a supported device as mentioned above. If you are having difficulty installing or running Windows 10 S, use the Windows **Feedback Hub** to report your experience to Microsoft. This is the best way to help make Windows 10 S a great OS. Frequently asked technical topics are covered online on our Support website and steps to return to your previous installation of Windows 10 are covered above. If you need to talk to an agent for help with additional online resources, click on the appropriate link below for support options.
+Thank you for testing Windows 10 S. Your best experience will be running on a supported device as mentioned above. However, we invite you to try Windows 10 S on existing devices with an eligible operating system. If you are having difficulty installing or running Windows 10 S, use the Windows **Feedback Hub** to report your experience to Microsoft. This is the best way to help improve Windows 10 S with your feedback. 
+
+Common support questions for the Windows 10 S test program:
+
+* **How do I activate if I don't have a Windows 10 S product key?**
+
+    As stated above, devices running Windows 10 Pro, Windows 10 Pro Education, Windows 10 Education, or Windows 10 Enterprise can install and run Windows 10 S and it will automatically activate. Testing Windows 10 S on a device running Windows 10 Home is not recommended and supported at this time.
+
+* **Will my OEM help me run Windows 10 S?**
+
+    OEMs typically only support their devices with the operating system that was pre-installed. See [Supported devices](#supported-devices) for OEM devices that are best suited for testing Windows 10 S. When testing Windows 10 S, be ready to restore your own PC back to factory settings without assistance. Steps to return to your previous installation of Windows 10 are covered above.
+
+* **What happens when I run Reset or Fresh Start on Windows 10 S?**
+
+    **Reset** or **Fresh Start** will operate correctly and keep you on Windows 10 S. They also remove the 10-day go back ability. See [Switch to previously installed Windows 10 editions](#switch-to-previously-installed-windows-10-editions) to return to your previous installation of Windows 10 if you wish to discontinue using Windows 10 S.
+
+* **What if I want to move from Windows 10 S to Windows 10 Pro?**
+
+    If you want to discontinue using Windows 10 S, follow the instructions to return to your previous installation of Windows 10. If you already had Windows 10 Pro or Windows 10 Pro Education on the device you are testing on, you should be able to move to Windows 10 Pro or Windows 10 Pro Education at no charge with the instructions in this document. Otherwise, ther emay be a cost to acquire a Windows 10 Pro license in the Store.
+
+For help with activation issues, click on the appropriate link below for support options.
 * For Volume Licensing Agreement or Shape the Future program customers, go to the [Microsoft Commercial Support](https://support.microsoft.com/gp/commercialsupport) website and select the country/region in which you are seeking commercial support to contact our commercial support team.
 * If you do not have a Volume Licensing Agreement, go to the [Microsoft Support](https://support.microsoft.com/en-us/contactus/) website and choose a support option.
 
-> [!NOTE]
-> **Action item - Shubha** - Waiting for updated support statements/input
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
