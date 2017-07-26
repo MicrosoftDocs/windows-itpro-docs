@@ -949,6 +949,15 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>DeviceStatus/DomainName</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
+<li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -1305,6 +1314,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>WindowsDefenderSecurityCenter/Phone</li>
 <li>WindowsDefenderSecurityCenter/URL</li>
 </ul>
+<p>Experience/AllowFindMyDevice - updated the description to include active digitizers.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
@@ -1320,6 +1330,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Starting in Windows 10, version 1703, you can specify the settings pages using the settings URI. For example, in place of SettingPageDisplay, you would use ms-settings:display. See [ms-settings: URI scheme reference](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each settings page.</li>
 <li>In Windows 10, version 1703, Quick action settings no longer require any dependencies from related group or page.</li>
 </ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>DeviceStatus/DomainName</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
+<li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
 </td></tr>
 </tbody>
 </table>
