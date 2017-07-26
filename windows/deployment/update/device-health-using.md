@@ -33,28 +33,29 @@ In OMS, the aspects of a solution's dashboard are usually divided into <I>blades
 
 ### Frequently Crashing Devices
 
-This middle blade in Device Health displays the devices that crash most often. See the following example: 
+This middle blade in Device Health displays the devices that have crashed the most often in the last week. good for helping identify outliers that need to be replaced,etc.  See the following example: 
 
 
 ![The blade in the middle summarizes devices that crash most often](images/dev-health-main-tile.png)
 
 Clicking the Frequently Crashing Devices blade opens a reliability perspective view, where you can filter data (by using filters in the left pane), see trends, and compare to commercial averages:
 
-![Reliability perspective](images/device-reliability.png)
+![Reliability perspective](images/device-reliability2.png)
 
 "Commercial averages" here refers to data collected from deployments with a mix of operating system versions and device models that is similar to yours. If your crash rate is higher, there are opportunities for improvement, for example by moving to newer driver versions.
 
-
-
-
->[!TIP]
->Once you've applied a filter, for example by clicking a particular model or computer name in the left pane, you can remove the applied filter by manually editing the query. For example, in the device detail screenshot above, the results are filtered to a particular computer named "joes-pc". Remove the filter focusing on that one computer, just delete the string "joes-pc" in the query.
+Notice the filters in the left pane; they allow you to filter the crash rate shown to a particular operating system version, device model, or other parameter. 
 
 >[!NOTE]
-> Use caution when interpreting results filtered by model or operating system version. This is very useful for troubleshooting, but might not be accurate for *comparisons* because the crashes displayed could be of different types. The overall goal for working with crash data is to ensure that most devices have the same driver versions and that that version has a low crash rate.
+>Use caution when interpreting results filtered by model or operating system version. This is very useful for troubleshooting, but might not be accurate for *comparisons* because the crashes displayed could be of different types. The overall goal for working with crash data is to ensure that most devices have the same driver versions and that that version has a low crash rate.
+
+>[!TIP]
+>Once you've applied a filter (for example setting OSVERSION=1607) you will see the query in the text box change to append the filter (for example, with “(OSVERSION=1607)”). To undo the filter, remove that part of the query in the text box and click the search button to the right of the text box to run the adjusted query.”
 
 
-![Device detail and history](images/device-crash-history.png)
+If you click through a particular device from the view blade or from the Device Reliability perspective, it will take you to the Crash History perspective for that device.
+
+![Device detail and history](images/device-crash-history2.png)
 
 This displays device records sorted by date and crash details by failure ID, also sorted by date. In this view are a number of useful items:
 
@@ -64,30 +65,27 @@ This displays device records sorted by date and crash details by failure ID, als
 
 - Count: the number times that particular Failure ID has occurred on that specific device *on that date*.
 
-In this view, you can click a particular device to see the details of that particular device and for each crash recorded on it. (You can also reach this view by clicking a particular device on the Frequently Crashing Devices blade.)
 
  
  
 ### Driver-Induced OS Crashes
 
-This blade (on the right) displays values for the number of *devices* that have crashed due to driver issues, as well as the total number of crashes altogether due to driver issues.
+This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, there are opportunities for improvement, for example by moving to newer driver versions. By upgrading drivers with a high crash rate, you will reduce the overall operating system crashes in your deployment.
 
 
 ![The blade on the right summarizes devices that crash most often](images/dev-health-main-tile.png)
 
-Clicking a listed driver on the Driver-Induced OS Crashes blade opens a driver perspective view, which shows the details for the responsible driver, trends and commercial averages for that driver, alternative versions of the driver, and tools for filtering the data.
+Clicking a listed driver on the Driver-Induced OS Crashes blade opens a driver perspective view, which shows the details for the responsible driver, trends and commercial averages for that driver, and alternative versions of the driver.
 
-![Driver detail and history](images/driver-detail.png)
+![Driver detail and history](images/driver-detail-1.png)
+![Driver detail and history scrolldown](images/driver-detail-2.png)
 
-Clicking through this view opens a display of still more details for the driver, including:
+This view shows:
 
 - Driver properties, such as its name, version, and class
-- Information (stop code, failure ID) for each crash instance
-- A list of the computers on which the crash occurred and the time they occurred
+- Trend of crashes over time
+- Crash information by driver version. This data helps you ensure that the most widely deployed version has a reasonably low crash rate; if not, you should look into updating the driver to one showing a lower crash rate.
 
-The records are sorted by the time generated and the computer. If a driver has caused a computer to crash on several different days, only the most recent event is shown in this view.
-
-![Additional driver detail and history](images/driver-deeper-detail.png)
 
 
 
