@@ -116,7 +116,7 @@ Provisioning packages are files created by the Windows Imaging and Configuration
 
 ### Apply the provisioning package to HoloLens
 
-1. Connect the device via USB to a PC and start the device, but do not continue past the **fit** page of OOBE (the first page with the blue box).
+1. Connect the device via USB to a PC and start the device, but do not continue past the **fit** page of the initial setup experience (the first page with the blue box).
 
 2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
 

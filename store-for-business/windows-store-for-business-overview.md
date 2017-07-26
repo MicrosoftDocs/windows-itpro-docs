@@ -353,6 +353,7 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Brazil
 - Georgia
 - India
+- Isle of Man
 - Kazakhstan
 - Korea
 - Monaco
