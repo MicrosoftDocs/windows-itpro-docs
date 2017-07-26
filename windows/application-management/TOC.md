@@ -101,3 +101,4 @@
 #### [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md)
 ## [Service Host process refactoring](svchost-service-refactoring.md)
 ## [Deploy app updgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md)
+## [Change history for Application management](change-history-for-application-management.md)
