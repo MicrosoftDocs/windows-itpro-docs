@@ -104,12 +104,12 @@ Once you have WIP policies in place, by using the WIP section of Device Health, 
 - Tune WIP rules, for example by confirming that certain apps are allowed or disallowed by current policy.
 - Reduce disruptive prompts by adding rules to allow data sharing from approved apps.
 
-![Main Windows Information Protection view](images/WIP.png)
+![Main Windows Information Protection view](images/WIPmain.png)
 
 
 Clicking through shows the details you can use to explore each incident and update app policies by using AppLocker or WIP AppIDs.
 
-![WIP details view](images/WIP-detail.png)
+![WIP details view](images/WIP2.png)
 
 
 ## Data model and OMS built-in extensibility
