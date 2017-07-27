@@ -31,13 +31,13 @@ In OMS, the aspects of a solution's dashboard are usually divided into <I>blades
 ## Device Reliability
 
 - [Frequently Crashing Devices](#frequently-crashing-devices)
-- [Driver-Induced OS Crashes](#driver-induced-OS-crashes)
+- [Driver-Induced OS Crashes](#driver--induced-OS-crashes)
 
 
 
 ### Frequently Crashing Devices
 
-This middle blade in Device Health displays the devices that have crashed the most often in the last week. This can help you identify unhealthy devices that might need to be rebuilt or replaced.
+This middle blade in Device Reliability displays the devices that have crashed the most often in the last week. This can help you identify unhealthy devices that might need to be rebuilt or replaced.
 
 See the following example: 
 

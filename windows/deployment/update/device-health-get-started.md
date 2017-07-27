@@ -16,7 +16,7 @@ This topic explains the steps necessary to configure your environment for Window
 Steps are provided in sections that follow the recommended setup process:
 1.	Ensure that [prerequisites](#device-health-prerequisites) are met.
 2.	[Add Device Health](#add-device-health-to-microsoft-operations-management-suite) to Microsoft Operations Management Suite.
-3.	[Deploy your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices) to your organization’s devices.
+3.	[Deploy your Commercial ID](#deploy-your-commercial-id-to-your-windows-10-devices and set the telemetry level) to your organization’s devices.
 
 ## Device Health prerequisites
 
