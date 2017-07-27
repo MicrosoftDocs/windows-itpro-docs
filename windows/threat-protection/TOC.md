@@ -74,7 +74,7 @@
 #### [Configure email notifications](windows-defender-atp\configure-email-notifications-windows-defender-advanced-threat-protection.md)
 #### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
 #### [Enable Threat intel API](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
-#### [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
+#### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender ATP settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender ATP service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 ### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
