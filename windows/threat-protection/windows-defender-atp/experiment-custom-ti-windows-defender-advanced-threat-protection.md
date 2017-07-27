@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Experiment with custom threat intelligence (TI) alerts

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: manage
 description: Customize Automatic Search in Internet Explorer so that your employees can type a single word into the Address box to search for frequently used pages.
 author: eross-msft

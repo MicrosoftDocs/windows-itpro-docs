@@ -8,7 +8,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 07/13/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Set up and use Whiteboard to Whiteboard collaboration (Surface Hub)

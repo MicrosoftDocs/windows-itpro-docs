@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Group Policy, the Local Group Policy Editor, and Internet Explorer 11

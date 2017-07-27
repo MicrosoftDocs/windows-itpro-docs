@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Resolve Windows 10 upgrade errors : Technical information for IT Pros

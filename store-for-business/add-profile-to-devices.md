@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.date: 07/05/2107
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Manage Windows device deployment with Windows AutoPilot Deployment

@@ -6,7 +6,7 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
 title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros)
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Microsoft Edge - Deployment Guide for IT Pros

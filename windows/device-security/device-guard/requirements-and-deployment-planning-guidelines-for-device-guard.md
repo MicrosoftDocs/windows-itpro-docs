@@ -4,7 +4,7 @@ description: To help you plan a deployment of Microsoft Device Guard, this artic
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 

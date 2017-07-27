@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Use the topics in this section to learn how to set up and use Enterprise Mode, Enterprise Mode Site List Manager, and the Enterprise Mode Site List Portal for your company.

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the \[FavoritesEx\] .INS file setting to specify your Favorites icon file, whether Favorites is available offline, and your Favorites URLs.
 author: eross-msft

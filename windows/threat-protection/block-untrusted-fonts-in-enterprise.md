@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
 author: eross-msft
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Block untrusted fonts in an enterprise

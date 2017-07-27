@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the File Locations page in the IEAK 11 Customization Wizard to change the location of your install package and IE11 folders.
 author: eross-msft

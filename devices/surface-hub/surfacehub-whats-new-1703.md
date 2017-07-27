@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # What's new in Windows 10, version 1703 for Microsoft Surface Hub?

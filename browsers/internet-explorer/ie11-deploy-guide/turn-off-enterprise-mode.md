@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: How to turn Enteprrise Mode off temporarily while testing websites and how to turn it off completely if you no longer want to to use it.
