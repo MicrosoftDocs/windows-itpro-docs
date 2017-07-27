@@ -29,9 +29,9 @@ The following known issues have been fixed by servicing releases made available 
       This issue can potentially lead to unexpected account lockouts. The issue was fixed in servicing updates for each of the following operating systems:
 
     - Windows 10 Version 1607 and Windows Server 2016: 
-    [KB4015217 (OS Build 14393.1066 and 14393.1083)](https://support.microsoft.com/en-us/help/4015217) 
-    - Windows 10 Version 1511: [KB4015219 (OS Build 10586.873)](https://support.microsoft.com/en-us/help/4015219)
-    - Windows 10 Version 1507: [KB4015221 (OS Build 10240.17354)](https://support.microsoft.com/en-us/help/4015221)
+    [KB4015217 (OS Build 14393.1066 and 14393.1083)](https://support.microsoft.com/help/4015217) 
+    - Windows 10 Version 1511: [KB4015219 (OS Build 10586.873)](https://support.microsoft.com/help/4015219)
+    - Windows 10 Version 1507: [KB4015221 (OS Build 10240.17354)](https://support.microsoft.com/help/4015221)
 
 
 
