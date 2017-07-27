@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Add multiple sites to your Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2).

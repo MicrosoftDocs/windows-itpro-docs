@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
 ---
 
@@ -86,10 +86,10 @@ At this point, the download is complete and the update is ready to be installed.
 
 | | |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing branches](waas-overview.md) |
+| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
 | ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) |
+| ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this topic) |
 | ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) |
 

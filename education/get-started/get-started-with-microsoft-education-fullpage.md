@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: hero-article
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested

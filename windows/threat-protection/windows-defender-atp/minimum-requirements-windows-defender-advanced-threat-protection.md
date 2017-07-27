@@ -7,8 +7,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: iawilt
 author: iaanw
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Minimum requirements for Windows Defender ATP

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Instructions about how to remove sites from a local compatibility view list.

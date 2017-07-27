@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how to make sure your change request info is accurate within the pre-production environment of the Enterprise Mode Site List Portal.

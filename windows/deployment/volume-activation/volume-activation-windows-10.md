@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Volume Activation for Windows 10

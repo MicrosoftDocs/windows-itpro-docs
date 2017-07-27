@@ -6,7 +6,7 @@ ms.prod: w10
 ms.pagetype: edu
 ms.mktglfcycl: plan
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ---

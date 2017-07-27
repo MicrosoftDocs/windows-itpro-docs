@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Accelerators page in the IEAK 11 Customization Wizard to add accelerators to employee devices.
 author: eross-msft

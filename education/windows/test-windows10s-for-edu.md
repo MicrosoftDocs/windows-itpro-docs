@@ -1,12 +1,12 @@
 ---
 title: Test Windows 10 S on existing Windows 10 education devices
 description: Provides guidance on downloading and testing Windows 10 S for existing Windows 10 education devices.
-keywords: Windows 10 S, download, try, school, education
+keywords: Windows 10 S, try, download, school, education, Windows 10 S installer, existing Windows 10 education devices
 ms.mktglfcycl: deploy
 ms.prod: w10
 ms.pagetype: edu
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ms.date: 08/01/2017
@@ -25,9 +25,9 @@ Windows 10 S is different from other editions of Windows 10 as everything that r
 
 **Configuring Windows 10 S for school use is easy:** Education customers must configure **SetEduPolicies** for use in K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). 
 
-**Installing Office**: To install Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. 
+**Installing Office 365 for Windows 10 S (Education preview)**: To install the Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. 
 
-If you install the preview version of Office from the Windows Store, it may occasionally behave in unexpected ways. As we finalize development, your Office install will be updated automatically. You must have an Office license to activate the applications once they are installed.To learn more about Office 365 for Education plans, see [FAQ: Office on Windows 10 S](https://support.office.com/article/717193b5-ff9f-4388-84c0-277ddf07fe3f).
+As we finalize development of Office 365 for Windows 10 S (Education preview), the applications will be updated automatically. You must have an Office license to activate the applications once they are installed.To learn more about Office 365 for Education plans, see [FAQ: Office on Windows 10 S](https://support.office.com/article/717193b5-ff9f-4388-84c0-277ddf07fe3f).
 
 ## Before you install Windows 10 S
 
@@ -61,7 +61,7 @@ Before you install Windows 10 S on your existing Windows 10 Pro, Windows 10 Pro 
 
 ## Supported devices
 
-Devices running the following editions of Windows 10 are supported for Windows 10 S:
+The Windows 10 S install will install and activate on the following editions of Windows 10 in use by schools:
 * Windows 10 Pro
 * Windows 10 Pro Education
 * Windows 10 Education
@@ -109,24 +109,14 @@ We recommend [creating a recovery drive](#create-a-recovery-drive) before migrat
 
 ## Installing Office applications
 
-After installing Windows 10 S, use the free [Set up School PCs app](use-set-up-school-pcs-app.md) or [Intune for Education](https://www.microsoft.com/education/intune/default.aspx) to install Microsoft Office. You must have an Office license to activate the applications once they are installed.
+After installing Windows 10 S, use the free [Set up School PCs app](use-set-up-school-pcs-app.md) to install Office 365 for Windows 10 S (Education preview). You must have an Office license to activate the applications once they are installed.
 
 
 ## Switch to previously installed Windows 10 editions
 
 If Windows 10 S is not right for you, you can switch to the Windows 10 edition previously installed on your device(s).
-<!--
-| Starting edition (Home, Pro, Pro Education, Enterprise, Education) | Can install Windows 10 S? | Will activate Windows 10 S? | Recommended to test | Windows Store switch to Windows 10 Pro? | Works with Microsoft Store for Education switch to Windows 10 Pro Education? | Can utilize Office Store? |
-| --- | --- | --- | --- | --- | --- | --- | 
-| Windows 10 Home          | Yes | No  | No  | Paid (will be chaged more) |     | No (click-to-run) | 
-| Windows 10 Pro           | Yes | Yes | Yes | Not applicable             |     | Yes               | 
-| Windows 10 Pro Education | Yes | No  | Yes | No                         |     | No                | 
-| Windows 10 Enterprise    | Yes | No  | Yes | No                         |     | No                | 
-| Windows 10 Education     | Yes | No  | Yes | No                         |     | No                | 
--->
-
 * Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
-* On individual devices, you can use your existing Windows 10 key to switch back to the previously installed edition. If you try Windows 10 S and decide to switch back to the previously installed edition within 10 days, you can go back to the previously installed edition using the Windows Recovery option in Settings. For more info, see [Go back to your previous edition of Windows 10](#go-back-to-your-previous-edition-of-windows-10).
+* If you try Windows 10 S and decide to switch back to the previously installed edition within 10 days, you can go back to the previously installed edition using the Windows Recovery option in Settings. For more info, see [Go back to your previous edition of Windows 10](#go-back-to-your-previous-edition-of-windows-10).
 
 > [!NOTE]
 > **Action items: Ric, Will, Deana, Namrata** - Please confirm if the second bullet is true. Is it only Pro or Pro Education key that will do something in an S device? Does Enterprise/Education require a reimage?

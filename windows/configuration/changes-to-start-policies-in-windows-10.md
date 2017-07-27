@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Changes to Group Policy settings for Windows 10 Start

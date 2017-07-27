@@ -8,7 +8,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Miracast on existing wireless network or LAN

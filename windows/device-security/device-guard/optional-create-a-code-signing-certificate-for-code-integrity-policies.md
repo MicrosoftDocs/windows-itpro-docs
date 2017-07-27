@@ -4,7 +4,7 @@ description: This article describes how to create a code signing certificate for
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
