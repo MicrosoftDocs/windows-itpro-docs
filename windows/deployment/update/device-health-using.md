@@ -42,11 +42,11 @@ This middle blade in Device Reliability displays the devices that have crashed t
 See the following example: 
 
 
-![The blade in the middle summarizes devices that crash most often](images/dev-health-main-tile.png)
+![The blade in the middle summarizes devices that crash most often](images/dev-health-main-tile-sterile.png)
 
 Clicking the header of the Frequently Crashing Devices blade opens a reliability perspective view, where you can filter data (by using filters in the left pane), see trends, and compare to commercial averages:
 
-![Reliability perspective](images/device-reliability2.png)
+![Reliability perspective](images/device-reliability2-sterile.png)
 
 "Commercial averages" here refers to data collected from deployments with a mix of operating system versions and device models that is similar to yours. If your crash rate is higher, there are opportunities for improvement, for example by moving to newer driver versions.
 
@@ -61,7 +61,7 @@ Notice the filters in the left pane; they allow you to filter the crash rate sho
 
 If you click through a particular device from the view blade or from the Device Reliability perspective, it will take you to the Crash History perspective for that device.
 
-![Device detail and history](images/device-crash-history2.png)
+![Device detail and history](images/device-crash-history2-sterile.png)
 
 This displays device records sorted by date and crash details by failure ID, also sorted by date. In this view are a number of useful items:
 
@@ -79,12 +79,12 @@ This displays device records sorted by date and crash details by failure ID, als
 This blade (on the right) displays drivers that have caused the most devices to crash in the last two weeks. If your crash rate is high, you can reduce the overall operating system crashes in your deployment by upgrading those drivers with a high crash rate.
 
 
-![The blade on the right summarizes devices that crash most often](images/dev-health-main-tile.png)
+![The blade on the right summarizes devices that crash most often](images/dev-health-main-tile-sterile.png)
 
 Clicking a listed driver on the Driver-Induced OS Crashes blade opens a driver perspective view, which shows the details for the responsible driver, trends and commercial averages for that driver, and alternative versions of the driver.
 
-![Driver detail and history](images/driver-detail-1.png)
-![Driver detail and history scrolldown](images/driver-detail-2.png)
+![Driver detail and history](images/driver-detail-1-sterile.png)
+![Driver detail and history scrolldown](images/driver-detail-2-sterile.png)
 
 The driver version table can help you determine whether deploying a newer version of the driver might help you reduce the crash rate. In the example shown above, the most commonly installed driver version (19.15.1.5) has a crash rate of about one-half of one percent--this is low, so this driver is probably fine. However, driver version 19.40.0.3 has a crash rate of almost 20%. If that driver had been widely deployed, updating it would substantially reduce the overal number of crashes in your organization.
 
@@ -109,7 +109,7 @@ Once you have WIP policies in place, by using the WIP section of Device Health, 
 
 Clicking through shows the details you can use to explore each incident and update app policies by using AppLocker or WIP AppIDs.
 
-![WIP details view](images/WIP2.png)
+![WIP details view](images/WIP2-sterile.png)
 
 
 ## Data model and OMS built-in extensibility
