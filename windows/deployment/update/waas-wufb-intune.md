@@ -19,6 +19,11 @@ ms.author: daniha
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
+>[!IMPORTANT]
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>
+>In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
+
 You can use Intune to configure Windows Update for Business even if you don’t have on-premises infrastructure when you use Intune in conjunction with Azure AD. Before configuring Windows Update for Business, consider a [deployment strategy](waas-servicing-strategy-windows-10-updates.md) for updates and feature updates in your environment. 
 
 Windows Update for Business in Windows 10 version 1511 allows you to delay quality updates up to 4 weeks and feature updates up to an additional 8 months after Microsoft releases builds to the Current Branch for Business (CBB) servicing branch. In Windows 10 version 1607 and later, you can delay quality updates for up to 30 days and feature updates up to an additional 180 days after the release of either a Current Branch (CB) or CBB build.
@@ -262,7 +267,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 - [Overview of Windows as a service](waas-overview.md)
 - [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 - [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
+- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
