@@ -211,7 +211,7 @@
 ### [Overview of Windows as a service](update/waas-overview.md)
 ### [Prepare servicing strategy for Windows 10 updates](update/waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](update/waas-deployment-rings-windows-10-updates.md)
-### [Assign devices to servicing branches for Windows 10 updates](update/waas-servicing-branches-windows-10-updates.md)
+### [Assign devices to servicing channels for Windows 10 updates](update/waas-servicing-channels-windows-10-updates.md)
 ### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
 #### [Use Update Compliance](update/update-compliance-using.md)
