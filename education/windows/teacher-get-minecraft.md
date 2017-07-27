@@ -5,7 +5,7 @@ keywords: school, Minecraft, Education Edition, educators, teachers, acquire, di
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: trudyha
 searchScope:
   - Store

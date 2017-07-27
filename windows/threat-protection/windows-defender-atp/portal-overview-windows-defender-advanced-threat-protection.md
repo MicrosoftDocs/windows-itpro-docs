@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: DulceMV
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Windows Defender Advanced Threat Protection portal overview

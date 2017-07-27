@@ -10,7 +10,7 @@ ms.pagetype: surfacehub, readiness
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Physically install Microsoft Surface Hub

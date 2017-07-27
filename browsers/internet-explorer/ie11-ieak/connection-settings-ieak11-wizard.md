@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Connection Settings page in IEAK 11 Customization Wizard to import and preset connection settings on your employee’s computers.
 author: eross-msft

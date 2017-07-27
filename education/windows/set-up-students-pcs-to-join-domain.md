@@ -5,7 +5,7 @@ keywords: school, student PC setup, Windows Configuration Designer
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ---

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Assign user access to the Windows Defender ATP portal

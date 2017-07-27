@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune

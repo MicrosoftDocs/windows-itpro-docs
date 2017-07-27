@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use IEAK 11 to add and approve ActiveX controls for your organization.
 author: eross-msft

@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: brianlic-msft
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Group Policy settings that apply only to Windows 10 Enterprise and Education Editions

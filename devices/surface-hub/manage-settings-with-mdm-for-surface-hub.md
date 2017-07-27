@@ -10,7 +10,7 @@ ms.pagetype: surfacehub, mobility
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Manage settings with an MDM provider (Surface Hub)
