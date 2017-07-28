@@ -7,7 +7,7 @@ ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview

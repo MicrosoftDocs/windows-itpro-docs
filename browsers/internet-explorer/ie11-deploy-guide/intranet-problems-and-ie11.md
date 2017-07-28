@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to fix intranet search problems with Internet Explorer 11
 author: eross-msft

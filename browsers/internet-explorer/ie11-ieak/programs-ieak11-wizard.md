@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Programs page in the IEAK 11 Customization Wizard to pick the default programs to use for Internet services.
 author: eross-msft
