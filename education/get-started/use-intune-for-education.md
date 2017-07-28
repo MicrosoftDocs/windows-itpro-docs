@@ -206,8 +206,15 @@ Now that you've bought the apps, use Intune for Education to specify the group t
 
 You're now done assigning apps to all users in your tenant. It's time to set up your Windows 10 device(s) and check that your cloud infrastructure is correctly set up and your apps are being pushed to your devices from the cloud.
 
+<!--
 > [!div class="nextstepaction"]
 > [Set up Windows 10 devices](set-up-windows-10-education-devices.md)
+-->
+
+> [!div class="step-by-step"]
+[<< Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
+[Set up Windows 10 education devices >>](set-up-windows-10-education-devices.md)
+
 
 
 ## Related topic

@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/26/2017
+ms.date: 07/27/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -979,6 +979,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Defender/EnableNetworkProtection</li>
 <li>Defender/GuardedFoldersAllowedApplications</li>
 <li>Defender/GuardedFoldersList</li>
+<li>Education/DefaultPrinterName</li>
+<li>Education/PreventAddingNewPrinters</li>
+<li>Education/PrinterNames</li>
 <li>Security/ClearTPMIfNotReady</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
@@ -1300,6 +1303,9 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">
 <p>Added the following new policies for Windows 10, version 1709:</p>
 <ul>
+<li>Education/DefaultPrinterName</li>
+<li>Education/PreventAddingNewPrinters</li>
+<li>Education/PrinterNames</li>
 <li>Security/ClearTPMIfNotReady</li>
 <li>WindowsDefenderSecurityCenter/CompanyName</li>
 <li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
