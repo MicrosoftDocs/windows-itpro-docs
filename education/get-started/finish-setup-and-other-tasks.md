@@ -169,7 +169,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
   ![Device is connected to organization's MDM](images/win10_connectedtoorgmdm.png)
 
-6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [6.3 Verify the device is Azure AD joined](#verify-the-device-is-azure-ad-joined). 
+6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [Verify the device is Azure AD joined](#verify-the-device-is-azure-ad-joined). 
 
   It may take several minutes before the new device shows up so check again later.
 
