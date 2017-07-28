@@ -170,9 +170,14 @@ To learn more about the CSV files that are required and the info you need to inc
 
 That's it for importing sample school data using SDS.
 
+<!--
 > [!div class="nextstepaction"]
 > [Enable Microsoft Teams for your school](enable-microsoft-teams.md)
+-->
 
+> [!div class="step-by-step"]
+[<< Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
+[Enable Microsoft Teams for your school >>](enable-microsoft-teams.md)
 
 ## Related topic
 [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)

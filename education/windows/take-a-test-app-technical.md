@@ -9,6 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 07/28/2017
 ---
 
 # Take a Test app technical reference 
@@ -73,6 +74,26 @@ When Take a Test is running, the following functionality is available to student
 
     - Ctrl+Alt+Del 
     - Alt+F4 (Take a Test will restart if the student is using a dedicated test account)
+
+## Policies
+
+If the lock screen is disabled, Take aTest will not launch above lock. Be aware that if you set the following Group Policy, this breaks activation of Take a Test above lock.
+
+**Group Policy path:** Computer Configuration\Administrative Templates\Control Panel\Personalization\ <br />
+**Group Policy name:** Do not display the lock screen <br />
+**ADML:** %SDXROOT%\shell\policies\ControlPanelDisplay.adml <br />
+**ADMX:** %SDXROOT%\shell\policies\ControlPanelDisplay.admx <br />
+ 
+```
+<policy name="CPL_Personalization_NoLockScreen" class="Machine"
+        displayName="$(string.CPL_Personalization_NoLockScreen)"
+        explainText="$(string.CPL_Personalization_NoLockScreen_Help)"
+        key="Software\Policies\Microsoft\Windows\Personalization"
+        valueName="NoLockScreen">
+  <parentCategory ref="Personalization" />
+  <supportedOn ref="windows:SUPPORTED_Windows8" />
+</policy>
+```
 
 
 ## Learn more
