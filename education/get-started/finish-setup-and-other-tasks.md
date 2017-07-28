@@ -142,7 +142,7 @@ After your cloud infrastructure is set up and you have a device management strat
 See <a href="https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc" target="_blank">Add users to Office 365</a> to learn more. Once you're done adding new users, go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a> and verify that the same users were added to the Intune for Education groups as well.
 
 ## Connect other devices to your cloud infrastructure
-Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [6. Set up Windows 10 devices](#6-set-up-windows-10-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
+Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [Set up Windows 10 education devices](set-up-windows-10-education-devices.md). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
 
   > [!NOTE]  
   > These steps enable users to get access to the organization's resources, but it also gives the organization some control over the device.
@@ -169,7 +169,7 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
   ![Device is connected to organization's MDM](images/win10_connectedtoorgmdm.png)
 
-6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [6.3 Verify the device is Azure AD joined](#63-verify-the-device-is-azure-ad-joined). 
+6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [6.3 Verify the device is Azure AD joined](#verify-the-device-is-azure-ad-joined). 
 
   It may take several minutes before the new device shows up so check again later.
 
