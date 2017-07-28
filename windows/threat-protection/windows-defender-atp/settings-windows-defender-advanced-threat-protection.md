@@ -54,6 +54,17 @@ To set the time zone:
 2.	Select the **Timezone UTC** indicator.
 3.	Select **Timezone Local** or **-8:00**. 
 
+### Date-time format in browser
+**Internet Explorer(IE) and Microsoft Edge (Edge)**
+IE and Edge uses the local configured in the control panel language settings. To change the date and time format to conform to the locale that you need, you can update the date, time, and number format from your PC's control panel.
+
+**Google Chrome**
+If you use Google Chrome to access the Windows Defender ATP portal, you might need to configure the language settings for the date and time format to reflect your locale.
+
+1. Go to **Settings** > **Advanced** > **Languages**, then chose the language that applies to your locale.
+2. Restart the browser for the settings to take effect.
+
+
 ## Suppression rules
 The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. For more information see, [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
 
