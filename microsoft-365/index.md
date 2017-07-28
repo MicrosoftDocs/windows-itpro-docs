@@ -6,7 +6,6 @@ ms.author: celested
 ms.topic: hub-page
 title: Microsoft 365 Documentation
 description: Microsoft 365 is a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security, that empowers everyone to be creative and work together, securely. 
-
 ---
 <div id="main" class="v2">
     <div class="container">
