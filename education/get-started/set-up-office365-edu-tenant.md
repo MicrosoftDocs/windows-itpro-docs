@@ -45,8 +45,9 @@ You can watch the descriptive audio version here: [Microsoft Education: Set up a
 
 As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See *Complete Office 365 for Education setup* in [Finish Windows 10 device setup and other tasks](finish-setup-and-other-tasks.md) for info.
 
-> [!div class="nextstepaction"]
-> [Use School Data Sync to import student data](use-school-data-sync.md)
+> [!div class="step-by-step"]
+[<< Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)
+[Use School Data Sync to import student data >>](use-school-data-sync.md)
 
 
 ## Related topic
