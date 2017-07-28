@@ -58,8 +58,8 @@ Your Microsoft Store for Education account is now linked to Intune for Education
 -->
 
 > [!div class="step-by-step"]
-[Enable Microsoft Teams for your school](enable-microsoft-teams.md)
-[Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+[<< Enable Microsoft Teams for your school](enable-microsoft-teams.md)
+[Use Intune for Education to manage groups, apps, and settings >>](use-intune-for-education.md)
 
 
 ## Related topic
