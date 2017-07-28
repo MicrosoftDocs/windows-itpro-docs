@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -949,6 +949,15 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>DeviceStatus/DomainName</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
+<li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -970,6 +979,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Defender/EnableNetworkProtection</li>
 <li>Defender/GuardedFoldersAllowedApplications</li>
 <li>Defender/GuardedFoldersList</li>
+<li>Security/ClearTPMIfNotReady</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
 <li>Update/ScheduledInstallFourthWeek</li>
@@ -1290,6 +1300,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">
 <p>Added the following new policies for Windows 10, version 1709:</p>
 <ul>
+<li>Security/ClearTPMIfNotReady</li>
 <li>WindowsDefenderSecurityCenter/CompanyName</li>
 <li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
 <li>WindowsDefenderSecurityCenter/DisableEnhancedNotifications</li>
@@ -1305,6 +1316,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>WindowsDefenderSecurityCenter/Phone</li>
 <li>WindowsDefenderSecurityCenter/URL</li>
 </ul>
+<p>Experience/AllowFindMyDevice - updated the description to include active digitizers.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
@@ -1320,6 +1332,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Starting in Windows 10, version 1703, you can specify the settings pages using the settings URI. For example, in place of SettingPageDisplay, you would use ms-settings:display. See [ms-settings: URI scheme reference](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each settings page.</li>
 <li>In Windows 10, version 1703, Quick action settings no longer require any dependencies from related group or page.</li>
 </ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>DeviceStatus/DomainName</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
+<li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
 </td></tr>
 </tbody>
 </table>
@@ -2569,10 +2590,16 @@ No. Only one MDM is allowed.
 5.  Set quota to unlimited.
 
     ![aad maximum joined devices](images/faq-max-devices.png)
-
  
 
- 
+<a href="" id="dwmapppushsvc "></a>**What is dmwappushsvc?**  
+
+Entry | Description   
+--------------- | --------------------  
+What is dmwappushsvc? | It is a Windows service that ships in Windows 10 operating system as a part of the windows management platform. It is used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
+What data is handled by dmwappushsvc? | It is a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. |
+How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
+
 
 
 

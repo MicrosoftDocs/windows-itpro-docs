@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Manage user accounts in Microsoft Store for Business and Education

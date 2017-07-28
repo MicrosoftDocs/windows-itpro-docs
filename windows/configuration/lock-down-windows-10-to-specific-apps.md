@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Lock down Windows 10 to specific apps

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Configure cellular settings for tablets and PCs

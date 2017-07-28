@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Package Type Selection page in the IEAK 11 Customization Wizard to pick the media type you’ll use to distribute your custom package.
 author: eross-msft

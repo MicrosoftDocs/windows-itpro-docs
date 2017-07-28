@@ -1,13 +1,13 @@
 ---
 title: Windows Hello for Business (Windows 10)
-description: An overview of Winodws Hello for Business 
+description: An overview of Windows Hello for Business 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ---
 # Windows Hello for Business Overview
 

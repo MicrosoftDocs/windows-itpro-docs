@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Sign up for Microsoft Store for Business or Microsoft Store for Education

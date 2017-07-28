@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Enterprise Certificate Pinning
