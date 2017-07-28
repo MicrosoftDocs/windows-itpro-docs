@@ -50,13 +50,13 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
 4.	Click **Accept**. Power BI service will start downloading your Windows Defender ATP data from Microsoft Graph. 
 
-When the dashboard is ready, you’ll get a notification within the Power BI website.
+When the dashboard is ready, you’ll get a notification within the Power BI website. Use the link in the portal to the Power BI console after creating the dashboard.
 
-## Build a custom Windows Defender ATP dashboard in Power BI
+## Build a custom Windows Defender ATP dashboard in Power BI Desktop
 You can create a custom dashboard in Power BI Desktop to create visualizations that cater to the specific views that your organization requires.  
 
 ### Before you begin
-1.	Make sure you use Power BI Desktop June 2017 and above. Download the latest version.
+1.	Make sure you use Power BI Desktop June 2017 and above. [Download the latest version](https://powerbi.microsoft.com/en-us/desktop/).
 
 2.	In the Windows Defender ATP portal navigation pane, select **Preferences setup** > **Power BI reports**.
 
@@ -64,7 +64,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 
     ![Preferences setup with download connector button](images/atp-download-connector.png)
 
-4.	Create a new directory Microsoft Power BI Desktop\Custom Connectors under the user's Documents folder.
+4.	Create a new directory `Microsoft Power BI Desktop\Custom Connectors` under the user's Documents folder.
 
 5.	Copy WDATPDataConnector.mez from the zip to the directory you just created.
 
@@ -72,7 +72,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 
 7.	Click **File** > **Options and settings** > **Custom data connectors**.
 
-8.	Select **New table and matrix visuals** and **Custom data connectors**.
+8.	Select **New table and matrix visuals** and **Custom data connectors** and click **OK**.
 
     ![Power BI options page](images/atp-powerbi-options.png)
 
