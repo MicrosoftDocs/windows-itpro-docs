@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Reference about the command-line options for the IExpress Wizard.
 author: eross-msft

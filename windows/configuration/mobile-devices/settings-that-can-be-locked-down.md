@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Settings and quick actions that can be locked down in Windows 10 Mobile

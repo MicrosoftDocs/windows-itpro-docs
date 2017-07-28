@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how the Requester makes sure that the change request update is accurate within the production environment using the Enterprise Mode Site List Portal.

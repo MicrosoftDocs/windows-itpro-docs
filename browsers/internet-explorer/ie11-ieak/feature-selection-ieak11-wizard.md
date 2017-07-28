@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Feature Selection page in the IEAK 11 Customization Wizard to choose which parts of the setup processes and Internet Explorer 11 to change for your company.
 author: eross-msft
