@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/27/2017
+ms.date: 07/28/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1347,6 +1347,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
 <li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
 <li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[SurfaceHub CSP](surfacehub-csp.md)</td>
+<td style="vertical-align:top"><p>Changed PasswordRotationPeriod to PasswordRotationEnabled.</p>
 </td></tr>
 </tbody>
 </table>
