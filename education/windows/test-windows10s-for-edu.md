@@ -178,6 +178,9 @@ Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Edu
 
 When you're ready, you can download the Windows 10 S installer from [this Microsoft website](https://go.microsoft.com/fwlink/?linkid=853240).
 
+> [!NOTE]
+> The installation process will guide you to the Windows 10 S English version.
+
 ## Terms and Conditions
 Because you’re installing Windows 10 S on a running version of Windows 10, you have already accepted the Windows 10 Terms and Conditions. You are not required to accept it again and the Windows 10 installer doesn’t show a Terms and Conditions page during installation.
 
