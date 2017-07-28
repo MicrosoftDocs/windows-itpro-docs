@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
 ---
 
@@ -20,13 +20,18 @@ ms.author: daniha
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 >[!TIP]
->If you're not familiar with the Windows 10 servicing or release branches, read [Servicing branches](waas-overview.md#servicing-branches) first.
+>If you're not familiar with the Windows 10 servicing or release channels, read [Servicing channels](waas-overview.md#servicing-channels) first.
 
-Devices running Windows 10 Mobile and Windows 10 IoT Mobile receive updates from the Current Branch (CB) unless you [enroll the device in the Windows Insider Program](waas-servicing-branches-windows-10-updates.md#enroll-devices-in-the-windows-insider-program) or assign the device to Current Branch for Business (CBB). Only devices running Windows 10 Mobile Enterprise or Windows 10 IoT Mobile can be assigned to CBB.
+Devices running Windows 10 Mobile and Windows 10 IoT Mobile receive updates from the Semi-annual channel unless you [enroll the device in the Windows Insider Program](waas-servicing-channels-windows-10-updates.md#enroll-devices-in-the-windows-insider-program) or assign the device to Current Branch for Business (CBB). Only devices running Windows 10 Mobile Enterprise or Windows 10 IoT Mobile can be assigned to CBB.
 
 [Learn how to upgrade Windows 10 Mobile to Windows 10 Mobile Enterprise](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades)
 
 </br>
+
+>[!IMPORTANT]
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>
+>In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
 
 | Windows 10 edition | CB | CBB | Insider Program |
 | --- | --- | --- | --- | --- |
@@ -68,7 +73,7 @@ If a device running Windows 10 Mobile Enterprise or Windows 10 IoT Mobile, versi
 - [Overview of Windows as a service](waas-overview.md)
 - [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 - [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
+- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 

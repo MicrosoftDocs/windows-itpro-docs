@@ -7,7 +7,7 @@ ms.prod: W10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Provision PCs with common settings for initial deployment (desktop wizard)

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Resolve Windows 10 upgrade errors : Technical information for IT Pros
@@ -686,9 +686,13 @@ The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DAT
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-[Analyze log files](#analyze-log-files) in order to determine the files that are blocking data migration. 
+[Analyze log files](#analyze-log-files) in order to determine the files or registry entires that are blocking data migration. 
 
-Note: This error can occur if Active Directory integrated user accounts exist on the computer, but these accounts are no longer present in Active Directory. To repair this error, delete the invalid accounts from the **Users** directory on the local computer and restart the upgrade process.
+This error can be due to a problem with user profiles. It can occur due to corrupt registry entries under **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList** or invalid files in the **\\Users** directory. 
+
+Note: If a previous upgrade did not complete, invalid profiles might exist in the **Windows.old\\Users** directory.
+
+To repair this error, ensure that deleted accounts are not still present in the Windows registry and that files under the \\Users directory are valid. Delete the invalid files or user profiles that are causing this error. The specific files and profiles that are causing the error will be recorded in the Windows setup log files.  
 
 </TABLE>
 </TD>

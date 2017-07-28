@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: support
 description: Possible solutions to the problems you might encounter after installing IE11, such as crashing or seeming slow, getting into an unusable state, or problems with adaptive streaming and DRM playback.
 author: eross-msft

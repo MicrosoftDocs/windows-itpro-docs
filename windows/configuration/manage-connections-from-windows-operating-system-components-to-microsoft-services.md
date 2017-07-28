@@ -6,7 +6,7 @@ keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
 ms.date: 06/13/2017
@@ -81,7 +81,7 @@ See the following table for a summary of the management settings for Windows 10 
 | [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [9. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [10. Mail synchronization](#bkmk-mailsync) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [11. Microsoft Account](#bkmk-microsoft-account) | | |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [12. Microsoft Edge](#bkmk-edge) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [14. Offline maps](#bkmk-offlinemaps) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
@@ -132,7 +132,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [7. Insider Preview builds](#bkmk-previewbuilds) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [8. Internet Explorer](#bkmk-ie) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [9. Live Tiles](#live-tiles) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| [11. Microsoft Account](#bkmk-microsoft-account) | | | ![Check mark](images/checkmark.png) | |
+| [11. Microsoft Account](#bkmk-microsoft-account) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [15. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | | |
 | [17. Settings > Privacy](#bkmk-settingssection) | | | | |

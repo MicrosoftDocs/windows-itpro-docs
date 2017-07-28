@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Associate and deploy a VPN policy for Windows Information Protection (WIP) using the classic console for Microsoft Intune

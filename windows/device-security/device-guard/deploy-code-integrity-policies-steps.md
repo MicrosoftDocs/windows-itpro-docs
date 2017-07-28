@@ -4,7 +4,7 @@ description: This article describes how to deploy code integrity policies, one o
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -33,7 +33,7 @@ Members of the security community<sup>\*</sup> continuously collaborate with Mic
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent Application Whitelisting policies, including Device Guard:
 
 - bash.exe
-- bginfo.exe 
+- bginfo.exe<sup>[1]</sup> 
 - cdb.exe
 - csi.exe
 - dnx.exe
@@ -42,14 +42,16 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - kd.exe
 - ntkd.exe
 - lxssmanager.dll
-- msbuild.exe<sup>[1]</sup>
+- msbuild.exe<sup>[2]</sup>
 - mshta.exe
 - ntsd.exe
 - rcsi.exe
 - system.management.automation.dll
 - windbg.exe
 
-<sup>[1]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+
+<sup>[2]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
 <sup>*</sup>Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 

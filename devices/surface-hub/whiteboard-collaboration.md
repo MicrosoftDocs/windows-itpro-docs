@@ -7,8 +7,8 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
-localizationpriority: medium
+ms.date: 07/13/2017
+ms.localizationpriority: medium
 ---
 
 # Set up and use Whiteboard to Whiteboard collaboration (Surface Hub)
@@ -28,6 +28,7 @@ To get Whiteboard to Whiteboard collaboration up and running, you’ll need to m
 - Currently not utilizing Office 365 Germany or Office 365 	operated by 21Vianet
 - Surface Hub needs to be updated to Windows 10, version 1607 or newer
 - Port 443 needs to be open since Whiteboard makes standard https requests
+- Whiteboard.ms, wbd.ms, \*.onenote.com, and your company's SharePoint tenant domain URLs need to be whitelisted for proxies
 
  
 >[!NOTE]

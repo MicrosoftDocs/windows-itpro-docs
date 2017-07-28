@@ -4,7 +4,7 @@ description: This article describes how to enable virtualization-based security,
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 

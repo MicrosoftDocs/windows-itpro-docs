@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/28/2017
+ms.date: 07/26/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -27,6 +27,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 -   [What's new in Windows 10, version 1511](#whatsnew)
 -   [What's new in Windows 10, version 1607](#whatsnew1607)
 -   [What's new in Windows 10, version 1703](#whatsnew10)
+-   [What's new in Windows 10, version 1709](#whatsnew1709)
 -   [Breaking changes and known issues](#breaking-changes-and-known-issues)
     -   [Get command inside an atomic command is not supported](#getcommand)
     -   [Notification channel URI not preserved during upgrade from Windows 8.1 to Windows 10](#notification)
@@ -913,6 +914,95 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tbody>
 </table> 
 
+## <a href="" id="whatsnew1709"></a>What's new in Windows 10, version 1709
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="even">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[CM_ProxyEntries CSP](cm-proxyentries-csp.md) and [CMPolicy CSP](cmpolicy-csp.md)</td>
+<td style="vertical-align:top">In Windows 10, version 1709, support for desktop SKUs were added to these CSPs. The table of SKU information in the [Configuration service provider reference](configuration-service-provider-reference.md) was updated.</td>
+</tr>
+<tr class="odd">
+<td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
+<td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
+</tr>
+<tr class="even">
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
+<td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>DeviceStatus/DomainName</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
+<li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
+<ul>
+<li>CredentialProviders/EnableWindowsAutoPilotResetCredentials</li>
+<li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
+<li>DeviceGuard/RequirePlatformSecurityFeatures</li>
+<li>DeviceGuard/LsaCfgFlags</li>
+<li>Power/DisplayOffTimeoutOnBattery</li>
+<li>Power/DisplayOffTimeoutPluggedIn</li>
+<li>Power/HibernateTimeoutOnBattery</li>
+<li>Power/HibernateTimeoutPluggedIn</li>
+<li>Power/StandbyTimeoutOnBattery</li>
+<li>Power/StandbyTimeoutPluggedIn</li>
+<li>Defender/AttackSurfaceReductionOnlyExclusions</li>
+<li>Defender/AttackSurfaceReductionRules</li>
+<li>Defender/CloudBlockLevel </li>
+<li>Defender/CloudExtendedTimeout</li>
+<li>Defender/EnableGuardMyFolders</li>
+<li>Defender/EnableNetworkProtection</li>
+<li>Defender/GuardedFoldersAllowedApplications</li>
+<li>Defender/GuardedFoldersList</li>
+<li>Security/ClearTPMIfNotReady</li>
+<li>Update/ScheduledInstallEveryWeek</li>
+<li>Update/ScheduledInstallFirstWeek</li>
+<li>Update/ScheduledInstallFourthWeek</li>
+<li>Update/ScheduledInstallSecondWeek</li>
+<li>Update/ScheduledInstallThirdWeek</li>
+<li>WindowsDefenderSecurityCenter/CompanyName</li>
+<li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
+<li>WindowsDefenderSecurityCenter/DisableEnhancedNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableFamilyUI</li>
+<li>WindowsDefenderSecurityCenter/DisableHealthUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNetworkUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableVirusUI</li>
+<li>WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride</li>
+<li>WindowsDefenderSecurityCenter/Email</li>
+<li>WindowsDefenderSecurityCenter/EnableCustomizedToasts</li>
+<li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
+<li>WindowsDefenderSecurityCenter/Phone</li>
+<li>WindowsDefenderSecurityCenter/URL</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
 
 ## Breaking changes and known issues
 
@@ -1178,6 +1268,82 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### July 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
+<td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top">Added the following statements:.
+<ul>
+<li>When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.</li>
+<li>When you enable SystemDrivesRecoveryMessage, you must specify values for all three settings (pre-boot recovery screen, recovery message, and recovery URL), otherwise it will fail (500 return status). For example, if you only specify values for message and URL, you will get a 500 return status.</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top">
+<p>Added the following new policies for Windows 10, version 1709:</p>
+<ul>
+<li>Security/ClearTPMIfNotReady</li>
+<li>WindowsDefenderSecurityCenter/CompanyName</li>
+<li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>
+<li>WindowsDefenderSecurityCenter/DisableEnhancedNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableFamilyUI</li>
+<li>WindowsDefenderSecurityCenter/DisableHealthUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNetworkUI</li>
+<li>WindowsDefenderSecurityCenter/DisableNotifications</li>
+<li>WindowsDefenderSecurityCenter/DisableVirusUI</li>
+<li>WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride</li>
+<li>WindowsDefenderSecurityCenter/Email</li>
+<li>WindowsDefenderSecurityCenter/EnableCustomizedToasts</li>
+<li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
+<li>WindowsDefenderSecurityCenter/Phone</li>
+<li>WindowsDefenderSecurityCenter/URL</li>
+</ul>
+<p>Experience/AllowFindMyDevice - updated the description to include active digitizers.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)</td>
+<td style="vertical-align:top">Added the following statement to [MSI/ProductID/DownloadInstall](enterprisedesktopappmanagement-csp.md#msi-productid-downloadinstall):
+<ul>
+<li>In Windows 10, version 1703 service release, a new tag "DownloadFromAad" was added to the "Enforcement" section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken.</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)</td>
+<td style="vertical-align:top">Added the following information about the settings pages in AssigneAccessXML:
+<ul>
+<li>Starting in Windows 10, version 1703, you can specify the settings pages using the settings URI. For example, in place of SettingPageDisplay, you would use ms-settings:display. See [ms-settings: URI scheme reference](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each settings page.</li>
+<li>In Windows 10, version 1703, Quick action settings no longer require any dependencies from related group or page.</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>DeviceStatus/DomainName</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
+<li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
+<li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
+</td></tr>
+</tbody>
+</table>
 
 ### June 2017
 
@@ -2424,10 +2590,16 @@ No. Only one MDM is allowed.
 5.  Set quota to unlimited.
 
     ![aad maximum joined devices](images/faq-max-devices.png)
-
  
 
- 
+<a href="" id="dwmapppushsvc "></a>**What is dmwappushsvc?**  
+
+Entry | Description   
+--------------- | --------------------  
+What is dmwappushsvc? | It is a Windows service that ships in Windows 10 operating system as a part of the windows management platform. It is used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
+What data is handled by dmwappushsvc? | It is a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. |
+How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. |
+
 
 
 

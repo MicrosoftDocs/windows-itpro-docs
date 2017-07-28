@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerms
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Plan for volume activation

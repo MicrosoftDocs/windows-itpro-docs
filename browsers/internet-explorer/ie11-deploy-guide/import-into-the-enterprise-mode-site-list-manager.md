@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: If you need to replace your entire site list because of errors, or simply because it’s out of date, you can import your exported Enterprise Mode site list using the Enterprise Mode Site List Manager.

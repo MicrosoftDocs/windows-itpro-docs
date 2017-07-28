@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the topics in this section to learn how to customize your Internet Explorer installation package, how to choose the right method for installation, and how to deploy IE into your environment.
 author: eross-msft

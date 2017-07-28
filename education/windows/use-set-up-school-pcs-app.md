@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 06/26/2017
+ms.date: 07/10/2017
 ---
 
 # Use the Set up School PCs app 
@@ -18,8 +18,6 @@ ms.date: 06/26/2017
 -   Windows 10   
 
 IT administrators and technical teachers can use the **Set up School PCs** app to quickly set up PCs for students. A student PC set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
-
-![Set up School PCs app](images/suspc_getstarted_050817.png)
 
 ## What does this app do?
 
@@ -40,6 +38,14 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 - Installs OneDrive for storing cloud-based documents and Sway for creating interactive reports, presentations, and more
 - Uninstalls apps not specific to education, such as Solitaire
 - Prevents students from adding personal Microsoft accounts to the PC
+
+You can watch the video to see how to use the Set up School PCs app, or follow the step-by-step guide. </br>
+
+<center><iframe src="https://www.youtube.com/embed/2ZLup_-PhkA" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
+<!--
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/2ZLup_-PhkA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+-->
+You can watch the descriptive audio version here: [Microsoft Education: Use the Set up School PCs app (DA)](https://www.youtube.com/watch?v=qqe_T2LkGsI)
 
 ## Tips for success
 

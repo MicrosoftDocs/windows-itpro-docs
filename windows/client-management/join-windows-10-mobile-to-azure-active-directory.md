@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Join Windows 10 Mobile to Azure Active Directory

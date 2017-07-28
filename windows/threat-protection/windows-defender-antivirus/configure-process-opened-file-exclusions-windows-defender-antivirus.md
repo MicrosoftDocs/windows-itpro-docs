@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 06/13/2017
 ---
 
 # Configure exclusions for files opened by processes
@@ -17,6 +19,7 @@ author: iaanw
 **Applies to:**
 
 - Windows 10
+- Windows Server 2016
 
 **Audience**
 

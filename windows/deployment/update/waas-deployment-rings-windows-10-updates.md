@@ -5,8 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Build deployment rings for Windows 10 updates
@@ -29,35 +30,30 @@ Table 1 provides an example of the deployment rings you might use.
 
 **Table 1**
 
-| Deployment ring | Servicing branch | Total weeks after Current Branch (CB) or Current Branch for Business (CBB) release |
-| --- | --- | --- |
-| Preview | Windows Insider | Pre-CB |
-| Ring 1 Pilot IT | CB | CB + 0 weeks |
-| Ring 2 Pilot business users | CB | CB + 4 weeks |
-| Ring 3 Broad IT | CB | CB + 6 weeks |
-| Ring 4 Broad business users | CBB | CBB + 0 weeks |
-| Ring 5 Broad business users #2 | CBB | CBB + 2 weeks as required by capacity or other constraints |
+| Deployment ring | Servicing channel | Deferral for feature updates | Deferral for quality updates | Example |
+| --- | --- | --- | --- | --- |
+| Preview | Windows Insider Program | None | None | A few machines to evaluate early builds prior to their arrival to the semi-annual channel |
+| Targeted | Semi-annual channel (Targeted) | None | None | Select devices across various teams used to evaluate the major release prior to broad deployment |
+| Broad | Semi-annual channel | 120 days | 7-14 days | Broadly deployed to most of the organization and monitored for feedback</br>Pause updates if there are critical issues |
+| Critical | Semi-annual channel | 180 days | 30 days | Devices that are critical and will only receive updates once they've been vetted for a period of time by the majority of the organization |
 
 >[!NOTE]
->In this example, there are no rings made up of the long-term servicing branch (LTSB). The LTSB servicing branch does not receive feature updates. 
+>In this example, there are no rings made up of the long-term servicing channel (LTSC). The LTSC servicing channel does not receive feature updates. 
 >
->Windows Insider is in the deployment ring list for informational purposes only. Windows Insider PCs must be enrolled manually on each device and serviced based on the Windows Insider level chosen in the **Settings** app on that particular PC. Feature update servicing for Windows Insiderdevices is done completely through Windows Update; no servicing tools can manage Windows Insider feature updates.
+>Windows Insider PCs must be enrolled manually on each device and serviced based on the Windows Insider level chosen in the **Settings** app on that particular PC. Feature update servicing for Windows Insider devices is done completely through Windows Update; no servicing tools can manage Windows Insider feature updates.
 
 
-As Table 1 shows, each combination of servicing branch and deployment group is tied to a specific deployment ring. As you can see, the associated groups of devices are combined with a servicing branch to specify which deployment ring those devices and their users fall into. The naming convention used to identify the rings is completely customizable as long as the name clearly identifies the sequence. Deployment rings represent a sequential deployment timeline, regardless of the servicing branch they contain. Deployment rings will likely rarely change for an organization, but they should be periodically assessed to ensure that the deployment cadence still makes sense. 
-
-![illustration of rings](images/waas-rings.png)
-
+As Table 1 shows, each combination of servicing channel and deployment group is tied to a specific deployment ring. As you can see, the associated groups of devices are combined with a servicing channel to specify which deployment ring those devices and their users fall into. The naming convention used to identify the rings is completely customizable as long as the name clearly identifies the sequence. Deployment rings represent a sequential deployment timeline, regardless of the servicing channel they contain. Deployment rings will likely rarely change for an organization, but they should be periodically assessed to ensure that the deployment cadence still makes sense. 
 
 
 ## Steps to manage updates for Windows 10
 
 | | |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing branches](waas-overview.md) |
+| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
 | ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | Build deployment rings for Windows 10 updates (this topic) |
-| ![to do](images/checklistbox.gif) | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) |
+| ![to do](images/checklistbox.gif) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![to do](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
 | ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) |
 
