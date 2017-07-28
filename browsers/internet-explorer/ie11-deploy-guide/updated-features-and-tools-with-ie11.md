@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: High-level info about some of the new and updated features for Internet Explorer 11.

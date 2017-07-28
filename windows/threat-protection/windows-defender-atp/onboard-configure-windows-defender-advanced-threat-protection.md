@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Onboard and set up Windows Defender Advanced Threat Protection

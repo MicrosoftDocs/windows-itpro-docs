@@ -5,7 +5,7 @@ keywords: shared cart, shared PC, school, provision PCs with apps, Windows Confi
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ---

@@ -6,7 +6,7 @@ ms.prod: W10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 # Configure Windows 10 taskbar
 

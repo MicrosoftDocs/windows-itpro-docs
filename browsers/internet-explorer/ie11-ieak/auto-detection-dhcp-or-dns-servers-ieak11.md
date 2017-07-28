@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to set up automatic detection for DHCP or DNS servers using IEAK 11 in your organization.
 author: eross-msft

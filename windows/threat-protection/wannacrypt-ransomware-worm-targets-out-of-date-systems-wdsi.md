@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
 ---
 

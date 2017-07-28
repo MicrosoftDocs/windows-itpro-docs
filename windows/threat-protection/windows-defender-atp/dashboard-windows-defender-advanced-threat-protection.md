@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # View the Windows Defender Advanced Threat Protection Dashboard

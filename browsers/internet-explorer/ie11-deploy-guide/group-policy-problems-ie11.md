@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Links to troubleshooting topics and log files that can help address Group Policy problems with Internet Explorer 11.

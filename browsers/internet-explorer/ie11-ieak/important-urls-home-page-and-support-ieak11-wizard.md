@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Important URLs - Home Page and Support page in the IEAK 11 Customization Wizard to choose one or more **Home** pages and an online support page for your customized version of IE.
 author: eross-msft

@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.date: 07/12/2107
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Change history for Microsoft Store for Business and Microsoft Store for Education  

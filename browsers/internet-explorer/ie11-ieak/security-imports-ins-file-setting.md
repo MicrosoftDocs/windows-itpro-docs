@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the \[Security Imports\] .INS file setting to decide whether to import security info to your custom package.
 author: eross-msft
