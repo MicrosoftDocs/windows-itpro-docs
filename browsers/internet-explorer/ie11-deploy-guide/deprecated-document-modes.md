@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Windows Internet Explorer 8 introduced document modes as a way to move from the proprietary coding of web features to a more standardized type of coding that could run on multiple browsers and devices.

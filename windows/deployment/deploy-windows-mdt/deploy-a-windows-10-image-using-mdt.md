@@ -5,7 +5,7 @@ ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 keywords: deployment, automate, tools, configure
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus

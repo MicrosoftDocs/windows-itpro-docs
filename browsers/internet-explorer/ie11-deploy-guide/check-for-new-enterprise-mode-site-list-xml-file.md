@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode.

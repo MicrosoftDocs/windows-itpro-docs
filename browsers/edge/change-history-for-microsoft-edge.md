@@ -4,7 +4,7 @@ description: This topic lists new and updated topics in the Microsoft Edge docum
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Change history for Microsoft Edge

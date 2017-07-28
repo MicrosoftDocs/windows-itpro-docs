@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Customize Windows 10 Start and taskbar with mobile device management (MDM)
@@ -16,16 +16,16 @@ localizationpriority: medium
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+
 
 >**Looking for consumer information?** [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-In Windows 10 Mobile, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
+In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users. No reimaging is required, and the layout can be updated simply by overwriting the .xml file that contains the layout. This enables you to customize Start layouts for different departments or organizations, with minimal management overhead.
 
 >[!NOTE]
 >Support for applying a customized taskbar using MDM is added in Windows 10, version 1703.
 
-**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions or [create a Start layout XML](mobile-devices/mobile-lockdown-designer.md) for mobile.
+**Before you begin**: [Customize and export Start layout](customize-and-export-start-layout.md) for desktop editions.
 
 >[!WARNING] 
 >When a full Start layout is applied with this method, the users cannot pin, unpin, or uninstall apps from Start. Users can view and open all apps in the **All Apps** view, but they cannot pin any apps to Start. When a partial Start layout is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
@@ -118,10 +118,9 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
     | **Setting description**      | Provide a description that gives an overview of the setting and other relevant information to help you locate it. |
     | **Data type**                | **String**                                                                                                        |
     | **OMA-URI (case sensitive)** | **./User/Vendor/MSFT/Policy/Config/Start/StartLayout**                                                            |
-    | **Value**                    | Paste the contents of the Start layout .xml file that you created.                                                              |
+    | **Value**                    | Paste the contents of the Start layout .xml file that you created.               |
 
      
-
 7.  Click **OK** to save the setting and return to the **Create Policy** page.
 
 8.  Click **Save Policy**.

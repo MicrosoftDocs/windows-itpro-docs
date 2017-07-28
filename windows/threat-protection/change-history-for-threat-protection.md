@@ -14,18 +14,18 @@ This topic lists new and updated topics in the [Threat protection](index.md) doc
 ## June 2017
 |New or changed topic |Description |
 |---------------------|------------|
-| [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md) | New | 
+|[How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md) | New | 
 |[Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
-[Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
-[Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
+|[Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
+|[Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)|New topic for MDM using the Azure portal.|
 |[List of enlightened Microsoft apps for use with Windows Information Protection (WIP)](windows-information-protection\enlightened-microsoft-apps-and-wip.md)|Updated to include newly enlightened and supported apps.|
-[Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)| Updated from existing applicable and relevant Windows 8.1 content |
+|[Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)| Updated from existing applicable and relevant Windows 8.1 content |
 
 
 ## March 2017
 |New or changed topic |Description |
 |---------------------|------------|
-||[How to collect Windows Information Protection (WIP) audit event logs](windows-information-protection\collect-wip-audit-event-logs.md) |New |
+|[How to collect Windows Information Protection (WIP) audit event logs](windows-information-protection\collect-wip-audit-event-logs.md) |New |
 |[Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](windows-information-protection\mandatory-settings-for-wip.md) |Updated based on Windows 10, version 1703. |
 |[Limitations while using Windows Information Protection (WIP)](windows-information-protection\limitations-with-wip.md) |Added additional limitations for Windows 10, version 1703.|
 |[Windows Defender SmartScreen overview](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)|New |

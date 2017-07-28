@@ -114,7 +114,7 @@ User rights grant specific privileges and sign-in rights to users and groups in 
 
 User rights are different from permissions because user rights apply to user accounts, and permissions are associated with objects. Although user rights can apply to individual user accounts, user rights are best administered on a group account basis. There is no support in the access control user interface to grant user rights. However, user rights assignment can be administered through **Local Security Settings**.
 
-For more information about user rights, see [User Rights Assignment](/windows/device-security/security-policy-settings/access-user-rights-assignment).
+For more information about user rights, see [User Rights Assignment](/windows/device-security/security-policy-settings/user-rights-assignment).
 
 ## Object auditing
 

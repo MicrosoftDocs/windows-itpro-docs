@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: support
 description: Internet Explorer 11 uses the latest standards mode, which simplifies web page compatibility for users by removing the **Compatibility View** button and reducing the number of compatibility options in the F12 developer tools for developers.
 author: eross-msft

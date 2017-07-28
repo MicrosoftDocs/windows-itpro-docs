@@ -5,8 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Deploy Windows 10 updates using System Center Configuration Manager
@@ -17,7 +18,12 @@ ms.author: daniha
 - Windows 10
 - Windows 10 Mobile
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
+
+>[!IMPORTANT]
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>
+>In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel. 
 
 System Center Configuration Manager provides maximum control over quality and feature updates for Windows 10. Unlike other servicing tools, Configuration Manager has capabilities that extend beyond servicing, such as application deployment, antivirus management, software metering, and reporting, and provides a secondary deployment method for LTSB clients. Configuration Manager can effectively control bandwidth usage and content distribution through a combination of BranchCache and distribution points. Microsoft encourages organizations currently using Configuration Manager for Windows update management to continue doing so for Windows 10 client computers.
 
@@ -292,10 +298,10 @@ With the task sequence created, you’re ready to deploy it. If you’re using t
 
 | | |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing branches](waas-overview.md) |
+| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
 | ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) |
+| ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or Deploy Windows 10 updates using System Center Configuration Manager (this topic) |
 
@@ -310,7 +316,7 @@ With the task sequence created, you’re ready to deploy it. If you’re using t
 - [Overview of Windows as a service](waas-overview.md)
 - [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 - [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
+- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)

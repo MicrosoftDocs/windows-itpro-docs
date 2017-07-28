@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Language Selection page in the IEAK 11 Customization Wizard to choose the lanaguage for your IEAK 11 custom package.
 author: eross-msft

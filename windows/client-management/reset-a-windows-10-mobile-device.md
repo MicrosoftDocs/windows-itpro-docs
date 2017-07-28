@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Reset a Windows 10 Mobile device
