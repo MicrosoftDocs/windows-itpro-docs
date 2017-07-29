@@ -176,7 +176,11 @@ To use an installation media to reinstall Windows 10, follow these steps.
 ## Download Windows 10 S
 Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-information) and all the above information. 
 
-When you're ready, you can download the Windows 10 S installer from [this Microsoft website](https://go.microsoft.com/fwlink/?linkid=853240).
+When you're ready, you can: 
+<!-- download the Windows 10 S installer from [this Microsoft website](https://go.microsoft.com/fwlink/?linkid=853240). -->
+
+> [!div class="nextstepaction" style="center"]
+> [Download Windows 10 S](https://go.microsoft.com/fwlink/?linkid=853240)
 
 > [!NOTE]
 > After you install Windows 10 S, the OS defaults to the English version. To change the UI and show the localized UI, go to **Settings > Time & language > Region & language >** in **Languages** select **Add a language** to add a new language or select an existing language and set it as the default.
