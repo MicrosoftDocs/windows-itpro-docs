@@ -182,8 +182,7 @@ When you're ready, you can:
 > [!div class="nextstepaction" style="center"]
 > [Download Windows 10 S](https://go.microsoft.com/fwlink/?linkid=853240)
 
-> [!NOTE]
-> After you install Windows 10 S, the OS defaults to the English version. To change the UI and show the localized UI, go to **Settings > Time & language > Region & language >** in **Languages** select **Add a language** to add a new language or select an existing language and set it as the default.
+After you install Windows 10 S, the OS defaults to the English version. To change the UI and show the localized UI, go to **Settings > Time & language > Region & language >** in **Languages** select **Add a language** to add a new language or select an existing language and set it as the default.
 
 ## Terms and Conditions
 Because you’re installing Windows 10 S on a running version of Windows 10, you have already accepted the Windows 10 Terms and Conditions. You are not required to accept it again and the Windows 10 installer doesn’t show a Terms and Conditions page during installation.
