@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 07/28/2017
 ---
 
 # SurfaceHub CSP
@@ -127,7 +127,7 @@ The following diagram shows the SurfaceHub CSP management objects in tree format
 
 <p style="margin-left: 20px">The data type is char.
 
-<a href="" id="deviceaccount-passwordrotationperiod"></a>**DeviceAccount/PasswordRotationPeriod**  
+<a href="" id="deviceaccount-passwordrotationenabled"></a>**DeviceAccount/PasswordRotationEnabled**  
 <p style="margin-left: 20px">Specifies whether automatic password rotation is enabled. If you enforce a password expiration policy on the device account, use this setting to allow the device to manage its own password by changing it frequently, without requiring you to manually update the account information when the password expires. You can reset the password at any time using Active Directory (or Azure AD).
 
 <p style="margin-left: 20px">Valid values:
