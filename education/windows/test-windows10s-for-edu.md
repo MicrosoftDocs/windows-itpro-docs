@@ -67,7 +67,7 @@ The Windows 10 S install will install and activate on the following editions of 
 * Windows 10 Education
 * Windows 10 Enterprise
 
-Other Windows 10 editions cannot be activated and are not supported. If your device is not running one of these supported Windows 10 editions, do not proceed with using the Windows 10 S installer.
+Other Windows 10 editions cannot be activated and are not supported. If your device is not running one of these supported Windows 10 editions, do not proceed with using the Windows 10 S installer. Windows 10 N editions and running in virtual machines are not supported by the Windows 10 S installer. 
 
 ### Preparing your device to install drivers
 
