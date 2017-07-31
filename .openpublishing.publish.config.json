@@ -477,10 +477,6 @@
     "master": [
       "Publish",
       "Pdf"
-    ],
-    "msesdemo": [
-      "Publish",
-      "Pdf"
     ]
   },
   "need_generate_pdf_url_template": true,
