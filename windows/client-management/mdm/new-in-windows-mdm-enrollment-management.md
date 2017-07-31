@@ -956,6 +956,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
 <li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
 <li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Here are the changes in Windows 10, version 1709.</p>
+<ul>
+<li>Added Configuration node</li>
+</ul>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1347,6 +1355,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq</li>
 <li>DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus</li>
 <li>DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus</li>
+<ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Here are the changes in Windows 10, version 1709.</p>
+<ul>
+<li>Added Configuration node</li>
+</ul>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[SurfaceHub CSP](surfacehub-csp.md)</td>
