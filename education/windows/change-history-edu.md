@@ -19,7 +19,7 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | New. Fidn out how you can test Windows 10 S on a variety of Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us. |
+| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | New. Find out how you can test Windows 10 S on a variety of Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us. |
 | [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the instructions to reflect the new or updated functionality in the latest version of the app. |
 
 ## July 2017
