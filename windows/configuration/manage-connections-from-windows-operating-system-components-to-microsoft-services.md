@@ -296,7 +296,7 @@ After that, configure the following:
 -   Disable the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Enable Windows NTP Server** &gt; **Windows Time Service** &gt; **Configure Windows NTP Client**
     
     > [!NOTE]  
-    > This is only available on Windows 10, version 1703 and later. If you're using Windows 10, version 1607, the Group Policy setting is **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Windows Time Service** &gt; ** Time Providers** &gt; **Enable Windows NTP Client**
+    > This is only available on Windows 10, version 1703 and later. If you're using Windows 10, version 1607, the Group Policy setting is **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Windows Time Service** &gt; **Time Providers** &gt; **Enable Windows NTP Client**
 
     -or -
 
