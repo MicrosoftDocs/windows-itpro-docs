@@ -116,9 +116,6 @@ If Windows 10 S is not right for you, you can switch to the Windows 10 edition p
 * Education customers can switch devices to Windows 10 Pro Education using the Microsoft Store for Education. For more information, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
 * If you try Windows 10 S and decide to switch back to the previously installed edition within 10 days, you can go back to the previously installed edition using the Windows Recovery option in Settings. For more info, see [Go back to your previous edition of Windows 10](#go-back-to-your-previous-edition-of-windows-10).
 
-> [!NOTE]
-> **Action items: Ric, Will, Deana, Namrata** - Please confirm if the second bullet is true. Is it only Pro or Pro Education key that will do something in an S device? Does Enterprise/Education require a reimage?
-
 ## Device recovery
 
 Before installing Windows 10 S, we recommend that you create a system backup in case you would like to return to Windows 10 Pro or Windows 10 Pro Education after trying Windows 10 S.
