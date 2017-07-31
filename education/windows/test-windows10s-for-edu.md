@@ -76,15 +76,7 @@ Make sure all drivers are installed and working properly on your device running 
 ### Supported devices and drivers
 
 Check with your device manufacturer before trying Windows 10 S on your device to see if the drivers are available and supported by the device manufacturer. 
-
-> [!NOTE]
-> **Action item: Yoichiro Okada** - Need the link to fill in this section
-
-| Device manufacturer | Device(s) |
-| --- | --- |
-| Microsoft | [Surface](https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s) |
-| TBD | TBD |
-| TBD | TBD |
+* [Microsoft](https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s)
 
 If you don't see your manufacturer or device model listed, you can still proceed and provide feedback, but be aware that you may not be able to get support from your device manufacturer to install Windows 10 S and you may experience limited or incomplete functionality on Windows features, device hardware, peripherals, and others.
 
@@ -176,11 +168,11 @@ To use an installation media to reinstall Windows 10, follow these steps.
 ## Download Windows 10 S
 Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-information) and all the above information. 
 
-When you're ready, you can: 
+When you're ready, you can download the Windows 10 S installer by clicking the **Download installer** button below:
 <!-- download the Windows 10 S installer from [this Microsoft website](https://go.microsoft.com/fwlink/?linkid=853240). -->
 
 > [!div class="nextstepaction" style="center"]
-> [Download the Windows 10 S installer](https://go.microsoft.com/fwlink/?linkid=853240)
+> [Download installer](https://go.microsoft.com/fwlink/?linkid=853240)
 
 After you install Windows 10 S, the OS defaults to the English version. To change the UI and show the localized UI, go to **Settings > Time & language > Region & language >** in **Languages** select **Add a language** to add a new language or select an existing language and set it as the default.
 
