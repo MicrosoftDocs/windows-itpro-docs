@@ -77,7 +77,7 @@ When Take a Test is running, the following functionality is available to student
 
 ## Policies
 
-If the lock screen is disabled, Take aTest will not launch above lock. Be aware that if you set the following Group Policy, this breaks activation of Take a Test above lock.
+If the lock screen is disabled, Take a Test will not launch above lock. Be aware that if you set the following Group Policy, this breaks activation of Take a Test above lock.
 
 **Group Policy path:** Computer Configuration\Administrative Templates\Control Panel\Personalization\ <br />
 **Group Policy name:** Do not display the lock screen <br />

@@ -15,13 +15,20 @@ ms.date: 07/10/2017
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## August 2017
+
+| New or changed topic | Description |
+| --- | ---- |
+| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | New. Fidn out how you can test Windows 10 S on a variety of Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us. |
+| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the instructions to reflect the new or updated functionality in the latest version of the app. |
+
 ## July 2017
 
 | New or changed topic | Description |
 | --- | ---- |
-| [Test Windows 10 S on existing Windows 10 Pro education devices](test-windows10s-for-edu.md) | New. Find out how you can try Windows 10 S on a device running Windows 10 Pro or Windows 10 Pro Education. |
 | [Get Minecraft: Education Edition with Windows 10 device promotion](get-minecraft-for-education.md)  | New information about redeeming Minecraft: Education Edition licenses with qualifying purchases of Windows 10 devices.  |
 | [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Added the how-to video, which shows how to use the app to create a provisioning package that you can use to set up school PCs. |
+| [Take a Test app technical reference](take-a-test-app-technical.md) | Added a policies section to inform you of any policies that affect the Take a Test app or functionality within the app. |
 
 ## June 2017
 
