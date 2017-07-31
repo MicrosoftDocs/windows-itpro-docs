@@ -21,6 +21,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 | [Customize and export Start layout](customize-and-export-start-layout.md) | Added explanation for tile behavior when the app is not installed |
 | [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access |
 |[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)|Updated several Appraiser events and added Census.Speech. |
+| [Manage connections from Windows operating system components to Microsoft-services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Updated Date & Time and Windows spotlight sections. |
 
 ## June 2017
 
