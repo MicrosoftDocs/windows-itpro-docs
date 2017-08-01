@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/26/2017
+ms.date: 07/27/2017
 ---
 
 # Policy CSP
@@ -839,6 +839,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-display.md#display-turnongdidpiscalingforapps" id="display-turnongdidpiscalingforapps">Display/TurnOnGdiDPIScalingForApps</a>
+  </dd>
+</dl>
+
+### Education policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-education.md#education-defaultprintername" id="education-defaultprintername">Education/DefaultPrinterName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-education.md#education-preventaddingnewprinters" id="education-preventaddingnewprinters">Education/PreventAddingNewPrinters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-education.md#education-printernames" id="education-printernames">Education/PrinterNames</a>
   </dd>
 </dl>
 
