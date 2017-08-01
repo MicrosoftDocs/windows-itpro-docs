@@ -26,8 +26,8 @@ Windows Defender ATP supports the use of Power BI data connectors to enable you 
 
 Data connectors integrate seamlessly in Power BI, and make it easy for power users to query, shape and combine data to build reports and dashboards that meet the needs of your organization. 
 
-You can easily get stated by:
-- Creating a dashboard on the Power BI service or 
+You can easily get started by:
+- Creating a dashboard on the Power BI service 
 - Building a custom dashboard on Power BI Desktop and tweaking it to fit the visual analytics and reporting requirements of your organization 
 
 You can access these options from the Windows Defender ATP portal. Both the Power BI service and Power BI Desktop are supported. 
@@ -51,6 +51,8 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 4.	Click **Accept**. Power BI service will start downloading your Windows Defender ATP data from Microsoft Graph. 
 
 When the dashboard is ready, you’ll get a notification within the Power BI website. Use the link in the portal to the Power BI console after creating the dashboard.
+
+For more information, see [Create a Power BI dashboard from a report](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-create-a-dashboard/).
 
 ## Build a custom Windows Defender ATP dashboard in Power BI Desktop
 You can create a custom dashboard in Power BI Desktop to create visualizations that cater to the specific views that your organization requires.  
