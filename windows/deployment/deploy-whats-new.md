@@ -26,9 +26,11 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Windows 10 Enterprise upgrade
 
+Windows 10 version 1703 includes a Windows 10 Enterprise E3 and E5 benefit to Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA). These customers can now subscribe users to Windows 10 Enterprise E3 or E5 and activate their subscriptions on up to five devices. Virtual machines can also be activated. For more information, see [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md).
+
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. With Windows 10 Enterprise E3 in CSP, small and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
 
-For more information, see [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md)
+For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
 
 
 ## Deployment solutions and tools
@@ -55,6 +57,9 @@ Update Compliance is a solution built using OMS Logs and Analytics that provides
 
 For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md).
 
+### Device Health
+
+Device Health is the newest Windows Analytics solution that complements the existing Upgrade Readiness and Update Compliance solutions by helping to identify devices crashes and the cause. Device drivers that are causing crashes are identified along with alternative drivers that might reduce the number of crashes.  Windows Information Protection misconfigurations are also identified. For more information, see [Monitor the health of devices with Device Health](update/device-health-monitor.md)
 
 ### MBR2GPT
 
