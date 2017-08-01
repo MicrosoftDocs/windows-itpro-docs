@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: high
 ---
 
-# Manage Windows Defender ATP alerts using the application program interface (APIs)
+# Manage Windows Defender ATP alerts using application program interface (APIs)
 
 **Applies to:**
 
@@ -184,3 +184,5 @@ Response:
 }….
 
 ```
+Related topics
+- Create and build Power BI reports 
