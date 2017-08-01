@@ -18,16 +18,17 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-This security setting determines whether the local administrator account is enabled or disabled.
+This security setting determines whether the local Administrator account is enabled or disabled.
 
-The following conditions prevent disabling the administrator account, even if this security setting is disabled.
-1.  No other local administrator account exists
-2.  The administrator account is currently in use
-3.  All other local administrator accounts are:
+The following conditions prevent disabling the Administrator account, even if this security setting is disabled.
+
+1.  The administrator account is currently in use
+2.  The Administrators group has no other members
+3.  All other members of the Administrator group are:
     1.  Disabled
     2.  Listed in the [Deny log on locally](deny-log-on-locally.md) User Rights Assignment
 
-If the administrator account is disabled, you cannot enable it if the password does not meet requirements. In this case, another member of the Administrators group must reset the password.
+If the Administrator account is disabled, you cannot enable it if the password does not meet requirements. In this case, another member of the Administrators group must reset the password.
 
 ### Possible values
 -   Enabled
