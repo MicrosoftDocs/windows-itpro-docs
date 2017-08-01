@@ -117,6 +117,7 @@ You can use Power BI Desktop to analyse data from Windows Defender ATP and mash 
 8.	Add visuals and select fields from the available data sources. 
 
 ## Related topics
+- Manage Windows Defender ATP alerts using APIs
 - [Update general settings in Windows Defender ATP](general-settings-windows-defender-advanced-threat-protection.md)
 - [Turn on advanced features in Windows Defender ATP](advanced-features-windows-defender-advanced-threat-protection.md)
 - [Turn on the preview experience in Windows Defender ATP](preview-settings-windows-defender-advanced-threat-protection.md)
