@@ -22,9 +22,9 @@ This security setting determines whether the local Administrator account is enab
 
 The following conditions prevent disabling the Administrator account, even if this security setting is disabled.
 
-1.  The administrator account is currently in use
+1.  The Administrator account is currently in use
 2.  The Administrators group has no other members
-3.  All other members of the Administrator group are:
+3.  All other members of the Administrators group are:
     1.  Disabled
     2.  Listed in the [Deny log on locally](deny-log-on-locally.md) User Rights Assignment
 
