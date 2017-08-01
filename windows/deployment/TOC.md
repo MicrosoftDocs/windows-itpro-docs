@@ -2,7 +2,10 @@
 
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
-## [Windows 10 Enterprise E3 in CSP overview](windows-10-enterprise-e3-overview.md)
+## [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md)
+### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
+### [Configure VDA for Enterprise Subscription Activation](vda-subscription-activation.md)
+### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
 
 ## [Deploy Windows 10](deploy.md)

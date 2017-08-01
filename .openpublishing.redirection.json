@@ -8279,6 +8279,11 @@
 "source_path": "windows/deployment/update/waas-servicing-branches-windows-10-updates.md",
 "redirect_url": "/windows/deployment/update/waas-servicing-channels-windows-10-updates",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
+"redirect_url": "windows/deployment/windows-10-enterprise-subscription-activation.md",
+"redirect_document_id": true
 }
 ]
 }
