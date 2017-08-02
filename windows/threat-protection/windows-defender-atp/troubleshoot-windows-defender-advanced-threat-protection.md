@@ -61,7 +61,7 @@ If you use Google Chrome to access the Windows Defender ATP portal, you might ne
 2. Restart the browser for the settings to take effect.
 
 >[!NOTE]
->There currently is no support for Japanese format (YYYY/MM/DD) in Windows Defender ATP when used in Google Chrome.
+>There currently is no support for Japanese date format (YYYY/MM/DD) in Windows Defender ATP when accessed through Google Chrome.
 
 
 ### Related topic
