@@ -78,10 +78,7 @@ When you have the required Azure AD subscription, group-based licensing is the p
 
 ### Existing Enterprise deployments
 
-If you have already deployed Windows 10 Enterprise, but you want to move away from depending on KMS servers and MAK keys for Windows client machines, you are able to seamlessly transition as long as the following requirements are met: 
-
-- Hardware generation is Windows 8 or later
-- The computer has been activated with a firmware-embedded Windows 10 Pro product key
+If you have already deployed Windows 10 Enterprise, but you want to move away from depending on KMS servers and MAK keys for Windows client machines, you are able to seamlessly transition as long as the computer has been activated with a firmware-embedded Windows 10 Pro product key.
 
 If the computer has never been activated with a Pro key, run the following script. Copy the text below into a .cmd file and run the file from an elevated command prompt:
 
