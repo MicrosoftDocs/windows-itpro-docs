@@ -3,9 +3,9 @@
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
 
-## [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md)
+## [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md)
 ### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
-### [Configure VDA for Enterprise Subscription Activation](vda-subscription-activation.md)
+### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
 ### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
 
@@ -79,6 +79,7 @@
 ##### [Key features in MDT](deploy-windows-mdt/key-features-in-mdt.md)
 ##### [MDT Lite Touch components](deploy-windows-mdt/mdt-lite-touch-components.md)
 ##### [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+
 #### [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)
 #### [Deploy a Windows 10 image using MDT](deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
 #### [Build a distributed environment for Windows 10 deployment](deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md)
