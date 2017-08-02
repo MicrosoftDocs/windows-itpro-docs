@@ -67,7 +67,7 @@ If you use Google Chrome to access the Windows Defender ATP portal, you might ne
 2. Restart the browser for the settings to take effect.
 
 >[!NOTE]
->There currently is no support for Japanese format (YYYY/MM/DD) in Windows Defender ATP when used in Google Chrome.
+>There currently is no support for Japanese date format format (YYYY/MM/DD) in Windows Defender ATP when when accessed through Google Chrome.
 
 ## Suppression rules
 The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. For more information see, [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
