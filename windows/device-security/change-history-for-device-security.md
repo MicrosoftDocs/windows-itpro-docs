@@ -11,6 +11,12 @@ author: brianlic-msft
 # Change history for device security
 This topic lists new and updated topics in the [Device security](index.md) documentation.
 
+## July 2017
+|New or changed topic |Description |
+|---------------------|------------|
+ | [How Windows 10 uses the Trusted Platform Module](tpm/how-windows-uses-the-tpm.md) | New TPM security topic. |
+
+
 ## May 2017
 |New or changed topic |Description |
 |---------------------|------------|
