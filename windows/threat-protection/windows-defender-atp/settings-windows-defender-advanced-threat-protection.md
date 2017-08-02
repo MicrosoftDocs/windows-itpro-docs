@@ -57,7 +57,7 @@ To set the time zone:
 ### Date-time format in browser
 **Internet Explorer(IE) and Microsoft Edge (Edge)**
 
-IE and Edge use the local configured in the control panel language settings. To change the date and time format to conform to the locale that you need, you can update the date, time, and number format from your PC's control panel.
+IE and Edge uses the locale settings configured in the control panel language settings. To change the date and time format to conform to the locale that you need, you can update the date, time, and number format from your PC's control panel.
 
 **Google Chrome**
 
@@ -66,6 +66,8 @@ If you use Google Chrome to access the Windows Defender ATP portal, you might ne
 1. Go to **Settings** > **Advanced** > **Languages**, then chose the language that applies to your locale.
 2. Restart the browser for the settings to take effect.
 
+>[!NOTE]
+>There currently is no support for Japanese format (YYYY/MM/DD) in Windows Defender ATP when used in Google Chrome.
 
 ## Suppression rules
 The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. For more information see, [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
