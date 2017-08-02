@@ -1,6 +1,6 @@
 ---
-title: Manage Windows Defender ATP alerts using APIs  
-description: Create your custom alert definitions and indicators of compromise in Windows Defender ATP using the available APIs in Windows Enterprise, Education, and Pro editions.
+title: Windows Defender Advanced Threat Protection exposed APIs  
+description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
 keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -12,7 +12,7 @@ author: mjcaparas
 ms.localizationpriority: high
 ---
 
-# Manage Windows Defender ATP alerts using application program interface (APIs)
+# Windows Defender ATP exposed APIs 
 
 **Applies to:**
 
@@ -22,7 +22,7 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP supports the OAuth 2.0 protocol. Using the OAuth 2.0 Authentication flow, you can use programmatic APIs to take response actions and leverage the rich host-based collected information to enrich signals from other sources through the Microsoft Security Graph. For more information, see OAuth 2.0 Authorization Code Flow.
+Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you’ll need to take the following steps to use the APIs:
 -	Create an app
