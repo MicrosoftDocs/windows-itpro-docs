@@ -1,5 +1,5 @@
 ---
-title: Windows 10 Enterprise Subscription Activation
+title: Windows 10 Subscription Activation
 description: How to enable Windows 10 Enterprise E3 and E5 subscriptions
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.pagetype: mdt
 author: greg-lindsay
 ---
 
-# Windows 10 Enterprise Subscription Activation
+# Windows 10 Subscription Activation
 
 With Windows 10 version 1703 (also known as the Creator’s Update), both Windows 10 Enterprise E3 and Windows 10 Enterprise E5 are available as online services via subscription. Deploying [Windows 10 Enterprise](planning/windows-10-enterprise-faq-itpro.md) in your organization can now be accomplished with no keys and no reboots.
 
@@ -25,7 +25,7 @@ See the following topics in this article:
 - [Requirements](#requirements): Prerequisites to use the Windows 10 Enterprise subscription model.
 - [Benefits](#benefits): Advantages of Windows 10 Enterprise + subscription-based licensing.
 - [How it works](#how-it-works): A summary of the subscription-based licensing option.
-- [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): Enable Windows 10 Enterprise Subscription Activation for VMs in the cloud.
+- [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): Enable Windows 10 Subscription Activation for VMs in the cloud.
 
 For information on how to deploy Windows 10 Enterprise licenses, see [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
@@ -118,7 +118,7 @@ See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
 Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
 
-Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Enterprise Subscription Activation](vda-subscription-activation.md).
+Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Subscription Activation](vda-subscription-activation.md).
 
 ## Related topics
 
