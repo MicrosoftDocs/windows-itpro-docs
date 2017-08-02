@@ -56,9 +56,11 @@ To set the time zone:
 
 ### Date-time format in browser
 **Internet Explorer(IE) and Microsoft Edge (Edge)**
-IE and Edge uses the local configured in the control panel language settings. To change the date and time format to conform to the locale that you need, you can update the date, time, and number format from your PC's control panel.
+
+IE and Edge use the local configured in the control panel language settings. To change the date and time format to conform to the locale that you need, you can update the date, time, and number format from your PC's control panel.
 
 **Google Chrome**
+
 If you use Google Chrome to access the Windows Defender ATP portal, you might need to configure the language settings for the date and time format to reflect your locale.
 
 1. Go to **Settings** > **Advanced** > **Languages**, then chose the language that applies to your locale.
