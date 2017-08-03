@@ -34,6 +34,11 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.</p>
 
+- 0 (default) – Storage cards do not need to be encrypted.
+- 1 – Require Storage cards to be encrypted.  
+
+<p style="margin-left: 20px">Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.</p>
+ 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
 ``` syntax
