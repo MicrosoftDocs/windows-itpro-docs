@@ -21,23 +21,31 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-## Onboard server endpoints
+Windows Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Windows Defender Security Center console.
+
 Windows Defender ATP supports the onboarding of the following servers:
 - Windows Server 2012 R2
 - Windows Server 2016
 
-You'll need to do a one-time set up to onboard supported servers so that they can report sensor data to Windows Defender ATP. In general you'll need to:
+To onboard your servers to Windows Defender ATP, you’ll need to:
 
-- Set up the environment from the Windows Defender ATP portal
-- Download the Microsoft Monitoring Agent (MMA) setup file
-- Install the agent on the server using the method you choose
-- Configure the agent with your **Workspace ID** and **Primary key**
-- Configure proxy settings
+- Turn on server monitoring from the Windows Defender Security Center portal.
+- If you're already leveraging System Center Operations Manager (SCOM) or Operations Management Suite (OMS), simply attach the Microsoft Monitoring Agent (MMA) to report to your Windows Defender ATP workspace through [Multi Homing support](https://blogs.technet.microsoft.com/msoms/2016/05/26/oms-log-analytics-agent-multi-homing-support/). Otherwise, install and configure MMA to report sensor data to Windows Defender ATP as instructed below.
 
-**System requirements and required configuration** [EFRAT, PLEASE CHECK THE FOLLOWIN PRE-REQS AND LET ME KNOW IF THERE ARE THINGS I NEED TO ADD OR REMOVE. THANK YOU!]
-- Each server must be able to connect to the Internet using HTTPS or to the OMS Gateway. This connection can be direct, using a proxy, or through the OMS Gateway.
-- The agent needs to use TCP port 443 for various resources
-- Ensure that you adhere to the network requirements as stated in the Log Analytics service
+**System requirements and required configuration** 
+- Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
+- If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
+
+|    Agent Resource    |    Ports    |
+|------------------------------------|-------------|
+|    *.oms.opinsights.azure.com    |    443    |
+|    *.blob.core.windows.net    |    443    |
+|    *.azure-automation.net    |    443    |
+|    *.ods.opinsights.azure.com    |    443    |
+|    winatp-gw-cus.microsoft.com     |    443    |
+|    winatp-gw-eus.microsoft.com    |    443    |
+|    winatp-gw-neu.microsoft.com    |    443    |
+|    winatp-gw-weu.microsoft.com    |    443    |
 
 
 ### Step 1: Set up the environment from the Windows Defender ATP portal
