@@ -1,5 +1,5 @@
 ---
-title: Configure VDA for Enterprise Subscription Activation
+title: Configure VDA for Windows 10 Subscription Activation
 description: How to enable Windows 10 Enterprise E3 and E5 subscriptions for VDA
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -10,9 +10,9 @@ ms.pagetype: mdt
 author: greg-lindsay
 ---
 
-# Configure VDA for Enterprise Subscription Activation
+# Configure VDA for Windows 10 Subscription Activation
 
-This document describes how to configure virtual machines (VMs) to enable [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based license.
+This document describes how to configure virtual machines (VMs) to enable [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based license.
 
 ## Requirements
 
@@ -82,7 +82,7 @@ To create custom RDP settings for Azure:
 
 ## Related topics
 
-[Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md)
+[Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md)
 <BR>[Recommended settings for VDI desktops](https://docs.microsoft.com/windows-server/remote/remote-desktop-services/rds-vdi-recommendations)
 <BR>[Licensing the Windows Desktop for VDI Environments](http://download.microsoft.com/download/1/1/4/114A45DD-A1F7-4910-81FD-6CAF401077D0/Microsoft%20VDI%20and%20VDA%20FAQ%20v3%200.pdf)
 
