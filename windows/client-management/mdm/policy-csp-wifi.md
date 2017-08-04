@@ -23,26 +23,6 @@ ms.date: 07/14/2017
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
 
 <!--EndSKU-->
 <!--StartDescription-->
@@ -303,8 +283,6 @@ Footnote:
 <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>Wifi policies supported by Microsoft Surface Hub  
-
--   [WiFi/AllowWiFiHotSpotReporting](#wifi-allowwifihotspotreporting)  
+ 
 <!--EndSurfaceHub-->
 
