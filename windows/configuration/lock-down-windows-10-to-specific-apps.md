@@ -1,6 +1,6 @@
 ---
-title: Lock down Windows 10 to specific apps (Windows 10)
-description: Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
+title: Create a Windows 10 kiosk that runs multiple apps (Windows 10)
+description: Learn how to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
@@ -11,14 +11,52 @@ author: jdeckerms
 ms.localizationpriority: high
 ---
 
-# Lock down Windows 10 to specific apps
+# Create a Windows 10 kiosk that runs multiple apps
 
 
 **Applies to**
 
 -   Windows 10
 
->For more info about the features and functionality that are supported in each edition of Windows, see [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
+A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package, rather than creating rules in **AppLocker**.
+
+>[!NOTE]
+>For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](#1703) to configure a multi-app kiosk.
+
+The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
+
+>[!WARNING]
+>The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the assigned access enforced policies.
+
+## new method (1709)
+
+Process:
+1. [Create XML file](#create-xml-file)
+2. [Add XML file to provisioning package](#add-xml)
+3. [Apply provisioning package to device](#apply-ppkg)
+
+### Prerequisites
+
+- (latest version of WCD -- is Store version okay at GA?)
+- kiosk device on 1709
+
+
+### Create XML file
+
+
+<span id="add-xml" />
+### Add XML file to provisioning package
+
+<span id="apply-ppkg" />
+### Apply provisioning package to device
+
+### mixed-reality
+
+*There are some Mixed Reality specific bits we wanted to include. For example, the IT Admin needs to include the Mixed Reality Portal as an allowed app if they want to include Mixed Reality apps in kiosk mode.*
+
+
+<span id="1703" />
+## old method (pre-1709)
 
 Learn how to configure a device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps. The result is similar to [a kiosk device](set-up-a-device-for-anyone-to-use.md), but with multiple apps available. For example, you might set up a library computer so that users can search the catalog and browse the Internet, but can't run any other apps or change computer settings.
 
