@@ -77,6 +77,7 @@ Make sure all drivers are installed and working properly on your device running 
 
 Check with your device manufacturer before trying Windows 10 S on your device to see if the drivers are available and supported by the device manufacturer. 
 
+<!--
 |   |   |   |
 | - | - | - |
 | [Acer](https://www.acer.com/ac/en/US/content/windows10s-compatible-list) | [American Future Tech](https://www.ibuypower.com/Support/Support) | [Asus](https://www.asus.com/event/2017/win10S/) |
@@ -88,6 +89,19 @@ Check with your device manufacturer before trying Windows 10 S on your device to
 | [Panasonic](https://panasonic.net/cns/pc/Windows10S/) | [Positivo SA](http://www.positivoinformatica.com.br/atualizacao-windows-10) | [Positivo da Bahia](http://www.br.vaio.com/atualizacao-windows-10/) |
 | [Samsung](http://www.samsung.com/us/support/windows10s/) | [Toshiba](http://win10upgrade.toshiba.com/win10s/information?region=TAIS&country=US&lang=en) | [Trekstor](http://www.trekstor.de/windows-10-s-en.html) |
 | [Trigem](http://www.trigem.co.kr/windows/win10S.html) | [Vaio](http://us.vaio.com/support/knowledge-base/windows-10-s-compatibility-information/) | [Wortmann](https://www.wortmann.de/en-gb/content/+windows-10-s-supportinformation/windows-10-s-supportinformation.aspx) |
+-->
+
+|   |   |   |
+| - | - | - |
+| <a href="https://www.acer.com/ac/en/US/content/windows10s-compatible-list" target="_blank">Acer </> | <a href="https://www.ibuypower.com/Support/Support" target="_blank">American Future Tech </> | <a href="https://www.asus.com/event/2017/win10S/" target="_blank">Asus </> |
+| <a href="http://www.atec.kr/contents/ms_info.html" target="_blank">Atec </> | <a href="https://www.odys.de/web/web_lan_en_hmp_1_win10s_ja.html" target="_blank">Axdia </> | <a href="http://www.casper.com.tr/window10sdestegi" target="_blank">Casper </> |
+| <a href="https://www.cyberpowerpc.com/support/" target="_blank">Cyberpower </> | <a href="http://www.lucoms.com/v2/cs/cs_windows10.asp" target="_blank">Daewoo </> | <a href="http://support.ts.fujitsu.com/IndexProdSupport.asp?OpenTab=win10_update" target="_blank">Fujitsu </> |
+| <a href="http://compaq.com.br/sistemas-compativeis-com-windows-10-s.html" target="_blank">Global K </> | <a href="https://support.hp.com/us-en/document/c05588871" target="_blank">HP </> | <a href="http://irbis-digital.ru/support/podderzhka-windows-10-s/" target="_blank">LANIT Trading </> |
+| <a href="https://support.lenovo.com/us/en/solutions/ht504589" target="_blank">Lenovo </> | <a href="http://www.lg.com/us/content/html/hq/windows10update/Win10S_UpdateInfo.html" target="_blank">LG </> | <a href="https://www2.mouse-jp.co.jp/ssl/user_support2/info.asp?N_ID=361" target="_blank">MCJ </> |
+| <a href="http://support.linxtablets.com/WindowsSupport/Articles/Windows_10_S_Supported_Devices.aspx" target="_blank">Micro P/Exertis </> | <a href="" target="_blank">Microsoft </> | <a href="https://www.msi.com/Landing/Win10S" target="_blank">MSI </> |
+| <a href="https://panasonic.net/cns/pc/Windows10S/" target="_blank">Panasonic </> | <a href="http://www.positivoinformatica.com.br/atualizacao-windows-10" target="_blank">Positivo SA </> | <a href="http://www.br.vaio.com/atualizacao-windows-10/" target="_blank">Positivo da Bahia </> |
+| <a href="http://www.samsung.com/us/support/windows10s/" target="_blank">Samsung </> | <a href="http://win10upgrade.toshiba.com/win10s/information?region=TAIS&country=US&lang=en" target="_blank">Toshiba </> | <a href="http://www.trekstor.de/windows-10-s-en.html" target="_blank">Trekstor </> |
+| <a href="http://www.trigem.co.kr/windows/win10S.html" target="_blank">Trigem </> | <a href="http://us.vaio.com/support/knowledge-base/windows-10-s-compatibility-information/" target="_blank">Vaio </> | <a href="https://www.wortmann.de/en-gb/content/+windows-10-s-supportinformation/windows-10-s-supportinformation.aspx" target="_blank">Wortmann </> |
 
 
 > [!NOTE]
@@ -185,7 +199,6 @@ To use an installation media to reinstall Windows 10, follow these steps.
 Ready to test Windows 10 S on your existing Windows 10 Pro or Windows 10 Pro Education device? Make sure you read the [important pre-installation information](#important-information) and all the above information. 
 
 When you're ready, you can download the Windows 10 S installer by clicking the **Download installer** button below:
-<!-- download the Windows 10 S installer from [this Microsoft website](https://go.microsoft.com/fwlink/?linkid=853240). -->
 
 > [!div class="nextstepaction" style="center"]
 > [Download installer](https://go.microsoft.com/fwlink/?linkid=853240)
