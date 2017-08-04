@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 08/01/2017
+ms.date: 08/04/2017
 ---
 
 # Test Windows 10 S on existing Windows 10 education devices
