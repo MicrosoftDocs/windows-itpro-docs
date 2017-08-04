@@ -186,7 +186,7 @@ No, Microsoft will not charge for the preview. If you work with an outside [IT p
 
 I’m an existing Office 365 customer. Will I be charged for an Office 365 subscription while I am using the Microsoft 365 Business preview?
 
-Customers will continue to be charged for any active Office 365 plan to which they are subscribed.
+The Microsoft 365 Business preview is free and does not require an existing Office 365 Business Premium subscription. Current Office 365 customers will continue to be billed for active Office 365 subscriptions that are not associated with the Microsoft 365 Business preview.
 
 What is the best way to deploy Microsoft 365 Business in my organization? 
 --------------------------------------------------------------------------
