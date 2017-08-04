@@ -77,36 +77,6 @@ Make sure all drivers are installed and working properly on your device running 
 
 Check with your device manufacturer before trying Windows 10 S on your device to see if the drivers are available and supported by the device manufacturer. 
 
-> [!div class="op_single_selector" title1="Device manufacturer"]
-> - [Acer](https://www.acer.com/ac/en/US/content/windows10s-compatible-list)
-> - [American Future Tech](https://www.ibuypower.com/Support/Support)
-> - [Asus](https://www.asus.com/event/2017/win10S/)
-> - [Atec](http://www.atec.kr/contents/ms_info.html)
-> - [Axdia](https://www.odys.de/web/web_lan_en_hmp_1_win10s_ja.html)
-> - [Casper](http://www.casper.com.tr/window10sdestegi)
-> - [Cyberpower](https://www.cyberpowerpc.com/support/)
-> - [Daewoo](http://www.lucoms.com/v2/cs/cs_windows10.asp)
-> - [Fujitsu](http://support.ts.fujitsu.com/IndexProdSupport.asp?OpenTab=win10_update)
-> - [Global K](http://compaq.com.br/sistemas-compativeis-com-windows-10-s.html)
-> - [HP](https://support.hp.com/us-en/document/c05588871)
-> - [LANIT Trading](http://irbis-digital.ru/support/podderzhka-windows-10-s/)
-> - [Lenovo](https://support.lenovo.com/us/en/solutions/ht504589)
-> - [LG](http://www.lg.com/us/content/html/hq/windows10update/Win10S_UpdateInfo.html)
-> - [MCJ](https://www2.mouse-jp.co.jp/ssl/user_support2/info.asp?N_ID=361)
-> - [Micro P/Exertis](http://support.linxtablets.com/WindowsSupport/Articles/Windows_10_S_Supported_Devices.aspx)
-> - [Microsoft](https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s)
-> - [MSI](https://www.msi.com/Landing/Win10S)
-> - [Panasonic](https://panasonic.net/cns/pc/Windows10S/)
-> - [Positivo SA](http://www.positivoinformatica.com.br/atualizacao-windows-10)
-> - [Positivo da Bahia](http://www.br.vaio.com/atualizacao-windows-10/)
-> - [Samsung](http://www.samsung.com/us/support/windows10s/)
-> - [Toshiba](http://win10upgrade.toshiba.com/win10s/information?region=TAIS&country=US&lang=en)
-> - [Trekstor](http://www.trekstor.de/windows-10-s-en.html)
-> - [Trigem](http://www.trigem.co.kr/windows/win10S.html)
-> - [Vaio](http://us.vaio.com/support/knowledge-base/windows-10-s-compatibility-information/)
-> - [Wortmann](https://www.wortmann.de/en-gb/content/+windows-10-s-supportinformation/windows-10-s-supportinformation.aspx)
-
-
 |   |   |   |
 | - | - | - |
 | [Acer](https://www.acer.com/ac/en/US/content/windows10s-compatible-list) | [American Future Tech](https://www.ibuypower.com/Support/Support) | [Asus](https://www.asus.com/event/2017/win10S/) |
