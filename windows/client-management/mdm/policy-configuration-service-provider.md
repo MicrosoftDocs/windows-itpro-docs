@@ -534,7 +534,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-credentialproviders.md#credentialproviders-blockpicturepassword" id="credentialproviders-blockpicturepassword">CredentialProviders/BlockPicturePassword</a>
   </dd>
   <dd>
-    <a href="./policy-csp-credentialproviders.md#credentialproviders-enablewindowsautopilotresetcredentials" id="credentialproviders-enablewindowsautopilotresetcredentials">CredentialProviders/EnableWindowsAutoPilotResetCredentials</a>
+    <a href="./policy-csp-credentialproviders.md#credentialproviders-disableautomaticredeploymentcredentials" id="credentialproviders-disableautomaticredeploymentcredentials">CredentialProviders/DisableAutomaticReDeploymentCredentials</a>
   </dd>
 </dl>
 
