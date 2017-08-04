@@ -203,6 +203,7 @@
 #### [InternetExplorer](policy-csp-internetexplorer.md)
 #### [Kerberos](policy-csp-kerberos.md)
 #### [Licensing](policy-csp-licensing.md)
+#### [LocalPoliciesSecurityOptions](policy-csp-localpoliciessecurityoptions.md)
 #### [Location](policy-csp-location.md)
 #### [LockDown](policy-csp-lockdown.md)
 #### [Maps](policy-csp-maps.md)
