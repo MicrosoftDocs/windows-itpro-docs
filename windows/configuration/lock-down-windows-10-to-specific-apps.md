@@ -18,7 +18,7 @@ ms.localizationpriority: high
 
 -   Windows 10
 
-A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package, rather than creating rules in **AppLocker**.
+A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package.
 
 >[!NOTE]
 >For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](#1703) to configure a multi-app kiosk.
@@ -26,22 +26,21 @@ A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typicall
 The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
 >[!WARNING]
->The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the assigned access enforced policies.
+>The assigned access feature is intended for corporate-owned fixed-purpose devices, like kiosks. When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device. Deleting the multi-app configuration will remove the assigned access lockdown profiles associated with the users, but it cannot revert all the enforced policies (such as Start layout). A factory reset is needed to clear all the policies enforced via assigned access.
 
-## new method (1709)
 
 Process:
 1. [Create XML file](#create-xml-file)
 2. [Add XML file to provisioning package](#add-xml)
 3. [Apply provisioning package to device](#apply-ppkg)
 
-### Prerequisites
+## Prerequisites
 
 - (latest version of WCD -- is Store version okay at GA?)
 - kiosk device on 1709
 
 
-### Create XML file
+## Create XML file
 
 Let's start by looking at the basic structure of the XML file. 
 
@@ -78,7 +77,7 @@ You can start your file by pasting the following XML (or any other examples in t
 </AssignedAccessConfiguration>
 ```
 
-#### Profile
+### Profile
 
 A profile section in the XML has the following entries: 
 
@@ -91,11 +90,11 @@ A profile section in the XML has the following entries:
 - [**Taskbar**](#taskbar)
 
 
-##### Id
+#### Id
 
 The profile Id is a GUID attribute to uniquely identify the profile. You can create a GUID using a GUID generator. The GUID just needs to be unique within this XML file. 
 
-##### AllowedApps
+#### AllowedApps
 
 AllowedApps is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Classic Windows desktop apps. 
 
@@ -135,7 +134,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
       </AllAppsList>
 ```
 
-##### StartLayout
+#### StartLayout
 
 After you define the list of allowed applications, you can customize the Start layout for your kiosk experience. You can choose to pin all the allowed apps on the Start screen or just a subset, depending on whether you want the end user to directly access them on the Start screen. 
 
@@ -178,7 +177,7 @@ This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint,
 
 ![What the Start screen looks like when the XML sample is applied](images/sample-start.png)
 
-##### Taskbar
+#### Taskbar
 
 Define whether you want to have the taskbar present in the kiosk device. For tablet-based or touch-enabled all-in-one kiosks, when you don’t attach a keyboard and mouse, you can hide the taskbar as part of the multi-app experience if you want. 
 
@@ -195,17 +194,17 @@ The following example hides the taskbar:
 
 
 <span id="add-xml" />
-### Add XML file to provisioning package
+## Add XML file to provisioning package
 
 <span id="apply-ppkg" />
-### Apply provisioning package to device
+## Apply provisioning package to device
 
-### mixed-reality
+## mixed-reality
 
 *There are some Mixed Reality specific bits we wanted to include. For example, the IT Admin needs to include the Mixed Reality Portal as an allowed app if they want to include Mixed Reality apps in kiosk mode.*
 
 <span id="lnk-files" />
-##### placeholder for lnk
+#### placeholder for lnk
 
 
 
