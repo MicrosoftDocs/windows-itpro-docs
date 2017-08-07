@@ -49,7 +49,16 @@ ms.localizationpriority: high
 
 9. Click **OK** and close any open GPMC windows.
 
-## Onboard virtual desktop infrastructure (VDI)
+## Onboard non-persistent virtual desktop infrastructure (VDI) machines
+
+Windows Defender ATP supports non-persistent VDI session onboarding. There might be associated challendges when onboarding VDIs. The typical challenges for this scenario are:
+
+- Instant early onboarding of a short living session
+    - A session should be onboared to Windows Defender ATP prior to the actual provisioning
+    
+- Machine name persistence 
+    - The machine names are typically reused for new sessions. One may ask to have them as a single machine entry while others may prefer to have multiple entries per machine name.
+
 You can onboard VDIs using Group Policy (GP). You can onboard VDIs using a single entry or multiple entries for each machine. The following steps will guide you through steps in onboarding VDIs and will highlight steps for single and multiple entries.
 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
