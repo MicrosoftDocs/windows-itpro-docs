@@ -106,7 +106,7 @@ path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have 
 
 8. Click **Machines list** on the Navigation pane.
 
-9. Use the search function by entering the machine name and select **Machine** as search type. [QUESTION TO DAN: IF USER WILL USE SEARCH FUNCTION, DO THEY REALLY NEED TO GO TO MACHINES LIST FIRST? CAN'T THEY JUST USE SEARCH FUNCTION DIRECTLY AND SKIP PRIOR STEP?]
+9. Use the search function by entering the machine name and select **Machine** as search type. 
 
 ## Additional Windows Defender ATP configuration settings
 For each endpoint, you can state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
