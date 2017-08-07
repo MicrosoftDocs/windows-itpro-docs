@@ -15,14 +15,13 @@ localizationpriority: high
 
 **Applies to:**
 
-- Group Policy
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender Security Center provides a centralized security operations experience for Windows as well as non-Windows platforms.This experience leverages on a 3rd-party security products’ telemetry. 
+Windows Defender Security Center provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a 3rd-party security products’ sensor data. 
 
 ### Supported non-Windows endpoints
 Windows Defender Security Center supports the following non-Windows endpoints:
@@ -43,8 +42,8 @@ Windows Defender Security Center supports the following non-Windows endpoints:
 
 5. 	Depending on the 3rd-party implementation you're using, the implementation might vary. Refer to the 3rd-party solution documentation for guidance on how to use the token.
 
->[!NOTE]
-> The access token has limited expiration period. If needed, regenerate the token close to the time you share  it with the 3rd party solution.
+>[!WARNING]
+> The access token is only displayed once. Make sure you keep a copy of it in a safe place. If needed, regenerate the token close to the time you need to share it with the 3rd-party solution.
 
 ## Offboard non-Windows endpoints
 To effectively offboard the endpoints from the service, you'll need to disable the data push on the 3rd-party portal then switch the toggle to off in Windows Defender Security Center to block the data inbound flow.
