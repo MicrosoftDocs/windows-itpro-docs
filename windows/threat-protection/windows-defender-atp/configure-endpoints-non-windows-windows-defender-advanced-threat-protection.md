@@ -1,5 +1,7 @@
 ---
 title: Configure non-Windows endpoints in Windows Defender ATP
+description: Configure non-Winodws endpoints to see sensor data and get alerts from them
+keywords: configure endpoints non-Windows endpoints, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
