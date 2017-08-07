@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how the Administrator can use the Settings page to set up Groups and roles, the Enterprise Mode Site List Portal environment, and the freeze dates for production changes.

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 07/06/2017
 ---
 
 # BitLocker CSP
@@ -34,6 +34,11 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.</p>
 
+- 0 (default) – Storage cards do not need to be encrypted.
+- 1 – Require Storage cards to be encrypted.  
+
+<p style="margin-left: 20px">Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.</p>
+ 
 <p style="margin-left: 20px">If you want to disable this policy use the following SyncML:</p>
 
 ``` syntax
@@ -106,14 +111,16 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">EncryptionMethodWithXtsRdvDropDown_Name = Select the encryption method for removable data drives.</p>
 
 <p style="margin-left: 20px"> The possible values for 'xx' are:</p>
-<ul>
-<li>3 = AES-CBC 128</li>
-<li>4 = AES-CBC 256</li>
-<li>6 = XTS-AES 128</li>
-<li>7 = XTS-AES 256</li>
-</ul>
 
-<p style="margin-left: 20px">  If you want to disable this policy use the following SyncML:</p>
+- 3 = AES-CBC 128
+- 4 = AES-CBC 256
+- 6 = XTS-AES 128
+- 7 = XTS-AES 256
+
+> [!Note]  
+> When you enable EncryptionMethodByDriveType, you must specify values for all three drives (operating system, fixed data, and removable data), otherwise it will fail (500 return status). For example, if you only set the encrytion method for the OS and removable drives, you will get a 500 return status.  
+
+<p style="margin-left: 20px">  If you want to disable this policy use the following SyncML:</p> 
 
 ``` syntax
                           <Replace>
@@ -248,14 +255,16 @@ The following diagram shows the BitLocker configuration service provider in tree
 <enabled/><data id="PrebootRecoveryInfoDropDown_Name" value="xx"/><data id="RecoveryMessage_Input" value="yy"/><data id="RecoveryUrl_Input" value="zz"/>
 ```
 <p style="margin-left: 20px">The possible values for 'xx' are:</p>
-<ul>
-<li>0 = Empty</li>
-<li>1 = Use default recovery message and URL.</li>
-<li>2 = Custom recovery message is set.</li>
-<li>3 = Custom recovery URL is set.</li>
-<li>'yy' = string of max length 900.</li>
-<li>'zz' = string of max length 500.</li>
-</ul>
+
+-  0 = Empty
+-  1 = Use default recovery message and URL.
+-  2 = Custom recovery message is set.
+-  3 = Custom recovery URL is set.
+-  'yy' = string of max length 900.
+-  'zz' = string of max length 500.
+
+> [!Note]  
+> When you enable SystemDrivesRecoveryMessage, you must specify values for all three settings (pre-boot recovery screen, recovery message, and recovery URL), otherwise it will fail (500 return status). For example, if you only specify values for message and URL, you will get a 500 return status.
 
 <p style="margin-left: 20px">Disabling the policy will let the system choose the default behaviors.  If you want to disable this policy use the following SyncML:</p>
 

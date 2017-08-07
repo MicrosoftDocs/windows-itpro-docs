@@ -6,7 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
+ms.author: jdecker
+ms.date: 06/29/2017
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -27,6 +29,14 @@ The following guidelines may help you choose an appropriate Windows app for your
 
 - Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch. 
 
+- Apps that are generated using the [Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) cannot be used as kiosk apps.
+
+## Guidelines for using Remote Desktop app 
+
+Kiosk apps open in full screen. When you assign [Remote Desktop](https://www.microsoft.com/store/apps/9wzdncrfj3ps) as the kiosk app, make sure the **Start connections in full screen** setting in the Remote Desktop app is set to **Off**.
+
+![Toggle Start connections in full screen to off](images/rdc.png)
+
 
 ## Guidelines for Windows apps that launch other apps
 
@@ -36,12 +46,11 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. 
+Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not supported for assigned access.
 
 If you use a web browser as your assigned access app, consider the following tips: 
 
 - You can download browsers that are optimized to be used as a kiosk from the Microsoft Store.
-- You can use Group Policy to block access to the file system (network shares, local drives, and local folders) from Internet Explorer’s web address bar. 
 - You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
    - [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
    - [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)

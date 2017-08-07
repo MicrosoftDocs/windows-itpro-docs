@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 07/07/2017
 ---
 
 # VPNv2 CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The VPNv2 configuration service provider allows the mobile device management (MDM) server to configure the VPN profile of the device.
 
@@ -44,8 +46,6 @@ Unique alpha numeric identifier for the profile. The profile name must not inclu
 Supported operations include Get, Add, and Delete.
 
 > **Note**  If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
-
- 
 
 <a href="" id="vpnv2-profilename-apptriggerlist"></a>**VPNv2/***ProfileName***/AppTriggerList**  
 Optional node. List of applications set to trigger the VPN. If any of these apps are launched and the VPN profile is currently the active profile, this VPN profile will be triggered to connect.
@@ -88,6 +88,11 @@ Supported operations include Get, Add, Replace, and Delete. Value type is chr. E
 
 <a href="" id="vpnv2-profilename-routelist-routerowid-prefixsize"></a>**VPNv2/***ProfileName***/RouteList/***routeRowId***/PrefixSize**  
 The subnet prefix size part of the destination prefix for the route entry. This, along with the address will be used to determine the destination prefix to route through the VPN Interface.
+
+Value type is int. Supported operations include Get, Add, Replace, and Delete.
+
+<a href="" id="vpnv2-profilename-routelist-routerowid-metric"></a>**VPNv2/***ProfileName***/RouteList/***routeRowId***/Metric**  
+Added in Windows 10, version 1607. The route's metric.
 
 Value type is int. Supported operations include Get, Add, Replace, and Delete.
 
@@ -261,7 +266,7 @@ Valid values:
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
-<a href="" id="vpnv2-profilename-lockdown"></a>**VPNv2/***ProfileName***/LockDown**  
+<a href="" id="vpnv2-profilename-lockdown"></a>**VPNv2/***ProfileName***/LockDown**  (./Device only profile)  
 Lockdown profile.
 
 Valid values:
@@ -277,6 +282,24 @@ When the LockDown profile is turned on, it does the following things:
 -   Fourth, no other profiles may be connected or modified.
 
 A Lockdown profile must be deleted before you can add, remove, or connect other profiles.
+
+Value type is bool. Supported operations include Get, Add, Replace, and Delete.
+
+<a href="" id="vpnv2-profilename-devicetunnel"></a>**VPNv2/***ProfileName***/DeviceTunnel**  (./Device only profile)  
+Device tunnel profile.
+
+Valid values:
+
+-   False (default) - this is not a device tunnel profile.
+-   True - this is a device tunnel profile.
+
+When the DeviceTunnel profile is turned on, it does the following things:
+
+-   First, it automatically becomes an "always on" profile.
+-   Second, it does not require the presence or logging in of any user to the machine in order for it to connect.
+-   Third, no other device tunnel profile maybe be present on the same machine.
+
+A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
@@ -493,6 +516,8 @@ The following list contains the valid values:
 -   AES128
 -   AES192
 -   AES256
+-   AES\_GCM_128
+-   AES\_GCM_256
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
@@ -541,6 +566,11 @@ Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 Added in Windows 10, version 1607. The preshared key used for an L2TP connection.
 
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
+
+<a href="" id="vpnv2-profilename-nativeprofile-disableclassbaseddefaultroute"></a>**VPNv2/***ProfileName***/NativeProfile/DisableClassBasedDefaultRoute**  
+Added in Windows 10, version 1607. Specifies the class based default routes. For example, if the interface IP begins with 10, it assumes a class a IP and pushes the route to 10.0.0.0/8
+
+Value type is bool. Supported operations include Get, Add, Replace, and Delete.
 
 ## Examples
 
@@ -1215,7 +1245,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/EncryptionMethod</LocURI>
           </Target>
-          <Data>PFS2048</Data>
+          <Data>AES128</Data>
         </Item>
       </Add>
       <Add>
@@ -1224,7 +1254,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/IntegrityCheckMethod</LocURI>
           </Target>
-          <Data>Eap</Data>
+          <Data>SHA256</Data>
         </Item>
       </Add>
       <Add>
@@ -1233,7 +1263,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/DHGroup</LocURI>
           </Target>
-          <Data>SHA256</Data>
+          <Data>Group2</Data>
         </Item>
      </Add>
       <Add>
@@ -1242,7 +1272,7 @@ Servers
           <Target>
             <LocURI>./Vendor/MSFT/VPNv2/VPNProfileName/NativeProfile/Authentication/CryptographySuite/PfsGroup</LocURI>
           </Target>
-          <Data>AES128</Data>
+          <Data>PFS2048</Data>
         </Item>
       </Add>
    

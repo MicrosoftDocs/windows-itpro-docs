@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: support
 description: Info about some of the known issues using the Internet Exporer Customization Wizard and a custom Internet Explorer install package.
 author: eross-msft

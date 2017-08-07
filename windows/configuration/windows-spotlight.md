@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Configure Windows Spotlight on the lock screen
@@ -69,6 +69,8 @@ Windows Spotlight is enabled by default. Windows 10 provides Group Policy and mo
 
 >[!WARNING]
 > In Windows 10, version 1607, the **Force a specific default lock screen image** policy setting will prevent users from changing the lock screen image. This behavior will be corrected in a future release.
+>
+> In Windows 10, version 1703, the **Force a specific default lock screen image** policy setting applies only intermittently and may not produce expected results. This behavior will be corrected in a future release.
 
 ![lockscreen policy details](images/lockscreenpolicy.png)
 

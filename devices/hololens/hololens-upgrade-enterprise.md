@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Unlock Windows Holographic for Business features
@@ -116,7 +116,7 @@ Provisioning packages are files created by the Windows Imaging and Configuration
 
 ### Apply the provisioning package to HoloLens
 
-1. Connect the device via USB to a PC and start the device, but do not continue past the **fit** page of OOBE (the first page with the blue box).
+1. Connect the device via USB to a PC and start the device, but do not continue past the **fit** page of the initial setup experience (the first page with the blue box).
 
 2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
 
@@ -128,7 +128,7 @@ Provisioning packages are files created by the Windows Imaging and Configuration
 
 6. The device will ask you if you trust the package and would like to apply it. Confirm that you trust the package.
 
-7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with OOBE.
+7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with device setup.
 
 >[!NOTE]
 >If the device was purchased before August 2016, you will need to sign into the device with aa Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package. 
