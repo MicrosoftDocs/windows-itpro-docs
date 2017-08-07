@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # What's new in Windows 10, versions 1507 and 1511
@@ -201,7 +201,7 @@ Event ID 6416 has been added to track when an external device is detected throug
 The following sections describe the new and changed functionality in the TPM for Windows 10:
 -   [Device health attestation](#bkmk-dha)
 -   [Microsoft Passport](/windows/access-protection/hello-for-business/hello-identity-verification) support
--   [Device Guard](/windows/access-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies) support
+-   [Device Guard](/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies) support
 -   [Credential Guard](/windows/access-protection/credential-guard/credential-guard) support
 
 ### <a href="" id="bkmk-dha"></a>Device health attestation

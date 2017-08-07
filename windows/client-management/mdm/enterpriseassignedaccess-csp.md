@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 07/12/2017
 ---
 
 # EnterpriseAssignedAccess CSP
@@ -26,7 +26,7 @@ The following diagram shows the EnterpriseAssignedAccess configuration service p
 
 The following list shows the characteristics and parameters.
 
-<a href="" id="-vendor-msft-enterpriseassignedaccess-"></a>**.Vendor/MSFT/EnterpriseAssignedAccess/**  
+<a href="" id="-vendor-msft-enterpriseassignedaccess-"></a>**./Vendor/MSFT/EnterpriseAssignedAccess/**  
 The root node for the EnterpriseAssignedAccess configuration service provider. Supported operations are Add, Delete, Get and Replace.
 
 <a href="" id="assignedaccess-"></a>**AssignedAccess/**  
@@ -39,10 +39,10 @@ Supported operations are Add, Delete, Get and Replace.
 
 The Apps and Settings sections of lockdown XML constitute an Allow list. Any app or setting that is not specified in AssignedAccessXML will not be available on the device to users. The following table describes the entries in lockdown XML.
 
-> **Important**  
-When using the AssignedAccessXml in the EnterpriseAssignedAccess CSP through an MDM, the XML must use escaped characters, such as &lt; instead of &lt; because it is embedded in an XML. The examples provided in the topic are formatted for readability.
+> [!Important]    
+> When using the AssignedAccessXml in the EnterpriseAssignedAccess CSP through an MDM, the XML must use escaped characters, such as \&lt; instead of &lt; because it is embedded in an XML. The examples provided in the topic are formatted for readability.
 
-When using the AssignedAccessXml in a provisioning package using the Windows Imaging and Configuration Designer (ICD) tool, do not use escaped characters.
+When using the AssignedAccessXml in a provisioning package using the Windows Configuration Designer tool, do not use escaped characters.
 
 Entry | Description
 ----------- | ------------
@@ -136,10 +136,7 @@ An application that belongs in the folder would add an optional attribute **Pare
 
 Entry | Description
 ----------- | ------------
-Settings | Starting in Windows 10, version 1511, you can specify the following settings pages in the lockdown XML file.
-
-> [!Important]  
-> Do not specify a group entry without a page entry because it will cause an undefined behavior.
+Settings | Starting in Windows 10, version 1511, you can specify the following settings pages in the lockdown XML file. For Windows 10, version 1703, see the instructions below for the new way to specify the settings pages.
 
 <ul>
 <li>System (main menu) - SettingsPageGroupPCSystem
@@ -245,12 +242,32 @@ Settings | Starting in Windows 10, version 1511, you can specify the following
 </ul></li>
 </ul>
 
+Entry | Description
+----------- | ------------
+Settings | Starting in Windows 10, version 1703, you can specify the settings pages using the settings URI.
+
+For example, in place of SettingPageDisplay, you would use ms-settings:display. See [ms-settings: URI scheme reference](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each settings page.
+
+Here is an example for Windows 10, version 1703.
+
+``` syntax
+<Settings>
+  <System name="ms-settings:display"/>
+  <System name="ms-settings:appsforwebsites"/>
+  <System name="ms-settings:about"/>
+  <System name="ms-settings:camera"/>
+  <System name="ms-settings:nfctransactions"/>
+  <System name="ms-settings:mousetouchpad"/>
+  <System name="ms-settings:usb"/>
+</Settings>
+```
+
 **Quick action settings**  
 
 Starting in Windows 10, version 1511, you can specify the following quick action settings in the lockdown XML file. The following list shows the quick action settings and settings page dependencies (group and page).
 
 > [!Note]  
-> Only Windows 10, versions 1511 and 1607, the dependent settings group and pages are automatically added when the quick action item is specified in the lockdown XML. This statement does not apply to Windows 10, version 1703.
+> Only Windows 10, versions 1511 and 1607, the dependent settings group and pages are automatically added when the quick action item is specified in the lockdown XML. In Windows 10, version 1703, Quick action settings no longer require any dependencies from related group or page.
 
 <ul>
 <li><p>SystemSettings_System_Display_QuickAction_Brightness</p>
@@ -287,6 +304,25 @@ Starting in Windows 10, version 1511, you can specify the following quick acti
 <p>Dependencies - none</p></li>
 </ul>
 
+Starting in Windows 10, version 1703, Quick action settings no longer require any dependencis from related group or page. Here is the list:
+- QuickActions_Launcher_AllSettings
+- QuickActions_Launcher_DeviceDiscovery
+- SystemSettings_BatterySaver_LandingPage_OverrideControl
+- SystemSettings_Device_BluetoothQuickAction
+- SystemSettings_Flashlight_Toggle
+- SystemSettings_Launcher_QuickNote
+- SystemSettings_Network_VPN_QuickAction
+- SystemSettings_Privacy_LocationEnabledUserPhone
+- SystemSettings_QuickAction_AirplaneMode
+- SystemSettings_QuickAction_Camera
+- SystemSettings_QuickAction_CellularData
+- SystemSettings_QuickAction_InternetSharing
+- SystemSettings_QuickAction_QuietHours
+- SystemSettings_QuickAction_WiFi
+- SystemSettings_System_Display_Internal_Rotation
+- SystemSettings_System_Display_QuickAction_Brightness
+
+
 In this example, all settings pages and quick action settings are allowed. An empty \<Settings> node indicates that none of the settings are blocked.  
 
 ``` syntax
@@ -294,7 +330,7 @@ In this example, all settings pages and quick action settings are allowed. An em
 </Settings>
 ```
 
-In this example, all System setting pages are enabled. Note that the System page group is added as well as all of the System subpage names.  
+In this example for Windows 10, version 1511, all System setting pages are enabled. Note that the System page group is added as well as all of the System subpage names.  
 
 ``` syntax
 <Settings> 
@@ -309,6 +345,19 @@ In this example, all System setting pages are enabled. Note that the System page
   <System name="SettingsPageDrivingMode" /> 
   <System name="SettingsPagePCSystemInfo" /> 
  </Settings>
+```
+Here is an example for Windows 10, version 1703.
+
+``` syntax
+<Settings>
+  <System name="ms-settings:display"/>
+  <System name="ms-settings:appsforwebsites"/>
+  <System name="ms-settings:about"/>
+  <System name="ms-settings:camera"/>
+  <System name="ms-settings:nfctransactions"/>
+  <System name="ms-settings:mousetouchpad"/>
+  <System name="ms-settings:usb"/>
+</Settings>
 ```
 
 Entry | Description

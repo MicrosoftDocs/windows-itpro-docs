@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, security
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Add unsigned app to code integrity policy

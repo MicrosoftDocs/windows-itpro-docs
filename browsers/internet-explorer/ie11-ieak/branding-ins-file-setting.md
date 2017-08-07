@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the \[Branding\] .INS file setting to set up your custom branding and setup info in your browser install package.
 author: eross-msft

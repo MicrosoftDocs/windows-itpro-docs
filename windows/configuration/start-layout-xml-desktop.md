@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/13/2017
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Start layout XML for desktop editions of Windows 10 (reference)

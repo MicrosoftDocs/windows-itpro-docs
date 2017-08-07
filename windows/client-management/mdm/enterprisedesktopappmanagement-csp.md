@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 07/11/2017
 ---
 
 # EnterpriseDesktopAppManagement CSP
@@ -47,6 +47,26 @@ Installation date of the application. Value type is string. Supported operation 
 
 <a href="" id="msi-productid-downloadinstall"></a>**MSI/*ProductID*/DownloadInstall**  
 Executes the download and installation of the application. Value type is string. Supported operations are Execute and Get.
+
+In Windows 10, version 1703 service release, a new tag \<DownloadFromAad\> was added to the \<Enforcement\> section of the XML. The default value is 0 (do not send token). This tag is optional and needs to be set to 1 in case the server wants the download URL to get the AADUserToken. 
+
+Here is an example:
+
+```syntax
+             <Enforcement>
+
+                <CommandLine>/quiet</CommandLine>
+
+                <TimeOut>5</TimeOut>
+
+                <RetryCount>3</RetryCount>
+
+                <RetryInterval>5</RetryInterval>
+
+                <DownloadFromAad>1</DownloadFromAad>
+
+              </Enforcement>
+```
 
 <a href="" id="msi-productid-status"></a>**MSI/*ProductID*/Status**  
 Status of the application. Value type is string. Supported operation is Get.

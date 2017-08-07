@@ -150,9 +150,12 @@
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy](windows-information-protection\overview-create-wip-policy.md)
-#### [Create a Windows Information Protection (WIP) policy using Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
-##### [Deploy your Windows Information Protection (WIP) policy](windows-information-protection\deploy-wip-policy-using-intune.md)
-##### [Create and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)
+#### [Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
+##### [Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune.md)
+##### [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the classic console for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)
+#### [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)
+##### [Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)
+##### [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)
 #### [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](windows-information-protection\create-wip-policy-using-sccm.md)
 #### [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
 #### [Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](windows-information-protection\wip-app-enterprise-context.md)
@@ -169,6 +172,10 @@
 ## [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
 
 ## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
+
+## [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md)
+
+## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
 

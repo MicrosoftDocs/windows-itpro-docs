@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Internal Install page in the IEAK 11 Customization Wizard to customize Setup for the default browser and the latest browser updates.
 author: eross-msft

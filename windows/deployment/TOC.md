@@ -2,13 +2,17 @@
 
 ## [What's new in Windows 10 deployment](deploy-whats-new.md)
 ## [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)
-## [Windows 10 Enterprise E3 in CSP overview](windows-10-enterprise-e3-overview.md)
+
+## [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md)
+### [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
+### [Configure VDA for Subscription Activation](vda-subscription-activation.md)
+### [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md)
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
 
 ## [Deploy Windows 10](deploy.md)
+### [Overview of Windows AutoPilot](windows-10-auto-pilot.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
-
 
 ### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
 #### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
@@ -70,14 +74,12 @@
 
 #### [Change history for Plan for Windows 10 deployment](planning/change-history-for-plan-for-windows-10-deployment.md)
 
-
-
-
 ### [Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md)
 #### [Get started with the Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit.md)
 ##### [Key features in MDT](deploy-windows-mdt/key-features-in-mdt.md)
 ##### [MDT Lite Touch components](deploy-windows-mdt/mdt-lite-touch-components.md)
 ##### [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+
 #### [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)
 #### [Deploy a Windows 10 image using MDT](deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md)
 #### [Build a distributed environment for Windows 10 deployment](deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md)
@@ -94,8 +96,6 @@
 ##### [Use web services in MDT](deploy-windows-mdt/use-web-services-in-mdt.md)
 ##### [Use Orchestrator runbooks with MDT](deploy-windows-mdt/use-orchestrator-runbooks-with-mdt.md)
 
-
-
 ### [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md)
 #### [Integrate Configuration Manager with MDT](deploy-windows-mdt/integrate-configuration-manager-with-mdt.md)
 #### [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
@@ -111,11 +111,9 @@
 #### [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)
 #### [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md)
 
+### [Windows 10 deployment tools](windows-10-deployment-tools.md)
 
-
-
-### [Windows 10 deployment tools](windows-10-deployment-tools-reference.md)
-
+#### [Windows 10 deployment scenarios and tools](windows-deployment-scenarios-and-tools.md)
 #### [Convert MBR partition to GPT](mbr-to-gpt.md)
 #### [Configure a PXE server to load Windows PE](configure-a-pxe-server-to-load-windows-pe.md)
 #### [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md)
@@ -219,7 +217,7 @@
 ### [Overview of Windows as a service](update/waas-overview.md)
 ### [Prepare servicing strategy for Windows 10 updates](update/waas-servicing-strategy-windows-10-updates.md)
 ### [Build deployment rings for Windows 10 updates](update/waas-deployment-rings-windows-10-updates.md)
-### [Assign devices to servicing branches for Windows 10 updates](update/waas-servicing-branches-windows-10-updates.md)
+### [Assign devices to servicing channels for Windows 10 updates](update/waas-servicing-channels-windows-10-updates.md)
 ### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
 #### [Get started with Update Compliance](update/update-compliance-get-started.md)
 #### [Use Update Compliance](update/update-compliance-using.md)
@@ -241,8 +239,24 @@
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
-
-
+## Windows Analytics
+### [Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md)
+#### [Upgrade Readiness architecture](upgrade/upgrade-readiness-architecture.md)
+#### [Upgrade Readiness requirements](upgrade/upgrade-readiness-requirements.md)
+#### [Get started with Upgrade Readiness](upgrade/upgrade-readiness-get-started.md)
+##### [Upgrade Readiness deployment script](upgrade/upgrade-readiness-deployment-script.md)
+#### [Use Upgrade Readiness to manage Windows upgrades](upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)
+##### [Upgrade overview](upgrade/upgrade-readiness-upgrade-overview.md)
+##### [Step 1: Identify apps](upgrade/upgrade-readiness-identify-apps.md)
+##### [Step 2: Resolve issues](upgrade/upgrade-readiness-resolve-issues.md)
+##### [Step 3: Deploy Windows](upgrade/upgrade-readiness-deploy-windows.md)
+##### [Additional insights](upgrade/upgrade-readiness-additional-insights.md)
+#### [Troubleshoot Upgrade Readiness](upgrade/troubleshoot-upgrade-readiness.md)
+### [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md)
+#### [Get started with Update Compliance](update/update-compliance-get-started.md)
+#### [Use Update Compliance](update/update-compliance-using.md)
+### [Device Health](update/device-health-monitor.md)
+#### [Get started with Device Health](update/device-health-get-started.md)
+#### [Using Device Health](update/device-health-using.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
-

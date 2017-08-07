@@ -7,7 +7,7 @@ ms.pagetype: store, mobile
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview
@@ -157,16 +157,20 @@ For more information, see [Manage settings in the Store for Business](manage-set
 
 Microsoft Store for Business and Education is currently available in these markets.
 
-### Support for free and paid apps
+### Support for free and paid products
 <table>
    <tr>
-        <th align="center" colspan="4">Support for free and paid apps</th>
+        <th align="center" colspan="4">Supports all free and paid products</th>
    </tr>
    <tr align="left">
      <td>
         <ul>
+            <li>Afghanistan</li>
             <li>Algeria</li>
+            <li>Andorra</li>
             <li>Angola</li>
+            <li>Anguilla</li>
+            <li>Antigua and Barbuda</li>
             <li>Argentina</li>
             <li>Australia</li>
             <li>Austria</li>
@@ -177,41 +181,48 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Belgium</li>
             <li>Belize</li>
             <li>Bermuda</li>
+            <li>Benin</li>
             <li>Bhutan</li>
             <li>Bolivia</li>
+            <li>Bonaire</li>
             <li>Botswana</li>
             <li>Brunei Darussalam</li>
             <li>Bulgaria</li>
+            <li>Burundi</li>
             <li>Cambodia</li>
             <li>Cameroon</li>
             <li>Canada</li>
-            <li>Republic of Cabo Verde</li>
             <li>Cayman Islands</li>
             <li>Chile</li>
             <li>Colombia</li>
+            <li>Comoros</li>
             <li>Costa Rica</li>
             <li>C&ocirc;te D'ivoire</li>
             <li>Croatia</li>
             <li>Cur&ccedil;ao</li>
             <li>Cyprus</li>
-        </ul>
-    </td>
-     <td>
-        <ul>
             <li>Czech Republic</li>
             <li>Denmark</li>
             <li>Dominican Republic</li>
             <li>Ecuador</li>
+        </ul>
+     </td>
+     <td>
+        <ul> 
             <li>Egypt</li>
             <li>El Salvador</li>
             <li>Estonia</li>
+            <li>Ethiopia</li>
             <li>Faroe Islands</li>
             <li>Fiji</li>
             <li>Finland</li>
             <li>France</li>
+            <li>French Guiana</li>
+            <li>French Polynesia</li>
             <li>Germany</li>
             <li>Ghana</li>
             <li>Greece</li>
+            <li>Greenland</li>
             <li>Guadeloupe</li>
             <li>Guatemala</li>
             <li>Honduras</li>
@@ -225,29 +236,42 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Italy</li>
             <li>Jamaica</li>
             <li>Japan</li>
+            <li>Jersey</li>
             <li>Jordan</li>
-            <li>Kenya</li> 
-        </ul>
-    </td>
-    <td>
-        <ul>
+            <li>Kenya</li>
             <li>Kuwait</li>
+            <li>Laos</li>
             <li>Latvia</li>
             <li>Lebanon</li>
             <li>Libya</li>
             <li>Liechtenstein</li>
             <li>Lithuania</li>
             <li>Luxembourg</li>
+            <li>Macedonia</li>
+            <li>Madagascar</li>
+        </ul>
+    </td>
+     <td>
+        <ul>
+            <li>Malawi</li>
             <li>Malaysia</li>
+            <li>Maldives</li>
+            <li>Mali</li>
             <li>Malta</li>
+            <li>Marshall Islands</li>
+            <li>Martinique</li>
             <li>Mauritius</li>
+            <li>Mayotte</li>
             <li>Mexico</li>
             <li>Mongolia</li>
             <li>Montenegro</li>
             <li>Morocco</li>
             <li>Mozambique</li>
+            <li>Myanamar</li>
             <li>Namibia</li>
+            <li>Nepal</li>
             <li>Netherlands</li>
+            <li>New Caledonia</li>
             <li>New Zealand</li>
             <li>Nicaragua</li>
             <li>Nigeria</li>
@@ -256,48 +280,60 @@ Microsoft Store for Business and Education is currently available in these marke
             <li>Pakistan</li>
             <li>Palestinian Authority</li>
             <li>Panama</li>
+            <li>Papua New Guinea</li>
             <li>Paraguay</li>
             <li>Peru</li>
             <li>Philippines</li>
-            <li>Poland</li>          
+            <li>Poland</li>
+            <li>Portugal</li>
+            <li>Puerto Rico</li>
+            <li>Qatar</li>
+            <li>Republic of Cabo Verde</li>
+            <li>Reunion</li>
+            <li>Romania</li>
+            <li>Rwanda</li>
+            <li>Saint Kitts and Nevis</li> 
         </ul>
     </td>
     <td>
         <ul>
-            <li>Portugal</li>
-            <li>Puerto Rico</li>
-            <li>Qatar</li>
-            <li>Romania</li>
-            <li>Rwanda</li>
-            <li>Saint Kitts and Nevis</li>
+            <li>Saint Lucia</li>
+            <li>Saint Martin</li>
+            <li>Saint Vincent and the Grenadines</li>
+            <li>San marino</li>
             <li>Saudi Arabia</li>
             <li>Senegal</li>
             <li>Serbia</li>
+            <li>Seychelles</li>
             <li>Singapore</li>
+            <li>Sint Maarten</li>
             <li>Slovakia</li>
             <li>Slovenia</li>
             <li>South Africa</li>
             <li>Spain</li>
+            <li>Sri Lanka</li>
+            <li>Suriname</li>
             <li>Sweden</li>
             <li>Switzerland</li>
             <li>Tanzania</li>
             <li>Thailand</li>
+            <li>Timor-Leste</li>
+            <li>Togo</li>
+            <li>Tonga</li>
             <li>Trinidad and Tobago</li>
             <li>Tunisia</li>
             <li>Turkey</li>
+            <li>Turks and Caicos Islands</li>
             <li>Uganda</li>
             <li>United Arab Emirates</li>
             <li>United Kingdom</li>
-            <li>United States</li>           
-        </ul>
-    </td>
-    <td>
-        <ul>
+            <li>United States</li>
             <li>Uruguay</li>
+            <li>Vatican City</li>
             <li>Viet Nam</li>
             <li>Virgin Islands, U.S.</li>
             <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>           
+            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li>         
         </ul>
     </td>
    </tr>
@@ -305,7 +341,6 @@ Microsoft Store for Business and Education is currently available in these marke
 
 ### Support for free apps
 Customers in these markets can use Microsoft Store for Business and Education to acquire free apps:
-- India
 - Russia 
 
 ### Support for free apps and Minecraft: Education Edition
@@ -317,8 +352,11 @@ Customers in these markets can use Microsoft Store for Business and Education to
 - Bosnia
 - Brazil
 - Georgia
+- India
+- Isle of Man
 - Kazakhstan
 - Korea
+- Monaco
 - Republic of Moldova
 - Taiwan
 - Tajikistan

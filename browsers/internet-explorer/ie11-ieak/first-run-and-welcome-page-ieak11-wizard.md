@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the First Run Wizard and Welcome Page Options page in the IEAK 11 Customization Wizard to set what your employee’s see the first time they log on to IE, based on their operating system.
 author: eross-msft

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using Microsoft Deployment Toolkit (MDT) and your Windows images.
 author: eross-msft

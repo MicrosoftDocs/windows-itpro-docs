@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: List of supported hardware and software requirements for Internet Explorer 11 and the Internet Explorer Administration Kit 11.
 author: eross-msft

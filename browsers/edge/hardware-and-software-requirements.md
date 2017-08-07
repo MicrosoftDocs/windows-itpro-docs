@@ -7,7 +7,7 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 title: Microsoft Edge requirements and language support (Microsoft Edge for IT Pros)
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Microsoft Edge requirements and language support

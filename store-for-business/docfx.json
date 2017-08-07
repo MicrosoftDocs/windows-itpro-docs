@@ -37,6 +37,7 @@
 		"ms.technology": "windows",
 		"ms.topic": "article",
 		"ms.date": "05/09/2017",
+    "searchScope": ["Store"],
 		"_op_documentIdPathDepotMapping": {
 			"./": {
 			  "depot_name": "MSDN.store-for-business"

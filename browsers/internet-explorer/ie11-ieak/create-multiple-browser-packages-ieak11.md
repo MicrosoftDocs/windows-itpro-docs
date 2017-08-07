@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Steps to create multiple versions of your custom browser if you support more than 1 version of Windows, more than 1 language, or have different features in each package.
 author: eross-msft

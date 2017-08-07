@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: explore
 description: Frequently asked questions about Internet Explorer 11 for IT Pros
 author: eross-msft

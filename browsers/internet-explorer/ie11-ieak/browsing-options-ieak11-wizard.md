@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Browsing Options page in the IEAK 11 Customization Wizard to manage items in the Favorites, Favorites Bar, and Feeds section.
 author: eross-msft
