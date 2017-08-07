@@ -46,7 +46,7 @@ Let's start by looking at the basic structure of the XML file.
 
 - A configuration xml can define multiple *profiles*. Each profile has a unique **Id** and defines a set of applications that are allowed to run. 
 
-- A configuration xml can have multiple *config* section. Each config section associates a non-admin user account to a default profile **Id**. 
+- A configuration xml can have multiple *config* sections. Each config section associates a non-admin user account to a default profile **Id**. 
 
 - Multiple config sections can be associated to the same profile.
 
@@ -56,7 +56,7 @@ Let's start by looking at the basic structure of the XML file.
     
 You can start your file by pasting the following XML (or any other examples in this topic) into a XML editor, and saving the file as *filename*.xml. 
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
     <Profiles>
