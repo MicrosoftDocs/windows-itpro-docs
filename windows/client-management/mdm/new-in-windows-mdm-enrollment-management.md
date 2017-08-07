@@ -969,7 +969,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
-<li>CredentialProviders/EnableWindowsAutoPilotResetCredentials</li>
+<li>CredentialProviders/DisableAutomaticReDeploymentCredentials</li>
 <li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
@@ -1279,6 +1279,31 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### August 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[CM_ProxyEntries CSP](cm-proxyentries-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the description of PuposeGroups node to add the GUID for applications. This node is required instead of optional.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top">Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</td>
+</tr>
+</tbody>
+</table>
 
 ### July 2017
 

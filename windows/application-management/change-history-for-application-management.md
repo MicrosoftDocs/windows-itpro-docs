@@ -18,6 +18,6 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 | New or changed topic | Description |
 | --- | --- |
 | [Service Host process refactoring](svchost-service-refactoring.md) | New |
-| [Deploy app updgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md) | New |
+| [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md) | New |
 
 
