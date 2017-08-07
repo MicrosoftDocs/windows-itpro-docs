@@ -222,12 +222,12 @@ This topic describes how to lock down apps on a local device. You can also use A
 
 ![install create lockdown customize](images/lockdownapps.png)
 
-## Install apps
+### Install apps
 
 
 First, install the desired apps on the device for the target user account(s). This works for both Store and Win32. For Store apps, you must log on as that user for the app to install. For Win32 you can install an app for all users without logging on to the particular account.
 
-## Use AppLocker to set rules for apps
+### Use AppLocker to set rules for apps
 
 
 After you install the desired apps, set up AppLocker rules to only allow specific apps, and block everything else.
@@ -268,7 +268,7 @@ After you install the desired apps, set up AppLocker rules to only allow specifi
 
 13. Restart the device.
 
-## Other settings to lock down
+### Other settings to lock down
 
 
 In addition to specifying the apps that users can run, you should also restrict some settings and functions on the device. For a more secure experience, we recommend that you make the following configuration changes to the device:
@@ -304,7 +304,7 @@ In addition to specifying the apps that users can run, you should also restrict 
 
 To learn more about locking down features, see [Customizations for Windows 10 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=691442).
 
-## Customize Start screen layout for the device (recommended)
+### Customize Start screen layout for the device (recommended)
 
 
 Configure the Start menu on the device to only show tiles for the permitted apps. You will make the changes manually, export the layout to an .xml file, and then apply that file to devices to prevent users from making changes. For instructions, see [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md).
