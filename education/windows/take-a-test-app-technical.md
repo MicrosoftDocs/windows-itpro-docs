@@ -53,7 +53,7 @@ When Take a Test is running, the following MDM policies are applied to lock down
 
 ## Group Policy
 
-When Take a Test is running, make sure the following Group Policy should not be configured on the PC to avoid breaking activation of the Take a Test app.
+To ensure Take a Test activates correctly, make sure the following Group Policy are not configured on the PC.
 
 | Functionality | Group Policy path | Policy |
 | --- | --- | --- |
