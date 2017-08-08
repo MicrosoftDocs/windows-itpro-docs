@@ -154,8 +154,8 @@ PS C:\> Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpace
 [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) 
 *(Overview)*
 
-[Configuration Settings Providers](../windows/client-management/mdm/policy-configuration-service-provider.md)
-*(Policy CSP: See [Security-RequireDeviceEncryption](../windows/client-management/mdm/policy-csp-security.md#security-requiredeviceencryption))*
+[Configuration Settings Providers](.../windows/client-management/mdm/policy-configuration-service-provider.md)
+*(Policy CSP: See [Security-RequireDeviceEncryption](./windows/client-management/mdm/policy-csp-security.md#security-requiredeviceencryption))*
 
 [BitLocker CSP](../windows/client-management/mdm/bitlocker-csp.md)
 
