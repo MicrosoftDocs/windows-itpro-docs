@@ -425,8 +425,7 @@ In the multi-app mode, the touch keyboard will be automatically triggered when t
 *There are some Mixed Reality specific bits we wanted to include. For example, the IT Admin needs to include the Mixed Reality Portal as an allowed app if they want to include Mixed Reality apps in kiosk mode.*
 
 
-<span id="lnk-files" />
-## placeholder for lnk
+
 
 
 ## Policies set by multi-app kiosk configuration
@@ -471,15 +470,32 @@ Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
 ### MDM policy
 
 
+Some of the MDM policies affect all users on the system (i.e. system-wide).
 
+Setting	| 	Value	| System-wide
+ --- | --- | ---
+Experience/AllowCortana		| Disabled	| 	Yes
+Start/AllowPinnedFolderSettings	| 	Disabled	| 	Yes
+Start/HidePeopleBar		| Enabled	| 	Yes
+Start/HideChangeAccountSettings		| Enabled		| Yes
+WindowsInkWorkspace/AllowWindowsInkWorkspace	| 	Disabled	| 	Yes
+Start/StartLayout	| Configuration dependent	| 	No
+WindowsLogon/DontDisplayNetworkSectionUI	| 	Enabled	| 	Yes
 
+<span id="lnk-files" />
+## Provision .lnk files using Windows Configuration Designer
 
+First, create your desktop app's shortcut file by installing the app on a test device. Right-click the installed application, and choose **Send to** > **Desktop (create shortcut)**. Rename the shortcut to `<appName>.lnk`
 
- 
+Next, create a batch file with two commands. If the desktop app is already installed on the target device, skip the first command for MSI install. 
 
- 
+```
+msiexec /I "<appName>.msi" /qn /norestart
+copy <appName>.lnk "%AllUsersProfile\Microsoft\Windows\Start Menu\Programs\<appName>.lnk"
+```
 
+In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**:
 
-
-
+- Under CommandFiles, upload your batch file, your .lnk file, and your desktop app installation file 
+- Under CommandLine, enter cmd /c <batchFileName>.bat
 
