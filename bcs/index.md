@@ -429,7 +429,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Microsoft Technical Support - Coming soon</h3>
+                                                    <h3>Microsoft Technical Support</h3>
                                                     <p>Submit a technical support request for Microsoft 365 Business.</p>
                                                 </div>
                                             </div>
