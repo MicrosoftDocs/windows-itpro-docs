@@ -54,7 +54,7 @@ Let's start by looking at the basic structure of the XML file.
 
     ![profile = app and config = account](images/profile-config.png)
     
-You can start your file by pasting the following XML (or any other examples in this topic) into a XML editor, and saving the file as *filename*.xml. 
+You can start your file by pasting the following XML (or any other examples in this topic) into a XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this topic. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -92,11 +92,17 @@ A profile section in the XML has the following entries:
 
 #### Id
 
-The profile Id is a GUID attribute to uniquely identify the profile. You can create a GUID using a GUID generator. The GUID just needs to be unique within this XML file. 
+The profile **Id** is a GUID attribute to uniquely identify the profile. You can create a GUID using a GUID generator. The GUID just needs to be unique within this XML file. 
+
+```xml
+<Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">…</Profile>
+  </Profiles>
+```
 
 #### AllowedApps
 
-AllowedApps is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Classic Windows desktop apps. 
+**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Classic Windows desktop apps. 
 
 Based on the purpose of the kiosk device, define the list of applications that are allowed to run. This list can contain both UWP apps and desktop apps. When the mult-app kiosk configuration is applied to a device, AppLocker rules will be generated to allow the apps that are listed in the configuration.
 
@@ -107,20 +113,22 @@ Based on the purpose of the kiosk device, define the list of applications that a
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
 
 Here are the predefined assigned access AppLocker rules for **UWP apps**:   
+
 1.	Default rule is to allow all users to launch the signed package apps. 
 2.	The package app deny list is generated at runtime when the assigned access user signs in. Based on the installed/provisioned package apps available for the user account, assigned access generates the deny list. This list will exclude the default allowed inbox package apps which are critical for the system to function, and then exclude the allowed packages that enterprises defined in the assigned access configuration. If there are multiple apps within the same package, all these apps will be excluded. This deny list will be used to prevent the user from accessing the apps which are currently available for the user but not in the allowed list. 
 
->[!NOTE]
->Assigned access multi-app mode doesn’t block the enterprises or the users from installing UWP apps. When a new UWP app is installed during the current assigned access user session, this app will not be in the deny list. When the user signs out and signs in back next time, it will be included in the deny list. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the assigned access configuration to include it in the allowed app list. 
+    >[!NOTE]
+    >Multi-app kiosk mode doesn’t block the enterprise or the users from installing UWP apps. When a new UWP app is installed during the current assigned access user session, this app will not be in the deny list. When the user signs out and signs in again, the app will be included in the deny list. If this is an enterprise-deployed line-of-business app and you want to allow it to run, update the assigned access configuration to include it in the allowed app list. 
 
 Here are the predefined assigned access AppLocker rules for **desktop apps**:
+
 1.	Default rule is to allow all users to launch the desktop programs signed with Microsoft Certificate in order for the system to boot and function. The rule also allows the admin user group to launch all desktop programs. 
 2.	There is a predefined inbox desktop app deny list for the assigned access user account, and this deny list is adjusted based on the desktop app allow list that you defined in the multi-app configuration. 
 3.	Enterprise-defined allowed desktop apps are added in the AppLocker allow list. 
 
 The following example allows Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps to run on the device.
 
-```
+```xml
 <AllAppsList>
         <AllowedApps>
           <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" />
@@ -149,7 +157,7 @@ A few things to note here:
 
 This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint, and Notepad apps on Start.
 
-```
+```xml
 <StartLayout>
         <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
                       <LayoutOptions StartTileGroupCellWidth="6" />
@@ -192,14 +200,38 @@ The following example hides the taskbar:
 >[!NOTE]
 >This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
 
+### Configs
+
+Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or MDM policies set as part of the multi-app experience. 
+
+The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in.  
+
+Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
+
+
+```xml
+<Configs>
+    <Config>
+      <Account>MultiAppKioskUser</Account>
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+    </Config>
+  </Configs> 
+```
+
+
+
 
 <span id="add-xml" />
 ## Add XML file to provisioning package
 
+
+
 <span id="apply-ppkg" />
 ## Apply provisioning package to device
 
-## mixed-reality
+
+
+## Considerations for mixed-reality devices
 
 *There are some Mixed Reality specific bits we wanted to include. For example, the IT Admin needs to include the Mixed Reality Portal as an allowed app if they want to include Mixed Reality apps in kiosk mode.*
 
