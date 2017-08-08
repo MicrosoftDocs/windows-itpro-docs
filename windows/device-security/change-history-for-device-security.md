@@ -14,7 +14,7 @@ This topic lists new and updated topics in the [Device security](index.md) docum
 ## August 2017
 |New or changed topic |Description |
 |---------------------|------------|
- | [BitLocker Management for Enterprises](bitlocker/bitlocker-management-for-enterprises.md) | New BitLocker security topic. |
+ | [BitLocker: Management recommendations for enterprises](bitlocker/bitlocker-management-for-enterprises.md) | New BitLocker security topic. |
 
 
 
