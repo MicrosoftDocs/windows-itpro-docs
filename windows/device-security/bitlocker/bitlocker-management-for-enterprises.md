@@ -20,7 +20,7 @@ The ideal for modern BitLocker management is to eliminate the need for IT admins
 
 Therefore, we recommend that you upgrade your hardware so that your devices comply with InstantGo or [Hardware Security Test Interface (HSTI)](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx) specifications to take advantage of their automated features, for example, when using Azure Active Directory (Azure AD). 
 
-Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been published about Windows BitLocker, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for:
+Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for:
 
    - [Domain-joined computers](#dom_join)
 
@@ -63,15 +63,6 @@ For older client computers with BitLocker that are domain joined on-premises, Mi
 
 <a id="MBAM25"></a>
 <sup>[1]</sup>The latest MBAM version is [MBAM 2.5](https://technet.microsoft.com/windows/hh826072.aspx) with Service Pack 1 (SP1).
-
-<br />
-
-The following table shows the support lifecycle for MBAM 2.5 SP1. 
-For more information, see [Microsoft Support Lifecycle](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5).
-
-| Product | Lifecycle start date | Mainstream support end date | Extended support date |
-|---------|----------------------|-----------------------------|-----------------------|
-| MBAM SP1| Aug 3, 2015          | July 9, 2019                | July 9, 2024          |
 
 <br />
 
@@ -163,10 +154,10 @@ PS C:\> Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpace
 [Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune) 
 *(Overview)*
 
-[Configuration Settings Providers](/windows/client-management/mdm/policy-configuration-service-provider.md)
-*(Policy CSP: See [Security-RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security.md#security-requiredeviceencryption))*
+[Configuration Settings Providers](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
+*(Policy CSP: See [Security-RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-policies))*
 
-[BitLocker CSP](/windows/client-management/mdm/bitlocker-csp.md)
+[BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
 
 <br />
 
