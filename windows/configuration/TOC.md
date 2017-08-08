@@ -9,6 +9,8 @@
 ### [Set up a kiosk on Windows 10 Pro, Enterprise, or Education](set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
 ### [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md)
 ### [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)
+#### [Use AppLocker to create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-applocker.md)
+#### [Multi-app kiosk XML reference](multi-app-kiosk-xml.md)
 ## [Configure Windows 10 Mobile devices](mobile-devices/configure-mobile.md)
 ### [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 ### [Use Windows Configuration Designer to configure Windows 10 Mobile devices](mobile-devices/provisioning-configure-mobile.md)

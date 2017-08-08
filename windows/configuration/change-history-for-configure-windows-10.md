@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update). The following new topics have been added:
 
 - [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)
+- [Multi-app kiosk XML reference](multi-app-kiosk-xml.md)
 
 ## July 2017
 | New or changed topic | Description |
