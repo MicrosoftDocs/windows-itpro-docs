@@ -66,15 +66,6 @@ For older client computers with BitLocker that are domain joined on-premises, Mi
 
 <br />
 
-The following table shows the support lifecycle for MBAM 2.5 SP1. 
-For more information, see [Microsoft Support Lifecycle](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20BitLocker%20Administration%20and%20Monitoring%202.5).
-
-| Product | Lifecycle start date | Mainstream support end date | Extended support date |
-|---------|----------------------|-----------------------------|-----------------------|
-| MBAM SP1| Aug 3, 2015          | July 9, 2019                | July 9, 2024          |
-
-<br />
-
 <a id="azure_ad"></a>
 ## Recommendations for devices joined to Azure Active Directory
 
