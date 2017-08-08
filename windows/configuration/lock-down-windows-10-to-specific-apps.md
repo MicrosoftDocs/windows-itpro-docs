@@ -206,7 +206,7 @@ The following example hides the taskbar:
 
 ### Configs
 
-Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or MDM policies set as part of the multi-app experience. 
+Under **Configs**, define which user account will be associated with the profile. When this user account signs in on the device, the associated assigned access profile will be enforced, including the allowed apps, Start layout, and taskbar configuration, as well as other local group policies or mobile device management (MDM) policies set as part of the multi-app experience. 
 
 The full multi-app assigned access experience can only work for non-admin users. It’s not supported to associate an admin user with the assigned access profile; doing this in the XML file will result in unexpected/unsupported experiences when this admin user signs in.  
 
@@ -406,12 +406,14 @@ The multi-app mode blocks the following hotkeys, which are not relevant for the 
 | Windows logo key  + Ctrl + F |	Search for PCs (if you're on a network) |
 
 
+
 #### Locked-down Ctrl+Alt+Del screen
 
 The multi-app mode removes options (e.g. **Change a password**, **Task Manager**, **Network**) in the Ctrl+Alt+Del screen to ensure the users cannot access the functionalities that are not allowed in the lockdown experience. 
 
+#### Auto-trigger touch keyboard
 
-
+In the multi-app mode, the touch keyboard will be automatically triggered when there is an input needed and no physical keyboard is attached on touch-enabled devices. You don’t need to configure any other setting to enforce this behavior. 
 
 
 
@@ -422,9 +424,51 @@ The multi-app mode removes options (e.g. **Change a password**, **Task Manager**
 
 *There are some Mixed Reality specific bits we wanted to include. For example, the IT Admin needs to include the Mixed Reality Portal as an allowed app if they want to include Mixed Reality apps in kiosk mode.*
 
+
 <span id="lnk-files" />
 ## placeholder for lnk
 
+
+## Policies set by multi-app kiosk configuration
+
+### Group Policy
+
+The following local policies affect all **non-administrator** users on the system, regardless whether the user is configured as an assigned access user or not.  This includes local users, domain users, and Azure Active Directory users.
+
+| Setting |	Value |
+| --- | --- |
+Remove access to the context menus for the task bar	| Enabled
+Clear history of recently opened documents on exit |	Enabled
+Prevent users from customizing their Start Screen |	Enabled
+Prevent users from uninstalling applications from Start |		Enabled
+Remove All Programs list from the Start menu |		Enabled
+Remove Run menu from Start Menu	 |	Enabled
+Disable showing balloon notifications as toast |		Enabled
+Do not allow pinning items in Jump Lists |		Enabled
+Do not allow pinning programs to the Taskbar |		Enabled
+Do not display or track items in Jump Lists from remote locations |		Enabled
+Remove Notifications and Action Center |		Enabled
+Lock all taskbar settings |		Enabled
+Lock the Taskbar	 |	Enabled
+Prevent users from adding or removing toolbars |		Enabled
+Prevent users from resizing the taskbar	 |	Enabled
+Remove frequent programs list from the Start Menu |		Enabled
+Remove Pinned programs from the taskbar	 |	Enabled
+Remove the Security and Maintenance icon	 |	Enabled
+Turn off all balloon notifications |		Enabled
+Turn off feature advertisement balloon notifications	 |	Enabled
+Turn off toast notifications |		Enabled
+Remove Task Manager |		Enabled
+Remove Change Password option in Security Options UI |		Enabled
+Remove Sign Out option in Security Options UI	 |	Enabled
+Remove All Programs list from the Start Menu	 |	Enabled – Remove and disable setting
+Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
+
+
+
+
+
+### MDM policy
 
 
 
