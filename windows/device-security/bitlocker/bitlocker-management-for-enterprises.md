@@ -58,7 +58,7 @@ For older client computers with BitLocker that are domain joined on-premises, Mi
 
 - Encrypts device with BitLocker using MBAM
 - Stores BitLocker Recovery keys in MBAM Server
-- Provids Recovery key access to end-user, helpdesk and advanced helpdesk
+- Provides Recovery key access to end-user, helpdesk and advanced helpdesk
 - Provides Reporting on Compliance and Recovery key access audit
 
 <a id="MBAM25"></a>
