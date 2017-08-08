@@ -213,9 +213,9 @@ The full multi-app assigned access experience can only work for non-admin users.
 
 
 The account can be local, domain, or Azure Active Directory (Azure AD). Groups are not supported.
-•	Local account can be entered as `machinename\account` or `.\account` or just `account`.
-•	Domain account should be entered as `domain\account`.
-•	Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. **AzureAD\someone@contoso.onmicrosoft.com**.
+- Local account can be entered as `machinename\account` or `.\account` or just `account`.
+- Domain account should be entered as `domain\account`.
+- Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. **AzureAD\someone@contoso.onmicrosoft.com**.
 
 >[!WARNING]
 >Although **Start** &gt; **Settings** &gt; **Accounts** &gt; **Other users** &gt; **Set up assigned access** only supports specifying a local user account, Assigned Access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with Assigned Access, and consider the domain resources potentially exposed by the decision to do so.
@@ -309,23 +309,23 @@ Provisioning packages can be applied to a device during the first-run experience
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
-    ![The first screen to set up a new PC](../images/oobe.jpg)
+    ![The first screen to set up a new PC](images/oobe.jpg)
 
 2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
-    ![Set up device?](../images/setupmsg.jpg)
+    ![Set up device?](images/setupmsg.jpg)
 
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
 
-    ![Provision this device](../images/prov.jpg)
+    ![Provision this device](images/prov.jpg)
     
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package](../images/choose-package.png)
+    ![Choose a package](images/choose-package.png)
 
 5. Select **Yes, add it**.
 
-    ![Do you trust this package?](../images/trust-package.png)
+    ![Do you trust this package?](images/trust-package.png)
     
 
     
@@ -337,12 +337,85 @@ Provisioning packages can be applied to a device during the first-run experience
 >[!NOTE]
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
 
-![add a package option](../images/package.png)
+![add a package option](images/package.png)
 
 ### Validate provisioning
 
 -	Go to **Settings** > **Accounts** > **Access work or school**, and then click **Add or remove a provisioning package**. You should see a list of packages that were applied to the device, including the one you applied for the multi-app configuration.
 - Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
+
+### Validate multi-app kiosk configuration
+
+Sign in with the assigned access user account you specified in the configuration to check out the multi-app experience. 
+
+>[!NOTE] 
+>The setting will take effect the next time the assigned access user signs in. If that user account is signed in when you apply the configuration, make sure the user signs out and signs back in to validate the experience. 
+
+The following sections explain what to expect on a multi-app kiosk.
+
+#### App launching and switching experience
+
+In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.  
+
+The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar. 
+
+#### Start changes
+
+When the assigned access user signs in, you should see a restricted Start experience:
+- Start gets launched in full screen and prevents the end user from accessing the desktop. 
+- Start shows the layout aligned with what you defined in the multi-app configuration XML. 
+- Start prevents the end user from changing the tile layout.
+  - The user cannot resize, reposition, and unpin the tiles.
+  - The user cannot pin additional tiles on the start.
+- Start hides **All Apps** list.
+- Start hides all the folders on Start (including File Explorer, Settings, Documents, Downloads, Music, Pictures, Videos, HomeGroup, Network, and Personal folders). 
+- Only **User** and **Power** buttons are available. (You can control whether to show the **User/Power** buttons using [existing policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start).) 
+- Start hides **Change account settings** option under **User** button.
+
+#### Taskbar changes
+
+If the applied multi-app configuration enables taskbar, when the assigned access user signs in, you should see a restricted Taskbar experience:
+- Disables context menu of Start button (Quick Link)
+- Disables context menu of taskbar
+- Prevents the end user from changing the taskbar
+- Disables Cortana and Search Windows
+- Hides notification icons and system icons, e.g. Action Center, People, Windows Ink Workspace
+- Allows the end user to view the status of the network connection and power state, but disables the flyout of **Network/Power** to prevent end user from changing the settings
+
+#### Blocked hotkeys
+
+The multi-app mode blocks the following hotkeys, which are not relevant for the lockdown experience. 
+
+| Hotkey | Action |
+| --- | --- |
+| Windows logo key  + A	 | Open Action center |
+| Windows logo key  + Shift + C |	Open Cortana in listening mode |
+| Windows logo key  + D	| Display and hide the desktop |
+| Windows logo key  + Alt + D	| Display and hide the date and time on the desktop |
+| Windows logo key  + E	| Open File Explorer |
+| Windows logo key  + F |	Open Feedback Hub |
+| Windows logo key  + G	| Open Game bar when a game is open |
+| Windows logo key  + I	| Open Settings |
+| Windows logo key  + J |	Set focus to a Windows tip when one is available. |
+| Windows logo key  + O	| Lock device orientation |
+| Windows logo key  + Q	 | Open search |
+| Windows logo key  + R	| Open the Run dialog box |
+| Windows logo key  + S	| Open search |
+| Windows logo key  + X	| Open the Quick Link menu |
+| Windows logo key  + comma (,) |	Temporarily peek at the desktop |
+| Windows logo key  + Ctrl + F |	Search for PCs (if you're on a network) |
+
+
+#### Locked-down Ctrl+Alt+Del screen
+
+The multi-app mode removes options (e.g. **Change a password**, **Task Manager**, **Network**) in the Ctrl+Alt+Del screen to ensure the users cannot access the functionalities that are not allowed in the lockdown experience. 
+
+
+
+
+
+
+
 
 
 ## Considerations for mixed-reality devices
@@ -350,7 +423,7 @@ Provisioning packages can be applied to a device during the first-run experience
 *There are some Mixed Reality specific bits we wanted to include. For example, the IT Admin needs to include the Mixed Reality Portal as an allowed app if they want to include Mixed Reality apps in kiosk mode.*
 
 <span id="lnk-files" />
-#### placeholder for lnk
+## placeholder for lnk
 
 
 
