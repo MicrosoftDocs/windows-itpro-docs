@@ -20,7 +20,7 @@ The ideal for modern BitLocker management is to eliminate the need for IT admins
 
 Therefore, we recommend that you upgrade your hardware so that your devices comply with InstantGo or [Hardware Security Test Interface (HSTI)](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx) specifications to take advantage of their automated features, for example, when using Azure Active Directory (Azure AD). 
 
-Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been published about Windows BitLocker, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for:
+Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for:
 
    - [Domain-joined computers](#dom_join)
 
