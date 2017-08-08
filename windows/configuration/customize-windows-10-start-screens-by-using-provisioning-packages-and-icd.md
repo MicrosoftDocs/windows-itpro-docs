@@ -100,7 +100,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
 
-    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
+    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
 
 12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
 

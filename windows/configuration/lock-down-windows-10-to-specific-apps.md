@@ -183,6 +183,10 @@ This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint,
       </StartLayout>
 ```
 
+>[!NOTE]
+>If an app is not installed for the user but is included in the Start layout XML, the app will not be shown on the Start screen. 
+
+
 ![What the Start screen looks like when the XML sample is applied](images/sample-start.png)
 
 #### Taskbar
@@ -256,21 +260,13 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 6. Expand **Runtime settings** &gt; **AssignedAccess** &gt; **MultiAppAssignedAccessSettings**.
 
-7. Enter **layout.xml**. This value creates a placeholder in the customizations.xml file that you will replace with the contents of the layout.xml file in a later step.
+7. In the center pane, click **Browse** to locate and select the assigned access configuration XML file that you created.
 
-7. Save your project and close Windows Configuration Designer.
+  ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](images/multiappassignedaccesssettings.png)
 
-7. In File Explorer, open the project's directory. (The default location is C:\Users\\*user name*\Documents\Windows Imaging and Configuration Designer (WICD)\\*project name*) 
+8. (**Optional**: If you want to apply the provisioning package after device initial setup and there is an admin user already available on the kiosk device, skip this step.) Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.   
 
-7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
-
-    ![Customizations file with the placeholder text to replace highlighted](images/customization-start.png)
-
-7. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
-
-8. Save and close the customizations.xml file.
-
-8. Open Windows Configuration Designer and open your project.
+8. (**Optional**: If you already have a non-admin account on the kiosk device, skip this step.) Create a local standard user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Make sure the **UserName** is the same as the account that you specify in the configuration XML. Select **UserGroup** as **Standard Users**.
 
 8.  On the **File** menu, select **Save.**
 
@@ -282,7 +278,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
     -   **Enable package encryption** - If you select this option, an auto-generated password will be shown on the screen.
 
-    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
+    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Browse** and choosing the certificate you want to use to sign the package.
 
 12. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
 
@@ -300,6 +296,8 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
+    
+15. Copy the provisioning package to the root directory of a USB drive.
 
 <span id="apply-ppkg" />
 ## Apply provisioning package to device
