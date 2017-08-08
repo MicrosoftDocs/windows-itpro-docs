@@ -302,6 +302,47 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 <span id="apply-ppkg" />
 ## Apply provisioning package to device
 
+Provisioning packages can be applied to a device during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
+
+
+### During initial setup, from a USB drive
+
+1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
+
+    ![The first screen to set up a new PC](../images/oobe.jpg)
+
+2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
+
+    ![Set up device?](../images/setupmsg.jpg)
+
+3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
+
+    ![Provision this device](../images/prov.jpg)
+    
+4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
+
+    ![Choose a package](../images/choose-package.png)
+
+5. Select **Yes, add it**.
+
+    ![Do you trust this package?](../images/trust-package.png)
+    
+
+    
+### After setup, from a USB drive, network folder, or SharePoint site
+
+1. Sign in with an admin account.
+2. Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
+
+>[!NOTE]
+>if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device. 
+
+![add a package option](../images/package.png)
+
+### Validate provisioning
+
+-	Go to **Settings** > **Accounts** > **Access work or school**, and then click **Add or remove a provisioning package**. You should see a list of packages that were applied to the device, including the one you applied for the multi-app configuration.
+- Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
 
 
 ## Considerations for mixed-reality devices
