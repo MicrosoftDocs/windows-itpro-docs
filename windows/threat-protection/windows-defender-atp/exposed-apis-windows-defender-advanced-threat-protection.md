@@ -34,33 +34,38 @@ Before using the APIs, you’ll need to create an app that you’ll use to authe
 
 ## Create an app
 
-1.	Log on to [Azure](https://manage.windowsazure.com).
+1.	Log on to [Azure](https://portal.azure.com).
 
-2.	Navigate to **Active Directory**. 
+2.	Navigate to **Azure Active Directory** > **App registrations** > **New application registration**. 
 
-3.	Select the tenant you want to register this app in - you can have several tenants. You are advised to have at least one separate development or test tenant in addition to a production tenant. 
+    ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app.png)
 
-4.	Go to the **Applications** tab and click **Add**.
+3.	In the Create window, enter the following information then click **Create**.
 
-5.	Select **Add an application my organization is developing**.
+    ![Image of Create application window](images/atp-azure-create.png)
 
-    ![Image of Add an application my organization is developing](images/atp-add-application.png)
+    - **Name:** WinATPGraph
+    - **Application type:** Native
+    - **Redirect URI:** `https://localhost`
 
-6.	Provide a name for the application and select **Native client application**.
 
-    ![Image of Tell us about your application](images/atp-add-application-name.png)
+4.	Navigate and select the newly created application.
+    ![Image of new app in Azure](images/atp-azure-atp-app.png)
 
-7.	Provide the redirect URI.
+5.	Click **All settings** > **Required permissions** > **Add**.
 
-      ![Image of Tell us about your application](images/atp-application-information.png)
+    ![Image of All settings, then required permissions](images/atp-azure-required-permissions.png)
 
-8.	Click **Configure**, then at the end of the page click **Add application**.
+6.	Click **Select an API** > **Microsoft Graph**, then click **Select**.
 
-9.	Select **Microsoft Graph API**.
+    ![Image of API access and API selection](images/atp-azure-api-access.png)
 
-10.	Choose **Sign in and read user profile** from the Delegated Permissions dropdown.
 
-    ![Image of permissions to other applications](images/atp-permissions-applications.png)
+7. Click **Select permissions** and select **Sign in and read user profile** then click **Select**.
+
+    ![Image of select permissions](images/atp-azure-select-permissions.png)
+
+You can now use the code snippets in the following sections to query the API using the created app ID.
 
 ## Get an access token
 1.	Get the Client ID from the application you created.
