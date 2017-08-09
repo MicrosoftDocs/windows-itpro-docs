@@ -11,6 +11,13 @@ author: brianlic-msft
 # Change history for device security
 This topic lists new and updated topics in the [Device security](index.md) documentation.
 
+## August 2017
+|New or changed topic |Description |
+|---------------------|------------|
+ | [BitLocker: Management recommendations for enterprises](bitlocker/bitlocker-management-for-enterprises.md) | New BitLocker security topic. |
+
+
+
 ## July 2017
 |New or changed topic |Description |
 |---------------------|------------|

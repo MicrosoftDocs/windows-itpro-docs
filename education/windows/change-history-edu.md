@@ -28,7 +28,7 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 | --- | ---- |
 | [Get Minecraft: Education Edition with Windows 10 device promotion](get-minecraft-for-education.md)  | New information about redeeming Minecraft: Education Edition licenses with qualifying purchases of Windows 10 devices.  |
 | [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Added the how-to video, which shows how to use the app to create a provisioning package that you can use to set up school PCs. |
-| [Take a Test app technical reference](take-a-test-app-technical.md) | Added a policies section to inform you of any policies that affect the Take a Test app or functionality within the app. |
+| [Take a Test app technical reference](take-a-test-app-technical.md) | Added a Group Policy section to inform you of any policies that affect the Take a Test app or functionality within the app. |
 
 ## June 2017
 

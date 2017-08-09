@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/28/2017
+ms.date: 08/04/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -969,10 +969,34 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
-<li>CredentialProviders/EnableWindowsAutoPilotResetCredentials</li>
+<li>CredentialProviders/DisableAutomaticReDeploymentCredentials</li>
 <li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
+<li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
+<li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
+<li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
+<li>LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</li>
+<li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li> 
+<li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</li> 
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayLastSignedIn</li> 
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayUsernameAtSignIn</li> 
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotRequireCTRLALTDEL</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li> 
+<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li> 
+<li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li> 
 <li>Power/DisplayOffTimeoutOnBattery</li>
 <li>Power/DisplayOffTimeoutPluggedIn</li>
 <li>Power/HibernateTimeoutOnBattery</li>
@@ -1280,6 +1304,68 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### August 2017
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[CM\_CellularEntries CSP](cm-cellularentries-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the description of the PuposeGroups node to add the GUID for applications. This node is required instead of optional.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)</td>
+<td style="vertical-align:top"><p>Updated the Settings/EDPEnforcementLevel values to the following:</p>
+<ul>
+<li> 0 (default) – Off / No protection (decrypts previously protected data).</li>
+<li>  1 – Silent mode (encrypt and audit only).</li>
+<li>  2 – Allow override mode (encrypt, prompt and allow overrides, and audit).</li>
+<li>  3 – Hides overrides (encrypt, prompt but hide overrides, and audit).</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
+<ul>
+<li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
+<li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
+<li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
+<li>LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</li>
+<li>LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</li> 
+<li>LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</li> 
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayLastSignedIn</li> 
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayUsernameAtSignIn</li> 
+<li>LocalPoliciesSecurityOptions/Interactivelogon_DoNotRequireCTRLALTDEL</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</li> 
+<li>LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</li> 
+<li>LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</li> 
+<li>LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</li> 
+<li>LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li> 
+<li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
+</ul>
+<p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### July 2017
 
 <table>
@@ -1313,7 +1399,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Education/DefaultPrinterName</li>
 <li>Education/PreventAddingNewPrinters</li>
-<li>Education/PrinterNames</li>
+<li>Education/PrinterNames</li> 
 <li>Security/ClearTPMIfNotReady</li>
 <li>WindowsDefenderSecurityCenter/CompanyName</li>
 <li>WindowsDefenderSecurityCenter/DisableAppBrowserUI</li>

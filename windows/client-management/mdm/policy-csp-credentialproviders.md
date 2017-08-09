@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/09/2017
 ---
 
 # Policy CSP - CredentialProviders
@@ -124,7 +124,7 @@ ADMX Info:
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="credentialproviders-enablewindowsautopilotresetcredentials"></a>**CredentialProviders/EnableWindowsAutoPilotResetCredentials**  
+<a href="" id="credentialproviders-disableautomaticredeploymentcredentials"></a>**CredentialProviders/DisableAutomaticReDeploymentCredentials**  
 
 <!--StartSKU-->
 <table>
@@ -150,11 +150,12 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-Added in Windows 10, version 1709. Boolean policy to enable the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. When the policy is enabled, a WNF notification is generated that would schedule a task to update the visibility of the new provider. The admin user is required to authenticate to trigger the refresh on the target device.
+Added in Windows 10, version 1709. Boolean policy to disable the visibility of the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device.
 
-The auto pilot reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the auto pilot reset is triggered the devices are for ready for use by information workers or students.
+The Windows 10 Automatic ReDeployment feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered the devices are for ready for use by information workers or students.
 
-Default value is 0.
+- 0 - Enable the visibility of the credentials for Windows 10 Automatic ReDeployment
+- 1 - Disable visibility of the credentials for Windows 10 Automatic ReDeployment
 
 <!--EndDescription-->
 <!--EndPolicy-->
