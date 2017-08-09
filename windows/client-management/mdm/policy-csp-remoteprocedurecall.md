@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/09/2017
 ---
 
 # Policy CSP - RemoteProcedureCall
@@ -68,6 +68,7 @@ Note: This policy will not be applied until the system is rebooted.
 ADMX Info:  
 -   GP english name: *Enable RPC Endpoint Mapper Client Authentication*
 -   GP name: *RpcEnableAuthEpResolution*
+-   GP path: *System/Remote Procedure Call*
 -   GP ADMX file name: *rpc.admx*
 
 <!--EndADMX-->
@@ -129,6 +130,7 @@ Note: This policy setting will not be applied until the system is rebooted.
 ADMX Info:  
 -   GP english name: *Restrict Unauthenticated RPC clients*
 -   GP name: *RpcRestrictRemoteClients*
+-   GP path: *System/Remote Procedure Call*
 -   GP ADMX file name: *rpc.admx*
 
 <!--EndADMX-->

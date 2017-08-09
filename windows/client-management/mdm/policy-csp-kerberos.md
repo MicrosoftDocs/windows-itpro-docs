@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/09/2017
 ---
 
 # Policy CSP - Kerberos
@@ -64,6 +64,7 @@ If you disable or do not configure this policy setting, the Kerberos client does
 ADMX Info:  
 -   GP english name: *Use forest search order*
 -   GP name: *ForestSearch*
+-   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--EndADMX-->
@@ -112,6 +113,7 @@ If you disable or do not configure this policy setting, the client devices will 
 ADMX Info:  
 -   GP english name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
 -   GP name: *EnableCbacAndArmor*
+-   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--EndADMX-->
@@ -165,6 +167,7 @@ If you disable or do not configure this policy setting, the client computers in 
 ADMX Info:  
 -   GP english name: *Fail authentication requests when Kerberos armoring is not available*
 -   GP name: *ClientRequireFast*
+-   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--EndADMX-->
@@ -214,6 +217,7 @@ If you disable or do not configure this policy setting, the Kerberos client requ
 ADMX Info:  
 -   GP english name: *Require strict KDC validation*
 -   GP name: *ValidateKDC*
+-   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--EndADMX-->
@@ -267,6 +271,7 @@ Note: This policy setting configures the existing MaxTokenSize registry value in
 ADMX Info:  
 -   GP english name: *Set maximum Kerberos SSPI context token buffer size*
 -   GP name: *MaxTokenSize*
+-   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
 
 <!--EndADMX-->
