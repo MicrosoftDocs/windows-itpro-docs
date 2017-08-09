@@ -37,7 +37,7 @@ Process:
 ## Prerequisites
 
 - (latest version of WCD -- is Store version okay at GA?)
-- The kiosk device must be running Windows 10 (Enterprise or Education), version 1709
+- The kiosk device must be running Windows 10 (Pro, Enterprise, or Education), version 1709
 
 
 ## Create XML file
@@ -195,11 +195,15 @@ Define whether you want to have the taskbar present in the kiosk device. For tab
 
 The following example exposes the taskbar to the end user:
 
-      `<Taskbar ShowTaskbar="true"/>`
+```xml
+<Taskbar ShowTaskbar="true"/>
+```
       
 The following example hides the taskbar:
 
-      `<Taskbar ShowTaskbar="false"/>`
+```xml
+<Taskbar ShowTaskbar="false"/>
+```
       
 >[!NOTE]
 >This is different from the **Automatically hide the taskbar** option in tablet mode, which shows the taskbar when swiping up from or moving the mouse pointer down to the bottom of the screen. Setting **ShowTaskbar** as **false** will always keep the taskbar hidden. 
