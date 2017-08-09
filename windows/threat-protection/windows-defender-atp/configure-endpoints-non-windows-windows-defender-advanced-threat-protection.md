@@ -42,6 +42,8 @@ The endpoints need to be running Bitdefender [ANY REQUIRED VERSION?]
 
 4. 	Depending on the third-party implementation you're using, the implementation might vary. Refer to the third-party solution documentation for guidance on how to use the token.
 
+5. Click **Save preferences**.
+
 >[!WARNING]
 > The access token is only displayed once. Make sure you keep a copy of it in a safe place. If needed, regenerate the token close to the time you need to share it with the third-party solution.
 
@@ -52,5 +54,5 @@ To effectively offboard the endpoints from the service, you'll need to disable t
 
 2. In Windows Defender Security Center portal, select **Endpoint management**> **Non-Windows endpoint management**.
 
-3. Toggle the switch button to turn off the third-party solution integration. 
+3. Toggle the Bitdefender switch button to turn stop telemetry from endpoints with Bitdefender antivirus. 
 
