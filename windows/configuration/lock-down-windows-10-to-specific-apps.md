@@ -37,7 +37,7 @@ Process:
 ## Prerequisites
 
 - (latest version of WCD -- is Store version okay at GA?)
-- kiosk device on 1709
+- The kiosk device must be running Windows 10 (Enterprise or Education), version 1709
 
 
 ## Create XML file
