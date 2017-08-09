@@ -94,6 +94,7 @@
 ### [Prepare your organization for BitLocker: Planning and policies](bitlocker\prepare-your-organization-for-bitlocker-planning-and-policies.md)
 ### [BitLocker basic deployment](bitlocker\bitlocker-basic-deployment.md)
 ### [BitLocker: How to deploy on Windows Server 2012 and later](bitlocker\bitlocker-how-to-deploy-on-windows-server.md)
+### [BitLocker: Management recommendations for enterprises](bitlocker\bitlocker-management-for-enterprises.md)
 ### [BitLocker: How to enable Network Unlock](bitlocker\bitlocker-how-to-enable-network-unlock.md)
 ### [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker\bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)
 ### [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker\bitlocker-use-bitlocker-recovery-password-viewer.md)
