@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/09/2017
 ---
 
 # Policy CSP - System
@@ -548,6 +548,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 ADMX Info:  
 -   GP english name: *Turn off System Restore*
 -   GP name: *SR_DisableSR*
+-   GP path: *System/System Restore*
 -   GP ADMX file name: *systemrestore.admx*
 
 <!--EndADMX-->
