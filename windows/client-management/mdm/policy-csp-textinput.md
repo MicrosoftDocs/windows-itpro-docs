@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/09/2017
 ---
 
 # Policy CSP - TextInput
@@ -363,9 +363,6 @@ ms.date: 07/14/2017
 <!--StartPolicy-->
 <a href="" id="textinput-allowkoreanextendedhanja"></a>**TextInput/AllowKoreanExtendedHanja**  
 
-<!--StartSKU-->
-
-<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy has been deprecated.
 
