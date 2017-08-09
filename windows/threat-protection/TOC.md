@@ -63,6 +63,7 @@
 #### [Python code examples](windows-defender-atp\python-example-code-windows-defender-advanced-threat-protection.md)
 #### [Experiment with custom threat intelligence alerts](windows-defender-atp\experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot custom threat intelligence issues](windows-defender-atp\troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
 #### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 ##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
