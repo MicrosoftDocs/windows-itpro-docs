@@ -29,9 +29,9 @@ ms.localizationpriority: high
 ## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint management** on the **Navigation pane**.
+    a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
 
-    b.  Select **VDI onboarding scripts for non-persisten endpoints**, click **Download package** and save the .zip file.
+    b.  Select **Group Policy**, click **Download package** and save the .zip file.
 
 2.	Extract the contents of the .zip file to a shared, read-only location that can be accessed by the endpoints. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -55,32 +55,32 @@ Windows Defender ATP supports non-persistent VDI session onboarding. There might
 dges when onboarding VDIs. The typical challenges for this scenario are:
 
 - Instant early onboarding of a short living session
-    - A session should be onboared to Windows Defender ATP prior to the actual provisioning
-    
-- Machine name persistence 
+    - A session should be onboarded to Windows Defender ATP prior to the actual provisioning
+
+- Machine name persistence
     - The machine names are typically reused for new sessions. One may ask to have them as a single machine entry while others may prefer to have multiple entries per machine name.
 
-You can onboard VDIs using a single entry or multiple entries for each machine. The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
+You can onboard VDIs machines using a single entry or multiple entries for each machine. The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint management** on the **Navigation pane**.
+    a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
 
-    b.  Select **Group Policy**, click **Download package** and save the .zip file.
+    b.  Select **VDI onboarding scripts for non-persistent endpoints**, click **Download package** and save the .zip file.
 
 2. Copy the extracted files from the .zip into `golden/master` image under the path
 path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called WindowsDefenderATPOnboardingPackage containing the file WindowsDefenderATPOnboardingScript.cmd.
 
     >[!NOTE]
-    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer. 
+    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer.
 
 3. The following step is only applicable if you're implementing a single entry for each machine: <br>
     **For single entry for each machine**:<br>
-        a. Download the file: [Onboard-NonPersistenMachine.ps1](https://go.microsoft.com/fwlink/p/?linkid=852276 ).<br>
+        a. Download the file: [Onboard-NonPersistenMachine.ps1](https://go.microsoft.com/fwlink/p/?linkid=852276 ).<br> [LUBA - DO I STILL NEED THIS STEP?]
         b. Copy the file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
 
     >[!NOTE]
-    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer. 
+    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer.
 
 4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
@@ -90,9 +90,7 @@ path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have 
   **For multiple entries for each machine**:<br>
   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
-6. (sysprep and) save golden/master image [PLEASE EXPLAIN, I'M NOT SURE I UNDERSTAND THIS STEP]
-
-7. Test your solution:
+6. Test your solution:
 
   a. Create a pool with one machine.
 
@@ -105,9 +103,9 @@ path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have 
   e. **For single entry for each machine**: Check only one entry in the Windows Defender ATP portal.<br>
   **For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
 
-8. Click **Machines list** on the Navigation pane.
+7. Click **Machines list** on the Navigation pane.
 
-9. Use the search function by entering the machine name and select **Machine** as search type. 
+8. Use the search function by entering the machine name and select **Machine** as search type.
 
 ## Additional Windows Defender ATP configuration settings
 For each endpoint, you can state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
