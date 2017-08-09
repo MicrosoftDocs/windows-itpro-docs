@@ -20,7 +20,7 @@ ms.date: 08/04/2017
 ## LocalPoliciesSecurityOptions policies  
 
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-accounts_blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  
+<a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  
 
 <!--StartSKU-->
 <table>
@@ -58,19 +58,11 @@ Valid values:
 - 0 - disabled (users will be able to use Microsoft accounts with Windows)
 - 1 - enabled (users cannot add Microsoft accounts)
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-accounts_enableadministratoraccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus**  
+<a href="" id="localpoliciessecurityoptions-accounts-enableadministratoraccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus**  
 
 <!--StartSKU-->
 <table>
@@ -109,19 +101,11 @@ Valid values:
 - 1 - local Administrator account is enabled
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-accounts_enableguestaccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus**  
+<a href="" id="localpoliciessecurityoptions-accounts-enableguestaccountstatus"></a>**LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus**  
 
 <!--StartSKU-->
 <table>
@@ -157,19 +141,11 @@ Valid values:
 Note: If the Guest account is disabled and the security option Network Access: Sharing and Security Model for local accounts is set to Guest Only, network logons, such as those performed by the Microsoft Network Server (SMB Service), will fail.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-accounts_limitlocalaccountuseofblankpasswordstoconsolelogononly"></a>**LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly**  
+<a href="" id="localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly"></a>**LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly**  
 
 <!--StartSKU-->
 <table>
@@ -213,19 +189,11 @@ This setting does not affect logons that use domain accounts.
 It is possible for applications that use remote interactive logons to bypass this setting.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-accounts_renameadministratoraccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount**  
+<a href="" id="localpoliciessecurityoptions-accounts-renameadministratoraccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount**  
 
 <!--StartSKU-->
 <table>
@@ -258,19 +226,11 @@ This security setting determines whether a different account name is associated 
 Default: Administrator.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-accounts_renameguestaccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount**  
+<a href="" id="localpoliciessecurityoptions-accounts-renameguestaccount"></a>**LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount**  
 
 <!--StartSKU-->
 <table>
@@ -303,19 +263,11 @@ This security setting determines whether a different account name is associated 
 Default: Guest.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon_displayuserinformationwhenthesessionislocked"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked**  
 
 <!--StartSKU-->
 <table>
@@ -349,19 +301,11 @@ Valid values:
 - 3 - Do not display user information
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon_donotdisplaylastsignedin"></a>**LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayLastSignedIn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn**  
 
 <!--StartSKU-->
 <table>
@@ -400,19 +344,11 @@ Valid values:
 - 1 - enabled (username will not be shown)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon_donotdisplayusernameatsignin"></a>**LocalPoliciesSecurityOptions/Interactivelogon_DoNotDisplayUsernameAtSignIn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-donotdisplayusernameatsignin"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayUsernameAtSignIn**  
 
 <!--StartSKU-->
 <table>
@@ -452,19 +388,11 @@ Valid values:
 - 1 - enabled (username will not be shown)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon_donotrequirectrlaltdel"></a>**LocalPoliciesSecurityOptions/Interactivelogon_DoNotRequireCTRLALTDEL**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-donotrequirectrlaltdel"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_DoNotRequireCTRLALTDEL**  
 
 <!--StartSKU-->
 <table>
@@ -505,19 +433,11 @@ Valid values:
 - 1 - enabled (a user is not required to press CTRL+ALT+DEL to log on)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon_machineinactivitylimit"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-machineinactivitylimit"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit**  
 
 <!--StartSKU-->
 <table>
@@ -553,19 +473,11 @@ Valid values:
 - 1 - enabled (session will lock after amount of inactive time exceeds the inactivity limit)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon_messagetextforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn**  
 
 <!--StartSKU-->
 <table>
@@ -600,20 +512,11 @@ This text is often used for legal reasons, for example, to warn users about the 
 Default: No message.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
-<!--EndDescription-->
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-interactivelogon_messagetitleforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn**  
+<a href="" id="localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon"></a>**LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn**  
 
 <!--StartSKU-->
 <table>
@@ -646,19 +549,11 @@ This security setting allows the specification of a title to appear in the title
 Default: No message.
 
 Value type is string. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-networksecurity_allowpku2uauthenticationrequests"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests**  
+<a href="" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests"></a>**LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests**  
 
 <!--StartSKU-->
 <table>
@@ -683,7 +578,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->Network security: Allow PKU2U authentication requests to this computer to use online identities.
+<!--StartDescription-->
+Network security: Allow PKU2U authentication requests to this computer to use online identities.
 
 This policy will be turned off by default on domain joined machines. This would prevent online identities from authenticating to the domain joined machine.
 
@@ -692,19 +588,11 @@ Valid values:
 - 1 - enabled (allow PKU2U authentication requests to this computer to use online identities.)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-recoveryconsole_allowautomaticadministrativelogon"></a>**LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon**  
+<a href="" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon"></a>**LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon**  
 
 <!--StartSKU-->
 <table>
@@ -729,7 +617,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->Recovery console: Allow automatic administrative logon
+<!--StartDescription-->
+Recovery console: Allow automatic administrative logon
 
 This security setting determines if the password for the Administrator account must be given before access to the system is granted. If this option is enabled, the Recovery Console does not require you to provide a password, and it automatically logs on to the system.
 
@@ -739,19 +628,11 @@ Valid values:
 - 1 - enabled (allow automatic administrative logon)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-shutdown_allowsystemtobeshutdownwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn**  
+<a href="" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon"></a>**LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn**  
 
 <!--StartSKU-->
 <table>
@@ -776,7 +657,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->Shutdown: Allow system to be shut down without having to log on
+<!--StartDescription-->
+Shutdown: Allow system to be shut down without having to log on
 
 This security setting determines whether a computer can be shut down without having to log on to Windows.
 
@@ -791,19 +673,11 @@ Valid values:
 - 1 - enabled (allow system to be shut down without having to log on)
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_allowuiaccessapplicationstopromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation**  
 
 <!--StartSKU-->
 <table>
@@ -828,7 +702,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop.
+<!--StartDescription-->
+User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop.
 
 This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
@@ -842,19 +717,11 @@ Valid values:
 The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_behavioroftheelevationpromptforadministrators"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators**  
 
 <!--StartSKU-->
 <table>
@@ -879,7 +746,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode
+<!--StartDescription-->
+User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode
 
 This policy setting controls the behavior of the elevation prompt for administrators.
 
@@ -898,19 +766,11 @@ The options are:
 â€¢ Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_behavioroftheelevationpromptforstandardusers"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers"></a>**LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers**  
 
 <!--StartSKU-->
 <table>
@@ -935,7 +795,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Behavior of the elevation prompt for standard users
+<!--StartDescription-->
+User Account Control: Behavior of the elevation prompt for standard users
 This policy setting controls the behavior of the elevation prompt for standard users.
 
 The options are:
@@ -947,19 +808,11 @@ The options are:
 â€¢ Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_onlyelevateexecutablefilesthataresignedandvalidated"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated**  
 
 <!--StartSKU-->
 <table>
@@ -984,7 +837,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Only elevate executable files that are signed and validated
+<!--StartDescription-->
+User Account Control: Only elevate executable files that are signed and validated
 
 This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers.
 
@@ -993,19 +847,11 @@ The options are:
 - 1 - Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations**  
 
 <!--StartSKU-->
 <table>
@@ -1030,7 +876,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Only elevate UIAccess applications that are installed in secure locations
+<!--StartDescription-->
+User Account Control: Only elevate UIAccess applications that are installed in secure locations
 
 This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following:
 
@@ -1045,19 +892,11 @@ The options are:
 - 1 - Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_runalladministratorsinadminapprovalmode"></a>**LocalPoliciesSecurityOptions/TBUserAccountControl_RunAllAdministratorsInAdminApprovalModeD**  
+<a href="" id="localpoliciessecurityoptions-tbuseraccountcontrol-runalladministratorsinadminapprovalmode"></a>**LocalPoliciesSecurityOptions/TBUserAccountControl_RunAllAdministratorsInAdminApprovalModeD**  
 
 <!--StartSKU-->
 <table>
@@ -1082,7 +921,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Turn on Admin Approval Mode
+<!--StartDescription-->
+User Account Control: Turn on Admin Approval Mode
 
 This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer.
 
@@ -1092,19 +932,11 @@ The options are:
 
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_switchtothesecuredesktopwhenpromptingforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation"></a>**LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation**  
 
 <!--StartSKU-->
 <table>
@@ -1129,7 +961,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Switch to the secure desktop when prompting for elevation
+<!--StartDescription-->
+User Account Control: Switch to the secure desktop when prompting for elevation
 
 This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop.
 
@@ -1138,19 +971,11 @@ The options are:
 - 1 - Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
-<hr/>
-
-Footnote:
-
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
-
-<!--EndPolicies-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-useraccountcontrol_virtualizefileandregistrywritefailurestoperuserlocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations"></a>**LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations**  
 
 <!--StartSKU-->
 <table>
@@ -1175,7 +1000,8 @@ Footnote:
 </table>
 
 <!--EndSKU-->
-<!--StartDescription-->User Account Control: Virtualize file and registry write failures to per-user locations
+<!--StartDescription-->
+User Account Control: Virtualize file and registry write failures to per-user locations
 
 This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software.
 
@@ -1184,6 +1010,7 @@ The options are:
 - 1 - Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
