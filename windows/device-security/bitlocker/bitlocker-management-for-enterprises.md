@@ -50,7 +50,7 @@ Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been p
  <a id="dom_join"></a>
 ## Recommendations for domain-joined computers
 
-Windows continues to be the focus for new features and improvements for built-in encryption management, for example, automatically enabling encryption on devices that support InstantGo beginning with Windows 8.1. For more information, see  [Overview of BitLocker and device encryption in Windows 10](bitlocker-device-encryption-overview-windows-10#device-encryption).
+Windows continues to be the focus for new features and improvements for built-in encryption management, for example, automatically enabling encryption on devices that support InstantGo beginning with Windows 8.1. For more information, see  [Overview of BitLocker and device encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#device-encryption).
 
 Companies that image their own computers using Microsoft System Center 2012 Configuration Manager SP1 (SCCM) or later can use an existing task sequence to [pre-provision BitLocker](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](https://technet.microsoft.com/library/hh846237.aspx#BKMK_EnableBitLocker). This can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use SCCM to pre-set any desired [BitLocker Group Policy](https://technet.microsoft.com/library/ee706521(v=ws.10).aspx).
 
@@ -93,7 +93,7 @@ The Minimal Server Interface is a prerequisite for some of the BitLocker adminis
 
 If you are installing a server manually, such as a stand-alone server, then choosing [Server with Desktop Experience](https://docs.microsoft.com/windows-server/get-started/getting-started-with-server-with-desktop-experience) is the easiest path because you can avoid performing the steps to add a GUI to Server Core.
 
- Additionally, lights out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock). 
+ Additionally, lights out data centers can take advantage of the enhanced security of a second factor while avoiding the need for user intervention during reboots by optionally using a combination of BitLocker (TPM+PIN) and BitLocker Network Unlock. BitLocker Network Unlock brings together the best of hardware protection, location dependence, and automatic unlock, while in the trusted location. For the configuration steps, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md). 
 
  For more information, see the Bitlocker FAQs article and other useful links in [Related Articles](#articles).
  
