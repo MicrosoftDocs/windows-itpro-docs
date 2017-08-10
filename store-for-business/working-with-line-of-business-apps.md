@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Working with line-of-business apps

@@ -20,7 +20,7 @@ You can manage the feature settings of certain Microsoft Desktop Optimization Pa
 
 **How to download and deploy the MDOP Group Policy templates**
 
-1.  Download the latest [MDOP Group Policy templates](https://www.microsoft.com/en-us/download/details.aspx?id=54957) 
+1.  Download the latest [MDOP Group Policy templates](https://www.microsoft.com/en-us/download/details.aspx?id=55531) 
 
 2.  Run the downloaded file to extract the template folders.
 

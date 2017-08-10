@@ -5,9 +5,10 @@ author: CelesteDG 
 ms.author: celested 
 ms.topic: article 
 ms.prod: microsoft-365-business
+ms.localizationpriority: high
 audience: microsoft-business 
 keywords: Microsoft 365 Business, Microsoft 365, SMB, FAQ, frequently asked questions, answers
-ms.date: 07/10/2017
+ms.date: 08/04/2017
 ---
 
 # Microsoft 365 Business Frequently Asked Questions
@@ -147,7 +148,7 @@ Who has access to the Microsoft 365 Business preview?
 The Microsoft 365 Business preview is available to new customers as well as existing Office 365 subscribers in all [markets where Office 365 is currently available](https://products.office.com/en-us/business/international-availability).
 
 I’m an existing Office 365 customer. Can I access the Microsoft 365 Business preview? 
---------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 
 Microsoft 365 Business can be used with existing Office 365 Business Premium subscriptions. Office 365 Business Premium subscribers that move to Microsoft 365 Business would not experience any end-user impacts (re-install Office, lose functionality, etc) upon assignment of the license. Customers running Office 365 Enterprise E3/E5 may experience end user impacts if they move to Microsoft 365 Business, it is not a recommended transition path at this time.
 
@@ -185,8 +186,9 @@ Is there any charge for the Microsoft 365 Business preview?
 No, Microsoft will not charge for the preview. If you work with an outside [IT partner](https://partnercenter.microsoft.com/en-us/pcv/search) and require assistance to deploy Microsoft 365 Business preview, they may charge you for their deployment services and assistance. At the end of the preview customers may convert to a paid subscription to continue using Microsoft 365 Business.
 
 I’m an existing Office 365 customer. Will I be charged for an Office 365 subscription while I am using the Microsoft 365 Business preview?
+------------------------------------------------------------------------------------------------------------------------------------------
 
-Customers will continue to be charged for any active Office 365 plan to which they are subscribed.
+The Microsoft 365 Business preview is free and does not require an existing Office 365 Business Premium subscription. Current Office 365 customers will continue to be billed for active Office 365 subscriptions that are not associated with the Microsoft 365 Business preview.
 
 What is the best way to deploy Microsoft 365 Business in my organization? 
 --------------------------------------------------------------------------

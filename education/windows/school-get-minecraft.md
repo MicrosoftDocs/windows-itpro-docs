@@ -5,7 +5,7 @@ keywords: Minecraft, Education Edition, IT admins, acquire
 ms.prod: W10
 ms.mktglfcycl: plan
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: trudyha
 searchScope:
   - Store

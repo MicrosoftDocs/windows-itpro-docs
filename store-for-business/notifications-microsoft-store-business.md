@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Notifications in Microsoft Store for Business and Education

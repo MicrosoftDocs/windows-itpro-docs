@@ -8274,6 +8274,16 @@
 "source_path": "windows/manage/change-history-for-manage-and-update-windows-10.md",
 "redirect_url": "/windows/windows-10/index",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/update/waas-servicing-branches-windows-10-updates.md",
+"redirect_url": "/windows/deployment/update/waas-servicing-channels-windows-10-updates",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
+"redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
+"redirect_document_id": true
 }
 ]
 }

@@ -288,9 +288,9 @@ The XML file that is included in the Office Deployment Tool specifies the produc
         <td align="left"><p><code>Sourcepath = &quot;\\Server\Office2016”</code></p></td>
         </tr>
         <tr class="even">
-        <td align="left"><p>Branch (attribute of Add element)</p></td>
-        <td align="left"><p>Optional. Specifies the update branch for the product that you want to download or install. </p><p>For more information about update branches, see Overview of update branches for Office 365 ProPlus.</p></td>
-        <td align="left"><p><code>Branch = "Business"</code></p></td>
+        <td align="left"><p>Channel (attribute of Add element)</p></td>
+        <td align="left"><p>Optional. Specifies the update channel for the product that you want to download or install. </p><p>For more information about update channels, see Overview of update channels for Office 365 ProPlus.</p></td>
+        <td align="left"><p><code>Channel="Deferred"</code></p></td>
         </tr>
         </tbody>
         </table>

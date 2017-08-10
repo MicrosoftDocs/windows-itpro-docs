@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/09/2017
 ---
 
 # Policy CSP - Defender
@@ -686,7 +687,7 @@ Value type is string.
 
 <p style="margin-left: 20px">If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
 
-p<p style="margin-left: 20px">For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
+<p style="margin-left: 20px">For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
       
 > [!Note]  
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.  

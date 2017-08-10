@@ -5,7 +5,7 @@ keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync 
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: support
 ms.sitesec: library

@@ -129,7 +129,7 @@ The discovery response is in the XML format and includes the following fields:
 -   Authentication policy (AuthPolicy) – Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
 -   In Windows, Federated is added as another supported value. This allows the server to leverage the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
-> **Note**  The HTTP server response must not be chunked; it must be sent as one message.
+> **Note**  The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
  
 
@@ -297,7 +297,7 @@ After the user is authenticated, the web service retrieves the certificate templ
 
 MS-XCEP supports very flexible enrollment policies using various Complex Types and Attributes. For Windows device, we will first support the minimalKeyLength, the hashAlgorithmOIDReference policies, and the CryptoProviders. The hashAlgorithmOIDReference has related OID and OIDReferenceID and policySchema in the GetPolicesResponse. The policySchema refers to the certificate template version. Version 3 of MS-XCEP supports hashing algorithms.
 
-> **Note**  The HTTP server response must not be chunked; it must be sent as one message.
+> **Note**  The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
  
 
@@ -482,7 +482,7 @@ The following example shows the enrollment web service request for federated aut
 
 After validating the request, the web service looks up the assigned certificate template for the client, update it if needed, sends the PKCS\#10 requests to the CA, processes the response from the CA, constructs an OMA Client Provisioning XML format, and returns it in the RequestSecurityTokenResponse (RSTR).
 
-> **Note**  The HTTP server response must not be chunked; it must be sent as one message.
+> **Note**  The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
  
 

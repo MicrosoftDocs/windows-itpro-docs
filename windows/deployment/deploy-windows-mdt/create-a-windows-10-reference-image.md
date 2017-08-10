@@ -5,7 +5,7 @@ ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
 keywords: deploy, deployment, configure, customize, install, installation
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
@@ -329,7 +329,7 @@ The steps below walk you through the process of editing the Windows 10 referenc
          
     5.  State Restore / Custom Tasks (Pre-Windows Update). Add a new Install Roles and Features action with the following settings:
         1.  Name: Install - Microsoft NET Framework 3.5.1
-        2.  Select the operating system for which roles are to be installed: Windows 8.1
+        2.  Select the operating system for which roles are to be installed: Windows 10
         3.  Select the roles and features that should be installed: .NET Framework 3.5 (includes .NET 2.0 and 3.0)
         
         **Important**  
@@ -471,7 +471,7 @@ In MDT, the x86 boot image can deploy both x86 and x64 operating systems (except
 
 ### Update the deployment share
 
-After the deployment share has been configured, it needs to be updated. This is the process when the Windows Windows PE boot images are created.
+After the deployment share has been configured, it needs to be updated. This is the process when the Windows PE boot images are created.
 
 1.  Using the Deployment Workbench, right-click the **MDT Build Lab deployment share** and select **Update Deployment Share**.
 2.  Use the default options for the Update Deployment Share Wizard.
@@ -566,7 +566,7 @@ SkipFinalSummary=YES
     The easiest way to find the current time zone name on a Windows 10 machine is to run tzutil /g in a command prompt. You can also run tzutil /l to get a listing of all available time zone names.
      
 -   **JoinWorkgroup.** Configures Windows to join a workgroup.
--   **HideShell.** Hides the Windows Shell during deployment. This is especially useful for Windows 8.1 deployments in which the deployment wizard will otherwise appear behind the tiles.
+-   **HideShell.** Hides the Windows Shell during deployment. This is especially useful for Windows 10 deployments in which the deployment wizard will otherwise appear behind the tiles.
 -   **FinishAction.** Instructs MDT what to do when the task sequence is complete.
 -   **DoNotCreateExtraPartition.** Configures the task sequence not to create the extra partition for BitLocker. There is no need to do this for your reference image.
 -   **WSUSServer.** Specifies which Windows Server Update Services (WSUS) server (and port, if needed) to use during the deployment. Without this option MDT will use Microsoft Update directly, which will increase deployment time and limit your options of controlling which updates are applied.
