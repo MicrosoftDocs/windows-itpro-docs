@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 07/28/2017
 ---
 
 # SurfaceHub DDF file
@@ -281,7 +281,7 @@ The XML below is the current version for this CSP.
                 </DFProperties>
             </Node>
             <Node>
-                <NodeName>PasswordRotationPeriod</NodeName>
+                <NodeName>PasswordRotationEnabled</NodeName>
                 <DFProperties>
                     <AccessType>
                         <Get />

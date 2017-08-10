@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the \[HideCustom\] .INS file setting to decide whether to hide the GUID for each custom component.
 author: eross-msft

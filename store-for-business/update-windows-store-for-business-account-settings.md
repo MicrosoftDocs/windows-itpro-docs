@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Update Microsoft Store for Business and Microsoft Store for Education account settings
@@ -56,6 +56,7 @@ Taxes for Microsoft Store for Business purchases are determined by your business
 - Lithuania
 - Luxembourg
 - Malta
+- Monaco
 - Netherlands
 - Norway
 - Poland
@@ -75,7 +76,9 @@ These countries can provide their VAT number or local equivalent in **Payments &
 | Australia | ABN (optional) |
 | Brazil | CNPJ (required) |
 | India | GSTIN (optional), PAN ID (required) |
+| Isle of Man | VAT ID (optional) |
 | New Zealand | GST Registration number (optional) |
+| Monaco | VAT ID (optional) |
 | Taiwan | VAT ID (optional) |
 
 ### Tax-exempt status 

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: Details about how an Administrator can view the available Enterprise Mode reports from the Enterprise Mode Site List Portal.

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ---
@@ -27,7 +27,7 @@ Windows 10, version 1607 introduces two editions designed for the unique needs o
 
 Windows 10 Pro Education builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools. Windows 10 Pro Education is effectively a variant of Windows 10 Pro that provides education-specific default settings. These default settings disable tips, tricks and suggestions & Windows Store suggestions. More detailed information on these default settings is available in [Manage Windows 10 and Microsoft Store tips, tricks, and suggestions](https://go.microsoft.com/fwlink/?LinkId=822627).
 
-For Cortana<sup>1</sup>,
+For Cortana<sup>[1](#footnote1)</sup>,
 - If you're using version 1607, Cortana is removed.
 - If you're using new devices with version 1703, Cortana is turned on by default.
 - If you're upgrading from version 1607 to version 1703, Cortana will be enabled. 
@@ -60,7 +60,7 @@ Customers who deploy Windows 10 Enterprise are able to configure the product to 
 For any other questions, contact [Microsoft Customer Service and Support](https://support.microsoft.com/en-us).
 
 ## Related topics
-* [Switch Windows 10 Pro to Pro Education from Windows Store for Business](windows-10-pro-to-pro-edu-upgrade.md)
+* [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md)
 * [Windows deployment for education](http://aka.ms/edudeploy)
 * [Windows 10 upgrade paths](https://go.microsoft.com/fwlink/?LinkId=822787)
 * [Volume Activation for Windows 10](https://go.microsoft.com/fwlink/?LinkId=822788)
@@ -69,4 +69,4 @@ For any other questions, contact [Microsoft Customer Service and Support](https:
 
 
 
-<sup>1</sup> <small>Cortana available in select markets; experience may vary by region and device.</small>
+<a name="footnote1"></a><sup>1</sup> <small>Cortana available in select markets; experience may vary by region and device.</small>

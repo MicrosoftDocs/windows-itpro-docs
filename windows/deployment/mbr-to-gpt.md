@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # MBR2GPT.EXE

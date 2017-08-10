@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Wizard Complete - Next Steps page in the IEAK 11 Customization Wizard to build your custom Internet Explorer install package.
 author: eross-msft

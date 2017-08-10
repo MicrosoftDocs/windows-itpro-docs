@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the \[Media\] .INS file setting to specify the types of media on which your custom install package is available.
 author: eross-msft

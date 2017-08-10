@@ -12,6 +12,8 @@ ms.date: 06/19/2017
 
 # DeviceStatus CSP
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The DeviceStatus configuration service provider is used by the enterprise to keep track of device inventory and query the state of compliance of these devices with their enterprise policies.
 
@@ -113,32 +115,32 @@ Boolean value that indicates compliance with the enterprise encryption policy. T
 Supported operation is Get.
 
 <a href="" id="devicestatus-tpm"></a>**DeviceStatus/TPM**  
-Added in , version 1607. Node for the TPM query.
+Added in Windows, version 1607. Node for the TPM query.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-tpm-specificationversion"></a>**DeviceStatus/TPM/SpecificationVersion**  
-Added in , version 1607. String that specifies the specification version.
+Added in Windows, version 1607. String that specifies the specification version.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-os"></a>**DeviceStatus/OS**  
-Added in , version 1607. Node for the OS query.
+Added in Windows, version 1607. Node for the OS query.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-os-edition"></a>**DeviceStatus/OS/Edition**  
-Added in , version 1607. String that specifies the OS edition.
+Added in Windows, version 1607. String that specifies the OS edition.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-antivirus"></a>**DeviceStatus/Antivirus**  
-Added in , version 1607. Node for the antivirus query.
+Added in Windows, version 1607. Node for the antivirus query.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-antivirus-signaturestatus"></a>**DeviceStatus/Antivirus/SignatureStatus**  
-Added in , version 1607. Integer that specifies the status of the antivirus signature.
+Added in Windows, version 1607. Integer that specifies the status of the antivirus signature.
 
 Valid values:
 
@@ -149,7 +151,7 @@ Valid values:
 Supported operation is Get.
 
 <a href="" id="devicestatus-antivirus-status"></a>**DeviceStatus/Antivirus/Status**  
-Added in , version 1607. Integer that specifies the status of the antivirus.
+Added in Windows, version 1607. Integer that specifies the status of the antivirus.
 
 Valid values:
 
@@ -162,27 +164,27 @@ Valid values:
 Supported operation is Get.
 
 <a href="" id="devicestatus-antispyware"></a>**DeviceStatus/Antispyware**  
-Added in , version 1607. Node for the antispyware query.
+Added in Windows, version 1607. Node for the antispyware query.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-antispyware-signaturestatus"></a>**DeviceStatus/Antispyware/SignatureStatus**  
-Added in , version 1607. Integer that specifies the status of the antispyware signature.
+Added in Windows, version 1607. Integer that specifies the status of the antispyware signature.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-antispyware-status"></a>**DeviceStatus/Antispyware/Status**  
-Added in , version 1607. Integer that specifies the status of the antispyware.
+Added in Windows, version 1607. Integer that specifies the status of the antispyware.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-firewall"></a>**DeviceStatus/Firewall**  
-Added in , version 1607. Node for the firewall query.
+Added in Windows, version 1607. Node for the firewall query.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-firewall-status"></a>**DeviceStatus/Firewall/Status**  
-Added in , version 1607. Integer that specifies the status of the firewall.
+Added in Windows, version 1607. Integer that specifies the status of the firewall.
 
 Valid values:
 
@@ -195,43 +197,84 @@ Valid values:
 Supported operation is Get.
 
 <a href="" id="devicestatus-uac"></a>**DeviceStatus/UAC**  
-Added in , version 1607. Node for the UAC query.
+Added in Windows, version 1607. Node for the UAC query.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-uac-status"></a>**DeviceStatus/UAC/Status**  
-Added in , version 1607. Integer that specifies the status of the UAC.
+Added in Windows, version 1607. Integer that specifies the status of the UAC.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery"></a>**DeviceStatus/Battery**  
-Added in , version 1607. Node for the battery query.
+Added in Windows, version 1607. Node for the battery query.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-status"></a>**DeviceStatus/Battery/Status**  
-Added in , version 1607. Integer that specifies the status of the battery
+Added in Windows, version 1607. Integer that specifies the status of the battery
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedchargeremaining"></a>**DeviceStatus/Battery/EstimatedChargeRemaining**  
-Added in , version 1607. Integer that specifies the estimated battery charge remaining. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated battery charge remaining. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
 
 The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
 Supported operation is Get.
 
 <a href="" id="devicestatus-battery-estimatedruntime"></a>**DeviceStatus/Battery/EstimatedRuntime**  
-Added in , version 1607. Integer that specifies the estimated runtime of the battery. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
+Added in Windows, version 1607. Integer that specifies the estimated runtime of the battery. This is the value returned in **BatteryLifeTime** in [SYSTEM\_POWER\_STATUS structure](https://msdn.microsoft.com/library/windows/desktop/aa373232.aspx).
 
 The value is the number of seconds of battery life remaining when the device is not connected to an AC power source. When it is connected to a power source, the value is -1. When the estimation is unknown, the value is -1.
 
 Supported operation is Get.
 
- 
+<a href="" id="devicestatus-domainname"></a>**DeviceStatus/DomainName**  
+Added in Windows, version 1709. Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
 
- 
+Supported operation is Get.
 
+<a href="" id="devicestatus-deviceguard"></a>**DeviceStatus/DeviceGuard**  
+Added in Windows, version 1709. Node for Device Guard query.
+
+Supported operation is Get.
+
+<a href="" id="devicestatus-deviceguard-virtualizationbasedsecurityhwreq"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityHwReq**  
+Added in Windows, version 1709. Virtualization-based security hardware requirement status. The value is a 256 value bitmask.
+
+-	0x0: System meets hardware configuration requirements
+-	0x1: SecureBoot required 
+-	0x2: DMA Protection required
+-	0x4: HyperV not supported for Guest VM
+-	0x8: HyperV feature is not available
+
+Supported operation is Get.
+
+<a href="" id="devicestatus-deviceguard-virtualizationbasedsecuritystatus"></a>**DeviceStatus/DeviceGuard/VirtualizationBasedSecurityStatus**  
+Added in Windows, version 1709. Virtualization-based security status.  Value is one of the following:
+-	0 - Running
+-	1 - Reboot required 
+-	2 - 64 bit architecture required 
+-	3 - not licensed 
+-	4 - not configured 
+-	5 - System doesn't meet hardware requirements 
+-	42 – Other. Event logs in Microsoft-Windows-DeviceGuard have more details
+
+
+Supported operation is Get.
+
+<a href="" id="devicestatus-deviceguard-lsacfgcredguardstatus"></a>**DeviceStatus/DeviceGuard/LsaCfgCredGuardStatus**  
+Added in Windows, version 1709. Local System Authority (LSA) credential guard status.
+
+-	0 - Running
+-	1 - Reboot required
+-	2 - Not licensed for Credential Guard
+-	3 - Not configured
+-	4 - VBS not running 
+
+
+Supported operation is Get.
 
 
 

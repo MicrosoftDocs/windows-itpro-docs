@@ -1,12 +1,12 @@
 ---
-title: What's in Windows 10, version 1703
+title: What's new in Windows 10, version 1703
 description: New and updated IT pro content about new features in Windows 10, version 1703 (also known as the Creators Updated).
 keywords: ["What's new in Windows 10", "Windows 10", "creators update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: JasonGerend
-localizationpriority: high
+ms.localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 ---
 
@@ -151,7 +151,7 @@ You can read more about ransomware mitigations and detection capability in Windo
 ### Device Guard and Credential Guard
 
 Additional security qualifications for Device Guard and Credential Guard help protect vulnerabilities in UEFI runtime.
-For more information, see [Device Guard Requirements](/windows/access-protection/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard) and [Credential Guard Security Considerations](/windows/access-protection/credential-guard//credential-guard-requirements#security-considerations).
+For more information, see [Device Guard Requirements](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard) and [Credential Guard Security Considerations](/windows/access-protection/credential-guard/credential-guard-requirements#security-considerations).
 
 ### Group Policy Security Options
 
@@ -171,9 +171,9 @@ For Windows desktops, users are able to reset a forgotten PIN through **Settings
 For more details, check out [What if I forget my PIN?](/windows/access-protection/hello-for-business/hello-why-pin-is-better-than-password#what-if-i-forget-my-pin).
 
 ### Windows Information Protection (WIP) and Azure Active Directory (Azure AD)
-Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune.md) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune.md).
+Microsoft Intune helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your allowed apps, your WIP-protection level, and how to find enterprise data on the network. For more info, see [Create a Windows Information Protection (WIP) policy using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune) and [Associate and deploy your Windows Information Protection (WIP) and VPN policies by using Microsoft Intune](/windows/threat-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune).
 
-You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For info, see the brand-new topic, [How to collect Windows Information Protection (WIP) audit event logs](/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs.md).
+You can also now collect your audit event logs by using the Reporting configuration service provider (CSP) or the Windows Event Forwarding (for Windows desktop domain-joined devices). For info, see the brand-new topic, [How to collect Windows Information Protection (WIP) audit event logs](/windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs).
 
 ## Update
 
@@ -294,6 +294,37 @@ Windows 10 Mobile, version 1703 also includes the following enhancements:
 - Continuum docking solutions
    - Set Ethernet port properties
    - Set proxy properties for the Ethernet port
+
+## Miracast on existing wireless network or LAN
+
+In the Windows 10, version 1703, Microsoft has extended the ability to send a Miracast stream over a local network rather than over a direct wireless link. This functionality is based on the [Miracast over Infrastructure Connection Establishment Protocol (MS-MICE)](https://msdn.microsoft.com/library/mt796768.aspx).
+
+Miracast over Infrastructure offers a number of benefits:
+
+- Windows automatically detects when sending the video stream over this path is applicable.
+- Windows will only choose this route if the connection is over Ethernet or a secure Wi-Fi network.
+- Users do not have to change how they connect to a Miracast receiver. They use the same UX as for standard Miracast connections.
+- No changes to current wireless drivers or PC hardware are required.
+- It works well with older wireless hardware that is not optimized for Miracast over Wi-Fi Direct.
+- It leverages an existing connection which both reduces the time to connect and provides a very stable stream.
+
+
+### How it works
+
+Users attempt to connect to a Miracast receiver as they did previously. When the list of Miracast receivers is populated, Windows 10 will identify that the receiver is capable of supporting a connection over the infrastructure. When the user selects a Miracast receiver, Windows 10 will attempt to resolve the device's hostname via standard DNS, as well as via multicast DNS (mDNS). If the name is not resolvable via either DNS method, Windows 10 will fall back to establishing the Miracast session using the standard Wi-Fi direct connection.
+
+### Enabling Miracast over Infrastructure 
+
+If you have a device that has been updated to Windows 10, version 1703, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
+
+- The device (PC, phone, or Surface Hub) needs to be running Windows 10, version 1703.
+- A Windows PC or Surface Hub can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
+    - As a Miracast receiver, the PC or Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
+    - As a Miracast source, the  PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
+- The DNS Hostname (device name) of the device needs to be resolvable via your DNS servers. You can achieve this by either allowing your device to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the device's hostname. 
+- Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.  
+
+It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
 
 ## New features in related products
 The following new features aren't part of Windows 10, but help you make the most of it.

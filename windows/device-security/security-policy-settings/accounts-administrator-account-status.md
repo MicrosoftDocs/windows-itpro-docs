@@ -18,18 +18,17 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-This security setting determines whether the local administrator account is enabled or disabled.
+This security setting determines whether the local Administrator account is enabled or disabled.
 
-If you try to enable the administrator account after it has been disabled, and if the current administrator password does not meet the password requirements, you cannot enable the account. In this case, an alternative member of the Administrators group must reset the password on the administrator account.
+The following conditions prevent disabling the Administrator account, even if this security setting is disabled.
 
-If you disable this policy setting, and one of the following conditions exists on the computer, the administrator account is not disabled.
-1.  No other local administrator account exists
-2.  The administrator account is currently in use
-3.  All other local administrator accounts are:
+1.  The Administrator account is currently in use
+2.  The Administrators group has no other members
+3.  All other members of the Administrators group are:
     1.  Disabled
     2.  Listed in the [Deny log on locally](deny-log-on-locally.md) User Rights Assignment
 
-If the current administrator password does not meet the password requirements, you will not be able to enable the administrator account again after it has been disabled. In this case, another member of the Administrators group must set the password on the administrator account.
+If the Administrator account is disabled, you cannot enable it if the password does not meet requirements. In this case, another member of the Administrators group must reset the password.
 
 ### Possible values
 -   Enabled
@@ -51,12 +50,14 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
 | Server type or GPO | Default value |
+| - | - |
 | Default Domain Policy | Not defined |
 | Default Domain Controller Policy |Not defined |
 | Stand-Alone Server Default Settings | Enabled |
 | DC Effective Default Settings | Enabled |
 | Member Server Effective Default Settings | Enabled |
 | Client Computer Effective Default Settings | Disabled |
+
  
 ## Policy management
 
