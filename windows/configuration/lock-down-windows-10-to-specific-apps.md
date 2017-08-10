@@ -44,7 +44,7 @@ Process:
 
 Let's start by looking at the basic structure of the XML file. 
 
-- A configuration xml can define multiple *profiles*. Each profile has a unique **Id** and defines a set of applications that are allowed to run. 
+- A configuration xml can define multiple *profiles*. Each profile has a unique **Id** and defines a set of applications that are allowed to run, whether the taskbar is visible, and can include a custom Start layout. 
 
 - A configuration xml can have multiple *config* sections. Each config section associates a non-admin user account to a default profile **Id**. 
 
@@ -96,8 +96,8 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 ```xml
 <Profiles>
-    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">…</Profile>
-  </Profiles>
+  <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">…</Profile>
+</Profiles>
 ```
 
 #### AllowedApps
@@ -139,7 +139,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
           <App DesktopAppPath="%windir%\system32\mspaint.exe" />
           <App DesktopAppPath="C:\Windows\System32\notepad.exe" />
         </AllowedApps>
-      </AllAppsList>
+</AllAppsList>
 ```
 
 #### StartLayout
@@ -180,7 +180,7 @@ This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint,
                       </DefaultLayoutOverride>
                     </LayoutModificationTemplate>
                 ]]>
-      </StartLayout>
+</StartLayout>
 ```
 
 >[!NOTE]
@@ -222,7 +222,7 @@ The account can be local, domain, or Azure Active Directory (Azure AD). Groups a
 - Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. **AzureAD\someone@contoso.onmicrosoft.com**.
 
 >[!WARNING]
->Although **Start** &gt; **Settings** &gt; **Accounts** &gt; **Other users** &gt; **Set up assigned access** only supports specifying a local user account, Assigned Access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with Assigned Access, and consider the domain resources potentially exposed by the decision to do so.
+>Assigned Access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with Assigned Access, and consider the domain resources potentially exposed by the decision to do so.
 
 
 Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
@@ -233,11 +233,11 @@ Before applying the multi-app configuration, make sure the specified user accoun
 
 ```xml
 <Configs>
-    <Config>
-      <Account>MultiAppKioskUser</Account>
-      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
-    </Config>
-  </Configs> 
+  <Config>
+    <Account>MultiAppKioskUser</Account>
+    <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+  </Config>
+</Configs> 
 ```
 
 
