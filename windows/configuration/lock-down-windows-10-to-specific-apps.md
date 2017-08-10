@@ -474,17 +474,17 @@ Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
 ### MDM policy
 
 
-Some of the MDM policies affect all users on the system (i.e. system-wide).
+Some of the MDM policies based on the [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (i.e. system-wide).
 
 Setting	| 	Value	| System-wide
  --- | --- | ---
-Experience/AllowCortana		| Disabled	| 	Yes
-Start/AllowPinnedFolderSettings	| 	Disabled	| 	Yes
-Start/HidePeopleBar		| Enabled	| 	No
-Start/HideChangeAccountSettings		| Enabled		| Yes
-WindowsInkWorkspace/AllowWindowsInkWorkspace	| 	Disabled	| 	Yes
+Experience/AllowCortana		| 0 - Not allowed	| 	Yes
+Start/AllowPinnedFolderSettings	| 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+Start/HidePeopleBar		| 1 - True (hide)	| 	No
+Start/HideChangeAccountSettings		| 1 - True (hide) | Yes
+WindowsInkWorkspace/AllowWindowsInkWorkspace	| 	0 - Access to ink workspace is disabled and the feature is turned off	| 	Yes
 Start/StartLayout	| Configuration dependent	| 	No
-WindowsLogon/DontDisplayNetworkSectionUI	| 	Enabled	| 	Yes
+WindowsLogon/DontDisplayNetworkSelectionUI	| 	&lt;Enabled/&gt;	| 	Yes
 
 <span id="lnk-files" />
 ## Provision .lnk files using Windows Configuration Designer
