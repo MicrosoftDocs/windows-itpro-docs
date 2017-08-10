@@ -960,9 +960,17 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
-<td style="vertical-align:top"><p>Here are the changes in Windows 10, version 1709.</p>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709.</p>
 <ul>
-<li>Added Configuration node</li>
+<li>Configuration</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>Provider/_ProviderID_/ConfigInfo</li>
+<li> Provider/_ProviderID_/EnrollmentInfo</li>
 </ul>
 </td></tr>
 <tr class="odd">
@@ -1335,6 +1343,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
 <td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in [Whitelist examples](applocker-csp.md#whitelist-examples).</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>Provider/_ProviderID_/ConfigInfo</li>
+<li> Provider/_ProviderID_/EnrollmentInfo</li>
+</ul>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
