@@ -48,3 +48,7 @@ For example:
 - Make sure the Start layout is authored correctly. Ensure that the attributes **Size**, **Row**, and **Column** are specified for each application and are valid.
 - Check if the apps included in the Start layout are installed for the assigned access user.
 - Check if the shortcut exists on the target device, if a desktop app is missing on Start.
+
+## Feedback
+
+Feedback and bugs can be submitted in the Feedback Hub. You can use the Problems Steps Recorder to reproduce the issue, and attach the resulting .zip file to your feedback.
