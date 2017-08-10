@@ -480,7 +480,7 @@ Setting	| 	Value	| System-wide
  --- | --- | ---
 Experience/AllowCortana		| Disabled	| 	Yes
 Start/AllowPinnedFolderSettings	| 	Disabled	| 	Yes
-Start/HidePeopleBar		| Enabled	| 	Yes
+Start/HidePeopleBar		| Enabled	| 	No
 Start/HideChangeAccountSettings		| Enabled		| Yes
 WindowsInkWorkspace/AllowWindowsInkWorkspace	| 	Disabled	| 	Yes
 Start/StartLayout	| Configuration dependent	| 	No
@@ -495,11 +495,11 @@ Next, create a batch file with two commands. If the desktop app is already insta
 
 ```
 msiexec /I "<appName>.msi" /qn /norestart
-copy <appName>.lnk "%AllUsersProfile\Microsoft\Windows\Start Menu\Programs\<appName>.lnk"
+copy <appName>.lnk "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\<appName>.lnk"
 ```
 
 In Windows Configuration Designer, under **ProvisioningCommands** > **DeviceContext**:
 
-- Under CommandFiles, upload your batch file, your .lnk file, and your desktop app installation file 
-- Under CommandLine, enter cmd /c <batchFileName>.bat
+- Under **CommandFiles**, upload your batch file, your .lnk file, and your desktop app installation file 
+- Under **CommandLine**, enter cmd /c *FileName*.bat
 
