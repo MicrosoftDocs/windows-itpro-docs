@@ -146,6 +146,7 @@ This setting does not affect adding a Microsoft account for application authenti
 By default, this setting is **Not defined**.
 
 The path to this setting is:
+
 Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options
 
 ### <a href="" id="bkmk-cfgconnectedaccounts"></a>Configure connected accounts
