@@ -108,13 +108,45 @@ Depending on your IT and business models, introducing Microsoft accounts into yo
 
 ### <a href="" id="bkmk-restrictuse"></a>Restrict the use of the Microsoft account
 
-If employees are allowed to join the domain with their personal devices, they might expect to connect to enterprise resources by using their Microsoft accounts. If you want to prevent any use of Microsoft accounts within your enterprise, you can configure the local security policy setting [Accounts: Block Microsoft accounts](/windows/device-security/security-policy-settings/accounts-block-microsoft-accounts). However, this setting can prevent the users from signing in to their Windows devices with their Microsoft accounts (if they had set them up to do so) when they are joined to the domain.
+The following Group Policy settings help control the use of Microsoft accounts in the enterprise:
 
-The default for this setting is **Disabled**, which enables users to use their Microsoft accounts on devices that are joined to your domain. Other options in the setting can:
+- [Block all consumer Microsoft account user authentication](#block-all-consumer-microsoft-account-user-authentication)
+- [Accounts: Block Microsoft accounts](#accounts-block-microsoft-accounts)
 
-1.  Prevent users from creating new Microsoft accounts on a computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
+#### Block all consumer Microsoft account user authentication
 
-2.  Prevent users with an existing Microsoft account from signing in to Windows. Selecting this option might make it impossible for an existing administrator to sign in to a computer and manage the system.
+This setting controls whether users can provide Microsoft accounts for authentication for applications or services.
+
+If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication. 
+This applies both to existing users of a device and new users who may be added. 
+
+However, any application or service that has already authenticated a user will not be affected by enabling this setting until the authentication cache expires. 
+It is recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present.
+
+If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication. 
+By default, this setting is **Disabled**.
+
+This setting does not affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
+
+The path to this setting is:
+
+Computer Configuration\Administrative Templates\Windows Components\Microsoft account
+
+#### Accounts: Block Microsoft accounts
+
+This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. 
+
+There are two options if this setting is enabled:
+
+- **Users can’t add Microsoft accounts** means that existing connected accounts can still sign in to the device (and appear on the Sign in screen). However, users cannot use the **Settings** app to add new connected accounts (or connect local accounts to Microsoft accounts).
+- **Users can’t add or log on with Microsoft accounts** means that users cannot add new connected accounts (or connect local accounts to Microsoft accounts) or use existing connected accounts through **Settings**.
+
+This setting does not affect adding a Microsoft account for application authentication. For example, if this setting is enabled, a user can still provide a Microsoft account for authentication with an application such as **Mail**, but the user cannot use the Microsoft account for single sign-on authentication for other applications or services (in other words, the user will be prompted to authenticate for other applications or services).
+
+By default, this setting is **Not defined**.
+
+The path to this setting is:
+Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options
 
 ### <a href="" id="bkmk-cfgconnectedaccounts"></a>Configure connected accounts
 
