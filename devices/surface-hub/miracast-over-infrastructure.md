@@ -1,6 +1,6 @@
 ---
 title: Miracast on existing wireless network or LAN
-description: Monitoring for Microsoft Surface Hub devices is enabled through Microsoft Operations Management Suite (OMS).
+description: Windows 10 enables you to send a Miracast stream over a local network.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -8,7 +8,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Miracast on existing wireless network or LAN
@@ -32,13 +32,15 @@ Users attempt to connect to a Miracast receiver as they did previously. When the
 
 ## Enabling Miracast over Infrastructure 
 
-If you have a Surface Hub that has been updated to Windows 10, version 1703, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
+If you have a Surface Hub or other Windows 10 device that has been updated to Windows 10, version 1703, then you automatically have this new feature. To take advantage of it in your environment, you need to ensure the following is true within your deployment:
 
-- The Surface Hub needs to be running Windows 10, version 1703.
-- The Surface Hub must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
-- The DNS Hostname (device name) of the Surface Hub needs to be resolvable via your DNS servers. You can achieve this by either allowing your Surface Hub to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the Surface Hub's hostname. 
+- The Surface Hub or device (Windows PC or phone) needs to be running Windows 10, version 1703.
+- A Surface Hub or Windows PC can act as a Miracast over Infrastructure *receiver*. A Windows PC or phone can act as a Miracast over Infrastructure *source*.
+    - As a Miracast receiver, the Surface Hub or device must be connected to your enterprise network via either Ethernet or a secure Wi-Fi connection (e.g. using either WPA2-PSK or WPA2-Enterprise security). If the Hub is connected to an open Wi-Fi connection, Miracast over Infrastructure will disable itself.
+    - As a Miracast source, the Windows PC or phone must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.
+- The DNS Hostname (device name) of the Surface Hub or deviceneeds to be resolvable via your DNS servers. You can achieve this by either allowing your Surface Hub to register automatically via Dynamic DNS, or by manually creating an A or AAAA record for the Surface Hub's hostname. 
 - Windows 10 PCs must be connected to the same enterprise network via Ethernet or a secure Wi-Fi connection.  
-- PCs need to be running Windows 10, version 1703.
+
 
 It is important to note that Miracast over Infrastructure is not a replacement for standard Miracast. Instead, the functionality is complementary, and provides an advantage to users who are part of the enterprise network. Users who are guests to a particular location and don’t have access to the enterprise network will continue to connect using the Wi-Fi Direct connection method.
 

@@ -4,7 +4,7 @@ description: This article describes how to deploy code integrity policies, one o
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -33,7 +33,7 @@ Members of the security community<sup>\*</sup> continuously collaborate with Mic
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent Application Whitelisting policies, including Device Guard:
 
 - bash.exe
-- bginfo.exe 
+- bginfo.exe<sup>[1]</sup> 
 - cdb.exe
 - csi.exe
 - dnx.exe
@@ -42,14 +42,17 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - kd.exe
 - ntkd.exe
 - lxssmanager.dll
-- msbuild.exe<sup>[1]</sup>
+- msbuild.exe<sup>[2]</sup>
 - mshta.exe
 - ntsd.exe
 - rcsi.exe
+- SyncAppVPublishingServer.exe
 - system.management.automation.dll
 - windbg.exe
 
-<sup>[1]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+
+<sup>[2]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
 <sup>*</sup>Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -62,6 +65,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Matt Nelson | @enigma0x3| 
 |Oddvar Moe |@Oddvarmoe|
 |Alex Ionescu | @aionescu|
+|Nick Landers | @monoxgas|
 
 <br />
 
@@ -114,6 +118,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny  ID="ID_DENY_LXSS"          FriendlyName="LxssManager.dll"    FileName="LxssManager.dll" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_BASH"          FriendlyName="bash.exe"           FileName="bash.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_FSI"           FriendlyName="fsi.exe"            FileName="fsi.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_APPVPUBSRV"    FriendlyName="SyncAppVPublishingServer.exe" FileName="SyncAppVPublishingServer.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_FSI_ANYCPU"    FriendlyName="fsiAnyCpu.exe"      FileName="fsiAnyCpu.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_MSHTA"         FriendlyName="mshta.exe"          FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_SMA"           FriendlyName="System.Management.Automation.dll" FileName="System.Management.Automation.dll" MinimumFileVersion = "10.0.16215.999" />
@@ -182,6 +187,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_BASH"/>
           <FileRuleRef RuleID="ID_DENY_FSI"/>
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU"/>
+          <FileRuleRef RuleID="ID_DENY_APPVPUBSRV"/>
           <FileRuleRef RuleID="ID_DENY_MSHTA"/>
           <FileRuleRef RuleID="ID_DENY_SMA"/>
           <FileRuleRef RuleID="ID_DENY_D_1" />

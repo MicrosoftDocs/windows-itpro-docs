@@ -10,7 +10,7 @@ ms.pagetype: surfacehub, networking
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Wireless network management (Surface Hub)

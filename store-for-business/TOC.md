@@ -21,6 +21,7 @@
 ### [Manage private store settings](manage-private-store-settings.md)
 ### [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md)
 ### [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md)
+### [Microsoft Store for Business and Education PowerShell module - preview](microsoft-store-for-business-education-powershell-module.md)
 ## [Device Guard signing portal](device-guard-signing-portal.md)
 ### [Add unsigned app to code integrity policy](add-unsigned-app-to-code-integrity-policy.md)
 ### [Sign code integrity policy with Device Guard signing](sign-code-integrity-policy-with-device-guard-signing.md)
@@ -29,4 +30,5 @@
 ### [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md)
 ## [Troubleshoot Microsoft Store for Business](troubleshoot-windows-store-for-business.md)
 ## [Notifications in Microsoft Store for Business and Education](notifications-microsoft-store-business.md)
+## [Change history for Microsoft Store for Business and Education](sfb-change-history.md)
 

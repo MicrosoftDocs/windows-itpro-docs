@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ---
@@ -40,10 +40,10 @@ ms.author: celested
 
 ## ![Deploy Windows 10 for Education](images/PCicon.png) Deploy
 
-<p><b>[Set up Windows devices for education](set-up-windows-10.md)</b><br />Depending on your school's device management needs, you can use the Set up School PCs app or the Windows Configuration Designer tool to quickly set up student PCs.</p><p>
+<p><b>[Set up Windows devices for education](set-up-windows-10.md)</b><br />Depending on your school's device management needs, you can use the Set up School PCs app or the Windows Configuration Designer tool to quickly set up student PCs.</p>
 <p><b>[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)</b><br />Get step-by-step guidance to help you deploy Windows 10 in a school environment.</p>
 <p><b>[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)</b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p>
-<p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
+<p><b>[Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md)</b><br />Test Windows 10 S on a variety of Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us.</p>
 
 ## ![Switch to Windows 10 for Education](images/windows.png) Switch
 
@@ -65,3 +65,7 @@ Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in
 ## Related topics
 - [Microsoft Education documentation and resources](https://docs.microsoft.com/education)
 - [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
+
+<!--
+<p><b><a href="https://technet.microsoft.com/en-us/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
+-->

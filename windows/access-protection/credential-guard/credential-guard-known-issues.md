@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -15,14 +15,32 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
  
-Credential Guard has certain application requirements. Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when Credential Guard is enabled. For further information, see [Application requirements](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
+Credential Guard has certain application requirements. Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when Credential Guard is enabled. For further information, see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
 
-The following known issue has been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
+The following known issues have been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
 
--	 [KB4015217 Credential Guard generates double bad password count on Active Directory domain-joined Windows 10 machines](https://support.microsoft.com/en-us/help/4015217/windows-10-update-kb4015217)
+-	 [KB4015217 Credential Guard generates double bad password count on Active Directory domain-joined Windows 10 machines](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
 
-     This issue can potentially lead to unexpected account lockouts. See also Microsoft® Knowledge Base articles [KB4015219](https://support.microsoft.com/en-us/help/4015219/windows-10-update-kb4015219) and 
-[KB4015221](https://support.microsoft.com/en-us/help/4015221/windows-10-update-kb4015221)
+     This issue can potentially lead to unexpected account lockouts. See also Microsoft® Knowledge Base articles [KB4015219](https://support.microsoft.com/help/4015219/windows-10-update-kb4015219) and [KB4015221](https://support.microsoft.com/help/4015221/windows-10-update-kb4015221)
+
+
+-	[KB4033236 Two incorrect logon attempts sent to Active Directory after Credential Guard installed on Windows 10](https://support.microsoft.com/help/4033236/two-incorrect-logon-attempts-sent-to-active-directory-after-credential?preview)
+
+      This issue can potentially lead to unexpected account lockouts. The issue was fixed in servicing updates for each of the following operating systems:
+
+    - Windows 10 Version 1607 and Windows Server 2016: 
+    [KB4015217 (OS Build 14393.1066 and 14393.1083)](https://support.microsoft.com/help/4015217) 
+    - Windows 10 Version 1511: [KB4015219 (OS Build 10586.873)](https://support.microsoft.com/help/4015219)
+    - Windows 10 Version 1507: [KB4015221 (OS Build 10240.17354)](https://support.microsoft.com/help/4015221)
+
+## Known issues involving third-party applications
+
+The following issue affects the Java GSS API. See the following Oracle bug database article: 
+
+-	[JDK-8161921: Windows 10 Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
+
+When Credential Guard is enabled on Windows 10, the Java GSS API will not authenticate. This is expected behavior because Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
+
 
 The following issue affects Cisco AnyConnect Secure Mobility Client:
 
@@ -43,7 +61,7 @@ The following issue affects Citrix applications:
 
 <sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Credential Guard-enabled Windows 10 or Windows Server 2016 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
 
--	 [KB4032786 High CPU usage in the LSAISO process on Windows 10 or Windows Server 2016](https://support.microsoft.com/en-us/help/4032786)
+-	 [KB4032786 High CPU usage in the LSAISO process on Windows 10 or Windows Server 2016](https://support.microsoft.com/help/4032786)
     
 For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](https://msdn.microsoft.com/library/windows/desktop/mt809132(v=vs.85).aspx)
     

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: Learn about what you need to do before you deploy your custom browser package using IEAK 11 over your network.
 author: eross-msft
