@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
-msft.author: iawilt
+ms.author: iawilt
 ---
 
 # Manage updates and scans for endpoints that are out of date
