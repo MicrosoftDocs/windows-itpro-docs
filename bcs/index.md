@@ -84,7 +84,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="support/microsoft-365-business-faqs.md">
+                                <a href="support/microsoft-365-business-faqs.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
