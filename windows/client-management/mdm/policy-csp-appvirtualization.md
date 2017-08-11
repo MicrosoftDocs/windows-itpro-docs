@@ -702,7 +702,7 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 2 Settings*
+-   GP English name: *Publishing Server 2 Settings*
 -   GP name: *Publishing_Server2_Policy*
 -   GP path: *Administrative Templates/System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
