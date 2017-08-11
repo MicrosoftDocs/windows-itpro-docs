@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 08/11/2017
 ---
 
 # Mobile device enrollment
@@ -59,26 +59,30 @@ The following topics describe the end-to-end enrollment process using various au
 > -   Any fixed URIs that are passed during enrollment
 > -   Specific formatting of any value unless otherwise noted, such as the format of the device ID.
 
+
+## Enrollment support for domain-joined devices
  
+Devices that are joined to an on-premise Active Directory can enroll into MDM via the Work access page in **Settings**. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.
 
-## Prevent MDM enrollments
+## Disable MDM enrollments
 
 
-Starting in Windows 10, version 1607, to prevent MDM enrollments for domain-joined PCs, you can set the following Group Policy:
+Starting in Windows 10, version 1607, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
+
+![Disable MDM enrollment policy in GP Editor](images/mdm-enrollment-disable-policy.png)
+
+Here is the corresponding registry key:
 
 Key: \\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\MDM
 
 Value: DisableRegistration
 
-Using the GP editor, the path is Computer configuration &gt; Administrative Templates &gt; Windows Components &gt; MDM &gt; Disable MDM Enrollment.
-
 ## Enrollment scenarios not supported
-
 
 The following scenarios do not allow MDM enrollments:
 
 -   Built-in administrator accounts on Windows desktop cannot enroll into MDM.
--   Standard users on Windows desktop cannot enroll into MDM via the Work access page in **Settings**. To enroll a standard user into MDM, we recommend using a provisioning package or joining the device to Azure AD from **Settings** -&gt; **System** -&gt; **About**.
+-   Prior to Windows 10, version 1709, standard users on Windows desktop cannot enroll into MDM via the Work access page in **Settings**. Only admin users can enroll. To enroll a standard user into MDM, we recommend using a provisioning package or joining the device to Azure AD from **Settings** -&gt; **System** -&gt; **About**. Starting in Windows 10, version 1709, standard users can enroll in MDM.
 -   Windows 8.1 devices enrolled into MDM via enroll-on-behalf-of (EOBO) can upgrade to Windows 10, but the enrollment is not supported. We recommend performing a server initiated unenroll to remove these enrollments and then enrolling after the upgrade to Windows 10 is completed.
 
 ## Enrollment migration

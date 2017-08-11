@@ -23,7 +23,7 @@ ms.sitesec: library
 
 You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode. You can add and remove sites from your XML list as frequently as you want, changing which sites should render in Enterprise Mode for your employees. For information about turning on Enterprise Mode and using site lists, see [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md).
 
-The information in this topic only covers HTTP protocol. We strongly recommend that you use HTTP protocol instead of file protocol due to increased performance.
+The information in this topic only covers HTTPS protocol. We strongly recommend that you use HTTPS protocol instead of file protocol due to increased performance.
 
 **How Internet Explorer 11 looks for an updated site list**
 
