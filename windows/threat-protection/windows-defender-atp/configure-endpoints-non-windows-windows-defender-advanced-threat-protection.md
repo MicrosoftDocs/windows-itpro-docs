@@ -43,11 +43,11 @@ Windows Defender ATP supports the following third-party solutions:
 
 5. Click **Save preferences**.
 
->[!WARNING] [DAN OR OTHER SME'S - PLEASE VERIFY IF THIS WARNING IS CORRECT. IS IT ONLY DISPLAYED ONCE?]
-> The access token is only displayed once. Make sure you keep a copy of it in a safe place. If needed, regenerate the token close to the time you need to share it with the third-party solution.
+>[!WARNING] 
+> The access token has a limited validity period. If needed, regenerate the token close to the time you need to share it with the third-party solution.
 
 ## Offboard non-Windows endpoints
-To effectively offboard the endpoints from the service, you'll need to disable the data push on the third-party portal then switch the toggle to off in Windows Defender Security Center to block the data inbound flow.
+To effectively offboard the endpoints from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
 
 
 1. Follow the third-party documentation to opt-out on the third-party service side.
