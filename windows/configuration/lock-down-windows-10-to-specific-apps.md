@@ -224,13 +224,13 @@ The account can be local, domain, or Azure Active Directory (Azure AD). Groups a
 - Azure AD account must be specified in this format: `AzureAD\{email address}`. **AzureAD** must be provided AS IS (consider it’s a fixed domain name), then follow with the Azure AD email address, e.g. **AzureAD\someone@contoso.onmicrosoft.com**.
 
 >[!WARNING]
->Assigned Access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the Assigned Access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with Assigned Access, and consider the domain resources potentially exposed by the decision to do so.
+>Assigned access can be configured via WMI or CSP to run its applications under a domain user or service account, rather than a local account.  However, use of domain user or service accounts introduces risks that an attacker subverting the assigned access application might gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
 
 Before applying the multi-app configuration, make sure the specified user account is available on the device, otherwise it will fail.
  
 >[!NOTE]
->For both domain and Azure AD accounts, it’s not required that target account is explicitly added to the device. As long as the device is AD-joined or Azure AD-joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for AssignedAccess.
+>For both domain and Azure AD accounts, it’s not required that target account is explicitly added to the device. As long as the device is AD-joined or Azure AD-joined, the account can be discovered in the domain forest or tenant that the device is joined to. For local accounts, it is required that the account exist before you configure the account for assigned access.
 
 
 ```xml
@@ -520,6 +520,11 @@ In the multi-app mode, the touch keyboard will be automatically triggered when t
 
 
 ## Policies set by multi-app kiosk configuration
+
+It is not recommended to set policies enforced in assigned access multi-app mode to different values using other channels, as the multi-app mode has been optimized to provide a locked-down experience.
+
+When the multi-app assigned access configuration is applied on the device, certain policies are enforced system-wide, and will impact other users on the device.
+
 
 ### Group Policy
 
