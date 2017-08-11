@@ -37,7 +37,7 @@ Before you disable any of these services, review the **Description** column in t
 | PimIndexMaintenanceSvc | Contact Data                            | Manual             | UnistoreSvc  | Indexes contact data for fast contact searching. If you stop or disable this service, search results might not display all contacts.                                                  |
 | UnistoreSvc            | User Data Storage                       | Manual             |              | Handles storage of structured user data, including contact info, calendars, and messages. If you stop or disable this service, apps that use this data might not work correctly.      |
 | UserDataSvc            | User Data Access                        | Manual             | UnistoreSvc  | Provides apps access to structured user data, including contact info, calendars, and messages. If you stop or disable this service, apps that use this data might not work correctly. |
-| WpnUserService         | Windows Push Notifications User Service | Manual             |              | Host Windows notification platform, which provides support for local and push notifications. Supported notifications are tile, toast, and raw.                                        |
+| WpnUserService         | Windows Push Notifications User Service | Manual             |              | Hosts Windows notification platform, which provides support for local and push notifications. Supported notifications are tile, toast, and raw.                                        |
 
 ## Disable Per User services
 
@@ -62,7 +62,7 @@ In light of these restrictions, you can use the following methods to manage Per 
 
 ### Manage template services using a security template
 
-You can manage the CDPUserSvc and OneSyncSvc Per User services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](..//device-security/security-policy-settings/administer-security-policy-settings.md) for more information.
+You can manage the CDPUserSvc and OneSyncSvc Per User services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](../device-security/security-policy-settings/administer-security-policy-settings.md) for more information.
 
 For example: 
 
