@@ -119,7 +119,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -169,7 +169,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -209,7 +209,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Delete>
       <CmdID>1</CmdID>
@@ -292,7 +292,7 @@ The `text` element simply corresponds to a string and correspondingly to an edit
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>$CmdId$</CmdID>
@@ -333,7 +333,7 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -377,7 +377,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -409,7 +409,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -466,7 +466,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -503,7 +503,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -552,7 +552,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
