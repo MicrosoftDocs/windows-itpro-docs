@@ -23,14 +23,13 @@ localizationpriority: high
 
 Windows Defender Security Center provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
-### Supported non-Windows endpoints
-Windows Defender Security Center supports the following non-Windows endpoints:
+### Supported third-party solutions
+Windows Defender ATP supports the following third-party solutions:
 
-- Mac OS (DAN, ARE THERE SPECIFIC VERSIONS THAT WE SUPPORT?)
-- Linux  (DAN, ARE THERE SPECIFIC VERSIONS THAT WE SUPPORT?)
+- Bitdefender [ANY REQUIRED VERSION?]
+-   Mac OS (DAN, ARE THERE SPECIFIC VERSIONS THAT WE SUPPORT?)
+-   Linux  (DAN, ARE THERE SPECIFIC VERSIONS THAT WE SUPPORT?)
 
-### Pre-requisites
-The endpoints need to be running Bitdefender [ANY REQUIRED VERSION?]
 
 ## Onboard non-Windows endpoints
 
@@ -44,11 +43,12 @@ The endpoints need to be running Bitdefender [ANY REQUIRED VERSION?]
 
 5. Click **Save preferences**.
 
->[!WARNING]
+>[!WARNING] [DAN OR OTHER SME'S - PLEASE VERIFY IF THIS WARNING IS CORRECT. IS IT ONLY DISPLAYED ONCE?]
 > The access token is only displayed once. Make sure you keep a copy of it in a safe place. If needed, regenerate the token close to the time you need to share it with the third-party solution.
 
 ## Offboard non-Windows endpoints
 To effectively offboard the endpoints from the service, you'll need to disable the data push on the third-party portal then switch the toggle to off in Windows Defender Security Center to block the data inbound flow.
+
 
 1. Follow the third-party documentation to opt-out on the third-party service side.
 
@@ -56,3 +56,5 @@ To effectively offboard the endpoints from the service, you'll need to disable t
 
 3. Toggle the Bitdefender switch button to turn stop telemetry from endpoints with Bitdefender antivirus. 
 
+>[!WARNING]
+>If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on endpoints. 
