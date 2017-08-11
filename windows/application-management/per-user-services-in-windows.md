@@ -62,7 +62,9 @@ In light of these restrictions, you can use the following methods to manage Per 
 
 ### Manage template services using a security template
 
-You can manage the CDPUserSvc and OneSyncSvc Per User services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](../device-security/security-policy-settings/administer-security-policy-settings.md) for more information.
+You can manage the CDPUserSvc and OneSyncSvc Per User services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](/windows/device-security/security-policy-settings/administer-security-policy-settings) for more information.
+
+device-security/security-policy-settings/administer-security-policy-settings
 
 For example: 
 
