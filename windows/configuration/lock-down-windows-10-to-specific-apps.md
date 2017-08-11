@@ -1,6 +1,6 @@
 ---
 title: Create a Windows 10 kiosk that runs multiple apps (Windows 10)
-description: Learn how to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education so that users can only run a few specific apps.
+description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
@@ -34,10 +34,12 @@ Process:
 2. [Add XML file to provisioning package](#add-xml)
 3. [Apply provisioning package to device](#apply-ppkg)
 
+If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#alternate-methods) or you can configure assigned access using the [MDM Bridge WMI Provider](#bridge).
+
 ## Prerequisites
 
 - (latest version of WCD -- is Store version okay at GA?)
-- The kiosk device must be running Windows 10 (Pro, Enterprise, or Education), version 1709
+- The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709
 
 
 ## Create XML file
@@ -343,12 +345,31 @@ Provisioning packages can be applied to a device during the first-run experience
 
 ![add a package option](images/package.png)
 
+
+
 ### Validate provisioning
 
 -	Go to **Settings** > **Accounts** > **Access work or school**, and then click **Add or remove a provisioning package**. You should see a list of packages that were applied to the device, including the one you applied for the multi-app configuration.
 - Optionally, run Event Viewer (eventvwr.exe) and look through logs under **Applications and Services Logs** > **Microsoft** > **Windows** > **Provisioning-Diagnostics-Provider** > **Admin**.
 
-### Validate multi-app kiosk configuration
+
+<span id="alternate-methods" />
+## Use MDM to deploy the multi-app configuration 
+
+
+Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML. 
+
+If your test device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely. 
+
+The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
+
+
+<span id="bridge" />
+## Use MDM Bridge WMI Provider to configure assigned access
+
+
+
+## Validate multi-app kiosk configuration
 
 Sign in with the assigned access user account you specified in the configuration to check out the multi-app experience. 
 
@@ -357,13 +378,13 @@ Sign in with the assigned access user account you specified in the configuration
 
 The following sections explain what to expect on a multi-app kiosk.
 
-#### App launching and switching experience
+### App launching and switching experience
 
 In the multi-app mode, to maximize the user productivity and streamline the experience, an app will be always launched in full screen when the users click the tile on the Start. The users can minimize and close the app, but cannot resize the app window.  
 
 The users can switch apps just as they do today in Windows. They can use the Task View button, Alt + Tab hotkey, and the swipe in from the left gesture to view all the open apps in task view. They can click the Windows button to show Start, from which they can open apps, and they can switch to an opened app by clicking it on the taskbar. 
 
-#### Start changes
+### Start changes
 
 When the assigned access user signs in, you should see a restricted Start experience:
 - Start gets launched in full screen and prevents the end user from accessing the desktop. 
@@ -376,7 +397,7 @@ When the assigned access user signs in, you should see a restricted Start experi
 - Only **User** and **Power** buttons are available. (You can control whether to show the **User/Power** buttons using [existing policies](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start).) 
 - Start hides **Change account settings** option under **User** button.
 
-#### Taskbar changes
+### Taskbar changes
 
 If the applied multi-app configuration enables taskbar, when the assigned access user signs in, you should see a restricted Taskbar experience:
 - Disables context menu of Start button (Quick Link)
@@ -386,7 +407,7 @@ If the applied multi-app configuration enables taskbar, when the assigned access
 - Hides notification icons and system icons, e.g. Action Center, People, Windows Ink Workspace
 - Allows the end user to view the status of the network connection and power state, but disables the flyout of **Network/Power** to prevent end user from changing the settings
 
-#### Blocked hotkeys
+### Blocked hotkeys
 
 The multi-app mode blocks the following hotkeys, which are not relevant for the lockdown experience. 
 
@@ -411,11 +432,11 @@ The multi-app mode blocks the following hotkeys, which are not relevant for the 
 
 
 
-#### Locked-down Ctrl+Alt+Del screen
+### Locked-down Ctrl+Alt+Del screen
 
 The multi-app mode removes options (e.g. **Change a password**, **Task Manager**, **Network**) in the Ctrl+Alt+Del screen to ensure the users cannot access the functionalities that are not allowed in the lockdown experience. 
 
-#### Auto-trigger touch keyboard
+### Auto-trigger touch keyboard
 
 In the multi-app mode, the touch keyboard will be automatically triggered when there is an input needed and no physical keyboard is attached on touch-enabled devices. You don’t need to configure any other setting to enforce this behavior. 
 
