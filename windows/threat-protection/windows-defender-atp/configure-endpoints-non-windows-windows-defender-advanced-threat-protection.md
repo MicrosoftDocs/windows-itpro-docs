@@ -44,7 +44,7 @@ Windows Defender ATP supports the following third-party solutions:
 5. Click **Save preferences**.
 
 >[!WARNING] 
-> The access token has a limited validity period. If needed, regenerate the token close to the time you need to share it with the third-party solution.
+>The access token has a limited validity period. If needed, regenerate the token close to the time you need to share it with the third-party solution.
 
 ## Offboard non-Windows endpoints
 To effectively offboard the endpoints from the service, you'll need to disable the data push on the third-party portal first then switch the toggle to off in Windows Defender Security Center. The toggle in the portal only blocks the data inbound flow.
