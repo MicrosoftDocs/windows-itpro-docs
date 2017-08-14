@@ -15,21 +15,13 @@ localizationpriority: high
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+- Mac OS X
+- Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender Security Center provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
-### Supported third-party solutions
-Windows Defender ATP supports the following third-party solutions:
-
-- Bitdefender [ANY REQUIRED VERSION?]
--   Mac OS (DAN, ARE THERE SPECIFIC VERSIONS THAT WE SUPPORT?)
--   Linux  (DAN, ARE THERE SPECIFIC VERSIONS THAT WE SUPPORT?)
-
+You'll need to know the exact Linux distros and Mac OS X versions that are compatible with Windows Defender ATP for the integration to work. 
 
 ## Onboard non-Windows endpoints
 
