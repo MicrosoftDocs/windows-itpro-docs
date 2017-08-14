@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
-ms.date: 08/11/2017
+ms.date: 08/14/2017
 ---
 
 # Per-user services in Windows 10 and Windows Server 2016
@@ -24,7 +24,7 @@ You can't prevent per-user services from being created, but you can configure th
 
 Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates.
 
-## Per User services
+## Per-user services
 
 Windows 10 and Windows Server 2016 (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
