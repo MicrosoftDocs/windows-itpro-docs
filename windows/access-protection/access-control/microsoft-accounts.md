@@ -14,19 +14,11 @@ ms.pagetype: security
 
 This topic for the IT professional explains how a Microsoft account works to enhance security and privacy for users, and how you can manage this consumer account type in your organization.
 
-Microsoft sites, services, and properties such as Windows Live, MSN, Xbox LIVE, Zune, Windows Phone, and computers running Windows 10, Windows 8.1, Windows 8, and Windows RT use a Microsoft account as a mean of identifying users. Microsoft account is the name for what was previously called Windows Live ID. It has user-defined secrets associated with it, and it consists of a unique email address and a password.
+Microsoft sites, services, and properties, as well as computers running Windows 10, can use a Microsoft account as a mean of identifying a user. Microsoft account was previously called Windows Live ID. It has user-defined secrets, and consists of a unique email address and a password.
 
-There are some benefits and considerations when using Microsoft accounts in the enterprise. For more information, see [Microsoft account in the enterprise](#bkmk-msaccountintheenterprise) later in this topic.
-
-When a user signs in with a Microsoft account, their device is connected to cloud services, and many of the settings, preferences, and apps associated with that user account can roam between devices.
-
-**Note**  
-This content applies to the operating system versions that are designated in the **Applies To** list at the beginning of this topic.
-
- 
+When a user signs in with a Microsoft account, the device is connected to cloud services. Many of the user's settings, preferences, and apps can be shared across devices.
 
 ## <a href="" id="bkmk-benefits"></a>How a Microsoft account works
-
 
 The Microsoft account allows users to sign in to websites that support this service by using a single set of credentials. Users' credentials are validated by a Microsoft account authentication server that is associated with a website. The Windows Store is an example of this association. When new users sign in to websites that are enabled to use Microsoft accounts, they are redirected to the nearest authentication server, which asks for a user name and password. Windows uses the Schannel Security Support Provider to open a Transport Level Security/Secure Sockets Layer (TLS/SSL) connection for this function. Users then have the option to use Credential Manager to store their credentials.
 
@@ -35,19 +27,17 @@ When users sign in to websites that are enabled to use a Microsoft account, a ti
 **Important**  
 Local Windows account functionality has not been removed, and it is still an option to use in managed environments.
 
- 
-
 ### How Microsoft accounts are created
 
-To prevent fraud, the Microsoft system verifies the IP address when a user creates an account. If a user tries to create multiple Microsoft accounts with the same IP address, they are stopped.
+To prevent fraud, the Microsoft system verifies the IP address when a user creates an account. A user who tries to create multiple Microsoft accounts with the same IP address is stopped.
 
-Microsoft accounts are not designed to be created in batches, for example, for a group of domain users within your enterprise.
+Microsoft accounts are not designed to be created in batches, such as for a group of domain users within your enterprise.
 
 There are two methods for creating a Microsoft account:
 
 -   **Use an existing email address**.
 
-    Users are able to use their valid email addresses to sign up for Microsoft accounts. The service turns the requesting user's email address into a Microsoft account. Users can also choose their personal password.
+    Users are able to use their valid email addresses to sign up for Microsoft accounts. The service turns the requesting user's email address into a Microsoft account. Users can also choose their personal passwords.
 
 -   **Sign up for a Microsoft email address**.
 
@@ -118,13 +108,46 @@ Depending on your IT and business models, introducing Microsoft accounts into yo
 
 ### <a href="" id="bkmk-restrictuse"></a>Restrict the use of the Microsoft account
 
-If employees are allowed to join the domain with their personal devices, they might expect to connect to enterprise resources by using their Microsoft accounts. If you want to prevent any use of Microsoft accounts within your enterprise, you can configure the local security policy setting [Accounts: Block Microsoft accounts](/windows/device-security/security-policy-settings/accounts-block-microsoft-accounts). However, this setting can prevent the users from signing in to their Windows devices with their Microsoft accounts (if they had set them up to do so) when they are joined to the domain.
+The following Group Policy settings help control the use of Microsoft accounts in the enterprise:
 
-The default for this setting is **Disabled**, which enables users to use their Microsoft accounts on devices that are joined to your domain. Other options in the setting can:
+- [Block all consumer Microsoft account user authentication](#block-all-consumer-microsoft-account-user-authentication)
+- [Accounts: Block Microsoft accounts](#accounts-block-microsoft-accounts)
 
-1.  Prevent users from creating new Microsoft accounts on a computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
+#### Block all consumer Microsoft account user authentication
 
-2.  Prevent users with an existing Microsoft account from signing in to Windows. Selecting this option might make it impossible for an existing administrator to sign in to a computer and manage the system.
+This setting controls whether users can provide Microsoft accounts for authentication for applications or services.
+
+If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication. 
+This applies both to existing users of a device and new users who may be added. 
+
+However, any application or service that has already authenticated a user will not be affected by enabling this setting until the authentication cache expires. 
+It is recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present.
+
+If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication. 
+By default, this setting is **Disabled**.
+
+This setting does not affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
+
+The path to this setting is:
+
+Computer Configuration\Administrative Templates\Windows Components\Microsoft account
+
+#### Accounts: Block Microsoft accounts
+
+This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. 
+
+There are two options if this setting is enabled:
+
+- **Users can’t add Microsoft accounts** means that existing connected accounts can still sign in to the device (and appear on the Sign in screen). However, users cannot use the **Settings** app to add new connected accounts (or connect local accounts to Microsoft accounts).
+- **Users can’t add or log on with Microsoft accounts** means that users cannot add new connected accounts (or connect local accounts to Microsoft accounts) or use existing connected accounts through **Settings**.
+
+This setting does not affect adding a Microsoft account for application authentication. For example, if this setting is enabled, a user can still provide a Microsoft account for authentication with an application such as **Mail**, but the user cannot use the Microsoft account for single sign-on authentication for other applications or services (in other words, the user will be prompted to authenticate for other applications or services).
+
+By default, this setting is **Not defined**.
+
+The path to this setting is:
+
+Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options
 
 ### <a href="" id="bkmk-cfgconnectedaccounts"></a>Configure connected accounts
 
@@ -134,8 +157,6 @@ Users can disconnect a Microsoft account from their domain account at any time a
 
 **Note**  
 Connecting Microsoft accounts with domain accounts can limit access to some high-privileged tasks in Windows. For example, Task Scheduler will evaluate the connected Microsoft account for access and fail. In these situations, the account owner should disconnect the account.
-
- 
 
 ### <a href="" id="bkmk-provisionaccounts"></a>Provision Microsoft accounts in the enterprise
 
