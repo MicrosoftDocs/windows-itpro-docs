@@ -1,6 +1,6 @@
 ---
-title: Per User services in Windows 10 and Windows Server 2016
-description: Learn about Per User services introduced in Windows 10.
+title: Per-user services in Windows 10 and Windows Server 2016
+description: Learn about per-user services introduced in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -10,23 +10,23 @@ author: lizap
 ms.date: 08/11/2017
 ---
 
-# Per User services in Windows 10 and Windows Server 2016
+# Per-user services in Windows 10 and Windows Server 2016
 
-Per User services are services that are created when a user signs into Windows or Windows Server and are stopped and deleted when that user signs out. These services run in the security context of the user account - this provides better resource management than the previous approach of running these kinds of services in Explorer, associated with a preconfigured account, or as tasks. 
+Per-user services are services that are created when a user signs into Windows or Windows Server and are stopped and deleted when that user signs out. These services run in the security context of the user account - this provides better resource management than the previous approach of running these kinds of services in Explorer, associated with a preconfigured account, or as tasks. 
 
 > [!NOTE]
-> Per User services are only in available in Windows Server if you have installed the Desktop Experience. If you are running a Server Core or Nano Server installation, you won't see these services.
+> Per-user services are only in available in Windows Server if you have installed the Desktop Experience. If you are running a Server Core or Nano Server installation, you won't see these services.
 
-You can't prevent Per User services from being created but you *can* "disable" them by configuring the template service, used in the creation of Per User services, to create these services in a stopped and disabled state. You do this by setting the template service's start value to "disabled."
+You can't prevent per-user services from being created, but you can configure the template service to create them in a stopped and disabled state. You do this by setting the template service's **Startup Type** to **Disabled**.
 
 > [!IMPORTANT]
-> If you change the template service's start value, make sure you carefully test that change prior to rolling it out in your production environment. Because this change requires editing the registry, there could be unforeseen consequences that you need to understand and accept.
+> If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
 
-Use the following information to understand Per User services, disable the template service start value, and manage Per User services through Group Policy and security templates.
+Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates.
 
 ## Per User services
 
-Windows 10 and Windows Server 2016 (with the Desktop Experience) have the following Per User services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
+Windows 10 and Windows Server 2016 (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
 Before you disable any of these services, review the **Description** column in this table to understand the implications, including dependent apps that will no longer work correctly.
 
@@ -39,30 +39,30 @@ Before you disable any of these services, review the **Description** column in t
 | UserDataSvc            | User Data Access                        | Manual             | UnistoreSvc  | Provides apps access to structured user data, including contact info, calendars, and messages. If you stop or disable this service, apps that use this data might not work correctly. |
 | WpnUserService         | Windows Push Notifications User Service | Manual             |              | Hosts Windows notification platform, which provides support for local and push notifications. Supported notifications are tile, toast, and raw.                                        |
 
-## Disable Per User services
+## Disable per-user services
 
-The template service isn't displayed in Services console (services.msc) so you need to edit the registry directly, either with Group Policy or a scripted solution, to disable a Per User service.
+The template service isn't displayed in the Services console (services.msc) so you need to edit the registry directly, either with Group Policy or a scripted solution, to disable a per-user service.
 
 > [!NOTE]
-> Remember, disabling a Per User service simply means that it is created in a stopped and disabled state. When the user signs out, the Per User service is removed.
+> Disabling a per-user service simply means that it is created in a stopped and disabled state. When the user signs out, the per-user service is removed.
 
-You can't manage all of the Per User service templates services using normal Group Policy management methods. Because the Per User services aren't displayed in the Services management console, they're also not displayed in the Group Policy Services policy editor UI. 
+You can't manage all of the per-user service templates services using normal Group Policy management methods. Because the per-user services aren't displayed in the Services management console, they're also not displayed in the Group Policy Services policy editor UI. 
 
-Additionally there are four template services that can't be managed with a security template:
+Additionally, there are four template services that can't be managed with a security template:
 - PimIndexMaintenanceSvc
 - UnistoreSvc
 - UserDataSvc
 - WpnUserService
 
-In light of these restrictions, you can use the following methods to manage Per User services template services:
+In light of these restrictions, you can use the following methods to manage per-user services template services:
 
-- A combination of a security template and a script or Group Policy preference registry policy
-- Group Policy preference for all of the services
+- A combination of a security template and a script or Group Policy preferences registry policy
+- Group Policy preferences for all of the services
 - A script for all of the services
 
 ### Manage template services using a security template
 
-You can manage the CDPUserSvc and OneSyncSvc Per User services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](/windows/device-security/security-policy-settings/administer-security-policy-settings) for more information.
+You can manage the CDPUserSvc and OneSyncSvc per-user services with a [security template](/windows/device-security/security-policy-settings/administer-security-policy-settings#bkmk-sectmpl). See [Administer security policy settings](/windows/device-security/security-policy-settings/administer-security-policy-settings) for more information.
 
 device-security/security-policy-settings/administer-security-policy-settings
 
@@ -78,13 +78,31 @@ Revision=1
 "CDPUserSVC".4,""
 ```
 
+### Manage template services using Group Policy preferences
+
+If a per-user services can't be disabled using a the security template, you can disable it by using Group Policy preferences.
+
+1. On Windows Server domaion controller or Windows 10 computer that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC and press **Enter** to open the **Group Policy Management Console**.
+2. Create a new Group Policy object (GPO) or use an existing GPO.  
+3. Right-click the GPO and click **Edit** to launch the Group Policy object Editor.
+4. Depending on how you want to target the Group Policy, under **Computer configuration** or **User configuration** browse to Preferences\Windows Settings\Registry.
+5. Right-click Registry > New > Registry Item.
+   ![Group Policy preferences disabling per-user services](media/gpp-per-user-services.png) 
+6. Make sure that  HKEY_Local_Machine is selected for Hive and then click the ellipses button next to the Key Path field.
+   ![Choose HKLM](media/gpp-hklm.png)   
+7. Browse to **System\CurrentControlSet\Services\PimIndexMaintenanceSvc**. In the list of values, highlight **Start** and click **Select**.
+   ![Select Start](media/gpp-svc-start.png)   
+8. Change **Value data** from **00000003** to **00000004** and click **OK**. Note setting the Value data to **4** = **Disabled**. 
+   ![Startup Type is Disabled](media/gpp-svc-disabled.png)   
+9. To add the other services that cannot be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
+
 ### Manage template services by modifying the Windows image
 
-If you're using custom images to deploy Windows, you can modify the Start value for the template services as part of the normal imaging process.
+If you're using custom images to deploy Windows, you can modify the Startup Type for the template services as part of the normal imaging process.
 
-### Use a script to manage Per User services
+### Use a script to manage per-user services
 
-You can create a script to change the start setting for the Per User services. Then use Group Policy or another management solution to deploy the script in your environment.
+You can create a script to change the Startup Type for the per-user services. Then use Group Policy or another management solution to deploy the script in your environment.
 
 Sample script using [sc.exe](https://technet.microsoft.com/library/cc990290%28v=ws.11%29.aspx?f=255&MSPPError=-2147217396):
 
@@ -99,11 +117,11 @@ Sample script using the [Set-Service PowerShell cmdlet](https://technet.microsof
 Set-Service <service name> -StartupType Disabled
 ```
 
-## View Per User services in the Services console (services.msc)
+## View per-user services in the Services console (services.msc)
 
-As mentioned you can't view the template services in the Services console, but you can see the user-specific Per User services - they are displayed using the <service name>_LUID format (where LUID is the locally unique identifier).
+As mentioned you can't view the template services in the Services console, but you can see the user-specific per-user services - they are displayed using the <service name>_LUID format (where LUID is the locally unique identifier).
 
-For example, you might see the following Per User services listed in the Services console:
+For example, you might see the following per-user services listed in the Services console:
 
 - CPDUserSVC_443f50
 - ContactData_443f50
