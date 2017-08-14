@@ -10,10 +10,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/04/2017
+ms.date: 08/11/2017
 ---
 
 # What's new in MDM enrollment and management
+
 
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -960,9 +961,17 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
-<td style="vertical-align:top"><p>Here are the changes in Windows 10, version 1709.</p>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709.</p>
 <ul>
-<li>Added Configuration node</li>
+<li>Configuration</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>Provider/_ProviderID_/ConfigInfo</li>
+<li> Provider/_ProviderID_/EnrollmentInfo</li>
 </ul>
 </td></tr>
 <tr class="odd">
@@ -1319,6 +1328,17 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
+<td style="vertical-align:top">[Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md)</td>
+<td style="vertical-align:top"><p>Added new step-by-step guide to enable ADMX-backed policies.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Mobile device enrollment](mobile-device-enrollment.md)</td>
+<td style="vertical-align:top"><p>Added the following statement:</p>
+<ul>
+<li>Devices that are joined to an on-premise Active Directory can enroll into MDM via the Work access page in <strong>Settings</strong>. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.</li>
+</ul>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[CM\_CellularEntries CSP](cm-cellularentries-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the description of the PuposeGroups node to add the GUID for applications. This node is required instead of optional.</p>
 </td></tr>
@@ -1330,6 +1350,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>  1 – Silent mode (encrypt and audit only).</li>
 <li>  2 – Allow override mode (encrypt, prompt and allow overrides, and audit).</li>
 <li>  3 – Hides overrides (encrypt, prompt but hide overrides, and audit).</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[AppLocker CSP](applocker-csp.md)</td>
+<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in [Whitelist examples](applocker-csp.md#whitelist-examples).</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<ul>
+<li>Provider/_ProviderID_/ConfigInfo</li>
+<li> Provider/_ProviderID_/EnrollmentInfo</li>
 </ul>
 </td></tr>
 <tr class="even">

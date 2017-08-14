@@ -6,6 +6,7 @@
 ### [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 ### [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 ## [Understanding ADMX-backed policies](understanding-admx-backed-policies.md)
+## [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md)
 ## [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md)
 ## [Implement server-side support for mobile application management on Windows](implement-server-side-mobile-application-management.md)
 ## [Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)

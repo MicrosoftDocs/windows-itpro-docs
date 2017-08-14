@@ -10,7 +10,7 @@ author: mdsakibMSFT
 
 # Deploy Managed Installer for Device Guard
 
-Creating and maintaining application execution control policies has always been challenging and options for addressing this has been a frequently cited request for customers of AppLocker and Device Guard’s [configurable code integrity (CI)](device-guard-deployment-guide.md). 
+Creating and maintaining application execution control policies has always been challenging, and finding ways to address this issue has been a frequently-cited request for customers of AppLocker and Device Guard [configurable code integrity (CI)](device-guard-deployment-guide.md). 
 This is especially true for enterprises with large, ever changing software catalogs. 
 
 Windows 10, version 1703 (also known as the Windows 10 Creators Update) provides a new option, known as a managed installer, that allows IT administrators to automatically authorize applications deployed and installed by a designated software distribution solution, such as System Center Configuration Manager. 
