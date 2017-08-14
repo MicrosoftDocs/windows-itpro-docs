@@ -60,24 +60,22 @@ Windows Defender ATP supports non-persistent VDI session onboarding. There might
 - Machine name persistence
     - The machine names are typically reused for new sessions. One may ask to have them as a single machine entry while others may prefer to have multiple entries per machine name.
 
-You can onboard VDIs machines using a single entry or multiple entries for each machine. The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
+You can onboard VDI machines using a single entry or multiple entries for each machine. The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
 
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
     a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
 
-    b.  Select **VDI onboarding scripts for non-persistent endpoints**, click **Download package** and save the .zip file.
+    b.  Select **VDI onboarding scripts for non-persistent endpoints** then click **Download package** and save the .zip file.
 
-2. Copy the extracted files from the .zip into `golden/master` image under the path
-path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called WindowsDefenderATPOnboardingPackage containing the file WindowsDefenderATPOnboardingScript.cmd.
+2. Copy the extracted files from the .zip into `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called `WindowsDefenderATPOnboardingPackage` containing the file `WindowsDefenderATPOnboardingScript.cmd`.
 
     >[!NOTE]
     >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer.
 
 3. The following step is only applicable if you're implementing a single entry for each machine: <br>
     **For single entry for each machine**:<br>
-        a. Download the file: [Onboard-NonPersistenMachine.ps1](https://go.microsoft.com/fwlink/p/?linkid=852276 ).<br> [LUBA - DO I STILL NEED THIS STEP?]
-        b. Copy the file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
+        a. From the `WindowsDefenderATPOnboardingPackage`, copy the `Onboard-NonPersistentMachine.ps1` file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
 
     >[!NOTE]
     >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer.
