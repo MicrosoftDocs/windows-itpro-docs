@@ -9,6 +9,8 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 10/05/2017
+ms.author: jdecker
 ---
 
 # Multi-app kiosk XML reference

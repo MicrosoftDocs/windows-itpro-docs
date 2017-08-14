@@ -9,6 +9,8 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 10/05/2017
+ms.author: jdecker
 ---
 
 # Create a Windows 10 kiosk that runs multiple apps
