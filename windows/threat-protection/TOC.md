@@ -147,6 +147,13 @@
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen\windows-defender-smartscreen-available-settings.md)
 ### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen\windows-defender-smartscreen-set-individual-device.md)
 
+##[Windows Defender Application Guard](windows-defender-application-guard\wd-app-guard-overview.md)
+###[System requirements for Windows Defender Application Guard](windows-defender-application-guard\reqs-wd-app-guard.md)
+###[Prepare and install Windows Defender Application Guard](windows-defender-application-guard\install-wd-app-guard.md)
+###[Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard\configure-wd-app-guard.md)
+###[Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard\test-scenarios-wd-app-guard.md)
+###[Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard\faq-wd-app-guard.md)
+
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy](windows-information-protection\overview-create-wip-policy.md)
 #### [Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
