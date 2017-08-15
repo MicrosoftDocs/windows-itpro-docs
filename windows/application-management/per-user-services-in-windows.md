@@ -83,17 +83,29 @@ Revision=1
 If a per-user services can't be disabled using a the security template, you can disable it by using Group Policy preferences.
 
 1. On Windows Server domaion controller or Windows 10 computer that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC and press **Enter** to open the **Group Policy Management Console**.
-2. Create a new Group Policy object (GPO) or use an existing GPO.  
-3. Right-click the GPO and click **Edit** to launch the Group Policy object Editor.
+
+2. Create a new Group Policy Object (GPO) or use an existing GPO.  
+
+3. Right-click the GPO and click **Edit** to launch the Group Policy Object Editor.
+
 4. Depending on how you want to target the Group Policy, under **Computer configuration** or **User configuration** browse to Preferences\Windows Settings\Registry.
-5. Right-click Registry > New > Registry Item.
+
+5. Right-click **Registry** > **New** > **Registry Item**.
+
    ![Group Policy preferences disabling per-user services](media/gpp-per-user-services.png) 
+   
 6. Make sure that  HKEY_Local_Machine is selected for Hive and then click the ellipses button next to the Key Path field.
-   ![Choose HKLM](media/gpp-hklm.png)   
+
+   ![Choose HKLM](media/gpp-hklm.png)  
+    
 7. Browse to **System\CurrentControlSet\Services\PimIndexMaintenanceSvc**. In the list of values, highlight **Start** and click **Select**.
+
    ![Select Start](media/gpp-svc-start.png)   
+   
 8. Change **Value data** from **00000003** to **00000004** and click **OK**. Note setting the Value data to **4** = **Disabled**. 
+
    ![Startup Type is Disabled](media/gpp-svc-disabled.png)   
+   
 9. To add the other services that cannot be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
 
 ### Manage template services by modifying the Windows image
