@@ -233,7 +233,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
       ![Select the USB drive and save the provisioning package](images/suspc_savepackage_insertusb.png)
 
-11. When the provisioning package is ready, you will see the name of the file and you can remove the USB drive. Click **Next** if you're done, or click **Add a USB** to save the same provisioning package to another USB drive.
+11. <a name="suspc_pkgready"></a>When the provisioning package is ready, you will see the name of the file and you can remove the USB drive. Click **Next** if you're done, or click **Add a USB** to save the same provisioning package to another USB drive.
 
   **Figure 9** - Provisioning package is ready
 
@@ -246,7 +246,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
   ![Line up the student PCs and get them ready for setup](images/suspc_runpackage_getpcsready.png)
 
 13. Click **Next**.
-14. In the **Install the package** page, follow the instructions in [Apply the provisioning package to the student PCs](#apply-the-provisioning-package-to-the-student-pcs) to set up the student PCs. 
+14. <a name="suspc_installpkg"></a>In the **Install the package** page, follow the instructions in [Apply the provisioning package to the student PCs](#apply-the-provisioning-package-to-the-student-pcs) to set up the student PCs. 
 
   Select **Create new package** if you need to create a new provisioning package. Otherwise, you can remove the USB drive if you're completely done creating the package.
 

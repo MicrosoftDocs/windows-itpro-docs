@@ -7,11 +7,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 08/10/2017
 ---
 
 # DeviceManageability CSP
 
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The DeviceManageability configuration service provider (CSP) is used retrieve the general information about MDM configuration capabilities on the device. This CSP was added in Windows 10, version 1607.
 
@@ -38,6 +41,8 @@ Added in Windows 10, version 1709. Provider ID of the configuration source.
 
 <a href="" id="capabilities-cspversions"></a>**Provider/_ProviderID_/ConfigInfo**  
 Added in Windows 10, version 1709. Configuration information string value set by the configuration source. Recommended to be used during sync session.
+
+The MDM server can query ConfigInfo to determine the settings of the traditional PC management system. The MDM can also configure ConfigInfo with its own device management information.
 
 Data type is string. Supported operations are Add, Get, Delete, and Replace.
 

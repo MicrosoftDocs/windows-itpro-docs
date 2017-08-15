@@ -10,10 +10,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/10/2017
+ms.date: 08/14/2017
 ---
 
 # What's new in MDM enrollment and management
+
 
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -1327,6 +1328,17 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
+<td style="vertical-align:top">[Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md)</td>
+<td style="vertical-align:top"><p>Added new step-by-step guide to enable ADMX-backed policies.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Mobile device enrollment](mobile-device-enrollment.md)</td>
+<td style="vertical-align:top"><p>Added the following statement:</p>
+<ul>
+<li>Devices that are joined to an on-premise Active Directory can enroll into MDM via the Work access page in <strong>Settings</strong>. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.</li>
+</ul>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[CM\_CellularEntries CSP](cm-cellularentries-csp.md)</td>
 <td style="vertical-align:top"><p>Updated the description of the PuposeGroups node to add the GUID for applications. This node is required instead of optional.</p>
 </td></tr>
@@ -1351,6 +1363,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Provider/_ProviderID_/ConfigInfo</li>
 <li> Provider/_ProviderID_/EnrollmentInfo</li>
 </ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top">Added information to the ADMX-backed policies.
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1382,6 +1398,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
 </ul>
 <p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
+<p>Added links to the additional [ADMX-backed BitLocker policies](policy-csp-bitlocker.md).</p>
 </td></tr>
 </tbody>
 </table>
