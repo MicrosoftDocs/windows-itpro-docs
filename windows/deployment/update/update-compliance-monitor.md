@@ -33,6 +33,8 @@ See the following topics in this guide for detailed information about configurin
 - [Get started with Update Compliance](update-compliance-get-started.md): How to add Update Compliance to your environment.
 - [Using Update Compliance](update-compliance-using.md): How to begin using Update Compliance.
 
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/1cmF5c_R8I4" frameborder="0" allowfullscreen></iframe>
+
 An overview of the processes used by the Update Compliance solution is provided below.
 
 ## Update Compliance architecture
