@@ -200,6 +200,7 @@
 #### [ErrorReporting](policy-csp-errorreporting.md)
 #### [EventLogService](policy-csp-eventlogservice.md)
 #### [Experience](policy-csp-experience.md)
+#### [ExploitGuard](policy-csp-exploitguard.md)
 #### [Games](policy-csp-games.md)
 #### [InternetExplorer](policy-csp-internetexplorer.md)
 #### [Kerberos](policy-csp-kerberos.md)
