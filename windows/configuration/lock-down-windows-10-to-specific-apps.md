@@ -515,10 +515,22 @@ In the multi-app mode, the touch keyboard will be automatically triggered when t
 
 ## Considerations for mixed-reality devices
 
-*There are some Mixed Reality specific bits we wanted to include. For example, the IT Admin needs to include the Mixed Reality Portal as an allowed app if they want to include Mixed Reality apps in kiosk mode.*
 
+With the advent of [mixed-reality devices (video link)](https://www.youtube.com/watch?v=u0jqNioU2Lo), you might want to create a kiosk that can run mixed-reality apps. 
 
+To create a multi-app kiosk that can run mixed reality apps, you must include the following apps in the [AllowedApps list](#allowedapps):
 
+- <App AppUserModelId="MixedRealityLearning_cw5n1h2txyewy!MixedRealityLearning" />  
+- <App AppUserModelId="HoloShell_cw5n1h2txyewy!HoloShell" />  
+- <App AppUserModelId="Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy!App" /> 
+
+These are in addition to any mixed reality apps that you allow.
+
+**Before your kiosk user signs in:** An admin user must sign in to the PC, connect a mixed reality device, and complete the guided setup for the Mixed Reality Portal. The first time that the Mixed Reality Portal is set up, some files and content are downloaded. A kiosk user would not have permissions to download and so their setup of the Mixed Reality Portal would fail.
+
+After the admin has completed setup, the kiosk account can sign in and repeat the setup. The admin user may want to complete the kiosk user setup before providing the PC to employees or customers.
+
+There is a difference between the mixed reality experiences for a kiosk user and other users. Typically, when a user connects a mixed reality device, they begin in the [Mixed Reality home](https://developer.microsoft.com/windows/mixed-reality/navigating_the_windows_mixed_reality_home). The Mixed Reality home is a shell that runs in "silent" mode when the PC is configured as a kiosk. When a kiosk user connects a mixed reality device, they will see only a blank display in the device, and will not have access to the features and functionality available in the home. To run a mixed reality app, the kiosk user must launch the app from the PC Start screen.
 
 
 ## Policies set by multi-app kiosk configuration
