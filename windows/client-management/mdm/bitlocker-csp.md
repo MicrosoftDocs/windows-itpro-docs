@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/06/2017
+ms.date: 08/14/2017
 ---
 
 # BitLocker CSP
@@ -91,8 +91,38 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <p style="margin-left: 20px">Data type is integer. Supported operations are Add, Get, Replace, and Delete.</p>
 
-<a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**  
-<p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive types. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)" (Policy EncryptionMethodWithXts_Name).</p>
+<a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType** 
+<p style="margin-left: 20px">Allows you to set the default encrytion method for each of the different drive types. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name: *Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)*</li>
+<li>GP name: *EncryptionMethodWithXts_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to configure the algorithm and cipher strength used by BitLocker Drive Encryption. This setting is applied when you turn on BitLocker. Changing the encryption method has no effect if the drive is already encrypted, or if encryption is in progress.</p>
 
@@ -140,7 +170,37 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**  
-<p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Require additional authentication at startup" (ConfigureAdvancedStartup_Name ).</p>
+<p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Require additional authentication at startup".</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table> 
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name: *Require additional authentication at startup*</li>
+<li>GP name: *ConfigureAdvancedStartup_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption/Operating System Drives*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to configure whether BitLocker requires additional authentication each time the computer starts and whether you are using BitLocker with or without a Trusted Platform Module (TPM). This setting is applied when you turn on BitLocker.</p>
 
@@ -204,7 +264,37 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
-<p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Configure minimum PIN length for startup" (GP MinimumPINLength_Name).</p>
+<p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Configure minimum PIN length for startup".</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name:*Configure minimum PIN length for startup*</li>
+<li>GP name: *MinimumPINLength_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption/Operating System Drives*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 6 digits and can have a maximum length of 20 digits.</p>
 
@@ -239,6 +329,36 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage**  
 <p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-boot recovery message and URL" (PrebootRecoveryInfo_Name).</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name: *Configure pre-boot recovery message and URL*</li>
+<li>GP name: *PrebootRecoveryInfo_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption/Operating System Drives*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting lets you configure the entire recovery message or replace the existing URL that are displayed on the pre-boot key recovery screen when the OS drive is locked.
 </p>
@@ -290,6 +410,36 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**  
 <p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected operating system drives can be recovered" (OSRecoveryUsage_Name).</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name: *Choose how BitLocker-protected operating system drives can be recovered*</li>
+<li>GP name: *OSRecoveryUsage_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption/Operating System Drives*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to control how BitLocker-protected operating system drives are recovered in the absence of the required startup key information. This setting is applied when you turn on BitLocker.</p>
 
@@ -357,7 +507,37 @@ The following diagram shows the BitLocker configuration service provider in tree
 <p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**  
-<p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" (FDVRecoveryUsage_Name).</p>
+<p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" ().</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name: *Choose how BitLocker-protected fixed drives can be recovered*</li>
+<li>GP name: *FDVRecoveryUsage_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption/Fixed Drives*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This setting is applied when you turn on BitLocker.</p>
 
@@ -427,6 +607,36 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**  
 <p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to fixed drives not protected by BitLocker" (FDVDenyWriteAccess_Name).</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name: *Deny write access to fixed drives not protected by BitLocker*</li>
+<li>GP name: *FDVDenyWriteAccess_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption/Fixed Drives*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer.</p>
 
@@ -459,6 +669,36 @@ The following diagram shows the BitLocker configuration service provider in tree
 
 <a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**  
 <p style="margin-left: 20px">This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to removable drives not protected by BitLocker" (RDVDenyWriteAccess_Name).</p>
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+<p style="margin-left: 20px">ADMX Info:</p>
+<ul>
+<li>GP English name: *Deny write access to removable drives not protected by BitLocker*</li>
+<li>GP name: *RDVDenyWriteAccess_Name*</li>
+<li>GP path: *Windows Components/Bitlocker Drive Encryption/Removeable Drives*</li>
+<li>GP ADMX file name: *VolumeEncryption.admx*</li>
+</ul>
+
+> [!Tip]  
+> For a step-by-step guide to enable ADMX-backed policies, see [Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md). For additional information, see [Understanding ADMX-backed policies](understanding-admx-backed-policies.md).
 
 <p style="margin-left: 20px">This setting configures whether BitLocker protection is required for a computer to be able to write data to a removable data drive.</p>
 
@@ -500,6 +740,31 @@ The following diagram shows the BitLocker configuration service provider in tree
                          </Replace>
 ```
 
+<a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
+
+<p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines.</p>
+
+<p style="margin-left: 20px">The following list shows the supported values:</p>
+
+-   0 – Disables the warning prompt.
+-   1 (default) – Warning prompt allowed.
+
+<p style="margin-left: 20px">Admin should set the value to 0 to disable the warning. If you want to disable this policy use the following SyncML:</p>
+
+``` syntax
+<Replace>
+	<CmdID>110</CmdID>
+	<Item>
+		<Target>
+			<LocURI>./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption</LocURI>
+		</Target>
+		<Meta>
+			<Format xmlns="syncml:metinf">int</Format>
+		</Meta>
+		<Data>0</Data>
+	</Item>
+</Replace>
+```
 
 ### SyncML example
 
@@ -663,30 +928,4 @@ The following example is provided to show proper format and should not be taken 
       <Final/>
     </SyncBody>
 </SyncML>
-```
-
-<a href="" id="allowwarningforotherdiskencryption"></a>**AllowWarningForOtherDiskEncryption**  
-
-<p style="margin-left: 20px">Allows the Admin to disable the warning prompt for other disk encryption on the user machines.</p>
-
-<p style="margin-left: 20px">The following list shows the supported values:</p>
-
--   0 – Disables the warning prompt.
--   1 (default) – Warning prompt allowed.
-
-<p style="margin-left: 20px">Admin should set the value to 0 to disable the warning. If you want to disable this policy use the following SyncML:</p>
-
-``` syntax
-<Replace>
-	<CmdID>110</CmdID>
-	<Item>
-		<Target>
-			<LocURI>./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryption</LocURI>
-		</Target>
-		<Meta>
-			<Format xmlns="syncml:metinf">int</Format>
-		</Meta>
-		<Data>0</Data>
-	</Item>
-</Replace>
 ```

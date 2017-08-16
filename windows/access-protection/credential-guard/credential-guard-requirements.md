@@ -35,6 +35,19 @@ The Virtualization-based security requires:
 - CPU virtualization extensions plus extended page tables
 - Windows hypervisor
 
+### Credential Guard deployment in virtual machines 
+
+Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. When Credential Guard is deployed on a VM, secrets are protected from attacks inside the VM. Credential Guard does not provide additional protection from privileged system attacks originating from the host.
+
+#### Requirements for running Credential Guard in Hyper-V virtual machines
+
+- The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
+- The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and be running at least Windows Server 2016 or Windows 10. 
+
+For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/)
+
+For information about Remote Credential Guard hardware and software requirements, see [Remote Credential Guard requirements](https://docs.microsoft.com/en-us/windows/access-protection/remote-credential-guard#hardware-and-software-requirements)
+
 ## Application requirements
 
 When Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 

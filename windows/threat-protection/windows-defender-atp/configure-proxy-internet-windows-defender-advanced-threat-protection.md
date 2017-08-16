@@ -82,8 +82,8 @@ If a proxy or firewall is blocking all traffic by default and allowing only spec
 
 Service location | .Microsoft.com DNS record
 :---|:---
- US |```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```us.vortex-win.data.microsoft.com```<br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com```
-Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br> ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
+ US |```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com```<br> ```us.vortex-win.data.microsoft.com```<br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com```
+Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>  ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
 
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
 
