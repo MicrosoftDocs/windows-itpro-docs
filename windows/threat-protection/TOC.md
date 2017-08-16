@@ -152,7 +152,7 @@
 #### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
 #### [Evaluate Exploit Protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 #### [Enable Exploit Protection](windows-defender-exploit-guard\enable-exploit-protection.md)
-#### [Configure Exploit Protection](windows-defender-exploit-guard\configure-exploit-protection.md)
+#### [Customize Exploit Protection](windows-defender-exploit-guard\customize-exploit-protection.md)
 ##### [Configure system-wide settings for Exploit Protection](windows-defender-exploit-guard\configure-system-exploit-protection.md)
 ##### [Individually configure apps for Exploit Protection](windows-defender-exploit-guard\configure-app-exploit-protection.md)
 ### [Reduce attack surfaces with Windows Defender Exploit Guard](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
