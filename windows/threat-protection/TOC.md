@@ -143,6 +143,35 @@
 #### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
 #### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
 
+
+
+## [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
+### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
+#### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+### [Protect devices from exploits with Windows Defender Exploit Guard](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
+#### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
+#### [Evaluate Exploit Protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+#### [Enable Exploit Protection](windows-defender-exploit-guard\enable-exploit-protection.md)
+#### [Configure Exploit Protection](windows-defender-exploit-guard\configure-exploit-protection.md)
+##### [Configure system-wide settings for Exploit Protection](windows-defender-exploit-guard\configure-system-exploit-protection.md)
+##### [Individually configure apps for Exploit Protection](windows-defender-exploit-guard\configure-app-exploit-protection.md)
+### [Reduce attack surfaces with Windows Defender Exploit Guard](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
+#### [Evaluate Attack Surface Reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+#### [Enable Attack Surface Reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+#### [Customize Attack Surface Reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+### [Protect your network with Windows Defender Exploit Guard](windows-defender-exploit-guard\network-protection-exploit-guard.md)
+#### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
+#### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+### [Protect important folders with controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
+#### [Evaluate Controlled Folder Access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+#### [Customize Controlled Folder Access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
+#### [Enable Controlled Folder Access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+
+
+
+
+
+
 ## [Windows Defender SmartScreen](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen\windows-defender-smartscreen-available-settings.md)
 ### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen\windows-defender-smartscreen-set-individual-device.md)
