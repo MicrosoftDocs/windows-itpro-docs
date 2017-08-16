@@ -513,10 +513,10 @@ In the multi-app mode, the touch keyboard will be automatically triggered when t
 
 
 
-## Considerations for mixed-reality devices
+## Considerations for mixed reality devices
 
 
-With the advent of [mixed-reality devices (video link)](https://www.youtube.com/watch?v=u0jqNioU2Lo), you might want to create a kiosk that can run mixed-reality apps. 
+With the advent of [mixed reality devices (video link)](https://www.youtube.com/watch?v=u0jqNioU2Lo), you might want to create a kiosk that can run mixed reality apps. 
 
 To create a multi-app kiosk that can run mixed reality apps, you must include the following apps in the [AllowedApps list](#allowedapps):
 
