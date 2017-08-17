@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 **Applies to**
 -   Windows 10
 
-Learn about managing applications in Windows 10 and Windows 10 Mobile clients.
+Learn about managing applications in Window 10 and Windows 10 Mobile clients.
 
 
 | Topic | Description |

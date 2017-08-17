@@ -1,15 +1,13 @@
 ---
-title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 for IT Pros)
-description: You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode.
-ms.assetid: 2bbc7017-622e-4baa-8981-c0bbda10e9df
-ms.prod: ie11
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
-ms.sitesec: library
+description: You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode.
 author: eross-msft
-ms.author: lizross
-ms.date: 08/11/2017
-ms.localizationpriority: low
+ms.prod: ie11
+ms.assetid: 2bbc7017-622e-4baa-8981-c0bbda10e9df
+title: Check for a new Enterprise Mode site list xml file (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
 
 
@@ -25,7 +23,7 @@ ms.localizationpriority: low
 
 You can have centralized control over Enterprise Mode by creating a single, global XML site list that includes the list of websites to render using Enterprise Mode. You can add and remove sites from your XML list as frequently as you want, changing which sites should render in Enterprise Mode for your employees. For information about turning on Enterprise Mode and using site lists, see [Turn on Enterprise Mode and use a site list](turn-on-enterprise-mode-and-use-a-site-list.md).
 
-The information in this topic only covers HTTPS protocol. We strongly recommend that you use HTTPS protocol instead of file protocol due to increased performance.
+The information in this topic only covers HTTP protocol. We strongly recommend that you use HTTP protocol instead of file protocol due to increased performance.
 
 **How Internet Explorer 11 looks for an updated site list**
 

@@ -1,20 +1,13 @@
 ---
-title: Turn on Enterprise Mode and use a site list (Internet Explorer 11 for IT Pros)
-description: How to turn on Enterprise Mode and specify a site list.
-ms.assetid: 800e9c5a-57a6-4d61-a38a-4cb972d833e1
-ms.prod: ie11
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
-ms.sitesec: library
+description: How to turn on Enterprise Mode and specify a site list.
 author: eross-msft
-ms.author: lizross
-ms.date: 08/11/2017
-ms.localizationpriority: low
-
-
-
-
-
+ms.prod: ie11
+ms.assetid: 800e9c5a-57a6-4d61-a38a-4cb972d833e1
+title: Turn on Enterprise Mode and use a site list (Internet Explorer 11 for IT Pros)
+ms.sitesec: library
 ---
 
 
@@ -30,8 +23,8 @@ ms.localizationpriority: low
 
 Before you can use a site list with Enterprise Mode, you need to turn the functionality on and set up the system for centralized control. By allowing centralized control, you can create one global list of websites that render using Enterprise Mode. Approximately 65 seconds after Internet Explorer 11 starts, it looks for a properly formatted site list. If a new site list if found, with a different version number than the active list, IE11 loads and uses the newer version. After the initial check, IE11 won’t look for an updated list again until you restart the browser.
 
->[!NOTE]
->We recommend that you store and download your website list from a secure web server (https://), to help protect against data tampering. After the list is downloaded, it's stored locally on your employees' computers so if the centralized file location is unavailable, they can still use Enterprise Mode.
+**Note**<br>
+We recommend that you store and download your website list from a secure web sever (https://), to help protect against data tampering. After the list is downloaded, it's stored locally on your employee’s computers so if the centralized file location is unavailable, they can still use Enterprise Mode.
 
  **To turn on Enterprise Mode using Group Policy**
 
@@ -52,7 +45,7 @@ Turning this setting on also requires you to create and store a site list. For m
 
     ![enterprise mode with site list in the registry](images/ie-emie-registrysitelist.png)
 
-    -   **HTTPS location**: `"SiteList"="https://localhost:8080/sites.xml"`
+    -   **HTTP location**: `"SiteList"="http://localhost:8080/sites.xml"`
 
     -   **Local network:** `"SiteList"="\\network\shares\sites.xml"`
 

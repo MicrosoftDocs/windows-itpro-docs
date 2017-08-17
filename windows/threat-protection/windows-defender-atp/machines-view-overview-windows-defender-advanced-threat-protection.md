@@ -26,9 +26,9 @@ The **Machines list** shows a list of the machines in your network, the domain o
 
 Use the Machines list in these main scenarios:
 
-- **During onboarding**<br>
+- **During onboarding**</br>
   During the onboarding process, the **Machines list** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
-- **Day-to-day work** <br>
+- **Day-to-day work**
   The **Machines list** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
 
 ## Sort, filter, and download the list of machines from the Machines list

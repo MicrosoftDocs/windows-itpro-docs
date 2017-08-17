@@ -47,15 +47,12 @@ Use the following table to compare different security options for Remote Desktop
 
 ## Hardware and software requirements
 
-To use Remote Credential Guard, the Remote Desktop client and server must meet the following requirements: 
+The Remote Desktop client and server must meet the following requirements in order to use Remote Credential Guard:
 
-- In order to connect using credentials other than signed-in credentials, the Remote Desktop client device must be running at least Windows 10, version 1703.
-
-> [!NOTE]
-> Remote Desktop client devices running earlier versions, at minimum Windows 10 version 1607, only support signed-in credentials, so the client device must also be joined to an Active Directory domain. Both Remote Desktop client and server must either be joined to the same domain, or the Remote Desktop server can be joined to a domain that has a trust relationship to the client device's domain.
-
-- For Remote Credential Guard to be supported, the user must  authenticate to the remote host using Kerberos authentication
-- The remote host must be running at least Windows 10 version 1607, or Windows Server 2016.
+- They must be joined to an Active Directory domain
+    - Both devices must either joined to the same domain or the Remote Desktop server must be joined to a domain with a trust relationship to the client device's domain.
+- They must use Kerberos authentication.
+- They must be running at least Windows 10, version 1607 or Windows Server 2016.
 - The Remote Desktop classic Windows app is required. The Remote Desktop Universal Windows Platform app doesn't support Remote Credential Guard.
 
 ## Enable Remote Credential Guard

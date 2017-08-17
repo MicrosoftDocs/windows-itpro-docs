@@ -100,6 +100,15 @@ You can also enable Credential Guard by using the [Device Guard and Credential G
 DG_Readiness_Tool_v3.2.ps1 -Enable -AutoReboot
 ```
 
+### Credential Guard deployment in virtual machines
+
+Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. When Credential Guard is deployed on a VM, secrets are protected from attacks inside the VM. Credential Guard does not provide additional protection from privileged system attacks originating from the host.
+
+#### Requirements for running Credential Guard in Hyper-V virtual machines
+
+- The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
+- The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and running at least Windows Server 2016 or Windows 10. 
+
 ### Review Credential Guard performance
 
 **Is Credential Guard running?**

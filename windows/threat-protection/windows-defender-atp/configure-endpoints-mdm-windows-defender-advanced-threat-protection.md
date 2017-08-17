@@ -124,44 +124,30 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
   ![Image of policy creation in Azure](images/atp-azure-intune-create-profile.png)
 
-6. Type a name, description and choose **Windows 10 and later** as the Platform and **Custom** as the Profile type.
+4. Type a name, description and choose **Windows 10 and later** as the Platform and **Windows Defender ATP (Windows 10 Desktop)** as the Profile type.
 
-  ![Image of naming a policy](images/atp-intune-custom.png)
+  ![Image of naming a policy](images/atp-azure-intune-create-policy-configure.png)
 
 7. Click **Settings** > **Configure**.
 
-  ![Image of settings](images/atp-intune-configure.png)
+  ![Image of settings](images/atp-azure-intune-settings-configure.png)
 
-8. Under Custom OMA-URI Settings, click **Add**.
+8. Click the folder icon and select the WindowsDefenderATP.onboarding file you extracted earlier. Configure whether you want to allow sample collection from endpoints for [Deep Analysis](investigate-files-windows-defender-advanced-threat-protection.md) by choosing **All**, or disable this feature by choosing **None**. When complete, click **OK**.
 
-  ![Image of configuration settings](images/atp-custom-oma-uri.png)
+  ![Image of configuration settings](images/atp-azure-intune-configure.png)
 
-9. Enter the following values, then click **OK**.
+9. Click **Create**.
 
-  ![Image of profile creation](images/atp-oma-uri-values.png)
+  ![Image of profile creation](images/atp-azure-intune-create.png)
 
-  - **Name**: Type a name for the setting.
-  - **Description**: Type a description for the setting.
-  - **OMA-URI**: _./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding_
-  - **Value**: Copy and paste the contents of the WindowsDefenderATP.onboarding file you downloaded.
+10. Search for and select the Group you want to apply the Configuration Policy to, then click **Select**.
 
-10. Save the settings by clicking **OK**.
-  
-11. Click **Create**.
+  ![Image of select groups to apply configuration policy](images/atp-azure-intune-select-group.png)
 
-  ![Image of the policy being created](images/atp-intune-create-policy.png)
+11. Click **Save** to finish deploying the Configuration Policy.
 
-12. To deploy the Profile, click **Assignments**. 
+  ![Image of the policy being saved](images/atp-azure-intune-save-policy.png)
 
-  ![Image of groups](images/atp-intune-assignments.png)
-
-13. Search for and select the Group you want to apply the Configuration Profile to, then click **Select**.
-
-  ![Image of groups](images/atp-intune-group.png)
-
-14. Click **Save** to finish deploying the Configuration Profile.
-
-  ![Image of deployment](images/atp-intune-save-deployment.png)
 
 ### Offboard and monitor endpoints
 

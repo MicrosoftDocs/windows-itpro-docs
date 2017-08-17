@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 07/14/2017
 ---
 
 # Policy CSP - RemoteManagement
@@ -58,7 +58,6 @@ ms.date: 08/09/2017
 ADMX Info:  
 -   GP english name: *Allow Basic authentication*
 -   GP name: *AllowBasic_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -102,7 +101,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Allow Basic authentication*
 -   GP name: *AllowBasic_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -146,7 +144,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Allow CredSSP authentication*
 -   GP name: *AllowCredSSP_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -190,7 +187,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Allow CredSSP authentication*
 -   GP name: *AllowCredSSP_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -234,7 +230,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Allow remote server management through WinRM*
 -   GP name: *AllowAutoConfig*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -278,7 +273,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Allow unencrypted traffic*
 -   GP name: *AllowUnencrypted_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -322,7 +316,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Allow unencrypted traffic*
 -   GP name: *AllowUnencrypted_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -366,7 +359,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Disallow Digest authentication*
 -   GP name: *DisallowDigest*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -410,7 +402,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Disallow Negotiate authentication*
 -   GP name: *DisallowNegotiate_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -454,7 +445,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Disallow Negotiate authentication*
 -   GP name: *DisallowNegotiate_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -498,7 +488,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Disallow WinRM from storing RunAs credentials*
 -   GP name: *DisableRunAs*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -542,7 +531,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Specify channel binding token hardening level*
 -   GP name: *CBTHardeningLevel_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -586,7 +574,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Trusted Hosts*
 -   GP name: *TrustedHosts*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -630,7 +617,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Turn On Compatibility HTTP Listener*
 -   GP name: *HttpCompatibilityListener*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->
@@ -674,7 +660,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Turn On Compatibility HTTPS Listener*
 -   GP name: *HttpsCompatibilityListener*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
 
 <!--EndADMX-->

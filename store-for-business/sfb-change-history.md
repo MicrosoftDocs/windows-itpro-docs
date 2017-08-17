@@ -18,13 +18,6 @@ ms.localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-## July 2017
-
-| New or changed topic | Description |
-| --- | --- |
-| [Microsoft Store for Business and Education PowerShell module - preview](microsoft-store-for-business-education-powershell-module.md) | New |
-
-
 ## June 2017
 | New or changed topic | Description |
 | -------------------- | ----------- |

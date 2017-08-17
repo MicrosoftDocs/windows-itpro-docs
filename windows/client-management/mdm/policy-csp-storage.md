@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 07/14/2017
 ---
 
 # Policy CSP - Storage
@@ -64,7 +64,6 @@ If you disable or do not configure this policy setting, Windows will activate un
 ADMX Info:  
 -   GP english name: *Do not allow Windows to activate Enhanced Storage devices*
 -   GP name: *TCGSecurityActivationDisabled*
--   GP path: *System/Enhanced Storage Access*
 -   GP ADMX file name: *enhancedstorage.admx*
 
 <!--EndADMX-->

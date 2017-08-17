@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 07/14/2017
 ---
 
 # Policy CSP - Autoplay
@@ -64,7 +64,6 @@ If you disable or do not configure this policy setting, AutoPlay is enabled for 
 ADMX Info:  
 -   GP english name: *Disallow Autoplay for non-volume devices*
 -   GP name: *NoAutoplayfornonVolume*
--   GP path: *Windows Components/AutoPlay Policies*
 -   GP ADMX file name: *AutoPlay.admx*
 
 <!--EndADMX-->
@@ -123,7 +122,6 @@ If you disable or not configure this policy setting, Windows Vista or later will
 ADMX Info:  
 -   GP english name: *Set the default behavior for AutoRun*
 -   GP name: *NoAutorun*
--   GP path: *Windows Components/AutoPlay Policies*
 -   GP ADMX file name: *AutoPlay.admx*
 
 <!--EndADMX-->
@@ -183,7 +181,6 @@ Note: This policy setting appears in both the Computer Configuration and User Co
 ADMX Info:  
 -   GP english name: *Turn off Autoplay*
 -   GP name: *Autorun*
--   GP path: *Windows Components/AutoPlay Policies*
 -   GP ADMX file name: *AutoPlay.admx*
 
 <!--EndADMX-->

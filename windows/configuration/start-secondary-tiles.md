@@ -72,7 +72,6 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
     - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
     - Open `C:\Users\<username>\AppData\Local\Packages\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\LocalState` and replace those images with your customized images
-    
     >[!TIP]
     >A quick method for getting appropriately sized images for each tile size is to upload your image at [BuildMyPinnedSite](http://www.buildmypinnedsite.com/) and then download the resized tile images.
         

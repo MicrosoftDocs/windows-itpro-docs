@@ -33,13 +33,25 @@ The following known issues have been fixed by servicing releases made available 
     - Windows 10 Version 1511: [KB4015219 (OS Build 10586.873)](https://support.microsoft.com/help/4015219)
     - Windows 10 Version 1507: [KB4015221 (OS Build 10240.17354)](https://support.microsoft.com/help/4015221)
 
-## Known issues involving third-party applications
 
-The following issue affects the Java GSS API. See the following Oracle bug database article: 
 
--	[JDK-8161921: Windows 10 Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
 
-When Credential Guard is enabled on Windows 10, the Java GSS API will not authenticate. This is expected behavior because Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 The following issue affects Cisco AnyConnect Secure Mobility Client:

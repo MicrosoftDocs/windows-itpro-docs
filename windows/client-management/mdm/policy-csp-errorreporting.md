@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 07/14/2017
 ---
 
 # Policy CSP - ErrorReporting
@@ -123,7 +123,6 @@ If you disable or do not configure this policy setting, the Turn off Windows Err
 ADMX Info:  
 -   GP english name: *Disable Windows Error Reporting*
 -   GP name: *WerDisable_2*
--   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
@@ -177,7 +176,6 @@ See also the Configure Error Reporting policy setting.
 ADMX Info:  
 -   GP english name: *Display Error Notification*
 -   GP name: *PCH_ShowUI*
--   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
@@ -227,7 +225,6 @@ If you disable or do not configure this policy setting, then consent policy sett
 ADMX Info:  
 -   GP english name: *Do not send additional data*
 -   GP name: *WerNoSecondLevelData_2*
--   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
@@ -277,7 +274,6 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 ADMX Info:  
 -   GP english name: *Prevent display of the user interface for critical errors*
 -   GP name: *WerDoNotShowUI*
--   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->

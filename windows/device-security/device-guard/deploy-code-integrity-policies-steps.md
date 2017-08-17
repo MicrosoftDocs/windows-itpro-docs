@@ -46,7 +46,6 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - mshta.exe
 - ntsd.exe
 - rcsi.exe
-- SyncAppVPublishingServer.exe
 - system.management.automation.dll
 - windbg.exe
 
@@ -65,7 +64,6 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Matt Nelson | @enigma0x3| 
 |Oddvar Moe |@Oddvarmoe|
 |Alex Ionescu | @aionescu|
-|Nick Landers | @monoxgas|
 
 <br />
 
@@ -118,7 +116,6 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny  ID="ID_DENY_LXSS"          FriendlyName="LxssManager.dll"    FileName="LxssManager.dll" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_BASH"          FriendlyName="bash.exe"           FileName="bash.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_FSI"           FriendlyName="fsi.exe"            FileName="fsi.exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_APPVPUBSRV"    FriendlyName="SyncAppVPublishingServer.exe" FileName="SyncAppVPublishingServer.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_FSI_ANYCPU"    FriendlyName="fsiAnyCpu.exe"      FileName="fsiAnyCpu.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_MSHTA"         FriendlyName="mshta.exe"          FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_SMA"           FriendlyName="System.Management.Automation.dll" FileName="System.Management.Automation.dll" MinimumFileVersion = "10.0.16215.999" />
@@ -187,7 +184,6 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_BASH"/>
           <FileRuleRef RuleID="ID_DENY_FSI"/>
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU"/>
-          <FileRuleRef RuleID="ID_DENY_APPVPUBSRV"/>
           <FileRuleRef RuleID="ID_DENY_MSHTA"/>
           <FileRuleRef RuleID="ID_DENY_SMA"/>
           <FileRuleRef RuleID="ID_DENY_D_1" />

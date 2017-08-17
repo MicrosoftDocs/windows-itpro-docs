@@ -231,7 +231,7 @@ The value is the number of seconds of battery life remaining when the device is 
 Supported operation is Get.
 
 <a href="" id="devicestatus-domainname"></a>**DeviceStatus/DomainName**  
-Added in Windows, version 1709. Returns the fully qualified domain name of the device (if any). If the device is not domain-joined, it returns an empty string.
+Added in Windows, version 1709. Returns the fully qualified domain name of the device (if any).
 
 Supported operation is Get.
 

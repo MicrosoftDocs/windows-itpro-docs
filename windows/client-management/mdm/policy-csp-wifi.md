@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 07/14/2017
 ---
 
 # Policy CSP - Wifi
@@ -22,6 +22,29 @@ ms.date: 08/09/2017
 <!--StartPolicy-->
 <a href="" id="wifi-allowwifihotspotreporting"></a>**WiFi/AllowWiFiHotSpotReporting**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy has been deprecated.
 

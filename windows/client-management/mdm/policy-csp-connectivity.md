@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 07/14/2017
 ---
 
 # Policy CSP - Connectivity
@@ -521,7 +521,6 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 ADMX Info:  
 -   GP english name: *Hardened UNC Paths*
 -   GP name: *Pol_HardenedPaths*
--   GP path: *Network/Network Provider*
 -   GP ADMX file name: *networkprovider.admx*
 
 <!--EndADMX-->
@@ -565,7 +564,6 @@ ADMX Info:
 ADMX Info:  
 -   GP english name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
 -   GP name: *NC_AllowNetBridge_NLA*
--   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
 
 <!--EndADMX-->
