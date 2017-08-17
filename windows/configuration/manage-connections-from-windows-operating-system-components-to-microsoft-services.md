@@ -1690,6 +1690,9 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
 
 - **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
 
+    > [!NOTE]  
+    > This must be done within 15 minutes after Windows 10 is installed. Alternatively, you can create an image with this setting.
+
     -or-
 
 -   Create a new REG\_DWORD registry setting in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
