@@ -1862,7 +1862,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon">LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</a>
   </dd>
   <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-tbuseraccountcontrol-runalladministratorsinadminapprovalmoded" id="localpoliciessecurityoptions-tbuseraccountcontrol-runalladministratorsinadminapprovalmoded">LocalPoliciesSecurityOptions/TBUserAccountControl_RunAllAdministratorsInAdminApprovalModeD</a>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode">LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation">LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</a>
