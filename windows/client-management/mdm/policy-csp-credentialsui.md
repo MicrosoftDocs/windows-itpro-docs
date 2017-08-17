@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/09/2017
 ---
 
 # Policy CSP - CredentialsUI
@@ -68,6 +68,7 @@ The policy applies to all Windows components and applications that use the Windo
 ADMX Info:  
 -   GP english name: *Do not display the password reveal button*
 -   GP name: *DisablePasswordReveal*
+-   GP path: *Windows Components/Credential User Interface*
 -   GP ADMX file name: *credui.admx*
 
 <!--EndADMX-->
@@ -117,6 +118,7 @@ If you disable this policy setting, users will always be required to type a user
 ADMX Info:  
 -   GP english name: *Enumerate administrator accounts on elevation*
 -   GP name: *EnumerateAdministrators*
+-   GP path: *Windows Components/Credential User Interface*
 -   GP ADMX file name: *credui.admx*
 
 <!--EndADMX-->

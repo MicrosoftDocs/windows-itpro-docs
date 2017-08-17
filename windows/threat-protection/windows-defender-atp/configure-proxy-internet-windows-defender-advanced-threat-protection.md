@@ -80,10 +80,10 @@ For example: netsh winhttp set proxy 10.0.0.6:8080
 ## Enable access to Windows Defender ATP service URLs in the proxy server
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service in port 80 and 443:
 
-Primary Domain Controller | .Microsoft.com DNS record
+Service location | .Microsoft.com DNS record
 :---|:---
- US |```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```us.vortex-win.data.microsoft.com```<br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com```
-Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br> ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
+ US |```*.blob.core.windows.net``` <br>```crl.microsoft.com```<br> ```ctldl.windowsupdate.com```<br> ```us.vortex-win.data.microsoft.com```<br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com```
+Europe |```*.blob.core.windows.net```<br>```crl.microsoft.com```<br>```ctldl.windowsupdate.com```<br>  ```eu.vortex-win.data.microsoft.com```<br>```winatp-gw-neu.microsoft.com```<br> ```winatp-gw-weu.microsoft.com```<br>
 
  If a proxy or firewall is blocking anonymous traffic, as Windows Defender ATP  sensor is connecting from system context, make sure anonymous traffic is permitted in the above listed URLs.
 
