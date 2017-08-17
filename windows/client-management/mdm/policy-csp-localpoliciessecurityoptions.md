@@ -677,7 +677,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="localpoliciessecurityoptions-tbuseraccountcontrol-runalladministratorsinadminapprovalmoded"></a>**LocalPoliciesSecurityOptions/TBUserAccountControl_RunAllAdministratorsInAdminApprovalModeD**  
+<a href="" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode"></a>**LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode**  
 
 <!--StartSKU-->
 <table>

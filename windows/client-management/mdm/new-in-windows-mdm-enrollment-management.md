@@ -678,12 +678,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/ActiveHoursMaxRange</li>
 <li>Update/AutoRestartDeadlinePeriodInDays</li>
 <li>Update/AutoRestartNotificationSchedule</li>
-<li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
 <li>Update/DetectionFrequency</li>
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
-<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/EngagedRestartTransitionSchedule</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/PauseFeatureUpdatesStartTime</li>
@@ -2006,11 +2005,10 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 <li>Update/ActiveHoursMaxRange</li>
 <li>Update/AutoRestartNotificationSchedule</li>
-<li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
-<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/EngagedRestartTransitionSchedule</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
 </ul>
