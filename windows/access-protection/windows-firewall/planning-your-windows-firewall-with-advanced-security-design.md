@@ -1,6 +1,6 @@
 ---
-title: Planning Your Windows Firewall with Advanced Security Design (Windows 10)
-description: Planning Your Windows Firewall with Advanced Security Design
+title: Planning Your Windows Defender Firewall with Advanced Security Design (Windows 10)
+description: Planning Your Windows Defender Firewall with Advanced Security Design
 ms.assetid: f3ac3d49-ef4c-4f3c-a16c-e107284e169f
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Planning Your Windows Firewall with Advanced Security Design
+# Planning Your Windows Defender Firewall with Advanced Security Design
 
 **Applies to**
 -   Windows 10
@@ -75,7 +75,6 @@ If you plan to include domain or server isolation in your deployment, we recomme
 When you are ready to examine the options for using certificate-based authentication, see the [Planning Certificate-based Authentication](planning-certificate-based-authentication.md) section.
 
 ## Documenting your design
-
 
 After you finish selecting the designs that you will use, you must assign each of your devices to the appropriate isolation zone and document the assignment for use by the deployment team.
 

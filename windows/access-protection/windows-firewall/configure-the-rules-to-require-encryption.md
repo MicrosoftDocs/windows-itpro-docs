@@ -19,7 +19,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 **To modify an authentication request rule to also require encryption**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Connection Security Rules**.
 
@@ -27,7 +27,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 4.  On the **Name** page, rename the connection security rule, edit the description to reflect the new use for the rule, and then click **OK**.
 
-5.  In the navigation pane, right-click **Windows Firewall with Advanced Security – LDAP://CN={***guid***}**, and then click **Properties**.
+5.  In the navigation pane, right-click **Windows Defender Firewall – LDAP://CN={***guid***}**, and then click **Properties**.
 
 6.  Click the **IPsec Settings** tab.
 
@@ -42,11 +42,11 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 10. If you need to add an algorithm combination, click **Add**, and then select the combination of encryption and integrity algorithms. The options are described in [Configure Data Protection (Quick Mode) Settings](configure-data-protection-quick-mode-settings.md).
 
     **Note**  
-    Not all of the algorithms available in Windows 8 or Windows Server 2012 and later can be selected in the Windows Firewall with Advanced Security user interface. To select them, you can use Windows PowerShell.
+    Not all of the algorithms available in Windows 8 or Windows Server 2012 and later can be selected in the Windows Defender Firewall with Advanced Security user interface. To select them, you can use Windows PowerShell.
 
-    Quick mode settings can also be configured on a per-rule basis, but not by using the Windows Firewall with Advanced Security user interface. Instead, you can create or modify the rules by using Windows PowerShell.
+    Quick mode settings can also be configured on a per-rule basis, but not by using the Windows Defender Firewall user interface. Instead, you can create or modify the rules by using Windows PowerShell.
 
-    For more info, see [Windows Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
+    For more info, see [Windows Defender Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
 
 11. During negotiation, algorithm combinations are proposed in the order shown in the list. Make sure that the more secure combinations are at the top of the list so that the negotiating devices select the most secure combination that they can jointly support.
 
