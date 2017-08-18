@@ -18,7 +18,6 @@
 ### [Use the Windows Defender ATP portal](windows-defender-atp\use-windows-defender-advanced-threat-protection.md)
 #### [View the Security operations dashboard](windows-defender-atp\dashboard-windows-defender-advanced-threat-protection.md)
 #### [View the Security analytics dashboard](windows-defender-atp\security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
-##### [Antivirus optimization](windows-defender-atp\optimize-security-windows-defender-advanced-threat-protection.md)
 #### [View and organize the Alerts queue](windows-defender-atp\alerts-queue-windows-defender-advanced-threat-protection.md)
 #### [Investigate alerts](windows-defender-atp\investigate-alerts-windows-defender-advanced-threat-protection.md)
 ##### [Alert process tree](windows-defender-atp\investigate-alerts-windows-defender-advanced-threat-protection.md#alert-process-tree)
