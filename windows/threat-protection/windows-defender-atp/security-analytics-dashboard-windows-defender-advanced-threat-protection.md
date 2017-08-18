@@ -54,7 +54,7 @@ Improve your organizational security score by taking the recommended improvement
 
 Click on each segment to see the recommended optimizations.
 
-![Improvement oppportunities](images/atp-security-improvements.png)
+![Improvement opportunities](images/atp-security-improvements.png)
 
 The numbers beside the green triangle icon on each recommended action represents the number of points you can gain by taking the action. When added together, the total number makes up the nominator in the fraction for each segment in the Improvement opportunities tile.
 
@@ -69,7 +69,7 @@ You can take the following actions to increase the overall security score of you
 For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md). 
 
 ### Windows Defender Antivirus optimization
-This tile provides a list of specific list of actions you can impliment on endpoints with Windows Defender Antivirus to improve the security in your organization. Each action shows the exact number of endpoints where you can apply the action on.
+This tile provides a list of specific list of actions you can implement on endpoints with Windows Defender Antivirus to improve the security in your organization. Each action shows the exact number of endpoints where you can apply the action on.
 
 You can take the following actions to increase the overall security score of your organization:
 - Fix antivirus reporting
