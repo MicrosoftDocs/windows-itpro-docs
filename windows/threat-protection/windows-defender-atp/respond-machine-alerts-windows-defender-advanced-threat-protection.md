@@ -39,10 +39,10 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
 
 1.	Select the machine that you want to isolate. You can select or search for a machine from any of the following views:
 
-  -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
-  -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines list** - Select the machine name from the list of machines.
-  -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  - **Machines list** - Select the machine name from the list of machines.
+  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
 2.	Open the **Actions** menu and select **Isolate machine**.
 
