@@ -114,7 +114,7 @@ You can take the following actions to increase the overall security score of you
 - Turn on managed mode
 
 
-For more information, see [Windows Defender Application Guard overview](.../windows-defender-application-guard/wd-app-guard-overview.md).
+For more information, see [Windows Defender Application Guard overview](../windows-defender-application-guard/wd-app-guard-overview.md).
 
 
 ### SmartScreen optimization
