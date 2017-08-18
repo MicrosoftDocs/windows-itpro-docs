@@ -23,7 +23,7 @@ This section includes the following topics:
 - [Deploy Managed Installer for Windows Defender Device Guard](deploy-managed-installer-for-device-guard.md)
 
 To increase the protection for devices that meet certain hardware requirements, you can use virtualization-based security (VBS) with your code integrity policies.
-- For requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-device-guard) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
+- For requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
 - For steps, see [Deploy Windows Defender Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md).
 
 ## Related topics

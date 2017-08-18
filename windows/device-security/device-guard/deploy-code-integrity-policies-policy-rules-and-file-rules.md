@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows Server 2016
 
 Code integrity policies provide control over a computer running Windows 10 by specifying whether a driver or application is trusted and can be run. For an overview of code integrity, see:
-- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats) in "Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies."
+- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats) in "Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies."
 - [Code integrity policy formats and signing](requirements-and-deployment-planning-guidelines-for-device-guard.md#code-integrity-policy-formats-and-signing) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
 
 If you already understand the basics of code integrity policy and want procedures for creating, auditing, and merging code integrity policies, see [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md).
@@ -113,5 +113,5 @@ They could also choose to create a catalog that captures information about the u
 
 ## Related topics
 
-- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats)
+- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats)
 - [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)

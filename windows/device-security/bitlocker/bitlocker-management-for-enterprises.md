@@ -50,7 +50,7 @@ Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been p
  <a id="dom_join"></a>
 ## Recommendations for domain-joined computers
 
-Windows continues to be the focus for new features and improvements for built-in encryption management, for example, automatically enabling encryption on devices that support InstantGo beginning with Windows 8.1. For more information, see  [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#device-encryption).
+Windows continues to be the focus for new features and improvements for built-in encryption management, for example, automatically enabling encryption on devices that support InstantGo beginning with Windows 8.1. For more information, see  [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption).
 
 Companies that image their own computers using Microsoft System Center 2012 Configuration Manager SP1 (SCCM) or later can use an existing task sequence to [pre-provision BitLocker](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](https://technet.microsoft.com/library/hh846237.aspx#BKMK_EnableBitLocker). This can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use SCCM to pre-set any desired [BitLocker Group Policy](https://technet.microsoft.com/library/ee706521(v=ws.10).aspx).
 
@@ -143,7 +143,7 @@ PS C:\> Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpace
 
 [Microsoft BitLocker Administration and Management (MBAM)](https://technet.microsoft.com/windows/hh826072.aspx)
 
-[Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#device-encryption) 
+[Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) 
 
 [System Center 2012 Configuration Manager SP1](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) *(Pre-provision BitLocker task sequence)*
 
