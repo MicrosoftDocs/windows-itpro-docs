@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Platform Selection page in the IEAK 11 Customization Wizard to pick the specs for your employee devices that will get the install package.
 author: eross-msft

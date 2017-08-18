@@ -7,11 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 07/07/2017
 ---
 
 # VPNv2 DDF file
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **VPNv2** configuration service provider.
 
@@ -20,7 +22,7 @@ You can download the DDF files from the links below:
 - [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
-The XML below is the current version for this CSP.
+The XML below is for Windows 10, version 1709.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -33,7 +35,7 @@ The XML below is the current version for this CSP.
     <VerDTD>1.2</VerDTD>
     <Node>
         <NodeName>VPNv2</NodeName>
-        <Path>./Vendor/MSFT</Path>
+        <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
             <AccessType>
                 <Get />
@@ -48,7 +50,7 @@ The XML below is the current version for this CSP.
                 <Permanent />
             </Scope>
             <DFType>
-				<MIME>com.microsoft/1.2/MDM/VPNv2</MIME>
+                <MIME>com.microsoft/1.3/MDM/VPNv2</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -310,7 +312,7 @@ The XML below is the current version for this CSP.
                                 <Delete />
                                 <Replace />
                             </AccessType>
-                            <Description>                          
+                            <Description>
                               False = This Route will direct traffic over the VPN
                               True = This Route will direct traffic over the physical interface
                               By default, this value is false.
@@ -938,6 +940,43 @@ The XML below is the current version for this CSP.
 
                         A lockdown profile must be deleted before any other
                         profiles can be added, removed, or connected.
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>DeviceTunnel</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        False = This is not a Device Tunnel profile and it is the default value.
+                        True = This is a Device Tunnel profile.
+
+                        If turned on a device tunnel profile does four things.
+                        First, it automatically becomes an always on profile.
+                        Second, it does not require the presence or logging in
+                        of any user to the machine in order for it to connect.
+                        Third, no other Device Tunnel profile maybe be present on the
+                        Same machine.
+
+                        A device tunnel profile must be deleted before another device tunnel
+                        profile can be added, removed, or connected.
                     </Description>
                     <DFFormat>
                         <bool />
@@ -1996,6 +2035,8 @@ The XML below is the current version for this CSP.
                       -- AES128
                       -- AES192
                       -- AES256
+                      -- AES_GCM_128
+                      -- AES_GCM_256
                     </Description>
                     <DFFormat>
                       <chr />
@@ -2180,7 +2221,7 @@ The XML below is the current version for this CSP.
                 <Permanent />
             </Scope>
             <DFType>
-                <DDFName></DDFName>
+                <MIME>com.microsoft/1.3/MDM/VPNv2</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -4087,6 +4128,8 @@ The XML below is the current version for this CSP.
                       -- AES128
                       -- AES192
                       -- AES256
+                      -- AES_GCM_128
+                      -- AES_GCM_256
                     </Description>
                     <DFFormat>
                       <chr />
@@ -4256,13 +4299,3 @@ The XML below is the current version for this CSP.
     </Node>
 </MgmtTree>
 ```
-
- 
-
- 
-
-
-
-
-
-

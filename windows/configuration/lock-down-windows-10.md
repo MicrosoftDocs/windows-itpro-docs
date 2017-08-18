@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Lock down Windows 10

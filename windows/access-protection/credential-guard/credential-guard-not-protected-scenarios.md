@@ -1,46 +1,46 @@
 ﻿---
-title: Credential Guard protection limits (Windows 10)
-description: Scenarios not protected by Credential Guard in Windows 10.
+title: Windows Defender Credential Guard protection limits (Windows 10)
+description: Scenarios not protected by Windows Defender Credential Guard in Windows 10.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
-# Credential Guard protection limits
+# Windows Defender Credential Guard protection limits
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-Prefer video? See [Credentials protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
-in the Deep Dive into Credential Guard video series.
+Prefer video? See [Credentials protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+in the Deep Dive into Windows Defender Credential Guard video series.
 
-Some ways to store credentials are not protected by Credential Guard, including:
+Some ways to store credentials are not protected by Windows Defender Credential Guard, including:
 
 -   Software that manages credentials outside of Windows feature protection
 -   Local accounts and Microsoft Accounts
--   Credential Guard does not protect the Active Directory database running on Windows Server 2016 domain controllers. It also does not protect credential input pipelines, such as Windows Server 2016 servers running Remote Desktop Gateway. If you're using a Windows Server 2016 server as a client PC, it will get the same protection as it would when running Windows 10 Enterprise.
+-   Windows Defender Credential Guard does not protect the Active Directory database running on Windows Server 2016 domain controllers. It also does not protect credential input pipelines, such as Windows Server 2016 servers running Remote Desktop Gateway. If you're using a Windows Server 2016 server as a client PC, it will get the same protection as it would when running Windows 10 Enterprise.
 -   Key loggers
 -   Physical attacks
 -   Does not prevent an attacker with malware on the PC from using the privileges associated with any credential. We recommend using dedicated PCs for high value accounts, such as IT Pros and users with access to high value assets in your organization.
 -   Third-party security packages
 -   Digest and CredSSP credentials
-    -   When Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
+    -   When Windows Defender Credential Guard is enabled, neither Digest nor CredSSP have access to users' logon credentials. This implies no Single Sign-On use for these protocols.
 -   Supplied credentials for NTLM authentication are not protected. If a user is prompted for and enters credentials for NTLM authentication, these credentials are vulnerable to be read from LSASS memory. Note that these same credentials are vulnerable to key loggers as well.- 
--  When Credential Guard is deployed on a VM, Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
+-  When Windows Defender Credential Guard is deployed on a VM, Windows Defender Credential Guard protects secrets from attacks inside the VM. However, it does not provide additional protection from privileged system attacks originating from the host.
 -  Windows logon cached password verifiers (commonly called "cached credentials")
 do not qualify as credentials because they cannot be presented to another computer for authentication, and can only be used locally to verify credentials. They are stored in the registry on the local computer and provide validation for credentials when a domain-joined computer cannot connect to AD DS during user logon. These “cached logons”, or more specifically, cached domain account information, can be managed using the security policy setting **Interactive logon: Number of previous logons to cache** if a domain controller is not available.
 
 ## Additional mitigations
 
-Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
+Windows Defender Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Windows Defender Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
 
 ### Restricting domain users to specific domain-joined devices
 
-Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on using devices that have Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
+Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on using devices that have Windows Defender Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Windows Defender Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
 
 #### Kerberos armoring
 
@@ -50,11 +50,11 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 
 -   Users need to be in domains that are running Windows Server 2012 R2 or higher
 -   All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
--   All the devices with Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+-   All the devices with Windows Defender Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
 
 #### Protecting domain-joined device secrets
 
-Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
+Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
 Domain-joined device certificate authentication has the following requirements:
 -   Devices' accounts are in Windows Server 2012 domain functional level or higher.
@@ -84,7 +84,7 @@ For example, let's say you wanted to use the High Assurance policy only on these
 8.  Under **Issuance Policies**, click**High Assurance**.
 9.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box.
 
-Then on the devices that are running Credential Guard, enroll the devices using the certificate you just created.
+Then on the devices that are running Windows Defender Credential Guard, enroll the devices using the certificate you just created.
 
 **Enrolling devices in a certificate**
 
@@ -636,6 +636,6 @@ write-host $tmp -Foreground Red
 
 ## See also
 
-**Deep Dive into Credential Guard: Related videos**
+**Deep Dive into Windows Defender Credential Guard: Related videos**
 
-[Protecting privileged users with Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
+[Protecting privileged users with Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)

@@ -5,7 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
+ms.author: daniha
 ---
 
 # Update Windows 10 in the enterprise

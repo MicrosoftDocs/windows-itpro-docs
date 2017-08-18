@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Use out-of-date ActiveX control blocking to help you know when IE prevents a webpage from loading outdated ActiveX controls and to update the outdated control, so that it’s safer to use.

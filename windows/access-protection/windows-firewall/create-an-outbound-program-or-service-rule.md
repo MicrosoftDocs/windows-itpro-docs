@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-By default, Windows Firewall with Advanced Security allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic for a specified program or service, use the Windows Firewall with Advanced Security node in the Group Policy Management console to create firewall rules. This type of rule prevents the program from sending any outbound network traffic on any port.
+By default, Windows Defender Firewall allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic for a specified program or service, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create firewall rules. This type of rule prevents the program from sending any outbound network traffic on any port.
 
 **Administrative credentials**
 
@@ -23,7 +23,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 To create an outbound firewall rule for a program or service
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Outbound Rules**.
 

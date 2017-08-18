@@ -10,7 +10,7 @@ ms.pagetype: surfacehub, store
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Install apps on your Microsoft Surface Hub

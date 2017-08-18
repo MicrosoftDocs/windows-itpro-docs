@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: eross-msft
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Test scenario 1 - Sign-in to Azure AD and use Cortana to manage the notebook

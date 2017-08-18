@@ -41,11 +41,11 @@ After you have deployed your GPOs and added some test devices to the groups, con
 
 -   Examine the GPOs that are both assigned to and filtered from the device. Run the **gpresult** tool at a command prompt.
 
--   Examine the rules deployed to the device. Open the Windows Firewall with Advanced Security MMC snap-in, expand the **Monitoring** node, and then expand the **Firewall** and **Connection Security** nodes.
+-   Examine the rules deployed to the device. Open the Windows Defender Firewall MMC snap-in, expand the **Monitoring** node, and then expand the **Firewall** and **Connection Security** nodes.
 
--   Verify that communications are authenticated. Open the Windows Firewall with Advanced Security MMC snap-in, expand the **Monitoring** node, expand the **Security Associations** node, and then click **Main Mode**.
+-   Verify that communications are authenticated. Open the Windows Defender Firewall MMC snap-in, expand the **Monitoring** node, expand the **Security Associations** node, and then click **Main Mode**.
 
--   Verify that communications are encrypted when the devices require it. Open the Windows Firewall with Advanced Security MMC snap-in, expand the **Monitoring** node, expand the **Security Associations** node, and then select **Quick Mode**. Encrypted connections display a value other than **None** in the **ESP Confidentiality** column.
+-   Verify that communications are encrypted when the devices require it. Open the Windows Defender Firewall MMC snap-in, expand the **Monitoring** node, expand the **Security Associations** node, and then select **Quick Mode**. Encrypted connections display a value other than **None** in the **ESP Confidentiality** column.
 
 -   Verify that your programs are unaffected. Run them and confirm that they still work as expected.
 

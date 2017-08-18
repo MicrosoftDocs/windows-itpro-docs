@@ -32,3 +32,23 @@ AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins
 >**Note:**  When using Group Policy, for the rule deletion to take effect on computers within the domain, the GPO must be distributed or refreshed.
 
 When this procedure is performed on the local device, the AppLocker policy takes effect immediately.
+
+**To clear AppLocker policies on a single system or remote systems**
+Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML file that contains the following contents:
+
+    <AppLockerPolicy Version="1">
+      <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
+      <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+    </AppLockerPolicy>
+
+To use the Set-AppLockerPolicy cmdlet, first import the Applocker modules:
+    
+    PS C:\Users\Administrator> import-module AppLocker
+
+We will create a file (for example, clear.xml), place it in the same directory where we are executing our cmdlet, and add the preceding XML contents. Then run the following command:
+    
+    C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
+
+This will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.

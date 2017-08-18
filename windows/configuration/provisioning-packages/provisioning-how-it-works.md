@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # How provisioning works in Windows 10

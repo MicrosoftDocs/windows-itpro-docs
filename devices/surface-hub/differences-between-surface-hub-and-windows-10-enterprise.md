@@ -9,7 +9,7 @@ ms.pagetype: surfacehub
 author: isaiahng
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Differences between Surface Hub and Windows 10 Enterprise

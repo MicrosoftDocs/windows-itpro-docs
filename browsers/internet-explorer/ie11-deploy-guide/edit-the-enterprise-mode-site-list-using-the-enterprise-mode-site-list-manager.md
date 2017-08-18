@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can use Internet Explorer 11 and the Enterprise Mode Site List Manager to change whether page rendering should use Enterprise Mode or the default Internet Explorer browser configuration. You can also add, remove, or delete associated comments.

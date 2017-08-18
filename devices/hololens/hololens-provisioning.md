@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Configure HoloLens using a provisioning package test

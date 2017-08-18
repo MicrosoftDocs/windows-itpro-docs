@@ -9,6 +9,7 @@
       "build_output_subfolder": "mdop-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -25,6 +26,7 @@
       "build_output_subfolder": "windows-manage-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -41,6 +43,7 @@
       "build_output_subfolder": "smb-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -57,6 +60,7 @@
       "build_output_subfolder": "surface-hub-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -73,6 +77,7 @@
       "build_output_subfolder": "microsoft-edge-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -89,6 +94,7 @@
       "build_output_subfolder": "win-development-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -105,6 +111,7 @@
       "build_output_subfolder": "windows-plan-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -121,6 +128,7 @@
       "build_output_subfolder": "win-client-management-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -137,6 +145,7 @@
       "build_output_subfolder": "win-threat-protection-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -153,6 +162,7 @@
       "build_output_subfolder": "win-app-management-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -169,6 +179,7 @@
       "build_output_subfolder": "windows-deploy-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -185,6 +196,7 @@
       "build_output_subfolder": "keep-secure-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -201,6 +213,7 @@
       "build_output_subfolder": "surface-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -217,6 +230,7 @@
       "build_output_subfolder": "windows-hub-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -233,6 +247,7 @@
       "build_output_subfolder": "internet-explorer-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -249,6 +264,7 @@
       "build_output_subfolder": "bcs-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -265,6 +281,7 @@
       "build_output_subfolder": "win-access-protection-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -281,6 +298,7 @@
       "build_output_subfolder": "win-device-security-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -297,6 +315,7 @@
       "build_output_subfolder": "education-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -313,6 +332,7 @@
       "build_output_subfolder": "store-for-business-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -329,6 +349,7 @@
       "build_output_subfolder": "win-configuration-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -345,6 +366,7 @@
       "build_output_subfolder": "windows-update-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -361,6 +383,7 @@
       "build_output_subfolder": "win-whats-new-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -377,6 +400,7 @@
       "build_output_subfolder": "itpro-hololens-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -393,7 +417,25 @@
       "build_output_subfolder": "windows-configure-VSTS",
       "locale": "en-us",
       "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "microsoft-365",
+      "build_source_folder": "microsoft-365",
+      "build_output_subfolder": "microsoft-365",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_groups": [],
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -433,10 +475,6 @@
       "Pdf"
     ],
     "master": [
-      "Publish",
-      "Pdf"
-    ],
-    "msesdemo": [
       "Publish",
       "Pdf"
     ]

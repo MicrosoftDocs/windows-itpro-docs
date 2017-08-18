@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Protect your enterprise data using Windows Information Protection (WIP)

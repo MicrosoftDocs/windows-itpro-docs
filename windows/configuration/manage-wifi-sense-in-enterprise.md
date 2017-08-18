@@ -8,7 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
 author: eross-msft
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Manage Wi-Fi Sense in your company

@@ -6,9 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 ms.pagetype: edu
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 08/07/2017
 ---
 
 # Take a Test app technical reference 
@@ -49,6 +50,18 @@ When Take a Test is running, the following MDM policies are applied to lock down
 | AllowInput Panel | Disables the onscreen keyboard which will disable auto-fill | 0 |
 | AllowCortana | Disables Cortana functionality | 0 |
 | AllowAutoupdate | Disables Windows Update from starting OS updates | 5 |
+
+## Group Policy
+
+To ensure Take a Test activates correctly, make sure the following Group Policy are not configured on the PC.
+
+| Functionality | Group Policy path | Policy |
+| --- | --- | --- |
+| Require Ctrl+Alt+Del | Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options | Interactive logon: Do not Require CTRL+ALT+DEL |
+| Disable lock screen notifications | Computer Configuration\Administrative Templates\System\Logon | Turn off app notifications on the lock screen |
+| Disable lock screen | Computer Configuration\Administrative Templates\Control Panel\Personalization | Do not display the lock screen |
+| Disable UAC | Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options | User Account Control: Run all administrators in Admin Approval Mode |
+| Disable local workstation | User Configuration\Administrative Templates\System\Ctrl+Alt+Del Options | Remove Lock Computer |
 
 ## Allowed functionality
 
