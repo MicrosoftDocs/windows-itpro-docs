@@ -68,19 +68,19 @@ You can take the following actions to increase the overall security score of you
 
 For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md). 
 
-### Windows Defendert Antivirus optimization
-This tile provides a list of specifict actions you can impliment on endpoints with Windows Defender Antivirus to improve the security on your organization.Each action shows the exact number of endpoints where you can apply the action on.
+### Windows Defender Antivirus optimization
+This tile provides a list of specific list of actions you can impliment on endpoints with Windows Defender Antivirus to improve the security in your organization. Each action shows the exact number of endpoints where you can apply the action on.
 
 You can take the following actions to increase the overall security score of your organization:
 - Fix antivirus reporting
 - Turn on antivirus
 - Update antivirus definitions
 - Turn on cloud-based protection
-- Turn on real-time protectiong
+- Turn on real-time protection
 - Turn on PUA protection
 - Check partial reporting
 
-For more information, see [Optimize Windows Defender Antivirus](https://go.microsoft.com/fwlink/p/?linkid=851288).
+For more information, see [Configure Windows Defender Antivirus](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md).
 
 
 ### OS security updates optimization
@@ -88,7 +88,7 @@ This tile shows you the exact number of machines that require the latest securit
  
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
-- Use the lates Windows Insider preview builds
+- Use the latest Windows Insider preview builds
 
 
 ### Exploit guard optimization
