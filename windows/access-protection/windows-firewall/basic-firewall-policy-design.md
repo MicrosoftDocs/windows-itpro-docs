@@ -35,15 +35,15 @@ Many network administrators do not want to tackle the difficult task of determin
 
 With few exceptions, the firewall can be enabled on all configurations. Therefore, we recommended that you enable the firewall on every device in your organization. This includes servers in your perimeter network, on mobile and remote clients that connect to the network, and on all servers and clients in your internal network.
 
->**Caution:**  Stopping the service associated with Windows Firewall with Advanced Security is not supported by Microsoft.
+>**Caution:**  Stopping the service associated with Windows Defender Firewall with Advanced Security is not supported by Microsoft.
 
-By default, in new installations, Windows Firewall is turned on in Windows Server 2012, Windows 8, and later.
+By default, in new installations, Windows Defender Firewall with Advanced Security is turned on in Windows Server 2012, Windows 8, and later.
 
-If you turn off the Windows Firewall with Advanced Security service you lose other benefits provided by the service, such as the ability to use IPsec connection security rules, Windows Service Hardening, and network protection from forms of attacks that use network fingerprinting.
+If you turn off the Windows Defender Firewall service you lose other benefits provided by the service, such as the ability to use IPsec connection security rules, Windows Service Hardening, and network protection from forms of attacks that use network fingerprinting.
 
-Compatible third-party firewall software can programmatically disable only the parts of Windows Firewall with Advanced Security that might need to be disabled for compatibility. This is the recommended approach for third-party firewalls to coexist with the Windows Firewall; third-party party firewalls that comply with this recommendation have the certified logo from Microsoft. 
+Compatible third-party firewall software can programmatically disable only the parts of Windows Defender Firewall that might need to be disabled for compatibility. This is the recommended approach for third-party firewalls to coexist with the Windows Defender Firewall; third-party party firewalls that comply with this recommendation have the certified logo from Microsoft. 
 
-An organization typically uses this design as a first step toward a more comprehensive Windows Firewall with Advanced Security design that adds server isolation and domain isolation.
+An organization typically uses this design as a first step toward a more comprehensive Windows Defender Firewall design that adds server isolation and domain isolation.
 
 After implementing this design, you will have centralized management of the firewall rules applied to all devices that are running Windows in your organization.
 
@@ -57,7 +57,7 @@ For more information about this design:
 
 -   To learn more about this design, see [Firewall Policy Design Example](firewall-policy-design-example.md).
 
--   Before completing the design, gather the information described in [Designing a Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
+-   Before completing the design, gather the information described in [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
 
 -   To help you make the decisions required in this design, see [Planning Settings for a Basic Firewall Policy](planning-settings-for-a-basic-firewall-policy.md).
 

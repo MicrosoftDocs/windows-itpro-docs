@@ -55,7 +55,7 @@ For more info about this design:
 
 -   To learn more about this design, see the [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md).
 
--   Before completing the design, gather the info described in [Designing a Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
+-   Before completing the design, gather the info described in [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
 
 -   To help you make the decisions required in this design, see [Planning Domain Isolation Zones](planning-domain-isolation-zones.md) and [Planning Group Policy Deployment for Your Isolation Zones](planning-group-policy-deployment-for-your-isolation-zones.md).
 
