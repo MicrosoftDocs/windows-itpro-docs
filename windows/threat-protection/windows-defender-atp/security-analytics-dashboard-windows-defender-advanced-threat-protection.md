@@ -28,6 +28,7 @@ The **Security analytics dashboard** displays a snapshot of:
 - Security coverage
 - Improvement opportunities
 
+![Security analytics dashboard](images/atp-security-analytics-dashboard.png)
 
 ## Organizational security score
 The organization security score is reflective of the average score of all the Windows Defender security control properties that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
