@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: You can pin websites to the Windows 8.1 taskbar for quick access using the Microsoft Deployment Toolkit (MDT) 2013.
 author: eross-msft

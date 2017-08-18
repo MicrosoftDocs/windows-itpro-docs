@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: The Internet Explorer 11 Enterprise Mode site list lets you specify document modes for specific websites, helping you fix compatibility issues without changing a single line of code on the site.

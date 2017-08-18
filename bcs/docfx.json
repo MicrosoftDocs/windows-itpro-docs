@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/**.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -19,7 +20,9 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.svg",
+          "**/*.jpg",
+          "**/*.json"
         ],
         "exclude": [
           "**/obj/**",
@@ -30,6 +33,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+    "breadcrumb_path": "/microsoft-365-business/breadcrumb/toc.json",
 		"_op_documentIdPathDepotMapping": {
 			"./": {
 			  "depot_name": "TechNet.bcs"

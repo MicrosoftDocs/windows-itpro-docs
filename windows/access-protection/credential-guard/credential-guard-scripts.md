@@ -1,15 +1,15 @@
 ---
-title: Scripts for Certificate Issuance Policies in Credential Guard (Windows 10)
-description: Scripts listed in this topic for obtaining the available issuance policies on the certificate authority for Credential Guard on Windows 10.
+title: Scripts for Certificate Issuance Policies in Windows Defender Credential Guard (Windows 10)
+description: Scripts listed in this topic for obtaining the available issuance policies on the certificate authority for Windows Defender Credential Guard on Windows 10.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
-# Credential Guard: Scripts for Certificate Authority Issuance Policies
+# Windows Defender Credential Guard: Scripts for Certificate Authority Issuance Policies
 
 
 Here is a list of scripts mentioned in this topic.

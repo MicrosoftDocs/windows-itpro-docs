@@ -10,7 +10,7 @@ ms.pagetype: surfacehub, security
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Password management (Surface Hub)

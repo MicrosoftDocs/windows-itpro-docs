@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: A list of steps to follow before you start to create your custom browser installation packages.
 author: eross-msft

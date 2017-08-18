@@ -9,8 +9,8 @@ ms.pagetype: surfacehub
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
-localizationpriority: medium
+ms.date: 08/17/2017
+ms.localizationpriority: medium
 ---
 
 # Accessibility (Surface Hub)
@@ -24,13 +24,23 @@ The full list of accessibility settings are available to IT admins in the **Sett
 
 | Accessibility feature | Default settings  |
 | --------------------- | ----------------- |
-| Narrator              | Off               |
 | Magnifier             | Off               |
 | High contrast         | No theme selected |
 | Closed captions       | Defaults selected for Font and Background and window |
 | Keyboard              | **On-screen Keyboard**, **Sticky Keys**, **Toggle Keys**, and **Filter Keys** are all off. |
 | Mouse                 | Defaults selected for **Pointer size**, **Pointer color** and **Mouse keys**. |
 | Other options         | Defaults selected for **Visual options** and **Touch feedback**. |
+
+The accessibility feature Narrator is not available in the **Settings** app. By default, Narrator is turned off. To change the default settings for Narrator, perform the following steps using a keyboard and mouse.
+
+1. Dismiss the Welcome screen.
+2. Open **Quick Actions** > **Ease of Access** from the status bar.
+
+    ![Screenshot of Ease of Access tile](images/ease-of-access.png)
+    
+3. Turn Narrator on.
+4. Click **Task Switcher**.
+5. Select **Narrator Settings** from Task Switcher. You can now edit the default Narrator settings.
 
 Additionally, these accessibility features and apps are returned to default settings when users press [End session](finishing-your-surface-hub-meeting.md):
 - Narrator

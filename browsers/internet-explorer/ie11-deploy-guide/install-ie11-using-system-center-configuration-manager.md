@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: How to install the Internet Explorer 11 update using System Center 2012 R2 Configuration Manager

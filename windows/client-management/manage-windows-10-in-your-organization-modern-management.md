@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Manage Windows 10 in your organization - transitioning to modern management

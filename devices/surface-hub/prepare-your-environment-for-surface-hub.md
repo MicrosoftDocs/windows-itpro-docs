@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
-localizationpriority: medium
+ms.date: 07/27/2017
+ms.localizationpriority: medium
 ---
 
 # Prepare your environment for Microsoft Surface Hub
@@ -22,14 +22,14 @@ This section contains an overview of setup dependencies and the setup process. R
 ## Review infrastructure dependencies
 Review these dependencies to make sure Surface Hub features will work in your IT infrastructure.
 
-| Dependency                                            | Purpose                                               |
-|-------------------------------------------------------|-------------------------------------------------------|
+| Dependency        | Purpose           |
+|-------------|------------------|
 | Active Directory or Azure Active Directory (Azure AD) | <p>The Surface Hub's uses an Active Directory or Azure AD account (called a **device account**) to access Exchange and Skype for Business services. The Surface Hub must be able to connect to your Active Directory domain controller or to your Azure AD tenant in order to validate the device account’s credentials, as well as to access information like the device account’s display name, alias, Exchange server, and Session Initiation Protocol (SIP) address.</p>You can also domain join or Azure AD join your Surface Hub to allow a group of authorized users to configure settings on the Surface Hub. |
 | Exchange (Exchange 2013 or later, or Exchange Online) and Exchange ActiveSync | <p>Exchange is used for enabling mail and calendar features, and also lets people who use the device send meeting requests to the Surface Hub, enabling one-touch meeting join.</p>ActiveSync is used to sync the device account’s calendar and mail to the Surface Hub. If the device cannot use ActiveSync, it will not show meetings on the welcome screen, and joining meetings and emailing whiteboards will not be enabled. |
 | Skype for Business (Lync Server 2013 or later, or Skype for Business Online)  | Skype for Business is used for various conferencing features, like video calls, instant messaging, and screen sharing.</br></br>If screen sharing on a Surface Hub fails and the error message **An error occurred during the screen presentation** is displayed, see [Video Based Screen Sharing not working on Surface Hub](https://support.microsoft.com/help/3179272/video-based-screen-sharing-not-working-on-surface-hub) for help. |
 | Mobile device management (MDM) solution (Microsoft Intune, System Center Configuration Manager, or supported third-party MDM provider) | If you want to apply settings and install apps remotely, and to multiple devices at a time, you must set up a MDM solution and enroll the device to that solution. See [Manage settings with an MDM provider](manage-settings-with-mdm-for-surface-hub.md) for details. |
 | Microsoft Operations Managmement Suite (OMS)   | OMS is used to monitor the health of Surface Hub devices. See [Monitor your Surface Hub](monitor-surface-hub.md) for details. |
-| Network and Internet access   | In order to function properly, the Surface Hub should have access to a wired or wireless network. Overall, a wired connection is preferred. 802.1x Authentication is supported for both wired and wireless connections.</br></br>**802.1x authentication:** In Windows 10, version 1703, 802.1x authentication for wired and wireless connections is enabled by default in Surface Hub. If your organization doesn't use 802.1x authentication, there is no configuration required and Surface Hub will continue to function as normal. If you use 802.1x authentication, you must ensure that the authentication certification is installed on Surface Hub. You can deliver the certificate to Surface Hub using the [ClientCertificateInstall CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/clientcertificateinstall-csp) in MDM, or you can [create a provisioning package](provisioning-packages-for-surface-hub.md) and install it during first run or through the Settings app. After the certificate is applied to Surface Hub, 802.1x authentication will start working automatically.</br></br>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</br></br>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. Proxy credentials are stored across Surface Hub sessions and only need to be set once. |
+| Network and Internet access   | In order to function properly, the Surface Hub should have access to a wired or wireless network. Overall, a wired connection is preferred. 802.1X Authentication is supported for both wired and wireless connections.</br></br></br>**802.1X authentication:** In Windows 10, version 1703, 802.1X authentication for wired and wireless connections is enabled by default in Surface Hub. If your organization doesn't use 802.1X authentication, there is no configuration required and Surface Hub will continue to function as normal. If you use 802.1X authentication, you must ensure that the authentication certification is installed on Surface Hub. You can deliver the certificate to Surface Hub using the [ClientCertificateInstall CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/clientcertificateinstall-csp) in MDM, or you can [create a provisioning package](provisioning-packages-for-surface-hub.md) and install it during first run or through the Settings app. After the certificate is applied to Surface Hub, 802.1X authentication will start working automatically.</br>**Note:** Surface Hub supports 802.1X using PEAP-MSCHAPv2. We currently do not support additional EAP methods such as 802.1X using PEAP-TLS or PEAP-EAP-TLS.</br></br>**Dynamic IP:** The Surface Hub cannot be configured to use a static IP. It must use DHCP to assign an IP address.</br></br>**Proxy servers:** If your topology requires a connection to a proxy server to reach Internet services, then you can configure it during first run, or in Settings. Proxy credentials are stored across Surface Hub sessions and only need to be set once. |
 
 Additionally, note that Surface Hub requires the following open ports:
 - HTTPS: 443
@@ -68,9 +68,8 @@ Surface Hub interacts with a few different products and services. Depending on t
 
 A device account is an Exchange resource account that Surface Hub uses to display its meeting calendar, join Skype for Business calls, send email, and (optionally) to authenticate to Exchange. See [Create and test a device account](create-and-test-a-device-account-surface-hub.md) for details.
 
-After you've created your device account, there are a couple of ways to verify that it's setup correctly.
-- Run Surface Hub device account validation PowerShell scripts. For more information, see [Surface Hub device account scripts](https://gallery.technet.microsoft.com/scriptcenter/Surface-Hub-device-account-6db77696) in Script Center, or [PowerShell scripts for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) later in this guide. 
-- Use the account with the [Lync Microsoft Store app](https://www.microsoft.com/en-us/store/p/lync/9wzdncrfhvhm). If Lync signs in successfully, then the device account will most likely work with Skype for Business on Surface Hub.
+After you've created your device account, to verify that it's setup correctly, run Surface Hub device account validation PowerShell scripts. For more information, see [Surface Hub device account scripts](https://gallery.technet.microsoft.com/scriptcenter/Surface-Hub-device-account-6db77696) in Script Center, or [PowerShell scripts for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) later in this guide. 
+
  
 
 ## Prepare for first-run program 

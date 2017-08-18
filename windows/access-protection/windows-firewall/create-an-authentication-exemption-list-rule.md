@@ -18,17 +18,16 @@ author: brianlic-msft
 In almost any isolated server or isolated domain scenario, there are some devices or devices that cannot communicate by using IPsec. This procedure shows you how to create rules that exempt those devices from the authentication requirements of your isolation policies.
 
 **Important**  
-Adding devices to the exemption list for a zone reduces security because it permits devices in the zone to send network traffic that is unprotected by IPsec to the devices on the list. As discussed in the Windows Firewall with Advanced Security Design Guide, you must add only managed and trusted devices to the exemption list.
+Adding devices to the exemption list for a zone reduces security because it permits devices in the zone to send network traffic that is unprotected by IPsec to the devices on the list. As discussed in the Windows Defender Firewall with Advanced Security Design Guide, you must add only managed and trusted devices to the exemption list.
 
  
-
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
 
 **To create a rule that exempts specified hosts from authentication**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Connection Security Rules**.
 

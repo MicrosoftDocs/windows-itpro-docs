@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Reference about the command-line options and return codes for Internet Explorer Setup.
 author: eross-msft
