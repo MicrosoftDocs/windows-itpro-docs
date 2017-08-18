@@ -11,7 +11,7 @@ author: mjcaparas
 localizationpriority: high
 ---
 
-# View the Security Analytics dashboard
+# View the Security analytics dashboard
 
 **Applies to:**
 
@@ -21,13 +21,13 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The Security Analytics dashboard provides valuable information about the overall security posture of your organization. From this dashboard, you'll gain visibility across a wide spectrum of security controls from the various tiles. You'll be able to quickly assess where attention is required, identify specific areas where you can improve the overall security score of your organization, and take action based on the recommended optimal configuration settings.
+The Security Analytics dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization – all in one place. From there you can take action based on the recommended configuration baselines.
 
-The **Security Analytics Dashboard** displays a snapshot of:
+The **Security analytics dashboard** displays a snapshot of:
 - Organizational security score
 - Security coverage
 - Improvement opportunities
-- Antivirus - optimization
+
 
 ![Security anlytics dashboard](images/atp-security-analytics-dashboard.png)
 
@@ -37,28 +37,92 @@ The organization security score is reflective of the average score of all the Wi
 ![Organizational security score](images/atp-org-sec-score.png)
 
 
+The numerator in the fraction is representative of the sum of points from the **Improvement opportunities** tile, while the denominator is reflective of the total score from each pillar on the **Security coverage** tile. 
+
+Each security control from the **Security coverage** tile contributes 100 points to the organizational security score and the total potential is based on the number of security controls multiplied by 100 accordingly.
+
+
+In the example image, the total points from the Improvement opportunities tile add up to 280 points for the three pillars from the **Security coverage** tile.
+
 ## Security coverage
-The security coverage tile shows a bar graph where each bar represents a Windows Defender security control. Each bars represents the various products with an indicator of the total number of machines that are well configured and those that require attention. 
+The security coverage tile shows a bar graph where each bar represents a Windows Defender security control. Each bar contributes 100 points to the overall organizational security score. It also represents the various security products with an indicator of the total number of machines that are well configured and those that require attention. Hovering on top of the individual bars will show exact numbers for each category.
+
 
 ![Security coverage](images/atp-security-coverage.png)
 
 ## Improvement opportunities 
-Improve your organizational security score by taking the recommended improvement actions listed on this tile. This tile provides percentage values for each security control. The percentage values are ????? [EVALD / RAN I NEED SOME HELP HERE. I DON'T REALLY UNDERSTAND THE WHOLE PERCENTAGE THING. CAN YOU PROVIDE IN LAYMAN TERMS PLEASE.]
+Improve your organizational security score by taking the recommended improvement actions listed on this tile. 
 
 Click on each segment to see the recommended optimizations.
 
 ![Improvement oppportunities](images/atp-security-improvements.png)
 
+The numbers beside the green triangle icon on each recommended action represents the number of points you can gain by taking the action. When added together, the total number makes up the nominator in the fraction for each segment in the Improvement opportunities tile.
 
-### Antivirus optimization
-This tile provides a specific list of actions you can take on Windows Defender Antivirus to improve the security on your organization. Each action shows the exact number of endpoints where you can apply the action on.  For more information, see [Optimize Windows Defender Antivirus](https://go.microsoft.com/fwlink/p/?linkid=851288).
+### Endpoint detection and response (EDR) optimization
+This tile provides a specific list of actions you can take on Windows Defender ATP to improve how endpoints provide sensor data to the Windows Defender ATP service.
 
-[EVALD / RAN - I DON'T THINK IT'S WORTH MAKING A STAND ALONE TOPIC FOR THIS. I'M INCLINED TO PUT THE 4 LINKS UNDER HERE INSTEAD. WDYT?]
+You can take the following actions to increase the overall security score of your organization:
+- Turn on EDR sensor
+- Fix sensor data collection
+- Fix impaired communication
 
-### Security updates optimization
-This tile shows you the exact number of machines that require the latest security updates. 
+For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md). 
 
-[EVALD / RAN - I DON'T THINK IT'S WORTH MAKING A STAND ALONE TOPIC FOR THIS. THERE IS ONLY ONE LINE.]
+### Windows Defendert Antivirus optimization
+This tile provides a list of specifict actions you can impliment on endpoints with Windows Defender Antivirus to improve the security on your organization.Each action shows the exact number of endpoints where you can apply the action on.
 
-### Advanced threat protection
-This tile provides a specific list of actions you can take on Windows Defender ATP to improve how endpoints provide sensor data to the Windows Defender ATP service. For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
+You can take the following actions to increase the overall security score of your organization:
+- Fix antivirus reporting
+- Turn on antivirus
+- Update antivirus definitions
+- Turn on cloud-based protection
+- Turn on real-time protectiong
+- Turn on PUA protection
+- Check partial reporting
+
+For more information, see [Optimize Windows Defender Antivirus](https://go.microsoft.com/fwlink/p/?linkid=851288).
+
+
+### OS security updates optimization
+This tile shows you the exact number of machines that require the latest security updates and ones that can use the latest Windows Insider preview builds.
+ 
+You can take the following actions to increase the overall security score of your organization:
+- Install the latest security updates
+- Use the lates Windows Insider preview builds
+
+
+### Exploit guard optimization
+This tile provides a specific list of actions you can take on endpoints to gain more control on restricting how code runs on endpoints to increase security in your organization.
+
+You can take the following actions to increase the overall security score of your organization:
+- Turn on all system-level Exploit Protection settings
+- Set all ASR rules to enabled or audit mode
+- Turn on Controlled Folder Access
+- Turn on Windows Defender Antivirus
+- Consider updgrading to HVCI-compatible hardware
+- Fix HVCI driver compatibility issues
+
+For more information, see PUT IAAN'S TOPIC HERE
+
+### Application guard optimization
+This tile provides a specific list of actions you can take to block attacks targeting browsers on endpoints. 
+
+You can take the following actions to increase the overall security score of your organization:
+- Consider upgrading to compatible hardware
+- Turn on Application Guard on compatible machines
+- Turn on managed mode
+
+
+For more information, see [Windows Defender Application Guard overview](.../windows-defender-application-guard/wd-app-guard-overview.md).
+
+
+### SmartScreen optimization
+This tile provides a specific list of actions you can take on endpoints to protect users from malicious websites and web applications.
+
+You can take the following actions to increase the overall security score of your organization:
+- Set app and file checking to block or warn
+- Set website and download checking to block or warn
+- Set Windows Store app content checking to block or warn
+
+For more information see [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
