@@ -26,6 +26,7 @@ Windows Defender ATP exposes much of the available data and actions using a set 
 
 In general, you’ll need to take the following steps to use the APIs:
 -	Create an app
+-	Get an access token
 -	Run queries on the graph API
 
 ### Before you begin
