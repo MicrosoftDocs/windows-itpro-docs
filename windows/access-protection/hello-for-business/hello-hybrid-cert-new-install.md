@@ -276,7 +276,7 @@ Follow the Windows Hello for Business hybrid certificate trust deployment guide.
 
 <hr>
 
-## Follow the Windows Hello for Business on premises certificate trust deployment guide
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust-overview.md)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. New Installation Baseline (*You are here*)

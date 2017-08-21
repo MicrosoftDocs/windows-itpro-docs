@@ -37,7 +37,7 @@ Regardless of the baseline you choose, you’re next step is to familiarize your
 
 <hr>
 
-## Follow the Windows Hello for Business on premises certificate trust deployment guide
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. Overview (*You are here*)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)

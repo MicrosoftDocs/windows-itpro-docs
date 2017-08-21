@@ -38,12 +38,13 @@ Windows Hello for Business can be deployed in any environment with Windows Serve
 Review these requirements and those from the Windows Hello for Business planning guide and worksheet.  Based on your deployment decisions you may need to upgrade your on-premises Active Directory or your Azure Active Directory subscription to meet your needs.
 
 ### Section Review ###
-- [ ] Active Directory Domain Functional Level
-- [ ] Active Directory Forest Functional Level
-- [ ] Domain Controller version
-- [ ] Windows Server 2016 Schema 
-- [ ] Azure Active Directory subscription
-- [ ] Correct subscription for desired features and outcomes  
+> [!div class="checklist"]
+> * Active Directory Domain Functional Level
+> * Active Directory Forest Functional Level
+> * Domain Controller version
+> * Windows Server 2016 Schema 
+> * Azure Active Directory subscription
+> * Correct subscription for desired features and outcomes  
 
 <br>
 
@@ -54,9 +55,10 @@ Certificate trust deployments need an enterprise public key infrastructure and a
 
 The minimum required enterprise certificate authority that can be used with Windows Hello for Business is Windows Server 2012.
 
-### Section Review  
-- [ ] Windows Server 2012 Issuing Certificate Authority
-- [ ] Windows Server 2016 Active Directory Federation Services
+### Section Review
+> [!div class="checklist"]  
+> * Windows Server 2012 Issuing Certificate Authority
+> * Windows Server 2016 Active Directory Federation Services
 
 <br>
 
@@ -66,9 +68,10 @@ The two directories used in hybrid deployments must be synchronized.  You need A
 Organizations using older directory synchronization technology, such as DirSync or Azure AD sync need to upgrade to Azure AD Connect
  
 ### Section Review 
-- [ ] Azure Active Directory Connect directory synchronization
-- [ ] [Upgrade from DirSync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-dirsync-upgrade-get-started)
-- [ ] [Upgrade from Azure AD Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-upgrade-previous-version)
+> [!div class="checklist"]
+> * Azure Active Directory Connect directory synchronization
+> * [Upgrade from DirSync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-dirsync-upgrade-get-started)
+> * [Upgrade from Azure AD Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-upgrade-previous-version)
 
 <br>
 
@@ -76,7 +79,8 @@ Organizations using older directory synchronization technology, such as DirSync 
 Federating your on-premises Active Directory with Azure Active Directory ensures all identities have access to all resources regardless if they reside in cloud or on-premises.  Windows Hello for Business hybrid certificate trust needs Windows Server 2016 Active Directory Federation Services.  All nodes in the AD FS farm must run the same version of AD FS. 
 
 ### Section Review ###
-- [ ] Windows Server 2016 Active Directory Federation Services
+> [!div class="checklist"]
+> * Windows Server 2016 Active Directory Federation Services
 
 <br>
 
@@ -86,9 +90,10 @@ Windows Hello for Business is a strong, two-factor credential the helps organiza
 Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Authentication service or they can use multifactor authentication provides by Windows Server 2016 Active Directory Federation Services, which includes an adapter model that enables third parties to integrate their multifactor authentication into AD FS.
 
 ### Section Review 
-- [ ] Azure MFA Service
-- [ ] Windows Server 2016 AD FS and Azure
-- [ ] Windows Server 2016 AD FS and third party MFA Adapter
+> [!div class="checklist"]
+> * Azure MFA Service
+> * Windows Server 2016 AD FS and Azure
+> * Windows Server 2016 AD FS and third party MFA Adapter
 
 <br>
 
@@ -98,8 +103,9 @@ Hybrid organizations register their devices with their cloud.  This is analogous
 Hybrid certificate trust deployments need the device write back feature.  Authentication to the Windows Server 2016 Active Directory Federation Services needs both the user and the computer to authenticate. Typically the users are synchronized, but not devices.  This prevents AD FS from authenticating the computer and results in Windows Hello for Business certificate enrollment failures.  For this reason, Windows Hello for Business deployments need device writeback, which is an Azure Active Directory premium feature.
 
 ### Review Checklist ###
-- [ ] Azure Active Directory Device writeback
-- [ ] Azure Active Directory Premium subscription
+> [!div class="checklist"]
+> * Azure Active Directory Device writeback
+> * Azure Active Directory Premium subscription
 
 <br>
 
@@ -109,7 +115,7 @@ Follow the Windows Hello for Business hybrid certificate trust deployment guide.
 
 <hr>
 
-## Follow the Windows Hello for Business on premises certificate trust deployment guide
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
 1. [Overview](hello-hybrid-cert-trust-overview.md)
 2. Prerequistes (*You are here*)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
