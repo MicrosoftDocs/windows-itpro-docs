@@ -117,7 +117,7 @@ Follow the Windows Hello for Business hybrid certificate trust deployment guide.
 <hr>
 
 ## Follow the Windows Hello for Business hybrid certificate trust deployment guide
-1. [Overview](hello-hybrid-cert-trust-overview.md)
+1. [Overview](hello-hybrid-cert-trust.md)
 2. Prerequistes (*You are here*)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)

@@ -13,6 +13,7 @@
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
 ## [Windows Hello for Business Deployment Guide](hello-deployment-guide.md)
+### [Hybrid Domain Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
 
 ### [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 #### [Validate Active Directory prerequisites](hello-cert-trust-validate-ad-prereq.md)
