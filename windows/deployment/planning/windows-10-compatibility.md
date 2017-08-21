@@ -6,7 +6,7 @@ keywords: deploy, upgrade, update, appcompat
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.pagetype: appcompat
-localizationpriority: high
+ms.localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
 ---

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: security
 description: Overview about Group Policy, Advanced Group Policy Management (AGPM), and Internet Explorer 11

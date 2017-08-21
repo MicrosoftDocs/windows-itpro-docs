@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-By default, Windows Firewall with Advanced Security allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic on a specified TCP or UDP port number, use the Windows Firewall with Advanced Security node in the Group Policy Management console to create firewall rules. This type of rule blocks any outbound network traffic that matches the specified TCP or UDP port numbers.
+By default, Windows Defender Firewall allows all outbound network traffic unless it matches a rule that prohibits the traffic. To block outbound network traffic on a specified TCP or UDP port number, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create firewall rules. This type of rule blocks any outbound network traffic that matches the specified TCP or UDP port numbers.
 
 **Administrative credentials**
 
@@ -23,7 +23,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 To create an outbound port rule
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Outbound Rules**.
 
@@ -37,7 +37,7 @@ To create an outbound port rule
 
 6.  On the **Protocol and Ports** page, select the protocol type that you want to block. To restrict the rule to a specified port number, you must select either **TCP** or **UDP**. Because this is an outbound rule, you typically configure only the remote port number.
 
-    If you select another protocol, then only packets whose protocol field in the IP header match this rule are blocked by Windows Firewall. Network traffic for protocols is allowed as long as other rules that match do not block it.
+    If you select another protocol, then only packets whose protocol field in the IP header match this rule are blocked by Windows Defender Firewall. Network traffic for protocols is allowed as long as other rules that match do not block it.
 
     To select a protocol by its number, select **Custom** from the list, and then type the number in the **Protocol number** box.
 

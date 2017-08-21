@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the \[ISP_Security\] .INS file setting to add the root certificate for your custom Internet Explorer package.
 author: eross-msft

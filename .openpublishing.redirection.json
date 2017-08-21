@@ -11,6 +11,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/client-management/mdm/policy-admx-backed.md",
+"redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/keep-secure/add-apps-to-protected-list-using-custom-uri.md",
 "redirect_url": "/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune",
 "redirect_document_id": false
@@ -7642,7 +7647,7 @@
 },
 {
 "source_path": "windows/manage/manage-corporate-devices.md",
-"redirect_url": "/windows/client-management/manage-corporate-devices",
+"redirect_url": "/windows/client-management/index",
 "redirect_document_id": true
 },
 {
@@ -8268,6 +8273,16 @@
 {
 "source_path": "windows/manage/change-history-for-manage-and-update-windows-10.md",
 "redirect_url": "/windows/windows-10/index",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/update/waas-servicing-branches-windows-10-updates.md",
+"redirect_url": "/windows/deployment/update/waas-servicing-channels-windows-10-updates",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
+"redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
 "redirect_document_id": true
 }
 ]

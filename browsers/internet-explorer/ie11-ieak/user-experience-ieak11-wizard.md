@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the User Experience page in the IEAK 11 Customization Wizard to decide user interaction with the Setup process.
 author: eross-msft

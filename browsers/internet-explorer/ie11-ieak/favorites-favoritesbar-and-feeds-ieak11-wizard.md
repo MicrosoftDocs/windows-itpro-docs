@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Favorites, Favorites Bar, and Feeds page in IEAK 11 Customization Wizard to add links, web slices, and feeds to your custom browser package.
 author: eross-msft

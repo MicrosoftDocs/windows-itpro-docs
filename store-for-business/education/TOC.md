@@ -14,6 +14,7 @@
 ## [Get Minecraft: Education Edition](/education/windows/get-minecraft-for-education?toc=/microsoft-store/education/toc.json)
 ### [For teachers: get Minecraft Education Edition](/education/windows/teacher-get-minecraft?toc=/microsoft-store/education/toc.json)
 ### [For IT administrators: get Minecraft Education Edition](/education/windows/school-get-minecraft?toc=/microsoft-store/education/toc.json)
+### [Get Minecraft: Education Edition with Windows 10 device promotion](/education/windows/get-minecraft-for-education?toc=/microsoft-store/education/toc.json)
 ## [Distribute apps to your employees from the Microsoft Store for Business and Education](/microsoft-store/distribute-apps-to-your-employees-windows-store-for-business?toc=/microsoft-store/education/toc.json)
 ### [Distribute apps using your private store](/microsoft-store/distribute-apps-from-your-private-store?toc=/microsoft-store/education/toc.json)
 ### [Assign apps to employees](/microsoft-store/assign-apps-to-employees?toc=/microsoft-store/education/toc.json)

@@ -9,7 +9,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Shutdown: Clear virtual memory pagefile - security policy setting
+# Shutdown: Clear virtual memory pagefile 
 
 **Applies to**
 -   Windows 10

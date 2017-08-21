@@ -24,11 +24,11 @@ This policy setting allows a client device to require the negotiation of 128-bit
 
 -   Require NTLMv2 session security
 
-    The connection fails if strong encryption (128-bit) is not negotiated.
+    The connection fails if the NTLMv2 protocol is not negotiated.
 
 -   Require 128-bit encryption
 
-    The connection fails if the NTLMv2 protocol is not negotiated.
+    The connection fails if strong encryption (128-bit) is not negotiated.
 
 ### Best practices
 

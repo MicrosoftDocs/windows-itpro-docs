@@ -45,7 +45,7 @@ In a domain controller/Group Policy ecosystem, Group Policies are automatically 
 
 An ADMX file can either be shipped with Windows (located at `%SystemRoot%\policydefinitions`) or it can be ingested to a device through the Policy CSP URI (`./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`). Inbox ADMX files are processed into MDM policies at OS-build time. ADMX files that are ingested are processed into MDM policies post-OS shipment through the Policy CSP. Because the Policy CSP does not rely upon any aspect of the Group Policy client stack, including the PC’s Group Policy Service (GPSvc), the policy handlers that are ingested to the device are able to react to policies that are set by the MDM.
 
-Windows maps the name and category path of a Group Policy to a MDM policy area and policy name by parsing the associated ADMX file, finding the specified Group Policy, and storing the definition (metadata) in the MDM Policy CSP client store. When the MDM policy is referenced by a SyncML command and the Policy CSP URI, `.\[device|user]\vendor\msft\policy\[config|result]\<area>\<policy>`, this metadata is referenced and determines which registry keys are set or removed. For a list of ADMX-backed policies supported by MDM, see [Policy CSP - ADMX-backed policies](https://msdn.microsoft.com/en-us/windows/hardware/commercialize/customize/mdm/policy-admx-backed).
+Windows maps the name and category path of a Group Policy to a MDM policy area and policy name by parsing the associated ADMX file, finding the specified Group Policy, and storing the definition (metadata) in the MDM Policy CSP client store. When the MDM policy is referenced by a SyncML command and the Policy CSP URI, `.\[device|user]\vendor\msft\policy\[config|result]\<area>\<policy>`, this metadata is referenced and determines which registry keys are set or removed. For a list of ADMX-backed policies supported by MDM, see [Policy CSP - ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 
 ## <a href="" id="admx-files-and-the-group-policy-editor"></a>ADMX files and the Group Policy Editor
 
@@ -97,7 +97,7 @@ Appv.admx file:
 
 ## <a href="" id="admx-backed-policy-examples"></a>ADMX-backed policy examples
 
-The following SyncML examples describe how to set a MDM policy that is defined by an ADMX template, specifically the Publishing_Server2_Policy Group Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this Group Policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-backed policy. These SyncML examples illustrate common options and the corresponding SyncML code that can be used for testing your policies. Note that the payload of the SyncML must be XML-encoded; for this XML encoding, you can use the [Coder’s Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii) online tool. To avoid encoding the payload, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+The following SyncML examples describe how to set a MDM policy that is defined by an ADMX template, specifically the Publishing_Server2_Policy Group Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this Group Policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-backed policy. These SyncML examples illustrate common options and the corresponding SyncML code that can be used for testing your policies. Note that the payload of the SyncML must be XML-encoded; for this XML encoding, you can use favorite online tool. To avoid encoding the payload, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 ### <a href="" id="enabling-a-policy"></a>Enabling a policy
@@ -119,7 +119,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -169,7 +169,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -209,7 +209,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Delete>
       <CmdID>1</CmdID>
@@ -292,7 +292,7 @@ The `text` element simply corresponds to a string and correspondingly to an edit
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>$CmdId$</CmdID>
@@ -333,7 +333,7 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -377,7 +377,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -409,7 +409,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -466,7 +466,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -503,7 +503,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -552,7 +552,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>

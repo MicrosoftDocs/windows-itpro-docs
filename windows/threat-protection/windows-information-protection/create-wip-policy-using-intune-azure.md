@@ -6,7 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune
@@ -364,7 +364,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 ### Define your enterprise-managed corporate identity
 Corporate identity, usually expressed as your primary Internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you’ve marked as protected by WIP. For example, emails using contoso.com are identified as being corporate and are restricted by your Windows Information Protection policies.
 
-Starting with Windows 10, version 1703, Intune automatically determines your corporate identity and adds it to the Corporate identity field. You can specify multiple domains owned by your enterprise by separating them with the "|" character. For example, (`contoso.com|newcontoso.com`). With multiple domains, the first one is designated as your corporate identity and all of the additional ones as being owned by the first one. We strongly recommend that you include all of your email address domains in this list.
+Starting with Windows 10, version 1703, Intune automatically determines your corporate identity and adds it to the **Corporate identity** field.
 
 **To change your corporate identity**
 
@@ -372,7 +372,7 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
     The **Required settings** blade appears.
 
-2.	If the identity isn’t correct, or if you need to add additional domains, type info into the **Corporate identity** field. For example, `contoso.com|newcontoso.com`.
+2. If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. If you need to add additional domains, for example your email domains, you can do it in the **Advanced settings** area.
 
     ![Microsoft Intune, Set your corporate identity for your organization](images/wip-azure-required-settings-corp-identity.png)
 

@@ -27,7 +27,7 @@ ADMX files can be installed and tested locally on any computer that runs the Win
 
 **To download the UE-V ADMX templates**
 
-1.  Download the UE-V ADMX template files: <https://go.microsoft.com/fwlink/p/?LinkId=393941>.
+1.  Download the UE-V ADMX template files: <https://www.microsoft.com/en-us/download/details.aspx?id=55531>.
 
 2.  For more information about how to deploy the Group Policy templates, see <https://go.microsoft.com/fwlink/p/?LinkId=393944>.
 

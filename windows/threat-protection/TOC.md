@@ -82,9 +82,15 @@
 
 ##	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
 ### [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
-### [Windows Defender Antivirus on Windows Server](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
-### [Windows Defender Antivirus and Advanced Threat Protection: Better together](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
+
+### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
+
+### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
+
+
 ### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
+
+
 ### [Deploy, manage updates, and report on Windows Defender Antivirus](windows-defender-antivirus\deploy-manage-report-windows-defender-antivirus.md)
 #### [Deploy and enable Windows Defender Antivirus](windows-defender-antivirus\deploy-windows-defender-antivirus.md)
 ##### [Deployment guide for VDI environments](windows-defender-antivirus\deployment-vdi-windows-defender-antivirus.md)
@@ -95,6 +101,8 @@
 ##### [Manage updates for endpoints that are out of date](windows-defender-antivirus\manage-outdated-endpoints-windows-defender-antivirus.md)
 ##### [Manage event-based forced updates](windows-defender-antivirus\manage-event-based-updates-windows-defender-antivirus.md)
 ##### [Manage updates for mobile devices and VMs](windows-defender-antivirus\manage-updates-mobile-devices-vms-windows-defender-antivirus.md)
+
+
 ### [Configure Windows Defender Antivirus features](windows-defender-antivirus\configure-windows-defender-antivirus-features.md)
 #### [Utilize Microsoft cloud-delivered protection](windows-defender-antivirus\utilize-microsoft-cloud-protection-windows-defender-antivirus.md)
 ##### [Enable cloud-delivered protection](windows-defender-antivirus\enable-cloud-protection-windows-defender-antivirus.md)
@@ -109,6 +117,8 @@
 ##### [Configure the notifications that appear on endpoints](windows-defender-antivirus\configure-notifications-windows-defender-antivirus.md)
 ##### [Prevent users from seeing or interacting with the user interface](windows-defender-antivirus\prevent-end-user-interaction-windows-defender-antivirus.md)
 ##### [Prevent or allow users to locally modify policy settings](windows-defender-antivirus\configure-local-policy-overrides-windows-defender-antivirus.md)
+
+
 ### [Customize, initiate, and review the results of scans and remediation](windows-defender-antivirus\customize-run-review-remediate-scans-windows-defender-antivirus.md)
 #### [Configure and validate exclusions in Windows Defender AV scans](windows-defender-antivirus\configure-exclusions-windows-defender-antivirus.md)
 ##### [Configure and validate exclusions based on file name, extension, and folder location](windows-defender-antivirus\configure-extension-file-exclusions-windows-defender-antivirus.md)
@@ -120,19 +130,33 @@
 #### [Configure and run scans](windows-defender-antivirus\run-scan-windows-defender-antivirus.md)
 #### [Review scan results](windows-defender-antivirus\review-scan-results-windows-defender-antivirus.md)
 #### [Run and review the results of a Windows Defender Offline scan](windows-defender-antivirus\windows-defender-offline.md)
+
+
 ### [Review event logs and error codes to troubleshoot issues](windows-defender-antivirus\troubleshoot-windows-defender-antivirus.md)
+
+
+
 ### [Reference topics for management and configuration tools](windows-defender-antivirus\configuration-management-reference-windows-defender-antivirus.md)
 #### [Use Group Policy settings to configure and manage Windows Defender AV](windows-defender-antivirus\use-group-policy-windows-defender-antivirus.md)
 #### [Use System Center Configuration Manager and Microsoft Intune to configure and manage Windows Defender AV](windows-defender-antivirus\use-intune-config-manager-windows-defender-antivirus.md)
 #### [Use PowerShell cmdlets to configure and manage Windows Defender AV](windows-defender-antivirus\use-powershell-cmdlets-windows-defender-antivirus.md)
 #### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
 #### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
+
 ## [Windows Defender SmartScreen](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen\windows-defender-smartscreen-available-settings.md)
 ### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen\windows-defender-smartscreen-set-individual-device.md)
+
+##[Windows Defender Application Guard](windows-defender-application-guard\wd-app-guard-overview.md)
+###[System requirements for Windows Defender Application Guard](windows-defender-application-guard\reqs-wd-app-guard.md)
+###[Prepare and install Windows Defender Application Guard](windows-defender-application-guard\install-wd-app-guard.md)
+###[Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard\configure-wd-app-guard.md)
+###[Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard\test-scenarios-wd-app-guard.md)
+###[Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard\faq-wd-app-guard.md)
+
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy](windows-information-protection\overview-create-wip-policy.md)
-#### [Create a Windows Information Protection (WIP) using the classic console for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
+#### [Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
 ##### [Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune.md)
 ##### [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the classic console for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)
 #### [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)
@@ -150,9 +174,17 @@
 #### [Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)](windows-information-protection\app-behavior-with-wip.md)
 #### [Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)](windows-information-protection\recommended-network-definitions-for-wip.md)
 #### [Using Outlook Web Access with Windows Information Protection (WIP)](windows-information-protection\using-owa-with-wip.md)
+
 ## [Mitigate threats by using Windows 10 security features](overview-of-threat-mitigations-in-windows-10.md)
+
 ## [Override Process Mitigation Options to help enforce app-related security policies](override-mitigation-options-for-app-related-security-policies.md)
-## [Secure the windows 10 boot process](secure-the-windows-10-boot-process.md)
+
+## [How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md)
+
+## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
+
 ## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
+
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
+
 ## [Change history for Threat Protection](change-history-for-threat-protection.md)

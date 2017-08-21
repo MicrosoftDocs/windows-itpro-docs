@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: We’re sorry. While we continue to recommend that you digitally sign your package, we’ve removed all of the functionality that allowed you to add a root certificate using the Internet Explorer Customization Wizard 11. The wizard page itself will be removed in a future version of the IEAK.
 author: eross-msft
