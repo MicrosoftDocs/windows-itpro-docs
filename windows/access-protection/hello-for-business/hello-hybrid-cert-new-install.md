@@ -19,25 +19,12 @@ localizationpriority: high
 
 Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid certificate trust deployments of Windows Hello for Business rely on these technolgies
 
-### Prerequisites ###
-- [ ] Active Directory
-- [ ] Public Key Infrastructure
-- [ ] Azure Active Directory
-- [ ] Directory Synchronization
-- [ ] Active Directory Federation Services
-  - [ ] Federation Services
-  - [ ]	Federation Proxy Servers
-  - [ ]	Multiple top-level domains
-  - [ ]	Azure Device Registration
-  - [ ]	Device Writeback
-- [ ] Multifactor Authentication
-- [ ] Windows Hello for Business
-  - [ ]Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+* [Active Directory](#active-directory)
+* [Public Key Infrastructure](#public-key-infrastructure)
+* [Azure Active Directory](#azure-active-directory)
+* [Directory Synchronization](#directory-synchronization)
+* [Active Directory Federation Services](#active-directory-federation-services)
+
 
 New installations are considerably more involved than existing implementations because you are building the entire infrastructure new.  Microsoft recommends you review the new installation baseline to validate your exsting envrionment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If you're environment meets these needs, you can read the [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md) section to learn about specific Windows Hello for Business configuration settings.
 
@@ -50,24 +37,10 @@ Production environments should follow Active Directory best practices regarding 
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting of issue, such as Active Directory replication, which is unrelated to project goal.
 
 ### Section Review ###
-- [x] Active Directory
-- [ ] Public Key Infrastructure
-- [ ] Azure Active Directory
-- [ ] Directory Synchronization
-- [ ] Active Directory Federation Services
-  - [ ] Federation Services
-  - [ ]	Federation Proxy Servers
-  - [ ]	Multiple top-level domains
-  - [ ]	Azure Device Registration
-  - [ ]	Device Writeback
-- [ ] Multifactor Authentication
-- [ ] Windows Hello for Business
-  - [ ]Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+> [!div class="checklist"]
+>  * Minimum Windows Server 2008 R2 domain controllers
+>  * Minimum Windows Server 2008 R2 domain and forest functional level
+> * Functional networking, name resolution, and Active Directory replication
  
 ## Public Key Infrastructure
 
@@ -100,24 +73,11 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 If you do have an existing public key infrastructure, please review [Certification Authority Guidance](https://technet.microsoft.com/library/hh831574.aspx) from Microsoft TechNet to properly design your infrastructure.   Then, consult the [Test Lab Guide: Deploying an AD CS Two-Tier PKI Hierarchy](https://technet.microsoft.com/library/hh831348.aspx) for instructions on how to configure your public key infrastructure using the information from your design session.
 
 ### Section Review ###
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [ ] Azure Active Directory
-- [ ] Directory Synchronization
-- [ ] Active Directory Federation Services
-  - [ ] Federation Services
-  - [ ]	Federation Proxy Servers
-  - [ ]	Multiple top-level domains
-  - [ ]	Azure Device Registration
-  - [ ]	Device Writeback
-- [ ] Multifactor Authentication
-- [ ] Windows Hello for Business
-  - [ ]Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+
+> [!div class="checklist"]
+> *  Miniumum Windows Server 2012 Certificate Authority.
+> *  Enterprise Certificate Authority.
+> *  Functioning public key infrastructure.
   
 ## Azure Active Directory ##
 You’ve prepared your Active Directory.  Hybrid Windows Hello for Business deployment needs Azure Active Directory to host your cloud-based identities. 
@@ -125,53 +85,25 @@ You’ve prepared your Active Directory.  Hybrid Windows Hello for Business depl
 The next step of the deployment is to follow the [Creating an Azure AD tenant](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-howto-tenant) process to provision an Azure tenant for your organization.
 
 ### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [ ] Directory Synchronization
-- [ ] Active Directory Federation Services
-  - [ ] Federation Services
-  - [ ]	Federation Proxy Servers
-  - [ ]	Multiple top-level domains
-  - [ ]	Azure Device Registration
-  - [ ]	Device Writeback
-- [ ] Multifactor Authentication
-- [ ] Windows Hello for Business
-  - [ ]Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+
+> [!div class="checklist"]
+> * Review the different ways to establish an Azure Active Directory tenant.
+> * Create an Azure Active Directory Tenant.
+> * Purchase the appropriate Azure Active Directory subscription or licenses, if necessary.
   
 ### Directory Synchronization ###
 At this point, you should have your Active Directory installed and configured with user and computer accounts.  You should also have an enterprise certificate authority, and you should have provisioned your Azure tenant.
 
 Next, you need to synchronizes the on-premises Active Directory with Azure Active Directory.  To do this, you’ll download, install, and configure Azure Active Directory Connect.
 
-Review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect) topic to understand why you’re using Azure Active Directory Connect and how it works.  Next, review the [hardware and prerequisites](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771). When you are done with your review, follow the [Express Installation](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-get-started-express) to configure directory synchronization.
-
 ### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [x] Directory Synchronization
-- [ ] Active Directory Federation Services
-  - [ ] Federation Services
-  - [ ]	Federation Proxy Servers
-  - [ ]	Multiple top-level domains
-  - [ ]	Azure Device Registration
-  - [ ]	Device Writeback
-- [ ] Multifactor Authentication
-- [ ] Windows Hello for Business
-  - [ ]Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+> [div class="checklist"]
+> * Review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). 
+> * Review the [hardware and prerequisites](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771). 
+> * Follow the [Express Installation](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-get-started-express) to configure directory synchronization.
 
-## Active Directory Federation Services ##
+
+## Active Directory Federation Services
 Active Directory Federation Services (AD FS) provides simplified, secured identity federation and Web single sign-on (SSO) capabilities for end users who want to access applications within an AD FS-secured enterprise, in federation partner organizations, or in the cloud.
 
 ### Federation Services ###
@@ -206,24 +138,12 @@ As previously mentioned, Windows Hello for Busines hybrid certificate- trust dep
 Use the [Enabling device writeback](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-feature-device-writeback) section to configure device writeback functionality in your environment.
 
 ### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [x] Directory Synchronization
-- [x] Active Directory Federation Services
-- [x] Federation Services
-  - [x]	Federation Proxy Servers
-  - [x]	Multiple top-level domains
-  - [x]	Azure Device Registration
-  - [x]	Device Writeback
-- [ ] Multifactor Authentication
-- [ ] Windows Hello for Business
-  - [ ]Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+> [div class="checklist"]
+> * Federation Proxy Servers
+> * Multiple top-level domains
+> * Azure Device Registration
+> * Device Writeback
+
 
 ## Multifactor Authentication Services ##
 Windows Hello for Business uses multifactor authentication during provisioning and during user initiated PIN reset scenarios, such as when a user forgets their PIN.  There are two preferred multifactor authentication configurations with hybrid deployments—Azure MFA and AD FS using Azure MFA
@@ -239,8 +159,9 @@ As long as your users have licenses that include Azure Multi-Factor Authenticati
 >
 > If you have one of these subscriptions or licenses, skip the Azure MFA Adapter section. 
 
-#### Azure MFA Adapter #### 
+#### Azure MFA Provider #### 
 If your organization uses Azure MFA on a per-consumption model (no licenses), then review the [Create a Multifactor Authentication Provider](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-auth-provider) section to create an Azure MFA Authentication provider and associate it with your Azure tenant. 
+
 #### Configure Azure MFA Settings ####
 Once you have created your Azure MFA authentication provider and associated it with an Azure tenant, you need to configure the multi-factor authentication settings.  Review the [Configure Azure Multi-Factor Authentication settings](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-whats-next) section to configure your settings.
 
@@ -251,24 +172,14 @@ After you have completed configuring your Azure MFA settings, you want to review
 Alternatively, you can configure Windows Server 2016 Active Directory Federation Services (AD FS) to provide additional multi-factor authentication. To configure, read the [Configure AD FS 2016 and Azure MFA](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa) section
 
 ### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [x] Directory Synchronization
-- [x] Active Directory Federation Services
-- [x] Federation Services
-  - [x]	Federation Proxy Servers
-  - [x]	Multiple top-level domains
-  - [x]	Azure Device Registration
-  - [x]	Device Writeback
-- [x] Multifactor Authentication
-- [ ] Windows Hello for Business
-  - [ ]Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+
+> [dev class="checklist"]
+> * Review the overview and uses of Azure Multifactor Authentication.
+> * Review your Azure Active Directory subscription for Azure Multifactor Authentication.
+> * Create an Azure Multifactor Authentication Provider, if necessary.
+> * Configure Azure Multufactor Authentiation features and settings.
+> * Understand the different User States and their effect on Azure Multifactor Authentication.
+> * Consider using Azure Multifactor Authentication or a third-party multifactor authentication provider with Windows Server 2016 Active Directory Federation Services, if necessary.
 
 ### Next Steps ###
 Follow the Windows Hello for Business hybrid certificate trust deployment guide.  With your baseline configuration complete, your next step is to **Configure Windows Hello for Business** if your envirionment.

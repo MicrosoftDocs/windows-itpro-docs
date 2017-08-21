@@ -102,7 +102,7 @@ Hybrid organizations register their devices with their cloud.  This is analogous
  
 Hybrid certificate trust deployments need the device write back feature.  Authentication to the Windows Server 2016 Active Directory Federation Services needs both the user and the computer to authenticate. Typically the users are synchronized, but not devices.  This prevents AD FS from authenticating the computer and results in Windows Hello for Business certificate enrollment failures.  For this reason, Windows Hello for Business deployments need device writeback, which is an Azure Active Directory premium feature.
 
-### Review Checklist ###
+### Section Checklist ###
 > [!div class="checklist"]
 > * Azure Active Directory Device writeback
 > * Azure Active Directory Premium subscription
