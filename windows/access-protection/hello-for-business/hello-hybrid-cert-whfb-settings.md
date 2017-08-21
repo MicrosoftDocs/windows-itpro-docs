@@ -53,7 +53,8 @@ Sign-in to the domain controller hosting the schema master operational role usin
 
 Windows Hello for Business uses several security groups to simplify the deployment and managment.
 
-If your environment has one or more Windows Server 2016 domain controllers in the domain to which you are deploying Windows Hello for Business, then skip the **Create the KeyCrednetials Admins Security Group**.
+> [!Important]
+> If your environment has one or more Windows Server 2016 domain controllers in the domain to which you are deploying Windows Hello for Business, then skip the **Create the KeyCrednetials Admins Security Group**.
 
 #### Create the KeyCredential Admins Security Group
 
@@ -82,24 +83,10 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 6.	Click **OK**.
 
 ### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [x] Directory Synchronization
-- [x] Active Directory Federation Services
-- [x] Federation Services
-  - [x]	Federation Proxy Servers
-  - [x]	Multiple top-level domains
-  - [x]	Azure Device Registration
-  - [x]	Device Writeback
-- [x] Multifactor Authentication
-- [x] Windows Hello for Business
-  - [ ] Active Directory
-  - [ ] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] AD FS RA
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+
+> [!div class="checklist"]
+> * Upgrading Active Directory Schema to Windows Server 2016
+> * Create Security Groups
 
 ## Directory Syncrhonization
 
@@ -125,24 +112,10 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 9. Click **OK** three times to complete the task. 
 
 ### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [x] Directory Synchronization
-- [x] Active Directory Federation Services
-- [x] Federation Services
-  - [x]	Federation Proxy Servers
-  - [x]	Multiple top-level domains
-  - [x]	Azure Device Registration
-  - [x]	Device Writeback
-- [x] Multifactor Authentication
-- [x] Windows Hello for Business
-  - [x]Active Directory
-  - [x] Directory Synchronization
-  - [ ] Public Key Infrastructure
-  - [ ] AD FS RA
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+
+> [!div class="checklist"]
+> * Configure Permissions for Key Synchronization
+
 
 ## Public Key Infrastructure
 
