@@ -37,6 +37,7 @@ Production environments should follow Active Directory best practices regarding 
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting of issue, such as Active Directory replication, which is unrelated to project goal.
 
 ### Section Review ###
+
 > [!div class="checklist"]
 >  * Minimum Windows Server 2008 R2 domain controllers
 >  * Minimum Windows Server 2008 R2 domain and forest functional level
@@ -97,7 +98,8 @@ At this point, you should have your Active Directory installed and configured wi
 Next, you need to synchronizes the on-premises Active Directory with Azure Active Directory.  To do this, you’ll download, install, and configure Azure Active Directory Connect.
 
 ### Section Review
-> [div class="checklist"]
+
+> [!div class="checklist"]
 > * Review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). 
 > * Review the [hardware and prerequisites](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771). 
 > * Follow the [Express Installation](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-get-started-express) to configure directory synchronization.
@@ -138,7 +140,8 @@ As previously mentioned, Windows Hello for Busines hybrid certificate- trust dep
 Use the [Enabling device writeback](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-feature-device-writeback) section to configure device writeback functionality in your environment.
 
 ### Section Review
-> [div class="checklist"]
+
+> [!div class="checklist"]
 > * Federation Proxy Servers
 > * Multiple top-level domains
 > * Azure Device Registration
@@ -173,7 +176,7 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 
 ### Section Review
 
-> [dev class="checklist"]
+> [!div class="checklist"]
 > * Review the overview and uses of Azure Multifactor Authentication.
 > * Review your Azure Active Directory subscription for Azure Multifactor Authentication.
 > * Create an Azure Multifactor Authentication Provider, if necessary.
