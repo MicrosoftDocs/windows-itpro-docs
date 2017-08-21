@@ -1,6 +1,6 @@
 ---
 title: TPM Group Policy settings (Windows 10)
-description: This topic for the IT professional describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
+description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,22 +15,15 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-This topic for the IT professional describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
+This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 
-The TPM Services Group Policy settings are located at:
+The Group Policy settings for TPM services are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-### Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0
+The following Group Policy settings were introduced in Window 10:
 
-Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. Setting this policy will take effect only if: a) the TPM was originally prepared using a version of Windows after Windows 10 Version 1607, and b) the System has a TPM 2.0. 
-
-Note that enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this group policy. The only way for the disabled setting of this policy to take effect on a system where it was once enabled is to: 
-a) disable it from group policy and b) clear the TPM on the system.
-
-**The following Group Policy settings were introduced in Window 10:**
-
-### Configure the list of blocked TPM commands
+## Configure the list of blocked TPM commands
 
 This policy setting allows you to manage the Group Policy list of Trusted Platform Module (TPM) commands that are blocked by Windows.
 
@@ -48,7 +41,7 @@ For information how to enforce or ignore the default and local lists of blocked 
 
 -   [Ignore the local list of blocked TPM commands](#ignore-the-local-list-of-blocked-tpm-commands)
 
-### Ignore the default list of blocked TPM commands
+## Ignore the default list of blocked TPM commands
 
 This policy setting allows you to enforce or ignore the computer's default list of blocked Trusted Platform Module (TPM) commands.
 
@@ -58,7 +51,7 @@ If you enable this policy setting, the Windows operating system will ignore the 
 
 If you disable or do not configure this policy setting, Windows will block the TPM commands in the default list, in addition to the commands that are specified by Group Policy and the local list of blocked TPM commands.
 
-### Ignore the local list of blocked TPM commands
+## Ignore the local list of blocked TPM commands
 
 This policy setting allows you to enforce or ignore the computer's local list of blocked Trusted Platform Module (TPM) commands.
 
@@ -68,7 +61,7 @@ If you enable this policy setting, the Windows operating system will ignore the 
 
 If you disable or do not configure this policy setting, Windows will block the TPM commands in the local list, in addition to the commands that are specified in Group Policy and the default list of blocked TPM commands.
 
-### Configure the level of TPM owner authorization information available to the operating system
+## Configure the level of TPM owner authorization information available to the operating system
 
 This policy setting configures how much of the TPM owner authorization information is stored in the registry of the local computer. Depending on the amount of TPM owner authorization information that is stored locally, the Windows operating system and TPM-based applications can perform certain actions in the TPM that require TPM owner authorization without requiring the user to enter the TPM owner password.
 
@@ -106,7 +99,7 @@ If you enable this policy setting, the Windows operating system will store the T
 If you disable or do not configure this policy setting, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is also disabled or not configured, the default setting is to store the full TPM authorization value in the local registry. If this policy is disabled or not
 configured, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is enabled, only the administrative delegation and the user delegation blobs are stored in the local registry.
 
-### Standard User Lockout Duration
+## Standard User Lockout Duration
 
 This policy setting allows you to manage the duration in minutes for counting standard user authorization failures for Trusted Platform Module (TPM) commands requiring authorization. An authorization failure occurs each time a standard user sends a command to the TPM and receives an error response that indicates an authorization failure occurred. Authorization failures that are older than the duration you set are ignored. If the number of TPM commands with an authorization failure within the lockout duration equals a threshold, a standard user is prevented from sending commands that require
 authorization to the TPM.
@@ -125,7 +118,7 @@ An administrator with the TPM owner password can fully reset the TPM's hardware 
 
 If you do not configure this policy setting, a default value of 480 minutes (8 hours) is used.
 
-### Standard User Individual Lockout Threshold
+## Standard User Individual Lockout Threshold
 
 This policy setting allows you to manage the maximum number of authorization failures for each standard user for the Trusted Platform Module (TPM). This value is the maximum number of authorization failures that each standard user can have before the user is not allowed to send commands that require authorization to the TPM. If the number of authorization failures for the user within the duration that is set for the **Standard User Lockout Duration** policy setting equals this value, the standard user is prevented from sending commands that require authorization to the Trusted Platform Module (TPM).
 
@@ -137,7 +130,7 @@ An administrator with the TPM owner password can fully reset the TPM's hardware 
 
 If you do not configure this policy setting, a default value of 4 is used. A value of zero means that the operating system will not allow standard users to send commands to the TPM, which might cause an authorization failure.
 
-### Standard User Total Lockout Threshold
+## Standard User Total Lockout Threshold
 
 This policy setting allows you to manage the maximum number of authorization failures for all standard users for the Trusted Platform Module (TPM). If the total number of authorization failures for all standard users within the duration that is set for the **Standard User Lockout Duration** policy equals this value, all standard users are prevented from sending commands that require authorization to the Trusted Platform Module (TPM).
 
@@ -155,6 +148,21 @@ If you do not configure this policy setting, a default value of 9 is used. A val
 If you enable this policy setting, TPM owner information will be automatically and silently backed up to AD DS when you use Windows to set or change a TPM owner password. When this policy setting is enabled, a TPM owner password cannot be set or changed unless the computer is connected to the domain and the AD DS backup succeeds.
 
 If you disable or do not configure this policy setting, TPM owner information will not be backed up to AD DS.
+
+## Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0
+
+Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. 
+
+> [!IMPORTANT]
+> Setting this policy will take effect only if:  
+-   The TPM was originally prepared using a version of Windows after Windows 10 Version 1607
+-   The system has a TPM 2.0. 
+
+> [!NOTE]
+> Enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this group policy. The only ways for the disabled setting of this policy to take effect on a system where it was once enabled are to either:
+> -  Disable it from group policy
+> -  Clear the TPM on the system
+
 
 ## Related topics
 

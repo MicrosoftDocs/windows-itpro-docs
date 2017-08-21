@@ -11,6 +11,12 @@ author: brianlic-msft
 # Change history for device security
 This topic lists new and updated topics in the [Device security](index.md) documentation.
 
+## September 2017
+|New or changed topic |Description |
+|---------------------|------------|
+| [TPM fundamentals](tpm/tpm-fundamentals.md)<br>[BitLocker Group Policy settings](bitlocker/bitlocker-group-policy-settings.md) | Explained the change to allow reducing the maximum PIN length from 6 characters to 4. |
+
+
 ## August 2017
 |New or changed topic |Description |
 |---------------------|------------|
