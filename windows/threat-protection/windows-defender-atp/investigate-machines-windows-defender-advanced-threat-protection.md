@@ -35,7 +35,6 @@ When you investigate a specific machine, you'll see:
 - Alerts related to this machine
 - Machine timeline
 
-[TAKEN FROM MOCK ONLY!! JOEY: UPDATE WITH ACTUAL WHEN READY!!]
 ![Image of machine details page](images/atp-machine-view-ata.png)
 
 The machine details, ATA alerts, total logged on users, and machine reporting sections display various attributes about the machine.
@@ -77,38 +76,40 @@ Use the search bar to look for specific timeline events. Harness the power of us
 
 -	**Value** - Type in any search keyword to filter the timeline with the attribute you’re searching for. This search supports defined search queries based on type:value pairs.<br>
   You can use any of the following values:<br>
-  - Hash: Sha1 or MD5
-  - File name
-  - File extension
-  - Path
-  - Command line
-  - User
-  - IP
-  - URL
+    - Hash: Sha1 or MD5
+    - File name
+    - File extension
+    - Path
+    - Command line
+    - User
+    - IP
+    - URL
+
 -	**Informational level** – Click the drop-down button to filter by the following levels:
-  - Detections mode: displays Windows ATP Alerts and detections
-  -	Behaviors mode: displays "detections" and selected events of interest
-  -	Verbose mode: displays all raw events without aggregation or filtering
+    - Detections mode: displays Windows ATP Alerts and detections
+    -	Behaviors mode: displays "detections" and selected events of interest
+    -	Verbose mode: displays all raw events without aggregation or filtering
 
 - **Event type** - Click the drop-down button to filter by the following levels:
-  - Windows Defender ATP alerts
-  - Windows Defender AV alerts
-  - Response actions
-  - AppGuard related events
-  - Windows Defender Device Guard events
-  - Process events
-  - Network events
-  - File events
-  - Registry events
-  - Load DLL events
-  - Other events <br><br>
-  Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
+    - Windows Defender ATP alerts
+    - Windows Defender AV alerts
+    - Device Guard events
+    - Exploit Guard events
+    - SmartScreen events
+    - Response actions
+    - Process events
+    - Network events
+    - File events
+    - Registry events
+    - Load DLL events
+    - Other events <br><br>
+    Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
 
 -	**User account** – Click the drop-down button to filter the machine timeline by the following user associated events:
-  -	Logon users
-  -	System
-  -	Network
-  -	Local service
+    -	Logon users
+    -	System
+    -	Network
+    -	Local service
 
 The following example illustrates the use of type:value pair. The events were filtered by searching for the user jonathan.wolcott and network events as the event type:
 
