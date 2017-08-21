@@ -1368,6 +1368,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top">Added information to the ADMX-backed policies.
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top">Updated the CSP and DDF topics. Here are the changes:
+<ul>
+<li>Removed the two settings - FirewallRules/FirewallRuleName/FriendlyName and FirewallRules/FirewallRuleName/IcmpTypesAndCodes.</li>
+<li>Changed some data types from integer to bool.</li>
+<li>Updated the list of supported operations for some settings.</li>
+<li>Added default values.</li>
+</ul>
+</td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
