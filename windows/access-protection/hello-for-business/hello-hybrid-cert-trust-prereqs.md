@@ -38,6 +38,7 @@ Windows Hello for Business can be deployed in any environment with Windows Serve
 Review these requirements and those from the Windows Hello for Business planning guide and worksheet.  Based on your deployment decisions you may need to upgrade your on-premises Active Directory or your Azure Active Directory subscription to meet your needs.
 
 ### Section Review ###
+
 > [!div class="checklist"]
 > * Active Directory Domain Functional Level
 > * Active Directory Forest Functional Level

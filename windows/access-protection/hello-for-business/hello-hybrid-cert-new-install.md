@@ -36,11 +36,11 @@ Production environments should follow Active Directory best practices regarding 
   
 Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting of issue, such as Active Directory replication, which is unrelated to project goal.
 
-### Section Review ###
+### Section Review
 
 > [!div class="checklist"]
->  * Minimum Windows Server 2008 R2 domain controllers
->  * Minimum Windows Server 2008 R2 domain and forest functional level
+> * Minimum Windows Server 2008 R2 domain controllers
+> * Minimum Windows Server 2008 R2 domain and forest functional level
 > * Functional networking, name resolution, and Active Directory replication
  
 ## Public Key Infrastructure
