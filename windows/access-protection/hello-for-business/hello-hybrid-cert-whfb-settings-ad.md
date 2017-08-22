@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 localizationpriority: high
-author: DaniHalfin
+author: mikestephens-MS
 ms.author: mstephen
 ---
 # Configuring Windows Hello for Business: Active Directory
