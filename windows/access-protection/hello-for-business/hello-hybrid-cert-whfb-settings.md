@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Hello for Business Settings
+title: Configure Windows Hello for Business Settings (Windows Hello for Business)
 description: Configure Windows Hello for Business Settings 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10

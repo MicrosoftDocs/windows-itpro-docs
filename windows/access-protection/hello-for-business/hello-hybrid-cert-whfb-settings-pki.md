@@ -1,5 +1,5 @@
 ---
-title: Configure Windows Hello for Business: Public Key Infrastructure
+title: Configure Windows Hello for Business: Public Key Infrastructure(Windows Hello for Business)
 description: Configure Windows Hello for Business: Public Key Infrastructure
 keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: w10
