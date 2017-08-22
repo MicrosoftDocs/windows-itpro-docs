@@ -974,6 +974,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709:</p>
+<ul>
+<li>Installation/CurrentStatus</li>
+</ul>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -1364,6 +1371,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Provider/_ProviderID_/ConfigInfo</li>
 <li> Provider/_ProviderID_/EnrollmentInfo</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709:</p>
+<ul>
+<li>Installation/CurrentStatus</li>
 </ul>
 </td></tr>
 <tr class="odd">
