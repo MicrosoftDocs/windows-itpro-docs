@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
+author: MikeStephens-MS
 ms.author: mstephen
 localizationpriority: high
 ---
@@ -17,17 +17,20 @@ localizationpriority: high
 
 > This guide only applies to Windows 10, version 1703 or higher.
 
-## Active Directory ##
-The key registration process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. 
+> [!div class="step-by-step"]
+[< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
+[ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+
+The key synchronizaqtion process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 
 > [!IMPORTANT]
 > If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema**.
 
-### Upgrading Active Directory to the Windows Server 2016 Schema
+## Upgrading Active Directory to the Windows Server 2016 Schema
 
 Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
-#### Discovering schema role
+### Identify the schema role domain controller
 
 To locate the schema master role holder, open and command prompt and type:
 
@@ -37,7 +40,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 
-#### Updating the Schema
+### Updating the Schema
 
 Windows Hello for Business uses asymmetric keys as user credentials (rather than passwords).  During enrollment, the public key is registered in an attribute on the user object in Active Directory.  The schema update adds this new attribute to Active Directory.  
 
@@ -85,5 +88,23 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 ### Section Review
 
 > [!div class="checklist"]
-> * Upgrading Active Directory Schema to Windows Server 2016
-> * Create Security Groups
+> * Identify the schema role domain controller 
+> * Update the Active Directory Schema to Windows Server 2016
+> * Create the KeyCredential Admins Security group, (optional)
+> * Create the Windows Hello for Business Users group
+
+
+> [!div class="step-by-step"]
+[< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
+[ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+
+<br>
+
+<hr>
+
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+1. [Overview](hello-hybrid-cert-trust.md)
+2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+4. Configure Windows Hello for Business settings: Active Directory (*You are here*)
+5. Sign-in and Provision
