@@ -47,23 +47,23 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
 
 2.	Open the **Actions** menu and select **Isolate machine**.
 
-  ![Image of isolate machine](images/atp-isolate-machine.png)
+    ![Image of isolate machine](images/atp-isolate-machine.png)
 
 3. Select the check-box if you'd like to enable Outlook and Skype communication while the machine is isolated.
 
-  [JOEY: ADD SCREENSHOT OF CONFIRMATION DIALOG BOX]
+    ![Image of isolation confirmation](images/atp-confirm-isolate.png)
 
-4. Type a comment (optional) and select **Yes** to take action on the machine.
+4. Type a comment and select **Yes, isolate machine** to take action on the machine.
   >[!NOTE]
   >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
 
-  The Action center shows the submission information:
-  ![Image of machine isolation](images/atp-machine-isolation.png)
+   The Action center shows the submission information:
+    ![Image of machine isolation](images/atp-machine-isolation.png)
 
-  -	**Submission time** - Shows when the isolation action was submitted.
-  -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
-  - **Exceptions** - Indicates whether Outlook and Skype for Business exceptions were enabled.
-  -	**Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
+   - **Submission time** - Shows when the isolation action was submitted.
+   - **Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
+   - **Exceptions** - Indicates whether Outlook and Skype for Business exceptions were enabled.
+    - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
 
 
 When the isolation configuration is applied, a new event is reflected in the machine timeline.
@@ -80,11 +80,11 @@ Depending on the severity of the attack and the state of the machine you can cho
 
 2.	Open the **Actions** menu and select **Undo machine isolation**.
 
-  ![Image of undo isolation](images/atp-undo-isolation.png)
+    ![Image of undo isolation](images/atp-undo-isolation.png)
 
-3.	Type a comment (optional) and select **Yes** to take action on the file. The machine will be reconnected to the network.
+3.	Type a comment and select **Yes, undo machine isolation** to take action on the machine. The machine will be reconnected to the network.
 
-## Restrict applications from running
+## Restrict app execution
 In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
 The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
@@ -94,44 +94,39 @@ The action to restrict an application from running applies a code integrity poli
 
 1. Select the machine where you'd like to restrict an application from running from. You can select or search for a machine from any of the following views:
 
-  -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
-  -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines list** - Select the machine name from the list of machines.
-  -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  - **Machines list** - Select the machine name from the list of machines.
+  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
-2.	Open the **Actions** menu and select **Restrict application from running**. [I'LL UPDATE THE BUTTONS WHEN UI/UX WORDING IS FINALIZED]
+2.	Open the **Actions** menu and select **Restrict app execution**.
 
-  [JOEY: ADD SCREEN SHOT OF BUTTON]
+    ![Image of restrict app execution action](images/atp-restrict-app.png)
 
-3. Type a comment (optional) and select **Yes** to take action on the file.
+3. Type a comment and select **Yes, restict app execution** to take action on the file.
 
-  [JOEY: ADD SCREEN SHOT OF CONFIRMATION]
+   ![Image of app restriction notification](images/atp-notification-restrict.png)
 
   The Action center shows the submission information:
+   [NEED IMAGE HERE OF APP RESTRICTION]
 
 
-  -	**Submission time** - Shows when the isolation action was submitted.
-  -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
-  -	**Status** - Indicates any pending actions or the results of completed actions.
+  - **Submission time** - Shows when the isolation action was submitted.
+  - **Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
+  - **Status** - Indicates any pending actions or the results of completed actions.
 
 When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
 
-**Notification on machine user**:</br>
-When application restriction is being applied on the machine, the following notification is displayed to inform the user:
 
-  [JOEY: ADD SCREEN SHOT OF NOTIICATION]
-
-
-## Undo restriction of applications from running  
+## Undo app execution restriction 
 Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
 
 1.	Select the machine where you restricted an application from running from.
 
-2.	Open the **Actions** menu and select **Undo restriction of application from running**. [I'LL UPDATE THE BUTTONS WHEN UI/UX WORDING IS FINALIZED]
+2.	Open the **Actions** menu and select **Cancel action**. 
+  [NEED SCREENSHOT OF THIS]
 
-  [JOEY: ADD SCREEN SHOT]
-
-3.	Type a comment (optional) and select **Yes** to take action on the application. The machine application restriction will no longer apply on the machine.  
+3.	Type a comment and select **Yes** to take action on the application. The machine application restriction will no longer apply on the machine.  
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
@@ -157,15 +152,19 @@ The package contains the following folders:
 
 1.	Select the machine that you want to investigate. You can select or search for a machine from any of the following views:
 
-  -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
-  -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines list** - Select the heading of the machine name from the machines list.
-  -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  - **Machines list** - Select the heading of the machine name from the machines list.
+  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 
 2.	Open the **Actions** menu and select **Collect investigation package**.
 
+    ![Image of collect investigation package action](images/atp-collect-investigation-package.png)
+
+3.  Type a comment and select **Yes, collect package** to take action on the machine.
+
     The Action center shows the submission information:
-    ![Image of investigation package in action center](images/atp-investigation-package-action-center.png)
+    ![Image of investigation package in action center](images/atp-action-center-package-collection.png)
 
     - **Submission time** - Shows when the action was submitted.
     -	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
