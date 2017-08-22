@@ -45,7 +45,7 @@ For more information on how to take action on a machine, see [Take response acti
 
 If you have enabled the Azure Advanced Threat Protection feature and there are alerts related to the machine, you can click on the link that will take you to the Azure Advanced Threat Protection page where more information about the alerts are provided. The Azure Advanced Threat Protection tile also provides details such as the last AD site and total domain group memberships.
 
-For more information on how to enable the Azure Advanced Threat Protection integration, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md)
+For more information on how to enable the Azure Advanced Threat Protection integration, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 Clicking on the number of total logged on users in the Logged on users tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
 
