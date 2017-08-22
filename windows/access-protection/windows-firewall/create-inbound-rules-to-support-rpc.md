@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-To allow inbound remote procedure call (RPC) network traffic, use the Windows Firewall with Advanced Security node in the Group Policy Management console to create two firewall rules. The first rule allows incoming network packets on TCP port 135 to the RPC Endpoint Mapper service. The incoming traffic consists of requests to communicate with a specified network service. The RPC Endpoint Mapper replies with a dynamically-assigned port number that the client must use to communicate with the service. The second rule allows the network traffic that is sent to the dynamically-assigned port number. Using the two rules configured as described in this topic helps to protect your device by allowing network traffic only from devices that have received RPC dynamic port redirection and to only those TCP port numbers assigned by the RPC Endpoint Mapper.
+To allow inbound remote procedure call (RPC) network traffic, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create two firewall rules. The first rule allows incoming network packets on TCP port 135 to the RPC Endpoint Mapper service. The incoming traffic consists of requests to communicate with a specified network service. The RPC Endpoint Mapper replies with a dynamically-assigned port number that the client must use to communicate with the service. The second rule allows the network traffic that is sent to the dynamically-assigned port number. Using the two rules configured as described in this topic helps to protect your device by allowing network traffic only from devices that have received RPC dynamic port redirection and to only those TCP port numbers assigned by the RPC Endpoint Mapper.
 
 **Administrative credentials**
 
@@ -35,7 +35,7 @@ In this topic:
 
 ## To create a rule to allow inbound network traffic to the RPC Endpoint Mapper service
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Inbound Rules**.
 

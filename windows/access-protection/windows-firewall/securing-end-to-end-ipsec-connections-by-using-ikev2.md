@@ -133,11 +133,11 @@ Make sure that you install the required certificates on the participating comput
 
 Follow these procedures to verify and troubleshoot your IKEv2 IPsec connections:
 
-**Use the Windows Firewall with Advanced Security snap-in to verify that a connection security rule is enabled.**
+**Use the Windows Defender Firewall with Advanced Security snap-in to verify that a connection security rule is enabled.**
 
-1.  Open the Windows Firewall with Advanced Security console.
+1.  Open the Windows Defender Firewall with Advanced Security console.
 
-2.  In the left pane of the Windows Firewall with Advanced Security snap-in, click **Connection Security Rules**, and then verify that there is an enabled connection security rule.
+2.  In the left pane of the Windows Defender Firewall with Advanced Security snap-in, click **Connection Security Rules**, and then verify that there is an enabled connection security rule.
 
 3.  Expand **Monitoring**, and then click **Connection Security Rules** to verify that your IKEv2 rule is active for your currently active profile.
 
@@ -177,7 +177,7 @@ You might not find the exact answer for the issue, but you can find good hints. 
 
 ## See also
 
--   [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
+-   [Windows Defender Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 
  
 

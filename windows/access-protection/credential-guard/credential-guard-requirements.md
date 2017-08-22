@@ -1,6 +1,6 @@
 ---
-title: Credential Guard Requirements (Windows 10)
-description: Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security associated with available hardware and firmware options. 
+title: Windows Defender Credential Guard Requirements (Windows 10)
+description: Windows Defender Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security associated with available hardware and firmware options. 
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -9,22 +9,22 @@ ms.localizationpriority: high
 author: brianlic-msft
 ---
 
-# Credential Guard: Requirements
+# Windows Defender Credential Guard: Requirements
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
 Prefer video? See 
-[Credential Guard Deployment](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
-in the Deep Dive into Credential Guard video series.
+[Windows Defender Credential Guard Deployment](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=sRcyvLJyC_3304300474)
+in the Deep Dive into Windows Defender Credential Guard video series.
 
-For Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally, Credential Guard blocks specific authentication capabilities, so applications that require such capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protections. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, refer to the tables in [Security Considerations](#security-considerations).
+For Windows Defender Credential Guard to provide protections, the computers you are protecting must meet certain baseline hardware, firmware, and software requirements which we will refer to as [Hardware and software requirements](#hardware-and-software-requirements). Additionally, Windows Defender Credential Guard blocks specific authentication capabilities, so applications that require such capabilities will break. We will refer to this as [Application requirements](#application-requirements). Beyond that, computers can meet additional hardware and firmware qualifications, and receive additional protections. Those computers will be more hardened against certain threats. For detailed information on baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017, refer to the tables in [Security Considerations](#security-considerations).
 
 
 ## Hardware and software requirements
 
-To provide basic protections against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Credential Guard uses:
+To provide basic protections against OS level attempts to read Credential Manager domain credentials, NTLM and Kerberos derived credentials, Windows Defender Credential Guard uses:
 - Support for Virtualization-based security (required)
 - Secure boot (required)
 - TPM 2.0 either discrete or firmware (preferred - provides binding to hardware)
@@ -35,16 +35,29 @@ The Virtualization-based security requires:
 - CPU virtualization extensions plus extended page tables
 - Windows hypervisor
 
+### Windows Defender Credential Guard deployment in virtual machines 
+
+Credential Guard can protect secrets in a Hyper-V virtual machine, just as it would on a physical machine. When Credential Guard is deployed on a VM, secrets are protected from attacks inside the VM. Credential Guard does not provide additional protection from privileged system attacks originating from the host.
+
+#### Requirements for running Windows Defender Credential Guard in Hyper-V virtual machines
+
+- The Hyper-V host must have an IOMMU, and run at least Windows Server 2016 or Windows 10 version 1607.
+- The Hyper-V virtual machine must be Generation 2, have an enabled virtual TPM, and be running at least Windows Server 2016 or Windows 10. 
+
+For information about other host platforms, see [Enabling Windows Server 2016 and Hyper-V virtualization based security features on other platforms](https://blogs.technet.microsoft.com/windowsserver/2016/09/29/enabling-windows-server-2016-and-hyper-v-virtualization-based-security-features-on-other-platforms/)
+
+For information about Windows Defender Remote Credential Guard hardware and software requirements, see [Windows Defender Remote Credential Guard requirements](https://docs.microsoft.com/en-us/windows/access-protection/remote-credential-guard#hardware-and-software-requirements)
+
 ## Application requirements
 
-When Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
+When Windows Defender Credential Guard is enabled, specific authentication capabilities are blocked, so applications that require such capabilities will break. Applications should be tested prior to deployment to ensure compatiblity with the reduced functionality. 
 
 >[!WARNING] 
-> Enabling Credential Guard on domain controllers is not supported. <br>
-> The domain controller hosts authentication services which integrate with processes isolated when Credential Guard is enabled, causing crashes. 
+> Enabling Windows Defender Credential Guard on domain controllers is not supported. <br>
+> The domain controller hosts authentication services which integrate with processes isolated when Windows Defender Credential Guard is enabled, causing crashes. 
 
 >[!NOTE]
-> Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Credential Guard is enabled are also in the Active Directory database (on domain controllers) and the SAM (for local accounts). 
+> Windows Defender Credential Guard does not provide protections for the Active Directory database or the Security Accounts Manager (SAM). The credentials protected by Kerberos and NTLM when Windows Defender Credential Guard is enabled are also in the Active Directory database (on domain controllers) and the SAM (for local accounts). 
 
 Applications will break if they require:
 - Kerberos DES encryption support
@@ -57,20 +70,20 @@ Applications will prompt and expose credentials to risk if they require:
 - Credential delegation
 - MS-CHAPv2
 
-Applications may cause performance issues when they attempt to hook the isolated Credential Guard process. 
+Applications may cause performance issues when they attempt to hook the isolated Windows Defender Credential Guard process. 
 
-See this video: [Credentials Protected by Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
+See this video: [Credentials Protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
 
 
 ## Security considerations
 
-All computers that meet baseline protections for hardware, firmware, and software can use Credential Guard. 
+All computers that meet baseline protections for hardware, firmware, and software can use Windows Defender Credential Guard. 
 Computers that meet additional qualifications can provide additional protections to further reduce the attack surface.  
 The following tables describe baseline protections, plus protections for improved security that are associated with hardware and firmware options available in 2015, 2016, and 2017.
 
 > [!NOTE]  
 > Beginning with Windows 10, version 1607, Trusted Platform Module (TPM 2.0) must be enabled by default on new shipping computers. <br>
-> If you are an OEM, see [PC OEM requirements for Device Guard and Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
+> If you are an OEM, see [PC OEM requirements for Windows Defender Device Guard and Windows Defender Credential Guard](https://msdn.microsoft.com/library/windows/hardware/mt767514.aspx).<br>
 
 ### Baseline protections
 
@@ -81,10 +94,10 @@ The following tables describe baseline protections, plus protections for improve
 | Hardware: **Trusted Platform Module (TPM)**  |  **Requirement**: TPM 1.2 or TPM 2.0, either discrete or firmware.<br>[TPM recommendations](https://technet.microsoft.com/itpro/windows/keep-secure/tpm-recommendations) | A TPM provides protection for VBS encryption keys that are stored in the firmware. This helps protect against attacks involving a physically present user with BIOS access. |
 | Firmware: **UEFI firmware version 2.3.1.c or higher with UEFI Secure Boot** | **Requirements**: See the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot)| UEFI Secure Boot helps ensure that the device boots only authorized code. This can prevent boot kits and root kits from installing and persisting across reboots.  |
 | Firmware: **Secure firmware update process**  | **Requirements**: UEFI firmware must support secure firmware update found under the following Windows Hardware Compatibility Program requirement: [System.Fundamentals.Firmware.UEFISecureBoot](http://msdn.microsoft.com/library/windows/hardware/dn932805.aspx#system-fundamentals-firmware-uefisecureboot).| UEFI firmware just like software can have security vulnerabilities that, when found, need to be patched through firmware updates. Patching helps prevent root kits from getting installed. |
-| Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Credential Guard. Only Device Guard is supported in this configuration.</p></blockquote> |Support for VBS and for management features that simplify configuration of Credential Guard. |
+| Software: Qualified **Windows operating system**  | **Requirement**: Windows 10 Enterprise, Windows 10 Education, Windows Server 2016, or Windows 10 IoT Enterprise<br><blockquote><p><strong>Important:</strong><br> Windows Server 2016 running as a domain controller does not support Windows Defender Credential Guard. Only Windows Defender Device Guard is supported in this configuration.</p></blockquote> |Support for VBS and for management features that simplify configuration of Windows Defender Credential Guard. |
 
 > [!IMPORTANT]
-> The following tables list additional qualifications for improved security. We strongly recommend meeting the additional qualifications to significantly strengthen the level of security that Credential Guard can provide.
+> The following tables list additional qualifications for improved security. We strongly recommend meeting the additional qualifications to significantly strengthen the level of security that Windows Defender Credential Guard can provide.
 
 
 ### 2015 Additional security qualifications starting with Windows 10, version 1507, and Windows Server 2016 Technical Preview 4
