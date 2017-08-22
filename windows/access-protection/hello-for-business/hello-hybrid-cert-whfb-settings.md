@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: MikeStephens-MS
+author: DaniHalfin
 ms.author: mstephen
 localizationpriority: high
 ---
@@ -32,7 +32,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 
 For the most efficent deployment, configure these technologies in order beginning with the Active Directory configuration
 
-> [! div class="step-by-step"]
+> [!div class="step-by-step"]
 [Configure Windows Hello for Business: Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
 
 <br>

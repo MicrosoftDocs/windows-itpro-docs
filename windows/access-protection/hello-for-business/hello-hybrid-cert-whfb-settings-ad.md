@@ -6,10 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: MikeStephens-MS
+author: DaniHalfin
 ms.author: mstephen
 localizationpriority: high
 ---
+
 # Configuring Windows Hello for Business: Active Directory
 
 **Applies to**
