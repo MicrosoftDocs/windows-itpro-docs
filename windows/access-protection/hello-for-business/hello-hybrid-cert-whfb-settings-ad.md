@@ -10,7 +10,6 @@ author: DaniHalfin
 ms.author: mstephen
 localizationpriority: high
 ---
-
 # Configuring Windows Hello for Business: Active Directory
 
 **Applies to**
