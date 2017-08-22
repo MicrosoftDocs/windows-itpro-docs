@@ -40,10 +40,10 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
 
 1.	Select the machine that you want to isolate. You can select or search for a machine from any of the following views:
 
-  -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
-  -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines list** - Select the machine name from the list of machines.
-  -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+    -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
+    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+    -	**Machines list** - Select the machine name from the list of machines.
+    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
 
 2.	Open the **Actions** menu and select **Isolate machine**.
 
@@ -53,17 +53,17 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
 
   [JOEY: ADD SCREENSHOT OF CONFIRMATION DIALOG BOX]
 
-4. Type a comment (optional) and select **Yes** to take action on the machine.
+4. Type a comment and select **Yes** to take action on the machine.
   >[!NOTE]
   >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
 
   The Action center shows the submission information:
   ![Image of machine isolation](images/atp-machine-isolation.png)
 
-  -	**Submission time** - Shows when the isolation action was submitted.
-  -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
-  - **Exceptions** - Indicates whether Outlook and Skype for Business exceptions were enabled.
-  -	**Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
+   - **Submission time** - Shows when the isolation action was submitted.
+   -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
+   - **Exceptions** - Indicates whether Outlook and Skype for Business exceptions were enabled.
+   -	**Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
 
 
 When the isolation configuration is applied, a new event is reflected in the machine timeline.
