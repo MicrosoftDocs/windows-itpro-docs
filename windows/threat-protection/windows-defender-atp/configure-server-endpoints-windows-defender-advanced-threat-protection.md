@@ -15,10 +15,8 @@ localizationpriority: high
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
+- Windows Server 2012 R2
+- Windows Server 2016
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 Windows Defender ATP extends support to also include the Windows Server operating system, providing advanced attack detection and investigation capabilities, seamlessly through the Windows Defender Security Center console.
