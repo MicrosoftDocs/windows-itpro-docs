@@ -1,6 +1,6 @@
 ---
-title: Windows Firewall with Advanced Security Administration with Windows PowerShell (Windows 10)
-description: Windows Firewall with Advanced Security Administration with Windows PowerShell
+title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell (Windows 10)
+description: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,29 +8,29 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Windows Firewall with Advanced Security Administration with Windows PowerShell
+# Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-The Windows Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Firewall with Advanced Security management. It is designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Firewall with Advanced Security management in Windows.
+The Windows Defender Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Defender Firewall management. It is designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Defender Firewall management in Windows.
 
 You can use Windows PowerShell to manage your firewall and IPsec deployments. This object-oriented scripting environment will make it easier for you to manage policies and monitor network conditions than was possible in netsh. Windows PowerShell allows network settings to be self-discoverable through the syntax and parameters in each of the cmdlets. This guide demonstrates how common tasks were performed in netsh and how you can use Windows PowerShell to accomplish them.
 
-In future versions of Windows, Microsoft might remove the netsh functionality for Windows Firewall with Advanced Security. Microsoft recommends that you transition to Windows PowerShell if you currently use netsh to configure and manage Windows Firewall with Advanced Security.
+In future versions of Windows, Microsoft might remove the netsh functionality for Windows Defender Firewall. Microsoft recommends that you transition to Windows PowerShell if you currently use netsh to configure and manage Windows Defender Firewall.
 
 Windows PowerShell and netsh command references are at the following locations.
 
--   [Netsh Commands for Windows Firewall with Advanced Security](http://technet.microsoft.com/library/cc771920)
+-   [Netsh Commands for Windows Defender Firewall](http://technet.microsoft.com/library/cc771920)
 
 ## Scope
 
-This guide does not teach you the fundamentals of Windows Firewall with Advanced Security, which can be found in [Windows Firewall with Advanced Security](windows-firewall-with-advanced-security.md). It does not teach the fundamentals of Windows PowerShell, and it assumes that you are familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#additional-resources) section of this guide.
+This guide does not teach you the fundamentals of Windows Defender Firewall, which can be found in [Windows Defender Firewall](windows-firewall-with-advanced-security.md). It does not teach the fundamentals of Windows PowerShell, and it assumes that you are familiar with the Windows PowerShell language and the basic concepts of Windows PowerShell. For more info about Windows PowerShell concepts and usage, see the reference topics in the [Additional resources](#additional-resources) section of this guide.
 
 ## Audience and user requirements
 
-This guide is intended for IT pros, system administrators, and IT managers, and it assumes that you are familiar with Windows Firewall with Advanced Security, the Windows PowerShell language, and the basic concepts of Windows PowerShell.
+This guide is intended for IT pros, system administrators, and IT managers, and it assumes that you are familiar with Windows Defender Firewall, the Windows PowerShell language, and the basic concepts of Windows PowerShell.
 
 ## In this topic
 
@@ -45,11 +45,11 @@ This guide is intended for IT pros, system administrators, and IT managers, and 
 
 ## <a href="" id="bkmk-profileglobaldefaults"></a>Set profile global defaults
 
-Global defaults set the device behavior in a per-profile basis. Windows Firewall with Advanced Security supports Domain, Private, and Public profiles.
+Global defaults set the device behavior in a per-profile basis. Windows Defender Firewall supports Domain, Private, and Public profiles.
 
-### Enable Windows Firewall
+### Enable Windows Defender Firewall with Advanced Security
 
-Windows Firewall drops traffic that does not correspond to allowed unsolicited traffic, or traffic that is sent in response to a request by the  device. If you find that the rules you create are not being enforced, you may need to enable Windows Firewall. Here is how to do this on a local domain  device:
+Windows Defender Firewall drops traffic that does not correspond to allowed unsolicited traffic, or traffic that is sent in response to a request by the  device. If you find that the rules you create are not being enforced, you may need to enable Windows Defender Firewall. Here is how to do this on a local domain  device:
 
 **Netsh**
 
@@ -63,9 +63,9 @@ netsh advfirewall set allprofiles state on
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
 ```
 
-### Control Windows Firewall behavior
+### Control Windows Defender Firewall with Advanced Security behavior
 
-The global default settings can be defined through the command-line interface. These modifications are also available through the Windows Firewall with Advanced Security console.
+The global default settings can be defined through the command-line interface. These modifications are also available through the Windows Defender Firewall with Advanced Security console.
 
 The following scriptlets set the default inbound and outbound actions, specifies protected network connections, and allows notifications to be displayed to the user when a program is blocked from receiving inbound connections. It allows unicast response to multicast or broadcast network traffic, and it specifies logging settings for troubleshooting.
 
@@ -84,31 +84,31 @@ Windows PowerShell
 Set-NetFirewallProfile -DefaultInboundAction Block -DefaultOutboundAction Allow –NotifyOnListen True -AllowUnicastResponseToMulticast True –LogFileName %SystemRoot%\System32\LogFiles\Firewall\pfirewall.log
 ```
 
-### Disable Windows Firewall
+### Disable Windows Defender Firewall with Advanced Security
 
-Microsoft recommends that you do not disable Windows Firewall because you lose other benefits provided by the service, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, [Windows Service Hardening](http://go.microsoft.com/fwlink/?linkid=104976), and [boot time filters](https://blogs.technet.microsoft.com/networking/2009/03/24/stopping-the-windows-authenticating-firewall-service-and-the-boot-time-policy/). 
+Microsoft recommends that you do not disable Windows Defender Firewall because you lose other benefits provided by the service, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, [Windows Service Hardening](http://go.microsoft.com/fwlink/?linkid=104976), and [boot time filters](https://blogs.technet.microsoft.com/networking/2009/03/24/stopping-the-windows-authenticating-firewall-service-and-the-boot-time-policy/). 
 
-Disabling Windows Firewall with Advanced Security can also cause problems, including:
+Disabling Windows Defender Firewall with Advanced Security can also cause problems, including:
 
 - Start menu can stop working
 - Modern applications can fail to install or update
 - Activation of Windows via phone fails 
-- Application or OS incompatibilities that depend on Windows Firewall
+- Application or OS incompatibilities that depend on Windows Defender Firewall
 
-Microsoft recommends disabling Windows Firewall with Advanced Security only when installing a third-party firewall, and resetting Windows Firewall back to defaults when the third-party software is disabled or removed. 
+Microsoft recommends disabling Windows Defender Firewall only when installing a third-party firewall, and resetting Windows Defender Firewall back to defaults when the third-party software is disabled or removed. 
 
-If disabling Windows Firewall with Advanced Security is required, do not disable it by stopping the Windows Firewall service (in the **Services** snap-in, the display name is Windows Firewall and the service name is MpsSvc).
-Stopping the Windows Firewall service is not supported by Microsoft.
+If disabling Windows Defender Firewall is required, do not disable it by stopping the Windows Defender Firewall service (in the **Services** snap-in, the display name is Windows Defender Firewall and the service name is MpsSvc).
+Stopping the Windows Defender Firewall service is not supported by Microsoft.
 
-Non-Microsoft firewall software can programmatically disable only the parts of Windows Firewall with Advanced Security that need to be disabled for compatibility. 
+Non-Microsoft firewall software can programmatically disable only the parts of Windows Defender Firewall that need to be disabled for compatibility. 
 You should not disable the firewall yourself for this purpose. 
 
-The proper method to disable the Windows Firewall is to disable the Windows Firewall Profiles and leave the service running.
+The proper method to disable the Windows Defender Firewall is to disable the Windows Defender Firewall Profiles and leave the service running.
 
-Use the following procedure to turn the firewall off, or disable the Group Policy setting **Computer Configuration|Administrative Templates|Network|Network Connections|Windows Firewall|Domain Prolfile|Windows Firewall:Protect all network connections**. 
-For more information, see [Windows firewall with advanced security deployment guide](windows-firewall-with-advanced-security-deployment-guide.md).
+Use the following procedure to turn the firewall off, or disable the Group Policy setting **Computer Configuration|Administrative Templates|Network|Network Connections|Windows Defender Firewall|Domain Prolfile|Windows Defender Firewall:Protect all network connections**. 
+For more information, see [Windows Defender Firewall with Advanced Security deployment guide](windows-firewall-with-advanced-security-deployment-guide.md).
 
-The following example disables Windows Firewall with Advanced Security for all profiles.
+The following example disables Windows Defender Firewall for all profiles.
 
 ```powershell
 Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
@@ -237,13 +237,13 @@ The following scriptlet enables all rules in a predefined group containing remot
 **Netsh**
 
 ``` syntax
-netsh advfirewall firewall set rule group="windows firewall remote management" new enable=yes
+netsh advfirewall firewall set rule group="Windows Defender Firewall remote management" new enable=yes
 ```
 
 Windows PowerShell
 
 ``` syntax
-Set-NetFirewallRule -DisplayGroup “Windows Firewall Remote Management” –Enabled True
+Set-NetFirewallRule -DisplayGroup “Windows Defender Firewall Remote Management” –Enabled True
 ```
 
 There is also a separate `Enable-NetFirewallRule` cmdlet for enabling rules by group or by other properties of the rule.
@@ -251,7 +251,7 @@ There is also a separate `Enable-NetFirewallRule` cmdlet for enabling rules by g
 Windows PowerShell
 
 ``` syntax
-Enable-NetFirewallRule -DisplayGroup “Windows Firewall Remote Management” -Verbose
+Enable-NetFirewallRule -DisplayGroup “Windows Defender Firewall Remote Management” -Verbose
 ```
 
 ### Delete a firewall rule
@@ -315,7 +315,7 @@ Remove-NetFirewallRule –DisplayName “AllowWeb80” –CimSession $RemoteSess
 
 An Internet Protocol security (IPsec) policy consists of rules that determine IPsec behavior. IPsec supports network-level peer authentication, data origin authentication, data integrity, data confidentiality (encryption), and replay protection.
 
-Windows PowerShell can create powerful, complex IPsec policies like in Netsh and the Windows Firewall with Advanced Security console. However, because Windows PowerShell is object-based rather than string token-based, configuration in Windows PowerShell offers greater control and flexibility.
+Windows PowerShell can create powerful, complex IPsec policies like in Netsh and the Windows Defender Firewall with Advanced Security console. However, because Windows PowerShell is object-based rather than string token-based, configuration in Windows PowerShell offers greater control and flexibility.
 
 In Netsh, the authentication and cryptographic sets were specified as a list of comma-separated tokens in a specific format. In Windows PowerShell, rather than using default settings, you first create your desired authentication or cryptographic proposal objects and bundle them into lists in your preferred order. Then, you create one or more IPsec rules that reference these sets. The benefit of this model is that programmatic access to the information in the rules is much easier. See the following sections for clarifying examples.
 
@@ -524,7 +524,7 @@ New-NetIPSecRule -DisplayName “Tunnel from HQ to Dallas Branch” -Mode Tunnel
 
 ## Deploy secure firewall rules with IPsec
 
-In situations where only secure traffic can be allowed through the Windows Firewall, a combination of manually configured firewall and IPsec rules are necessary. The firewall rules determine the level of security for allowed packets, and the underlying IPsec rules secure the traffic. The scenarios can be accomplished in Windows PowerShell and in Netsh, with many similarities in deployment.
+In situations where only secure traffic can be allowed through the Windows Defender Firewall, a combination of manually configured firewall and IPsec rules are necessary. The firewall rules determine the level of security for allowed packets, and the underlying IPsec rules secure the traffic. The scenarios can be accomplished in Windows PowerShell and in Netsh, with many similarities in deployment.
 
 ### Create a secure firewall rule (allow if secure)
 
@@ -579,7 +579,7 @@ The following firewall rule allows Telnet traffic from user accounts that are me
 
 A Security Descriptor Definition Language (SDDL) string is created by extending a user or group’s security identifier (SID). For more information about finding a group’s SID, see: [Finding the SID for a group account](http://technet.microsoft.com/library/cc753463(WS.10).aspx#bkmk_FINDSID).
 
-Restricting access to a group allows administrations to extend strong authentication support through Windows Firewall/and or IPsec policies.
+Restricting access to a group allows administrations to extend strong authentication support through Windows Defender Firewall and/or IPsec policies.
 
 The following example shows you how to create an SDDL string that represents security groups.
 

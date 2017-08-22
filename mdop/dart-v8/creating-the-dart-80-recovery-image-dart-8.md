@@ -189,7 +189,7 @@ The available image file types are:
 
 -   **Windows Imaging File (WIM)** - used to deploy DaRT to a preboot execution environment (PXE) or local partition).
 
--   **International Standards Organization (ISO)** – used to deploy to CD or DVD, or for use in virtual machines (VM)s). The wizard requires that the ISO image have an .iso file name extension because most programs that burn a CD or DVD require that extension. If you do not specify a different location, the ISO image is created on your desktop with the name DaRT8.ISO.
+-   **ISO image file** – used to deploy to CD or DVD, or for use in virtual machines (VM)s). The wizard requires that the ISO image have an .iso file name extension because most programs that burn a CD or DVD require that extension. If you do not specify a different location, the ISO image is created on your desktop with the name DaRT8.ISO.
 
 -   **PowerShell script** – creates a DaRT recovery image with commands that provide essentially the same options that you can select by using the DaRT Recovery Image wizard. The script also enables you to add or changes files in the DaRT recovery image.
 

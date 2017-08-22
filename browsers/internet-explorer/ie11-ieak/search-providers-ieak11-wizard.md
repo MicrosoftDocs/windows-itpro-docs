@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Search Providers page in the IEAK 11 Customization Wizard to add additional providers and set the default.
 author: eross-msft

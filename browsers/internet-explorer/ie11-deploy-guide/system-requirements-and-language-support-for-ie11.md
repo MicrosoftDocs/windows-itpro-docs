@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Lists the minimum system requirements and supported languages for Internet Explorer 11.
 author: eross-msft

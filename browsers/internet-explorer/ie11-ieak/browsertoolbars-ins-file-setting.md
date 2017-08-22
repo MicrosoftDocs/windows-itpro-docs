@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: Use the \[BrowserToolbars\] .INS file setting to customize your Internet Explorer toolbar and buttons.
 author: eross-msft

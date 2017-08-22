@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Learn about how to use a proxy auto-configuration (.pac) file to specify an automatic proxy URL.
 author: eross-msft

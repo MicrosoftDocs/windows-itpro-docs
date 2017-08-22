@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
 ---
 
@@ -18,7 +18,7 @@ author: iaanw
 
 **Applies to:**
 
-- Windows 10, version 1703
+- Windows 10
 
 **Audience**
 

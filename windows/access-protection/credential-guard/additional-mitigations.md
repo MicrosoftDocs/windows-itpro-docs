@@ -1,21 +1,21 @@
 ---
-title: Scripts for Certificate Issuance Policies in Credential Guard (Windows 10)
-description: Scripts listed in this topic for obtaining the available issuance policies on the certificate authority for Credential Guard on Windows 10.
+title: Additional mitigations
+description: Scripts listed in this topic for obtaining the available issuance policies on the certificate authority for Windows Defender Credential Guard on Windows 10.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
 ## Additional mitigations
 
-Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
+Windows Defender Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, re-using previously stolen credentials prior to Windows Defender Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
 
 ### Restricting domain users to specific domain-joined devices
 
-Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on using devices that have Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
+Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on using devices that have Windows Defender Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Windows Defender Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
 
 #### Kerberos armoring
 
@@ -25,11 +25,11 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 
 -   Users need to be in domains that are running Windows Server 2012 R2 or higher
 -   All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
--   All the devices with Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+-   All the devices with Windows Defender Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
 
 #### Protecting domain-joined device secrets
 
-Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
+Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
 Domain-joined device certificate authentication has the following requirements:
 -   Devices' accounts are in Windows Server 2012 domain functional level or higher.
@@ -59,7 +59,7 @@ For example, let's say you wanted to use the High Assurance policy only on these
 8.  Under **Issuance Policies**, click**High Assurance**.
 9.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box.
 
-Then on the devices that are running Credential Guard, enroll the devices using the certificate you just created.
+Then on the devices that are running Windows Defender Credential Guard, enroll the devices using the certificate you just created.
 
 **Enrolling devices in a certificate**
 
@@ -126,7 +126,7 @@ Authentication policies have the following requirements:
 
 To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
 
-To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/en-us/library/dn486813(v=ws.11).aspx).
+To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](https://technet.microsoft.com/library/dn486813(v=ws.11).aspx).
 
 ### Appendix: Scripts
 
@@ -607,6 +607,6 @@ write-host $tmp -Foreground Red
 
 ## See also
 
-**Deep Dive into Credential Guard: Related videos**
+**Deep Dive into Windows Defender Credential Guard: Related videos**
 
-[Protecting privileged users with Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)
+[Protecting privileged users with Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=JNbjYMJyC_8104300474)

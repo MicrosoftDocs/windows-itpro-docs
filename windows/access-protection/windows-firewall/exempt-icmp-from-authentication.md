@@ -23,8 +23,8 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 To exempt ICMP network traffic from authentication
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
-2.  On the main Windows Firewall with Advanced Security page, click **Windows Firewall Properties**.
+2.  On the main Windows Defender Firewall with Advanced Security page, click **Windows Defender Firewall Properties**.
 
 3.  On the **IPsec settings** tab, change **Exempt ICMP from IPsec** to **Yes**, and then click **OK**.

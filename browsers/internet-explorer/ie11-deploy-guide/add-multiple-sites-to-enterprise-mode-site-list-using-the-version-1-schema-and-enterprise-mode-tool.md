@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can add multiple sites to your Enterprise Mode site list by creating a custom text (TXT) or Extensible Markup Language (XML) file of problematic sites and then adding it in the Bulk add from file area of the Enterprise Mode Site List Manager.

@@ -6,7 +6,7 @@ ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
 title: Group Policy and Mobile Device Management settings for Microsoft Edge (Microsoft Edge for IT Pros)
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge
@@ -656,7 +656,7 @@ All devices must be enrolled with Intune if you want to use the Windows Custom U
 ### ClearBrowsingDataOnExit
 - **Supported versions:** Windows 10, version 1703
 
-- **Supported devices:** Both
+- **Supported devices:** Desktop
 
 - **Details:**
 

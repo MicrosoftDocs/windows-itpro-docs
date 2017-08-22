@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # VPN connection types

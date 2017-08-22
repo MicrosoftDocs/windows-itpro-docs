@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #80def9;
+      }
+
+      .cls-2 {
+        fill: #d1d3d4;
+      }
+
+      .cls-3 {
+        fill: #556a8a;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #e5e5e5;
+      }
+
+      .cls-6, .cls-8 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        stroke: #556a8a;
+      }
+
+      .cls-7 {
+        fill: #d83b01;
+      }
+
+      .cls-8 {
+        stroke: #00bcf2;
+        stroke-linecap: round;
+      }
+
+      .cls-9 {
+        fill: #00bcf2;
+      }
+    </style>
+  </defs>
+  <title>bcs-partner-identitiy-integration-1</title>
+  <g id="ICONS">
+    <g>
+      <rect class="cls-1" x="83" y="63.13" width="233" height="4.87"/>
+      <rect class="cls-2" x="83" y="72.13" width="233" height="4.87"/>
+      <rect class="cls-1" x="83" y="81.13" width="233" height="4.87"/>
+      <polygon class="cls-3" points="222.61 123 177.39 123 172.17 128 227.83 128 222.61 123"/>
+      <polygon class="cls-3" points="203.05 123.94 196.95 123.94 198.17 107.75 201.83 107.75 203.05 123.94"/>
+      <rect class="cls-4" x="134" y="38" width="132" height="72" rx="4" ry="4" transform="translate(400 148) rotate(180)"/>
+      <path class="cls-5" d="M265,57V42.57C265,40,263.78,38,261.11,38H138.9a4.76,4.76,0,0,0-4.9,4.57V57Z"/>
+      <rect class="cls-6" x="134" y="38" width="132" height="72" rx="4" ry="4" transform="translate(400 148) rotate(180)"/>
+    </g>
+    <polygon class="cls-7" points="223 95 223 95.61 223 53.45 204.64 48.59 173.31 59.36 174.51 90.41 187 86.38 187 60.96 205 57.08 205 94.44 172.84 90.41 203 100.58 203 100.58 221.94 95.48 222.68 95 223 95"/>
+    <g>
+      <line class="cls-8" x1="138" y1="23" x2="262" y2="23"/>
+      <polygon class="cls-9" points="144.76 31.18 146.13 29.71 138.91 23 146.13 16.29 144.76 14.82 135.97 23 144.76 31.18"/>
+      <polygon class="cls-9" points="255.24 31.18 253.87 29.71 261.1 23 253.87 16.29 255.24 14.82 264.03 23 255.24 31.18"/>
+    </g>
+  </g>
+</svg>
