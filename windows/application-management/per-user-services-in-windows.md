@@ -80,9 +80,9 @@ Revision=1
 
 ### Manage template services using Group Policy preferences
 
-If a per-user services can't be disabled using a the security template, you can disable it by using Group Policy preferences.
+If a per-user service can't be disabled using a the security template, you can disable it by using Group Policy preferences.
 
-1. On Windows Server domaion controller or Windows 10 computer that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC and press **Enter** to open the **Group Policy Management Console**.
+1. On a Windows Server domain controller or Windows 10 PC that has the [Remote Server Administration Tools (RSAT)](https://www.microsoft.com/en-us/download/details.aspx?id=45520) installed, click **Start**, type GPMC.MSC, and then press **Enter** to open the **Group Policy Management Console**.
 
 2. Create a new Group Policy Object (GPO) or use an existing GPO.  
 
@@ -94,7 +94,7 @@ If a per-user services can't be disabled using a the security template, you can 
 
    ![Group Policy preferences disabling per-user services](media/gpp-per-user-services.png) 
    
-6. Make sure that  HKEY_Local_Machine is selected for Hive and then click the ellipses button next to the Key Path field.
+6. Make sure that  HKEY_Local_Machine is selected for Hive and then click ... (the ellipses) next to Key Path.
 
    ![Choose HKLM](media/gpp-hklm.png)  
     
