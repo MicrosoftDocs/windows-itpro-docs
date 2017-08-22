@@ -1,6 +1,6 @@
 ---
-title: Configuring Windows Hello for Business: Active Directory (Windows Hello for Business)
-description: Configuring Windows Hello for Business: Active Directory
+title: Configuring Windows Hello for Business - Active Directory (Windows Hello for Business)
+description: Configuring Windows Hello for Business - Active Directory
 keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy
