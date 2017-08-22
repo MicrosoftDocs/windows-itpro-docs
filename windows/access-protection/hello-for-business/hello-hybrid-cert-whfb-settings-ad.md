@@ -1,6 +1,6 @@
 ---
-title: Configuring Windows Hello for Business: Active Directory (Windows Hello for Business)
-description: Configuring Windows Hello for Business: Active Directory
+title: Configuring Windows Hello for Business - Active Directory (Windows Hello for Business)
+description: Configuring Windows Hello for Business - Active Directory
 keywords: identity, PIN, biometric, Hello, passport, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,22 +10,21 @@ author: DaniHalfin
 ms.author: mstephen
 localizationpriority: high
 ---
-
 # Configuring Windows Hello for Business: Active Directory
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 > This guide only applies to Windows 10, version 1703 or higher.
 
-> [!div class="step-by-step"]
+>[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
 [ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
 
 The key synchronizaqtion process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 
-> [!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema**.
+>[!IMPORTANT]
+>If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema**.
 
 ## Upgrading Active Directory to the Windows Server 2016 Schema
 
@@ -35,7 +34,7 @@ Manually updating Active Directory uses the command-line utility **adprep.exe** 
 
 To locate the schema master role holder, open and command prompt and type:
 
-```Netdom query fsmo | findstr -i “schema”```
+```Netdom query fsmo | findstr -i schema```
 
 ![Netdom example output](images\hello-cmd-netdom.png)
 
@@ -95,7 +94,7 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 > * Create the Windows Hello for Business Users group
 
 
-> [!div class="step-by-step"]
+>[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
 [ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
 
