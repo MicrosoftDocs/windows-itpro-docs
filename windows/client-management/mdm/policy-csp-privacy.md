@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/21/2017
 ---
 
 # Policy CSP - Privacy
@@ -132,6 +132,42 @@ ms.date: 08/09/2017
 -   65535 (default)- Not configured.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="privacy-enableactivityfeed"></a>**Privacy/EnableActivityFeed**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+Added in Windows 10, version 1709. Allows IT Admins to allow Apps/OS to publish to the activity feed.
+
+The following list shows the supported values:
+
+-   0 – Disabled. Apps/OS can't publish the activities and roaming is disabled. (not published to the cloud).
+-   1 – (default) Enabled. Apps/OS can publish the activities and will be roamed across device graph.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -2505,6 +2541,42 @@ ms.date: 08/09/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="privacy-publishuseractivities"></a>**Privacy/PublishUserActivities**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+Added in Windows 10, version 1709. Allows It Admins to enable publishing of user activities to the activity feed.
+
+The following list shows the supported values:
+
+-   0 – Disabled. Apps/OS can't publish the *user activities*.
+-   1 – (default) Enabled. Apps/OS can publish the *user activities*.
+
+<!--EndDescription-->
+<!--EndPolicy-->
 <hr/>
 
 Footnote:
@@ -2518,7 +2590,7 @@ Footnote:
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic for Business  
 
--   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)   
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -2545,6 +2617,7 @@ Footnote:
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Privacy policies supported by Microsoft Surface Hub  
 
+-   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed)  
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -2553,5 +2626,7 @@ Footnote:
 -   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
+
 <!--EndSurfaceHub-->
 
