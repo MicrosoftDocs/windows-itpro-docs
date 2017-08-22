@@ -27,7 +27,7 @@ You're environment is federated and you are ready to configure your hybrid envir
 The configuration for Windows Hello for Business is grouped in four categories.  These categories are: 
 * [Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
 * [Public Key Infrastructure](hello-hybrid-cert-whfb-settings-pki.md)
-* [Active Directory Federation Services](hello-hybrid-cert-whfb-settings-adfs)
+* [Active Directory Federation Services](hello-hybrid-cert-whfb-settings-adfs.md)
 * [Group Policy](hello-hybrid-cert-whfb-settings-policy.md)
 
 For the most efficent deployment, configure these technologies in order beginning with the Active Directory configuration
