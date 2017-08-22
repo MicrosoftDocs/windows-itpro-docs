@@ -17,7 +17,7 @@ localizationpriority: high
 
 > This guide only applies to Windows 10, version 1703 or higher.
 
-> [! div class="step-by-step"]
+> [!div class="step-by-step"]
 [Configure Windows Hello for Business: Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
  
 You're environment is federated and you are ready to configure your hybrid environment for Windows Hello for business using the certificate trust model.  
