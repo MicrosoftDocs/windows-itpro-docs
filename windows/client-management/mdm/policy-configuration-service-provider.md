@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/04/2017
+ms.date: 08/21/2017
 ---
 
 # Policy CSP
@@ -337,6 +337,30 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#encryptionmethodbydrivetype" id="encryptionmethodbydrivetype">BitLocker/EncryptionMethodByDriveType</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#fixeddrivesrecoveryoptions" id="fixeddrivesrecoveryoptions">BitLocker/FixedDrivesRecoveryOptions</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#fixeddrivesrequireencryption" id="fixeddrivesrequireencryption">BitLocker/FixedDrivesRequireEncryption</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#removabledrivesrequireencryption" id="removabledrivesrequireencryption">BitLocker/RemovableDrivesRequireEncryption</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesminimumpinlength" id="systemdrivesminimumpinlength">BitLocker/SystemDrivesMinimumPINLength</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrecoverymessage" id="systemdrivesrecoverymessage">BitLocker/SystemDrivesRecoveryMessage</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrecoveryoptions" id="systemdrivesrecoveryoptions">BitLocker/SystemDrivesRecoveryOptions</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrequirestartupauthentication" id="systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a> in BitLocker CSP
   </dd>
 </dl>
 
@@ -975,6 +999,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-experience.md#experience-donotshowfeedbacknotifications" id="experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
+  </dd>
+</dl>
+
+### ExploitGuard policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
   </dd>
 </dl>
 
@@ -1830,7 +1862,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon">LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</a>
   </dd>
   <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-tbuseraccountcontrol-runalladministratorsinadminapprovalmoded" id="localpoliciessecurityoptions-tbuseraccountcontrol-runalladministratorsinadminapprovalmoded">LocalPoliciesSecurityOptions/TBUserAccountControl_RunAllAdministratorsInAdminApprovalModeD</a>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode">LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation">LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</a>
@@ -1990,6 +2022,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-disableadvertisingid" id="privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-enableactivityfeed" id="privacy-enableactivityfeed">Privacy/EnableActivityFeed</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccessaccountinfo" id="privacy-letappsaccessaccountinfo">Privacy/LetAppsAccessAccountInfo</a>
@@ -2206,6 +2241,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappssyncwithdevices-userincontroloftheseapps" id="privacy-letappssyncwithdevices-userincontroloftheseapps">Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-publishuseractivities" id="privacy-publishuseractivities">Privacy/PublishUserActivities</a>
   </dd>
 </dl>
 
@@ -3321,6 +3359,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
 -   [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)  
 -   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
+-   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed) 
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -3329,6 +3368,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
 -   [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
 -   [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
@@ -3374,6 +3414,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
+-   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed) 
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -3382,6 +3423,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  

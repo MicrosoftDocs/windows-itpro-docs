@@ -15,9 +15,9 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-This GPO is authored by using the Windows Firewall with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to server devices that are running at least Windows Server 2008.
+This GPO is authored by using the Windows Defender Firewall interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to server devices that are running at least Windows Server 2008.
 
-Because so many of the settings and rules for this GPO are common to those in the GPO for at least Windows Vista, you can save time by exporting the Windows Firewall with Advanced Security piece of the GPO for at least Windows Vista, and importing it to the GPO for at least Windows Server 2008. After the import, change only the items specified here:
+Because so many of the settings and rules for this GPO are common to those in the GPO for at least Windows Vista, you can save time by exporting the Windows Defender Firewall piece of the GPO for at least Windows Vista, and importing it to the GPO for at least Windows Server 2008. After the import, change only the items specified here:
 
 -   This GPO applies all its settings to all profiles: Domain, Private, and Public. Because a server is not expected to be mobile and changing networks, configuring the GPO in this way prevents a network failure or the addition of a new network adapter from unintentionally switching the device to the Public profile with a different set of rules (in the case of a server running Windows Server 2008).
 

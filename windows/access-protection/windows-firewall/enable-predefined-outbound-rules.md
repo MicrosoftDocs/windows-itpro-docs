@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-By default, Windows Firewall with Advanced Security allows all outbound network traffic unless it matches a rule that prohibits the traffic. Windows Firewall with Advanced Security includes many predefined outbound rules that can be used to block network traffic for common networking roles and functions. When you install a new server role on a computer or enable a network feature on a client computer, the installer can install, but typically does not enable, outbound block rules for that role. When deploying firewall rules to the computers on the network, you can take advantage of these predefined rules instead of creating new ones. Doing this helps to ensure consistency and accuracy, because the rules have been thoroughly tested and are ready for use.
+By default, Windows Defender Firewall with Advanced Security allows all outbound network traffic unless it matches a rule that prohibits the traffic. Windows Defender Firewall includes many predefined outbound rules that can be used to block network traffic for common networking roles and functions. When you install a new server role on a computer or enable a network feature on a client computer, the installer can install, but typically does not enable, outbound block rules for that role. When deploying firewall rules to the computers on the network, you can take advantage of these predefined rules instead of creating new ones. Doing this helps to ensure consistency and accuracy, because the rules have been thoroughly tested and are ready for use.
 
 **Administrative credentials**
 
@@ -23,7 +23,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 To deploy predefined firewall rules that block outbound network traffic for common network functions
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Outbound Rules**.
 

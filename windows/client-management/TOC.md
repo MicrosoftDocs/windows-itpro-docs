@@ -7,6 +7,7 @@
 ## [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md)
 ## [Manage the Settings app with Group Policy](manage-settings-app-with-group-policy.md)
 ## [Reset a Windows 10 Mobile device](reset-a-windows-10-mobile-device.md)
+## [Transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md)
 ## [Windows 10 Mobile deployment and management guide](windows-10-mobile-and-mdm.md)
 ## [Windows libraries](windows-libraries.md)
 ## [Mobile device management for solution providers](mdm/index.md)
