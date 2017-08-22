@@ -108,7 +108,7 @@ The action to restrict an application from running applies a code integrity poli
    ![Image of app restriction notification](images/atp-notification-restrict.png)
 
   The Action center shows the submission information:
-   [NEED IMAGE HERE OF APP RESTRICTION]
+   ![Image of action center with app restriction](images/atp-action-center-restrict-app.png)
 
 
   - **Submission time** - Shows when the isolation action was submitted.
@@ -163,6 +163,9 @@ The package contains the following folders:
 
 3.  Type a comment and select **Yes, collect package** to take action on the machine.
 
+    ![Image of notification to collect package](images/atp-notification-collect-package.png)
+
+
     The Action center shows the submission information:
     ![Image of investigation package in action center](images/atp-action-center-package-collection.png)
 
@@ -186,18 +189,22 @@ As part of the investigation or response process, you can remotely initiate an a
 
 1.	Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
 
-  -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
-  -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  -	**Machines list** - Select the machine name from the list of machines.
-  -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  - **Machines list** - Select the machine name from the list of machines.
+  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 2.	Open the **Actions** menu and select **Run antivirus scan**.
-    [INSERT SCREEN CAPTURE OF ACTION BUTTON HERE!!!]
+    ![Image of run antivirus scan](images/atp-run-av-scan.png)
+
+    
 3. Select the scan type that you'd like to run. You can choose between a quick or a full scan.
+    ![Image of notification to select quick scan or full scan and add comment](images/atp-av-scan-notification.png)
+    
 
-4. Type a comment (optional) and select **Yes** to start the scan.
+4. Type a comment and select **Yes, run scan** to start the scan.
 
-  The Action center shows the scan information:
-[INSERT SCREEN CAPTURE OF POP UP HERE]
+    The Action center shows the scan information:
+    ![Image of action center with antivirus scan](images/atp-av-scan-action-center.png)
 
 -	**Submission time** - Shows when the isolation action was submitted.
 -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
@@ -206,7 +213,14 @@ As part of the investigation or response process, you can remotely initiate an a
 The machine timeline will include a new event, reflecting that a scan action was submitted on the machine as well as an event when a scan has completed. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Check activity details in Action center
-The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view if a machine was isolated and if an investigation package is available from a machine. All related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
+The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
+
+- Investigation package collection
+- Antivirus scan
+- App restriction
+- Machine isolation
+
+All other related details are also shown, for example, submission time, submitting user, and if the action succeeded or failed.
 
 ![Image of action center with information](images/atp-action-center-with-info.png)
 
