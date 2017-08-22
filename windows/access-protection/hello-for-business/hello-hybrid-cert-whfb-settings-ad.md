@@ -1,7 +1,7 @@
 ---
-title: Configuring Windows Hello for Business - Hybrid - Active Directory
-description: Configuring Windows Hello for Business - Hybrid - Active Directory
-keywords: identity, PIN, biometric, Hello, passport, WHFB
+title: Configuring Hybrid Windows Hello for Business - Active Directory (AD)
+description: Discussing the configuration of Active Directory (AD) in a Hybrid deployment of Windows Hello for Business
+keywords: identity, PIN, biometric, Hello, passport, WHFB, ad
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,15 +15,15 @@ ms.author: mstephen
 **Applies to**
 -   Windows 10
 
-> This guide only applies to Windows 10, version 1703 or higher.
-
 >[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
 [ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
 
-The key synchronizaqtion process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
+The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 
 >[!IMPORTANT]
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
+>
 >If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema**.
 
 ## Upgrading Active Directory to the Windows Server 2016 Schema

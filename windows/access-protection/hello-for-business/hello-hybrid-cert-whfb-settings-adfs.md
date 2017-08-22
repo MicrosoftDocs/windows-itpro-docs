@@ -1,24 +1,24 @@
 ---
-title: Configure Windows Hello for Business: Active Directory Federation Services
-description: Configure Windows Hello for Business: Active Directory Federation Services
-keywords: identity, PIN, biometric, Hello, passport, WHFB
+title:  Configuring Hybrid Windows Hello for Business - Active Directory Federation Services (ADFS)
+description: Discussing the configuration of Active Directory Federation Services (ADFS) in a Hybrid deployment of Windows Hello for Business
+keywords: identity, PIN, biometric, Hello, passport, WHFB, adfs
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.author: mstephen
 localizationpriority: high
+author: mikestephens-MS
+ms.author: mstephen
 ---
 # Configure Windows Hello for Business: Active Directory Federation Services
 
 **Applies to**
--   Windows 10
-
-> This guide only applies to Windows 10, version 1703 or higher.
-
+-   Windows10
 
 ## Federation Services
+
+>[!IMPORTANT]
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 The Windows Server 2016 Active Directory Fedeartion Server Certificate Registration Authority (AD FS RA) enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority. 
 
@@ -42,7 +42,7 @@ The `Set-AdfsCertificateAuthority` cmdlet should show the following warning:
 This warning indicates that you have not configured multi-factor authentication in AD FS and until it is configured, the AD FS server will not issue Windows Hello certificates.  Windows 10, version 1703 clients check this configuration during prerequisite checks.  If detected, the prerequisite check will not succeed and the user will not provision Windows Hello for Business on sign-in.
 
 >[!NOTE]
-> If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  It’s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
+> If you gave your Windows Hello for Business Enrollment Agent and Windows Hello for Business Authentication certificate templates different names, then replace **WHFBEnrollmentAgent** and WHFBAuthentication in the above command with the name of your certificate templates.  Itï¿½s important that you use the template name rather than the template display name.  You can view the template name on the **General** tab of the certificate template using the **Certificate Template** management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on a Windows Server 2012 or later certificate authority.
 
 
 ### Group Memberships for the AD FS Service Account
@@ -54,11 +54,11 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 1. Open **Active Directory Users and Computers**.
 2. Click the **Users** container in the navigation pane.
 3. Right-click **KeyCredential Admins** in the details pane and click **Properties**.
-4. Click the **Members** tab and click **Add…**
+4. Click the **Members** tab and click **Addï¿½**
 5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 7. Right-click **Windows Hello for Business Users** group
-8. Click the **Members** tab and click **Add…**
+8. Click the **Members** tab and click **Addï¿½**
 9. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
 10.	Click **OK** to return to **Active Directory Users and Computers**.
 11.	Change to server hosting the AD FS role and restart it.

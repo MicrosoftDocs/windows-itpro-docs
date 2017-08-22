@@ -1,21 +1,19 @@
 ---
-title: Configure Windows Hello for Business: Directory Synchronization
-description: Configure Windows Hello for Business: Directory Synchronization
-keywords: identity, PIN, biometric, Hello, passport, WHFB
+title: Configuring Hybrid Windows Hello for Business - Directory Synchronization
+description: Discussing Directory Synchronization in a Hybrid deployment of Windows Hello for Business
+keywords: identity, PIN, biometric, Hello, passport, WHFB, dirsync, connect
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.author: mstephen
 localizationpriority: high
+author: mikestephens-MS
+ms.author: mstephen
 ---
 # Configure Windows Hello for Business: Directory Synchronization
 
 **Applies to**
--   Windows 10
-
-> This guide only applies to Windows 10, version 1703 or higher.
+-   Windows 10
 
 ## Directory Syncrhonization
 
