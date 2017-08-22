@@ -6,10 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 08/22/2017
 ---
 
 # Office CSP
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Office configuration service provider (CSP) enables a Microsoft Office client to be installed on a device via the Office Deployment Tool. For more information, see [Configuration options for the Office Deployment Tool](https://technet.microsoft.com/en-us/library/jj219426.aspx). 
 This CSP was added in Windows 10, version 1703.
@@ -38,7 +41,7 @@ The following diagram shows the Office configuration service provider in tree fo
 
 <a href="" id="install"></a>**Install**  
 
-<p style="margin-left: 20px">Installs office by using the XML data specified in the configuration.xml file. 
+<p style="margin-left: 20px">Installs Office by using the XML data specified in the configuration.xml file. 
 
 <p style="margin-left: 20px">The supported operations are Get and Execute.
 
@@ -48,13 +51,18 @@ The following diagram shows the Office configuration service provider in tree fo
 
 <p style="margin-left: 20px">The only supported operation is Get.
 
+<a href="" id="currentstatus"></a>**CurrentStatus** 
+
+<p style="margin-left: 20px">Returns an XML of current Office 365 installation status on the device.
+
+<p style="margin-left: 20px">The only supported operation is Get.
 
 ## Examples
 
 Sample SyncML to install Office 365 Business Retail from current channel.
 
 ```syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
       <CmdID>7</CmdID>
@@ -76,7 +84,7 @@ Sample SyncML to install Office 365 Business Retail from current channel.
 To uninstall the Office 365 from the system:
 
 ```syntax
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Exec>
       <CmdID>7</CmdID>
@@ -92,6 +100,24 @@ To uninstall the Office 365 from the system:
     </Exec>
     <Final/>
   </SyncBody>
+</SyncML>
+```
+
+To get the current status of Office 365 on the device.
+
+``` syntax
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Get>
+      <CmdID>7</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/Office/Installation/CurrentStatus</LocURI>
+          </Target>
+        </Item>
+    </Get>
+    <Final/>
+  </SyncBody>
 </SyncML>
 ```
 
