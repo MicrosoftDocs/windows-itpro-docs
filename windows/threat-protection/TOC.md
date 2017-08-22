@@ -6,7 +6,7 @@
 ### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
 ### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
 ### [Onboard endpoints and set up access](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
-#### [Configure endpoints](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
+#### [Configure client endpoints](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
 ##### [Configure endpoints using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 ##### [Configure endpoints using System Security Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 ##### [Configure endpoints using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)

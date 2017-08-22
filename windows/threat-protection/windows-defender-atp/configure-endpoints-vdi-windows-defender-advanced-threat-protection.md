@@ -15,7 +15,7 @@ ms.localizationpriority: high
 # Configure non-persistent virtual desktop infrastructure (VDI) machines
 
 **Applies to:**
-- Virtual desktop infrastructure (VDI)
+- Virtual desktop infrastructure (VDI) machines
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
