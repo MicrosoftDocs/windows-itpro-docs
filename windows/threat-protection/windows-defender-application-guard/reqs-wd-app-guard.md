@@ -25,7 +25,9 @@ Your environment needs the following hardware to run Application Guard.
 |--------|-----------|
 |64-bit CPU|A 64-bit computer is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/tlfs).|
 |CPU virtualization extensions|Extended page tables, also called _Second Level Address Translation (SLAT)_<br><br>**-AND-**<br><br>One of the following virtualization extensions for VBS:<br><br>VT-x (Intel)<br><br>**-OR-**<br><br>AMD-V|
-|Hardware memory|4 GB minimum, 8 GB recommended|
+|IOMMU|Not required but strongly recommended|
+|Hardware memory|8 GB minimum, 16 GB recommended|
+|Harddisk|5 GB free space, SSD recommended|
 
 ## Software requirements
 Your environment needs the following hardware to run Application Guard.
