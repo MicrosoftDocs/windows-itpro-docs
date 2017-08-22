@@ -31,6 +31,7 @@
 ##### [Filter events from a specific date](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#filter-events-from-a-specific-date)
 ##### [Export machine timeline events](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#export-machine-timeline-events)
 ##### [Navigate between pages](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#navigate-between-pages)
+##### [Manage machine group and tags](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
 #### [Investigate a user account](windows-defender-atp\investigate-user-windows-defender-advanced-threat-protection.md)
 #### [Manage alerts](windows-defender-atp\manage-alerts-windows-defender-advanced-threat-protection.md)
 #### [Take response actions](windows-defender-atp\response-actions-windows-defender-advanced-threat-protection.md)
