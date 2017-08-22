@@ -57,17 +57,12 @@ You can onboard VDI machines using a single entry or multiple entries for each m
   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 6. Test your solution:
-
   a. Create a pool with one machine.
-
   b. Logon to machine.
-
   c. Logoff from machine.
-
   d. Logon to machine with another user.
-
   e. **For single entry for each machine**: Check only one entry in the Windows Defender ATP portal.<br>
-  **For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
+**For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
 
 7. Click **Machines list** on the Navigation pane.
 
