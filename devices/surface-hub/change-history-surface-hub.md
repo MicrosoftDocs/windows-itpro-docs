@@ -18,9 +18,14 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 
 ## August 2017
 
-New or changed topic | Description 
---- | --- 
+
+| New or changed topic | Description |
+| --- | --- |
 [Accessibility](accessibility-surface-hub.md) | Added information about Narrator
+[Sign in to Surface Hub with Microsoft Authenticator](surface-hub-authenticator-app.md) | New
+
+
+
 
 
 ## July 2017

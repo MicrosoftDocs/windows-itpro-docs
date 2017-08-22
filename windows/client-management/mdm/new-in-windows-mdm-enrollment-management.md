@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/14/2017
+ms.date: 08/21/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -974,6 +974,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709:</p>
+<ul>
+<li>Installation/CurrentStatus</li>
+</ul>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -1012,6 +1019,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Power/HibernateTimeoutPluggedIn</li>
 <li>Power/StandbyTimeoutOnBattery</li>
 <li>Power/StandbyTimeoutPluggedIn</li>
+<li>Privacy/EnableActivityFeed</li>
+<li>Privacy/PublishUserActivities</li>
 <li>Defender/AttackSurfaceReductionOnlyExclusions</li>
 <li>Defender/AttackSurfaceReductionRules</li>
 <li>Defender/CloudBlockLevel </li>
@@ -1365,6 +1374,13 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709:</p>
+<ul>
+<li>Installation/CurrentStatus</li>
+</ul>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top">Added information to the ADMX-backed policies.
 </td></tr>
@@ -1407,6 +1423,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
+<li>Privacy/EnableActivityFeed</li>
+<li>Privacy/PublishUserActivities</li>
 </ul>
 <p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
 <p>Added links to the additional [ADMX-backed BitLocker policies](policy-csp-bitlocker.md).</p>
