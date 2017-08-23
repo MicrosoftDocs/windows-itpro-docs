@@ -97,7 +97,7 @@ Appv.admx file:
 
 ## <a href="" id="admx-backed-policy-examples"></a>ADMX-backed policy examples
 
-The following SyncML examples describe how to set a MDM policy that is defined by an ADMX template, specifically the Publishing_Server2_Policy Group Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this Group Policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-backed policy. These SyncML examples illustrate common options and the corresponding SyncML code that can be used for testing your policies. Note that the payload of the SyncML must be XML-encoded; for this XML encoding, you can use the [Coder’s Toolbox](http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii) online tool. To avoid encoding the payload, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+The following SyncML examples describe how to set a MDM policy that is defined by an ADMX template, specifically the Publishing_Server2_Policy Group Policy description in the application virtualization ADMX file, appv.admx. Note that the functionality that this Group Policy manages is not important; it is used to illustrate only how an MDM ISV can set an ADMX-backed policy. These SyncML examples illustrate common options and the corresponding SyncML code that can be used for testing your policies. Note that the payload of the SyncML must be XML-encoded; for this XML encoding, you can use favorite online tool. To avoid encoding the payload, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 
 ### <a href="" id="enabling-a-policy"></a>Enabling a policy
@@ -119,7 +119,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -169,7 +169,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -209,7 +209,7 @@ The following SyncML examples describe how to set a MDM policy that is defined b
 **Request SyncML**
 ```
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Delete>
       <CmdID>1</CmdID>
@@ -292,7 +292,7 @@ The `text` element simply corresponds to a string and correspondingly to an edit
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>$CmdId$</CmdID>
@@ -333,7 +333,7 @@ The `multiText` element simply corresponds to a REG_MULTISZ registry string and 
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -377,7 +377,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -409,7 +409,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -466,7 +466,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -503,7 +503,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 #### Corresponding SyncML:
 
 ```XML
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>
@@ -552,7 +552,7 @@ Variations of the `list` element are dictated by attributes. These attributes ar
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<SyncML xmlns="SYNCML:SYNCML1.1">
+<SyncML xmlns="SYNCML:SYNCML1.2">
   <SyncBody>
     <Replace>
       <CmdID>2</CmdID>

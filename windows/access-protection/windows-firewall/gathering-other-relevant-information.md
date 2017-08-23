@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-This topic discusses several other things that you should examine to see whether they will cause any complications in your ability to deploy Windows Firewall with Advanced Security policies in your organization.
+This topic discusses several other things that you should examine to see whether they will cause any complications in your ability to deploy Windows Defender Firewall with Advanced Security policies in your organization.
 
 ## Capacity considerations
 
@@ -35,7 +35,7 @@ Because IPsec uses mathematically intensive cryptographic techniques, it can con
 
 ## Group Policy deployment groups and WMI filters
 
-You do not have to rearrange the organization unit (OU) hierarchy of your Active Directory domains to effectively deploy Windows Firewall with Advanced Security GPOs. Instead, you can link your GPOs at the domain level (or another high level container), and then use security group filtering or WMI filtering to ensure that only the appropriate devices or users can apply the GPO settings. We recommend that you use WMI filtering to dynamically ensure that GPOs apply only to devices that are running the correct operating system. It is not necessary to use this technique if your network consists of devices.
+You do not have to rearrange the organization unit (OU) hierarchy of your Active Directory domains to effectively deploy Windows Defender Firewall GPOs. Instead, you can link your GPOs at the domain level (or another high level container), and then use security group filtering or WMI filtering to ensure that only the appropriate devices or users can apply the GPO settings. We recommend that you use WMI filtering to dynamically ensure that GPOs apply only to devices that are running the correct operating system. It is not necessary to use this technique if your network consists of devices.
 
 ## Different Active Directory trust environments
 
