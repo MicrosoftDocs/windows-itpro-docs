@@ -54,8 +54,9 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
     ![Image of isolation confirmation](images/atp-confirm-isolate.png)
 
 4. Type a comment and select **Yes, isolate machine** to take action on the machine.
-  >[!NOTE]
-  >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
+  
+    >[!NOTE]
+    >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
 
    The Action center shows the submission information:
     ![Image of machine isolation](images/atp-machine-isolation.png)
@@ -162,10 +163,7 @@ The package contains the following folders:
     ![Image of collect investigation package action](images/atp-collect-investigation-package.png)
 
 3.  Type a comment and select **Yes, collect package** to take action on the machine.
-
     ![Image of notification to collect package](images/atp-notification-collect-package.png)
-
-
     The Action center shows the submission information:
     ![Image of investigation package in action center](images/atp-action-center-package-collection.png)
 
