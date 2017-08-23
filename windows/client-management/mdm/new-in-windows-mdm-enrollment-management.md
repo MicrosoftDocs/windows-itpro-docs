@@ -1025,10 +1025,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Defender/AttackSurfaceReductionRules</li>
 <li>Defender/CloudBlockLevel </li>
 <li>Defender/CloudExtendedTimeout</li>
-<li>Defender/EnableGuardMyFolders</li>
+<li>Defender/ControlledFolderAccessAllowedApplications</li>
+<li>Defender/ControlledFolderAccessProtectedFolders</li>
+<li>Defender/EnableControlledFolderAccess</li>
 <li>Defender/EnableNetworkProtection</li>
-<li>Defender/GuardedFoldersAllowedApplications</li>
-<li>Defender/GuardedFoldersList</li>
 <li>Education/DefaultPrinterName</li>
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
@@ -1427,6 +1427,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Privacy/PublishUserActivities</li>
 </ul>
 <p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
+<p>Changed the names of the following policies:</p>
+<ul>
+<li>Defender/GuardedFoldersAllowedApplications to Defender/ControlledFolderAccessAllowedApplications</li>
+<li>Defender/GuardedFoldersList to Defender/ControlledFolderAccessProtectedFolders</li>
+<li>Defender/EnableGuardMyFolders to Defender/EnableControlledFolderAccess</li>
+</ul>
 <p>Added links to the additional [ADMX-backed BitLocker policies](policy-csp-bitlocker.md).</p>
 </td></tr>
 </tbody>
