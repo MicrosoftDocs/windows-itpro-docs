@@ -192,21 +192,22 @@ As part of the investigation or response process, you can remotely initiate an a
   - **Machines list** - Select the machine name from the list of machines.
   - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 2.	Open the **Actions** menu and select **Run antivirus scan**.
-    ![Image of run antivirus scan](images/atp-run-av-scan.png)
 
+    ![Image of run antivirus scan](images/atp-run-av-scan.png)
     
 3. Select the scan type that you'd like to run. You can choose between a quick or a full scan.
     ![Image of notification to select quick scan or full scan and add comment](images/atp-av-scan-notification.png)
     
 
-4. Type a comment and select **Yes, run scan** to start the scan.
+4. Type a comment and select **Yes, run scan** to start the scan.<br>
 
     The Action center shows the scan information:
+
     ![Image of action center with antivirus scan](images/atp-av-scan-action-center.png)
 
--	**Submission time** - Shows when the isolation action was submitted.
--	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
--	**Status** - Indicates any pending actions or the results of completed actions.
+    - **Submission time** - Shows when the isolation action was submitted.
+    - **Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
+    - **Status** - Indicates any pending actions or the results of completed actions.
 
 The machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
 
