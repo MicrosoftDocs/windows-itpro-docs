@@ -54,7 +54,6 @@
 ####### [Submit files for analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
 ####### [View deep analysis reports](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#view-deep-analysis-reports)
 ####### [Troubleshoot deep analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#troubleshoot-deep-analysis)
-##### [Optimize security products](windows-defender-atp\optimize-security-windows-defender-advanced-threat-protection.md)
 ### [Pull alerts to your SIEM tools](windows-defender-atp\configure-siem-windows-defender-advanced-threat-protection.md)
 #### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
 #### [Configure Splunk to pull alerts](windows-defender-atp\configure-splunk-windows-defender-advanced-threat-protection.md)
