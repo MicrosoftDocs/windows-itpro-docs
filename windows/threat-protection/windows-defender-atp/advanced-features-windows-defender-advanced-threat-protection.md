@@ -65,3 +65,4 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 - [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)

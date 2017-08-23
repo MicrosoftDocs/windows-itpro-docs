@@ -33,3 +33,4 @@ Topic | Description
 [Configure email notifications](configure-email-notifications-windows-defender-advanced-threat-protection.md) | Enables you to configure and identify a group of individuals who will immediately be informed of new alerts through email notifications.
 [Enable SIEM integration](enable-siem-integration-windows-defender-advanced-threat-protection.md) | Enable security information and event management (SIEM) integration to pull alerts from the Windows Defender ATP portal using your SIEM solution.
 [Enable Threat intel API](enable-custom-ti-windows-defender-advanced-threat-protection.md) | Before you can create custom threat intelligence (TI) using REST API, you'll need to set up the custom threat intelligence application.
+[Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md) | Get security insights by creating and building Power BI dashboards using data from Windows Defender ATP and other data sources.
