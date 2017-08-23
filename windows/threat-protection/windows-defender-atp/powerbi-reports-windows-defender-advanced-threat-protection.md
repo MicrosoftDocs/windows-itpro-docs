@@ -41,7 +41,7 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
     ![Preferences setup with create dashboard button](images/atp-create-dashboard.png)
 
-    >[NOTE]
+    >[!NOTE]
     >Loading your data in the Power BI service can take a few minutes.
 
 3. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
