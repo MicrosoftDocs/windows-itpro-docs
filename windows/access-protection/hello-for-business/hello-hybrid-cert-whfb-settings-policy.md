@@ -10,7 +10,7 @@ localizationpriority: high
 author: mikestephens-MS
 ms.author: mstephen
 ---
-# Configure Windows Hello for Business: Group Policy
+# Configure Hybrid Windows Hello for Business: Group Policy
 
 **Applies to**
 -   Windows 10

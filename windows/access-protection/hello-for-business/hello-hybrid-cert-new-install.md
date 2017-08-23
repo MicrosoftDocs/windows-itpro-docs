@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
+author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
 ---
@@ -15,7 +15,7 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
-> This guide only applies to Windows 10, version 1703 or higher.
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Windows Hello for Business involves configuring distributed technologies that may or may not exist in your current infrastructure.  Hybrid certificate trust deployments of Windows Hello for Business rely on these technolgies
 
@@ -195,4 +195,4 @@ Follow the Windows Hello for Business hybrid certificate trust deployment guide.
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. New Installation Baseline (*You are here*)
 4. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
-5. Sign-in and Provision
+5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

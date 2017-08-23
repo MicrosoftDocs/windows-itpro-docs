@@ -11,7 +11,7 @@ author: mikestephens-MS
 ms.author: mstephen
 ---
 
-# Configure Windows Hello for Business: Public Key Infrastructure
+# Configure Hybrid Windows Hello for Business: Public Key Infrastructure
 
 **Applies to**
 -   Windows 10
@@ -190,5 +190,5 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. Configure Windows Hello for Business settings: PKI (*You are here*)
-5. Sign-in and Provision
+5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
 

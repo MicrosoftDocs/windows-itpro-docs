@@ -1,22 +1,22 @@
 ---
-title: Validate Public Key Infrastructure (Windows Hello for Business)
-description: How to Validate Public Key Infrastructure for Windows Hello for Business
-keywords: identity, PIN, biometric, Hello, passport
+title: Hybrid Windows Hello for Business Prerequistes (Windows Hello for Business)
+description: Prerequisites for Hybrid Windows Hello for Business Deployments
+keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
+author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
 ---
-# Hybrid Certificate Trust Prerequisites
+# Hybrid Windows Hello for Business Prerequisites
 
 **Applies to**
 -   Windows 10
 
 
-> This guide only applies to Windows 10, version 1703 or higher.
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Hybrid environments are distributed systems that enable organizations to use on-premises and Azure resources. Windows Hello for Business uses the existing distributed system as a foundation on which organizations can provide two-factor authentication that provides a single sign-in like experience to modern resources.
 
@@ -121,4 +121,4 @@ Follow the Windows Hello for Business hybrid certificate trust deployment guide.
 2. Prerequistes (*You are here*)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
-5. Sign-in and Provision
+5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

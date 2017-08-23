@@ -20,6 +20,11 @@ ms.author: mstephen
 >[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
+>[!div class="step-by-step"]
+[ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+[< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings-policy.md)
+
+
 The Windows Server 2016 Active Directory Fedeartion Server Certificate Registration Authority (AD FS RA) enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority. 
 
 The Windows Hello for Business Authentication certificate template is configured to only issue certificates to certificate requests that have been signed with an enrollment agent certificate.
@@ -54,32 +59,23 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 1. Open **Active Directory Users and Computers**.
 2. Click the **Users** container in the navigation pane.
 3. Right-click **KeyCredential Admins** in the details pane and click **Properties**.
-4. Click the **Members** tab and click **Add�**
+4. Click the **Members** tab and click **Add**
 5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
 6. Click **OK** to return to **Active Directory Users and Computers**.
 7. Right-click **Windows Hello for Business Users** group
-8. Click the **Members** tab and click **Add�**
+8. Click the **Members** tab and click **Add**
 9. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
 10.	Click **OK** to return to **Active Directory Users and Computers**.
 11.	Change to server hosting the AD FS role and restart it.
 
-### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [x] Directory Synchronization
-- [x] Active Directory Federation Services
-- [x] Federation Services
-  - [x]	Federation Proxy Servers
-  - [x]	Multiple top-level domains
-  - [x]	Azure Device Registration
-  - [x]	Device Writeback
-- [x] Multifactor Authentication
-- [x] Windows Hello for Business
-  - [x]Active Directory
-  - [x] Directory Synchronization
-  - [x] Public Key Infrastructure
-  - [x] Federation Services
-  - [ ] Group Policy
-- [ ] Sign-in and Provision
+<br>
+
+<hr>
+
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+1. [Overview](hello-hybrid-cert-trust.md)
+2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+4. Configure Windows Hello for Business settings (*You are here*)
+5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
 

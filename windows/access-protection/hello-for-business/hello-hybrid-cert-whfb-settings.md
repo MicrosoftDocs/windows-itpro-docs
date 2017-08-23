@@ -45,4 +45,4 @@ For the most efficent deployment, configure these technologies in order beginnin
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. Configure Windows Hello for Business settings (*You are here*)
-5. Sign-in and Provision
+5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

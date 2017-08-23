@@ -15,7 +15,7 @@ localizationpriority: high
 **Applies to**
 -   Windows 10
 
-> This guide only applies to Windows 10, version 1703 or higher.
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
  
 Windows Hello for Business replaces username and password sign-in to Windows with strong user authentication based on asymmetric key pair. The following deployment guide provides the information needed to successfully deploy Windows Hello for Business in a hybrid certificate trust scenario.
@@ -42,4 +42,4 @@ Regardless of the baseline you choose, you’re next step is to familiarize your
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
 4. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
-5. Sign-in and Provision
+5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

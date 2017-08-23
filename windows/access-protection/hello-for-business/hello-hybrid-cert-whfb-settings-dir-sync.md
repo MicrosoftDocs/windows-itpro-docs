@@ -10,12 +10,15 @@ localizationpriority: high
 author: mikestephens-MS
 ms.author: mstephen
 ---
-# Configure Windows Hello for Business: Directory Synchronization
+# Configure Hybrid Windows Hello for Business: Directory Synchronization
 
 **Applies to**
 -   Windows 10
 
 ## Directory Syncrhonization
+
+>[!IMPORTANT]
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 In hybrid deployments, users register the public portion of their Windows Hello for Business crednetial with Azure.  Azure AD Connect syncrhonizes the Windows Hello for Business public key to Active Directory.  
 
