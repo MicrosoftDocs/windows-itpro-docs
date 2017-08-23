@@ -47,7 +47,7 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
 
 2.	Open the **Actions** menu and select **Isolate machine**.
 
-    ![Image of isolate machine](images/atp-isolate-machine.png)
+    ![Image of isolate machine](images/atp-actions-isolate-machine.png)
 
 3. Select the check-box if you'd like to enable Outlook and Skype communication while the machine is isolated.
 
@@ -62,10 +62,7 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
     ![Image of machine isolation](images/atp-machine-isolation.png)
 
    - **Submission time** - Shows when the isolation action was submitted.
-   - **Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
-   - **Exceptions** - Indicates whether Outlook and Skype for Business exceptions were enabled.
-    - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
-
+   - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
 
 When the isolation configuration is applied, a new event is reflected in the machine timeline.
 
@@ -74,16 +71,16 @@ When a machine is being isolated, the following notification is displayed to inf
 
 ![Image of no network connection](images/atp-notification-isolate.png)
 
-## Undo machine isolation
+## Release machine from isolation
 Depending on the severity of the attack and the state of the machine you can choose to release the machine from isolation after you have verified that the compromised machine has been remediated.
 
 1.	Select a machine that was previously isolated.
 
-2.	Open the **Actions** menu and select **Undo machine isolation**.
+2.	Open the **Actions** menu and select **Release from isolation**.
 
-    ![Image of undo isolation](images/atp-undo-isolation.png)
+    ![Image of release from isolation](images/atp-actions-release-from-isolation.png)
 
-3.	Type a comment and select **Yes, undo machine isolation** to take action on the machine. The machine will be reconnected to the network.
+3.	Type a comment and select **Yes, release machine** to take action on the machine. The machine will be reconnected to the network.
 
 ## Restrict app execution
 In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
@@ -102,32 +99,31 @@ The action to restrict an application from running applies a code integrity poli
 
 2.	Open the **Actions** menu and select **Restrict app execution**.
 
-    ![Image of restrict app execution action](images/atp-restrict-app.png)
+    ![Image of restrict app execution action](images/atp-actions-restrict-app-execution.png)
 
 3. Type a comment and select **Yes, restict app execution** to take action on the file.
 
    ![Image of app restriction notification](images/atp-notification-restrict.png)
 
-  The Action center shows the submission information:
-   ![Image of action center with app restriction](images/atp-action-center-restrict-app.png)
+    The Action center shows the submission information:
+    ![Image of action center with app restriction](images/atp-action-center-app-restriction.png)
 
 
   - **Submission time** - Shows when the isolation action was submitted.
-  - **Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
   - **Status** - Indicates any pending actions or the results of completed actions.
 
 When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
 
 
-## Undo app execution restriction 
+## Remove app restriction 
 Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
 
 1.	Select the machine where you restricted an application from running from.
 
-2.	Open the **Actions** menu and select **Cancel action**. 
-  [NEED SCREENSHOT OF THIS]
+2.	Open the **Actions** > **Remove app restrictions**. 
+    ![Image of remove app restrictions](images/atp-actions-remove-app-restrictions.png)
 
-3.	Type a comment and select **Yes** to take action on the application. The machine application restriction will no longer apply on the machine.  
+3.	Type a comment and select **Yes, remove restriction** to take action on the application. The machine application restriction will no longer apply on the machine.  
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
@@ -160,15 +156,16 @@ The package contains the following folders:
 
 2.	Open the **Actions** menu and select **Collect investigation package**.
 
-    ![Image of collect investigation package action](images/atp-collect-investigation-package.png)
+    ![Image of collect investigation package action](images/atp-actions-collect-investigation-package.png)
 
 3.  Type a comment and select **Yes, collect package** to take action on the machine.
+  
     ![Image of notification to collect package](images/atp-notification-collect-package.png)
+
     The Action center shows the submission information:
     ![Image of investigation package in action center](images/atp-action-center-package-collection.png)
 
     - **Submission time** - Shows when the action was submitted.
-    -	**Submitting user** - Shows who submitted the action on the file. You can view the comments provided by the user by selecting the information icon.
     -	**Status** - Indicates if the package was successfully collected from the network. When the collection is complete, you can download the package.
 
 3.	Select **Package available** to download the package. </br>
@@ -193,9 +190,10 @@ As part of the investigation or response process, you can remotely initiate an a
   - **Search box** - Select Machine from the drop-down menu and enter the machine name.
 2.	Open the **Actions** menu and select **Run antivirus scan**.
 
-    ![Image of run antivirus scan](images/atp-run-av-scan.png)
+    ![Image of run antivirus scan](images/atp-actions-run-av.png)
     
 3. Select the scan type that you'd like to run. You can choose between a quick or a full scan.
+
     ![Image of notification to select quick scan or full scan and add comment](images/atp-av-scan-notification.png)
     
 
@@ -206,7 +204,6 @@ As part of the investigation or response process, you can remotely initiate an a
     ![Image of action center with antivirus scan](images/atp-av-scan-action-center.png)
 
     - **Submission time** - Shows when the isolation action was submitted.
-    - **Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
     - **Status** - Indicates any pending actions or the results of completed actions.
 
 The machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
