@@ -109,6 +109,7 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
 2. The list of suppression rules shows all the rules that users in your organization have created.
 
+You can select rules to open up the **Alert management** pane. From there, you can activate previously disabled rules.
 
 ## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
