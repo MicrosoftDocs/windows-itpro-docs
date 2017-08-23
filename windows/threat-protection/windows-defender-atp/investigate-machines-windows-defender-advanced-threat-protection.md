@@ -31,15 +31,25 @@ You can click on affected machines whenever you see them in the portal to open a
 - Any IP address or domain details view
 
 When you investigate a specific machine, you'll see:
--	Machine details, Logged on users, and Machine Reporting
+-	Machine details, Azure Advanced Threat Protection alerts, Logged on users, and Machine Reporting
 - Alerts related to this machine
 - Machine timeline
 
-![Image of machine details page](images/atp-machine-details-view.png)
+![Image of machine details page](images/atp-machine-view-ata.png)
 
-The machine details, total logged on users and machine reporting sections display various attributes about the machine. You’ll see details such as machine name, health state, actions you can take on the machine, and others. For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
+The machine details, Azure Advanced Threat Protection alerts, total logged on users, and machine reporting sections display various attributes about the machine.
 
-You'll also see other information such as domain, operating system (OS) and build, total logged on users and who frequently and less frequently logged on, IP address, and how long it's been reporting sensor data to the Windows Defender ATP service.
+The machine details tile provides information such as the domain and OS of the machine. If there's an investigation package available on the machine, you'll see a link that allows you to download the package.
+
+For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
+
+If you have enabled the Azure Advanced Threat Protection feature and there are alerts related to the machine, you can click on the link that will take you to the Azure Advanced Threat Protection page where more information about the alerts are provided. The Azure Advanced Threat Protection tile also provides details such as the last Azure Active Directory site information and total domain group memberships.
+
+>[!NOTE]
+>You’ll need to enable the integration between Windows Defender ATP and Azure Advanced Threat Protection to use this feature.
+
+
+For more information on how to enable the Azure Advanced Threat Protection integration, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 Clicking on the number of total logged on users in the Logged on users tile opens the Users Details pane that displays the following information for logged on users in the past 30 days:
 
@@ -72,38 +82,40 @@ Use the search bar to look for specific timeline events. Harness the power of us
 
 -	**Value** - Type in any search keyword to filter the timeline with the attribute you’re searching for. This search supports defined search queries based on type:value pairs.<br>
   You can use any of the following values:<br>
-  - Hash: Sha1 or MD5
-  - File name
-  - File extension
-  - Path
-  - Command line
-  - User
-  - IP
-  - URL
+    - Hash: Sha1 or MD5
+    - File name
+    - File extension
+    - Path
+    - Command line
+    - User
+    - IP
+    - URL
+
 -	**Informational level** – Click the drop-down button to filter by the following levels:
-  - Detections mode: displays Windows ATP Alerts and detections
-  -	Behaviors mode: displays "detections" and selected events of interest
-  -	Verbose mode: displays all raw events without aggregation or filtering
+    - Detections mode: displays Windows ATP Alerts and detections
+    -	Behaviors mode: displays "detections" and selected events of interest
+    -	Verbose mode: displays all raw events without aggregation or filtering
 
 - **Event type** - Click the drop-down button to filter by the following levels:
-  - Windows Defender ATP alerts
-  - Windows Defender AV alerts
-  - Response actions
-  - AppGuard related events
-  - Windows Defender Device Guard events
-  - Process events
-  - Network events
-  - File events
-  - Registry events
-  - Load DLL events
-  - Other events <br><br>
-  Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
+    - Windows Defender ATP alerts
+    - Windows Defender AV alerts
+    - Device Guard events
+    - Exploit Guard events
+    - SmartScreen events
+    - Response actions
+    - Process events
+    - Network events
+    - File events
+    - Registry events
+    - Load DLL events
+    - Other events <br><br>
+    Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
 
 -	**User account** – Click the drop-down button to filter the machine timeline by the following user associated events:
-  -	Logon users
-  -	System
-  -	Network
-  -	Local service
+    -	Logon users
+    -	System
+    -	Network
+    -	Local service
 
 The following example illustrates the use of type:value pair. The events were filtered by searching for the user jonathan.wolcott and network events as the event type:
 
