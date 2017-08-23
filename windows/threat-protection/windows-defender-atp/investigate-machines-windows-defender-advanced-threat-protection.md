@@ -62,12 +62,14 @@ You'll also see details such as logon types for each user account, the user grou
 
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
 
+## Alerts related to this machine
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. You can also manage alerts from this section by clicking the circle icons to the left of the alert (or using Ctrl or Shift + click to select multiple alerts).
 
 This list is a filtered version of the [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows the date when the alert's last activity was detected, a short description of the alert, the user account associated with the alert, the alert's severity, the alert's status in the queue, and who is addressing the alert. You'll also see a list of displayed alerts and you'll be able to quickly know the total number of alerts on the machine.
 
 You can also choose to highlight an alert from the **Alerts related to this machine** or from the  **Machine timeline** section to see the correlation between the alert and its related events on the machine by right-clicking on the alert and selecting **Select and mark events**. This highlights the alert and its related events and helps distinguish them from other alerts and events appearing in the timeline. Highlighted events are displayed in all information levels whether you choose to view the timeline by **Detections**, **Behaviors**, or **Verbose**.
 
+## Machine timeline
 The **Machine timeline** section provides a chronological view of the events and associated alerts that have been observed on the machine.
 
 This feature also enables you to selectively drill down into events that occurred within a given time period. You can view the temporal sequence of events that occurred on a machine over a selected time period.  
@@ -150,6 +152,54 @@ You can also use the [Alerts spotlight](investigate-alerts-windows-defender-adva
 Expand an event to view associated processes related to the event. Click on the circle next to any process or IP address in the process tree to investigate additional details of the identified processes. This action brings up the **Details pane** which includes execution context of processes, network communications and a summary of metadata on the file or IP address.
 
 The details pane enriches the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
+
+## Manage machine group and tags
+Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 
+
+Machine related properties are being extended to account for:
+
+- Group affiliation
+- Dynamic context capturing  
+
+
+
+### Group machines
+Machine group affiliation can represent geographic location, specific activity, importance level and others. Grouping machines with similar attributes can be handy when you need to apply contextual action on a specific list of machines. After creating groups, you can apply the Group filter on the Machines list to get a narrowed list of machines.
+
+Machine group is defined in the following registry key entry of the machine:
+
+-	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
+-	Registry key value (string): Group
+
+
+### Set standard tags on machines
+Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
+
+1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
+
+    -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
+    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+    -	**Machines list** - Select the machine name from the list of machines.
+    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+    You can also get to the alert page through the file and IP views.
+
+2.	Open the **Actions** menu and select **Manage tags**.
+
+    ![Image of taking action to manage tags on a machine](images/atp-manage-tags.png)
+
+3. Enter tags on the machine. To add more tags, click the + icon.
+4. Click **Save and close**. 
+
+    ![Image of adding tags on a machine](images/atp-save-tag.png)
+
+    Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** or **Groups** filter to see the relevant list of machines.
+
+### Manage machine tags
+You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
+
+![Image of adding tags on a machine](images/atp-tag-management.png)
+
 
 ## Related topics
 - [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
