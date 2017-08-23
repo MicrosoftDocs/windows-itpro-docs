@@ -44,7 +44,10 @@ For more information, see [Investigate a user account](investigate-user-windows-
 Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
 
 ## Azure Advanced Threat Protection integration
-When you enable this feature, you'll gain visibility on alerts that are flagged by Azure Advanced Threat Protection. If there are alerts available on a machine or a user account, you can click the link to be taken to the Azure Advanced Threat Protection portal.
+The integration with Azure Advanced Threat Protection allows you to pivot directly into another Microsoft Identity security product. Azure Advanced Threat Protection augments an investigation with additional insights about a suspected compromised account and related resources. By enabling this feature, you’ll enrich the machine-based investigation capability by pivoting across the network from an identify point of view. Advanced Threat Protection portal.
+
+>[!NOTE]
+>You'll need to have the appropriate license to enable this feature. 
 
 ## Office 365 Threat Intelligence connection
 This feature is only available if you have an active Office 365 E5 or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
