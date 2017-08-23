@@ -8,6 +8,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.author: jdecker
+ms.date: 10/05/2017
 ---
 
 # Customize Windows 10 Start and taskbar with Group Policy
@@ -60,6 +62,9 @@ Three features enable Start and taskbar layout control:
 
 
 To apply the Start and taskbar layout to users in a domain, use the Group Policy Management Console (GPMC) to configure a domain-based Group Policy Object (GPO) that sets **Start Layout** policy settings in the **Start Menu and Taskbar** administrative template for users in a domain.
+
+>[!IMPORTANT]
+>In Windows 10, version 1709, Edge is pinned to the desktop automatically during Windows 10 installation or upgrade. When you apply a custom Start layout using this policy, Edge will not be pinned to the desktop. 
 
 The GPO applies the Start and taskbar layout at the next user sign-in. Each time the user signs in, the timestamp of the .xml file with the Start and taskbar layout is checked and if a newer version of the file is available, the settings in the latest version of the file are applied.
 
