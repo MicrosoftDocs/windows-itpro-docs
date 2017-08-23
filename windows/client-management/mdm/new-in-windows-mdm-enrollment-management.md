@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/11/2017
+ms.date: 08/21/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -52,7 +52,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew"></a>What's new in Windows 10, version 1511
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -184,7 +184,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew1607"></a>What's new in Windows 10, version 1607
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -495,7 +495,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew10"></a>What's new in Windows 10, version 1703
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -678,12 +678,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Update/ActiveHoursMaxRange</li>
 <li>Update/AutoRestartDeadlinePeriodInDays</li>
 <li>Update/AutoRestartNotificationSchedule</li>
-<li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
 <li>Update/DetectionFrequency</li>
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
-<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/EngagedRestartTransitionSchedule</li>
 <li>Update/IgnoreMOAppDownloadLimit</li>
 <li>Update/IgnoreMOUpdateDownloadLimit</li>
 <li>Update/PauseFeatureUpdatesStartTime</li>
@@ -917,7 +916,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew1709"></a>What's new in Windows 10, version 1709
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -975,6 +974,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709:</p>
+<ul>
+<li>Installation/CurrentStatus</li>
+</ul>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -982,6 +988,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
+<li>ExploitGuard/ExploitProtectionSettings</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1012,14 +1019,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Power/HibernateTimeoutPluggedIn</li>
 <li>Power/StandbyTimeoutOnBattery</li>
 <li>Power/StandbyTimeoutPluggedIn</li>
+<li>Privacy/EnableActivityFeed</li>
+<li>Privacy/PublishUserActivities</li>
 <li>Defender/AttackSurfaceReductionOnlyExclusions</li>
 <li>Defender/AttackSurfaceReductionRules</li>
 <li>Defender/CloudBlockLevel </li>
 <li>Defender/CloudExtendedTimeout</li>
-<li>Defender/EnableGuardMyFolders</li>
+<li>Defender/ControlledFolderAccessAllowedApplications</li>
+<li>Defender/ControlledFolderAccessProtectedFolders</li>
+<li>Defender/EnableControlledFolderAccess</li>
 <li>Defender/EnableNetworkProtection</li>
-<li>Defender/GuardedFoldersAllowedApplications</li>
-<li>Defender/GuardedFoldersList</li>
 <li>Education/DefaultPrinterName</li>
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
@@ -1315,7 +1324,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ### August 2017
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -1364,10 +1373,41 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li> Provider/_ProviderID_/EnrollmentInfo</li>
 </ul>
 </td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Office CSP](office-csp.md)</td>
+<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709:</p>
+<ul>
+<li>Installation/CurrentStatus</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top">Added information to the ADMX-backed policies.
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
+<td style="vertical-align:top">Updated the CSP and DDF topics. Here are the changes:
+<ul>
+<li>Removed the two settings - FirewallRules/FirewallRuleName/FriendlyName and FirewallRules/FirewallRuleName/IcmpTypesAndCodes.</li>
+<li>Changed some data types from integer to bool.</li>
+<li>Updated the list of supported operations for some settings.</li>
+<li>Added default values.</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top">Added another Policy DDF file [download](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml) for the 8C release of Windows 10, version 1607, which added the following policies:
+<ul>
+<li>Browser/AllowMicrosoftCompatibilityList</li>
+<li>Update/DisableDualScan</li>
+<li>Update/FillEmptyContentUrls</li>
+</ul>
+</td></tr>
 <tr class="even">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
 <ul>
+<li>ExploitGuard/ExploitProtectionSettings</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1392,8 +1432,17 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</li> 
 <li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
+<li>Privacy/EnableActivityFeed</li>
+<li>Privacy/PublishUserActivities</li>
 </ul>
 <p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
+<p>Changed the names of the following policies:</p>
+<ul>
+<li>Defender/GuardedFoldersAllowedApplications to Defender/ControlledFolderAccessAllowedApplications</li>
+<li>Defender/GuardedFoldersList to Defender/ControlledFolderAccessProtectedFolders</li>
+<li>Defender/EnableGuardMyFolders to Defender/EnableControlledFolderAccess</li>
+</ul>
+<p>Added links to the additional [ADMX-backed BitLocker policies](policy-csp-bitlocker.md).</p>
 </td></tr>
 </tbody>
 </table>
@@ -1999,11 +2048,10 @@ Also Added [Firewall DDF file](firewall-ddf-file.md).</td></tr>
 <li>TimeLanguageSettings/AllowSet24HourClock</li>
 <li>Update/ActiveHoursMaxRange</li>
 <li>Update/AutoRestartNotificationSchedule</li>
-<li>Update/AutoRestartNotificationStyle</li>
 <li>Update/AutoRestartRequiredNotificationDismissal</li>
 <li>Update/EngagedRestartDeadline</li>
 <li>Update/EngagedRestartSnoozeSchedule</li>
-<li>Update/EngagedRestartTransistionSchedule</li>
+<li>Update/EngagedRestartTransitionSchedule</li>
 <li>Update/SetAutoRestartNotificationDisable</li>
 <li>WindowsLogon/HideFastUserSwitching</li>
 </ul>

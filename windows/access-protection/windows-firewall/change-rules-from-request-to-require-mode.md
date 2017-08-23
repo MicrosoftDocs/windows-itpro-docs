@@ -29,9 +29,9 @@ In this topic:
 
 ## To convert a rule from request to require mode
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
-2.  In the navigation pane, click **Connection Security Rules**.
+2.  In the right navigation pane, click **Connection Security Rules**.
 
 3.  In the details pane, double-click the connection security rule that you want to modify.
 

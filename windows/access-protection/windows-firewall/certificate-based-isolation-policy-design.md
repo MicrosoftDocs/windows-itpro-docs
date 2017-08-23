@@ -31,10 +31,10 @@ For more info about this design:
 
 -   To learn more about this design, see [Certificate-based Isolation Policy Design Example](certificate-based-isolation-policy-design-example.md).
 
--   Before completing the design, gather the information described in [Designing a Windows Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
+-   Before completing the design, gather the information described in [Designing a Windows Defender Firewall with Advanced Security Strategy](designing-a-windows-firewall-with-advanced-security-strategy.md).
 
 -   To help you make the decisions required in this design, see [Planning Certificate-based Authentication](planning-certificate-based-authentication.md).
 
 -   For a list of tasks that you can use to deploy your certificate-based policy design, see [Checklist: Implementing a Certificate-based Isolation Policy Design](checklist-implementing-a-certificate-based-isolation-policy-design.md).
 
-**Next: **[Evaluating Windows Firewall with Advanced Security Design Examples](evaluating-windows-firewall-with-advanced-security-design-examples.md)
+**Next: **[Evaluating Windows Defender Firewall with Advanced Security Design Examples](evaluating-windows-firewall-with-advanced-security-design-examples.md)

@@ -27,7 +27,7 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 ## To create a firewall rule that grants access to an isolated server
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md). You must edit the GPO that applies settings to servers in the isolated server zone.
+1.  Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md). You must edit the GPO that applies settings to servers in the isolated server zone.
 
 2.  In the navigation pane, right-click **Inbound Rules**, and then click **New Rule**.
 
