@@ -142,7 +142,7 @@ Expand an event to view associated processes related to the event. Click on the 
 The details pane enriches the ‘in-context’ information across investigation and exploration activities, reducing the need to switch between contexts. It lets you focus on the task of tracing associations between attributes without leaving the current context.
 
 ## Manage machine group and tags
-You can group and add tags to machines to organize and identify specific endpoints in your organization. 
+Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 
 
 Machine related properties are being extended to account for:
 
