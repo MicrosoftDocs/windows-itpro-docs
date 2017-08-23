@@ -210,7 +210,7 @@ As part of the investigation or response process, you can remotely initiate an a
 -	**Submitting user** - Shows who submitted the action on the machine. You can view the comments provided by the user by selecting the information icon.
 -	**Status** - Indicates any pending actions or the results of completed actions.
 
-The machine timeline will include a new event, reflecting that a scan action was submitted on the machine as well as an event when a scan has completed. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
+The machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
 
 ## Check activity details in Action center
 The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
