@@ -47,6 +47,10 @@ If you have enabled the Azure Advanced Threat Protection feature and there are a
 
 You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
 
+>[!NOTE]
+>You’ll need to enable the integration between Windows Defender ATP and Azure Advanced Threat Protection to use this feature.
+
+
 For more information on how to enable advanced features, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
 The **Alerts related to this user** section provides a list of alerts that are associated with the user account. This list  is a filtered view of the [Alert queue](alerts-queue-windows-defender-advanced-threat-protection.md), and shows alerts where the user context is the selected user account, the date when the last activity was detected, a short description of the alert, the machine associated with the alert, the alert's severity, the alert's status in the queue, and who is assigned the alert.

@@ -43,7 +43,11 @@ The machine details tile provides information such as the domain and OS of the m
 
 For more information on how to take action on a machine, see [Take response action on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md).
 
-If you have enabled the Azure Advanced Threat Protection feature and there are alerts related to the machine, you can click on the link that will take you to the Azure Advanced Threat Protection page where more information about the alerts are provided. The Azure Advanced Threat Protection tile also provides details such as the last AD site and total domain group memberships.
+If you have enabled the Azure Advanced Threat Protection feature and there are alerts related to the machine, you can click on the link that will take you to the Azure Advanced Threat Protection page where more information about the alerts are provided. The Azure Advanced Threat Protection tile also provides details such as the last Azure Active Directory site information and total domain group memberships.
+
+>[!NOTE]
+>You’ll need to enable the integration between Windows Defender ATP and Azure Advanced Threat Protection to use this feature.
+
 
 For more information on how to enable the Azure Advanced Threat Protection integration, see [Turn on advanced features](advanced-features-windows-defender-advanced-threat-protection.md).
 
