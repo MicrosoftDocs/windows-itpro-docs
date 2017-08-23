@@ -120,7 +120,8 @@ Depending on the severity of the attack and the state of the machine, you can ch
 
 1.	Select the machine where you restricted an application from running from.
 
-2.	Open the **Actions** > **Remove app restrictions**. 
+2.	Open the **Actions** menu and select **Remove app restrictions**. 
+
     ![Image of remove app restrictions](images/atp-actions-remove-app-restrictions.png)
 
 3.	Type a comment and select **Yes, remove restriction** to take action on the application. The machine application restriction will no longer apply on the machine.  
