@@ -190,7 +190,3 @@ Set options related to MMS message notifications. You can specify whether users 
 
 
 
-
-## Related topics
-
-- [w4 APPLICATION CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/w4-application-csp)
