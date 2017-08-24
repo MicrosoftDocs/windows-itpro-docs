@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: DulceMV
 ms.localizationpriority: high
+ms.date: 09/01/2017
 ---
 
 # Windows Defender Advanced Threat Protection settings

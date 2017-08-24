@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/01/2017
 ---
 
 # Onboard and set up Windows Defender Advanced Threat Protection
