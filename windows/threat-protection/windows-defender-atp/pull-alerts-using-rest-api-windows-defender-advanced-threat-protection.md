@@ -22,6 +22,8 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 Windows Defender ATP supports the OAuth 2.0 protocol to pull alerts from the portal.
 
 In general, the OAuth 2.0 protocol supports four types of flows:

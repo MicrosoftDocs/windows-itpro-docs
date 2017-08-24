@@ -21,6 +21,8 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 The Antivirus optimization tile provides a list of recommendations to affected machines. Taking action on the recommendations will help improve your overall organizational security:
 
 - [Use Windows Defender AV with Windows Defender ATP](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-compatibility)

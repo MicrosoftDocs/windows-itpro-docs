@@ -22,6 +22,8 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 A typical security breach investigation requires a member of a security operations team to:
 
 1. View an alert on the **Dashboard** or **Alerts queue**

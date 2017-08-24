@@ -23,6 +23,8 @@ ms.localizationpriority: high
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 Windows Defender ATP users and access permissions are managed in Azure Active Directory (AAD). Use the following methods to assign security roles.
 
 ## Assign user access using Azure PowerShell

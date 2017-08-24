@@ -23,6 +23,8 @@ ms.localizationpriority: high
 - Windows Defender
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 The Windows Defender Advanced Threat Protection agent depends on Windows Defender Antivirus for some capabilities such as file scanning.
 
 If an onboarded endpoint is protected by a third-party antimalware client, Windows Defender Antivirus on that endpoint will enter into passive mode.

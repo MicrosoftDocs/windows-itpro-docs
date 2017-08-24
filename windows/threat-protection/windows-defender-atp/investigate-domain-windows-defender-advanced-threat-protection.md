@@ -21,6 +21,8 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 Investigate a domain to see if machines and servers in your enterprise network have been communicating with a known malicious domain.
 
 You can see information from the following sections in the URL view:

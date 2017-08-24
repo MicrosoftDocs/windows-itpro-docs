@@ -22,6 +22,8 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 You need to onboard to Windows Defender ATP before you can use the service.
 
 For more information, see [Onboard your Windows 10 endpoints to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be).

@@ -19,6 +19,8 @@ localizationpriority: high
 - Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 Windows Defender Security Center provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
 You'll need to know the exact Linux distros and Mac OS X versions that are compatible with Windows Defender ATP for the integration to work. 

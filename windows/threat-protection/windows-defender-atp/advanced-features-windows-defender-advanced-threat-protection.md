@@ -21,9 +21,9 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Windows Defender ATP with.
-
-
 
 Turn on the following advanced features to get better protected from potentially malicious files and gain better insight during security investigations:
 

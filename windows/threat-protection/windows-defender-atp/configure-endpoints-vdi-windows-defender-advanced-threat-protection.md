@@ -17,6 +17,8 @@ ms.localizationpriority: high
 **Applies to:**
 - Virtual desktop infrastructure (VDI) machines
 
+<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+
 ## Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
 Windows Defender ATP supports non-persistent VDI session onboarding. There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
