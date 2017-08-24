@@ -52,7 +52,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew"></a>What's new in Windows 10, version 1511
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -184,7 +184,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew1607"></a>What's new in Windows 10, version 1607
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -495,7 +495,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew10"></a>What's new in Windows 10, version 1703
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -916,7 +916,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 
 ## <a href="" id="whatsnew1709"></a>What's new in Windows 10, version 1709
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -1324,7 +1324,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ### August 2017
 
-<table>
+<table class="mx-tdBreakAll">
 <colgroup>
 <col width="25%" />
 <col width="75%" />
@@ -1392,6 +1392,15 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Changed some data types from integer to bool.</li>
 <li>Updated the list of supported operations for some settings.</li>
 <li>Added default values.</li>
+</ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top">Added another Policy DDF file [download](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml) for the 8C release of Windows 10, version 1607, which added the following policies:
+<ul>
+<li>Browser/AllowMicrosoftCompatibilityList</li>
+<li>Update/DisableDualScan</li>
+<li>Update/FillEmptyContentUrls</li>
 </ul>
 </td></tr>
 <tr class="even">
