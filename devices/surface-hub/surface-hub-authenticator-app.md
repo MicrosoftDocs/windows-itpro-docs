@@ -39,8 +39,13 @@ Currently, you cannot use Microsoft Authenticator to sign in to Surface Hubs tha
 ## Individual prerequisites
 
 - An Android phone running 6.0 or later, or an iPhone or iPad running iOS9 or later 
+
 - The most recent version of the Microsoft Authenticator app from the appropriate app store 
+    >[!NOTE]
+    >The Microsoft Authenticator app on phones running a Windows operating system can't be used to sign in to Surface Hub.
+    
 - Passcode or screen lock on your device is enabled
+
 - A standard SMTP email address (example: joe@contoso.com). Non-standard or vanity SMTP email addresses (example: firstname.lastname@contoso.com) currently don’t work.
 
 
