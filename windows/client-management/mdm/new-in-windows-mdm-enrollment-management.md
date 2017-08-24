@@ -1443,6 +1443,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Defender/EnableGuardMyFolders to Defender/EnableControlledFolderAccess</li>
 </ul>
 <p>Added links to the additional [ADMX-backed BitLocker policies](policy-csp-bitlocker.md).</p>
+<p>There were issues reported with the previous release of the following policies. These issues were fixed in Window 10, version 1709:</p>
+<ul>
+<li>Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts</li>
+<li>Start/HideAppList</li>
+</ul>
 </td></tr>
 </tbody>
 </table>
