@@ -82,7 +82,7 @@ Reporting | Configure time out for detections in non-critical failed state | Not
 Reporting | Configure time out for detections in recently remediated state | Not used
 Reporting | Configure time out for detections requiring additional action | Not used
 Reporting | Turn off enhanced notifications | [Configure the notifications that appear on endpoints](configure-notifications-windows-defender-antivirus.md)
-Root | Turn off Windows Defender Antivirus | Not used
+Root | Turn off Windows Defender Antivirus | Not used (This setting must be set to **Not configured** to ensure any installed third-party antivirus apps work correctly)
 Root | Define addresses to bypass proxy server | Not used
 Root | Define proxy auto-config (.pac) for connecting to the network | Not used
 Root | Define proxy server for connecting to the network | Not used
