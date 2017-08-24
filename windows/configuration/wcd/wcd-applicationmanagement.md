@@ -14,6 +14,9 @@ ms.date: 08/21/2017
 
 Use these settings to manage app installation and management.
 
+>[!NOTE]
+>ApplicationManagement settings are not available in Windows 10, version 1709.
+
 ## Applies to
 
 | Settings | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |

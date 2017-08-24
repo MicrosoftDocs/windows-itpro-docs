@@ -12,7 +12,7 @@ ms.date: 08/21/2017
 
 # ModemConfiguration (Windows Configuration Designer reference)
 
-Documentation not available at this time.
+ModemConfiguration settings are removed in Windows 10, version 1709.
 
 ## Applies to
 

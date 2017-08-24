@@ -18,10 +18,8 @@ Use to configure settings related to variou types of phone connections.
 
 | Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Cellular](#cellular)  | X |  X  | X | X |  |
-| [EnterpriseAPN](#enterpriseapn) | X |  X  | X | X |  |
-| [Policies](#policies) | X |  X  | X | X |  |
-| [Proxies](#proxies) | X |  X  | X | X |  |
+| All settings  | X |  X  | X | X |  |
+
 
 For each setting group:
 1. In **Available customizations**, select the setting group (such as **Cellular**), enter a friendly name for the connection, and then click **Add**.
@@ -35,6 +33,10 @@ See [CM_CellularEntries configuration service provider (CSP)](https://msdn.micro
 
 See [Configure cellular settings for tablets and PCs](https://docs.microsoft.com/windows/configuration/provisioning-apn) and 
 [EnterpriseAPN CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseapn-csp) for settings and values.
+
+## General
+
+Use **General > DataRoam** to set the default value for the **Default romaing options** option in the **Settings > cellular + SIM"" area on the device. 
 
 ## Policies
 

@@ -18,10 +18,8 @@ Use to configure settings for cellular connections.
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [AccountExperienceURL](#accountexperienceurl) | X |    |  |  |  |
-| [AppID](#appid) | X |    |  |  |  |
-| [NetworkBlockList](#networkblocklist) | X |    |  |  |  |
-| [SIMBlockList](#simblocklist) | X |    |  |  |  |
+| All settings | X |    |  |  |  |
+
 
 
 To begin, enter a SIM integrated circuit card identifier (**SimIccid**), and click **Add**. In the **Customizations** pane, select the SimIccid that you just entered and configure the following settings for it.
@@ -34,6 +32,17 @@ Enter the URL for the mobile operator's web page.
 
 Enter the AppID for the mobile operator's app in Microsoft Store.
 
+## BrandingIcon
+
+
+## BrandingIconPath
+
+
+
+## BrandingName
+
+Enter the service provider name for the mobile operator.
+
 ## NetworkBlockList
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
@@ -41,3 +50,8 @@ Enter a comma-separated list of mobile country code (MCC) and mobile network cod
 ## SIMBlockList
 
 Enter a comma-separated list of mobile country code (MCC) and mobile network code (MCC) pairs (MCC:MNC).
+
+
+## UseBrandingNameOnRoaming
+
+Select an option for displaying the BrandingName when the device is roaming.
