@@ -12,7 +12,10 @@ ms.date: 08/21/2017
 
 # Messaging (Windows Configuration Designer reference)
 
-Use for settings related to Messaging. 
+Use for settings related to Messaging and Commercial Mobile Alert System (CMAS).
+
+>[!NOTE]
+>CMAS is now known as Wireless Emergency Alerts (WEA). 
 
 ## Applies to
 
@@ -20,22 +23,58 @@ Use for settings related to Messaging.
 | --- | :---: | :---: | :---: | :---: | :---: |
 | All settings |   | X |  |  |  |
 
-## GlobalSettings > ShowSendingStatus
+## GlobalSettings 
 
-Set **ShowSendingStatus** to **True** to display the sending status for SMS/MMS messages.
+### DisplayCmasLifo
 
-## PerSimSettings > _ICCID
+Use this setting to change the order in which CMAS alert messages are displayed, from the default FIFO to LIFO.
 
-Use to configure settings for each subscriber identification module (SIM) card.
+If the phone receives at least one CMAS alert message which has not been acknowledged by the user, and another CMAS alert message arrives on the phone, partners can configure the order in which the newly received alert messages are displayed on the phone regardless of the service category of the alert. Users will not be able to change the display order once it has been set. 
 
-### AllowSelectAllContacts
+If partners do not specify a value for this customization, the default first in/first out (FIFO) display order is used.
 
-Set to **True** to show the select all contacts/unselect all menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks.
+Users will be able to acknowledge the messages in the reverse order they were received.
 
-Windows 10 Mobile supports the following select multiple recipients features:
+When configured as **True**, you set a last in/first out (LIFO) message order. When configured as **False**, you set a first in/first out (FIFO) message order.
 
-- A multi-select chooser, which enables users to choose multiple contacts.
-- A **select all contacts/unselect all** menu option, which enables users to select or unselect all their contacts. This option is not shown by default and must be enabled by the OEM.
+### EnableCustomLineSetupDialog
+
+
+### VoicemailIntercept
+
+Partners can define a filter that intercepts an incoming SMS message and triggers visual voicemail synchronization. The filtered message does not appear in the user’s conversation list.
+
+A visual voicemail sync is triggered by an incoming SMS message if the following conditions are met:
+
+- The message sender value starts with the string specified in the SyncSender setting. The length of the specified values must be greater than 3 characters but less than 75 characters.
+
+- The body of the message starts with the string specified in the SyncPrefix setting. The length of the specified values must be greater than 3 characters but less than 75 characters.
+
+- Visual voicemail is configured and enabled. For more information, see [Visual voicemail](https://msdn.microsoft.com/library/windows/hardware/dn790032.aspx).
+
+>[!NOTE]
+>These settings are atomic, so both SyncSender and SyncPrefix must be set.
+>
+>The SyncSender and SyncPrefix values vary for each mobile operator, so you must work with your mobile operators to obtain the correct or required values.
+
+Setting | Description
+--- | ---
+SyncPrefix | Specify a value for SyncPrefix that is greater than 3 characters but less than 75 characters in length. For networks that support it, this value can be the keyword for the SMS notification.
+SyncSender | Specify a value for SyncSender that is greater than 3 characters but less than 75 characters in length. For networks that support it, this value can be a short code of the mailbox server that sends a standard SMS notification.
+
+
+
+## PerSimSettings 
+
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, click **Add**, and then configure the folowing settings.
+
+### AllowMmsIfDataIsOff
+
+Setting | Description
+--- | ---
+AllowMmsIfDataIsOff | **True** allows MMS if data is off
+AllowMmsIfDataIsOffSupported | **True** shows the toggle for allowing MMS if data is turned off
+AllowMmsIfDataIsOffWhileRoaming | **True** allows MMS if data is off while roaming
 
 ### AllowSendingDeliveryReport
 
@@ -55,30 +94,60 @@ Specify whether MMS messages are automatically downloaded.
 | AutomaticallyDownload | **True** sets the **Automatically download MMS** toggle to **On** |
 | ShowAutomaticallyDownloadMMSToggle | **True** shows the **Automatically download MMS** toggle, and **False** hides the toggle |
 
-### DefaultContentLocationUrl
 
-For networks that require it, you can specify the default GET path within the MMSC to use when the GET URL is missing from the WAP push MMS notification.
+### EmergencyAlertOptions
 
-Set **DefaultContentLocationUrl** to specify the default GET path within the MMSC.
+Configure settings for CMAS alerts.
 
-### ErrorCodeEnabled
+Setting | Description 
+--- | ---
+CmasAMBERAlertEnabled | **True** enables the device to receive AMBER alerts
+CmasExtremeAlertEnabled | **True** enables the device to receive extreme alerts
+CmasSevereAlertEnabled | **True** enables the device to receive severe alerts
+EmOperatorEnabled | Select which Emergency Alerts Settings page is displayed from dropdown menu
+SevereAlertDependentOnExtremeAlert | When set as **True**, the CMAS-Extreme alert option must be on to modify CMAS-Severe alert option
 
-You can choose to display additional content in the conversation view when an SMS or MMS message fails to send. This content includes a specific error code in decimal format that the user can report to technical support. Common errors also include a friendly string to help the user self-diagnose and fix the problem.
 
-Set to **True** to display the error message with an explanation of the problem and the decimal-format error codes. When set to **False**, the full error message is not displayed.
+### General
+
+Setting | Description
+--- | ---
+AllowSelectAllContacts | Set to **True** to show the **select all contacts/unselect all** menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks. Windows 10 Mobile supports the following select multiple recipients features:</br></br>- A multi-select chooser, which enables users to choose multiple contacts.</br>- A **select all contacts/unselect all** menu option, which enables users to select or unselect all their contacts. This option is not shown by default and must be enabled by the OEM.
+AllowSMStoSMTPAddress |
+AssistedDialingMcc |
+AssistedDialingMnc |
+AssistedDialingPlusCodeSupportOverride |
+AutoRetryDownload |
+BroadcastChannels |
+ConvertLongSMStoMMS |
+DefaultContentLocationUrl | For networks that require it, you can specify the default GET path within the MMSC to use when the GET URL is missing from the WAP push MMS notification. Set DefaultContentLocationUrl to specify the default GET path within the MMSC.
+ErrorCodeEnabled | You can choose to display additional content in the conversation view when an SMS or MMS message fails to send. This content includes a specific error code in decimal format that the user can report to technical support. Common errors also include a friendly string to help the user self-diagnose and fix the problem. Set to **True** to display the error message with an explanation of the problem and the decimal-format error codes. When set to **False**, the full error message is not displayed.
+HideMediumSIPopups |
+ImsiAuthenticationToken | Configure whether MMS messages include the IMSI in the GET and POST header. Set ImsiAuthenticationToken to the token used as the header for authentication. The string value should match the IMSI provided by the UICC.
+LimitRecipients |
+MaxRetryCount | You can specify the number of times that the phone can retry sending the failed MMS message and photo before the user receives a notification that the photo could not be sent. Specify MaxRetryCount to specify the number of times the MMS transport will attempt resending the MMS message. This value has a maximum limit of 3.
+MMXLimitAttachments |
+RetrySize |
+SetCacheControlNoTransform |
+ShowRequiredMonthlyTest |
+SmscPanelDisabled |
+SMStoSMTPShortCode |
+TargetVideoFormat | You can specify the transcoding to use for video files sent as attachments in MMS messages. Set TargetVideoFormat to one of the following values to configure the default transcoding for video files sent as attachments in MMS messages:</br></br>- 0 or 0x0 Sets the transcoding to H.264 + AAC + MP4. This is the default set by the OS.</br>- 1 or 0x1 Sets the transcoding to H.264 + AAC + 3GP.</br>- 2 or 0x2 Sets the transcoding to H.263 + AMR.NB + 3GP.</br>- 3 or 0x3 Sets the transcoding to MPEG4 + AMR.NB + 3GP. 
+UAProf | You can specify a user agent profile to use on the phone for MMS messages. The user agent profile XML file details a phone’s hardware specifications and media capabilities so that an MMS application server (MMSC) can return supported optimized media content to the phone. The user agent profile XML file is generally stored on the MMSC. There are two ways to correlate a user agent profile with a given phone:</br></br>- You can take the user agent string of the phone that is sent with MMS requests and use it as a hash to map to the user agent profile on the MMSC. The user agent string cannot be modified.</br>- Alternatively, you can directly set the URI of the user agent profile on the phone.</br></br>Set UAProf to the full URI of your user agent profile file. Optionally, you can also specify the custom user agent property name for MMS that is sent in the header by setting UAProfToken to either `x-wap-profile` or `profile`.
+UAProfToken | You can specify a user agent profile to use on the phone for MMS messages. The user agent profile XML file details a phone’s hardware specifications and media capabilities so that an MMS application server (MMSC) can return supported optimized media content to the phone. The user agent profile XML file is generally stored on the MMSC. 
+UseDefaultAddress |
+UserAgentString | Set UserAgentString to the new user agent string for MMS in its entirely. By default, this string has the format WindowsPhoneMMS/MicrosoftMMSVersionNumber WindowsPhoneOS/OSVersion-buildNumber OEM-deviceName, in which the italicized text is replaced with the appropriate values for the phone.
+UseUTF8ForUnspecifiedCharset |
+WapPushTechnology | For networks that require non-standard handling of single-segment incoming MMS WAP Push notifications, you can specify that MMS messages may have some of their content truncated and that they may require special handling to reconstruct truncated field values. </br></br>- 1 or 0x1 Enables MMS messages to have some of their content truncated</br>- 0 or 0x0 Disables MMS messages from being truncated 
 
 
-### ImsiAuthenticationToken
+### LatAlertOptions
 
-Configure whether MMS messages include the IMSI in the GET and POST header.
 
-Set **ImsiAuthenticationToken** to the token used as the header for authentication. The string value should match the IMSI provided by the UICC.
+### MMSGroupText
 
-### MaxRetryCount
 
-You can specify the number of times that the phone can retry sending the failed MMS message and photo before the user receives a notification that the photo could not be sent.
-
-Specify MaxRetryCount to specify the number of times the MMS transport will attempt resending the MMS message. This value has a maximum limit of 3.
+### NIAlertOptions
 
 
 ### RcsOptions
@@ -103,43 +172,7 @@ Set options related to MMS message notifications. You can specify whether users 
 | RequestDeliveryReportIsSupported | **True** shows the toggle for MMS delivery confirmation, and **False** hides the toggle. |
 
 
-### TargetVideoFormat
-
-You can specify the transcoding to use for video files sent as attachments in MMS messages.
-
-Set TargetVideoFormat to one of the following values to configure the default transcoding for video files sent as attachments in MMS messages:
-
-| Value | Description |
-| --- | --- |
-| 0 or 0x0 | Sets the transcoding to H.264 + AAC + MP4. This is the default set by the OS. |
-| 1 or 0x1 | Sets the transcoding to H.264 + AAC + 3GP. |
-| 2 or 0x2 | Sets the transcoding to H.263 + AMR.NB + 3GP. |
-| 3 or 0x3 | Sets the transcoding to MPEG4 + AMR.NB + 3GP. |
- 
-
-### UAProf
-
-You can specify a user agent profile to use on the phone for MMS messages. The user agent profile XML file details a phone’s hardware specifications and media capabilities so that an MMS application server (MMSC) can return supported optimized media content to the phone. The user agent profile XML file is generally stored on the MMSC.
-
-There are two ways to correlate a user agent profile with a given phone:
-- You can take the user agent string of the phone that is sent with MMS requests and use it as a hash to map to the user agent profile on the MMSC. The user agent string cannot be modified.
-- Alternatively, you can directly set the URI of the user agent profile on the phone.
-
-Set **UAProf** to the full URI of your user agent profile file. Optionally, you can also specify the custom user agent property name for MMS that is sent in the header by setting **UAProfToken** to either `x-wap-profile` or `profile`.
-
-
-### UAProfToken
-
-You can specify a user agent profile to use on the phone for MMS messages. The user agent profile XML file details a phone’s hardware specifications and media capabilities so that an MMS application server (MMSC) can return supported optimized media content to the phone. The user agent profile XML file is generally stored on the MMSC.
-
-Optionally, in addition to specifying **UAProf**, you can also specify the custom user agent property name for MMS that is sent in the header by setting **UAProfToken** to either `x-wap-profile` or `profile`.
-
-
-### UserAgentString
-
-Set **UserAgentString** to the new user agent string for MMS in its entirely.
-
-By default, this string has the format WindowsPhoneMMS/MicrosoftMMSVersionNumber WindowsPhoneOS/OSVersion-buildNumber OEM-deviceName, in which the italicized text is replaced with the appropriate values for the phone.
+### SMSDeliveryNotify
 
 
 ### w4
@@ -155,14 +188,6 @@ By default, this string has the format WindowsPhoneMMS/MicrosoftMMSVersionNumber
 
 
 
-### WapPushTechnology
-
-For networks that require non-standard handling of single-segment incoming MMS WAP Push notifications, you can specify that MMS messages may have some of their content truncated and that they may require special handling to reconstruct truncated field values.
-
-| Value | Description |
-| --- | --- |
-| 1 or 0x1 | Enables MMS messages to have some of their content truncated. |
-| 0 or 0x0 | Disables MMS messages from being truncated. |
 
 
 
