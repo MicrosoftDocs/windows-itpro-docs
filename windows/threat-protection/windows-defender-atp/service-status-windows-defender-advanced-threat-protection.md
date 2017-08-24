@@ -29,7 +29,7 @@ The **Service health** provides information on the current status of the Window 
 
 You'll also see information on historical issues that have been resolved and details such as the date and time when the issue was resolved. When there are no issues on the service, you'll see a healthy status.
 
-You can view details on the service health by clicking the tile from the **Dashboard** or selecting the **Service health** menu from the navigation pane.
+You can view details on the service health by clicking the tile from the **Security operations dashboard** or selecting the **Service health** menu from the navigation pane.
 
 The **Service health** details page has the following tabs:
 

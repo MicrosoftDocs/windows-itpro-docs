@@ -36,7 +36,7 @@ If your organization satisfies these conditions, the feature is enabled by defau
 
 ## Show user details
 When you enable this feature, you'll be able to see user details stored in Azure Active Directory including a user's picture, name, title, and department information  when investigating user account entities. You can find user account information in the following views:
-- Dashboard
+- Security operations dashboard
 - Alert queue
 - Machine details page
 

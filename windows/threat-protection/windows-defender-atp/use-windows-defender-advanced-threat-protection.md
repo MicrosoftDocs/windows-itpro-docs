@@ -27,7 +27,7 @@ ms.date: 09/01/2017
 
 A typical security breach investigation requires a member of a security operations team to:
 
-1. View an alert on the **Dashboard** or **Alerts queue**
+1. View an alert on the **Security operations dashboard** or **Alerts queue**
 2. Review the indicators of compromise (IOC) or indications of attack (IOAs)
 3. Review a timeline of alerts, behaviors, and events from the machine
 4. Manage alerts, understand the threat or potential breach, collect information to support taking action, and resolve the alert
@@ -36,13 +36,13 @@ A typical security breach investigation requires a member of a security operatio
 
 Security operation teams can use Windows Defender ATP portal to carry out this end-to-end process without having to leave the portal.
 
-Teams can monitor the overall status of enterprise endpoints from the **Dashboard**, gain insight on the various alerts, their category, when they were observed, and how long they’ve been in the network at a glance.
+Teams can monitor the overall status of enterprise endpoints from the **Security operations dashboard**, gain insight on the various alerts, their category, when they were observed, and how long they’ve been in the network at a glance.
 
 ### In this section
 
 Topic | Description
 :---|:---
-[View the Dashboard](dashboard-windows-defender-advanced-threat-protection.md) | The Windows Defender ATP  **Dashboard** provides a snapshot of your network. You can view aggregates of alerts, the overall status of the service of the endpoints on your network, investigate machines, files, and URLs, and see snapshots of threats seen on machines.
+[View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md) | The Windows Defender ATP  **Security operations dashboard** provides a snapshot of your network. You can view aggregates of alerts, the overall status of the service of the endpoints on your network, investigate machines, files, and URLs, and see snapshots of threats seen on machines.
 [View and organize the Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md) | You can sort and filter alerts across your network, and drill down on individual alert queues such as new, in progress, or resolved queues.
 [Investigate alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)| Investigate alerts in Windows Defender ATP which might indicate possible security breaches on endpoints in your organization.
 [Investigate files](investigate-files-windows-defender-advanced-threat-protection.md) | Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.

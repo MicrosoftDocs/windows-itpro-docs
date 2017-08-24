@@ -28,7 +28,7 @@ You can click on affected machines whenever you see them in the portal to open a
 
 - The [Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - The [Alerts queue](alerts-queue-windows-defender-advanced-threat-protection.md)
-- The [Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- The [Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - Any individual alert
 - Any individual file details view
 - Any IP address or domain details view
@@ -171,7 +171,7 @@ Dynamic context capturing is achieved using tags. By tagging machines, you can k
 
 1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
 
-    -	**Dashboard** - Select the machine name from the Top machines with active alerts section.
+    -	**Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
     -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
     -	**Machines list** - Select the machine name from the list of machines.
     -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
@@ -196,7 +196,7 @@ You can manage tags from the Actions button or by selecting a machine from the M
 
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)

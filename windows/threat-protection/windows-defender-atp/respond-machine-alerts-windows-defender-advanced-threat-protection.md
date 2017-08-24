@@ -42,7 +42,7 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
 
 1.	Select the machine that you want to isolate. You can select or search for a machine from any of the following views:
 
-  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
   - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
   - **Machines list** - Select the machine name from the list of machines.
   - **Search box** - Select Machine from the drop-down menu and enter the machine name.
@@ -94,7 +94,7 @@ The action to restrict an application from running applies a code integrity poli
 
 1. Select the machine where you'd like to restrict an application from running from. You can select or search for a machine from any of the following views:
 
-  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
   - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
   - **Machines list** - Select the machine name from the list of machines.
   - **Search box** - Select Machine from the drop-down menu and enter the machine name.
@@ -152,7 +152,7 @@ The package contains the following folders:
 
 1.	Select the machine that you want to investigate. You can select or search for a machine from any of the following views:
 
-  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
   - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
   - **Machines list** - Select the heading of the machine name from the machines list.
   - **Search box** - Select Machine from the drop-down menu and enter the machine name.
@@ -187,7 +187,7 @@ As part of the investigation or response process, you can remotely initiate an a
 
 1.	Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
 
-  - **Dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
   - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
   - **Machines list** - Select the machine name from the list of machines.
   - **Search box** - Select Machine from the drop-down menu and enter the machine name.
