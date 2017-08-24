@@ -31,20 +31,19 @@ The **Security analytics dashboard** displays a snapshot of:
 ![Security analytics dashboard](images/atp-dashboard-security-analytics.png)
 
 ## Organizational security score
-The organization security score is reflective of the average score of all the Windows Defender security control properties that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
+The organization security score is reflective of the average score of all the Windows Defender security controls that are configured according to the recommended baseline. You can improve this score by taking the steps in configuring each of the security controls in the optimal settings.
 
 ![Organizational security score](images/atp-org-score.png)
 
+Each Windows Defender security control from the **Security coverage** tile contributes 100 points to the organizational security score.
 
-The numerator in the fraction is representative of the sum of points from the **Improvement opportunities** tile, while the denominator is reflective of the total score from each pillar on the **Security coverage** tile. 
-
-Each security control from the **Security coverage** tile contributes 100 points to the organizational security score and the total potential is based on the number of security controls multiplied by 100 accordingly.
+The denominator is reflective of the organizational score potential and calculated by multiplying the number of supported security controls (Security coverage pillars) by the maximum points that each pillar contributes (maximum of 100 points for each pillar). 
 
 
-In the example image, the total points from the Improvement opportunities tile add up to 279 points for the three pillars from the **Security coverage** tile.
+In the example image, the total points from the **Improvement opportunities** tile add up to 279 points for the three pillars from the **Security coverage** tile.
 
 ## Security coverage
-The security coverage tile shows a bar graph where each bar represents a Windows Defender security control. Each bar contributes 100 points to the overall organizational security score. It also represents the various security products with an indicator of the total number of machines that are well configured and those that require attention. Hovering on top of the individual bars will show exact numbers for each category.
+The security coverage tile shows a bar graph where each bar represents a Windows Defender security control. Each bar contributes 100 points to the overall organizational security score. It also represents the various Windows 10 security components with an indicator of the total number of machines that are well configured and those that require attention. Hovering on top of the individual bars will show exact numbers for each category.
 
 
 ![Security coverage](images/atp-sec-coverage.png)
@@ -56,7 +55,15 @@ Click on each segment to see the recommended optimizations.
 
 ![Improvement opportunities](images/atp-improv-ops.png)
 
-The numbers beside the green triangle icon on each recommended action represents the number of points you can gain by taking the action. When added together, the total number makes up the nominator in the fraction for each segment in the Improvement opportunities tile.
+The numbers beside the green triangle icon on each recommended action represents the number of points you can gain by taking the action.  When added together, the total number makes up the nominator in the fraction for each segment in the Improvement opportunities tile.
+
+Recommendations that do not display a green action are informational only and no action is required. 
+
+Clicking **View machines** in a specific recommendation opens up the **Machines view** with filters applied to show only the list of machines where the the recommendation is applicable. You can export the list in Excel to create a target collection and apply relevant policies using a management solution of your choice. 
+
+The following image shows an example list of machines where the EDR sensor is not turned on.
+
+![Image of view machines list with a filter applied](images/atp-security-analytics-view-machines.png)
 
 ### Endpoint detection and response (EDR) optimization
 This tile provides a specific list of actions you can take on Windows Defender ATP to improve how endpoints provide sensor data to the Windows Defender ATP service.
@@ -72,13 +79,17 @@ For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows
 This tile provides a list of specific list of actions you can implement on endpoints with Windows Defender Antivirus to improve the security in your organization. Each action shows the exact number of endpoints where you can apply the action on.
 
 You can take the following actions to increase the overall security score of your organization:
+
+>[!NOTE]
+> For the Windows Defender Antivirus properties to show,  you'll need to ensure that the Windows Defender Antivirus Cloud-based protection is properly configured on the endpoint. 
+
 - Fix antivirus reporting
+  - This recommendation is displayed when the Windows Defender Antivirus configuration on a machines is not properly configured. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
 - Turn on antivirus
 - Update antivirus definitions
 - Turn on cloud-based protection
 - Turn on real-time protection
 - Turn on PUA protection
-- Check partial reporting
 
 For more information, see [Configure Windows Defender Antivirus](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md).
 
@@ -88,5 +99,6 @@ This tile shows you the exact number of machines that require the latest securit
  
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
-- Use the latest Windows Insider preview builds
+
+For more information on, see [Windows Update Troubleshooter](https://support.microsoft.com/en-us/help/4027322/windows-windows-update-troubleshooter).
 
