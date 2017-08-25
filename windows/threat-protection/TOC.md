@@ -74,7 +74,7 @@
 #### [Supported Windows Defender ATP APIs](windows-defender-atp\supported-apis-windows-defender-advanced-threat-protection.md)
 ##### [Collect investigation package](windows-defender-atp\collect-investigation-package-windows-defender-advanced-threat-protection.md)
 ##### [Isolate machine](windows-defender-atp\isolate-machine-windows-defender-advanced-threat-protection.md)
-##### [Unisolate machine](unisolate-machine-windows-defender-atp\windows-defender-advanced-threat-protection.md)
+##### [Unisolate machine](windows-defender-atp\unisolate-machine-windows-defender-advanced-threat-protection.md)
 ##### [Restrict code execution](windows-defender-atp\restrict-code-execution-windows-defender-advanced-threat-protection.md)
 ##### [Remove code execution restriction](windows-defender-atp\unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
 ##### [Run antivirus scan](windows-defender-atp\run-av-scan-windows-defender-advanced-threat-protection.md)
