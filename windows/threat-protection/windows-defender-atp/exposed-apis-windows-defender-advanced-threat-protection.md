@@ -1,7 +1,7 @@
 ---
-title: Windows Defender Advanced Threat Protection exposed APIs  
+title: Use the Windows Defender Advanced Threat Protection exposed APIs  
 description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
-keywords: alert definitions, indicators of compromise, threat intelligence, custom threat intelligence, rest api, api
+keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,9 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/01.2017
 ---
 
-# Windows Defender ATP exposed APIs 
+# Use the Windows Defender ATP exposed APIs 
 
 **Applies to:**
 
@@ -189,5 +190,6 @@ Response:
 }….
 
 ```
-Related topics
-- Create and build Power BI reports 
+
+## Related topics
+- [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
