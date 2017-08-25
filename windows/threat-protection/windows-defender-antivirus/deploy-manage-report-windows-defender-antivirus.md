@@ -10,6 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date:08/25/2017
 ---
 
 # Deploy, manage, and report on Windows Defender Antivirus

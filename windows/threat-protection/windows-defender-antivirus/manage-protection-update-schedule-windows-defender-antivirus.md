@@ -10,6 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date:08/25/2017
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied

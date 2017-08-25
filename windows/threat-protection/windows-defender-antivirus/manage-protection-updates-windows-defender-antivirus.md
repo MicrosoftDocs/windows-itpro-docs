@@ -11,6 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
+ms.date:08/25/2017
 ---
 
 # Manage the sources for Windows Defender Antivirus protection updates

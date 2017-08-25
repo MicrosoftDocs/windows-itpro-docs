@@ -10,6 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date:08/25/2017
 ---
 
 # Run and review the results of a Windows Defender Offline scan
