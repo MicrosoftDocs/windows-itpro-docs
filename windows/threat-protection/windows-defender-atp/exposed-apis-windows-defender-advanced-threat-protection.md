@@ -98,4 +98,3 @@ Console.WriteLine($"response for: {ep} \r\n {resp}");
 
 ## Related topics
 - [Supported Windows Defender ATP APIs](supported-apis-windows-defender-advanced-threat-protection.md)
-- [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)
