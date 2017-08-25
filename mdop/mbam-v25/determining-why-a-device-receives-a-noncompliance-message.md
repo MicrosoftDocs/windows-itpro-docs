@@ -89,6 +89,14 @@ You can use your preferred method to view WMI. If you use PowerShell, run `gwmi 
 <td align="left"><p>14</p></td>
 <td align="left"><p>AutoUnlock unsafe unless the OS volume is encrypted.</p></td>
 </tr>
+<tr class="even">
+<td align="left"><p>15</p></td>
+<td align="left"><p>Policy requires minimum cypher strength is XTS-AES-128 bit, actual cypher strength is weaker than that.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p>16</p></td>
+<td align="left"><p>Policy requires minimum cypher strength is XTS-AES-256 bit, actual cypher strength is weaker than that.</p></td>
+</tr>
 </tbody>
 </table>
 
