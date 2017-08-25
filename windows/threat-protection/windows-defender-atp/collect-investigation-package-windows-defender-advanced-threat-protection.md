@@ -54,18 +54,8 @@ Content-type: application/json
 {
   "Comment": "Collect forensics due to alert 1234"
 }
-Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-HTTP/1.1 201 Created
-Content-type: application/json
-{
-    "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#MachineActions/$entity",
-    "id": "ac19aae7-4146-4a13-a786-eb43d8557f7c",
-    "type": "CollectInvestigationPackage",
-    "status": "InProgress",
-    "error": "Unknown"
-}
 ```
+
 Response
 
 Here is an example of the response.
