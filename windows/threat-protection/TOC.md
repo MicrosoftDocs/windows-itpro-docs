@@ -76,7 +76,7 @@
 ##### [Isolate machine](windows-defender-atp\isolate-machine-windows-defender-advanced-threat-protection.md)
 ##### [Unisolate machine](windows-defender-atp\unisolate-machine-windows-defender-advanced-threat-protection.md)
 ##### [Restrict code execution](windows-defender-atp\restrict-code-execution-windows-defender-advanced-threat-protection.md)
-##### [Remove code execution restriction](windows-defender-atp\unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
+##### [Unrestrict code execution](windows-defender-atp\unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
 ##### [Run antivirus scan](windows-defender-atp\run-av-scan-windows-defender-advanced-threat-protection.md)
 ##### [Stop and quarantine files](windows-defender-atp\stop-quarantine-file-windows-defender-advanced-threat-protection.md)
 ##### [Request sample](windows-defender-atp\request-sample-windows-defender-advanced-threat-protection.md)
