@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 10/05/2017
 ---
 
 # AssignedAccess (Windows Configuration Designer reference)
