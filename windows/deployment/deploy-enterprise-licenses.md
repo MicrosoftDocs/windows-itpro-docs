@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
+ms.date: 08/23/2017
 author: greg-lindsay
 ---
 
@@ -90,6 +91,9 @@ Users can join a device to Azure AD the first time they start the device (during
 Now the device is Azure AD joined to the company’s subscription.
 
 **To join a device to Azure AD when the device already has Windows 10 Pro, version 1703 installed and set up**
+
+>[!IMPORTANT]
+>Make sure that the user you're signing in with is **not** a BUILTIN/Administrator. That user cannot use the `+ Connect` button to join a work or school account.
 
 1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 5**.
 
