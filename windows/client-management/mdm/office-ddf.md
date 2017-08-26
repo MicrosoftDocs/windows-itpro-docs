@@ -7,10 +7,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 08/22/2017
 ---
 
 # Office DDF
+
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic shows the OMA DM device description framework (DDF) for the **Office** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -19,7 +22,7 @@ You can download the DDF files from the links below:
 - [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
-The XML below is the current version for this CSP.
+The XML below is for Windows 10, version 1709.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
@@ -30,12 +33,12 @@ The XML below is the current version for this CSP.
   <VerDTD>1.2</VerDTD>
       <Node>
         <NodeName>Office</NodeName>
-        <Path>./Vendor/MSFT</Path>
+        <Path>./User/Vendor/MSFT</Path>
         <DFProperties>
           <AccessType>
             <Get />
           </AccessType>
-          <Description>Root of the office CSP.</Description>
+          <Description>Root of the Office CSP.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -46,7 +49,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.0/MDM/Office</MIME>
+            <MIME>com.microsoft/1.3/MDM/Office</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -55,7 +58,7 @@ The XML below is the current version for this CSP.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Installation options for the office CSP.</Description>
+            <Description>Installation options for the Office CSP.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -100,7 +103,7 @@ The XML below is the current version for this CSP.
                   <Exec />
                   <Get />
                 </AccessType>
-                <Description>The install action will install office given the configuration in the data.  The string data is the xml configuration to use in order to install office.</Description>
+                <Description>The install action will install Office given the configuration in the data.  The string data is the xml configuration to use in order to install Office.</Description>
                 <DFFormat>
                   <chr />
                 </DFFormat>
@@ -137,6 +140,27 @@ The XML below is the current version for this CSP.
               </DFProperties>
             </Node>
           </Node>
+          <Node>
+            <NodeName>CurrentStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>The current Office 365 installation status on the machine</Description>
+              <DFFormat>
+                <xml />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
         </Node>
       </Node>
       <Node>
@@ -156,7 +180,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <DDFName></DDFName>
+            <MIME>com.microsoft/1.3/MDM/Office</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -242,6 +266,27 @@ The XML below is the current version for this CSP.
                 </DFType>
               </DFProperties>
             </Node>
+          </Node>
+          <Node>
+            <NodeName>CurrentStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>The current Office 365 installation status on the machine</Description>
+              <DFFormat>
+                <xml />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
           </Node>
         </Node>
       </Node>
