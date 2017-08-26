@@ -20,6 +20,8 @@ Administrator credentials are highly privileged and must be protected. By using 
 > [!IMPORTANT]
 > For information on Remote Desktop connection scenarios involving helpdesk support, see [Remote Desktop connections and helpdesk support scenarios](#helpdesk) in this article.
 
+<a id="comparing-remote-credential-guard-with-other-remote-desktop-connection-options"></a>
+
 ## Comparing Windows Defender Remote Credential Guard with other Remote Desktop connection options
 
 The following diagram helps you to understand how a standard Remote Desktop session to a server without Windows Defender Remote Credential Guard works: 
@@ -42,7 +44,7 @@ Use the following table to compare different Remote Desktop connection security 
 <br />
 <br />
 
-|Feature | Remote Desktop | Windows Defender Remote Credential Guard | Restricted Admin mode |
+|**Feature** | **Remote Desktop** | **Windows Defender Remote Credential Guard** | **Restricted Admin mode** |
 |---|---|---|---|
 | **Protection benefits**  | Credentials on the server are not protected from Pass-the-Hash attacks.  |User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing | User logs on to the server as local administrator, so an attacker cannot act on behalf of the “domain user”. Any attack is local to the server|
 | **Version support** | The remote computer can run any Windows operating system|Both the client and the remote computer must be running **at least Windows 10, version 1607, or Windows Server 2016**.|The remote computer must be running **at least patched Windows 7 or patched Windows Server 2008 R2**. <br /><br />For more information about patches (software updates) related to Restricted Admin mode, see [Microsoft Security Advisory 2871997](https://technet.microsoft.com/library/security/2871997.aspx).
@@ -71,30 +73,33 @@ To further harden security, we also recommend that you implement Local Administr
 
 For further information on LAPS, see [Microsoft Security Advisory 3062591](https://technet.microsoft.com/en-us/library/security/3062591.aspx). 
 
+
+<a id="reqs"></a>
+
 ## Remote Credential Guard requirements
 
 To use Windows Defender Remote Credential Guard, the Remote Desktop client and remote host must meet the following requirements: 
 
 The Remote Desktop client device:
 
--   Must be running at least Windows 10, version 1703 to be able to supply credentials
+-   Must be running at least Windows 10, version 1703 to be able to supply credentials.
 -  Must be running at least Windows 10, version 1607 or Windows Server 2016 to use the user’s signed-in credentials. This requires the user’s account be able to sign in to both the client device and the remote host.
 -  Must be running the Remote Desktop Classic Windows application. The Remote Desktop Universal Windows Platform application doesn't support Windows Defender Remote Credential Guard.
 -  Must use Kerberos authentication to connect to the remote host. If the client cannot connect to a domain controller, then RDP attempts to fall back to NTLM. Windows Defender Remote Credential Guard does not allow NTLM fallback because this would expose credentials to risk.
 
 The Remote Desktop remote host:
 
--  Must be running at least Windows 10, version 1607 or Windows Server 2016
+-  Must be running at least Windows 10, version 1607 or Windows Server 2016.
 -  Must allow Restricted Admin connections.
 -  Must allow the client’s domain user to access Remote Desktop connections.
--  Must allow delegation of non-exportable credentials
+-  Must allow delegation of non-exportable credentials.
 
 There are no hardware requirements for Windows Defender Remote Credential Guard.
 
 > [!NOTE]
 > Remote Desktop client devices running earlier versions, at minimum Windows 10 version 1607, only support signed-in credentials, so the client device must also be joined to an Active Directory domain. Both Remote Desktop client and server must either be joined to the same domain, or the Remote Desktop server can be joined to a domain that has a trust relationship to the client device's domain.
 
-- For Windows Defender Remote Credential Guard to be supported, the user must authenticate to the remote host using Kerberos authentication
+- For Windows Defender Remote Credential Guard to be supported, the user must authenticate to the remote host using Kerberos authentication.
 - The remote host must be running at least Windows 10 version 1607, or Windows Server 2016.
 - The Remote Desktop classic Windows app is required. The Remote Desktop Universal Windows Platform app doesn't support Windows Defender Remote Credential Guard.
 
@@ -117,7 +122,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 0
 
 ## Using Windows Defender Remote Credential Guard
 
-Beginning with Windows 10 version 1703, you can enable Windows Defender Remote Credential Guard on the client device by using Group Policy or by using a parameter with the Remote Desktop Connection.
+Beginning with Windows 10 version 1703, you can enable Windows Defender Remote Credential Guard on the client device either by using Group Policy or by using a parameter with the Remote Desktop Connection.
 
 ### Turn on Windows Defender Remote Credential Guard by using Group Policy
 
@@ -132,9 +137,9 @@ Beginning with Windows 10 version 1703, you can enable Windows Defender Remote C
 
         > **Note:**  Neither Windows Defender Remote Credential Guard nor Restricted Admin mode will send credentials in clear text to the Remote Desktop server.
         
-    - If you want to require Windows Defender Remote Credential Guard, choose **Require Windows Defender Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [Hardware and software requirements](#hardware-and-software-requirements) listed earlier in this topic.
+    - If you want to require Windows Defender Remote Credential Guard, choose **Require Windows Defender Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [requirements](#reqs) listed earlier in this topic.
     
-    - If you  want to require Restricted Admin mode, choose **Require Restricted Admin**. For information about Restricted Admin mode, see the table in [Comparing Windows Defender Remote Credential Guard with other options for Remote Desktop connections](#comparing-remote-credential-guard-with-other-options-for-remote-desktop-connections), earlier in this topic.
+    - If you  want to require Restricted Admin mode, choose **Require Restricted Admin**. For information about Restricted Admin mode, see the table in [Comparing Windows Defender Remote Credential Guard with other Remote Desktop connection options](#comparing-remote-credential-guard-with-other-remote-desktop-connection-options), earlier in this topic.
     
 4. Click **OK**.
 
