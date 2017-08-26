@@ -155,7 +155,7 @@
 #### [Evaluate Exploit Protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
 #### [Enable Exploit Protection](windows-defender-exploit-guard\enable-exploit-protection.md)
 #### [Customize Exploit Protection](windows-defender-exploit-guard\customize-exploit-protection.md)
-##### [Import, export, and deploy Exploit Protection configurations](import-export-exploit-protection-emet-xml.md)
+##### [Import, export, and deploy Exploit Protection configurations](windows-defender-exploit-guard\import-export-exploit-protection-emet-xml.md)
 ### [Attack Surface Reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
 #### [Evaluate Attack Surface Reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 #### [Enable Attack Surface Reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
