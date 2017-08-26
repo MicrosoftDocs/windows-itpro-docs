@@ -148,15 +148,6 @@ Users can click on the displayed information to get more help:
 9. Click **OK** after configuring each setting to save your changes. 
 
 
-### Use PowerShell to customize the notification
-
-
-
->[!NOTE]
->Are there any PS cmdlets for customizing? What about CSPs for MDM?
-
-
-
 
 >[!NOTE]
 >The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
