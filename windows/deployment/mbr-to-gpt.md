@@ -17,29 +17,41 @@ ms.localizationpriority: high
 
 ## Summary
 
-**MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
+**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) partition style to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE), but can also be forced to run from the full Windows 10 operating system (OS).
 
-MBR2GPT.EXE is located in the **Windows\\System32** directory on a Windows 10 computer running Windows 10 version 1703 or later.
+MBR2GPT.EXE is located in the **Windows\\System32** folder on an instance of Windows 10 version 1703 (also known as Creators Update) or later.
 
-You can use MBR2GPT to perform the following:
+MBR2GPT can perform the following:
 
-- \[Within the Windows PE environment\]: Convert any attached MBR-formatted system disk to the GPT partition format.
-- \[From within the currently running OS\]: Convert any attached MBR-formatted system disk to the GPT partition format.
+- Conversion of an attached disk containing a copy of Windows 10 version 1703 from the MBR partition style to GPT.
+- Offline conversion of an attached disk containing a copy of Windows 10 versions 1507, 1511 or 1607 from the MBR partition style to GPT. 
+- Offline conversion of an attached disk containing a copy of Windows 7, 8 or 8.1 from the MBR partition style to GPT. However, such a conversion is not officially supported and its reliability is not guaranteed. The recommended method to convert these disks is to upgrade the operating system to Windows 10 first, then perform the MBR to GPT conversion.
 
->MBR2GPT is available in Windows 10 version 1703, also known as Windows 10 Creator's Update, and later versions. 
->The tool is available in both the full OS environment and Windows PE. 
+MBR2GPT **cannot** perform the following:
+
+- Convert an arbitrary disk without a Windows operating system.
 
 You can use MBR2GPT to convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
-
-The MBR2GPT tool can convert operating system disks that have earlier versions of Windows 10 installed, such as versions 1507, 1511, and 1607. However, you must run the tool while booted into Windows 10 version 1703 or later, and perform an offline conversion.
-
-Offline conversion of system disks with earlier versions of Windows installed, such as Windows 7, 8, or 8.1 are not officially supported. The recommended method to convert these disks is to upgrade the operating system to Windows 10 first, then perform the MBR to GPT conversion.
 
 >[!IMPORTANT]
 >After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. <BR>Make sure that your device supports UEFI before attempting to convert the disk.
 
 <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
 
+## Prerequisites
+Before any change to the disk is made, MBR2GPT validates the layout and geometry of the selected disk to ensure that:
+- The disk is currently using MBR
+- There is enough space not occupied by partitions to store the primary and secondary GPTs:
+  - 16KB + 2 sectors at the front of the disk
+  - 16KB + 1 sector at the end of the disk
+- There are at most 3 primary partitions in the MBR partition table
+- One of the partitions is set as active and is the system partition
+- The disk does not have any extended partitions
+- The BCD store on the system partition contains a default OS entry pointing to an OS partition
+- The volume IDs can be retrieved for each volume which has a drive letter assigned
+- All partitions on the disk are of MBR types recognized by Windows or has a mapping specified using the /map command-line option
+
+If any of these checks fails, the conversion will not proceed and an error will be returned.
 ## Syntax
 
 <table style="font-family:consolas;font-size:12px" >
@@ -53,7 +65,7 @@ Offline conversion of system disks with earlier versions of Windows installed, s
 |/validate| Instructs MBR2GPT.exe to perform only the disk validation steps and report whether the disk is eligible for conversion. |
 |/convert| Instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validation tests pass. |
 |/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as that used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
-|/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the directory must already exist, it will not be automatically created or overwritten.|
+|/logs:\<logDirectory\>| Specifies the folder where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the folder must already exist, it will not be automatically created or overwritten.|
 |/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexidecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
 |/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment.|
 
@@ -217,22 +229,6 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 5. The boot configuration data (BCD) store is updated.
 6. Drive letter assignments are restored.
 
-### Disk validation
-
-Before any change to the disk is made, MBR2GPT validates the layout and geometry of the selected disk to ensure that:
-- The disk is currently using MBR
-- There is enough space not occupied by partitions to store the primary and secondary GPTs:
-  - 16KB + 2 sectors at the front of the disk
-  - 16KB + 1 sector at the end of the disk
-- There are at most 3 primary partitions in the MBR partition table
-- One of the partitions is set as active and is the system partition
-- The disk does not have any extended/logical partition
-- The BCD store on the system partition contains a default OS entry pointing to an OS partition
-- The volume IDs can be retrieved for each volume which has a drive letter assigned
-- All partitions on the disk are of MBR types recognized by Windows or has a mapping specified using the /map command-line option
-
-If any of these checks fails, the conversion will not proceed and an error will be returned.
-
 ### Creating an EFI system partition
 
 For Windows to remain bootable after the conversion, an EFI system partition (ESP) must be in place. MBR2GPT creates the ESP using the following rules:
@@ -287,7 +283,7 @@ Four log files are created by the MBR2GPT tool:
 - setupact.log
 - setuperr.log
 
-These files contain errors and warnings encountered during disk validation and conversion. Information in these files can be helpful in diagnosing problems with the tool. The setupact.log and setuperr.log files will have the most detailed information about disk layouts, processes, and other information pertaining to disk validation and conversion. Note: The setupact*.log files are different than the Windows Setup files that are found in the %Windir%\Panther directory.
+These files contain errors and warnings encountered during disk validation and conversion. Information in these files can be helpful in diagnosing problems with the tool. The setupact.log and setuperr.log files will have the most detailed information about disk layouts, processes, and other information pertaining to disk validation and conversion. Note: The setupact*.log files are different than the Windows Setup files that are found in the %Windir%\Panther folder.
 
 The default location for all these log files in Windows PE is **%windir%**.
 
@@ -320,8 +316,8 @@ Where:
            If not specified, the system disk is processed.
 
  /logs:<logDirectory>
-         - Specifies the directory for logging. By default logs
-           are created in the %windir% directory.
+         - Specifies the folder for logging. By default logs
+           are created in the %windir% folder.
 
  /map:<source>=<destination>
          - Specifies the GPT partition type to be used for a
