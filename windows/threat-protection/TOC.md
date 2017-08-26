@@ -148,7 +148,7 @@
 ## [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
 ### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
 #### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
-#### [View Exploit Guard events](event-views-exploit-guard.md)
+#### [View Exploit Guard events](windows-defender-exploit-guard\event-views-exploit-guard.md)
 
 ### [Exploit Protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
 #### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
