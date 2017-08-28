@@ -682,6 +682,39 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
+<a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">
+
+<p style="margin-left: 20px">This is only a placeholder.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
 <a href="" id="browser-clearbrowsingdataonexit"></a>**Browser/ClearBrowsingDataOnExit**  
 
 <!--StartSKU-->
