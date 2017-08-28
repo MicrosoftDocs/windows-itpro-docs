@@ -42,12 +42,12 @@ Starting with Windows 10, version 1511, domain credentials that are stored with
     -   Applications that extract Windows credentials fail.
     -   When credentials are backed up from a PC that has Windows Defender Credential Guard enabled, the Windows credentials cannot be restored. If you need to back up your credentials, you must do this before you enable Windows Defender Credential Guard. Otherwise, you cannot restore those credentials.
 
-## TPM Reset Considerations
-Virtualization-based Security (VBS) uses the TPM to protect its key. So when the TPM is reset then the TPM protected key used to encrypt VBS secrets is lost.  
+## CLearing TPM Considerations
+Virtualization-based Security (VBS) uses the TPM to protect its key. So when the TPM is cleared then the TPM protected key used to encrypt VBS secrets is lost.  
 
 >[!WARNING] 
-> Resetting the TPM results in loss of protected data for all features that use VBS to protect data.  <br>
-> When a TPM is reset ALL features, which use VBS to protect data can no longer decrypt their protected data.
+> Clearing the TPM results in loss of protected data for all features that use VBS to protect data.  <br>
+> When a TPM is cleared ALL features, which use VBS to protect data can no longer decrypt their protected data.
 
 As a result Credential Guard can no longer decrypt protected data. VBS creates a new TPM protected key for Credential Guard. Credential Guard uses the new key to protect new data. However, the previously protected data is lost forever.
 
@@ -68,12 +68,12 @@ Also if any access control checks including authentication policies require devi
 On domain-joined devices, DPAPI can recover user keys using a domain controller from the user's domain. If a domain-joined device has no connectivity to a domain controller, then recovery is not possible. 
 
 >[!IMPORTANT] 
-> Best practice when doing a TPM reset on a domain-joined device is to be on a network with connectivity to domain controllers. This ensures DPAPI functions and the user does not experience strange behavior. <br>
+> Best practice when clearing a TPM on a domain-joined device is to be on a network with connectivity to domain controllers. This ensures DPAPI functions and the user does not experience strange behavior. <br>
 Auto VPN configuration is protected with user DPAPI. User may not be able to use VPN to connect to domain controllers since the VPN configurations are lost. 
 
-If you must do a TPM reset on a domain-joined device without connectivity to domain controllers, then you should consider the following.
+If you must clear the TPM on a domain-joined device without connectivity to domain controllers, then you should consider the following.
 
-Domain user sign-in on a domain-joined device after a TPM reset as long as there is no connectivity to a domain controller: 
+Domain user sign-in on a domain-joined device after clearing a TPM for as long as there is no connectivity to a domain controller: 
 
 |Credential Type | Windows 10 version | Behavior                             
 |---|---|---|
@@ -82,10 +82,10 @@ Domain user sign-in on a domain-joined device after a TPM reset as long as there
 | Password | Windows 10 v1703 | If the user signed-in with a password prior to TPM reset, then they can sign-in with that password and are unaffected.
 | Password | Windows 10 v1607 or earlier | Existing user DPAPI protected data is unusable. User DPAPI is able to protect new data.
 
-Once the device has connectivity to the domain controllers, DPAPI recovers the user's key and data protected prior to the TPM reset can be decrypted.
+Once the device has connectivity to the domain controllers, DPAPI recovers the user's key and data protected prior to clearing the TPM can be decrypted.
 
 #### Impact of DPAPI failures on Windows Information Protection
-When data protected with user DPAPI is unusable, then the user loses access to all work data protected by Windows Information Protection.  The impact of this includes: Outlook 2016 is unable to start and work protected documents cannot be opened.  If DPAPI is working, then newly created work data is protected and can be accessed.  
+When data protected with user DPAPI is unusable, then the user loses access to all work data protected by Windows Information Protection.  The impact includes: Outlook 2016 is unable to start and work protected documents cannot be opened.  If DPAPI is working, then newly created work data is protected and can be accessed.  
 
 **Workaround:** Users can resolve the problem by connecting their device to the domain and rebooting or using their Encrypting File System Data Recovery Agent certificate. For more information about Encrypting File System Data Recovery Agent certificate, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://docs.microsoft.com/en-us/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate).
 
