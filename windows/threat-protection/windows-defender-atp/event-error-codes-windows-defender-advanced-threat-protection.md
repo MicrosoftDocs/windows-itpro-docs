@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: iawilt
-author: iaanw
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: high
 ---
 
