@@ -1261,7 +1261,7 @@ To turn off **Let apps read or send messages (text or MMS)**:
 
      -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMessaging**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMessaging**, with a value of 2 (two).
 
 To turn off **Choose apps that can read or send messages**:
 
