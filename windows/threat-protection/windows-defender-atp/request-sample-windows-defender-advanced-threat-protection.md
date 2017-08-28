@@ -17,7 +17,7 @@ ms.date: 09/01.2017
 Request sample of a file from a specific machine. File will be collected from the machine and uploaded to a secure storage. 
 
 ## Permissions
-User needs to have “secop” permissions.
+Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```

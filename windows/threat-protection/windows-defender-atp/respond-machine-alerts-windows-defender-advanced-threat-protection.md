@@ -117,6 +117,11 @@ The action to restrict an application from running applies a code integrity poli
 When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
 
 
+**Notification on machine user**:</br>
+When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
+
+![Image of app restriction](images/atp-app-restriction.png) 
+
 ## Remove app restriction 
 Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
 

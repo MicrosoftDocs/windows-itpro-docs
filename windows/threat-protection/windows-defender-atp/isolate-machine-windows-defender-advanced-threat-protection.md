@@ -17,7 +17,7 @@ ms.date: 09/01.2017
 Isolates a machine from accessing external network.
 
 ## Permissions
-User needs to have “secop” permissions.
+Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```

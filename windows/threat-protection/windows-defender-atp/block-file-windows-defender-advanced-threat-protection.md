@@ -17,7 +17,7 @@ ms.date: 09/01.2017
 Prevent a file from being executed in the organization using Windows Defender.
 
 ## Permissions
-User needs to have “secop” permissions.
+Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```

@@ -17,7 +17,7 @@ ms.date: 09/01.2017
 Initiate Windows Defender Antivirus scan on the machine.
 
 ## Permissions
-User needs to have “secop” permissions.
+Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```

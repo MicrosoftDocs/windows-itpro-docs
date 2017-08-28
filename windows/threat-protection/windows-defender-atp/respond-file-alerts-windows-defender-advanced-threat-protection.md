@@ -111,6 +111,7 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 
     The Action center shows the submission information:
+
     ![Image of block file](images/atp-blockfile.png)
 
   - **Submission time** - Shows when the action was submitted. <br>
@@ -233,4 +234,4 @@ HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 > If the value *AllowSampleCollection* is not available, the client will allow sample collection by default.
 
 ## Related topics
-– [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)
+- [Take response actions on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md)

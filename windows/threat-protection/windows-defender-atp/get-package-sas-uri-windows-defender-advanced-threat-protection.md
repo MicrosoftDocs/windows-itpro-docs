@@ -17,7 +17,7 @@ ms.date: 09/01.2017
 Get a Uri that allows downloading an investigation package.
 
 ## Permissions
-User needs to have “secop” permissions.
+Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```

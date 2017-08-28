@@ -17,7 +17,7 @@ ms.date: 09/01.2017
 Stop execution of a file on a machine and ensure it’s not executed again on that machine.
 
 ## Permissions
-User needs to have “secop” permissions.
+Users need to have Security administrator or Global admin directory roles.
 
 ## HTTP request
 ```
