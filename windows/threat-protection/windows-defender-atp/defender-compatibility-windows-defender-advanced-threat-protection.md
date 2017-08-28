@@ -24,7 +24,7 @@ ms.date: 09/01/2017
 - Windows Defender
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[! include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 The Windows Defender Advanced Threat Protection agent depends on Windows Defender Antivirus for some capabilities such as file scanning.
 

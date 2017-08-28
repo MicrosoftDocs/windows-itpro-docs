@@ -23,7 +23,7 @@ ms.date: 09/01/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[! include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 You need to onboard to Windows Defender ATP before you can use the service.
 

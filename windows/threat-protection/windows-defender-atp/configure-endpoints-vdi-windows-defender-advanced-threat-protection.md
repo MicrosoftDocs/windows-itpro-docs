@@ -18,7 +18,7 @@ ms.date: 09/01/2017
 **Applies to:**
 - Virtual desktop infrastructure (VDI) machines
 
-[! include[Prerelease information](prerelease.md)]
+[!include[Prerelease information](prerelease.md)]
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
