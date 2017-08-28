@@ -10,6 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 # Deployment guide for Windows Defender Antivirus in a virtual desktop infrastructure (VDI) environment
