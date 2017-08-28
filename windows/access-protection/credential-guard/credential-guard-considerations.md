@@ -42,7 +42,7 @@ Starting with Windows 10, version 1511, domain credentials that are stored with
     -   Applications that extract Windows credentials fail.
     -   When credentials are backed up from a PC that has Windows Defender Credential Guard enabled, the Windows credentials cannot be restored. If you need to back up your credentials, you must do this before you enable Windows Defender Credential Guard. Otherwise, you cannot restore those credentials.
 
-## CLearing TPM Considerations
+## Clearing TPM Considerations
 Virtualization-based Security (VBS) uses the TPM to protect its key. So when the TPM is cleared then the TPM protected key used to encrypt VBS secrets is lost.  
 
 >[!WARNING] 
@@ -78,8 +78,8 @@ Domain user sign-in on a domain-joined device after clearing a TPM for as long a
 |Credential Type | Windows 10 version | Behavior                             
 |---|---|---|
 | Certificate (smart card or Windows Hello for Business) | All | All data protected with user DPAPI is unusable and user DPAPI does not work at all. |
-| Password | Windows 10 v1709 or later | If the user signed-in with a certificate or password prior to TPM reset, then they can sign-in with password and user DPAPI is unaffected.
-| Password | Windows 10 v1703 | If the user signed-in with a password prior to TPM reset, then they can sign-in with that password and are unaffected.
+| Password | Windows 10 v1709 or later | If the user signed-in with a certificate or password prior to clearing the TPM, then they can sign-in with password and user DPAPI is unaffected.
+| Password | Windows 10 v1703 | If the user signed-in with a password prior to clearing the TPM, then they can sign-in with that password and are unaffected.
 | Password | Windows 10 v1607 or earlier | Existing user DPAPI protected data is unusable. User DPAPI is able to protect new data.
 
 Once the device has connectivity to the domain controllers, DPAPI recovers the user's key and data protected prior to clearing the TPM can be decrypted.
