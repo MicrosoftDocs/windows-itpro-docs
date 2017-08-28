@@ -37,7 +37,7 @@ In the request body, supply a JSON object with the following parameters:
 Parameter |	Type	| Description
 :---|:---|:---
 Comment |	String |	Comment to associate with the action. **Required**.
-SHA1 |	String	 | SHA1 of the file to upload to the secure storage. **Required**.
+SHA1 |	String	 | Sha1 of the file to upload to the secure storage. **Required**.
 
 ## Response
 If successful, this method returns 201, Created response code and *FileMachineAction*  object in the response body.
@@ -50,10 +50,9 @@ Request
 Here is an example of the request.
 
 ```
-POST https://graph.microsoft.com/testwdatppreview/machines/fb9ab6be3965095a09c057be7c90f0a2/unrestrictCodeExecution 
+POST https://graph.microsoft.com/testwdatppreview/machines/fb9ab6be3965095a09c057be7c90f0a2/requestSample 
 Content-type: application/json
 {
-  "Comment": "Stop and quarantine file on machine due to alert 32123",
   “Sha1”: “7327b54fd718525cbca07dacde913b5ac3c85673”
 }
 ```

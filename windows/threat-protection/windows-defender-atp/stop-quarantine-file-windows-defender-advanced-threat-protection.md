@@ -37,7 +37,7 @@ In the request body, supply a JSON object with the following parameters:
 Parameter |	Type	| Description
 :---|:---|:---
 Comment |	String |	Comment to associate with the action. **Required**.
-SHA1 |	String	 | SHA1 of the file to stop and quarantine on the machine. **Required**.
+SHA1 |	String	 | Sha1 of the file to stop and quarantine on the machine. **Required**.
 
 ## Response
 If successful, this method returns 201, Created response code and _FileMachineAction_ object in the response body.
@@ -66,13 +66,20 @@ Here is an example of the response.
 
 ```
 HTTP/1.1 201 Created
-HTTP/1.1 201 Created
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#FileMachineActions/$entity",
-    "id": "ac19aae7-4146-4a13-a786-eb43d8557f7c",
+    "id": "5841901d-6d04-4278-b0b3-8dd6a2acc8a5",
+    "sha1": “1163788484e3258ab9fcf692f7db7938f72ddfc2”,
     "type": "StopAndQuarantineFile",
-    "status": "InProgress",
-    "error": "Unknown"
+    "status": "Succeeded",
+    "machineId": "970a58d5f61786bb7799dfdb5395ec364ffceace",
+    "fileInstances": [
+        {
+            "filePath": "C:\\Users\\alex\\AppData\\Local\\AppFetch\\Temp\\3324bcb\\AppDownloader\\AnApp.appfetch.zip",
+            "status": "Succeeded"
+        }
+    ]
 }
+
 ```
