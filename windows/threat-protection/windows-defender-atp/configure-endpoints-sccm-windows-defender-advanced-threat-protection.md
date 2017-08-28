@@ -24,7 +24,7 @@ ms.date: 09/01/2017
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - System Center 2012 Configuration Manager or later versions
 
-[! include [Prerelease information](prerelease.md)]
+[! include[Prerelease information](prerelease.md)]
 
 <span id="sccm1606"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606

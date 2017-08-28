@@ -22,7 +22,7 @@ ms.date: 09/01/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[! include [Prerelease information](prerelease.md)]
+[! include[Prerelease information](prerelease.md)]
 
 The Antivirus optimization tile provides a list of recommendations to affected machines. Taking action on the recommendations will help improve your overall organizational security:
 

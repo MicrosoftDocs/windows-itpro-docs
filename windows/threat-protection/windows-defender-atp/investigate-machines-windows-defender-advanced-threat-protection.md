@@ -19,7 +19,7 @@ ms.date: 09/01/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[! include [Prerelease information](prerelease.md)]
+[! include[Prerelease information](prerelease.md)]
 
 ## Investigate machines
 Investigate the details of an alert raised on a specific machine to identify other behaviors or events that might be related to the alert or the potential scope of breach.

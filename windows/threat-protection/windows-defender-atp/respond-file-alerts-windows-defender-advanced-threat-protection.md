@@ -23,7 +23,7 @@ ms.date: 09/01/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[! include [Prerelease information](prerelease.md)]
+[! include[Prerelease information](prerelease.md)]
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details on the Action center.
 

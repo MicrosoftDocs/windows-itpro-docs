@@ -25,7 +25,7 @@ ms.date: 09/01/2017
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-[! include [Prerelease information](prerelease.md)]
+[! include[Prerelease information](prerelease.md)]
 
 > [!NOTE]
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.

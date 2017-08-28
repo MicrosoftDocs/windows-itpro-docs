@@ -22,7 +22,7 @@ ms.date: 09/01/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[! include [Prerelease information](prerelease.md)]
+[! include[Prerelease information](prerelease.md)]
 
 Use the **Preferences setup** menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
 
