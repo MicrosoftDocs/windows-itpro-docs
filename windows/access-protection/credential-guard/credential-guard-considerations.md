@@ -77,18 +77,17 @@ Domain user sign-in on a domain-joined device after a TPM reset as long as there
 
 |Credential Type | Windows 10 version | Behavior                             
 |---|---|---|
+| Certificate (smart card or Windows Hello for Business) | All | All data protected with user DPAPI is unusable and user DPAPI does not work at all. |
 | Password | Windows 10 v1709 or later | If the user signed-in with a certificate or password prior to TPM reset, then they can sign-in with password and user DPAPI is unaffected.
 | Password | Windows 10 v1703 | If the user signed-in with a password prior to TPM reset, then they can sign-in with that password and are unaffected.
 | Password | Windows 10 v1607 or earlier | Existing user DPAPI protected data is unusable. User DPAPI is able to protect new data.
-| Certificate (smart card or Windows Hello for Business) | Windows 10 v1703 or later | All data protected with user DPAPI is unusable and user DPAPI does not work at all. |
-| Certificate (smart card or Windows Hello for Business) | Windows 10 v1607 or earlier | All data protected with user DPAPI is unusable and user DPAPI does not work at all. |
 
 Once the device has connectivity to the domain controllers, DPAPI recovers the user's key and data protected prior to the TPM reset can be decrypted.
 
 #### Impact of DPAPI failures on Windows Information Protection
 When data protected with user DPAPI is unusable, then the user loses access to all work data protected by Windows Information Protection.  The impact of this includes: Outlook 2016 is unable to start and work protected documents cannot be opened.  If DPAPI is working, then newly created work data is protected and can be accessed.  
 
-**Workaround:** Users can resolve the problem by connecting their device to the domain and rebooting.
+**Workaround:** Users can resolve the problem by connecting their device to the domain and rebooting or using their Encrypting File System Data Recovery Agent certificate. For more information about Encrypting File System Data Recovery Agent certificate, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://docs.microsoft.com/en-us/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate).
 
 
 ## See also
