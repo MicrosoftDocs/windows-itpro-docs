@@ -513,7 +513,7 @@ In the multi-app mode, the touch keyboard will be automatically triggered when t
 
 
 
-## Considerations for mixed reality devices
+## Considerations for Windows Mixed Reality immersive headsets
 
 
 With the advent of [mixed reality devices (video link)](https://www.youtube.com/watch?v=u0jqNioU2Lo), you might want to create a kiosk that can run mixed reality apps. 
