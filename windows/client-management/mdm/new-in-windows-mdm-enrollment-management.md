@@ -1035,6 +1035,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Update/DisableDualScan</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
 <li>Update/ScheduledInstallFourthWeek</li>
@@ -1438,6 +1439,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
 <li>Privacy/EnableActivityFeed</li>
 <li>Privacy/PublishUserActivities</li>
+<li>Update/DisableDualScan</li>
 </ul>
 <p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
 <p>Changed the names of the following policies:</p>
