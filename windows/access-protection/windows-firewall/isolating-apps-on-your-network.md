@@ -14,7 +14,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-When you add new devices to your network, you may want to customize your Windows Firewall configuration to isolate the network access of the new Windows Store apps that run on them. Developers who build Windows Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
+When you add new devices to your network, you may want to customize your Windows Defender Firewall with Advanced Security configuration to isolate the network access of the new Windows Store apps that run on them. Developers who build Windows Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
 
 For example, a developer can decide that their app should only connect to trusted local networks (such as at home or work), and not to the Internet. In this way, developers can define the scope of network access for their app. This network isolation prevents an app from accessing a network and a connection type (inbound or outbound) if the connection has not been configured for the app. Then the network administrator can customize the firewall to further restrict the resources that the app can access.
 
@@ -54,7 +54,7 @@ To isolate Windows Store apps on your network, you need to use Group Policy to d
 
 -   Your Windows Store app is installed on the client device.
 
--   The Remote Server Administration Tools (RSAT) are installed on your client device. When you perform the following steps from your client device, you can select your Windows Store app when you create Windows Firewall rules.
+-   The Remote Server Administration Tools (RSAT) are installed on your client device. When you perform the following steps from your client device, you can select your Windows Store app when you create Windows Defender Firewall rules.
 
     >**Note:**  You can install the RSAT on your device running Windows 10 from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 
@@ -134,9 +134,9 @@ The following table provides a complete list of the possible app capabilities.
 | **Webcam** | webcam| Provides access to the webcam's video feed.| 
 | **Other devices (represented by GUIDs)** | &lt;GUID&gt;| Includes specialized devices and Windows Portable Devices.| 
 
-You can create a Windows Firewall policy that is scoped to a set of apps that use a specified capability or scoped to a specific Windows Store app.
+You can create a Windows Defender Firewall policy that is scoped to a set of apps that use a specified capability or scoped to a specific Windows Store app.
 
-For example, you could create a Windows Firewall policy to block Internet access for any apps on your network that have the Documents Library capability.
+For example, you could create a Windows Defender Firewall policy to block Internet access for any apps on your network that have the Documents Library capability.
 
 **To block Internet access for any apps on your network that have the Documents Library capability**
 
@@ -148,7 +148,7 @@ For example, you could create a Windows Firewall policy to block Internet access
 
 4.  Right-click the new GPO, and then click **Edit**.
 
-5.  In the Group Policy Management Editor, expand **Computer Configuration**, expand **Policies**, expand **Windows Settings**, expand **Security Settings**, expand **Windows Firewall with Advanced Security**, and click **Windows Firewall with Advanced Security – LDAP://…**
+5.  In the Group Policy Management Editor, expand **Computer Configuration**, expand **Policies**, expand **Windows Settings**, expand **Security Settings**, expand **Windows Defender Firewall with Advanced Security**, and click **Windows Defender Firewall – LDAP://…**
 
 6.  Right-click **Outbound Rules**, and then click **New Rule**.
 
@@ -206,7 +206,7 @@ Use the following procedure if you want to block intranet access for a specific 
 
 4.  Right-click your new GPO, and then click **Edit**.
 
-5.  From the Group Policy Management Editor, expand **Computer Configuration**, expand **Policies**, expand **Windows Settings**, expand **Security Settings**, expand **Windows Firewall with Advanced Security**, and then click **Windows Firewall with Advanced Security – LDAP://**…
+5.  From the Group Policy Management Editor, expand **Computer Configuration**, expand **Policies**, expand **Windows Settings**, expand **Security Settings**, expand **Windows Defender Firewall**, and then click **Windows Defender Firewall – LDAP://**…
 
 6.  Right-click **Outbound Rules**, and then click **New Rule**.
 
@@ -246,4 +246,4 @@ Use the following procedure if you want to block intranet access for a specific 
 
 ## See also
 
--   [Windows Firewall with Advanced Security Overview](windows-firewall-with-advanced-security.md)
+-   [Windows Defender Firewall with Advanced Security Overview](windows-firewall-with-advanced-security.md)

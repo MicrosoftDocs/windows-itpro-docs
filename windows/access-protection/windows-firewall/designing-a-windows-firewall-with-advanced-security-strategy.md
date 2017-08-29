@@ -1,6 +1,6 @@
 ---
-title: Designing a Windows Firewall with Advanced Security Strategy (Windows 10)
-description: Designing a Windows Firewall with Advanced Security Strategy
+title: Designing a Windows Defender Firewall with Advanced Security Strategy (Windows 10)
+description: Designing a Windows Defender Firewall Strategy
 ms.assetid: 6d98b184-33d6-43a5-9418-4f24905cfd71
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,7 +9,7 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Designing a Windows Firewall with Advanced Security Strategy
+# Designing a Windows Defender Firewall with Advanced Security Strategy
 
 **Applies to**
 -   Windows 10

@@ -35,11 +35,11 @@ The procedures in this section appear in the checklists found earlier in this do
 
 - [Configure the Rules to Require Encryption](configure-the-rules-to-require-encryption.md)
 
-- [Configure the Windows Firewall Log](configure-the-windows-firewall-log.md)
+- [Configure the Windows Defender Firewall with Advanced Security Log](configure-the-windows-firewall-log.md)
 
 - [Configure the Workstation Authentication Certificate Template](configure-the-workstation-authentication-certificate-template.md)
 
-- [Configure Windows Firewall to Suppress Notifications When a Program Is Blocked](configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked.md)
+- [Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program Is Blocked](configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked.md)
 
 - [Confirm That Certificates Are Deployed Correctly](confirm-that-certificates-are-deployed-correctly.md)
 
@@ -79,14 +79,12 @@ The procedures in this section appear in the checklists found earlier in this do
 
 - [Open the Group Policy Management Console to IP Security Policies](open-the-group-policy-management-console-to-ip-security-policies.md)
 
-- [Open the Group Policy Management Console to Windows Firewall](open-the-group-policy-management-console-to-windows-firewall.md)
+- [Open the Group Policy Management Console to Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall.md)
 
-- [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md)
-
-- [Open Windows Firewall with Advanced Security](open-windows-firewall-with-advanced-security.md)
+- [Open Windows Defender Firewall with Advanced Security](open-windows-firewall-with-advanced-security.md)
 
 - [Restrict Server Access to Members of a Group Only](restrict-server-access-to-members-of-a-group-only.md)
 
-- [Turn on Windows Firewall and Configure Default Behavior](turn-on-windows-firewall-and-configure-default-behavior.md)
+- [Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior](turn-on-windows-firewall-and-configure-default-behavior.md)
 
 - [Verify That Network Traffic Is Authenticated](verify-that-network-traffic-is-authenticated.md)
