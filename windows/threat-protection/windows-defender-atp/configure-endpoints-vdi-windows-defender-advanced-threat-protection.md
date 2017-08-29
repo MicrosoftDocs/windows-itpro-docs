@@ -18,7 +18,7 @@ ms.date: 09/01/2017
 **Applies to:**
 - Virtual desktop infrastructure (VDI) machines
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+[!include[Prerelease information](prerelease.md)]
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
@@ -60,12 +60,13 @@ You can onboard VDI machines using a single entry or multiple entries for each m
   Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 6. Test your solution:
-  a. Create a pool with one machine.
-  b. Logon to machine.
-  c. Logoff from machine.
-  d. Logon to machine with another user.
-  e. **For single entry for each machine**: Check only one entry in the Windows Defender ATP portal.<br>
-**For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
+
+      a. Create a pool with one machine.
+      b. Logon to machine.
+      c. Logoff from machine.
+      d. Logon to machine with another user.
+      e. **For single entry for each machine**: Check only one entry in the Windows Defender ATP portal.<br>
+    **For multiple entries for each machine**: Check multiple entries in the Windows Defender ATP portal.
 
 7. Click **Machines list** on the Navigation pane.
 

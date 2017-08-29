@@ -19,7 +19,7 @@ ms.date: 09/01/2017
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+[!include[Prerelease information](prerelease.md)]
 
 Investigate alerts that are affecting your network, what they mean, and how to resolve them. Use the alert details view to see various tiles that provide information about alerts. You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them.
 

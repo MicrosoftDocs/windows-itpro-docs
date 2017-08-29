@@ -23,7 +23,7 @@ ms.date: 09/01/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+[!include[Prerelease information](prerelease.md)]
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
@@ -64,9 +64,6 @@ Machine group and tags support proper mapping of the network, enabling you to at
 
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
-
-- [Use the Windows Defender ATP exposed APIs](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
-Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities. 
 
 
     

@@ -23,7 +23,7 @@ ms.date: 09/01/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+[!include[Prerelease information](prerelease.md)]
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
@@ -116,6 +116,11 @@ The action to restrict an application from running applies a code integrity poli
 
 When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
 
+
+**Notification on machine user**:</br>
+When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
+
+![Image of app restriction](images/atp-app-restriction.png) 
 
 ## Remove app restriction 
 Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.

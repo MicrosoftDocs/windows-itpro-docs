@@ -22,7 +22,7 @@ ms.date: 09/01/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-<span style="color:#ED1C24;">[Some information relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]</span>
+[!include[Prerelease information](prerelease.md)]
 
 The Security Analytics dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place. From there you can take action based on the recommended configuration baselines.
 
@@ -52,9 +52,9 @@ The security coverage tile shows a bar graph where each bar represents a Windows
 ![Security coverage](images/atp-sec-coverage.png)
 
 ## Improvement opportunities 
-Improve your organizational security score by taking the recommended improvement actions listed on this tile. 
+Improve your organizational security score by taking the recommended improvement actions listed on this tile. The goal is to reduce the gap between the perfect score and the current score for each control.
 
-Click on each segment to see the recommended optimizations.
+Click on each control to see the recommended optimizations.
 
 ![Improvement opportunities](images/atp-improv-ops.png)
 
@@ -87,7 +87,7 @@ You can take the following actions to increase the overall security score of you
 > For the Windows Defender Antivirus properties to show,  you'll need to ensure that the Windows Defender Antivirus Cloud-based protection is properly configured on the endpoint. 
 
 - Fix antivirus reporting
-  - This recommendation is displayed when the Windows Defender Antivirus configuration on a machines is not properly configured. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
+  - This recommendation is displayed when the Windows Defender Antivirus is not properly configured to report its health state. For more information on fixing the reporting, see [Configure and validate network connections](../windows-defender-antivirus/configure-network-connections-windows-defender-antivirus.md).
 - Turn on antivirus
 - Update antivirus definitions
 - Turn on cloud-based protection
@@ -98,7 +98,7 @@ For more information, see [Configure Windows Defender Antivirus](../windows-defe
 
 
 ### OS security updates optimization
-This tile shows you the exact number of machines that require the latest security updates and ones that can use the latest Windows Insider preview builds.
+This tile shows you the exact number of machines that require the latest security updates. It also shows machines that are running on the latest Windows Insider preview build and serves as a reminder to ensure that users should run the latest builds.
  
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
