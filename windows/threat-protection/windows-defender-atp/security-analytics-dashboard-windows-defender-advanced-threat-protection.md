@@ -1,7 +1,7 @@
 ---
-title: View the Security Analytics dashboard
-description: Use the Security Analytics dashboard to assess and improve the security state of your organization by analyzing various security control tiles. Use the recommended improvement actions based on the list of machines that need remediation.
-keywords: security analytics, dashboard, antivirus recommendations, security control state, security score, score improvement
+title: View the Security Analytics dashboard in Windows Defender ATP
+description: Use the Security Analytics dashboard to assess and improve the security state of your organization by analyzing various security control tiles. 
+keywords: security analytics, dashboard, security recommendations, security control state, security score, score improvement, organizational security score, security coverate, security control, improvement opportunities, edr, antivirus, av, os security updates
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

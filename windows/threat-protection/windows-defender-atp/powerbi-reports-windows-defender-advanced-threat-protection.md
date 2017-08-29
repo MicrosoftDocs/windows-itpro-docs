@@ -1,7 +1,7 @@
 ---
 title: Create and build Power BI reports using Windows Defender ATP data
 description: Get security insights by creating and building Power BI dashboards using data from Windows Defender ATP and other data sources.
-keywords: preferences setup, power bi, power bi service, power bi desktop, reports, dashboards, connectors 
+keywords: preferences setup, power bi, power bi service, power bi desktop, reports, dashboards, connectors , security insights, mashup
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
