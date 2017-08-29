@@ -12,7 +12,7 @@ localizationpriority: high
 ms.date: 09/01/2017
 ---
 
-# View the Security analytics dashboard
+# View the Windows Defender Advanced Threat Protection Security analytics dashboard
 
 **Applies to:**
 
