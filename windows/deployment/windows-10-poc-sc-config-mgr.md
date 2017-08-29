@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, sccm
 ms.localizationpriority: high
+ms.date: 08/23/2017
 author: greg-lindsay
 ---
 

@@ -181,12 +181,12 @@ During the life of a device, it may be necessary or desirable to switch between 
 <td align="left">Use media to upgrade to the latest Windows Insider Program build.</td>
 </tr>
 <tr class="odd">
-<td align="left">Long-Term Servicing Channel (Targeted)</td>
-<td align="left">Use media to upgrade to a later Long-Term Servicing Channel build. (Note that the Long-Term Servicing Channel build must be a later build.)</td>
+<td align="left">Semi-Annual Channel (Targeted)</td>
+<td align="left">Use media to upgrade. Note that the Semi-Annual Channel build must be a later build.</td>
 </tr>
 <tr class="even">
-<td align="left">Long-Term Servicing Channel</td>
-<td align="left">Use media to upgrade to a later Long-Term Servicing Channel for Business build (Long-Term Servicing Channel build plus fixes). Note that it must be a later build.</td>
+<td align="left">Semi-Annual Channel</td>
+<td align="left">Use media to upgrade. Note that the Semi-Annual Channel build must be a later build.</td>
 </tr>
 </tbody>
 </table>

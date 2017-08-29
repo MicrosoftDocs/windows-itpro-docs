@@ -10,6 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 
@@ -144,15 +146,6 @@ Users can click on the displayed information to get more help:
     3. Specify contact website
 
 9. Click **OK** after configuring each setting to save your changes. 
-
-
-### Use PowerShell to customize the notification
-
-
-
->[!NOTE]
->Are there any PS cmdlets for customizing? What about CSPs for MDM?
-
 
 
 

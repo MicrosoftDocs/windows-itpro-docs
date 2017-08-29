@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-This GPO is authored by using the Windows Firewall with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to client devices that are running Windows 8, Windows 7, or Windows Vista.
+This GPO is authored by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to client devices that are running Windows 8, Windows 7, or Windows Vista.
 
 Because client devices can sometimes be portable, the settings and rules for this GPO are applied to only the domain profile.
 
