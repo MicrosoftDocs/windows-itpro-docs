@@ -14,7 +14,7 @@ ms.date: 09/01.2017
 ---
 
 # Unisolate machine
-Remove machine from isolation.
+Undo isolation of a machine.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.
@@ -28,7 +28,7 @@ POST /testwdatppreview/machines/{id}/unisolate
 
 Header | Value 
 :---|:---
-Authorization | Bearer {token}. Required.
+Authorization | Bearer {token}. **Required**.
 Content-Type	| application/json
 
 ## Request body

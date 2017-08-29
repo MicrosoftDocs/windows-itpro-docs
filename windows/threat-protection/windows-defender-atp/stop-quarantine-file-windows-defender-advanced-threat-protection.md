@@ -28,7 +28,7 @@ POST /testwdatppreview/machines/{id}/stopAndQuarantineFile
 
 Header | Value 
 :---|:---
-Authorization | Bearer {token}. Required.
+Authorization | Bearer {token}. **Required**.
 Content-Type	| application/json
 
 ## Request body
@@ -37,7 +37,7 @@ In the request body, supply a JSON object with the following parameters:
 Parameter |	Type	| Description
 :---|:---|:---
 Comment |	String |	Comment to associate with the action. **Required**.
-SHA1 |	String	 | Sha1 of the file to stop and quarantine on the machine. **Required**.
+Sha1 |	String	 | Sha1 of the file to stop and quarantine on the machine. **Required**.
 
 ## Response
 If successful, this method returns 201, Created response code and _FileMachineAction_ object in the response body.

@@ -14,7 +14,7 @@ ms.date: 09/01.2017
 ---
 
 # Unrestrict code execution
-Remove code execution restriction.
+Unrestrict execution of set of predefined applications.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.

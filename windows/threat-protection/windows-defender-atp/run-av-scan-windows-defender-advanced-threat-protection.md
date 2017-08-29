@@ -28,7 +28,7 @@ POST /testwdatppreview/machines/{id}/runAntiVirusScan
 
 Header | Value 
 :---|:---
-Authorization | Bearer {token}. Required.
+Authorization | Bearer {token}. **Required**.
 Content-Type	| application/json
 
 ## Request body

@@ -14,7 +14,7 @@ ms.date: 09/01.2017
 ---
 
 # Block file 
-Prevent a file from being executed in the organization using Windows Defender.
+Prevent a file from being executed in the organization using Windows Defender Antivirus.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.

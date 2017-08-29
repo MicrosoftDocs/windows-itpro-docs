@@ -37,7 +37,7 @@ In the request body, supply a JSON object with the following parameters:
 Parameter |	Type	| Description
 :---|:---|:---
 Comment |	String |	Comment to associate with the action. **Required**.
-SHA1 |	String	 | Sha1 of the file to upload to the secure storage. **Required**.
+Sha1 |	String	 | Sha1 of the file to upload to the secure storage. **Required**.
 
 ## Response
 If successful, this method returns 201, Created response code and *FileMachineAction*  object in the response body.

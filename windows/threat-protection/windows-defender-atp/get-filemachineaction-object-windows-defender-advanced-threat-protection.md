@@ -14,7 +14,7 @@ ms.date: 09/01.2017
 ---
 
 # Get FileMachineAction object
-Get MachineAction object
+Get MachineAction object.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.
@@ -59,7 +59,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#FileMachineActions/$entity",
     "id": " 7327b54fd718525cbca07dacde913b5ac3c85673",
-    "sha1": “1163788484e3258ab9fcf692f7db7938f72ddfc2”,
+    "sha1": "1163788484e3258ab9fcf692f7db7938f72ddfc2",
     "type": "StopAndQuarantineFile",
     "status": "Succeeded",
     "machineId": "970a58d5f61786bb7799dfdb5395ec364ffceace",

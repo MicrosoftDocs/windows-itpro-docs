@@ -28,7 +28,7 @@ POST /testwdatppreview/machines/{id}/restrictCodeExecution
 
 Header | Value 
 :---|:---
-Authorization | Bearer {token}. Required.
+Authorization | Bearer {token}. **Required**.
 Content-Type	| application/json
 
 ## Request body
