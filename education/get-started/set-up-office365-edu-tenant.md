@@ -15,6 +15,10 @@ ms.date: 07/10/2017
 
 # Set up an Office 365 Education tenant
 
+> [!div class="step-by-step"]
+[<< Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)
+[Use School Data Sync to import student data >>](use-school-data-sync.md)
+
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
 
 Don't have an Office 365 for Education verified tenant or just starting out? Follow these steps to set up an Office 365 for Education tenant. [Learn more about Office 365 for Education plans and pricing](https://products.office.com/en-us/academic/compare-office-365-education-plans). </br>
