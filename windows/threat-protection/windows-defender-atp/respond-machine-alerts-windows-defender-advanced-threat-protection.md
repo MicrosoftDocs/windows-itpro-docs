@@ -30,108 +30,53 @@ Quickly respond to detected attacks by isolating machines or collecting an inves
 >[!NOTE]
 > These response actions are only available for machines on Windows 10, version  1703.
 
-## Isolate machines from the network
-Depending on the severity of the attack and the sensitivity of the machine, you might want to isolate the machine from the network. This action can help prevent the attacker from controlling the compromised machine and performing further activities such as data exfiltration and lateral movement.
+## Manage machine group and tags
+Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 
 
-This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
+Machine related properties are being extended to account for:
 
-On Windows 10, version 1710 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity.
-
->[!NOTE]
->You’ll be able to reconnect the machine back to the network at any time.
-
-1.	Select the machine that you want to isolate. You can select or search for a machine from any of the following views:
-
-  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  - **Machines list** - Select the machine name from the list of machines.
-  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
-
-2.	Open the **Actions** menu and select **Isolate machine**.
-
-    ![Image of isolate machine](images/atp-actions-isolate-machine.png)
-
-3. Select the check-box if you'd like to enable Outlook and Skype communication while the machine is isolated.
-
-    ![Image of isolation confirmation](images/atp-confirm-isolate.png)
-
-4. Type a comment and select **Yes, isolate machine** to take action on the machine.
-  
-    >[!NOTE]
-    >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
-
-   The Action center shows the submission information:
-    ![Image of machine isolation](images/atp-machine-isolation.png)
-
-   - **Submission time** - Shows when the isolation action was submitted.
-   - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
-
-When the isolation configuration is applied, a new event is reflected in the machine timeline.
-
-**Notification on machine user**:</br>
-When a machine is being isolated, the following notification is displayed to inform the user that the machine is being isolated from the network:
-
-![Image of no network connection](images/atp-notification-isolate.png)
-
-## Release machine from isolation
-Depending on the severity of the attack and the state of the machine you can choose to release the machine from isolation after you have verified that the compromised machine has been remediated.
-
-1.	Select a machine that was previously isolated.
-
-2.	Open the **Actions** menu and select **Release from isolation**.
-
-    ![Image of release from isolation](images/atp-actions-release-from-isolation.png)
-
-3.	Type a comment and select **Yes, release machine** to take action on the machine. The machine will be reconnected to the network.
-
-## Restrict app execution
-In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
-
-The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
-
->[!NOTE]
->You’ll be able to reverse the restriction of applications from running at any time.
-
-1. Select the machine where you'd like to restrict an application from running from. You can select or search for a machine from any of the following views:
-
-  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-  - **Machines list** - Select the machine name from the list of machines.
-  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
-
-2.	Open the **Actions** menu and select **Restrict app execution**.
-
-    ![Image of restrict app execution action](images/atp-actions-restrict-app-execution.png)
-
-3. Type a comment and select **Yes, restict app execution** to take action on the file.
-
-   ![Image of app restriction notification](images/atp-notification-restrict.png)
-
-    The Action center shows the submission information:
-    ![Image of action center with app restriction](images/atp-action-center-app-restriction.png)
+- Group affiliation
+- Dynamic context capturing  
 
 
-  - **Submission time** - Shows when the isolation action was submitted.
-  - **Status** - Indicates any pending actions or the results of completed actions.
 
-When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
+### Group machines
+Machine group affiliation can represent geographic location, specific activity, importance level and others. Grouping machines with similar attributes can be handy when you need to apply contextual action on a specific list of machines. After creating groups, you can apply the Group filter on the Machines list to get a narrowed list of machines.
+
+Machine group is defined in the following registry key entry of the machine:
+
+-	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
+-	Registry key value (string): Group
 
 
-**Notification on machine user**:</br>
-When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
+### Set standard tags on machines
+Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
 
-![Image of app restriction](images/atp-app-restriction.png) 
+1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
 
-## Remove app restriction 
-Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
+    -	**Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+    -	**Machines list** - Select the machine name from the list of machines.
+    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
 
-1.	Select the machine where you restricted an application from running from.
+    You can also get to the alert page through the file and IP views.
 
-2.	Open the **Actions** menu and select **Remove app restrictions**. 
+2.	Open the **Actions** menu and select **Manage tags**.
 
-    ![Image of remove app restrictions](images/atp-actions-remove-app-restrictions.png)
+    ![Image of taking action to manage tags on a machine](images/atp-manage-tags.png)
 
-3.	Type a comment and select **Yes, remove restriction** to take action on the application. The machine application restriction will no longer apply on the machine.  
+3. Enter tags on the machine. To add more tags, click the + icon.
+4. Click **Save and close**. 
+
+    ![Image of adding tags on a machine](images/atp-save-tag.png)
+
+    Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** or **Groups** filter to see the relevant list of machines.
+
+### Manage machine tags
+You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
+
+![Image of adding tags on a machine](images/atp-tag-management.png)
+
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
@@ -215,6 +160,111 @@ As part of the investigation or response process, you can remotely initiate an a
     - **Status** - Indicates any pending actions or the results of completed actions.
 
 The machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
+
+## Restrict app execution
+In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
+
+The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
+
+>[!NOTE]
+>You’ll be able to reverse the restriction of applications from running at any time.
+
+1. Select the machine where you'd like to restrict an application from running from. You can select or search for a machine from any of the following views:
+
+  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  - **Machines list** - Select the machine name from the list of machines.
+  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+2.	Open the **Actions** menu and select **Restrict app execution**.
+
+    ![Image of restrict app execution action](images/atp-actions-restrict-app-execution.png)
+
+3. Type a comment and select **Yes, restict app execution** to take action on the file.
+
+   ![Image of app restriction notification](images/atp-notification-restrict.png)
+
+    The Action center shows the submission information:
+    ![Image of action center with app restriction](images/atp-action-center-app-restriction.png)
+
+
+  - **Submission time** - Shows when the isolation action was submitted.
+  - **Status** - Indicates any pending actions or the results of completed actions.
+
+When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
+
+
+**Notification on machine user**:</br>
+When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
+
+![Image of app restriction](images/atp-app-restriction.png) 
+
+## Remove app restriction 
+Depending on the severity of the attack and the state of the machine, you can choose to reverse the restriction of applications policy after you have verified that the compromised machine has been remediated.
+
+1.	Select the machine where you restricted an application from running from.
+
+2.	Open the **Actions** menu and select **Remove app restrictions**. 
+
+    ![Image of remove app restrictions](images/atp-actions-remove-app-restrictions.png)
+
+3.	Type a comment and select **Yes, remove restriction** to take action on the application. The machine application restriction will no longer apply on the machine.  
+
+
+## Isolate machines from the network
+Depending on the severity of the attack and the sensitivity of the machine, you might want to isolate the machine from the network. This action can help prevent the attacker from controlling the compromised machine and performing further activities such as data exfiltration and lateral movement.
+
+This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
+
+On Windows 10, version 1710 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity.
+
+>[!NOTE]
+>You’ll be able to reconnect the machine back to the network at any time.
+
+1.	Select the machine that you want to isolate. You can select or search for a machine from any of the following views:
+
+  - **Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+  - **Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+  - **Machines list** - Select the machine name from the list of machines.
+  - **Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+2.	Open the **Actions** menu and select **Isolate machine**.
+
+    ![Image of isolate machine](images/atp-actions-isolate-machine.png)
+
+3. Select the check-box if you'd like to enable Outlook and Skype communication while the machine is isolated.
+
+    ![Image of isolation confirmation](images/atp-confirm-isolate.png)
+
+4. Type a comment and select **Yes, isolate machine** to take action on the machine.
+  
+    >[!NOTE]
+    >The machine will remain connected to the Windows Defender ATP service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the machine is isolated.
+
+   The Action center shows the submission information:
+    ![Image of machine isolation](images/atp-machine-isolation.png)
+
+   - **Submission time** - Shows when the isolation action was submitted.
+   - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
+
+When the isolation configuration is applied, a new event is reflected in the machine timeline.
+
+**Notification on machine user**:</br>
+When a machine is being isolated, the following notification is displayed to inform the user that the machine is being isolated from the network:
+
+![Image of no network connection](images/atp-notification-isolate.png)
+
+## Release machine from isolation
+Depending on the severity of the attack and the state of the machine you can choose to release the machine from isolation after you have verified that the compromised machine has been remediated.
+
+1.	Select a machine that was previously isolated.
+
+2.	Open the **Actions** menu and select **Release from isolation**.
+
+    ![Image of release from isolation](images/atp-actions-release-from-isolation.png)
+
+3.	Type a comment and select **Yes, release machine** to take action on the machine. The machine will be reconnected to the network.
+
 
 ## Check activity details in Action center
 The **Action center** provides information on actions that were taken on a machine or file. You’ll be able to view the following details:
