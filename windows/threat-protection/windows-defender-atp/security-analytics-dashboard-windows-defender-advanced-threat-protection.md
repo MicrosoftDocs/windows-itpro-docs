@@ -52,9 +52,9 @@ The security coverage tile shows a bar graph where each bar represents a Windows
 ![Security coverage](images/atp-sec-coverage.png)
 
 ## Improvement opportunities 
-Improve your organizational security score by taking the recommended improvement actions listed on this tile. 
+Improve your organizational security score by taking the recommended improvement actions listed on this tile. The goal is to reduce the gap between the perfect score and the current score for each control.
 
-Click on each segment to see the recommended optimizations.
+Click on each control to see the recommended optimizations.
 
 ![Improvement opportunities](images/atp-improv-ops.png)
 
@@ -98,7 +98,7 @@ For more information, see [Configure Windows Defender Antivirus](../windows-defe
 
 
 ### OS security updates optimization
-This tile shows you the exact number of machines that require the latest security updates and ones that can use the latest Windows Insider preview builds.
+This tile shows you the exact number of machines that require the latest security updates. It also shows machines that are running on the latest Windows Insider preview build and serves as a reminder to ensure that users should run the latest builds.
  
 You can take the following actions to increase the overall security score of your organization:
 - Install the latest security updates
