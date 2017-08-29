@@ -9,7 +9,7 @@ author: greg-lindsay
 
 The first blade in the Upgrade Readiness solution is the upgrade overview blade. This blade displays the total count of computers sharing data with Microsoft, and the count of computers upgraded. As you successfully upgrade computers, the count of computers upgraded increases.
 
-The upgrade overivew blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. The upgrade overview blade also displays the current target OS version.  For more information about the target OS version, see [target version](use-upgrade-readiness-to-manage-windows-upgrades.md).
+The upgrade overivew blade displays data refresh status, including the date and time of the most recent data update and whether user changes are reflected. The upgrade overview blade also displays the current target OS version.  For more information about the target OS version, see [target version](use-upgrade-readiness-to-manage-windows-upgrades.md#target-version).
 
 The following color-coded status changes are reflected on the upgrade overview blade:
 
@@ -32,7 +32,7 @@ The following color-coded status changes are reflected on the upgrade overview b
     - If the current value is an older OS version than the recommended value, but not deprecated, the version is displayed in amber.
     - If the current value is a deprecated OS version, the version is displayed in red.
 
-Click on a row to drill down and see details about individual computers. If KBs are missing, see [Deploy the compatibility update and related KBs](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#deploy-the-compatibility-update-and-related-kbs) for information on required KBs.
+Click on a row to drill down and see details about individual computers. If KBs are missing, see [Deploy the compatibility update and related KBs](upgrade-readiness-get-started.md#deploy-the-compatibility-update-and-related-kbs) for information on required KBs.
 
 In the following example, there is no delay in data processing, less than 4% of computers (6k\294k) have incomplete data, there are no pending user changes, and the currently selected target OS version is the same as the recommended version:
 
