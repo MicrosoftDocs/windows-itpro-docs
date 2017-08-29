@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender ATP server endpoints
 description: Configure server endpoints so that they can send sensor data to the Windows Defender ATP sensor.
-keywords: server, configure server endpoints, endpoint management, configure Windows ATP server endpoints, configure Windows Defender Advanced Threat Protection server endpoints
+keywords: configure server endpoints, server, server onboarding, endpoint management, configure Windows ATP server endpoints, configure Windows Defender Advanced Threat Protection server endpoints
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
