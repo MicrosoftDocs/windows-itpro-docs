@@ -27,17 +27,16 @@ Use for settings related to Messaging and Commercial Mobile Alert System (CMAS).
 
 ### DisplayCmasLifo
 
-Use this setting to change the order in which CMAS alert messages are displayed, from the default FIFO to LIFO.
+Use this setting to change the order in which CMAS alert messages are displayed, from the default first in/first out (FIFO) message order to last in/first out (LIFO) message order.
 
-If the phone receives at least one CMAS alert message which has not been acknowledged by the user, and another CMAS alert message arrives on the phone, partners can configure the order in which the newly received alert messages are displayed on the phone regardless of the service category of the alert. Users will not be able to change the display order once it has been set. 
+If the phone receives at least one CMAS alert message which has not been acknowledged by the user, and another CMAS alert message arrives on the phone, partners can configure the order in which the newly received alert messages are displayed on the phone regardless of the service category of the alert. Users will not be able to change the message order once it has been set. 
 
-If partners do not specify a value for this customization, the default first in/first out (FIFO) display order is used.
+If partners do not specify a value for this customization, the default FIFO display order is used. Users will be able to acknowledge the messages in the reverse order they were received.
 
-Users will be able to acknowledge the messages in the reverse order they were received.
-
-When configured as **True**, you set a last in/first out (LIFO) message order. When configured as **False**, you set a first in/first out (FIFO) message order.
+When configured as **True**, you set a LIFO message order. When configured as **False**, you set a FIFO message order.
 
 ### EnableCustomLineSetupDialog
+
 
 
 ### VoicemailIntercept
@@ -113,13 +112,13 @@ SevereAlertDependentOnExtremeAlert | When set as **True**, the CMAS-Extreme aler
 Setting | Description
 --- | ---
 AllowSelectAllContacts | Set to **True** to show the **select all contacts/unselect all** menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks. Windows 10 Mobile supports the following select multiple recipients features:</br></br>- A multi-select chooser, which enables users to choose multiple contacts.</br>- A **select all contacts/unselect all** menu option, which enables users to select or unselect all their contacts. This option is not shown by default and must be enabled by the OEM.
-AllowSMStoSMTPAddress |
-AssistedDialingMcc |
-AssistedDialingMnc |
-AssistedDialingPlusCodeSupportOverride |
-AutoRetryDownload |
-BroadcastChannels |
-ConvertLongSMStoMMS |
+AllowSMStoSMTPAddress | Allow SMS to SMTP address.
+AssistedDialingMcc | By setting AssistedDialingMcc and AssistedDialingMnc, international assisted dialing will be enabled for SMS if the user setting for international assisted dialing is enabled. Enter the Mobile Country Code (MCC) to use for sending SMS.
+AssistedDialingMnc | By setting AssistedDialingMcc and AssistedDialingMnc, international assisted dialing will be enabled for SMS if the user setting for international assisted dialing is enabled. Enter the Mobile Network Code (MNC) to use for sending SMS.
+AssistedDialingPlusCodeSupportOverride | For devices that support IMS over SMS, you can override support for the assisted dialing plus (+) code for SMS by setting AssistedDialingPlusCodeSupportOverride. If enabled, the OS will not convert the plus (+) code to the proper assisted number when the user turns on the dialing assist option.
+AutoRetryDownload | You can configure the messaging app to automatically retry downloading an MMS message if the initial download attempt fails. When this customization is enabled, the download is retried 3 times at 20-, 40-, and 60-second intervals. 
+BroadcastChannels | You can specify one or more ports from which the device will accept cellular broadcast messages. Set the BroadcastChannels value to the port number(s) that can accept cellular broadcast messages. If you specify the same port that Windows 10 Mobile already recognizes as an Emergency Alert port (a CMAS or ETWS port number) and a cell broadcast message is received on that port, the user will only receive the message once. The message that is received will be displayed as an Emergency Alert message.
+ConvertLongSMStoMMS | 
 DefaultContentLocationUrl | For networks that require it, you can specify the default GET path within the MMSC to use when the GET URL is missing from the WAP push MMS notification. Set DefaultContentLocationUrl to specify the default GET path within the MMSC.
 ErrorCodeEnabled | You can choose to display additional content in the conversation view when an SMS or MMS message fails to send. This content includes a specific error code in decimal format that the user can report to technical support. Common errors also include a friendly string to help the user self-diagnose and fix the problem. Set to **True** to display the error message with an explanation of the problem and the decimal-format error codes. When set to **False**, the full error message is not displayed.
 HideMediumSIPopups |
