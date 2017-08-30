@@ -70,8 +70,8 @@ You can use the following filters to limit the list of machines displayed during
 Filter the list to view specific machines grouped together by the following machine health states:
 
 - **Active** – Machines that are actively reporting sensor data to the service.
--	**Misconfigured** – Machines that have impaired communication with service or are unable to send sensor data. Misconfigured machines can further be classified to:
-  - Impaired communication
+-	**Misconfigured** – Machines that have impaired communications with service or are unable to send sensor data. Misconfigured machines can further be classified to:
+  - Impaired communications
   - No sensor data
 
   For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).

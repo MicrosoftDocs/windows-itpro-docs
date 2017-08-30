@@ -74,7 +74,7 @@ This tile provides a specific list of actions you can take on Windows Defender A
 You can take the following actions to increase the overall security score of your organization:
 - Turn on EDR sensor
 - Fix sensor data collection
-- Fix impaired communication
+- Fix impaired communications
 
 For more  information, see [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md). 
 
