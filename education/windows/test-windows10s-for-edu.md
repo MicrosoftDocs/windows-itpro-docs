@@ -228,7 +228,7 @@ Common support questions for the Windows 10 S test program:
 
 * **What if I want to move from Windows 10 S to Windows 10 Pro?**
 
-    If you want to discontinue using Windows 10 S, follow the instructions to return to your previous installation of Windows 10. If you already had Windows 10 Pro or Windows 10 Pro Education on the device you are testing on, you should be able to move to Windows 10 Pro or Windows 10 Pro Education at no charge with the instructions in this document. Otherwise, ther emay be a cost to acquire a Windows 10 Pro license in the Store.
+    If you want to discontinue using Windows 10 S, follow the instructions to return to your previous installation of Windows 10. If you already had Windows 10 Pro or Windows 10 Pro Education on the device you are testing on, you should be able to move to Windows 10 Pro or Windows 10 Pro Education at no charge with the instructions in this document. Otherwise, there may be a cost to acquire a Windows 10 Pro license in the Store.
 
 For help with activation issues, click on the appropriate link below for support options.
 * For Volume Licensing Agreement or Shape the Future program customers, go to the [Microsoft Commercial Support](https://support.microsoft.com/gp/commercialsupport) website and select the country/region in which you are seeking commercial support to contact our commercial support team.
