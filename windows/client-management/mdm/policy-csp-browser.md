@@ -1041,7 +1041,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.
 
-<p style="margin-left: 20px">Data type is integer. Supported operations are Add, Get, Replace, and Delete.
+<p style="margin-left: 20px">Data type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1311,9 +1311,10 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.
 
-<p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.
+<p style="margin-left: 20px">Data type is string. 
 
 <!--EndDescription-->
+<!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 

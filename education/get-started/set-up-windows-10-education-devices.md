@@ -15,6 +15,10 @@ ms.date: 07/10/2017
 
 # Set up Windows 10 education devices
 
+> [!div class="step-by-step"]
+[<< Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+[Finish setup and other tasks >>](finish-setup-and-other-tasks.md)
+
 We recommend using the latest build of Windows 10, version 1703 on your education devices. 
 
 To set up new Windows 10 devices and enroll them to your education tenant, choose from one of these options and follow the link to watch the video or follow the step-by-step guide:
