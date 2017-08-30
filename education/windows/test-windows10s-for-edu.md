@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 08/29/2017
+ms.date: 08/30/2017
 ---
 
 # Test Windows 10 S on existing Windows 10 education devices
@@ -84,8 +84,8 @@ Check with your device manufacturer before trying Windows 10 S on your device to
 | <a href="https://www.odys.de/web/web_lan_en_hmp_1_win10s_ja.html" target="_blank">Axdia</a> | <a href="http://www.casper.com.tr/window10sdestegi" target="_blank">Casper</a> | <a href="https://www.cyberpowerpc.com/page/Windows-10-S/" target="_blank">Cyberpower</a> | 
 | <a href="http://www.lucoms.com/v2/cs/cs_windows10.asp" target="_blank">Daewoo</a> | <a href="http://www.daten.com.br/suportes/windows10s/" target="_blank">Daten</a> | <a href="http://www.dell.com/support/article/us/en/19/sln307174/dell-computers-tested-for-windows-10-s?lang=en" target="_blank">Dell</a> | 
 | <a href="http://www.epson.jp/support/misc/windows10s.htm" target="_blank">Epson</a> | <a href="http://exo.com.ar/actualizaciones-de-windows-10" target="_blank">EXO</a> | <a href="http://www.fujitsu.com/au/products/computing/pc/microsoft/s-compatible/" target="_blank">Fujitsu</a> |
-| <a href="http://apac.getac.com/support/windows10s.html" target="_blank">Getac</a> | <a href="http://compaq.com.br/sistemas-compativeis-com-windows-10-s.html" target="_blank">Global K</a> | <a href="TBD" target="_blank">Guangzhou Chen Le</a> | 
-| <a href="https://support.hp.com/us-en/document/c05588871" target="_blank">HP</a> | <a href="http://consumer.huawei.com/cn/support/notice/detail/index.htm?id=1541" target="_blank">Huawei</a> | <a href="http://www.inet-tek.com/en/product-qadetail-86.html" target="_blank">iNET</a> | 
+| <a href="http://apac.getac.com/support/windows10s.html" target="_blank">Getac</a> | <a href="http://compaq.com.br/sistemas-compativeis-com-windows-10-s.html" target="_blank">Global K</a> | <a href="https://support.hp.com/us-en/document/c05588871" target="_blank">HP</a> | 
+| <a href="http://consumer.huawei.com/cn/support/notice/detail/index.htm?id=1541" target="_blank">Huawei</a> | <a href="http://www.inet-tek.com/en/product-qadetail-86.html" target="_blank">iNET</a> | <a href="https://www.intel.com/content/www/us/en/support/boards-and-kits/000025096.html" target="_blank">Intel</a> |
 | <a href="http://irbis-digital.ru/support/podderzhka-windows-10-s/" target="_blank">LANIT Trading</a> | <a href="https://support.lenovo.com/us/en/solutions/ht504589" target="_blank">Lenovo</a> | <a href="http://www.lg.com/us/content/html/hq/windows10update/Win10S_UpdateInfo.html" target="_blank">LG</a> | 
 | <a href="https://www2.mouse-jp.co.jp/ssl/user_support2/info.asp?N_ID=361" target="_blank">MCJ</a> | <a href="http://support.linxtablets.com/WindowsSupport/Articles/Windows_10_S_Supported_Devices.aspx" target="_blank">Micro P/Exertis</a> | <a href="https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s" target="_blank">Microsoft</a> | 
 | <a href="https://www.msi.com/Landing/Win10S" target="_blank">MSI</a> | <a href="https://panasonic.net/cns/pc/Windows10S/" target="_blank">Panasonic</a> | <a href="http://www.bangho.com.ar/windows10s" target="_blank">PC Arts</a> | 
