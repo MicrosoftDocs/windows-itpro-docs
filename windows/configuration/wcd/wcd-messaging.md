@@ -37,7 +37,7 @@ When configured as **True**, you set a LIFO message order. When configured as **
 
 ### EnableCustomLineSetupDialog
 
-
+Enable this setting to allow custom line setup dialogs in the Messaging app.
 
 ### VoicemailIntercept
 
@@ -118,36 +118,45 @@ AssistedDialingMnc | By setting AssistedDialingMcc and AssistedDialingMnc, inter
 AssistedDialingPlusCodeSupportOverride | For devices that support IMS over SMS, you can override support for the assisted dialing plus (+) code for SMS by setting AssistedDialingPlusCodeSupportOverride. If enabled, the OS will not convert the plus (+) code to the proper assisted number when the user turns on the dialing assist option.
 AutoRetryDownload | You can configure the messaging app to automatically retry downloading an MMS message if the initial download attempt fails. When this customization is enabled, the download is retried 3 times at 20-, 40-, and 60-second intervals. 
 BroadcastChannels | You can specify one or more ports from which the device will accept cellular broadcast messages. Set the BroadcastChannels value to the port number(s) that can accept cellular broadcast messages. If you specify the same port that Windows 10 Mobile already recognizes as an Emergency Alert port (a CMAS or ETWS port number) and a cell broadcast message is received on that port, the user will only receive the message once. The message that is received will be displayed as an Emergency Alert message.
-ConvertLongSMStoMMS | 
+ConvertLongSMStoMMS | For networks that do support MMS and do not support segmentation of SMS messages, you can specify an automatic switch from SMS to MMS for long messages.
 DefaultContentLocationUrl | For networks that require it, you can specify the default GET path within the MMSC to use when the GET URL is missing from the WAP push MMS notification. Set DefaultContentLocationUrl to specify the default GET path within the MMSC.
 ErrorCodeEnabled | You can choose to display additional content in the conversation view when an SMS or MMS message fails to send. This content includes a specific error code in decimal format that the user can report to technical support. Common errors also include a friendly string to help the user self-diagnose and fix the problem. Set to **True** to display the error message with an explanation of the problem and the decimal-format error codes. When set to **False**, the full error message is not displayed.
-HideMediumSIPopups |
+HideMediumSIPopups | By default, when a service indication message is received with a signal-medium or signal-high setting, the phone interrupts and shows the user prompt for these messages. However, you can hide the user prompts for signal-medium messages.
 ImsiAuthenticationToken | Configure whether MMS messages include the IMSI in the GET and POST header. Set ImsiAuthenticationToken to the token used as the header for authentication. The string value should match the IMSI provided by the UICC.
-LimitRecipients |
+LimitRecipients | Set the maximum number of recipients to which a single SMS or MMS message can be sent. Enter a number between 1 and 500 to limit the maximum number of recipients.
 MaxRetryCount | You can specify the number of times that the phone can retry sending the failed MMS message and photo before the user receives a notification that the photo could not be sent. Specify MaxRetryCount to specify the number of times the MMS transport will attempt resending the MMS message. This value has a maximum limit of 3.
-MMXLimitAttachments |
-RetrySize |
-SetCacheControlNoTransform |
-ShowRequiredMonthlyTest |
-SmscPanelDisabled |
-SMStoSMTPShortCode |
+MMSLimitAttachments | You can specify the maximum number of attachments for MMS messages, from 1 to 20. The default is 5.
+RetrySize | For MMS messages that have photo attachments and that fail to send, you can choose to automatically resize the photo and attempt to resend the message. Specify the maximum size to use to resize the photo in KB. Minimum is 0xA (10 KB). 
+SetCacheControlNoTransform | When set, proxies and transcoders are instructed not to change the HTTP header and the content should not be modified. A value of 1 or 0x1 adds support for the HTTP header Cache-Control No-Transform directive. When the SetCacheControlNoTransform``Value is set to 0 or 0x0 or when the setting is not set, the default HTTP header Cache-Control No-Cache directive is used.
+ShowRequiredMonthlyTest | **True** enables devices to receive CMAS Required Monthly Test (RMT) messages and have these show up on the device. **False** disables devices from receiving CMAS RMT messages.
+SmscPanelDisabled | **True** disables the short message service center (SMSC) panel. 
+SMStoSMTPShortCode | Use to configure SMS messages to be sent to email addresses and phone numbers. `0` disables sending SMS messages to SMTP addresses. `1` enables sending SMS messages to SMTP addresses.
 TargetVideoFormat | You can specify the transcoding to use for video files sent as attachments in MMS messages. Set TargetVideoFormat to one of the following values to configure the default transcoding for video files sent as attachments in MMS messages:</br></br>- 0 or 0x0 Sets the transcoding to H.264 + AAC + MP4. This is the default set by the OS.</br>- 1 or 0x1 Sets the transcoding to H.264 + AAC + 3GP.</br>- 2 or 0x2 Sets the transcoding to H.263 + AMR.NB + 3GP.</br>- 3 or 0x3 Sets the transcoding to MPEG4 + AMR.NB + 3GP. 
 UAProf | You can specify a user agent profile to use on the phone for MMS messages. The user agent profile XML file details a phone’s hardware specifications and media capabilities so that an MMS application server (MMSC) can return supported optimized media content to the phone. The user agent profile XML file is generally stored on the MMSC. There are two ways to correlate a user agent profile with a given phone:</br></br>- You can take the user agent string of the phone that is sent with MMS requests and use it as a hash to map to the user agent profile on the MMSC. The user agent string cannot be modified.</br>- Alternatively, you can directly set the URI of the user agent profile on the phone.</br></br>Set UAProf to the full URI of your user agent profile file. Optionally, you can also specify the custom user agent property name for MMS that is sent in the header by setting UAProfToken to either `x-wap-profile` or `profile`.
 UAProfToken | You can specify a user agent profile to use on the phone for MMS messages. The user agent profile XML file details a phone’s hardware specifications and media capabilities so that an MMS application server (MMSC) can return supported optimized media content to the phone. The user agent profile XML file is generally stored on the MMSC. 
-UseDefaultAddress |
+UseDefaultAddress | By default, the MMS transport sends an acknowledgement to the provisioned MMS application server (MMSC). However, on some networks, the correct server to use is sent as a URL in the MMS message. In that case, a registry key must be set, or else the acknowledgement will not be received and the server will continue to send duplicate messages. **True** enables some networks to correctly acknowledge MMS messages. **False** disables the feature.
 UserAgentString | Set UserAgentString to the new user agent string for MMS in its entirely. By default, this string has the format WindowsPhoneMMS/MicrosoftMMSVersionNumber WindowsPhoneOS/OSVersion-buildNumber OEM-deviceName, in which the italicized text is replaced with the appropriate values for the phone.
-UseUTF8ForUnspecifiedCharset |
-WapPushTechnology | For networks that require non-standard handling of single-segment incoming MMS WAP Push notifications, you can specify that MMS messages may have some of their content truncated and that they may require special handling to reconstruct truncated field values. </br></br>- 1 or 0x1 Enables MMS messages to have some of their content truncated</br>- 0 or 0x0 Disables MMS messages from being truncated 
+UseUTF8ForUnspecifiedCharset | Some incoming MMS messages may not specify a character encoding. To properly decode MMS messages that do not specify a character encoding, you can set UTF-8 to decode the message. 
+WapPushTechnology | For networks that require non-standard handling of single-segment incoming MMS WAP Push notifications, you can specify that MMS messages may have some of their content truncated and that they may require special handling to reconstruct truncated field values. `1` or `0x1` enables MMS messages to have some of their content truncated. `0` or `0x0` disables MMS messages from being truncated 
 
 
 ### LatAlertOptions
 
+Enable `LatLocalAlertEnabled` to enable support for LAT-Alert Local Alerts for devices sold in Chile. For more information, see [Emergency notifications](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/emergency-notifications).
 
 ### MMSGroupText
 
+Set options for group messages sent to multiple people.
+
+Setting | Description
+--- | ---
+MMSGroupText | **True** enables group messages to multiple people sent as MMS.
+ShowMMSGroupTextUI | **True** shows the toggle for group text in messaging settings.
+ShowMmsGroupTextWarning | **True** shows the warning that alerts users of possible additional charges before sending a group text as MMS.
 
 ### NIAlertOptions
 
+Enable `NI2AlertEnabled` to enable support for the Netherlands Announcements for devices sold in the Netherlands. For more information, see [Emergency notifications](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/emergency-notifications).
 
 ### RcsOptions
 
@@ -179,7 +188,7 @@ Set options related to MMS message notifications. You can specify whether users 
 | Setting | Description |
 | --- | --- |
 | ADDR | Specify the absolute MMSC URL. The possible values to configure the ADDR parameter are:</br></br>- A Uniform Resource Identifier (URI)</br>- An IPv4 address represented in decimal format with dots as delimiters</br>- A fully qualified Internet domain name |
-| APPID | Set to `w4`  |
+| APPID | Set to `w4`.  |
 | MS | (optional) Specify the maximum size of MMS, in KB. If the value is not a number, or is less than or equal to 10, it will be ignored and outgoing MMS will not be resized. |
 | NAME | (optional) Enter  user–readable application identity. This parameter is also used to define part of the registry path for the APPLICATION parameters. The possible values to configure the **NAME** parameter are:</br></br>- Character string containing the name</br>- no value specified</br></br>If no value is specified, the registry location will default to <unnamed>. If **NAME** is greater than 40 characters, it will be truncated to 40 characters. |
 | TONAPID | Specify the network access point identification name (NAPID) defined in the provisioning file. This parameter takes a string value. It is only possible to refer to network access points defined within the same provisioning file (except if the INTERNET attribute is set in the NAPDEF characteristic). For more information about the NAPDEF characteristic, see [NAPDEF configuration service provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/napdef-csp). |
@@ -188,4 +197,5 @@ Set options related to MMS message notifications. You can specify whether users 
 
 
 
-
+## Related topics
+ - [Customizations for SMS and MMS](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customizations-for-sms-and-mms)
