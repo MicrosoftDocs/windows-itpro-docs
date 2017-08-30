@@ -228,6 +228,11 @@
 {
 "source_path": "windows/manage/set-up-a-device-for-anyone-to-use.md",
 "redirect_url": "/windows/configuration/kiosk-shared-pc",
+"redirect_document_id": false
+},
+{
+"source_path": "windows/configuration/set-up-a-device-for-anyone-to-use.md",
+"redirect_url": "/windows/configuration/kiosk-shared-pc",
 "redirect_document_id": true
 },
 {
