@@ -30,7 +30,7 @@ You'll need to know the exact Linux distros and Mac OS X versions that are compa
 
 1. In Windows Defender Security Center portal, select **Endpoint management** > **Clients** > **Non-Windows**. Make sure the third-party solution is listed.
 
-2. 	Toggle the Bitdefender switch button to turn on the third-party solution integration.
+2. 	Toggle the third-party provider switch button to turn on the third-party solution integration.
 
 3. 	Click **Generate access token** button and then **Copy**.
 
@@ -49,7 +49,7 @@ To effectively offboard the endpoints from the service, you'll need to disable t
 
 2. In Windows Defender Security Center portal, select **Endpoint management**> **Non-Windows**.
 
-3. Toggle the Bitdefender switch button to turn stop telemetry from endpoints with Bitdefender antivirus. 
+3. Toggle the third-party provider switch button to turn stop telemetry from endpoints. 
 
 >[!WARNING]
 >If you decide to turn on the third-party integration again after disabling the integration, you'll need to regenerate the token and reapply it on endpoints. 
