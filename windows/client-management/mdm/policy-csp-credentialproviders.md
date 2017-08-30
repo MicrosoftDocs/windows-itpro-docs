@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - CredentialProviders
@@ -66,8 +66,9 @@ To configure Windows Hello for Business, use the Administrative Template policie
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn on convenience PIN sign-in*
+-   GP English name: *Turn on convenience PIN sign-in*
 -   GP name: *AllowDomainPINLogon*
+-   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
 
 <!--EndADMX-->
@@ -117,8 +118,9 @@ Note that the user's domain password will be cached in the system vault when usi
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off picture password sign-in*
+-   GP English name: *Turn off picture password sign-in*
 -   GP name: *BlockDomainPicturePassword*
+-   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
 
 <!--EndADMX-->
