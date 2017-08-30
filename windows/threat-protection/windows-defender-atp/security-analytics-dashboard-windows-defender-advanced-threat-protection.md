@@ -72,7 +72,7 @@ The following image shows an example list of machines where the EDR sensor is no
 This tile provides a specific list of actions you can take on Windows Defender ATP to improve how endpoints provide sensor data to the Windows Defender ATP service.
 
 You can take the following actions to increase the overall security score of your organization:
-- Turn on EDR sensor
+- Turn on sensor
 - Fix sensor data collection
 - Fix impaired communications
 
