@@ -37,7 +37,7 @@ Use the Machines list in these main scenarios:
 ## Sort, filter, and download the list of machines from the Machines list
 You can sort the **Machines list** by clicking on any column header to sort the view in ascending or descending order.  
 
-Filter the **Machines list** by time period, **OS Platform**, **Health**, or **Malware category alerts** to focus on certain sets of machines, according to the desired criteria.  
+Filter the **Machines list** by time period, **OS Platform**, **Health**, **Security state**, **Malware category alerts**, or **Groups** to focus on certain sets of machines, according to the desired criteria.  
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
@@ -56,7 +56,15 @@ You can use the following filters to limit the list of machines displayed during
 - Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
+- Linux
+- Mac OS
 - Other
+
+**Health**</br>
+- All
+- Well configure
+- Requires attention - Depending on the Windows Defender security controls configured in your enterprise, you'll see various available filters.
+ 
 
 **Sensor health state**</br>
 Filter the list to view specific machines grouped together by the following machine health states:
