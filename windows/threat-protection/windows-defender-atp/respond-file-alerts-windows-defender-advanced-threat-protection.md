@@ -42,7 +42,7 @@ The action takes effect on machines with the latest Windows 10, version 1703 whe
 ### Stop and quarantine files
 1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
 
-  - **Alerts** - click the corresponding links from the Description or Details in the Alert timeline
+  - **Alerts** - click the corresponding links from the Description or Details in the Artifact timeline
   - **Search box** - select File from the drop–down menu and enter the file name
 
 2.	Open the **Actions menu** and select **Stop and Quarantine File**.
@@ -135,7 +135,7 @@ For prevalent files in the organization, a warning is shown before an action is 
 ### Remove file from blocked list
 1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
-  - **Alerts** - Click the file links from the Description or Details in the Alert timeline <br>
+  - **Alerts** - Click the file links from the Description or Details in the Artifact timeline <br>
   - **Machines list** - Click the file links in the Description or Details columns in the Observed on machine section <br>
   - **Search box** - Select File from the drop–down menu and enter the file name
 
@@ -180,7 +180,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
 **Submit files for deep analysis:**
 
 1. Select the file that you want to submit for deep analysis. You can select or search a file from any of the following views: <br>
-  - Alerts - click the file links from the **Description** or **Details** in the Alert timeline <br>
+  - Alerts - click the file links from the **Description** or **Details** in the Artifact timeline <br>
   - **Machines list** - click the file links from the **Description** or **Details** in the **Machine in organization** section <br>
   - Search box - select **File** from the drop–down menu and enter the file name <br>
 2. In the **Deep analysis** section of the file view, click **Submit**.
