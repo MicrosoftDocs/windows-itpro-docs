@@ -150,32 +150,32 @@ The following diagram shows the DevDetail configuration service provider managem
 > [!NOTE]
 > This is not supported in Windows 10 for desktop editions.
 
-<a href="" id="volteservicesetting"></a>**VoLTEServiceSetting**  
+<a href="" id="volteservicesetting"></a>**Ext/VoLTEServiceSetting**  
 <p style="margin-left: 20px">Returns the VoLTE service to on or off. This is only exposed to mobile operator OMA-DM servers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="wlanipv4address"></a>**WlanIPv4Address**  
+<a href="" id="wlanipv4address"></a>**Ext/WlanIPv4Address**  
 <p style="margin-left: 20px">Returns the IPv4 address of the active Wi-Fi connection. This is only exposed to enterprise OMA DM servers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="wlanipv6address"></a>**WlanIPv6Address**  
+<a href="" id="wlanipv6address"></a>**Ext/WlanIPv6Address**  
 <p style="margin-left: 20px">Returns the IPv6 address of the active Wi-Fi connection. This is only exposed to enterprise OMA-DM servers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="wlandnssuffix"></a>**WlanDnsSuffix**  
+<a href="" id="wlandnssuffix"></a>**Ext/WlanDnsSuffix**  
 <p style="margin-left: 20px">Returns the DNS suffix of the active Wi-Fi connection. This is only exposed to enterprise OMA-DM servers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="wlansubnetmask"></a>**WlanSubnetMask**  
+<a href="" id="wlansubnetmask"></a>**Ext/WlanSubnetMask**  
 <p style="margin-left: 20px">Returns the subnet mask for the active Wi-Fi connection. This is only exposed to enterprise OMA-DM servers.
 
 <p style="margin-left: 20px">Supported operation is Get.
 
-<a href="" id="devicehardwaredata"></a>**DeviceHardwareData**  
+<a href="" id="devicehardwaredata"></a>**Ext/DeviceHardwareData**  
 <p style="margin-left: 20px">Added in Windows 10 version 1703. Returns a base64-encoded string of the hardware parameters of a device.
 
 > [!Note]  

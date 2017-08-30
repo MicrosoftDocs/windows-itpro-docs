@@ -15,6 +15,10 @@ ms.date: 07/10/2017
 
 # Use School Data Sync to import student data
 
+> [!div class="step-by-step"]
+[<< Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
+[Configure Microsoft Store for Education >>](configure-microsoft-store-for-education.md)
+
 School Data Sync (SDS) helps you import Student Information System (SIS) data into Office 365. It helps automate the process for importing and integrating SIS data that you can use with Office 365 and apps like OneNote Class Notebooks. 
 
 Follow all the steps in this section to use SDS and sample CSV files in a trial environment. To use SDS in a production environment, see step 2 in [Try out Microsoft Education in a production environment](https://docs.microsoft.com/en-us/education/get-started/get-started-with-microsoft-education#setup-options) instead.
@@ -177,7 +181,7 @@ That's it for importing sample school data using SDS.
 
 > [!div class="step-by-step"]
 [<< Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
-[Enable Microsoft Teams for your school >>](enable-microsoft-teams.md)
+[Configure Microsoft Store for Education >>](configure-microsoft-store-for-education.md)
 
 ## Related topic
 [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)
