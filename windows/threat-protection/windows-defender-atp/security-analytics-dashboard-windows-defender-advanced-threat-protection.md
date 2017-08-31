@@ -66,7 +66,7 @@ Clicking **View machines** in a specific recommendation opens up the **Machines 
 
 The following image shows an example list of machines where the EDR sensor is not turned on.
 
-![Image of view machines list with a filter applied](images/atp-security-analytics-view-machines.png)
+![Image of view machines list with a filter applied](images/atp-security-analytics-view-machines2.png)
 
 ### Endpoint detection and response (EDR) optimization
 This tile provides a specific list of actions you can take on Windows Defender ATP to improve how endpoints provide sensor data to the Windows Defender ATP service.
