@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/25/2017
+ms.date: 08/31/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -999,6 +999,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
+<li>Games/AllowAdvancedGamingServices</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1421,6 +1422,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/ProvisionFavorites</li>
 <li>Browser/LockdownFavorites</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
+<li>Games/AllowAdvancedGamingServices</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
