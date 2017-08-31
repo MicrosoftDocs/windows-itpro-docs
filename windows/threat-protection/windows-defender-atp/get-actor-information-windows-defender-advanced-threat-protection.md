@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/01.2017
 ---
 
-# Get Actor Information 
+# Get actor information 
 Retrieves an actor information report. 
 
 ## Permissions

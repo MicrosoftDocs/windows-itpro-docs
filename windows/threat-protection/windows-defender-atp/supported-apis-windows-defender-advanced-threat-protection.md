@@ -23,3 +23,13 @@ ms.date: 09/01.2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+Windows Defender ATP supports the following entities where you can run API calls on:
+
+- Actor
+- Alerts
+- Domain
+- File
+- IP
+- Machines
+- User
+
