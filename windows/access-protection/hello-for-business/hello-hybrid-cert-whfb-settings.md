@@ -16,7 +16,7 @@ ms.author: mstephen
 -   Windows 10
 
 > [!div class="step-by-step"]
-[Configure Windows Hello for Business: Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
+[Configure Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
 
 >[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
@@ -34,7 +34,7 @@ The configuration for Windows Hello for Business is grouped in four categories. 
 For the most efficent deployment, configure these technologies in order beginning with the Active Directory configuration
 
 > [!div class="step-by-step"]
-[Configure Windows Hello for Business: Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
+[Configure Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
 
 <br>
 

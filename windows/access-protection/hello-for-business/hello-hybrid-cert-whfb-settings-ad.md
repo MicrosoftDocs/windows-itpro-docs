@@ -17,7 +17,7 @@ ms.author: mstephen
 
 >[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
-[ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+[ Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
 
 The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 

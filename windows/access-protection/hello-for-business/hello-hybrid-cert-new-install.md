@@ -26,7 +26,7 @@ Windows Hello for Business involves configuring distributed technologies that ma
 * [Active Directory Federation Services](#active-directory-federation-services)
 
 
-New installations are considerably more involved than existing implementations because you are building the entire infrastructure new.  Microsoft recommends you review the new installation baseline to validate your exsting envrionment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If you're environment meets these needs, you can read the [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md) section to learn about specific Windows Hello for Business configuration settings.
+New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your exsting envrionment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If you're environment meets these needs, you can read the [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md) section to learn about specific Windows Hello for Business configuration settings.
 
 
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  This document expects you have Active Directory deployed using Windows Server 2008 R2 or later domain controllers.
@@ -34,7 +34,7 @@ The new installation baseline begins with a basic Active Directory deployment an
 ## Active Directory ##   
 Production environments should follow Active Directory best practices regarding the number and placement of domain controllers to ensure adequate authentication throughout the organization.
   
-Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting of issue, such as Active Directory replication, which is unrelated to project goal.
+Lab environments and isolated proof of concepts may want to limit the number of domain controllers.  The purpose of these environments is to experiment and learn.  Reducing the number of domain controllers can prevent troubleshooting issue, such as Active Directory replication, which is unrelated to activity's goal.
 
 ### Section Review
 
@@ -47,7 +47,7 @@ Lab environments and isolated proof of concepts may want to limit the number of 
 
 Windows Hello for Business must have a public key infrastructure regardless of the deployment or trust model.  All trust models depend on the domain controllers having a certificate.  The certificate serves as a root of trust for clients to ensure they are not communicating with a rogue domain controller.  The certificate trust model extends certificate issuance to client computers.  During Windows Hello for Business provisioning, the user receives a sign-in certificate.
 
-This guide assumes most enterprise have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running the Active Directory Certificate Services role from Windows Server 2012 or later.
+This guide assumes most enterprises have an existing public key infrastructure.  Windows Hello for Business depends on a Windows enterprise public key infrastructure running the Active Directory Certificate Services role from Windows Server 2012 or later.
 
 ### Lab-based public key infrastructure
 

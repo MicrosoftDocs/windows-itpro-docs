@@ -53,9 +53,12 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 >[!NOTE]
 > Microsoft is actively investigating in ways to reduce the syncrhonization latency and delays in certificate enrollment with the goal to make certificate enrollment occur real-time.  
   
-After a successfully key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.  
+After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.
+  
 The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
-The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority.  The registration authority returns the certificate to Windows where it then installs the certificate in the current user’s certificate store.  Once this process completes, the Windows Hello for Business provisioning workflow informs the user that provisioning is complete and they can immediately use their PIN to sign-in.
+
+The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority.  The registration authority returns the certificate to Windows where it then installs the certificate in the current user’s certificate store.  Once this process completes, the Windows Hello for Business provisioning workflow informs the user  they can use their PIN to sign-in through the Windows Action Center.
+
 <allset.png>
  
 
