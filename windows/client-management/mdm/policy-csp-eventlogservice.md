@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - EventLogService
@@ -64,7 +64,7 @@ Note: Old events may or may not be retained according to the "Backup log automat
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Control Event Log behavior when the log file reaches its maximum size*
+-   GP English name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_1*
 -   GP path: *Windows Components/Event Log Service/Application*
 -   GP ADMX file name: *eventlog.admx*
@@ -114,7 +114,7 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify the maximum log file size (KB)*
+-   GP English name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_1*
 -   GP path: *Windows Components/Event Log Service/Application*
 -   GP ADMX file name: *eventlog.admx*
@@ -164,7 +164,7 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify the maximum log file size (KB)*
+-   GP English name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_2*
 -   GP path: *Windows Components/Event Log Service/Security*
 -   GP ADMX file name: *eventlog.admx*
@@ -214,7 +214,7 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify the maximum log file size (KB)*
+-   GP English name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_4*
 -   GP path: *Windows Components/Event Log Service/System*
 -   GP ADMX file name: *eventlog.admx*
