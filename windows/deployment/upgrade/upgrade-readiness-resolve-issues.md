@@ -134,7 +134,7 @@ To change a driver’s upgrade decision:
 
 ## Review low-risk apps and drivers
 
-Applications and drivers that are known to be low risk are displayed on this blade.
+Applications and drivers that are meet certain criteria to be considered low risk are displayed on this blade.
 
 ![Blade showing low-risk apps](../images/ua-step2-low-risk.png)
 
@@ -142,7 +142,7 @@ The first row reports the number of your apps that have an official statement of
 
 The second row (**Apps that are "Highly adopted"**) shows apps that have a ReadyForWindows status of "Highly adopted". This means that they have been installed on at least 100,000 commercial Windows 10 devices, and that Microsoft has not detected significant issues with the app in telemetry. Since these apps are prevalent in the ecosystem at large, you can be confident that they will work in your environment as well.
 
-Each row of the blade uses a different criterion to filter your apps or drivers. You can adjust these criteria to suit your particular needs by clicking into a row of the blade. For example, if you click the row that says "Apps that are 'Highly adopted'", the result is a list of apps that have a ReadyForWindows status of "Highly adopted". From here, you can bulk-select the results, select **Ready to upgrade**, and then click **Save**.  This will mark all apps meeting the "Ready to upgrade" criterion--no further validation is required. Any applications that you have marked as *Mission critical* or *Business critical* are filtered out, as well as any app that has an issue known to Microsoft. This allows you to work with apps in bulk without having to worry about missing a critical app.
+Each row of the blade uses a different criterion to filter your apps or drivers. You can view a list of applications that meet the criterion by clicking into a row of the blade. For example, if you click the row that says "Apps that are 'Highly adopted'", the result is a list of apps that have a ReadyForWindows status of "Highly adopted". From here, you can bulk-select the results, select **Ready to upgrade**, and then click **Save**.  This will mark all apps meeting the "Highly adopted" criterion as "Ready to upgrade"--no further validation is required. Any applications that you have marked as *Mission critical* or *Business critical* are filtered out, as well as any app that has an issue known to Microsoft. This allows you to work with apps in bulk without having to worry about missing a critical app.
 
 You can customize the criteria further by using the Log Search query language. For example, if a ReadyForWindows status of "Adopted" is not sufficient by itself for you to be confident in an app's compatibility, you can add additional filters. To do this, click the row labeled **Apps that are 'Adopted'**.  Then, modify the resulting query to fit your company's risk tolerance. If, for example, you prefer that an app must be "Adopted" and have fewer than 1,000 installations, then add *TotalInstalls < 1000* to the end of the Log Search query. Similarly, you can append additional criteria by using other attributes such as monthly active users or app importance.
 
