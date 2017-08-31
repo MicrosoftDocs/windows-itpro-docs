@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Connectivity
@@ -386,8 +386,9 @@ ms.date: 08/09/2017
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off printing over HTTP*
+-   GP English name: *Turn off printing over HTTP*
 -   GP name: *DisableHTTPPrinting_2*
+-   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--EndADMX-->
@@ -429,8 +430,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off downloading of print drivers over HTTP*
+-   GP English name: *Turn off downloading of print drivers over HTTP*
 -   GP name: *DisableWebPnPDownload_2*
+-   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--EndADMX-->
@@ -472,8 +474,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off Internet download for Web publishing and online ordering wizards*
+-   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
 -   GP name: *ShellPreventWPWDownload_2*
+-   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--EndADMX-->
@@ -519,7 +522,7 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Hardened UNC Paths*
+-   GP English name: *Hardened UNC Paths*
 -   GP name: *Pol_HardenedPaths*
 -   GP path: *Network/Network Provider*
 -   GP ADMX file name: *networkprovider.admx*
@@ -563,7 +566,7 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
+-   GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
 -   GP name: *NC_AllowNetBridge_NLA*
 -   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*

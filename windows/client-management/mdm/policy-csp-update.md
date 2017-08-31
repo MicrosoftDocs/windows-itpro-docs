@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/25/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Update
@@ -46,8 +46,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
-
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
 
 > [!NOTE]
@@ -86,8 +84,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
-
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
 
 <p style="margin-left: 20px">Supported values are 8-18.
@@ -123,8 +119,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
-
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
 
 > [!NOTE]
@@ -163,7 +157,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Enables the IT admin to manage automatic update behavior to scan, download, and install updates.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
@@ -212,7 +205,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -249,7 +241,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution.
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
@@ -290,7 +281,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Windows Store.
 
 <p style="margin-left: 20px">Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Windows Store
@@ -369,7 +359,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart reminder notifications.
 
 <p style="margin-left: 20px">Supported values are 15, 30, 60, 120, and 240 (minutes).
@@ -405,7 +394,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -442,7 +430,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -479,7 +466,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Feature Updates for the specified number of days.
@@ -518,7 +504,6 @@ ms.date: 08/25/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Quality Updates for the specified number of days.
 
 <p style="margin-left: 20px">Supported values are 0-30.
@@ -763,7 +748,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed within the specified period.  If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (pending user scheduling).
 
 <p style="margin-left: 20px">Supported values are 2-30 days.
@@ -799,7 +783,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the number of days a user can snooze Engaged restart reminder notifications.
 
 <p style="margin-left: 20px">Supported values are 1-3 days.
@@ -835,7 +818,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
 <p style="margin-left: 20px">Supported values are 2-30 days.
@@ -1161,7 +1143,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
 
 <p style="margin-left: 20px">The following list shows the supported values:
@@ -1313,7 +1294,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndSKU-->
 <!--StartDescription-->
-
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
 
 <p style="margin-left: 20px">Supported values are 15, 30, or 60 (minutes).

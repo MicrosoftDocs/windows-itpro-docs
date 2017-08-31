@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Cellular
@@ -56,7 +56,7 @@ ms.date: 08/09/2017
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Set Per-App Cellular Access UI Visibility*
+-   GP English name: *Set Per-App Cellular Access UI Visibility*
 -   GP name: *ShowAppCellularAccessUI*
 -   GP path: *Network/WWAN Service/WWAN UI Settings*
 -   GP ADMX file name: *wwansvc.admx*
