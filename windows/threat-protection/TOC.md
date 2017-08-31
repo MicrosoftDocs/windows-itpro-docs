@@ -72,6 +72,45 @@
 #### [Python code examples](windows-defender-atp\python-example-code-windows-defender-advanced-threat-protection.md)
 #### [Experiment with custom threat intelligence alerts](windows-defender-atp\experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot custom threat intelligence issues](windows-defender-atp\troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
+### [Use the Windows Defender ATP exposed APIs](windows-defender-atp\exposed-apis-windows-defender-advanced-threat-protection.md)
+#### [Supported Windows Defender ATP APIs](windows-defender-atp\supported-apis-windows-defender-advanced-threat-protection.md)
+##### Actor
+###### [Get actor information](windows-defender-atp\get-actor-information-windows-defender-advanced-threat-protection.md)
+###### [Get actor related alerts](windows-defender-atp\get-actor-related-alerts-windows-defender-advanced-threat-protection.md)
+##### Alerts
+###### [Get alerts](windows-defender-atp\get-alerts-windows-defender-advanced-threat-protection.md)
+###### [Get alert information by ID](windows-defender-atp\get-alert-info-by-id-windows-defender-advanced-threat-protection.md)
+###### [Get alert related actor information](windows-defender-atp\get-alert-related-actor-info-windows-defender-advanced-threat-protection.md)
+###### [Get alert related domain information](windows-defender-atp\get-alert-related-domain-info-windows-defender-advanced-threat-protection.md)
+###### [Get alert related file information](windows-defender-atp\get-alert-related-files-info-windows-defender-advanced-threat-protection.md)
+###### [Get alert related IP information](windows-defender-atp\get-alert-related-ip-info-windows-defender-advanced-threat-protection.md)
+###### [Get alert related machine information](windows-defender-atp\get-alert-related-machine-info-windows-defender-advanced-threat-protection.md)
+##### Domain
+######  [Get domain related alerts](windows-defender-atp\get-domain-related-alerts-windows-defender-advanced-threat-protection.md)
+###### [Get domain related machines](windows-defender-atp\get-domain-related-machines-windows-defender-advanced-threat-protection.md)
+###### [Get domain statistics](windows-defender-atp\get-domain-statistics-windows-defender-advanced-threat-protection.md)
+###### [Is domain seen in organization](windows-defender-atp\is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
+##### File
+###### [Get file information](windows-defender-atp\get-file-information-windows-defender-advanced-threat-protection.md)
+###### [Get file related alerts](windows-defender-atp\get-file-related-alerts-windows-defender-advanced-threat-protection.md)
+###### [Get file related machines](windows-defender-atp\get-file-related-machines-windows-defender-advanced-threat-protection.md)
+###### [Get file statistics](windows-defender-atp\get-file-statistics-windows-defender-advanced-threat-protection.md)
+##### IP
+###### [Get IP related alerts](windows-defender-atp\get-ip-related-alerts-windows-defender-advanced-threat-protection.md)
+###### [Get IP related machines](windows-defender-atp\get-ip-related-machines-windows-defender-advanced-threat-protection.md)
+###### [Get IP statistics](windows-defender-atp\get-ip-statistics-windows-defender-advanced-threat-protection.md)
+###### [Is IP seen in organization](windows-defender-atp\is-ip-seen-org-windows-defender-advanced-threat-protection.md)
+##### Machines
+###### [Find machine information by IP](windows-defender-atp\find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
+###### [Get machines](windows-defender-atp\get-machines-windows-defender-advanced-threat-protection.md)
+###### [Get machine by ID](windows-defender-atp\get-machine-by-id-windows-defender-advanced-threat-protection.md)
+###### [Get machine log on users](windows-defender-atp\get-machine-log-on-users-windows-defender-advanced-threat-protection.md)
+###### [Get machine related alerts](windows-defender-atp\get-machine-related-alerts-windows-defender-advanced-threat-protection.md)
+##### User
+###### [Get alert related user information](windows-defender-atp\get-alert-related-user-info-windows-defender-advanced-threat-protection.md)
+###### [Get user information](windows-defender-atp\get-user-information-windows-defender-advanced-threat-protection.md)
+###### [Get user related alerts](windows-defender-atp\get-user-related-alerts-windows-defender-advanced-threat-protection.md)
+###### [Get user related machines](windows-defender-atp\get-user-related-machines-windows-defender-advanced-threat-protection.md)
 ### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
 #### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
@@ -90,7 +129,6 @@
 ### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
 ### [Review events and errors on endpoints with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender Antivirus compatibility](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
-
 ##	[Windows Defender Antivirus in Windows 10](windows-defender-antivirus\windows-defender-antivirus-in-windows-10.md)
 ### [Windows Defender AV in the Windows Defender Security Center app](windows-defender-antivirus\windows-defender-security-center-antivirus.md)
 
