@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/21/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Privacy
@@ -2593,7 +2593,7 @@ Footnote:
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic for Business  
 
--   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)   
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -2630,6 +2630,5 @@ Footnote:
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
 -   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
-
 <!--EndSurfaceHub-->
 

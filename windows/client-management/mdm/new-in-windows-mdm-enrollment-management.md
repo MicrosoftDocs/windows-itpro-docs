@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/25/2017
+ms.date: 08/31/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -981,6 +981,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
+<td style="vertical-align:top"><p>Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[ADMX-backed policies in Policy CSP](policy-configuration-service-provider.md#admx-backed-policies)</td>
+<td style="vertical-align:top"><p>Added new policies.</p>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -991,6 +999,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
+<li>Games/AllowAdvancedGamingServices</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1035,6 +1044,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Update/DisableDualScan</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
 <li>Update/ScheduledInstallFourthWeek</li>
@@ -1384,7 +1394,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[BitLocker CSP](bitlocker-csp.md)</td>
-<td style="vertical-align:top">Added information to the ADMX-backed policies.
+<td style="vertical-align:top">Added information to the ADMX-backed policies. Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
@@ -1412,6 +1422,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/ProvisionFavorites</li>
 <li>Browser/LockdownFavorites</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
+<li>Games/AllowAdvancedGamingServices</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1438,6 +1449,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</li>
 <li>Privacy/EnableActivityFeed</li>
 <li>Privacy/PublishUserActivities</li>
+<li>Update/DisableDualScan</li>
 </ul>
 <p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
 <p>Changed the names of the following policies:</p>

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - AttachmentManager
@@ -64,7 +64,7 @@ If you do not configure this policy setting, Windows marks file attachments with
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Do not preserve zone information in file attachments*
+-   GP English name: *Do not preserve zone information in file attachments*
 -   GP name: *AM_MarkZoneOnSavedAtttachments*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -116,7 +116,7 @@ If you do not configure this policy setting, Windows hides the check box and Unb
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Hide mechanisms to remove zone information*
+-   GP English name: *Hide mechanisms to remove zone information*
 -   GP name: *AM_RemoveZoneInfo*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -168,7 +168,7 @@ If you do not configure this policy setting, Windows does not call the registere
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Notify antivirus programs when opening attachments*
+-   GP English name: *Notify antivirus programs when opening attachments*
 -   GP name: *AM_CallIOfficeAntiVirus*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*

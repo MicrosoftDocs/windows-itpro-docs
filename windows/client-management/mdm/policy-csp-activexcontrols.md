@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - ActiveXControls
@@ -64,7 +64,7 @@ Note: Wild card characters cannot be used when specifying the host URLs.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Approved Installation Sites for ActiveX Controls*
+-   GP English name: *Approved Installation Sites for ActiveX Controls*
 -   GP name: *ApprovedActiveXInstallSites*
 -   GP path: *Windows Components/ActiveX Installer Service*
 -   GP ADMX file name: *ActiveXInstallService.admx*
