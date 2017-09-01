@@ -23,13 +23,16 @@ ms.date: 09/01.2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP supports the following entities where you can run API calls on:
+Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
 
-- Actor
-- Alerts
-- Domain
-- File
-- IP
-- Machines
-- User
+## In this section
+Topic | Description
+:---|:---
+Actor | Run API calls such as get actor information and get actor related alerts.
+Alerts | Run API calls such as get alerts, alert information by ID, alert related actor information, alert related IP information, and alert related machine information.
+Domain |Run API calls such as get domain related machines, domain related machines, statistics, and check if a domain is seen in your organization.
+File | Run API calls such as get file information, file related alerts, file related machines, and file statistics.
+IP | Run API calls such as get IP related alerts, IP related machines, IP statistics, and check if and IP is seen in your organization.
+Machines | Run API calls such as find machine information by IP, get machines, get machines by ID, information about logged on users, and alerts related to a given machine ID.
+User | Run API calls such as get alert related user information, user information, user related alerts, and user related machines.
 
