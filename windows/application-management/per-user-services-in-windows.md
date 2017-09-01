@@ -108,6 +108,33 @@ If a per-user service can't be disabled using a the security template, you can d
    
 9. To add the other services that cannot be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
 
+### Managing Template Services with reg.exe
+
+If you cannot use GPP to manage the per-user services you can edit the registry with reg.exe. 
+To disable the Template Services change the Startup Type for each service to 4 (disabled). 
+For example:
+
+```code
+REG.EXE ADD HKLM\System\CurrentControlSet\Services\CDPUserSvc /v Start /t REG_DWORD /d 4 /f
+REG.EXE ADD HKLM\System\CurrentControlSet\Services\OneSyncSvc /v Start /t REG_DWORD /d 4 /f
+REG.EXE ADD HKLM\System\CurrentControlSet\Services\PimIndexMaintenanceSvc /v Start /t REG_DWORD /d 4 /f
+REG.EXE ADD HKLM\System\CurrentControlSet\Services\UnistoreSvc /v Start /t REG_DWORD /d 4 /f
+REG.EXE ADD HKLM\System\CurrentControlSet\Services\UserDataSvc /v Start /t REG_DWORD /d 4 /f
+REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t REG_DWORD /d 4 /f
+``` 
+
+> [!CAUTION]
+> We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
+
+### Managing Template Services with regedit.exe 
+
+If you cannot use Group Policy preferences to manage the per-user services, you can edit the registry with regedit.exe. To disable the Template Services change the Startup Type for each service to 4 (disabled), as shown in the following example:
+
+![Using Regedit to change servive Starup Type](media/regedit-change-service-startup-type.png) 
+
+> [!CAUTION]
+> We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
+
 ### Manage template services by modifying the Windows image
 
 If you're using custom images to deploy Windows, you can modify the Startup Type for the template services as part of the normal imaging process.
