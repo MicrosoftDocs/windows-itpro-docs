@@ -17,7 +17,7 @@ ms.author: mstephen
 
 >[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
-[ Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+[ Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
 
 The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 
@@ -57,7 +57,7 @@ Sign-in to the domain controller hosting the schema master operational role usin
 Windows Hello for Business uses several security groups to simplify the deployment and managment.
 
 > [!Important]
-> If your environment has one or more Windows Server 2016 domain controllers in the domain to which you are deploying Windows Hello for Business, then skip the **Create the KeyCrednetials Admins Security Group**.
+> If your environment has one or more Windows Server 2016 domain controllers in the domain to which you are deploying Windows Hello for Business, then skip the **Create the KeyCredentials Admins Security Group**.  Domains that include Windows Server 2016 domain controllers use the KeyAdmins group, which is created during the installation of the first Windows Server 2016 domain controller.
 
 #### Create the KeyCredential Admins Security Group
 
@@ -74,7 +74,7 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 
 #### Create the Windows Hello for Business Users Security Group
 
-The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases.  You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group.  This provides them the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
+The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases.  You assign Group Policy and Certificate template permissions to this group to simplify the deployment by simply adding the users to the group.  This provides users with the proper permissions to provision Windows Hello for Business and to enroll in the Windows Hello for Business authentication certificate.
 
 Sign-in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 
@@ -96,7 +96,7 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 
 >[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
-[ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+[ Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
 
 <br>
 
