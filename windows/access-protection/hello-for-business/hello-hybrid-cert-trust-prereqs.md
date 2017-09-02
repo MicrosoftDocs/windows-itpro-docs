@@ -33,7 +33,7 @@ Hybrid Windows Hello for Business needs two directories: an on-premises Active D
 
 A hybrid Windows Hello for Busines deployment needs an Azure Active Directory subscription.  Different deployment configurations are supported by different Azure subscriptions.  The hybrid-certificate trust deployment needs an Azure Active Directory premium subscription because it uses the device write-back synchronization feature.  Other deployments, such as the hybrid key-trust deployment, do not require Azure Active Directory premium subscription.
 
-Windows Hello for Business can be deployed in any environment with Windows Server 2008 R2 or later domain controllers.  However, it does requires the Windows Server 2016 Active Directory schema.
+Windows Hello for Business can be deployed in any environment with Windows Server 2008 R2 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory schema.
  
 Review these requirements and those from the Windows Hello for Business planning guide and worksheet.  Based on your deployment decisions you may need to upgrade your on-premises Active Directory or your Azure Active Directory subscription to meet your needs.
 
@@ -77,7 +77,7 @@ Organizations using older directory synchronization technology, such as DirSync 
 <br>
 
 ## Federation ##
-Federating your on-premises Active Directory with Azure Active Directory ensures all identities have access to all resources regardless if they reside in cloud or on-premises.  Windows Hello for Business hybrid certificate trust needs Windows Server 2016 Active Directory Federation Services.  All nodes in the AD FS farm must run the same version of AD FS. 
+Federating your on-premises Active Directory with Azure Active Directory ensures all identities have access to all resources regardless if they reside in cloud or on-premises.  Windows Hello for Business hybrid certificate trust needs Windows Server 2016 Active Directory Federation Services.  All nodes in the AD FS farm must run the same version of AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
 
 ### Section Review ###
 > [!div class="checklist"]
@@ -99,7 +99,7 @@ Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Auth
 <br>
 
 ## Device Registration ##
-Hybrid organizations register their devices with their cloud.  This is analogous with joining an on-premises computer to the Active Directory domain.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. Some configurations require this device registration to be synchronized back to the on-premises Active Directory.
+Organizations wanting to deploy hybrid certificate trust need thier domain joined devices to register to Azure Active Directory.  Just as a computer has an identity in Active Directory, that same computer has an identity in the cloud.  This ensures that only approved computers are used with that Azure Active Directory.  Each computer registers its identity in Azure Active Directory. 
  
 Hybrid certificate trust deployments need the device write back feature.  Authentication to the Windows Server 2016 Active Directory Federation Services needs both the user and the computer to authenticate. Typically the users are synchronized, but not devices.  This prevents AD FS from authenticating the computer and results in Windows Hello for Business certificate enrollment failures.  For this reason, Windows Hello for Business deployments need device writeback, which is an Azure Active Directory premium feature.
 

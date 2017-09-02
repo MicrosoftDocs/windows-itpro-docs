@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
+author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
 ---
@@ -41,5 +41,6 @@ Regardless of the baseline you choose, you’re next step is to familiarize your
 1. Overview (*You are here*)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
-4. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
-5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+4. [Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

@@ -92,35 +92,10 @@ The next step of the deployment is to follow the [Creating an Azure AD tenant](h
 > * Create an Azure Active Directory Tenant.
 > * Purchase the appropriate Azure Active Directory subscription or licenses, if necessary.
   
-### Directory Synchronization ###
-At this point, you should have your Active Directory installed and configured with user and computer accounts.  You should also have an enterprise certificate authority, and you should have provisioned your Azure tenant.
-
-Next, you need to synchronizes the on-premises Active Directory with Azure Active Directory.  To do this, you’ll download, install, and configure Azure Active Directory Connect.
-
-### Section Review
-
-> [!div class="checklist"]
-> * Review the [Integrating on-prem directories with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect). 
-> * Review the [hardware and prerequisites](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-prerequisites) needed and then [download the software](http://go.microsoft.com/fwlink/?LinkId=615771). 
-> * Follow the [Express Installation](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-get-started-express) to configure directory synchronization.
 
 
-## Active Directory Federation Services
-Active Directory Federation Services (AD FS) provides simplified, secured identity federation and Web single sign-on (SSO) capabilities for end users who want to access applications within an AD FS-secured enterprise, in federation partner organizations, or in the cloud.
 
-### Federation Services ###
-Non-production environments can evaluate Windows Hello for Business using a single AD FS server and AD FS Web Proxy.  Production deployment should follow the recommended planning and deployment guidelines.
 
-If you are new to AD FS and federation services, you should review [Understanding Key AD FS Concepts](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) to prior to designing and deploying your federation service.
-Review the [AD FS Design guide](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/ad-fs-design-guide-in-windows-server-2012-r2) to plan your federation service.
-
-Once you have your AD FS design ready, review [Deploying a Federation Server farm](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/deploying-a-federation-server-farm) to configure AD FS in your environment.
-> [!IMPORTANT]
-> During your AD FS deployment, skip the **Configure a federation server with Device Registration Service** and the **Configure Corporate DNS for the Federation Service and DRS** procedures as these configurations are not needed.      
-
-### ADFS Web Proxy ###
-Federation server proxies are computers that run AD FS software that have been configured manually to act in the proxy role. You can use federation server proxies in your organization to provide intermediary services between an Internet client and a federation server that is behind a firewall on your corporate network.
-Use the [Setting of a Federation Proxy](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/checklist--setting-up-a-federation-server-proxy) checklist to configure AD FS proxy servers in your environment.
   
 #### Multiple Domains ####
 Federating multiple, top-level domains with Azure AD requires some additional configuration that is not required when federating with one top-level domain.

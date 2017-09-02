@@ -23,34 +23,6 @@ The key synchronization process for the hybrid deployment of Windows Hello for B
 
 >[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
->
->If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema**.
-
-## Upgrading Active Directory to the Windows Server 2016 Schema
-
-Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
-
-### Identify the schema role domain controller
-
-To locate the schema master role holder, open and command prompt and type:
-
-```Netdom query fsmo | findstr -i schema```
-
-![Netdom example output](images\hello-cmd-netdom.png)
-
-The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
-
-### Updating the Schema
-
-Windows Hello for Business uses asymmetric keys as user credentials (rather than passwords).  During enrollment, the public key is registered in an attribute on the user object in Active Directory.  The schema update adds this new attribute to Active Directory.  
-
-Sign-in to the domain controller hosting the schema master operational role using Enterprise Admin equivalent credentials.
-
-1.	Open an elevated command prompt.
-2.	Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
-3.	To update the schema, type ```adprep /forestprep```.
-4.	Read the Adprep Warning.  Type the letter **C*** and press **Enter** to update the schema.
-5.	Close the Command Prompt and sign-out.
 
 ### Creating Security Groups
 
