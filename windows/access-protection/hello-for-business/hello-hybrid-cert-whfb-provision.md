@@ -21,19 +21,20 @@ localizationpriority: high
 ## Provisioning
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
 
-<Event358.png>
+![Event358](images/Event358.png)
 
 The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **EnterpriseJoined** reads **Yes**.
 
-<dsregcmd.png?
+![dsreg output](images/dsregcmd.png)
+
 
 Windows Hello for Business provisioning begins with a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
 
-<setupapin.png>
+![Setup a PIN Provisioning](images/setupapin.png)
 
 The provisioning flow proceeds to the Multi-Factor authentication portion of the enrollment.  Provisioning informs the user that it is actively attempting to contact the user through their configured form of MFA.  The provisioning process does not proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry.
   
-<mfa.png>
+![MFA prompt during provisioning](images/mfa.png)
 
 After a successful MFA, the provisioning flow asks the user to create and validate a PIN.  This PIN must observe any PIN complexity requirements that you deployed to the environment.
 
@@ -47,10 +48,10 @@ The provisioning flow has all the information it needs to complete the Windows H
 
 The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect syncrhonizes the user's key to the on-prem Active Directory.
 
->[!IMPORTANT]
->The minimum time needed to syncrhonize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes.  This synchronization latency delays the certificate enrollment for the user.  After the user's public key has syncrhonized to Active Directory, the user's certificate enrolls automatically as long as the user's session is active (actively working or locked, but still signed-in).  Also, the Action Center notifies the user thier PIN is ready for use.
+> [!IMPORTANT]
+> The minimum time needed to syncrhonize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes.  This synchronization latency delays the certificate enrollment for the user.  After the user's public key has syncrhonized to Active Directory, the user's certificate enrolls automatically as long as the user's session is active (actively working or locked, but still signed-in).  Also, the Action Center notifies the user thier PIN is ready for use.
 
->[!NOTE]
+> [!NOTE]
 > Microsoft is actively investigating in ways to reduce the syncrhonization latency and delays in certificate enrollment with the goal to make certificate enrollment occur real-time.  
   
 After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.

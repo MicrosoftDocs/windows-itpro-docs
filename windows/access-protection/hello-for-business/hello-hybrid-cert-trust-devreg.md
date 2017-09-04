@@ -30,13 +30,13 @@ Use this three phased approach for configuring device registration.
 1. [Configure devices to register in Azure](#configure-azure-for-device-registration)
 2. [Synchronize devices to on-premises Active Directory](#configure-active-directory-to-support-azure-device-syncrhonization)
 3. [Configure AD FS to use cloud devices](#configure-ad-fs-to-use-azure-registered-devices)
->[!NOTE]
+> [!NOTE]
 > Before proceeding, you should familiarize yourself with device regisration concepts such as:
->* Azure AD registered devices
->* Azure AD joined devices
->* Hybrid Azure AD joined devices
+> * Azure AD registered devices
+> * Azure AD joined devices
+> * Hybrid Azure AD joined devices
 >
->You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)
+> You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)
 
 ## Configure Azure for Device Registration
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
@@ -51,8 +51,8 @@ Azure Active Directory is now configured for device registration. Next, you need
 
 To use Windows Hello for Business with Hybrid Azure AD joined devices, you must first upgrade your Active Directory schema to Windows Server 2016. 
 
->![IMPORTANT]
->If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema** (this section).
+> [!IMPORTANT]
+> If you already have a Windows Server 2016 domain controller in your forest, you can skip **Upgrading Active Directory to the Windows Server 2016 Schema** (this section).
 
 #### Identify the schema role domain controller
 
@@ -113,11 +113,11 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 
 ![Device Registration](images/hybridct/device2.png)
   
-2.  On your AD FS primary server, ensure you are logged in as AD DS user with Enterprise Admin (EA ) privileges and open an elevated powershell prompt.  Then, execute the following PowerShell commands:  
+2.  On your AD FS primary server, ensure you are logged in as AD DS user with Enterprise Admin (EA ) privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
     
     `Import-module activedirectory`  
 	`PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>" ` 
-3.  On the pop-up window hit Yes.
+3.  On the pop-up window click **Yes**.
 
 > [!NOTE]
 > If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
@@ -190,7 +190,7 @@ Windows current devices authenticate using Integrated Windows Authentication to 
 > [!NOTE]
 > When using AD FS, either **adfs/services/trust/13/windowstransport** or **adfs/services/trust/2005/windowstransport** must be enabled. If you are using the Web Authentication Proxy, also ensure that this endpoint is published through the proxy. You can see what end-points are enabled through the AD FS management console under **Service > Endpoints**.
 >
->If you don’t have AD FS as your on-premises federation service, follow the instructions of your vendor to make sure they support WS-Trust 1.3 or 2005 end-points and that these are published through the Metadata Exchange file (MEX).
+> If you don't have AD FS as your on-premises federation service, follow the instructions of your vendor to make sure they support WS-Trust 1.3 or 2005 end-points and that these are published through the Metadata Exchange file (MEX).
 
 The following claims must exist in the token received by Azure DRS for device registration to complete. Azure DRS will create a device object in Azure AD with some of this information which is then used by Azure AD Connect to associate the newly created device object with the computer account on-premises.
 
@@ -214,7 +214,7 @@ In the following sections, you find information about:
 The definition helps you to verify whether the values are present or if you need to create them.
 
 > [!NOTE]
-> If you don’t use AD FS for your on-premises federation server, follow your vendor's instructions to create the appropriate configuration to issue these claims.
+> If you don't use AD FS for your on-premises federation server, follow your vendor's instructions to create the appropriate configuration to issue these claims.
 
 #### Issue account type claim
 
@@ -488,27 +488,17 @@ Using an elevated PowerShell command window, configure AD FS policy by executing
 
 #### Check your configuration  
 For your reference, below is a comprehensive list of the AD DS devices, containers and permissions required for device write-back and authentication to work
- 
-
 
 - object of type ms-DS-DeviceContainer at CN=RegisteredDevices,DC=&lt;domain&gt;  		
 	- read access to the AD FS service account   
-	- read/write access to the Azure AD Connect sync AD connector account</br></br>
-
-- Container CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;  
+	- read/write access to the Azure AD Connect sync AD connector account
+- Container CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - Container Device Registration Service DKM under the above container
 
 ![Device Registration](images/hybridct/device8.png) 
  
-
-
 - object of type serviceConnectionpoint at CN=&lt;guid&gt;, CN=Device Registration
-
 - Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;  
- - read/write access to the specified AD connector account name on the new object</br></br> 
-
-
-- object of type msDS-DeviceRegistrationServiceContainer at CN=Device Registration Services,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&ltdomain>  
-
-
+  - read/write access to the specified AD connector account name on the new object 
+- object of type msDS-DeviceRegistrationServiceContainer at CN=Device Registration Services,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - object of type msDS-DeviceRegistrationService in the above container
