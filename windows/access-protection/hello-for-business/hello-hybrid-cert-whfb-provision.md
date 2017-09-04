@@ -52,7 +52,7 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 > The minimum time needed to syncrhonize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes.  This synchronization latency delays the certificate enrollment for the user.  After the user's public key has synchronized to Active Directory, the user's certificate enrolls automatically as long as the user's session is active (actively working or locked, but still signed-in).  Also, the Action Center notifies the user thier PIN is ready for use.
 
 > [!NOTE]
-> Microsoft is actively investigating in ways to reduce the syncrhonization latency and delays in certificate enrollment with the goal to make certificate enrollment occur real-time.  
+> Microsoft is actively investigating ways to reduce the syncrhonization latency and delays in certificate enrollment with the goal to make certificate enrollment occur real-time.  
   
 After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.
   

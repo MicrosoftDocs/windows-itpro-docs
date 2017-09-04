@@ -501,7 +501,7 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 - object of type msDS-DeviceRegistrationServiceContainer at CN=Device Registration Services,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - object of type msDS-DeviceRegistrationService in the above container
 
-[!div clas="nextstepaction"]
+>[!div class="nextstepaction"]
 [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
 
 <br><br>

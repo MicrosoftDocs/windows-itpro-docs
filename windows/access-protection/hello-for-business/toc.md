@@ -18,7 +18,8 @@
 #### [New Installation Baseline](hello-hybrid-cert-new-install.md)
 #### [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 #### [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings.md)
-#### [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md) 
+#### [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+
 ### [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 #### [Validate Active Directory prerequisites](hello-cert-trust-validate-ad-prereq.md)
 #### [Validate and Configure Public Key Infrastructure](hello-cert-trust-validate-pki.md)

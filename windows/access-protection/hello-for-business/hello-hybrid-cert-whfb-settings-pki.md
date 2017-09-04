@@ -118,7 +118,7 @@ Sign-in a certificate authority or management workstations with *Domain Admin* e
 9. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check boxes for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**. 
 10.	Close the console.
 
-### Creating Windows Hello for Business authentication certiicate template
+### Creating Windows Hello for Business authentication certificate template
 
 During Windows Hello for Business provisioning, the Windows 10, version 1703 client requests an authentication certificate from the Active Directory Federation Service, which requests the authentication certificate on behalf of the user.  This task configures the Windows Hello for Business authentication certificate template.  You use the name of the certificate template when configuring.
 
