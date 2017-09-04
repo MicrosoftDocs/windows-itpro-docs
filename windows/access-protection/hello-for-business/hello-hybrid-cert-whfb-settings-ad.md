@@ -60,8 +60,6 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 ### Section Review
 
 > [!div class="checklist"]
-> * Identify the schema role domain controller 
-> * Update the Active Directory Schema to Windows Server 2016
 > * Create the KeyCredential Admins Security group (optional)
 > * Create the Windows Hello for Business Users group
 

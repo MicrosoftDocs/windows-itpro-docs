@@ -52,21 +52,17 @@ This warning indicates that you have not configured multi-factor authentication 
 
 ### Group Memberships for the AD FS Service Account
 
-The KeyCredential Admins global group provides the AD FS service with the permissions needed to perform key registration.  The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
+The Windows Hello for Business group provides the AD FS service with the permissions needed to enroll a Windows Hello for Business authentication certificate on behalf of the provisioning user.
 
 Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
 
 1. Open **Active Directory Users and Computers**.
 2. Click the **Users** container in the navigation pane.
-3. Right-click **KeyCredential Admins** in the details pane and click **Properties**.
+3. Right-click **Windows Hello for Business Users** group
 4. Click the **Members** tab and click **Add**
 5. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-6. Click **OK** to return to **Active Directory Users and Computers**.
-7. Right-click **Windows Hello for Business Users** group
-8. Click the **Members** tab and click **Add**
-9. In the **Enter the object names to select** text box, type **adfssvc**.  Click **OK**.
-10.	Click **OK** to return to **Active Directory Users and Computers**.
-11.	Change to server hosting the AD FS role and restart it.
+6.	Click **OK** to return to **Active Directory Users and Computers**.
+7.	Restart the AD FS server.
 
 ### Section Review
 > [!div class="checklist"]

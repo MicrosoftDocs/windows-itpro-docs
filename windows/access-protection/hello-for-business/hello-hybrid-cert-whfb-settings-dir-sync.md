@@ -29,7 +29,7 @@ In hybrid deployments, users register the public portion of their Windows Hello 
 The key-trust model needs Windows Server 2016 domain controllers, which configures the key registration permissions automatically; however, the certificate-trust model does not and requires you to add the permissions manually.
 
 > [!IMPORTANT]
-> If you already have a Windows Server 2016 domain controller in your forest, you can skip **Configure Permissions for Key Synchronization**.
+> If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**.
 
 ### Configure Permissions for Key Syncrhonization
 
@@ -45,10 +45,28 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 8. In the **Properties** section, select **Read msDS-KeyCredentialLink** and **Write msDS-KeyCrendentialLink**.
 9. Click **OK** three times to complete the task. 
 
+
+### Group Memberships for the Azure AD Connect Service Account
+
+The KeyAdmins or KeyCredential Admins global group provides the Azure AD Connect service with the permissions needed to read and write the public key to Active Directory.  
+
+Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
+
+1. Open **Active Directory Users and Computers**.
+2. Click the **Users** container in the navigation pane.
+>[!IMPORTANT]
+> If you already have a Windows Server 2016 domain controller in your domain, use the Keyadmins group in the next step, otherwise use the KeyCredential admins group you previously created.
+
+3. Right-click either the **KeyAdmins** or **KeyCredential Admins** in the details pane and click **Properties**.
+4. Click the **Members** tab and click **Add**
+5. In the **Enter the object names to select** text box, type the name of the Azure AD Connect service account.  Click **OK**.
+6. Click **OK** to return to **Active Directory Users and Computers**.
+
 ### Section Review
 
 > [!div class="checklist"]
 > * Configure Permissions for Key Synchronization
+> * Configure group membership for Azure AD Connect
 
 >[!div class="step-by-step"]
 [< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
