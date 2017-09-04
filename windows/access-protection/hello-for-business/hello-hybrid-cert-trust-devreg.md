@@ -106,7 +106,8 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 
 ![Device Registration](images/hybridct/device1.png)
 
->[!NOTE]The below commands require Active Directory administration tools, so if your federation server is not also a domain controller, first install the tools using step 1 below.  Otherwise you can skip step 1.  
+> [!NOTE]
+> The below commands require Active Directory administration tools, so if your federation server is not also a domain controller, first install the tools using step 1 below.  Otherwise you can skip step 1.  
 
 1.  Run the **Add Roles & Features** wizard and select feature **Remote Server Administration Tools** -> **Role Administration Tools** -> **AD DS and AD LDS Tools** -> Choose both the **Active Directory module for Windows PowerShell** and the **AD DS Tools**.
 
@@ -118,7 +119,8 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 	`PS C:\> Initialize-ADDeviceRegistration -ServiceAccountName "<your service account>" ` 
 3.  On the pop-up window hit Yes.
 
->[!NOTE]If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
+> [!NOTE]
+> If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
 
 ![Device Registration](images/hybridct/device3.png)  
 
@@ -141,7 +143,8 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
     
 	`PS C:>Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1" ` 
 
->[!NOTE]If necessary, copy the AdSyncPrep.psm1 file from your Azure AD Connect server.  This file is located in Program Files\Microsoft Azure Active Directory Connect\AdPrep
+> [!NOTE]
+> If necessary, copy the AdSyncPrep.psm1 file from your Azure AD Connect server.  This file is located in Program Files\Microsoft Azure Active Directory Connect\AdPrep
 
 ![Device Registration](images/hybridct/device6.png)   
 
