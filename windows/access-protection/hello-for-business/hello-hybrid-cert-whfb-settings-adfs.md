@@ -21,8 +21,8 @@ ms.author: mstephen
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 >[!div class="step-by-step"]
-[ Configure Windows Hello for Business: PKI >](hello-hybrid-cert-whfb-settings-pki.md)
-[< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings-policy.md)
+[< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+[Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
 
 
 The Windows Server 2016 Active Directory Fedeartion Server Certificate Registration Authority (AD FS RA) enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority. 
@@ -68,7 +68,17 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 10.	Click **OK** to return to **Active Directory Users and Computers**.
 11.	Change to server hosting the AD FS role and restart it.
 
-<br>
+### Section Review
+> [!div class="checklist"]
+> * Configure the registration authority
+> * Update group memberships for the AD FS service account
+
+
+>[!div class="step-by-step"]
+[< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+[Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
+
+<br><br>
 
 <hr>
 
@@ -76,6 +86,7 @@ Sign-in a domain controller or management workstation with _Domain Admin_ equiva
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
-4. Configure Windows Hello for Business settings (*You are here*)
-5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. Configure Windows Hello for Business settings: AD FS (*You are here*)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
 

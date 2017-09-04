@@ -26,8 +26,7 @@ Windows Hello for Business involves configuring distributed technologies that ma
 * [Active Directory Federation Services](#active-directory-federation-services)
 
 
-New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your exsting envrionment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If you're environment meets these needs, you can read the [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md) section to learn about specific Windows Hello for Business configuration settings.
-
+New installations are considerably more involved than existing implementations because you are building the entire infrastructure.  Microsoft recommends you review the new installation baseline to validate your exsting envrionment has all the needed configurations to support your hybrid certificate trust Windows Hello for Business deployment.  If your environment meets these needs, you can read the [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md) section to prepare your Windows Hello for Business deployment by configuring Azure device registration.
 
 The new installation baseline begins with a basic Active Directory deployment and enterprise PKI.  This document expects you have Active Directory deployed using Windows Server 2008 R2 or later domain controllers.
 
@@ -91,38 +90,7 @@ The next step of the deployment is to follow the [Creating an Azure AD tenant](h
 > * Review the different ways to establish an Azure Active Directory tenant.
 > * Create an Azure Active Directory Tenant.
 > * Purchase the appropriate Azure Active Directory subscription or licenses, if necessary.
-  
-
-
-
-
-  
-#### Multiple Domains ####
-Federating multiple, top-level domains with Azure AD requires some additional configuration that is not required when federating with one top-level domain.
-  
-For example, federating the top-level contoso.com domain requires no additional configuration.  However, if Contoso Corporation acquires Fabrikam Corporation and wants to federate under Contoso.com, then additional configurations are needed because these are two top-level domains for contoso.com.
-
-To configure your environment for multiple domains, follow the [Multiple Domain Support for Federating with Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-multiple-domains) procedures.
-
-#### Device Registration ####
-With device management in Azure Active Directory (Azure AD), you can ensure that your users are accessing your resources from devices that meet your standards for security and compliance. For more details, see Introduction to device management in Azure Active Directory.
-
-Use the [How to configure automatic registration of Windows domain-joined devices with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup) procedures to configure your environment to support device registration.
-
-#### Device writeback ####
-As previously mentioned, Windows Hello for Busines hybrid certificate- trust deployments that include domain joined computers use the device writeback feature to authenticate the device to the on-premises federation server.
-
-Use the [Enabling device writeback](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-feature-device-writeback) section to configure device writeback functionality in your environment.
-
-### Section Review
-
-> [!div class="checklist"]
-> * Federation Proxy Servers
-> * Multiple top-level domains
-> * Azure Device Registration
-> * Device Writeback
-
-
+   
 ## Multifactor Authentication Services ##
 Windows Hello for Business uses multifactor authentication during provisioning and during user initiated PIN reset scenarios, such as when a user forgets their PIN.  There are two preferred multifactor authentication configurations with hybrid deployments—Azure MFA and AD FS using Azure MFA
 
@@ -159,8 +127,9 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 > * Understand the different User States and their effect on Azure Multifactor Authentication.
 > * Consider using Azure Multifactor Authentication or a third-party multifactor authentication provider with Windows Server 2016 Active Directory Federation Services, if necessary.
 
-### Next Steps ###
-Follow the Windows Hello for Business hybrid certificate trust deployment guide.  With your baseline configuration complete, your next step is to **Configure Windows Hello for Business** if your envirionment.
+> [!div class="nextstepaction"]
+> [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+
 <br><br>
 
 <hr>
@@ -169,5 +138,6 @@ Follow the Windows Hello for Business hybrid certificate trust deployment guide.
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. New Installation Baseline (*You are here*)
-4. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
-5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

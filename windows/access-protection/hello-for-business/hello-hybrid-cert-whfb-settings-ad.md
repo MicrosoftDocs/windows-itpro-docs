@@ -17,7 +17,7 @@ ms.author: mstephen
 
 >[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
-[ Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
+[Configure Azure AD Connect >](hello-hybrid-cert-whfb-settings-dir-sync.md)
 
 The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
 
@@ -62,15 +62,14 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 > [!div class="checklist"]
 > * Identify the schema role domain controller 
 > * Update the Active Directory Schema to Windows Server 2016
-> * Create the KeyCredential Admins Security group, (optional)
+> * Create the KeyCredential Admins Security group (optional)
 > * Create the Windows Hello for Business Users group
-
 
 >[!div class="step-by-step"]
 [< Configure Windows Hello for Business](hello-hybrid-cert-whfb-settings.md)
-[ Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
+[Configure Azure AD Connect >](hello-hybrid-cert-whfb-settings-dir-sync.md)
 
-<br>
+<br><br>
 
 <hr>
 
@@ -78,5 +77,6 @@ Sign-in a domain controller or management workstation with *Domain Admin* equiva
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
-4. Configure Windows Hello for Business settings: Active Directory (*You are here*)
-5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. Configure Windows Hello for Business settings: Active Directory (*You are here*)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

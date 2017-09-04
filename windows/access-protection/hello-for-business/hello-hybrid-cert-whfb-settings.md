@@ -36,7 +36,7 @@ For the most efficent deployment, configure these technologies in order beginnin
 > [!div class="step-by-step"]
 [Configure Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
 
-<br>
+<br><br>
 
 <hr>
 
@@ -44,5 +44,6 @@ For the most efficent deployment, configure these technologies in order beginnin
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
-4. Configure Windows Hello for Business settings (*You are here*)
-5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. Configure Windows Hello for Business settings (*You are here*)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

@@ -15,6 +15,10 @@ ms.author: mstephen
 **Applies to**
 -   Windows 10
 
+> [!div class="step-by-step"]
+[< Configure AD FS](hello-hybrid-cert-whfb-settings-adfs.md)
+
+
 ## Policy Configuration
 
 >[!IMPORTANT]
@@ -174,21 +178,26 @@ Starting with Windows 10, version 1703, the PIN complexity Group Policy settings
 Users must receive the Windows Hello for Business group policy settings and have the proper permission to enroll for the Wwindows Hello for Business Authentication certificate. You can provide users with these settings and permissions by adding the group used synchronize users to the Windows Hello for Business Users group.   Users and groups who are not members of this group will not attempt to enroll for Windows Hello for Business.
 
 ### Section Review
-- [x] Active Directory
-- [x] Public Key Infrastructure
-- [x] Azure Active Directory
-- [x] Directory Synchronization
-- [x] Active Directory Federation Services
-- [x] Federation Services
-  - [x]	Federation Proxy Servers
-  - [x]	Multiple top-level domains
-  - [x]	Azure Device Registration
-  - [x]	Device Writeback
-- [x] Multifactor Authentication
-- [x] Windows Hello for Business
-  - [x]Active Directory
-  - [x] Directory Synchronization
-  - [x] Public Key Infrastructure
-  - [x] Federation Services
-  - [x] Group Policy
-- [ ] Sign-in and Provision
+> [!div class="checklist"]
+> * Configure domain controllers for automatic certificate enrollment.
+> * Create Windows Hello for Business Group Policy object.
+> * Enable the Use Windows Hello for Business policy setting.
+> * Enable the Use certificate for on-premises authentication policy setting.
+> * Enable user automatic certificate enrollment.
+> * Add users or groups to the Windows Hello for Business group
+
+
+> [!div class="nextstepaction"]
+[Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+
+<br><br>
+
+<hr>
+
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+1. [Overview](hello-hybrid-cert-trust.md)
+2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. Configure Windows Hello for Business policy settings (*You are here*)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

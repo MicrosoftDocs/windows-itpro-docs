@@ -17,8 +17,8 @@ ms.author: mstephen
 -   Windows 10
 
 > [!div class="step-by-step"]
-[< Configure Windows Hello for Business: Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
-[ Configure Windows Hello for Business: ADFS >](hello-hybrid-cert-whfb-settings-adfs.md)
+[< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
+[Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
 
 >[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
@@ -47,15 +47,15 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
 4.	On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
-5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise�s needs.   
-    **Note**If you use different template names, you�ll need to remember and substitute these names in different portions of the lab.
+5.	On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.   
+    **Note**If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
 6.	On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 7.	On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**. 
 8.	Close the console.
 
 #### Configure Certificate Suspeding for the Domain Controller Authentication (Kerberos) Certificate Template
 
-Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template from domain controllers�the domain controller certificate template.  Later releases provided a new certificate template�the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.  
+Many domain controllers may have an existing domain controller certificate.  The Active Directory Certificate Services provides a default certificate template for domain controllers--the domain controller certificate template.  Later releases provided a new certificate template--the domain controller authentication certificate template.  These certificate templates were provided prior to update of the Kerberos specification that stated Key Distribution Centers (KDCs) performing certificate authentication needed to include the **KDC Authentication** extension.  
 
 The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).
 
@@ -79,7 +79,7 @@ The certificate template is configured to supersede all the certificate template
 
 Active Directory Federation Server used for Windows Hello for Business certificate enrollment performs its own certificate lifecycle management.  Once the registration authority is configured with the proper certificate template, the AD FS server attempts to enroll the certificate on the first certificate request or when the service first starts.
 
-Approximately 60 days prior to enrollment agent certificate�s expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
+Approximately 60 days prior to enrollment agent certificate's expiration, the AD FS service attempts to renew the certificate until it is successful.  If the certificate fails to renew, and the certificate expires, the AD FS server will request a new enrollment agent certificate.  You can view the AD FS event logs to determine the status of the enrollment agent certificate.
 
 > [!IMPORTANT]
 > Follow the procedures below based on the AD FS service account used in your  environment. 
@@ -92,7 +92,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 2. Right-click **Certificate Templates** and click **Manage**.
 3. In the **Certificate Template Console**, right click on the **Exchange Enrollment Agent (Offline request)** template details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
-5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise�s needs.
+5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.
 6. On the **Subject** tab, select the **Supply in the request** button if it is not already selected.   
     **Note:** The preceding step is very important.  Group Managed Service Accounts (GMSA) do not support the Build from this Active Directory information option and will result in the AD FS server failing to enroll the enrollment agent certificate.  You must configure the certificate template with Supply in the request to ensure that AD FS servers can perform the automatic enrollment and renewal of the enrollment agent certificate.
 
@@ -111,14 +111,14 @@ Sign-in a certificate authority or management workstations with *Domain Admin* e
 2. Right-click **Certificate Templates** and click **Manage**.
 3. In the **Certificate Template** console, right-click the **Exchange Enrollment Agent** template in the details pane and click **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
-5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise�s needs.
+5. On the **General** tab, type **WHFB Enrollment Agent** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.
 6. On the **Subject** tab, select the **Build from this Active Directory information** button if it is not already selected. Select **Fully distinguished name** from the **Subject name format** list if **Fully distinguished name** is not already selected.  Select the **User Principal Name (UPN)** check box under **Include this information in alternative subject name**.
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.
 8. On the **Security** tab, click **Add**. Type **adfssvc** in the **Enter the object names to select text box** and click **OK**.
 9. Click the **adfssvc** from the **Group or users names** list. In the **Permissions for adfssvc** section, select the **Allow** check box for the **Enroll** permission. Excluding the **adfssvc** user, clear the **Allow** check boxes for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**. 
 10.	Close the console.
 
-#### Creating Windows Hello for Business authentication certiicate template
+### Creating Windows Hello for Business authentication certiicate template
 
 During Windows Hello for Business provisioning, the Windows 10, version 1703 client requests an authentication certificate from the Active Directory Federation Service, which requests the authentication certificate on behalf of the user.  This task configures the Windows Hello for Business authentication certificate template.  You use the name of the certificate template when configuring.
 
@@ -128,8 +128,8 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 2. Right-click **Certificate Templates** and click **Manage**.
 3. Right-click the **Smartcard Logon** template and choose **Duplicate Template**.
 4. On the **Compatibility** tab, clear the **Show resulting changes** check box.  Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Authority** list. Select **Windows Server 2012** or **Windows Server 2012 R2** from the **Certification Recipient** list.
-5. On the **General** tab, type **WHFB Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise�s needs.   
-    **Note:** If you use different template names, you�ll need to remember and substitute these names in different portions of the deployment.
+5. On the **General** tab, type **WHFB Authentication** in **Template display name**.  Adjust the validity and renewal period to meet your enterprise's needs.   
+    **Note:** If you use different template names, you'll need to remember and substitute these names in different portions of the deployment.
 6. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  
 7. On the **Extensions** tab, verify the **Application Policies** extension includes **Smart Card Logon**.
 8. On the **Issuance Requirements** tab, select the T**his number of authorized signatures** check box.  Type **1** in the text box.   
@@ -145,16 +145,15 @@ Sign-in a certificate authority or management workstations with _Domain Admin eq
 
 Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equivalent credentials.
 1. Open an elevated command prompt.
-2. Run `certutil �dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
+2. Run `certutil -dsTemplate WHFBAuthentication msPKI-Private-Key-Flag +CTPRIVATEKEY_FLAG_HELLO_LOGON_KEY`
 
 >[!NOTE]
->If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It�s important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
+>If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It's important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
 Publish Templates
 
 ### Publish Certificate Templates to a Certificate Authority
 
 The certificate authority may only issue certificates for certificate templates that are published to that certificate authority.  If you have more than one certificate authority and you want that certificate authority to issue certificates based on a specific certificate template, then you must publish the certificate template to all certificate authorities that are expected to issue the certificate.
-
 
 ### Unpublish Superseded Certificate Templates
 
@@ -170,18 +169,22 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 4.	Right-click the **Domain Controller** certificate template in the content pane and select **Delete**.  Click **Yes** on the **Disable certificate templates** window.
 5.	Repeat step 4 for the **Domain Controller Authentication** and **Kerberos Authentication** certificate templates.
 
-> [!div class="step-by-step"]
-[< Configure Windows Hello for Business: Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
-[ Configure Windows Hello for Business: ADFS >](hello-hybrid-cert-whfb-settings-adfs.md)
-
-
-
 ### Section Review
+> [!div class="checklist"]
+> * Domain Controller certificate template
+> * Configure superseded domain controller certificate templates
+> * Enrollment Agent certifcate template
+> * Windows Hello for Business Authentication certificate template
+> * Mark the certifcate template as Windows Hello for Business sign-in template
+> * Publish Certificate templates to certificate authorities
+> * Unpublish superseded certificate templates
 
 
+> [!div class="step-by-step"]
+[< Configure Azure AD Connect](hello-hybrid-cert-whfb-settings-dir-sync.md)
+[Configure AD FS >](hello-hybrid-cert-whfb-settings-adfs.md)
 
-
-<br>
+<br><br>
 
 <hr>
 
@@ -189,6 +192,7 @@ Sign-in to the certificate authority or management workstation with _Enterprise 
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
-4. Configure Windows Hello for Business settings: PKI (*You are here*)
-5. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. Configure Windows Hello for Business settings: PKI (*You are here*)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
 

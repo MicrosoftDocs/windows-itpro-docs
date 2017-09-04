@@ -15,9 +15,6 @@ localizationpriority: high
 **Applies to**
 -  Windows 10
 
-> [!div class="step-by-step"]
-[Configure Active Directory >](hello-hybrid-cert-whfb-settings-ad.md)
-
 >[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
@@ -503,3 +500,18 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
   - read/write access to the specified AD connector account name on the new object 
 - object of type msDS-DeviceRegistrationServiceContainer at CN=Device Registration Services,CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - object of type msDS-DeviceRegistrationService in the above container
+
+[!div clas="nextstepaction"]
+[Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
+
+<br><br>
+
+<hr>
+
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+1. [Overview](hello-hybrid-cert-trust.md)
+2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+4. Configure Azure Device Registration (*You are here*)
+5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)

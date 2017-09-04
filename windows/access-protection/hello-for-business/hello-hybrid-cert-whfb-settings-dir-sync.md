@@ -15,6 +15,10 @@ ms.author: mstephen
 **Applies to**
 -   Windows 10
 
+>[!div class="step-by-step"]
+[< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
+[Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+
 ## Directory Syncrhonization
 
 >[!IMPORTANT]
@@ -46,3 +50,18 @@ Sign-in a domain controller or management workstations with *Domain Admin* equiv
 > [!div class="checklist"]
 > * Configure Permissions for Key Synchronization
 
+>[!div class="step-by-step"]
+[< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
+[Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+
+<br><br>
+
+<hr>
+
+## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+1. [Overview](hello-hybrid-cert-trust.md)
+2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
+3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
+4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+5. Configure Windows Hello for Business settings: Active Directory (*You are here*)
+6. [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
