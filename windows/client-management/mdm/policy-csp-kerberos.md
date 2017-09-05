@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Kerberos
@@ -62,7 +62,7 @@ If you disable or do not configure this policy setting, the Kerberos client does
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Use forest search order*
+-   GP English name: *Use forest search order*
 -   GP name: *ForestSearch*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -111,7 +111,7 @@ If you disable or do not configure this policy setting, the client devices will 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
+-   GP English name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
 -   GP name: *EnableCbacAndArmor*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -165,7 +165,7 @@ If you disable or do not configure this policy setting, the client computers in 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Fail authentication requests when Kerberos armoring is not available*
+-   GP English name: *Fail authentication requests when Kerberos armoring is not available*
 -   GP name: *ClientRequireFast*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -215,7 +215,7 @@ If you disable or do not configure this policy setting, the Kerberos client requ
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Require strict KDC validation*
+-   GP English name: *Require strict KDC validation*
 -   GP name: *ValidateKDC*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -269,7 +269,7 @@ Note: This policy setting configures the existing MaxTokenSize registry value in
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Set maximum Kerberos SSPI context token buffer size*
+-   GP English name: *Set maximum Kerberos SSPI context token buffer size*
 -   GP name: *MaxTokenSize*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
