@@ -61,7 +61,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#Machines/$entity",
     "id": "207575116e44741d2b22b6a81429b3ca4fd34608",
-    "computerDnsName": "minint-8qke471.europe.corp.microsoft.com",
+    "computerDnsName": "machine1-corp.contoso.com",
     "firstSeen": "2015-12-01T11:31:53.7016691Z",
 …
 }
