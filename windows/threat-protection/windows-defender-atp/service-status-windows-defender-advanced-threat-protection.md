@@ -34,7 +34,7 @@ You can view details on the service health by clicking the tile from the **Secur
 The **Service health** details page has the following tabs:
 
 - **Current issues**
-- **Status History**
+- **Status history**
 
 ## Current issues
 The **Current issues** tab shows the current state of the Windows Defender ATP service. When the service is running smoothly a healthy service health is shown. If there are issues seen, the following service details are shown to help you gain better insight about the issue:
