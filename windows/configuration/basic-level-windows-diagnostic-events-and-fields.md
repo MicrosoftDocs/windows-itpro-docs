@@ -1,4 +1,4 @@
----
+fre---
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
 title: Windows 10, version 1703 basic diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
