@@ -1314,6 +1314,7 @@ Employees cannot remove these search engines, but they can set any one as the de
 <p style="margin-left: 20px">Data type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
+<!--EndPolicy-->
 <!--StartPolicy-->
 <a href="" id="browser-sendintranettraffictointernetexplorer"></a>**Browser/SendIntranetTraffictoInternetExplorer**  
 
