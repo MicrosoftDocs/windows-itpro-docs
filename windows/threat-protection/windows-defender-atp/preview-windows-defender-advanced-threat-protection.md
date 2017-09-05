@@ -47,9 +47,6 @@ Windows Defender ATP supports the onboarding of the following servers:
     - Windows Server 2012 R2
     - Windows Server 2016
 
-- [Configure non-Windows endpoints](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)<br>
-Windows Defender Security Center provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Windows Defender Security Center and better protect your organization's network.
-
 - [View the Windows Defender ATP Security analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)<br>
 The Security Analytics dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place.
 
