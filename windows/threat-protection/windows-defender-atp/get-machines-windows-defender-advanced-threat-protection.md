@@ -1,7 +1,7 @@
 ---
-title: Find machine information by interal IP API
-description: Use this API to create calls related to finding a machine entry around a specific timestamp by FQDN or interal IP.
-keywords: apis, graph api, supported apis, find machine, machine information, IP
+title: Get machines API
+description: Retrieves a collection of recently seen machines.
+keywords: apis, graph api, supported apis, get, machines
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,15 +13,15 @@ ms.localizationpriority: high
 ms.date: 09/05/2017
 ---
 
-# Find machine information by interal IP 
-Find a machine entity around a specific timestamp by FQDN or internal IP.
+# Get machines 
+Retrieves a collection of recently seen machines.
 
 ## Permissions
 User needs read permissions.
 
 ## HTTP request
 ```
-GET /testwdatppreview/machines/find(timestamp={time},key={IP/FQDN})
+GET /testwdatppreview/machines
 ```
 
 ## Request headers
@@ -36,8 +36,8 @@ Content type | application/json
 Empty
 
 ## Response
-If successful and machine exists - 200 OK.
-If no machine found - 404 Not Found.
+If successful and machines exists - 200 OK.
+If no recent machines - 404 Not Found.
 
 
 ## Example
@@ -47,7 +47,7 @@ Request
 Here is an example of the request.
 
 ```
-GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp={time},key={IP/FQDN})
+GET https://graph.microsoft.com/testwdatppreview/machines
 Content-type: application/json
 ```
 
@@ -61,12 +61,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#Machines",
+    "@odata.count": 5000,
+    "@odata.nextLink": "https://graph.microsoft.com/testwdatppreview/machines?$skip=5000",
     "value": [
         {
-            "id": "04c99d46599f078f1c3da3783cf5b95f01ac61bb",
+            "id": "fadd8a46f4cc722a0391fdee82a7503b9591b3b9",
             "computerDnsName": "",
-            "firstSeen": "2017-07-06T01:25:04.9480498Z",
+            "firstSeen": "2015-03-15T00:18:20.6588778Z",
             "osPlatform": "Windows10",
+            "osVersion": "10.0.0.0",
 …
 }
+
 ```
