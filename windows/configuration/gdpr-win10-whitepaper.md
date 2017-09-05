@@ -132,7 +132,7 @@ In response to these threats and as a part of your mechanisms to resist these ty
 
 - Device Guard to block all unwanted applications on client machines.
 
-#### Responding to emerging threats on data
+#### Responding to emerging data threats
 Windows Defender Antivirus is a built-in antimalware solution that provides security and antimalware management for desktops, portable computers, and servers. In Windows 10, it uses a multi-pronged approach to improve antimalware:
 
 - **Cloud-delivered protection.** Helps to detect and block new malware within seconds, even if the malware has never been seen before.
@@ -145,7 +145,30 @@ Windows Defender Antivirus is a built-in antimalware solution that provides secu
 
 - **Enterprise-level features.** Give IT pros the tools and configuration options necessary to make Windows Defender Antivirus an enterprise-class antimalware solution.
 
-
-
+Systemically disrupting phishing, malware, and hacking attacks 
+In today’s threat landscape, your ability to provide those mechanisms should be tied to the specific data-focused attacks you face through phishing, malware and hacking due to the browser-related attacks. 
+As part of Windows 10, Microsoft has brought you Microsoft Edge, our safest and most secure browser to-date. Over the past two years, we have been continuously innovating, and we’re proud of the progress we’ve made. This quality of engineering is reflected by the reduction of Common Vulnerabilities and Exposures (CVE) when comparing Microsoft Edge with Internet Explorer over the past year. Browser-related attacks on personal and sensitive data that you will need to protect under the GDPR means this innovation in Windows 10 is important.
+While no modern browser—or any complex application—is free of vulnerabilities, the majority of the vulnerabilities for Microsoft Edge have been responsibly reported by professional security researchers who work with the Microsoft Security Response Center (MSRC) and the Microsoft Edge team to ensure customers are protected well before any attacker might use these vulnerabilities in the wild. Even better, there is no evidence that any vulnerabilities have been exploited in the wild as zero-day attacks.
+However, many businesses worldwide have come under increasing threat of targeted attacks, where attackers are crafting specialized attacks against a specific business, attempting to take control of corporate networks and data. 
+Blocking all unwanted apps 
+Application Control is your best defense in a world where there are more than 300,000 new malware samples each day. As part of Windows 10, Device Guard is a combination of enterprise-related hardware and software security features that, when configured together, will lock a device down so that it can only run trusted applications that you define in your code integrity policies. If the app isn’t trusted it can’t run, period. 
+With hardware that meets basic requirements, it also means that even if an attacker manages to get control of the Windows kernel, he or she will be much less likely to be able to run malicious executable code. With appropriate hardware, Device Guard can use the new virtualization-based security in Windows 10 to isolate the Code Integrity service from the Microsoft Windows kernel itself. In this case, the Code Integrity service runs alongside the kernel in a Windows hypervisor-protected container.
+Device Guard protects threats that can expose personal or sensitive data to attack, including: 
+Exposure to new malware, for which the "signature" is not yet known
+Exposure to unsigned code (most malware is unsigned)
+Malware that gains access to the kernel and then, from within the kernel, captures sensitive information or damages the system
+DMA-based attacks, for example, attacks launched from a malicious device that read secrets from memory, making the enterprise more vulnerable to attack; and 
+Exposure to boot kits or to a physically present attacker at boot time.
+Threat Protection: Post-breach Detection and Response
+The GDPR includes explicit requirements for breach notification where a personal data breach means, “a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored or otherwise processed.”  
+As noted in the Windows Security Center white paper, Post Breach: Dealing with Advanced Threats, “Unlike pre-breach, post-breach assumes a breach has already occurred – acting as a flight recorder and Crime Scene Investigator (CSI). Post-breach provides security teams the information and toolset needed to identify, investigate, and respond to attacks that otherwise will stay undetected and below the radar.”
+In this section, we will look at how Windows 10 can help you meet your GDPR breach notification obligations. This starts with understanding the underlying threat data available to Microsoft that is gathered and analyzed for your benefit and how, through Windows Defender Advanced Threat Protection (ATP), that data can be critical to you.
+Insightful security telemetry
+For nearly two decades, Microsoft has been turning threats into useful intelligence that can help fortify our platform and protect customers. Today, with the immense computing advantages afforded by the cloud, we are finding new ways to use our rich analytics engines driven by threat intelligence to protect our customers. 
+By applying a combination of automated and manual processes, machine learning and human experts, we are able to create an Intelligent Security Graph that learns from itself and evolves in real-time, reducing our collective time to detect and respond to new incidents across our products.
+The scope of Microsoft’s threat intelligence spans, literally, billions of data points: 35 billion messages scanned monthly, 1 billion customers across enterprise and consumer segments accessing 200+ cloud services, and 14 billion authentications performed daily. All this data is pulled together on your behalf by Microsoft to create the Intelligent Security Graph that can help you protect your front door dynamically to stay secure, remain productive, and meet the requirements of the GDPR.
+Detecting attacks and forensic investigation
+Even the best endpoint defenses may be breached eventually, as cyberattacks become more sophisticated and targeted. 
+Windows Defender Advanced Threat Protection (ATP) helps you detect, investigate, and respond to advanced attacks and data breaches on your networks. GDPR expects you to protect against attacks and breaches through technical security measures to ensure the ongoing confidentiality, integrity, and availability of personal data.
 
 
