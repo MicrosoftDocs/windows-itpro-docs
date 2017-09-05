@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - RemoteAssistance
@@ -68,7 +68,7 @@ If you do not configure this policy setting, the user sees the default warning m
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Customize warning messages*
+-   GP English name: *Customize warning messages*
 -   GP name: *RA_Options*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
@@ -120,7 +120,7 @@ If you do not configure this setting, application-based settings are used.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn on session logging*
+-   GP English name: *Turn on session logging*
 -   GP name: *RA_Logging*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
@@ -180,7 +180,7 @@ If you enable this policy setting you should also enable appropriate firewall ex
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Configure Solicited Remote Assistance*
+-   GP English name: *Configure Solicited Remote Assistance*
 -   GP name: *RA_Solicit*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
@@ -263,7 +263,7 @@ Allow Remote Desktop Exception
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Configure Offer Remote Assistance*
+-   GP English name: *Configure Offer Remote Assistance*
 -   GP name: *RA_Unsolicit*
 -   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*

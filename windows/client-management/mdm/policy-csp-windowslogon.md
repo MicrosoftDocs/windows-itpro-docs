@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - WindowsLogon
@@ -62,7 +62,7 @@ If you disable or do not configure this policy setting, users can choose which a
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off app notifications on the lock screen*
+-   GP English name: *Turn off app notifications on the lock screen*
 -   GP name: *DisableLockScreenAppNotifications*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
@@ -112,7 +112,7 @@ If you disable or don't configure this policy setting, any user can disconnect t
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Do not display network selection UI*
+-   GP English name: *Do not display network selection UI*
 -   GP name: *DontDisplayNetworkSelectionUI*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
