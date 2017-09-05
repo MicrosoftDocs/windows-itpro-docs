@@ -63,7 +63,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#Domains",
     "value": [
         {
-            "host": "www.walla.co.il"
+            "host": "www.example.com"
         }
     ]
 }

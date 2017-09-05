@@ -61,7 +61,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#microsoft.graph.InOrgDomainStats",
-    "host": "walla.com",
+    "host": "example.com",
     "orgPrevalence": "4070",
     "orgFirstSeen": "2017-07-30T13:23:48Z",
     "orgLastSeen": "2017-08-29T13:09:05Z"
