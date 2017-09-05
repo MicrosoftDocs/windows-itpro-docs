@@ -14,10 +14,15 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## September 2017
+|New or changed topic | Description|
+|--- | ---|
+|[Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)|New conceptual info about Windows 10 and the upcoming GDPR-compliance requirements.
+
 ## August 2017
 
-New or changed topic | Description
---- | ---
+|New or changed topic | Description|
+|--- | ---|
  [Windows Configuration Designer provisioning settings (reference)](wcd/wcd.md) | New section; reference content from [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990.aspx) is being relocated here from MSDN. 
 
 ## July 2017
