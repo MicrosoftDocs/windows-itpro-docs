@@ -206,7 +206,7 @@ Read more at [What’s new in the Windows Defender ATP Creators Update preview](
 
 To provide Detection capabilities, Windows 10 improves our OS memory and kernel sensors to enable detection of attackers who are employing in-memory and kernel-level attacks – shining a light into previously dark spaces where attackers hid from conventional detection tools. We’ve already successfully leveraged this new technology against zero-days attacks on Windows.
 
-![Image of Windows Defender Security Center](images/gdpr-security-center.png)
+![Windows Defender Security Center](images/gdpr-security-center.png)
 
 We continue to upgrade our detections of ransomware and other advanced attacks, applying our behavioral and machine-learning detection library to counter changing attacks trends. Our historical detection capability ensures new detection rules apply to up to six months of stored data to detect attacks that previously went unnoticed. Customers can also add customized detection rules or IOCs to augment the detection dictionary.
 
@@ -216,61 +216,93 @@ Our alert page now includes a new process tree visualization that aggregates mul
 
 Security Operations (SecOps) can hunt for evidence of attacks, such as file names or hashes, IP addresses or URLs, behaviors, machines, or users. They can do this immediately by searching the organization’s cloud inventory, across all machines – and going back up to 6 months in time – even if machines are offline, have been reimaged, or no longer exist.
 
-![Image of Windows Defender Security Center - User screen](images/gdpr-security-center2.png)
+![Windows Defender Security Center - User screen](images/gdpr-security-center2.png)
 
 When detecting an attack, security teams can now take immediate action: isolate machines, ban files from the network, kill or quarantine running processes or files, or retrieve an investigation package from a machine to provide forensic evidence – with a click of a button. Because while detecting advanced attacks is important – shutting them down is even more so.
 
-![Image of Windows Defender Security Center - Machine screen](images/gdpr-security-center3.png)
+![Windows Defender Security Center - Machine screen](images/gdpr-security-center3.png)
 
 ### Identity Protection
-Identify and access management is another area where the GDPR has placed special emphasis by calling for mechanisms to grant and restrict access to data subject personal data (e.g., role-based access, segregation of duties).
+Identify and access management is another area where the GDPR has placed special emphasis by calling for mechanisms to grant and restrict access to data subject personal data (for example, role-based access, segregation of duties).
 
 #### Multi-factor protection 
-Biometric authentication – using your face, iris, or fingerprint to unlock your devices – is much safer than traditional passwords. You– uniquely you– plus your device are the keys to your apps, data and even websites and services – not a random assortment of letters and numbers that are easily forgotten, hacked, or written down and pinned to a bulletin board. 
-Your ability to protect personal and sensitive data, that may be stored or accessed through desktop or laptops will be further enhanced by adopting advanced authentication capabilities such as Windows Hello and Windows Hello Companions. Windows Hello, part of Windows 10, gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password. 
+Biometric authentication – using your face, iris, or fingerprint to unlock your devices – is much safer than traditional passwords. You– uniquely you– plus your device are the keys to your apps, data, and even websites and services – not a random assortment of letters and numbers that are easily forgotten, hacked, or written down and pinned to a bulletin board.
+
+Your ability to protect personal and sensitive data, that may be stored or accessed through desktop or laptops will be further enhanced by adopting advanced authentication capabilities such as Windows Hello and Windows Hello Companions. Windows Hello, part of Windows 10, gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password.
+
 In conjunction with Windows Hello, biometric authentication uses fingerprints or facial recognition and is more secure, more personal, and more convenient. If an application supports Hello, Windows 10 enables you to authenticate applications, enterprise content, and even certain online experiences without a password being stored on your device or in a network server at all.
-Windows Hello works with the Companion Device Framework to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (e.g., if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device, for example).
-There are numerous ways one can use the Windows Hello companion device framework to build a great Windows unlock experience with a companion device. For example, users could:
-•	Work offline (e.g., while traveling on a plane)
-•	Attach their companion device to PC via USB, touch the button on the companion device, and automatically unlock their PC.
-•	Carry a phone in their pocket that is already paired with their PC over Bluetooth. Upon hitting the spacebar on their PC, their phone receives a notification. Approve it and the PC simply unlocks.
-•	Tap their companion device to an NFC reader to quickly unlock their PC.
-•	Wear a fitness band that has already authenticated the wearer. Upon approaching PC, and by performing a special gesture (like clapping), the PC unlocks.
+Windows Hello works with the Companion Device Framework to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (for exmaple, if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device).
+
+There are numerous ways one can use the Windows Hello companion device framework to build a great Windows unlock experience with a companion device. For example, users can:
+
+- Work offline (for example, while traveling on a plane)
+
+- Attach their companion device to PC via USB, touch the button on the companion device, and automatically unlock their PC.
+
+- Carry a phone in their pocket that is already paired with their PC over Bluetooth. Upon hitting the spacebar on their PC, their phone receives a notification. Approve it and the PC simply unlocks.
+
+- Tap their companion device to an NFC reader to quickly unlock their PC.
+
+- Wear a fitness band that has already authenticated the wearer. Upon approaching PC, and by performing a special gesture (like clapping), the PC unlocks.
 
 #### Protection against attacks by isolating user credentials
-As noted in the Windows 10 Credential Theft Mitigation Guide, “the tools and techniques criminals use to carry out credential theft and reuse attacks improve, malicious attackers are finding it easier to achieve their goals. Credential theft often relies on operational practices or user credential exposure, so effective mitigations require a holistic approach that addresses people, processes, and technology. In addition, these attacks rely on the attacker stealing credentials after compromising a system to expand or persist access, so organizations must contain breaches rapidly by implementing strategies that prevent attackers from moving freely and undetected in a compromised network.”
+As noted in the [Windows 10 Credential Theft Mitigation Guide](https://www.microsoft.com/en-us/download/confirmation.aspx?id=54095), “_the tools and techniques criminals use to carry out credential theft and reuse attacks improve, malicious attackers are finding it easier to achieve their goals. Credential theft often relies on operational practices or user credential exposure, so effective mitigations require a holistic approach that addresses people, processes, and technology. In addition, these attacks rely on the attacker stealing credentials after compromising a system to expand or persist access, so organizations must contain breaches rapidly by implementing strategies that prevent attackers from moving freely and undetected in a compromised network._”
+
 An important design consideration for Windows 10 was mitigating credential theft—in particular, derived credentials. Credential Guard provides significantly improved security against derived credential theft and reuse by implementing a significant architectural change in Windows designed to help eliminate hardware-based isolation attacks rather than simply trying to defend against them.
+
 When Credential Manager domain credentials, NTLM, and Kerberos derived credentials are protected using virtualization-based security, the credential theft attack techniques and tools used in many targeted attacks are blocked. Malware running in the operating system with administrative privileges cannot extract secrets that are protected by virtualization-based security. While Credential Guard is a powerful mitigation, persistent threat attacks will likely shift to new attack techniques and you should also incorporate Device Guard, as described above, and other security strategies and architectures.
 
 ### Information Protection
 The GDPR is focused on information protection regarding data that is considered as personal or sensitive in relation to a natural person, or data subject. Device protection, protection against threats, and identity protection are all important elements of a Defense in Depth strategy surrounding a layer of information protection in your laptop and desktop systems.
+
 As to the protection of data, the GDPR recognizes that in assessing data security risk, consideration should be given to the risks that are presented such as accidental loss, unauthorized disclosure of, or access to, personal data transmitted, stored or otherwise processed. It also recommends that measures taken to maintain an appropriate level of security should consider the state-of-the-art and the costs of implementation in relation to the risks among other factors.
+
 Windows 10 provides built in risk mitigation capabilities for today’s threat landscape. In this section, we will look at the types of technologies that will help your journey toward GDPR compliance and at the same time provide you with solid overall data protection as part of a comprehensive information protection strategy.
 
+![Diagram of Microsoft's comprehensive information protection strategy](images/gdpr-comp-info-protection.png)
+
 #### Encryption for lost or stolen devices
-The GDPR calls for mechanisms that implement appropriate technical security measures to confirm the ongoing confidentiality, integrity, and availability of both personal data and processing systems. BitLocker Drive Encryption, first introduced as part of Microsoft's Next-Generation Secure Computing Base architecture in 2004 and made available with Windows Vista, is a built-in data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
+The GDPR calls for mechanisms that implement appropriate technical security measures to confirm the ongoing confidentiality, integrity, and availability of both personal data and processing systems. BitLocker Encryption, first introduced as part of Microsoft's Next-Generation Secure Computing Base architecture in 2004 and made available with Windows Vista, is a built-in data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
+
 BitLocker provides the most protection when used with a Trusted Platform Module (TPM) version 1.2 or later. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to protect user data and to ensure that a computer has not been tampered with while the system was offline. 
+
 Data on a lost or stolen computer is vulnerable to unauthorized access, either by running a software-attack tool against it or by transferring the computer's hard disk to a different computer. BitLocker helps mitigate unauthorized data access by enhancing file and system protections. BitLocker also helps render data inaccessible when BitLocker-protected computers are decommissioned or recycled.
+
 Related to BitLocker are Encrypted Hard Drives, a new class of hard drives that are self-encrypting at a hardware level and allow for full disk hardware encryption. Encrypted Hard Drives use the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
+
 By offloading the cryptographic operations to hardware, Encrypted Hard Drives increase BitLocker performance and reduce CPU usage and power consumption. Because Encrypted Hard Drives encrypt data quickly, enterprise devices can expand BitLocker deployment with minimal impact on productivity.
-Some of the benefits of Encrypted Hard Drives include: 
-•	Better performance: Encryption hardware, integrated into the drive controller, allows the drive to operate at full data rate with no performance degradation.
-•	Strong security based in hardware: Encryption is always "on" and the keys for encryption never leave the hard drive. User authentication is performed by the drive before it will unlock, independently of the operating system
-•	Ease of use: Encryption is transparent to the user because it is on by default. There is no user interaction needed to enable encryption. Encrypted Hard Drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
-•	Lower cost of ownership: There is no need for new infrastructure to manage encryption keys, since BitLocker leverages your Active Directory Domain Services infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
+
+Some of the benefits of Encrypted Hard Drives include:
+
+- **Better performance.** Encryption hardware, integrated into the drive controller, allows the drive to operate at full data rate with no performance degradation.
+
+- **Strong security based in hardware.** Encryption is always "on" and the keys for encryption never leave the hard drive. User authentication is performed by the drive before it will unlock, independently of the operating system
+
+- **Ease of use.** Encryption is transparent to the user because it is on by default. There is no user interaction needed to enable encryption. Encrypted Hard Drives are easily erased using on-board encryption key; there is no need to re-encrypt data on the drive.
+
+- **Lower cost of ownership.** There is no need for new infrastructure to manage encryption keys, since BitLocker leverages your Active Directory Domain Services infrastructure to store recovery information. Your device operates more efficiently because processor cycles do not need to be used for the encryption process.
 
 #### Preventing accidental data leaks to unauthorized users
 Part of the reality of your operating in a mobile-first, cloud-first world is the notion that some laptops will have multiple purposes – both business and personal. Yet that data that is considered as personal and sensitive regarding EU residents considered as “data subjects” must be protected in line with the requirements of the GDPR.
+
 Windows Information Protection helps people separate their work and personal data and keeps data encrypted wherever it’s stored. Your employees can safely use both work and personal data on the same device without switching applications. Windows Information Protection helps end users avoid inadvertent data leaks by sending a warning when copy/pasting information in non-corporate applications – end users can still proceed but the action will be logged centrally. 
+
 For example, employees can’t send protected work files from a personal email account instead of their work account. They also can’t accidently post personal or sensitive data from a corporate site into a tweet. Windows Information Protection also helps ensure that they aren’t saving personal or sensitive data in a public cloud storage location. 
 
 #### Capabilities to classify, assign permissions and share data
 Windows Information Protection is designed to coexist with advanced data loss prevention (DLP) capabilities found in Office 365 ProPlus, Azure Information Protection, and Azure Rights Management. Advanced DLP prevents printing, for example, or protects work data that is emailed outside your company. 
+
 To protect data at all times, regardless of where it is stored, with whom it is shared, or if the device is running iOS, Android or Windows, the classification and protection needs to be built into the file itself so this protection can travel with the data wherever it goes.  Microsoft Azure Information Protection (AIP) is designed to provide this persistent data protection both on-premises and in the cloud.
-Data classification is an important part of any data governance plan. Adopting a classification scheme that applies throughout your business can be particularly helpful in responding to what the GDPR calls data subject (i.e., your EU employee or customer) requests, because it enables enterprises to identify more readily and process personal data requests.   
+
+Data classification is an important part of any data governance plan. Adopting a classification scheme that applies throughout your business can be particularly helpful in responding to what the GDPR calls data subject (for example, your EU employee or customer) requests, because it enables enterprises to identify more readily and process personal data requests.   
+
 Azure Information Protection can be used to help you classify and label your data at the time of creation or modification. Protection in the form of encryption, which the GDPR recognizes may be appropriate at times, or visual markings can then be applied to data needing protection. 
+
 With Azure Information Protection, you can either query for data marked with a sensitivity label or intelligently identify sensitive data when a file or email is created or modified. Once identified, you can automatically classify and label the data – all based on the company’s desired policy. 
+
 Azure Information Protection also helps your users share sensitive data in a secure manner. In the example below, information about a sensitive acquisition was encrypted and restricted to a group of people who were granted only a limited set of permissions on the information – they could modify the content but could not copy or print it.
+
+![Azure Information Protection screen with limitations](images/gdpr-azure-info-protection.png)
 
 ## Related resources for Windows 10 and the GDPR
 - Windows 10 Security Guide: https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-10-security-guide 
