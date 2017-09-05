@@ -179,6 +179,43 @@ ms.date: 08/30/2017
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
+<a href="" id="update-allowautowindowsupdatedownloadovermeterednetwork"></a>**Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Option to download updates automatically over metered connections (off by default). Value type is integer.  
+
+- 0 (default) - Not allowed
+- 1 - Allowed
+
+A significant number of devices primarily use cellular data and do not have Wi-Fi access, which leads to a lower number of devices getting updates. Since a large number of devices have large data plans or unlimited data, this policy can unblock devices from getting updates.
+
+This policy is accessible through the Update setting in the user interface or Group Policy.
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
 
 <!--StartSKU-->

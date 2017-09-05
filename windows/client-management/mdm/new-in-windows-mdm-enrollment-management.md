@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/25/2017
+ms.date: 08/31/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -999,6 +999,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
+<li>Games/AllowAdvancedGamingServices</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1043,6 +1044,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 <li>Update/DisableDualScan</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
@@ -1421,6 +1423,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Browser/ProvisionFavorites</li>
 <li>Browser/LockdownFavorites</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
+<li>Games/AllowAdvancedGamingServices</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1448,6 +1451,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Privacy/EnableActivityFeed</li>
 <li>Privacy/PublishUserActivities</li>
 <li>Update/DisableDualScan</li>
+<li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 </ul>
 <p>Changed the name of new policy to CredentialProviders/DisableAutomaticReDeploymentCredentials from CredentialProviders/EnableWindowsAutoPilotResetCredentials.</p>
 <p>Changed the names of the following policies:</p>
