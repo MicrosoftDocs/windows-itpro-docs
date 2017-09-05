@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01/2017
+ms.date: 09/05/2017
 ---
 # Investigate a domain associated with a Windows Defender ATP alert
 
