@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Experiment with custom threat intelligence (TI) alerts
@@ -22,6 +23,7 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 With the Windows Defender ATP threat intelligence API, you can create custom threat intelligence alerts that can help you keep track of possible attack activities in your organization.  
 

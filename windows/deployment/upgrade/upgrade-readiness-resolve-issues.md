@@ -2,7 +2,7 @@
 title: Upgrade Readiness - Resolve application and driver issues (Windows 10)
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Readiness.
 ms.prod: w10
-author: greg-lindsay
+author: jaimeo
 ---
 
 # Upgrade Readiness - Step 2: Resolve app and driver issues
@@ -14,8 +14,8 @@ This section of the Upgrade Readiness workflow reports application and driver in
 The blades in the **Step 2: Resolve issues** section are:
 
 - [Review applications with known issues](#review-applications-with-known-issues)
-- [Review applications with no known issues](#review-applications-with-no-known-issues)
 - [Review known driver issues](#review-known-driver-issues)
+- [Review low-risk apps and drivers](#review-low-risk-apps-and-drivers)
 - [Prioritize app and driver testing](#prioritize-app-and-driver-testing)
 
 >You can change an application’s upgrade decision and a driver’s upgrade decision from the blades in this section. To change an application’s or a driver’s importance level, select **User changes**. Select the item you want to change and then select the appropriate option from the **Select upgrade decision** list.
@@ -48,7 +48,7 @@ To change an application's upgrade decision:
 4. Select the applications you want to change to a specific upgrade decision and then then select the appropriate option from the **Select upgrade decision** list.
 5. Click **Save** when finished.  
 
-IMORTANT: Ensure that you have the most recent versions of the compatibility update and related KBs installed to get the most up-to-date compatibility information.
+IMPORTANT: Ensure that you have the most recent versions of the compatibility update and related KBs installed to get the most up-to-date compatibility information.
 
 For applications assessed as **Attention needed**, review the table below for details about known issues and for guidance about how to resolve them, when possible.
 
@@ -107,26 +107,6 @@ The following table lists possible values for **ReadyForWindows** and what they 
 |Adoption status available | NamePublisher | A Ready for Windows adoption status is available for one or more versions of this application. Please check Ready for Windows to learn more. |Check [Ready for Windows](https://www.readyforwindows.com/) for adoption information for this application.|
 | Unknown | Any | There is no Ready for Windows information available for this version of this application. Information may be available for other versions of the application at [Ready for Windows](https://www.readyforwindows.com/). | N/A |
 
-## Review applications with no known issues
-
-Applications with no issues known to Microsoft are listed, grouped by upgrade decision.
-
-![Review applications with no known issues](../images/upgrade-analytics-apps-no-known-issues.png)
-
-Applications with no known issues that are installed on 2% or less of your total computer inventory \[number of computers application is installed on/total number of computers in your inventory\] are automatically marked **Ready to upgrade** and included in the applications reviewed count. Applications with no known issues that are installed on more than 2% of your total computer inventory are automatically marked **Not reviewed**.
-
-Be sure to review low install count applications for any business critical or important applications that may not yet be upgrade-ready, despite their low installation rates. 
-
-To change an application's upgrade decision:
-
-1. Select **Decide upgrade readiness** to view applications with issues. Select **Table** to view the list in a table. 
-
-2. Select **User changes** to change the upgrade decision for each application.
-
-3. Select the applications you want to change to a specific upgrade decision and then then select the appropriate option from the **Select upgrade decision** list.
-
-4. Click **Save** when finished.  
-
 ## Review drivers with known issues
 
 Drivers that won’t migrate to the new operating system are listed, grouped by availability.
@@ -152,9 +132,30 @@ To change a driver’s upgrade decision:
 
 4.  Click **Save** when finished.
 
+## Review low-risk apps and drivers
+
+Applications and drivers that are meet certain criteria to be considered low risk are displayed on this blade.
+
+![Blade showing low-risk apps](../images/ua-step2-low-risk.png)
+
+The first row reports the number of your apps that have an official statement of support on Windows 10 from the software vendor, so you can be confident that they will work on your target operating system.
+
+The second row (**Apps that are "Highly adopted"**) shows apps that have a ReadyForWindows status of "Highly adopted". This means that they have been installed on at least 100,000 commercial Windows 10 devices, and that Microsoft has not detected significant issues with the app in telemetry. Since these apps are prevalent in the ecosystem at large, you can be confident that they will work in your environment as well.
+
+Each row of the blade uses a different criterion to filter your apps or drivers. You can view a list of applications that meet the criterion by clicking into a row of the blade. For example, if you click the row that says "Apps that are 'Highly adopted'", the result is a list of apps that have a ReadyForWindows status of "Highly adopted". From here, you can bulk-select the results, select **Ready to upgrade**, and then click **Save**.  This will mark all apps meeting the "Highly adopted" criterion as "Ready to upgrade"--no further validation is required. Any applications that you have marked as *Mission critical* or *Business critical* are filtered out, as well as any app that has an issue known to Microsoft. This allows you to work with apps in bulk without having to worry about missing a critical app.
+
+You can customize the criteria further by using the Log Search query language. For example, if a ReadyForWindows status of "Adopted" is not sufficient by itself for you to be confident in an app's compatibility, you can add additional filters. To do this, click the row labeled **Apps that are 'Adopted'**.  Then, modify the resulting query to fit your company's risk tolerance. If, for example, you prefer that an app must be "Adopted" and have fewer than 1,000 installations, then add *TotalInstalls < 1000* to the end of the Log Search query. Similarly, you can append additional criteria by using other attributes such as monthly active users or app importance.
+
+>[!NOTE]
+>Apps that you have designated as *Mission critical* or *Business critical* are automatically **excluded** from the counts on this blade. If an app is critical, you should always validate it manually it prior to upgrading.
+
+ At the bottom of the blade, the **OTHER APPS AND DRIVERS IN NEED OF REVIEW** section allows you to quickly access apps you have designated as **Mission critical** or **Business critical**, your remaining apps that still need to be reviewed, and your remaining drivers that need to be reviewed.
+
+
+
 ## Prioritize app and driver testing
 
-Planning and executing an OS upgrade project can be overwhelming.  When you are tasked with evaluating thousands of applications and drivers to ensure a successful upgrade, it can be difficult to decide where to start. The Upgrade Readiness solution provides valuable assistance for you, helping to determine the most important apps and drivers to unblock and enabling you yo create a proposed action plan.   
+Planning and executing an OS upgrade project can be overwhelming. When you are tasked with evaluating thousands of applications and drivers to ensure a successful upgrade, it can be difficult to decide where to start. The Upgrade Readiness solution provides valuable assistance for you, helping to determine the most important apps and drivers to unblock and enabling you yo create a proposed action plan.   
 
 ### Proposed action plan
 
