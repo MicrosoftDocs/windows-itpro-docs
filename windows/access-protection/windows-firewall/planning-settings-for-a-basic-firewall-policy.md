@@ -37,7 +37,7 @@ The following is a list of the firewall settings that you might consider for inc
 
 -   **Apply local connection security rules: No**. We recommend that you prevent users from creating and using their own connection security rules. Connection failures caused by conflicting rules can be difficult to troubleshoot.
 
--   **Logging**. We recommend that you enable logging to a file on the local hard disk. Be sure to limit the size, such as 4096 KB, to avoid causing performance problems by filling the user's hard disk. Be sure to specify a folder to which the Windows Firewall service account has write permissions.
+-   **Logging**. We recommend that you enable logging to a file on the local hard disk. Be sure to limit the size, such as 4096 KB, to avoid causing performance problems by filling the user's hard disk. Be sure to specify a folder to which the Windows Defender Firewall with Advanced Security service account has write permissions.
 
 -   **Inbound rules**. Create inbound rules for programs that must be able to receive unsolicited inbound network packets from another device on the network. Make the rules as specific as possible to reduce the risk of malicious programs exploiting the rules. For example, specify both program and port numbers. Specifying a program ensures that the rule is only active when the program is actually running, and specifying the port number ensures that the program cannot receive unexpected traffic on a different port.
 

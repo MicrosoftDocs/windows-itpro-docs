@@ -7,16 +7,13 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
+ms.date: 08/23/2017
 author: greg-lindsay
 ---
 
 # Configure VDA for Windows 10 Subscription Activation
 
-<<<<<<< HEAD
-This document describes how to configure virtual machines (VMs) to enable [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based license.
-=======
 This document describes how to configure virtual machines (VMs) to enable [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based licensing mechanism for managing access to virtual desktops.
->>>>>>> 9cfade7b4735548209a42a177179689a7e522ec6
 
 ## Requirements
 

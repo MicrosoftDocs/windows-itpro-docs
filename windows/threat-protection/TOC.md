@@ -143,9 +143,46 @@
 #### [Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV](windows-defender-antivirus\use-wmi-windows-defender-antivirus.md)
 #### [Use the mpcmdrun.exe commandline tool to configure and manage Windows Defender AV](windows-defender-antivirus\command-line-arguments-windows-defender-antivirus.md)
 
+
+
+## [Windows Defender Exploit Guard](windows-defender-exploit-guard\windows-defender-exploit-guard.md)
+### [Evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\evaluate-windows-defender-exploit-guard.md)
+#### [Use auditing mode to evaluate Windows Defender Exploit Guard](windows-defender-exploit-guard\audit-windows-defender-exploit-guard.md)
+#### [View Exploit Guard events](windows-defender-exploit-guard\event-views-exploit-guard.md)
+
+### [Exploit Protection](windows-defender-exploit-guard\exploit-protection-exploit-guard.md)
+#### [Comparison with Enhanced Mitigation Experience Toolkit](windows-defender-exploit-guard\emet-exploit-protection-exploit-guard.md)
+#### [Evaluate Exploit Protection](windows-defender-exploit-guard\evaluate-exploit-protection.md)
+#### [Enable Exploit Protection](windows-defender-exploit-guard\enable-exploit-protection.md)
+#### [Customize Exploit Protection](windows-defender-exploit-guard\customize-exploit-protection.md)
+##### [Import, export, and deploy Exploit Protection configurations](windows-defender-exploit-guard\import-export-exploit-protection-emet-xml.md)
+### [Attack Surface Reduction](windows-defender-exploit-guard\attack-surface-reduction-exploit-guard.md)
+#### [Evaluate Attack Surface Reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
+#### [Enable Attack Surface Reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
+#### [Customize Attack Surface Reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
+#### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
+#### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
+### [Controlled Folder Access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md)
+#### [Evaluate Controlled Folder Access](windows-defender-exploit-guard\evaluate-controlled-folder-access.md)
+#### [Enable Controlled Folder Access](windows-defender-exploit-guard\enable-controlled-folders-exploit-guard.md)
+#### [Customize Controlled Folder Access](windows-defender-exploit-guard\customize-controlled-folders-exploit-guard.md)
+
+
+
+
+
+
 ## [Windows Defender SmartScreen](windows-defender-smartscreen\windows-defender-smartscreen-overview.md)
 ### [Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings](windows-defender-smartscreen\windows-defender-smartscreen-available-settings.md)
 ### [Set up and use Windows Defender SmartScreen on individual devices](windows-defender-smartscreen\windows-defender-smartscreen-set-individual-device.md)
+
+##[Windows Defender Application Guard](windows-defender-application-guard\wd-app-guard-overview.md)
+###[System requirements for Windows Defender Application Guard](windows-defender-application-guard\reqs-wd-app-guard.md)
+###[Prepare and install Windows Defender Application Guard](windows-defender-application-guard\install-wd-app-guard.md)
+###[Configure the Group Policy settings for Windows Defender Application Guard](windows-defender-application-guard\configure-wd-app-guard.md)
+###[Testing scenarios using Windows Defender Application Guard in your business or organization](windows-defender-application-guard\test-scenarios-wd-app-guard.md)
+###[Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard\faq-wd-app-guard.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
 ### [Create a Windows Information Protection (WIP) policy](windows-information-protection\overview-create-wip-policy.md)

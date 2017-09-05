@@ -49,6 +49,6 @@ You can use Windows PowerShell to create a script file that can collect the syst
 
 Whether you use an automatic, manual, or hybrid option to gather the information, one of the biggest issues that can cause problems to the design is capturing the changes between the original inventory scan and the point at which the implementation is ready to start. After the first scan has been completed, make support staff aware that all additional changes must be recorded and the updates noted in the inventory.
 
-This inventory will be critical for planning and implementing your Windows Firewall with Advanced Security design.
+This inventory will be critical for planning and implementing your Windows Defender Firewall design.
 
 **Next: **[Gathering Other Relevant Information](gathering-other-relevant-information.md)

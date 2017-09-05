@@ -1,6 +1,6 @@
 ---
-title: Planning to Deploy Windows Firewall with Advanced Security (Windows 10)
-description: Planning to Deploy Windows Firewall with Advanced Security
+title: Planning to Deploy Windows Defender Firewall with Advanced Security (Windows 10)
+description: Planning to Deploy Windows Defender Firewall with Advanced Security
 ms.assetid: 891a30c9-dbf5-4a88-a279-00662b9da48e
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,19 +9,19 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Planning to Deploy Windows Firewall with Advanced Security
+# Planning to Deploy Windows Defender Firewall with Advanced Security
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-After you collect information about your environment and decide on a design by following the guidance in the [Windows Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md), you can begin to plan the deployment of your design. With the completed design and the information in this topic, you can determine which tasks to perform to deploy Windows Firewall with Advanced Security in your organization.
+After you collect information about your environment and decide on a design by following the guidance in the [Windows Defender Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md), you can begin to plan the deployment of your design. With the completed design and the information in this topic, you can determine which tasks to perform to deploy Windows Defender Firewall with Advanced Security in your organization.
 
-## Reviewing your Windows Firewall with Advanced Security Design
+## Reviewing your Windows Defender Firewall with Advanced Security Design
 
-If the design team that created the Windows Firewall with Advanced Security design for your organization is different from the deployment team that will implement it, make sure that the deployment team reviews the final design with the design team. Review the following points:
+If the design team that created the Windows Defender Firewall design for your organization is different from the deployment team that will implement it, make sure that the deployment team reviews the final design with the design team. Review the following points:
 
--   The design team's strategy for determining how WMI and security group filters attached to the GPOs will determine which devices apply to which GPO. The deployment team can refer to the following topics in the Windows Firewall with Advanced Security Design Guide:
+-   The design team's strategy for determining how WMI and security group filters attached to the GPOs will determine which devices apply to which GPO. The deployment team can refer to the following topics in the Windows Defender Firewall with Advanced Security Design Guide:
 
     -   [Planning Isolation Groups for the Zones](planning-isolation-groups-for-the-zones.md)
 
@@ -45,4 +45,4 @@ If the design team that created the Windows Firewall with Advanced Security desi
 
     If at least one set of each does not match between two devices, then the devices cannot successfully communicate.
 
-After the design and deployment teams agree on these issues, they can proceed with the deployment of the Windows Firewall with Advanced Security design. For more information, see [Implementing Your Windows Firewall with Advanced Security Design Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md).
+After the design and deployment teams agree on these issues, they can proceed with the deployment of the Windows Defender Firewall design. For more information, see [Implementing Your Windows Defender Firewall with Advanced Security Design Plan](implementing-your-windows-firewall-with-advanced-security-design-plan.md).
