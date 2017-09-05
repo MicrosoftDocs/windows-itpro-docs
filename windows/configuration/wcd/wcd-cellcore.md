@@ -12,7 +12,7 @@ ms.date: 08/21/2017
 
 # CellCore (Windows Configuration Designer reference)
 
-Use to configure settings for celluar data.
+Use to configure settings for cellular data.
 
 ## Applies to
 
@@ -32,7 +32,13 @@ Use to configure settings for celluar data.
  PerDevice: [SMS](#sms) (all settings) | X | X | X | X | X 
  PerDevice: [UIX](#uix) (all settings) |  | X |  |  |
  PerDevice: [UTK](#utk) (all settings) |  | X |  |  |
- [PerlMSI](#perlmsi) | X | X | X | X | X 
+ PerlMSI: [CellData](#celldata2) |  | X |  |  |
+ PerIMSI: [CellUX](#cellux2) |  | X |  |  |
+ PerIMSI: [General](#general2) |  | X |  |  |
+ PerIMSI: [RCS](#rcs2) |  | X |  |  |
+ PerIMSI: [SMS](#sms2) | X | X | X | X | X
+ PerIMSI: [UTK](#utk2) |  | X |  |  |
+ PerIMSI: [VoLTE](#volte) |  | X |  |  |
 
 
 ## PerDevice
@@ -125,6 +131,28 @@ SuppressDePersoUI |
 ### SMS
 
 ## PerlMSI
+ 
+
+<span id="celldata2" />
+### CellData
+
+<span id="cellux2" />
+### CellUX
+
+<span id="general2" />
+### General
+
+<span id="rcs2" />
+### RCS
+
+<span id="sms2" />
+### SMS
+
+<span id="utk2" />
+### UTK
+
+
+### VoLTE
 
 
 <span id="errorreject />
