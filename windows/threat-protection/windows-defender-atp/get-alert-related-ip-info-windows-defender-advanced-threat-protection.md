@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/05/2017
 ---
 
-# Get alert related domain information 
+# Get alert related IP information 
 Retrieves all IPs related to a specific alert.
 
 ## Permissions

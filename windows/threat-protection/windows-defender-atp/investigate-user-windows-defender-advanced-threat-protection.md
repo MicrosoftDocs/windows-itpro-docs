@@ -24,16 +24,6 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-# Investigate a user account in Windows Defender ATP
-
-**Applies to:**
-
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
 ## Investigate user account entities
 Identify user accounts with the most active alerts (displayed on dashboard as "Users at risk") and investigate cases of potential compromised credentials, or pivot on the associated user account when investigating an alert or machine to identify possible lateral movement between machines with that user account.
 

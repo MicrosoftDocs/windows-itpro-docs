@@ -1,6 +1,6 @@
 ---
 title: Get user related machines API
-description: Retrieves a collection of alerts related to a given user ID.
+description: Retrieves a collection of machines related to a given user ID.
 keywords: apis, graph api, supported apis, get, user, user related alerts
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -13,8 +13,8 @@ ms.localizationpriority: high
 ms.date: 09/05/2017
 ---
 
-# Get user related alerts
-Retrieves a collection of alerts related to a given user ID.
+# Get user related machines
+Retrieves a collection of machines related to a given user ID.
 
 ## Permissions
 User needs read permissions.

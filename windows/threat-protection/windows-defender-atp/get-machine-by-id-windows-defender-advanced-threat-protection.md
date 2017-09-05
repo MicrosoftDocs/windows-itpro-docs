@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/05/2017
 ---
 
-# Get machines 
+# Get machine by ID
 Retrieves a machine entity by ID.
 
 ## Permissions

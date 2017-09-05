@@ -1,6 +1,6 @@
 ---
 title: Supported Windows Defender Advanced Threat Protection APIs  
-description: Use the exposed data and actions using a set of progammatic APIs that are part of the Microsoft Intelligence Security Graph.
+description: Learn about the specific supported Windows Defender Advanced Threat Protection entities where you can create API calls to. 
 keywords: apis, graph api, supported apis, actor, alerts, machine, user, domain, ip, file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
