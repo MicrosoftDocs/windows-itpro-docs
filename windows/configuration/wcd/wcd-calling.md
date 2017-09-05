@@ -89,7 +89,7 @@ ProviderRegistration |
 
 
 Codes | Description | DWORD Value
---- | --- |
+--- | --- | --- 
 04 | CHANGEPIN | 000000F4
 042 | CHANGEPIN2 | 00000F42
 05 | UNBLOCKPIN | 000000F5
