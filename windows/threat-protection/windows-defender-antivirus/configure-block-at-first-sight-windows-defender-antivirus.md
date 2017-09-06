@@ -45,7 +45,7 @@ You can also [specify how long the file should be prevented from running](config
 
 When a Windows Defender Antivirus client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. 
 
-The Block at first sight feature only uses the cloud protection backend for executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the EXE file is checked via the cloud backend to determine if this is a previously undetected file.
+The Block at First Sight feature only uses the cloud protection backend for executable files that are downloaded from the Internet, or originating from the Internet zone. A hash value of the .exe file is checked via the cloud backend to determine if this is a previously undetected file.
 
  
 
