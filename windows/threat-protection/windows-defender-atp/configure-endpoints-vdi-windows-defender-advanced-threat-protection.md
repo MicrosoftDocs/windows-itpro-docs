@@ -26,7 +26,7 @@ Windows Defender ATP supports non-persistent VDI session onboarding. There might
 
 
 - Instant early onboarding of a short living session
-    - A session should be onboarded to Windows Defender ATP prior to the actual provisioning
+    - A session should be onboarded to Windows Defender ATP prior to the actual provisioning.
 
 - Machine name persistence
     - The machine names are typically reused for new sessions. One may ask to have them as a single machine entry while others may prefer to have multiple entries per machine name.
@@ -42,14 +42,14 @@ You can onboard VDI machines using a single entry or multiple entries for each m
 2. Copy the extracted files from the .zip into `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. You should have a folder called `WindowsDefenderATPOnboardingPackage` containing the file `WindowsDefenderATPOnboardingScript.cmd`.
 
     >[!NOTE]
-    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer.
+    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
 
 3. The following step is only applicable if you're implementing a single entry for each machine: <br>
     **For single entry for each machine**:<br>
         a. From the `WindowsDefenderATPOnboardingPackage`, copy the `Onboard-NonPersistentMachine.ps1` file to `golden/master` image to the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. <br>
 
     >[!NOTE]
-    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose to the **Show hidden files and folders** option from file explorer.
+    >If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from file explorer.
 
 4. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
 
