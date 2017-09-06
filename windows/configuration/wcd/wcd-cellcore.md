@@ -23,15 +23,15 @@ Use to configure settings for cellular data.
  PerDevice: [CellData](#celldata) MaxNumberOfPDPContexts |  | X |  |  |  
  PerDevice: [CellData](#celldata) ModemProfiles |  | X |  |  | 
  PerDevice: [CellData](#celldata) PersistAtImaging |  | X |  |  |  
- PerDevice: [CellUX](#cellux) (all settings) |  | X |  |  |
- PerDevice: [CGDual](#cgdual) (all settings) |  | X |  |  |
+ PerDevice: [CellUX](#cellux)  |  | X |  |  |
+ PerDevice: [CGDual](#cgdual)  |  | X |  |  |
  PerDevice: [eSim](#esim) | X | X | X | X | X
- PerDevice: [External](#external) (all settings) |  | X |  |  |
- PerDevice: [General](#general) (all settings) |  | X |  |  |
- PerDevice: [RCS](#rcs) (all settings) |  | X |  |  |
- PerDevice: [SMS](#sms) (all settings) | X | X | X | X | X 
- PerDevice: [UIX](#uix) (all settings) |  | X |  |  |
- PerDevice: [UTK](#utk) (all settings) |  | X |  |  |
+ PerDevice: [External](#external)  |  | X |  |  |
+ PerDevice: [General](#general)  |  | X |  |  |
+ PerDevice: [RCS](#rcs)  |  | X |  |  |
+ PerDevice: [SMS](#sms)  | X | X | X | X | X 
+ PerDevice: [UIX](#uix)  |  | X |  |  |
+ PerDevice: [UTK](#utk)  |  | X |  |  |
  PerlMSI: [CellData](#celldata2) |  | X |  |  |
  PerIMSI: [CellUX](#cellux2) |  | X |  |  |
  PerIMSI: [General](#general2) |  | X |  |  |
@@ -110,7 +110,7 @@ MMSAPNIPTypeIfHidden | Select between **IPV4**, **IPV6**, **IPV4V6**, and **IPV4
 ShowExtendedRejectCodes | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is only intended for use when required by the mobile operator’s network. The short versions of the extended reject message are shown in the following screens:</br></br>- Phone tile in Start</br></br>- Call History screen</br></br>- Dialer</br></br>- Call Progress screen</br></br>- Incoming Call screen</br></br>- As the status string under Settings > cellular+SIM</br></br></br>The long version of the extended reject message is shown under the Active Network label in Settings > cellular+SIM. Select **Yes** to show the extended error message. Select **No** to hide the extended error message. See [Error messages for reject codes](#errorreject) to see the versions of the message.
 ShowHighestSpeed3GPreferred | Select **Yes** to show the **3G Preferred** option in the **Highest connection speed** drop-down menu. Select **No** to hide **3G Preferred**.
 ShowManualAvoidance | Select **Yes** to show the **Switch to next network manually** button in SIMSettings when Mode Selection is CDMA on a C+G dual SIM phone. Select **No** to hide the **Switch to next network manually** button
-ShowPreferredPLMNPage | 
+ShowPreferredPLMNPage | public land mobile network (PLMN)
 ShowSpecificWifiCallingError |
 ShowViewAPN |
 ShowWifiCallingEmergencyCallWarning |
