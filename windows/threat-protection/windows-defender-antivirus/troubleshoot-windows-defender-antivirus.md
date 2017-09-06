@@ -185,7 +185,7 @@ The table in this section lists the main Windows Defender Antivirus client event
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="3"><b>%2</td>
+<td valign="top" rowspan="3"><b>Event ID: 1003</td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -1341,13 +1341,7 @@ Description of the error. </dt>
 <dt>Hashes: &lt;Hashes&gt;</dt>
 </dl>
 </p>
-</td>
-</tr>
-<tr>
-<td></td>
-<td colspan="2">
 <div class="alert"><b>Note</b>  This event will only be logged if the following policy is set: <b>ThreatFileHashLogging 	unsigned</b>.</div>
-<div> </div>
 </td>
 </tr>
 <tr>
@@ -2711,7 +2705,7 @@ Description of the error. </dt>
 </table>
 
 <a id="error-codes"></a>
-## Windows Defender client error codes
+## Windows Defender Antivirus client error codes
 If Windows Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
 This section provides the following information about Windows Defender Antivirus client errors.
 -   The error code
@@ -2719,6 +2713,8 @@ This section provides the following information about Windows Defender Antivirus
 -   Advice on what to do now
 
 Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
+  
+
 <table>
 <tr>
 <td colspan="4"><b>External error codes</b></td>
@@ -2741,8 +2737,7 @@ Use the information in these tables to help troubleshoot Windows Defender Antivi
 <td>
 <p>This error indicates that you might have run out of memory. 
 </p>
-</td>
-<td>
+<p><b>What to do now</b></p>
 <p>
 <ol>
 <li>Check the available memory on your device.</li>
@@ -2762,20 +2757,11 @@ Use the information in these tables to help troubleshoot Windows Defender Antivi
 </td>
 <td>
 <p>This error indicates that there might be a problem with your security product.</p>
-</td>
-<td valign="top" rowspan="4">
+<p><b>What to do now</b></p>
 <p>
 <ol>
-<li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
-</li>
-<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
-</li>
-</ol>
-</li>
-<li>Run a full scan.
-</li>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
 <li>Restart the device and try again.</li>
 </ol>
 </p>
@@ -2807,6 +2793,14 @@ data that does not allow the engine to function properly.
 <td>
 <p>This error indicates that Windows Defender failed to quarantine a threat. 
 </p>
+<p><b>What to do now</b></p>
+<p>
+<ol>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
+<li>Restart the device and try again.</li>
+</ol>
+</p>
 </td>
 </tr>
 <tr>
@@ -2820,6 +2814,14 @@ data that does not allow the engine to function properly.
 </td>
 <td>
 <p>This error indicates that a reboot is required to complete threat removal. 
+</p>
+<p><b>What to do now</b></p>
+<p>
+<ol>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
+<li>Restart the device and try again.</li>
+</ol>
 </p>
 </td>
 </tr>
@@ -2835,8 +2837,7 @@ data that does not allow the engine to function properly.
 <td>
 <p>This error indicates that the threat might no longer be present on the media, or malware might be stopping you from scanning your device. 
 </p>
-</td>
-<td>
+<p><b>What to do now</b></p>
 <p>Run the <a href="https://www.microsoft.com/security/scanner/default.aspx">Microsoft Safety Scanner</a> then update your security software and try again. 
 </p>
 </td>
@@ -2849,8 +2850,7 @@ data that does not allow the engine to function properly.
 <td valign="top" rowspan="2">
 <p>This error indicates that a full system scan might be required. 
 </p>
-</td>
-<td valign="top" rowspan="2">
+<p><b>What to do now</b></p>
 <p>Run a full system scan. 
 </p>
 </td>
@@ -2873,8 +2873,7 @@ data that does not allow the engine to function properly.
 <td>
 <p>This error indicates that manual steps are required to complete threat removal. 
 </p>
-</td>
-<td>
+<p><b>What to do now</b></p>
 <p>Follow the manual remediation steps outlined in the <a href="https://www.microsoft.com/security/portal/threat/Threats.aspx">Microsoft Malware Protection Encyclopedia</a>. You can find a threat-specific link in the event history.  
 </p>
 </td>
@@ -2891,8 +2890,7 @@ data that does not allow the engine to function properly.
 <td>
 <p>This error indicates that removal inside the container type might not be not supported. 
 </p>
-</td>
-<td>
+<p><b>What to do now</b></p>
 <p>Windows Defender is not able to remediate threats detected inside the archive. Consider manually removing the detected resources. 
 </p>
 </td>
@@ -2909,8 +2907,7 @@ data that does not allow the engine to function properly.
 <td>
 <p>This error indicates that removal of low and medium threats might be disabled. 
 </p>
-</td>
-<td>
+<p><b>What to do now</b></p>
 <p>Check the detected threats and resolve them as required. 
 </p>
 </td>
@@ -2927,8 +2924,7 @@ data that does not allow the engine to function properly.
 <td>
 <p>This error indicates a rescan of the threat is required. 
 </p>
-</td>
-<td>
+<p><b>What to do now</b></p>
 <p>Run a full system scan. 
 </p>
 </td>
@@ -2945,10 +2941,8 @@ data that does not allow the engine to function properly.
 <td>
 <p>This error indicates that an offline scan is required. 
 </p>
-</td>
-<td>
-<p>Run Windows Defender Offline. You can read about how to do this in the <a href="http://windows.microsoft.com/windows/what-is-windows-defender-offline">Windows Defender Offline 
-article</a>.</p>
+<p><b>What to do now</b></p>
+<p>Run [Windows Defender Offline](windows-defender-offline.md).</p>
 </td>
 </tr>
 <tr>
@@ -2963,8 +2957,7 @@ article</a>.</p>
 <td>
 <p>This error indicates that Windows Defender does not support the current version of the platform and requires a new version of the platform. 
 </p>
-</td>
-<td>
+<p><b>What to do now</b></p>
 <p>You can only use Windows Defender in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.  
 </p>
 </td>
@@ -2993,9 +2986,8 @@ The following error codes are used during internal testing of Windows Defender A
 </b></p>
 </td>
 <td>
-<p>Check your Internet connection, then run the scan again.</p>
-</td>
-<td>
+<p>Windows Defender Antivirus can't access the Internet.</p>
+<p><b>What to do now</b></p>
 <p>Check your Internet connection, then run the scan again.</p>
 </td>
 </tr>
@@ -3008,20 +3000,11 @@ The following error codes are used during internal testing of Windows Defender A
 </td>
 <td valign="top" rowspan="34">
 <p>This is an internal error. The cause is not clearly defined.</p>
-</td>
-<td valign="top" rowspan="36">
+<p><b>What to do now</b></p>
 <p>
 <ol>
-<li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
-</li>
-<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
-</li>
-</ol>
-</li>
-<li>Run a full scan.
-</li>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
 <li>Restart the device and try again.</li>
 </ol>
 </p>
@@ -3303,6 +3286,14 @@ The following error codes are used during internal testing of Windows Defender A
 <td>
 <p>This is an internal error. It might be triggered when malware removal is not successful. 
 </p>
+<p><b>What to do now</b></p>
+<p>
+<ol>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
+<li>Restart the device and try again.</li>
+</ol>
+</p>
 </td>
 </tr>
 <tr>
@@ -3316,6 +3307,14 @@ The following error codes are used during internal testing of Windows Defender A
 </td>
 <td>
 <p>This is an internal error. It might have triggered when a scan fails to complete. 
+</p>
+<p><b>What to do now</b></p>
+<p>
+<ol>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
+<li>Restart the device and try again.</li>
+</ol>
 </p>
 </td>
 </tr>
