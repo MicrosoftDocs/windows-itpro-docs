@@ -1312,7 +1312,7 @@ Description of the error. </dt>
 </td>
 </tr>
 <tr>
-<td valign="top" rowspan="4"><b>Event ID: 1120</b></td>
+<td valign="top" rowspan="3"><b>Event ID: 1120</b></td>
 <td>
 <p>Symbolic name:</p>
 </td>
@@ -2700,13 +2700,11 @@ This section provides the following information about Windows Defender AV client
 -   The possible reason for the error
 -   Advice on what to do now
 
-Use the information in these tables to help troubleshoot Windows Defender AV error codes.
+Use the information in these tables to help troubleshoot Windows Defender AV error codes.  
   
+### External error codes
 
 <table>
-<tr>
-<td colspan="4"><b>External error codes</b></td>
-</tr>
 <tr>
 <th>Error code</th>
 <th>Message displayed</th>
@@ -2959,13 +2957,11 @@ data that does not allow the engine to function properly.
 </tr>
 </table>
 
-<a id="internal-error-codes"></a>
-The following error codes are used during internal testing of Windows Defender AV.
+### Internal error codes
+
+The following error codes are used during internal testing of Windows Defender AV.  
 
 <table>
-<tr>
-<td colspan="4"><b>Internal error codes</b></td>
-</tr>
 <tr>
 <th>Error code</th>
 <th>Message displayed</th>
