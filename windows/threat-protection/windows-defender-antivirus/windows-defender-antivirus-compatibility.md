@@ -41,7 +41,7 @@ Windows 10 | A third-party product that is not offered or developed by Microsoft
 Windows 10 | Windows Defender AV | Yes | Active mode
 Windows 10 | Windows Defender AV | No | Active mode
 Windows 8 or earlier | A third-party product that is not offered or developed by Microsoft | N/A (Windows Defender ATP requires Windows 10) | N/A (Windows Defender AV requires Windows 10)
-Windows 8 or earlier | Windows Defender AV | Yes | Active mode
+Windows 8 or earlier | System Center Endpoint Protection (offered by System Center Configuration Manager) | Yes | Active mode
 Windows 8 or earlier | Windows Defender AV | No | Active mode
 Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | Yes | Passive mode
 Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | No | Disabled mode
