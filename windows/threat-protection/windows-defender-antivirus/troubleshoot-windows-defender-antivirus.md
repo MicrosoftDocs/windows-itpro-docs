@@ -2488,29 +2488,14 @@ or Hang</dt>
 </td>
 <td colspan="2">
 <p>To troubleshoot this event:<ol>
-<li>Try to restart the service.<ul>
+<li>Try to restart the service:<ul>
 <li>For antimalware, antivirus and spyware, at an elevated command prompt, type <b>net stop msmpsvc</b>, and then type <b>net start msmpsvc</b> to restart the antimalware engine.</li>
 <li>For the <i>Network Inspection System</i>, at an elevated command prompt, type <b>net start nissrv</b>, and then type <b>net start nissrv</b> to restart the <i>Network Inspection System</i> engine by using the NiSSRV.exe file.
 </li>
 </ul>
 </li>
-<li>If it fails in the same way, look up the error code by accessing the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.</li>
-</ol>
-</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>User action:</p>
-</td>
-<td colspan="2">
-<p>The Windows Defender AV client engine stopped due to an unexpected error.</p>
-<p>To troubleshoot this event:
-<ol>
 <li>Run the scan again.</li>
-<li>If it fails in the same way, go to the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support site</a>, enter the error number in the <b>Search</b> box to look for the error code.</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
-</li>
+<li>If it fails in the same way, look up the error code by accessing the <a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft Support Site</a>  and entering the error number in the <b>Search</b> box, and contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.</li>
 </ol>
 </p>
 </td>
