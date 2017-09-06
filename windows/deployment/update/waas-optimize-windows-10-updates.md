@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
 ---
 
@@ -47,7 +47,10 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 
 ## Express update delivery
 
-Windows 10 update downloads can be large because every package contains all previously released fixes to ensure consistency and simplicity. Windows has been able to reduce the size of Windows Update downloads with a feature called Express.
+Windows 10 quality update downloads can be large because every package contains all previously released fixes to ensure consistency and simplicity. Windows has been able to reduce the size of Windows Update downloads with a feature called Express.
+
+>[!NOTE]
+>Currently, Express update delivery only applies to quality update downloads.
 
 ### How Microsoft supports Express
 - **Express on System Center Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or 1607 with the April 2017 cumulative update.
@@ -83,10 +86,10 @@ At this point, the download is complete and the update is ready to be installed.
 
 | | |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing branches](waas-overview.md) |
+| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
 | ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) |
+| ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this topic) |
 | ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) |
 

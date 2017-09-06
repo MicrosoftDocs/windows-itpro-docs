@@ -1,10 +1,10 @@
 ---
 title: Windows 10 Enterprise FAQ for IT pros (Windows 10)
 description: Get answers to common questions around compatibility, installation, and support for Windows 10 Enterprise.
-keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage udpates, Windows as a service, servicing branches, deployment tools
+keywords: Windows 10 Enterprise, download, system requirements, drivers, appcompat, manage udpates, Windows as a service, servicing channels, deployment tools
 ms.prod: w10
 ms.mktglfcycl: plan
-localizationpriority: high
+ms.localizationpriority: high
 ms.sitesec: library
 author: 
 ---
@@ -80,9 +80,9 @@ The Windows 10 operating system introduces a new way to build, deploy, and servi
 
 Traditional Windows servicing has included several release types: major revisions (e.g., the Windows 8.1, Windows 8, and Windows 7 operating systems), service packs, and monthly updates. With Windows 10, there are two release types: feature updates that add new functionality two to three times per year, and quality updates that provide security and reliability fixes at least once a month.
 
-### What are the servicing branches?
+### What are the servicing channels?
 
-To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing branches to allow customers to designate how aggressively their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. With that in mind, Microsoft offers three servicing branches for Windows 10: Current Branch (CB), Current Branch for Business (CBB), and Long-Term Servicing Branch (LTSB). For details about the versions in each servicing branch, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). For more information on each branch, see [servicing branches](https://technet.microsoft.com/en-us/itpro/windows/manage/waas-overview#servicing-branches).
+To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing channels to allow customers to designate how aggressively their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. With that in mind, Microsoft offers two servicing channels for Windows 10: Semi-Annual Channel, and Long-Term Servicing Channel (LTSC). For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). For more information on each channel, see [servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
 
 ### What tools can I use to manage Windows as a service updates?
 
@@ -92,13 +92,13 @@ There are many tools are available. You can choose from these:
 - Windows Server Update Services
 - System Center Configuration Manager
 
-For more information on pros and cons for these tools, see [Servicing Tools](https://technet.microsoft.com/itpro/windows/manage/waas-overview#servicing-branches).
+For more information on pros and cons for these tools, see [Servicing Tools](/windows/deployment/update/waas-overview#servicing-tools).
 
 ## User experience
 
 ### Where can I find information about new features and changes in Windows 10 Enterprise?
 
-For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index) and [What's new in Windows 10, version 1703](https://tnstage.redmond.corp.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1703?branch=rs2) in the TechNet library. 
+For an overview of the new enterprise features in Windows 10 Enterprise, see [What's new in Windows 10](https://technet.microsoft.com/itpro/windows/whats-new/index) and [What's new in Windows 10, version 1703](/windows/whats-new/whats-new-windows-10-version-1703) in the Docs library. 
 
 Another place to track the latest information about new features of interest to IT professionals is the [Windows for IT Pros blog](https://blogs.technet.microsoft.com/windowsitpro/). Here you’ll find announcements of new features, information on updates to the Windows servicing model, and details about the latest resources to help you more easily deploy and manage Windows 10. 
 

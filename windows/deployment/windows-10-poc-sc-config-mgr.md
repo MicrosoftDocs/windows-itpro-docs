@@ -6,7 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, sccm
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 08/23/2017
 author: greg-lindsay
 ---
 
@@ -205,6 +206,10 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 ## Download MDOP and install DaRT
 
+>[!IMPORTANT]
+>This step requires an MSDN subscription or volume licence agreement. For more information, see [Ready for Windows 10: MDOP 2015 and more tools are now available](https://blogs.technet.microsoft.com/windowsitpro/2015/08/17/ready-for-windows-10-mdop-2015-and-more-tools-are-now-available/).
+>If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](https://blogs.msdn.microsoft.com/zainnab/2011/03/14/bizspark-free-msdn-subscription-for-start-up-companies/).
+
 1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/en-us/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
 
 2. Type the following command at an elevated Windows PowerShell prompt on the Hyper-V host to mount the MDOP file on SRV1:
@@ -234,8 +239,8 @@ This section contains several procedures to support Zero Touch installation with
 1. Type the following commands at a Windows PowerShell prompt on SRV1:
 
     ```
-    New-Item -ItemType Directory -Path "C:Sources\OSD\Boot"
-    New-Item -ItemType Directory -Path "C:Sources\OSD\OS"
+    New-Item -ItemType Directory -Path "C:\Sources\OSD\Boot"
+    New-Item -ItemType Directory -Path "C:\Sources\OSD\OS"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\Settings"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\Branding"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\MDT"
@@ -555,7 +560,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 1. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
     ```
-    New-Item -ItemType Directory -Path "C:Sources\OSD\OS\Windows 10 Enterprise x64"
+    New-Item -ItemType Directory -Path "C:\Sources\OSD\OS\Windows 10 Enterprise x64"
     cmd /c copy /z "C:\MDTBuildLab\Captures\REFW10X64-001.wim" "C:\Sources\OSD\OS\Windows 10 Enterprise x64"
     ```
 

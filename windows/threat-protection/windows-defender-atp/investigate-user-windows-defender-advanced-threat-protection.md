@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 # Investigate a user account in Windows Defender ATP
 
@@ -19,6 +21,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 ## Investigate user account entities
 Identify user accounts with the most active alerts (displayed on dashboard as "Users at risk") and investigate cases of potential compromised credentials, or pivot on the associated user account when investigating an alert or machine to identify possible lateral movement between machines with that user account.
@@ -35,7 +39,7 @@ When you investigate a user account entity, you'll see:
 - Alerts related to this user
 - Observed in organization (machines logged on to)
 
-![Image of the user account entity details page](images/atp-user-details-view.png)
+![Image of the user account entity details page](images/atp-user-details-view-tdp.png)
 
 The user account entity details and logged on machines section display various attributes about the user account. You'll see details such as when the user was first and last seen and the total number of machines the user logged on to. You'll also see a list of the machines that the user logged on to, and can expand these to see details of the logon events on each machine.
 
@@ -63,7 +67,7 @@ You can filter the results by the following time periods:
 - 6 months
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)

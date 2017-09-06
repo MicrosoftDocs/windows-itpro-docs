@@ -99,3 +99,6 @@
 #### [Application Publishing and Client Interaction](app-v/appv-application-publishing-and-client-interaction.md)
 #### [Viewing App-V Server Publishing Metadata](app-v/appv-viewing-appv-server-publishing-metadata.md)
 #### [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md)
+## [Service Host process refactoring](svchost-service-refactoring.md)
+## [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md)
+## [Change history for Application management](change-history-for-application-management.md)

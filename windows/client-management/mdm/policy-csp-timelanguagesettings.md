@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - TimeLanguageSettings
@@ -67,8 +68,8 @@ Footnote:
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>TimeLanguageSettings policies supported by Microsoft Surface Hub  
 
--   [TimeLanguageSettings/Set24HourClock](#None)  
--   [TimeLanguageSettings/SetCountry](#None)  
--   [TimeLanguageSettings/SetLanguage](#None)  
+-   [TimeLanguageSettings/Set24HourClock](#timelanguagesettings-set24hourclock)  
+-   [TimeLanguageSettings/SetCountry](#timelanguagesettings-setcountry)  
+-   [TimeLanguageSettings/SetLanguage](#timelanguagesettings-setlanguage)  
 <!--EndSurfaceHub-->
 

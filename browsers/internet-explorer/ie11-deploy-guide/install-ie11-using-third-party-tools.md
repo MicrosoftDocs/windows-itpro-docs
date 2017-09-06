@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to install the Internet Explorer 11 update using third-party tools and command-line options.
 author: eross-msft

@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Troubleshoot custom threat intelligence issues
@@ -21,6 +23,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 You might need to troubleshoot issues while using the custom threat intelligence feature.
 

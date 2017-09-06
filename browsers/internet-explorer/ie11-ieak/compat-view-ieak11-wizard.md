@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: We’re sorry. We’ve removed all of the functionality included on the **Compatibility View** page of the Internet Explorer Customization Wizard 11.

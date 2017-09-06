@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Connectivity
@@ -349,40 +350,133 @@ author: nickbrower
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="None"></a>**Connectivity/DiablePrintingOverHTTP**  
+<a href="" id="connectivity-diableprintingoverhttp"></a>**Connectivity/DiablePrintingOverHTTP**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off printing over HTTP*
+-   GP English name: *Turn off printing over HTTP*
 -   GP name: *DisableHTTPPrinting_2*
+-   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="None"></a>**Connectivity/DisableDownloadingOfPrintDriversOverHTTP**  
+<a href="" id="connectivity-disabledownloadingofprintdriversoverhttp"></a>**Connectivity/DisableDownloadingOfPrintDriversOverHTTP**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off downloading of print drivers over HTTP*
+-   GP English name: *Turn off downloading of print drivers over HTTP*
 -   GP name: *DisableWebPnPDownload_2*
+-   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="None"></a>**Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards**  
+<a href="" id="connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards"></a>**Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off Internet download for Web publishing and online ordering wizards*
+-   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
 -   GP name: *ShellPreventWPWDownload_2*
+-   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
 
 <!--EndADMX-->
@@ -404,11 +498,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -419,23 +513,62 @@ This policy setting configures secure access to UNC paths.
 If you enable this policy, Windows only allows access to the specified UNC paths after fulfilling additional security requirements.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Hardened UNC Paths*
+-   GP English name: *Hardened UNC Paths*
 -   GP name: *Pol_HardenedPaths*
+-   GP path: *Network/Network Provider*
 -   GP ADMX file name: *networkprovider.admx*
 
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="None"></a>**Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge**  
+<a href="" id="connectivity-prohibitinstallationandconfigurationofnetworkbridge"></a>**Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
 <!--StartDescription-->
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
+-   GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
 -   GP name: *NC_AllowNetBridge_NLA*
+-   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
 
 <!--EndADMX-->
@@ -473,7 +606,11 @@ Footnote:
 -   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
 -   [Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
 -   [Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
+-   [Connectivity/DiablePrintingOverHTTP](#connectivity-diableprintingoverhttp)  
+-   [Connectivity/DisableDownloadingOfPrintDriversOverHTTP](#connectivity-disabledownloadingofprintdriversoverhttp)  
+-   [Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards](#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards)  
 -   [Connectivity/HardenedUNCPaths](#connectivity-hardeneduncpaths)  
+-   [Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge](#connectivity-prohibitinstallationandconfigurationofnetworkbridge)  
 <!--EndIoTCore-->
 
 <!--StartSurfaceHub-->

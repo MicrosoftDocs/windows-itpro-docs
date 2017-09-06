@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: Review the options available to help you customize your browser install packages for deployment to your employee's devices.
 author: eross-msft

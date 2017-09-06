@@ -1,3 +1,10 @@
 # [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)
-# [Change history for Microsoft Education get started](change-history-ms-edu-get-started.md)
+## [Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
+## [Use School Data Sync to import student data](use-school-data-sync.md)
+## [Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
+## [Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+## [Set up Windows 10 education devices](set-up-windows-10-education-devices.md)
+### [Set up Windows 10 devices using Windows OOBE](set-up-windows-education-devices.md)
+## [Finish Windows 10 device setup and other tasks](finish-setup-and-other-tasks.md)
+# [Change history for Microsoft Education Get Started](change-history-ms-edu-get-started.md)
 

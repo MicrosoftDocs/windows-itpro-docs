@@ -183,14 +183,15 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <p style="margin-left: 20px"> For single SIM phones, this parm is optional. However, it is highly recommended to include this value when creating future updates. For dual SIM phones, this parm is required. Type: String. Specifies the SIM ICCID that services the connection.
 
 <a href="" id="purposegroups"></a>**PurposeGroups**  
-<p style="margin-left: 20px"> Optional. Type: String. Specifies the purposes of the connection by a comma-separated list of GUIDs representing purpose values. The following purpose values are available:
+<p style="margin-left: 20px"> Required. Type: String. Specifies the purposes of the connection by a comma-separated list of GUIDs representing purpose values. The following purpose values are available:
 
 -   Internet - 3E5545D2-1137-4DC8-A198-33F1C657515F
 -   MMS - 53E2C5D3-D13C-4068-AA38-9C48FF2E55A8
 -   IMS - 474D66ED-0E4B-476B-A455-19BB1239ED13
 -   SUPL - 6D42669F-52A9-408E-9493-1071DCC437BD
--   Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB  (added in the next version of Windows 10)
--   Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364  (added in the next version of Windows 10)
+-   Purchase - 95522B2B-A6D1-4E40-960B-05E6D3F962AB  
+-   Administrative - 2FFD9261-C23C-4D27-8DCF-CDE4E14A3364  
+-   Application - 52D7654A-00A8-4140-806C-087D66705306
 
 ## Additional information
 

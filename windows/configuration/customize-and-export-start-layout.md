@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Customize and export Start layout
@@ -40,7 +40,9 @@ You can deploy the resulting .xml file to devices using one of the following met
 
 -   [Mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
-## <a href="" id="bkmkcustomizestartscreen"></a>Customize the Start screen on your test computer
+
+<span id="bkmkcustomizestartscreen" />
+## Customize the Start screen on your test computer
 
 
 To prepare a Start layout for export, you simply customize the Start layout on a test computer.
@@ -69,6 +71,11 @@ To prepare a Start layout for export, you simply customize the Start layout on a
     -   **Resize tiles**. To resize tiles, right-click the tile and then click **Resize.**
 
     -   **Create your own app groups**. Drag the apps to an empty area. To name a group, click above the group of tiles and then type the name in the **Name group** field that appears above the group.
+    
+>[!IMPORTANT]
+>In Windows 10, version 1703, if the Start layout includes tiles for apps that are not installed on the device that the layout is later applied to, the tiles for those apps will be blank. The blank tiles will persist until the next time the user signs in, at which time the blank tiles are removed. Some system events may cause the blank tiles to be removed before the next sign-in.
+>
+>In earlier versions of Windows 10, no tile would be pinned.
 
 <span id="bmk-exportstartscreenlayout" />
 ## Export the Start layout

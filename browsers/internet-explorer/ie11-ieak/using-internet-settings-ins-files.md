@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Info about how to use Internet Settings (.ins) files and the IEAK 11 to configure your custom browser package.
 author: eross-msft

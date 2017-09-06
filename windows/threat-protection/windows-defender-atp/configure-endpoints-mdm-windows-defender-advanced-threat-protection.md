@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Configure endpoints using Mobile Device Management tools
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints.
 
@@ -105,7 +109,7 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Select **Endpoint management** on the **Navigation pane**.
+    a.  Select **Endpoint management** > **Clients** on the **Navigation pane**.
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
@@ -123,30 +127,44 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
   ![Image of policy creation in Azure](images/atp-azure-intune-create-profile.png)
 
-4. Type a name, description and choose **Windows 10 and later** as the Platform and **Windows Defender ATP (Windows 10 Desktop)** as the Profile type.
+6. Type a name, description and choose **Windows 10 and later** as the Platform and **Custom** as the Profile type.
 
-  ![Image of naming a policy](images/atp-azure-intune-create-policy-configure.png)
+  ![Image of naming a policy](images/atp-intune-custom.png)
 
 7. Click **Settings** > **Configure**.
 
-  ![Image of settings](images/atp-azure-intune-settings-configure.png)
+  ![Image of settings](images/atp-intune-configure.png)
 
-8. Click the folder icon and select the WindowsDefenderATP.onboarding file you extracted earlier. Configure whether you want to allow sample collection from endpoints for [Deep Analysis](investigate-files-windows-defender-advanced-threat-protection.md) by choosing **All**, or disable this feature by choosing **None**. When complete, click **OK**.
+8. Under Custom OMA-URI Settings, click **Add**.
 
-  ![Image of configuration settings](images/atp-azure-intune-configure.png)
+  ![Image of configuration settings](images/atp-custom-oma-uri.png)
 
-9. Click **Create**.
+9. Enter the following values, then click **OK**.
 
-  ![Image of profile creation](images/atp-azure-intune-create.png)
+  ![Image of profile creation](images/atp-oma-uri-values.png)
 
-10. Search for and select the Group you want to apply the Configuration Policy to, then click **Select**.
+  - **Name**: Type a name for the setting.
+  - **Description**: Type a description for the setting.
+  - **OMA-URI**: _./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding_
+  - **Value**: Copy and paste the contents of the WindowsDefenderATP.onboarding file you downloaded.
 
-  ![Image of select groups to apply configuration policy](images/atp-azure-intune-select-group.png)
+10. Save the settings by clicking **OK**.
+  
+11. Click **Create**.
 
-11. Click **Save** to finish deploying the Configuration Policy.
+  ![Image of the policy being created](images/atp-intune-create-policy.png)
 
-  ![Image of the policy being saved](images/atp-azure-intune-save-policy.png)
+12. To deploy the Profile, click **Assignments**. 
 
+  ![Image of groups](images/atp-intune-assignments.png)
+
+13. Search for and select the Group you want to apply the Configuration Profile to, then click **Select**.
+
+  ![Image of groups](images/atp-intune-group.png)
+
+14. Click **Save** to finish deploying the Configuration Profile.
+
+  ![Image of deployment](images/atp-intune-save-deployment.png)
 
 ### Offboard and monitor endpoints
 
@@ -188,4 +206,5 @@ Health Status for offboarded machines: Onboarding State | ./Device/Vendor/MSFT/W
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

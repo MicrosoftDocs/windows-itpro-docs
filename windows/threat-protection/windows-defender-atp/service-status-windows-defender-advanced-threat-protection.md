@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Check the Windows Defender Advanced Threat Protection service health
@@ -21,16 +23,18 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
 The **Service health** provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues. If there are issues, you'll see details related to the issue such as when the issue was detected, what the preliminary root cause is, and the expected resolution time.
 
 You'll also see information on historical issues that have been resolved and details such as the date and time when the issue was resolved. When there are no issues on the service, you'll see a healthy status.
 
-You can view details on the service health by clicking the tile from the **Dashboard** or selecting the **Service health** menu from the navigation pane.
+You can view details on the service health by clicking the tile from the **Security operations dashboard** or selecting the **Service health** menu from the navigation pane.
 
 The **Service health** details page has the following tabs:
 
 - **Current issues**
-- **Status History**
+- **Status history**
 
 ## Current issues
 The **Current issues** tab shows the current state of the Windows Defender ATP service. When the service is running smoothly a healthy service health is shown. If there are issues seen, the following service details are shown to help you gain better insight about the issue:

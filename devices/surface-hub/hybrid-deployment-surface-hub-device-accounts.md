@@ -10,7 +10,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Hybrid deployment (Surface Hub)
@@ -114,17 +114,27 @@ Use this procedure if you use Exchange on-prem.
 
 Next, you enable the device account with [Skype for Business Online](#skype-for-business-online), [Skype for Business on-prem](#skype-for-business-on-prem), or [Skype for Business hybrid](#skype-for-business-hybrid).
 
+<span id="sfb-online"/>
 ### Skype for Business Online
 
-To enable Skype for Business online, your environment will need to meet the following prerequisites:
+To enable Skype for Business online, your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required). The following table explains which plans or additional services you need.
 
--   You need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
+| Skype room system scenario | If you have Office 365 Premium, Office 365 ProPlus, or Skype for Business Standalone Plan 2, you need: | If you have an Enterprise-based plan, you need: | If you have have Skype for Business Server 2015 (on-premises or hybrid), you need: |
+| --- | --- | --- | --- |
+| Join a scheduled meeting | Skype for Business Standalone Plan 1 | E1, 3, 4, or 5 | Skype for Business Server Standard CAL |
+| Initiate an ad-hoc meeting | Skype for Business Standalone Plan 2 | E 1, 3, 4, or 5 | Skype for Business Server Standard CAL or Enterprise CAL |
+| Initiate an ad-hoc meeting and dial out from a meeting to phone numbers | Skype for Business Standalone Plan 2 with PSTN Conferencing</br></br>**Note** PSTN consumption billing is optional | E1 or E3 with PSTN Conferencing, or E5| Skype for Business Server Standard CAL or Enterprise CAL |
+| Give the room a phone number and make or receive calls from the room or join a dial-in conference using a phone number | Skype for Business Standalone Plan 2 with Cloud PBX and a PSTN Voice Calling plan | E1 or E3 with Cloud PBX and a PSTN Voice Calling plan, or E5 | Skype for Business Server Standard CAL or Plus CAL |
     
--   If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
-    
--   Your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required).
-    
--   Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+The following table lists the Office 365 plans and Skype for Business options.
+
+| O365 Plan | Skype for Business | Cloud PBX | PSTN Conferencing | PSTN Calling |
+| --- | --- | --- | --- | --- |
+| O365 Business Essentials | Included |  |  |  |
+| O365 Business Premium | Included |  |  |  |
+| E1 | Included | Add-on | Add-on | Add-on (requires Cloud PBX add-on) |
+| E3 | Included | Add-on | Add-on | Add-on (requires Cloud PBX add-on) |
+| E5 | Included | Included | Included | Add-on  |
 
 1. Start by creating a remote PowerShell session from a PC to the Skype for Business online environment.
 
@@ -300,18 +310,10 @@ Use this procedure if you use Exchange online.
 
 Next, you enable the device account with [Skype for Business Online](#sfb-online), [Skype for Business on-prem](#sfb-onprem), or [Skype for Business hybrid](#sfb-hybrid).
 
-<span id="sfb-online"/>
+
 ### Skype for Business Online    
     
-In order to enable Skype for Business, your environment will need to meet the following prerequisites:
-
-- You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
-    
-- If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).
-    
-- Your tenant users must have Exchange mailboxes (at least one Exchange mailbox in the tenant is required).
-    
-- Your Surface Hub account does require a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
+In order to enable Skype for Business, your environment will need to meet the [prerequisites for Skype for Business online](#sfb-online).
 
 1. Start by creating a remote PowerShell session to the Skype for Business online environment from a PC.
 

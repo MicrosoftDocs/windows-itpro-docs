@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Start
@@ -447,10 +448,10 @@ author: nickbrower
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -461,7 +462,10 @@ author: nickbrower
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by collapsing or removing the all apps list.
+<p style="margin-left: 20px">Allows IT Admins to configure Start by collapsing or removing the all apps list.
+
+> [!Note]
+> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -1081,7 +1085,7 @@ author: nickbrower
 > [!IMPORTANT]
 > Please note that the import happens only when StartLayout policy is changed. So it is better to always change ImportEdgeAssets policy at the same time as StartLayout policy whenever there are Edge secondary tiles to be pinned from StartLayout policy.
 
-<p style="margin-left: 20px">The value set for this policy is an XML string containing Edge assets.  An example XML string is provided in the [Microsoft Edge assets example](#microsoft-edge-assets-example) later in this topic.
+<p style="margin-left: 20px">The value set for this policy is an XML string containing Edge assets.  For an example XML string, see [Add image for secondary Microsoft Edge tiles](https://docs.microsoft.com/en-us/windows/configuration/start-secondary-tiles).
 
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
@@ -1176,7 +1180,7 @@ author: nickbrower
 
 <p style="margin-left: 20px">Allows you to override the default Start layout and prevents the user from changing it. If both user and device policies are set, the user policy will be used. Apps pinned to the taskbar can also be changed with this policy
 
-<p style="margin-left: 20px">This policy is described in [Start/StartLayout Examples](#startlayout-examples) later in this topic.
+<p style="margin-left: 20px">For further details on how to customize the Start layout, please see [Customize and export Start layout](https://docs.microsoft.com/en-us/windows/configuration/customize-and-export-start-layout) and [Configure Windows 10 taskbar](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-10-taskbar).
 
 <!--EndDescription-->
 <!--EndPolicy-->

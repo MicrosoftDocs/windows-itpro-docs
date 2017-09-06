@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Configure endpoints using System Center Configuration Manager
@@ -21,6 +23,8 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - System Center 2012 Configuration Manager or later versions
+
+[!include[Prerelease information](prerelease.md)]
 
 <span id="sccm1606"/>
 ## Configure endpoints using System Center Configuration Manager (current branch) version 1606
@@ -168,4 +172,5 @@ For more information about System Center Configuration Manager Compliance see [C
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

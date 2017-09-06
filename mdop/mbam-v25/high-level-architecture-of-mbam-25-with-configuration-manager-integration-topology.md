@@ -69,30 +69,27 @@ The following diagram and table describe the recommended high-level architecture
 
 ![mbam2\-5](images/mbam2-5-cmserver.png)
 
-Server
-Features to configure on this server
-Description
-Database Server
+### Database Server
 
-Recovery Database
+#### Recovery Database
 
 This feature is configured on a computer running Windows Server and supported SQL Server instance.
 
 The **Recovery Database** stores recovery data that is collected from MBAM Client computers.
 
-Audit Database
+#### Audit Database
 
 This feature is configured on a computer running Windows Server and supported SQL Server instance.
 
 The **Audit Database** stores audit activity data that is collected from client computers that have accessed recovery data.
 
-Reports
+#### Reports
 
 This feature is configured on a computer running Windows Server and supported SQL Server instance.
 
 The **Reports** provide recovery audit data for the client computers in your enterprise. You can view reports from the Configuration Manager console or directly from SQL Server Reporting Services.
 
-Configuration Manager Primary Site Server
+### Configuration Manager Primary Site Server
 
 System Center Configuration Manager Integration feature
 
@@ -104,9 +101,9 @@ System Center Configuration Manager Integration feature
 
 -   The **Configuration Manager console** must be installed on the same computer on which you install the MBAM Server software.
 
-Administration and Monitoring Server
+### Administration and Monitoring Server
 
-Administration and Monitoring Website
+#### Administration and Monitoring Website
 
 This feature is configured on a computer running Windows Server.
 
@@ -116,13 +113,13 @@ The **Administration and Monitoring Website** is used to:
 
 -   View the Recovery Audit Report, which shows recovery activity for client computers. Other reports are viewed from the Configuration Manager console.
 
-Self-Service Portal
+#### Self-Service Portal
 
 This feature is configured on a computer running Windows Server.
 
 The **Self-Service Portal** is a website that enables end users on client computers to independently log on to a website to get a recovery key if they lose or forget their BitLocker password.
 
-Monitoring web services for this website
+#### Monitoring web services for this website
 
 This feature is installed on a computer running Windows Server.
 
@@ -133,9 +130,9 @@ The Monitoring Web Service is no longer available in Microsoft BitLocker Adminis
 
  
 
-Management Workstation
+### Management Workstation
 
-MBAM Group Policy Templates
+#### MBAM Group Policy Templates
 
 -   The **MBAM Group Policy Templates** are Group Policy settings that define implementation settings for MBAM, which enable you to manage BitLocker drive encryption.
 
@@ -146,9 +143,9 @@ MBAM Group Policy Templates
 
      
 
-MBAM Client and Configuration Manager Client computer
+### MBAM Client and Configuration Manager Client computer
 
-MBAM Client software
+#### MBAM Client software
 
 The **MBAM Client**:
 
@@ -158,7 +155,7 @@ The **MBAM Client**:
 
 -   Collects recovery information and computer information about the client computers.
 
-Configuration Manager Client
+#### Configuration Manager Client
 
 The **Configuration Manager Client** enables Configuration Manager to collect hardware compatibility data about the client computers and report compliance information.
 

@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 # Run and review the results of a Windows Defender Offline scan

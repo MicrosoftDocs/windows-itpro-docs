@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # View and organize the Windows Defender ATP Machines list
@@ -21,19 +23,21 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
 The **Machines list** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
 
 Use the Machines list in these main scenarios:
 
-- **During onboarding**</br>
+- **During onboarding**<br>
   During the onboarding process, the **Machines list** is gradually populated with endpoints as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online. Sort and filter by time of last report, **Active malware category**, or **Sensor health state**, or download the complete endpoint list as a CSV file for offline analysis.
-- **Day-to-day work**
+- **Day-to-day work** <br>
   The **Machines list** enables easy identification of machines most at risk in a glance. High-risk machines have the greatest number and highest-severity alerts; **Sensor health state** provides another dimension to rank machines. Sorting machines by **Active alerts**, and then by **Sensor health state** helps identify the most vulnerable machines and take action on them.
 
 ## Sort, filter, and download the list of machines from the Machines list
 You can sort the **Machines list** by clicking on any column header to sort the view in ascending or descending order.  
 
-Filter the **Machines list** by time period, **OS Platform**, **Health**, or **Malware category alerts** to focus on certain sets of machines, according to the desired criteria.  
+Filter the **Machines list** by time period, **OS Platform**, **Health**, **Security state**, **Malware category alerts**, or **Groups** to focus on certain sets of machines, according to the desired criteria.  
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
@@ -52,14 +56,22 @@ You can use the following filters to limit the list of machines displayed during
 - Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
+- Linux
+- Mac OS
 - Other
+
+**Health**</br>
+- All
+- Well configure
+- Requires attention - Depending on the Windows Defender security controls configured in your enterprise, you'll see various available filters.
+ 
 
 **Sensor health state**</br>
 Filter the list to view specific machines grouped together by the following machine health states:
 
 - **Active** – Machines that are actively reporting sensor data to the service.
--	**Misconfigured** – Machines that have impaired communication with service or are unable to send sensor data. Misconfigured machines can further be classified to:
-  - Impaired communication
+-	**Misconfigured** – Machines that have impaired communications with service or are unable to send sensor data. Misconfigured machines can further be classified to:
+  - Impaired communications
   - No sensor data
 
   For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
@@ -100,7 +112,7 @@ You can sort the **Machines list** by the following columns:
 
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)

@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-abovefoldlink1)
 >
@@ -94,6 +98,7 @@ Topic | Description
 [Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md) | Learn about the capabilities of Windows Defender ATP to help you investigate alerts that might be indicators of possible breaches in your enterprise.
 [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md) | Learn about pulling alerts from the Windows Defender ATP portal using supported security information and events management (SIEM) tools.
 [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) | Understand threat intelligence concepts, then enable the custom threat intelligence application so that you can proceed to create custom threat intelligence alerts that are specific to your organization.
+[Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md) | Understand the security status of your organization, including the status of machines, alerts, and investigations using the Windows Defender ATP reporting feature that integrates with Power BI. 
 [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md) | Check the sensor health state on endpoints to verify that they are providing sensor data and communicating with the Windows Defender ATP service.
 [Configure Windows Defender ATP preferences settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Use the Preferences setup menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
 [Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md) | Configure time zone settings, suppression rules, and view license information.

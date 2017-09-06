@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
 ms.date: 07/05/2017
 ---
@@ -26,24 +26,24 @@ You can use Group Policy settings, mobile device management (MDM) or Registry (n
 
 In Group Policy, within **Configure Automatic Updates**, you can configure a forced restart after a specified instllation time. 
 
-To set the time, you need to go to **Configure Automatic Updates**, select option **4 - Auto download and schedule the instal**, and then enter a time in the **Scheduled install time** dropdown. Alternatively, you can specify that installtion will occur during the automatic maintenance time (configured using **Computer Configuration\Administrative Templates\Windows Components\Maintenance Scheduler**).
+To set the time, you need to go to **Configure Automatic Updates**, select option **4 - Auto download and schedule the install**, and then enter a time in the **Scheduled install time** dropdown. Alternatively, you can specify that installation will occur during the automatic maintenance time (configured using **Computer Configuration\Administrative Templates\Windows Components\Maintenance Scheduler**).
 
 **Always automatically restart at the scheduled time** forces a restart after the specified installation time and lets you configure a timer to warn a signed-in user that a restart is going to occur.
 
 While not recommended, the same result can be achieved through Registry. Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**, set **AuOptions** to **4**, set the install time with **ScheduledInstallTime**, enable **AlwaysAutoRebootAtScheduledTime** and specify the delay in minutes through **AlwaysAutoRebootAtScheduledTimeMinutes**. Similar to Group Policy, **AlwaysAutoRebootAtScheduledTimeMinutes** sets the timer to warn a signed-in user that a restart is going to occur.
 
-For a detailed description of these regsitry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
+For a detailed description of these registry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
 
 ## Delay automatic reboot
 
-When **Configure Automatic Updates** is enabled in Group Policy, you can enable one of the following additional policies to delay an automatic reboot after update installtion:
+When **Configure Automatic Updates** is enabled in Group Policy, you can enable one of the following additional policies to delay an automatic reboot after update installation:
 
 - **Turn off auto-restart for updates during active hours** prevents automatic restart during active hours.
 - **No auto-restart with logged on users for scheduled automatic updates installations** prevents automatic restart when a user is signed in. If a user schedules the restart in the update notification, the device will restart at the time the user specifies even if a user is signed in at the time. This policy only applies when **Configure Automatic Updates** is set to option **4-Auto download and schedule the install**. 
 
 You can also use Registry, to prevent automatic restarts when a user is signed in. Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU**, set **AuOptions** to **4** and enable **NoAutoRebootWithLoggedOnUsers**. As with Group Policy, if a user schedules the restart in the update notification, it will override this setting.
 
-For a detailed description of these regsitry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
+For a detailed description of these registry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
 
 ## Configure active hours
 
@@ -57,7 +57,7 @@ Administrators can use multiple ways to set active hours for managed devices:
 
 - You can use Group Policy, as described in the procedure that follows.
 - You can use MDM, as described in [Configuring active hours with MDM](#configuring-active-hours-with-mdm).
-- While not recommended, you can also configure active hours, as descrbied in [Configuring active hours through Registry](#configuring-active-hours-through-registry).
+- While not recommended, you can also configure active hours, as described in [Configuring active hours through Registry](#configuring-active-hours-through-registry).
 
 ### Configuring active hours with Group Policy
 
@@ -77,7 +77,7 @@ Any settings configured through Registry may conflict with any existing configur
 You should set a combination of the following registry values, in order to configure active hours.
 Under **HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate** use **SetActiveHours** to enable or disable active hours and **ActiveHoursStart**,**ActiveHoursEnd** to specify the range of active hours.
 
-For a detailed description of these regsitry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
+For a detailed description of these registry keys, see [Registry keys used to manage restart](#registry-keys-used-to-manage-restart).
 
 >[!NOTE]
 >To configure active hours manually on a single device, go to **Settings** > **Update & security** > **Windows Update** and select **Change active hours**.
@@ -94,7 +94,7 @@ To configure active hours max range through MDM, use [**Update/ActiveHoursMaxRan
 
 ## Limit restart delays
 
-After an update is installed, Windows 10 attemtps automatic restart outside of active hours. If the restart does not succeed after 7 days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from 7 days to a number of days between 2 and 14.
+After an update is installed, Windows 10 attempts automatic restart outside of active hours. If the restart does not succeed after 7 days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from 7 days to a number of days between 2 and 14.
 
 ## Control restart notifications
 
@@ -123,7 +123,7 @@ To do so through MDM, use [**Update/SetAutoRestartNotificationDisable**](https:/
 
 ### Scheduled auto-restart warnings
 
-Since users are not able to postpone a scheduled restart once the deadline has been reached, you can configure a warning reminder prior to the scheduled a restart. You can also configure a configure a warning prior to the restart, to notify users once the restart is imminent and allow them to save their work.
+Since users are not able to postpone a scheduled restart once the deadline has been reached, you can configure a warning reminder prior to the scheduled restart. You can also configure a warning prior to the restart, to notify users once the restart is imminent and allow them to save their work.
 
 To configure both through Group Policy, find **Configure auto-restart warning notifications schedule for updates** under **Computer Configuration\Administrative Templates\Windows Components\Windows Update**. The warning reminder can be configured by **Reminder (hours)** and the warning prior to an imminent auto-restart can be configured by **Warning (mins)**.
 
@@ -185,7 +185,7 @@ The following tables list registry values that correspond to the Group Policy se
 There are 3 different registry combinations for controlling restart behavior:
 
 - To set active hours, **SetActiveHours** should be **1**, while **ActiveHoursStart** and **ActiveHoursEnd** should define the time range.
-- To schedule a specific instllation and reboot time, **AUOptions** should be **4**, **ScheduledInstallTime** should specify the installation time, **AlwaysAutoRebootAtScheduledTime** set to **1** and **AlwaysAutoRebootAtScheduledTimeMinutes** should specify number of minutes to wait before rebooting.
+- To schedule a specific installation and reboot time, **AUOptions** should be **4**, **ScheduledInstallTime** should specify the installation time, **AlwaysAutoRebootAtScheduledTime** set to **1** and **AlwaysAutoRebootAtScheduledTimeMinutes** should specify number of minutes to wait before rebooting.
 - To delay rebooting if a user is logged on, **AUOptions** should be **4**, while **NoAutoRebootWithLoggedOnUsers** is set to **1**. 
 
 ## Related topics

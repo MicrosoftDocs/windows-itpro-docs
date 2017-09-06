@@ -1,10 +1,10 @@
 ---
 title: Deploy catalog files to support code integrity policies (Windows 10)
-description: This article describes how to deploy catalog files to support code integrity policies, one of the main features that are part of Device Guard in Windows 10. 
+description: This article describes how to deploy catalog files to support code integrity policies, one of the main features that are part of Windows Defender Device Guard in Windows 10. 
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -16,7 +16,7 @@ author: brianlic-msft
 
 Catalog files can be important in your deployment of code integrity polices if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. To prepare to create code integrity policies that allow these trusted applications but block unsigned code (most malware is unsigned), you create a *catalog file* that contains information about the trusted applications. After you sign and distribute the catalog, your trusted applications can be handled by code integrity policies in the same way as any other signed application. With this foundation, you can more easily block all unsigned applications, allowing only signed applications to run.
 
-For more description of catalog files, see [Reviewing your applications: application signing and catalog files](requirements-and-deployment-planning-guidelines-for-device-guard.md#reviewing-your-applications-application-signing-and-catalog-files) in "Requirements and deployment planning guidelines for Device Guard." 
+For more description of catalog files, see [Reviewing your applications: application signing and catalog files](requirements-and-deployment-planning-guidelines-for-device-guard.md#reviewing-your-applications-application-signing-and-catalog-files) in "Requirements and deployment planning guidelines for Windows Defender Device Guard." 
 
 ## Create catalog files
 
@@ -30,7 +30,7 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 
     Package Inspector does not always detect installation files that have been removed from the computer during the installation process. To ensure that these binaries are also trusted, deploy a code integrity policy in audit mode. You can use the code integrity policy that you created and audited in [Create a code integrity policy from a golden computer](deploy-code-integrity-policies-steps.md#create-a-code-integrity-policy-from-a-golden-computer) and [Audit code integrity policies](deploy-code-integrity-policies-steps.md#audit-code-integrity-policies).
 
-    > **Note**&nbsp;&nbsp;This process should **not** be performed on a system with an enforced Device Guard policy, only with a policy in audit mode. If a policy is currently being enforced, you will not be able to install and run the application.
+    > **Note**&nbsp;&nbsp;This process should **not** be performed on a system with an enforced Windows Defender Device Guard policy, only with a policy in audit mode. If a policy is currently being enforced, you will not be able to install and run the application.
 
 2.  Start Package Inspector, and then start scanning a local drive, for example, drive C:
 
@@ -150,7 +150,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 2.  Create a new GPO: right-click an OU, for example, the **DG Enabled PCs OU**, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 2.
 
-    > **Note**&nbsp;&nbsp;You can use any OU name. Also, security group filtering is an option when you consider different ways of combining code integrity policies (or keeping them separate), as discussed in [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+    > **Note**&nbsp;&nbsp;You can use any OU name. Also, security group filtering is an option when you consider different ways of combining code integrity policies (or keeping them separate), as discussed in [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
    ![Group Policy Management, create a GPO](images/dg-fig13-createnewgpo.png)
 
@@ -318,9 +318,9 @@ At the time of the next software inventory cycle, when the targeted clients rece
 
 ## Related topics
 
-- [Introduction to Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+- [Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
 
-- [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
+- [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
 
-- [Deploy Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md)
 

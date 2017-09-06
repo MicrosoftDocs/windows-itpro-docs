@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Security
@@ -214,6 +215,45 @@ author: nickbrower
 
 -   0 – Don't allow Anti Theft Mode.
 -   1 (default) – Anti Theft Mode will follow the default device configuration (region-dependent).
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="security-cleartpmifnotready"></a>**Security/ClearTPMIfNotReady**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+
+Added in Windows 10, version 1709. Admin access is required. The prompt will appear on first admin logon after a reboot when the TPM is in a non-ready state that can be remediated with a TPM Clear. The prompt will have a description of what clearing the TPM does and that it requires a reboot. The user can dismiss it, but it will appear on next admin logon after restart.
+
+The following list shows the supported values:
+
+-   0 (default) – Will not force recovery from a non-ready TPM state.
+-   1 – Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
 
 <!--EndDescription-->
 <!--EndPolicy-->

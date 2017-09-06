@@ -7,7 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-localizationpriority: high
+ms.date: 09/05/2017
+ms.localizationpriority: high
 ---
 
 # MBR2GPT.EXE
@@ -17,28 +18,41 @@ localizationpriority: high
 
 ## Summary
 
-**MBR2GPT.EXE** converts a disk from Master Boot Record (MBR) to GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS).
+**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS) by using the **/allowFullOS** option. 
 
-MBR2GPT.EXE is located in the **Windows\\System32** directory on a Windows 10 computer running Windows 10 version 1703 or later.
+See the following video for a detailed description and demonstration of MBR2GPT.
 
-You can use MBR2GPT to perform the following:
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
 
-- \[Within the Windows PE environment\]: Convert any attached MBR-formatted system disk to the GPT partition format.
-- \[From within the currently running OS\]: Convert any attached MBR-formatted system disk to the GPT partition format.
-
->MBR2GPT is available in Windows 10 version 1703, also known as Windows 10 Creator's Update, and later versions. 
+>MBR2GPT.EXE is located in the **Windows\\System32** directory on a computer running Windows 10 version 1703 (also known as the Creator's Update) or later.
 >The tool is available in both the full OS environment and Windows PE. 
 
-You can use MBR2GPT to convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+You can use MBR2GPT to: 
 
-The MBR2GPT tool can convert operating system disks that have earlier versions of Windows 10 installed, such as versions 1507, 1511, and 1607. However, you must run the tool while booted into Windows 10 version 1703 or later, and perform an offline conversion.
+- Convert any attached MBR-formatted system disk to the GPT partition format. You cannot use the tool to convert non-system disks from MBR to GPT.
+- Convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
+- Convert operating system disks that have earlier versions of Windows 10 installed, such as versions 1507, 1511, and 1607. However, you must run the tool while booted into Windows 10 version 1703 or later, and perform an offline conversion.
 
 Offline conversion of system disks with earlier versions of Windows installed, such as Windows 7, 8, or 8.1 are not officially supported. The recommended method to convert these disks is to upgrade the operating system to Windows 10 first, then perform the MBR to GPT conversion.
 
 >[!IMPORTANT]
 >After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. <BR>Make sure that your device supports UEFI before attempting to convert the disk.
 
-<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
+## Prerequisites
+
+Before any change to the disk is made, MBR2GPT validates the layout and geometry of the selected disk to ensure that:
+- The disk is currently using MBR
+- There is enough space not occupied by partitions to store the primary and secondary GPTs:
+  - 16KB + 2 sectors at the front of the disk
+  - 16KB + 1 sector at the end of the disk
+- There are at most 3 primary partitions in the MBR partition table
+- One of the partitions is set as active and is the system partition
+- The disk does not have any extended/logical partition
+- The BCD store on the system partition contains a default OS entry pointing to an OS partition
+- The volume IDs can be retrieved for each volume which has a drive letter assigned
+- All partitions on the disk are of MBR types recognized by Windows or has a mapping specified using the /map command-line option
+
+If any of these checks fails, the conversion will not proceed and an error will be returned.
 
 ## Syntax
 
@@ -216,22 +230,6 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 4. GPT metatdata and layout information is applied.
 5. The boot configuration data (BCD) store is updated.
 6. Drive letter assignments are restored.
-
-### Disk validation
-
-Before any change to the disk is made, MBR2GPT validates the layout and geometry of the selected disk to ensure that:
-- The disk is currently using MBR
-- There is enough space not occupied by partitions to store the primary and secondary GPTs:
-  - 16KB + 2 sectors at the front of the disk
-  - 16KB + 1 sector at the end of the disk
-- There are at most 3 primary partitions in the MBR partition table
-- One of the partitions is set as active and is the system partition
-- The disk does not have any extended/logical partition
-- The BCD store on the system partition contains a default OS entry pointing to an OS partition
-- The volume IDs can be retrieved for each volume which has a drive letter assigned
-- All partitions on the disk are of MBR types recognized by Windows or has a mapping specified using the /map command-line option
-
-If any of these checks fails, the conversion will not proceed and an error will be returned.
 
 ### Creating an EFI system partition
 

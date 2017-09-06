@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 # Manage the sources for Windows Defender Antivirus protection updates
@@ -63,7 +65,11 @@ The older the updates on an endpoint, the larger the download. However, you must
 
 Microsoft Update allows for rapid releases, which means it will download small deltas on a frequent basis. This ensures the best protection, but may increase network bandwidth.
 
-The WSUS, Configuration Manager and MMPC sources will deliver less frequent updates. The size of the updates may be slightly larger than the frequent release from Microsoft Update (as the delta, or differences between the latest version and what is on the endpoint will be larger). This ensures consistent protection without increasing ad hoc network usage (although the amount of data may be the same or increased as the updates will be fewer, but may be slightly larger).
+The WSUS, Configuration Manager, and MMPC sources will deliver less frequent updates. The size of the updates may be slightly larger than the frequent release from Microsoft Update (as the delta, or differences between the latest version and what is on the endpoint will be larger). This ensures consistent protection without increasing ad hoc network usage (although the amount of data may be the same or increased as the updates will be fewer, but may be slightly larger).
+
+> [!IMPORTANT]
+> If you have set MMPC as a fallback source after WSUS or Microsoft Update, updates will only be downloaded from MMPC when the current update is considered to be out-of-date (by default, this is 2 consecutive days of not being able to apply updates from the WSUS or Microsoft Update services).
+> You can, however, [set the number of days before protection is reported as out-of-date](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
 
@@ -73,7 +79,7 @@ WSUS | You are using WSUS to manage updates for your network.
 Microsoft Update | You want your endpoints to connect directly to Microsoft Update. This can be useful for endpoints that irregularly connect to your enterprise network, or if you do not use WSUS to manage your updates.
 File share | You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-windows-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.
 Configuration Manager | You are using System Center Configuration Manager to update your endpoints.
-MMPC | You need to download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source.
+MMPC | You need to download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-windows-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from WSUS or Microsoft Update for [a specified number of days](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-antivirus/manage-outdated-endpoints-windows-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).
   
     
 You can manage the order in which update sources are used with Group Policy, System Center Configuration Manager, PowerShell cmdlets, and WMI.

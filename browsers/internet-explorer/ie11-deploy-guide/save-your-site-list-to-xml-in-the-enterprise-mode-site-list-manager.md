@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: You can save your current Enterprise Mode compatibility site list as an XML file, for distribution and use by your managed systems.

@@ -9,7 +9,7 @@ ms.sitesec: library
 author: mtniehaus
 ---
 
-# Windows 10 deployment tools reference
+# Windows 10 deployment scenarios and tools
 
 
 To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.

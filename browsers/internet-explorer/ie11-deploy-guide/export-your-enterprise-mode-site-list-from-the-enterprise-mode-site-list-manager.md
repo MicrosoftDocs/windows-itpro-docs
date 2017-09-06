@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 ms.pagetype: appcompat
 description: After you create your Enterprise Mode site list in the Enterprise Mode Site List Manager, you can export the contents to an Enterprise Mode (.EMIE) file.

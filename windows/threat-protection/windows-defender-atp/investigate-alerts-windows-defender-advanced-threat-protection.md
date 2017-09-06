@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Investigate Windows Defender Advanced Threat Protection alerts
@@ -16,6 +18,8 @@ localizationpriority: high
 **Applies to:**
 
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Investigate alerts that are affecting your network, what they mean, and how to resolve them. Use the alert details view to see various tiles that provide information about alerts. You can also manage an alert and see alert metadata along with other information that can help you make better decisions on how to approach them.
 
@@ -26,7 +30,7 @@ The alert context tile shows the where, who, and when context of the alert. As w
 
 For more information about managing alerts, see [Manage alerts](manage-alerts-windows-defender-advanced-threat-protection.md).
 
-The alert details page also shows the alert process tree, an incident graph, and an alert timeline.
+The alert details page also shows the alert process tree, an incident graph, and an artifact timeline.
 
 You can click on the machine link from the alert view to navigate to the machine. The alert will be highlighted automatically, and the timeline will display the appearance of the alert and its evidence in the **Machine timeline**. If the alert appeared more than once on the machine, the latest occurrence will be displayed in the **Machine timeline**.
 
@@ -73,15 +77,15 @@ The **Incident Graph** expansion by destination IP Address, shows the organizati
 
 You can click the full circles on the incident graph to expand the nodes and view the expansion to other machines where the matching criteria were observed.
 
-## Alert timeline
-The **Alert timeline** feature provides an addition view of the evidence that triggered the alert on the machine, and shows the date and time the evidence triggering the alert was observed, as well as the first time it was observed on the machine. This can help in understanding if the evidence was first observed at the time of the alert, or whether it was observed on the machine earlier - without triggering an alert.
+## Artifact timeline
+The **Artifact timeline** feature provides an addition view of the evidence that triggered the alert on the machine, and shows the date and time the evidence triggering the alert was observed, as well as the first time it was observed on the machine. This can help in understanding if the evidence was first observed at the time of the alert, or whether it was observed on the machine earlier - without triggering an alert.
 
-![Image of alert timeline](images/atp-alert-timeline.png)
+![Image of artifact timeline](images/atp-alert-timeline.png)
 
 Selecting an alert detail brings up the **Details pane** where you'll be able to see more information about the alert such as file details, detections, instances of it observed worldwide, and in the organization.
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)

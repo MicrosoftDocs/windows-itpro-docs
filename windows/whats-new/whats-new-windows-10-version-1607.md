@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # What's new in Windows 10, version 1607
@@ -31,13 +31,13 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 [Learn more about using provisioning packages in Windows 10.](/windows/configuration/provisioning-packages/provisioning-packages)
 
-### Windows Upgrade Analytics
+### Windows Upgrade Readiness
 
-Microsoft developed Upgrade Analytics in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Analytics was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
+Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
 
-With Windows telemetry enabled, Upgrade Analytics collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
+With Windows telemetry enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
 
-Use Upgrade Analytics to get:
+Use Upgrade Readiness to get:
 
 - A visual workflow that guides you from pilot to production
 - Detailed computer and application inventory
@@ -47,9 +47,9 @@ Use Upgrade Analytics to get:
 - Application usage information, allowing targeted validation; workflow to track validation progress and decisions
 - Data export to commonly used software deployment tools
 
-The Upgrade Analytics workflow steps you through the discovery and rationalization process until you have a list of computers that are upgrade-ready.
+The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are upgrade-ready.
 
-[Learn more about planning and managing Windows upgrades with Windows Upgrade Analytics.](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-analytics)
+[Learn more about planning and managing Windows upgrades with Windows Upgrade Readiness.](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness)
 
 ## Windows updates
 
@@ -102,7 +102,7 @@ Several new features and management options have been added to Windows Defender 
 
 - [Windows Defender Offline in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-offline) can be run directly from within Windows, without having to create bootable media.
 - [Use PowerShell cmdlets for Windows Defender](/windows/threat-protection/windows-defender-antivirus/use-powershell-cmdlets-windows-defender-antivirus) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-block-at-first-sight) to leverage the Windows Defender cloud for near-instant protection against new malware.
+- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/windows-defender-antivirus/configure-block-at-first-sight-windows-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
 - [Configure enhanced notifications for Windows Defender in Windows 10](/windows/threat-protection/windows-defender-antivirus/configure-notifications-windows-defender-antivirus) to see more informaiton about threat detections and removal.
 - [Run a Windows Defender scan from the command line](/windows/threat-protection/windows-defender-antivirus/command-line-arguments-windows-defender-antivirus).
 - [Detect and block Potentially Unwanted Applications with Windows Defender](/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus) during download and install times.

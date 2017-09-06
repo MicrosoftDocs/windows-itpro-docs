@@ -1,6 +1,6 @@
 ---
 title: PowerShell for Surface Hub (Surface Hub)
-description: PowerShell scripts to help set up and manage your Microsoft Surface Hub .
+description: PowerShell scripts to help set up and manage your Microsoft Surface Hub.
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 keywords: PowerShell, set up Surface Hub, manage Surface Hub
 ms.prod: w10
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
-localizationpriority: medium
+ms.date: 08/16/2017
+ms.localizationpriority: medium
 ---
 
 # PowerShell for Surface Hub
@@ -465,7 +465,7 @@ PrintAction "Configuring password not to expire..."
 Start-Sleep -s 20
 try 
 {
-    Set-AdUser $mailbox.Alias -PasswordNeverExpires $true -Enabled $true
+    Set-AdUser $mailbox.UserPrincipalName -PasswordNeverExpires $true -Enabled $true
 }
 catch
 {
@@ -1243,7 +1243,7 @@ if (!$fExIsOnline)
 }
 
 
-$strAlias = $mailbox.Alias
+$strAlias = $mailbox.UserPrincipalName
 $strDisplayName = $mailbox.DisplayName
 
 $strLinkedAccount = $strLinkedDomain = $strLinkedUser = $strLinkedServer = $null
@@ -1424,7 +1424,7 @@ if ($fHasOnPrem)
     else
     {
         #AD User enabled validation
-        $accountOnPrem = Get-AdUser $strAlias -properties PasswordNeverExpires -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
+        $accountOnPrem = Get-AdUser $mailbox.UserPrincipalName -properties PasswordNeverExpires -WarningAction SilentlyContinue -ErrorAction SilentlyContinue
     }
     $strOnPremUpn = $accountOnPrem.UserPrincipalName
     Validate -Test "There is a user account for $strOnPremUpn" -Condition ($accountOnprem -ne $null) -FailureMsg "Could not find an Active Directory account for this user"
