@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/21/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Privacy
@@ -34,11 +34,11 @@ ms.date: 08/21/2017
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -47,6 +47,9 @@ ms.date: 08/21/2017
 <!--EndSKU-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows the automatic acceptance of the pairing and privacy user consent dialog when launching apps.
+
+> [!Note]  
+> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -2590,7 +2593,7 @@ Footnote:
 <!--StartHoloLens-->
 ## <a href="" id="hololenspolicies"></a>Privacy policies supported by Windows Holographic for Business  
 
--   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)   
+-   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -2627,6 +2630,5 @@ Footnote:
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
 -   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
-
 <!--EndSurfaceHub-->
 

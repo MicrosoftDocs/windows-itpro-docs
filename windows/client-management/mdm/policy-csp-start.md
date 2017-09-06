@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Start
@@ -448,10 +448,10 @@ ms.date: 08/09/2017
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -462,7 +462,10 @@ ms.date: 08/09/2017
 > [!NOTE]
 > This policy requires reboot to take effect.
 
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by collapsing or removing the all apps list.
+<p style="margin-left: 20px">Allows IT Admins to configure Start by collapsing or removing the all apps list.
+
+> [!Note]
+> There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709. 
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

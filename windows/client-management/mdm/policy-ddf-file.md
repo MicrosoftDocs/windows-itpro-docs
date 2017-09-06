@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/30/2017
+ms.date: 08/23/2017
 ---
 
 # Policy DDF file
@@ -21,6 +21,7 @@ You can download the DDF files from the links below:
 
 - [Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
 - [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
+- [Download the Policy DDF file for Windows 10, version 1607 release 8C](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
 - [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
 
 The XML below is the DDF for Windows 10, version 1709.
@@ -354,6 +355,941 @@ The XML below is the DDF for Windows 10, version 1709.
         </Node>
       </Node>
       <Node>
+        <NodeName>Browser</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Delete />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowAddressBarDropdown</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowAutofill</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can use Autofill to automatically fill in form fields while using Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowBrowser</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowCookies</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you configure how your company deals with cookies.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowDeveloperTools</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can use F12 Developer Tools on Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowDoNotTrack</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can send Do Not Track headers to websites that request tracking info.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can load extensions in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowFlash</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can run Adobe Flash in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowFlashClickToRun</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configure the Adobe Flash Click-to-Run setting.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowInPrivate</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can browse using InPrivate website browsing.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowMicrosoftCompatibilityList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+
+If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
+
+If you disable this setting, the Microsoft Compatibility List will not be used during browser navigation.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPasswordManager</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can save their passwords locally, using Password Manager.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPopups</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether to turn on Pop-up Blocker and whether to allow pop-ups to appear in secondary windows.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSearchEngineCustomization</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allow search engine customization for MDM enrolled devices. Users can change their default search engine.
+
+If this setting is turned on or not configured, users can add new search engines and change the default used in the address bar from within Microsoft Edge Settings.
+If this setting is disabled, users will be unable to add search engines or change the default used in the address bar.
+
+This policy will only apply on domain joined machines or when the device is MDM enrolled. For more information, see Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSearchSuggestionsinAddressBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether search suggestions should appear in the Address bar of Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSmartScreen</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you decide whether to turn on Windows Defender SmartScreen.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AlwaysEnableBooksLibrary</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether the Books Library in Microsoft Edge will always be visible regardless of the country or region setting for the device.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ClearBrowsingDataOnExit</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether to always clear browsing history on exiting Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureAdditionalSearchEngines</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allows you to add up to 5 additional search engines for MDM-enrolled devices.
+
+If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default.
+
+If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee's machine.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableLockdownOfStartPages</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Boolean policy that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when Browser/HomePages policy is in effect.
+
+Note: This policy has no effect when Browser/HomePages is not configured.
+
+Important
+This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnterpriseModeSiteList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This setting lets you configure whether your company uses Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy websites.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnterpriseSiteListServiceUrl</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>FirstRunURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configure first run URL.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HomePages</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Configure the Start page URLs for your employees.
+Example:
+If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
+Encapsulate each string with greater than and less than characters like any other XML tag.
+
+Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LockdownFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
+
+If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventAccessToAboutFlagsInMicrosoftEdge</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Prevent access to the about:flags page in Microsoft Edge.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventFirstRunPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether the First Run webpage is prevented from automatically opening on the first launch of Microsoft Edge. This policy is only available for Windows 10 version 1703 or later for desktop.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventLiveTileDataCollection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverride</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverrideForFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventUsingLocalHostIPAddressForWebRTC</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Prevent using localhost IP address for WebRTC</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ProvisionFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
+
+If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SendIntranetTraffictoInternetExplorer</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Sends all intranet traffic over to Internet Explorer.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetDefaultSearchEngine</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Sets the default search engine for MDM-enrolled devices. Users can still change their default search engine.
+
+If this setting is turned on, you are setting the default search engine that you would like your employees to use. Employees can still change the default search engine, unless you apply the AllowSearchEngineCustomization policy which will disable the ability to change it. You must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. If you would like for your employees to use the Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; if you would like for your employees to use Bing as the default search engine, set the string EDGEBING.
+
+If this setting is not configured, the default search engine is set to the one specified in App settings and can be changed by your employees.  If this setting is disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ShowMessageWhenOpeningSitesInInternetExplorer</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Show message when opening sites in Internet Explorer</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SyncFavoritesBetweenIEAndMicrosoftEdge</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>CredentialsUI</NodeName>
         <DFProperties>
           <AccessType>
@@ -467,7 +1403,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFType>
         </DFProperties>
         <Node>
-          <NodeName>AllowUserPrinterInstallation</NodeName>
+          <NodeName>DefaultPrinterName</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -475,9 +1411,9 @@ The XML below is the DDF for Windows 10, version 1709.
               <Get />
               <Replace />
             </AccessType>
-            <Description>Boolean that specifies whether or not to allow user to install new printers</Description>
+            <Description>This policy sets user's default printer</Description>
             <DFFormat>
-              <int/>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -491,7 +1427,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DefaultPrinterName</NodeName>
+          <NodeName>PreventAddingNewPrinters</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -499,9 +1435,9 @@ The XML below is the DDF for Windows 10, version 1709.
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy sets user's default printer</Description>
+            <Description>Boolean that specifies whether or not to prevent user to install new printers</Description>
             <DFFormat>
-              <chr/>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -1133,7 +2069,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>AllowInternetExplorer7PolicyList </NodeName>
+          <NodeName>AllowInternetExplorer7PolicyList</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -1757,7 +2693,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableDeletingUserVisitedWebsites </NodeName>
+          <NodeName>DisableDeletingUserVisitedWebsites</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -2357,7 +3293,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneAllowLoadingOfXAMLFilesWRONG</NodeName>
+          <NodeName>InternetZoneAllowLoadingOfXAMLFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -2597,31 +3533,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2</NodeName>
+          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -2861,55 +3773,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG2</NodeName>
+          <NodeName>InternetZoneJavaPermissions</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -3341,7 +4205,79 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>IntranetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>IntranetZoneInitializeAndScriptActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneJavaPermissions</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -5501,31 +6437,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG2</NodeName>
+          <NodeName>RestrictedSitesZoneAllowFontDownloads</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -5909,6 +6821,30 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>RestrictedSitesZoneEnableCrossSiteScriptingFilter</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows</NodeName>
           <DFProperties>
             <AccessType>
@@ -6221,7 +7157,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG</NodeName>
+          <NodeName>RestrictedSitesZoneScriptingOfJavaApplets</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -6245,7 +7181,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG2</NodeName>
+          <NodeName>RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -6269,7 +7205,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG3</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -6293,7 +7229,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG4</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnProtectedMode</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -6317,7 +7253,7 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG5</NodeName>
+          <NodeName>RestrictedSitesZoneUsePopupBlocker</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -6653,7 +7589,103 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -6702,54 +7734,6 @@ The XML below is the DDF for Windows 10, version 1709.
         </Node>
         <Node>
           <NodeName>TrustedSitesZoneNavigateWindowsAndFrames</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG2</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -7062,6 +8046,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7108,6 +8093,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>AttachmentManager.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AttachmentManager~AT~WindowsComponents~AM_AM</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AM_MarkZoneOnSavedAtttachments</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7134,6 +8120,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>AttachmentManager.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AttachmentManager~AT~WindowsComponents~AM_AM</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AM_RemoveZoneInfo</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7160,6 +8147,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>AttachmentManager.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AttachmentManager~AT~WindowsComponents~AM_AM</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AM_CallIOfficeAntiVirus</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7202,6 +8190,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7248,6 +8237,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoAutoplayfornonVolume</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7274,6 +8264,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoAutorun</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7300,6 +8291,921 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Autorun</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Browser</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>AllowAddressBarDropdown</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting lets you decide whether the Address bar drop-down functionality is available in Microsoft Edge. We recommend disabling this setting if you want to minimize network connections from Microsoft Edge to Microsoft services.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowAutofill</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can use Autofill to automatically fill in form fields while using Microsoft Edge.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowBrowser</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowCookies</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you configure how your company deals with cookies.</Description>
+            <DefaultValue>2</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowDeveloperTools</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can use F12 Developer Tools on Microsoft Edge.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowDoNotTrack</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can send Do Not Track headers to websites that request tracking info.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowExtensions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can load extensions in Microsoft Edge.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowFlash</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can run Adobe Flash in Microsoft Edge.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowFlashClickToRun</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Configure the Adobe Flash Click-to-Run setting.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowInPrivate</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can browse using InPrivate website browsing.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowMicrosoftCompatibilityList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+
+If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
+
+If you disable this setting, the Microsoft Compatibility List will not be used during browser navigation.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPasswordManager</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether employees can save their passwords locally, using Password Manager.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowPopups</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether to turn on Pop-up Blocker and whether to allow pop-ups to appear in secondary windows.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSearchEngineCustomization</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Allow search engine customization for MDM enrolled devices. Users can change their default search engine.
+
+If this setting is turned on or not configured, users can add new search engines and change the default used in the address bar from within Microsoft Edge Settings.
+If this setting is disabled, users will be unable to add search engines or change the default used in the address bar.
+
+This policy will only apply on domain joined machines or when the device is MDM enrolled. For more information, see Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSearchSuggestionsinAddressBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether search suggestions should appear in the Address bar of Microsoft Edge.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowSmartScreen</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you decide whether to turn on Windows Defender SmartScreen.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AlwaysEnableBooksLibrary</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Specifies whether the Books Library in Microsoft Edge will always be visible regardless of the country or region setting for the device.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ClearBrowsingDataOnExit</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Specifies whether to always clear browsing history on exiting Microsoft Edge.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ConfigureAdditionalSearchEngines</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Allows you to add up to 5 additional search engines for MDM-enrolled devices.
+
+If this setting is turned on, you can add up to 5 additional search engines for your employee. For each additional search engine you wish to add, you must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. This policy does not affect the default search engine. Employees will not be able to remove these search engines, but they can set any one of these as the default.
+
+If this setting is not configured, the search engines are the ones specified in the App settings. If this setting is disabled, the search engines you had added will be deleted from your employee's machine.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableLockdownOfStartPages</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Boolean policy that specifies whether the lockdown on the Start pages is disabled. This policy works with the Browser/HomePages policy, which locks down the Start pages that the users cannot modify. You can use the DisableLockdownOfStartPages policy to allow users to modify the Start pages when Browser/HomePages policy is in effect.
+
+Note: This policy has no effect when Browser/HomePages is not configured.
+
+Important
+This setting can only be used with domain-joined or MDM-enrolled devices. For more info, see the Microsoft browser extension policy (aka.ms/browserpolicy).</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnterpriseModeSiteList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This setting lets you configure whether your company uses Enterprise Mode and the Enterprise Mode Site List to address common compatibility problems with legacy websites.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnterpriseSiteListServiceUrl</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>FirstRunURL</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Configure first run URL.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>HomePages</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Configure the Start page URLs for your employees.
+Example:
+If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
+Encapsulate each string with greater than and less than characters like any other XML tag.
+
+Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LockdownFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
+
+If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventAccessToAboutFlagsInMicrosoftEdge</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Prevent access to the about:flags page in Microsoft Edge.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventFirstRunPage</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Specifies whether the First Run webpage is prevented from automatically opening on the first launch of Microsoft Edge. This policy is only available for Windows 10 version 1703 or later for desktop.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventLiveTileDataCollection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy lets you decide whether Microsoft Edge can gather Live Tile metadata from the ieonline.microsoft.com service to provide a better experience while pinning a Live Tile to the Start menu.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverride</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventSmartScreenPromptOverrideForFiles</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Don't allow Windows Defender SmartScreen warning overrides for unverified files.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventUsingLocalHostIPAddressForWebRTC</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Prevent using localhost IP address for WebRTC</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ProvisionFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
+
+If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SendIntranetTraffictoInternetExplorer</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Sends all intranet traffic over to Internet Explorer.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SetDefaultSearchEngine</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Sets the default search engine for MDM-enrolled devices. Users can still change their default search engine.
+
+If this setting is turned on, you are setting the default search engine that you would like your employees to use. Employees can still change the default search engine, unless you apply the AllowSearchEngineCustomization policy which will disable the ability to change it. You must specify a link to the OpenSearch XML file that contains, at minimum, the short name and the URL to the search engine. If you would like for your employees to use the Edge factory settings for the default search engine for their market, set the string EDGEDEFAULT; if you would like for your employees to use Bing as the default search engine, set the string EDGEBING.
+
+If this setting is not configured, the default search engine is set to the one specified in App settings and can be changed by your employees.  If this setting is disabled, the policy-set search engine will be removed, and, if it is the current default, the default will be set back to the factory Microsoft Edge search engine for the market.
+
+Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on domain-joined machines or when the device is MDM-enrolled.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ShowMessageWhenOpeningSitesInInternetExplorer</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Show message when opening sites in Internet Explorer</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SyncFavoritesBetweenIEAndMicrosoftEdge</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Specifies whether favorites are kept in sync between Internet Explorer and Microsoft Edge. Changes to favorites in one browser are reflected in the other, including: additions, deletions, modifications, and ordering.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7346,6 +9252,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>credui.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredUI~AT~WindowsComponents~CredUI</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisablePasswordReveal</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7392,6 +9299,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>desktop.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>desktop~AT~Desktop</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisablePersonalDirChange</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7415,28 +9323,6 @@ The XML below is the DDF for Windows 10, version 1709.
           </DFType>
         </DFProperties>
         <Node>
-          <NodeName>AllowUserPrinterInstallation</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Boolean that specifies whether or not to allow user to install new printers</Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>DefaultPrinterName</NodeName>
           <DFProperties>
             <AccessType>
@@ -7456,6 +9342,30 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PreventAddingNewPrinters</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Boolean that specifies whether or not to prevent user to install new printers</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7478,6 +9388,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7520,6 +9431,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7542,6 +9454,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7551,7 +9464,7 @@ The XML below is the DDF for Windows 10, version 1709.
               <Get />
             </AccessType>
             <Description>A GUID identifying the client application authorized to retrieve OAuth tokens from the OAuthAuthority</Description>
-            <DefaultValue>E1CF1107-FF90-4228-93BF-26052DD2C714</DefaultValue>
+            <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -7564,6 +9477,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7586,6 +9500,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7608,6 +9523,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7630,6 +9546,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7672,6 +9589,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7695,6 +9613,7 @@ The XML below is the DDF for Windows 10, version 1709.
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7718,6 +9637,7 @@ The XML below is the DDF for Windows 10, version 1709.
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7741,6 +9661,7 @@ The XML below is the DDF for Windows 10, version 1709.
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7763,6 +9684,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7785,6 +9707,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7808,6 +9731,7 @@ The XML below is the DDF for Windows 10, version 1709.
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -7854,6 +9778,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AddSearchProvider</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7880,6 +9805,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TurnOnActiveXFiltering</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7906,6 +9832,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AddonManagement_AddOnList</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7932,6 +9859,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RestrictFormSuggestPW</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7958,6 +9886,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyWarnCertMismatch</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -7984,6 +9913,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~DeleteBrowsingHistory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DBHDisableDeleteOnExit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8010,6 +9940,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_EnableEnhancedProtectedMode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8036,6 +9967,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8062,10 +9994,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnterpriseModeSiteList</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>AllowInternetExplorer7PolicyList </NodeName>
+          <NodeName>AllowInternetExplorer7PolicyList</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -8088,6 +10021,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>CompatView_UsePolicyList</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8114,6 +10048,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>CompatView_IntranetSites</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8140,6 +10075,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8166,6 +10102,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8192,6 +10129,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8218,6 +10156,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8244,6 +10183,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8270,6 +10210,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8296,6 +10237,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8322,6 +10264,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetSettings~Advanced~Browsing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>UseIntranetSiteForOneWordEntry</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8348,6 +10291,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Zonemaps</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8374,6 +10318,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8400,6 +10345,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_InvalidSignatureBlock</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8426,6 +10372,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8452,6 +10399,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnableSuggestedSites</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8478,6 +10426,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8504,6 +10453,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_CertificateRevocation</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8530,6 +10480,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DownloadSignatures</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8556,6 +10507,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryBinaryBehaviorSecurityRestriction</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8582,6 +10534,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableFlashInIE</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8608,6 +10561,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8634,6 +10588,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableSafetyFilterOverride</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8660,6 +10615,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableSafetyFilterOverrideForAppRepUnknown</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8686,6 +10642,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~DeleteBrowsingHistory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RestrictHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8712,6 +10669,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AddonManagement_RestrictCrashDetection</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8738,10 +10696,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SQM_DisableCEIP</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableDeletingUserVisitedWebsites </NodeName>
+          <NodeName>DisableDeletingUserVisitedWebsites</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -8764,6 +10723,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~DeleteBrowsingHistory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DBHDisableDeleteHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8790,6 +10750,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~RSS_Feeds</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Disable_Downloading_of_Enclosures</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8816,6 +10777,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_SetWinInetProtocols</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8842,6 +10804,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoFirstRunCustomise</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8868,6 +10831,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DisableFlipAhead</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8894,6 +10858,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RestrictHomePage</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8920,6 +10885,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoCertError</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8946,6 +10912,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryPrivacy</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableInPrivateBrowsing</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8972,6 +10939,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_EnableEnhancedProtectedMode64Bit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -8998,6 +10966,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RestrictProxy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9024,6 +10993,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoSearchProvider</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9050,6 +11020,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SecondaryHomePages</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9076,6 +11047,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Disable_Security_Settings_Check</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9102,6 +11074,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DisableEPMCompat</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9128,6 +11101,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9154,6 +11128,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDomainAllowlist</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9180,6 +11155,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_IncludeUnspecifiedLocalSites</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9206,6 +11182,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_UNCAsIntranet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9232,6 +11209,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9258,6 +11236,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9284,6 +11263,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9310,6 +11290,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAllowPasteViaScript_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9336,6 +11317,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDropOrPasteFiles_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9362,6 +11344,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9388,10 +11371,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneAllowLoadingOfXAMLFilesWRONG</NodeName>
+          <NodeName>InternetZoneAllowLoadingOfXAMLFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -9414,6 +11398,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_XAML_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9440,6 +11425,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9464,8 +11450,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Intranet</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9490,8 +11477,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAllowTDCControl_Both_LocalMachine</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAllowTDCControl_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9518,6 +11506,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_WebBrowserControl_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9542,8 +11531,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyWindowsRestrictionsURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyWindowsRestrictionsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9570,6 +11560,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9596,6 +11587,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9622,6 +11614,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_ScriptStatusBar_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9648,10 +11641,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1</NodeName>
+          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -9674,32 +11668,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_1</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9724,8 +11693,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_3</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9752,6 +11722,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDownloadUnsignedActiveX_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9776,8 +11747,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_LocalMachine</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9804,6 +11776,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9830,6 +11803,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9856,6 +11830,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyMimeSniffingURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9880,8 +11855,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_Policy_TurnOnProtectedMode_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_TurnOnProtectedMode_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9908,6 +11884,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_LocalPathForUpload_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -9934,36 +11911,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_1</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG1</NodeName>
+          <NodeName>InternetZoneJavaPermissions</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -9986,32 +11938,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_1</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10038,6 +11965,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLaunchAppsAndFilesInIFRAME_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10064,6 +11992,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLogon_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10090,6 +12019,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10116,6 +12046,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10142,6 +12073,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicySignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10168,6 +12100,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_UnsafeFiles_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10194,6 +12127,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyBlockPopupWindows_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10220,6 +12154,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10246,6 +12181,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10272,6 +12208,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10298,6 +12235,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10324,6 +12262,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10350,6 +12289,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10376,6 +12316,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10402,6 +12343,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10428,6 +12370,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10454,6 +12397,34 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10480,6 +12451,61 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneJavaPermissions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10506,6 +12532,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10532,6 +12559,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10558,6 +12586,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10584,6 +12613,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10610,6 +12640,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10636,6 +12667,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10662,6 +12694,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10688,6 +12721,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10714,6 +12748,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10740,6 +12775,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10764,8 +12800,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10792,6 +12829,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10818,6 +12856,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10844,6 +12883,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10870,6 +12910,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10896,6 +12937,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10922,6 +12964,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10948,6 +12991,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -10974,6 +13018,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11000,6 +13045,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11026,6 +13072,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11052,6 +13099,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11078,6 +13126,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11104,6 +13153,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11130,6 +13180,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11156,6 +13207,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11182,6 +13234,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11208,6 +13261,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11234,6 +13288,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11260,6 +13315,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11286,6 +13342,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11312,6 +13369,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11338,6 +13396,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11364,6 +13423,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11390,6 +13450,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11416,6 +13477,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11442,6 +13504,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11468,6 +13531,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11494,6 +13558,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11520,6 +13585,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11546,6 +13612,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11572,6 +13639,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11598,6 +13666,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11624,6 +13693,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11650,6 +13720,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11676,6 +13747,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11702,6 +13774,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11728,6 +13801,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11754,6 +13828,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11780,6 +13855,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11806,6 +13882,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11832,6 +13909,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11858,6 +13936,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11884,6 +13963,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11910,6 +13990,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11936,6 +14017,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11962,6 +14044,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -11988,6 +14071,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12014,6 +14098,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12040,6 +14125,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12066,6 +14152,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12092,6 +14179,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12118,6 +14206,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12144,6 +14233,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12170,6 +14260,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12196,6 +14287,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12222,6 +14314,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12248,6 +14341,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12274,6 +14368,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12300,6 +14395,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12326,6 +14422,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12352,6 +14449,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12378,6 +14476,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12404,6 +14503,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryMimeSniffingSafetyFeature</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12430,6 +14530,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryMKProtocolSecurityRestriction</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12456,6 +14557,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryInformationBar</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12480,8 +14582,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Disable_Managing_Safety_Filter_IE9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12508,6 +14611,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisablePerUserActiveXInstall</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12534,6 +14638,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryProtectionFromZoneElevation</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12560,6 +14665,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDisableRunThisTime</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12586,6 +14692,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictActiveXInstall</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_11</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12612,6 +14719,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12636,8 +14744,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyActiveScripting_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyActiveScripting_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12664,6 +14773,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12690,6 +14800,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12714,8 +14825,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyBinaryBehaviors_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyBinaryBehaviors_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12742,6 +14854,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAllowPasteViaScript_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12768,6 +14881,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDropOrPasteFiles_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12792,12 +14906,13 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyFileDownload_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFileDownload_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG1</NodeName>
+          <NodeName>RestrictedSitesZoneAllowFontDownloads</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -12820,32 +14935,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_7</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12872,6 +14962,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12898,6 +14989,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_XAML_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12922,8 +15014,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAllowMETAREFRESH_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAllowMETAREFRESH_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12950,6 +15043,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -12976,6 +15070,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13002,6 +15097,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAllowTDCControl_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13028,6 +15124,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_WebBrowserControl_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13054,6 +15151,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyWindowsRestrictionsURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13080,6 +15178,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13106,6 +15205,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13132,6 +15232,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_ScriptStatusBar_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13158,6 +15259,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13184,6 +15286,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13210,6 +15313,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13236,6 +15340,34 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDownloadUnsignedActiveX_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RestrictedSitesZoneEnableCrossSiteScriptingFilter</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13262,6 +15394,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13288,6 +15421,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13314,6 +15448,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyMimeSniffingURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13340,6 +15475,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_LocalPathForUpload_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13366,6 +15502,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13392,6 +15529,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13418,6 +15556,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLaunchAppsAndFilesInIFRAME_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13444,6 +15583,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLogon_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13470,6 +15610,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13494,8 +15635,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13520,8 +15662,9 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyRunActiveXControls_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyRunActiveXControls_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13548,6 +15691,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicySignedFrameworkComponentsURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13572,12 +15716,13 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXMarkedSafe_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXMarkedSafe_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG</NodeName>
+          <NodeName>RestrictedSitesZoneScriptingOfJavaApplets</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -13598,12 +15743,13 @@ The XML below is the DDF for Windows 10, version 1709.
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptingOfJavaApplets_6</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptingOfJavaApplets_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG2</NodeName>
+          <NodeName>RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -13626,10 +15772,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_UnsafeFiles_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG3</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -13652,10 +15799,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG4</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnProtectedMode</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -13678,10 +15826,11 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_TurnOnProtectedMode_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG5</NodeName>
+          <NodeName>RestrictedSitesZoneUsePopupBlocker</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -13704,6 +15853,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyBlockPopupWindows_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13730,6 +15880,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictFileDownload</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_12</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13756,6 +15907,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryScriptedWindowSecurityRestrictions</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13782,6 +15934,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SpecificSearchProvider</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13808,6 +15961,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>OnlyUseAXISForActiveXInstall</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13834,6 +15988,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13860,6 +16015,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13886,6 +16042,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13912,6 +16069,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13938,6 +16096,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13964,6 +16123,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -13990,6 +16150,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -14016,6 +16177,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -14042,6 +16204,61 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -14068,6 +16285,61 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -14094,6 +16366,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -14120,58 +16393,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_5</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -14214,6 +16436,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -14260,6 +16483,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <MSFT:ADMXBacked>Printing.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Printing~AT~ControlPanel~CplPrinters</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PointAndPrint_Restrictions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -14302,6 +16526,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -14345,6 +16570,7 @@ The XML below is the DDF for Windows 10, version 1709.
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -14387,6 +16613,7 @@ The XML below is the DDF for Windows 10, version 1709.
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -14627,87 +16854,6 @@ The XML below is the DDF for Windows 10, version 1709.
               <Replace />
             </AccessType>
             <Description></Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-      </Node>
-      <Node>
-        <NodeName>AccountPolicies</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Add />
-            <Get />
-            <Delete />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <ZeroOrOne />
-          </Occurrence>
-          <Scope>
-            <Dynamic />
-          </Scope>
-          <DFType>
-            <DDFName></DDFName>
-          </DFType>
-        </DFProperties>
-        <Node>
-          <NodeName>MinDevicePasswordLength</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>This security setting determines the least number of characters that a password for a user account may contain. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PasswordMustMeetComplexityRequirement</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>This security setting determines whether passwords must meet complexity requirements.
-
-If this policy is enabled, passwords must meet the following minimum requirements:
-
-Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
-Be at least six characters in length
-Contain characters from three of the following four categories:
-English uppercase characters (A through Z)
-English lowercase characters (a through z)
-Base 10 digits (0 through 9)
-Non-alphabetic characters (for example, !, $, #, %)
-Complexity requirements are enforced when passwords are changed or created.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -15911,6 +18057,30 @@ Complexity requirements are enforced when passwords are changed or created.</Des
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>AllowAadPasswordReset</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether password reset is enabled for AAD accounts.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowFastReconnect</NodeName>
           <DFProperties>
             <AccessType>
@@ -16537,7 +18707,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             </AccessType>
             <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
 
-If you enable or donâ€™t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
+If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
 
 If you disable this setting, the Microsoft Compatibility List will not be used during browser navigation.</Description>
             <DFFormat>
@@ -16665,6 +18835,30 @@ This policy will only apply on domain joined machines or when the device is MDM 
               <Replace />
             </AccessType>
             <Description>This setting lets you decide whether to turn on Windows Defender SmartScreen.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AlwaysEnableBooksLibrary</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether the Books Library in Microsoft Edge will always be visible regardless of the country or region setting for the device.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -16848,9 +19042,40 @@ Example:
 If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
 Encapsulate each string with greater than and less than characters like any other XML tag.
 
-Version 1703 or later:â€¯ If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LockdownFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
+
+If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -16999,6 +19224,37 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description>Prevent using localhost IP address for WebRTC</Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ProvisionFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
+
+If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -17181,6 +19437,102 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>LetAppsAccessCellularData</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting specifies whether Windows apps can access cellular data.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessCellularData_ForceAllowTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessCellularData_ForceDenyTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessCellularData_UserInControlOfTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>ShowAppCellularAccessUI</NodeName>
           <DFProperties>
@@ -17621,6 +19973,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableWindowsAutoPilotResetCredentials</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -18846,6 +21222,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DOCacheHost</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DODownloadMode</NodeName>
           <DFProperties>
             <AccessType>
@@ -19520,7 +21920,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>Specifies how many passwords can be stored in the history that canâ€™t be used.</Description>
+            <Description>Specifies how many passwords can be stored in the history that can’t be used.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20469,6 +22869,52 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
       </Node>
       <Node>
+        <NodeName>ExploitGuard</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Delete />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>ExploitProtectionSettings</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
         <NodeName>Games</NodeName>
         <DFProperties>
           <AccessType>
@@ -20499,6 +22945,52 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <Replace />
             </AccessType>
             <Description>Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Handwriting</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Get />
+            <Delete />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrOne />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>PanelDefaultModeDocked</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Specifies whether the handwriting panel comes up floating near the text box or attached to the bottom of the screen</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -20752,7 +23244,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>AllowInternetExplorer7PolicyList </NodeName>
+          <NodeName>AllowInternetExplorer7PolicyList</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -21376,7 +23868,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableDeletingUserVisitedWebsites </NodeName>
+          <NodeName>DisableDeletingUserVisitedWebsites</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -22024,7 +24516,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneAllowLoadingOfXAMLFilesWRONG</NodeName>
+          <NodeName>InternetZoneAllowLoadingOfXAMLFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -22264,31 +24756,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2</NodeName>
+          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -22528,55 +24996,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG2</NodeName>
+          <NodeName>InternetZoneJavaPermissions</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -23008,7 +25428,79 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>IntranetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>IntranetZoneInitializeAndScriptActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneJavaPermissions</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25168,31 +27660,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG2</NodeName>
+          <NodeName>RestrictedSitesZoneAllowFontDownloads</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25576,6 +28044,30 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>RestrictedSitesZoneEnableCrossSiteScriptingFilter</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows</NodeName>
           <DFProperties>
             <AccessType>
@@ -25888,7 +28380,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG</NodeName>
+          <NodeName>RestrictedSitesZoneScriptingOfJavaApplets</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25912,7 +28404,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG2</NodeName>
+          <NodeName>RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25936,7 +28428,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG3</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25960,7 +28452,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG4</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnProtectedMode</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25984,7 +28476,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG5</NodeName>
+          <NodeName>RestrictedSitesZoneUsePopupBlocker</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -26080,7 +28572,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>SecurityZonesUseOnlyMachineSettings</NodeName>
+          <NodeName>SecurityZonesUseOnlyMachineSettings </NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -26344,7 +28836,103 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -26393,54 +28981,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>TrustedSitesZoneNavigateWindowsAndFrames</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG2</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -26708,9 +29248,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </AccessType>
             <Description>This policy setting prevents users from adding new Microsoft accounts on this computer.
 
-If you select the "Users canâ€™t add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
+If you select the "Users can’t add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
 
-If you select the "Users canâ€™t add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
+If you select the "Users can’t add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
 
 If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.</Description>
             <DFFormat>
@@ -26884,6 +29424,130 @@ Default: Guest.</Description>
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>Devices_AllowedToFormatAndEjectRemovableMedia</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Devices: Allowed to format and eject removable media
+
+This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to:
+
+Administrators
+Administrators and Interactive Users
+
+Default: This policy is not defined and only Administrators have this ability.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Devices_AllowUndockWithoutHavingToLogon</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Devices: Allow undock without having to log on
+This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon is not required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer.
+Default: Enabled.
+
+Caution
+Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Devices: Prevent users from installing printer drivers when connecting to shared printers
+
+For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer. If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer. If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer.
+
+Default on servers: Enabled.
+Default on workstations: Disabled
+
+Notes
+
+This setting does not affect the ability to add a local printer.
+This setting does not affect Administrators.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Devices: Restrict CD-ROM access to locally logged-on user only
+
+This security setting determines whether a CD-ROM is accessible to both local and remote users simultaneously.
+
+If this policy is enabled, it allows only the interactively logged-on user to access removable CD-ROM media. If this policy is enabled and no one is logged on interactively, the CD-ROM can be accessed over the network.
+
+Default: This policy is not defined and CD-ROM access is not restricted to the locally logged-on user.</Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</NodeName>
           <DFProperties>
             <AccessType>
@@ -26911,7 +29575,7 @@ Do not display user information (3)</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>Interactivelogon_DoNotDisplayLastSignedIn</NodeName>
+          <NodeName>InteractiveLogon_DoNotDisplayLastSignedIn</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -26941,7 +29605,7 @@ Default: Disabled.</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>Interactivelogon_DoNotDisplayUsernameAtSignIn</NodeName>
+          <NodeName>InteractiveLogon_DoNotDisplayUsernameAtSignIn</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -26971,7 +29635,7 @@ Default: Disabled.</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>Interactivelogon_DoNotRequireCTRLALTDEL</NodeName>
+          <NodeName>InteractiveLogon_DoNotRequireCTRLALTDEL</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -27234,6 +29898,39 @@ Default: This policy is not defined and automatic administrative logon is not al
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Shutdown: Allow system to be shut down without having to log on
+
+This security setting determines whether a computer can be shut down without having to log on to Windows.
+
+When this policy is enabled, the Shut Down command is available on the Windows logon screen.
+
+When this policy is disabled, the option to shut down the computer does not appear on the Windows logon screen. In this case, users must be able to log on to the computer successfully and have the Shut down the system user right before they can perform a system shutdown.
+
+Default on workstations: Enabled.
+Default on servers: Disabled.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>Shutdown_ClearVirtualMemoryPageFile</NodeName>
           <DFProperties>
             <AccessType>
@@ -27278,9 +29975,9 @@ Default: Disabled.</Description>
 
 This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
-â€¢ Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
+• Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
 
-â€¢ Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.</Description>
+• Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27310,17 +30007,17 @@ This policy setting controls the behavior of the elevation prompt for administra
 
 The options are:
 
-â€¢ Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
+• Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
 
-â€¢ Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
+• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 
-â€¢ Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
-â€¢ Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+• Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-â€¢ Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
-â€¢ Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.</Description>
+• Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27349,11 +30046,43 @@ This policy setting controls the behavior of the elevation prompt for standard u
 
 The options are:
 
-â€¢ Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+• Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-â€¢ Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
+• Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
 
-â€¢ Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.</Description>
+• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>User Account Control: Detect application installations and prompt for elevation
+
+This policy setting controls the behavior of application installation detection for the computer.
+
+The options are:
+
+Enabled: (Default) When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+
+Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27383,9 +30112,9 @@ This policy setting enforces public key infrastructure (PKI) signature checks fo
 
 The options are:
 
-â€¢ Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run.
+• Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run.
 
-â€¢ Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.</Description>
+• Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27413,17 +30142,17 @@ The options are:
 
 This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following:
 
-- â€¦\Program Files\, including subfolders
-- â€¦\Windows\system32\
-- â€¦\Program Files (x86)\, including subfolders for 64-bit versions of Windows
+- …\Program Files\, including subfolders
+- …\Windows\system32\
+- …\Program Files (x86)\, including subfolders for 64-bit versions of Windows
 
 Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
 
 The options are:
 
-â€¢ Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
+• Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
 
-â€¢ Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.</Description>
+• Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27453,9 +30182,9 @@ This policy setting controls the behavior of all User Account Control (UAC) poli
 
 The options are:
 
-â€¢ Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+• Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
 
-â€¢ Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.</Description>
+• Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27485,9 +30214,9 @@ This policy setting controls whether the elevation request prompt is displayed o
 
 The options are:
 
-â€¢ Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
+• Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
 
-â€¢ Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
+• Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27517,9 +30246,9 @@ This policy setting controls the behavior of Admin Approval Mode for the built-i
 
 The options are:
 
-â€¢ Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation.
+• Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation.
 
-â€¢ Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.</Description>
+• Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -27549,9 +30278,9 @@ This policy setting controls whether application write failures are redirected t
 
 The options are:
 
-â€¢ Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
+• Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
 
-â€¢ Disabled: Applications that write data to protected locations fail.</Description>
+• Disabled: Applications that write data to protected locations fail.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -28847,102 +31576,6 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>LetAppsAccessCellularData</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>This policy setting specifies whether Windows apps can access cellular data.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LetAppsAccessCellularData_ForceAllowTheseApps</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LetAppsAccessCellularData_ForceDenyTheseApps</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LetAppsAccessCellularData_UserInControlOfTheseApps</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data privacy setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>LetAppsAccessContacts</NodeName>
           <DFProperties>
             <AccessType>
@@ -30199,7 +32832,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting specifies whether Windows apps can sync with devices.</Description>
+            <Description>This policy setting specifies whether Windows apps can communicate with unpaired wireless devices.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30223,7 +32856,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -30247,7 +32880,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -30271,7 +32904,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'sync with devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31258,6 +33891,30 @@ The options are:
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowCloudSearch</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>AllowIndexingEncryptedStoresOrItems</NodeName>
           <DFProperties>
@@ -32951,6 +35608,30 @@ The options are:
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>AllowDiskHealthModelUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EnhancedStorageDevices</NodeName>
           <DFProperties>
             <AccessType>
@@ -33221,7 +35902,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users canâ€™t access OneDrive from the OneDrive app and file picker; Windows Store apps canâ€™t access OneDrive using the WinRT API; OneDrive doesnâ€™t appear in the navigation pane in File Explorer; OneDrive files arenâ€™t kept in sync with the cloud; Users canâ€™t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
+            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Windows Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -33248,6 +35929,30 @@ The options are:
             <Description></Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>FeedbackHubAlwaysSaveDiagnosticsLocally</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy is not present or set to false, users will be presented with the option to save locally. The default is to not save locally.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -34071,6 +36776,30 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableDualScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Do not allow update deferral policies to cause scans against Windows Update</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>EngagedRestartDeadline</NodeName>
           <DFProperties>
             <AccessType>
@@ -34239,7 +36968,7 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ManageBuildPreview</NodeName>
+          <NodeName>ManagePreviewBuilds</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -35739,6 +38468,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -35761,6 +38491,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -35783,83 +38514,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-          </DFProperties>
-        </Node>
-      </Node>
-      <Node>
-        <NodeName>AccountPolicies</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <DDFName></DDFName>
-          </DFType>
-        </DFProperties>
-        <Node>
-          <NodeName>MinDevicePasswordLength</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>This security setting determines the least number of characters that a password for a user account may contain. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.</Description>
-            <DefaultValue>7</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>PasswordMustMeetComplexityRequirement</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>This security setting determines whether passwords must meet complexity requirements.
-
-If this policy is enabled, passwords must meet the following minimum requirements:
-
-Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
-Be at least six characters in length
-Contain characters from three of the following four categories:
-English uppercase characters (A through Z)
-English lowercase characters (a through z)
-Base 10 digits (0 through 9)
-Non-alphabetic characters (for example, !, $, #, %)
-Complexity requirements are enforced when passwords are changed or created.</Description>
-            <DefaultValue>0</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -35902,6 +38557,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -35924,6 +38580,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -35946,6 +38603,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -35968,6 +38626,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -36014,6 +38673,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>ActiveXInstallService.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ActiveXInstallService~AT~WindowsComponents~AxInstSv</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ApprovedActiveXInstallSites</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -36057,6 +38717,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -36099,6 +38760,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36121,6 +38783,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36143,6 +38806,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36166,6 +38830,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36188,6 +38853,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36211,6 +38877,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36234,6 +38901,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36256,6 +38924,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36278,6 +38947,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36300,6 +38970,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -36346,6 +39017,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnableAppV</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36372,6 +39044,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Virtualization_JITVEnable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36398,6 +39071,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_PackageManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PackageManagement_AutoCleanupEnable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36424,6 +39098,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Scripting</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Scripting_Enable_Package_Scripts</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36450,6 +39125,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Enable_Publishing_Refresh_UX</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36476,6 +39152,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Reporting</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Reporting_Server_Policy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36502,6 +39179,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Integration_Roaming_File_Exclusions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36528,6 +39206,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Integration_Roaming_Registry_Exclusions</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36554,6 +39233,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Steaming_Autoload</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36580,6 +39260,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Client_Coexistence</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Client_Coexistence_Enable_Migration_mode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36606,6 +39287,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Integration_Root_User</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36632,6 +39314,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Integration</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Integration_Root_Global</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36658,6 +39341,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Publishing_Server1_Policy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36684,6 +39368,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Publishing_Server2_Policy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36710,6 +39395,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Publishing_Server3_Policy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36736,6 +39422,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Publishing_Server4_Policy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36762,6 +39449,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Publishing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Publishing_Server5_Policy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36788,6 +39476,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Certificate_Filter_For_Client_SSL</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36814,6 +39503,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Allow_High_Cost_Launch</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36840,6 +39530,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Location_Provider</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36866,6 +39557,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Package_Installation_Root</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36892,6 +39584,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Package_Source_Root</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36918,6 +39611,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Reestablishment_Interval</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36944,6 +39638,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Reestablishment_Retries</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36970,6 +39665,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Shared_Content_Store_Mode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -36996,6 +39692,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Support_Branch_Cache</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37022,6 +39719,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Streaming</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Streaming_Verify_Certificate_Revocation_List</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37048,6 +39746,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>appv.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>appv~AT~System~CAT_AppV~CAT_Virtualization</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Virtualization_JITVAllowList</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -37071,6 +39770,30 @@ Complexity requirements are enforced when passwords are changed or created.</Des
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>AllowAadPasswordReset</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Specifies whether password reset is enabled for AAD accounts.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowFastReconnect</NodeName>
           <DFProperties>
             <AccessType>
@@ -37090,6 +39813,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37113,6 +39837,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37135,6 +39860,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -37181,6 +39907,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoAutoplayfornonVolume</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37207,6 +39934,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoAutorun</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37233,6 +39961,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <MSFT:ADMXBacked>AutoPlay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>AutoPlay~AT~WindowsComponents~AutoPlay</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Autorun</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -37275,6 +40004,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -37317,6 +40047,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37339,6 +40070,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37361,6 +40093,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37383,6 +40116,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37405,6 +40139,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -37448,6 +40183,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37470,6 +40206,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37493,6 +40230,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37515,6 +40253,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37538,6 +40277,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37560,6 +40300,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37583,6 +40324,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37606,6 +40348,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37629,6 +40372,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37651,6 +40395,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37661,7 +40406,7 @@ Complexity requirements are enforced when passwords are changed or created.</Des
             </AccessType>
             <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
 
-If you enable or donâ€™t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
+If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
 
 If you disable this setting, the Microsoft Compatibility List will not be used during browser navigation.</Description>
             <DefaultValue>1</DefaultValue>
@@ -37677,6 +40422,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37699,6 +40445,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37722,6 +40469,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37749,6 +40497,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37771,6 +40520,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37793,6 +40543,30 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AlwaysEnableBooksLibrary</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Specifies whether the Books Library in Microsoft Edge will always be visible regardless of the country or region setting for the device.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37816,6 +40590,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37844,6 +40619,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37872,6 +40648,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37895,6 +40672,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37918,6 +40696,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37941,6 +40720,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37954,7 +40734,7 @@ Example:
 If you wanted to allow contoso.com and fabrikam.com then you would append /support to the site strings like contoso.com/support and fabrikam.com/support.
 Encapsulate each string with greater than and less than characters like any other XML tag.
 
-Version 1703 or later:â€¯ If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
+Version 1703 or later:  If you don't want to send traffic to Microsoft, you can use the about:blank value (encapsulate with greater than and less than characters like any other XML tag), which is honored for both domain- and non-domain-joined machines, when it's the only configured URL.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -37969,6 +40749,37 @@ Version 1703 or later:â€¯ If you don't want to send traffic to Microsoft, yo
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LockdownFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting lets you decide whether employees can add, import, sort, or edit the Favorites list on Microsoft Edge.
+
+If you enable this setting, employees won't be able to add, import, or change anything in the Favorites list. Also as part of this, Save a Favorite, Import settings, and the context menu items (such as, Create a new folder) are all turned off.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -37991,6 +40802,7 @@ Version 1703 or later:â€¯ If you don't want to send traffic to Microsoft, yo
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38016,6 +40828,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38040,6 +40853,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38062,6 +40876,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38084,6 +40899,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38106,6 +40922,37 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ProvisionFavorites</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting allows you to configure a default set of favorites, which will appear for employees. Employees cannot modify, sort, move, export or delete these provisioned favorites.
+
+If you enable this setting, you can set favorite URL's and favorite folders to appear on top of users' favorites list (either in the Hub or Favorites Bar). The user favorites will appear after these provisioned favorites.
+
+Important
+Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
+
+If you disable or don't configure this setting, employees will see the favorites they set in the Hub and Favorites Bar.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38129,6 +40976,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38157,6 +41005,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38180,6 +41029,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38203,6 +41053,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38245,6 +41096,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38268,6 +41120,101 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>LetAppsAccessCellularData</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting specifies whether Windows apps can access cellular data.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessCellularData_ForceAllowTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessCellularData_ForceDenyTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LetAppsAccessCellularData_UserInControlOfTheseApps</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>ShowAppCellularAccessUI</NodeName>
           <DFProperties>
             <AccessType>
@@ -38290,6 +41237,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>wwansvc.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>wwansvc~AT~Network~WwanSvc_Category~UISettings_Category</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ShowAppCellularAccessUI</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38332,6 +41280,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38354,6 +41303,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38376,6 +41326,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38398,6 +41349,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38421,6 +41373,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38444,6 +41397,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38466,6 +41420,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38488,6 +41443,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38514,6 +41470,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>ICM.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ICM~AT~System~InternetManagement~InternetManagement_Settings</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableHTTPPrinting_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38540,6 +41497,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>ICM.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ICM~AT~System~InternetManagement~InternetManagement_Settings</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableWebPnPDownload_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38566,6 +41524,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>ICM.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ICM~AT~System~InternetManagement~InternetManagement_Settings</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ShellPreventWPWDownload_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38588,6 +41547,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38614,6 +41574,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>networkprovider.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>NetworkProvider~AT~Network~Cat_NetworkProvider</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Pol_HardenedPaths</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38640,6 +41601,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>NetworkConnections.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>NetworkConnections~AT~Network~NetworkConnections</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NC_AllowNetBridge_NLA</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38686,6 +41648,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>credentialproviders.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredentialProviders~AT~System~Logon</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowDomainPINLogon</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38712,6 +41675,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>credentialproviders.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredentialProviders~AT~System~Logon</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>BlockDomainPicturePassword</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableWindowsAutoPilotResetCredentials</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38758,6 +41745,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>credui.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredUI~AT~WindowsComponents~CredUI</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisablePasswordReveal</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38784,6 +41772,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>credui.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>CredUI~AT~WindowsComponents~CredUI</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnumerateAdministrators</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38826,6 +41815,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38848,6 +41838,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38890,6 +41881,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38912,6 +41904,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -38957,6 +41950,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>wwansvc.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>wwansvc~AT~Network~WwanSvc_Category~NetworkCost_Category</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SetCost3G</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -38982,6 +41976,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>wwansvc.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>wwansvc~AT~Network~WwanSvc_Category~NetworkCost_Category</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SetCost4G</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -39025,6 +42020,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39048,6 +42044,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39071,6 +42068,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39094,6 +42092,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39117,6 +42116,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39140,6 +42140,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39163,6 +42164,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39186,6 +42188,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39209,6 +42212,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39232,6 +42236,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39255,6 +42260,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39278,6 +42284,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39301,6 +42308,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39324,6 +42332,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39347,6 +42356,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39370,6 +42380,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39393,6 +42404,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39416,6 +42428,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39439,6 +42452,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39462,6 +42476,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39485,6 +42500,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39508,6 +42524,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39531,6 +42548,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39554,6 +42572,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39577,6 +42596,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39600,6 +42620,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39623,6 +42644,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39646,6 +42668,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39669,6 +42692,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39692,6 +42716,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39715,6 +42740,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39738,6 +42764,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39761,6 +42788,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39784,6 +42812,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39807,6 +42836,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -39850,6 +42880,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39873,6 +42904,31 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DOCacheHost</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39896,6 +42952,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39919,6 +42976,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39942,6 +43000,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39965,6 +43024,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -39988,6 +43048,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40011,6 +43072,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40034,6 +43096,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40057,6 +43120,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40080,6 +43144,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40103,6 +43168,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40126,6 +43192,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40149,6 +43216,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40172,6 +43240,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40195,6 +43264,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -40238,6 +43308,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40261,6 +43332,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40284,6 +43356,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -40330,6 +43403,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DeviceInstall_IDs_Deny</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40356,6 +43430,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>deviceinstallation.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>DeviceInstallation~AT~System~DeviceInstall_Category~DeviceInstall_Restrictions_Category</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DeviceInstall_Classes_Deny</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -40399,6 +43474,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40421,6 +43497,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40443,6 +43520,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40465,6 +43543,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40487,6 +43566,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40509,6 +43589,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40517,7 +43598,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Specifies how many passwords can be stored in the history that canâ€™t be used.</Description>
+            <Description>Specifies how many passwords can be stored in the history that can’t be used.</Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
@@ -40531,6 +43612,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40554,6 +43636,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40576,6 +43659,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40598,6 +43682,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40620,6 +43705,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40643,6 +43729,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40665,6 +43752,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40687,6 +43775,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40714,6 +43803,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40740,6 +43830,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>ControlPanelDisplay.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ControlPanelDisplay~AT~ControlPanel~Personalization</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>CPL_Personalization_NoLockScreenSlideshow</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40762,6 +43853,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -40805,6 +43897,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40828,6 +43921,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -40874,6 +43968,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>WerConsentCustomize_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40900,6 +43995,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>WerDisable_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40926,6 +44022,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PCH_ShowUI</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40952,6 +44049,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>WerNoSecondLevelData_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -40978,6 +44076,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>ErrorReporting.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>ErrorReporting~AT~WindowsComponents~CAT_WindowsErrorReporting</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>WerDoNotShowUI</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -41024,6 +44123,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>eventlog.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_Application</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Channel_Log_Retention_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41050,6 +44150,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>eventlog.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_Application</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Channel_LogMaxSize_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41076,6 +44177,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>eventlog.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_Security</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Channel_LogMaxSize_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41102,6 +44204,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>eventlog.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>EventLog~AT~WindowsComponents~EventLogCategory~EventLog_System</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Channel_LogMaxSize_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -41145,6 +44248,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41167,6 +44271,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41189,6 +44294,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41211,6 +44317,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41233,6 +44340,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41255,6 +44363,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41277,6 +44386,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41299,6 +44409,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41321,6 +44432,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41343,6 +44455,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41366,6 +44479,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41389,6 +44503,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41412,6 +44527,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41434,6 +44550,50 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>ExploitGuard</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>ExploitProtectionSettings</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -41476,6 +44636,51 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>Handwriting</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <DDFName></DDFName>
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>PanelDefaultModeDocked</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Specifies whether the handwriting panel comes up floating near the text box or attached to the bottom of the screen</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -41522,6 +44727,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AddSearchProvider</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41548,6 +44754,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TurnOnActiveXFiltering</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41574,6 +44781,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AddonManagement_AddOnList</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41600,6 +44808,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyWarnCertMismatch</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41626,6 +44835,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~DeleteBrowsingHistory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DBHDisableDeleteOnExit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41652,6 +44862,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_EnableEnhancedProtectedMode</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41678,6 +44889,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnterpriseModeEnable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41704,6 +44916,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnterpriseModeSiteList</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41730,10 +44943,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_EnableSSL3Fallback</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>AllowInternetExplorer7PolicyList </NodeName>
+          <NodeName>AllowInternetExplorer7PolicyList</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -41756,6 +44970,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>CompatView_UsePolicyList</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41782,6 +44997,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryCompatView</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>CompatView_IntranetSites</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41808,6 +45024,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41834,6 +45051,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41860,6 +45078,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41886,6 +45105,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyInternetZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41912,6 +45132,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyIntranetZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41938,6 +45159,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLocalMachineZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41964,6 +45186,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -41990,6 +45213,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetSettings~Advanced~Browsing</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>UseIntranetSiteForOneWordEntry</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42016,6 +45240,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Zonemaps</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42042,6 +45267,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneLockdownTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42068,6 +45294,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_InvalidSignatureBlock</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42094,6 +45321,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyRestrictedSitesZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42120,6 +45348,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnableSuggestedSites</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42146,6 +45375,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyTrustedSitesZoneTemplate</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42172,6 +45402,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_CertificateRevocation</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42198,6 +45429,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DownloadSignatures</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42224,6 +45456,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryBinaryBehaviorSecurityRestriction</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42250,6 +45483,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableFlashInIE</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42276,6 +45510,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42300,6 +45535,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableSafetyFilterOverride</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42324,6 +45562,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisableSafetyFilterOverrideForAppRepUnknown</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42350,6 +45591,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~DeleteBrowsingHistory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RestrictHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42374,6 +45616,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AddonManagement_RestrictCrashDetection</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42400,10 +45645,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SQM_DisableCEIP</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableDeletingUserVisitedWebsites </NodeName>
+          <NodeName>DisableDeletingUserVisitedWebsites</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -42426,6 +45672,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~DeleteBrowsingHistory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DBHDisableDeleteHistory</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42452,6 +45699,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~RSS_Feeds</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Disable_Downloading_of_Enclosures</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42478,6 +45726,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_SetWinInetProtocols</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42504,6 +45753,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoFirstRunCustomise</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42530,6 +45780,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DisableFlipAhead</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42556,6 +45807,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoCertError</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42582,6 +45834,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~CategoryPrivacy</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableInPrivateBrowsing</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42608,6 +45861,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_EnableEnhancedProtectedMode64Bit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42632,6 +45886,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RestrictProxy</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42658,6 +45915,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoSearchProvider</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42684,6 +45942,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SecondaryHomePages</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42710,6 +45969,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Disable_Security_Settings_Check</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42736,6 +45996,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>NoUpdateCheck</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42762,6 +46023,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~AdvancedPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Advanced_DisableEPMCompat</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42788,6 +46050,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Security_zones_map_edit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42814,6 +46077,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Security_options_edit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42840,6 +46104,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42866,6 +46131,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDomainAllowlist</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42892,6 +46158,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_IncludeUnspecifiedLocalSites</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42918,6 +46185,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_UNCAsIntranet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42944,6 +46212,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42970,6 +46239,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -42996,6 +46266,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43022,6 +46293,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAllowPasteViaScript_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43048,6 +46320,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDropOrPasteFiles_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43074,6 +46347,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43100,10 +46374,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneAllowLoadingOfXAMLFilesWRONG</NodeName>
+          <NodeName>InternetZoneAllowLoadingOfXAMLFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -43126,6 +46401,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_XAML_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43152,6 +46428,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43176,8 +46453,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Intranet</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43202,8 +46480,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAllowTDCControl_Both_LocalMachine</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAllowTDCControl_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43230,6 +46509,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_WebBrowserControl_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43254,8 +46534,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyWindowsRestrictionsURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyWindowsRestrictionsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43282,6 +46563,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43308,6 +46590,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43334,6 +46617,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_ScriptStatusBar_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43360,10 +46644,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1</NodeName>
+          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -43386,32 +46671,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_1</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43436,8 +46696,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_3</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43464,6 +46725,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDownloadUnsignedActiveX_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43488,8 +46750,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_LocalMachine</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43516,6 +46779,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43542,6 +46806,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Internet</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43568,6 +46833,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyMimeSniffingURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43592,8 +46858,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_Policy_TurnOnProtectedMode_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_Policy_TurnOnProtectedMode_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43620,6 +46887,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_LocalPathForUpload_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43646,36 +46914,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_1</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG1</NodeName>
+          <NodeName>InternetZoneJavaPermissions</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -43698,32 +46941,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_1</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneJavaPermissionsWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43750,6 +46968,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLaunchAppsAndFilesInIFRAME_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43776,6 +46995,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLogon_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43802,6 +47022,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43828,6 +47049,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43854,6 +47076,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicySignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43880,6 +47103,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_UnsafeFiles_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43906,6 +47130,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyBlockPopupWindows_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43932,6 +47157,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43958,6 +47184,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -43984,6 +47211,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44010,6 +47238,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44036,6 +47265,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44062,6 +47292,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44088,6 +47319,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44114,6 +47346,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44140,6 +47373,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44166,6 +47400,34 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44192,6 +47454,61 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>IntranetZoneJavaPermissions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44218,6 +47535,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44244,6 +47562,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44270,6 +47589,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44296,6 +47616,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44322,6 +47643,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44348,6 +47670,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44374,6 +47697,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44400,6 +47724,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44426,6 +47751,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44452,6 +47778,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44476,8 +47803,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone~IZ_LocalMachineZone</MSFT:ADMXCategory>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44504,6 +47832,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44530,6 +47859,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44556,6 +47886,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44582,6 +47913,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44608,6 +47940,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44634,6 +47967,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44660,6 +47994,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44686,6 +48021,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44712,6 +48048,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44738,6 +48075,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44764,6 +48102,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44790,6 +48129,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44816,6 +48156,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44842,6 +48183,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44868,6 +48210,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44894,6 +48237,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44920,6 +48264,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44946,6 +48291,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44972,6 +48318,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -44998,6 +48345,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45024,6 +48372,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45050,6 +48399,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45076,6 +48426,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45102,6 +48453,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45128,6 +48480,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45154,6 +48507,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_4</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45180,6 +48534,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45206,6 +48561,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45232,6 +48588,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45258,6 +48615,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45284,6 +48642,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45310,6 +48669,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45336,6 +48696,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45362,6 +48723,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45388,6 +48750,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45414,6 +48777,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45440,6 +48804,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45466,6 +48831,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_LocalMachineZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45492,6 +48858,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45518,6 +48885,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45544,6 +48912,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45570,6 +48939,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45596,6 +48966,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45622,6 +48993,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45648,6 +49020,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45674,6 +49047,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45700,6 +49074,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45726,6 +49101,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45752,6 +49128,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45778,6 +49155,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45804,6 +49182,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45830,6 +49209,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45856,6 +49236,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45882,6 +49263,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45908,6 +49290,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45934,6 +49317,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45960,6 +49344,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -45986,6 +49371,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46012,6 +49398,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46038,6 +49425,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46064,6 +49452,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46090,6 +49479,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46116,6 +49506,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryMimeSniffingSafetyFeature</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_6</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46142,6 +49533,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryMKProtocolSecurityRestriction</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_3</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46168,6 +49560,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryInformationBar</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyExplorerProcesses_10</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46192,8 +49585,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>Disable_Managing_Safety_Filter_IE9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46220,6 +49614,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisablePerUserActiveXInstall</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46246,6 +49641,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryProtectionFromZoneElevation</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_9</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46272,6 +49668,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VerMgmtDisableRunThisTime</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46298,6 +49695,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictActiveXInstall</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_11</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46324,6 +49722,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46348,8 +49747,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyActiveScripting_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyActiveScripting_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46376,6 +49776,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46402,6 +49803,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46426,8 +49828,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyBinaryBehaviors_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyBinaryBehaviors_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46454,6 +49857,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAllowPasteViaScript_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46480,6 +49884,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDropOrPasteFiles_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46504,12 +49909,13 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyFileDownload_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyFileDownload_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG1</NodeName>
+          <NodeName>RestrictedSitesZoneAllowFontDownloads</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -46532,32 +49938,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_7</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneAllowFontDownloadsWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46584,6 +49965,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46610,6 +49992,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_XAML_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46634,8 +50017,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAllowMETAREFRESH_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAllowMETAREFRESH_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46662,6 +50046,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46688,6 +50073,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyOnlyAllowApprovedDomainsToUseActiveXWithoutPrompt_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46714,6 +50100,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAllowTDCControl_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46740,6 +50127,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_WebBrowserControl_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46766,6 +50154,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyWindowsRestrictionsURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46792,6 +50181,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46818,6 +50208,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46844,6 +50235,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_ScriptStatusBar_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46870,6 +50262,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46896,6 +50289,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46922,6 +50316,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDownloadSignedActiveX_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46948,6 +50343,34 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDownloadUnsignedActiveX_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RestrictedSitesZoneEnableCrossSiteScriptingFilter</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -46974,6 +50397,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsAcrossWindows_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47000,6 +50424,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyDragDropAcrossDomainsWithinWindow_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47026,6 +50451,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyMimeSniffingURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47052,6 +50478,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_LocalPathForUpload_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47078,6 +50505,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47104,6 +50532,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47130,6 +50559,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLaunchAppsAndFilesInIFRAME_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47156,6 +50586,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyLogon_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47182,6 +50613,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47206,8 +50638,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47232,8 +50665,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyRunActiveXControls_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyRunActiveXControls_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47260,6 +50694,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicySignedFrameworkComponentsURLaction_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47284,12 +50719,13 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXMarkedSafe_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXMarkedSafe_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG</NodeName>
+          <NodeName>RestrictedSitesZoneScriptingOfJavaApplets</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -47310,12 +50746,13 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZoneLockdown</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptingOfJavaApplets_6</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptingOfJavaApplets_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG2</NodeName>
+          <NodeName>RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -47338,10 +50775,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_UnsafeFiles_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG3</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -47364,10 +50802,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Restricted</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG4</NodeName>
+          <NodeName>RestrictedSitesZoneTurnOnProtectedMode</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -47390,10 +50829,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_TurnOnProtectedMode_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneWRONG5</NodeName>
+          <NodeName>RestrictedSitesZoneUsePopupBlocker</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -47416,6 +50856,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyBlockPopupWindows_7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47442,6 +50883,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryRestrictFileDownload</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_12</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47468,6 +50910,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_CategoryScriptedWindowSecurityRestrictions</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IESF_PolicyAllProcesses_8</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47494,10 +50937,11 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SpecificSearchProvider</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>SecurityZonesUseOnlyMachineSettings</NodeName>
+          <NodeName>SecurityZonesUseOnlyMachineSettings </NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -47520,6 +50964,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>Security_HKLM_only</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47546,6 +50991,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>OnlyUseAXISForActiveXInstall</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47572,6 +51018,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyAccessDataSourcesAcrossDomains_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47598,6 +51045,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarActiveXURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47624,6 +51072,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNotificationBarDownloadURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47650,6 +51099,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyFontDownload_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47676,6 +51126,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47702,6 +51153,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47728,6 +51180,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_AllowScriptlets_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47754,6 +51207,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_Phishing_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47780,6 +51234,61 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyUserdataPersistence_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47806,6 +51315,61 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47832,6 +51396,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyJavaPermissions_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47858,58 +51423,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_5</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG1</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneWRONG2</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -47956,6 +51470,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ForestSearch</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -47982,6 +51497,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>EnableCbacAndArmor</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48008,6 +51524,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ClientRequireFast</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48034,6 +51551,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ValidateKDC</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48060,6 +51578,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>Kerberos.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Kerberos~AT~System~kerberos</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>MaxTokenSize</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -48103,6 +51622,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48126,6 +51646,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -48156,9 +51677,9 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             </AccessType>
             <Description>This policy setting prevents users from adding new Microsoft accounts on this computer.
 
-If you select the "Users canâ€™t add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
+If you select the "Users can’t add Microsoft accounts" option, users will not be able to create new Microsoft accounts on this computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise.
 
-If you select the "Users canâ€™t add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
+If you select the "Users can’t add or log on with Microsoft accounts" option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator on this computer to log on and manage the system.
 
 If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.</Description>
             <DefaultValue>0</DefaultValue>
@@ -48175,6 +51696,7 @@ If you disable or do not configure this policy (recommended), users will be able
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48206,7 +51728,8 @@ Default: Disabled.</Description>
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48233,7 +51756,8 @@ Note: If the Guest account is disabled and the security option Network Access: S
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48272,6 +51796,7 @@ It is possible for applications that use remote interactive logons to bypass thi
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48285,7 +51810,7 @@ It is possible for applications that use remote interactive logons to bypass thi
 This security setting determines whether a different account name is associated with the security identifier (SID) for the account Administrator. Renaming the well-known Administrator account makes it slightly more difficult for unauthorized persons to guess this privileged user name and password combination.
 
 Default: Administrator.</Description>
-            <DefaultValue></DefaultValue>
+            <DefaultValue>Administrator</DefaultValue>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -48299,6 +51824,7 @@ Default: Administrator.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48312,7 +51838,7 @@ Default: Administrator.</Description>
 This security setting determines whether a different account name is associated with the security identifier (SID) for the account "Guest." Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination.
 
 Default: Guest.</Description>
-            <DefaultValue></DefaultValue>
+            <DefaultValue>Guest</DefaultValue>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -48326,6 +51852,131 @@ Default: Guest.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Devices_AllowedToFormatAndEjectRemovableMedia</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Devices: Allowed to format and eject removable media
+
+This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to:
+
+Administrators
+Administrators and Interactive Users
+
+Default: This policy is not defined and only Administrators have this ability.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Devices_AllowUndockWithoutHavingToLogon</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Devices: Allow undock without having to log on
+This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon is not required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer.
+Default: Enabled.
+
+Caution
+Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Devices: Prevent users from installing printer drivers when connecting to shared printers
+
+For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer. If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer. If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer.
+
+Default on servers: Enabled.
+Default on workstations: Disabled
+
+Notes
+
+This setting does not affect the ability to add a local printer.
+This setting does not affect Administrators.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Devices: Restrict CD-ROM access to locally logged-on user only
+
+This security setting determines whether a CD-ROM is accessible to both local and remote users simultaneously.
+
+If this policy is enabled, it allows only the interactively logged-on user to access removable CD-ROM media. If this policy is enabled and no one is logged on interactively, the CD-ROM can be accessed over the network.
+
+Default: This policy is not defined and CD-ROM access is not restricted to the locally logged-on user.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48352,10 +52003,11 @@ Do not display user information (3)</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>Interactivelogon_DoNotDisplayLastSignedIn</NodeName>
+          <NodeName>InteractiveLogon_DoNotDisplayLastSignedIn</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -48381,10 +52033,11 @@ Default: Disabled.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>Interactivelogon_DoNotDisplayUsernameAtSignIn</NodeName>
+          <NodeName>InteractiveLogon_DoNotDisplayUsernameAtSignIn</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -48396,7 +52049,7 @@ If this policy is enabled, the username will not be shown.
 If this policy is disabled, the username will be shown.
 
 Default: Disabled.</Description>
-            <DefaultValue>0</DefaultValue>
+            <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -48410,10 +52063,11 @@ Default: Disabled.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>Interactivelogon_DoNotRequireCTRLALTDEL</NodeName>
+          <NodeName>InteractiveLogon_DoNotRequireCTRLALTDEL</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -48442,6 +52096,7 @@ Default on stand-alone computers: Enabled.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48468,6 +52123,8 @@ Default: not enforced.</Description>
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48497,6 +52154,8 @@ Default: No message.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>0xF000</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -48524,6 +52183,7 @@ Default: No message.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48553,6 +52213,7 @@ Default: Disabled.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48582,6 +52243,7 @@ Default: Enabled.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48611,6 +52273,7 @@ This policy is supported on at least Windows Server 2016.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48636,6 +52299,7 @@ This policy will be turned off by default on domain joined machines. This would 
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48663,6 +52327,40 @@ Default: This policy is not defined and automatic administrative logon is not al
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Shutdown: Allow system to be shut down without having to log on
+
+This security setting determines whether a computer can be shut down without having to log on to Windows.
+
+When this policy is enabled, the Shut Down command is available on the Windows logon screen.
+
+When this policy is disabled, the option to shut down the computer does not appear on the Windows logon screen. In this case, users must be able to log on to the computer successfully and have the Shut down the system user right before they can perform a system shutdown.
+
+Default on workstations: Enabled.
+Default on servers: Disabled.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48694,6 +52392,7 @@ Default: Disabled.</Description>
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48706,10 +52405,10 @@ Default: Disabled.</Description>
 
 This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
-â€¢ Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
+• Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you do not disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
 
-â€¢ Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.</Description>
-            <DefaultValue>1</DefaultValue>
+• Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.</Description>
+            <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -48723,6 +52422,7 @@ This policy setting controls whether User Interface Accessibility (UIAccess or U
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48737,18 +52437,18 @@ This policy setting controls the behavior of the elevation prompt for administra
 
 The options are:
 
-â€¢ Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
+• Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments.
 
-â€¢ Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
+• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 
-â€¢ Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
-â€¢ Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+• Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-â€¢ Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
+• Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
-â€¢ Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.</Description>
-            <DefaultValue>0</DefaultValue>
+• Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.</Description>
+            <DefaultValue>5</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -48762,6 +52462,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48775,12 +52476,12 @@ This policy setting controls the behavior of the elevation prompt for standard u
 
 The options are:
 
-â€¢ Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+• Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-â€¢ Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
+• Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
 
-â€¢ Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.</Description>
-            <DefaultValue>0</DefaultValue>
+• Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.</Description>
+            <DefaultValue>3</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -48794,6 +52495,39 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UserAccountControl_DetectApplicationInstallationsAndPromptForElevation</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>User Account Control: Detect application installations and prompt for elevation
+
+This policy setting controls the behavior of application installation detection for the computer.
+
+The options are:
+
+Enabled: (Default) When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+
+Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48808,77 +52542,9 @@ This policy setting enforces public key infrastructure (PKI) signature checks fo
 
 The options are:
 
-â€¢ Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run.
+• Enabled: Enforces the PKI certification path validation for a given executable file before it is permitted to run.
 
-â€¢ Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.</Description>
-            <DefaultValue>1</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>User Account Control: Only elevate UIAccess applications that are installed in secure locations
-
-This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following:
-
-- â€¦\Program Files\, including subfolders
-- â€¦\Windows\system32\
-- â€¦\Program Files (x86)\, including subfolders for 64-bit versions of Windows
-
-Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
-
-The options are:
-
-â€¢ Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
-
-â€¢ Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.</Description>
-            <DefaultValue>1</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>UserAccountControl_RunAllAdministratorsInAdminApprovalMode</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>User Account Control: Turn on Admin Approval Mode
-
-This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer.
-
-The options are:
-
-â€¢ Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
-
-â€¢ Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.</Description>
+• Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.</Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
@@ -48893,6 +52559,77 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>User Account Control: Only elevate UIAccess applications that are installed in secure locations
+
+This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following:
+
+- …\Program Files\, including subfolders
+- …\Windows\system32\
+- …\Program Files (x86)\, including subfolders for 64-bit versions of Windows
+
+Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting.
+
+The options are:
+
+• Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
+
+• Disabled: An application runs with UIAccess integrity even if it does not reside in a secure location in the file system.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>UserAccountControl_RunAllAdministratorsInAdminApprovalMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>User Account Control: Turn on Admin Approval Mode
+
+This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer.
+
+The options are:
+
+• Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+
+• Disabled: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.</Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48907,9 +52644,9 @@ This policy setting controls whether the elevation request prompt is displayed o
 
 The options are:
 
-â€¢ Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
+• Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
 
-â€¢ Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
+• Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.</Description>
             <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
@@ -48924,6 +52661,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48938,10 +52676,10 @@ This policy setting controls the behavior of Admin Approval Mode for the built-i
 
 The options are:
 
-â€¢ Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation.
+• Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation.
 
-â€¢ Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.</Description>
-            <DefaultValue>1</DefaultValue>
+• Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.</Description>
+            <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -48955,6 +52693,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -48969,9 +52708,9 @@ This policy setting controls whether application write failures are redirected t
 
 The options are:
 
-â€¢ Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
+• Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
 
-â€¢ Disabled: Applications that write data to protected locations fail.</Description>
+• Disabled: Applications that write data to protected locations fail.</Description>
             <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
@@ -48986,6 +52725,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49028,6 +52768,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49071,6 +52812,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49113,6 +52855,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49135,6 +52878,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49178,6 +52922,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49201,6 +52946,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49224,6 +52970,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49266,6 +53013,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49288,6 +53036,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49310,6 +53059,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49332,6 +53082,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49354,6 +53105,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49376,6 +53128,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49398,6 +53151,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49420,6 +53174,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49466,6 +53221,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowStandbyStatesAC_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49492,6 +53248,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerVideoSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VideoPowerDownTimeOutDC_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49518,6 +53275,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerVideoSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>VideoPowerDownTimeOutAC_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49544,6 +53302,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DCHibernateTimeOut_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49570,6 +53329,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ACHibernateTimeOut_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49596,6 +53356,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DCPromptForPasswordOnResume_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49622,6 +53383,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ACPromptForPasswordOnResume_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49648,6 +53410,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DCStandbyTimeOut_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49674,6 +53437,7 @@ The options are:
             <MSFT:ADMXBacked>power.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Power~AT~System~PowerManagementCat~PowerSleepSettingsCat</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ACStandbyTimeOut_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49720,6 +53484,7 @@ The options are:
             <MSFT:ADMXBacked>Printing.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Printing~AT~ControlPanel~CplPrinters</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PointAndPrint_Restrictions_Win7</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49746,6 +53511,7 @@ The options are:
             <MSFT:ADMXBacked>Printing2.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Printing2~AT~Printers</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>PublishPrinters</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -49788,7 +53554,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49812,6 +53578,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:StartOSVerison>10.0.10240</MSFT:StartOSVerison>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49834,6 +53601,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49856,6 +53624,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49878,6 +53647,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49900,6 +53670,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -49922,6 +53694,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -49944,6 +53718,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -49966,6 +53742,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -49988,6 +53765,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50010,6 +53789,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50032,6 +53813,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50054,6 +53837,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50076,6 +53860,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50098,6 +53884,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50120,6 +53908,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50142,6 +53932,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50164,6 +53955,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50186,6 +53979,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50208,94 +54003,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LetAppsAccessCellularData</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>This policy setting specifies whether Windows apps can access cellular data.</Description>
-            <DefaultValue>0</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LetAppsAccessCellularData_ForceAllowTheseApps</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LetAppsAccessCellularData_ForceDenyTheseApps</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LetAppsAccessCellularData_UserInControlOfTheseApps</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data privacy setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50318,6 +54027,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50340,6 +54050,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50362,6 +54074,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50384,6 +54098,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50406,6 +54122,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50428,6 +54145,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50450,6 +54169,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50472,6 +54193,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50494,6 +54217,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50516,6 +54240,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50538,6 +54264,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50560,6 +54288,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50582,6 +54312,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50604,6 +54335,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50626,6 +54359,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50648,6 +54383,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50670,6 +54407,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50692,6 +54430,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50714,6 +54454,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50736,6 +54478,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50758,6 +54502,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50780,6 +54525,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50802,6 +54549,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50824,6 +54573,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50846,6 +54597,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50868,6 +54620,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50890,6 +54644,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50912,6 +54668,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50934,6 +54692,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -50956,6 +54715,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -50978,6 +54739,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51000,6 +54763,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51022,6 +54787,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51044,6 +54810,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51066,6 +54834,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51088,6 +54858,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51110,6 +54882,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51132,6 +54905,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51154,6 +54929,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51176,6 +54953,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51198,6 +54977,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51220,6 +55000,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51242,6 +55024,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51264,6 +55048,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51286,6 +55072,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51308,6 +55095,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51330,6 +55119,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51352,6 +55143,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51374,6 +55167,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51396,6 +55190,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51418,6 +55214,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51440,6 +55238,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51448,7 +55248,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>This policy setting specifies whether Windows apps can sync with devices.</Description>
+            <Description>This policy setting specifies whether Windows apps can communicate with unpaired wireless devices.</Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
@@ -51462,6 +55262,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51470,7 +55271,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -51484,6 +55285,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51492,7 +55295,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to sync with devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -51506,6 +55309,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51514,7 +55319,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'sync with devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -51528,6 +55333,8 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            <MSFT:SubStringSeparatorChar>;</MSFT:SubStringSeparatorChar>
           </DFProperties>
         </Node>
         <Node>
@@ -51550,6 +55357,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -51596,6 +55404,7 @@ The options are:
             <MSFT:ADMXBacked>remoteassistance.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RemoteAssistance~AT~System~RemoteAssist</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RA_Options</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51622,6 +55431,7 @@ The options are:
             <MSFT:ADMXBacked>remoteassistance.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RemoteAssistance~AT~System~RemoteAssist</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RA_Logging</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51648,6 +55458,7 @@ The options are:
             <MSFT:ADMXBacked>remoteassistance.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RemoteAssistance~AT~System~RemoteAssist</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RA_Solicit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51674,6 +55485,7 @@ The options are:
             <MSFT:ADMXBacked>remoteassistance.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RemoteAssistance~AT~System~RemoteAssist</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RA_Unsolicit</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -51720,6 +55532,7 @@ The options are:
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_CONNECTIONS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TS_DISABLE_CONNECTIONS</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51746,6 +55559,7 @@ The options are:
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TS_ENCRYPTION_POLICY</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51772,6 +55586,7 @@ The options are:
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_REDIRECTION</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TS_CLIENT_DRIVE_M</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51798,6 +55613,7 @@ The options are:
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_CLIENT</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TS_CLIENT_DISABLE_PASSWORD_SAVING_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51824,6 +55640,7 @@ The options are:
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TS_PASSWORD</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51850,6 +55667,7 @@ The options are:
             <MSFT:ADMXBacked>terminalserver.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>TerminalServer~AT~WindowsComponents~TS_GP_NODE~TS_TERMINAL_SERVER~TS_SECURITY</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TS_RPC_ENCRYPTION</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -51896,6 +55714,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMClient</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowBasic_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51922,6 +55741,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowBasic_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51946,8 +55766,9 @@ The options are:
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>AllowCredSSP_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRMClient</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>AllowCredSSP_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -51973,7 +55794,8 @@ The options are:
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>AllowCredSSP_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>AllowCredSSP_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52000,6 +55822,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowAutoConfig</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52026,6 +55849,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMClient</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowUnencrypted_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52052,6 +55876,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowUnencrypted_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52078,6 +55903,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMClient</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisallowDigest</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52102,8 +55928,9 @@ The options are:
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>DisallowNegotiate_1</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMClient</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisallowNegotiate_2</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52128,8 +55955,9 @@ The options are:
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMClient</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>DisallowNegotiate_2</MSFT:ADMXPolicyName>
+            <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>DisallowNegotiate_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52156,6 +55984,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableRunAs</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52182,6 +56011,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>CBTHardeningLevel_1</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52208,6 +56038,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMClient</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TrustedHosts</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52234,6 +56065,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>HttpCompatibilityListener</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52260,6 +56092,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteManagement.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteManagement~AT~WindowsComponents~WinRM~WinRMService</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>HttpsCompatibilityListener</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -52306,6 +56139,7 @@ The options are:
             <MSFT:ADMXBacked>rpc.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RPC~AT~System~Rpc</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RpcRestrictRemoteClients</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52332,6 +56166,7 @@ The options are:
             <MSFT:ADMXBacked>rpc.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>RPC~AT~System~Rpc</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>RpcEnableAuthEpResolution</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -52378,6 +56213,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteShell.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteShell~AT~WindowsComponents~WinRS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>AllowRemoteShellAccess</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52404,6 +56240,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteShell.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteShell~AT~WindowsComponents~WinRS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>MaxConcurrentUsers</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52430,6 +56267,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteShell.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteShell~AT~WindowsComponents~WinRS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IdleTimeout</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52456,6 +56294,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteShell.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteShell~AT~WindowsComponents~WinRS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>MaxMemoryPerShellMB</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52482,6 +56321,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteShell.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteShell~AT~WindowsComponents~WinRS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>MaxProcessesPerShell</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52508,6 +56348,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteShell.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteShell~AT~WindowsComponents~WinRS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>MaxShellsPerUser</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52534,6 +56375,7 @@ The options are:
             <MSFT:ADMXBacked>WindowsRemoteShell.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>WindowsRemoteShell~AT~WindowsComponents~WinRS</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ShellTimeOut</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -52557,6 +56399,29 @@ The options are:
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>AllowCloudSearch</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>2</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowIndexingEncryptedStoresOrItems</NodeName>
           <DFProperties>
             <AccessType>
@@ -52576,6 +56441,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52598,6 +56464,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52620,6 +56487,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52642,6 +56510,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52664,6 +56533,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52686,6 +56556,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52708,6 +56579,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52730,6 +56602,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52752,6 +56625,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52774,6 +56648,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52797,6 +56672,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -52839,6 +56715,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52862,6 +56739,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52884,6 +56762,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52907,6 +56786,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52930,6 +56810,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52952,6 +56833,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52974,6 +56856,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -52996,6 +56879,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53018,6 +56902,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -53061,6 +56946,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53083,6 +56969,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53105,6 +56992,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53127,6 +57015,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53150,6 +57039,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53173,6 +57063,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53196,6 +57087,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53219,6 +57111,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53241,6 +57134,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53264,6 +57158,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53286,6 +57181,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53308,6 +57204,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -53351,6 +57248,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53374,6 +57272,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53397,6 +57296,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -53439,6 +57339,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -53482,6 +57383,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53505,6 +57407,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53528,6 +57431,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53551,6 +57455,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53574,6 +57479,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53597,6 +57503,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53620,6 +57527,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53643,6 +57551,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53666,6 +57575,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53689,6 +57599,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53712,6 +57623,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53735,6 +57647,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53757,6 +57670,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53780,6 +57694,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53802,6 +57717,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53824,6 +57740,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53847,6 +57764,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53869,6 +57787,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53892,6 +57811,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53915,6 +57835,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53937,6 +57858,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53959,6 +57881,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -53981,6 +57904,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54003,6 +57927,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54025,6 +57950,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54047,6 +57973,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54070,6 +57997,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54093,6 +58021,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54116,6 +58045,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -54138,6 +58068,30 @@ The options are:
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>AllowDiskHealthModelUpdates</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>EnhancedStorageDevices</NodeName>
           <DFProperties>
@@ -54162,6 +58116,7 @@ The options are:
             <MSFT:ADMXBacked>enhancedstorage.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>EnhancedStorage~AT~System~EnStorDeviceAccess</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>TCGSecurityActivationDisabled</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -54204,6 +58159,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54226,6 +58182,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54248,6 +58205,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54270,6 +58228,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54292,6 +58251,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54314,6 +58274,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54336,6 +58297,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54358,6 +58320,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54384,6 +58347,7 @@ The options are:
             <MSFT:ADMXBacked>earlylauncham.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>EarlyLaunchAM~AT~System~ELAMCategory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>POL_DriverLoadPolicy_Name</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54392,7 +58356,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users canâ€™t access OneDrive from the OneDrive app and file picker; Windows Store apps canâ€™t access OneDrive using the WinRT API; OneDrive doesnâ€™t appear in the navigation pane in File Explorer; OneDrive files arenâ€™t kept in sync with the cloud; Users canâ€™t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
+            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Windows Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
@@ -54406,6 +58370,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54432,6 +58397,30 @@ The options are:
             <MSFT:ADMXBacked>systemrestore.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>SystemRestore~AT~System~SR</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>SR_DisableSR</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>FeedbackHubAlwaysSaveDiagnosticsLocally</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy is not present or set to false, users will be presented with the option to save locally. The default is to not save locally.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54454,6 +58443,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -54497,6 +58487,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54520,6 +58511,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54543,6 +58535,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54566,6 +58559,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54589,6 +58583,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54612,6 +58607,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54635,6 +58631,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54657,6 +58654,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54680,6 +58678,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54702,6 +58701,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54725,6 +58725,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54748,6 +58749,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -54791,6 +58793,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -54833,6 +58836,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54855,6 +58859,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54877,6 +58882,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54899,6 +58905,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54921,6 +58928,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54944,6 +58952,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54966,6 +58975,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -54988,6 +58998,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55010,6 +59021,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55032,6 +59044,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55054,6 +59067,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55076,6 +59090,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55098,6 +59113,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55120,6 +59136,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55142,6 +59159,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55164,6 +59182,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55186,6 +59205,30 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableDualScan</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Do not allow update deferral policies to cause scans against Windows Update</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55208,6 +59251,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55230,6 +59274,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55252,6 +59297,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55274,6 +59320,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55296,6 +59343,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55318,6 +59366,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55340,10 +59389,11 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ManageBuildPreview</NodeName>
+          <NodeName>ManagePreviewBuilds</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -55362,6 +59412,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55384,6 +59435,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55406,6 +59458,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55428,6 +59481,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55450,6 +59504,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55472,6 +59527,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55494,6 +59550,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55516,6 +59573,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55538,6 +59596,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55560,6 +59619,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55582,6 +59642,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55604,6 +59665,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55626,6 +59688,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55648,6 +59711,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55670,6 +59734,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55692,6 +59757,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55714,6 +59780,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55736,6 +59803,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55758,6 +59826,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55780,6 +59849,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55802,6 +59872,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55825,6 +59896,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -55867,6 +59939,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55889,6 +59962,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55911,6 +59985,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55933,6 +60008,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55955,6 +60031,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -55977,6 +60054,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -56020,6 +60098,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56043,6 +60122,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56066,6 +60146,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56089,6 +60170,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56112,6 +60194,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56135,6 +60218,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56158,6 +60242,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56181,6 +60266,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56204,6 +60290,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56227,6 +60314,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56250,6 +60338,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56273,6 +60362,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56296,6 +60386,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56319,6 +60410,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -56362,6 +60454,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56385,6 +60478,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -56431,6 +60525,7 @@ The options are:
             <MSFT:ADMXBacked>logon.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Logon~AT~System~Logon</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableLockScreenAppNotifications</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56457,6 +60552,7 @@ The options are:
             <MSFT:ADMXBacked>logon.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>Logon~AT~System~Logon</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DontDisplayNetworkSelectionUI</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56479,6 +60575,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -56521,6 +60618,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56543,6 +60641,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56567,6 +60666,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56591,6 +60691,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56616,6 +60717,7 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56640,6 +60742,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56662,6 +60765,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -56686,6 +60790,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>

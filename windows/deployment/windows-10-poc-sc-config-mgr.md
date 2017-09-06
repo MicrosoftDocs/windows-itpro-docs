@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, sccm
 ms.localizationpriority: high
+ms.date: 08/23/2017
 author: greg-lindsay
 ---
 
@@ -238,8 +239,8 @@ This section contains several procedures to support Zero Touch installation with
 1. Type the following commands at a Windows PowerShell prompt on SRV1:
 
     ```
-    New-Item -ItemType Directory -Path "C:Sources\OSD\Boot"
-    New-Item -ItemType Directory -Path "C:Sources\OSD\OS"
+    New-Item -ItemType Directory -Path "C:\Sources\OSD\Boot"
+    New-Item -ItemType Directory -Path "C:\Sources\OSD\OS"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\Settings"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\Branding"
     New-Item -ItemType Directory -Path "C:\Sources\OSD\MDT"
@@ -559,7 +560,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 1. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
 
     ```
-    New-Item -ItemType Directory -Path "C:Sources\OSD\OS\Windows 10 Enterprise x64"
+    New-Item -ItemType Directory -Path "C:\Sources\OSD\OS\Windows 10 Enterprise x64"
     cmd /c copy /z "C:\MDTBuildLab\Captures\REFW10X64-001.wim" "C:\Sources\OSD\OS\Windows 10 Enterprise x64"
     ```
 

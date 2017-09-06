@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - RemoteShell
@@ -56,7 +56,7 @@ ms.date: 08/09/2017
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Allow Remote Shell Access*
+-   GP English name: *Allow Remote Shell Access*
 -   GP name: *AllowRemoteShellAccess*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -100,7 +100,7 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *MaxConcurrentUsers*
+-   GP English name: *MaxConcurrentUsers*
 -   GP name: *MaxConcurrentUsers*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -144,7 +144,7 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify idle Timeout*
+-   GP English name: *Specify idle Timeout*
 -   GP name: *IdleTimeout*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -188,7 +188,7 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify maximum amount of memory in MB per Shell*
+-   GP English name: *Specify maximum amount of memory in MB per Shell*
 -   GP name: *MaxMemoryPerShellMB*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -232,7 +232,7 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify maximum number of processes per Shell*
+-   GP English name: *Specify maximum number of processes per Shell*
 -   GP name: *MaxProcessesPerShell*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -276,7 +276,7 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify maximum number of remote shells per user*
+-   GP English name: *Specify maximum number of remote shells per user*
 -   GP name: *MaxShellsPerUser*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*
@@ -320,7 +320,7 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify Shell Timeout*
+-   GP English name: *Specify Shell Timeout*
 -   GP name: *ShellTimeOut*
 -   GP path: *Windows Components/Windows Remote Shell*
 -   GP ADMX file name: *WindowsRemoteShell.admx*

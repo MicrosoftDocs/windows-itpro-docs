@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Configure endpoints using Mobile Device Management tools
@@ -21,6 +22,8 @@ ms.localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 You can use mobile device management (MDM) solutions to configure endpoints. Windows Defender ATP supports MDMs by providing OMA-URIs to create policies to manage endpoints.
 
@@ -106,7 +109,7 @@ Configuration for onboarded machines: telemetry reporting frequency | ./Device/V
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Select **Endpoint management** > **Client management** on the **Navigation pane**.
+    a.  Select **Endpoint management** > **Clients** on the **Navigation pane**.
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
@@ -203,4 +206,5 @@ Health Status for offboarded machines: Onboarding State | ./Device/Vendor/MSFT/W
 - [Configure endpoints using Group Policy](configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 - [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md)
+- [Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

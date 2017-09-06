@@ -89,7 +89,7 @@
 #### [AppLocker Settings](applocker\applocker-settings.md)
 
 ## [BitLocker](bitlocker\bitlocker-overview.md)
-### [Overview of BitLocker and device encryption in Windows 10](bitlocker\bitlocker-device-encryption-overview-windows-10.md)
+### [Overview of BitLocker Device Encryption in Windows 10](bitlocker\bitlocker-device-encryption-overview-windows-10.md)
 ### [BitLocker frequently asked questions (FAQ)](bitlocker\bitlocker-frequently-asked-questions.md)
 ### [Prepare your organization for BitLocker: Planning and policies](bitlocker\prepare-your-organization-for-bitlocker-planning-and-policies.md)
 ### [BitLocker basic deployment](bitlocker\bitlocker-basic-deployment.md)

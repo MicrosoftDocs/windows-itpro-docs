@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Pull Windows Defender ATP alerts using REST API
@@ -21,6 +22,8 @@ ms.localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Windows Defender ATP supports the OAuth 2.0 protocol to pull alerts from the portal.
 
