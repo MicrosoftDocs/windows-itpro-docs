@@ -7,6 +7,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.author: jdecker
+ms.date: 10/05/2017
 ---
 
 # Provision PCs with apps 
