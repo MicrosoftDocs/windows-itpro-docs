@@ -375,7 +375,7 @@ Here’s an example to set AssignedAccess configuration:
 
 1. Download the [psexec tool](https://technet.microsoft.com/sysinternals/bb897553.aspx).  
 2. Run `psexec.exe -i -s cmd.exe`.
-3. **WHAT GOES HERE? DOC JUST SAYS "powershell"** 
+3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
 4. Execute the following script:
 
 ```ps
