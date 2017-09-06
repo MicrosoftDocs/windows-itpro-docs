@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 08/29/2017
 ---
 
 # System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing
@@ -32,7 +33,7 @@ For the EFS service, this policy setting supports the 3DES and Advanced Encrypti
 
 **Remote Desktop Services (RDS)**
 
-For encrypting Remote Desktop Services network communication, this policy setting supports only the Triple DES encryption algorithm.
+If you're using Remote Desktop Services, this policy setting should only be enabled if the 3DES encryption algorithm is supported.
 
 **BitLocker**
 

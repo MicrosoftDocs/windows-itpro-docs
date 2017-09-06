@@ -2719,6 +2719,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-allowautoupdate" id="update-allowautoupdate">Update/AllowAutoUpdate</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-allowautowindowsupdatedownloadovermeterednetwork" id="update-allowautowindowsupdatedownloadovermeterednetwork">Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-allowmuupdateservice" id="update-allowmuupdateservice">Update/AllowMUUpdateService</a>
   </dd>
   <dd>
@@ -2753,6 +2756,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-detectionfrequency" id="update-detectionfrequency">Update/DetectionFrequency</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-update.md#update-disabledualscan" id="update-disabledualscan">Update/DisableDualScan</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -3365,7 +3371,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
 -   [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)  
 -   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
--   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed) 
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -3374,7 +3379,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
--   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
 -   [Security/AllowAddProvisioningPackage](#security-allowaddprovisioningpackage)  
 -   [Security/AllowRemoveProvisioningPackage](#security-allowremoveprovisioningpackage)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
@@ -3420,7 +3424,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Experience/AllowCortana](#experience-allowcortana)  
 -   [Experience/AllowManualMDMUnenrollment](#experience-allowmanualmdmunenrollment)  
 -   [Privacy/AllowInputPersonalization](#privacy-allowinputpersonalization)  
--   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed) 
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -3429,7 +3432,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
--   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
 -   [Search/AllowSearchToUseLocation](#search-allowsearchtouselocation)  
 -   [Security/RequireDeviceEncryption](#security-requiredeviceencryption)  
 -   [Settings/AllowDateTime](#settings-allowdatetime)  
@@ -3520,6 +3522,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)  
 -   [Desktop/PreventUserRedirectionOfProfileFolders](#desktop-preventuserredirectionofprofilefolders)  
 -   [DeviceGuard/AllowKernelControlFlowGuard](#deviceguard-allowkernelcontrolflowguard)  
+-   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed)  
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -3528,6 +3531,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
 -   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
 -   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)  
 -   [System/AllowFontProviders](#system-allowfontproviders)  

@@ -1,5 +1,5 @@
 ---
-title: View the Windows Defender Advanced Threat Protection Dashboard
+title: Windows Defender Advanced Threat Protection Security operations dashboard
 description: Use the Dashboard to identify machines at risk, keep track of the status of the service, and see statistics and information about machines and alerts.
 keywords: dashboard, alerts, new, in progress, resolved, risk, machines at risk, infections, reporting, statistics, charts, graphs, health, active malware detections, threat category, categories, password stealer, ransomware, exploit, threat, low severity, active malware
 search.product: eADQiWindows 10XVcnh
@@ -10,9 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
-# View the Windows Defender Advanced Threat Protection Dashboard
+# View the Windows Defender Advanced Threat Protection Security operations dashboard
 
 **Applies to:**
 
@@ -22,7 +23,9 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-The **Dashboard** displays a snapshot of:
+[!include[Prerelease information](prerelease.md)]
+
+The **Security operations dashboard** displays a snapshot of:
 
 - The latest active alerts on your network
 - Daily machines reporting
@@ -34,7 +37,7 @@ The **Dashboard** displays a snapshot of:
 
 You can explore and investigate alerts and machines to quickly determine if, where, and when suspicious activities occurred in your network to help you understand the context they appeared in.
 
-From the **Dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a machine. You can also drill down into granular events and low-level indicators.
+From the **Security operations dashboard** you will see aggregated events to facilitate the identification of significant events or behaviors on a machine. You can also drill down into granular events and low-level indicators.
 
 It also has clickable tiles that give visual cues on the overall health state of your organization. Each tile opens a detailed view of the corresponding overview.
 

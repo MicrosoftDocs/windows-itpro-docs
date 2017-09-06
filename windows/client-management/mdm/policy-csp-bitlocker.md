@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/09/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Bitlocker
@@ -85,6 +85,7 @@ ms.date: 08/09/2017
     <a href="./bitlocker-csp.md#systemdrivesrequirestartupauthentication" id="systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a>
   </dd>
 </dl>
+
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -96,3 +97,4 @@ Footnote:
 -   3 - Added in Windows 10, version 1709.
 
 <!--EndPolicies-->
+

@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: DulceMV
 ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Windows Defender Advanced Threat Protection settings
@@ -21,6 +22,8 @@ ms.localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone, suppression rules, and view license information.
 

@@ -9,7 +9,6 @@ ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: high
 ---
-
 # Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**
 
