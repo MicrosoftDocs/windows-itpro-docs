@@ -107,22 +107,59 @@ IsATTSpecific | Control the roaming text for AT&T devices. AT&T requires the pho
 LTEAttachGUID | Set the value for LTEAttachGuid to the OemConnectionId GUID used for the LTE attach profile in the modem. The value is a GUID in the string format *XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX*.
 MMSAPNAuthTypeDefault | Select between **Pap** and **Chap** for default MMS APN authentication type.
 MMSAPNIPTypeIfHidden | Select between **IPV4**, **IPV6**, **IPV4V6**, and **IPV4V6XLAT** for default MMS APN IP type.
-ShowExtendedRejectCodes | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is only intended for use when required by the mobile operator’s network. The short versions of the extended reject message are shown in the following screens:</br></br>- Phone tile in Start</br></br>- Call History screen</br></br>- Dialer</br></br>- Call Progress screen</br></br>- Incoming Call screen</br></br>- As the status string under Settings > cellular+SIM</br></br></br>The long version of the extended reject message is shown under the Active Network label in Settings > cellular+SIM. Select **Yes** to show the extended error message. Select **No** to hide the extended error message. See [Error messages for reject codes](#errorreject) to see the versions of the message.
+ShowExtendedRejectCodes | When a reject code is sent by the network, partners can specify that extended error messages should be displayed instead of the standard simple error messages. This customization is only intended for use when required by the mobile operator’s network. The short versions of the extended reject message are shown in the following screens:</br></br>- Phone tile in Start</br></br>- Call History screen</br></br>- Dialer</br></br>- Call Progress screen</br></br>- Incoming Call screen</br></br>- As the status string under Settings > cellular+SIM</br></br></br>The long version of the extended reject message is shown under the Active Network label in **Settings** > **cellular+SIM**. Select **Yes** to show the extended error message. Select **No** to hide the extended error message. See [Error messages for reject codes](#errorreject) to see the versions of the message.
 ShowHighestSpeed3GPreferred | Select **Yes** to show the **3G Preferred** option in the **Highest connection speed** drop-down menu. Select **No** to hide **3G Preferred**.
 ShowManualAvoidance | Select **Yes** to show the **Switch to next network manually** button in SIM settings when Mode Selection is CDMA on a C+G dual SIM phone. Select **No** to hide the **Switch to next network manually** button
 ShowPreferredPLMNPage | Select **Yes** to show the preferred public land mobile network (PLMN) page in SIM settings.
-ShowSpecificWifiCallingError | 
-ShowViewAPN |
-ShowWifiCallingEmergencyCallWarning |
-ShowWifiCallingError |
-SuppressDePersoUI |
+ShowSpecificWifiCallingError | Select **Yes** to show a specific error message based on operator requirements.
+ShowViewAPN | Select **Yes** to show the **View Internet APN** button in **Settings** > **cellular+SIM**.
+ShowWifiCallingEmergencyCallWarning | Select **Yes** to show Wi-Fi emergency call warning.
+ShowWifiCallingError | Select **Yes** to show Wi-Fi calling error message.
+SuppressDePersoUI | Select **Yes** to hide the perso unlock UI.
 
 
 ### CGDual
 
+Use **CGDual** > **RestrictToGlobalMode** to configure settings for global mode on C+G Dual SIM phones. When the device registration changes, if the value for this setting is set, the OS changes the preferred system type to the default preferred system type for world mode. If the phone is not camped on any network, the OS assumes the phone is on the home network and changes the network registration preference to default mode. 
+
+Select from the following:
+
+- RestrictToGlobalMode_Disabled: the phone is not restricted to global mode.
+- RestrictToGlobalMobe_Home: when a slot is registered at home and supports global mode, the mode selection is restricted to global mode.
+- RestrictToGlobalMode_Always: if a slot supports global mode and this value is selected, the mode selection is restricted to global mode.
+
 ### eSim
 
+
+
 ### External
+
+Setting | Description
+--- | ---
+CallSupplementaryService > OTASPNonStandardDialString | Enter a list of all desired non-standard OTASP dial strings.
+CarrierSpecific > FallBackMode | Select between **GWCSFB** and **1xCSFB** for fallback mode.
+CarrierSpecific > VZW > ActSeq | Enables activation for 4G VZW card. Do not configure this setting for non-VZW devices.
+EnableLTESnrReporting | Select between **Use only RSRP** and **Use both RSRP and ECNO** to check if SNR needs to be used for LTE Signal Quality calculations.
+EnableUMTSEcnoReporting | Select between **Use only RSSI** and **Use both RSSI and SNR** to check if SNR needs to be used for UMTS Signal Quality calculations.
+ImageOnly > ERI > AlgorithmMBB0 | Select between **Sprint** and **Verizon** to specify the ERI algorithm in MBB for subscription 0.
+ImageOnly > ERI > AlgorithmMBB1 | Select between **Sprint** and **Verizon** to specify the ERI algorithm in MBB for subscription 1.
+ImageOnly > ERI > AlgorithmWmRil | Select between **Sprint** and **Verizon** to specify the ERI-based notification algorithm.
+ImageOnly > ERI > DataFileNameWmRil | Specify the location of the ERI file on the device; for example, `C:\Windows\System32\SPCS_en.eri`. *SPCS_en.eri* is a placeholder. Obtain the ERI file name from the mobile operator and replace this filename with it.
+ImageOnly > ERI > EnabledWmRil | Enable or disable ERI-based notifications.
+ImageOnly > ERI > ERIDataFileNameMBB0 | Specify the ERI data file name with international roaming list for Verizon in MBB for subscription 0.
+ImageOnly > ERI > ERIDataFileNameMBB1 | Specify the ERI data file name with international roaming list for Verizon in MBB for subscription 1.
+ImageOnly > ERI > ERISprintIntlRoamDataFileNameMBB0 | Specify the ERI data file name with international roaming list for Sprint in MBB for subscription 0.
+ImageOnly > ERI > ERISprintIntlRoamDataFileNameMBB1 | Specify the ERI data file name with international roaming list for Sprint in MBB for subscription 1.
+ImageOnly > ERI > SprintInternationalERIValuesWmRil | Specify the international ERI values for Sprint as `to 4A,7C,7D,7E,9D,9E,9F,C1,C2,C3,C4,C5,C6,E4,E5,E6,E7,E8.`.
+ImageOnly > MTU > DormancyTimeout0 | Enter the number of milliseconds to wait after dormancy hint before telling the modem to make the air interface dormant for subscription 0. Minimum value is 1703, and maximum value is 5000.
+ImageOnly > MTU > DormancyTimeout1 | Enter the number of milliseconds to wait after dormancy hint before telling the modem to make the air interface dormant for subscription 1. Minimum value is 1703, and maximum value is 5000.
+ImageOnly > MTU > MTUDataSize |  Customize the TCP maximum segment size (MSS) by setting the maximum transmission unit (MTU) data size if the MSS does not meet the requirements of the mobile operator network. For TCP, the default maximum transmission unit (MTU) is set to 1500 bytes, which makes the maximum segment size (MSS) 1460 bytes. In general, this value should not be changed, as the user experience will degrade if low values are set. However, if the MSS does not meet the requirements of the mobile operator network, OEMs can customize it by setting the MTU data size. This customization configures the MTU, so the size should be set to the required MSS size plus 40 bytes.
+ImageOnly > MTU > RoamingMTUDataSize | Customize the TCP maximum segment size (MSS) for roaming by setting the maximum transmission unit (MTU) data size if the MSS does not meet the requirements of the mobile operator network. For TCP, the default maximum transmission unit (MTU) is set to 1500 bytes, which makes the maximum segment size (MSS) 1460 bytes. In general, this value should not be changed, as the user experience will degrade if low values are set. However, if the MSS does not meet the requirements of the mobile operator network, OEMs can customize it for roaming by setting the MTU data size. This customization configures the MTU, so the size should be set to the required MSS size plus 40 bytes.
+ImageOnly > SuppressNwPSDetach | Configure whether to suppress reporting of network-initiated PS detach (appear attached to OS) until deregistered.
+SignalBarMapping Table | You can modify the percentage values used for the signal strength in the status bar per filter. For details, see [Custom percentages for signal strength bars](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/custom-percentages-for-signal-strength-bars).
+SRVCCAutoToggleWmRil | Configure whether to link SRVCC to VOLTE on/off.
+
+
 
 ### General
 
