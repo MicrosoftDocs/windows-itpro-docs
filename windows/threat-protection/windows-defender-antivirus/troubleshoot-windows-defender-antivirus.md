@@ -37,11 +37,11 @@ The tables list:
 
 Windows Defender AV records event IDs in the Windows event log.
 
-You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume [Windows Defender client event IDs](troubleshoot-windows-defender-antivirus.md#windows-defender-av-ids) to review specific events and errors from your endpoints.
+You can directly view the event log, or if you have a third-party security information and event management (SIEM) tool, you can also consume the events to review specific events and errors from your endpoints.
 
-The table in this section lists the main Windows Defender Antivirus client event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
+The table in this section lists the main Windows Defender AV client event IDs and, where possible, provides suggested solutions to fix or resolve the error. 
 
-**To view a Windows Defender client event**
+**View a Windows Defender AV client event**
 
 1.  Open **Event Viewer**.
 2.  In the console tree, expand **Applications and Services Logs**, then **Microsoft**, then **Windows**, then **Windows Defender**.
@@ -325,7 +325,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>The Windows Defender client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error.
+<p>The Windows Defender AV client encountered an error, and the current scan has stopped. The scan might fail due to a client-side issue. This event record includes the scan ID, type of scan (antivirus, antispyware, antimalware), scan parameters, the user that started the scan, the error code, and a description of the error.
 </p>
 <p>To troubleshoot this event:
 <ol>
@@ -436,7 +436,7 @@ UAC</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has taken action to protect this machine from malware or other potentially unwanted software. For more information please see the following:</p>
+<p>Windows Defender AV has taken action to protect this machine from malware or other potentially unwanted software. For more information please see the following:</p>
 <dl>
 <dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -489,7 +489,7 @@ UAC</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error when taking action on malware or other potentially unwanted software. For more information please see the following:</p>
+<p>Windows Defender AV has encountered an error when taking action on malware or other potentially unwanted software. For more information please see the following:</p>
 <dl>
 <dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -549,7 +549,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has restored an item from quarantine. For more information please see the following:</p>
+<p>Windows Defender AV has restored an item from quarantine. For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -594,7 +594,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to restore an item from quarantine. For more information please see the following:</p>
+<p>Windows Defender AV has encountered an error trying to restore an item from quarantine. For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
 <dt>ID: &lt;Threat ID&gt;</dt>
@@ -642,7 +642,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has deleted an item from quarantine.  
+<p>Windows Defender AV has deleted an item from quarantine.  
 For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -687,7 +687,7 @@ For more information please see the following:</p>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to delete an item from quarantine.  
+<p>Windows Defender AV has encountered an error trying to delete an item from quarantine.  
 For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -736,7 +736,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has removed history of malware and other potentially unwanted software.</p>
+<p>Windows Defender AV has removed history of malware and other potentially unwanted software.</p>
 <dl>
 <dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
@@ -768,7 +768,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to remove history of malware and other potentially unwanted software.</p>
+<p>Windows Defender AV has encountered an error trying to remove history of malware and other potentially unwanted software.</p>
 <dl>
 <dt>Time: The time when the event occurred, for example when the history is purged. Note that this parameter is not used in threat events so that there is no confusion regarding whether it is remediation time or infection time. For those, we specifically call them as Action Time or Detection Time.</dt>
 <dt>User: &lt;Domain&gt;\\&lt;User&gt;</dt>
@@ -804,7 +804,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has detected a suspicious behavior.  
+<p>Windows Defender AV has detected a suspicious behavior.  
 For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -883,7 +883,7 @@ Name of the file.</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has detected malware or other potentially unwanted software.  
+<p>Windows Defender AV has detected malware or other potentially unwanted software.  
 For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -938,7 +938,7 @@ UAC</dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is required. Windows Defender can suspend and take routine action on this threat. If you want to remove the threat manually, in the Windows Defender interface, click <b>Clean Computer</b>.</p>
+<p>No action is required. Windows Defender AV can suspend and take routine action on this threat. If you want to remove the threat manually, in the Windows Defender AV interface, click <b>Clean Computer</b>.</p>
 </td>
 </tr>
 <tr>
@@ -966,7 +966,7 @@ UAC</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has taken action to protect this machine from malware or other potentially unwanted software.  
+<p>Windows Defender AV has taken action to protect this machine from malware or other potentially unwanted software.  
 For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -1028,7 +1028,7 @@ Description of the error. </dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
 <dt>Engine Version: &lt;Antimalware Engine version&gt;</dt>
 <p>NOTE:
-<p>Whenever Windows Defender, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services which the malware might have changed:<ul>
+<p>Whenever Windows Defender AV, Microsoft Security Essentials, Malicious Software Removal Tool, or System Center Endpoint Protection detects a malware, it will restore the following system settings and services which the malware might have changed:<ul>
 <li>Default Internet Explorer or Microsoft Edge setting</li>
 <li>User Access Control settings</li>
 <li>Chrome settings</li>
@@ -1068,7 +1068,7 @@ The above context applies to the following client and server versions:
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is necessary. Windows Defender removed or quarantined a threat. </p>
+<p>No action is necessary. Windows Defender AV removed or quarantined a threat. </p>
 </td>
 </tr>
 <tr>
@@ -1095,7 +1095,7 @@ The above context applies to the following client and server versions:
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered a non-critical error when taking action on malware or other potentially unwanted software.  
+<p>Windows Defender AV has encountered a non-critical error when taking action on malware or other potentially unwanted software.  
 For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -1165,7 +1165,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is necessary. Windows Defender failed to complete a task related to the malware remediation. This is not a critical failure.</p>
+<p>No action is necessary. Windows Defender AV failed to complete a task related to the malware remediation. This is not a critical failure.</p>
 </td>
 </tr>
 <tr>
@@ -1192,7 +1192,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered a critical error when taking action on malware or other potentially unwanted software.  
+<p>Windows Defender AV has encountered a critical error when taking action on malware or other potentially unwanted software.  
 For more information please see the following:</p>
 <dl>
 <dt>Name: &lt;Threat name&gt;</dt>
@@ -1262,7 +1262,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>The Windows Defender client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant <b>User action</b> steps below.</p>
+<p>The Windows Defender AV client encountered this error due to critical issues. The endpoint might not be protected. Review the error description then follow the relevant <b>User action</b> steps below.</p>
 <table>
 <tr>
 <th>Action</th>
@@ -1325,7 +1325,7 @@ Description of the error. </dt>
 <p>Message:</p>
 </td>
 <td colspan="2">
-<p><b>Windows Defender has deduced the hashes for a threat resource.</b></p>
+<p><b>Windows Defender AV has deduced the hashes for a threat resource.</b></p>
 </td>
 </tr>
 <tr>
@@ -1334,7 +1334,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender client is up and running in a healthy state.</p>
+<p>Windows Defender AV client is up and running in a healthy state.</p>
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 <dt>Threat Resource Path: &lt;Path&gt;</dt>
@@ -1368,7 +1368,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender client is up and running in a healthy state.</p>
+<p>Windows Defender AV client is up and running in a healthy state.</p>
 <dl>
 <dt>Platform Version: &lt;Current platform version&gt;</dt>
 <dt>Signature Version: &lt;Definition version&gt;</dt>
@@ -1382,7 +1382,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is necessary. The Windows Defender Antivirus client is in a healthy state. This event is reported on an hourly basis.</p>
+<p>No action is necessary. The Windows Defender AV Antivirus client is in a healthy state. This event is reported on an hourly basis.</p>
 </td>
 </tr>
 <tr>
@@ -1410,7 +1410,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender signature version has been updated.</p>
+<p>Windows Defender AV signature version has been updated.</p>
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 <dt>Previous Signature Version: &lt;Previous signature version&gt;</dt>
@@ -1434,7 +1434,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is necessary. The Windows Defender client is in a healthy state. This event is reported when signatures are successfully updated.</p>
+<p>No action is necessary. The Windows Defender AV client is in a healthy state. This event is reported when signatures are successfully updated.</p>
 </td>
 </tr>
 <tr>
@@ -1461,7 +1461,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to update signatures.</p>
+<p>Windows Defender AV has encountered an error trying to update signatures.</p>
 <dl>
 <dt>New Signature Version: &lt;New version number&gt;</dt>
 <dt>Previous Signature Version: &lt;Previous signature version&gt;</dt>
@@ -1509,14 +1509,7 @@ Description of the error. </dt>
 <p>This error occurs when there is a problem updating definitions.</p>
 <p>To troubleshoot this event:
 <ol>
-<li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
-</li>
-<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
-</li>
-</ol>
-</li>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
 <li>Review the entries in the %Windir%\WindowsUpdate.log file for more information about this error.</li>
 <li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
 </li>
@@ -1548,7 +1541,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender engine version has been updated.</p>
+<p>Windows Defender AV engine version has been updated.</p>
 <dl>
 <dt>Current Engine Version: &lt;Current engine version&gt;</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
@@ -1563,7 +1556,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is necessary. The Windows Defender client is in a healthy state. This event is reported when the antimalware engine is successfully updated.</p>
+<p>No action is necessary. The Windows Defender AV client is in a healthy state. This event is reported when the antimalware engine is successfully updated.</p>
 </td>
 </tr>
 <tr>
@@ -1590,7 +1583,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to update the engine.</p>
+<p>Windows Defender AV has encountered an error trying to update the engine.</p>
 <dl>
 <dt>New Engine Version:</dt>
 <dt>Previous Engine Version: &lt;Previous engine version&gt;</dt>
@@ -1609,19 +1602,14 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>The Windows Defender client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.</p>
+<p>The Windows Defender AV client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update.</p>
 <p>To troubleshoot this event:
+<p>
 <ol>
-<li>Update the definitions. Either:<ol>
-<li>Click the <b>Update definitions</b> button on the <b>Update</b> tab in Windows Defender. <img src="images/defender-updatedefs2.png" alt="Update definitions in Windows Defender"/><p>Or,</p>
-</li>
-<li>Download the latest definitions from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a>.
-<p>Note: The size of the definitions file downloaded from the <a href="https://go.microsoft.com/fwlink/?LinkID=200965">Microsoft Malware Protection Center</a> can exceed 60 MB and should not be used as a long-term solution for updating definitions.</p>
-</li>
-</ol>
-</li>
-<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>.
-</li>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
+<li>Restart the device and try again.</li>
+<li>Contact <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft Technical Support</a>
 </ol>
 </p>
 </td>
@@ -1649,7 +1637,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to load signatures and will attempt reverting back to a known-good set of signatures.</p>
+<p>Windows Defender AV has encountered an error trying to load signatures and will attempt reverting back to a known-good set of signatures.</p>
 <dl>
 <dt>Signatures Attempted:</dt>
 <dt>Error Code: &lt;Error code&gt;
@@ -1667,7 +1655,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>The Windows Defender client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Windows Defender will attempt to revert back to a known-good set of definitions.</p>
+<p>The Windows Defender AV client attempted to download and install the latest definitions file and failed. This error can occur when the client encounters an error while trying to load the definitions, or if the file is corrupt. Windows Defender AV will attempt to revert back to a known-good set of definitions.</p>
 <p>To troubleshoot this event:
 <ol>
 <li>Restart the computer and try again.</li>
@@ -1703,7 +1691,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender could not load antimalware engine because current platform version is not supported. Windows Defender will revert back to the last known-good engine and a platform update will be attempted.</p>
+<p>Windows Defender AV could not load antimalware engine because current platform version is not supported. Windows Defender AV will revert back to the last known-good engine and a platform update will be attempted.</p>
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 </dl>
@@ -1735,7 +1723,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to update the platform.</p>
+<p>Windows Defender AV has encountered an error trying to update the platform.</p>
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 <dt>Error Code: &lt;Error code&gt;
@@ -1769,7 +1757,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender will soon require a newer platform version to support future versions of the antimalware engine. Download the latest Windows Defender platform to maintain the best level of protection available.</p>
+<p>Windows Defender AV will soon require a newer platform version to support future versions of the antimalware engine. Download the latest Windows Defender AV platform to maintain the best level of protection available.</p>
 <dl>
 <dt>Current Platform Version: &lt;Current platform version&gt;</dt>
 </dl>
@@ -1801,7 +1789,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender used <i>Dynamic Signature Service</i> to retrieve additional signatures to help protect your machine.</p>
+<p>Windows Defender AV used <i>Dynamic Signature Service</i> to retrieve additional signatures to help protect your machine.</p>
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 <dt>Signature Type: &lt;Signature type&gt;, for example: <ul>
@@ -1860,7 +1848,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender used <i>Dynamic Signature Service</i> to discard obsolete signatures.</p>
+<p>Windows Defender AV used <i>Dynamic Signature Service</i> to discard obsolete signatures.</p>
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 <dt>Signature Type: &lt;Signature type&gt;, for example: <ul>
@@ -1900,7 +1888,7 @@ Description of the error. </dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>No action is necessary. The Windows Defender client is in a healthy state. This event is reported when the Dynamic Signature Service successfully deletes out-of-date dynamic definitions.</p>
+<p>No action is necessary. The Windows Defender AV client is in a healthy state. This event is reported when the Dynamic Signature Service successfully deletes out-of-date dynamic definitions.</p>
 </td>
 </tr>
 <tr>
@@ -1928,7 +1916,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to use <i>Dynamic Signature Service</i>.</p>
+<p>Windows Defender AV has encountered an error trying to use <i>Dynamic Signature Service</i>.</p>
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 <dt>Signature Type: &lt;Signature type&gt;, for example: <ul>
@@ -1999,7 +1987,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender discarded all <i>Dynamic Signature Service</i> signatures.</p>
+<p>Windows Defender AV discarded all <i>Dynamic Signature Service</i> signatures.</p>
 <dl>
 <dt>Current Signature Version: &lt;Current signature version&gt;</dt>
 </dl>
@@ -2031,7 +2019,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender downloaded a clean file.</p>
+<p>Windows Defender AV downloaded a clean file.</p>
 <dl>
 <dt>Filename: &lt;File name&gt;
 Name of the file.</dt>
@@ -2065,7 +2053,7 @@ Name of the file.</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to download a clean file.</p>
+<p>Windows Defender AV has encountered an error trying to download a clean file.</p>
 <dl>
 <dt>Filename: &lt;File name&gt;
 Name of the file.</dt>
@@ -2086,7 +2074,7 @@ Description of the error. </dt>
 <td colspan="2">
 <p>Check your Internet connectivity settings.
 </p>
-<p>The Windows Defender client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue. 
+<p>The Windows Defender AV client encountered an error when using the Dynamic Signature Service to download the latest definitions to a specific threat. This error is likely caused by a network connectivity issue. 
 </p>
 </td>
 </tr>
@@ -2112,7 +2100,7 @@ Description of the error. </dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>Windows Defender downloaded and configured Windows Defender Offline to run on the next reboot.</p>
+<p>Windows Defender AV downloaded and configured Windows Defender Offline to run on the next reboot.</p>
 </td>
 </tr>
 <tr>
@@ -2139,7 +2127,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender has encountered an error trying to download and configure Windows Defender Offline.</p>
+<p>Windows Defender AV has encountered an error trying to download and configure Windows Defender Offline.</p>
 <dl>
 <dt>Error Code: &lt;Error code&gt;
 Result code associated with threat status. Standard HRESULT values.</dt>
@@ -2173,7 +2161,7 @@ Description of the error. </dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>The support for your operating system will expire shortly. Running Windows Defender on an out of support operating system is not an adequate solution to protect against threats.</p>
+<p>The support for your operating system will expire shortly. Running Windows Defender AV on an out of support operating system is not an adequate solution to protect against threats.</p>
 </td>
 </tr>
 <tr>
@@ -2200,7 +2188,7 @@ Description of the error. </dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>The support for your operating system has expired. Running Windows Defender on an out of support operating system is not an adequate solution to protect against threats.</p>
+<p>The support for your operating system has expired. Running Windows Defender AV on an out of support operating system is not an adequate solution to protect against threats.</p>
 </td>
 </tr>
 <tr>
@@ -2227,7 +2215,7 @@ Description of the error. </dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>The support for your operating system has expired. Windows Defender is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.</p>
+<p>The support for your operating system has expired. Windows Defender AV is no longer supported on your operating system, has stopped functioning, and is not protecting against malware threats.</p>
 </td>
 </tr>
 <tr>
@@ -2254,7 +2242,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender Real-Time Protection feature has encountered an error and failed.</p>
+<p>Windows Defender AV real-time protection feature has encountered an error and failed.</p>
 <dl>
 <dt>Feature: &lt;Feature&gt;, for example:
 <ul>
@@ -2268,7 +2256,7 @@ Description of the error. </dt>
 Result code associated with threat status. Standard HRESULT values.</dt>
 <dt>Error Description: &lt;Error description&gt;
 Description of the error. </dt>
-<dt>Reason: The reason Windows Defender real-time protection has restarted a feature.</dt>
+<dt>Reason: The reason Windows Defender AV real-time protection has restarted a feature.</dt>
 </dl>
 </p>
 </td>
@@ -2280,7 +2268,7 @@ Description of the error. </dt>
 <td colspan="2">
 <p>You should restart the system then run a full scan because it's possible the system was not protected for some time.
 </p>
-<p>The Windows Defender client's real-time protection feature encountered an error because one of the services failed to start. 
+<p>The Windows Defender AV client's real-time protection feature encountered an error because one of the services failed to start. 
 </p>
 <p>If it is followed by a 3007 event ID, the failure was temporary and the antimalware client recovered from the failure. 
 </p>
@@ -2310,7 +2298,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender Real-time Protection has restarted a feature. It is recommended that you run a full system scan to detect any items that may have been missed while this agent was down.</p>
+<p>Windows Defender AV real-time protection has restarted a feature. It is recommended that you run a full system scan to detect any items that may have been missed while this agent was down.</p>
 <dl>
 <dt>Feature: &lt;Feature&gt;, for example:
 <ul>
@@ -2320,7 +2308,7 @@ Description of the error. </dt>
 <li>Network Inspection System</li>
 </ul>
 </dt>
-<dt>Reason: The reason Windows Defender real-time protection has restarted a feature.</dt>
+<dt>Reason: The reason Windows Defender AV real-time protection has restarted a feature.</dt>
 </dl>
 </p>
 </td>
@@ -2357,7 +2345,7 @@ Description of the error. </dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>Windows Defender Real-time Protection scanning for malware and other potentially unwanted software was enabled.</p>
+<p>Windows Defender AV real-time protection scanning for malware and other potentially unwanted software was enabled.</p>
 </td>
 </tr>
 <tr>
@@ -2383,7 +2371,7 @@ Description of the error. </dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>Windows Defender Real-time Protection scanning for malware and other potentially unwanted software was disabled. </p>
+<p>Windows Defender AV real-time protection scanning for malware and other potentially unwanted software was disabled. </p>
 </td>
 </tr>
 <tr>
@@ -2411,7 +2399,7 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender Real-time Protection feature configuration has changed.</p>
+<p>Windows Defender AV real-time protection feature configuration has changed.</p>
 <dl>
 <dt>Feature: &lt;Feature&gt;, for example:
 <ul>
@@ -2450,12 +2438,12 @@ Description of the error. </dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.</p>
+<p>Windows Defender AV configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware.</p>
 <dl>
 <dt>Old value: &lt;Old value number&gt;
-Old Windows Defender configuration value.</dt>
+Old Windows Defender AV configuration value.</dt>
 <dt>New value: &lt;New value number&gt;
-New Windows Defender configuration value.</dt>
+New Windows Defender AV configuration value.</dt>
 </dl>
 </p>
 </td>
@@ -2483,7 +2471,7 @@ New Windows Defender configuration value.</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender  engine has been terminated due to an unexpected error.</p>
+<p>Windows Defender AV  engine has been terminated due to an unexpected error.</p>
 <dl>
 <dt>Failure Type: &lt;Failure type&gt;, for example:
 Crash
@@ -2516,7 +2504,7 @@ or Hang</dt>
 <p>User action:</p>
 </td>
 <td colspan="2">
-<p>The Windows Defender client engine stopped due to an unexpected error.</p>
+<p>The Windows Defender AV client engine stopped due to an unexpected error.</p>
 <p>To troubleshoot this event:
 <ol>
 <li>Run the scan again.</li>
@@ -2551,7 +2539,7 @@ or Hang</dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>Windows Defender scanning for malware and other potentially unwanted software has been enabled.</p>
+<p>Windows Defender AV scanning for malware and other potentially unwanted software has been enabled.</p>
 </td>
 </tr>
 <tr>
@@ -2577,7 +2565,7 @@ or Hang</dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>Windows Defender scanning for malware and other potentially unwanted software is disabled.</p>
+<p>Windows Defender AV scanning for malware and other potentially unwanted software is disabled.</p>
 </td>
 </tr>
 <tr>
@@ -2602,7 +2590,7 @@ or Hang</dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>Windows Defender scanning for viruses has been enabled. </p>
+<p>Windows Defender AV scanning for viruses has been enabled. </p>
 </td>
 </tr>
 <tr>
@@ -2629,7 +2617,7 @@ or Hang</dt>
 <p>Description:</p>
 </td>
 <td colspan="2">
-<p>Windows Defender scanning for viruses is disabled. </p>
+<p>Windows Defender AV scanning for viruses is disabled. </p>
 </td>
 </tr>
 <tr>
@@ -2657,10 +2645,10 @@ or Hang</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender  has entered a grace period and will soon expire. After expiration, this program will disable protection against viruses, spyware, and other potentially unwanted software.</p>
+<p>Windows Defender AV  has entered a grace period and will soon expire. After expiration, this program will disable protection against viruses, spyware, and other potentially unwanted software.</p>
 <dl>
-<dt>Expiration Reason: The reason Windows Defender will expire.</dt>
-<dt>Expiration Date: The date Windows Defender will expire.</dt>
+<dt>Expiration Reason: The reason Windows Defender AV will expire.</dt>
+<dt>Expiration Date: The date Windows Defender AV will expire.</dt>
 </dl>
 </p>
 </td>
@@ -2690,7 +2678,7 @@ or Hang</dt>
 </td>
 <td colspan="2">
 <p>
-<p>Windows Defender  grace period has expired. Protection against viruses, spyware, and other potentially unwanted software is disabled.</p>
+<p>Windows Defender AV  grace period has expired. Protection against viruses, spyware, and other potentially unwanted software is disabled.</p>
 <dl>
 <dt>Expiration Reason:</dt>
 <dt>Expiration Date: </dt>
@@ -2706,13 +2694,13 @@ Description of the error. </dt>
 
 <a id="error-codes"></a>
 ## Windows Defender Antivirus client error codes
-If Windows Defender Antivirus experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
-This section provides the following information about Windows Defender Antivirus client errors.
+If Windows Defender AV experiences any issues it will usually give you an error code to help you troubleshoot the issue. Most often an error means there was a problem installing an update.
+This section provides the following information about Windows Defender AV client errors.
 -   The error code
 -   The possible reason for the error
 -   Advice on what to do now
 
-Use the information in these tables to help troubleshoot Windows Defender Antivirus error codes.
+Use the information in these tables to help troubleshoot Windows Defender AV error codes.
   
 
 <table>
@@ -2723,7 +2711,6 @@ Use the information in these tables to help troubleshoot Windows Defender Antivi
 <th>Error code</th>
 <th>Message displayed</th>
 <th>Possible reason for error</th>
-<th>What to do now</th>
 </tr>
 <tr>
 <td>
@@ -2779,6 +2766,14 @@ Use the information in these tables to help troubleshoot Windows Defender Antivi
 <p>This error indicates that there might be an engine configuration error; commonly, this is related to input 
 data that does not allow the engine to function properly. 
 </p>
+<p><b>What to do now</b></p>
+<p>
+<ol>
+<li>[Update the definitions](manage-updates-baselines-windows-defender-antivirus.md).</li>
+<li>Run a full scan.</li>
+<li>Restart the device and try again.</li>
+</ol>
+</p>
 </td>
 </tr>
 <tr>
@@ -2791,7 +2786,7 @@ data that does not allow the engine to function properly.
 </b></p>
 </td>
 <td>
-<p>This error indicates that Windows Defender failed to quarantine a threat. 
+<p>This error indicates that Windows Defender AV failed to quarantine a threat. 
 </p>
 <p><b>What to do now</b></p>
 <p>
@@ -2891,7 +2886,7 @@ data that does not allow the engine to function properly.
 <p>This error indicates that removal inside the container type might not be not supported. 
 </p>
 <p><b>What to do now</b></p>
-<p>Windows Defender is not able to remediate threats detected inside the archive. Consider manually removing the detected resources. 
+<p>Windows Defender AV is not able to remediate threats detected inside the archive. Consider manually removing the detected resources. 
 </p>
 </td>
 </tr>
@@ -2955,10 +2950,10 @@ data that does not allow the engine to function properly.
 </b></p>
 </td>
 <td>
-<p>This error indicates that Windows Defender does not support the current version of the platform and requires a new version of the platform. 
+<p>This error indicates that Windows Defender AV does not support the current version of the platform and requires a new version of the platform. 
 </p>
 <p><b>What to do now</b></p>
-<p>You can only use Windows Defender in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.  
+<p>You can only use Windows Defender AV in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.  
 </p>
 </td>
 </tr>
@@ -2975,7 +2970,6 @@ The following error codes are used during internal testing of Windows Defender A
 <th>Error code</th>
 <th>Message displayed</th>
 <th>Possible reason for error</th>
-<th>What to do now</th>
 </tr>
 <tr>
 <td>
@@ -2986,7 +2980,7 @@ The following error codes are used during internal testing of Windows Defender A
 </b></p>
 </td>
 <td>
-<p>Windows Defender Antivirus can't access the Internet.</p>
+<p>Windows Defender AV can't access the Internet.</p>
 <p><b>What to do now</b></p>
 <p>Check your Internet connection, then run the scan again.</p>
 </td>
