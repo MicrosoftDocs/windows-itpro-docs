@@ -21,6 +21,9 @@ In Windows 10, version 1703, you can install multiple Universal Windows Platform
 
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
+>[!IMPORTANT]
+>If you plan to use Intune to manage your devices, we recommend using Intune to install Office 365 ProPlus 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Online Desktop Cilent, and Visio Pro for Office 365 ProPlus). Apps that are installed using a provisioning package cannot be managed or modified using Intune.
+
 ## Settings for UWP apps
 
 - **License Path**: Specify the license file if it is an app from the Microsoft Store. This is optional if you have a certificate for the app. 
