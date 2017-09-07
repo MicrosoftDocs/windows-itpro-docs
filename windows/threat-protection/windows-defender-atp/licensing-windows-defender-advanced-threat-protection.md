@@ -27,13 +27,13 @@ ms.date: 09/10/2017
 ## Gain access to provisioned licenses
 The easiest way to gain access into which license is provisioned to the customer tenant and the license state is to check the O365 admin portal of the customer.
 
-1. From the partner portal, click on the administrative service of Office 365 for the customer.
+1. From the partner portal, click on the **administrative service** of Office 365 for the customer.
 
-2. Clicking on the partner portal link will leverage the **admin on behalf** option and will give you access to the customer admin portal.
+2. Clicking on the **partner portal** link will leverage the **admin on behalf** option and will give you access to the customer admin portal.
 
 ![Image of machine view](images/atp-O365-admin-portal-customer.png)
 
-3. In the office admin portal navigate to **Billing** > **Licenses**
+3. In the office **admin portal** navigate to **Billing** > **Licenses**
 
     - On the right side of the screen you will see all the provisioned licenses and their current state.
 
