@@ -64,5 +64,4 @@ If you receive a "You are not authorized to access the portal", please be aware 
 ![Image of not authorized to access portal](images/atp-not-authorized-to-access-portal.png)
 
 ## Related topics
-- [Licensing](configure-endpoints-windows-defender-advanced-threat-protection.md)
-- [Configure endpoint proxy and Internet connectivity settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)
+- [Validating licensing provisioning and completing setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
