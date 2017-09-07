@@ -47,7 +47,7 @@ There are three steps to troubleshooting these problems:
 
 In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for Windows Defender AV protection:
 
->[!div class="checklist]
+>[!div class="checklist"]
 >- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](windows-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
 > - [Cloud-delivered protection is enabled](enable-cloud-protection-windows-defender-antivirus.md).
 > - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)

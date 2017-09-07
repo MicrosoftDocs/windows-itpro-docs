@@ -51,9 +51,11 @@ Windows Server 2016 | Windows Defender AV | No | Active mode
 
 
 >[!IMPORTANT]
->Windows Defender AV is only available on endpoints running Windows 10 or Windows Server 2016. 
->In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508760.aspx), which is managed through System Center Configuration Manager. 
->Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](https://technet.microsoft.com/en-us/library/dn344918#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations).
+>Windows Defender AV is only available on endpoints running Windows 10 or Windows Server 2016.  
+>  
+>In Windows 8.1 and Windows Server 2012, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508760.aspx), which is managed through System Center Configuration Manager.  
+>  
+>Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](https://technet.microsoft.com/en-us/library/dn344918#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations). 
 
 
 
@@ -73,6 +75,7 @@ The reasons for this are twofold:
 
 >[!WARNING]
 >You should not attempt to disable, stop, or modify any of the associated services used by Windows Defender AV, Windows Defender ATP, or the Windows Defender Security Center app.
+>  
 >This includes the *wscsvc*, *SecurityHealthService*, *MsSense*, *Sense*, *WinDefend*, or *MsMpEng* services and process. Manually modifying these services can cause severe instability on your endpoints and open your network to infections and attacks.
     
 
