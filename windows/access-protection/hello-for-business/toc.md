@@ -13,7 +13,7 @@
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
 ## [Windows Hello for Business Deployment Guide](hello-deployment-guide.md)
-### [Hybrid Domain Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
+### [Hybrid Azure AD Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
 #### [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 #### [New Installation Baseline](hello-hybrid-cert-new-install.md)
 #### [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)

@@ -10,7 +10,7 @@ author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
 ---
-# Hybrid Certificate Trust Deployment
+# Hybrid Azure AD joined Certificate Trust Deployment
 
 **Applies to**
 -   Windows 10
