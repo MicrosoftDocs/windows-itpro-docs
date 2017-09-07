@@ -38,11 +38,11 @@ In Windows 10, version 1703 (also known as the Creators Update), the Windows Def
 Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
 
 > [!IMPORTANT] 
-> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These will be disabled automatically when a 3rd party antivirus or firewall product is installed and kept up to date.
+> Disabling the Windows Security Center service will not disable Windows Defender AV or [Windows Firewall](https://docs.microsoft.com/en-us/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security). These will be disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
 
 > [!WARNING] 
 > If you do disable the Windows Security Center service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Defender Security Center may display stale or inaccurate information about any antivirus or firewall products you have installed on the device. 
->It may also prevent Windows Defender AV from enabling itself if you have an old or outdated 3rd party antivirus, or if you uninstall any 3rd party antivirus products you may have previously installed. 
+>It may also prevent Windows Defender AV from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you may have previously installed. 
 >This will significantly lower the protection of your device and could lead to malware infection.
 
 
