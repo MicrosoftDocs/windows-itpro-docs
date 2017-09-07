@@ -25,7 +25,7 @@ ms.date: 09/10/2017
 [!include[Prerelease information](prerelease.md)]
 
 ## Gain access to provisioned licenses
-The easiest way to gain access into which license is provisioned you and check the license state is to check the O365 admin portal.
+The easiest way to gain access into which license is provisioned to you and check the license state is to check the O365 admin portal.
 
 1. From the partner portal, click on the **administrative service** of Office 365 for the customer.
 
