@@ -99,7 +99,11 @@ So, for example:
 This algorithm does not apply to alphanumeric PINs.
 
 ### How does PIN caching work with Windows Hello for Business?
-Windows Hello for Business securely caches the key rather than the PIN using a ticketing system.  Azure AD and Active Directory sign-in keys are cached under lock.  This means the keys remain available for use without prompting as long as the user is interactively signed-in.  Microsoft Account sign-in keys are considered transactional keys, which means the user is always prompted when accessing the key.  Windows 10 does not provide any Group Policy settings to adjust this caching.
+Windows Hello for Business provides a PIN caching user experience using a ticketing system. Rather than caching a PIN, processes cache a ticket the can use to require private key operations.  Azure AD and Active Directory sign-in keys are cached under lock.  This means the keys remain available for use without prompting as long as the user is interactively signed-in.  Microsoft Account sign-in keys are considered transactional keys, which means the user is always prompted when accessing the key.  
+
+Beginning with Windows 10, Fall Creators Update, Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching.  Each process requesting a private key operation will prompt the user for the PIN on first use.  Subsequent private key operations will not prompt the user for the PIN.  
+
+The smart card emulation feature of Windows Hello for Business verifies the PIN and then discards the PIN in exchange for a ticket.  The process does not receive the PIN, but rather the ticket that grants them private key operations.  Windows 10 does not provide any Group Policy settings to adjust this caching.
 
 ### Can I disable the PIN while using Windows Hello for Business?
 No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurence where you cannot authenticate with biometrics, you need a fall back mechansim that is not a password.  The PIN is the fall back mechansim.  Disabling or hiding the PIN credential provider disabled the use of biometrics.

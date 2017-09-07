@@ -68,7 +68,7 @@ It’s fundamentally important to understand which deployment model to use for a
 
 #### Trust types
 
-A deployments trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trusts types, key trust and certificate trust.
+A deployments trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trusts types, key trust and certificate trust. 
   
 The key trust type does not require issuing authentication certificates to end users.  Users authenticate using a hardware-bound key created during an in-box provisioning experience, which requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment.
 
@@ -159,6 +159,10 @@ If your organization does not have cloud resources, write **On-Premises** in box
 ### Trust type
 
 Choose a trust type that is best suited for your organizations.  Remember, the trust type determines two things. Whether you issue authentication certificates to your users and if your deployment needs Windows Server 2016 domain controllers.
+
+One trust model is not more secure than the other. The major difference is based on the organization comfort with deploying Windows Server 2016 domain controllers and not enrolling users with end enetity certificates (key-trust) against using existing domain controllers (Windows Server 2008R2 or later) and needing to enroll certificates for all their users (certificate trust).  
+
+Because the certificate trust tyoes issues certificates, there is more configuration and infrastrucutre needed to accomodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificatat-trust deployements includes a certificate registration authority.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.  
 
 If your organization wants to use the key trust type, write **key trust** in box **1b** on your planning worksheet. Write **Windows Server 2016** in box **4d**. Write **N/A** in box **5b**.
 
@@ -267,9 +271,9 @@ If box **1a** on your planning worksheet reads **cloud only**, ignore the public
 
 If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet.
 
-The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.
+The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
 
-If box **3a** reads **GP** and box **3b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
+If box **2a** reads **GP** and box **2b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
 
 | Certificate Template Name | Issued To |
 | --- | --- |
@@ -279,14 +283,14 @@ If box **3a** reads **GP** and box **3b** reads **modern management**, write **A
 | Web Server | NDES |
 | CEP Encryption | NDES |
 
-If box **3a** reads **GP** and box **3b** reads **N/A**, write **AD FA RA** in box **5b** and write the following certificate template names and issuances in box **5c** on your planning worksheet.
+If box **2a** reads **GP** and box **2b** reads **N/A**, write **AD FA RA** in box **5b** and write the following certificate template names and issuances in box **5c** on your planning worksheet.
 
 | Certificate Template Name | Issued To |
 | --- | --- |
 | Exchange Enrollment Agent | AD FS RA | 
 | Web Server | AD FS RA | 
 
-If box **3a** or **3b** reads modern management, write **NDES** in box **5b** and write the following certificate template names and issuances in box 5c on your planning worksheet.
+If box **2a** or **2b** reads modern management, write **NDES** in box **5b** and write the following certificate template names and issuances in box 5c on your planning worksheet.
 
 | Certificate Template Name | Issued To |
 | --- | --- |
