@@ -41,7 +41,7 @@ The easiest way to gain access into which license is provisioned to the customer
 
 ## Accessing the Windows Defender ATP Portal for the first time
 
-When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP portal that will be created.
+When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP that will be created.
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will this **setup your permissions** step be relevant.
 
