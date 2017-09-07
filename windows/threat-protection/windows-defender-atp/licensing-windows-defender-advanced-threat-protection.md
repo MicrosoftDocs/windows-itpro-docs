@@ -29,7 +29,7 @@ The easiest way to gain access into which license is provisioned to the customer
 
 1. From the partner portal, click on the administrative service of Office 365 for the customer.
 
-2. Clicking on the partner portal link will leverage the "admin on behalf" option and will give you access to the customer admin portal.
+2. Clicking on the partner portal link will leverage the **admin on behalf** option and will give you access to the customer admin portal.
 
 ![Image of machine view](images/atp-O365-admin-portal-customer.png)
 
@@ -43,7 +43,7 @@ The easiest way to gain access into which license is provisioned to the customer
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP portal that will be created.
 
-1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will this "setup your permissions" step be relevant.
+1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will this **setup your permissions** step be relevant.
 
 ![Image of setup your permissions for WDATP](images/atp-setup-permissions-wdatp-portal.png)
 
