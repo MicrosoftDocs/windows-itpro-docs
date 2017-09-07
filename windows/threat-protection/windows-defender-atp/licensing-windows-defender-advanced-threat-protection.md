@@ -101,7 +101,7 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 ![Image of final preference setup](images/atp-final-preference-setup.png)
 
-9. A dedicated cloud instance of the Windows Defender ATP portal is being created. This step will take an average of 5 minutes to complete.
+9. A dedicated cloud instance of the Windows Defender ATP portal is being created at this time. This step will take an average of 5 minutes to complete.
 
 ![Image of Windows Defender ATP cloud instance](images/atp-windows-cloud-instance-creation.png)
 
