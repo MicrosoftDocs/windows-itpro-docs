@@ -163,6 +163,34 @@ SRVCCAutoToggleWmRil | Configure whether to link SRVCC to VOLTE on/off.
 
 ### General
 
+Setting | Description
+--- | ---
+atomicRoamingTableSettings3GPP</br>and</br>atomicRoamingTableSettings3GPP2 |
+AvoidStaingInManualSelection | You can enable permanent automatic mode for mobile networks that require the cellular settings to revert to automatic network selection after the user has manually selected another network when roaming or out of range of the home network.
+CardAllowList | Define the list of SIM cards allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards allowed in the first slot, set the value for CardAllowList to a comma-separated MCC:MNC list. You can also use wild cards, represented by an asterisk (*), to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`.
+CardBlockList | Define the list of SIM cards that are not allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards that are not allowed in the first slot, set the value for CardBlockList to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk (*), to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`. 
+CardLock | Used to enforce either the card allow list or both the card allow and block lists on a C+G dual SIM phone. 
+DefaultSlotAffinity | Set the data connection preference for:</br></br>- **SlotAffinityForInternetData_Automatic**: data connection preference is automatically set</br>- **SlotAffinityForInternetData_Slot0**: sets the data connection preference to Slot 0. The data connection cannot be edited by the user.</br>- **SlotAffinityForInternetData_Slot1**: Sets the data connection preference to Slot 1. The data connection cannot be edited by the user.
+DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roaming.
+DisableSystemTypeSupport | 
+DTMFOffTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), of the pause between DTMF digits. For example, a value of 120 specifies 0.12 seconds.
+DTMFOnTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), to generate the DTMF tone when a key is pressed. For example, a value of 120 specifies 0.12 seconds.
+ExcludedSystemTypesByDefault | 
+ExcludedSystemTypesPerOperator |
+LTEEnabled |
+LTEForced |
+ManualNetworkSelectionTimeout |
+NetworkSuffix |
+NitzFiltering |
+OperatorListForExcludedSystemTypes |
+OperatorPreferredForFasterRadio |
+PreferredDataProviderList |
+Slot2DisableAppsList |
+Slot2ExcludedSystemTypes |
+SuggestDataRoamingARD |
+SuggestGlobalModeARD |
+SuggestGlobalModeTimeout |
+
 ### RCS
 
 ### SMS
