@@ -113,4 +113,3 @@ For additional information on this process please see [configure endpoints](http
 
 ## Related topics
 - [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
-- [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-setup-windows-defender-advanced-threat-protection.md)
