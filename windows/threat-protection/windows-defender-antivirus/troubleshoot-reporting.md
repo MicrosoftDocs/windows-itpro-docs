@@ -39,13 +39,25 @@ There are three steps to troubleshooting these problems:
 2. Check your connectivity to the Windows Defender cloud-based service
 3. Submit support logs
 
+>[!IMPORTANT]
+>It typically takes 3 days for devices to start appearing in Update Compliance
+
 
 ## Confirm pre-requisites
 
-In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for Windows Defender Antivirus protection:
+In order for devices to properly show up in Update Compliance, you have to meet certain pre-requisites for both the Update Compliance service and for Windows Defender AV protection:
 
 >[!div class="checklist]
->- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. Using any other antivirus app will cause Windows Defender AV to disable itself and the endpoint will not be reported in Update Compliance.
+>- Endpoints are using Windows Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Windows Defender AV to disable itself](windows-defender-antivirus-compatibility.md) and the endpoint will not be reported in Update Compliance.
+> - [Cloud-delivered protection is enabled](enable-cloud-protection-windows-defender-antivirus.md).
+> - Endpoints can [connect to the Windows Defender AV cloud](configure-network-connections-windows-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud)
+> - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 telemetry must be set to the Enhanced level](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization#enhanced-level).
+> - It has been 3 days since all requirements have been met
+
+If the abnove pre-requisites have all been met, you may need to proceed to the next step to collect diagnostic information and send it to us.
+
+> [!div class="nextstepaction"]
+> [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data-update-compliance-wdav.md)
 
 
 
