@@ -1,6 +1,6 @@
 ---
-title: Licensing in Windows Defender ATP
-description: Validating licensing provisioning and completing the setup for Windows Defender Advanced Threat Protection.
+title: Licensing and user setup process for Windows Defender ATP portal
+description: Validating licensing provisioning, setting up initial preferences, and completing the user setup for Windows Defender Advanced Threat Protection portal.
 keywords: license, licensing, account, setup, validating licensing, windows defender atp
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
