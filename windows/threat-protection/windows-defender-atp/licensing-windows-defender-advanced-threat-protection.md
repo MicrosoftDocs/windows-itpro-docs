@@ -39,7 +39,7 @@ The easiest way to gain access into which license is provisioned to the customer
 
 ![Image of billing licenses](images/atp-billing-licenses.png)
 
-## Accessing the Windows Defender ATP Portal for the first time
+## Accessing the Windows Defender ATP portal for the first time
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP that will be created.
 
@@ -53,7 +53,7 @@ Once the authorization step completed will the **Welcome** screen be displayed.
 
 ![Image of Welcome screen for portal setup](images/atp-portal-welcome-screen.png)
 
-You will need to setup your preferences for the Windows Defender ATP Portal. 
+You will need to setup your preferences for the Windows Defender ATP portal. 
 
 3. When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
@@ -97,11 +97,11 @@ You'll have access to upcoming features which you can provide feedback on to hel
 8. You will receive a warning notifying you that you won't be able to change some of your preferences once you click "Continue".
 
 > [!NOTE]
-> Some of these options can be changed at a later time in the Windows Defender ATP Portal.
+> Some of these options can be changed at a later time in the Windows Defender ATP portal.
 
 ![Image of final preference setup](images/atp-final-preference-setup.png)
 
-9. A dedicated cloud instance of the Windows Defender ATP Portal is being created. This step will take an average of 5 minutes to complete.
+9. A dedicated cloud instance of the Windows Defender ATP portal is being created. This step will take an average of 5 minutes to complete.
 
 ![Image of Windows Defender ATP cloud instance](images/atp-windows-cloud-instance-creation.png)
 
