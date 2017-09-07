@@ -86,6 +86,24 @@ Windows Hello represents the biometric framework provided in Windows 10.  Window
 ### I have extended Active Directory to Azure Active Directory.  Can I use the on-prem deployment model?
 No. If your organization is federated or using online services, such as Office 365 or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
 
+### Does Windows Hello for Business prevent the use of simple PINs?
+Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next.  This prevents repeating numbers, sequential numbers and simple patterns.
+So, for example:
+* 1111 has a constant delta of 0, so it is not allowed
+* 1234 has a constant delta of 1, so it is not allowed
+* 1357 has a constant delta of 2, so it is not allowed
+* 9630 has a constant delta of -3, so it is not allowed
+* 1231 does not have a constant delta, so it is okay
+* 1593 does not have a constant delta, so it is okay
+
+This algorithm does not apply to alphanumeric PINs.
+
+### How does PIN caching work with Windows Hello for Business?
+Windows Hello for Business securely caches the key rather than the PIN using a ticketing system.  Azure AD and Active Directory sign-in keys are cached under lock.  This means the keys remain available for use without prompting as long as the user is interactively signed-in.  Microsoft Account sign-in keys are considered transactional keys, which means the user is always prompted when accessing the key.  Windows 10 does not provide any Group Policy settings to adjust this caching.
+
+### Can I disable the PIN while using Windows Hello for Business?
+No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurence where you cannot authenticate with biometrics, you need a fall back mechansim that is not a password.  The PIN is the fall back mechansim.  Disabling or hiding the PIN credential provider disabled the use of biometrics.
+
 ### Does Windows Hello for Business work with third party federation servers?
 Windows Hello for Business can work with any third-party federation servers that support the protocols used during provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
 
@@ -99,5 +117,3 @@ Windows Hello for Business can work with any third-party federation servers that
 ### Does Windows Hello for Business work with Mac and Linux clients?
 Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms.  However, Microsoft is open to third parties who are interested in moving these platforms away from passwords.  Interested third parties can inqury at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
 
-### How does PIN caching work with Windows Hello for Business?
-Windows Hello for Business securely caches the key rather than the PIN using a ticketing system.  Azure AD and Active Directory sign-in keys are cached under lock.  This means the keys remain available for use without prompting as long as the user is interactively signed-in.  Microsoft Account sign-in keys are considered transactional keys, which means the user is always prompted when accessing the key.  Windows 10 does not provide any Group Policy settings to adjust this caching.
