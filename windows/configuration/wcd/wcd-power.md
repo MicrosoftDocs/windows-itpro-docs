@@ -36,7 +36,7 @@ EnforceConsoleLockScreenTimeout |
 EnforceDisconnectedStandby |
 HiberFiletype |
 IgnoreCsComplianceCheck |
-LidNotificationsAreReliable |
+LidNotificationsAreReliable | Use to notify the OS whether the platform guarantees that lid notifications are sent whenever the lid is opened or closed. When configured as **True**, the platform guarantees that lid notifications will be sent every time the device lid is opened or closed. The OS suppresses Windows Hello when the device lid is closed to ensure further input is not processed and to save battery life. OEMs must reliably report lid open and lid close events to opt-in to this setting. If there are scenarios where a lid open event is not reliably reported to the OS, Windows Hello may not work for the user.
 SmartUserPresenceConfidence |
 
 ## EnergyEstimationEngine
@@ -44,7 +44,7 @@ SmartUserPresenceConfidence |
 Setting | Description
 --- | ---
 CPU |
-EfficiencyClass | Select **0** or **1** and click **Add**. For the added EfficientyClassId > **PowerParameters** > **PowerEnvelope**, configure the power in milli-watts for CPU at 100% usage and 100% frequency. Minimum value is 100, and maximum vallue is 64000.
+EfficiencyClass | Select **0** or **1** and click **Add**. For the added EfficiencyClassId > **PowerParameters** > **PowerEnvelope**, configure the power in milli-watts for CPU at 100% usage and 100% frequency. Minimum value is 100, and maximum vallue is 64000.
 Display |
 DisplayBacklightPowerFloor | Configure the backlight power floor in milli-watts. Minimum value is 24, and maximum value is 250.
 DisplayBacklightPowerGradient |
@@ -112,30 +112,68 @@ StandbyBudgetPercent |
 
 Settings for Battery | Description
 --- | ---
+CriticalAction |
+CriticalBatteryLevel |
+LowAction |
+LowBatteryLevel |
+LowBatteryWarning |
+ReserveBatteryLevel |
 
 Settings for Button | Description
 --- | ---
+ForcedShutdown |
+LidAction |
+LidOpenWake |
+PowerButtonAction |
+SleepButtonAction |
+UIPowerButtonAction |
 
 Settings for Disk | Description
 --- | ---
+BurstIgnoreDuration |
+IdleTimeout |
+MaxDiskPower |
 
 Settings for Display | Description
 --- | ---
+AdapativeIncrease |
+AdaptiveTimeout |
+AllowAdaptiveBrightness |
+AllowDisplayRequired |
+AnoyanceTimout |
+ConsoleLockTimeout |
+DimLevel |
+DimTimeout |
+IdleTimeout |
+NormalLevel |
 
 Settings for EnergySaver | Description
 --- | ---
+BatteryThreshold |
+Brightness |
+Policy | Select between **User** and **Aggressive**.
 
 Settings for IdleResiliency | Description
 --- | ---
+AllowDeepSleep |
+ExecutionRequiredTimeout |
+IdleResiliencyPeriod |
+IOCoalescingTimeout |
 
 Settings for Misc | Description
 --- | ---
+AllowWifiInStandby |
+ConnectivityInStandby |
+DeviceIdlePolicy |
+LockConsoleOnWake |
 
 Settings for Multimedia | Description
 --- | ---
+VideoPlayBackQuality | Configure for power-saving or performance.
 
 Settings for PCIExpress | Description
 --- | ---
+ASPM | Configure Active State Power Management (ASPM) for moderate power savings or maximum power savings.
 
 Settings for Processor</br>Some parameters have suffix "1" to indicate efficiency class</br>[Learn more about processor power management options](https://msdn.microsoft.com/library/windows/hardware/mt422910.aspx) | Description
 --- | ---
