@@ -25,49 +25,42 @@ Use to configure settings for Power.
 
 Setting | Description
 --- | ---
-AllowSystemRequiredPowerRequests | 
-BootLowLatencyDuration |
-DefaultOverlayAcPowerScheme |
-DefaultOverlayDcPowerScheme |
-DefaultOverlayPowerScheme |
-DimTimeoutIsManuallySpecified |
-EnergyEstimationEnabled |
-EnforceConsoleLockScreenTimeout |
-EnforceDisconnectedStandby |
-HiberFiletype |
-IgnoreCsComplianceCheck |
+AllowSystemRequiredPowerRequests | Specify whether System Required power requests are allowed on systems capable of connected standby.
+BootLowLatencyDuration | 
+DefaultOverlayAcPowerScheme | Specify the default overlay power scheme to use when device is plugged in.
+DefaultOverlayDcPowerScheme | Specify the default overlay power shceme to use when the device is on battery.
+DefaultOverlayPowerScheme | Specify the default overlay power scheme to use. This setting is deprecated.
+DimTimeoutIsManuallySpecified | Set to **True** to control the period before the screen dims using the DimTimeout setting. Set to **False** to allow Windows to automatically select the period based on the screen off timeout.
+EnergyEstimationEnabled | 
+EnforceConsoleLockScreenTimeout | Specify whether the console lock screen timeout should be enforced independently of the user display timeout.
+EnforceDisconnectedStandby | Specify whether to force the network to disconnect during standby.
+HiberFiletype | Specify the type of HiberFile to be used by the system. Set to **Reduced** to allow fast startup, but not hibernate. Set to **Full** to allow both fast startup and hibernate.
+IgnoreCsComplianceCheck | Specify whether to ignore connected standby compliance chcks.
 LidNotificationsAreReliable | Use to notify the OS whether the platform guarantees that lid notifications are sent whenever the lid is opened or closed. When configured as **True**, the platform guarantees that lid notifications will be sent every time the device lid is opened or closed. The OS suppresses Windows Hello when the device lid is closed to ensure further input is not processed and to save battery life. OEMs must reliably report lid open and lid close events to opt-in to this setting. If there are scenarios where a lid open event is not reliably reported to the OS, Windows Hello may not work for the user.
-SmartUserPresenceConfidence |
+SmartUserPresenceConfidence | Specify the confidence, in percentage, in predicted user-away intervals.
 
 ## EnergyEstimationEngine
 
 Setting | Description
 --- | ---
-CPU |
-EfficiencyClass | Select **0** or **1** and click **Add**. For the added EfficiencyClassId > **PowerParameters** > **PowerEnvelope**, configure the power in milli-watts for CPU at 100% usage and 100% frequency. Minimum value is 100, and maximum vallue is 64000.
-Display |
+CPU > EfficiencyClass | Select **0** or **1** and click **Add**. For the added EfficiencyClassId > **PowerParameters** > **PowerEnvelope**, configure the power in milli-watts for CPU at 100% usage and 100% frequency. Minimum value is 100, and maximum vallue is 64000.
 DisplayBacklightPowerFloor | Configure the backlight power floor in milli-watts. Minimum value is 24, and maximum value is 250.
-DisplayBacklightPowerGradient |
+DisplayBacklightPowerGradient | 
 DisplayBacklightPowerQDenominator |
 DisplayBacklightPowerQNumerator |
 DisplayPanelPowerAreaFactor |
 DisplayPanelPowerDpiFactor |
 DisplayPanelPowerFloor |
 DisplayPanelPowerVsyncDelta |
-EnergyEstimationTelemetry |
 BatteryDrainMaxE3UploadRank |
 BatteryDrainMinE3UploadBI |
 BatteryDrainMinRate |
 LongtermTimerInMinutes |
 UploadAcRecords |
-MobileBroadband |
 MBBClass |
-StandbyActivationEnergy |
 DripsPowerFloorMilliWatts |
 NonDripsPenaltyMilliWatts |
-Storage |
 StorageType |
-Wifi |
 WifiClass |
 
 
@@ -186,12 +179,10 @@ DPHeadroom |
 CPIncreasePolicy |
 CPIncreaseTime |
 CpLatencyHintUnpark |
-CpLatencyHintUnpark1 |
 CPMaxCores |
 CPMinCores |
 CPOverUtilizationThreshold |
 CPPerfState |
-CPPerfState1 |
 DutyCycling |
 HeteroClass0FloorPerf |
 HeteroClass1InitialPerf |
