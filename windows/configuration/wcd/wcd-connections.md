@@ -12,7 +12,7 @@ ms.date: 10/05/2017
 
 # Connections (Windows Configuration Designer reference)
 
-Use to configure settings related to variou types of phone connections.
+Use to configure settings related to various types of phone connections.
 
 ## Applies to
 
