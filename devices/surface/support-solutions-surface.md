@@ -13,7 +13,7 @@ ms.date: 09/07/2017
 ms.localizationpriority: medium
 ---
 
-# Top support solutions Microsoft Surface Hub
+# Top support solutions for Surface devices
 
 Microsoft regularly releases both updates and solutions for Surface devices. To ensure your devices can receive future updates, including security updates, it's important to keep your Surface devices updated.  For a complete listing of the update history, see [Surface update history](https://www.microsoft.com/surface/support/install-update-activate/surface-update-history) and [Install Surface and Windows updates](https://www.microsoft.com/surface/support/performance-and-maintenance/install-software-updates-for-surface?os=windows-10&=undefined).
 
