@@ -18,6 +18,7 @@ Per-user services are services that are created when a user signs into Windows o
 > Per-user services are only in available in Windows Server if you have installed the Desktop Experience. If you are running a Server Core or Nano Server installation, you won't see these services.
 
 Beginning with Windows 10, version 1709 and Windows Server, version 1709, there are two ways to prevent per-user services from being created:
+
 - Configure the template service to create them in a stopped and disabled state. You do this by setting the template service's **Startup Type** to **Disabled**.
   > [!IMPORTANT]
   > If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
