@@ -105,52 +105,53 @@ Maximum value: `100 + 100*256 + 100*65536 + 100*16777216`
  
 Settings for AdaptivePowerBehavior | Description
 --- | ---
-StandbyBudgetGracePeriod |
-AcValue |
-DcValue |
-StandbyBudgetPercent |
+StandbyBudgetGracePeriod | Define the minimum time, in seconds, after the system enters standby before the system makes the check if standby power budget is consumed.
+StandbyBudgetPercent | Define the battery drain percentage that the user is allowed in a standby session.
+StandbyReserveGracePeriod | Define the minimum time, in seconds, after the screen turns off before the system checks to make sure there is enough battery available to maintain the specified screen on time.
+StandbyReserveTime | Define the screen on time, in seconds, that will be available to the user after standby exists and the screen turns on.
+StandbyResetPercent | Specify the percentage of battery when the system will reset the standby budget.
 
 Settings for Battery | Description
 --- | ---
-CriticalAction |
-CriticalBatteryLevel |
-LowAction |
-LowBatteryLevel |
-LowBatteryWarning |
-ReserveBatteryLevel |
+CriticalAction | Select the action to take when critical battery level is reached.
+CriticalBatteryLevel | Specify the percentage of capacity when the critical battery action is taken.
+LowAction | Specify the action to take when the low batter level is reached.
+LowBatteryLevel | Specify the percentage of capacity when the low battery action is taken and the low battery warning, if enabled, appears.
+LowBatteryWarning | Specify whether the OS displays a UI warning at the batter meter when the battery capacity crosses the low battery threshold.
+ReserveBatteryLevel | Specify the percentage of capacity when the reserve battery warning is shown to the user.
 
 Settings for Button | Description
 --- | ---
-ForcedShutdown |
-LidAction |
-LidOpenWake |
-PowerButtonAction |
-SleepButtonAction |
-UIPowerButtonAction |
+ForcedShutdown | Specify the type of system shutdown that occurs when the system power button is pressed if the power button action is set to **Shut down**. When configured as **On**, a forced system shutdown will occur. When configured as **Off**, a normal system shutdown will occur.
+LidAction | Specify the action to take when the system lid is closed.
+LidOpenWake | Specify the action to take when the system lid is opened.
+PowerButtonAction | Specify the action to take when the system power button is pressed.
+SleepButtonAction | Specify the action to take when the sleep power button is pressed.
+UIPowerButtonAction | Specify the action to take when the UI power button is pressed.
 
 Settings for Disk | Description
 --- | ---
-BurstIgnoreDuration |
-IdleTimeout |
-MaxDiskPower |
+BurstIgnoreDuration | Specify the period of inactivity, in seconds, to ignore when attempting to aggressively power down the disk. 
+IdleTimeout | Specify the period of inactivity, in seconds, before the disk is automatically powered down.
+MaxDiskPower | 
 
 Settings for Display | Description
 --- | ---
-AdapativeIncrease |
-AdaptiveTimeout |
+AdapativeIncrease | This setting denotes the user annoyance detection threshold. It specifies the duration, in seconds, between automatic display brightness level reduction and user input to consider the automatic display brightness level reduction as an annoyance to the user. This setting applies only to portable computers that support Windows control of the brightness level of an integrated display device. In most situations, you should not change the default value of this setting.
+AdaptiveTimeout | Specify whether the OS automatically scales the display idle time-out based on user activity. If the user provides input to the system shortly after the display idle timeout is reached, Windows automatically extends the display idle time-out to deliver a better user experience. 
 AllowAdaptiveBrightness |
-AllowDisplayRequired |
+AllowDisplayRequired | Specify whether Windows allows applications to temporarily prevent the display from automatically reducing brightness or turning off to save power. 
 AnoyanceTimout |
 ConsoleLockTimeout |
-DimLevel |
-DimTimeout |
-IdleTimeout |
-NormalLevel |
+DimLevel | Specify the reduced display brightness level, in percentage, after the dim idle timeout has been reached. This setting applies only to portable computers that support Windows control of the brightness level of an integrated display device. 
+DimTimeout | Specify the period of inactivity, in seconds, before the display is dimmed.
+IdleTimeout | Specify the period of inactivity, in seconds, before the display is automatically turned off.
+NormalLevel | Specify the default display brightness level, in percentage.
 
 Settings for EnergySaver | Description
 --- | ---
-BatteryThreshold |
-Brightness |
+BatteryThreshold | Specify the battery charge level, as a percentage, at which Energy Saver is turned on.
+Brightness | Specify the percentage value to scale brightness to when Energy Saver is turned on.
 Policy | Select between **User** and **Aggressive**.
 
 Settings for IdleResiliency | Description
@@ -162,10 +163,10 @@ IOCoalescingTimeout |
 
 Settings for Misc | Description
 --- | ---
-AllowWifiInStandby |
-ConnectivityInStandby |
-DeviceIdlePolicy |
-LockConsoleOnWake |
+AllowWifiInStandby | Specify whether to allow Wi-Fi networking during standby.
+ConnectivityInStandby | Specify whether to allow connectivity during standby.
+DeviceIdlePolicy | Configure for power-saving or performance.
+LockConsoleOnWake | Specify whether to lock the console.
 
 Settings for Multimedia | Description
 --- | ---
