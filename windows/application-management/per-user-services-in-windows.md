@@ -19,10 +19,9 @@ Per-user services are services that are created when a user signs into Windows o
 
 Beginning with Windows 10, version 1709 and Windows Server, version 1709, there are two ways to prevent per-user services from being created:
 - Configure the template service to create them in a stopped and disabled state. You do this by setting the template service's **Startup Type** to **Disabled**.
+  > [!IMPORTANT]
+  > If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
 - Create a new Registry entry named UserServiceFlags under the service configuration in the registry as a DWORD (32 bit) value set to 0. 
-
-> [!IMPORTANT]
-> If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
 
 Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates.
 
