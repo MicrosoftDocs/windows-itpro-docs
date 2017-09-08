@@ -10,7 +10,7 @@ ms.pagetype: security, mobile
 author: DaniHalfin
 localizationpriority: high
 ms.author: daniha
-ms.date: 07/07/2017
+ms.date: 09/08/2017
 ---
 # Windows Hello for Business
 

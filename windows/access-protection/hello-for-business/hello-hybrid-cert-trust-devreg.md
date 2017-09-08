@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
+ms.date: 09/08/2017
 localizationpriority: high
 ---
 # Configure Device Registration for Hybrid Windows Hello for Business
