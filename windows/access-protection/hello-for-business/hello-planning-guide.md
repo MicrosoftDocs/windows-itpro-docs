@@ -7,7 +7,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: DaniHalfin
-ms.date: 09/08/2017
 localizationpriority: high
 ---
 # Planning a Windows Hello for Business Deployment
