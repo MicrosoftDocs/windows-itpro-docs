@@ -36,7 +36,7 @@ See [Configure cellular settings for tablets and PCs](https://docs.microsoft.com
 
 ## General
 
-Use **General > DataRoam** to set the default value for the **Default romaing options** option in the **Settings > cellular + SIM"" area on the device. 
+Use **General > DataRoam** to set the default value for the **Default roaming options** option in the **Settings > cellular + SIM"" area on the device. Select between **DoNotRoam**, **DomesticRoaming**, or **InternationalRoaming**. 
 
 ## Policies
 
