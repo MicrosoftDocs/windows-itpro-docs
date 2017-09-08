@@ -4,6 +4,7 @@ hide_bc: true
 author: CelesteDG
 ms.author: celested
 ms.topic: hub-page
+ms.localizationpriority: high
 audience: microsoft-business 
 title: Microsoft 365 Business documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, information workers, and business owners.
@@ -12,13 +13,13 @@ description: Learn about the product documentation and resources available for M
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="http://www.microsoft.com/en-us/microsoft-365/business">
+                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/ih_learn-about.svg" alt="Learn about Microsoft 365 Business" />
+                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/ih_learn-about.png" alt="Learn about Microsoft 365 Business" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -30,17 +31,17 @@ description: Learn about the product documentation and resources available for M
                 </a>
             </li>
             <li>
-                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364">
+                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/ih_tools.svg" src="/media/common/ih_tools.svg" alt="Get started using Microsoft 365 Business" />
+                                        <img data-hoverimage="/media/common/ih_tools.svg" src="/media/common/ih_tools.png" alt="Get started using Microsoft 365 Business" />
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <span class="likeAnH3">For Partners and IT admins:<br />Get Started with Microsoft 365 Business</span>
+                                    <span class="likeAnH3">For Partners and IT admins:<br />Get started with Microsoft 365 Business</span>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +57,7 @@ description: Learn about the product documentation and resources available for M
                 <a href="#partner-it">Partner/IT admin</a>
                 <ul id="partner-it">
                     <li>
-                        <a data-default="true" href="#getstarted">Get Started</a>
+                        <a data-default="true" href="#getstarted">Get started</a>
                         <ul id="getstarted" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
@@ -64,7 +65,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://www.microsoft.com/en-us/microsoft-365/business">
+                                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -74,8 +75,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Learn about Microsoft 365 Business</h3>
-                                                    <p>Want to learn more about Microsoft 365 Business? Start here.</p>
+                                                    <h3>Why Microsoft 365 Business?</h3>
+                                                    <p>Learn how Microsoft 365 Business can empower your team, safeguard your business, and simplify IT management with a single solution.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -83,7 +84,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="support/microsoft-365-business-faqs.md">
+                                <a href="support/microsoft-365-business-faqs.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -102,7 +103,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364">
+                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -131,7 +132,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/96153102-1db1-4df8-bca5-38cea80b65ce">
+                                <a href="https://support.office.com/article/96153102-1db1-4df8-bca5-38cea80b65ce" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -150,7 +151,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e">
+                                <a href="https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -179,7 +180,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/ed34fff3-2881-4ed4-9906-1ba6bb8dd804">
+                                <a href="https://support.office.com/article/ed34fff3-2881-4ed4-9906-1ba6bb8dd804" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -198,7 +199,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46">
+                                <a href="https://support.office.com/article/cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -217,7 +218,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/80bdae57-f8bc-4e40-a58c-956007117ecb">
+                                <a href="https://support.office.com/article/80bdae57-f8bc-4e40-a58c-956007117ecb" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -236,7 +237,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/c4db6caf-74df-4734-b1dd-53e371c7a3c3">
+                                <a href="https://support.office.com/article/c4db6caf-74df-4734-b1dd-53e371c7a3c3" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -265,7 +266,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/bd66c26c-73a4-45a8-8642-3ea4ee7cd89d">
+                                <a href="https://support.office.com/article/bd66c26c-73a4-45a8-8642-3ea4ee7cd89d" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -284,7 +285,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/6b70fa27-d171-4593-8ecf-f78bb4ed2e99">
+                                <a href="https://support.office.com/article/6b70fa27-d171-4593-8ecf-f78bb4ed2e99" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -332,7 +333,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="https://support.office.com/article/365-1b3b5318-6977-42ed-b5c7-96fa74b08846" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -342,8 +343,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Identity migration</h3>
-                                                    <p>Got on-premises AD and plan to move your organization’s identity management to the cloud? Do a one-time sync using <a href="https://support.office.com/article/365-1b3b5318-6977-42ed-b5c7-96fa74b08846">Azure AD Connect</a>, or, if you have Exchange servers and plan to also migrate email to the cloud, do a one-time sync using <a href="https://support.office.com/article/FDECCEED-0702-4AF3-85BE-F2A0013937EF">Minimal hybrid migration</a>.</p>
+                                                    <h3>Identity migration with Azure AD Connect</h3>
+                                                    <p>Got on-premises AD and plan to move your organization’s identity management to the cloud? Do a one-time sync using Azure AD Connect.<a href="https://support.office.com/article/FDECCEED-0702-4AF3-85BE-F2A0013937EF">Minimal hybrid migration</a>.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -351,7 +352,26 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193">
+                                <a href="https://support.office.com/article/FDECCEED-0702-4AF3-85BE-F2A0013937EF" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-identity-manager.svg" alt="Identity integration" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Identity migration with minimal hybrid migration</h3>
+                                                    <p>Or, if you have Exchange servers and plan to also migrate email to the cloud, do a one-time sync using minimal hybrid migration.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -380,7 +400,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/solution-providers/search">
+                                <a href="https://www.microsoft.com/solution-providers/search" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -399,6 +419,25 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
+                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364#bkmk_support" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft Technical Support</h3>
+                                                    <p>Submit a technical support request for Microsoft 365 Business.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
                                 <a href="#">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -416,26 +455,7 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Technical Support - Coming soon</h3>
-                                                    <p>Submit a technical support request for Microsoft 365 Business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                           
+                            </li>                          
                         </ul>
                     </li>
                     <li>
@@ -446,6 +466,7 @@ description: Learn about the product documentation and resources available for M
                                     <p>See these links for more in-depth information about these products and features.</p>
                                 </div>
                             </li>
+                            <!--
                             <li>
                                 <a href="https://docs.microsoft.com/intune">
                                     <div class="cardSize">
@@ -465,8 +486,9 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
+                            -->
                             <li>
-                                <a href="https://docs.microsoft.com/windows">
+                                <a href="https://docs.microsoft.com/en-us/windows/windows-10/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -477,7 +499,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Windows 10</h3>
-                                                    <p>Learn more about Windows 10.</p>
+                                                    <p>Find out what's new, how to apply custom configurations to devices, managing apps, deployment, and more.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -485,7 +507,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/partner-center/autopilot">
+                                <a href="https://msdn.microsoft.com/partner-center/autopilot" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -514,7 +536,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec">
+                                <a href="https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -533,7 +555,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/365-2d2fa996-b760-411d-a5cc-190d63f13207">
+                                <a href="https://support.office.com/article/365-2d2fa996-b760-411d-a5cc-190d63f13207" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -573,7 +595,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                             -->
                             <li>
-                                <a href="https://support.office.com/article/74a1ef8b-3844-4d08-9980-9f8f7a36000f">
+                                <a href="https://support.office.com/article/74a1ef8b-3844-4d08-9980-9f8f7a36000f" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -592,7 +614,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/7a5d073b-7fae-4aa5-8f96-9ecd041aba9c">
+                                <a href="https://support.office.com/article/7a5d073b-7fae-4aa5-8f96-9ecd041aba9c" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -611,7 +633,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/ea7bf1b2-1c2f-477f-a813-313e3ce0d896">
+                                <a href="https://support.office.com/article/ea7bf1b2-1c2f-477f-a813-313e3ce0d896" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -630,7 +652,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/a27f1a99-3557-4f85-9560-a28e3d822a40">
+                                <a href="https://support.office.com/article/a27f1a99-3557-4f85-9560-a28e3d822a40" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -649,7 +671,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/46c667f7-5073-47b9-a75f-05a60cf77d91">
+                                <a href="https://support.office.com/article/46c667f7-5073-47b9-a75f-05a60cf77d91" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -688,7 +710,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/d868561b-d340-4c04-a973-e2575d7f09bc">
+                                <a href="https://support.office.com/article/d868561b-d340-4c04-a973-e2575d7f09bc" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -707,9 +729,9 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/eb8244aa-a302-481a-b2b5-d34e88b18ec7">
+                                <a href="https://support.office.com/article/eb8244aa-a302-481a-b2b5-d34e88b18ec7" target="_blank">
                                     <div class="cardSize">
-                                        <div class="cardPadding">
+                                        <div class="cardPadding"> 
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
@@ -726,7 +748,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193">
+                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -745,7 +767,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/c654bd23-d256-4ac7-8fba-0c993bf5a771">
+                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -774,7 +796,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://support.office.com">
+                                <a href="http://support.office.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -793,7 +815,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="http://support.microsoft.com/products/windows">
+                                <a href="http://support.microsoft.com/products/windows" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -827,7 +849,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://www.microsoft.com/en-us/microsoft-365/business">
+                                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -846,7 +868,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="support/microsoft-365-business-faqs.md">
+                                <a href="support/microsoft-365-business-faqs.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -865,7 +887,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.microsoft.com/solution-providers/search">
+                                <a href="https://www.microsoft.com/solution-providers/search" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

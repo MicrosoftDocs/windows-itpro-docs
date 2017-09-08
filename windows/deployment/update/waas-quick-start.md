@@ -5,8 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Quick guide to Windows as a service
@@ -26,20 +27,22 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 - **Feature updates** will be released twice per year, around March and September.  As the name suggests, these will add new features to Windows 10, delivered in bite-sized chunks compared to the previous practice of Windows releases every 3-5 years.
 - **Quality updates** are released monthly, delivering both security and non-security fixes.  These are cumulative, so installing the latest quality update is sufficient to get all the available fixes for a specific Windows 10 feature update.
 - **Insider Preview** builds are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features as well as compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered.
-- **Servicing channels** allow organizations to choose when to deploy new features.  The Semi-Annual Channel receives feature updates twice per year.  The Long Term Servicing Channel, which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases about every three years.
+- **Servicing channels** allow organizations to choose when to deploy new features. 
+    - The **Semi-Annual Channel** receives feature updates twice per year. 
+    - The **Long Term Servicing Channel**, which is designed to be used only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases about every three years.
 - **Deployment rings** are groups of devices used to initially pilot, and then to broadly deploy, each feature update in an organization.  
 
 See [Overview of Windows as a service](waas-overview.md) for more information.
 
 ## Key Concepts
 
-Windows 10 gains new functionality with twice-per-year feature update releases.  Initially, organizations will use these feature update releases for pilot deployments to ensure compatibility with existing apps and infrastructure.  After a period of time, typically about four months after the feature update release, broad deployment throughout the organization can begin.  The exact timeframe is determined by feedback from customers, ISVs, OEMs, and others, with an explicit "ready for broad deployment" declaration signaling this to customers.
+Windows 10 gains new functionality with twice-per-year feature update releases.  Initially, organizations will use these feature update releases for pilot deployments to ensure compatibility with existing apps and infrastructure.  After a period of time, typically about four months after the feature update release, broad deployment throughout the organization can begin. The exact timeframe is determined by feedback from customers, ISVs, OEMs, and others, with an explicit "ready for broad deployment" declaration signaling this to customers.
 
 Each Windows 10 feature update will be serviced with quality updates for 18 months from the date of the feature update release. 
 
 Windows 10 Enterprise LTSB is a separate **Long Term Servicing Channel** version.  Each release is supported for a total of 10 years (five years standard support, five years extended support).  New releases are expected about every three years.
 
-See [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md) for more information.
+See [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) for more information.
 
 ## Staying up to date
 
@@ -55,7 +58,7 @@ See [Build deployment rings for Windows 10 updates](waas-deployment-rings-window
 
 ## Video: An overview of Windows as a service
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MLc4-Suv0LU" frameborder="0" allowfullscreen></iframe> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qSAsiM01GOU" frameborder="0" allowfullscreen></iframe> 
  
 ## Learn more
 

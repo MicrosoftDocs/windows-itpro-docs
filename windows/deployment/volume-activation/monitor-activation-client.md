@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: greg-lindsay
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Monitor activation

@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: support
 description: Info about where features went in the IEAK11, where the Favorites, Command, and Status bars went, and where the search bar went.
 author: eross-msft

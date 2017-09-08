@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to add and deploy the Internet Explorer 11 update using Microsoft Intune.
 author: eross-msft

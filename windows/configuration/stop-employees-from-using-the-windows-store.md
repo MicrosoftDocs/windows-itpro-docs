@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, mobile
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Configure access to Microsoft Store
@@ -59,10 +59,10 @@ For more information on AppLocker, see [What is AppLocker?](/windows/device-secu
 ## <a href="" id="block-store-group-policy"></a>Block Microsoft Store using Group Policy
 
 
-Applies to: Windows 10 Enterprise, version 1511, Windows 10 Education 
+Applies to: Windows 10 Enterprise, Windows 10 Education 
 
 > [!Note]
-> Not supported on Windows 10 Pro.
+> Not supported on Windows 10 Pro, starting with version 1511. For more info, see [Knowledge Base article #3135657](https://support.microsoft.com/kb/3135657).
 
 You can also use Group Policy to manage access to Microsoft Store.
 

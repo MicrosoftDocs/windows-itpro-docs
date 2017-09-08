@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - WindowsLogon
@@ -34,10 +35,10 @@ author: nickbrower
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -52,10 +53,18 @@ If you enable this policy setting, no app notifications are displayed on the loc
 If you disable or do not configure this policy setting, users can choose which apps display notifications on the lock screen.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off app notifications on the lock screen*
+-   GP English name: *Turn off app notifications on the lock screen*
 -   GP name: *DisableLockScreenAppNotifications*
+-   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
 
 <!--EndADMX-->
@@ -76,10 +85,10 @@ ADMX Info:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
@@ -94,10 +103,18 @@ If you enable this policy setting, the PC's network connectivity state cannot be
 If you disable or don't configure this policy setting, any user can disconnect the PC from the network or can connect the PC to other available networks without signing into Windows.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Do not display network selection UI*
+-   GP English name: *Do not display network selection UI*
 -   GP name: *DontDisplayNetworkSelectionUI*
+-   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
 
 <!--EndADMX-->

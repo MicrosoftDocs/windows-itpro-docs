@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
@@ -14,6 +14,10 @@ ms.date: 07/10/2017
 ---
 
 # Finish Windows 10 device setup and other tasks
+
+> [!div class="step-by-step"]
+[<< Set up Windows 10 education devices](set-up-windows-10-education-devices.md)
+
 Once you've set up your Windows 10 education device, it's worth checking to verify the following:
 
 > [!div class="checklist"]
@@ -70,6 +74,7 @@ You can follow the rest of the walkthrough to finish setup and complete other ta
 > * Update group settings in Intune for Education
 > * Configure Azure settings
 > * Complete Office 365 for Education setup
+> * Enable Microsoft teams for your school
 > * Add more users
 > * Connect other devices, like BYOD devices, to your cloud infrastructure
 
@@ -136,13 +141,45 @@ Follow the steps in this section to ensure that settings for the each user follo
 ## Complete Office 365 for Education setup
 Now that your basic cloud infrastructure is up and running, it's time to complete the rest of the Office 365 for Education setup. You can find detailed information about completing Office 365 setup, services and applications, troubleshooting, and more by reading the <a href="https://support.office.com/en-US/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa#ID0EAAAABAAA=Education" target="_blank">Office 365 admin documentation</a>.
 
+## Enable Microsoft Teams for your school
+Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. Because it's built on Office 365, schools benefit from integration with their familiar Office apps and services. Your institution can use Microsoft Teams to create collaborative classrooms, connect in professional learning communities, and communicate with school staff all from a single experience in Office 365 for Education. 
+
+To get started, IT administrators need to use the Office 365 Admin Center to enable Microsoft Teams for your school. 
+
+**To enable Microsoft Teams for your school**
+
+1. Sign in to <a href="https://portal.office.com" target="_blank">Office 365</a> with your work or school account.
+2. Click **Admin** to go to the Office 365 admin center.
+3. Go to **Settings > Services & add-ins**.
+4. On the **Services & add-ins** page, select **Microsoft Teams**.
+
+  **Figure 1** - Select Microsoft Teams from the list of services & add-ins
+
+  ![Enable Microsoft Teams for your school](images/o365_settings_services_msteams.png)
+
+5. On the Microsoft Teams settings screen, select the license that you want to configure, **Student** or **Faculty and Staff**. Select **Faculty and Staff**.
+
+  **Figure 2** - Select the license that you want to configure
+
+  ![Select the Microsoft Teams license that you want to configure](images/o365_msteams_settings.png)
+
+6. After you select the license type, set the toggle to turn on Microsoft Teams for your organization.
+
+  **Figure 3** - Turn on Microsoft Teams for your organization
+
+  ![Turn on Microsoft Teams for your organization](images/o365_msteams_turnon.png)
+
+7. Click **Save**.
+
+You can find more info about how to control which users in your school can use Microsoft Teams, turn off group creation, configure tenant-level settings, and more by reading the *Guide for IT admins* getting started guide in the <a href="https://aka.ms/MeetTeamsEdu" target="_blank">Meet Microsoft Teams</a> page.
+
 ## Add more users
 After your cloud infrastructure is set up and you have a device management strategy in place, you may need to add more users and you want the same policies to apply to these users. You can add new users to your tenant simply by adding them to the Office 365 groups. Adding new users to Office 365 groups automatically adds them to the corresponding groups in Intune for Education.
 
 See <a href="https://support.office.com/en-us/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc" target="_blank">Add users to Office 365</a> to learn more. Once you're done adding new users, go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a> and verify that the same users were added to the Intune for Education groups as well.
 
 ## Connect other devices to your cloud infrastructure
-Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [6. Set up Windows 10 devices](#6-set-up-windows-10-devices). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
+Adding a new device to your cloud-based tenant is easy. For new devices, you can follow the steps in [Set up Windows 10 education devices](set-up-windows-10-education-devices.md). For other devices, such as those personally-owned by teachers who need to connect to the school network to access work or school resources (BYOD), you can follow the steps in this section to get these devices connected.
 
   > [!NOTE]  
   > These steps enable users to get access to the organization's resources, but it also gives the organization some control over the device.
@@ -169,9 +206,13 @@ Adding a new device to your cloud-based tenant is easy. For new devices, you can
 
   ![Device is connected to organization's MDM](images/win10_connectedtoorgmdm.png)
 
-6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [6.3 Verify the device is Azure AD joined](#63-verify-the-device-is-azure-ad-joined). 
+6. You can confirm that the new device and user are showing up as Intune for Education-managed by going to the Intune for Education management portal and following the steps in [Verify the device is Azure AD joined](#verify-the-device-is-azure-ad-joined). 
 
   It may take several minutes before the new device shows up so check again later.
+
+
+> [!div class="step-by-step"]
+[<< Set up Windows 10 education devices](set-up-windows-10-education-devices.md)
 
   
 ## Related topic

@@ -7,7 +7,7 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 title: Use Enterprise Mode to improve compatibility (Microsoft Edge for IT Pros)
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Use Enterprise Mode to improve compatibility

@@ -10,7 +10,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Troubleshoot Microsoft Surface Hub
@@ -20,8 +20,6 @@ Troubleshoot common problems, including setup issues, Exchange ActiveSync errors
 
 Common issues are listed in the following table, along with causes and possible fixes. The [Setup troubleshooting](#setup-troubleshooting) section contains a listing of on-device problems, along with several types of issues that may be encountered during the first-run experience. The [Exchange ActiveSync errors](#exchange-activesync-errors) section lists common errors the device may encounter when trying to synchronize with an Microsoft Exchange ActiveSync server.
 
--   [Setup troubleshooting](#setup-troubleshooting)
--   [Exchange ActiveSync errors](#exchange-activesync-errors)
 
 ## Setup troubleshooting
 

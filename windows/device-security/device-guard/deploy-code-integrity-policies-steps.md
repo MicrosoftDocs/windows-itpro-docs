@@ -1,10 +1,10 @@
 ---
 title: Deploy code integrity policies - steps (Windows 10)
-description: This article describes how to deploy code integrity policies, one of the main features that are part of Device Guard in Windows 10. 
+description: This article describes how to deploy code integrity policies, one of the main features that are part of Windows Defender Device Guard in Windows 10. 
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -14,7 +14,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-For an overview of the process described in the following procedures, see [Deploy code integrity policies: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md). To understand how the deployment of code integrity policies fits with other steps in the Device Guard deployment process, see [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+For an overview of the process described in the following procedures, see [Deploy code integrity policies: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md). To understand how the deployment of code integrity policies fits with other steps in the Windows Defender Device Guard deployment process, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
 ## Create a code integrity policy from a golden computer
 
@@ -26,14 +26,14 @@ The process for creating a golden code integrity policy from a reference system 
 ### Scripting and applications
 
 Each installed software application should be validated as trustworthy before you create a policy. We recommend that you review the reference PC for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want it to run scripts. 
-You can remove or disable such software on reference PCs used to create code integrity policies. You can also fine-tune your control by using Device Guard in combination with AppLocker, as described in [Device Guard with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
+You can remove or disable such software on reference PCs used to create code integrity policies. You can also fine-tune your control by using Windows Defender Device Guard in combination with AppLocker, as described in [Windows Defender Device Guard with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
 
-Members of the security community<sup>\*</sup> continuously collaborate with Microsoft® to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Device Guard code integrity policies. 
+Members of the security community<sup>\*</sup> continuously collaborate with Microsoft® to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Device Guard code integrity policies. 
 
-Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent Application Whitelisting policies, including Device Guard:
+Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent Application Whitelisting policies, including Windows Defender Device Guard:
 
 - bash.exe
-- bginfo.exe 
+- bginfo.exe<sup>[1]</sup> 
 - cdb.exe
 - csi.exe
 - dnx.exe
@@ -42,14 +42,16 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - kd.exe
 - ntkd.exe
 - lxssmanager.dll
-- msbuild.exe<sup>[1]</sup>
+- msbuild.exe<sup>[2]</sup>
 - mshta.exe
 - ntsd.exe
 - rcsi.exe
 - system.management.automation.dll
 - windbg.exe
 
-<sup>[1]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>[1]</sup>A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](https://docs.microsoft.com/en-us/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
+
+<sup>[2]</sup>If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you whitelist msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
 <sup>*</sup>Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -68,9 +70,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 >[!Note]
 >This application list is fluid and will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
-Certain software applications may allow additional code to run by design. These types of applications should be blocked by your Device Guard policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Device Guard bypass, you should add deny rules to your code integrity policies for that application’s previous, less secure versions. 
+Certain software applications may allow additional code to run by design. These types of applications should be blocked by your Windows Defender Device Guard policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Device Guard bypass, you should add deny rules to your code integrity policies for that application’s previous, less secure versions. 
 
-Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in in-box PowerShell modules that allowed an attacker to bypass Device Guard code integrity policies. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
+Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in in-box PowerShell modules that allowed an attacker to bypass Windows Defender Device Guard code integrity policies. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
 Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet:
 
@@ -246,7 +248,7 @@ To create a code integrity policy, copy each of the following commands into an e
 
     > [!Notes] 
     
-    > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the code integrity policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Device Guard. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
+    > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the code integrity policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Device Guard. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
     
     > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Code integrity file rule levels](deploy-code-integrity-policies-policy-rules-and-file-rules.md#code-integrity-file-rule-levels) in “Deploy code integrity policies: policy rules and file rules.”
 
@@ -258,7 +260,7 @@ To create a code integrity policy, copy each of the following commands into an e
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
-After you complete these steps, the Device Guard binary file (DeviceGuardPolicy.bin) and original .xml file (IntialScan.xml) will be available on your desktop. You can use the binary version as a code integrity policy or sign it for additional security.
+After you complete these steps, the Windows Defender Device Guard binary file (DeviceGuardPolicy.bin) and original .xml file (IntialScan.xml) will be available on your desktop. You can use the binary version as a code integrity policy or sign it for additional security.
 
 > [!Note] 
 > We recommend that you keep the original .xml file of the policy for use when you need to merge the code integrity policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge code integrity policies, see [Merge code integrity policies](#merge-code-integrity-policies).
@@ -284,7 +286,7 @@ When code integrity policies are run in audit mode, it allows administrators to 
     
     > - An alternative method to test a policy is to rename the test file to SIPolicy.p7b and drop it into C:\\Windows\\System32\\CodeIntegrity, rather than deploy it by using the Local Group Policy Editor.
     
-3.  Navigate to **Computer Configuration\\Administrative Templates\\System\\Device Guard**, and then select **Deploy Code Integrity Policy**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
+3.  Navigate to **Computer Configuration\\Administrative Templates\\System\\Windows Defender Device Guard**, and then select **Deploy Code Integrity Policy**. Enable this setting by using the appropriate file path, for example, C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 1.
 
     > [!Note]
     
@@ -337,7 +339,7 @@ Use the following procedure after you have been running a computer with a code i
   > [!Note] 
   > When you create policies from audit events, you should carefully consider the file rule level that you select to trust. The preceding example uses the **Hash** rule level, which is the most specific. Any change to the file (such as replacing the file with a newer version of the same file) will change the Hash value, and require an update to the policy.
 
-4.  Find and review the Device Guard audit policy .xml file that you created. If you used the example variables as shown, the filename will be **DeviceGuardAuditPolicy.xml**, and it will be on your desktop. Look for the following:
+4.  Find and review the Windows Defender Device Guard audit policy .xml file that you created. If you used the example variables as shown, the filename will be **DeviceGuardAuditPolicy.xml**, and it will be on your desktop. Look for the following:
 
     - Any applications that were caught as exceptions, but should be allowed to run in your environment. These are applications that should be in the .xml file. Leave these as-is in the file.
     
@@ -582,7 +584,7 @@ There may be a time when signed code integrity policies cause a boot failure. Be
 
 ## Deploy and manage code integrity policies with Group Policy
 
-Code integrity policies can easily be deployed and managed with Group Policy. A Device Guard administrative template will be available in Windows Server 2016 that allows you to simplify deployment of Device Guard hardware-based security features and code integrity policies. The following procedure walks you through how to deploy a code integrity policy called **DeviceGuardPolicy.bin** to a test OU called *DG Enabled PCs* by using a GPO called **Contoso GPO Test**.
+Code integrity policies can easily be deployed and managed with Group Policy. A Windows Defender Device Guard administrative template will be available in Windows Server 2016 that allows you to simplify deployment of Windows Defender Device Guard hardware-based security features and code integrity policies. The following procedure walks you through how to deploy a code integrity policy called **DeviceGuardPolicy.bin** to a test OU called *DG Enabled PCs* by using a GPO called **Contoso GPO Test**.
 
 > [!Note] 
 > This walkthrough requires that you have previously created a code integrity policy and have a computer running Windows 10 on which to test a Group Policy deployment. For more information about how to create a code integrity policy, see [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer), earlier in this topic.
@@ -596,7 +598,7 @@ To deploy and manage a code integrity policy with Group Policy:
 
 2.  Create a new GPO: right-click an OU, for example, the **DG Enabled PCs OU**, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 3.
 
-    > **Note**&nbsp;&nbsp;You can use any OU name. Also, security group filtering is an option when you consider different ways of combining code integrity policies (or keeping them separate), as discussed in [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+    > **Note**&nbsp;&nbsp;You can use any OU name. Also, security group filtering is an option when you consider different ways of combining code integrity policies (or keeping them separate), as discussed in [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
    ![Group Policy Management, create a GPO](images/dg-fig24-creategpo.png)
 
@@ -606,7 +608,7 @@ To deploy and manage a code integrity policy with Group Policy:
 
 4.  Open the Group Policy Management Editor: right-click the new GPO, and then click **Edit**.
 
-5.  In the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Deploy Code Integrity Policy** and then click **Edit**.
+5.  In the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Windows Defender Device Guard. Right-click **Deploy Code Integrity Policy** and then click **Edit**.
 
     ![Edit the group policy for code integrity](images/dg-fig25-editcode.png)
 
@@ -630,7 +632,7 @@ To deploy and manage a code integrity policy with Group Policy:
 
 ## Related topics
 
-[Introduction to Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+[Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
 
-[Deploy Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md)
+[Deploy Windows Defender Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md)
 

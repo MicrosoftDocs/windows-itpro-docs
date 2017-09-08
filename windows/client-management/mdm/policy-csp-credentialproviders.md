@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - CredentialProviders
@@ -35,11 +36,11 @@ author: nickbrower
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -56,10 +57,18 @@ Note: The user's domain password will be cached in the system vault when using t
 To configure Windows Hello for Business, use the Administrative Template policies under Windows Hello for Business.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn on convenience PIN sign-in*
+-   GP English name: *Turn on convenience PIN sign-in*
 -   GP name: *AllowDomainPINLogon*
+-   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
 
 <!--EndADMX-->
@@ -81,11 +90,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -100,16 +109,24 @@ If you disable or don't configure this policy setting, a domain user can set up 
 Note that the user's domain password will be cached in the system vault when using this feature.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off picture password sign-in*
+-   GP English name: *Turn off picture password sign-in*
 -   GP name: *BlockDomainPicturePassword*
+-   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
 
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="credentialproviders-enablewindowsautopilotresetcredentials"></a>**CredentialProviders/EnableWindowsAutoPilotResetCredentials**  
+<a href="" id="credentialproviders-disableautomaticredeploymentcredentials"></a>**CredentialProviders/DisableAutomaticReDeploymentCredentials**  
 
 <!--StartSKU-->
 <table>
@@ -135,11 +152,12 @@ ADMX Info:
 
 <!--EndSKU-->
 <!--StartDescription-->
-Added in Windows 10, version 1709. Boolean policy to enable the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. When the policy is enabled, a WNF notification is generated that would schedule a task to update the visibility of the new provider. The admin user is required to authenticate to trigger the refresh on the target device.
+Added in Windows 10, version 1709. Boolean policy to disable the visibility of the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device.
 
-The auto pilot reset feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the auto pilot reset is triggered the devices are for ready for use by information workers or students.
+The Windows 10 Automatic ReDeployment feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered the devices are for ready for use by information workers or students.
 
-Default value is 0.
+- 0 - Enable the visibility of the credentials for Windows 10 Automatic ReDeployment
+- 1 - Disable visibility of the credentials for Windows 10 Automatic ReDeployment
 
 <!--EndDescription-->
 <!--EndPolicy-->

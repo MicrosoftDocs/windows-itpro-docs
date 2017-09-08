@@ -1,14 +1,16 @@
 ---
 title: Fix unhealthy sensors in Windows Defender ATP
 description: Fix machine sensors that are reporting as misconfigured or inactive so that the service receives data from the machine.
-keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communication, communication
+keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Fix unhealthy sensors in Windows Defender ATP
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Machines that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a machine to be categorized as inactive or misconfigured.
 
@@ -40,13 +44,13 @@ Do you expect a machine to be in ‘Active’ status? [Open a support ticket tic
 
 ## Misconfigured machines
 Misconfigured machines can further be classified to:
-  - Impaired communication
+  - Impaired communications
   - No sensor data
 
-### Impaired communication
+### Impaired communications
 This status indicates that there's limited communication between the machine and the service.
 
-The following suggested actions can help fix issues related to a misconfigured machine with impaired communication:
+The following suggested actions can help fix issues related to a misconfigured machine with impaired communications:
 
 - [Ensure the endpoint has Internet connection](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-endpoint-has-an-internet-connection)</br>
   The Window Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Windows Defender ATP service.

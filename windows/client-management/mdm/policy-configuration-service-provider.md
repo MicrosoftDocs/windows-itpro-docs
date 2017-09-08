@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/07/2017
+ms.date: 08/25/2017
 ---
 
 # Policy CSP
@@ -77,7 +77,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall"></a>**Policy/ConfigOperations/ADMXInstall**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Centennial apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 or Centennial apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Centennial app policies, see [Win32 and Centennial app policy configuration](win32-and-centennial-app-policy-configuration.md).
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Allows settings for ADMX files for Win32 and Desktop Bridge apps to be imported (ingested) by your device and processed into new ADMX-backed policies or preferences. By using ADMXInstall, you can add ADMX-backed polices for those Win32 or Desktop Bridge apps that have been added between OS releases. ADMX-backed policies are ingested to your device by using the Policy CSP URI: `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall`. Each ADMX-backed policy or preference that is added is assigned a unique ID. For more information about using Policy CSP to configure Win32 and Desktop Bridge app policies, see [Win32 and Desktop Bridge app policy configuration](win32-and-centennial-app-policy-configuration.md).
 
 > [!NOTE]
 > The OPAX settings that are managed by the Microsoft Office Customization Tool are not supported by MDM. For more information about this tool, see [Office Customization Tool](https://technet.microsoft.com/en-us/library/cc179097.aspx).
@@ -87,12 +87,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Centennial app associated with the ADMX file. 
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the name of the Win32 or Desktop Bridge app associated with the ADMX file. 
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname-policy"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Policy**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app policy is to be imported.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app policy is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
@@ -102,7 +102,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 <p style="margin-left: 20px">Supported operations are Add and Get. Does not support Delete.
 
 <a href="" id="policy-configoperations-admxinstall-appname-preference"></a>**Policy/ConfigOperations/ADMXInstall/****_AppName_/Preference**  
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Centennial app preference is to be imported.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies that a Win32 or Desktop Bridge app preference is to be imported.
 
 <p style="margin-left: 20px">Supported operations are Add, Get, and Delete.
 
@@ -256,7 +256,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-appvirtualization.md#appvirtualization-publishingallowserver5" id="appvirtualization-publishingallowserver5">AppVirtualization/PublishingAllowServer5</a>
   </dd>
   <dd>
-    <a href="./policy-csp-appvirtualization.md#appvirtualization-streamingallowcertificatefilterforclient_ssl" id="appvirtualization-streamingallowcertificatefilterforclient_ssl">AppVirtualization/StreamingAllowCertificateFilterForClient_SSL</a>
+    <a href="./policy-csp-appvirtualization.md#appvirtualization-streamingallowcertificatefilterforclient-ssl" id="appvirtualization-streamingallowcertificatefilterforclient-ssl">AppVirtualization/StreamingAllowCertificateFilterForClient_SSL</a>
   </dd>
   <dd>
     <a href="./policy-csp-appvirtualization.md#appvirtualization-streamingallowhighcostlaunch" id="appvirtualization-streamingallowhighcostlaunch">AppVirtualization/StreamingAllowHighCostLaunch</a>
@@ -337,6 +337,30 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-bitlocker.md#bitlocker-encryptionmethod" id="bitlocker-encryptionmethod">Bitlocker/EncryptionMethod</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#encryptionmethodbydrivetype" id="encryptionmethodbydrivetype">BitLocker/EncryptionMethodByDriveType</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#fixeddrivesrecoveryoptions" id="fixeddrivesrecoveryoptions">BitLocker/FixedDrivesRecoveryOptions</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#fixeddrivesrequireencryption" id="fixeddrivesrequireencryption">BitLocker/FixedDrivesRequireEncryption</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#removabledrivesrequireencryption" id="removabledrivesrequireencryption">BitLocker/RemovableDrivesRequireEncryption</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesminimumpinlength" id="systemdrivesminimumpinlength">BitLocker/SystemDrivesMinimumPINLength</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrecoverymessage" id="systemdrivesrecoverymessage">BitLocker/SystemDrivesRecoveryMessage</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrecoveryoptions" id="systemdrivesrecoveryoptions">BitLocker/SystemDrivesRecoveryOptions</a> in BitLocker CSP
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrequirestartupauthentication" id="systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a> in BitLocker CSP
   </dd>
 </dl>
 
@@ -433,6 +457,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-browser.md#browser-homepages" id="browser-homepages">Browser/HomePages</a>
   </dd>
   <dd>
+    <a href="./policy-csp-browser.md#browser-lockdownfavorites" id="browser-lockdownfavorites">Browser/LockdownFavorites</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-browser.md#browser-preventaccesstoaboutflagsinmicrosoftedge" id="browser-preventaccesstoaboutflagsinmicrosoftedge">Browser/PreventAccessToAboutFlagsInMicrosoftEdge</a>
   </dd>
   <dd>
@@ -449,6 +476,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-preventusinglocalhostipaddressforwebrtc" id="browser-preventusinglocalhostipaddressforwebrtc">Browser/PreventUsingLocalHostIPAddressForWebRTC</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-browser.md#browser-provisionfavorites" id="browser-provisionfavorites">Browser/ProvisionFavorites</a>
   </dd>
   <dd>
     <a href="./policy-csp-browser.md#browser-sendintranettraffictointernetexplorer" id="browser-sendintranettraffictointernetexplorer">Browser/SendIntranetTraffictoInternetExplorer</a>
@@ -476,7 +506,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-cellular.md#None" id="None">Cellular/ShowAppCellularAccessUI</a>
+    <a href="./policy-csp-cellular.md#cellular-showappcellularaccessui" id="cellular-showappcellularaccessui">Cellular/ShowAppCellularAccessUI</a>
   </dd>
 </dl>
 
@@ -508,19 +538,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-connectivity.md#connectivity-allowvpnroamingovercellular" id="connectivity-allowvpnroamingovercellular">Connectivity/AllowVPNRoamingOverCellular</a>
   </dd>
   <dd>
-    <a href="./policy-csp-connectivity.md#None" id="None">Connectivity/DiablePrintingOverHTTP</a>
+    <a href="./policy-csp-connectivity.md#connectivity-diableprintingoverhttp" id="connectivity-diableprintingoverhttp">Connectivity/DiablePrintingOverHTTP</a>
   </dd>
   <dd>
-    <a href="./policy-csp-connectivity.md#None" id="None">Connectivity/DisableDownloadingOfPrintDriversOverHTTP</a>
+    <a href="./policy-csp-connectivity.md#connectivity-disabledownloadingofprintdriversoverhttp" id="connectivity-disabledownloadingofprintdriversoverhttp">Connectivity/DisableDownloadingOfPrintDriversOverHTTP</a>
   </dd>
   <dd>
-    <a href="./policy-csp-connectivity.md#None" id="None">Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards</a>
+    <a href="./policy-csp-connectivity.md#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards" id="connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards">Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards</a>
   </dd>
   <dd>
     <a href="./policy-csp-connectivity.md#connectivity-hardeneduncpaths" id="connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a>
   </dd>
   <dd>
-    <a href="./policy-csp-connectivity.md#None" id="None">Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge</a>
+    <a href="./policy-csp-connectivity.md#connectivity-prohibitinstallationandconfigurationofnetworkbridge" id="connectivity-prohibitinstallationandconfigurationofnetworkbridge">Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge</a>
   </dd>
 </dl>
 
@@ -534,7 +564,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-credentialproviders.md#credentialproviders-blockpicturepassword" id="credentialproviders-blockpicturepassword">CredentialProviders/BlockPicturePassword</a>
   </dd>
   <dd>
-    <a href="./policy-csp-credentialproviders.md#credentialproviders-enablewindowsautopilotresetcredentials" id="credentialproviders-enablewindowsautopilotresetcredentials">CredentialProviders/EnableWindowsAutoPilotResetCredentials</a>
+    <a href="./policy-csp-credentialproviders.md#credentialproviders-disableautomaticredeploymentcredentials" id="credentialproviders-disableautomaticredeploymentcredentials">CredentialProviders/DisableAutomaticReDeploymentCredentials</a>
   </dd>
 </dl>
 
@@ -643,7 +673,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-daystoretaincleanedmalware" id="defender-daystoretaincleanedmalware">Defender/DaysToRetainCleanedMalware</a>
   </dd>
   <dd>
-    <a href="./policy-csp-defender.md#defender-enableguardmyfolders" id="defender-enableguardmyfolders">Defender/EnableGuardMyFolders</a>
+    <a href="./policy-csp-defender.md#defender-enablecontrolledfolderaccess" id="defender-enablecontrolledfolderaccess">Defender/EnableControlledFolderAccess</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-enablenetworkprotection" id="defender-enablenetworkprotection">Defender/EnableNetworkProtection</a>
@@ -658,10 +688,10 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-excludedprocesses" id="defender-excludedprocesses">Defender/ExcludedProcesses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-defender.md#defender-guardedfoldersallowedapplications" id="defender-guardedfoldersallowedapplications">Defender/GuardedFoldersAllowedApplications</a>
+    <a href="./policy-csp-defender.md#defender-controlledfolderaccessallowedapplications" id="defender-controlledfolderaccessallowedapplications">Defender/ControlledFolderAccessAllowedApplications</a>
   </dd>
   <dd>
-    <a href="./policy-csp-defender.md#defender-guardedfolderslist" id="defender-guardedfolderslist">Defender/GuardedFoldersList</a>
+    <a href="./policy-csp-defender.md#defender-controlledfolderaccessprotectedfolders" id="defender-controlledfolderaccessprotectedfolders">Defender/ControlledFolderAccessProtectedFolders</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-puaprotection" id="defender-puaprotection">Defender/PUAProtection</a>
@@ -842,6 +872,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### Education policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-education.md#education-defaultprintername" id="education-defaultprintername">Education/DefaultPrinterName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-education.md#education-preventaddingnewprinters" id="education-preventaddingnewprinters">Education/PreventAddingNewPrinters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-education.md#education-printernames" id="education-printernames">Education/PrinterNames</a>
+  </dd>
+</dl>
+
 ### EnterpriseCloudPrint policies
 
 <dl>
@@ -915,6 +959,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-experience.md#experience-allowdevicediscovery" id="experience-allowdevicediscovery">Experience/AllowDeviceDiscovery</a>
   </dd>
   <dd>
+    <a href="./policy-csp-experience.md#experience-allowfindmydevice" id="experience-allowfindmydevice">Experience/AllowFindMyDevice</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-experience.md#experience-allowmanualmdmunenrollment" id="experience-allowmanualmdmunenrollment">Experience/AllowManualMDMUnenrollment</a>
   </dd>
   <dd>
@@ -961,6 +1008,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ExploitGuard policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
+  </dd>
+</dl>
+
 ### Games policies
 
 <dl>
@@ -982,13 +1037,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowaddonlist" id="internetexplorer-allowaddonlist">InternetExplorer/AllowAddOnList</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/AllowAutoComplete</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-allowautocomplete" id="internetexplorer-allowautocomplete">InternetExplorer/AllowAutoComplete</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/AllowCertificateAddressMismatchWarning</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-allowcertificateaddressmismatchwarning" id="internetexplorer-allowcertificateaddressmismatchwarning">InternetExplorer/AllowCertificateAddressMismatchWarning</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/AllowDeletingBrowsingHistoryOnExit</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-allowdeletingbrowsinghistoryonexit" id="internetexplorer-allowdeletingbrowsinghistoryonexit">InternetExplorer/AllowDeletingBrowsingHistoryOnExit</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode" id="internetexplorer-allowenhancedprotectedmode">InternetExplorer/AllowEnhancedProtectedMode</a>
@@ -1000,7 +1055,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodesitelist" id="internetexplorer-allowenterprisemodesitelist">InternetExplorer/AllowEnterpriseModeSiteList</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/AllowFallbackToSSL3</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-allowfallbacktossl3" id="internetexplorer-allowfallbacktossl3">InternetExplorer/AllowFallbackToSSL3</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowinternetexplorer7policylist" id="internetexplorer-allowinternetexplorer7policylist">InternetExplorer/AllowInternetExplorer7PolicyList</a>
@@ -1036,7 +1091,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowsitetozoneassignmentlist" id="internetexplorer-allowsitetozoneassignmentlist">InternetExplorer/AllowSiteToZoneAssignmentList</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/AllowSoftwareWhenSignatureIsInvalid</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-allowsoftwarewhensignatureisinvalid" id="internetexplorer-allowsoftwarewhensignatureisinvalid">InternetExplorer/AllowSoftwareWhenSignatureIsInvalid</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowsuggestedsites" id="internetexplorer-allowsuggestedsites">InternetExplorer/AllowSuggestedSites</a>
@@ -1051,19 +1106,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-allowsrestrictedsiteszonetemplate" id="internetexplorer-allowsrestrictedsiteszonetemplate">InternetExplorer/AllowsRestrictedSitesZoneTemplate</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/CheckServerCertificateRevocation</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation" id="internetexplorer-checkservercertificaterevocation">InternetExplorer/CheckServerCertificateRevocation</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/CheckSignaturesOnDownloadedPrograms</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms" id="internetexplorer-checksignaturesondownloadedprograms">InternetExplorer/CheckSignaturesOnDownloadedPrograms</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses" id="internetexplorer-consistentmimehandlinginternetexplorerprocesses">InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash" id="internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableBlockingOfOutdatedActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableblockingofoutdatedactivexcontrols" id="internetexplorer-disableblockingofoutdatedactivexcontrols">InternetExplorer/DisableBlockingOfOutdatedActiveXControls</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings" id="internetexplorer-disablebypassofsmartscreenwarnings">InternetExplorer/DisableBypassOfSmartScreenWarnings</a>
@@ -1072,16 +1127,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles" id="internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles">InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableConfiguringHistory</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory" id="internetexplorer-disableconfiguringhistory">InternetExplorer/DisableConfiguringHistory</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableCrashDetection</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablecrashdetection" id="internetexplorer-disablecrashdetection">InternetExplorer/DisableCrashDetection</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablecustomerexperienceimprovementprogramparticipation" id="internetexplorer-disablecustomerexperienceimprovementprogramparticipation">InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableDeletingUserVisitedWebsites</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disabledeletinguservisitedwebsites" id="internetexplorer-disabledeletinguservisitedwebsites">InternetExplorer/DisableDeletingUserVisitedWebsites</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableenclosuredownloading" id="internetexplorer-disableenclosuredownloading">InternetExplorer/DisableEnclosureDownloading</a>
@@ -1099,13 +1154,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange" id="internetexplorer-disablehomepagechange">InternetExplorer/DisableHomePageChange</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableIgnoringCertificateErrors</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableignoringcertificateerrors" id="internetexplorer-disableignoringcertificateerrors">InternetExplorer/DisableIgnoringCertificateErrors</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableInPrivateBrowsing</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableinprivatebrowsing" id="internetexplorer-disableinprivatebrowsing">InternetExplorer/DisableInPrivateBrowsing</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableProcessesInEnhancedProtectedMode</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableprocessesinenhancedprotectedmode" id="internetexplorer-disableprocessesinenhancedprotectedmode">InternetExplorer/DisableProcessesInEnhancedProtectedMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableproxychange" id="internetexplorer-disableproxychange">InternetExplorer/DisableProxyChange</a>
@@ -1117,13 +1172,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablesecondaryhomepagechange" id="internetexplorer-disablesecondaryhomepagechange">InternetExplorer/DisableSecondaryHomePageChange</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DisableSecuritySettingsCheck</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-disablesecuritysettingscheck" id="internetexplorer-disablesecuritysettingscheck">InternetExplorer/DisableSecuritySettingsCheck</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck" id="internetexplorer-disableupdatecheck">InternetExplorer/DisableUpdateCheck</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/DoNotAllowActiveXControlsInProtectedMode</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode" id="internetexplorer-donotallowactivexcontrolsinprotectedmode">InternetExplorer/DoNotAllowActiveXControlsInProtectedMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstoaddsites" id="internetexplorer-donotallowuserstoaddsites">InternetExplorer/DoNotAllowUsersToAddSites</a>
@@ -1153,10 +1208,10 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowautomaticpromptingforfiledownloads" id="internetexplorer-internetzoneallowautomaticpromptingforfiledownloads">InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowCopyPasteViaScript</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowcopypasteviascript" id="internetexplorer-internetzoneallowcopypasteviascript">InternetExplorer/InternetZoneAllowCopyPasteViaScript</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowdraganddropcopyandpastefiles" id="internetexplorer-internetzoneallowdraganddropcopyandpastefiles">InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowfontdownloads" id="internetexplorer-internetzoneallowfontdownloads">InternetExplorer/InternetZoneAllowFontDownloads</a>
@@ -1165,22 +1220,22 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowlessprivilegedsites" id="internetexplorer-internetzoneallowlessprivilegedsites">InternetExplorer/InternetZoneAllowLessPrivilegedSites</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowLoadingOfXAMLFilesWRONG</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowloadingofxamlfiles" id="internetexplorer-internetzoneallowloadingofxamlfiles">InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallownetframeworkreliantcomponents" id="internetexplorer-internetzoneallownetframeworkreliantcomponents">InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols" id="internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols">InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol" id="internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol">InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowScriptInitiatedWindows</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowscriptinitiatedwindows" id="internetexplorer-internetzoneallowscriptinitiatedwindows">InternetExplorer/InternetZoneAllowScriptInitiatedWindows</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols" id="internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols">InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowscriptlets" id="internetexplorer-internetzoneallowscriptlets">InternetExplorer/InternetZoneAllowScriptlets</a>
@@ -1189,76 +1244,70 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowsmartscreenie" id="internetexplorer-internetzoneallowsmartscreenie">InternetExplorer/InternetZoneAllowSmartScreenIE</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowupdatestostatusbarviascript" id="internetexplorer-internetzoneallowupdatestostatusbarviascript">InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowuserdatapersistence" id="internetexplorer-internetzoneallowuserdatapersistence">InternetExplorer/InternetZoneAllowUserDataPersistence</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols" id="internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadsignedactivexcontrols" id="internetexplorer-internetzonedownloadsignedactivexcontrols">InternetExplorer/InternetZoneDownloadSignedActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneDownloadSignedActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadunsignedactivexcontrols" id="internetexplorer-internetzonedownloadunsignedactivexcontrols">InternetExplorer/InternetZoneDownloadUnsignedActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneDownloadUnsignedActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneenablecrosssitescriptingfilter" id="internetexplorer-internetzoneenablecrosssitescriptingfilter">InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows">InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows" id="internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows">InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneenablemimesniffing" id="internetexplorer-internetzoneenablemimesniffing">InternetExplorer/InternetZoneEnableMIMESniffing</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneEnableMIMESniffing</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneenableprotectedmode" id="internetexplorer-internetzoneenableprotectedmode">InternetExplorer/InternetZoneEnableProtectedMode</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneEnableProtectedMode</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver" id="internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver">InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneinitializeandscriptactivexcontrols" id="internetexplorer-internetzoneinitializeandscriptactivexcontrols">InternetExplorer/InternetZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe" id="internetexplorer-internetzoneinitializeandscriptactivexcontrolsnotmarkedsafe">InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneJavaPermissionsWRONG1</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonejavapermissions" id="internetexplorer-internetzonejavapermissions">InternetExplorer/InternetZoneJavaPermissions</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneJavaPermissionsWRONG2</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonelaunchingapplicationsandfilesiniframe" id="internetexplorer-internetzonelaunchingapplicationsandfilesiniframe">InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneLogonOptions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonelogonoptions" id="internetexplorer-internetzonelogonoptions">InternetExplorer/InternetZoneLogonOptions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonenavigatewindowsandframes" id="internetexplorer-internetzonenavigatewindowsandframes">InternetExplorer/InternetZoneNavigateWindowsAndFrames</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode" id="internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles" id="internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles">InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneUsePopupBlocker</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneusepopupblocker" id="internetexplorer-internetzoneusepopupblocker">InternetExplorer/InternetZoneUsePopupBlocker</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone" id="internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone">InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowaccesstodatasources" id="internetexplorer-intranetzoneallowaccesstodatasources">InternetExplorer/IntranetZoneAllowAccessToDataSources</a>
@@ -1288,7 +1337,16 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowuserdatapersistence" id="internetexplorer-intranetzoneallowuserdatapersistence">InternetExplorer/IntranetZoneAllowUserDataPersistence</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols" id="internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrols" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzonejavapermissions" id="internetexplorer-intranetzonejavapermissions">InternetExplorer/IntranetZoneJavaPermissions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzonenavigatewindowsandframes" id="internetexplorer-intranetzonenavigatewindowsandframes">InternetExplorer/IntranetZoneNavigateWindowsAndFrames</a>
@@ -1321,13 +1379,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneallowuserdatapersistence" id="internetexplorer-localmachinezoneallowuserdatapersistence">InternetExplorer/LocalMachineZoneAllowUserDataPersistence</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols" id="internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneinitializeandscriptactivexcontrols" id="internetexplorer-localmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/LocalMachineZoneJavaPermissions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-localmachinezonejavapermissions" id="internetexplorer-localmachinezonejavapermissions">InternetExplorer/LocalMachineZoneJavaPermissions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-localmachinezonenavigatewindowsandframes" id="internetexplorer-localmachinezonenavigatewindowsandframes">InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames</a>
@@ -1363,7 +1421,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols" id="internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/LockedDownInternetZoneJavaPermissions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonejavapermissions" id="internetexplorer-lockeddowninternetzonejavapermissions">InternetExplorer/LockedDownInternetZoneJavaPermissions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonenavigatewindowsandframes" id="internetexplorer-lockeddowninternetzonenavigatewindowsandframes">InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames</a>
@@ -1432,7 +1490,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols" id="internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/LockedDownLocalMachineZoneJavaPermissions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezonejavapermissions" id="internetexplorer-lockeddownlocalmachinezonejavapermissions">InternetExplorer/LockedDownLocalMachineZoneJavaPermissions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes" id="internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes">InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames</a>
@@ -1468,7 +1526,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols" id="internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszonejavapermissions" id="internetexplorer-lockeddownrestrictedsiteszonejavapermissions">InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes" id="internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames</a>
@@ -1504,43 +1562,43 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols" id="internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonejavapermissions" id="internetexplorer-lockeddowntrustedsiteszonejavapermissions">InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes" id="internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes">InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses" id="internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses">InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses" id="internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses">InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/NotificationBarInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses" id="internetexplorer-notificationbarinternetexplorerprocesses">InternetExplorer/NotificationBarInternetExplorerProcesses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/PreventManagingSmartScreenFilter</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-preventmanagingsmartscreenfilter" id="internetexplorer-preventmanagingsmartscreenfilter">InternetExplorer/PreventManagingSmartScreenFilter</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/PreventPerUserInstallationOfActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-preventperuserinstallationofactivexcontrols" id="internetexplorer-preventperuserinstallationofactivexcontrols">InternetExplorer/PreventPerUserInstallationOfActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-protectionfromzoneelevationinternetexplorerprocesses" id="internetexplorer-protectionfromzoneelevationinternetexplorerprocesses">InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols" id="internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols">InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictactivexinstallinternetexplorerprocesses" id="internetexplorer-restrictactivexinstallinternetexplorerprocesses">InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictFileDownloadInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictfiledownloadinternetexplorerprocesses" id="internetexplorer-restrictfiledownloadinternetexplorerprocesses">InternetExplorer/RestrictFileDownloadInternetExplorerProcesses</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowaccesstodatasources" id="internetexplorer-restrictedsiteszoneallowaccesstodatasources">InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowActiveScripting</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowactivescripting" id="internetexplorer-restrictedsiteszoneallowactivescripting">InternetExplorer/RestrictedSitesZoneAllowActiveScripting</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls</a>
@@ -1549,49 +1607,43 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads" id="internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads">InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors" id="internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors">InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowcopypasteviascript" id="internetexplorer-restrictedsiteszoneallowcopypasteviascript">InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles" id="internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles">InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowFileDownloads</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowfiledownloads" id="internetexplorer-restrictedsiteszoneallowfiledownloads">InternetExplorer/RestrictedSitesZoneAllowFileDownloads</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowfontdownloads" id="internetexplorer-restrictedsiteszoneallowfontdownloads">InternetExplorer/RestrictedSitesZoneAllowFontDownloads</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG2</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowlessprivilegedsites" id="internetexplorer-restrictedsiteszoneallowlessprivilegedsites">InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowloadingofxamlfiles" id="internetexplorer-restrictedsiteszoneallowloadingofxamlfiles">InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowmetarefresh" id="internetexplorer-restrictedsiteszoneallowmetarefresh">InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents" id="internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents">InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols">InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol" id="internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol">InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows" id="internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows">InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols" id="internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols">InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowscriptlets" id="internetexplorer-restrictedsiteszoneallowscriptlets">InternetExplorer/RestrictedSitesZoneAllowScriptlets</a>
@@ -1600,85 +1652,88 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowsmartscreenie" id="internetexplorer-restrictedsiteszoneallowsmartscreenie">InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript" id="internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript">InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowuserdatapersistence" id="internetexplorer-restrictedsiteszoneallowuserdatapersistence">InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols" id="internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols" id="internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols">InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols" id="internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols">InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter" id="internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter">InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows">InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneEnableMIMESniffing</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows" id="internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows">InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenablemimesniffing" id="internetexplorer-restrictedsiteszoneenablemimesniffing">InternetExplorer/RestrictedSitesZoneEnableMIMESniffing</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver" id="internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver">InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols" id="internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneJavaPermissions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonejavapermissions" id="internetexplorer-restrictedsiteszonejavapermissions">InternetExplorer/RestrictedSitesZoneJavaPermissions</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe" id="internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe">InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneLogonOptions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonelogonoptions" id="internetexplorer-restrictedsiteszonelogonoptions">InternetExplorer/RestrictedSitesZoneLogonOptions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframes" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains" id="internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins">InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode" id="internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode">InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting" id="internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting">InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneWRONG</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonescriptingofjavaapplets" id="internetexplorer-restrictedsiteszonescriptingofjavaapplets">InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneWRONG2</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles">InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneWRONG3</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter" id="internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter">InternetExplorer/RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneWRONG4</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnonprotectedmode" id="internetexplorer-restrictedsiteszoneturnonprotectedmode">InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/RestrictedSitesZoneWRONG5</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneusepopupblocker" id="internetexplorer-restrictedsiteszoneusepopupblocker">InternetExplorer/RestrictedSitesZoneUsePopupBlocker</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses" id="internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses">InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-searchproviderlist" id="internetexplorer-searchproviderlist">InternetExplorer/SearchProviderList</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/SecurityZonesUseOnlyMachineSettings</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-securityzonesuseonlymachinesettings" id="internetexplorer-securityzonesuseonlymachinesettings">InternetExplorer/SecurityZonesUseOnlyMachineSettings</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/SpecifyUseOfActiveXInstallerService</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-specifyuseofactivexinstallerservice" id="internetexplorer-specifyuseofactivexinstallerservice">InternetExplorer/SpecifyUseOfActiveXInstallerService</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowaccesstodatasources" id="internetexplorer-trustedsiteszoneallowaccesstodatasources">InternetExplorer/TrustedSitesZoneAllowAccessToDataSources</a>
@@ -1708,19 +1763,25 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowuserdatapersistence" id="internetexplorer-trustedsiteszoneallowuserdatapersistence">InternetExplorer/TrustedSitesZoneAllowUserDataPersistence</a>
   </dd>
   <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols" id="internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols">InternetExplorer/TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/TrustedSitesZoneJavaPermissions</a>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonejavapermissions" id="internetexplorer-trustedsiteszonejavapermissions">InternetExplorer/TrustedSitesZoneJavaPermissions</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonenavigatewindowsandframes" id="internetexplorer-trustedsiteszonenavigatewindowsandframes">InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/TrustedSitesZoneWRONG1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#None" id="None">InternetExplorer/TrustedSitesZoneWRONG2</a>
   </dd>
 </dl>
 
@@ -1752,6 +1813,83 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-licensing.md#licensing-disallowkmsclientonlineavsvalidation" id="licensing-disallowkmsclientonlineavsvalidation">Licensing/DisallowKMSClientOnlineAVSValidation</a>
+  </dd>
+</dl>
+
+### LocalPoliciesSecurityOptions policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-accounts-blockmicrosoftaccounts" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts">LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-accounts-enableadministratoraccountstatus" id="localpoliciessecurityoptions-accounts-enableadministratoraccountstatus">LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-accounts-enableguestaccountstatus" id="localpoliciessecurityoptions-accounts-enableguestaccountstatus">LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly" id="localpoliciessecurityoptions-accounts-limitlocalaccountuseofblankpasswordstoconsolelogononly">LocalPoliciesSecurityOptions/Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-accounts-renameadministratoraccount" id="localpoliciessecurityoptions-accounts-renameadministratoraccount">LocalPoliciesSecurityOptions/Accounts_RenameAdministratorAccount</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-accounts-renameguestaccount" id="localpoliciessecurityoptions-accounts-renameguestaccount">LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked" id="localpoliciessecurityoptions-interactivelogon-displayuserinformationwhenthesessionislocked">LocalPoliciesSecurityOptions/InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin" id="localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin">LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-donotdisplayusernameatsignin" id="localpoliciessecurityoptions-interactivelogon-donotdisplayusernameatsignin">LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayUsernameAtSignIn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-donotrequirectrlaltdel" id="localpoliciessecurityoptions-interactivelogon-donotrequirectrlaltdel">LocalPoliciesSecurityOptions/InteractiveLogon_DoNotRequireCTRLALTDEL</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-machineinactivitylimit" id="localpoliciessecurityoptions-interactivelogon-machineinactivitylimit">LocalPoliciesSecurityOptions/InteractiveLogon_MachineInactivityLimit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon" id="localpoliciessecurityoptions-interactivelogon-messagetextforusersattemptingtologon">LocalPoliciesSecurityOptions/InteractiveLogon_MessageTextForUsersAttemptingToLogOn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon" id="localpoliciessecurityoptions-interactivelogon-messagetitleforusersattemptingtologon">LocalPoliciesSecurityOptions/InteractiveLogon_MessageTitleForUsersAttemptingToLogOn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests" id="localpoliciessecurityoptions-networksecurity-allowpku2uauthenticationrequests">LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon" id="localpoliciessecurityoptions-recoveryconsole-allowautomaticadministrativelogon">LocalPoliciesSecurityOptions/RecoveryConsole_AllowAutomaticAdministrativeLogon</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon">LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode">LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation">LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforadministrators">LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers" id="localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers">LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateexecutablefilesthataresignedandvalidated">LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations">LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation" id="localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation">LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations" id="localpoliciessecurityoptions-useraccountcontrol-virtualizefileandregistrywritefailurestoperuserlocations">LocalPoliciesSecurityOptions/UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations</a>
   </dd>
 </dl>
 
@@ -1872,7 +2010,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-printers.md#printers-pointandprintrestrictions" id="printers-pointandprintrestrictions">Printers/PointAndPrintRestrictions</a>
   </dd>
   <dd>
-    <a href="./policy-csp-printers.md#printers-pointandprintrestrictions_user" id="printers-pointandprintrestrictions_user">Printers/PointAndPrintRestrictions_User</a>
+    <a href="./policy-csp-printers.md#printers-pointandprintrestrictions-user" id="printers-pointandprintrestrictions-user">Printers/PointAndPrintRestrictions_User</a>
   </dd>
   <dd>
     <a href="./policy-csp-printers.md#printers-publishprinters" id="printers-publishprinters">Printers/PublishPrinters</a>
@@ -1890,6 +2028,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-disableadvertisingid" id="privacy-disableadvertisingid">Privacy/DisableAdvertisingId</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-enableactivityfeed" id="privacy-enableactivityfeed">Privacy/EnableActivityFeed</a>
   </dd>
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappsaccessaccountinfo" id="privacy-letappsaccessaccountinfo">Privacy/LetAppsAccessAccountInfo</a>
@@ -2107,6 +2248,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-privacy.md#privacy-letappssyncwithdevices-userincontroloftheseapps" id="privacy-letappssyncwithdevices-userincontroloftheseapps">Privacy/LetAppsSyncWithDevices_UserInControlOfTheseApps</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-privacy.md#privacy-publishuseractivities" id="privacy-publishuseractivities">Privacy/PublishUserActivities</a>
+  </dd>
 </dl>
 
 ### RemoteAssistance policies
@@ -2153,49 +2297,49 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/AllowBasicAuthentication_Client</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-allowbasicauthentication-client" id="remotemanagement-allowbasicauthentication-client">RemoteManagement/AllowBasicAuthentication_Client</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/AllowBasicAuthentication_Service</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-allowbasicauthentication-service" id="remotemanagement-allowbasicauthentication-service">RemoteManagement/AllowBasicAuthentication_Service</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/AllowCredSSPAuthenticationClient</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-allowcredsspauthenticationclient" id="remotemanagement-allowcredsspauthenticationclient">RemoteManagement/AllowCredSSPAuthenticationClient</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/AllowCredSSPAuthenticationService</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-allowcredsspauthenticationservice" id="remotemanagement-allowcredsspauthenticationservice">RemoteManagement/AllowCredSSPAuthenticationService</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/AllowRemoteServerManagement</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-allowremoteservermanagement" id="remotemanagement-allowremoteservermanagement">RemoteManagement/AllowRemoteServerManagement</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/AllowUnencryptedTraffic_Client</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-allowunencryptedtraffic-client" id="remotemanagement-allowunencryptedtraffic-client">RemoteManagement/AllowUnencryptedTraffic_Client</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/AllowUnencryptedTraffic_Service</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-allowunencryptedtraffic-service" id="remotemanagement-allowunencryptedtraffic-service">RemoteManagement/AllowUnencryptedTraffic_Service</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/DisallowDigestAuthentication</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-disallowdigestauthentication" id="remotemanagement-disallowdigestauthentication">RemoteManagement/DisallowDigestAuthentication</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/DisallowNegotiateAuthenticationClient</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-disallownegotiateauthenticationclient" id="remotemanagement-disallownegotiateauthenticationclient">RemoteManagement/DisallowNegotiateAuthenticationClient</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/DisallowNegotiateAuthenticationService</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-disallownegotiateauthenticationservice" id="remotemanagement-disallownegotiateauthenticationservice">RemoteManagement/DisallowNegotiateAuthenticationService</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/DisallowStoringOfRunAsCredentials</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-disallowstoringofrunascredentials" id="remotemanagement-disallowstoringofrunascredentials">RemoteManagement/DisallowStoringOfRunAsCredentials</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/SpecifyChannelBindingTokenHardeningLevel</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-specifychannelbindingtokenhardeninglevel" id="remotemanagement-specifychannelbindingtokenhardeninglevel">RemoteManagement/SpecifyChannelBindingTokenHardeningLevel</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/TrustedHosts</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-trustedhosts" id="remotemanagement-trustedhosts">RemoteManagement/TrustedHosts</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/TurnOnCompatibilityHTTPListener</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-turnoncompatibilityhttplistener" id="remotemanagement-turnoncompatibilityhttplistener">RemoteManagement/TurnOnCompatibilityHTTPListener</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remotemanagement.md#None" id="None">RemoteManagement/TurnOnCompatibilityHTTPSListener</a>
+    <a href="./policy-csp-remotemanagement.md#remotemanagement-turnoncompatibilityhttpslistener" id="remotemanagement-turnoncompatibilityhttpslistener">RemoteManagement/TurnOnCompatibilityHTTPSListener</a>
   </dd>
 </dl>
 
@@ -2214,25 +2358,25 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <dl>
   <dd>
-    <a href="./policy-csp-remoteshell.md#None" id="None">RemoteShell/AllowRemoteShellAccess</a>
+    <a href="./policy-csp-remoteshell.md#remoteshell-allowremoteshellaccess" id="remoteshell-allowremoteshellaccess">RemoteShell/AllowRemoteShellAccess</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remoteshell.md#None" id="None">RemoteShell/MaxConcurrentUsers</a>
+    <a href="./policy-csp-remoteshell.md#remoteshell-maxconcurrentusers" id="remoteshell-maxconcurrentusers">RemoteShell/MaxConcurrentUsers</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remoteshell.md#None" id="None">RemoteShell/SpecifyIdleTimeout</a>
+    <a href="./policy-csp-remoteshell.md#remoteshell-specifyidletimeout" id="remoteshell-specifyidletimeout">RemoteShell/SpecifyIdleTimeout</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remoteshell.md#None" id="None">RemoteShell/SpecifyMaxMemory</a>
+    <a href="./policy-csp-remoteshell.md#remoteshell-specifymaxmemory" id="remoteshell-specifymaxmemory">RemoteShell/SpecifyMaxMemory</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remoteshell.md#None" id="None">RemoteShell/SpecifyMaxProcesses</a>
+    <a href="./policy-csp-remoteshell.md#remoteshell-specifymaxprocesses" id="remoteshell-specifymaxprocesses">RemoteShell/SpecifyMaxProcesses</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remoteshell.md#None" id="None">RemoteShell/SpecifyMaxRemoteShells</a>
+    <a href="./policy-csp-remoteshell.md#remoteshell-specifymaxremoteshells" id="remoteshell-specifymaxremoteshells">RemoteShell/SpecifyMaxRemoteShells</a>
   </dd>
   <dd>
-    <a href="./policy-csp-remoteshell.md#None" id="None">RemoteShell/SpecifyShellTimeout</a>
+    <a href="./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout" id="remoteshell-specifyshelltimeout">RemoteShell/SpecifyShellTimeout</a>
   </dd>
 </dl>
 
@@ -2285,6 +2429,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-security.md#security-antitheftmode" id="security-antitheftmode">Security/AntiTheftMode</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-security.md#security-cleartpmifnotready" id="security-cleartpmifnotready">Security/ClearTPMIfNotReady</a>
   </dd>
   <dd>
     <a href="./policy-csp-security.md#security-preventautomaticdeviceencryptionforazureadjoineddevices" id="security-preventautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
@@ -2572,6 +2719,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-allowautoupdate" id="update-allowautoupdate">Update/AllowAutoUpdate</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-allowautowindowsupdatedownloadovermeterednetwork" id="update-allowautowindowsupdatedownloadovermeterednetwork">Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-allowmuupdateservice" id="update-allowmuupdateservice">Update/AllowMUUpdateService</a>
   </dd>
   <dd>
@@ -2608,6 +2758,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-detectionfrequency" id="update-detectionfrequency">Update/DetectionFrequency</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-disabledualscan" id="update-disabledualscan">Update/DisableDualScan</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-engagedrestartdeadline" id="update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
   </dd>
   <dd>
@@ -2635,13 +2788,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-pausefeatureupdates" id="update-pausefeatureupdates">Update/PauseFeatureUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-PauseFeatureUpdatesStartTime" id="update-PauseFeatureUpdatesStartTime">Update/PauseFeatureUpdatesStartTime</a>
+    <a href="./policy-csp-update.md#update-pausefeatureupdatesstarttime" id="update-pausefeatureupdatesstarttime">Update/PauseFeatureUpdatesStartTime</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-pausequalityupdates" id="update-pausequalityupdates">Update/PauseQualityUpdates</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-PauseQualityUpdatesStartTime" id="update-PauseQualityUpdatesStartTime">Update/PauseQualityUpdatesStartTime</a>
+    <a href="./policy-csp-update.md#update-pausequalityupdatesstarttime" id="update-pausequalityupdatesstarttime">Update/PauseQualityUpdatesStartTime</a>
   </dd>
   <dd>
     <a href="./policy-csp-update.md#update-requiredeferupgrade" id="update-requiredeferupgrade">Update/RequireDeferUpgrade</a>
@@ -2752,17 +2905,16 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-enablecustomizedtoasts" id="windowsdefendersecuritycenter-enablecustomizedtoasts">WindowsDefenderSecurityCenter/EnableCustomizedToasts</a>
   </dd>
-    <dd>
+  <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-enableinappcustomization" id="windowsdefendersecuritycenter-enableinappcustomization">WindowsDefenderSecurityCenter/EnableInAppCustomization</a>
   </dd>
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-phone" id="windowsdefendersecuritycenter-phone">WindowsDefenderSecurityCenter/Phone</a>
   </dd>
-    <dd>
+  <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-url" id="windowsdefendersecuritycenter-url">WindowsDefenderSecurityCenter/URL</a>
   </dd>
 </dl>
-
 
 ### WindowsInkWorkspace policies
 
@@ -2802,7 +2954,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopc" id="wirelessdisplay-allowprojectiontopc">WirelessDisplay/AllowProjectionToPC</a>
   </dd>
   <dd>
-    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-Allowprojectiontopcoverinfrastructure" id="wirelessdisplay-Allowprojectiontopcoverinfrastructure">WirelessDisplay/AllowProjectionToPCOverInfrastructure</a>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectiontopcoverinfrastructure" id="wirelessdisplay-allowprojectiontopcoverinfrastructure">WirelessDisplay/AllowProjectionToPCOverInfrastructure</a>
   </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver" id="wirelessdisplay-allowuserinputfromwirelessdisplayreceiver">WirelessDisplay/AllowUserInputFromWirelessDisplayReceiver</a>
@@ -2813,7 +2965,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 </dl>
 
 
-## ADMX backed policies
+## ADMX-backed policies
 
 -   [ActiveXControls/ApprovedInstallationSites](./policy-csp-activexcontrols.md#activexcontrols-approvedinstallationsites)
 -   [AppVirtualization/AllowAppVClient](./policy-csp-appvirtualization.md#appvirtualization-allowappvclient)
@@ -2833,7 +2985,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [AppVirtualization/PublishingAllowServer3](./policy-csp-appvirtualization.md#appvirtualization-publishingallowserver3)
 -   [AppVirtualization/PublishingAllowServer4](./policy-csp-appvirtualization.md#appvirtualization-publishingallowserver4)
 -   [AppVirtualization/PublishingAllowServer5](./policy-csp-appvirtualization.md#appvirtualization-publishingallowserver5)
--   [AppVirtualization/StreamingAllowCertificateFilterForClient_SSL](./policy-csp-appvirtualization.md#appvirtualization-streamingallowcertificatefilterforclient_ssl)
+-   [AppVirtualization/StreamingAllowCertificateFilterForClient_SSL](./policy-csp-appvirtualization.md#appvirtualization-streamingallowcertificatefilterforclient-ssl)
 -   [AppVirtualization/StreamingAllowHighCostLaunch](./policy-csp-appvirtualization.md#appvirtualization-streamingallowhighcostlaunch)
 -   [AppVirtualization/StreamingAllowLocationProvider](./policy-csp-appvirtualization.md#appvirtualization-streamingallowlocationprovider)
 -   [AppVirtualization/StreamingAllowPackageInstallationRoot](./policy-csp-appvirtualization.md#appvirtualization-streamingallowpackageinstallationroot)
@@ -2850,12 +3002,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Autoplay/DisallowAutoplayForNonVolumeDevices](./policy-csp-autoplay.md#autoplay-disallowautoplayfornonvolumedevices)
 -   [Autoplay/SetDefaultAutoRunBehavior](./policy-csp-autoplay.md#autoplay-setdefaultautorunbehavior)
 -   [Autoplay/TurnOffAutoPlay](./policy-csp-autoplay.md#autoplay-turnoffautoplay)
--   [Cellular/ShowAppCellularAccessUI](./policy-csp-cellular.md#None)
--   [Connectivity/DiablePrintingOverHTTP](./policy-csp-connectivity.md#None)
--   [Connectivity/DisableDownloadingOfPrintDriversOverHTTP](./policy-csp-connectivity.md#None)
--   [Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards](./policy-csp-connectivity.md#None)
+-   [Cellular/ShowAppCellularAccessUI](./policy-csp-cellular.md#cellular-showappcellularaccessui)
+-   [Connectivity/DiablePrintingOverHTTP](./policy-csp-connectivity.md#connectivity-diableprintingoverhttp)
+-   [Connectivity/DisableDownloadingOfPrintDriversOverHTTP](./policy-csp-connectivity.md#connectivity-disabledownloadingofprintdriversoverhttp)
+-   [Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards](./policy-csp-connectivity.md#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards)
 -   [Connectivity/HardenedUNCPaths](./policy-csp-connectivity.md#connectivity-hardeneduncpaths)
--   [Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge](./policy-csp-connectivity.md#None)
+-   [Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge](./policy-csp-connectivity.md#connectivity-prohibitinstallationandconfigurationofnetworkbridge)
 -   [CredentialProviders/AllowPINLogon](./policy-csp-credentialproviders.md#credentialproviders-allowpinlogon)
 -   [CredentialProviders/BlockPicturePassword](./policy-csp-credentialproviders.md#credentialproviders-blockpicturepassword)
 -   [CredentialsUI/DisablePasswordReveal](./policy-csp-credentialsui.md#credentialsui-disablepasswordreveal)
@@ -2878,13 +3030,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/AddSearchProvider](./policy-csp-internetexplorer.md#internetexplorer-addsearchprovider)
 -   [InternetExplorer/AllowActiveXFiltering](./policy-csp-internetexplorer.md#internetexplorer-allowactivexfiltering)
 -   [InternetExplorer/AllowAddOnList](./policy-csp-internetexplorer.md#internetexplorer-allowaddonlist)
--   [InternetExplorer/AllowAutoComplete](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/AllowCertificateAddressMismatchWarning](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/AllowDeletingBrowsingHistoryOnExit](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/AllowAutoComplete](./policy-csp-internetexplorer.md#internetexplorer-allowautocomplete)
+-   [InternetExplorer/AllowCertificateAddressMismatchWarning](./policy-csp-internetexplorer.md#internetexplorer-allowcertificateaddressmismatchwarning)
+-   [InternetExplorer/AllowDeletingBrowsingHistoryOnExit](./policy-csp-internetexplorer.md#internetexplorer-allowdeletingbrowsinghistoryonexit)
 -   [InternetExplorer/AllowEnhancedProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-allowenhancedprotectedmode)
 -   [InternetExplorer/AllowEnterpriseModeFromToolsMenu](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodefromtoolsmenu)
 -   [InternetExplorer/AllowEnterpriseModeSiteList](./policy-csp-internetexplorer.md#internetexplorer-allowenterprisemodesitelist)
--   [InternetExplorer/AllowFallbackToSSL3](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/AllowFallbackToSSL3](./policy-csp-internetexplorer.md#internetexplorer-allowfallbacktossl3)
 -   [InternetExplorer/AllowInternetExplorer7PolicyList](./policy-csp-internetexplorer.md#internetexplorer-allowinternetexplorer7policylist)
 -   [InternetExplorer/AllowInternetExplorerStandardsMode](./policy-csp-internetexplorer.md#internetexplorer-allowinternetexplorerstandardsmode)
 -   [InternetExplorer/AllowInternetZoneTemplate](./policy-csp-internetexplorer.md#internetexplorer-allowinternetzonetemplate)
@@ -2896,36 +3048,36 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/AllowLockedDownRestrictedSitesZoneTemplate](./policy-csp-internetexplorer.md#internetexplorer-allowlockeddownrestrictedsiteszonetemplate)
 -   [InternetExplorer/AllowOneWordEntry](./policy-csp-internetexplorer.md#internetexplorer-allowonewordentry)
 -   [InternetExplorer/AllowSiteToZoneAssignmentList](./policy-csp-internetexplorer.md#internetexplorer-allowsitetozoneassignmentlist)
--   [InternetExplorer/AllowSoftwareWhenSignatureIsInvalid](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/AllowSoftwareWhenSignatureIsInvalid](./policy-csp-internetexplorer.md#internetexplorer-allowsoftwarewhensignatureisinvalid)
 -   [InternetExplorer/AllowSuggestedSites](./policy-csp-internetexplorer.md#internetexplorer-allowsuggestedsites)
 -   [InternetExplorer/AllowTrustedSitesZoneTemplate](./policy-csp-internetexplorer.md#internetexplorer-allowtrustedsiteszonetemplate)
 -   [InternetExplorer/AllowsLockedDownTrustedSitesZoneTemplate](./policy-csp-internetexplorer.md#internetexplorer-allowslockeddowntrustedsiteszonetemplate)
 -   [InternetExplorer/AllowsRestrictedSitesZoneTemplate](./policy-csp-internetexplorer.md#internetexplorer-allowsrestrictedsiteszonetemplate)
--   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/CheckServerCertificateRevocation](./policy-csp-internetexplorer.md#internetexplorer-checkservercertificaterevocation)
+-   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
+-   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
--   [InternetExplorer/DisableBlockingOfOutdatedActiveXControls](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/DisableBlockingOfOutdatedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-disableblockingofoutdatedactivexcontrols)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
--   [InternetExplorer/DisableConfiguringHistory](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/DisableCrashDetection](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/DisableConfiguringHistory](./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory)
+-   [InternetExplorer/DisableCrashDetection](./policy-csp-internetexplorer.md#internetexplorer-disablecrashdetection)
 -   [InternetExplorer/DisableCustomerExperienceImprovementProgramParticipation](./policy-csp-internetexplorer.md#internetexplorer-disablecustomerexperienceimprovementprogramparticipation)
--   [InternetExplorer/DisableDeletingUserVisitedWebsites](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/DisableDeletingUserVisitedWebsites](./policy-csp-internetexplorer.md#internetexplorer-disabledeletinguservisitedwebsites)
 -   [InternetExplorer/DisableEnclosureDownloading](./policy-csp-internetexplorer.md#internetexplorer-disableenclosuredownloading)
 -   [InternetExplorer/DisableEncryptionSupport](./policy-csp-internetexplorer.md#internetexplorer-disableencryptionsupport)
 -   [InternetExplorer/DisableFirstRunWizard](./policy-csp-internetexplorer.md#internetexplorer-disablefirstrunwizard)
 -   [InternetExplorer/DisableFlipAheadFeature](./policy-csp-internetexplorer.md#internetexplorer-disableflipaheadfeature)
 -   [InternetExplorer/DisableHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablehomepagechange)
--   [InternetExplorer/DisableIgnoringCertificateErrors](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/DisableInPrivateBrowsing](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/DisableProcessesInEnhancedProtectedMode](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/DisableIgnoringCertificateErrors](./policy-csp-internetexplorer.md#internetexplorer-disableignoringcertificateerrors)
+-   [InternetExplorer/DisableInPrivateBrowsing](./policy-csp-internetexplorer.md#internetexplorer-disableinprivatebrowsing)
+-   [InternetExplorer/DisableProcessesInEnhancedProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-disableprocessesinenhancedprotectedmode)
 -   [InternetExplorer/DisableProxyChange](./policy-csp-internetexplorer.md#internetexplorer-disableproxychange)
 -   [InternetExplorer/DisableSearchProviderChange](./policy-csp-internetexplorer.md#internetexplorer-disablesearchproviderchange)
 -   [InternetExplorer/DisableSecondaryHomePageChange](./policy-csp-internetexplorer.md#internetexplorer-disablesecondaryhomepagechange)
--   [InternetExplorer/DisableSecuritySettingsCheck](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/DisableSecuritySettingsCheck](./policy-csp-internetexplorer.md#internetexplorer-disablesecuritysettingscheck)
 -   [InternetExplorer/DisableUpdateCheck](./policy-csp-internetexplorer.md#internetexplorer-disableupdatecheck)
--   [InternetExplorer/DoNotAllowActiveXControlsInProtectedMode](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/DoNotAllowActiveXControlsInProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-donotallowactivexcontrolsinprotectedmode)
 -   [InternetExplorer/DoNotAllowUsersToAddSites](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstoaddsites)
 -   [InternetExplorer/DoNotAllowUsersToChangePolicies](./policy-csp-internetexplorer.md#internetexplorer-donotallowuserstochangepolicies)
 -   [InternetExplorer/DoNotBlockOutdatedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-donotblockoutdatedactivexcontrols)
@@ -2935,42 +3087,39 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/InternetZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowaccesstodatasources)
 -   [InternetExplorer/InternetZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowautomaticpromptingforactivexcontrols)
 -   [InternetExplorer/InternetZoneAllowAutomaticPromptingForFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowautomaticpromptingforfiledownloads)
--   [InternetExplorer/InternetZoneAllowCopyPasteViaScript](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/InternetZoneAllowCopyPasteViaScript](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowcopypasteviascript)
+-   [InternetExplorer/InternetZoneAllowDragAndDropCopyAndPasteFiles](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowdraganddropcopyandpastefiles)
 -   [InternetExplorer/InternetZoneAllowFontDownloads](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowfontdownloads)
 -   [InternetExplorer/InternetZoneAllowLessPrivilegedSites](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowlessprivilegedsites)
--   [InternetExplorer/InternetZoneAllowLoadingOfXAMLFilesWRONG](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/InternetZoneAllowLoadingOfXAMLFiles](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowloadingofxamlfiles)
 -   [InternetExplorer/InternetZoneAllowNETFrameworkReliantComponents](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallownetframeworkreliantcomponents)
--   [InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneAllowScriptInitiatedWindows](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowonlyapproveddomainstouseactivexcontrols)
+-   [InternetExplorer/InternetZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowonlyapproveddomainstousetdcactivexcontrol)
+-   [InternetExplorer/InternetZoneAllowScriptInitiatedWindows](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowscriptinitiatedwindows)
+-   [InternetExplorer/InternetZoneAllowScriptingOfInternetExplorerWebBrowserControls](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowscriptingofinternetexplorerwebbrowsercontrols)
 -   [InternetExplorer/InternetZoneAllowScriptlets](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowscriptlets)
 -   [InternetExplorer/InternetZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowsmartscreenie)
--   [InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/InternetZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowupdatestostatusbarviascript)
 -   [InternetExplorer/InternetZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-internetzoneallowuserdatapersistence)
--   [InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG1](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControlsWRONG2](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneEnableMIMESniffing](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneEnableProtectedMode](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedonotrunantimalwareagainstactivexcontrols)
+-   [InternetExplorer/InternetZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadsignedactivexcontrols)
+-   [InternetExplorer/InternetZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzonedownloadunsignedactivexcontrols)
+-   [InternetExplorer/InternetZoneEnableCrossSiteScriptingFilter](./policy-csp-internetexplorer.md#internetexplorer-internetzoneenablecrosssitescriptingfilter)
+-   [InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows](./policy-csp-internetexplorer.md#internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainsacrosswindows)
+-   [InternetExplorer/InternetZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows](./policy-csp-internetexplorer.md#internetexplorer-internetzoneenabledraggingofcontentfromdifferentdomainswithinwindows)
+-   [InternetExplorer/InternetZoneEnableMIMESniffing](./policy-csp-internetexplorer.md#internetexplorer-internetzoneenablemimesniffing)
+-   [InternetExplorer/InternetZoneEnableProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-internetzoneenableprotectedmode)
+-   [InternetExplorer/InternetZoneIncludeLocalPathWhenUploadingFilesToServer](./policy-csp-internetexplorer.md#internetexplorer-internetzoneincludelocalpathwhenuploadingfilestoserver)
 -   [InternetExplorer/InternetZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-internetzoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/InternetZoneInitializeAndScriptActiveXControlsNotMarkedSafe](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneJavaPermissionsWRONG1](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneJavaPermissionsWRONG2](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneLogonOptions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/InternetZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-internetzonejavapermissions)
+-   [InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME](./policy-csp-internetexplorer.md#internetexplorer-internetzonelaunchingapplicationsandfilesiniframe)
+-   [InternetExplorer/InternetZoneLogonOptions](./policy-csp-internetexplorer.md#internetexplorer-internetzonelogonoptions)
 -   [InternetExplorer/InternetZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-internetzonenavigatewindowsandframes)
--   [InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneUsePopupBlocker](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode](./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode)
+-   [InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode](./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode)
+-   [InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles](./policy-csp-internetexplorer.md#internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles)
+-   [InternetExplorer/InternetZoneUsePopupBlocker](./policy-csp-internetexplorer.md#internetexplorer-internetzoneusepopupblocker)
+-   [InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone](./policy-csp-internetexplorer.md#internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone)
 -   [InternetExplorer/IntranetZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowaccesstodatasources)
 -   [InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols)
 -   [InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads)
@@ -2980,7 +3129,10 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/IntranetZoneAllowScriptlets](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowscriptlets)
 -   [InternetExplorer/IntranetZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowsmartscreenie)
 -   [InternetExplorer/IntranetZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowuserdatapersistence)
+-   [InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols)
 -   [InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrols)
+-   [InternetExplorer/IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe)
+-   [InternetExplorer/IntranetZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-intranetzonejavapermissions)
 -   [InternetExplorer/IntranetZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-intranetzonenavigatewindowsandframes)
 -   [InternetExplorer/LocalMachineZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneallowaccesstodatasources)
 -   [InternetExplorer/LocalMachineZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneallowautomaticpromptingforactivexcontrols)
@@ -2991,9 +3143,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LocalMachineZoneAllowScriptlets](./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneallowscriptlets)
 -   [InternetExplorer/LocalMachineZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneallowsmartscreenie)
 -   [InternetExplorer/LocalMachineZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneallowuserdatapersistence)
--   [InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-localmachinezonedonotrunantimalwareagainstactivexcontrols)
 -   [InternetExplorer/LocalMachineZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/LocalMachineZoneJavaPermissions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/LocalMachineZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-localmachinezonejavapermissions)
 -   [InternetExplorer/LocalMachineZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-localmachinezonenavigatewindowsandframes)
 -   [InternetExplorer/LockedDownInternetZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneallowaccesstodatasources)
 -   [InternetExplorer/LockedDownInternetZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneallowautomaticpromptingforactivexcontrols)
@@ -3005,7 +3157,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownInternetZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneallowsmartscreenie)
 -   [InternetExplorer/LockedDownInternetZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneallowuserdatapersistence)
 -   [InternetExplorer/LockedDownInternetZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/LockedDownInternetZoneJavaPermissions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/LockedDownInternetZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonejavapermissions)
 -   [InternetExplorer/LockedDownInternetZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowninternetzonenavigatewindowsandframes)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowaccesstodatasources)
 -   [InternetExplorer/LockedDownIntranetZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddownintranetzoneallowautomaticpromptingforactivexcontrols)
@@ -3028,7 +3180,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownLocalMachineZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezoneallowsmartscreenie)
 -   [InternetExplorer/LockedDownLocalMachineZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezoneallowuserdatapersistence)
 -   [InternetExplorer/LockedDownLocalMachineZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/LockedDownLocalMachineZoneJavaPermissions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/LockedDownLocalMachineZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezonejavapermissions)
 -   [InternetExplorer/LockedDownLocalMachineZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddownlocalmachinezonenavigatewindowsandframes)
 -   [InternetExplorer/LockedDownRestrictedSitesZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszoneallowaccesstodatasources)
 -   [InternetExplorer/LockedDownRestrictedSitesZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszoneallowautomaticpromptingforactivexcontrols)
@@ -3040,7 +3192,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownRestrictedSitesZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszoneallowsmartscreenie)
 -   [InternetExplorer/LockedDownRestrictedSitesZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszoneallowuserdatapersistence)
 -   [InternetExplorer/LockedDownRestrictedSitesZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/LockedDownRestrictedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszonejavapermissions)
 -   [InternetExplorer/LockedDownRestrictedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddownrestrictedsiteszonenavigatewindowsandframes)
 -   [InternetExplorer/LockedDownTrustedSitesZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszoneallowaccesstodatasources)
 -   [InternetExplorer/LockedDownTrustedSitesZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszoneallowautomaticpromptingforactivexcontrols)
@@ -3052,64 +3204,64 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/LockedDownTrustedSitesZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszoneallowsmartscreenie)
 -   [InternetExplorer/LockedDownTrustedSitesZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszoneallowuserdatapersistence)
 -   [InternetExplorer/LockedDownTrustedSitesZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/LockedDownTrustedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonejavapermissions)
 -   [InternetExplorer/LockedDownTrustedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-lockeddowntrustedsiteszonenavigatewindowsandframes)
--   [InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/NotificationBarInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/PreventManagingSmartScreenFilter](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/PreventPerUserInstallationOfActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictFileDownloadInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/MKProtocolSecurityRestrictionInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mkprotocolsecurityrestrictioninternetexplorerprocesses)
+-   [InternetExplorer/MimeSniffingSafetyFeatureInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-mimesniffingsafetyfeatureinternetexplorerprocesses)
+-   [InternetExplorer/NotificationBarInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-notificationbarinternetexplorerprocesses)
+-   [InternetExplorer/PreventManagingSmartScreenFilter](./policy-csp-internetexplorer.md#internetexplorer-preventmanagingsmartscreenfilter)
+-   [InternetExplorer/PreventPerUserInstallationOfActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-preventperuserinstallationofactivexcontrols)
+-   [InternetExplorer/ProtectionFromZoneElevationInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-protectionfromzoneelevationinternetexplorerprocesses)
+-   [InternetExplorer/RemoveRunThisTimeButtonForOutdatedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-removerunthistimebuttonforoutdatedactivexcontrols)
+-   [InternetExplorer/RestrictActiveXInstallInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-restrictactivexinstallinternetexplorerprocesses)
+-   [InternetExplorer/RestrictFileDownloadInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-restrictfiledownloadinternetexplorerprocesses)
 -   [InternetExplorer/RestrictedSitesZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowaccesstodatasources)
--   [InternetExplorer/RestrictedSitesZoneAllowActiveScripting](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneAllowActiveScripting](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowactivescripting)
 -   [InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowautomaticpromptingforactivexcontrols)
 -   [InternetExplorer/RestrictedSitesZoneAllowAutomaticPromptingForFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowautomaticpromptingforfiledownloads)
--   [InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowFileDownloads](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG1](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowFontDownloadsWRONG2](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneAllowBinaryAndScriptBehaviors](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowbinaryandscriptbehaviors)
+-   [InternetExplorer/RestrictedSitesZoneAllowCopyPasteViaScript](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowcopypasteviascript)
+-   [InternetExplorer/RestrictedSitesZoneAllowDragAndDropCopyAndPasteFiles](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowdraganddropcopyandpastefiles)
+-   [InternetExplorer/RestrictedSitesZoneAllowFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowfiledownloads)
+-   [InternetExplorer/RestrictedSitesZoneAllowFontDownloads](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowfontdownloads)
 -   [InternetExplorer/RestrictedSitesZoneAllowLessPrivilegedSites](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowlessprivilegedsites)
--   [InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneAllowLoadingOfXAMLFiles](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowloadingofxamlfiles)
+-   [InternetExplorer/RestrictedSitesZoneAllowMETAREFRESH](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowmetarefresh)
 -   [InternetExplorer/RestrictedSitesZoneAllowNETFrameworkReliantComponents](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallownetframeworkreliantcomponents)
--   [InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowonlyapproveddomainstouseactivexcontrols)
+-   [InternetExplorer/RestrictedSitesZoneAllowOnlyApprovedDomainsToUseTDCActiveXControl](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowonlyapproveddomainstousetdcactivexcontrol)
+-   [InternetExplorer/RestrictedSitesZoneAllowScriptInitiatedWindows](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowscriptinitiatedwindows)
+-   [InternetExplorer/RestrictedSitesZoneAllowScriptingOfInternetExplorerWebBrowserControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowscriptingofinternetexplorerwebbrowsercontrols)
 -   [InternetExplorer/RestrictedSitesZoneAllowScriptlets](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowscriptlets)
 -   [InternetExplorer/RestrictedSitesZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowsmartscreenie)
--   [InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneAllowUpdatesToStatusBarViaScript](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowupdatestostatusbarviascript)
 -   [InternetExplorer/RestrictedSitesZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneallowuserdatapersistence)
--   [InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneEnableMIMESniffing](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedonotrunantimalwareagainstactivexcontrols)
+-   [InternetExplorer/RestrictedSitesZoneDownloadSignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadsignedactivexcontrols)
+-   [InternetExplorer/RestrictedSitesZoneDownloadUnsignedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonedownloadunsignedactivexcontrols)
+-   [InternetExplorer/RestrictedSitesZoneEnableCrossSiteScriptingFilter](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenablecrosssitescriptingfilter)
+-   [InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsAcrossWindows](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainsacrosswindows)
+-   [InternetExplorer/RestrictedSitesZoneEnableDraggingOfContentFromDifferentDomainsWithinWindows](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenabledraggingofcontentfromdifferentdomainswithinwindows)
+-   [InternetExplorer/RestrictedSitesZoneEnableMIMESniffing](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneenablemimesniffing)
+-   [InternetExplorer/RestrictedSitesZoneIncludeLocalPathWhenUploadingFilesToServer](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneincludelocalpathwhenuploadingfilestoserver)
 -   [InternetExplorer/RestrictedSitesZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/RestrictedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneLogonOptions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonejavapermissions)
+-   [InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe)
+-   [InternetExplorer/RestrictedSitesZoneLogonOptions](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonelogonoptions)
 -   [InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframes)
--   [InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneWRONG](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneWRONG2](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneWRONG3](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneWRONG4](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/RestrictedSitesZoneWRONG5](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains)
+-   [InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins)
+-   [InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode)
+-   [InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting)
+-   [InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonescriptingofjavaapplets)
+-   [InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles)
+-   [InternetExplorer/RestrictedSitesZoneTurnOnCrossSiteScriptingFilter](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter)
+-   [InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnonprotectedmode)
+-   [InternetExplorer/RestrictedSitesZoneUsePopupBlocker](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneusepopupblocker)
+-   [InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses)
 -   [InternetExplorer/SearchProviderList](./policy-csp-internetexplorer.md#internetexplorer-searchproviderlist)
--   [InternetExplorer/SecurityZonesUseOnlyMachineSettings](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/SpecifyUseOfActiveXInstallerService](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/SecurityZonesUseOnlyMachineSettings](./policy-csp-internetexplorer.md#internetexplorer-securityzonesuseonlymachinesettings)
+-   [InternetExplorer/SpecifyUseOfActiveXInstallerService](./policy-csp-internetexplorer.md#internetexplorer-specifyuseofactivexinstallerservice)
 -   [InternetExplorer/TrustedSitesZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowaccesstodatasources)
 -   [InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowautomaticpromptingforactivexcontrols)
 -   [InternetExplorer/TrustedSitesZoneAllowAutomaticPromptingForFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowautomaticpromptingforfiledownloads)
@@ -3119,11 +3271,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/TrustedSitesZoneAllowScriptlets](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowscriptlets)
 -   [InternetExplorer/TrustedSitesZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowsmartscreenie)
 -   [InternetExplorer/TrustedSitesZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowuserdatapersistence)
+-   [InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols)
+-   [InternetExplorer/TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols)
 -   [InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/TrustedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#None)
+-   [InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe)
+-   [InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe)
+-   [InternetExplorer/TrustedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonejavapermissions)
 -   [InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonenavigatewindowsandframes)
--   [InternetExplorer/TrustedSitesZoneWRONG1](./policy-csp-internetexplorer.md#None)
--   [InternetExplorer/TrustedSitesZoneWRONG2](./policy-csp-internetexplorer.md#None)
 -   [Kerberos/AllowForestSearchOrder](./policy-csp-kerberos.md#kerberos-allowforestsearchorder)
 -   [Kerberos/KerberosClientSupportsClaimsCompoundArmor](./policy-csp-kerberos.md#kerberos-kerberosclientsupportsclaimscompoundarmor)
 -   [Kerberos/RequireKerberosArmoring](./policy-csp-kerberos.md#kerberos-requirekerberosarmoring)
@@ -3139,7 +3293,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Power/StandbyTimeoutOnBattery](./policy-csp-power.md#power-standbytimeoutonbattery)
 -   [Power/StandbyTimeoutPluggedIn](./policy-csp-power.md#power-standbytimeoutpluggedin)
 -   [Printers/PointAndPrintRestrictions](./policy-csp-printers.md#printers-pointandprintrestrictions)
--   [Printers/PointAndPrintRestrictions_User](./policy-csp-printers.md#printers-pointandprintrestrictions_user)
+-   [Printers/PointAndPrintRestrictions_User](./policy-csp-printers.md#printers-pointandprintrestrictions-user)
 -   [Printers/PublishPrinters](./policy-csp-printers.md#printers-publishprinters)
 -   [RemoteAssistance/CustomizeWarningMessages](./policy-csp-remoteassistance.md#remoteassistance-customizewarningmessages)
 -   [RemoteAssistance/SessionLogging](./policy-csp-remoteassistance.md#remoteassistance-sessionlogging)
@@ -3151,30 +3305,30 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [RemoteDesktopServices/DoNotAllowPasswordSaving](./policy-csp-remotedesktopservices.md#remotedesktopservices-donotallowpasswordsaving)
 -   [RemoteDesktopServices/PromptForPasswordUponConnection](./policy-csp-remotedesktopservices.md#remotedesktopservices-promptforpassworduponconnection)
 -   [RemoteDesktopServices/RequireSecureRPCCommunication](./policy-csp-remotedesktopservices.md#remotedesktopservices-requiresecurerpccommunication)
--   [RemoteManagement/AllowBasicAuthentication_Client](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/AllowBasicAuthentication_Service](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/AllowCredSSPAuthenticationClient](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/AllowCredSSPAuthenticationService](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/AllowRemoteServerManagement](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/AllowUnencryptedTraffic_Client](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/AllowUnencryptedTraffic_Service](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/DisallowDigestAuthentication](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/DisallowNegotiateAuthenticationClient](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/DisallowNegotiateAuthenticationService](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/DisallowStoringOfRunAsCredentials](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/SpecifyChannelBindingTokenHardeningLevel](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/TrustedHosts](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/TurnOnCompatibilityHTTPListener](./policy-csp-remotemanagement.md#None)
--   [RemoteManagement/TurnOnCompatibilityHTTPSListener](./policy-csp-remotemanagement.md#None)
+-   [RemoteManagement/AllowBasicAuthentication_Client](./policy-csp-remotemanagement.md#remotemanagement-allowbasicauthentication-client)
+-   [RemoteManagement/AllowBasicAuthentication_Service](./policy-csp-remotemanagement.md#remotemanagement-allowbasicauthentication-service)
+-   [RemoteManagement/AllowCredSSPAuthenticationClient](./policy-csp-remotemanagement.md#remotemanagement-allowcredsspauthenticationclient)
+-   [RemoteManagement/AllowCredSSPAuthenticationService](./policy-csp-remotemanagement.md#remotemanagement-allowcredsspauthenticationservice)
+-   [RemoteManagement/AllowRemoteServerManagement](./policy-csp-remotemanagement.md#remotemanagement-allowremoteservermanagement)
+-   [RemoteManagement/AllowUnencryptedTraffic_Client](./policy-csp-remotemanagement.md#remotemanagement-allowunencryptedtraffic-client)
+-   [RemoteManagement/AllowUnencryptedTraffic_Service](./policy-csp-remotemanagement.md#remotemanagement-allowunencryptedtraffic-service)
+-   [RemoteManagement/DisallowDigestAuthentication](./policy-csp-remotemanagement.md#remotemanagement-disallowdigestauthentication)
+-   [RemoteManagement/DisallowNegotiateAuthenticationClient](./policy-csp-remotemanagement.md#remotemanagement-disallownegotiateauthenticationclient)
+-   [RemoteManagement/DisallowNegotiateAuthenticationService](./policy-csp-remotemanagement.md#remotemanagement-disallownegotiateauthenticationservice)
+-   [RemoteManagement/DisallowStoringOfRunAsCredentials](./policy-csp-remotemanagement.md#remotemanagement-disallowstoringofrunascredentials)
+-   [RemoteManagement/SpecifyChannelBindingTokenHardeningLevel](./policy-csp-remotemanagement.md#remotemanagement-specifychannelbindingtokenhardeninglevel)
+-   [RemoteManagement/TrustedHosts](./policy-csp-remotemanagement.md#remotemanagement-trustedhosts)
+-   [RemoteManagement/TurnOnCompatibilityHTTPListener](./policy-csp-remotemanagement.md#remotemanagement-turnoncompatibilityhttplistener)
+-   [RemoteManagement/TurnOnCompatibilityHTTPSListener](./policy-csp-remotemanagement.md#remotemanagement-turnoncompatibilityhttpslistener)
 -   [RemoteProcedureCall/RPCEndpointMapperClientAuthentication](./policy-csp-remoteprocedurecall.md#remoteprocedurecall-rpcendpointmapperclientauthentication)
 -   [RemoteProcedureCall/RestrictUnauthenticatedRPCClients](./policy-csp-remoteprocedurecall.md#remoteprocedurecall-restrictunauthenticatedrpcclients)
--   [RemoteShell/AllowRemoteShellAccess](./policy-csp-remoteshell.md#None)
--   [RemoteShell/MaxConcurrentUsers](./policy-csp-remoteshell.md#None)
--   [RemoteShell/SpecifyIdleTimeout](./policy-csp-remoteshell.md#None)
--   [RemoteShell/SpecifyMaxMemory](./policy-csp-remoteshell.md#None)
--   [RemoteShell/SpecifyMaxProcesses](./policy-csp-remoteshell.md#None)
--   [RemoteShell/SpecifyMaxRemoteShells](./policy-csp-remoteshell.md#None)
--   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#None)
+-   [RemoteShell/AllowRemoteShellAccess](./policy-csp-remoteshell.md#remoteshell-allowremoteshellaccess)
+-   [RemoteShell/MaxConcurrentUsers](./policy-csp-remoteshell.md#remoteshell-maxconcurrentusers)
+-   [RemoteShell/SpecifyIdleTimeout](./policy-csp-remoteshell.md#remoteshell-specifyidletimeout)
+-   [RemoteShell/SpecifyMaxMemory](./policy-csp-remoteshell.md#remoteshell-specifymaxmemory)
+-   [RemoteShell/SpecifyMaxProcesses](./policy-csp-remoteshell.md#remoteshell-specifymaxprocesses)
+-   [RemoteShell/SpecifyMaxRemoteShells](./policy-csp-remoteshell.md#remoteshell-specifymaxremoteshells)
+-   [RemoteShell/SpecifyShellTimeout](./policy-csp-remoteshell.md#remoteshell-specifyshelltimeout)
 -   [Storage/EnhancedStorageDevices](./policy-csp-storage.md#storage-enhancedstoragedevices)
 -   [System/BootStartDriverInitialization](./policy-csp-system.md#system-bootstartdriverinitialization)
 -   [System/DisableSystemRestore](./policy-csp-system.md#system-disablesystemrestore)
@@ -3202,13 +3356,18 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/EnterpriseSiteListServiceUrl](#browser-enterprisesitelistserviceurl)  
 -   [Browser/SendIntranetTraffictoInternetExplorer](#browser-sendintranettraffictointernetexplorer)  
 -   [Camera/AllowCamera](#camera-allowcamera)  
+-   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
 -   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
 -   [Connectivity/AllowNFC](#connectivity-allownfc)  
 -   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
 -   [Connectivity/AllowVPNOverCellular](#connectivity-allowvpnovercellular)  
 -   [Connectivity/AllowVPNRoamingOverCellular](#connectivity-allowvpnroamingovercellular)  
+-   [Connectivity/DiablePrintingOverHTTP](#connectivity-diableprintingoverhttp)  
+-   [Connectivity/DisableDownloadingOfPrintDriversOverHTTP](#connectivity-disabledownloadingofprintdriversoverhttp)  
+-   [Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards](#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards)  
 -   [Connectivity/HardenedUNCPaths](#connectivity-hardeneduncpaths)  
+-   [Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge](#connectivity-prohibitinstallationandconfigurationofnetworkbridge)  
 -   [CredentialProviders/AllowPINLogon](#credentialproviders-allowpinlogon)  
 -   [CredentialProviders/BlockPicturePassword](#credentialproviders-blockpicturepassword)  
 -   [DataProtection/AllowDirectMemoryAccess](#dataprotection-allowdirectmemoryaccess)  
@@ -3313,7 +3472,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Browser/PreventSmartScreenPromptOverrideForFiles](#browser-preventsmartscreenpromptoverrideforfiles)  
 -   [Browser/SetDefaultSearchEngine](#browser-setdefaultsearchengine)  
 -   [Camera/AllowCamera](#camera-allowcamera)  
--   [ConfigOperations/ADMXInstall](#None)  
+-   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
+-   [ConfigOperations/ADMXInstall](#configoperations-admxinstall)  
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
 -   [Connectivity/AllowConnectedDevices](#connectivity-allowconnecteddevices)  
 -   [Cryptography/AllowFipsAlgorithmPolicy](#cryptography-allowfipsalgorithmpolicy)  
@@ -3361,7 +3521,8 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [DeliveryOptimization/DOMonthlyUploadDataCap](#deliveryoptimization-domonthlyuploaddatacap)  
 -   [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](#deliveryoptimization-dopercentagemaxdownloadbandwidth)  
 -   [Desktop/PreventUserRedirectionOfProfileFolders](#desktop-preventuserredirectionofprofilefolders)  
--   [DeviceGuard/AllowKernelControlFlowGuard](#None)  
+-   [DeviceGuard/AllowKernelControlFlowGuard](#deviceguard-allowkernelcontrolflowguard)  
+-   [Privacy/EnableActivityFeed](#privacy-enableactivityfeed)  
 -   [Privacy/LetAppsGetDiagnosticInfo](#privacy-letappsgetdiagnosticinfo)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceAllowTheseApps](#privacy-letappsgetdiagnosticinfo-forceallowtheseapps)  
 -   [Privacy/LetAppsGetDiagnosticInfo_ForceDenyTheseApps](#privacy-letappsgetdiagnosticinfo-forcedenytheseapps)  
@@ -3370,6 +3531,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [Privacy/LetAppsRunInBackground_ForceAllowTheseApps](#privacy-letappsruninbackground-forceallowtheseapps)  
 -   [Privacy/LetAppsRunInBackground_ForceDenyTheseApps](#privacy-letappsruninbackground-forcedenytheseapps)  
 -   [Privacy/LetAppsRunInBackground_UserInControlOfTheseApps](#privacy-letappsruninbackground-userincontroloftheseapps)  
+-   [Privacy/PublishUserActivities](#privacy-publishuseractivities)  
 -   [Security/RequireProvisioningPackageSignature](#security-requireprovisioningpackagesignature)  
 -   [Security/RequireRetrieveHealthCertificateOnBoot](#security-requireretrievehealthcertificateonboot)  
 -   [System/AllowFontProviders](#system-allowfontproviders)  
@@ -3386,9 +3548,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [TextInput/ExcludeJapaneseIMEExceptJIS0208](#textinput-excludejapaneseimeexceptjis0208)  
 -   [TextInput/ExcludeJapaneseIMEExceptJIS0208andEUDC](#textinput-excludejapaneseimeexceptjis0208andeudc)  
 -   [TextInput/ExcludeJapaneseIMEExceptShiftJIS](#textinput-excludejapaneseimeexceptshiftjis)  
--   [TimeLanguageSettings/Set24HourClock](#None)  
--   [TimeLanguageSettings/SetCountry](#None)  
--   [TimeLanguageSettings/SetLanguage](#None)  
+-   [TimeLanguageSettings/Set24HourClock](#timelanguagesettings-set24hourclock)  
+-   [TimeLanguageSettings/SetCountry](#timelanguagesettings-setcountry)  
+-   [TimeLanguageSettings/SetLanguage](#timelanguagesettings-setlanguage)  
 -   [Update/AllowAutoUpdate](#update-allowautoupdate)  
 -   [Update/AllowUpdateService](#update-allowupdateservice)  
 -   [Update/AutoRestartNotificationSchedule](#update-autorestartnotificationschedule)  
@@ -3412,6 +3574,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 -   [Browser/AllowBrowser](#browser-allowbrowser)  
 -   [Camera/AllowCamera](#camera-allowcamera)  
+-   [Cellular/ShowAppCellularAccessUI](#cellular-showappcellularaccessui)  
 -   [Connectivity/AllowBluetooth](#connectivity-allowbluetooth)  
 -   [Connectivity/AllowCellularDataRoaming](#connectivity-allowcellulardataroaming)  
 -   [Connectivity/AllowUSBConnection](#connectivity-allowusbconnection)  
@@ -3478,196 +3641,6 @@ Do not allow NFC.
         <Final/>
     </SyncBody>
 </SyncML>
-```
-
-## <a href="" id="startlayout-examples"></a>Start/StartLayout Examples
-
-### <a href="" id="generating-a-layout-"></a>Generating a layout
-
-The easiest way to generate a layout is to set the Start layout on a PC, and then run the PowerShell cmdlet **Export-StartLayout**.
-
-` > Export-StartLayout -path c:\users\<`*you*`>\desktop\startlayout.xml`
-
-Sample layout generated using the cmdlet
-
-``` syntax
-<LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
-  <DefaultLayoutOverride>
-    <StartLayoutCollection>
-      <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
-        <start:Group Name="quick links" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-          <start:Tile Size="2x2" Column="4" Row="4" TileID="903d2b5e-807b-4c7a-8362-0fcc184f97f7" AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel"/>
-          <start:Tile Size="4x4" Column="0" Row="0" TileID="ad99e7e3-3929-4e54-850c-0956e6dc6296" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App"/>
-          <start:Tile Size="4x4" Column="0" Row="0" TileID="e86b4425-e28e-4e59-abeb-39316c1cd0eb" AppUserModelID="Microsoft.BingNews_8wekyb3d8bbwe!AppexNews"/>
-          <start:Tile Size="2x2" Column="4" Row="4" TileID="37fe8c50-8b37-41e2-9d8b-f8915ef2b89b" AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"/>
-        </start:Group>
-        <start:Group Name="LOB apps" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-          <start:Tile Size="2x2" Column="4" Row="4" TileID="10c72642-ef27-4890-8d3b-f5a4b10b2611" AppUserModelID="CmModernAppv.01_g4ype1skzj3jy!App"/>
-          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="wpsh..tion_0000000000000000_ea68d408322b5ed8"/>
-          <start:Tile Size="2x2" Column="2" Row="2" TileID="68a2c085-a2a5-4849-a3e5-c5f8bd736b8f" AppUserModelID="Microsoft.CorporateAppCenter_8wekyb3d8bbwe!App"/>
-        </start:Group>
-        <start:Group Name="comms" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-          <start:Tile Size="4x2" Column="0" Row="0" TileID="a39d270e-d013-40a9-879d-eb563c019a4f" AppUserModelID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail"/>
-          <start:Tile Size="4x4" Column="0" Row="0" TileID="293e8dd8-c33d-4797-997e-f646902d1e56" AppUserModelID="microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.calendar"/>
-          <start:Tile Size="2x2" Column="4" Row="4" TileID="2f5a81f5-7f85-42c9-88f7-dd41aa9609f7" AppUserModelID="Microsoft.People_8wekyb3d8bbwe!x4c7a3b7dy2188y46d4ya362y19ac5a5805e5x"/>
-        </start:Group>
-        <start:Group Name="Office" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-          <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationID="Microsoft.Office.lync.exe.15"/>
-          <start:Tile Size="2x2" Column="4" Row="4" TileID="337be122-44b3-4215-8d6f-75f29af5a722" AppUserModelID="Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim"/>
-          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="Microsoft.Office.OUTLOOK.EXE.15"/>
-          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="Microsoft.Office.EXCEL.EXE.15"/>
-          <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationID="Microsoft.Office.ONENOTE.EXE.15"/>
-          <start:DesktopApplicationTile Size="2x2" Column="4" Row="4" DesktopApplicationID="Microsoft.Office.POWERPNT.EXE.15"/>
-        </start:Group>
-        <start:Group Name="Edge pinned shortcuts" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-          <start:SecondaryTile AppUserModelID="Microsoft.Windows.Edge_cw5n1h2txyewy!Microsoft.Edge.Edge" TileID="-9513911450" DisplayName="Bing" Size="2x2" Column="0" Row="0" Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x36a8c2e4 -pinnedTimeHigh 0x01d0919b -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000014 http://www.bing.com/" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/-9513911450/lowres.png" Wide310x150LogoUri="ms-appx:///" ShowNameOnSquare150x150Logo="true" ShowNameOnWide310x150Logo="true" BackgroundColor="#7fffffff"/>
-          <start:SecondaryTile AppUserModelID="Microsoft.Windows.Edge_cw5n1h2txyewy!Microsoft.Edge.Edge" TileID="-2360074010" DisplayName="msn" Size="2x2" Column="2" Row="2" Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0xec458ccc -pinnedTimeHigh 0x01d091a0 -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000013 http://www.msn.com/" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/-2360074010/hires.png" Wide310x150LogoUri="ms-appx:///" ShowNameOnSquare150x150Logo="true" ShowNameOnWide310x150Logo="true" BackgroundColor="#7fffffff"/>
-          <start:SecondaryTile AppUserModelID="Microsoft.Windows.Edge_cw5n1h2txyewy!Microsoft.Edge.Edge" TileID="-21368412090" DisplayName="The Verge" Size="2x2" Column="4" Row="4" Arguments="-pinnedSite -contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x00bad87b -pinnedTimeHigh 0x01d091a1 -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000018 http://www.theverge.com/" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/-21368412090/squaretile.png" Wide310x150LogoUri="ms-appdata:///local/PinnedTiles/-21368412090/widetile.png" ShowNameOnSquare150x150Logo="true" ShowNameOnWide310x150Logo="true" BackgroundColor="#7fffffff"/>
-        </start:Group>
-        <start:Group Name="dev tools" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="{1AC14E77-02E7-4E5D-B744-2EB1AE5198B7}\cmd.exe"/>
-          <start:DesktopApplicationTile Size="2x2" Column="2" Row="2" DesktopApplicationID="{D65231B0-B2F1-4857-A4CE-A8E7C6EA7D27}\WindowsPowerShell\v1.0\powershell.exe"/>
-        </start:Group>
-      </defaultlayout:StartLayout>
-    </StartLayoutCollection>
-  </DefaultLayoutOverride>
-</LayoutModificationTemplate>
-```
-
-### Understanding the schema
-
-In the previous example, the **DefaultLayoutOverride** element is used to specify a layout that overrides the default Start layout. It contains a **StartLayoutCollection**. **StartLayoutCollection** contains a **StartLayout**, which is made up of a collection of **Groups** which are, in turn, made up of either **Tiles** or **DesktopApplicationTiles**.
-
-### Manually creating a layout
-
-For **Tile** elements, the **AppUserModelID** can be retrieved with the PowerShell cmdlet **Get-StartApps**. The app needs to be installed to retrieve this information.
-
-For **DesktopApplicationTile** elements, the **DesktopApplicationID** can be retrieved with the PowerShell cmdlet **Get-StartApps**. The app needs to be installed to retrieve this information.
-
-### Secondary tiles
-
-Creating a layout requires some special notes about secondary tiles. In general, the simplest way to correctly specify a **SecondaryTile** is to generate it using the **Export-StartLayout** PowerShell cmdlet as specified above.
-
-> [!NOTE]
-> Apps that don't encode enough information in their secondary tiles may not be able to be used effectively in the **StartLayout** policy.
-
-
-### Generic webpage shortcuts
-
-The simplest mechanism to create a link to a webpage is to use a URL file. This can be manually added to the layout file by specifying the URL in the **DesktopApplicationID** attribute.
-
-``` syntax
-<start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationID="www.bing.com" />
-```
-
-### <a href="" id="microsoft-edge-secondary-tiles-"></a>Microsoft Edge secondary tiles
-
-These can be generated by using the **Export-StartLayout** PowerShell cmdlet as specified above. The following example shows a generated secondary tile:
-
-``` syntax
-<start:SecondaryTile 
-    AppUserModelID="Microsoft.Windows.Edge_cw5n1h2txyewy!Microsoft.Edge.Edge" 
-    TileID="-9513911450" 
-    DisplayName="Bing" 
-    Size="2x2" 
-    Column="0" 
-    Row="0" 
-    Arguments="-contentTile -formatVersion 0x00000003 -pinnedTimeLow 0x36a8c2e4 -pinnedTimeHigh 0x01d0919b -securityFlags 0x00000000 -tileType 0x00000000 -url 0x00000014 http://www.bing.com/" Square150x150LogoUri="ms-appdata:///local/PinnedTiles/-9513911450/lowres.png" 
-    Wide310x150LogoUri="ms-appx:///" 
-    ShowNameOnSquare150x150Logo="true" 
-    ShowNameOnWide310x150Logo="true" 
-    BackgroundColor="#7fffffff" 
-  />
-```
-
-### <a href="" id="microsoft-edge-assets-example"></a>Microsoft Edge assets example
-
-An example XML string value for the **[Start/ImportEdgeAssets](#start-importedgeassets)** policy.
-
-``` syntax
-<SecondaryTileAssets>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\30382655640\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>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</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\30382655640\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>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</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\29499280780\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIECAr9//MFC/73CPEJ/PYOJQWV4AAAJsSURBVHgB7dyHcqswEEDRpa2KkcT/f+1zwNHYgtebvHPPtEzPNWXp8r8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBhnOZFxSbnpxB1J+aMtzVoZaswjVMu2hIbBj+FRStbhW5bQ9TKVuF4y0ErW4VpHwSVvcKoldFCPaGQQgoppJBCCinUb1rNF+pqvlClCxTGEJZfLAz9F8bsk9wln3+hMEv3hVOSagg/W3iT3gsXJy+mnyvcpPfCkqSx/URhdNJ7YRzkZP3hwmUP3Lou9HKh/EhhXf5Zey6c5dMwSjX+WOH8EZiydl04yGGKqhqcPIQfKcxyl4p2XZjlUJr9hv+Bwk3uXNG+C8dm17IkOSzfK4xHYNS+CxfZDVpNcsgvhetXpsQWtfPC3ObocpqJ8sFHfVH2wJtq74W380V+Jzv3WiiuXE2J/gvHWlNtcmj/+5S1yvuUmPUNClPdcVbTubBdcdc6JfovvDjUzu1ElLsyyJ1bnqbEou9aGK4KNXp5rJjHX2NUW4V17Z0eU0LVXqGG1J5Bvvl2GNtCjU4OWd+tcPzuvvR5fKagre7n4XAxD4erQp1TnRKdFzY5i55Op/xloZYt6lsVrqcNschhNXJFeJFdiqeLGouRQnWy29qLGk6tFGY53HRXZ142U6iDHIYcwrzJwxDtFM5yJaudQvVy5tVSYXTSctFMYU1sA20VavTyzEc1U1iFUT4Ns9G73GX1491UeFKBQp4Y4qkvntyjkEIKKaSQQgp5O+/0qn3L5FuyRVu86czb6nxxgK9G8OUPvt4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADezhemI2HJD0xgNwAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\29499280780\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIECAr9//MFC/73CPEJ/PYOJQWV4AAAJsSURBVHgB7dyHcqswEEDRpa2KkcT/f+1zwNHYgtebvHPPtEzPNWXp8r8BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBhnOZFxSbnpxB1J+aMtzVoZaswjVMu2hIbBj+FRStbhW5bQ9TKVuF4y0ErW4VpHwSVvcKoldFCPaGQQgoppJBCCinUb1rNF+pqvlClCxTGEJZfLAz9F8bsk9wln3+hMEv3hVOSagg/W3iT3gsXJy+mnyvcpPfCkqSx/URhdNJ7YRzkZP3hwmUP3Lou9HKh/EhhXf5Zey6c5dMwSjX+WOH8EZiydl04yGGKqhqcPIQfKcxyl4p2XZjlUJr9hv+Bwk3uXNG+C8dm17IkOSzfK4xHYNS+CxfZDVpNcsgvhetXpsQWtfPC3ObocpqJ8sFHfVH2wJtq74W380V+Jzv3WiiuXE2J/gvHWlNtcmj/+5S1yvuUmPUNClPdcVbTubBdcdc6JfovvDjUzu1ElLsyyJ1bnqbEou9aGK4KNXp5rJjHX2NUW4V17Z0eU0LVXqGG1J5Bvvl2GNtCjU4OWd+tcPzuvvR5fKagre7n4XAxD4erQp1TnRKdFzY5i55Op/xloZYt6lsVrqcNschhNXJFeJFdiqeLGouRQnWy29qLGk6tFGY53HRXZ142U6iDHIYcwrzJwxDtFM5yJaudQvVy5tVSYXTSctFMYU1sA20VavTyzEc1U1iFUT4Ns9G73GX1491UeFKBQp4Y4qkvntyjkEIKKaSQQgp5O+/0qn3L5FuyRVu86czb6nxxgK9G8OUPvt4CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADezhemI2HJD0xgNwAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\2819959990\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAK7SURBVHgB7d2JcrJIFIDR1pZGGzC8/9OOaHsLMOs/+8w5tWZPvupcGlKBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/DMdjvnUlT7xuf58qUNZiPWJsc/TtQSxPvB2zG05ifWZfp5qCWJ9OsXDl7FM8R/EMsU/05vi39eb4l8QqwSxxPpnxCpf647pS2KFH9QSq0tfEiukINZ/7VAgllhiiSXWV8QSSyyxDHix/mhiiSWWWNdap5zzPIj1Yqg135yH3c882jrc3Nv0fWmm9FBLM6a7o1jxM6WhPJzTQ95dHb6IdZO3K+ktbVfSKT1cxYoaz5UzpGaMlg+Ohqs8c6Rrus1ftHqx7g7rGjk9neKtiyzWau2M+58wb34tq1h3eX04TKEvi7p5Z7Hqau1cUxjL4tLKidWku0u0abrVtmt28W+ztTq3+RWmeFub9mLF6unj2HfoU6ymFANNrPVcinObc456bYa9FbGaa8yoKS2mU7zDFCPLgG/icDinxXWI08E5xpdYmx8rt3E+PrftU/zAnVhhbofD4Tmrjs9fvnR3KEGsU4tUnysst7HepZYxiNWatEY1NvXlFCNLrDCmRdfHnird1RyT3tZhV6DGnqpt3C99nCUGsXJaPMd6bOrPh7jCHMSq+1PCKa1cyopYw/5iwzWFNrIM+HBIDzGgXt5RrHBMT8eXn7QvQaztRb8cI3/3GrFeJ3yNTf3uNWKF/Wu7l/cTK7ztB9RhP7JsHcI5Pcz7kR+vEStM8XfoJqfda8QKQ62nfNO9jPyhBLE+UmvNixIM+C+JJZZYYon1D+Nf6MQSSyyxDHixxBJLLLFGsdzGzg0S3XrTTV3FciPq4Bbn/2lunu+xDB744VEyHlKEx195sJpH9gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL8BVPKUzB0VBYIAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\2819959990\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAK7SURBVHgB7d2JcrJIFIDR1pZGGzC8/9OOaHsLMOs/+8w5tWZPvupcGlKBBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/DMdjvnUlT7xuf58qUNZiPWJsc/TtQSxPvB2zG05ifWZfp5qCWJ9OsXDl7FM8R/EMsU/05vi39eb4l8QqwSxxPpnxCpf647pS2KFH9QSq0tfEiukINZ/7VAgllhiiSXWV8QSSyyxDHix/mhiiSWWWNdap5zzPIj1Yqg135yH3c882jrc3Nv0fWmm9FBLM6a7o1jxM6WhPJzTQ95dHb6IdZO3K+ktbVfSKT1cxYoaz5UzpGaMlg+Ohqs8c6Rrus1ftHqx7g7rGjk9neKtiyzWau2M+58wb34tq1h3eX04TKEvi7p5Z7Hqau1cUxjL4tLKidWku0u0abrVtmt28W+ztTq3+RWmeFub9mLF6unj2HfoU6ymFANNrPVcinObc456bYa9FbGaa8yoKS2mU7zDFCPLgG/icDinxXWI08E5xpdYmx8rt3E+PrftU/zAnVhhbofD4Tmrjs9fvnR3KEGsU4tUnysst7HepZYxiNWatEY1NvXlFCNLrDCmRdfHnird1RyT3tZhV6DGnqpt3C99nCUGsXJaPMd6bOrPh7jCHMSq+1PCKa1cyopYw/5iwzWFNrIM+HBIDzGgXt5RrHBMT8eXn7QvQaztRb8cI3/3GrFeJ3yNTf3uNWKF/Wu7l/cTK7ztB9RhP7JsHcI5Pcz7kR+vEStM8XfoJqfda8QKQ62nfNO9jPyhBLE+UmvNixIM+C+JJZZYYon1D+Nf6MQSSyyxDHixxBJLLLFGsdzGzg0S3XrTTV3FciPq4Bbn/2lunu+xDB744VEyHlKEx195sJpH9gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL8BVPKUzB0VBYIAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\39721989420\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJLSURBVHgB7d3Joqo6FEDBbUOCAYT//9nTN/cganz9fakaO1qDjRASAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+G/a7Q/HLgV35P5UhvQmuGrMh+mcfhFbmPeHMqS1YCUvU0nbgtUUvyFWTPGKWKZ4BVP8Aaa4WPeklX87llhipfu6fWwTa8sDtcTqoppYSSyxxBJLLLEuiCVWzv3U1cUSK17ty81YYnVTn/NXkmW4Gkusso9X30nm83YssYYlYhUrxnNjsUoph8Mh5zzGtcEdL85zXMaKeWgoVlzKZTPWGFuxYmk41vbgjm/rWFEajxXzUB9r33qs2NfHiq71WHGsjzU1H2tXH6tvPlYcq2Pl5mKdyovDLr4sVxOIVdKbviZBWms0Vprj091YYk13Y63khmN18Wm4l0CsFJ9KXYK+PpZYk1gvuroEQ8OxyoMDfp8ajrXEh7kuQWk41jA+dse3pHZjdXPNveH6uVeT94an/tZThzEujF1qMtbadPGrbo6V+a2VWHlzKWzrSb1Y43BrkfXXxXuxxvPN5fv5e3VRrO1F+bRBrGVIVbHEGpcupduxxNrnnPeH0zltEWv73vB/EUssscQS6waxxBJLLANerAeJJZZYYq105XTIc1UssSr46yCWWGLZUC6WWGKJJZZYYonVieWAREdvOtRVLAdR/ybm3hHnjxnz4XgW69HPMoj1d37wg/Gv+ZSM2R/Uz/6gfvYHv+8n+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGdtQJGPPIrELgAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\39721989420\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJLSURBVHgB7d3Joqo6FEDBbUOCAYT//9nTN/cganz9fakaO1qDjRASAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+G/a7Q/HLgV35P5UhvQmuGrMh+mcfhFbmPeHMqS1YCUvU0nbgtUUvyFWTPGKWKZ4BVP8Aaa4WPeklX87llhipfu6fWwTa8sDtcTqoppYSSyxxBJLLLEuiCVWzv3U1cUSK17ty81YYnVTn/NXkmW4Gkusso9X30nm83YssYYlYhUrxnNjsUoph8Mh5zzGtcEdL85zXMaKeWgoVlzKZTPWGFuxYmk41vbgjm/rWFEajxXzUB9r33qs2NfHiq71WHGsjzU1H2tXH6tvPlYcq2Pl5mKdyovDLr4sVxOIVdKbviZBWms0Vprj091YYk13Y63khmN18Wm4l0CsFJ9KXYK+PpZYk1gvuroEQ8OxyoMDfp8ajrXEh7kuQWk41jA+dse3pHZjdXPNveH6uVeT94an/tZThzEujF1qMtbadPGrbo6V+a2VWHlzKWzrSb1Y43BrkfXXxXuxxvPN5fv5e3VRrO1F+bRBrGVIVbHEGpcupduxxNrnnPeH0zltEWv73vB/EUssscQS6waxxBJLLANerAeJJZZYYq105XTIc1UssSr46yCWWGLZUC6WWGKJJZZYYonVieWAREdvOtRVLAdR/ybm3hHnjxnz4XgW69HPMoj1d37wg/Gv+ZSM2R/Uz/6gfvYHv+8n+wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGdtQJGPPIrELgAAAABJRU5ErkJggg==</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\25495229280\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJSSURBVHgB7d1HcuMwEEBRKBBglu9/WUc6tQBZmhze2832V08XGEwl/kwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDbH45dTl+g9MM45WeJprkcljV/kGo47Q/jlKNEUO6WMdclwha/IBG2uFg3bPELbPEb2OJifSVHYon1m2Plr3X71CZWdEMtsbrUJlaU/mJiiSWWWA6l1SpiiSWWWGKJ9UOJJZZDqUPpNHaNWGJN+c1Y5vTkLJZYx/LcZj671dmfJRBrmtOzJdzpnKfzBBZ8n56V8O9DfidWvGe+bpNWHSyxNv2nHXWoDZZY9SU11wdLrE3/YcUvcbDEqo7WKT/ahcESK+rfVvwYzhFitUarz7mkJ7scOZTG0ZqnrjJYYgXrFmmIgyVWRUlP+hIHS6yKMW3CYFnwrdHaHHMgVnO0Sg7Eao/W8fpYYi1iXf/fcCfWDQt+Eevqo0O8ihYr2qUntfszDqXRVimfwmiJ1Rysvn3rT6w4WGue4k1lsaItUXl/XHFnwbdibYXGD8/FOrFeNAbrVHkuJlZjsJb8ZG2NVnrnifTu81G+F+vCuw5DfnH89DRfrMbz6M2ucltLrMZLM0t6MYoVY3UlLvRp/jRaDqXRuuZ3hzhaYl02jaMXcL3aHfmjAbHEEkssscQSSyyHUrHEEksssXzGzgcSfXpTrB9NLB+i9onz3ifObzOXw3EV69afZRDrZ/7gB/OP+SkZuz9dz+5PXL/709/LT/YBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPdXyNW8w51ZgAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-  <SecondaryTileAsset>
-
-    <RelativeFilePath><![CDATA[PinnedTiles\25495229280\lowres.png]]></RelativeFilePath>
-
-    <Base64EncodedImage>iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEXRSTlMAIFCAr9//QGCPv+8Qn88wcDAhSA0AAAJSSURBVHgB7d1HcuMwEEBRKBBglu9/WUc6tQBZmhze2832V08XGEwl/kwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALDbH45dTl+g9MM45WeJprkcljV/kGo47Q/jlKNEUO6WMdclwha/IBG2uFg3bPELbPEb2OJifSVHYon1m2Plr3X71CZWdEMtsbrUJlaU/mJiiSWWWA6l1SpiiSWWWGKJ9UOJJZZDqUPpNHaNWGJN+c1Y5vTkLJZYx/LcZj671dmfJRBrmtOzJdzpnKfzBBZ8n56V8O9DfidWvGe+bpNWHSyxNv2nHXWoDZZY9SU11wdLrE3/YcUvcbDEqo7WKT/ahcESK+rfVvwYzhFitUarz7mkJ7scOZTG0ZqnrjJYYgXrFmmIgyVWRUlP+hIHS6yKMW3CYFnwrdHaHHMgVnO0Sg7Eao/W8fpYYi1iXf/fcCfWDQt+Eevqo0O8ihYr2qUntfszDqXRVimfwmiJ1Rysvn3rT6w4WGue4k1lsaItUXl/XHFnwbdibYXGD8/FOrFeNAbrVHkuJlZjsJb8ZG2NVnrnifTu81G+F+vCuw5DfnH89DRfrMbz6M2ucltLrMZLM0t6MYoVY3UlLvRp/jRaDqXRuuZ3hzhaYl02jaMXcL3aHfmjAbHEEkssscQSSyyHUrHEEksssXzGzgcSfXpTrB9NLB+i9onz3ifObzOXw3EV69afZRDrZ/7gB/OP+SkZuz9dz+5PXL/709/LT/YBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPdXyNW8w51ZgAAAAASUVORK5CYII=</Base64EncodedImage>
-
-  </SecondaryTileAsset>
-
-</SecondaryTileAssets>
 ```
 
 ## Related topics

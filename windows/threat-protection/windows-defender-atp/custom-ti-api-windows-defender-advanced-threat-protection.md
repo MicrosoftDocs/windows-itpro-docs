@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Create custom alerts using the threat intelligence (TI) application program interface (API)
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 You can define custom alert definitions and indicators of compromise (IOC) using the threat intelligence API. Creating custom threat intelligence alerts allows you to generate specific alerts that are applicable to your organization.
 

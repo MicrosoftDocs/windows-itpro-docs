@@ -8,7 +8,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Useful downloads for Microsoft Surface Hub
@@ -23,7 +23,7 @@ This topic provides links to useful Surface Hub documents, such as product datas
 | [Surface Hub User Guide (PDF)](http://download.microsoft.com/download/3/6/B/36B6331E-0C63-4E71-A05D-EE88D05081F8/surface-hub-user-guide-en-us.pdf) | Learn how to use Surface Hub in scheduled or ad-hoc meetings. Invite remote participants, use the built-in tools, save data from your meeting, and more. |
 | [Surface Hub Replacement PC Drivers](https://www.microsoft.com/download/details.aspx?id=52210) | The Surface Hub Replacement PC driver set is available for those customers who have chosen to disable the Surface Hub’s internal PC and use an external computer with their 84” or 55” Surface Hub. This download is meant to be used with the Surface Hub Admin Guide , which contains further details on configuring a Surface Hub Replacement PC.  |
 | [Surface Hub SSD Replacement Guide (PDF)](https://www.microsoft.com/surface/en-us/support/surfacehubssd) | Learn how to replace the solid state drive (SSD) for the 55- and 84-inch Surface Hub. |
-| [Microsoft Surface Hub Rollout and Adoption Success Kit (ZIP)](http://download.microsoft.com/download/F/A/3/FA3ADEA4-4966-456B-8BDE-0A594FD52C6C/Surface%20Hub%20RASK.zip) | Best practices for generating awareness and implementing change management to maximize adoption, usage, and benefits of Microsoft Surface Hub. The Rollout and Adoption Success Kit zip file includes the Rollout and Adoption Success Kit detailed document, Surface Hub presentation, demo guidance, awareness graphics, and more. |
+| [Microsoft Surface Hub Rollout and Adoption Success Kit (ZIP)](http://download.microsoft.com/download/F/A/3/FA3ADEA4-4966-456B-8BDE-0A594FD52C6C/Surface_Hub_Adoption_Kit_Final_0519.pdf) | Best practices for generating awareness and implementing change management to maximize adoption, usage, and benefits of Microsoft Surface Hub. The Rollout and Adoption Success Kit zip file includes the Rollout and Adoption Success Kit detailed document, Surface Hub presentation, demo guidance, awareness graphics, and more. |
 | [Unpacking Guide for 84-inch Surface Hub (PDF)](https://www.microsoft.com/surface/support/surface-hub/surface-hub-unpacking-guide-84) | Learn how to unpack your 84-inch Surface Hub efficiently and safely. [Watch the video (opens in a pop-up media player)](http://compass.xbox.com/assets/75/2b/752b73dc-6e9d-4692-8ba1-0f9fc03bff6b.mov?n=04.07.16_installation_video_03_unpacking_84.mov) |
 | [Unpacking Guide for 55-inch Surface Hub (PDF)](https://www.microsoft.com/surface/support/surface-hub/surface-hub-unpacking-guide-55) | Learn how to unpack your 55-inch Surface Hub efficiently and safely. [Watch the video (opens in a pop-up media player)](http://compass.xbox.com/assets/a9/d6/a9d6b4d7-d33f-4e8b-be92-28f7fc2c06d7.mov?n=04.07.16_installation_video_02_unpacking_55.mov) |
 | [Wall Mounting and Assembly Guide (PDF)](https://www.microsoft.com/surface/support/surface-hub/surface-hub-wall-mounting-assembly-guide) | Detailed instructions on how to safely and securely assemble the wall brackets, and how to mount your Surface Hub onto them. [Watch the video (opens in a pop-up media player)](http://compass.xbox.com/assets/bf/4d/bf4d6f06-370c-45ee-88e6-c409873914e8.mov?n=04.07.16_installation_video_05_wall_mount.mov) |

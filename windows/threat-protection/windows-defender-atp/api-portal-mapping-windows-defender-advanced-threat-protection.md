@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Windows Defender ATP alert API fields
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Understand what data fields are exposed as part of the alerts API and how they map to the Windows Defender ATP portal.
 
@@ -272,7 +276,7 @@ Field numbers match the numbers in the images below.
 
 ![Image of alert details pane with numbers](images/atp-siem-mapping13.png)
 
-![Image of alert timeline with numbers](images/atp-siem-mapping3.png)
+![Image of artifact timeline with numbers](images/atp-siem-mapping3.png)
 
 ![Image of alert timeline with numbers](images/atp-siem-mapping4.png)
 

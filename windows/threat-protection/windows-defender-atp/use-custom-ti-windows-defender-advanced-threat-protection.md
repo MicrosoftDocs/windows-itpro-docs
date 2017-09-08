@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Use the threat intelligence API to create custom alerts
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Understand threat intelligence concepts, then enable the custom threat intelligence application so that you can proceed to create custom threat intelligence alerts that are specific to your organization.
 

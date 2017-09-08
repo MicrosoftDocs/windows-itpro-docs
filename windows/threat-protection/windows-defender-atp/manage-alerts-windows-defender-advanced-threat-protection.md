@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Manage Windows Defender Advanced Threat Protection alerts
@@ -21,7 +23,9 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-Windows Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Dashboard**, and you can access all alerts in the **Alerts queue** menu.
+[!include[Prerelease information](prerelease.md)]
+
+Windows Defender ATP notifies you of possible malicious events, attributes, and contextual information through alerts. A summary of new alerts is displayed in the **Security operations dashboard**, and you can access all alerts in the **Alerts queue** menu.
 
 You can manage alerts by selecting an alert in the **Alerts queue** or the **Alerts related to this machine** section of the machine details view.
 
@@ -51,10 +55,9 @@ Whenever a change or comment is made to an alert, it is recorded in the **Commen
 Added comments instantly appear on the pane.
 
 ## Suppress alerts
+There might be scenarios where you need to suppress alerts from appearing in the Windows Defender ATP portal. Windows Defender ATP lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization. 
 
-Windows Defender ATP lets you create suppression rules so you can limit the alerts you see in the **Alerts queue**.
-
-Suppression rules can be created from an existing alert.
+Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
 
 When a suppression rule is created, it will take effect from the point when the rule is created. The rule will not affect existing alerts already in the queue prior to the rule creation. The rule will only be applied on alerts that satisfy the conditions set after the rule is created.
 
@@ -63,7 +66,9 @@ There are two contexts for a suppression rule that you can choose from:
 - **Suppress alert on this machine**
 - **Suppress alert in my organization**
 
-The context of the rule lets you tailor the queue to ensure that only alerts you are interested in will appear. You can use the examples in the following table to help you choose the context for a suppression rule:
+The context of the rule lets you tailor what gets surfaced into the portal and ensure that only real security alerts are surfaced into the portal.
+
+You can use the examples in the following table to help you choose the context for a suppression rule:
 
 | **Context**                           | **Definition**                                                                                                                                              | **Example scenarios**                                                                                                                                                                                                  |
 |:--------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,38 +91,31 @@ Create custom rules to control when alerts are suppressed, or resolved. You can 
 
   > [!NOTE]
   > You cannot create a custom or blank suppression rule. You must start from an existing alert.
+
 4. Specify the conditions for when the rule is applied:
-  - Alert title
-  - Indicator of compromise (IOC)
-  - Suppression conditions
+    - Alert title
+    - Indicator of compromise (IOC)
+    - Suppression conditions
 
     > [!NOTE]
-    > The SHA1 of the alert cannot be modified
-5. Specify the action and scope on the alert. You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. You can also specify to suppress the alert on the machine only or the whole organization.
+    > The SHA1 of the alert cannot be modified, however you can clear the SHA1 to remove it from the suppression conditions.
+    
+5. Specify the action and scope on the alert. <br>
+   You can automatically resolve an alert or hide it from the portal. Alerts that are automatically resolved will appear in the resolved section of the alerts queue. Alerts that are marked as hidden will be suppressed from the entire system, both on the machine's associated alerts and from the dashboard. You can also specify to suppress the alert on the machine only or the whole organization.
 
 6. Click **Save and close**.
 
 
-**See the list of suppression rules:**
+### View the list of suppression rules
 
-1. Click the settings icon ![The settings icon looks like a cogwheel or gear](images/settings.png) on the main menu bar at the top of the Windows Defender ATP screen.
-2. Click **Suppression rules**.
+1. Click **Alerts queue** > **Suppression rules**.
 
-  ![Click the settings icon and then Suppression rules to create and modify rules](images/atp-suppression-rules.png)
+2. The list of suppression rules shows all the rules that users in your organization have created.
 
-The list of suppression rules shows all the rules that users in your organization have created.
-![Suppression rules show the rule name or title, the context, the date, and an icon to delete the rule](images/rules-legend.png)
-
-Each rule shows:
-
-- (1) The title of the alert that is suppressed
-- (2) Whether the alert was suppressed for a single machine (clicking the machine name will allow you to investigate the machine) or the entire organization
-- (3) The date when the alert was suppressed
-- (4) An option to delete the suppression rule, which will cause alerts with this title to be displayed in the queue from this point onwards.
-
+You can select rules to open up the **Alert management** pane. From there, you can activate previously disabled rules.
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)

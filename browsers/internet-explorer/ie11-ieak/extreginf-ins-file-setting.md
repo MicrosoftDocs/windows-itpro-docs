@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the \[ExtRegInf\] .INS file setting to specify your Setup information (.inf) files and the installation mode for your custom components.
 author: eross-msft

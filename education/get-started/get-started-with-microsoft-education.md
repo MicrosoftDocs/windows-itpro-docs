@@ -6,11 +6,11 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: hero-article
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 07/10/2017
+ms.date: 08/29/2017
 ---
 
 # Get started: Deploy and manage a full cloud IT solution with Microsoft Education
@@ -43,21 +43,20 @@ With Microsoft Education, schools can:
 Go to the <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education site</a> to learn more. See <a href="https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools" target="_blank">How to buy</a> to learn about pricing and purchasing options for schools, students, and teachers as well as academic pricing and offers for qualified K-12 and higher education institutions.
 
 ## What we're doing
-In this walkthrough, we'll show you the basics on how to:
-> [!div class="checklist"]
-> * Acquire an Office 365 for Education tenant, if you don't already have one
-> * Import school, student, teacher, and class data using School Data Sync (SDS)
-> * Deploy Microsoft Teams to enable groups and teams in your school to communicate and collaborate
-> * Manage apps and settings deployment with Intune for Education
-> * Acquire additional apps in Microsoft Store for Education
-> * Use the Set up School PCs app to quickly set up and provision your Windows 10 education devices
-> * Log in and use the devices
+The end-to-end process for deploying and managing a full cloud IT solution with Microsoft Education is outlined here. Depending on your [setup scenario](#setup-options), you may not need to implement all these steps. 
 
-This diagram shows a high-level view of what we cover in this walkthrough. The numbers correspond to the sections in the walkthrough and roughly correspond to the flow of the overall process; but, note that not all sections in this walkthrough are shown in the diagram.
+Click the link to watch the video or follow the step-by-step guidance for each.
+
+1. [Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
+2. [Use School Data Sync to import student data](use-school-data-sync.md)
+3. [Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
+4. [Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+5. [Set up Windows 10 education devices](set-up-windows-10-education-devices.md)
+6. [Finish Windows 10 device setup and other tasks](finish-setup-and-other-tasks.md)
 
 **Figure 1** - Microsoft Education IT administrator workflow
 
-![Deploy and manage a full cloud IT solution using Microsoft Education](images/microsoft_education_it_getstarted_workflow.png)
+![Deploy and manage a full cloud IT solution using Microsoft Education](images/MSES_Get_Started_IT_082917.png)
 
 ## Prerequisites
 Complete these tasks before you start the walkthrough:
@@ -129,19 +128,6 @@ Already have an Office 365 for Education verified tenant? Just sign in with your
 
 3. Enter your Office 365 global admin credentials to apply the Intune for Education trial to your tenant.
 4. If you don't already have Microsoft Teams deployed to your tenant, you can start with [Enable Microsoft Teams for your school](enable-microsoft-teams.md) and then follow the rest of the instructions in this walkthrough. 
-
-## End-to-end process
-The end-to-end process for deploying and managing a full cloud IT solution with Microsoft Education is outlined here. Depending on scenario, you may not need to implement all these steps. 
-
-Click the link to watch the video or follow the step-by-step guidance for each.
-
-1. [Set up an Office 365 education tenant](set-up-office365-edu-tenant.md)
-2. [Use School Data Sync to import student data](use-school-data-sync.md)
-3. [Enable Microsoft Teams for your school](enable-microsoft-teams.md)
-4. [Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
-5. [Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
-6. [Set up Windows 10 education devices](set-up-windows-10-education-devices.md)
-7. [Finish Windows 10 device setup and other tasks](finish-setup-and-other-tasks.md)
 
 ## Get more info
 

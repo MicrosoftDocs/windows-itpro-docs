@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
 ms.date: 07/07/2017
 ---

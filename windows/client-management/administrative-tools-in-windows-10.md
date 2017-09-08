@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Administrative Tools in Windows 10

@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 # Update general Windows Defender ATP settings
 
@@ -19,6 +21,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update some settings which you'll be able to do through the **Preferences setup** menu.
 
@@ -38,3 +42,4 @@ During the onboarding process, a wizard takes you through the general settings o
 - [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)

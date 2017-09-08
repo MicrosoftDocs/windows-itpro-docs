@@ -7,9 +7,12 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
+
 # Turn on advanced features in Windows Defender ATP
 
 **Applies to:**
@@ -19,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Depending on the Microsoft security products that you use, some advanced features might be available for you to integrate Windows Defender ATP with.
 
@@ -31,7 +36,7 @@ If your organization satisfies these conditions, the feature is enabled by defau
 
 ## Show user details
 When you enable this feature, you'll be able to see user details stored in Azure Active Directory including a user's picture, name, title, and department information  when investigating user account entities. You can find user account information in the following views:
-- Dashboard
+- Security operations dashboard
 - Alert queue
 - Machine details page
 
@@ -56,3 +61,4 @@ When you enable this feature, you'll be able to incorporate data from Office 365
 - [Configure email notifications in Windows Defender ATP](configure-email-notifications-windows-defender-advanced-threat-protection.md)
 - [Enable SIEM integration in Windows Defender ATP](enable-siem-integration-windows-defender-advanced-threat-protection.md)
 - [Enable the custom threat intelligence API in Windows Defender ATP](enable-custom-ti-windows-defender-advanced-threat-protection.md)
+- [Create and build Power BI reports](powerbi-reports-windows-defender-advanced-threat-protection.md)

@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: iaanw
-localizationpriority: high
+ms.author: macapara
+author: mjcaparas
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 There are some minimum requirements for onboarding your network and endpoints.
 
@@ -116,10 +120,12 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
     sc qc diagtrack
     ```
 
-## Windows Defender signature updates are configured
-The Windows Defender ATP agent depends on Windows Defender’s ability to scan files and provide information about them. If Windows Defender is not the active antimalware in your organization, you may need to configure the signature updates. For more information see [Configure Windows Defender in Windows 10](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
+## Windows Defender Antivirus signature updates are configured
+The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. If Windows Defender Antivirus is not the active antimalware in your organization, you may need to configure the signature updates. For more information see [Configure Windows Defender Antivirus in Windows 10](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
 
-When Windows Defender is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender goes on passive mode. For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
+When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
+
+For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
 
 ## Windows Defender Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.

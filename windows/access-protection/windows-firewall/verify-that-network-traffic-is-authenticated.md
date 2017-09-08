@@ -27,15 +27,14 @@ In these procedures, you confirm that the rules you deployed are working correct
 
 >**Note:**  In addition to the steps shown in this procedure, you can also use network traffic capture tools such as Microsoft Network Monitor, which can be downloaded from <https://go.microsoft.com/fwlink/?linkid=94770>. Network Monitor and similar tools allow you to capture, parse, and display the network packets received by the network adapter on your device. Current versions of these tools include full support for IPsec. They can identify encrypted network packets, but they cannot decrypt them.
 
- 
-
 **Administrative credentials**
 
 To complete these procedures, you must be a member of the Domain Administrators group, or otherwise be delegated permissions to modify the GPOs.
 
-## To verify that network connections are authenticated by using the Windows Firewall with Advanced Security console
+## To verify that network connections are authenticated by using the Windows Defender Firewall with Advanced Security console
 
-1.  Open the Windows Firewall with Advanced Security console.
+1.  Open the Windows Defender Firewall with Advanced Security
+console.
 
 2.  In the navigation pane, expand **Monitoring**, and then click **Connection Security Rules**.
 

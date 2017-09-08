@@ -26,15 +26,15 @@ To complete these procedures, you must be a member of the Domain Administrators 
 
 **To configure authentication methods**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security] (open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
-2.  In the details pane on the main Windows Firewall with Advanced Security page, click **Windows Firewall Properties**.
+2.  In the details pane on the main Windows Defender Firewall with Advanced Security page, click **Windows Defender Firewall Properties**.
 
 3.  On the **IPsec Settings** tab, click **Customize**.
 
 4.  In the **Authentication Method** section, select the type of authentication that you want to use from among the following:
 
-    1.  **Default**. Selecting this option tells the computer to use the authentication method currently defined by the local administrator in Windows Firewall with Advanced Security or by Group Policy as the default.
+    1.  **Default**. Selecting this option tells the computer to use the authentication method currently defined by the local administrator in Windows Defender Firewall or by Group Policy as the default.
 
     2.  **Computer and User (using Kerberos V5)**. Selecting this option tells the computer to use and require authentication of both the computer and the currently logged-on user by using their domain credentials.
 

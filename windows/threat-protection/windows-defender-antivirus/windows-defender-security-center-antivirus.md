@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 
@@ -44,7 +46,7 @@ Settings that were previously part of the Windows Defender client and main Windo
 >This will significantly lower the protection of your device and could lead to malware infection.
 
 
-See the [Windows Defender Security Center topic](/windows/threat-protection/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
+See the [Windows Defender Security Center topic](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
 
 >[!NOTE]
 >The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal that is used to review and manage [Windows Defender Advanced Threat Protection](../windows-defender-atp/windows-defender-advanced-threat-protection.md).

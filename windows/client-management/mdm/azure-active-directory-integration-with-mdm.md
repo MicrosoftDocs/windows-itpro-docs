@@ -634,7 +634,6 @@ Alert sample:
   <Item> 
    <Meta> 
     <Type xmlns=”syncml:metinf”>com.microsoft/MDM/AADUserToken</Type> 
-    <Format xmlns=”syncml:metinf”>chr</Format> 
    </Meta> 
    <Data>UserToken inserted here</Data> 
   </Item> 
@@ -664,7 +663,6 @@ Here's an example.
   <Item> 
    <Meta> 
     <Type xmlns=”syncml:metinf”>com.microsoft/MDM/LoginStatus</Type> 
-    <Format xmlns=”syncml:metinf”>chr</Format> 
    </Meta> 
    <Data>user</Data> 
   </Item> 

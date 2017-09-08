@@ -4,7 +4,9 @@ description: Provides guidance on ways to configure the OS diagnostic data, cons
 keywords: Windows 10 deployment, recommendations, privacy settings, school, education, configurations, accessibility, assistive technology
 ms.mktglfcycl: plan
 ms.sitesec: library
-localizationpriority: high
+ms.prod: w10
+ms.pagetype: edu
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ms.date: 06/19/2017
@@ -16,7 +18,7 @@ ms.date: 06/19/2017
 -   Windows 10
 
 
-Privacy is important to us, we want to provide you with ways to customize the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, for usage with [education editions of Windows 10](windows-editions-for-education-customers.md) in education environments. These features work on all Windows 10 editions, but education editions of Windows 10 have the settings preconfigured. See the following table for more information. To learn more about Microsoft's commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
+Privacy is important to us, we want to provide you with ways to customize the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, for usage with [education editions of Windows 10](windows-editions-for-education-customers.md) in education environments. These features work on all Windows 10 editions, but education editions of Windows 10 have the settings preconfigured. We recommend that all Windows 10 devices in an education setting be configured with **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** enabled. See the following table for more information. To learn more about Microsoft's commitment to privacy, see [Windows 10 and privacy](https://go.microsoft.com/fwlink/?LinkId=809305).
 
 We want all students to have the chance to use the apps they need for success in the classroom and all school personnel to have apps they need for their job. Students and school personnel who use assistive technology apps not available in the Microsoft Store for Education, and use devices running Windows 10 S, will be able to configure the device at no additional charge to Windows 10 Pro Education. To learn more about the steps to configure this, see [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md).
 
@@ -24,7 +26,7 @@ In Windows 10, version 1703 (Creators Update), it is straightforward to configur
 
 | Area | How to configure | What this does | Windows 10 Education | Windows 10 Pro Education | Windows 10 S | 
 | --- | --- | --- | --- | --- | --- |
-| **Diagnostic Data** | **SetEduPolicies** | Sets Diagnostic Data to [Basic](https://technet.microsoft.com/itpro/windows/configure/configure-windows-telemetry-in-your-organization) | This is already set | This is already set | The policy must be set |
+| **Diagnostic Data** | **AllowTelemetry** | Sets Diagnostic Data to [Basic](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization) | This is already set | This is already set | The policy must be set |
 | **Microsoft consumer experiences** | **SetEduPolicies** | Disables suggested content from Windows such as app recommendations | This is already set | This is already set | The policy must be set |
 | **Cortana** | **AllowCortana** | Disables Cortana </br></br> * Cortana is enabled by default on all editions in Windows 10, version 1703 | If using Windows 10 Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | If using Windows 10 Pro Education, upgrading from Windows 10, version 1607 to Windows 10, version 1703 will enable Cortana. </br></br> See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. | See the [Recommended configuration](#recommended-configuration) section below for recommended Cortana settings. |
 | **Safe search** | **SetEduPolicies** | Locks Bing safe search to Strict in Microsoft Edge | This is already set | This is already set | The policy must be set |

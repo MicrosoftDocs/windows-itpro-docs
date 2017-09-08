@@ -1,15 +1,16 @@
 ---
-title: Assign devices to servicing branches for Windows 10 updates (Windows 10)
+title: Assign devices to servicing channels for Windows 10 updates (Windows 10)
 description: tbd
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
-# Assign devices to servicing branches for Windows 10 updates
+# Assign devices to servicing channels for Windows 10 updates
 
 
 **Applies to**
@@ -20,11 +21,13 @@ ms.author: daniha
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 >[!TIP]
->If you're not familiar with the Windows 10 servicing or release branches, read [Servicing branches](waas-overview.md#servicing-branches) first.
+>If you're not familiar with the Windows 10 servicing or release channels, read [Servicing Channels](waas-overview.md#servicing-channels) first.
+>
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
 
-Current Branch is the default servicing branch for all Windows 10 devices except those with the long-term servicing branch edition installed. The following table shows the servicing branches available to each edition of Windows 10. 
+Semi-Annual Channel (Targeted) is the default servicing channel for all Windows 10 devices except those with the LTSB edition installed. The following table shows the servicing channels available to each edition of Windows 10. 
 
-| Windows 10 edition | Current branch (CB) | Current branch for business (CBB) | Long-term servicing branch (LTSB) | Insider Program |
+| Windows 10 edition | Semi-Annual Channel (Targeted) | Semi-Annual Channel | Long-Term Servicing Channel | Insider Program |
 | --- | --- | --- | --- | --- |
 | Home | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Pro | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
@@ -40,7 +43,12 @@ Current Branch is the default servicing branch for all Windows 10 devices except
 >[!NOTE]
 >The LTSB edition of Windows 10 is only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-## Assign devices to Current Branch for Business
+## Assign devices to Semi-Annual Channel
+
+>[!IMPORTANT]
+>Due to [naming changes](waas-overview.md#naming-changes), older terms like CB,CBB and LTSB may still be displayed in some of our products.
+>
+>In the following settings CB refers to Semi-Annual Channel (Targeted), while CBB refers to Semi-Annual Channel.
 
 **To assign a single PC locally to CBB**
 
@@ -96,7 +104,7 @@ Enrolling devices in the Windows Insider Program is simple and requires only a M
 After enrolling your devices, you are ready to install your first preview build. To do so, go to **Start** > **Settings** > **Update & security** > **Windows Insider Program** to select your Insider level. The device receives the most recent Windows Insider build for the Insider level you select. 
 
 The options for Insider level are:
-- **Release Preview**: Insiders on this level receive builds of Windows just before Microsoft releases them for CB. Although these builds aren’t final, they are the most complete and stable builds available to Windows Insider Program participants. This level provides the best testing platform for organizations that conduct early application compatibility testing on Windows Insider PCs.
+- **Release Preview**: Insiders on this level receive builds of Windows just before Microsoft releases them for Semi-Annual Channel. Although these builds aren’t final, they are the most complete and stable builds available to Windows Insider Program participants. This level provides the best testing platform for organizations that conduct early application compatibility testing on Windows Insider PCs.
 - **Slow**: The Slow Windows Insider level is for users who enjoy seeing new builds of Windows with minimal risk to their devices but still want to provide feedback to Microsoft about their experience with the new build.
 - **Fast**: This level is best for Insiders who would like to be the first to experience new builds of Windows, participate in identifying and reporting issues to Microsoft, and provide suggestions on new functionality. 
 
@@ -110,9 +118,9 @@ To prevent devices in your enterprise from being enrolled in the Insider Program
 - Group Policy: Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\\**Toggle user control over Insider builds**
 - MDM: Policy CSP - [System/AllowBuildPreview](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx#System_AllowBuildPreview)
 
-## Switching branches
+## Switching channels
 
-During the life of a device, it may be necessary or desirable to switch between the available branches. Depending on the branch you are using, the exact mechanism for doing this can be different; some will be simple, others more involved.
+During the life of a device, it may be necessary or desirable to switch between the available channels. Depending on the channel you are using, the exact mechanism for doing this can be different; some will be simple, others more involved.
 
 <table>
 <colgroup>
@@ -122,63 +130,63 @@ During the life of a device, it may be necessary or desirable to switch between 
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">From this branch</th>
-<th align="left">To this branch</th>
+<th align="left">From this channel</th>
+<th align="left">To this channel</th>
 <th align="left">You need to</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td align="left" rowspan="3">Windows Insider Program</td>
-<td align="left">Current Branch</td>
-<td align="left">Wait for the final Current Branch release.</td>
+<td align="left">Semi-Annual Channel (Targeted)</td>
+<td align="left">Wait for the final Semi-Annual Channel release.</td>
 </tr>
 <tr class="even">
-<td align="left">Current Branch for Business</td>
-<td align="left">Not directly possible, because Windows Insider Program devices are automatically upgraded to the Current Branch release at the end of the development cycle.</td>
+<td align="left">Semi-Annual Channel</td>
+<td align="left">Not directly possible, because Windows Insider Program devices are automatically upgraded to the Semi-Annual Channel (Targeted) release at the end of the development cycle.</td>
 </tr>
 <tr class="odd">
-<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Long-Term Servicing Channel</td>
 <td align="left">Not directly possible (requires wipe-and-load).</td>
 </tr>
 <tr class="even">
-<td align="left" rowspan="3">Current Branch</td>
+<td align="left" rowspan="3">Semi-Annual Channel (Targeted)</td>
 <td align="left">Insider</td>
 <td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
 </tr>
 <tr class="odd">
-<td align="left">Current Branch for Business</td>
-<td align="left">Select the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will not receive the next upgrade until it is business ready. Note that this change will not have any immediate impact; it only prevents the installation of the next Current Branch release.</td>
+<td align="left">Semi-Annual Channel</td>
+<td align="left">Select the <strong>Defer upgrade</strong> setting, or move the PC to a target group or flight that will not receive the next upgrade until it is business ready. Note that this change will not have any immediate impact; it only prevents the installation of the next Semi-Annual Channel release.</td>
 </tr>
 <tr class="even">
-<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Long-Term Servicing Channel</td>
 <td align="left">Not directly possible (requires wipe-and-load).</td>
 </tr>
 <tr class="odd">
-<td align="left" rowspan="3">Current Branch for Business</td>
+<td align="left" rowspan="3">Semi-Annual Channel</td>
 <td align="left">Insider</td>
 <td align="left">Use the Settings app to enroll the device in the Windows Insider Program.</td>
 </tr>
 <tr class="even">
-<td align="left">Current Branch</td>
-<td align="left">Disable the <strong>Defer upgrade</strong> setting, or move the device to a target group or flight that will receive the latest Current Branch release.</td>
+<td align="left">Semi-Annual Channel (Targeted)</td>
+<td align="left">Disable the <strong>Defer upgrade</strong> setting, or move the device to a target group or flight that will receive the latest Current Semi-Annual Channel release.</td>
 </tr>
 <tr class="odd">
-<td align="left">Long-Term Servicing Branch</td>
+<td align="left">Long-Term Servicing Channel</td>
 <td align="left">Not directly possible (requires wipe-and-load).</td>
 </tr>
 <tr class="even">
-<td align="left" rowspan="3">Long-Term Servicing Branch</td>
+<td align="left" rowspan="3">Long-Term Servicing Channel</td>
 <td align="left">Insider</td>
 <td align="left">Use media to upgrade to the latest Windows Insider Program build.</td>
 </tr>
 <tr class="odd">
-<td align="left">Current Branch</td>
-<td align="left">Use media to upgrade to a later Current Branch build. (Note that the Current Branch build must be a later build.)</td>
+<td align="left">Semi-Annual Channel (Targeted)</td>
+<td align="left">Use media to upgrade. Note that the Semi-Annual Channel build must be a later build.</td>
 </tr>
 <tr class="even">
-<td align="left">Current Branch for Business</td>
-<td align="left">Use media to upgrade to a later Current Branch for Business build (Current Branch build plus fixes). Note that it must be a later build.</td>
+<td align="left">Semi-Annual Channel</td>
+<td align="left">Use media to upgrade. Note that the Semi-Annual Channel build must be a later build.</td>
 </tr>
 </tbody>
 </table>
@@ -195,10 +203,10 @@ By enabling the Group Policy setting under **Computer Configuration\Administrati
 
 | | |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing branches](waas-overview.md) |
+| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
 | ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | Assign devices to servicing branches for Windows 10 updates (this topic) |
+| ![done](images/checklistdone.png) | Assign devices to servicing channels for Windows 10 updates (this topic) |
 | ![to do](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
 | ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md) |
 

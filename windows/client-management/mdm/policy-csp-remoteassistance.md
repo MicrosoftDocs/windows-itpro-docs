@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - RemoteAssistance
@@ -33,13 +34,13 @@ author: nickbrower
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -58,10 +59,18 @@ If you disable this policy setting, the user sees the default warning message.
 If you do not configure this policy setting, the user sees the default warning message.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Customize warning messages*
+-   GP English name: *Customize warning messages*
 -   GP name: *RA_Options*
+-   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
 <!--EndADMX-->
@@ -81,13 +90,13 @@ ADMX Info:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -102,10 +111,18 @@ If you disable this policy setting, log files are not generated.
 If you do not configure this setting, application-based settings are used.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn on session logging*
+-   GP English name: *Turn on session logging*
 -   GP name: *RA_Logging*
+-   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
 <!--EndADMX-->
@@ -125,13 +142,13 @@ ADMX Info:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -154,10 +171,18 @@ The "Select the method for sending email invitations" setting specifies which em
 If you enable this policy setting you should also enable appropriate firewall exceptions to allow Remote Assistance communications.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Configure Solicited Remote Assistance*
+-   GP English name: *Configure Solicited Remote Assistance*
 -   GP name: *RA_Solicit*
+-   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
 <!--EndADMX-->
@@ -177,13 +202,13 @@ ADMX Info:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -229,10 +254,18 @@ Port 135:TCP
 Allow Remote Desktop Exception
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Configure Offer Remote Assistance*
+-   GP English name: *Configure Offer Remote Assistance*
 -   GP name: *RA_Unsolicit*
+-   GP path: *System/Remote Assistance*
 -   GP ADMX file name: *remoteassistance.admx*
 
 <!--EndADMX-->

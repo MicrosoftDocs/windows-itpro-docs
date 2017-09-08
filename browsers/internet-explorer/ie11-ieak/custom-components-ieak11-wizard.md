@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Custom Components page in the IEAK 11 Customization Wizard to add additional components for your employees to install with IE.
 author: eross-msft

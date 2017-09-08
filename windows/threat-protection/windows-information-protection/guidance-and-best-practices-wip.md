@@ -8,8 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.author: lizross
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # General guidance and best practices for Windows Information Protection (WIP)

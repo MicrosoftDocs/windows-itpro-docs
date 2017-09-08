@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: Use the IExpress Wizard on Windows Server 2008 R2 with SP1 to create self-extracting files to run your custom Internet Explorer Setup program.
 author: eross-msft

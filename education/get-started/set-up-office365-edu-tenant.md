@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
@@ -14,6 +14,10 @@ ms.date: 07/10/2017
 ---
 
 # Set up an Office 365 Education tenant
+
+> [!div class="step-by-step"]
+[<< Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)
+[Use School Data Sync to import student data >>](use-school-data-sync.md)
 
 Schools can use Office 365 to save time and be more productive. Built with powerful tools and accessible from any device, setting it up is the first step in getting your school to the cloud. 
 
@@ -45,8 +49,9 @@ You can watch the descriptive audio version here: [Microsoft Education: Set up a
 
 As part of setting up a basic cloud infrastructure, you don't need to complete the rest of the Office 365 for Education setup so we will skip the rest of setup for now and start importing school data. You can pick up where you left off with Office 365 for Education setup once you've completed the rest of the steps in the walkthrough. See *Complete Office 365 for Education setup* in [Finish Windows 10 device setup and other tasks](finish-setup-and-other-tasks.md) for info.
 
-> [!div class="nextstepaction"]
-> [Use School Data Sync to import student data](use-school-data-sync.md)
+> [!div class="step-by-step"]
+[<< Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)
+[Use School Data Sync to import student data >>](use-school-data-sync.md)
 
 
 ## Related topic

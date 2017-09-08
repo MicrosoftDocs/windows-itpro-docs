@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
@@ -46,8 +46,14 @@ To get started, IT administrators need to use the Office 365 Admin Center to ena
 
 You can find more info about how to control which users in your school can use Microsoft Teams, turn off group creation, configure tenant-level settings, and more by reading the *Guide for IT admins* getting started guide in the <a href="https://aka.ms/MeetTeamsEdu" target="_blank">Meet Microsoft Teams</a> page.
 
+<!--
 > [!div class="nextstepaction"]
 > [Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
+-->
+
+> [!div class="step-by-step"]
+[<< Use School Data Sync to import student data](use-school-data-sync.md)
+[Configure Microsoft Store for Education >>](configure-microsoft-store-for-education.md)
 
 
 ## Related topic

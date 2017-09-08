@@ -8,8 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.author: lizross
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune

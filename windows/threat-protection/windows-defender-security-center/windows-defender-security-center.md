@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 
@@ -107,6 +109,43 @@ See the following links for more information on the features in the Windows Defe
     - Home users can learn more at the [App & browser control in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4013218/windows-10-app-browser-control-in-windows-defender)
 - Family options, which include a number of parental controls along with tips and information for keeping kids safe online
     - Home users can learn more at the [Help protection your family online in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4013209/windows-10-protect-your-family-online-in-windows-defender)
+
+## Customize notifications from the Windows Defender Security Center
+
+You can customize notifcations so they show information to users about how to get more help from your organization's help desk.
+
+![](images/security-center-custom-notif.png)
+
+This information will also appear as a pop-out window on the Windows Defender Security Center app.
+
+![](images/security-center-custom-flyout.png)
+
+Users can click on the displayed information to get more help:
+- Clicking **Call** or the phone number will open Skype to start a call to the displayed number
+- Clicking **Email** or the email address will create a new email in the machine's default email app address to the displayed email
+- Clicking **Help portal** or the website URL will open the machine's default web browser and go to the displayed address
+
+
+### Use Group Policy to customize the notification
+
+1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+
+3.  In the **Group Policy Management Editor** go to **Computer configuration**.
+
+4.  Click **Policies** then **Administrative templates**.
+
+5.  Expand the tree to **Windows components > Windows Defender Security Center > Enterprise Customization**.
+
+6. Open the **Configure customized contact information** setting and set it to **Enabled**. Click **OK**.
+
+7. Open the **Specify contact company name** setting and set it to **Enabled**. Enter your company or organization's name in the field in the **Options** section. Click **OK**.
+
+8. To ensure the custom notification appear, you must also configure at least one of the following settings by opening them, setting them to **Enabled** and adding the contact information in the field under **Options**:
+    1. Specify contact email address of Email ID
+    2. Specify contact phone number or Skype ID
+    3. Specify contact website
+
+9. Click **OK** after configuring each setting to save your changes. 
 
 
 

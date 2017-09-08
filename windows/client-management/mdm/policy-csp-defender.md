@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Defender
@@ -686,7 +687,7 @@ Value type is string.
 
 <p style="margin-left: 20px">If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
 
-p<p style="margin-left: 20px">For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
+<p style="margin-left: 20px">For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
       
 > [!Note]  
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.  
@@ -742,6 +743,74 @@ p<p style="margin-left: 20px">For more information about specific values that ar
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
+<a href="" id="defender-controlledfolderaccessallowedapplications"></a>**Defender/ControlledFolderAccessAllowedApplications**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersAllowedApplications and changed to ControlledFolderAccessAllowedApplications.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows user-specified applications to the guard my folders feature. Adding an allowed application means the guard my folders feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the Unicode &#xF000; as the substring separator.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="defender-controlledfolderaccessprotectedfolders"></a>**Defender/ControlledFolderAccessProtectedFolders**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+> [!NOTE]
+> This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersList and changed to ControlledFolderAccessProtectedFolders.
+
+<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the guard my folders feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the Unicode &#xF000; as the substring separator.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
 <a href="" id="defender-daystoretaincleanedmalware"></a>**Defender/DaysToRetainCleanedMalware**  
 
 <!--StartSKU-->
@@ -781,7 +850,7 @@ p<p style="margin-left: 20px">For more information about specific values that ar
 <!--EndDescription-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="defender-enableguardmyfolders"></a>**Defender/EnableGuardMyFolders**  
+<a href="" id="defender-enablecontrolledfolderaccess"></a>**Defender/EnableControlledFolderAccess**  
 
 <!--StartSKU-->
 <table>
@@ -808,13 +877,13 @@ p<p style="margin-left: 20px">For more information about specific values that ar
 <!--EndSKU-->
 <!--StartDescription-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
+> This policy is only enforced in Windows 10 for desktop. The previous name was EnableGuardMyFolders  and changed to EnableControlledFolderAccess.
 
 <p style="margin-left: 20px">Added in Windows 10, version 1709. This policy enables setting the state (On/Off/Audit) for the guard my folders feature. The guard my folders feature removes modify and delete permissions from untrusted applications to certain folders such as My Documents. Value type is integer and the range is 0 - 2.  
 
-- 0 (default) - Off
-- 1 - Audit mode
-- 2 - Enforcement mode
+- 0 (default) - Disabled
+- 1 - Enabled
+- 2 - Audit Mode
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -972,74 +1041,6 @@ p<p style="margin-left: 20px">For more information about specific values that ar
 
  
 <p style="margin-left: 20px">Each file type must be separated by a **|**. For example, "C:\\Example.exe|C:\\Example1.exe".
-
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="defender-guardedfoldersallowedapplications"></a>**Defender/GuardedFoldersAllowedApplications**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows user-specified applications to the guard my folders feature. Adding an allowed application means the guard my folders feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the Unicode &#xF000; as the substring separator.
-
-<!--EndDescription-->
-<!--EndPolicy-->
-<!--StartPolicy-->
-<a href="" id="defender-guardedfolderslist"></a>**Defender/GuardedFoldersList**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 for desktop.
-
-<p style="margin-left: 20px">Added in Windows 10, version 1709. This policy settings allows adding user-specified folder locations to the guard my folders feature. These folders will complement the system defined folders such as My Documents and My Pictures. The list of system folders will be displayed in the user interface and can not be changed. Value type is string. Use the Unicode &#xF000; as the substring separator.
 
 <!--EndDescription-->
 <!--EndPolicy-->

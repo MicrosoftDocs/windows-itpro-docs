@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: jdecker
 ms.date: 06/29/2017
 ---
@@ -46,12 +46,11 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 ## Guidelines for web browsers
 
-Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. 
+Microsoft Edge and any third-party web browsers that can be set as a default browser have special permissions beyond that of most Windows apps. Microsoft Edge is not supported for assigned access.
 
 If you use a web browser as your assigned access app, consider the following tips: 
 
 - You can download browsers that are optimized to be used as a kiosk from the Microsoft Store.
-- You can use Group Policy to block access to the file system (network shares, local drives, and local folders) from Internet Explorer’s web address bar. 
 - You can create your own web browser Windows app by using the WebView class. Learn more about developing your own web browser app:
    - [Creating your own browser with HTML and JavaScript](https://blogs.windows.com/msedgedev/2015/08/27/creating-your-own-browser-with-html-and-javascript/) 
    - [WebView class](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.webview.aspx)

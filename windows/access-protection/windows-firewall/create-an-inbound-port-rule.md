@@ -15,7 +15,8 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-To allow inbound network traffic on only a specified TCP or UDP port number, use the Windows Firewall with Advanced Security node in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows any program that listens on a specified TCP or UDP port to receive network traffic sent to that port.
+To allow inbound network traffic on only a specified TCP or UDP port number, use the Windows Defender Firewall 
+with Advanced Security node in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows any program that listens on a specified TCP or UDP port to receive network traffic sent to that port.
 
 **Administrative credentials**
 
@@ -29,7 +30,7 @@ This topic describes how to create a standard port rule for a specified protocol
 
 **To create an inbound port rule**
 
-1.  [Open the Group Policy Management Console to Windows Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security] (open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, click **Inbound Rules**.
 

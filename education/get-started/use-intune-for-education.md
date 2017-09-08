@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
@@ -14,6 +14,10 @@ ms.date: 07/10/2017
 ---
 
 # Use Intune for Education to manage groups, apps, and settings
+
+> [!div class="step-by-step"]
+[<< Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
+[Set up Windows 10 education devices >>](set-up-windows-10-education-devices.md)
 
 Intune for Education is a streamlined device management solution for educational institutions that can be used to quickly set up and manage Windows 10 devices for your school. It provides a new streamlined UI with the enterprise readiness and resiliency of the Intune service. You can learn more about Intune for Education by reading the <a href="https://docs.microsoft.com/intune-education" target="_blank">Intune for Education documentation</a>. 
 
@@ -206,8 +210,15 @@ Now that you've bought the apps, use Intune for Education to specify the group t
 
 You're now done assigning apps to all users in your tenant. It's time to set up your Windows 10 device(s) and check that your cloud infrastructure is correctly set up and your apps are being pushed to your devices from the cloud.
 
+<!--
 > [!div class="nextstepaction"]
 > [Set up Windows 10 devices](set-up-windows-10-education-devices.md)
+-->
+
+> [!div class="step-by-step"]
+[<< Configure Microsoft Store for Education](configure-microsoft-store-for-education.md)
+[Set up Windows 10 education devices >>](set-up-windows-10-education-devices.md)
+
 
 
 ## Related topic

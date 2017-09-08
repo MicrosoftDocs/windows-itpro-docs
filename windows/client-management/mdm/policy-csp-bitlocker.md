@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Bitlocker
@@ -56,6 +57,34 @@ author: nickbrower
 -   4 - AES-CBC 256-bit
 -   6 - XTS-AES 128-bit (Desktop only)
 -   7 - XTS-AES 256-bit (Desktop only)
+
+<p style="margin-left: 20px">You can find the following policies in BitLocker CSP:
+<dl>
+  <dd>
+    <a href="./bitlocker-csp.md#encryptionmethodbydrivetype" id="encryptionmethodbydrivetype">BitLocker/EncryptionMethodByDriveType</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#fixeddrivesrecoveryoptions" id="fixeddrivesrecoveryoptions">BitLocker/FixedDrivesRecoveryOptions</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#fixeddrivesrequireencryption" id="fixeddrivesrequireencryption">BitLocker/FixedDrivesRequireEncryption</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#removabledrivesrequireencryption" id="removabledrivesrequireencryption">BitLocker/RemovableDrivesRequireEncryption</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesminimumpinlength" id="systemdrivesminimumpinlength">BitLocker/SystemDrivesMinimumPINLength</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrecoverymessage" id="systemdrivesrecoverymessage">BitLocker/SystemDrivesRecoveryMessage</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrecoveryoptions" id="systemdrivesrecoveryoptions">BitLocker/SystemDrivesRecoveryOptions</a>
+  </dd>
+  <dd>
+    <a href="./bitlocker-csp.md#systemdrivesrequirestartupauthentication" id="systemdrivesrequirestartupauthentication">BitLocker/SystemDrivesRequireStartupAuthentication</a>
+  </dd>
+</dl>
 
 <!--EndDescription-->
 <!--EndPolicy-->

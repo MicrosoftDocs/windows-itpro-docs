@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - EnterpriseCloudPrint
@@ -45,7 +46,7 @@ author: nickbrower
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the authentication endpoint for acquiring OAuth tokens.  This policy must target ./User, otherwise it fails.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -80,7 +81,7 @@ author: nickbrower
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority. This policy must target ./User, otherwise it fails.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -115,7 +116,7 @@ author: nickbrower
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the enterprise cloud print client during OAuth authentication. This policy must target ./User, otherwise it fails.
 
 <p style="margin-left: 20px">The datatype is a string. 
 
@@ -150,7 +151,7 @@ author: nickbrower
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user end point for discovering cloud printers. This policy must target ./User, otherwise it fails.
 
 <p style="margin-left: 20px">The datatype is a string.
 
@@ -185,7 +186,7 @@ author: nickbrower
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Defines the maximum number of printers that should be queried from a discovery end point. This policy must target ./User, otherwise it fails.
 
 <p style="margin-left: 20px">The datatype is an integer. 
 
@@ -220,7 +221,7 @@ author: nickbrower
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the per-user resource URL for which access is requested by the Mopria discovery client during OAuth authentication. This policy must target ./User, otherwise it fails.
 
 <p style="margin-left: 20px">The datatype is a string.
 

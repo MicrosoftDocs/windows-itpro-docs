@@ -18,11 +18,13 @@ Describes the best practices, location, values, management, and security conside
 
 ## Reference
 
-This policy setting prevents users from adding new Microsoft accounts on a device.
+This setting prevents using the **Settings** app to add a Microsoft account for single sign-on (SSO) authentication for Microsoft services and some background services, or using a Microsoft account for single sign-on to other applications or services. 
 
-If you click the **Users can’t add Microsoft accounts** setting option, users will not be able to switch a local account to a Microsoft account, or connect a domain account to a Microsoft account to drive sync, roaming, or other background services. This is the preferred option if you need to limit the use of Microsoft accounts in your enterprise. Users will still be able to add app-specific Microsoft accounts for use with consumer apps. To block this use, turn off the ability to install consumer apps or the Store.
+There are two options if this setting is enabled:
 
-If you click the **Users can’t add or log on with Microsoft accounts** setting option, existing Microsoft account users will not be able to log on to Windows. Selecting this option might make it impossible for an existing administrator to log on to a computer and manage the system.
+- **Users can’t add Microsoft accounts** means that existing connected accounts can still sign in to the device (and appear on the Sign in screen). However, users cannot use the **Settings** app to add new connected accounts (or connect local accounts to Microsoft accounts).
+
+- **Users can’t add or log on with Microsoft accounts** means that users cannot add new connected accounts (or connect local accounts to Microsoft accounts) or use existing connected accounts through **Settings**.
 
 If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
 
@@ -36,7 +38,7 @@ By default, this setting is not defined on domain controllers and disabled on st
 ### Best practices
 
 -   By disabling or not configuring this policy setting on the client computer, users will be able to use their Microsoft account, local account, or domain account for their sign-in session to Windows. It also enables the user to connect a local or domain account to a Microsoft account. This provides a convenient option for your users.
--   If you need to limit the use of Microsoft accounts in your organization, click the **Users can’t add Microsoft accounts** setting option so that users will not be able to create new Microsoft accounts on a computer, switch a local account to a Microsoft account, or connect a domain account to a Microsoft account.
+-   If you need to limit the use of Microsoft accounts in your organization, click the **Users can’t add Microsoft accounts** setting option so that users will not be able to use the **Settings** app to add new connected accounts.
 
 ### Location
 

@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 # Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus
@@ -30,6 +32,11 @@ Cloud-delivered protection for Windows Defender Antivirus, also referred to as M
 >The Windows Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it is called a cloud service, it is not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional signature updates.
 
 Enabling cloud-delivered protection helps detect and block new malware - even if the malware has never been seen before - without needing to wait for a traditionally delivered definition update to block it. Definition updates can take hours to prepare and deliver, while our cloud service can deliver updated protection in seconds. 
+
+The following video describes how it works:
+
+<iframe 
+src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
 

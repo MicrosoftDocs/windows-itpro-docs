@@ -8,8 +8,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localizationpriority: medium
+ms.localizationpriority: medium
 author: iaanw
+ms.author: iawilt
+ms.date: 08/25/2017
 ---
 
 # Use Windows Management Instrumentation (WMI) to configure and manage Windows Defender AV

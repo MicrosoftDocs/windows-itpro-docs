@@ -1,17 +1,19 @@
 ---
-title: Configure Windows Defender ATP endpoints
-description: Configure endpoints so that they can send sensor data to the Windows Defender ATP sensor.
-keywords: configure endpoints, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
+title: Configure Windows Defender ATP client endpoints
+description: Configure client endpoints so that they can send sensor data to the Windows Defender ATP sensor.
+keywords: configure client endpoints, endpoint management, configure Windows ATP endpoints, configure Windows Defender Advanced Threat Protection endpoints
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
-# Configure Windows Defender ATP endpoints
+# Configure Windows Defender ATP client endpoints
 
 **Applies to:**
 
@@ -20,6 +22,8 @@ localizationpriority: high
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
 
 Endpoints in your organization must be configured so that the Windows Defender ATP service can get sensor data from them. There are various methods and deployment tools that you can use to configure the endpoints in your organization.
 
@@ -37,3 +41,4 @@ Topic | Description
 [Configure endpoints using System Center Configuration Manager](configure-endpoints-sccm-windows-defender-advanced-threat-protection.md) | You can use either use System Center Configuration Manager (current branch) version 1606 or System Center Configuration Manager(current branch) version 1602 or earlier to deploy the configuration package on endpoints.
 [Configure endpoints using Mobile Device Management tools](configure-endpoints-mdm-windows-defender-advanced-threat-protection.md) | Use Mobile Device Managment tools or Microsoft Intune to deploy the configuration package on endpoints.
 [Configure endpoints using a local script](configure-endpoints-script-windows-defender-advanced-threat-protection.md) | Learn how to use the local script to deploy the configuration package on endpoints.
+[Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md) | Learn how to use the configuration package to configure VDI machines.

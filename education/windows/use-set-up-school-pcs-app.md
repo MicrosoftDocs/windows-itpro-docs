@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: edu
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ---
 
 # Use the Set up School PCs app 
@@ -119,7 +119,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
   ![Launch the Set up School PCs app](images/suspc_getstarted_050817.png)
 
 2. Click **Get started**.
-3. To sign in to your school's Office 365 account, in the **First step: Let's get you signed in** page:
+3. <a name="suspc_signin"></a>To sign in to your school's Office 365 account, in the **First step: Let's get you signed in** page:
 
   To get the best option for setup and enable student PCs to automatically be connected to Office 365, Azure AD, and management services like Intune for Education, click **Sign-in**.
 
@@ -140,7 +140,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     5. Click **Next**.
   
-4. To allow the student PCs to automatically connect to your school's wireless network, in the **Select the school's wireless network** page:
+4. <a name="suspc_wireless"></a>To allow the student PCs to automatically connect to your school's wireless network, in the **Select the school's wireless network** page:
   1. Select the school's Wi-Fi network from the list of available wireless networks or manually add a wireless network. 
   2. Click **Next** if you added or selected a wireless network, or **Skip** to skip configuring a wireless network.
 
@@ -152,7 +152,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
     ![Only skip Wi-Fi if you have a wired Ethernet connection](images/suspc_createpackage_skipwifi_modaldialog.png)
 
-5. To assign a name to the student PCs, in the **Name these devices** page:
+5. <a name="suspc_devicename"></a>To assign a name to the student PCs, in the **Name these devices** page:
   1. Add a short name that Set up School PCs will use as a prefix to identify and easily manage the group of devices, apps, and other settings through your device management client. 
   
     > [!NOTE]  
@@ -162,7 +162,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
   2. Click **Next**.
 
-6. To specify other settings for the student PC, in the **Configure student PC settings** page:
+6. <a name="suspc_settings"></a>To specify other settings for the student PC, in the **Configure student PC settings** page:
   - Select **Remove apps pre-installed by the device manufacturer** to install only the base Windows image.
 
       > [!NOTE]  
@@ -186,44 +186,45 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
  When you're doing configuring the student PC settings, click **Next**.
 
-7. If you want to set up the Take a Test app and use it for taking quizzes and high-stakes assessments by some providers like Smarter Balanced, configure the settings in the **Set up the Take a Test app** page.
-  1. Enter the assessment URL.
+7. <a name="suspc_takeatest"></a>If you want to set up the Take a Test app and use it for taking quizzes and high-stakes assessments by some providers like Smarter Balanced, configure the settings in the **Set up the Take a Test app** page. Windows will also lock down the student PC so that students can't access anything else while taking the test.
+  1. Specify if you want to create a Take a Test button on the sign-in screens of students' PCs.
   2. Check the options whether to allow keyboard text suggestions to appear and to allow teachers to monitor online tests. 
+  3. Enter the assessment URL.
 
-    If you set up Take a Test, this adds a **Take a Test** button on the student PC's sign-in screen. Windows will also lock down the student PC so that students can't access anything else while taking the test.
+    You can leave the URL blank so that students can enter one later. This enables teachers to use the the Take a Test account for daily quizzes or tests by having students manually enter a URL.
 
     **Figure 5** - Configure the Take a Test app
 
-    ![Configure the Take a Test app](images/suspc_createpackage_takeatest.png)
+    ![Configure the Take a Test app](images/suspc_createpackage_takeatestpage_073117.png)
 
   3. Click **Next** or **Skip** depending on whether you want to set up Take a Test.
 
-8. In the **Add recommended apps** page, you can choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
+8. <a name="suspc_recommendedapps"></a>In the **Add recommended apps** page, you can choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
   * **Office 365 for Windows 10 S (Education Preview)** 
     * Office 365 for Windows 10 S will only work on student PCs running Windows 10 S. If you try to install this app on other editions of Windows, setup will fail.
     * When adding the Office 365 for Windows 10 S to a package, the device you use to run Set up School PCs does not have to be running Windows 10 S.
   * **Minecraft: Education Edition** - Free trial 
   * Popular **STEM and Makerspace apps**
 
-  1. Select the apps that you would like to provision and then click **Next** when you're done.
+  1. Select the apps that you would like to provision and then click **Next** when you're done. Apps that you provision on student PCs will be pinned to the Start menu.
   2. Click **Skip** if you don't want to provision any apps.
 
-  **Figure 6** - Select from a set of recommended Microsoft Store apps
+  **Figure 6** - Select from a set of recommended apps
 
-  ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps_office061217.png)
+  ![Select from a set of recommended Microsoft Store apps](images/suspc_createpackage_recommendedapps_073117.png)
     
   The set of recommended Microsoft Store for Education apps may vary from what we show here.
 
-9. In the **Review package summary** page, make sure that all the settings you configured appear correctly.
+9. <a name="suspc_packagesummary"></a>In the **Review package summary** page, make sure that all the settings you configured appear correctly.
   1. If you need to change any of the settings, you can on the sections to go back to that page and make your changes.
 
       **Figure 7** - Review your settings and change them as needed
 
-      ![Review your settings and change them as needed](images/suspc_createpackage_summary.png)
+      ![Review your settings and change them as needed](images/suspc_createpackage_summary_073117.png)
 
   2. Click **Accept**.
 
-10. In the **Insert a USB drive now** page:
+10. <a name="suspc_savepackage"></a>In the **Insert a USB drive now** page:
   1. Insert a USB drive to save your settings and create a provisioning package on the USB drive.
   2. Set up School PCs will automatically detect the USB drive after it's inserted. Choose the USB drive from the list.
   3. Click **Save** to save the provisioning package to the USB drive.
@@ -232,20 +233,20 @@ The **Set up School PCs** app guides you through the configuration choices for t
 
       ![Select the USB drive and save the provisioning package](images/suspc_savepackage_insertusb.png)
 
-11. When the provisioning package is ready, you will see the name of the file and you can remove the USB drive. Click **Next** if you're done, or click **Add a USB** to save the same provisioning package to another USB drive.
+11. <a name="suspc_pkgready"></a>When the provisioning package is ready, you will see the name of the file and you can remove the USB drive. Click **Next** if you're done, or click **Add a USB** to save the same provisioning package to another USB drive.
 
   **Figure 9** - Provisioning package is ready
 
   ![Provisioning package is ready](images/suspc_savepackage_ppkgisready.png)
 
-12. Follow the instructions in the **Get the student PCs ready** page to start setting up the student PCs. 
+12. <a name="suspc_getpcsready"></a>Follow the instructions in the **Get the student PCs ready** page to start setting up the student PCs. 
 
   **Figure 10** - Line up the student PCs and get them ready for setup
 
   ![Line up the student PCs and get them ready for setup](images/suspc_runpackage_getpcsready.png)
 
 13. Click **Next**.
-14. In the **Install the package** page, follow the instructions in [Apply the provisioning package to the student PCs](#apply-the-provisioning-package-to-the-student-pcs) to set up the student PCs. 
+14. <a name="suspc_installpkg"></a>In the **Install the package** page, follow the instructions in [Apply the provisioning package to the student PCs](#apply-the-provisioning-package-to-the-student-pcs) to set up the student PCs. 
 
   Select **Create new package** if you need to create a new provisioning package. Otherwise, you can remove the USB drive if you're completely done creating the package.
 

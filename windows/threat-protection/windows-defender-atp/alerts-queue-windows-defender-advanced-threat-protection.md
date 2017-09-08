@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # View and organize the Windows Defender Advanced Threat Protection Alerts queue
@@ -21,6 +23,8 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
 The **Alerts queue** shows a list of alerts that were flagged from endpoints in your network. Alerts are displayed in queues according to their current status. In each queue, you'll see details such as the severity of alerts and the number of machines the alerts were raised on.
 
 Alerts are organized in queues by their workflow status or assignment:
@@ -29,6 +33,7 @@ Alerts are organized in queues by their workflow status or assignment:
 - **In progress**
 - **Resolved**
 - **Assigned to me**
+- **Suppression rules** 
 
 To see a list of alerts, click any of the queues under the **Alerts queue** option in the navigation pane.
 
@@ -111,13 +116,14 @@ Select multiple alerts (Ctrl or Shift select) and manage or edit alerts together
 ![Alerts queue bulk edit](images/alerts-q-bulk.png)
 
 ## Related topics
-- [View the Windows Defender Advanced Threat Protection Dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Security operations dashboard](dashboard-windows-defender-advanced-threat-protection.md)
+- [View the Windows Defender Advanced Threat Protection Security analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)
 - [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md)
 - [Investigate a file associated with a Windows Defender ATP alert](investigate-files-windows-defender-advanced-threat-protection.md)
 - [Investigate an IP address associated with a Windows Defender ATP alert](investigate-ip-windows-defender-advanced-threat-protection.md)
 - [Investigate a domain associated with a Windows Defender ATP alert](investigate-domain-windows-defender-advanced-threat-protection.md)
-- [View and organize the Windows Defender ATP Machines view](machines-view-overview-windows-defender-advanced-threat-protection.md)
-- [Investigate machines in the Windows Defender ATP Machines view](investigate-machines-windows-defender-advanced-threat-protection.md)
+- [View and organize the Windows Defender ATP Machines list](machines-view-overview-windows-defender-advanced-threat-protection.md)
+- [Investigate machines in the Windows Defender ATP Machines list](investigate-machines-windows-defender-advanced-threat-protection.md)
 - [Investigate a user account in Windows Defender ATP](investigate-user-windows-defender-advanced-threat-protection.md)
 - [Manage Windows Defender Advanced Threat Protection alerts](manage-alerts-windows-defender-advanced-threat-protection.md)
 - [Take response actions in Windows Defender ATP](response-actions-windows-defender-advanced-threat-protection.md)

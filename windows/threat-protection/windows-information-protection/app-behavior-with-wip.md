@@ -7,8 +7,7 @@ ms.mktglfcycl: explore
 ms.pagetype: security
 ms.sitesec: library
 author: eross-msft
-ms.author: lizross
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)

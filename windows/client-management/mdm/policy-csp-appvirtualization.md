@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - AppVirtualization
@@ -35,11 +36,11 @@ author: nickbrower
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -48,10 +49,18 @@ author: nickbrower
 This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable App-V Client*
+-   GP English name: *Enable App-V Client*
 -   GP name: *EnableAppV*
+-   GP path: *System/App-V*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -73,11 +82,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -86,10 +95,18 @@ ADMX Info:
 Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Dynamic Virtualization*
+-   GP English name: *Enable Dynamic Virtualization*
 -   GP name: *Virtualization_JITVEnable*
+-   GP path: *System/App-V/Virtualization*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -111,11 +128,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -124,10 +141,18 @@ ADMX Info:
 Enables automatic cleanup of appv packages that were added after Windows10 anniversary release.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable automatic cleanup of unused appv packages*
+-   GP English name: *Enable automatic cleanup of unused appv packages*
 -   GP name: *PackageManagement_AutoCleanupEnable*
+-   GP path: *System/App-V/PackageManagement*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -149,11 +174,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -162,10 +187,18 @@ ADMX Info:
 Enables scripts defined in the package manifest of configuration files that should run.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Package Scripts*
+-   GP English name: *Enable Package Scripts*
 -   GP name: *Scripting_Enable_Package_Scripts*
+-   GP path: *System/App-V/Scripting*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -187,11 +220,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -200,10 +233,18 @@ ADMX Info:
 Enables a UX to display to the user when a publishing refresh is performed on the client.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Publishing Refresh UX*
+-   GP English name: *Enable Publishing Refresh UX*
 -   GP name: *Enable_Publishing_Refresh_UX*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -225,11 +266,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -248,10 +289,18 @@ Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the
 Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Reporting Server*
+-   GP English name: *Reporting Server*
 -   GP name: *Reporting_Server_Policy*
+-   GP path: *System/App-V/Reporting*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -273,11 +322,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -286,10 +335,18 @@ ADMX Info:
 Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Roaming File Exclusions*
+-   GP English name: *Roaming File Exclusions*
 -   GP name: *Integration_Roaming_File_Exclusions*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -311,11 +368,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -324,10 +381,18 @@ ADMX Info:
 Specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Roaming Registry Exclusions*
+-   GP English name: *Roaming Registry Exclusions*
 -   GP name: *Integration_Roaming_Registry_Exclusions*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -349,11 +414,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -362,10 +427,18 @@ ADMX Info:
 Specifies how new packages should be loaded automatically by App-V on a specific computer.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify what to load in background (aka AutoLoad)*
+-   GP English name: *Specify what to load in background (aka AutoLoad)*
 -   GP name: *Steaming_Autoload*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -387,11 +460,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -400,10 +473,18 @@ ADMX Info:
 Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Migration Mode*
+-   GP English name: *Enable Migration Mode*
 -   GP name: *Client_Coexistence_Enable_Migration_mode*
+-   GP path: *System/App-V/Client Coexistence*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -425,11 +506,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -438,10 +519,18 @@ ADMX Info:
 Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Integration Root User*
+-   GP English name: *Integration Root User*
 -   GP name: *Integration_Root_User*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -463,11 +552,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -476,10 +565,18 @@ ADMX Info:
 Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Integration Root Global*
+-   GP English name: *Integration Root Global*
 -   GP name: *Integration_Root_Global*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -501,11 +598,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -532,10 +629,18 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 1 Settings*
+-   GP English name: *Publishing Server 1 Settings*
 -   GP name: *Publishing_Server1_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -557,11 +662,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -588,10 +693,18 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 2 Settings*
+-   GP English name: *Publishing Server 2 Settings*
 -   GP name: *Publishing_Server2_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -613,11 +726,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -644,10 +757,18 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 3 Settings*
+-   GP English name: *Publishing Server 3 Settings*
 -   GP name: *Publishing_Server3_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -669,11 +790,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -700,10 +821,18 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 4 Settings*
+-   GP English name: *Publishing Server 4 Settings*
 -   GP name: *Publishing_Server4_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -725,11 +854,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -756,16 +885,24 @@ User Publishing Refresh Interval: Specifies the publishing refresh interval usin
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 5 Settings*
+-   GP English name: *Publishing Server 5 Settings*
 -   GP name: *Publishing_Server5_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
 <!--EndPolicy-->
 <!--StartPolicy-->
-<a href="" id="appvirtualization-streamingallowcertificatefilterforclient_ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**  
+<a href="" id="appvirtualization-streamingallowcertificatefilterforclient-ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**  
 
 <!--StartSKU-->
 <table>
@@ -781,11 +918,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -794,10 +931,18 @@ ADMX Info:
 Specifies the path to a valid certificate in the certificate store.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Certificate Filter For Client SSL*
+-   GP English name: *Certificate Filter For Client SSL*
 -   GP name: *Streaming_Certificate_Filter_For_Client_SSL*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -819,11 +964,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -832,10 +977,18 @@ ADMX Info:
 This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
+-   GP English name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
 -   GP name: *Streaming_Allow_High_Cost_Launch*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -857,11 +1010,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -870,10 +1023,18 @@ ADMX Info:
 Specifies the CLSID for a compatible implementation of the IAppvPackageLocationProvider interface.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Location Provider*
+-   GP English name: *Location Provider*
 -   GP name: *Streaming_Location_Provider*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -895,11 +1056,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -908,10 +1069,18 @@ ADMX Info:
 Specifies directory where all new applications and updates will be installed.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Package Installation Root*
+-   GP English name: *Package Installation Root*
 -   GP name: *Streaming_Package_Installation_Root*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -933,11 +1102,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -946,10 +1115,18 @@ ADMX Info:
 Overrides source location for downloading package content.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Package Source Root*
+-   GP English name: *Package Source Root*
 -   GP name: *Streaming_Package_Source_Root*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -971,11 +1148,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -984,10 +1161,18 @@ ADMX Info:
 Specifies the number of seconds between attempts to reestablish a dropped session.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Reestablishment Interval*
+-   GP English name: *Reestablishment Interval*
 -   GP name: *Streaming_Reestablishment_Interval*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1009,11 +1194,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1022,10 +1207,18 @@ ADMX Info:
 Specifies the number of times to retry a dropped session.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Reestablishment Retries*
+-   GP English name: *Reestablishment Retries*
 -   GP name: *Streaming_Reestablishment_Retries*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1047,11 +1240,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1060,10 +1253,18 @@ ADMX Info:
 Specifies that streamed package contents will be not be saved to the local hard disk.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Shared Content Store (SCS) mode*
+-   GP English name: *Shared Content Store (SCS) mode*
 -   GP name: *Streaming_Shared_Content_Store_Mode*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1085,11 +1286,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1098,10 +1299,18 @@ ADMX Info:
 If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Support for BranchCache*
+-   GP English name: *Enable Support for BranchCache*
 -   GP name: *Streaming_Support_Branch_Cache*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1123,11 +1332,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1136,10 +1345,18 @@ ADMX Info:
 Verifies Server certificate revocation status before streaming using HTTPS.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Verify certificate revocation list*
+-   GP English name: *Verify certificate revocation list*
 -   GP name: *Streaming_Verify_Certificate_Revocation_List*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1161,11 +1378,11 @@ ADMX Info:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
@@ -1174,10 +1391,18 @@ ADMX Info:
 Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc). Only processes whose full path matches one of these items can use virtual components.
 
 <!--EndDescription-->
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Virtual Component Process Allow List*
+-   GP English name: *Virtual Component Process Allow List*
 -   GP name: *Virtualization_JITVAllowList*
+-   GP path: *System/App-V/Virtualization*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->

@@ -2,10 +2,11 @@
 title: Provision student PCs with apps
 description: Learn how to use Configuration Designer to easily provision student devices to join Active Directory.
 keywords: shared cart, shared PC, school, provision PCs with apps, Windows Configuration Designer
-ms.prod: W10
+ms.prod: w10
+ms.pagetype: edu
 ms.mktglfcycl: plan
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
 ---

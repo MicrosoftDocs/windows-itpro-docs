@@ -10,7 +10,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Manage Microsoft Surface Hub
@@ -34,6 +34,7 @@ Learn about managing and updating Surface Hub.
 | [Install apps on your Surface Hub]( https://technet.microsoft.com/itpro/surface-hub/install-apps-on-surface-hub) | Admins can install apps can from either the Microsoft Store or the Microsoft Store for Business.|
 | [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md)  | Microsoft Whiteboard’s latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.   |
 | [End a meeting with End session](https://technet.microsoft.com/itpro/surface-hub/i-am-done-finishing-your-surface-hub-meeting) | At the end of a meeting, users can tap **End session** to clean up any sensitive data and prepare the device for the next meeting.|
+| [Sign in to Surface Hub with Microsoft Authenticator](surface-hub-authenticator-app.md) | You can sign in to a Surface Hub without a password using the Microsoft Authenticator app, available on Android and iOS.   |
 | [Save your BitLocker key](https://technet.microsoft.com/itpro/surface-hub/save-bitlocker-key-surface-hub) | Every Surface Hub is automatically set up with BitLocker drive encryption software. Microsoft strongly recommends that you make sure you back up your BitLocker recovery keys.|
 | [Connect other devices and display with Surface Hub](https://technet.microsoft.com/itpro/surface-hub/connect-and-display-with-surface-hub) | You can connect other device to your Surface Hub to display content.|
 | [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md) | You can use Miracast on your wireless network or LAN to connect to Surface Hub. |

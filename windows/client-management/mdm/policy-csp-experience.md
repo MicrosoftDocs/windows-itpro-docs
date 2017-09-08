@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Experience
@@ -142,6 +143,46 @@ author: nickbrower
 <p style="margin-left: 20px">When set to 0 , the projection pane is disabled. The Win+P and Win+K shortcut keys will not work on.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<!--StartPolicy-->
+<a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1703. This policy turns on Find My Device.
+
+<p style="margin-left: 20px">When Find My Device is on, the device and its location are registered in the cloud so that the device can be located when the user initiates a Find command from account.microsoft.com. In Windows 10, version 1709 devices that are compatible with active digitizers, enabling Find My Device will also allow the user to view the last location of use of their active digitizer on their device; this location is stored locally on the user's device after each use of their active digitizer.
+
+<p style="margin-left: 20px">When Find My Device is off, the device and its location are not registered and the Find My Device feature will not work. In Windows 10, version 1709 the user will not be able to view the location of the last use of their active digitizer on their device.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
 
 <!--EndDescription-->
 <!--EndPolicy-->
