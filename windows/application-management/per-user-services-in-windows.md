@@ -24,7 +24,9 @@ Beginning with Windows 10, version 1709 and Windows Server, version 1709, there 
   > [!IMPORTANT]
   > If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
   
-- Create a new Registry entry named UserServiceFlags under the service configuration in the registry as a DWORD (32 bit) value set to 0. 
+- Create a new Registry entry named UserServiceFlags under the service configuration in the registry as a DWORD (32 bit) value set to 0, as shown in the following example:
+
+  ![UserServiceFlags registry entry](media/user-service-flag.png) 
 
 Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates.
 
