@@ -89,7 +89,7 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 
 Cloud only and hybrid deployments provide many choices for multifactor authentication.  On-premises deployments must use a multifactor authentication that provides an AD FS multifactor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use from the on-premises Azure Multifactor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 >[!NOTE]
-> Azure Multi-Factor Authentication is available through a:
+> Azure Multi-Factor Authentication is available through:
 >* Microsoft Enterprise Agreement
 >* Open Volume License Program
 >* Cloud Solution Providers program
