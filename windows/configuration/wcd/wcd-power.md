@@ -25,7 +25,7 @@ Use to configure settings for Power.
 
 Setting | Description
 --- | ---
-AllowSystemRequiredPowerRequests |
+AllowSystemRequiredPowerRequests | 
 BootLowLatencyDuration |
 DefaultOverlayAcPowerScheme |
 DefaultOverlayDcPowerScheme |
@@ -102,7 +102,7 @@ Maximum value: `100 + 100*256 + 100*65536 + 100*16777216`
 >[!NOTE]
 >Each setting can be configured for **AcValue** (plugged in) and **DcValue** (on battery).
 
- 
+</br></br> 
 Settings for AdaptivePowerBehavior | Description
 --- | ---
 StandbyBudgetGracePeriod | Define the minimum time, in seconds, after the system enters standby before the system makes the check if standby power budget is consumed.
@@ -110,7 +110,7 @@ StandbyBudgetPercent | Define the battery drain percentage that the user is allo
 StandbyReserveGracePeriod | Define the minimum time, in seconds, after the screen turns off before the system checks to make sure there is enough battery available to maintain the specified screen on time.
 StandbyReserveTime | Define the screen on time, in seconds, that will be available to the user after standby exists and the screen turns on.
 StandbyResetPercent | Specify the percentage of battery when the system will reset the standby budget.
-
+</br></br> 
 Settings for Battery | Description
 --- | ---
 CriticalAction | Select the action to take when critical battery level is reached.
@@ -119,7 +119,7 @@ LowAction | Specify the action to take when the low batter level is reached.
 LowBatteryLevel | Specify the percentage of capacity when the low battery action is taken and the low battery warning, if enabled, appears.
 LowBatteryWarning | Specify whether the OS displays a UI warning at the batter meter when the battery capacity crosses the low battery threshold.
 ReserveBatteryLevel | Specify the percentage of capacity when the reserve battery warning is shown to the user.
-
+</br></br> 
 Settings for Button | Description
 --- | ---
 ForcedShutdown | Specify the type of system shutdown that occurs when the system power button is pressed if the power button action is set to **Shut down**. When configured as **On**, a forced system shutdown will occur. When configured as **Off**, a normal system shutdown will occur.
@@ -128,13 +128,13 @@ LidOpenWake | Specify the action to take when the system lid is opened.
 PowerButtonAction | Specify the action to take when the system power button is pressed.
 SleepButtonAction | Specify the action to take when the sleep power button is pressed.
 UIPowerButtonAction | Specify the action to take when the UI power button is pressed.
-
+</br></br> 
 Settings for Disk | Description
 --- | ---
 BurstIgnoreDuration | Specify the period of inactivity, in seconds, to ignore when attempting to aggressively power down the disk. 
 IdleTimeout | Specify the period of inactivity, in seconds, before the disk is automatically powered down.
 MaxDiskPower | 
-
+</br></br> 
 Settings for Display | Description
 --- | ---
 AdapativeIncrease | This setting denotes the user annoyance detection threshold. It specifies the duration, in seconds, between automatic display brightness level reduction and user input to consider the automatic display brightness level reduction as an annoyance to the user. This setting applies only to portable computers that support Windows control of the brightness level of an integrated display device. In most situations, you should not change the default value of this setting.
@@ -147,36 +147,36 @@ DimLevel | Specify the reduced display brightness level, in percentage, after th
 DimTimeout | Specify the period of inactivity, in seconds, before the display is dimmed.
 IdleTimeout | Specify the period of inactivity, in seconds, before the display is automatically turned off.
 NormalLevel | Specify the default display brightness level, in percentage.
-
+</br></br> 
 Settings for EnergySaver | Description
 --- | ---
 BatteryThreshold | Specify the battery charge level, as a percentage, at which Energy Saver is turned on.
 Brightness | Specify the percentage value to scale brightness to when Energy Saver is turned on.
 Policy | Select between **User** and **Aggressive**.
-
+</br></br> 
 Settings for IdleResiliency | Description
 --- | ---
 AllowDeepSleep |
 ExecutionRequiredTimeout |
 IdleResiliencyPeriod |
 IOCoalescingTimeout |
-
+</br></br> 
 Settings for Misc | Description
 --- | ---
 AllowWifiInStandby | Specify whether to allow Wi-Fi networking during standby.
 ConnectivityInStandby | Specify whether to allow connectivity during standby.
 DeviceIdlePolicy | Configure for power-saving or performance.
 LockConsoleOnWake | Specify whether to lock the console.
-
+</br></br> 
 Settings for Multimedia | Description
 --- | ---
 VideoPlayBackQuality | Configure for power-saving or performance.
-
+</br></br> 
 Settings for PCIExpress | Description
 --- | ---
 ASPM | Configure Active State Power Management (ASPM) for moderate power savings or maximum power savings.
-
-Settings for Processor</br>Some parameters have suffix "1" to indicate efficiency class</br>[Learn more about processor power management options](https://msdn.microsoft.com/library/windows/hardware/mt422910.aspx) | Description
+</br></br> 
+Settings for Processor</br>(Some parameters have suffix "1" to indicate efficiency class)</br>[Learn more about processor power management options](https://msdn.microsoft.com/library/windows/hardware/mt422910.aspx) | Description
 --- | ---
 CPConcurrency |
 CPDecreasePolicy |
@@ -230,7 +230,7 @@ PerfTimeCheck |
 SchedulingPolicy |
 ShortSchedulingPolicy |
 SystemCoolingPolicy |
-
+</br></br> 
 
 
 Settings for Sleep | Description
