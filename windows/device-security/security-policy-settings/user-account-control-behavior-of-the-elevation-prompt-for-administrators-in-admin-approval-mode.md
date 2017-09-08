@@ -58,7 +58,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 ### Default values
 
 
-| Server type or GPO Default value |
+| Server type or GPO | Default value |
 | - | - |
 | Default Domain Policy | Not defined| 
 | Default Domain Controller Policy | Not defined |

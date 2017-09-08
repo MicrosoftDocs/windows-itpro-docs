@@ -53,6 +53,27 @@ The following table lists the actual and effective default values for this polic
 | Member Server Effective Default Settings | Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
  
+
+## To enable Admin Approval Mode
+If you wish to use Admin Approval Mode with an active built-in administrator account, follow these steps:
+
+1. In the search box, type gpedit.exe.
+2. From the Local Group Policy editor, navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options**.
+
+   ![User Account Control: Admin Approval Mode for the built-in administrator account](images/uac-admin-approval-mode-for-the-built-in-administrator-account.png)
+
+3. Double-click the policy **UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account**.
+4. On the **Local Security Setting** tab, make sure that the **Enabled** radio button is selected and then click OK.
+5. Configure the local security setting  **UAC-Behavior-of-the-elevation-prompt-for-administrators-in-Admin-Approval-Mode** by setting it to **Prompt for consent on the secure desktop** and then click OK.
+
+    ![User Account Control: behavior of the elevation prompt for administrators in Admin Approval Mode](images/uac-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode.png)
+
+As an alternative way to carry out step 5, you can also type "UAC" in the search box, and then from the User Account Control Settings dialog box, set the slider control to **Notify me only when apps try to make changes to my computer (default)**.
+
+![User Account Control notify me only when apps try to make changes to my pc](images/uac-notify-me-only-when-apps-try-to-make-changes-to-my-pc.png)
+
+6. To activate the new setting, log out and then log in again.
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -67,7 +88,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-One of the risks of the User Account Control (UAC) feature is that it is intended to mitigate malicious software running under elevated credentials without the user or administrator being aware of its activity. An attack vector for malicious programs is to discover the password of the administrator account because that user account was created for all installations of the Windows. To address this risk, the built-in administrator account is disabled in computers running at least Windows Vista. In computers running at least Windows Server 2008, the administrator account is enabled, and the password must be changed the first time the Administrator logs on. In a default installation of a computer running at least Windows Vista, accounts with administrative control over the computer are initially set up in one of two ways:
+ An attack vector for malicious programs is to discover the password of the administrator account because that user account was created for all installations of Windows. To address this risk, the built-in administrator account is disabled in computers running at least Windows Vista. In computers running at least Windows Server 2008, the administrator account is enabled, and the password must be changed the first time the Administrator logs on. In a default installation of a computer running at least Windows Vista, accounts with administrative control over the computer are initially set up in one of two ways:
 
 -   If the computer is not joined to a domain, the first user account you create has the equivalent permissions as a local administrator.
 -   If the computer is joined to a domain, no local administrator accounts are created. The enterprise or domain administrator must log on to the computer and create a local administrator account if one is warranted.
