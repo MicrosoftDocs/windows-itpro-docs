@@ -10,7 +10,7 @@ ms.pagetype: security, mobile
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 07/07/2017
+ms.date: 09/08/2017
 ---
 # Windows Hello for Business
 
@@ -78,13 +78,35 @@ There are many deployment options from which to choose. Some of those options re
 Windows Hello for Business is two-factor authentication based the observed authentication factors of: something you have, something you know, and something part of you.  Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. Using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
 ### Can I use PIN and biometrics to unlock my device?
-No. Windows Hello for Business provides two-factor authentication. However, we are investigating the ability to unlock the device with multiple factors.
+No. Windows Hello for Business provides two-factor authentication. However, we are investigating the ability to unlock the desktop with additional factors.
 
 ### What is the difference between Windows Hello and Windows Hello for Business
 Windows Hello represents the biometric framework provided in Windows 10.  Windows Hello enables users to use biometrics to sign into their devices by securely storing their username and password and releasing it for authentication when the user successfully identifies themselves using biometrics.  Windows Hello for Business uses asymmetric keys protected by the device's security module that requires a user gesture (PIN or biometrics) to authenticate.
 
 ### I have extended Active Directory to Azure Active Directory.  Can I use the on-prem deployment model?
 No. If your organization is federated or using online services, such as Office 365 or OneDrive, then you must use a hybrid deployment model.  On-premises deployments are exclusive to organization who need more time before moving to the cloud and exclusively use Active Directory.
+
+### Does Windows Hello for Business prevent the use of simple PINs?
+Yes. Our simple PIN algorithm looks for and disallows any PIN that has a constant delta from one digit to the next.  This prevents repeating numbers, sequential numbers and simple patterns.
+So, for example:
+* 1111 has a constant delta of 0, so it is not allowed
+* 1234 has a constant delta of 1, so it is not allowed
+* 1357 has a constant delta of 2, so it is not allowed
+* 9630 has a constant delta of -3, so it is not allowed
+* 1231 does not have a constant delta, so it is okay
+* 1593 does not have a constant delta, so it is okay
+
+This algorithm does not apply to alphanumeric PINs.
+
+### How does PIN caching work with Windows Hello for Business?
+Windows Hello for Business provides a PIN caching user experience using a ticketing system. Rather than caching a PIN, processes cache a ticket they can use to request private key operations.  Azure AD and Active Directory sign-in keys are cached under lock.  This means the keys remain available for use without prompting as long as the user is interactively signed-in.  Microsoft Account sign-in keys are considered transactional keys, which means the user is always prompted when accessing the key.  
+
+Beginning with Windows 10, Fall Creators Update, Windows Hello for Business used as a smart card (smart card emulation that is enabled by default) provides the same user experience of default smart card PIN caching.  Each process requesting a private key operation will prompt the user for the PIN on first use.  Subsequent private key operations will not prompt the user for the PIN.  
+
+The smart card emulation feature of Windows Hello for Business verifies the PIN and then discards the PIN in exchange for a ticket.  The process does not receive the PIN, but rather the ticket that grants them private key operations.  Windows 10 does not provide any Group Policy settings to adjust this caching.
+
+### Can I disable the PIN while using Windows Hello for Business?
+No. The movement away from passwords is accomplished by gradually reducing the use of the password.  In the occurence where you cannot authenticate with biometrics, you need a fall back mechansim that is not a password.  The PIN is the fall back mechansim.  Disabling or hiding the PIN credential provider disabled the use of biometrics.
 
 ### Does Windows Hello for Business work with third party federation servers?
 Windows Hello for Business can work with any third-party federation servers that support the protocols used during provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
@@ -98,3 +120,4 @@ Windows Hello for Business can work with any third-party federation servers that
 
 ### Does Windows Hello for Business work with Mac and Linux clients?
 Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms.  However, Microsoft is open to third parties who are interested in moving these platforms away from passwords.  Interested third parties can inqury at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration)
+
