@@ -18,7 +18,7 @@ Describes the best practices, location, values, policy management and security c
 ## Reference
 
 This policy setting determines the behavior of Admin Approval Mode for the built-in administrator account.
-When the Admin Approval Mode is enabled, the local administrator account functions like a standard user account, but it has the ability to elevate privileges without logging on by using a different account. In this mode, any operation that requires elevation of privilege displays a prompt that allows the administrator to permit or deny the elevation of privilege. If Admin Approval Mode is not enabled, the built-in Administrator account logs on in Windows XP Mode, and it runs all applications by default with full administrative privileges. By default, this setting is set to **Disabled**.
+When the Admin Approval Mode is enabled, the local administrator account functions like a standard user account, but it has the ability to elevate privileges without logging on by using a different account. In this mode, any operation that requires elevation of privilege displays a prompt that allows the administrator to permit or deny the elevation of privilege. If Admin Approval Mode is not enabled, the built-in Administrator account runs all applications by default with full administrative privileges. By default, Admin Approval Mode is set to **Disabled**.
 
 >**Note:**  If a computer is upgraded from a previous version of the Windows operating system, and the administrator account is the only account on the computer, the built-in administrator account remains enabled, and this setting is also enabled.
  
@@ -30,11 +30,16 @@ When the Admin Approval Mode is enabled, the local administrator account functio
 
 -   Disabled
 
-    The built-in administrator account logs on in Windows XP Mode, and it runs all applications by default with full administrative privileges.
+    If Admin Approval Mode is not enabled, the built-in Administrator account runs all applications by default with full administrative privileges
 
 ### Best practices
 
--   Do not enable the built-in administrator account on the client computer, but use the standard user account and User Account Control (UAC).
+-   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks,for security reasons you should also enable Admin Approval Mode. See
+[UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
+
+To enable Admin Approval Mode, you must also configure the local security policy setting: [User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/user-account-control-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode) to **Prompt for consent on the secure desktop** and then click OK.
+
+After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt. 
 
 ### Location
 
@@ -53,27 +58,6 @@ The following table lists the actual and effective default values for this polic
 | Member Server Effective Default Settings | Disabled| 
 | Client Computer Effective Default Settings | Disabled| 
  
-
-## To enable Admin Approval Mode
-If you wish to use Admin Approval Mode with an active built-in administrator account, follow these steps:
-
-1. In the search box, type gpedit.exe.
-2. From the Local Group Policy editor, navigate to **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options**.
-
-   ![User Account Control: Admin Approval Mode for the built-in administrator account](images/uac-admin-approval-mode-for-the-built-in-administrator-account.png)
-
-3. Double-click the policy **UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account**.
-4. On the **Local Security Setting** tab, make sure that the **Enabled** radio button is selected and then click OK.
-5. Configure the local security setting  **UAC-Behavior-of-the-elevation-prompt-for-administrators-in-Admin-Approval-Mode** by setting it to **Prompt for consent on the secure desktop** and then click OK.
-
-    ![User Account Control: behavior of the elevation prompt for administrators in Admin Approval Mode](images/uac-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode.png)
-
-As an alternative way to carry out step 5, you can also type "UAC" in the search box, and then from the User Account Control Settings dialog box, set the slider control to **Notify me only when apps try to make changes to my computer (default)**.
-
-![User Account Control notify me only when apps try to make changes to my pc](images/uac-notify-me-only-when-apps-try-to-make-changes-to-my-pc.png)
-
-6. To activate the new setting, log out and then log in again.
-
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
@@ -88,10 +72,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
- An attack vector for malicious programs is to discover the password of the administrator account because that user account was created for all installations of Windows. To address this risk, the built-in administrator account is disabled in computers running at least Windows Vista. In computers running at least Windows Server 2008, the administrator account is enabled, and the password must be changed the first time the Administrator logs on. In a default installation of a computer running at least Windows Vista, accounts with administrative control over the computer are initially set up in one of two ways:
-
--   If the computer is not joined to a domain, the first user account you create has the equivalent permissions as a local administrator.
--   If the computer is joined to a domain, no local administrator accounts are created. The enterprise or domain administrator must log on to the computer and create a local administrator account if one is warranted.
+ An attack vector for malicious programs is to discover the password of the Administrator account because that user account was created for all installations of Windows. To address this risk, the built-in Administrator account is disabled in computers running at least Windows Vista. In computers running at least Windows Server 2008, the Administrator account is enabled, and the password must be changed the first time the administrator logs on. In a default installation of a computer running at least Windows Vista, if the computer is not joined to a domain, the first user account you create has the equivalent permissions of a local administrator.
 
 ### Countermeasure
 
