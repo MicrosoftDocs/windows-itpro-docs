@@ -58,7 +58,7 @@ Click on each control to see the recommended optimizations.
 
 ![Improvement opportunities](images/atp-improv-ops.png)
 
-The numbers beside the green triangle icon on each recommended action represents the number of points you can gain by taking the action.  When added together, the total number makes up the nominator in the fraction for each segment in the Improvement opportunities tile.
+The numbers beside the green triangle icon on each recommended action represents the number of points you can gain by taking the action.  When added together, the total number makes up the numerator in the fraction for each segment in the Improvement opportunities tile.
 
 Recommendations that do not display a green action are informational only and no action is required. 
 
