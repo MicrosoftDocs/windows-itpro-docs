@@ -21,7 +21,7 @@ Beginning with Windows 10, version 1709 and Windows Server, version 1709, there 
 
 - Configure the template service to create them in a stopped and disabled state. You do this by setting the template service's **Startup Type** to **Disabled**.
 
-  > [!IMPORTANT]
+  > [!IMPORTANT]  
   > If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
   
 - Create a new Registry entry named UserServiceFlags under the service configuration in the registry as a DWORD (32 bit) value set to 0, as shown in the following example:
