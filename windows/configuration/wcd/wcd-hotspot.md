@@ -18,8 +18,10 @@ Use HotSpot settings to configure Internet sharing.
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X |  X  | X | X | X |
+| All settings |  |  X  |  |  |  |
 
+>[!NOTE]
+>Although the HotSpot settings are available in advanced editing for multiple editions, the settings are only supported on devices running Windows 10 Mobile.
 
 ## DedicatedConnections
 
