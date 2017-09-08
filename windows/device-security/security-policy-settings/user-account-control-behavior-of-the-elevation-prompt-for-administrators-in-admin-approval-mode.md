@@ -25,7 +25,9 @@ This policy setting determines the behavior of the elevation prompt for accounts
 -   **Elevate without prompting**
 
     Assumes that the administrator will permit an operation that requires elevation, and additional consent or credentials are not required.
-    >**Note:**  Selecting **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
+
+   > [!NOTE]
+   >  Selecting **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
      
 -   **Prompt for credentials on the secure desktop**
 
@@ -47,7 +49,7 @@ This policy setting determines the behavior of the elevation prompt for accounts
 
     This is the default. When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select **Permit** or **Deny**. If the user selects **Permit**, the operation continues with the user's highest available privilege.
 
-*If you have enabled the built-in Administrator account and have configured Admin Approval Mode, you must also configure the option **Prompt for consent on the secure desktop**. You can also configure this option from User Account Control, by typing **UAC** in the search box. From the UAC Settings dialog box, set the slider control to **Notify me only when apps try to make changes to my computer (default)**.
+\*If you have enabled the built-in Administrator account and have configured Admin Approval Mode, you must also configure the option **Prompt for consent on the secure desktop**. You can also configure this option from User Account Control, by typing **UAC** in the search box. From the User Account Control Settings dialog box, set the slider control to **Notify me only when apps try to make changes to my computer (default)**.
 
  To activate the setting, you must first log in and out. Alternatively, you may perform **gpupdate /force** from an elevated command prompt. 
 
@@ -57,7 +59,8 @@ This policy setting determines the behavior of the elevation prompt for accounts
 
 -   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. For further information, see [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
 
-After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt. 
+> [!NOTE]
+> After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt. 
 
 ### Location
 
