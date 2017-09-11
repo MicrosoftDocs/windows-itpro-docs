@@ -8,7 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Testing scenarios for Windows Information Protection (WIP)

@@ -8,7 +8,6 @@ ms.pagetype: security
 author: eross-msft
 ms.author: lizross
 ms.date: 08/11/2017
-localizationpriority: high
 ---
 
 # Testing scenarios using Windows Defender Application Guard in your business or organization
