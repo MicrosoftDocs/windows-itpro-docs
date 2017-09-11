@@ -30,7 +30,9 @@ The **Passwords must meet complexity requirements** policy setting determines wh
     -   Uppercase letters of European languages (A through Z, with diacritic marks, Greek and Cyrillic characters)
     -   Lowercase letters of European languages (a through z, sharp-s, with diacritic marks, Greek and Cyrillic characters)
     -   Base 10 digits (0 through 9)
-    -   Non-alphanumeric characters (special characters) (for example, !, $, \#, %)
+    -   Non-alphanumeric characters (special characters): 
+        (~!@#$%^&*_-+=`|\\(){}\[\]:;"'<>,.?/)
+        Currency symbols such as the Euro or British Pound are not counted as special characters for this policy setting.
     -   Any Unicode character that is categorized as an alphabetic character but is not uppercase or lowercase. This includes Unicode characters from Asian languages.
 
 Complexity requirements are enforced when passwords are changed or created.
