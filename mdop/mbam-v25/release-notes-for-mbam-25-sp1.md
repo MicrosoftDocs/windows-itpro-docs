@@ -128,6 +128,20 @@ If different encryption strengths are used, MBAM will report the machine as **no
 As of HF02, the MBAM Self-Service Portal automatically adds the '-' on Key ID entry.  
 **Note:** The Server has to be reconfigured for the Javascript to take effect.
 
+### MBAM 2.5 Sp1 Reports does not work / render properly
+Reports Page does not render properly when SSRS is hosted on SQL Server 2016 edition. 
+For example – Browsing to Helpdesk – Clicking on Reports –  ( Highlighted portion have “x”  on it )
+Digging this further with Fiddler – it does look like once we click on Reports – it calls the SSRS page with HTML 4.0 rendering format.
+
+**Workaround:** Looking at the site.master code and noticed the X-UA mode was dictated as IE8. As IE8 is WAY past the end of life, and customer is using IE11. Update the setting to the below code. This allows the site to utilize IE11 rendering technologies
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+Original setting is: 
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+
+This is the reason why the issue was not seen with other browsers like Chrome, Firefox etc.
+
 ## Got a suggestion for MBAM?
 
 
