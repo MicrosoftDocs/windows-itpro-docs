@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Windows Defender ATP data storage and privacy
@@ -22,6 +23,7 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
 > [!NOTE]
@@ -71,5 +73,9 @@ Your data will be kept for a period of at least 90 days, during which it will be
 
 
 ## Can Microsoft help us maintain regulatory compliance?
-Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Windows Defender ATP services against their own legal and regulatory requirements. Windows Defender ATP has a roadmap for obtaining national, regional and industry-specific certifications, starting with ISO 27001. The service is designed, implemented, and maintained according to the compliance and privacy principles of ISO 27001, as well as Microsoft’s compliance standards.
-By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run, including this new Microsoft cloud service.
+Microsoft provides customers with detailed information about Microsoft's security and compliance programs, including audit reports and compliance packages, to help customers assess Windows Defender ATP services against their own legal and regulatory requirements. Windows Defender ATP is ISO 27001 certified and has a roadmap for obtaining national, regional and industry-specific certifications.
+
+
+By providing customers with compliant, independently-verified services, Microsoft makes it easier for customers to achieve compliance for the infrastructure and applications they run.
+
+For more information on the Windows Defender ATP ISO certification reports, see [Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001). 

@@ -8,13 +8,31 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 08/17/2017
 ms.localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
+
+## September 2017
+
+New or changed topic | Description
+--- | ---
+[Top support solutions for Surface Hub](support-solutions-surface-hub.md) | New
+
+## August 2017
+
+
+| New or changed topic | Description |
+| --- | --- |
+[Accessibility](accessibility-surface-hub.md) | Added information about Narrator
+[Sign in to Surface Hub with Microsoft Authenticator](surface-hub-authenticator-app.md) | New
+
+
+
+
 
 ## July 2017
 

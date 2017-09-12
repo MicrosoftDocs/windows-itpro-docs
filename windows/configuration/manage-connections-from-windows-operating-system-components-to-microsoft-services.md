@@ -457,7 +457,7 @@ To turn off Live Tiles:
     
 -   Create a REG\_DWORD registry setting called **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications!NoCloudApplicationNotification**, with a value of 1 (one).
 
-You must also unpin all tiles that are pinned to Start.
+In Windows 10 Mobile, you must also unpin all tiles that are pinned to Start.
 
 ### <a href="" id="bkmk-mailsync"></a>10. Mail synchronization
 
@@ -1261,7 +1261,7 @@ To turn off **Let apps read or send messages (text or MMS)**:
 
      -or-
 
--   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMessaging**, with a value of 2 (two).
+-   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMessaging**, with a value of 2 (two).
 
 To turn off **Choose apps that can read or send messages**:
 
@@ -1689,6 +1689,9 @@ Windows spotlight provides features such as different background images and text
 If you're running Windows 10, version 1607 or later, you only need to enable the following Group Policy:
 
 - **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
+
+    > [!NOTE]  
+    > This must be done within 15 minutes after Windows 10 is installed. Alternatively, you can create an image with this setting.
 
     -or-
 

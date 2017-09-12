@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Power
@@ -62,8 +62,9 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Allow standby states (S1-S3) when sleeping (plugged in)*
+-   GP English name: *Allow standby states (S1-S3) when sleeping (plugged in)*
 -   GP name: *AllowStandbyStatesAC_2*
+-   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -113,8 +114,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off the display (on battery)*
+-   GP English name: *Turn off the display (on battery)*
 -   GP name: *VideoPowerDownTimeOutDC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -164,8 +166,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Turn off the display (plugged in)*
+-   GP English name: *Turn off the display (plugged in)*
 -   GP name: *VideoPowerDownTimeOutAC_2*
+-   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -216,8 +219,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify the system hibernate timeout (on battery)*
+-   GP English name: *Specify the system hibernate timeout (on battery)*
 -   GP name: *DCHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -267,8 +271,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify the system hibernate timeout (plugged in)*
+-   GP English name: *Specify the system hibernate timeout (plugged in)*
 -   GP name: *ACHibernateTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -316,8 +321,9 @@ If you disable this policy setting, the user is not prompted for a password when
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Require a password when a computer wakes (on battery)*
+-   GP English name: *Require a password when a computer wakes (on battery)*
 -   GP name: *DCPromptForPasswordOnResume_2*
+-   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -365,8 +371,9 @@ If you disable this policy setting, the user is not prompted for a password when
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Require a password when a computer wakes (plugged in)*
+-   GP English name: *Require a password when a computer wakes (plugged in)*
 -   GP name: *ACPromptForPasswordOnResume_2*
+-   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -416,8 +423,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify the system sleep timeout (on battery)*
+-   GP English name: *Specify the system sleep timeout (on battery)*
 -   GP name: *DCStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->
@@ -467,8 +475,9 @@ ADMX Info:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify the system sleep timeout (plugged in)*
+-   GP English name: *Specify the system sleep timeout (plugged in)*
 -   GP name: *ACStandbyTimeOut_2*
+-   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
 
 <!--EndADMX-->

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - DeviceInstallation
@@ -62,8 +62,9 @@ If you disable or do not configure this policy setting, devices can be installed
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Prevent installation of devices that match any of these device IDs*
+-   GP English name: *Prevent installation of devices that match any of these device IDs*
 -   GP name: *DeviceInstall_IDs_Deny*
+-   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
 
 <!--EndADMX-->
@@ -111,8 +112,9 @@ If you disable or do not configure this policy setting, Windows can install and 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Prevent installation of devices using drivers that match these device setup classes*
+-   GP English name: *Prevent installation of devices using drivers that match these device setup classes*
 -   GP name: *DeviceInstall_Classes_Deny*
+-   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
 
 <!--EndADMX-->

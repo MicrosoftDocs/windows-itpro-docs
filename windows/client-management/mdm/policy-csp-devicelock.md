@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - DeviceLock
@@ -767,8 +767,9 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Prevent enabling lock screen slide show*
+-   GP English name: *Prevent enabling lock screen slide show*
 -   GP name: *CPL_Personalization_NoLockScreenSlideshow*
+-   GP path: *Control Panel/Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
 
 <!--EndADMX-->

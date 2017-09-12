@@ -68,7 +68,7 @@ It’s fundamentally important to understand which deployment model to use for a
 
 #### Trust types
 
-A deployments trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trusts types, key trust and certificate trust.
+A deployments trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trusts types, key trust and certificate trust. 
   
 The key trust type does not require issuing authentication certificates to end users.  Users authenticate using a hardware-bound key created during an in-box provisioning experience, which requires an adequate distribution of Windows Server 2016 domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment.
 
@@ -88,7 +88,7 @@ The goal of Windows Hello for Business is to move organizations away from passwo
 
 Cloud only and hybrid deployments provide many choices for multifactor authentication.  On-premises deployments must use a multifactor authentication that provides an AD FS multifactor adapter to be used in conjunction with the on-premises Windows Server 2016 AD FS server role. Organizations can use from the on-premises Azure Multifactor Authentication server, or choose from several third parties (Read [Microsoft and third-party additional authentication methods](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-additional-authentication-methods-for-ad-fs#microsoft-and-third-party-additional-authentication-methods) for more information).
 >[!NOTE]
-> Azure Multi-Factor Authentication is available through a:
+> Azure Multi-Factor Authentication is available through:
 >* Microsoft Enterprise Agreement
 >* Open Volume License Program
 >* Cloud Solution Providers program
@@ -127,11 +127,11 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure a trust anchor for authentication. Domain controllers for hybrid and on-prem deployments need a certificate in order for Windows 10 devices to trust the domain controller is a legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure a trust anchor for authentication. Domain controllers for hybrid and on-prem deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 
-Some deployment combinations require an Azure account and some require Azure Active Directory for user identities.  These cloud requirements can may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiate the components that are needed from the those that are optional.
+Some deployment combinations require an Azure account and some require Azure Active Directory for user identities.  These cloud requirements may only need an Azure account while other features need an Azure Active Directory Premium subscription. The planning process identifies and differentiate the components that are needed from the those that are optional.
 
 ## Planning a Deployment
 
@@ -159,6 +159,10 @@ If your organization does not have cloud resources, write **On-Premises** in box
 ### Trust type
 
 Choose a trust type that is best suited for your organizations.  Remember, the trust type determines two things. Whether you issue authentication certificates to your users and if your deployment needs Windows Server 2016 domain controllers.
+
+One trust model is not more secure than the other. The major difference is based on the organization comfort with deploying Windows Server 2016 domain controllers and not enrolling users with end enetity certificates (key-trust) against using existing domain controllers (Windows Server 2008R2 or later) and needing to enroll certificates for all their users (certificate trust).  
+
+Because the certificate trust tyoes issues certificates, there is more configuration and infrastrucutre needed to accomodate user certificate enrollment, which could also be a factor to consider in your decision.  Additional infrastructure needed for certificatat-trust deployements includes a certificate registration authority.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates.  
 
 If your organization wants to use the key trust type, write **key trust** in box **1b** on your planning worksheet. Write **Windows Server 2016** in box **4d**. Write **N/A** in box **5b**.
 
@@ -188,7 +192,7 @@ If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in 
 
 If box **1a** on your planning worksheet reads **hybrid**, then write **Azure AD Connect** in box **1e** on your planning worksheet.
 
-If box **1a** on your planning worksheet reads **on-premises**, then write **Azure MFA Server**.  This deployment exclusive uses Active Directory for user information with the exception of the multifactor authentication.  The on-premises Azure MFA server synchronizes a subset of the user information, such as phone number, to provide multifactor authentication while the user’s credential remain on the on-premises network.
+If box **1a** on your planning worksheet reads **on-premises**, then write **Azure MFA Server**.  This deployment exclusively uses Active Directory for user information with the exception of the multifactor authentication.  The on-premises Azure MFA server synchronizes a subset of the user information, such as phone number, to provide multifactor authentication while the user’s credential remain on the on-premises network.
 
 ### Multifactor Authentication
 
@@ -204,13 +208,13 @@ If box **1a** on your planning worksheet reads **hybrid**, then you have a few o
 
 You can directly use the Azure MFA cloud service for the second factor of authentication. Users contacting the service must authenticate to Azure prior to using the service.
   
-If your Azure AD Connect is configured to synchronize identities (usernames only), then your users are redirected to your local on-premises federation server for authentication and then redirected back to the Azure MFA cloud service.  Otherwise, your Azure AD Connect is configured to synchronize credentials (username and passwords), which enables your users to authenticate to Azure Active and use the Azure MFA cloud service.  If you choose to use the Azure MFA cloud service directly, write **Azure MFA** in box **1f** on your planning worksheet.
+If your Azure AD Connect is configured to synchronize identities (usernames only), then your users are redirected to your local on-premises federation server for authentication and then redirected back to the Azure MFA cloud service.  Otherwise, your Azure AD Connect is configured to synchronize credentials (username and passwords), which enables your users to authenticate to Azure Active Directory and use the Azure MFA cloud service.  If you choose to use the Azure MFA cloud service directly, write **Azure MFA** in box **1f** on your planning worksheet.
 
 You can configure your on-premises Windows Server 2016 AD FS role to use the Azure MFA service adapter. In this configuration, users are redirected to the on premises AD FS server (synchronizing identities only). The AD FS server uses the MFA adapter to communicate to the Azure MFA service to perform the second factor of authentication.  If you choose to use AD FS with the Azure MFA cloud service adapter, write **AD FS with Azure MFA cloud adapter** in box **1f** on your planning worksheet.
 
-Alternatively, you can use AD FS with an on-premises Azure MFA server adapter. Rather than AD FS communicating directly with the Azure MFA cloud service, it communicates with an on-premises AD FS server that synchronizes user information with the on-premises Active Directory.  The Azure MFA server communicates with Azure MFA cloud services to perform the second factor of authentication.  If you choose to use AD FS with the Azure MFA server adapter, write **AD FS with Azure MFA server adapter** in box **1f** on your planning worksheet.
+Alternatively, you can use AD FS with an on-premises Azure MFA server adapter. Rather than AD FS communicating directly with the Azure MFA cloud service, it communicates with an on-premises Azure MFA server that synchronizes user information with the on-premises Active Directory.  The Azure MFA server communicates with Azure MFA cloud services to perform the second factor of authentication.  If you choose to use AD FS with the Azure MFA server adapter, write **AD FS with Azure MFA server adapter** in box **1f** on your planning worksheet.
 
-The last option is for you to use AD FS with a third-party adapter to as the second factor of authentication.  If you choose to use AD FS with a third-party MFA adapter, write **AD FS with third party** in box **1f** on your planning worksheet.
+The last option is for you to use AD FS with a third-party adapter as the second factor of authentication.  If you choose to use AD FS with a third-party MFA adapter, write **AD FS with third party** in box **1f** on your planning worksheet.
 
 If box **1a** on your planning worksheet reads **on-premises**, then you have two second factor authentication options.  You must use Windows Server 2016 AD FS with your choice of the on-premises Azure MFA server or with a third-party MFA adapter. 
 
@@ -261,15 +265,15 @@ Review the trust type portion of this section if box **4d** on your planning wor
 
 ### Public Key Infrastructure
 
-Public key infrastructure prerequisites already exist on your planning worksheet.  These conditions are the minimum requirements for any hybrid our on-premises deployment.  Additional conditions may be needed based on your trust type.
+Public key infrastructure prerequisites already exist in your planning worksheet. These conditions are the minimum requirements for any hybrid or on-premises deployment.  Additional conditions may be needed based on your trust type.
 
 If box **1a** on your planning worksheet reads **cloud only**, ignore the public key infrastructure section of your planning worksheet.  Cloud only deployments do not use a public key infrastructure.
 
 If box **1b** on your planning worksheet reads **key trust**, write **N/A** in box **5b** on your planning worksheet.
 
-The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.
+The registration authority only relates to certificate trust deployments and the management used for domain and non-domain joined devices.  Hybrid Azure AD joined devices managed by Group Policy need the Windows Server 2016 AD FS role to issue certificates.  Hybrid Azure AD joined devices and Azure AD joined devices managed by Intune or a compatible MDM need the Windows Server NDES server role to issue certificates. 
 
-If box **3a** reads **GP** and box **3b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
+If box **2a** reads **GP** and box **2b** reads **modern management**, write **AD FS RA and NDES** in box **5b** on your planning worksheet.  In box **5c**, write the following certificate templates names and issuances:
 
 | Certificate Template Name | Issued To |
 | --- | --- |
@@ -279,14 +283,14 @@ If box **3a** reads **GP** and box **3b** reads **modern management**, write **A
 | Web Server | NDES |
 | CEP Encryption | NDES |
 
-If box **3a** reads **GP** and box **3b** reads **N/A**, write **AD FA RA** in box **5b** and write the following certificate template names and issuances in box **5c** on your planning worksheet.
+If box **2a** reads **GP** and box **2b** reads **N/A**, write **AD FA RA** in box **5b** and write the following certificate template names and issuances in box **5c** on your planning worksheet.
 
 | Certificate Template Name | Issued To |
 | --- | --- |
 | Exchange Enrollment Agent | AD FS RA | 
 | Web Server | AD FS RA | 
 
-If box **3a** or **3b** reads modern management, write **NDES** in box **5b** and write the following certificate template names and issuances in box 5c on your planning worksheet.
+If box **2a** or **2b** reads modern management, write **NDES** in box **5b** and write the following certificate template names and issuances in box 5c on your planning worksheet.
 
 | Certificate Template Name | Issued To |
 | --- | --- |

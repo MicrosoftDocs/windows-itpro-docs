@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Printers
@@ -75,8 +75,9 @@ If you disable this policy setting:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Point and Print Restrictions*
+-   GP English name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions_Win7*
+-   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
 
 <!--EndADMX-->
@@ -137,8 +138,9 @@ If you disable this policy setting:
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Point and Print Restrictions*
+-   GP English name: *Point and Print Restrictions*
 -   GP name: *PointAndPrint_Restrictions*
+-   GP path: *Control Panel/Printers*
 -   GP ADMX file name: *Printing.admx*
 
 <!--EndADMX-->
@@ -188,8 +190,9 @@ Note: This settings takes priority over the setting "Automatically publish new p
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Allow printers to be published*
+-   GP English name: *Allow printers to be published*
 -   GP name: *PublishPrinters*
+-   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
 
 <!--EndADMX-->

@@ -39,37 +39,37 @@ Online Crash Analysis | oca.telemetry.microsoft.com
 
 Device Health is offered as a solution in the Microsoft Operations Management Suite (OMS), a collection of cloud-based servicing for monitoring and automating your on-premise and cloud environments. For more information about OMS, see [Operations Management Suite overview](https://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/). 
 
-**If you are already using OMS**, you’ll find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace.
+**If you are already using OMS**, you’ll find Device Health in the Solutions Gallery. Select the **Device Health** tile in the gallery and then click **Add** on the solution's details page. Device Health is now visible in your workspace. While you're in the Solutions Gallery, you should consider installing the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md)  and [Update Compliance](update-compliance-monitor.md) solutions as well, if you haven't already.
 
 **If you are not yet using OMS**, use the following steps to subscribe to OMS Device Health:
 
 1.	Go to [Operations Management Suite](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite) on Microsoft.com and click **Sign in**.
-   [![](images/uc-02a.png)](images/uc-02.png)
+   [![Operations Management Suite bar with sign-in button](images/uc-02a.png)](images/uc-02.png)
 
 
 2.	Sign in to Operations Management Suite (OMS). You can use either a Microsoft Account or a Work or School account to create a workspace. If your company is already using Azure Active Directory (Azure AD), use a Work or School account when you sign in to OMS. Using a Work or School account allows you to use identities from your Azure AD to manage permissions in OMS.
-   [![](images/uc-03a.png)](images/uc-03.png)
+   [![OMS Sign-in dialog box for account name and password](images/uc-03a.png)](images/uc-03.png)
 
 
 3.	Create a new OMS workspace.
 
-     [![](images/uc-04a.png)](images/uc-04.png)
+     [![OMS dialog with buttons to create a new OMS workspace or cancel](images/uc-04a.png)](images/uc-04.png)
 
 4.	Enter a name for the workspace, select the workspace region, and provide the email address that you want associated with this workspace. Click **Create**.
 
-    [![](images/uc-05a.png)](images/uc-05.png)
+    [![OMS Create New Workspace dialog](images/uc-05a.png)](images/uc-05.png)
 
 5.	If your organization already has an Azure subscription, you can link it to your workspace. Note that you may need to request access from your organization’s Azure administrator. If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. If you do not yet have an Azure subscription, follow [this guide](https://blogs.technet.microsoft.com/upgradeanalytics/2016/11/08/linking-operations-management-suite-workspaces-to-microsoft-azure/) to create and link an Azure subscription to an OMS workspace.
 
-    [![](images/uc-06a.png)](images/uc-06.png)
+    [![OMS dialog to link existing Azure subscription or create a new one](images/uc-06a.png)](images/uc-06.png)
 
-6.	To add Device Health to your workspace, go to the Solution Gallery, Select the **Device Health** tile and then select **Add** on the solution's detail page. 
+6.	To add Device Health to your workspace, go to the Solution Gallery, Select the **Device Health** tile and then select **Add** on the solution's detail page. While you have this dialog open, you should also consider adding the [Upgrade Readiness](../upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md) and [Update Compliance](update-compliance-monitor.md) solutions as well, if you haven't already. To do so, just select the check boxes for those solutions.
 
-    [![](images/uc-08a.png)](images/uc-08.png)
+    [![Windows Analytics details page in Solutions Gallery](images/solution-bundle.png)](images/solution-bundle.png)
 
-7.	Click the **Device Health** tile to configure the solution. The **Settings Dashboard** opens.
+7.	Click the **Device Health** tile to configure the solution. The **Settings Dashboard** opens. In this example, both Upgrade Readiness and Device Health solutions have been added.
 
-    [![](images/uc-09a.png)](images/uc-09.png)
+    [![OMS Settings Dashboard showing Device Health and Upgrade Readiness tiles](images/OMS-after-adding-solution.jpg)](images/OMS-after-adding-solution.jpg)
 
 
 
@@ -89,7 +89,7 @@ In order for your devices to show up in Windows Analytics: Device Health, they m
     3. In the **Options** box, under **Commercial Id**, type the Commercial ID GUID, and then click **OK**.<P>
 
 - Using Microsoft Mobile Device Management (MDM)<BR><BR>
-Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. More information on deployment using MDM can be found [here](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
+Microsoft’s Mobile Device Management can be used to deploy your Commercial ID to your organization’s devices. The Commercial ID is listed under **Provider/ProviderID/CommercialID**. You can find more information on deployment using MDM at the [DMClient Configuration Service Provider topic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/dmclient-csp).  
 
 ## Perform checks to ensure and verify successful deployment
 

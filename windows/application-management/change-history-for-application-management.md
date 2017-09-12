@@ -14,10 +14,15 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## September 2017
+| New or changed topic | Description |
+| --- | --- |
+| [Per-user services in Windows](per-user-services-in-windows.md) | New |
+
 ## July 2017
 | New or changed topic | Description |
 | --- | --- |
 | [Service Host process refactoring](svchost-service-refactoring.md) | New |
-| [Deploy app updgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md) | New |
+| [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md) | New |
 
 

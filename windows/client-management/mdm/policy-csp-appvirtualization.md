@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - AppVirtualization
@@ -58,8 +58,9 @@ This policy setting allows you to enable or disable Microsoft Application Virtua
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable App-V Client*
+-   GP English name: *Enable App-V Client*
 -   GP name: *EnableAppV*
+-   GP path: *System/App-V*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -103,8 +104,9 @@ Enables Dynamic Virtualization of supported shell extensions, browser helper obj
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Dynamic Virtualization*
+-   GP English name: *Enable Dynamic Virtualization*
 -   GP name: *Virtualization_JITVEnable*
+-   GP path: *System/App-V/Virtualization*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -148,8 +150,9 @@ Enables automatic cleanup of appv packages that were added after Windows10 anniv
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable automatic cleanup of unused appv packages*
+-   GP English name: *Enable automatic cleanup of unused appv packages*
 -   GP name: *PackageManagement_AutoCleanupEnable*
+-   GP path: *System/App-V/PackageManagement*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -193,8 +196,9 @@ Enables scripts defined in the package manifest of configuration files that shou
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Package Scripts*
+-   GP English name: *Enable Package Scripts*
 -   GP name: *Scripting_Enable_Package_Scripts*
+-   GP path: *System/App-V/Scripting*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -238,8 +242,9 @@ Enables a UX to display to the user when a publishing refresh is performed on th
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Publishing Refresh UX*
+-   GP English name: *Enable Publishing Refresh UX*
 -   GP name: *Enable_Publishing_Refresh_UX*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -293,8 +298,9 @@ Data Block Size: This value specifies the maximum size in bytes to transmit to t
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Reporting Server*
+-   GP English name: *Reporting Server*
 -   GP name: *Reporting_Server_Policy*
+-   GP path: *System/App-V/Reporting*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -338,8 +344,9 @@ Specifies the file paths relative to %userprofile% that do not roam with a user'
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Roaming File Exclusions*
+-   GP English name: *Roaming File Exclusions*
 -   GP name: *Integration_Roaming_File_Exclusions*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -383,8 +390,9 @@ Specifies the registry paths that do not roam with a user profile. Example usage
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Roaming Registry Exclusions*
+-   GP English name: *Roaming Registry Exclusions*
 -   GP name: *Integration_Roaming_Registry_Exclusions*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -428,8 +436,9 @@ Specifies how new packages should be loaded automatically by App-V on a specific
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Specify what to load in background (aka AutoLoad)*
+-   GP English name: *Specify what to load in background (aka AutoLoad)*
 -   GP name: *Steaming_Autoload*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -473,8 +482,9 @@ Migration mode allows the App-V client to modify shortcuts and FTA's for package
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Migration Mode*
+-   GP English name: *Enable Migration Mode*
 -   GP name: *Client_Coexistence_Enable_Migration_mode*
+-   GP path: *System/App-V/Client Coexistence*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -518,8 +528,9 @@ Specifies the location where symbolic links are created to the current version o
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Integration Root User*
+-   GP English name: *Integration Root User*
 -   GP name: *Integration_Root_User*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -563,8 +574,9 @@ Specifies the location where symbolic links are created to the current version o
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Integration Root Global*
+-   GP English name: *Integration Root Global*
 -   GP name: *Integration_Root_Global*
+-   GP path: *System/App-V/Integration*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -626,8 +638,9 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 1 Settings*
+-   GP English name: *Publishing Server 1 Settings*
 -   GP name: *Publishing_Server1_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -689,8 +702,9 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 2 Settings*
+-   GP English name: *Publishing Server 2 Settings*
 -   GP name: *Publishing_Server2_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -752,8 +766,9 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 3 Settings*
+-   GP English name: *Publishing Server 3 Settings*
 -   GP name: *Publishing_Server3_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -815,8 +830,9 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 4 Settings*
+-   GP English name: *Publishing Server 4 Settings*
 -   GP name: *Publishing_Server4_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -878,8 +894,9 @@ User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, D
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Publishing Server 5 Settings*
+-   GP English name: *Publishing Server 5 Settings*
 -   GP name: *Publishing_Server5_Policy*
+-   GP path: *System/App-V/Publishing*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -923,8 +940,9 @@ Specifies the path to a valid certificate in the certificate store.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Certificate Filter For Client SSL*
+-   GP English name: *Certificate Filter For Client SSL*
 -   GP name: *Streaming_Certificate_Filter_For_Client_SSL*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -968,8 +986,9 @@ This setting controls whether virtualized applications are launched on Windows 8
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
+-   GP English name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
 -   GP name: *Streaming_Allow_High_Cost_Launch*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1013,8 +1032,9 @@ Specifies the CLSID for a compatible implementation of the IAppvPackageLocationP
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Location Provider*
+-   GP English name: *Location Provider*
 -   GP name: *Streaming_Location_Provider*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1058,8 +1078,9 @@ Specifies directory where all new applications and updates will be installed.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Package Installation Root*
+-   GP English name: *Package Installation Root*
 -   GP name: *Streaming_Package_Installation_Root*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1103,8 +1124,9 @@ Overrides source location for downloading package content.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Package Source Root*
+-   GP English name: *Package Source Root*
 -   GP name: *Streaming_Package_Source_Root*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1148,8 +1170,9 @@ Specifies the number of seconds between attempts to reestablish a dropped sessio
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Reestablishment Interval*
+-   GP English name: *Reestablishment Interval*
 -   GP name: *Streaming_Reestablishment_Interval*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1193,8 +1216,9 @@ Specifies the number of times to retry a dropped session.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Reestablishment Retries*
+-   GP English name: *Reestablishment Retries*
 -   GP name: *Streaming_Reestablishment_Retries*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1238,8 +1262,9 @@ Specifies that streamed package contents will be not be saved to the local hard 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Shared Content Store (SCS) mode*
+-   GP English name: *Shared Content Store (SCS) mode*
 -   GP name: *Streaming_Shared_Content_Store_Mode*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1283,8 +1308,9 @@ If enabled, the App-V client will support BrancheCache compatible HTTP streaming
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Enable Support for BranchCache*
+-   GP English name: *Enable Support for BranchCache*
 -   GP name: *Streaming_Support_Branch_Cache*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1328,8 +1354,9 @@ Verifies Server certificate revocation status before streaming using HTTPS.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Verify certificate revocation list*
+-   GP English name: *Verify certificate revocation list*
 -   GP name: *Streaming_Verify_Certificate_Revocation_List*
+-   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->
@@ -1373,8 +1400,9 @@ Specifies a list of process paths (may contain wildcards) which are candidates f
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Virtual Component Process Allow List*
+-   GP English name: *Virtual Component Process Allow List*
 -   GP name: *Virtualization_JITVAllowList*
+-   GP path: *System/App-V/Virtualization*
 -   GP ADMX file name: *appv.admx*
 
 <!--EndADMX-->

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - Desktop
@@ -62,8 +62,9 @@ If you enable this setting, users are unable to type a new location in the Targe
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Prohibit User from manually redirecting Profile Folders*
+-   GP English name: *Prohibit User from manually redirecting Profile Folders*
 -   GP name: *DisablePersonalDirChange*
+-   GP path: *Desktop*
 -   GP ADMX file name: *desktop.admx*
 
 <!--EndADMX-->

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - DataUsage
@@ -68,8 +68,9 @@ If this policy setting is disabled or is not configured, the cost of 3G connecti
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Set 3G Cost*
+-   GP English name: *Set 3G Cost*
 -   GP name: *SetCost3G*
+-   GP path: *Network/WWAN Service/WWAN Media Cost*
 -   GP ADMX file name: *wwansvc.admx*
 
 <!--EndADMX-->
@@ -123,8 +124,9 @@ If this policy setting is disabled or is not configured, the cost of 4G connecti
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Set 4G Cost*
+-   GP English name: *Set 4G Cost*
 -   GP name: *SetCost4G*
+-   GP path: *Network/WWAN Service/WWAN Media Cost*
 -   GP ADMX file name: *wwansvc.admx*
 
 <!--EndADMX-->

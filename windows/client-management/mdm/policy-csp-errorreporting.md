@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/14/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - ErrorReporting
@@ -72,8 +72,9 @@ If you disable or do not configure this policy setting, then the default consent
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Customize consent settings*
+-   GP English name: *Customize consent settings*
 -   GP name: *WerConsentCustomize_2*
+-   GP path: *Windows Components/Windows Error Reporting/Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
@@ -121,8 +122,9 @@ If you disable or do not configure this policy setting, the Turn off Windows Err
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Disable Windows Error Reporting*
+-   GP English name: *Disable Windows Error Reporting*
 -   GP name: *WerDisable_2*
+-   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
@@ -174,8 +176,9 @@ See also the Configure Error Reporting policy setting.
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Display Error Notification*
+-   GP English name: *Display Error Notification*
 -   GP name: *PCH_ShowUI*
+-   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
@@ -223,8 +226,9 @@ If you disable or do not configure this policy setting, then consent policy sett
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Do not send additional data*
+-   GP English name: *Do not send additional data*
 -   GP name: *WerNoSecondLevelData_2*
+-   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
@@ -272,8 +276,9 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 <!--StartADMX-->
 ADMX Info:  
--   GP english name: *Prevent display of the user interface for critical errors*
+-   GP English name: *Prevent display of the user interface for critical errors*
 -   GP name: *WerDoNotShowUI*
+-   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
 
 <!--EndADMX-->
