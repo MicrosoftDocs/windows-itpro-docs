@@ -60,7 +60,7 @@ You can choose to renew or extend the license at any point in time. However, sho
 
 ## You are not authorized to access the portal
 
-If you receive a **You are not authorized to access the portal**, please be aware that Windows Defender ATP is a security monitoring, incident investigation & response product, and as such, access to it is restricted and controlled by the user.
+If you receive a **You are not authorized to access the portal**, be aware that Windows Defender ATP is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
 **Assigning user access to the Windows Defender ATP portal** details are available at the [TechNet](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/assign-portal-access-windows-defender-advanced-threat-protection) site.
 
 ![Image of not authorized to access portal](images/atp-not-authorized-to-access-portal.png)
