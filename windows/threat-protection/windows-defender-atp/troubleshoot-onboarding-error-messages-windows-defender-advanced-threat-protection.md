@@ -28,15 +28,15 @@ ms.date: 09/10/2017
 You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when setting up your Windows Defender ATP service.
 
-If you receive an error message, the Windows Defender ATP portal will provide detailed explanation on what the issue is and relevant links.
+If you receive an error message, the Windows Defender ATP portal will provide detailed explanation on what the issue is and relevant links will be supplied.
 
 ## No subscriptions found
 
-If while accessing the Windows Defender ATP portal you get a **No subscriptions found** message, it means the Azure Active Directory for the user, used to login to the portal, does not have a Windows Defender ATP license.
+If while accessing the Windows Defender ATP portal you get a **No subscriptions found** message, it means the Azure Active Directory (AAD) used to login the user to the portal, does not have a Windows Defender ATP license.
 
 Potential reasons:
-- Windows E5 and Office E5 license are not the same thing. Make sure you are capturing the correct information.
-- The license was purchased but not provisioned to this Microsoft Azure Active Directory (AAD) instance.
+- The Windows E5 and Office E5 licenses are not the same thing. Make sure you are capturing the correct information.
+- The license was purchased but not provisioned to this AAD instance.
     - It could be a license provisioning issue.
     - It could be you inadvertently provisioned the license to a different Microsoft AAD than the one used for authentication into the service.
 
@@ -51,7 +51,7 @@ For both cases you should contact Microsoft support.
 
 If while accessing the Windows Defender ATP portal you get a **Your subscription has expired** message, your online service subscription has expired. Windows Defender ATP subscription, like any other online service subscription, has an expiration date. 
 
-You can choose to renew or extend the license at any point in time. However, should you decide to not renew the license, when accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the endpoint offboarding package.
+You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the endpoint offboarding package, should you choose to not renew the license.
 
 > [!NOTE]
 > For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
