@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date:  10/17/2017
 ---
 
 # Calling (Windows Configuration Designer reference)
@@ -79,10 +79,7 @@ See [Dialer codes for supplementary services](https://docs.microsoft.com/windows
 
 ## VoicemailRegistrationTable
 
-Setting | Description
---- | ---
-Entries |
-ProviderRegistration |
+Configure these settings to customize visual voicemail in the Windows 10 Mobile UI. For settings and values, see [Visual voicemail](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/visual-voicemail).
 
 
 ## List of USSD codes

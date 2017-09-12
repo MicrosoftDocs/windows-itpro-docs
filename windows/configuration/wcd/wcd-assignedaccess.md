@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 10/05/2017
+ms.date:  10/17/2017
 ---
 
 # AssignedAccess (Windows Configuration Designer reference)
@@ -33,6 +33,9 @@ Enter the account and the application you want to use for Assigned access, using
 ```
 
 ## MultiAppAssignedAccessSettings
+
+>[!NOTE]
+>MultiAppAssignedAccessSettings is supported on Windows 10, version 1709 only.
 
 Use this setting to configure a kiosk device that runs more than one app.
 

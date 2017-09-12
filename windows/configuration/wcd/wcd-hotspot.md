@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 08/21 10/17/2017
 ---
 
 # HotSpot (Windows Configuration Designer reference)
