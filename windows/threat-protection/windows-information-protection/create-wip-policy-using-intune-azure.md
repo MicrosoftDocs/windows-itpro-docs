@@ -6,7 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune
