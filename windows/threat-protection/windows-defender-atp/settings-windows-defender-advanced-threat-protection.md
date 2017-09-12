@@ -86,5 +86,6 @@ The following date and time formats are currently not supported:
 - Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
 
 
+
 ## License
 Click the license link in the **Settings** menu to view the license agreement information for Windows Defender ATP.
