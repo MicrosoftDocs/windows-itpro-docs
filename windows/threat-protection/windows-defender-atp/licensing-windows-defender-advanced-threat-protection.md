@@ -29,11 +29,11 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 1. From the **Partner portal**, click on the **Administer services > Office 365**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer Admin portal.
+2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer Office 365 **Admin portal**.
 
 ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
-3. In the office **Admin portal** navigate to **Billing** > **Licenses**
+3. In the Office 365 **Admin portal** navigate to **Billing** > **Licenses**
 
     - On the right side of the screen you will see all the provisioned licenses and their current **Status**.
 
@@ -47,22 +47,22 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 ![Image of Set up your permissions for WDATP](images/atp-setup-permissions-wdatp-portal.png)
 
-Once the authorization step completed will the **Welcome** screen be displayed.
+Once the authorization step is completed the **Welcome** screen be displayed.
 
-2. The **Welcome** screen will provide some details as to what is about to occur in the set up wizard.
+2. The **Welcome** screen will provide some details as to what is about to occur during the set up wizard.
 
 ![Image of Welcome screen for portal set up](images/atp-portal-welcome-screen.png)
 
-You will need to set up your preferences for the Windows Defender ATP portal. 
+You will need to set up your preferences for the Windows Defender ATP portal.
 
-3. When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
+3. When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in Europe or The United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
 > [!NOTE]
 > This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.
 
 ![Image of geographic location in set up](images/atp-geographic-location-setup.png)
 
-4. Windows Defender ATP will store data up to a period of 6 months in your cloud instance, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
+4. Windows Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
 
 > [!NOTE]
 > This option can be changed at a later time.
@@ -87,7 +87,7 @@ You will need to set up your preferences for the Windows Defender ATP portal.
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
-- Toggle the setting between On and Off to choose Preview experience.
+- Toggle the setting between On and Off to choose Preview features.
 
 > [!NOTE]
 > This option can be changed at a later time.
@@ -105,7 +105,7 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 ![Image of Windows Defender ATP cloud instance](images/atp-windows-cloud-instance-creation.png)
 
-10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible, as long there is a valid license for Windows Defender ATP in place.
+10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
 
 For additional information on this process please see [configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 
