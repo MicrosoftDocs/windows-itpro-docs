@@ -311,7 +311,7 @@ You can also create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SO
 
 If you're running Windows 10, version 1703, or later:
 
-- Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Device Metadata!PreventDeviceMetadataFromNetwork** to 1 (one).
+You can also create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Device Metadata!PreventDeviceMetadataFromNetwork** to 1 (one).
 
 ### <a href="" id="find-my-device"></a>5. Find My Device
 
