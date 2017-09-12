@@ -24,7 +24,7 @@ If you are an EA customer with an existing Office 365 tenant, use the following 
 
 1.	Work with your reseller to place an order for $0 SKU. There are two SKUs available, depending on their current Windows Enterprise SA license:<BR>
     a.	**AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3<BR>
-    b.	**AAA-51068*** - Win10UsrOLSActv Alng MonthlySub Addon E5<BR>
+    b.	**AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5<BR>
 2.	After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
 3.	The admin can now assign subscription licenses to users.
 
