@@ -1699,7 +1699,7 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
     
     -or-
 
--   Create a new REG\_DWORD registry setting in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent\\DisableWindowsSpotlightFeatures**, with a value of 1 (one).
+-   Create a new REG\_DWORD registry setting in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
 
 If you're not running Windows 10, version 1607 or later, you can use the other options in this section.
 
@@ -1731,13 +1731,13 @@ If you're not running Windows 10, version 1607 or later, you can use the other o
 
     -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent\\DisableSoftLanding**, with a value of 1 (one).
+    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableSoftLanding**, with a value of 1 (one).
 
     -   **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences**.
 
         -or-
 
-    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent\\DisableWindowsConsumerFeatures**, with a value of 1 (one).
+    -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsConsumerFeatures**, with a value of 1 (one).
 
 For more info, see [Windows Spotlight on the lock screen](windows-spotlight.md).
 
