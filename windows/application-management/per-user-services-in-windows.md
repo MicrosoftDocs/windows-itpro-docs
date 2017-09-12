@@ -19,12 +19,7 @@ Per-user services are services that are created when a user signs into Windows o
 > [!NOTE]
 > Per-user services are only in available in Windows Server if you have installed the Desktop Experience. If you are running a Server Core or Nano Server installation, you won't see these services.
 
-There are two ways to control the creation of per-user services: 
-
-- Set the template service's **Startup Type** to **Disabled** to create them in a stopped and disabled state.
-- Create a new entry named **Start** under the service configuration in the registry as a DWORD (32-bit) value set to 4. This creates the per-user service in a stopped and disabled state. Beginning with Windows 10, version 1709 and Windows Server, version 1709, you can create a new entry named **UserServiceFlags** under the same service configuration in the registry as a DWORD (32-bit) value set to 0 to prevent the per-user service from being created, as shown in the following example:
-
-  ![Create per-user services in disabled state](media/user-service-flag.png)
+You can set the template service's **Startup Type** to **Disabled** to create per-user services in a stopped and disabled state.
 
 > [!IMPORTANT]
 > If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
@@ -136,12 +131,17 @@ REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t RE
 
 ### Managing Template Services with regedit.exe 
 
-If you cannot use Group Policy preferences to manage the per-user services, you can edit the registry with regedit.exe. To disable the Template Services change the Startup Type for each service to 4 (disabled), as shown in the following example:
+If you cannot use Group Policy preferences to manage the per-user services, you can edit the registry with regedit.exe. To disable the template services, change the Startup Type for each service to 4 (disabled), as shown in the following example:
 
 ![Using Regedit to change servive Starup Type](media/regedit-change-service-startup-type.png) 
 
 > [!CAUTION]
 > We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
+
+Beginning with Windows 10, version 1709 and Windows Server, version 1709, you can prevent the per-user service from being created by creating a new entry named **UserServiceFlags** under the same service configuration in the registry as a DWORD (32-bit) value set to 0, as shown in the following example:
+
+![Create per-user services in disabled state](media/user-service-flag.png)
+
 
 ### Manage template services by modifying the Windows image
 
