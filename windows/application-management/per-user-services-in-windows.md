@@ -24,7 +24,8 @@ You can't prevent per-user services from being created, but you can configure th
 > [!IMPORTANT]
 > If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
 
-Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates.
+Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates. 
+For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
 
 ## Per-user services
 
