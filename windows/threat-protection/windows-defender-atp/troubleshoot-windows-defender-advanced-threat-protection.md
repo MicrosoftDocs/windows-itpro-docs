@@ -50,22 +50,23 @@ If onboarding endpoints successfully completes but Windows Defender ATP does not
 
 For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).
 
+#### Known issues with regional formats
 
+**Date and time formats**<br>
+There are some known issues with the time and date formats. 
 
-### Windows Defender ATP has some date-time format issues
-**Internet Explorer(IE) and Microsoft Edge (Edge)**
+The following date formats are supported:
+- MM/dd/yyyy
+- dd/MM/yyyy
 
-IE and Edge uses the locale settings configured in the control panel language settings. To change the date and time format to conform to the locale that you need, you can update the date, time, and number format from your PC's control panel.
+The following date and time formats are currently not supported:
+- Date format yyyy/MM/dd
+- Date format dd/MM/yy
+- Date format with yy. Will only show yyyy.
+- Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
 
-**Google Chrome**
-
-If you use Google Chrome to access the Windows Defender ATP portal, you might need to configure the language settings for the date and time format to reflect your locale.
-
-1. Go to **Settings** > **Advanced** > **Languages**, then chose the language that applies to your locale.
-2. Restart the browser for the settings to take effect.
-
->[!NOTE]
->There currently is no support for Japanese date format (YYYY/MM/DD) in Windows Defender ATP when accessed through Google Chrome.
+**Use of comma to indicate thousand**<br>
+Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5K is displayed as 15.5K.
 
 
 ### Related topic
