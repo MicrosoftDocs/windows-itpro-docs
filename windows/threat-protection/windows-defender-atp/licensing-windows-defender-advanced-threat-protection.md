@@ -1,7 +1,7 @@
 ---
-title: Validate licensing provisioning and complete Windows Defender ATP setup
-description: Validating licensing provisioning, setting up initial preferences, and completing the user setup for Windows Defender Advanced Threat Protection portal.
-keywords: license, licensing, account, setup, validating licensing, windows defender atp
+title: Validate licensing provisioning and complete Windows Defender ATP set up
+description: Validating licensing provisioning, setting up initial preferences, and completing the user set up for Windows Defender Advanced Threat Protection portal.
+keywords: license, licensing, account, set up, validating licensing, windows defender atp
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,7 +12,7 @@ author: tbit0001
 ms.localizationpriority: high
 ms.date: 09/10/2017
 ---
-# Validating licensing provisioning and completing setup for Windows Defender ATP
+# Validating licensing provisioning and completing set up for Windows Defender ATP
 
 **Applies to:**
 
@@ -29,45 +29,45 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 1. From the **Partner portal**, click on the **Administer services > Office 365**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer admin portal.
+2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer Admin portal.
 
 ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
 3. In the office **Admin portal** navigate to **Billing** > **Licenses**
 
-    - On the right side of the screen you will see all the provisioned licenses and their current state.
+    - On the right side of the screen you will see all the provisioned licenses and their current **Status**.
 
 ![Image of billing licenses](images/atp-billing-licenses.png)
 
 ## Accessing the Windows Defender ATP portal for the first time
 
-When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a setup wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Windows Defender ATP that will be created.
+When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the set up wizard there will be a dedicated cloud instance of Windows Defender ATP created.
 
-1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will this **setup your permissions** step be relevant.
+1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will this **Set up your permissions** step be relevant.
 
-![Image of setup your permissions for WDATP](images/atp-setup-permissions-wdatp-portal.png)
+![Image of Set up your permissions for WDATP](images/atp-setup-permissions-wdatp-portal.png)
 
 Once the authorization step completed will the **Welcome** screen be displayed.
 
-2. The **Welcome** screen will provide some details as to what is about to occur in the setup wizard.
+2. The **Welcome** screen will provide some details as to what is about to occur in the set up wizard.
 
-![Image of Welcome screen for portal setup](images/atp-portal-welcome-screen.png)
+![Image of Welcome screen for portal set up](images/atp-portal-welcome-screen.png)
 
-You will need to setup your preferences for the Windows Defender ATP portal. 
+You will need to set up your preferences for the Windows Defender ATP portal. 
 
 3. When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
 > [!NOTE]
 > This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.
 
-![Image of geographic location in setup](images/atp-geographic-location-setup.png)
+![Image of geographic location in set up](images/atp-geographic-location-setup.png)
 
-4. Windows Defender ATP will store data up to a period of 6 months in your cloud instance, you have the option to set the data retention period for a shorter timeframe during this step of the setup process.
+4. Windows Defender ATP will store data up to a period of 6 months in your cloud instance, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
 
 > [!NOTE]
 > This option can be changed at a later time.
 
-![Image of data retention setup](images/atp-data-retention-policy.png)
+![Image of data retention set up](images/atp-data-retention-policy.png)
 
 5. You will need to indicate the size of your organization based on an estimate of the number of employees they currently employ.
 
@@ -99,7 +99,7 @@ You'll have access to upcoming features which you can provide feedback on to hel
 > [!NOTE]
 > Some of these options can be changed at a later time in the Windows Defender ATP portal.
 
-![Image of final preference setup](images/atp-final-preference-setup.png)
+![Image of final preference set up](images/atp-final-preference-setup.png)
 
 9. A dedicated cloud instance of the Windows Defender ATP portal is being created at this time. This step will take an average of 5 minutes to complete.
 
@@ -109,7 +109,7 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 For additional information on this process please see [configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 
-![Image of setup completion](images/atp-setup-complete.png)
+![Image of se tup completion](images/atp-setup-complete.png)
 
 ## Related topics
 - [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
