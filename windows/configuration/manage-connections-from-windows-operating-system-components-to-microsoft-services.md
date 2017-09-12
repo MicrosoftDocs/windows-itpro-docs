@@ -113,7 +113,7 @@ See the following table for a summary of the management settings for Windows 10 
 | [21. Wi-Fi Sense](#bkmk-wifisense) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [22. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [23. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
-| [24. Windows spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| [24. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [25. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [26. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [27. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
@@ -558,7 +558,7 @@ The following Microsoft Edge MDM policies are available in the [Policy CSP](http
 | Browser/FirstRunURL                                  | Choose the home page for Microsoft Edge on Windows Mobile 10. <br /> Default: blank                 |
 
 
-For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](http://technet.microsoft.com/library/mt270204.aspx).
+For a complete list of the Microsoft Edge policies, see [Available policies for Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/available-policies).
 
 ### <a href="" id="bkmk-ncsi"></a>13. Network Connection Status Indicator
 
@@ -1636,7 +1636,7 @@ You can stop sending file samples back to Microsoft.
 
     -or-
 
--   For Windows 10 only, apply the Defender/SubmitSamplesConsent MDM policy from the [Defender CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+-   For Windows 10 only, apply the Defender/SubmitSamplesConsent MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), where:
 
     -   **0**. Always prompt.
 
@@ -1682,9 +1682,9 @@ To remove Windows Media Player on Windows Server 2016:
 
 -   Run the following DISM command from an elevated command prompt: **dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer**
 
-### <a href="" id="bkmk-spotlight"></a>24. Windows spotlight
+### <a href="" id="bkmk-spotlight"></a>24. Windows Spotlight
 
-Windows spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface or through Group Policy.
+Windows Spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface, MDM policy, or through Group Policy.
 
 If you're running Windows 10, version 1607 or later, you only need to enable the following Group Policy:
 
@@ -1693,6 +1693,10 @@ If you're running Windows 10, version 1607 or later, you only need to enable the
     > [!NOTE]  
     > This must be done within 15 minutes after Windows 10 is installed. Alternatively, you can create an image with this setting.
 
+    -or-
+
+-   For Windows 10 only, apply the Experience/AllowWindowsSpotlight MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), with a value of 0 (zero).
+    
     -or-
 
 -   Create a new REG\_DWORD registry setting in **HKEY\_CURRENT\_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent!DisableWindowsSpotlightFeatures**, with a value of 1 (one).
@@ -1847,7 +1851,7 @@ You can turn off automatic updates by doing one of the following. This is not re
 
     -or-
 
--   For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](http://msdn.microsoft.com/library/windows/hardware/dn904962.aspx), where:
+-   For Windows 10 only, apply the Update/AllowAutoUpdate MDM policy from the [Policy CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update), where:
 
     -   **0**. Notify the user before downloading the update.
 
