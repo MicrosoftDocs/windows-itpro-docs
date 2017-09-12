@@ -1043,6 +1043,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/DefaultPrinterName</li>
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
+<li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
