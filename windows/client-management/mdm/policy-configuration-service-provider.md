@@ -2647,6 +2647,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-disablesystemrestore" id="system-disablesystemrestore">System/DisableSystemRestore</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics" id="limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-telemetryproxy" id="system-telemetryproxy">System/TelemetryProxy</a>
   </dd>
 </dl>
