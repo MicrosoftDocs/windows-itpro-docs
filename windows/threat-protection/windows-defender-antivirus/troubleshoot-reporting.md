@@ -14,7 +14,7 @@ ms.author: iawilt
 ms.date: 09/06/2017
 ---
 
-# Troublehsoot Windows Defender Antivirus reporting
+# Troubleshoot Windows Defender Antivirus reporting in Update Compliance
 
 **Applies to:**
 
@@ -24,7 +24,7 @@ ms.date: 09/06/2017
 
 - IT administrators
 
-When you use [Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you may encounter problems or issues.
+When you use [Windows Analytics Update Compliance to obtain reporting into the protection status of machines or endpoints](/windows/deployment/update/update-compliance-using#wdav-assessment) in your network that are using Windows Defender Antivirus, you may encounter problems or issues.
 
 Typically, the most common indicators of a problem are:
 - You only see a small number or subset of all the devices you were expecting to see
@@ -54,10 +54,10 @@ In order for devices to properly show up in Update Compliance, you have to meet 
 > - If the endpoint is running Windows 10 version 1607 or earlier, [Windows 10 telemetry must be set to the Enhanced level](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization#enhanced-level).
 > - It has been 3 days since all requirements have been met
 
-If the abnove pre-requisites have all been met, you may need to proceed to the next step to collect diagnostic information and send it to us.
+If the above pre-requisites have all been met, you may need to proceed to the next step to collect diagnostic information and send it to us.
 
 > [!div class="nextstepaction"]
-> [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data-update-compliance-wdav.md)
+> [Collect diagnostic data for Update Compliance troubleshooting](collect-diagnostic-data-update-compliance.md)
 
 
 

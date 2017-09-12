@@ -44,7 +44,7 @@ Before attempting this process, ensure you have read the [Troublehsoot Windows D
         ```
     4. A .cab file will be generated that contains various diagnostic logs. The location of the file will be specified in the output in the command prompt, but by default it will be in C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab.
 2. Copy these .cab files to a location that can be accessed by Microsoft support. An example could be a password-protected OneDrive folder that you can share with us.
-3. Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I+am+encountering+the+following+issue+when+using+Windows+Defender+AV+in+Update+Compliance%3a+%0d%0aI+have+provided+at+least+2+support+.cab+files+at+the+following+location%3a+%26lt%3baccessible+share%2c+including+access+details+such+as+password%26gt%3b%0d%0aMy+OMS+workspace+ID+is%3a+%0d%0aPlease+contact+me+at%3a">Update Compliance support email template</a>, and fill out the template with the following information:
+3. Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%26lt%3baccessible%20share%2c%20including%20access%20details%20such%20as%20password%26gt%3b%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:
 
     ```
     I am encountering the following issue when using Windows Defender AV in Update Compliance: 
