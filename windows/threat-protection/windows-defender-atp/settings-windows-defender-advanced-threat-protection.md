@@ -25,7 +25,7 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone, suppression rules, and view license information.
+Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone and view license information.
 
 ## Time zone settings
 The aspect of time is important in the assessment and analysis of perceived and actual cyberattacks.
@@ -39,7 +39,7 @@ Your current time zone setting is shown in the Windows Defender ATP menu. You ca
 ### UTC time zone
 Windows Defender ATP uses UTC time by default.
 
-Setting the Windows Defender ATP time zone to UTC will display all system timestamps (alerts, events, and others) in UTC for all users. Choosing this setting means that all users will see the same timestamps in Windows Defender ATP, regardless of their regional settings. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
+Setting the Windows Defender ATP time zone to UTC will display all system timestamps (alerts, events, and others) in UTC for all users. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
 
 ### Local time zone
 You can choose to have Windows Defender ATP use local time zone settings. All alerts and events will be displayed using your local time zone.
@@ -55,25 +55,36 @@ To set the time zone:
 
 1.	Click the **Settings** menu ![Settings icon](images/settings.png).
 2.	Select the **Timezone UTC** indicator.
-3.	Select **Timezone Local** or **-8:00**. 
+3.	Select **Timezone UTC** or your local time zone, for example -7:00. 
 
-### Date-time format in browser
+### Regional settings
+To apply different date formats for Windows Defender ATP, use regional settings for IE and Edge. If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
+
+
 **Internet Explorer(IE) and Microsoft Edge (Edge)**
 
-IE and Edge uses the locale settings configured in the control panel language settings. To change the date and time format to conform to the locale that you need, you can update the date, time, and number format from your PC's control panel.
+IE and Edge uses the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel. 
 
-**Google Chrome**
+Take the following steps to change the date and time format to conform to the format that you need.
 
-If you use Google Chrome to access the Windows Defender ATP portal, you might need to configure the language settings for the date and time format to reflect your locale.
+1. Go to **Control Panel** > **Clock, Language, and Region**.
+2. Click **Region** > **Change date, time, or number formats**. You can choose to use match the current format to match the Windows display language or you can specify date and time formats to suit your preference.
 
-1. Go to **Settings** > **Advanced** > **Languages**, then chose the language that applies to your locale.
-2. Restart the browser for the settings to take effect.
+    ![Image of region settings in control panel](images/atp-region-control-panel.png)
 
->[!NOTE]
->There currently is no support for Japanese date format format (YYYY/MM/DD) in Windows Defender ATP when when accessed through Google Chrome.
+#### Known issues with regional formats
+There are some known issues with the time and date formats. 
 
-## Suppression rules
-The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. For more information see, [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
+The following date formats are supported:
+- MM/dd/yyyy
+- dd/MM/yyyy
+
+The following date and time formats are currently not supported:
+- Date format yyyy/MM/dd
+- Date format dd/MM/yy
+- Date format with yy. Will only show yyyy.
+- Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
+
 
 ## License
 Click the license link in the **Settings** menu to view the license agreement information for Windows Defender ATP.
