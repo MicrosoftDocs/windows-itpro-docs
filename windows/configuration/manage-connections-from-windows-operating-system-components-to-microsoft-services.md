@@ -309,6 +309,10 @@ To prevent Windows from retrieving device metadata from the Internet, apply the 
 
 You can also create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Device Metadata!PreventDeviceMetadataFromNetwork** to 1 (one).
 
+If you're running Windows 10, version 1703, or later:
+
+- Create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Device Metadata!PreventDeviceMetadataFromNetwork** to 1 (one).
+
 ### <a href="" id="find-my-device"></a>5. Find My Device
 
 To turn off Find My Device:
