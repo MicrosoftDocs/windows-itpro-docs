@@ -29,11 +29,11 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 1. From the **Partner portal**, click on the **Administer services > Office 365**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer Office 365 **Admin portal**.
+2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 Admin portal**.
 
 ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
-3. In the Office 365 **Admin portal** navigate to **Billing** > **Licenses**
+3. In the **Office 365 Admin portal** navigate to **Billing** > **Licenses**
 
     - On the right side of the screen you will see all the provisioned licenses and their current **Status**.
 
@@ -47,7 +47,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 ![Image of Set up your permissions for WDATP](images/atp-setup-permissions-wdatp-portal.png)
 
-Once the authorization step is completed the **Welcome** screen be displayed.
+Once the authorization step is completed the **Welcome** screen will be displayed.
 
 2. The **Welcome** screen will provide some details as to what is about to occur during the set up wizard.
 
