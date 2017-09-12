@@ -43,7 +43,7 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the set up wizard there will be a dedicated cloud instance of Windows Defender ATP created.
 
-1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will this **Set up your permissions** step be relevant.
+1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will This **Set up your permissions** step will only be avaiable if you are not currently authorized to access the product.
 
 ![Image of Set up your permissions for WDATP](images/atp-setup-permissions-wdatp-portal.png)
 
@@ -83,11 +83,11 @@ You will need to set up your preferences for the Windows Defender ATP portal.
 
 ![Image of industry information](images/atp-industry-information.png)
 
-7. Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the "Preview experience".
+7. Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
 
-- Toggle the setting between On and Off to choose Preview features.
+- Toggle the setting between On and Off to choose **Preview features**.
 
 > [!NOTE]
 > This option can be changed at a later time.
