@@ -44,8 +44,8 @@ Windows Defender ATP makes it easy to create a Power BI dashboard by providing a
 
     ![Preferences setup with create dashboard button](images/atp-create-dashboard.png)
 
-    > [!NOTE]
-    > Loading your data in the Power BI service can take a few minutes.
+    >[!NOTE]
+    >Loading your data in the Power BI service can take a few minutes.
 
 3. If this is the first time you’re using Power BI with Windows Defender ATP, you’ll need to sign in and give consent to Windows Defender ATP Power BI app. By providing consent, you’re allowing Windows Defender ATP Power BI to sign in and read your profile, and access your data.
 
@@ -79,7 +79,7 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 
 8.	Select **New table and matrix visuals** and **Custom data connectors** and click **OK**.
     
-    >[NOTE]
+    >[!NOTE]
     >If you are using Power BI Desktop July 2017 version (or later), you won't need to select **New table and matrix visuals**. You'll only need to select **Custom data connectors**.
 
     ![Power BI options page](images/atp-powerbi-options.png)
