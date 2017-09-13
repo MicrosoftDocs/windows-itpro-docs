@@ -25,17 +25,17 @@ ms.date: 09/10/2017
 [!include[Prerelease information](prerelease.md)]
 
 ## Gain access to provisioned licenses
-The easiest way to gain access into which license is provisioned to you and check the license state is to check the O365 admin portal.
+The easiest way to gain access into which license is provisioned to you and check the license state is to check the **Office 365 admin center**.
 
 1. From the **Partner portal**, click on the **Administer services > Office 365**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 Admin portal**.
+2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
 
 ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
-3. In the **Office 365 Admin portal** navigate to **Billing** > **Licenses**
+3. In the **Office 365 admin center** navigate to **Billing** > **Licenses**
 
-    - On the right side of the screen you will see all the provisioned licenses and their current **Status**.
+    - On the screen you will see all the provisioned licenses and their current **Status**.
 
 ![Image of billing licenses](images/atp-billing-licenses.png)
 
@@ -94,7 +94,7 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 ![Image of preview experience](images/atp-preview-experience.png)
 
-8. You will receive a warning notifying you that you won't be able to change some of your preferences once you click "Continue".
+8. You will receive a warning notifying you that you won't be able to change some of your preferences once you click **Continue**.
 
 > [!NOTE]
 > Some of these options can be changed at a later time in the Windows Defender ATP portal.
@@ -107,7 +107,7 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
 
-For additional information on this process please see [configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
+For morfe information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 
 ![Image of se tup completion](images/atp-setup-complete.png)
 
