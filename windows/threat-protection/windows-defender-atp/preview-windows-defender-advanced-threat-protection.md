@@ -25,7 +25,7 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
+The Windows Defender Advanced Threat Protection service is constantly being updated to include new feature enhancements and capabilities.
 
 Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
