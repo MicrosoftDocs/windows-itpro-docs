@@ -1,6 +1,6 @@
 ---
-title: What Does USMT Migrate (Windows 10)
-description: What Does USMT Migrate
+title: What does USMT migrate (Windows 10)
+description: What does USMT migrate
 ms.assetid: f613987d-0f17-43fe-9717-6465865ceda7
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,23 +8,23 @@ ms.sitesec: library
 author: greg-lindsay
 ---
 
-# What Does USMT Migrate?
+# What does USMT migrate?
 
 
-## In This Topic
+## In this topic
 
 
--   [Default Migration Scripts](#bkmk-defaultmigscripts)
+-   [Default migration scripts](#bkmk-defaultmigscripts)
 
 -   [User Data](#bkmk-3)
 
--   [Operating-System Components](#bkmk-4)
+-   [Operating-system components](#bkmk-4)
 
--   [Supported Applications](#bkmk-2)
+-   [Supported applications](#bkmk-2)
 
--   [What USMT Does Not Migrate](#no)
+-   [What USMT does not migrate](#no)
 
-## <a href="" id="bkmk-defaultmigscripts"></a>Default Migration Scripts
+## <a href="" id="bkmk-defaultmigscripts"></a>Default migration scripts
 
 
 The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer can precisely define migrations using the USMT .xml scripting language. USMT provides the following sample scripts:
@@ -43,7 +43,7 @@ The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer ca
 
     -   Access control lists (ACLs) for folders outside the user profile.
 
-## <a href="" id="bkmk-3"></a>User Data
+## <a href="" id="bkmk-3"></a>User data
 
 
 This section describes the user data that USMT migrates by default, using the MigUser.xml file. It also defines how to migrate ACLs.
@@ -51,6 +51,9 @@ This section describes the user data that USMT migrates by default, using the Mi
 -   **Folders from each user profile.** When you specify the MigUser.xml file, USMT migrates everything in a user’s profiles including the following:
 
     My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites.
+
+    >[!IMPORTANT]
+    >Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](https://docs.microsoft.com/windows/deployment/usmt/usmt-common-issues#usmt-does-not-migrate-the-start-layout).
 
 -   **Folders from the All Users and Public profiles.** When you specify the MigUser.xml file, USMT also migrates the following from the **All Users** profile in Windows® XP, or the **Public** profile in Windows Vista, Windows 7, or Windows 8:
 
@@ -84,7 +87,7 @@ To migrate ACLs, you must specify the directory to migrate in the MigUser.xml fi
 
  
 
-## <a href="" id="bkmk-4"></a>Operating-System Components
+## <a href="" id="bkmk-4"></a>Operating-system components
 
 
 USMT migrates operating-system components to a destination computer from computers running Windows 7 and Windows 8
@@ -151,7 +154,7 @@ Some settings, such as fonts, are not applied by the LoadState tool until after 
 
  
 
-## <a href="" id="bkmk-2"></a>Supported Applications
+## <a href="" id="bkmk-2"></a>Supported applications
 
 
 Although it is not required for all applications, it is good practice to install all applications on the destination computer before restoring the user state. Installing applications before migrating settings helps to ensure that the migrated settings are not overwritten by the application installers.
@@ -361,12 +364,12 @@ When you specify the MigApp.xml file, USMT migrates the settings for the followi
 
  
 
-## <a href="" id="no"></a>What USMT Does Not Migrate
+## <a href="" id="no"></a>What USMT does not migrate
 
 
 The following is a list of the settings that USMT does not migrate. If you are having a problem that is not listed here, see [Common Issues](usmt-common-issues.md).
 
-### Application Settings
+### Application settings
 
 USMT does not migrate the following application settings:
 
@@ -382,7 +385,7 @@ USMT does not migrate the following application settings:
 
     -   You attempt to migrate from a 32-bit computer to a 64-bit computer. This is because the ICQ Pro default installation directory is different on the two types of computers. When you install ICQ Pro on a 32-bit computer, the default location is "C:\\Program Files\\...". The ICQ Pro default installation directory on an x64-based computer, however, is “C:\\Program Files (x86)\\...”.
 
-### Operating-System Settings
+### Operating-System settings
 
 USMT does not migrate the following operating-system settings.
 
@@ -402,10 +405,14 @@ You should also note the following:
 
 -   You can use the /**localonly** option to exclude the data from removable drives and network drives mapped on the source computer. For more information about what is excluded when you specify /**localonly**, see [ScanState Syntax](usmt-scanstate-syntax.md).
 
+### Start menu layout
+
+Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](https://docs.microsoft.com/windows/deployment/usmt/usmt-common-issues#usmt-does-not-migrate-the-start-layout).
+
 ## Related topics
 
 
-[Plan Your Migration](usmt-plan-your-migration.md)
+[Plan your migration](usmt-plan-your-migration.md)
 
  
 
