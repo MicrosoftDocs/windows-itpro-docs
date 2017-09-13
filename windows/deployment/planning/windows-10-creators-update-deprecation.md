@@ -22,7 +22,7 @@ This list is intended for IT professionals who are updating operating systems in
 |Apps Corner| | X |
 |By default, Flash autorun in Edge is turned off. Use the Click-to-Run (C2R) option instead. (This setting can be changed by the user.)| X | |
 |Interactive Service Detection Service| X | |
-|Microsoft Paint for languages that are not on the full localization list| | |
+|Microsoft Paint for languages that are not on the [full localization list](https://www.microsoft.com/windows/windows-10-specifications#Windows-10-localization)| | |
 |NPN support in TLS (superseded by ALPN)| X | |
 |Reading List | | X |
 |Tile Data Layer | | X |
