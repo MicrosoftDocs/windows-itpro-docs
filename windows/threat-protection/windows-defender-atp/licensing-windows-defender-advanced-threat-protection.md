@@ -31,13 +31,13 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
 
-![Image of O365 admin portal](images/atp-O365-admin-portal-customer.png)
+![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
 3. In the **Office 365 admin center** navigate to **Billing** > **Licenses**
 
     - On the screen you will see all the provisioned licenses and their current **Status**.
 
-![Image of billing licenses](images/atp-billing-licenses.png)
+![Image of billing licenses](images\atp-billing-licenses.png)
 
 ## Accessing the Windows Defender ATP portal for the first time
 
@@ -45,13 +45,13 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will This **Set up your permissions** step will only be avaiable if you are not currently authorized to access the product.
 
-![Image of Set up your permissions for WDATP](images/atp-setup-permissions-wdatp-portal.png)
+![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
 
 Once the authorization step is completed the **Welcome** screen will be displayed.
 
 2. The **Welcome** screen will provide some details as to what is about to occur during the set up wizard.
 
-![Image of Welcome screen for portal set up](images/atp-portal-welcome-screen.png)
+![Image of Welcome screen for portal set up](images\atp-portal-welcome-screen.png)
 
 You will need to set up your preferences for the Windows Defender ATP portal.
 
@@ -60,28 +60,28 @@ You will need to set up your preferences for the Windows Defender ATP portal.
 > [!NOTE]
 > This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.
 
-![Image of geographic location in set up](images/atp-geographic-location-setup.png)
+![Image of geographic location in set up](images\atp-geographic-location-setup.png)
 
 4. Windows Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
 
 > [!NOTE]
 > This option can be changed at a later time.
 
-![Image of data retention set up](images/atp-data-retention-policy.png)
+![Image of data retention set up](images\atp-data-retention-policy.png)
 
 5. You will need to indicate the size of your organization based on an estimate of the number of employees they currently employ.
 
 > [!NOTE]
 > The **organization size** question is not related to how many licenses were purchased for your organization. It is used by the service to optimize the creation of the data cluster for your organization.
 
-![Image of organization size](images/atp-organization-size.png)
+![Image of organization size](images\atp-organization-size.png)
 
 6. The customer industry information is helpful in collecting data for the Windows Security Team, and while optional, would be useful if completed. 
 
 > [!NOTE]
 > This option can be changed at a later time.
 
-![Image of industry information](images/atp-industry-information.png)
+![Image of industry information](images\atp-industry-information.png)
 
 7. Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on **Preview features**.
 
@@ -92,26 +92,26 @@ You'll have access to upcoming features which you can provide feedback on to hel
 > [!NOTE]
 > This option can be changed at a later time.
 
-![Image of preview experience](images/atp-preview-experience.png)
+![Image of preview experience](images\atp-preview-experience.png)
 
 8. You will receive a warning notifying you that you won't be able to change some of your preferences once you click **Continue**.
 
 > [!NOTE]
 > Some of these options can be changed at a later time in the Windows Defender ATP portal.
 
-![Image of final preference set up](images/atp-final-preference-setup.png)
+![Image of final preference set up](images\atp-final-preference-setup.png)
 
 9. A dedicated cloud instance of the Windows Defender ATP portal is being created at this time. This step will take an average of 5 minutes to complete.
 
-![Image of Windows Defender ATP cloud instance](images/atp-windows-cloud-instance-creation.png)
+![Image of Windows Defender ATP cloud instance](images\atp-windows-cloud-instance-creation.png)
 
 10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
 
-![Image of onboard endpoints](images/atp-onboard-endpoints.png)
+![Image of onboard endpoints](images\atp-onboard-endpoints.png)
 
 For more information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 
-![Image of set up completion](images/atp-setup-complete.png)
+![Image of set up completion](images\atp-setup-complete.png)
 
 ## Related topics
 - [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
