@@ -45,9 +45,9 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will This **Set up your permissions** step will only be avaiable if you are not currently authorized to access the product.
 
-![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
+	![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
 
-Once the authorization step is completed the **Welcome** screen will be displayed.
+	Once the authorization step is completed the **Welcome** screen will be displayed.
 
 2. The **Welcome** screen will provide some details as to what is about to occur during the set up wizard.
 
