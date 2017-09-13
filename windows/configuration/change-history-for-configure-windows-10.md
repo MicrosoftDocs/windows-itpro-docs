@@ -14,9 +14,17 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+
 ## RELEASE: Windows 10, version 1709
 
 The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update).
+
+## September 2017
+
+New or changed topic | Description
+--- | ---
+ [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added that Windows Spotlight can be managed by the Experience/AllowWindowsSpotlight MDM policy. 
+
 
 ## August 2017
 
