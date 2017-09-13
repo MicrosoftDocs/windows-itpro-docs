@@ -107,9 +107,11 @@ You'll have access to upcoming features which you can provide feedback on to hel
 
 10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
 
-For morfe information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
+![Image of onboard endpoints](images/atp-onboard-endpoints.png)
 
-![Image of se tup completion](images/atp-setup-complete.png)
+For more information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
+
+![Image of set up completion](images/atp-setup-complete.png)
 
 ## Related topics
 - [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
