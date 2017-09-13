@@ -130,7 +130,7 @@ Select from the following:
 
 ### eSim
 
-
+>eSim > FwUpdate? > AllowedAppIdList? > any text ???
 
 ### External
 
@@ -175,14 +175,14 @@ DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roamin
 DisableSystemTypeSupport | 
 DTMFOffTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), of the pause between DTMF digits. For example, a value of 120 specifies 0.12 seconds.
 DTMFOnTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), to generate the DTMF tone when a key is pressed. For example, a value of 120 specifies 0.12 seconds.
-ExcludedSystemTypesByDefault | 
-ExcludedSystemTypesPerOperator |
-LTEEnabled |
-LTEForced |
-ManualNetworkSelectionTimeout |
-NetworkSuffix |
-NitzFiltering |
-OperatorListForExcludedSystemTypes |
+ExcludedSystemTypesByDefault | Set the default value for **Highest connection speed** in the **Settings** > **Cellular & SIM** > **SIM** screen by specifying the bitmask for any combination of radio technology to be excluded from the default value. The connection speed that has not been excluded will show up as the highest connection speed. On dual SIM phones that only support up to 3G connection speeds, the **Highest connection speed** option is replaced by a 3G on/off toggle based on the per-device setting. Enter the binary setting to exclude 4G (`10000`) or 3G (`01000`).
+ExcludedSystemTypesPerOperator | Exclude specified system types from SIM cards that match the MCC:MNC pairs listed in **OperatorListForExcludedSystemTypes**. This setting is used only for China. Set the value to match the system type to be excluded. For more information about the RIL system types, see [RILSYSTEMTYPE](https://msdn.microsoft.com/library/windows/hardware/dn931143.aspx). For example, a value of 0x8 specifies RIL_SYSTEMTYPE_UMTS (3G) while 0x10 specifies RIL_SYSTEMTYPE_LTE (4G). To exclude more than one system type, perform a bitwise OR operation on the radio technologies you want to exclude. For example, a bitwise OR operation on RIL_SYSTEMTYPE_LTE (4G) and RIL_SYSTEMTYPE_UMTS (3G) results in the value 11000 (binary) or 0x18 (hexadecimal). In this case, the ExcludedSystemTypesPerOperator value must be set to 0x18 to limit the matching MCC:MNC pairs to 2G.
+LTEEnabled | Select **Yes** to enable LTE, and **No** to disable LTE.
+LTEForced | Select **Yes** to force LTE.
+ManualNetworkSelectionTimeout | Set the default network selection timeout value, in a range of 1-600 seconds. By default, the OS allows the phone to attempt registration on the manually selected network for 60 seconds (or 1 minute) before it switches back to automatic mode. This value is the amount of time that the OS will wait for the modem to register on the manually selected network. If the time lapses and the modem was not able to register on the network that was manually selected by the user, the OS will either switch back to the automatic network selection mode if Permanent automatic mode is enabled, and the user has manually selected a network or the modem was turned on, or display a dialog that notifies the user that the phone was unable to connect to the manually selected network after the phone was turned on or after airplane mode was turned off.
+NetworkSuffix | To meet branding requirements for some mobile operators, you can add a suffix to the network name that is displayed on the phone. For example, you can change from ABC to ABC 3G when under 3G coverage. This feature can be applied for any radio access technology (RAT). For TD-SCDMA RAT, a 3G suffix is always appended by default, but partners can also customize this the same way as with any other RAT. In the setting name, set SYSTEMTYPE to the network type that you want to append the network name to and click **Add**:</br></br>- system type 4: 2G (GSM)</br>- system type 8: 3G (UMTS)</br>- system type 16: LTE</br>- system type 32: 3G (TS-SCDMA)</br></br>Select the system type that you added, and enter the network name and suffix that you want displayed.
+NitzFiltering | For mobile networks that can receive Network Identity and Time Zone (NITZ) information from multiple sources, partners can set the phone to ignore the time received from an LTE network. Time received from a CDMA network is not affected. Set the value of NitzFiltering to `0x10`. 
+OperatorListForExcludedSystemTypes | 
 OperatorPreferredForFasterRadio |
 PreferredDataProviderList |
 Slot2DisableAppsList |
