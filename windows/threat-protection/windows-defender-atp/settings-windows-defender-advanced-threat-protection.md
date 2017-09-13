@@ -61,16 +61,10 @@ To set the time zone:
 To apply different date formats for Windows Defender ATP, use regional settings for IE and Edge. If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
 
 
-**Internet Explorer(IE) and Microsoft Edge (Edge)**
+**Internet Explorer (IE) and Microsoft Edge (Edge)**
 
-IE and Edge uses the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel. 
+IE and Edge use the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel. 
 
-Take the following steps to change the date and time format to conform to the format that you need.
-
-1. Go to **Control Panel** > **Clock, Language, and Region**.
-2. Click **Region** > **Change date, time, or number formats**. You can choose to use match the current format to match the Windows display language or you can specify date and time formats to suit your preference.
-
-    ![Image of region settings in control panel](images/atp-region-control-panel.png)
 
 #### Known issues with regional formats
 
@@ -82,14 +76,15 @@ The following date formats are supported:
 - dd/MM/yyyy
 
 The following date and time formats are currently not supported:
-- Date format yyyy/MM/dd
+- Date format yyyy-MM-dd
+- Date format dd-MMM-yy
 - Date format dd/MM/yy
+- Date format MM/dd/yy
 - Date format with yy. Will only show yyyy.
 - Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
 
-**Use of comma to indicate thousand**<br>
-Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5K is displayed as 15.5K.
-
+**Decimal symbol used in numbers**<br>
+Decimal symbol used is always a dot, even if a comma is selected in  the **Numbers** format settings in **Region** settings. For example, 15,5K is displayed as 15.5K.
 
 ## License
 Click the license link in the **Settings** menu to view the license agreement information for Windows Defender ATP.
