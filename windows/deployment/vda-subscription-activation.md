@@ -7,13 +7,18 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 08/23/2017
+ms.date: 09/05/2017
 author: greg-lindsay
 ---
 
 # Configure VDA for Windows 10 Subscription Activation
 
 This document describes how to configure virtual machines (VMs) to enable [Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based licensing mechanism for managing access to virtual desktops.
+
+Deployment instructions are provided for the following scenarios:
+1. [Active Directory-joined VMs](#active-directory-joined-vms)
+2. [Azure Active Directory-joined VMs](#azure-active-directory-joined-vms)
+3. [Azure Gallery VMs](#azure-gallery-vms)
 
 ## Requirements
 
@@ -64,7 +69,35 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 - In step 9, during setup with Windows Configuration Designer, under **Name**, type a name for the project that indicates it is not for Active Directory joined VMs, such as **Desktop Bulk Enrollment Token Pro GVLK**.
 - In step 12, during setup with Windows Configuration Designer, on the Account Management page, instead of enrolling in Active Directory, choose **Enroll in Azure AD**, click **Get Bulk Token**, sign in and add the bulk token using your organization's credentials.
 - In step 17, when entering the PackagePath, use the project name you entered in step 9 (ex: **Desktop Bulk Enrollment Token Pro GVLK.ppkg**)
-- When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described below.
+- When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described below in [Create custom RDP settings for Azure](#create-custom-rpd-settings-for-azure).
+
+## Azure Gallery VMs
+
+1. (Optional) To disable network level authentication, type the following at an elevated command prompt:
+
+    ```
+    REG ADD "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v UserAuthentication /t REG_DWORD /d 0 /f
+    ```
+
+2. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
+3. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
+4. Click **Add**, type **Authenticated users**, and then click **OK** three times.
+(https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd).
+5. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+6. Open Windows Configuration Designer and click **Provison desktop services**.
+7. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name. 
+    - Note: You can use a different project name, but this name is also used with dism.exe in a subsequent step.
+8. Under **Enter product key** type the Pro GVLK key: **W269N-WFGWX-YVC9B-4J6C9-T83GX**.
+9. On the Set up network page, choose **Off**.
+10. On the Account Management page, choose **Enroll in Azure AD**, click **Get Bulk Token**, sign in, and add the bulk token using your organizations credentials.
+11. On the Add applications page, add applications if desired. This step is optional.
+12. On the Add certificates page, add certificates if desired. This step is optional.
+13. On the Finish page, click **Create**.
+14. Copy the .ppkg file to the remote Virtual machine.  Double click to initiate the provisioning package install.  This will reboot the system.
+
+- When attempting to access the VM using remote desktop, you will need to create a custom RDP settings file as described [below](#create-custom-rpd-settings-for-azure).
+
+## Create custom RDP settings for Azure
 
 To create custom RDP settings for Azure:
 

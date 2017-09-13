@@ -572,7 +572,7 @@ ms.date: 08/30/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to prevent Attack Surface reduction rules from matching on files under the paths specified or for the fully qualified resources specified. Paths should be added under the Options for this setting. Each entry must be listed as a name value pair, where the name should be a string representation of a path or a fully qualified resource name. As an example, a path might be defined as: "c:\Windows" to exclude all files in this directory. A fully qualified resource name might be defined as: "C:\Windows\App.exe"..
 
-Value type is string.
+<p style="margin-left: 20px">Value type is string.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -609,7 +609,9 @@ Value type is string.
 
 <p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting enables setting the state (Block/Audit/Off) for each Attack surface reduction (ASR) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
 
-Value type is string.
+<p style="margin-left: 20px">For more information about ASR rule ID and status ID, see [Enable Attack Surface Reduction](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction).
+
+<p style="margin-left: 20px">Value type is string.
 
 <!--EndDescription-->
 <!--EndPolicy-->
