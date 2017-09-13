@@ -138,6 +138,10 @@ If you cannot use Group Policy preferences to manage the per-user services, you 
 > [!CAUTION]
 > We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
 
+Beginning with Windows 10, version 1709 and Windows Server, version 1709, you can prevent the per-user service from being created by setting **UserServiceFlags** to 0 under the same service configuration in the registry:
+
+![Create per-user services in disabled state](media/user-service-flag.png)
+
 ### Manage template services by modifying the Windows image
 
 If you're using custom images to deploy Windows, you can modify the Startup Type for the template services as part of the normal imaging process.
