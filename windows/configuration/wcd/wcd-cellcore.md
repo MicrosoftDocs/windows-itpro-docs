@@ -14,29 +14,32 @@ ms.date:  10/17/2017
 
 Use to configure settings for cellular data.
 
+>[!IMPORTANT]
+>These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring mobile devices and are not intended for use by administrators in the enterprise.
+
 ## Applies to
 
  Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core 
  --- | :---: | :---: | :---: | :---: | :---: 
  PerDevice: [CellConfigurations](#cellconfigurations) |  | X |  |  | 
- PerDevice: [CellData](#celldata) CellularFailover | X | X | X | X | X  
+ PerDevice: [CellData](#celldata) CellularFailover | X | X |   |  |   
  PerDevice: [CellData](#celldata) MaxNumberOfPDPContexts |  | X |  |  |  
  PerDevice: [CellData](#celldata) ModemProfiles |  | X |  |  | 
  PerDevice: [CellData](#celldata) PersistAtImaging |  | X |  |  |  
  PerDevice: [CellUX](#cellux)  |  | X |  |  |
  PerDevice: [CGDual](#cgdual)  |  | X |  |  |
- PerDevice: [eSim](#esim) | X | X | X | X | X
+ PerDevice: [eSim](#esim) | X | X |   |  | 
  PerDevice: [External](#external)  |  | X |  |  |
  PerDevice: [General](#general)  |  | X |  |  |
  PerDevice: [RCS](#rcs)  |  | X |  |  |
- PerDevice: [SMS](#sms)  | X | X | X | X | X 
+ PerDevice: [SMS](#sms)  | X | X |   |  |  
  PerDevice: [UIX](#uix)  |  | X |  |  |
  PerDevice: [UTK](#utk)  |  | X |  |  |
  PerlMSI: [CellData](#celldata2) |  | X |  |  |
  PerIMSI: [CellUX](#cellux2) |  | X |  |  |
  PerIMSI: [General](#general2) |  | X |  |  |
  PerIMSI: [RCS](#rcs2) |  | X |  |  |
- PerIMSI: [SMS](#sms2) | X | X | X | X | X
+ PerIMSI: [SMS](#sms2) | X | X |   |  | 
  PerIMSI: [UTK](#utk2) |  | X |  |  |
  PerIMSI: [VoLTE](#volte) |  | X |  |  |
 

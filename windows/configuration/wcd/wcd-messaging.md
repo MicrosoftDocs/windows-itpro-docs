@@ -14,6 +14,9 @@ ms.date:  10/17/2017
 
 Use for settings related to Messaging and Commercial Mobile Alert System (CMAS).
 
+>[!IMPORTANT]
+>These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring mobile devices and are not intended for use by administrators in the enterprise.
+
 >[!NOTE]
 >CMAS is now known as Wireless Emergency Alerts (WEA). 
 
