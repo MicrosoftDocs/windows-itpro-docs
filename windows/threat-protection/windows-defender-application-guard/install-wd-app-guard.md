@@ -8,7 +8,6 @@ ms.pagetype: security
 author: eross-msft
 ms.author: lizross
 ms.date: 08/11/2017
-localizationpriority: high
 ---
 
 # Prepare and install Windows Defender Application Guard

@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 07/07/2017
+ms.date: 09/08/2017
 ---
 # Windows Hello for Business Deployment Guide
 
@@ -47,7 +47,9 @@ Hybrid deployments are for enterprises that use Azure Active Directory.  On-prem
 The trust model determines how you want users to authentication to the on-premises Active Directory. Remember hybrid environments use Azure Active Directory and on-premises Active Directory. The key-trust model is for enterprises who do not want to issue end-entity certificates to their users and they have an adequate number of 2016 domain controllers in each site to support the authentication. The certificate-trust model is for enterprise that do want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today. The certificate trust model is also enterprise who are not ready to deploy Windows Server 2016 domain controllers.
 
 Following are the various deployment guides included in this topic:
+* [Hybrid Certificate Trust Deployment](hello-hybrid-cert-trust.md)
 * [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
+
 
 ## Provisioning
 

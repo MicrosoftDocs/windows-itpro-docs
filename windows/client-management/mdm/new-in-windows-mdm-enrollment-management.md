@@ -1043,7 +1043,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/DefaultPrinterName</li>
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
+<li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 <li>Update/DisableDualScan</li>
 <li>Update/ScheduledInstallEveryWeek</li>
@@ -1334,6 +1336,31 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### September 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
+<ul>
+<li>Search/AllowCloudSearch</li>
+<li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
 
 ### August 2017
 

@@ -22,6 +22,14 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 - [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)
 - [Multi-app kiosk XML reference](multi-app-kiosk-xml.md)
 
+## September 2017
+
+New or changed topic | Description
+--- | ---
+ [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added that Windows Spotlight can be managed by the Experience/AllowWindowsSpotlight MDM policy. 
+
+
+
 ## August 2017
 
 New or changed topic | Description
