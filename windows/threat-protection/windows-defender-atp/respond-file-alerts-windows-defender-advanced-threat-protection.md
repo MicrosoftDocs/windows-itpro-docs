@@ -97,7 +97,7 @@ You can prevent further propagation of an attack in your organization by banning
 
 >[!NOTE]
 >This feature is only available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled.  For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
-This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. The action takes effect on machines with Windows 10, version 1703 or later.
+This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. This response action is available for machines on Windows 10, version 1703 or later.
 
 >[!IMPORTANT]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
