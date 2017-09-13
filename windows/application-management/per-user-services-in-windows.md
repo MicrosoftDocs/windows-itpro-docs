@@ -19,23 +19,17 @@ Per-user services are services that are created when a user signs into Windows o
 > [!NOTE]
 > Per-user services are only in available in Windows Server if you have installed the Desktop Experience. If you are running a Server Core or Nano Server installation, you won't see these services.
 
-Beginning with Windows 10, version 1709 and Windows Server, version 1709, there are two ways to prevent per-user services from being created:
+You can set the template service's **Startup Type** to **Disabled** to create per-user services in a stopped and disabled state.
 
-- Configure the template service to create them in a stopped and disabled state. You do this by setting the template service's **Startup Type** to **Disabled**.
-
-  > [!IMPORTANT]  
-  > If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
-  
-- Create a new Registry entry named UserServiceFlags under the service configuration in the registry as a DWORD (32 bit) value set to 0, as shown in the following example:
-
-  ![UserServiceFlags registry entry](media/user-service-flag.png) 
+> [!IMPORTANT]
+> Carefully test any changes to the template service's Startup Type before deploying to a production environment. 
 
 Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates. 
 For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
 
 ## Per-user services
 
-Windows 10 and Windows Server 2016 (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
+Windows 10 and Windows Server (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
 Before you disable any of these services, review the **Description** column in this table to understand the implications, including dependent apps that will no longer work correctly.
 
@@ -137,12 +131,16 @@ REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t RE
 
 ### Managing Template Services with regedit.exe 
 
-If you cannot use Group Policy preferences to manage the per-user services, you can edit the registry with regedit.exe. To disable the Template Services change the Startup Type for each service to 4 (disabled), as shown in the following example:
+If you cannot use Group Policy preferences to manage the per-user services, you can edit the registry with regedit.exe. To disable the template services, change the Startup Type for each service to 4 (disabled):
 
 ![Using Regedit to change servive Starup Type](media/regedit-change-service-startup-type.png) 
 
 > [!CAUTION]
 > We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
+
+Beginning with Windows 10, version 1709 and Windows Server, version 1709, you can prevent the per-user service from being created by setting **UserServiceFlags** to 0 under the same service configuration in the registry:
+
+![Create per-user services in disabled state](media/user-service-flag.png)
 
 ### Manage template services by modifying the Windows image
 
