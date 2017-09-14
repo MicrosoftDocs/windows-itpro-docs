@@ -35,15 +35,15 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 3. In the **Office 365 admin center** navigate to **Billing** > **Licenses**
 
-    - On the screen you will see all the provisioned licenses and their current **Status**.
+- On the screen you will see all the provisioned licenses and their current **Status**.
 
-	![Image of billing licenses](images\atp-billing-licenses.png)
+![Image of billing licenses](images\atp-billing-licenses.png)
 
 ## Accessing the Windows Defender ATP portal for the first time
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the set up wizard there will be a dedicated cloud instance of Windows Defender ATP created.
 
-1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will This **Set up your permissions** step will only be avaiable if you are not currently authorized to access the product.
+1. Each time you access the portal you will need to validate that you are authorized to access the product. Only if you are not authorized will This **Set up your permissions** step will only be available if you are not currently authorized to access the product.
 
 	![Image of Set up your permissions for WDATP](images\atp-setup-permissions-wdatp-portal.png)
 
@@ -62,7 +62,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 	![Image of geographic location in set up](images\atp-geographic-location-setup.png)
 
-4. Windows Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
+4.   Windows Defender ATP will store data up to a period of 6 months in your cloud instance, however, you have the option to set the data retention period for a shorter timeframe during this step of the set up process.
 
 	> [!NOTE]
 	> This option can be changed at a later time.
