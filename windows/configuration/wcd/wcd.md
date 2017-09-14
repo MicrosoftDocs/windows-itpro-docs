@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 10/17/2017
 ---
 
 # Windows Configuration Designer provisioning settings (reference)
@@ -25,6 +25,8 @@ This section describes the settings that you can configure in [provisioning pack
 | [AutomaticTime](wcd-automatictime.md) | | X | | | |
 | [Browser](wcd-browser.md) | X | X | X | X |  |
 | [CallAndMessagingEnhancement](wcd-callandmessagingenhancement.md) | | X | | | |
+| [Calling](wcd-calling.md) | | X | | | |
+| [CellCore](wcd-cellcore.md) | X | X | | | |
 | [Cellular](wcd-cellular.md) | X |  |  |  |  |
 | [Certificates](wcd-certificates.md) | X | X | X | X | X |
 | [CleanPC](wcd-cleanpc.md) | X |  |  |  |  |
@@ -34,6 +36,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | X |  |  |  |  |
 | [DeveloperSetup](wcd-developersetup.md) |  |  |  | X |  |
 | [DeviceFormFactor](wcd-deviceformfactor.md) |  X | X | X | X |  |
+| [DeviceInfo](wcd-deviceinfo.md) | | X | | | |
 | [DeviceManagement](wcd-devicemanagement.md) |  X | X | X | X |  |
 | [DMClient](wcd-dmclient.md) | X | X | X | X | X |
 | [EditionUpgrade](wcd-editionupgrade.md) | X | X | X | X |  |
@@ -41,6 +44,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  |  | X |
 | [FirstExperience](wcd-firstexperience.md) |  |  |  | X |  |
 | [Folders](wcd-folders.md) |X | X | X | X |  |
+| [HotSpot](wcd-hotspot.md) | X | X | X | X | X |
 | [InitialSetup](wcd-initialsetup.md) |  | X |  |  |  |
 | [InternetExplorer](wcd-internetexplorer.md) |  | X |  |  |  |
 | [Licensing](wcd-licensing.md) | X |  |  |  |  |
@@ -55,6 +59,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [OtherAssets](wcd-otherassets.md) |  | X |  |  |  |
 | [Personalization](wcd-personalization.md) | X |  |  |  |  |
 | [Policies](wcd-policies.md) | X | X | X | X | X |
+| [Power](wcd-power.md) | X | X | X | X | X |
 | [ProvisioningCommands](wcd-provisioningcommands.md) | X |  |  |  |  |
 | [SharedPC](wcd-sharedpc.md) | X |  |  |  |  |
 | [Shell](wcd-shell.md) |  | X |  |  |  |
@@ -65,6 +70,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [SurfaceHubManagement](wcd-surfacehubmanagement.md) |  |  |  X  |  |  |
 | [TabletMode](wcd-tabletmode.md) |X | X | X | X |  |
 | [TakeATest](wcd-takeatest.md) | X |  |  |  |  |
+| [TextInput](wcd-textinput.md) |  | X |  |  |  |
 | [Theme](wcd-theme.md) |  | X |  |  |  |
 | [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | X |  |  |  |  |
 | [UniversalAppInstall](wcd-universalappinstall.md) | X | X | X | X | X |
