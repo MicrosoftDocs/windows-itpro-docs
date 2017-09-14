@@ -171,100 +171,36 @@ Sesotho sa Leboa|nso-ZA|1
 Setswana|tn-ZA|1
 Sinhala|si-LK|1
 Slovak|sk-SK|1
-Slovenian
-sl-SI
-1
-Sorbian, Upper
-hsb-DE
-1
-Spanish (Mexico)
-es-MX
-1
-Spanish (Spain)
-es-ES
-1
-Swedish
-sv-SE
-1
-Syriac
-syr-SY
-1
-Tajik
-tg-Cyrl-TJ
-1
-Tamazight (Central Atlas) - Tifinagh
-tzm-Tfng-MA
-1
-Tamazight (Central Atlas) - Latin
-tzm-Latn-DZ
-1
-Tamil - INSCRIPT
-ta-IN
-1
-Tamil - Phonetic
-ta-IN
-2
-Tatar
-tt-RU
-1
-Telugu - INSCRIPT
-te-IN
-1
-Telugu - Phonetic
-te-IN
-2
-Thai
-th-TH
-1
-Tibetan
-bo-CN
-1
-Turkish
-tr-TR
-1
-Turkmen
-tk-TM
-1
-Ukrainian
-uk-UA
-1
-Urdu
-ur-PK
-1
-Uyghur
-ug-CN
-1
-Uzbek - Cyrillic
-uz-Cyrl-UZ
-1
-Uzbek - Latin
-uz-Latn-UZ
-1
-Valencian
-ca-ES-valencia
-1
-Vietnamese - QWERTY
-vi-VN
-1
-Vietnamese - TELEX
-vi-VN
-2
-Vietnamese - VNI
-vi-VN
-3
-Welsh
-cy-GB
-1
-Wolof
-#N/A
-1
-Xhosa
-xh-ZA
-1
-Yoruba
-yo-NG
-1
-Zulu
-zu-ZA
-1
+Slovenian|sl-SI|1
+Sorbian, Upper|hsb-DE|1
+Spanish (Mexico)|es-MX|1
+Spanish (Spain)|es-ES|1
+Swedish|sv-SE|1
+Syriac|syr-SY|1
+Tajik|tg-Cyrl-TJ|1
+Tamazight (Central Atlas) - Tifinagh|tzm-Tfng-MA|1
+Tamazight (Central Atlas) - Latin|tzm-Latn-DZ|1
+Tamil - INSCRIPT|ta-IN|1
+Tamil - Phonetic|ta-IN|2
+Tatar|tt-RU|1
+Telugu - INSCRIPT|te-IN|1
+Telugu - Phonetic|te-IN|2
+Thai|th-TH|1
+Tibetan|bo-CN|1
+Turkish|tr-TR|1
+Turkmen|tk-TM|1
+Ukrainian|uk-UA|1
+Urdu|ur-PK|1
+Uyghur|ug-CN|1
+Uzbek - Cyrillic|uz-Cyrl-UZ|1
+Uzbek - Latin|uz-Latn-UZ|1
+Valencian|ca-ES-valencia|1
+Vietnamese - QWERTY|vi-VN|1
+Vietnamese - TELEX|vi-VN|2
+Vietnamese - VNI|vi-VN|3
+Welsh|cy-GB|1
+Wolof|N/A|1
+Xhosa|xh-ZA|1
+Yoruba|yo-NG|1
+Zulu|zu-ZA|1
  
