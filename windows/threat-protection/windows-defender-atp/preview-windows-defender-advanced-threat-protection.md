@@ -34,6 +34,9 @@ You'll have access to upcoming features which you can provide feedback on to hel
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Preferences setup** > **Preview experience**.
+
+    ![Image of Preferences setup and preview experience](images/atp-preview-features.png)
+
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Preview features
