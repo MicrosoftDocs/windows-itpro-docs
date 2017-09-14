@@ -307,6 +307,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### Authentication policies
 
 <dl>
+<dd>
+    <a href="./policy-csp-authentication.md#authentication-allowaadpasswordreset" id="authentication-allowaadpasswordreset">Authentication/AllowAadPasswordReset</a>
+  </dd>
   <dd>
     <a href="./policy-csp-authentication.md#authentication-alloweapcertsso" id="authentication-alloweapcertsso">Authentication/AllowEAPCertSSO</a>
   </dd>

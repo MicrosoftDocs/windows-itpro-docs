@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
-ms.date: 08/14/2017
+ms.date: 09/13/2017
 ---
 
 # Per-user services in Windows 10 and Windows Server 
@@ -35,7 +35,7 @@ For more information about disabling system services for Windows Server, see [Gu
 
 ## Per-user services
 
-Windows 10 and Windows Server 2016 (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
+Windows 10 and Windows Server (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
 Before you disable any of these services, review the **Description** column in this table to understand the implications, including dependent apps that will no longer work correctly.
 
