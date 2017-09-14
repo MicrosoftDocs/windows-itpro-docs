@@ -398,7 +398,7 @@ IMSOMADMServices | Allows configuration of OMA DM Services Mask. The value is ma
 IMSServices | Identifies which IMS services are enabled (if any). The value is any combination of flags 1 (IMS), 2 (SMS over IMS), 4 (Voice over IMS) and 8 (Video Over IMS). Set the value for the IMSServices setting to any combination of the following flags or bitmasks:</br></br>- IMS, Flag: 1, Bitmask: 0001</br>- SMS over IMS, Flag: 2, Bitmask: 0010</br>- Voice over IMS, Flag: 4, Bitmask: 0100</br>Video over IMS, Flag: 8, Bitmask: 1000
 
 
-<span id="errorreject />
+<span id="errorreject" />
 ## Error messages for reject codes
 
 Reject code | Extended error message | Short error message
