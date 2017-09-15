@@ -12,7 +12,7 @@ ms.date: 10/17/2017
 
 # TextInput (Windows Configuration Designer reference)
 
-Use TextInput settings to configure ...
+Use TextInput settings to configure text intelligence and keyboard for mobile devices.
 
 ## Applies to
 
