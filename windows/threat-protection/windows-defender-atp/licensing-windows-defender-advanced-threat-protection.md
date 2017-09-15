@@ -12,7 +12,7 @@ author: tbit0001
 ms.localizationpriority: high
 ms.date: 09/10/2017
 ---
-# Validating licensing provisioning and completing set up for Windows Defender ATP
+# Validate licensing provisioning and complete set up for Windows Defender ATP
 
 **Applies to:**
 
@@ -33,7 +33,7 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 	![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
-3. In the **Office 365 admin center** navigate to **Billing** > **Licenses**
+3. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
 
 - On the screen you will see all the provisioned licenses and their current **Status**.
 
