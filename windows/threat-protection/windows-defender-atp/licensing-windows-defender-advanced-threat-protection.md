@@ -37,7 +37,7 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 - On the screen you will see all the provisioned licenses and their current **Status**.
 
-![Image of billing licenses](images\atp-billing-licenses.png)
+	 ![Image of billing licenses](images\atp-billing-licenses.png)
 
 ## Accessing the Windows Defender ATP portal for the first time
 
