@@ -36,7 +36,7 @@ The ArcSight field column contains the default mapping between the Windows Defen
 
 Field numbers match the numbers in the images below.
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tableFixed"]
 | Portal   label   | SIEM field name           | ArcSight field      | Example value                                                                      | Description                                                                                                                                                                    |
 |------------------|---------------------------|---------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1                | AlertTitle                | name                | A dll was unexpectedly loaded into   a high integrity process without a UAC prompt | Value available for every alert.                                                                                                                                               |
