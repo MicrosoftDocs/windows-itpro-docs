@@ -171,7 +171,7 @@ Setting | Description
 atomicRoamingTableSettings3GPP</br>and</br>atomicRoamingTableSettings3GPP2 |
 AvoidStayingInManualSelection | You can enable permanent automatic mode for mobile networks that require the cellular settings to revert to automatic network selection after the user has manually selected another network when roaming or out of range of the home network.
 CardAllowList | Define the list of SIM cards allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards allowed in the first slot, set the value for CardAllowList to a comma-separated MCC:MNC list. You can also use wild cards, represented by an asterisk, to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`.
-CardBlockList | Define the list of SIM cards that are not allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards that are not allowed in the first slot, set the value for CardBlockList to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk (*), to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`. 
+CardBlockList | Define the list of SIM cards that are not allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards that are not allowed in the first slot, set the value for CardBlockList to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk, to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`. 
 CardLock | Used to enforce either the card allow list or both the card allow and block lists on a C+G dual SIM phone. 
 DefaultSlotAffinity | Set the data connection preference for:</br></br>- **SlotAffinityForInternetData_Automatic**: data connection preference is automatically set</br>- **SlotAffinityForInternetData_Slot0**: sets the data connection preference to Slot 0. The data connection cannot be edited by the user.</br>- **SlotAffinityForInternetData_Slot1**: Sets the data connection preference to Slot 1. The data connection cannot be edited by the user.
 DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roaming.
@@ -331,8 +331,8 @@ AvoidStayingInManualSelection | You can enable permanent automatic mode for mobi
 CardAllowList | Define the list of SIM cards allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards allowed in the first slot, set the value for CardAllowList to a comma-separated MCC:MNC list. You can also use wild cards, represented by an asterisk (*), to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`.
 CardBlockList | Define the list of SIM cards that are not allowed in the first slot of a C+G dual SIM phone. This setting is used only if **CardLock** is set to allow it. If **CardLock** is not set, this list is ignored. To configure the list of SIM cards that are not allowed in the first slot, set the value for CardBlockList to a comma separated MCC:MNC list. You can also use wild cards, represented by an asterisk (*), to accept any value. For example, you can set the value to `310:410,311:*,404:012,310:70`. 
 CardLock | Used to enforce either the card allow list or both the card allow and block lists on a C+G dual SIM phone. 
-Critical > MultivariantProvisionedSPN |
-Critical > SimNameWithoutMSISDNENabled |
+Critical > MultivariantProvisionedSPN | Used to change the default friendly SIM names in dual SIM phones. By default, the OS displays SIM 1 or SIM 2 as the default friendly name for the SIM in slot 1 or slot 2 if the service provider name (SPN) or mobile operator name has not been set. Partners can use this setting to change the default name read from the SIM to define the SPN for SIM cards that do not contain this information or to generate the default friendly name for the SIM. The OS uses the default value as the display name for the SIM or SPN in the Start screen and other parts of the UI including the SIM settings screen. For dual SIM phones that contain SIMs from the same mobile operator, the names that appear in the UI may be similar. See [Values for MultivariantProvisionedSPN](#spn).
+Critical > SimNameWithoutMSISDNENabled | Use this setting to remove the trailing MSISDN digits from the service provider name (SPN) in the phone UI. By default, the OS appends the trailing MSISDN digits to the service provider name (SPN) in the phone UI, including on the phone and messaging apps. If required by mobile operators, OEMs can use the SimNameWithoutMSISDNEnabled setting to remove the trailing MSISDN digits. However, you must use this setting together with **MultivariantProvisionedSPN** to suppress the MSISDN digits. 
 DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roaming.
 ExcludedSystemTypesByDefault | Set the default value for **Highest connection speed** in the **Settings** > **Cellular & SIM** > **SIM** screen by specifying the bitmask for any combination of radio technology to be excluded from the default value. The connection speed that has not been excluded will show up as the highest connection speed. On dual SIM phones that only support up to 3G connection speeds, the **Highest connection speed** option is replaced by a 3G on/off toggle based on the per-device setting. Enter the binary setting to exclude 4G (`10000`) or 3G (`01000`).
 LTEEnabled | Select **Yes** to enable LTE, and **No** to disable LTE.
@@ -406,3 +406,29 @@ Reject code | Extended error message | Short error message
 2 (The SIM card hasn't been activated or has been deactivated) | SIM not set up MM#2 | Invalid SIM
 3 (The SIM card fails authentication or one of the identity check procedures. This can also happen due to a duplication of the TMSI across different MSCs.) | Can't verify SIM MM#3 | Invalid SIM
 6 (The device has been put on a block list, such as when the phone has been stolen or the IMEI is restricted.) | Phone not allowed MM#6 | No service
+
+<span id="spn" />
+## Values for MultivariantProvisionedSPN
+
+Set the MultivariantProvisionedSPN value to the name of the SPN or mobile operator.
+
+The following table shows the scenarios supported by this customization:
+
+>[!NOTE]
+>In the Default SIM name column: 
+>
+>- The " " in MultivariantProvisionedSPN" "1234 means that there is a space between the mobile operator name or SPN and the last 4 digits of the MSISDN.
+>- MultivariantProvisionedSPN means the value that you set for the MultivariantProvisionedSPN setting.
+>- SIM 1 or SIM 2 is the default friendly name for the SIM in slot 1 or slot 2.
+
+
+Multivariant setting set?|SPN provisioned?|MSISDN (last 4 digits: 1234, for example) provisioned?|Default SIM name
+Yes|Yes|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234
+Yes|No|No|*MultivariantProvisionedSPN* (up to 16 characters)
+Yes|Yes|No|*MultivariantProvisionedSPN* (up to 16 characters)
+Yes|No|Yes|*MultivariantProvisionedSPN*1234 or *MultivariantProvisionedSPN*" "1234
+No|Yes|Yes|If SPN string >= 12: *SPN*1234</br></br>If SPN string < 12: *SPN*" "1234
+No|No|No|*SIM 1* or *SIM 2*
+No|Yes|No|SPN (up to 16 characters)
+No|No|Yes|*SIM 1* or *SIM 2*
+ 
