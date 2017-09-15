@@ -57,7 +57,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 3. When onboarding the service for the first time, you can choose to store your data in the Microsoft Azure datacenters in Europe or The United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
 
-	> [!NOTE]
+	> [!WARNING]
 	> This option cannot be changed without completely offboarding from Windows Defender ATP and completing a new enrollment process.
 
 	![Image of geographic location in set up](images\atp-geographic-location-setup.png)
