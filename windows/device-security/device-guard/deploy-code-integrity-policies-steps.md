@@ -36,6 +36,8 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - bginfo.exe<sup>[1]</sup> 
 - cdb.exe
 - csi.exe
+- dbghost.exe
+- dbgsvc.exe
 - dnx.exe
 - fsi.exe
 - fsiAnyCpu.exe
@@ -106,11 +108,14 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny  ID="ID_DENY_BGINFO"        FriendlyName="bginfo.exe"         FileName="BGINFO.Exe" MinimumFileVersion = "4.21.0.0" />
     <Deny  ID="ID_DENY_CBD"           FriendlyName="cdb.exe"            FileName="CDB.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_KD"            FriendlyName="kd.exe"             FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_KD_KMCI"       FriendlyName="kd.exe"             FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_NTKD"          FriendlyName="ntkd.exe"           FileName="ntkd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_WINDBG"        FriendlyName="windbg.exe"         FileName="windbg.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_MSBUILD"       FriendlyName="MSBuild.exe"        FileName="MSBuild.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_CSI"           FriendlyName="csi.exe"            FileName="csi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_DNX"           FriendlyName="dnx.exe"            FileName="dnx.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_DBGHOST"       FriendlyName="dbghost.exe"       FileName="DBGHOST.Exe" MinimumFileVersion = "2.3.0.0" /> 
+    <Deny  ID="ID_DENY_DBGSVC"        FriendlyName="dbgsvc.exe"         FileName="DBGSVC.Exe" MinimumFileVersion = "2.3.0.0" />    
+    <Deny  ID="ID_DENY_DNX"           FriendlyName="dnx.exe"            FileName="dnx.Exe" MinimumFileVersion = "65535.65535.65535.65535" />   
     <Deny  ID="ID_DENY_RCSI"          FriendlyName="rcsi.exe"           FileName="rcsi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_NTSD"          FriendlyName="ntsd.exe"           FileName="ntsd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_LXSS"          FriendlyName="LxssManager.dll"    FileName="LxssManager.dll" MinimumFileVersion = "65535.65535.65535.65535" />
@@ -163,7 +168,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Driver Signing Scenarios">
       <ProductSigners>
         <FileRulesRef>
-          <FileRuleRef RuleID="ID_DENY_KD" />
+          <FileRuleRef RuleID="ID_DENY_KD_KMCI" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
@@ -177,6 +182,8 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_WINDBG"/>
           <FileRuleRef RuleID="ID_DENY_MSBUILD"/>
           <FileRuleRef RuleID="ID_DENY_CSI"/>
+          <FileRuleRef RuleID="ID_DENY_DBGHOST"/>
+          <FileRuleRef RuleID="ID_DENY_DBGSVC"/>
           <FileRuleRef RuleID="ID_DENY_DNX"/>
           <FileRuleRef RuleID="ID_DENY_RCSI"/>
           <FileRuleRef RuleID="ID_DENY_NTSD"/>
