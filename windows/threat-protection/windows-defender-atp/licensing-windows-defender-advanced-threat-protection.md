@@ -111,8 +111,6 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 	For more information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 
-	![Image of set up completion](images\atp-setup-complete.png)
-
 ## Related topics
 - [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot onboarding process and error messages](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
