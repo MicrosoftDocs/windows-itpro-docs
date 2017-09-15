@@ -401,6 +401,7 @@ IMSServices | Identifies which IMS services are enabled (if any). The value is a
 <span id="errorreject" />
 ## Error messages for reject codes
 
+
 Reject code | Extended error message | Short error message
 --- | --- | ---
 2 (The SIM card hasn't been activated or has been deactivated) | SIM not set up MM#2 | Invalid SIM
