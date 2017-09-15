@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
-ms.date: 08/14/2017
+ms.date: 09/13/2017
 ---
 
 # Per-user services in Windows 10 and Windows Server 
@@ -19,17 +19,17 @@ Per-user services are services that are created when a user signs into Windows o
 > [!NOTE]
 > Per-user services are only in available in Windows Server if you have installed the Desktop Experience. If you are running a Server Core or Nano Server installation, you won't see these services.
 
-You can't prevent per-user services from being created, but you can configure the template service to create them in a stopped and disabled state. You do this by setting the template service's **Startup Type** to **Disabled**.
+You can configure the template service to create per-user services in a stopped and disabled state by setting the template service's **Startup Type** to **Disabled**.
 
 > [!IMPORTANT]
-> If you change the template service's Startup Type, make sure you carefully test that change prior to rolling it out in your production environment. 
+> Carefully test any changes to the template service's Startup Type before deploying in production. 
 
 Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates. 
 For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
 
 ## Per-user services
 
-Windows 10 and Windows Server 2016 (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
+Windows 10 and Windows Server (with the Desktop Experience) have the following per-user services. The template services are located in the registry at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
 Before you disable any of these services, review the **Description** column in this table to understand the implications, including dependent apps that will no longer work correctly.
 
