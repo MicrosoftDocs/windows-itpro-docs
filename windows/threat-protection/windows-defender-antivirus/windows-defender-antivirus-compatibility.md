@@ -15,7 +15,7 @@ ms.date: 09/07/2017
 ---
 
 
-# Windows Defender Antivirus and third party protection products
+# Windows Defender Antivirus compatibility
 
 
 **Applies to:**
@@ -60,12 +60,10 @@ Windows Server 2016 | Windows Defender AV | No | Active mode
 
 
 
-In the passive and automatic disabled modes, Windows Defender AV will continue to run (using the *msmpeng.exe* process), and will continue to be updated, however there will be no Windows Defender user interface, scheduled scans won't run, and Windows Defender AV will not provide real-time protection from malware.
+In the passive and automatic disabled modes, Windows Defender AV will continue to run (using the *msmpeng.exe* process), and will continue to be updated, however there will be no Windows Defender user interface, scheduled scans won't run, and Windows Defender AV will not provide real-time protection from malware:
 
-The reasons for this are twofold:
-
-1. If you are enrolled in Windows Defender ATP, [the service requires common information sharing from the Windows Defender AV service](../windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection.md) in order to properly monitor your devices and network for intrusion attempts and attacks. 
-2. If the protection offered by a third-party antivirus product goes out of date, is not updated, or stops providing real-time protection from viruses, malware, and other threats, then Windows Defender AV will automatically enable itself to ensure antivirus protection is maintained on the endpoint. 
+1. Passive mode is enabled if you are enrolled in Windows Defender ATP because [the service requires common information sharing from the Windows Defender AV service](../windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection.md) in order to properly monitor your devices and network for intrusion attempts and attacks. 
+2. Automatic disabled mode is enabled so that if the protection offered by a third-party antivirus product goes out of date, is not updated, or stops providing real-time protection from viruses, malware, and other threats, Windows Defender AV will automatically enable itself to ensure antivirus protection is maintained on the endpoint. 
     
     Therefore, the Windows Defender AV service needs to update itself to ensure it has up-to-date protection coverage in case it needs to automatically enable itself.
 
