@@ -176,7 +176,7 @@ CardBlockList | Define the list of SIM cards that are not allowed in the first s
 CardLock | Used to enforce either the card allow list or both the card allow and block lists on a C+G dual SIM phone. 
 DefaultSlotAffinity | Set the data connection preference for:</br></br>- **SlotAffinityForInternetData_Automatic**: data connection preference is automatically set</br>- **SlotAffinityForInternetData_Slot0**: sets the data connection preference to Slot 0. The data connection cannot be edited by the user.</br>- **SlotAffinityForInternetData_Slot1**: Sets the data connection preference to Slot 1. The data connection cannot be edited by the user.
 DisableLTESupportWhenRoaming | Set to **Yes** to disable LTE support when roaming.
-DisableSystemTypeSupport | 
+DisableSystemTypeSupport | Enter the system types to be removed.
 DTMFOffTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), of the pause between DTMF digits. For example, a value of 120 specifies 0.12 seconds.
 DTMFOnTime | Sets the length of time, in milliseconds (between 64 and 1000 inclusive), to generate the DTMF tone when a key is pressed. For example, a value of 120 specifies 0.12 seconds.
 ExcludedSystemTypesByDefault | Set the default value for **Highest connection speed** in the **Settings** > **Cellular & SIM** > **SIM** screen by specifying the bitmask for any combination of radio technology to be excluded from the default value. The connection speed that has not been excluded will show up as the highest connection speed. On dual SIM phones that only support up to 3G connection speeds, the **Highest connection speed** option is replaced by a 3G on/off toggle based on the per-device setting. Enter the binary setting to exclude 4G (`10000`) or 3G (`01000`).
