@@ -929,6 +929,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="even">
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
+<ul>
+<li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
+<li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
+<li>DomainName - fully qualified domain name if the device is domain-joined.</li>
+</ul>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+</td></tr>
+<tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
@@ -1360,6 +1370,16 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Search/AllowCloudSearch</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 </ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
+<ul>
+<li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
+<li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
+<li>DomainName - fully qualified domain name if the device is domain-joined.</li>
+</ul>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
 </td></tr>
 </tbody>
 </table>
