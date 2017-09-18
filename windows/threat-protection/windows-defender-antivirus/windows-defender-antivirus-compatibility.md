@@ -66,18 +66,6 @@ Passive mode | Windows Defender AV will not be used as the antivirus app, and th
 Automatic disabled mode | Windows Defender AV will not be used as the antivirus app. Files will not be scanned and threats will not be remediated. | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark no](images/svg/check-no.md)] 
 Active mode | Windows Defender AV is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files will be scanned and threats remediated, and detection information will be reported in your confirmation tool (such as Configuration Manager or the Windows Defender AV app on the machine itself). | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)]
 
-
-
-
-
-State | Description | Real-time protection and cloud-delivered protection | Limited periodic scanning | File scanning and detection information | Threat remediation | Threat definition updates
--|-|-|-|-|-
-Passive mode | Windows Defender AV will not be used as the antivirus app, and threats will not be remediated by Windows Defender AV. Files will be scanned and reports will be provided for threat detections which are shared with the Windows Defender ATP service.  | [!include[Check mark no](images/svg/check-no.md)]N | Y | Y | N | Y
-Automatic disabled mode | Windows Defender AV will not be used as the antivirus app. Files will not be scanned and threats will not be remediated. | N | Y | N | N | N 
-Active mode | Windows Defender AV is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files will be scanned and threats remediated, and detection information will be reported in your confirmation tool (such as Configuration Manager or the Windows Defender AV app on the machine itself). | Y | N | Y | Y | Y
-
-
-
 Passive mode is enabled if you are enrolled in Windows Defender ATP because [the service requires common information sharing from the Windows Defender AV service](../windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection.md) in order to properly monitor your devices and network for intrusion attempts and attacks. 
 
 Automatic disabled mode is enabled so that if the protection offered by a third-party antivirus product goes out of date, is not updated, or stops providing real-time protection from viruses, malware, and other threats, Windows Defender AV will automatically enable itself to ensure antivirus protection is maintained on the endpoint. It also allows you to enable [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md), which uses the Windows Defender AV engine to periodically check for threats in addition to your main antivirus app.
