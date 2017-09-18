@@ -34,7 +34,7 @@ ms.date: 08/25/2017
 - Windows Defender Security Center app
 
 
-Block at First Sight is a feature of Windows Defender Antivirus cloud-delivered protection that provides a way to detect and block new malware within seconds. 
+Block at first sight is a feature of Windows Defender Antivirus cloud-delivered protection that provides a way to detect and block new malware within seconds. 
 
 It is enabled by default when certain pre-requisite settings are also enabled. In most cases, these pre-requisite settings are also enabled by default, so the feature is running without any intervention. You can use group policy settings to confirm the feature is enabled.
 
