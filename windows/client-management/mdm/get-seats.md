@@ -1,6 +1,6 @@
 ---
 title: Get seats
-description: The Get seats operation retrieves the information about active seats in the Windows Store for Business.
+description: The Get seats operation retrieves the information about active seats in the Micosoft Store for Business.
 ms.assetid: 32945788-47AC-4259-B616-F359D48F4F2F
 ms.author: maricia
 ms.topic: article
@@ -12,7 +12,7 @@ ms.date: 06/19/2017
 
 # Get seats
 
-The **Get seats** operation retrieves the information about active seats in the Windows Store for Business.
+The **Get seats** operation retrieves the information about active seats in the Micosoft Store for Business.
 
 ## Request
 

@@ -102,7 +102,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Management tool for the Windows Store for Business</p></td>
+<td style="vertical-align:top"><p>Management tool for the Micosoft Store for Business</p></td>
 <td style="vertical-align:top"><p>New topics. The Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. It enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.</p></td>
 </tr>
 <tr class="even">
@@ -999,6 +999,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">Microsoft Store for Business</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -1370,6 +1374,11 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Search/AllowCloudSearch</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 </ul>
+<p>Added new settings to Update/BranchReadinessLevel policy in Windows 10 version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">Microsoft Store for Business</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
