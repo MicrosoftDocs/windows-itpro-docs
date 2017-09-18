@@ -37,10 +37,11 @@ Enter the AppID for the mobile operator's app in Microsoft Store.
 
 ## BrandingIcon
 
+Browse to and select an .ico file.
 
 ## BrandingIconPath
 
-
+Enter the destination path for the BrandingIcon .ico file.
 
 ## BrandingName
 
