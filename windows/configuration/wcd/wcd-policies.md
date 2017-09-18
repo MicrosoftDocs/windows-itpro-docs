@@ -76,9 +76,9 @@ This section describes the **Policies** settings that you can configure in [prov
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
 | [AllowAdvertising](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-allowadvertising)  | Whether the device can send out Bluetooth advertisements | X | X | X | X | X |
 | [AllowDiscoverableMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-allowdiscoverablemode)  | Whether other Bluetooth-enabled devices can discover the device  | X  | X |  X | X | X |
-| [AllowPrepairing](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-allowprepairing)  | Whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device  | X  | X | X | X | X |
-| [LocalDeviceName](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-localdevicename)  | Set the local Bluetooth device name  | X  | X | X | X | X |
-| [ServicesAllowedList](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-servicesallowedlist)  | Set a list of allowable services and profiles  | X  | X |   |   |  |
+| [AllowPrepairing](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-allowprepairing)  | Whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device  | X  | X | X |  | X |
+| [LocalDeviceName](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-localdevicename)  | Set the local Bluetooth device name  | X  | X | X |  | X |
+| [ServicesAllowedList](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#bluetooth-servicesallowedlist)  | Set a list of allowable services and profiles  | X  | X |   | X  |  |
 
 ## Browser
 
@@ -130,7 +130,7 @@ This section describes the **Policies** settings that you can configure in [prov
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowBluetooth](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#connectivity-allowbluetooth) | Allow the user to enable Bluetooth or restrict access. | X | X | X |  |  |
+| [AllowBluetooth](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#connectivity-allowbluetooth) | Allow the user to enable Bluetooth or restrict access. | X | X | X | X |  |
 | [AllowCellularData](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#connectivity-allowcellulardata) | Allow the cellular data channel on the device. | X | X | X |  |  |
 | [AllowCellularDataRoaming](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#connectivity-allowcellulardataroaming) | Allow or disallow cellular data roaming on the device. | X | X | X |  |  |
 | [AllowConnectedDevices](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#connectivity-allowconnecteddevices) | Allows IT admins the ability to disable the Connected Devices Platform component. | X | X | X |  |  |
@@ -140,6 +140,12 @@ This section describes the **Policies** settings that you can configure in [prov
 | [AllowVPNRoamingOverCellular](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#connectivity-allowvpnroamingovercellular) | Prevent the device from connecting to VPN when the device roams over cellular networks. | X | X | X |  |  |
 | HideCellularConnectionMode | Hide the checkbox that lets the user change the connection mode. | X | X | X |  |  |
 | HideCellularRoamingOption | Hide the dropdown menu that lets the user change the roaming preferences.  | X | X | X |  |  |
+
+## CredentialProviders
+
+| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| --- | --- | :---: | :---: | :---: | :---: | :---: |
+[DisableAutomaticReDeploymentCredentials](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders) | This setting disables the visibility of the credential provider that triggers the PC refresh on a device. This policy does not actually trigger the refresh. The admin user is required to authenticate to trigger the refresh on the target device. The Windows 10 Automatic ReDeployment feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered the devices are for ready for use by information workers or students. | X |  |  |  |  |
 
 ## Cryptography
 
@@ -200,6 +206,11 @@ This section describes the **Policies** settings that you can configure in [prov
 | [DOMonthlyUploadDataCap](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-domonthlyuploaddatacap) | Specify the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month. | X |  |  |  |  |
 | [DOPercentageMaxDownloadBandwidth](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dopercentagemaxdownloadbandwidth) | Specify the maximum download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. | X |  |  |  |  |
 
+## DeviceGuard
+
+| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| --- | --- | :---: | :---: | :---: | :---: | :---: |
+[EnableVirtualizationBasedSecurity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard) | Turns on virtualization based security(VBS) at the next reboot. virtualization based security uses the Windows Hypervisor to provide support for security services.  | X |  |  |  |  |
 
 ## DeviceLock
 
@@ -238,7 +249,7 @@ This section describes the **Policies** settings that you can configure in [prov
 | [AllowManualMDMUnenrollment](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowmanualmdmunenrollment) | Specify whether the user is allowed to delete the workplace account.  | X | X |  |  |  |
 | [AllowScreenCapture](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowscreencapture) | Specify whether screen capture is allowed. |  | X |  |  |  |
 | [AllowSIMErrorDialogPromptWhenNoSIM](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowsimerrordialogpromptwhennosim) | Specify whether to display a dialog prompt when no SIM card is detected. |  | X |  |  |  |
-| [AllowSyncMySettings](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowsyncmysettings) | Allow or disallow all Windows sync settings on the device. | X |  |  |  |  |
+| [AllowSyncMySettings](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowsyncmysettings) | Allow or disallow all Windows sync settings on the device. | X | X |  |  |  |
 | [AllowTailoredExperiencesWithDiagnosticData](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowtailoredexperienceswithdiagnosticdata) | Prevent Windows from using diagnostic data to provide customized experiences to the user. | X |  |  |  |  |
 | [AllowTaskSwitcher](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowtaskswitcher) | Allow or disallow task switching on the device. |  | X |  |  |  |
 | [AllowThirdPartySuggestionsInWindowsSpotlight](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowthirdpartysuggestionsinwindowsspotlight) | Specify whether to allow app and content suggestions from third-party software publishers in Windows Spotlight. | X |  |  |  |  |
@@ -249,6 +260,12 @@ This section describes the **Policies** settings that you can configure in [prov
 | [AllowWindowsSpotlightWindowsWelcomeExperience](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowwindowsspotlightwindowswelcomeexperience) | Turn off the Windows Spotlight Windows welcome experience feature. | X |  |  |  |  |
 | [AllowWindowsTips](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-allowwindowstips) | Enable or disable Windows Tips. | X |  |  |  |  |
 | [ConfigureWindowsSpotlightOnLockScreen](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#experience-configurewindowsspotlightonlockscreen) | Specify whether Spotlight should be used on the user's lock screen. | X |  |  |  |  |
+
+## ExploitGuard
+
+| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| ExploitProtectionSettings |  | X | X |  |  |  |
 
 
 ## Games
@@ -310,6 +327,7 @@ This section describes the **Policies** settings that you can configure in [prov
 | [AllowDataSense](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#settings-allowdatasense) | Allow the user to change Data Sense settings. |  | X |  |  |  |
 | [AllowVPN](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#settings-allowvpn) | Allow the user to change VPN settings. |  | X |  |  |  |
 | [ConfigureTaskbarCalendar](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#settings-configuretaskbarcalendar) | Configure the default setting for showing additional calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout. | X |  |  |  |  |
+[PageVisiblityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) | Allows IT admins to prevent specific pages in the System Settings app from being visible or accessible. Pages are identified by a shortened version of their already [published URIs](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference), which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:foo", the page identifier used in the policy will be just "foo". Multiple page identifiers are separated by semicolons.  | X |  |  |  |  |
 
 ## Start
 
@@ -331,6 +349,7 @@ This section describes the **Policies** settings that you can configure in [prov
 | [HideFrequentlyUsedApps](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidefrequentlyusedapps) | Hide **Most used** section of Start.  | X |  |  |  |  |
 | [HideHibernate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidehibernate) | Prevent **Hibernate** option from appearing in the Power button. | X |  |  |  |  |
 | [HideLock](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidelock) | Prevent **Lock** from appearing in the user tile. | X |  |  |  |  |
+| HidePeopleBar | Remove the people icon from the taskbar, as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar. | X |  |  |  |  |
 | [HidePowerButton](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidepowerbutton) | Hide the **Power** button. | X |  |  |  |  |
 | [HideRecentJumplists](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentjumplists) | Hide jumplists of recently opened items. | X |  |  |  |  |
 | [HideRecentlyAddedApps](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hiderecentlyaddedapps) | Hide **Recently added** section of Start. | X |  |  |  |  |
@@ -356,6 +375,7 @@ This section describes the **Policies** settings that you can configure in [prov
 | [AllowTelemetry](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#system-allowtelemetry) | Allow the device to send diagnostic and useage telemetry data. | X | X |  |  |  |
 | [AllowUserToResetPhone](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#system-allowusertoresetphone) | Allow the user to factory reset the phone. | X | X |  |  |  |
 | [DisableOneDriveFileSync](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#system-disableonedrivefilesync) | Prevent apps and features from working with files on OneDrive. | X |  |  |  |  |
+| [LimitEnhancedDiagnosticDataWindowsAnalytics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-limitenhanceddiagnosticdatawindowsanalytics) | This policy setting, in combination with the System/AllowTelemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. To enable this behavior you must enable this policy setting, and set Allow Telemetry to level 2 (Enhanced). When you configure these policy settings, a basic level of diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented in [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://go.microsoft.com/fwlink/?linkid=847594). Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft. If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.  | X | X |  |  |  |
 
 
 ## TextInput
@@ -390,25 +410,35 @@ This section describes the **Policies** settings that you can configure in [prov
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
 | [ActiveHoursEnd](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursend) | Use with **Update/ActiveHoursStart** to manage the range of active hours where update rboots are not scheduled. | X | X | X | X | X |
 | [ActiveHoursMaxRange](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursmaxrange) | Specify the maximum active hours range. | X | X | X | X | X |
-| [ActiveHoursStart](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursstart) | Use with **Update/ActiveHoursEnd** to manage the range of active hours where update rboots are not scheduled. | X | X | X | X | X |
+| [ActiveHoursStart](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-activehoursstart) | Use with **Update/ActiveHoursEnd** to manage the range of active hours where update reboots are not scheduled. | X | X | X | X | X |
 | [AllowautoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) | Configure automatic update behavior to scan, download, and install updates. | X | X | X | X | X |
+| [AllowAutoWindowsUpdateDownloadOverMeteredNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautowindowsupdatedownloadovermeterednetwork)| Option to download updates automatically over metered connections (off by default). Enter `0` for not allowed, or `1` for allowed. | X | X | X | X | X |
 | [AllowMUUpdateService](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowmuupdateservice) | Manage whether to scan for app updates from Microsoft Update. | X | X | X | X | X |
 | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | Manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. | X | X | X | X | X |
 | [AllowUpdateService](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowupdateservice) | Specify whether the device can use Microsoft Update, Windows Server Update Services (WSUS), or Windows Store. | X | X | X | X | X |
-| AutoRestartDeadlinePeriodInDays | Specify number of days (between 2 and 30) after which a forced restart will occur outside of active hours when restart is pending.  | X | X | X | X | X |
+| [AutoRestartDeadlinePeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-autorestartdeadlineperiodindays) | Specify number of days (between 2 and 30) after which a forced restart will occur outside of active hours when restart is pending.  | X | X | X | X | X |
 | [AutoRestartNotificationSchedule](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-autorestartnotificationschedule) | Specify the period for auto-restart reminder notifications. | X | X | X | X | X |
 | [AutoRestartRequiredNotificationDismissal](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-autorestartrequirednotificationdismissal) | Specify the method by which the auto-restart required notification is dismissed.  | X | X | X | X | X |
 | [BranchReadinessLevel](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-branchreadinesslevel) | Select which branch a device receives their updates from. | X | X | X | X | X |
 | [DeferFeatureUpdatesPeriodInDays](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-deferfeatureupdatesperiodindays) | Defer Feature Updates for the specified number of days. | X | X | X | X | X |
 | [DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-deferqualityupdatesperiodindays) | Defer Quality Updates for the specified number of days. | X | X | X | X | X |
+| [DeferUpdatePeriod](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferupdateperiod) | Specify update delays for up to 4 weeks.  | X | X | X | X | X |
+| [DeferUpgradePeriod](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferupgradeperiod) |Specify upgrade delays for up to 8 months. | X | X | X | X | X |
 | [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency) | Specify the frequency to scan for updates, from every 1-22 hours. | X | X | X | X | X |
+| [DisableDualScan](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-disabledualscan) | Do not allow update deferral policies to cause scans against Windows Update.  | X | X | X | X | X |
 | [EngagedRestartDeadline](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-engagedrestartdeadline) | Specify the deadline in days before automatically scheduling and executing a pending restart outside of active hours. | X | X | X | X | X |
 | [EngagedRestartSnoozeSchedule](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-engagedrestartsnoozeschedule) | Specify the number of days a user can snooze Engaged restart reminder notifications. | X | X | X | X | X |
 | [EngagedRestartTransitionSchedule](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-engagedrestarttransitionschedule) | Specify the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. | X | X | X | X | X |
 | [FillEmptyContentUrls](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-fillemptycontenturls) | Allow Windows Update Agent to determine the download URL when it is missing from the metadata. | X | X | X | X | X |
+| ManagePreviewBuilds | Use to enable or disable preview builds. |  X | X | X | X | X |
 | PhoneUpdateRestrictions | Deprecated |  |  X  |  |  |  |
 | [RequireDeferUpgrade](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-requiredeferupgrade) | Configure device to receive updates from Current Branch for Business (CBB). | X | X | X | X | X |
 | [ScheduledInstallDay](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-scheduledinstallday) | Schedule the day for update installation. | X | X | X | X | X |
+| [ScheduledInstallEveryWeek](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalleveryweek) | To schedule update installation every week, set the value as `1`. | X | X | X | X | X |
+| [ScheduledInstallFirstWeek](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallfirstweek) | To schedule update installation the first week of the month, see the value as `1`.  | X | X | X | X | X |
+| [ScheduledInstallFourthWeek](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallfourthweek) | To schedule update installation the fourth week of the month, see the value as `1`. | X | X | X | X | X |
+| [ScheduledInstallSecondWeek](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallsecondweek) | To schedule update installation the second week of the month, see the value as `1`. | X | X | X | X | X |
+| [ScheduledInstallThirdWeek](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstallthirdweek) | To schedule update installation the third week of the month, see the value as `1`. | X | X | X | X | X |
 | [ScheduledInstallTime](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-scheduledinstalltime) | Schedule the time for update installation. | X | X | X | X | X |
 | [ScheduleImminentRestartWarning](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-scheduleimminentrestartwarning) | Specify the period for auto-restart imminent warning notifications. | X | X | X | X | X ||
 | [ScheduleRestartWarning](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-schedulerestartwarning) | Specify the period for auto-restart warning reminder notifications. | X | X | X | X | X |

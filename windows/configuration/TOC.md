@@ -122,6 +122,7 @@
 #### [UnifiedWriteFilter](wcd/wcd-unifiedwritefilter.md)     
 #### [UniversalAppInstall](wcd/wcd-universalappinstall.md) 
 #### [UniversalAppUninstall](wcd/wcd-universalappuninstall.md) 
+#### [UsbErrorsOEMOverride](wcd/wcd-usberrorsoemoverride.md)
 #### [WeakCharger](wcd/wcd-weakcharger.md)  
 #### [WindowsTeamSettings](wcd/wcd-windowsteamsettings.md)     
 #### [WLAN](wcd/wcd-wlan.md)     
