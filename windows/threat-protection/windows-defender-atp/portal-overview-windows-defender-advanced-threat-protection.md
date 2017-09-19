@@ -84,6 +84,11 @@ Icon | Description
 ![Other events icon](images\atp-Other-events-icon.png)| Other events
 ![Access token modification icon](images\atp-access-token-modification-icon.png)| Access token modification
 ![File creation icon](images\atp-file-creation-icon.png)| File creation
+![Signer icon](images\atp-signer-icon.png)| Signer
+![File path icon](images\atp-File-path-icon.png)| File path
+![Command line icon](images\atp-command-line-icon.png)| Command line
+![Unsigned file icon](images\atp-unsigned-file-icon.png)| Unsigned file
+![Process tree icon](images\atp-process-tree.png)| Process tree
 ![Memory allocation icon](images\atp-memory-allocation-icon.png)| Memory allocation
 ![Process injection icon](images\atp-process-injection.png)| Process injection
 ![Powershell command run icon](images\atp-powershell-command-run-icon.png)| Powershell command run
