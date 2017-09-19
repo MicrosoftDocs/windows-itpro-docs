@@ -37,7 +37,7 @@ Use the Machines list in these main scenarios:
 ## Sort, filter, and download the list of machines from the Machines list
 You can sort the **Machines list** by clicking on any column header to sort the view in ascending or descending order.  
 
-Filter the **Machines list** by time period, **OS Platform**, **Health**, **Security state**, **Malware category alerts**, or **Groups** to focus on certain sets of machines, according to the desired criteria.  
+Filter the **Machines list** by **Time**, **OS Platform**, **Health**, **Security state**, **Malware category alerts**, **Groups**, or **Tags** to focus on certain sets of machines, according to the desired criteria.  
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
@@ -78,7 +78,15 @@ Filter the list to view specific machines grouped together by the following mach
 -	**Inactive** – Machines that have completely stopped sending signals for more than 7 days.
 
 
-**Malware category**</br>
+**Security state**</br>
+Filter the list to view specific machines that are well configured or require attention based on the Windows Defender security controls that are enabled in your organization. 
+
+
+- **Well configured** - Machines have the Windows Defender security controls well configured. 
+- **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
+
+
+**Malware category alerts**</br>
 Filter the list to view specific machines grouped together by the following malware categories:
   -	**Ransomware** – Ransomware use common methods to encrypt files using keys that are known only to attackers. As a result, victims are unable to access the contents of the encrypted files. Most ransomware display or drop a ransom note—an image or an HTML file that contains information about how to obtain the attacker-supplied decryption tool for a fee.
   -	**Credential theft** – Spying tools, whether commercially available or solely used for unauthorized purposes, include general purpose spyware, monitoring software, hacking programs, and password stealers.
@@ -88,6 +96,8 @@ Filter the list to view specific machines grouped together by the following malw
   -	**General malware** – Malware are malicious programs that perform unwanted actions, including actions that can disrupt, cause direct damage, and facilitate intrusion and data theft. Some malware can replicate and spread from one machine to another. Others are able to receive commands from remote attackers and perform activities associated with cyberattacks.
   -	**PUA** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
 
+## Groups and tags
+You can filter the list based on the grouping and tagging that you've added to individual machines. For more information, see [Manage machine group and tags](respond-machine-alerts-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags).
 
 ## Export machine list to CSV
 You can  download a full list of all the machines in your organization, in CSV format. Click the **Export to CSV** button to download the entire list as a CSV file.
