@@ -5,14 +5,14 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+ms.localizationpriority: medium
 ms.author: jdecker
 ms.date: 08/21/2017
 ---
 
 # Connections (Windows Configuration Designer reference)
 
-Use to configure settings related to variou types of phone connections.
+Use to configure settings related to various types of phone connections.
 
 ## Applies to
 

@@ -16,6 +16,12 @@ ms.localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## September 2017
+
+New or changed topic | Description
+--- | ---
+[Top support solutions for Surface Hub](support-solutions-surface-hub.md) | New
+
 ## August 2017
 
 

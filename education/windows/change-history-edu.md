@@ -15,6 +15,12 @@ ms.date: 08/01/2017
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## September 2017
+
+| New or changed topic | Description |
+| --- | ---- |
+| [Use the Set up School PCs app ](use-set-up-school-pcs-app.md) | Updated the prerequisites to provide more clarification. |
+
 ## August 2017
 
 | New or changed topic | Description |

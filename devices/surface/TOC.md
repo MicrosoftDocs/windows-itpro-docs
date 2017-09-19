@@ -26,6 +26,7 @@
 ### [Use System Center Configuration Manager to manage devices with SEMM](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
 ## [Surface Diagnostic Toolkit](surface-diagnostic-toolkit.md)
 ## [Surface Data Eraser](microsoft-surface-data-eraser.md)
+## [Top support solutions for Surface devices](support-solutions-surface.md)
 ## [Change history for Surface documentation](change-history-for-surface.md)
 
 

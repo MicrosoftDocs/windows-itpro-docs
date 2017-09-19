@@ -307,6 +307,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### Authentication policies
 
 <dl>
+<dd>
+    <a href="./policy-csp-authentication.md#authentication-allowaadpasswordreset" id="authentication-allowaadpasswordreset">Authentication/AllowAadPasswordReset</a>
+  </dd>
   <dd>
     <a href="./policy-csp-authentication.md#authentication-alloweapcertsso" id="authentication-alloweapcertsso">Authentication/AllowEAPCertSSO</a>
   </dd>
@@ -2383,6 +2386,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### Search policies
 
 <dl>
+<dd>
+    <a href="./policy-csp-search.md#search-allowcloudsearch" id="search-allowcloudsearch">Search/AllowCloudSearch</a>
+  </dd>
   <dd>
     <a href="./policy-csp-search.md#search-allowindexingencryptedstoresoritems" id="search-allowindexingencryptedstoresoritems">Search/AllowIndexingEncryptedStoresOrItems</a>
   </dd>
@@ -2645,6 +2651,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-disablesystemrestore" id="system-disablesystemrestore">System/DisableSystemRestore</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics" id="limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-telemetryproxy" id="system-telemetryproxy">System/TelemetryProxy</a>

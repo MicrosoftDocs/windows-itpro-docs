@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Mandatory tasks and settings required to turn on Windows Information Protection (WIP)
