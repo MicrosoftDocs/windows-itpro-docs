@@ -229,12 +229,12 @@ Identify and access management is another area where the GDPR has placed special
 #### Multi-factor protection 
 Biometric authentication – using your face, iris, or fingerprint to unlock your devices – is much safer than traditional passwords. You– uniquely you– plus your device are the keys to your apps, data, and even websites and services – not a random assortment of letters and numbers that are easily forgotten, hacked, or written down and pinned to a bulletin board.
 
-Your ability to protect personal and sensitive data, that may be stored or accessed through desktop or laptops will be further enhanced by adopting advanced authentication capabilities such as Windows Hello for Business and Windows Hello Companions. Windows Hello for Business, part of Windows 10, gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password.
+Your ability to protect personal and sensitive data, that may be stored or accessed through desktop or laptops will be further enhanced by adopting advanced authentication capabilities such as Windows Hello for Business and Windows Hello companion devices. Windows Hello for Business, part of Windows 10, gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password.
 
 In conjunction with Windows Hello for Business, biometric authentication uses fingerprints or facial recognition and is more secure, more personal, and more convenient. If an application supports Hello, Windows 10 enables you to authenticate applications, enterprise content, and even certain online experiences without a password being stored on your device or in a network server at all.
-Windows Hello for Business works with the Companion Device Framework to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (for example, if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device).
+Windows Hello for Business works with the Companion Device Framework to enhance the user authentication experience. Using the Windows Hello Companion Device Framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (for example, if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device).
 
-There are numerous ways one can use the Windows Hello companion device framework to build a great Windows unlock experience with a companion device. For example, users can:
+There are numerous ways one can use the Windows Hello Companion Device Framework to build a great Windows unlock experience with a companion device. For example, users can:
 
 - Work offline (for example, while traveling on a plane)
 
