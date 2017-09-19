@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: high
 author: pwiglemsft
 ms.author: pwigle
+ms.date: 09/25/2017
 ---
 
 # Beginning your General Data Protection Regulation (GDPR) journey for Windows 10
