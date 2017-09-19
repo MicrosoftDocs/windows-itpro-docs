@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/31/2017
+ms.date: 09/12/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -956,7 +956,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
-<td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
+<td style="vertical-align:top"><p>Added DeviceTunnel and RegisterDNS settings in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
@@ -1391,6 +1391,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>DomainName - fully qualified domain name if the device is domain-joined.</li>
 </ul>
 <p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
+<td style="vertical-align:top"><p>Added RegisterDNS setting in Windows 10, version 1709.</p>
 </td></tr>
 </tbody>
 </table>
