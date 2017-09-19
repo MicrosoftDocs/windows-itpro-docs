@@ -18,7 +18,7 @@ ms.date: 06/30/2017
 
 -   Windows 10
 
-Windows AutoPilot is a collection of technologies used to setup and pre-configure new devices, getting them ready for productive use. In addition, you can use Windows AutoPilot to reset, repurpose and recover devices.</br>
+Windows AutoPilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. In addition, you can use Windows AutoPilot to reset, repurpose and recover devices.</br>
 This solution enables an IT department to achieve the above with little to no infrastructure to manage, with a process that's easy and simple.
 
 ## Benefits of Windows AutoPilot
