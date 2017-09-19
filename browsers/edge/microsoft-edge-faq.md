@@ -7,6 +7,7 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
 ms.localizationpriority: high
+ms.date: 09/07/2017
 ---
 
 # Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros
