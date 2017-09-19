@@ -13,7 +13,7 @@ ms.author: pwigle
 
 # Beginning your General Data Protection Regulation (GDPR) journey for Windows 10
 
-This article provides info about the GDPR, including what it is and the products Microsoft provides to help you to become compliant.
+This article provides info about the GDPR, including what it is, and the products Microsoft provides to help you to become compliant.
 
 ## Introduction
 On May 25, 2018, a European privacy law is due to take effect that sets a new global bar for privacy rights, security, and compliance.
@@ -79,7 +79,7 @@ Given how much is involved to become GDPR-compliant, we strongly recommend that 
 For each of the steps, we've outlined example tools, resources, and features in various Microsoft solutions, which can be used to help you address the requirements of that step. While this article isn't a comprehensive “how to,” we've included links for you to find out more details, and more information is available in the [GDPR section of the Microsoft Trust Center](https://www.microsoft.com/en-us/trustcenter/privacy/gdpr).
 
 ## Windows 10 security and privacy
-As you work to comply with the GDPR, understanding the role of your desktop and laptop client machines in creating, accessing, processing, storing and managing data that may qualify as as personal and potentially sensitive data under the GDPR is important. Windows 10 provides capabilities that will help you comply with the GDPR requirements to implement appropriate technical and organizational security measures to protect personal data.
+As you work to comply with the GDPR, understanding the role of your desktop and laptop client machines in creating, accessing, processing, storing and managing data that may qualify as personal and potentially sensitive data under the GDPR is important. Windows 10 provides capabilities that will help you comply with the GDPR requirements to implement appropriate technical and organizational security measures to protect personal data.
 
 With Windows 10, your ability to protect, detect and defend against the types of attacks that can lead to data breaches is greatly improved. Given the stringent requirements around breach notification within the GDPR, ensuring that your desktop and laptop systems are well defended will lower the risks you face that could result in costly breach analysis and notification.
 
@@ -231,7 +231,7 @@ Biometric authentication – using your face, iris, or fingerprint to unlock you
 Your ability to protect personal and sensitive data, that may be stored or accessed through desktop or laptops will be further enhanced by adopting advanced authentication capabilities such as Windows Hello and Windows Hello Companions. Windows Hello, part of Windows 10, gives users a personal, secured experience where the device is authenticated based on their presence. Users can log in with a look or a touch, with no need for a password.
 
 In conjunction with Windows Hello, biometric authentication uses fingerprints or facial recognition and is more secure, more personal, and more convenient. If an application supports Hello, Windows 10 enables you to authenticate applications, enterprise content, and even certain online experiences without a password being stored on your device or in a network server at all.
-Windows Hello works with the Companion Device Framework to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (for exmaple, if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device).
+Windows Hello works with the Companion Device Framework to enhance the user authentication experience. Using the Windows Hello companion device framework, a companion device can provide a rich experience for Windows Hello even when biometrics are not available (for example, if the Windows 10 desktop lacks a camera for face authentication or fingerprint reader device).
 
 There are numerous ways one can use the Windows Hello companion device framework to build a great Windows unlock experience with a companion device. For example, users can:
 
@@ -292,7 +292,7 @@ For example, employees can’t send protected work files from a personal email a
 #### Capabilities to classify, assign permissions and share data
 Windows Information Protection is designed to coexist with advanced data loss prevention (DLP) capabilities found in Office 365 ProPlus, Azure Information Protection, and Azure Rights Management. Advanced DLP prevents printing, for example, or protects work data that is emailed outside your company. 
 
-To protect data at all times, regardless of where it is stored, with whom it is shared, or if the device is running iOS, Android or Windows, the classification and protection needs to be built into the file itself so this protection can travel with the data wherever it goes. Microsoft Azure Information Protection (AIP) is designed to provide this persistent data protection both on-premises and in the cloud.
+To continously protect your data, regardless of where it is stored, with whom it is shared, or if the device is running iOS, Android or Windows, the classification and protection needs to be built into the file itself, so this protection can travel with the data wherever it goes. Microsoft Azure Information Protection (AIP) is designed to provide this persistent data protection both on-premises and in the cloud.
 
 Data classification is an important part of any data governance plan. Adopting a classification scheme that applies throughout your business can be particularly helpful in responding to what the GDPR calls data subject (for example, your EU employee or customer) requests, because it enables enterprises to identify more readily and process personal data requests.
 
