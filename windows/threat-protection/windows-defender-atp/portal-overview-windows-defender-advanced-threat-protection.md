@@ -69,7 +69,24 @@ Icon | Description
 ![Remediated icon](images/remediated-icon.png)| Remediated – Threat removed from the machine
 ![Not remediated icon](images/not-remediated-icon.png)| Not remediated – Threat not removed from the machine.
 ![Thunderbolt icon](images/atp-thunderbolt-icon.png) | Indicates events that triggered an alert in the **Alert process tree**.
-
+![Windows Defender AV events icon](images\atp-windows-defender-av-events-icon.png)| Windows Defender AV events
+![Application Guard events icon](images\atp-Application-Guard-events-icon.png)| Application Guard events
+![Device Guard events icon](images\atp-Device-Guard-events-icon.png)| Device Guard events
+![Exploit Guard events icon](images\atp-Exploit-Guard-events-icon.png)| Exploit Guard events
+![Smart Screen events icon](images\atp-Smart-Screen-events-icon.png)| Smart Screen events
+![Firewall events icon](images\atp-Firewall-events-icon.png)| Firewall events
+![Response action icon](images\atp-respond-action-icon.png)| Response action
+![Process events icon](images\atp-process-event-icon.png)| Process events
+![Network communication events icon](images\atp-network-communications-icon.png)| Network events
+![File observed events icon](images\atp-file-observed-icon.png)| File  events
+![Registry events icon](images\atp-registry-event-icon.png)| Registry events
+![Module load DLL events icon](images\atp-module-load-icon.png)| Load DLL events
+![Other events icon](images\atp-Other-events-icon.png)| Other events
+![Access token modification icon](images\atp-access-token-modification-icon.png)| Access token modification
+![File creation icon](images\atp-file-creation-icon.png)| File creation
+![Memory allocation icon](images\atp-memory-allocation-icon.png)| Memory allocation
+![Process injection icon](images\atp-process-injection.png)| Process injection
+![Powershell command run icon](images\atp-powershell-command-run-icon.png)| Powershell command run
 
 ## Related topic
 [Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
