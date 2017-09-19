@@ -15,7 +15,6 @@ author: jdeckerms
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
 ## September 2017
-<<<<<<< HEAD
 |New or changed topic | Description|
 |--- | ---|
 |[Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)|New conceptual info about Windows 10 and the upcoming GDPR-compliance requirements.|
