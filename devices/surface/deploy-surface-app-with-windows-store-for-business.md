@@ -31,11 +31,11 @@ The Surface app is a lightweight Windows Store app that provides control of many
 
 * Quick access to support documentation and information for your device 
 
-If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface app (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Microsoft Store or your Microsoft Store for Business. 
+If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface app (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Windows Store or your Microsoft Store for Business. 
 
 ##Surface app overview
 
-The Surface app is available as a free download from the [Microsoft Store](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Microsoft Store, but if your organization uses Microsoft Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Microsoft Store for Business, see [Microsoft Store for Business](https://technet.microsoft.com/windows/store-for-business) in the Windows TechCenter. 
+The Surface app is available as a free download from the [Windows Store](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Windows Store, but if your organization uses Microsoft Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Microsoft Store for Business, see [Microsoft Store for Business](https://technet.microsoft.com/windows/store-for-business) in the Windows TechCenter. 
 
 ##Add Surface app to a Microsoft Store for Business account 
 
@@ -49,7 +49,7 @@ Before users can install or deploy an app from a company’s Microsoft Store for
    ![Show offline licenses apps checkbox](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *Figure 1. Enable apps for offline use*
 
-4.	Add Surface app to your Micrososft Store for Business account by following this procedure:
+4.	Add Surface app to your Microsoft Store for Business account by following this procedure:
     * Click the **Shop** menu.
     * In the search box, type **Surface app**, and then click the search icon.
     * After the Surface app is presented in the search results, click the app’s icon.
@@ -68,7 +68,7 @@ Before users can install or deploy an app from a company’s Microsoft Store for
     * Click **OK**.
 
 ##Download Surface app from a Microsoft Store for Business account
-After you add an app to the Windows Store for Business account in Offline mode, you can download and add the app as an AppxBundle to a deployment share.
+After you add an app to the Microsoft Store for Business account in Offline mode, you can download and add the app as an AppxBundle to a deployment share.
 1. Log on to the Microsoft Store for Business account at https://businessstore.microsoft.com.
 2. Click **Manage->Apps & software**. A list of all of your company’s apps is displayed, including the Surface app you added in the [Add Surface app to a Microsoft Store for Business account](#add-surface-app-to-a-microsoft-store-for-business-account) section of this article.
 3. Under **Actions**, click the ellipsis (**…**), and then click **Download for offline use** for the Surface app.
@@ -102,7 +102,7 @@ To download the required frameworks for the Surface app, follow these steps:
 
 ##Install Surface app on your computer with PowerShell
 The following procedure provisions the Surface app onto your computer and makes it available for any user accounts created on the computer afterwards.
-1.	Using the procedure described in the [How to download Surface app from a Windows Store for Business account](#download-surface-app-from-a-windows-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
+1.	Using the procedure described in the [How to download Surface app from a Microsoft Store for Business account](#download-surface-app-from-a-microsoft-store-for-business-account) section of this article, download the Surface app AppxBundle and license file. 
 2.	Begin an elevated PowerShell session.
 
     >[!NOTE]
@@ -121,7 +121,9 @@ The following procedure provisions the Surface app onto your computer and makes 
     ```
 
 4.	The Surface app will now be available on your current Windows computer. 
+
 Before the Surface app is functional on the computer where it has been provisioned, you must also provision the frameworks described earlier in this article. To provision these frameworks, use the following procedure in the elevated PowerShell session you used to provision the Surface app.
+
 5.	In the elevated PowerShell session, copy and paste the following command:
 ```
     Add-AppxProvisionedPackage –Online –SkipLicense –PackagePath <DownloadPath>\Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe.Appx

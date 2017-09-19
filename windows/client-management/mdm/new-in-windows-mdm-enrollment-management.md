@@ -1374,6 +1374,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Search/AllowCloudSearch</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 </ul>
+<p>Added new settings to Update/BranchReadinessLevel policy in Windows 10 version 1709.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">Microsoft Store for Business</td>
