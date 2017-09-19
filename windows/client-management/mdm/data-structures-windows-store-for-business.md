@@ -1,5 +1,5 @@
 ---
-title: Data structures for Windows Store for Business
+title: Data structures for Microsoft Store for Business
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_data\_structures'
 - 'p\_phDeviceMgmt.data\_structures\_windows\_store\_for\_business'
@@ -13,10 +13,10 @@ author: nickbrower
 ms.date: 06/19/2017
 ---
 
-# Data structures for Windows Store for Business
+# Data structures for Microsoft Store for Business
 
 
-Here's the list of data structures used in the Windows Store for Business REST APIs:
+Here's the list of data structures used in the Microsoft Store for Business REST APIs:
 
 -   [AlternateIdentifier](#alternateidentifier)
 -   [BulkSeatOperationResultSet](#bulkseatoperationresultset)

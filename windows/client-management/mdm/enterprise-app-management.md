@@ -18,7 +18,7 @@ This topic covers one of the key mobile device management (MDM) features in Wind
 
 Windows 10 offers the ability for management servers to:
 
--   Install apps directly from the Windows Store for Business
+-   Install apps directly from the Microsoft Store for Business
 -   Deploy offline Store apps and licenses
 -   Deploy line-of-business (LOB) apps (non-Store apps)
 -   Inventory all apps for a user (Store and non-Store apps)
