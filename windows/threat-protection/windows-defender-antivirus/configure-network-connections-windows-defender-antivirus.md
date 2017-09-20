@@ -147,7 +147,7 @@ After whitelisting the URLs listed above, you can test if you are connected to t
 Use the following argument with the Windows Defender AV command line utility (*mpcmdrun.exe*) to verify that your network can communicate with the Windows Defender AV cloud:
 
 ```DOS
-MpCmdRun - ValidateMapsConnection 
+MpCmdRun -ValidateMapsConnection 
 ```
 > [!NOTE]
 > You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703.
