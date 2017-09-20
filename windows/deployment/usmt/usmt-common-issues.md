@@ -229,7 +229,7 @@ There are three typical causes for this issue.
 
 **Description:** You are using USMT to migrate profiles from one installation of Windows 10 to another installation of Windows 10 on different hardware. After migration, the user signs in on the new device and does not have the Start menu layout they had previously configured.
 
-**Cause:** A code change in the Start Menu with Windows 10 version 1607 is incompatible with this USMT function.
+**Cause:** A code change in the Start Menu with Windows 10 version 1607 and later is incompatible with this USMT function.
 
 **Resolution:** The following workaround is available:
 
@@ -244,6 +244,8 @@ There are three typical causes for this issue.
     ```
     Import-StartLayout –LayoutPath "C:\Layout\user1.xml" –MountPath %systemdrive%
     ```
+
+This workaround changes the Default user's Start layout. The workaround does not scale to a mass migrations or multiuser devices, but it can potentially unblock some scenarios. If other users will sign on to the device you should delete layoutmodification.xml from the Default user profile. Otherwise, all users who sign on to that device will use the imported Start layout.
 
 ## <a href="" id="bkmk-offline"></a>Offline Migration Problems
 

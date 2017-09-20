@@ -202,6 +202,7 @@
 #### [Experience](policy-csp-experience.md)
 #### [ExploitGuard](policy-csp-exploitguard.md)
 #### [Games](policy-csp-games.md)
+#### [Handwriting](policy-csp-handwriting.md)
 #### [InternetExplorer](policy-csp-internetexplorer.md)
 #### [Kerberos](policy-csp-kerberos.md)
 #### [Licensing](policy-csp-licensing.md)
