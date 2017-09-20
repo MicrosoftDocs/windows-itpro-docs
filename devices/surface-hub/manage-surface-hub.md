@@ -40,3 +40,6 @@ Learn about managing and updating Surface Hub.
 | [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md) | You can use Miracast on your wireless network or LAN to connect to Surface Hub. |
 | [Using a room control system]( https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
 
+## Related topics
+
+- [View Power BI presentation mode on Surface Hub & Windows 10](https://powerbi.microsoft.com/documentation/powerbi-mobile-win10-app-presentation-mode/)

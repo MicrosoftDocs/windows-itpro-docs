@@ -14,6 +14,12 @@ author: jdeckerms
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## September 2017
+
+New or changed topic | Description
+--- | ---
+ [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Added that Windows Spotlight can be managed by the Experience/AllowWindowsSpotlight MDM policy. 
+
 ## August 2017
 
 New or changed topic | Description
@@ -23,11 +29,12 @@ New or changed topic | Description
 ## July 2017
 | New or changed topic | Description |
 | --- | --- |
-| [Add image for secondary tiles](start-secondary-tiles.md) | Added XML example for Edge secondary tiles and **ImportEdgeAssets** |
-| [Customize and export Start layout](customize-and-export-start-layout.md) | Added explanation for tile behavior when the app is not installed |
-| [Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access |
+|[Windows 10, version 1703 Diagnostic Data](windows-diagnostic-data.md)|Updated categories and included diagnostic data.|
+|[Add image for secondary tiles](start-secondary-tiles.md) | Added XML example for Edge secondary tiles and **ImportEdgeAssets** |
+|[Customize and export Start layout](customize-and-export-start-layout.md) | Added explanation for tile behavior when the app is not installed |
+|[Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access |
 |[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)|Updated several Appraiser events and added Census.Speech. |
-| [Manage connections from Windows operating system components to Microsoft-services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Updated Date & Time and Windows spotlight sections. |
+|[Manage connections from Windows operating system components to Microsoft-services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) | Updated Date & Time and Windows spotlight sections. |
 
 ## June 2017
 

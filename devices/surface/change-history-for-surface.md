@@ -11,6 +11,12 @@ author: jdeckerms
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## September 2017
+
+New or changed topic | Description
+--- | ---
+[Top support solutions for Surface devices](support-solutions-surface.md) | New
+
 ## June 2017
 
 |New or changed topic | Description |
