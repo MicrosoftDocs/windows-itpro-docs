@@ -60,19 +60,14 @@ You can use the following filters to limit the list of machines displayed during
 - Mac OS
 - Other
 
-**Health**</br>
-- All
-- Well configure
-- Requires attention - Depending on the Windows Defender security controls configured in your enterprise, you'll see various available filters.
- 
 
 **Sensor health state**</br>
 Filter the list to view specific machines grouped together by the following machine health states:
 
 - **Active** – Machines that are actively reporting sensor data to the service.
 -	**Misconfigured** – Machines that have impaired communications with service or are unable to send sensor data. Misconfigured machines can further be classified to:
-  - Impaired communications
   - No sensor data
+  - Impaired communications
 
   For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 -	**Inactive** – Machines that have completely stopped sending signals for more than 7 days.
@@ -85,6 +80,7 @@ Filter the list to view specific machines that are well configured or require at
 - **Well configured** - Machines have the Windows Defender security controls well configured. 
 - **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
 
+For more information, see [View the Security Analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md).
 
 **Malware category alerts**</br>
 Filter the list to view specific machines grouped together by the following malware categories:
@@ -109,13 +105,11 @@ Exporting the list in CSV format displays the data in an unfiltered manner. The 
 You can sort the **Machines list** by the following columns:
 
 - **Machine name** - Name or GUID of the machine
-- **Domain** - Domain where the machine is joined in
-- **OS Platform** - Indicates the OS of the machine
 - **Health State** – Indicates if the machine is misconfigured or is not sending sensor data
 - **Last seen** - Date and time when the machine last reported sensor data
 - **Internal IP** - Local internal Internet Protocol (IP) address of the machine
 - **Active Alerts** - Number of alerts reported by the machine by severity
-- **Active malware detections** - Number of active malware detections reported by the machine
+- **Active malware alerts** - Number of active malware detections reported by the machine
 
 > [!NOTE]
 > The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
