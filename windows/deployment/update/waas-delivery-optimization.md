@@ -21,7 +21,7 @@ ms.date: 07/27/2017
 
 Delivery Optimization is a self-organizing distributed cache solution for businesses looking to reduce bandwidth consumption for operating system updates, operating system upgrades, and applications by allowing clients to download those elements from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), and Windows Update for Business. This functionality is similar to BranchCache in other systems, such as System Center Configuration Manager. 
 
-Delivery Optimization is a cloud managed solution. Having access to the Delivery Optimization cloud services, is a requirement for it to be enabled. This mean that in order to utilize the peer-to-peer functionality of Delivery Optimization, machines need to have access to the internet.
+Delivery Optimization is a cloud managed solution. Having access to the Delivery Optimization cloud services, is a requirement for it to be enabled. This means that in order to utilize the peer-to-peer functionality of Delivery Optimization, machines need to have access to the internet.
 
 For more details, see [Download mode](#download-mode).
 
