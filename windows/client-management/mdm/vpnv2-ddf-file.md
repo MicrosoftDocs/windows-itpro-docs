@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/07/2017
+ms.date: 09/18/2017
 ---
 
 # VPNv2 DDF file
@@ -977,6 +977,33 @@ The XML below is for Windows 10, version 1709.
 
                         A device tunnel profile must be deleted before another device tunnel
                         profile can be added, removed, or connected.
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>RegisterDNS</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        False = Do not register the connection's address in DNS (default).
+                        True = Register the connection's addresses in DNS.
                     </Description>
                     <DFFormat>
                         <bool />
