@@ -12,7 +12,7 @@ author: brianlic-msft
 # Delete an AppLocker rule
 
 **Applies to**
--   Windows 10
+ -   Windows 10, Windows Server
 
 This topic for IT professionals describes the steps to delete an AppLocker rule.
 

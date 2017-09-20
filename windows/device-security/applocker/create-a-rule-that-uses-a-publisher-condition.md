@@ -12,7 +12,7 @@ author: brianlic-msft
 # Create a rule that uses a publisher condition
 
 **Applies to**
--   Windows 10
+ -   Windows 10, Windows Server
 
 This topic for IT professionals shows how to create an AppLocker rule with a publisher condition.
 
