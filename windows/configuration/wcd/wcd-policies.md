@@ -265,7 +265,7 @@ This section describes the **Policies** settings that you can configure in [prov
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| ExploitProtectionSettings |  | X | X |  |  |  |
+| [ExploitProtectionSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) | See the [explanation of ExploitProtectionSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Policy CSP for instructions. In the **ExploitProtectionSettings** field, you can enter a path (local, UNC, or URI) to the mitigation options config, or you can enter the XML for the config. | X | X |  |  |  |
 
 
 ## Games
