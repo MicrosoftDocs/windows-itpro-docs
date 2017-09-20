@@ -84,9 +84,9 @@ To enable data sharing, whitelist the following endpoints. Note that you may nee
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1`<br>`https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
-| `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
+| `https://v10.vortex-win.data.microsoft.com` | For Windows 10, Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.
+| `https://Vortex-win.data.microsoft.com` | For OS versions lower than Windows 10, Connected User Experience and Telemetry component endpoint.
+| `https://settings.data.microsoft.com` | Enables the compatibility update KB to send data to Microsoft. |
 
 Note: The compatibility update KB runs under the computer’s system account. 
 
