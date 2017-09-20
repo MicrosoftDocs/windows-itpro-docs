@@ -133,7 +133,9 @@ Microsoft never publishes feature updates through Windows Update on devices that
 
 The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSB edition. This build of Windows doesn’t contain many in-box applications, such as Microsoft Edge, Windows Store client, Cortana (limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. Therefore, it’s important to remember that Microsoft has positioned the LTSC model primarily for specialized devices.
 
->[!NOTE]
+
+
+vh>[!NOTE]
 >If an organization has devices currently running Windows 10 Enterprise LTSB that it would like to change to the Semi-Annual Channel, it can make the change without losing user data. Because LTSB is its own SKU, however, an upgrade is required from Windows 10 Enterprise LTSB to Windows 10 Enterprise, which supports the Semi-Annual Channel.
 
 ### Windows Insider
@@ -199,3 +201,4 @@ With all these options, which an organization chooses depends on the resources, 
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage device restarts after updates](waas-restart.md)
+change here
