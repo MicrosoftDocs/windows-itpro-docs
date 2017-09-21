@@ -716,7 +716,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Set up Microsoft 365 Business</h3>
-                                                    <p></p>
+                                                    <p>Watch how you can quickly set up Microsoft 365 Business using the setup wizard from the Microsoft 365 Business admin center.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -735,7 +735,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Secure Windows 10 devices with Microsoft 365 Business</h3>
-                                                    <p></p>
+                                                    <p>Check out how to use a policy to secure Windows 10 devices and how to verify the policy is applied correctly.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -754,7 +754,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Secure Microsoft Office apps on iOS devices with Microsoft 365 Business</h3>
-                                                    <p></p>
+                                                    <p>See how you can use a policy to secure Office apps on iOS devices and how to verify the policy is working.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -772,7 +772,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set up Windows devices for Microsoft 365 Business</h3>
+                                                    <h3>Watch how you can upgrade your Windows 7, 8, or 8.1 Pro devices to Windows 10 Pro, and sign in with your Microsoft 365 Business account to join your organization.</h3>
                                                     <p></p>
                                                 </div>
                                             </div>
