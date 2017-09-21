@@ -9,11 +9,11 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-
 # Deploy AppLocker policies by using the enforce rules setting
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
 

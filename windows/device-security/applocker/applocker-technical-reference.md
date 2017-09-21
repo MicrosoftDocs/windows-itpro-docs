@@ -12,7 +12,8 @@ author: brianlic-msft
 # AppLocker technical reference
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This overview topic for IT professionals provides links to the topics in the technical reference.
 AppLocker advances the application control features and functionality of Software Restriction Policies. AppLocker contains new capabilities and extensions that allow you to create rules to allow or deny apps from running based on unique identities of files and to specify which users or groups can run those apps.

@@ -12,7 +12,8 @@ author: brianlic-msft
 # Maintain AppLocker policies
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic describes how to maintain rules within AppLocker policies.
 

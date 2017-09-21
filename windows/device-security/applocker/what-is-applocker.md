@@ -12,7 +12,8 @@ author: brianlic-msft
 # What Is AppLocker?
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
 

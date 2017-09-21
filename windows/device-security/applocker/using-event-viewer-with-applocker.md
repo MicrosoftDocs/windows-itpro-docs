@@ -12,7 +12,8 @@ author: brianlic-msft
 # Using Event Viewer with AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
 

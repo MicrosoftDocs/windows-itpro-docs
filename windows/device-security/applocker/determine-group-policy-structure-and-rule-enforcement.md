@@ -12,7 +12,8 @@ author: brianlic-msft
 # Determine the Group Policy structure and rule enforcement
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
 
