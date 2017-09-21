@@ -12,7 +12,8 @@ author: brianlic-msft
 # Optimize AppLocker performance
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes how to optimize AppLocker policy enforcement.
 

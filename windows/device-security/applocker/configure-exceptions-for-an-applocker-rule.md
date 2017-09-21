@@ -12,7 +12,8 @@ author: brianlic-msft
 # Add exceptions for an AppLocker rule
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes the steps to specify which apps can or cannot run as exceptions to an AppLocker rule.
 

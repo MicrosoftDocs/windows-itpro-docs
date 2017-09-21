@@ -12,7 +12,8 @@ author: brianlic-msft
 # DLL rules in AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic describes the file formats and available default rules for the DLL rule collection.
 

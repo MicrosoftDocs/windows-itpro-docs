@@ -12,7 +12,8 @@ author: brianlic-msft
 # Understanding AppLocker default rules
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professional describes the set of rules that can be used to ensure that required Windows system files are allowed to run when the policy is applied.
 
