@@ -13,7 +13,8 @@ author: brianlic-msft
 # AppLocker
 
 **Applies to**
- -   Windows 10, Windows Server
+ -   Windows 10 
+ -   Windows Server
 
 This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
 
