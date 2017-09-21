@@ -772,8 +772,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Watch how you can upgrade your Windows 7, 8, or 8.1 Pro devices to Windows 10 Pro, and sign in with your Microsoft 365 Business account to join your organization.</h3>
-                                                    <p></p>
+                                                    <h3>Set up Windows devices for Microsoft 365 Business</h3>
+                                                    <p>Watch how you can upgrade your Windows 7, 8, or 8.1 Pro devices to Windows 10 Pro, and sign in with your Microsoft 365 Business account to join your organization.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -811,7 +811,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Demo: Secure data and end user devices with Microsoft 365 Business</h3>
-                                                    <p>Watch one of our customers show you how your users can set up their mobile devices and how to remove company data once your employee leaves the organization.</p>
+                                                    <p>See how your users can set up their mobile devices and how to remove company data once your employee leaves the organization.</p>
                                                 </div>
                                             </div>
                                         </div>
