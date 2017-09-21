@@ -68,7 +68,7 @@ Icon | Description
 ![Active threat icon](images/active-threat-icon.png)| Active threat – Threats actively executing at the time of detection.
 ![Remediated icon](images/remediated-icon.png)| Remediated – Threat removed from the machine.
 ![Not remediated icon](images/not-remediated-icon.png)| Not remediated – Threat not removed from the machine.
-![Thunderbolt icon](images/atp-thunderbolt-icon.png) | Indicates events that triggered an alert in the **Alert process tree**.
+![Thunderbolt icon](images/atp-thunderbolt-icon.png)| Indicates events that triggered an alert in the **Alert process tree**.
 ![Windows Defender AV events icon](images\atp-windows-defender-av-events-icon.png)| Windows Defender AV events
 ![Application Guard events icon](images\atp-Application-Guard-events-icon.png)| Application Guard events
 ![Device Guard events icon](images\atp-Device-Guard-events-icon.png)| Device Guard events
