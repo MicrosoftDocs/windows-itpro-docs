@@ -12,7 +12,8 @@ author: brianlic-msft
 # Use Software Restriction Policies and AppLocker policies
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional describes how to use Software Restriction Policies (SRP) and AppLocker policies in the same Windows deployment.
 

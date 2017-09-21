@@ -12,7 +12,8 @@ author: brianlic-msft
 # Use AppLocker and Software Restriction Policies in the same domain
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
 
