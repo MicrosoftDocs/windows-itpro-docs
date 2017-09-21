@@ -15,7 +15,7 @@ ms.date:  10/17/2017
 Use to configure settings for cellular data.
 
 >[!IMPORTANT]
->These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring mobile devices and are not intended for use by administrators in the enterprise.
+>These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and are not intended for use by administrators in the enterprise.
 
 ## Applies to
 
