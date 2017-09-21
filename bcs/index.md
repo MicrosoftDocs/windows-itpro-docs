@@ -701,7 +701,7 @@ description: Learn about the product documentation and resources available for M
                         <ul id="videos" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Looking for help or can't find what you need? Try these resources.</p>
+                                    <p>Check out these videos as we show you how to do some of the tasks covered in the step-by-step guides.</p>
                                 </div>
                             </li>
                             <li>
@@ -773,7 +773,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Set up Windows devices for Microsoft 365 Business</h3>
-                                                    <p>Watch how you can upgrade your Windows 7, 8, or 8.1 Pro devices to Windows 10 Pro, and sign in with your Microsoft 365 Business account to join your organization.</p>
+                                                    <p>Upgrade your Windows 7, 8, or 8.1 Pro devices to Windows 10 Pro, and sign in with your Microsoft 365 Business account to join your organization.</p>
                                                 </div>
                                             </div>
                                         </div>
