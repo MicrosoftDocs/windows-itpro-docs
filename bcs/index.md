@@ -696,6 +696,130 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <a href="#videos">Video tutorials</a>
+                        <ul id="videos" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Some of the tasks covered in the step-by-step guides are also available as video tutorials. Follow these links to start watching.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2_1280x720_3400.mp4" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_video.svg" alt="Set up Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Microsoft 365 Business</h3>
+                                                    <p>Watch how you can quickly set up Microsoft 365 Business using the setup wizard from the Microsoft 365 Business admin center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://videoplayercdn.osi.office.net/embed/a5734146-620a-4cec-8618-536b3ca37972_1280x720_3400.mp4" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_video.svg" alt="Secure Windows 10 devices with Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Secure Windows 10 devices with Microsoft 365 Business</h3>
+                                                    <p>Check out how to use a policy to secure Windows 10 devices and how to verify the policy is applied correctly.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="http://videoplayercdn.osi.office.net/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9_1280x720_3400.mp4" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_video.svg" alt="Secure Microsoft Office apps on iOS devices with Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Secure Microsoft Office apps on iOS devices with Microsoft 365 Business</h3>
+                                                    <p>See how you can use a policy to secure Office apps on iOS devices and how to verify the policy is working.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/oJpeTq0Dyxk" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_video.svg" alt="Set up Windows devices for Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows devices for Microsoft 365 Business</h3>
+                                                    <p>Upgrade your Windows 7, 8, or 8.1 Pro devices to Windows 10 Pro, and get your devices set up and joined to your organization.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=qoDIyUOtZ6o" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_video.svg" alt="Demo: Microsoft 365 Business first run experience" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Demo: Microsoft 365 Business first run experience</h3>
+                                                    <p>Watch one of our customers show you how easy it is to set up Microsoft 365 Business.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=5kH-4gX-4NU" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/media/common/i_video.svg" alt="Demo: Secure data and end user devices with Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Demo: Secure data and end user devices with Microsoft 365 Business</h3>
+                                                    <p>See how your users can set up their mobile devices and how to remove company data once your employee leaves the organization.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                             
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li>

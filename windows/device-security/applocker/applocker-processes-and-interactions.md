@@ -12,7 +12,8 @@ author: brianlic-msft
 # AppLocker processes and interactions
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 

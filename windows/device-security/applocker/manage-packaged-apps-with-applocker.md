@@ -12,7 +12,8 @@ author: brianlic-msft
 # Manage packaged apps with AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes concepts and lists procedures to help you manage Packaged apps with AppLocker as part of your overall application control strategy.
 

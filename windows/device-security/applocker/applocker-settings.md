@@ -12,7 +12,8 @@ author: brianlic-msft
 # AppLocker settings
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional lists the settings used by AppLocker.
 

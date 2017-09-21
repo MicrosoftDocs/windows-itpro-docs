@@ -12,7 +12,8 @@ author: brianlic-msft
 # Understanding AppLocker rule condition types
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional describes the three types of AppLocker rule conditions.
 
