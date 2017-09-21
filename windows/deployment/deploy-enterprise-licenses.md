@@ -15,8 +15,18 @@ author: greg-lindsay
 
 This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md) or [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md) and Azure Active Directory (Azure AD).
 
->Note: Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.
->Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.
+>Note: Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.<BR>
+>Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.<BR>
+
+## Enabling Subscription Activation with an existing EA
+
+If you are an EA customer with an existing Office 365 tenant, use the following steps to enable Windows 10 Subscription licenses on your existing tenant:
+
+1.	Work with your reseller to place an order for $0 SKU. There are two SKUs available, depending on their current Windows Enterprise SA license:<BR>
+    a.	**AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3<BR>
+    b.	**AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5<BR>
+2.	After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
+3.	The admin can now assign subscription licenses to users.
 
 Also in this article:
 - [Explore the upgrade experience](#explore-the-upgrade-experience): How to upgrade devices using the deployed licenses.
@@ -196,4 +206,3 @@ Devices must be running Windows 10 Pro, version 1703, and be Azure Active Direct
     A popup window will display the Windows 10 version number and detailed OS build information.
 
     If a device is running a previous version of Windows 10 Pro (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
-

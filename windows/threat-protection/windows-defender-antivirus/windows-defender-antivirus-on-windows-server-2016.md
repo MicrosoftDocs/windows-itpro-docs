@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 09/07/2017
 ---
 
 
@@ -56,21 +56,56 @@ This topic includes the following instructions for setting up and running Window
 -   [Configure automatic exclusions](#BKMK_DefExclusions)
 
 <a name="BKMK_UsingDef"></a>
-## Enable the interface
-By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs. 
+## Enable or disable the interface on Windows Server 2016
+By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
 
-You can enable or disable the interface by using the **Add Roles and Features Wizard** or PowerShellCmdlets, as described in the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic.
+If the interface is not installed, you can add it in the **Add Roles and Features Wizard** at the **Features** step, under **Windows Defender Features** by selecting the **GUI for Windows Defender** option.
 
-The following PowerShell cmdlet will enable the interface: 
+![](images/server-add-gui.png)
+
+See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
+
+The following PowerShell cmdlet will also enable the interface: 
 
 ```PowerShell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-The following cmdlet will disable the interface:
+To hide the interface, use the **Remove Roles and Features Wizard** and deselect the **GUI for Windows Defender** option at the **Features** step, or use the following PowerShell cmdlet:
+
+
+```PowerShell
+Uninstall-WindowsFeature -Name Windows-Defender-GUI
+```
+
+
+>[!IMPORTANT]
+> Windows Defender AV will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
+
+## Install or uninstall Windows Defender AV on Windows Server 2016
+
+
+You can also uninstall Windows Defender AV completely with the **Remove Roles and Features Wizard** by deselecting the **Windows Defender Features** option at the **Features** step in the wizard.
+
+>[!NOTE]
+>Deselecting **Windows Defender** on its own under the **Windows Defender Features** section will automatically prompt you to remove the interface option **GUI for Windows Defender**. 
+
+
+
+
+The following PowerShell cmdlet will also uninstall Windows Defender AV on Windows Server 2016:
+
 
 ```PS
-Uninstall-WindowsFeature -Name Windows-Server-Antimalware
+Uninstall-WindowsFeature -Name Windows-Defender
+```
+
+To install Windows Defender AV again, use the **Add Roles and Features Wizard** and ensure the **Windows Defender** feature is selected. You can also enable the interface by selecting the **GUID for Windows Defender** option.
+
+You can also use the following PowerShell cmdlet to install Windows Defender AV:
+
+```PS
+Install-WindowsFeature -Name Windows-Defender
 ```
 
 > [!TIP]

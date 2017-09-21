@@ -12,7 +12,8 @@ author: brianlic-msft
 # Select the types of rules to create
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic lists resources you can use when selecting your application control policy rules by using AppLocker.
 

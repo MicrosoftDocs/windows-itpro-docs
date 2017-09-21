@@ -8,7 +8,6 @@ ms.pagetype: security
 author: eross-msft
 ms.author: lizross
 ms.date: 08/11/2017
-localizationpriority: high
 ---
 
 # System requirements for Windows Defender Application Guard

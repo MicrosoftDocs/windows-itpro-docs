@@ -471,8 +471,12 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   16 (default) – User gets all applicable upgrades from Current Branch (CB).
--   32 – User gets upgrades from Current Branch for Business (CBB).
+-  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
+-  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
+-  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
+-  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
+-  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
+
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1253,12 +1257,12 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
 
-<p style="margin-left: 20px">Allows the IT admin to set a device to CBB train.
+<p style="margin-left: 20px">Allows the IT admin to set a device to Semi-Annual Channel train.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default) – User gets upgrades from Current Branch.
--   1 – User gets upgrades from Current Branch for Business.
+-   0 (default) – User gets upgrades from Semi-Annual Channel (Targeted).
+-   1 – User gets upgrades from Semi-Annual Channel.
 
 <!--EndDescription-->
 <!--EndPolicy-->

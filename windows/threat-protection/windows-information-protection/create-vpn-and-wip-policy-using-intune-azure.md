@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune

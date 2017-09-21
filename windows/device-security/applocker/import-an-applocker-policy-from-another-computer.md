@@ -12,7 +12,8 @@ author: brianlic-msft
 # Import an AppLocker policy from another computer
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes how to import an AppLocker policy.
 

@@ -100,6 +100,7 @@
 #### [Viewing App-V Server Publishing Metadata](app-v/appv-viewing-appv-server-publishing-metadata.md)
 #### [Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications](app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md)
 ## [Service Host process refactoring](svchost-service-refactoring.md)
-## [Per User services in Windows](per-user-services-in-windows.md)
+## [Per-user services in Windows](per-user-services-in-windows.md)
+## [Understand apps in Windows 10](apps-in-windows-10.md)
 ## [Deploy app upgrades on Windows 10 Mobile](deploy-app-upgrades-windows-10-mobile.md)
 ## [Change history for Application management](change-history-for-application-management.md)

@@ -13,7 +13,7 @@ ms.date: 08/21/2017
 # UsbErrorsOEMOverride (reference)
 
 
-Use UsbErrorsOEMOverride settings to .
+Allows an OEM to hide the USB option UI in Settings and all USB device errors. 
 
 
 ## Applies to
@@ -24,4 +24,4 @@ Use UsbErrorsOEMOverride settings to .
 
 ## HideUsbErrorNotifyOptionUI
 
-
+Configure to **Show** or **Hide** the USB error notification.
