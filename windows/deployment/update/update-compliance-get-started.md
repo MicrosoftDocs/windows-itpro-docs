@@ -25,14 +25,18 @@ Update Compliance has the following requirements:
 2. The solution requires that Windows 10 telemetry is enabled on all devices that are intended to be displayed in the solution. These devices must have at least the [basic level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) enabled. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization). 
 3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the telemetry services](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
 
-Service | Endpoint
---- | ---
-Connected User Experience and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
-Windows Error Reporting | watson.telemetry.microsoft.com
-Online Crash Analysis | oca.telemetry.microsoft.com
+    Service | Endpoint
+    --- | ---
+    Connected User Experience and Telemetry component | v10.vortex-win.data.microsoft.com<BR>settings-win.data.microsoft.com
+    Windows Error Reporting | watson.telemetry.microsoft.com
+    Online Crash Analysis | oca.telemetry.microsoft.com
 
 
- 4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
+ 4. To use Windows Defender Antivirus Assessment, devices must be protected by Windows Defender AV (and not a 3rd party AV program), and must have enabled [cloud-delivered protection](/windows/threat-protection/windows-defender-antivirus/utilize-microsoft-cloud-protection-windows-defender-antivirus). See the [Troublehsoot Windows Defender Antivirus reporting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-reporting.md) topic for help on ensuring the configuration is correct.
+ 
+     For endpoints running Windows 10, version 1607 or earlier, [Windows telemetry must also be set to **Enhanced**](https://docs.microsoft.com/en-us/windows/configuration/configure-windows-telemetry-in-your-organization#enhanced-level). 
+    
+    See the [Windows Defender Antivirus in Windows 10](/windows/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) content library for more information on enabling, configuring, and validating Windows Defender AV.
 
 
 ## Add Update Compliance to Microsoft Operations Management Suite

@@ -30,7 +30,7 @@ Enterprise security teams can use the Windows Defender ATP portal to monitor and
 You can use the [Windows Defender ATP portal](https://securitycenter.windows.com/) to:
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses
-- Change Windows Defender ATP settings, including time zone and licensing information.
+- Change Windows Defender ATP settings, including time zone and review licensing information.
 
 ## Windows Defender ATP portal
 When you open the portal, you’ll see the main areas of the application:
@@ -54,7 +54,7 @@ Area | Description
 **Alerts queue** | Enables you to view separate queues of new, in progress, resolved alerts, alerts assigned to you, and suppression rules.
 **Machines list** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
 **Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
-**Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set email notifications, activate the preview experience, and enable or turn off advanced features.
+**Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set email notifications, activate the preview experience, enable or turn off advanced features, and build Power BI reports.
 **Endpoint management** |	Allows you to download the onboarding configuration package. It provides access to endpoint offboarding.
 (3) Main portal| Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
 

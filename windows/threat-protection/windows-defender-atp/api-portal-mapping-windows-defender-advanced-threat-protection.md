@@ -77,7 +77,7 @@ Field numbers match the numbers in the images below.
 
 ![Image of artifact timeline with numbers](images/atp-siem-mapping3.png)
 
-![Image of alert timeline with numbers](images/atp-siem-mapping4.png)
+![Image of artifact timeline with numbers](images/atp-siem-mapping4.png)
 
 ![Image machine view](images/atp-mapping6.png)
 
