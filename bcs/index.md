@@ -697,8 +697,8 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
-                        <a href="#troub-support">Video tutorials</a>
-                        <ul id="troub-support" class="cardsC">
+                        <a href="#videos">Video tutorials</a>
+                        <ul id="videos" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Looking for help or can't find what you need? Try these resources.</p>
