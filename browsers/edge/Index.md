@@ -23,7 +23,7 @@ Microsoft Edge is the new, default web browser for Windows 10, helping you to e
 Microsoft Edge lets you stay up-to-date through the Windows Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
 
 >[!Note]
->For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892).
+>For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=55956). For a detailed report that provides you with a framework to evaluate the potential financial impact of adopting Microsoft Edge within your organization, you can download the full study here: [Total Economic Impact of Microsoft Edge: Forrester Study](https://www.microsoft.com/download/details.aspx?id=55847).
 
 >Also, if you've arrived here looking for Internet Explorer 11 content, you'll need to go to the [Internet Explorer 11 (IE11)](https://docs.microsoft.com/en-us/internet-explorer/) area. 
 
@@ -59,7 +59,9 @@ You'll need to keep running them using IE11. If you don't have IE11 installed an
 
 ## Related topics
 
-- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
+- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=55956)
+
+- [Total Economic Impact of Microsoft Edge: Forrester Study](https://www.microsoft.com/download/details.aspx?id=55847)
 
 - [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=290956)
 
