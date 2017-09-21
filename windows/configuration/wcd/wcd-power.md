@@ -46,9 +46,9 @@ Setting | Description
 CPU > EfficiencyClass | Select **0** or **1** and click **Add**. For the added EfficiencyClassId > **PowerParameters** > **PowerEnvelope**, configure the power in milli-watts for CPU at 100% usage and 100% frequency. Minimum value is 100, and maximum value is 64000.
 Display > DisplayBacklightPowerFloor | Configure the backlight power floor in milli-watts. Minimum value is 24, and maximum value is 250.
 Display > DisplayBacklightPowerGradient | Configure the backlight power gradient brightness. Minimum value is 1, and maximum value is 25.
-Display > DisplayBacklightPowerQDenominator |
-Display > DisplayBacklightPowerQNumerator |
-Display > DisplayPanelPowerAreaFactor |
+Display > DisplayBacklightPowerQDenominator | Configure the display backlight power's denominator part of the gradient with respect to brightness squared. Minimum value is 1, and maximum value is 100.
+Display > DisplayBacklightPowerQNumerator | Configure the display backlight power's numerator part of the gradient with respect to brightness squared. Minimum value is 1, and maximum value is 100.
+Display > DisplayPanelPowerAreaFactor | 
 Display > DisplayPanelPowerDpiFactor |
 Display > DisplayPanelPowerFloor |
 Display > DisplayPanelPowerVsyncDelta |
