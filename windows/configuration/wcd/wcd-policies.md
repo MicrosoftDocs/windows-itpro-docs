@@ -104,7 +104,7 @@ This section describes the **Policies** settings that you can configure in [prov
 | [ConfigureAdditionalSearchEngines](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-configureadditionalsearchengines)  | Allows you to add up to 5 addtional search engines for MDM-enrolled devices.  | X  | X | X  |   |  |
 | [DisableLockdownOfStartPages](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-disablelockdownofstartpages) | Specify whether the lockdown on the Start pages is disabled. | X |  |  |  |  |
 | [EnterpriseModeSiteList](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-enterprisemodesitelist)  | Allow the user to specify a URL of an enterprise site list.  | X  |  |   |   |  |
-| EnterpriseSiteListServiceUrl | This policy (introduced in Windows 10, version 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-enterprisemodesitelist). | X |  |  |  |  |
+| [EnterpriseSiteListServiceUrl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-enterprisesitelistserviceurl) | This policy (introduced in Windows 10, version 1507) was deprecated in Windows 10, version 1511 by [Browser/EnterpriseModeSiteList](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-enterprisemodesitelist). | X |  |  |  |  |
 | [FirstRunURL](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-firstrunurl)  | Specify the URL that Microsoft Edge will use when it is opened for the first time.  |   | X |   |   |  |
 | [HomePages](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-homepages) | Specify your Start pages for MDM-enrolled devices. | X |  |  |  |  |
 | [PreventAccessToAboutFlagsInMicrosoftEdge](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#browser-preventaccesstoaboutflagsinmicrosoftedge)  | Specify whether users can access the **about:flags** page, which is used to change developer settings and to enable experimental features.  | X  | X | X  |   |  |
@@ -333,16 +333,16 @@ This section describes the **Policies** settings that you can configure in [prov
 
 | Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: | :---: | :---: | :---: | :---: |
-| AllowPinnedFolderDocuments | Control the visibility of the Documents shortcut on the Start menu. | X |  |  |  |  |
-| AllowPinnedFolderDownloads | Control the visibility of the Downloadds shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderFileExplorer | Control the visibility of the File Explorer shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderHomeGroup | Control the visibility of the Home Group shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderMusic | Control the visibility of the Music shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderNetwork | Control the visibility of the Network shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderPersonalFolder | Control the visibility of the Personal Folder shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderPictures | Control the visibility of the Pictures shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderSettings | Control the visibility of the Settings shortcut on the Start menu.  | X |  |  |  |  |
-| AllowPinnedFolderVideos  |Control the visibility of the Videos shortcut on the Start menu.   | X |  |  |  |  |
+| [AllowPinnedFolderDocuments](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdocuments) | Control the visibility of the Documents shortcut on the Start menu. | X |  |  |  |  |
+| [AllowPinnedFolderDownloads](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderdownloads) | Control the visibility of the Downloadds shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderFileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderfileexplorer) | Control the visibility of the File Explorer shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderHomeGroup](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderhomegroup) | Control the visibility of the Home Group shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderMusic](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldermusic) | Control the visibility of the Music shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldernetwork) | Control the visibility of the Network shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderPersonalFolder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpersonalfolder) | Control the visibility of the Personal Folder shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderPictures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfolderpictures) | Control the visibility of the Pictures shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings) | Control the visibility of the Settings shortcut on the Start menu.  | X |  |  |  |  |
+| [AllowPinnedFolderVideos](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldervideos)  |Control the visibility of the Videos shortcut on the Start menu.   | X |  |  |  |  |
 | [ForceStartSize](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-forcestartsize) | Force the size of the Start screen. | X |  |  |  |  |
 | [HideAppList](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hideapplist) | Collapse or remove the all apps list. | X |  |  |  |  |
 | [HideChangeAccountSettings](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#start-hidechangeaccountsettings) | Hide **Change account settings** from appearing in the user tile. | X |  |  |  |  |
