@@ -120,7 +120,7 @@ In addition, each **Grouping** node contains one or more of the following nodes:
 </tr>
 <tr class="even">
 <td><p><strong>StoreApps</strong></p></td>
-<td><p>Defines restrictions for running apps from the Windows Store.</p>
+<td><p>Defines restrictions for running apps from the Microsoft Store.</p>
 <p>Supported operations are Get, Add, Delete, and Replace.</p></td>
 </tr>
 <tr class="odd">

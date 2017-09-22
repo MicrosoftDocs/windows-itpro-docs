@@ -64,7 +64,7 @@ App identity, which is either an app’s package family name or file path. The t
 <a href="" id="vpnv2-profilename-apptriggerlist-apptriggerrowid-app-type"></a>**VPNv2/***ProfileName***/AppTriggerList/***appTriggerRowId***/App/Type**  
 Returns the type of **App/Id**. This value can be either of the following:
 
--   PackageFamilyName - When this is returned, the App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of the Windows Store application.
+-   PackageFamilyName - When this is returned, the App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of the Microsoft Store application.
 -   FilePath - When this is returned, the App/Id value represents the full file path of the app. For example, `C:\Windows\System\Notepad.exe`.
 
 Value type is chr. Supported operation is Get.
@@ -183,7 +183,7 @@ App identity for the app-based traffic filter.
 
 The value for this node can be one of the following:
 
--   PackageFamilyName - This App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of a Windows Store application.
+-   PackageFamilyName - This App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of a Microsoft Store application.
 -   FilePath - This App/Id value represents the full file path of the app. For example, `C:\Windows\System\Notepad.exe`.
 -   SYSTEM – This value enables Kernel Drivers to send traffic through VPN (for example, PING or SMB).
 
@@ -393,7 +393,7 @@ Added in Windows 10, version 1607. Comma Separated list of EKUs for the VPN Cli
 Value type is chr. Supported operations include Get, Add, Replace, and Delete.
 
 <a href="" id="vpnv2-profilename-pluginprofile"></a>**VPNv2/***ProfileName***/PluginProfile**  
-Nodes under the PluginProfile are required when using a Windows Store based VPN plugin.
+Nodes under the PluginProfile are required when using a Microsoft Store based VPN plugin.
 
 <a href="" id="vpnv2-profilename-pluginprofile-serverurllist"></a>**VPNv2/***ProfileName***/PluginProfile/ServerUrlList**  
 Required for plug-in profiles. Comma separated list of servers in URL, hostname, or IP format.
