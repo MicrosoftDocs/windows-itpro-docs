@@ -1148,7 +1148,7 @@ The software version information from **DevDetail/SwV** does not match the versi
 
     To workaround this issue, remove the Windows Phone 8.1 publisher rule and add the specific product ID for each Silverlight app you want to allow to the allowed app list.
 
--   Some apps (specifically those that are published in Windows Store as AppX Bundles) are blocked from installing even when they are included in the app list.
+-   Some apps (specifically those that are published in Microsoft Store as AppX Bundles) are blocked from installing even when they are included in the app list.
 
     No workaround is available at this time. An OS update to fix this issue is coming soon.
 
