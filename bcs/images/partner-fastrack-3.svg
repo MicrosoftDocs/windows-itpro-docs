@@ -1,0 +1,82 @@
+<svg id="Illustrations" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #bad80a;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-6, .cls-9 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3, .cls-6, .cls-8, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #ababab;
+      }
+
+      .cls-3 {
+        stroke: #55d2f6;
+      }
+
+      .cls-4 {
+        fill: #ffc52b;
+      }
+
+      .cls-5 {
+        fill: #ffb900;
+      }
+
+      .cls-6 {
+        stroke: #2bc7f4;
+      }
+
+      .cls-7 {
+        fill: #2bc7f4;
+      }
+
+      .cls-9 {
+        stroke: #556a8a;
+      }
+
+      .cls-10 {
+        fill: #c2c2c2;
+      }
+    </style>
+  </defs>
+  <title>ms365enterprise-partner-fastrack-3</title>
+  <g>
+    <polyline class="cls-1" points="212.84 92.22 212.84 46.89 255 71.03 212.62 92.66"/>
+    <g>
+      <g>
+        <polygon class="cls-2" points="224.55 18 236.93 39.5 224.55 61 199.8 61 187.42 39.5 199.8 18 224.55 18"/>
+        <polygon class="cls-3" points="281.75 50 294.13 71.5 281.75 93 257 93 244.62 71.5 257 50 281.75 50"/>
+      </g>
+      <polygon class="cls-2" points="224.55 78 236.93 99.5 224.55 121 199.8 121 187.42 99.5 199.8 78 224.55 78"/>
+    </g>
+    <g>
+      <path class="cls-4" d="M281,57.35,291.17,40.5H279L262.9,63.83h11.66l-10.8,20.06,10-8.89,3.82-3.41L294,57.35Z"/>
+      <path class="cls-5" d="M281,57.35,291.17,40.5h-7L268.08,63.83h11.66l-6,11.17,3.82-3.41L294,57.35Z"/>
+    </g>
+    <polygon class="cls-6" points="170.5 34 192 71 170.5 108 127.5 108 106 71 127.5 34 170.5 34"/>
+    <g>
+      <path class="cls-7" d="M170,74h-5V53l3-4-3-10h-4l-3,10,3,4V74h-5v6h3c0,2-2,4-3,4.08V96.5c0,3.3,2,5.5,4,5.5h6c2,0,4-2.7,4-6V84c-1,0-3-2-3-4h3Z"/>
+      <rect class="cls-8" x="160" y="82" width="2" height="17"/>
+      <rect class="cls-8" x="164" y="82" width="2" height="17"/>
+      <path class="cls-9" d="M150,50.5a12,12,0,0,0-7-10.91V47.5l-5,4-5-4V39.59a12,12,0,0,0,0,21.81V96.5a4,4,0,0,0,4,4h1a4,4,0,0,0,4-4V61.8A12,12,0,0,0,150,50.5Z"/>
+      <rect class="cls-10" x="134" y="91" width="7" height="5"/>
+    </g>
+    <g>
+      <circle class="cls-9" cx="212.18" cy="34.18" r="7.71"/>
+      <path class="cls-9" d="M200.18,54.18a12,12,0,0,1,24,0"/>
+    </g>
+    <g>
+      <circle class="cls-9" cx="212.18" cy="93.86" r="7.71"/>
+      <path class="cls-9" d="M200.18,113.86a12,12,0,0,1,24,0"/>
+    </g>
+  </g>
+</svg>

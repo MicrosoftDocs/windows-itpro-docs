@@ -717,7 +717,7 @@ description: Learn about the product documentation and resources available for M
                     </li>
                     <li>
                         <a href="#videos">Video tutorials</a>
-                        <ul id="videos" class="cardsC">
+                        <ul id="videos" class="cardsG">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Some of the tasks covered in the step-by-step guides are also available as video tutorials. Follow these links to start watching.</p>
@@ -836,7 +836,76 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </a>
-                            </li>                             
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-default="true" href="#partner-resources">Partner resources</a>
+                        <ul id="partner-resources" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Looking for resources available to Microsoft 365 Business partners? Start here.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://partners.office.com/smb" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/partner-resource-training-1.svg" alt="SMB resources and training" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SMB resources and training</h3>
+                                                    <p>Find the latest training offerings and updates, and other resources.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://partners.office.com/news" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/partner-news-2.svg" alt="News for partners" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>News articles</h3>
+                                                    <p>Read the latest news articles on Office 365 and Microsoft 365.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="https://office365partnerportal-staging.azurewebsites.net/fasttrack-and-partners" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="media/hub-partner/partner-fastrack-3.svg" alt="FastTrack and partners" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>FastTrack and partners</h3>
+                                                    <p>Get the full suite of best practices, tools, remote assistance, and resources to help you and your customers move to Microsoft 365.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            -->
                         </ul>
                     </li>
                 </ul>
