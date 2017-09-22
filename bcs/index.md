@@ -508,142 +508,6 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
-                        <a href="#troub-support">Troubleshooting and support</a>
-                        <ul id="troub-support" class="cardsC">
-                            <li class="fullSpan">
-                                <div class="container intro">
-                                    <p>Looking for help or can't find what you need? Try these resources.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://www.microsoft.com/solution-providers/search" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-find-partner-1.svg" alt="Find a Microsoft-certified service provider" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Find a Partner</h3>
-                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified solution provider who can help you locally or remotely. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364#bkmk_support" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Technical Support</h3>
-                                                    <p>Submit a technical support request for Microsoft 365 Business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li> 
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-troubleshooting-3.svg" alt="Find solutions for common Microsoft 365 Business issues" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Troubleshoot problems - Coming soon</h3>
-                                                    <p>Find solutions for common Microsoft 365 Business issues.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                          
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#adv-mgmt">Advanced management</a>
-                        <ul id="adv-mgmt" class="cardsC">
-                            <li class="fullSpan">
-                                <div class="container intro">
-                                    <p>See these links for more in-depth information about these products and features.</p>
-                                </div>
-                            </li>
-                            <!--
-                            <li>
-                                <a href="https://docs.microsoft.com/intune">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-intune-1.svg" alt="Microsoft Intune" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Intune</h3>
-                                                    <p>Need to update other policies or take advantage of the full Intune capabilities? </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            -->
-                            <li>
-                                <a href="https://docs.microsoft.com/en-us/windows/windows-10/" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-windows10-2.svg" alt="Learn more about Windows 10" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Windows 10</h3>
-                                                    <p>Find out what's new, how to apply custom configurations to devices, managing apps, deployment, and more.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://msdn.microsoft.com/partner-center/autopilot" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
-                                                    <p>Deploy Windows 10 devices using Windows AutoPilot from the Partner Center.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
                         <a href="#general-admin">General administration</a>
                         <ul id="general-admin" class="cardsC">
                             <li class="fullSpan">
@@ -689,27 +553,6 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
-                            <!--
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- management-4_placeholder.svg" alt="Manage changes" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Change management</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            -->
                             <li>
                                 <a href="https://support.office.com/article/74a1ef8b-3844-4d08-9980-9f8f7a36000f" target="_blank">
                                     <div class="cardSize">
@@ -810,6 +653,121 @@ description: Learn about the product documentation and resources available for M
                                     <p>Not finding the info that you need? Check out the <a href="https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791" target="_blank">Office 365 Admin Help</a> for more info. </p>
                                 </div>
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#adv-mgmt">Advanced management</a>
+                        <ul id="adv-mgmt" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>See these links for more in-depth information about these products and features.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/windows/windows-10/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-windows10-2.svg" alt="Learn more about Windows 10" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Windows 10</h3>
+                                                    <p>Find out what's new, how to apply custom configurations to devices, managing apps, deployment, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://msdn.microsoft.com/partner-center/autopilot" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
+                                                    <p>Deploy Windows 10 devices using Windows AutoPilot from the Partner Center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#trouble-support">Troubleshooting and support</a>
+                        <ul id="trouble-support" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Looking for help or can't find what you need? Try these resources.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.microsoft.com/solution-providers/search" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-find-partner-1.svg" alt="Find a Microsoft-certified service provider" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Find a Partner</h3>
+                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified solution provider who can help you locally or remotely. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364#bkmk_support" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft Technical Support</h3>
+                                                    <p>Submit a technical support request for Microsoft 365 Business.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="#">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-troubleshooting-3.svg" alt="Find solutions for common Microsoft 365 Business issues" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Troubleshoot problems - Coming soon</h3>
+                                                    <p>Find solutions for common Microsoft 365 Business issues.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                          
                         </ul>
                     </li>
                     <li>
