@@ -974,6 +974,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>Configuration</li>
 </ul>
+<p>Starting in Windows 10, version 1709, AssignedAccess CSP is supported in Windows 10 Pro.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
@@ -1378,6 +1379,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 <p>Added new settings to Update/BranchReadinessLevel policy in Windows 10 version 1709.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Starting in Windows 10, version 1709, AssignedAccess CSP is also supported in Windows 10 Pro.</p>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">Microsoft Store for Business</td>
 <td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
@@ -1620,6 +1625,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Added Configuration node</li>
 </ul>
+<p>Starting in Windows 10, version 1709, AssignedAccess CSP is supported in Windows 10 Pro.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[SurfaceHub CSP](surfacehub-csp.md)</td>
