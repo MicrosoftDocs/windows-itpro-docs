@@ -29,7 +29,10 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+    "author": "eross-msft",
+		"ms.author": "lizross"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "gdpr"
