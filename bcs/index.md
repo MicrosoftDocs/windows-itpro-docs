@@ -259,7 +259,7 @@ description: Learn about the product documentation and resources available for M
                     </li>
                     <li>
                         <a href="#policies">Policies</a>
-                        <ul id="policies" class="cardsG">
+                        <ul id="policies" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
                                     <p>Configure app management and device policies for your organization.</p>
@@ -278,25 +278,6 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Set device configurations for Windows 10 PCs</h3>
                                                     <p>Learn how to create, edit, or delete an app management policy in Microsoft 365 Business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/article/6b70fa27-d171-4593-8ecf-f78bb4ed2e99" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-view-policies-2.svg" alt="View policies and devices" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>View policies and devices</h3>
-                                                    <p>Use the Microsoft 365 Business admin center to configure the policies and devices for your organization.</p>
                                                 </div>
                                             </div>
                                         </div>
