@@ -272,12 +272,88 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set device configurations for Windows 10 PCs" />
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set device protection settings for Windows 10 PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set device configurations for Windows 10 PCs</h3>
-                                                    <p>Learn how to create, edit, or delete an app management policy in Microsoft 365 Business.</p>
+                                                    <h3>Set device protection settings for Windows 10 PCs</h3>
+                                                    <p>Learn how to secure Windows 10 PCs and what settings you can configure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/02e74022-44af-414b-9d74-0ebf5c2197f0" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set app protection settings for Windows 10 PCs" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set app protection settings for Windows 10 PCs</h3>
+                                                    <p>Learn how to create and assign app protection settings for Windows 10 devices and what settings you can configure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/6f2b80b4-81c3-4714-a7bc-ae69313e8a33" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set app protection settings for Android and iOS devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set app protection settings for Android and iOS devices</h3>
+                                                    <p>Learn how to create, edit, or delete an app management policy for Android or iOS devices, and what settings you can configure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/f3433b6b-02f7-447f-9d62-306bf03638b0" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Validate app protection settings on Android devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Validate app protection settings on Android devices</h3>
+                                                    <p>Follow the steps to confirm that the settings you chose are working on Android devices.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/2ec03d29-cc1d-4e74-a985-fb55a4b62966" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Validate app protection settings on iOS devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Validate app protection settings on iOS devices</h3>
+                                                    <p>Follow the steps to confirm that the settings you chose are working on iOS devices.</p>
                                                 </div>
                                             </div>
                                         </div>
