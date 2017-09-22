@@ -106,7 +106,6 @@
 #### [OtherAssets](wcd/wcd-otherassets.md)     
 #### [Personalization](wcd/wcd-personalization.md)     
 #### [Policies](wcd/wcd-policies.md) 
-#### [Power](wcd/wcd-power.md) 
 #### [ProvisioningCommands](wcd/wcd-provisioningcommands.md)     
 #### [SharedPC](wcd/wcd-sharedpc.md)     
 #### [Shell](wcd/wcd-shell.md)     
