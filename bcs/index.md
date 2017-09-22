@@ -123,6 +123,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    <!--
                     <li>
                         <a href="#user-mgmt">User management</a>
                         <ul id="user-mgmt" class="cardsC">
@@ -171,14 +172,72 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    -->
                     <li>
-                        <a href="#device-mgmt">Device management</a>
-                        <ul id="device-mgmt" class="cardsC">
+                        <a href="#user-device-mgmt">User and device management</a>
+                        <ul id="user-device-mgmt" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Find help on managing your organization's devices from the Microsoft 365 Business admin center.</p>
+                                    <p>Manage customers/users in your organization and find help on managing your organization's devices from the Microsoft 365 Business admin center.</p>
                                 </div>
                             </li>
+                           <li>
+                                <a href="https://support.office.com/article/96153102-1db1-4df8-bca5-38cea80b65ce" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-user-management-add-customer-1.svg" alt="Add a new user and assign licenses" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Add a new customer/user</h3>
+                                                    <p>Onboarding a new user? Use the admin center to add a new user and assign licenses.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-user-management-remove-customer-2.svg" alt="Follow the links to remove a customer/user" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Remove a customer/user</h3>
+                                                    <p>Need to remove a user? You'll need to <a href="https://support.office.com/article/80bdae57-f8bc-4e40-a58c-956007117ecb">remove company data from devices</a> and <a href="https://support.office.com/article/c4db6caf-74df-4734-b1dd-53e371c7a3c3">reset Windows 10 devices to their factory settings</a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-upgrade-2.svg" alt="Upgrade to Windows 10" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows devices for Microsoft 365 Business users</h3>
+                                                    <p>Once you've upgraded your device to Windows 10 Pro, join it to your organization's Azure AD, and get it ready for use.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
                             <li>
                                 <a href="https://support.office.com/article/ed34fff3-2881-4ed4-9906-1ba6bb8dd804" target="_blank">
                                     <div class="cardSize">
@@ -445,26 +504,7 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-upgrade-2.svg" alt="Upgrade to Windows 10" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Upgrade to Windows 10</h3>
-                                                    <p>Set up Windows 10 PCs for Microsoft 365 Business users.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                                        
+                            </li>                                      
                         </ul>
                     </li>
                     <li>
