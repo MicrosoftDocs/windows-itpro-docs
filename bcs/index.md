@@ -369,7 +369,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set app protection settings for Android and iOS devices" />
+                                                        <img src="images/bcs-iw-devicesetup-setup-1.svg" alt="Set app protection settings for Android and iOS devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -388,7 +388,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Validate app protection settings on Android devices" />
+                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Validate app protection settings on Android devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -407,7 +407,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Validate app protection settings on iOS devices" />
+                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Validate app protection settings on iOS devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
