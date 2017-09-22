@@ -350,11 +350,11 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set app protection settings for Windows 10 PCs" />
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set app protection settings for Windows 10 devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set app protection settings for Windows 10 PCs</h3>
+                                                    <h3>Set app protection settings for Windows 10 devices</h3>
                                                     <p>Learn how to create and assign app protection settings for Windows 10 devices and what settings you can configure.</p>
                                                 </div>
                                             </div>
@@ -369,11 +369,11 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-iw-devicesetup-setup-1.svg" alt="Set app protection settings for Android and iOS devices" />
+                                                        <img src="images/bcs-iw-devicesetup-setup-1.svg" alt="Set app protection settings for Android or iOS devices" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set app protection settings for Android and iOS devices</h3>
+                                                    <h3>Set app protection settings for Android or iOS devices</h3>
                                                     <p>Learn how to create, edit, or delete an app management policy for Android or iOS devices, and what settings you can configure.</p>
                                                 </div>
                                             </div>
