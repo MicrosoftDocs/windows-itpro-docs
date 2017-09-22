@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/20/2017
 ---
 
 # Policy CSP - System
@@ -303,7 +303,13 @@ ms.date: 08/30/2017
 
 <p style="margin-left: 20px">The following tables describe the supported values:
 
-<table style="margin-left: 20px">
+Windows 8.1 Values:
+
+-   0 - Not allowed.
+-   1 – Allowed, except for Secondary Data Requests.
+-   2 (default) – Allowed.
+
+<!--<table style="margin-left: 20px">
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -324,10 +330,17 @@ ms.date: 08/30/2017
 <td style="vertical-align:top"><p>2 (default) – Allowed.</p></td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
+Windows 10 Values:
 
-<table style="margin-left: 20px">
+-   0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
+    Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+-   1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.
+-   2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.
+-   3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.
+
+<!--<table style="margin-left: 20px">
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -354,7 +367,7 @@ ms.date: 08/30/2017
 <td style="vertical-align:top"><p>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</p></td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 
 > [!IMPORTANT]
