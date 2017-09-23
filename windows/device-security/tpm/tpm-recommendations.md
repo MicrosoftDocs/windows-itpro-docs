@@ -13,8 +13,6 @@ author: brianlic-msft
 # TPM recommendations
 
 **Applies to**
-
-**Applies to**
 -   Windows 10
 -   Windows Server 2016
 
@@ -100,13 +98,13 @@ The following table defines which Windows features require TPM support.
 
 | Windows Features        | TPM Required | Supports TPM 1.2   | Supports TPM 2.0   | Details  |
 |-------------------------|--------------|--------------------|--------------------|----------|
-| Measured Boot           | Yes          | Yes                | Yes                |          |
-| Bitlocker               | No           | Yes                | Yes                | A removable USB memory device such as a flash drive can also be used instead of a TPM.  |
-| Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires InstantGo/Connected Standby certification. All systems certified for InstantGo/Connected Standby shipped with TPM 2.0, so TPM 1.3 support is Not Applicable. | 
+| Measured Boot           | Yes          | Yes                | Yes                | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot         |
+| BitLocker               | Yes           | Yes                | Yes                | TPM 1.2 or 2.0 is required  |
+| Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires InstantGo/Connected Standby certification, which requires TPM 2.0. | 
 | Device Guard            | No           | Yes                | Yes                |          |
-| Credential Guard        | No           | Yes                | Yes                | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 is supported.   |
+| Credential Guard        | No           | Yes                | Yes                | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported.   |
 | Device Health Attestation| Yes         | Yes                | Yes                |          |
-| Windows Hello/Windows Hello for Business| No | Yes          | Yes                |          |
+| Windows Hello/Windows Hello for Business| No | Yes          | Yes                | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support.         |
 | UEFI Secure Boot        | No            | Yes               | Yes                |          |
 | TPM Platform Crypto Provider Key Storage Provider| Yes | Yes| Yes                |          |
 | Virtual Smart Card      | Yes           | Yes               | Yes                |          |
