@@ -3,6 +3,7 @@ layout: HubPage
 hide_bc: true
 author: CelesteDG
 ms.author: celested
+keywords: Microsoft 365 Business, Microsoft 365, business, Microsoft 365 Business documentation, docs, documentation
 ms.topic: hub-page
 ms.localizationpriority: high
 audience: microsoft-business 
