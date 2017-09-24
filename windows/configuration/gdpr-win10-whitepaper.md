@@ -330,6 +330,6 @@ MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, AS TO THE INFORMA
 
 This article does not provide you with any legal rights to any intellectual property in any Microsoft product.  You may copy and use this article for your internal, reference purposes only.  
 
-Published September 2017
-Version 1.0
+Published September 2017<br>
+Version 1.0<br>
 © 2017 Microsoft. All rights reserved.
