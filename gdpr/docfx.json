@@ -19,8 +19,7 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg",
-		  "**/*.gif"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
@@ -31,19 +30,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-		"uhfHeaderId": "MSDocsHeader-WindowsIT", 
-		"breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-		"ms.technology": "windows",
-		"ms.topic": "article",
-		"ms.author": "justinha",
-		"_op_documentIdPathDepotMapping": {
-			"./": {
-			  "depot_name": "MSDN.win-threat-protection"
-			}
-		}
-	},
+    "author": "eross-msft",
+		"ms.author": "lizross"
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "win-threat-protection"
+    "dest": "gdpr"
   }
 }
