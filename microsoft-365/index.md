@@ -1,7 +1,7 @@
 --- 
 layout: HubPage
 hide_bc: true
-author: v-kents
+author: CelesteDG
 ms.author: celested
 ms.topic: hub-page
 title: Microsoft 365 Documentation
@@ -52,7 +52,7 @@ description: Microsoft 365 is a complete, intelligent solution, including Office
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Business</h3>
-                                                    <p>Microsoft 365 Business is designed for small- to medium-sized businesses with up to 300 users and integrates Office 365 Business Premium with tailored security and management features from Windows 10, and Enterprise Mobility + Security. </p>
+                                                    <p>Microsoft 365 Business is a new solution designed for small and midsize businesses (SMB), bringing together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data.</p>
                                                 </div>
                                             </div>
                                         </div>
