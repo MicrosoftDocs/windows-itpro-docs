@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 09/19/2017
 ---
 
 # EnterpriseAPN CSP
@@ -127,6 +127,149 @@ The following image shows the EnterpriseAPN configuration service provider in tr
 <p style="margin-left: 20px">The default value is false.</p>
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.</p>
+
+## Examples
+
+``` syntax
+<!--
+Copyright (c) Microsoft Corporation.  All rights reserved.
+-->
+<!--
+Use of this source code is subject to the terms of the Microsoft
+premium shared source license agreement under which you licensed
+this source code. If you did not accept the terms of the license
+agreement, you are not authorized to use this source code.
+For the terms of the license, please see the license agreement
+signed by you and Microsoft.
+THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+
+-->
+
+<SyncML>
+  <SyncBody>
+    <Atomic>
+      <CmdID>8000</CmdID>
+      <!-- Sub-tree 1 -->
+      <add>
+        <CmdID>8001</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/APNName</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>enterprise_apn1</Data>
+        </Item>
+      </add>
+      <add>
+        <CmdID>8002</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/IPType</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>IPv4</Data>
+        </Item>
+      </add>
+      <add>
+        <CmdID>8003</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/IsAttachAPN</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">bool</Format>
+          </Meta>
+          <Data>false</Data>
+        </Item>
+      </add>
+      <add>
+        <CmdID>8004</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/ClassId</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA</Data>
+        </Item>
+      </add>
+      <add>
+        <CmdID>8005</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/AuthType</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>CHAP</Data>
+        </Item>
+      </add>
+      <add>
+        <CmdID>8006</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/UserName</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>myusername</Data>
+        </Item>
+      </add>
+      <add>
+        <CmdID>8007</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/Password</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>mypassword</Data>
+        </Item>
+      </add>
+      <add>
+        <CmdID>8008</CmdID>
+        <Item>
+          <Target>
+            <LocURI>./Vendor/MSFT/EnterpriseAPN/E_APN1/IccId</LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta>
+          <Data>FFFFFFFFFFFFFFFFFFFF</Data>
+        </Item>
+      </add>
+    </Atomic>
+    <Final/>
+  </SyncBody>
+
+<!--
+===============================================================================
+atomicA
+
+add chr  EnterpriseAPN/E_APN1/APNName                     enterprise_apn1
+add chr  EnterpriseAPN/E_APN1/IPType                      IPv4
+add bool EnterpriseAPN/E_APN1/IsAttachAPN                 false
+add chr  EnterpriseAPN/E_APN1/ClassId                     AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
+add chr  EnterpriseAPN/E_APN1/AuthType                    CHAP
+add chr  EnterpriseAPN/E_APN1/UserName                    myusername
+add chr  EnterpriseAPN/E_APN1/Password                    mypassword
+add chr  EnterpriseAPN/E_APN1/IccId                       FFFFFFFFFFFFFFFFFFFF
+
+atomicZ
+===============================================================================
+-->
+
+</SyncML>
+
+```
 
 ## Related topics
 

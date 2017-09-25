@@ -1341,7 +1341,7 @@ ServiceName</Description>
                       <Get />
                       <Replace />
                     </AccessType>
-                    <Description>PackageFamilyName - This App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of a Windows Store application.</Description>
+                    <Description>PackageFamilyName - This App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of a Microsoft Store application.</Description>
                     <DFFormat>
                       <chr />
                     </DFFormat>
