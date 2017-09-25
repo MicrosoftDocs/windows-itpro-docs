@@ -7,20 +7,20 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 07/05/2107
+ms.date: 09/12/2017
 ms.localizationpriority: high
 ---
 
 # Manage Windows device deployment with Windows AutoPilot Deployment
 
 **Applies to**
-
 -   Windows 10
 
-> [!IMPORTANT]
-> This topic has been updated to reflect the latest functionality, which we are releasing to customers in stages. You may not see all of the options described here until you receive the update.
+Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot). 
 
-Windows AutoPilot Deployment Program simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
+Watch this video to learn more about Windows AutoPilot in Micrsoft Store for Business. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IpLIZU_j7Z0" frameborder="0" allowfullscreen></iframe>
 
 ## What is Windows AutoPilot Deployment Program?
 In Microsoft Store for Business, you can manage devices for your organization and apply an *AutoPilot deployment profile* to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the AutoPilot deployment profile you applied to the device. 
@@ -54,9 +54,13 @@ To manage devices through Microsoft Store for Business and Education, you'll nee
 
 ### Device information file format
 Columns in the device information file need to use this naming and be in this order:
-- Column 1: Device Serial Number
-- Column 2: Windows Product ID 
-- Column 3: Hardware Hash
+- Column A: Device Serial Number
+- Column B: Windows Product ID 
+- Column C: Hardware Hash
+
+Here's a sample device information file:
+
+![Notepad file showing example entries for Column A (Device Serial Number), Column B (Windows Product ID), and Column C (Hardware Hash).](images/msfb-autopilot-csv.png)
 
 When you add devices, you need to add them to an *AutoPilot deployment group*. Use these groups to apply AutoPilot deployment profiles to a group of devices. The first time you add devices to a group, you'll need to create an AutoPilot deployment group. 
 
