@@ -245,3 +245,5 @@
 #### [Using Device Health](update/device-health-using.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
+
+## [Architectural planning posters for Windows 10](windows-10-architecture-posters.md)

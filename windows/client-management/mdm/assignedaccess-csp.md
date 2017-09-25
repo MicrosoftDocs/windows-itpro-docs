@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/27/2017
+ms.date: 09/19/2017
 ---
 
 # AssignedAccess CSP
@@ -19,7 +19,7 @@ The AssignedAccess configuration service provider (CSP) is used set the device t
 
 For step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](http://go.microsoft.com/fwlink/p/?LinkID=722211)
 
-> **Note**  The AssignedAccess CSP is only supported in Windows 10 Enterprise and Windows 10 Education.
+> **Note**  The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting in Windows 10, version 1709 it is also supported in Windows 10 Pro.
 
 The following diagram shows the AssignedAccess configuration service provider in tree format
 
