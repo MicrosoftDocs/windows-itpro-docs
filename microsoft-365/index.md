@@ -67,7 +67,7 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/images/M365-education.svg" alt="Microsoft 365 Education documentation and resources" />
+                                                        <img src="/media/hubs/microsoft365/M365-education.svg" alt="Microsoft 365 Education documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
