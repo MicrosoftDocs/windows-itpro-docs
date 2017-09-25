@@ -328,7 +328,7 @@ As a result, this article is provided for informational purposes only and should
 
 MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED, OR STATUTORY, AS TO THE INFORMATION IN THIS ARTICLE. This article is provided “as-is.” Information and views expressed in this article, including URL and other Internet website references, may change without notice.
 
-This article does not provide you with any legal rights to any intellectual property in any Microsoft product.  You may copy and use this article for your internal, reference purposes only.  
+This article does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this article for your internal, reference purposes only.  
 
 Published September 2017<br>
 Version 1.0<br>
