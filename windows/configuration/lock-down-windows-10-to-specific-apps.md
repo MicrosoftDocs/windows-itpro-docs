@@ -40,7 +40,7 @@ If you don't want to use a provisioning package, you can deploy the configuratio
 
 ## Prerequisites
 
-- (latest version of WCD -- is Store version okay at GA?)
+- Windows Configuration Designer (Windows 10, version 1709)
 - The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709
 
 
