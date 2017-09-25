@@ -21,13 +21,13 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                             <li class="fullSpan intro">[Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx) is a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security, that empowers everyone to be creative and work together, securely.
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365-enterprise/">
+                                <a href="https://docs.microsoft.com/microsoft-365-enterprise/" target="blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-enterprise.svg" alt="" />
+                                                        <img src="/media/hubs/microsoft365/M365-enterprise.svg" alt="Microsoft 365 Enterprise documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -41,19 +41,39 @@ description: Find documentation and resources for Microsoft 365--a complete, int
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/microsoft-365-business/">
+                                <a href="https://docs.microsoft.com/microsoft-365-business/" target="blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/hubs/microsoft365/M365-business.svg" alt="" />
+                                                        <img src="/media/hubs/microsoft365/M365-business.svg" alt="Microsoft 365 Business documentation and resources" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <br />
                                                     <h3>Microsoft 365 Business</h3>
                                                     <p>Microsoft 365 Business is a new solution designed for small and midsize businesses (SMB), bringing together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/education/" target="blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/M365-education.svg" alt="Microsoft 365 Education documentation and resources" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <br />
+                                                    <h3>Microsoft 365 Education</h3>
+                                                    <p>Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.</p>
                                                 </div>
                                             </div>
                                         </div>
