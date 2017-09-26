@@ -82,4 +82,4 @@ When installing the BitLocker optional component on a server you will also need 
 | [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This topic for IT pros describes how to protect CSVs and SANs with BitLocker.| 
 | [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/securebootandbitlocker) | This topic covers how to use BitLocker with Windows 10 IoT Core |
 
-Not finding content you need? Windows 10 users can tell us about content they need by using [Feedback Hub](http://userfeedback/UserFeedback/Home/EditContext/897). 
+Not finding content you need? Windows 10 users can tell us about content they need by using Feedback Hub: [![Feedback Hub](images/feedback-app-icon.png)](http://userfeedback/UserFeedback/Home/EditContext/897) 
