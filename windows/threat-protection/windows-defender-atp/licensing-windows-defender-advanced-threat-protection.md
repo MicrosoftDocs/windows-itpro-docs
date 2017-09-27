@@ -39,6 +39,10 @@ The easiest way to gain access into which license is provisioned to you and chec
 
 	 ![Image of billing licenses](images\atp-billing-licenses.png)
 
+4. In the **Microsoft Azure portal** navigate to the **All resources** icon ![Image of Azure All resources icon](images\atp-azure-license-icon.png) to view your licenses.
+
+	![Image of Azure Licensing page](images\atp-licensing-azure-portal.png)
+
 ## Accessing the Windows Defender ATP portal for the first time
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the set up wizard there will be a dedicated cloud instance of Windows Defender ATP created.
@@ -107,7 +111,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
 
-	![Image of onboard endpoints](images\atp-onboard-endpoints.png)
+	![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
 
 	For more information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 
