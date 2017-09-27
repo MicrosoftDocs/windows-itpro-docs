@@ -35,15 +35,13 @@ If you receive an error message, the Windows Defender ATP portal will provide de
 If while accessing the Windows Defender ATP portal you get a **No subscriptions found** message, it means the Azure Active Directory (AAD) used to login the user to the portal, does not have a Windows Defender ATP license.
 
 Potential reasons:
-- The Windows E5 and Office E5 licenses are not the same thing. Make sure you are capturing the correct information.
+- The Windows E5 and Office E5 licenses are separate licenses.
 - The license was purchased but not provisioned to this AAD instance.
     - It could be a license provisioning issue.
     - It could be you inadvertently provisioned the license to a different Microsoft AAD than the one used for authentication into the service.
 
-For both cases you should contact Microsoft support.
-
-> [!NOTE]
-> For some of the **Purchase > Provision** flows there is a provisioning latency of up to 30 minutes.
+For both cases you should contact Microsoft support at [General Windows Defender ATP Support](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
+[Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx) 
 
 ![Image of no subscriptions found](images/atp-no-subscriptions-found.png)
 
