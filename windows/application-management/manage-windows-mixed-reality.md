@@ -16,7 +16,7 @@ ms.date: 10/17/2017
 
 -   Windows 10
 
-intro
+Windows 10, version 1709 (also known as the Fall Creators Update), introduces [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/08/28/windows-mixed-reality-holiday-update/). 
 
 ## enable
 
