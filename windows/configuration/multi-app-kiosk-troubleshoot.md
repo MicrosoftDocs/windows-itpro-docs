@@ -49,4 +49,4 @@ For example:
 
 ## Feedback
 
-Feedback and bugs can be submitted in the Feedback Hub. You can use the [Problems Steps Recorder](https://support.microsoft.com/help/22878/windows-10-record-steps) to reproduce the issue, and attach the resulting .zip file to your feedback.
+Feedback and bugs can be submitted in the Feedback Hub. 
