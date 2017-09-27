@@ -47,6 +47,3 @@ For example:
 - Check if the apps included in the Start layout are installed for the assigned access user.
 - Check if the shortcut exists on the target device, if a desktop app is missing on Start.
 
-## Feedback
-
-Feedback and bugs can be submitted in the Feedback Hub. 
