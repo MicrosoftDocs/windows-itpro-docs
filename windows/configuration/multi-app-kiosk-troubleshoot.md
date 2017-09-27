@@ -33,11 +33,7 @@ For example:
 1. [Verify that the provisioning package is applied successfully](lock-down-windows-10-to-specific-apps.md#validate-provisioning).
 2. Verify that the account (config) is mapped to a profile in the configuration XML file.
 3. Verify that the configuration XML file is authored and formatted correctly. Correct any configuration errors, then create and apply a new provisioning package. Sign out and sign in again to check the new configuration.
-4. If the issue persists, [capture traces](https://msdn.microsoft.com/library/windows/desktop/dn904629.aspx) for components with the following GUIDs:
-    - 94097d3d-2a5a-5b8a-cdbd-194dd2e51a00
-    - ab84611c-2678-5cd7-d292-c940f9be6c6d
-    - f9f7f27c-5e5d-5273-468f-038e61965660
-    - 3e8fb07b-3e10-5981-01a9-fbd924fd5436
+
 
 ## Apps configured in AllowedList are blocked
 
