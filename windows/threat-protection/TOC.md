@@ -30,6 +30,7 @@
 #### [Investigate a domain](windows-defender-atp\investigate-domain-windows-defender-advanced-threat-protection.md)
 #### [View and organize the Machines list](windows-defender-atp\machines-view-overview-windows-defender-advanced-threat-protection.md)
 #### [Investigate machines](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md)
+##### [Manage machine group and tags](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)
 ##### [Alerts related to this machine](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#alerts-related-to-this-machine)
 ##### [Machine timeline](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#machine-timeline)
 ###### [Search for specific events](windows-defender-atp\investigate-machines-windows-defender-advanced-threat-protection.md#search-for-specific-events)
