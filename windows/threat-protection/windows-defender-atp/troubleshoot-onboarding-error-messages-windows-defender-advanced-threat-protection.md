@@ -41,7 +41,7 @@ Potential reasons:
     - It could be you inadvertently provisioned the license to a different Microsoft AAD than the one used for authentication into the service.
 
 For both cases you should contact Microsoft support at [General Windows Defender ATP Support](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
-[Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx) 
+[Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
 
 ![Image of no subscriptions found](images/atp-no-subscriptions-found.png)
 
