@@ -24,6 +24,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
+
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Preferences setup** > **Preview experience**.
