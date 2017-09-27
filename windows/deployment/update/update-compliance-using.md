@@ -147,7 +147,10 @@ Devices are evaluated by OS Version (e.g., 1607) and the count of how many are C
 
 You'll notice some new tiles in the Overview blade which provide a summary of Windows Defender AV-related issues, highlighted in the following screenshot.
 
-![verview blade showing a summary of key Windows Defender Antivirus issues](images/update-compliance-wdav-overview.png)
+![Overview blade showing a summary of key Windows Defender Antivirus issues](images/update-compliance-wdav-overview.png)
+
+>[!IMPORTANT]
+>If your devices are not showing up in the Windows Defender AV assessment section, check the [Troublshoot Windows Defender Antivirus reporting](/windows/threat-protection/windows-defender-antivirus/troubleshoot-reporting) topic for help.
 
 The **AV Signature** chart shows the number of devices that either have up-to-date [protection updates (also known as signatures or definitions)](/windows/threat-protection/windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus), while the **Windows Defender AV Status** tile indicates the percentage of all assessed devices that are not updated and do not have real-time protection enabled. The Windows Defender Antivirus Assessment section provides more information that lets you investigate potential issues.
 

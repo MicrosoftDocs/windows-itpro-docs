@@ -1027,6 +1027,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### Handwriting policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-handwriting.md#handwriting-paneldefaultmodedocked" id="handwriting-paneldefaultmodedocked">Handwriting/PanelDefaultModeDocked</a>
+  </dd>
+</dl>
+
 ### InternetExplorer policies
 
 <dl>
