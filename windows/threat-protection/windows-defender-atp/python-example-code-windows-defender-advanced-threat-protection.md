@@ -177,6 +177,10 @@ with requests.Session() as session:
     pprint(json.loads(response.text))
 ```
 
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-pyexample-belowfoldlink) 
+
+
 ## Related topics
 - [Understand threat intelligence concepts](threat-indicator-concepts-windows-defender-advanced-threat-protection.md)
 - [Create custom alerts using the threat intelligence API](custom-ti-api-windows-defender-advanced-threat-protection.md)

@@ -334,7 +334,7 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tbody>
 </table>
 
-
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)

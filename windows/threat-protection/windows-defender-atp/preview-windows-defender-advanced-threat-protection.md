@@ -27,6 +27,8 @@ ms.date: 09/05/2017
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+
 Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
@@ -69,5 +71,5 @@ Windows Defender ATP supports the use of Power BI data connectors to enable you 
     Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities.
 
 
-    
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 

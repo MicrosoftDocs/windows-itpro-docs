@@ -21,6 +21,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink) 
+
 ## Investigate machines
 Investigate the details of an alert raised on a specific machine to identify other behaviors or events that might be related to the alert or the potential scope of breach.
 

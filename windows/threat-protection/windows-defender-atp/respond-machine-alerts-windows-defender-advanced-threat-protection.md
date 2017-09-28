@@ -25,6 +25,9 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
+
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
 >[!NOTE]
