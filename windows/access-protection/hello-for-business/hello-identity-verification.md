@@ -74,17 +74,14 @@ The table shows the minimum requirements for each deployment.
 ### What is the user experience for Windows Hello for Business?
 The user experience for Windows Hello for Business occurs after user sign once you deploy Windows Hello for Business policy settings to your environment.
 
-Windows Hello for Business Enrollment including Biometrics
 > [!VIDEO https://www.youtube.com/embed/FJqHPTZTpNM]
 
-Windows Hello for Business Enrollment PIN only
 > [!VIDEO https://www.youtube.com/embed/etXJsZb8Fso]
 
 ### What happens when my user forgets their PIN?
 
 If the user can sign-in with a password, they can reset their PIN by clicking the "I forgot my PIN" link in settings.  Beginning with the Fall Creators Update, users can reset their PIN above the lock screen by clicking the "I forgot my PIN" link on the PIN credential provider.
 
-Windows Hello PIN Reset above Lock (Fall Creators Update)
 > [!VIDEO https://www.youtube.com/embed/KcVTq8lTlkI]
 
 For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can onboard their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
