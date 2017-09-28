@@ -13,8 +13,6 @@ author: brianlic-msft
 # TPM recommendations
 
 **Applies to**
-
-**Applies to**
 -   Windows 10
 -   Windows Server 2016
 
@@ -98,20 +96,19 @@ For end consumers, TPM is behind the scenes but is still very relevant. TPM is u
 
 The following table defines which Windows features require TPM support.
 
-| Windows Features        | Windows 10 TPM 1.2   | Windows 10 TPM 2.0   | Details  |
-|-------------------------|----------------------|----------------------|----------|
-| Measured Boot                                | Required                 | Required                 | Measured boot requires TPM 1.2 or 2.0 and UEFI Secure Boot.   |
-| Bitlocker                                    | Required                 | Required                 | TPM 1.2 or later required or a removable USB memory device such as a flash drive. Please note that TPM 2.0 requires UEFI Secure Boot in order for BitLocker to work properly.  |
-| Passport: Domain AADJ Join                   | Required                 | Required                 | Supports both versions of TPM, but requires TPM with HMAC and EK certificate for key attestation support.  |
-| Passport: MSA or Local Account               | Required                 | Required                 | TPM 2.0 is required with HMAC and EK certificate for key attestation support.      |
-| Device Encryption                            | Not Applicable           | Required                 | TPM 2.0 is required for all InstantGo devices.                |
-| Credential Guard                             | Required                 | Required                 | For Windows 10, version 1511, TPM 1.2 or 2.0 is highly recommended. If you don't have a TPM installed, Credential Guard will still be enabled, but the keys used to encrypt Credential Guard will not be protected by the TPM.   |
-| Device Health Attestation                    | Required                 | Required                 |                    |
-| Windows Hello / Windows Hello for Business   | Not Required             | Recommended              | Whenever possible, Microsoft recommends the use of TPM hardware. The TPM protects against a variety of known and potential attacks, including PIN brute-force attacks. [How keys are protected](https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-how-it-works#how-keys-are-protected)                   |
-| UEFI Secure Boot                             | Not Required             | Recommended              |                    |
-| Platform Key Storage provider                | Required                 | Required                 |                    |
-| Virtual Smart Card                           | Required                 | Required                 |                    |
-| Certificate storage (TPM bound)              | Required                 | Required                 |                    |
+| Windows Features        | TPM Required | Supports TPM 1.2   | Supports TPM 2.0   | Details  |
+|-------------------------|--------------|--------------------|--------------------|----------|
+| Measured Boot           | Yes          | Yes                | Yes                | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot         |
+| BitLocker               | Yes           | Yes                | Yes                | TPM 1.2 or 2.0 is required  |
+| Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires InstantGo/Connected Standby certification, which requires TPM 2.0. | 
+| Device Guard            | No           | Yes                | Yes                |          |
+| Credential Guard        | No           | Yes                | Yes                | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported.   |
+| Device Health Attestation| Yes         | Yes                | Yes                |          |
+| Windows Hello/Windows Hello for Business| No | Yes          | Yes                | Azure AD join supports both versions of TPM, but requires TPM with keyed-hash message authentication code (HMAC) and Endorsement Key (EK) certificate for key attestation support.         |
+| UEFI Secure Boot        | No            | Yes               | Yes                |          |
+| TPM Platform Crypto Provider Key Storage Provider| Yes | Yes| Yes                |          |
+| Virtual Smart Card      | Yes           | Yes               | Yes                |          |
+| Certificate storage     | No            | Yes               | Yes                | TPM is only required when the certificate is stored in the TPM. |
                                                                                   
 ## OEM Status on TPM 2.0 system availability and certified parts
 

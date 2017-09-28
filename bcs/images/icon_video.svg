@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 105">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #556a8a;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #556a8a;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #2bc7f4;
+      }
+
+      .cls-5 {
+        fill: #e5e5e5;
+      }
+    </style>
+  </defs>
+  <title> 5</title>
+  <g id="Illustrations">
+    <g>
+      <g>
+        <g>
+          <rect class="cls-1" x="34" y="22" width="82" height="61" rx="2" ry="2"/>
+          <g>
+            <rect class="cls-2" x="36" y="24" width="7" height="7"/>
+            <rect class="cls-2" x="36" y="34" width="7" height="7"/>
+            <rect class="cls-2" x="36" y="44" width="7" height="7"/>
+            <rect class="cls-2" x="36" y="54" width="7" height="7"/>
+            <rect class="cls-2" x="36" y="64" width="7" height="7"/>
+            <rect class="cls-2" x="36" y="74" width="7" height="7"/>
+          </g>
+          <g>
+            <rect class="cls-2" x="107" y="24" width="7" height="7"/>
+            <rect class="cls-2" x="107" y="34" width="7" height="7"/>
+            <rect class="cls-2" x="107" y="44" width="7" height="7"/>
+            <rect class="cls-2" x="107" y="54" width="7" height="7"/>
+            <rect class="cls-2" x="107" y="64" width="7" height="7"/>
+            <rect class="cls-2" x="107" y="74" width="7" height="7"/>
+          </g>
+          <rect class="cls-2" x="45" y="24" width="60" height="57"/>
+          <path class="cls-3" d="M91.18,51.7A16.19,16.19,0,0,1,75,67.89a15.91,15.91,0,0,1-5-.79A16.18,16.18,0,1,1,91.18,51.7Z"/>
+        </g>
+        <polygon class="cls-4" points="69 62.15 69 41.26 87 51.7 69 62.15"/>
+      </g>
+      <rect class="cls-5" x="45" y="24" width="60" height="7"/>
+      <rect class="cls-5" x="45" y="74" width="60" height="7"/>
+    </g>
+  </g>
+</svg>

@@ -12,7 +12,8 @@ author: brianlic-msft
 # Requirements for deploying AppLocker policies
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 

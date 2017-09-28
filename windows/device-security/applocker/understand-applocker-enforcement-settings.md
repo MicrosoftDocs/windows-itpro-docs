@@ -12,7 +12,8 @@ author: brianlic-msft
 # Understand AppLocker enforcement settings
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic describes the AppLocker enforcement settings for rule collections.
 

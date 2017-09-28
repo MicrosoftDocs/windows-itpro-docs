@@ -12,7 +12,8 @@ author: brianlic-msft
 # Understanding the publisher rule condition in AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
 

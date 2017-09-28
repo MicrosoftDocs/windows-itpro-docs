@@ -22,7 +22,7 @@ You can manage all apps that you've acquired on your **Apps & software** page. T
 
 All of these apps are treated the same once they are in your inventory and you can perform app lifecycle tasks for them: distribute apps, add apps to private store, review license details, and reclaim app licenses.
 
-<!--- ![Image shows Inventory page in Windows Store for Business with status status options for an app.](images/wsfb-inventoryaddprivatestore.png) -->
+<!--- ![Image shows Inventory page in Microsoft Store for Business with status status options for an app.](images/wsfb-inventoryaddprivatestore.png) -->
 
 Microsoft Store for Business and Education shows this info for each app in your inventory:
 - Name
