@@ -24,24 +24,29 @@ ms.date: 09/10/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-## Gain access to provisioned licenses
-The easiest way to gain access into which license is provisioned to you and check the license state is to check the **Office 365 admin center**.
+## Checking license state
 
-1. From the **Partner portal**, click on the **Administer services > Office 365**.
+Checking for the license state and whether it got properly provisioned, can be done via the **Office 365 admin center** or via the **Microsoft Azure portal**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
-
-	![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
-
-3. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
+1. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
 
 - On the screen you will see all the provisioned licenses and their current **Status**.
 
 	 ![Image of billing licenses](images\atp-billing-licenses.png)
 
-4. In the **Microsoft Azure portal** navigate to the **All resources** icon ![Image of Azure All resources icon](images\atp-azure-license-icon.png) to view your licenses.
+2. In the **Microsoft Azure portal** navigate to the **All resources** icon ![Image of Azure All resources icon](images\atp-azure-license-icon.png) to view your licenses.
 
 	![Image of Azure Licensing page](images\atp-licensing-azure-portal.png)
+
+## Cloud Service Provider validation
+
+The easiest way to gain access into which license is provisioned to your company, and to check the license state, is to check the **Office 365 admin center**.
+
+3. From the **Partner portal**, click on the **Administer services > Office 365**.
+
+4. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
+
+	![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
 ## Accessing the Windows Defender ATP portal for the first time
 
@@ -73,7 +78,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 	![Image of data retention set up](images\atp-data-retention-policy.png)
 
-5. You will need to indicate the size of your organization based on an estimate of the number of employees they currently employ.
+5. You will need to indicate the size of your organization based on an estimate of the number of employees currently employed.
 
 	> [!NOTE]
 	> The **organization size** question is not related to how many licenses were purchased for your organization. It is used by the service to optimize the creation of the data cluster for your organization.
