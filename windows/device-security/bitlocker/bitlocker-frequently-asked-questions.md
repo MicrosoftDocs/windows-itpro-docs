@@ -29,6 +29,8 @@ BitLocker is a data protection feature that encrypts the hard drives on your com
 -   [BitLocker Network Unlock](#bkmk-bnusect)
 -   [Other questions](#bkmk-other)
 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+
 ## <a href="" id="bkmk-overview"></a>Overview and requirements
 
 ### <a href="" id="bkmk-whatisbitlocker"></a>How does BitLocker work?

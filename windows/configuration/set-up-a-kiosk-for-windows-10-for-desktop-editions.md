@@ -432,6 +432,6 @@ For a more secure kiosk experience, we recommend that you make the following con
 
 - [Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise](mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md)
 
-
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897).
 
 
