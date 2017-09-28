@@ -142,7 +142,7 @@ The action to restrict an application from running applies a code integrity poli
     ![Image of action center with app restriction](images/atp-action-center-app-restriction.png)
 
 
-  - **Submission time** - Shows when the isolation action was submitted.
+  - **Submission time** - Shows when the action was submitted.
   - **Status** - Indicates any pending actions or the results of completed actions.
 
 When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
@@ -198,7 +198,7 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
    The Action center shows the submission information:
     ![Image of machine isolation](images/atp-machine-isolation.png)
 
-   - **Submission time** - Shows when the isolation action was submitted.
+   - **Submission time** - Shows when the action was submitted.
    - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
 
 When the isolation configuration is applied, a new event is reflected in the machine timeline.
