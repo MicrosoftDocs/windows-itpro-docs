@@ -75,7 +75,7 @@ The table shows the minimum requirements for each deployment.
 The user experience for Windows Hello for Business occurs after user sign once you deploy Windows Hello for Business policy settings to your environment.
 
 > [!VIDEO https://www.youtube.com/embed/FJqHPTZTpNM]
-
+<br>
 > [!VIDEO https://www.youtube.com/embed/etXJsZb8Fso]
 
 ### What happens when my user forgets their PIN?
