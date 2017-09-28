@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/31/2017
+ms.date: 09/19/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -102,7 +102,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Management tool for the Windows Store for Business</p></td>
+<td style="vertical-align:top"><p>Management tool for the Micosoft Store for Business</p></td>
 <td style="vertical-align:top"><p>New topics. The Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. It enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.</p></td>
 </tr>
 <tr class="even">
@@ -929,6 +929,16 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </thead>
 <tbody>
 <tr class="even">
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
+<ul>
+<li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
+<li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
+<li>DomainName - fully qualified domain name if the device is domain-joined.</li>
+</ul>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+</td></tr>
+<tr class="even">
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
@@ -946,7 +956,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </tr>
 <tr class="even">
 <td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
-<td style="vertical-align:top"><p>Added DeviceTunnel profile in Windows 10, version 1709.</p>
+<td style="vertical-align:top"><p>Added DeviceTunnel and RegisterDNS settings in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeviceStatus CSP](devicestatus-csp.md)</td>
@@ -964,6 +974,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>Configuration</li>
 </ul>
+<p>Starting in Windows 10, version 1709, AssignedAccess CSP is supported in Windows 10 Pro.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[DeviceManageability CSP](devicemanageability-csp.md)</td>
@@ -989,9 +1000,14 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">Microsoft Store for Business</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
+<li>Authentication/AllowAadPasswordReset</li>
 <li>Browser/LockdownFavorites</li>
 <li>Browser/ProvisionFavorites</li>
 <li>CredentialProviders/DisableAutomaticReDeploymentCredentials</li>
@@ -1000,6 +1016,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceGuard/LsaCfgFlags</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
 <li>Games/AllowAdvancedGamingServices</li>
+<li>Handwriting/PanelDefaultModeDocked</li>
 <li>LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableAdministratorAccountStatus</li>
 <li>LocalPoliciesSecurityOptions/Accounts_EnableGuestAccountStatus</li>
@@ -1043,7 +1060,9 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/DefaultPrinterName</li>
 <li>Education/PreventAddingNewPrinters</li>
 <li>Education/PrinterNames</li>
+<li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 <li>Update/DisableDualScan</li>
 <li>Update/ScheduledInstallEveryWeek</li>
@@ -1335,6 +1354,59 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### September 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
+<ul>
+<li>Authentication/AllowAadPasswordReset</li>
+<li>Handwriting/PanelDefaultModeDocked</li>
+<li>Search/AllowCloudSearch</li>
+<li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
+</ul>
+<p>Added new settings to Update/BranchReadinessLevel policy in Windows 10 version 1709.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Starting in Windows 10, version 1709, AssignedAccess CSP is also supported in Windows 10 Pro.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">Microsoft Store for Business</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
+<td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
+<ul>
+<li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
+<li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
+<li>DomainName - fully qualified domain name if the device is domain-joined.</li>
+</ul>
+<p>For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[EntepriseAPN CSP](enterpriseapn-csp.md)</td>
+<td style="vertical-align:top"><p>Added a SyncML example.</p>
+</td></tr>
+<td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
+<td style="vertical-align:top"><p>Added RegisterDNS setting in Windows 10, version 1709.</p>
+</td></tr>
+</tbody>
+</table>
+
 ### August 2017
 
 <table class="mx-tdBreakAll">
@@ -1553,6 +1625,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Added Configuration node</li>
 </ul>
+<p>Starting in Windows 10, version 1709, AssignedAccess CSP is supported in Windows 10 Pro.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[SurfaceHub CSP](surfacehub-csp.md)</td>

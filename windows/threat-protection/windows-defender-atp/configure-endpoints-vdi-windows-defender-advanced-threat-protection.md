@@ -20,6 +20,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+
 ## Onboard non-persistent virtual desktop infrastructure (VDI) machines
 
 Windows Defender ATP supports non-persistent VDI session onboarding. There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
@@ -32,6 +34,9 @@ Windows Defender ATP supports non-persistent VDI session onboarding. There might
     - The machine names are typically reused for new sessions. One may ask to have them as a single machine entry while others may prefer to have multiple entries per machine name.
 
 You can onboard VDI machines using a single entry or multiple entries for each machine. The following steps will guide you through onboarding VDI machines and will highlight steps for single and multiple entries.
+
+>[!WARNING]
+> For environments where there are low resource configurations, the VDI boot proceedure might slow the Windows Defender ATP sensor onboarding. 
 
 1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 

@@ -23,6 +23,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
+
 Understand the security status of your organization, including the status of machines, alerts, and investigations using the Windows Defender ATP reporting feature that integrates with Power BI. 
 
 Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
@@ -78,9 +80,12 @@ You can create a custom dashboard in Power BI Desktop to create visualizations t
 7.	Click **File** > **Options and settings** > **Custom data connectors**.
 
 8.	Select **New table and matrix visuals** and **Custom data connectors** and click **OK**.
+    
+    >[!NOTE]
+    >If you are using Power BI Desktop July 2017 version (or later), you won't need to select **New table and matrix visuals**. You'll only need to select **Custom data connectors**.
 
     ![Power BI options page](images/atp-powerbi-options.png)
-
+    
 9. Restart Power BI Desktop.
 
 ## Customize the Windows Defender ATP Power BI dashboard

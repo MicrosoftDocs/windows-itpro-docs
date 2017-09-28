@@ -49,7 +49,7 @@ Admins need to invite developer or ISVs to become an LOB publisher.
 
 **To invite a developer to become an LOB publisher**
 
-1.  Sign in to the [Windows Store for Business]( https://go.microsoft.com/fwlink/p/?LinkId=623531).
+1.  Sign in to the [Microsoft Store for Business]( https://go.microsoft.com/fwlink/p/?LinkId=623531).
 2.  Click **Manage**, click **Permissions**, and then choose **Line-of-business publishers**.
 3.  On the Line-of business publishers page, click **Invite** to send an email invitation to a developer.
  >[!Note]
@@ -98,7 +98,7 @@ After an ISV submits the LOB app for your company or school, someone with Micros
 
 After you add the app to your inventory, you can choose how to distribute the app. For more information, see:
 
--   [Distribute apps to your employees from the Windows Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md)
+-   [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md)
 
 -   [Distribute apps from your private store](distribute-apps-from-your-private-store.md)
 

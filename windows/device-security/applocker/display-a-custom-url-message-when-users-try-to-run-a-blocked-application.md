@@ -12,7 +12,8 @@ author: brianlic-msft
 # Display a custom URL message when users try to run a blocked app
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 

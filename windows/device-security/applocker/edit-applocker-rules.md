@@ -12,7 +12,8 @@ author: brianlic-msft
 # Edit AppLocker rules
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes the steps to edit a publisher rule, path rule, and file hash rule in AppLocker.
 

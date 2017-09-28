@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Advanced Threat Protection settings
-description: Use the menu to configure the time zone, suppression rules, and view license information.
-keywords: Windows Defender ATP settings, Windows Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license, suppression rules
+description: Use the menu to configure the time zone and view license information.
+keywords: Windows Defender ATP settings, Windows Defender, cybersecurity threat intelligence, advanced threat protection, time zone, utc, local time, license
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -25,7 +25,9 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone, suppression rules, and view license information.
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-settings-abovefoldlink)
+
+Use the **Settings** menu ![Settings icon](images/settings.png) to configure the time zone and view license information.
 
 ## Time zone settings
 The aspect of time is important in the assessment and analysis of perceived and actual cyberattacks.
@@ -39,7 +41,7 @@ Your current time zone setting is shown in the Windows Defender ATP menu. You ca
 ### UTC time zone
 Windows Defender ATP uses UTC time by default.
 
-Setting the Windows Defender ATP time zone to UTC will display all system timestamps (alerts, events, and others) in UTC for all users. Choosing this setting means that all users will see the same timestamps in Windows Defender ATP, regardless of their regional settings. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
+Setting the Windows Defender ATP time zone to UTC will display all system timestamps (alerts, events, and others) in UTC for all users. This can help security analysts working in different locations across the globe to use the same time stamps while investigating events.
 
 ### Local time zone
 You can choose to have Windows Defender ATP use local time zone settings. All alerts and events will be displayed using your local time zone.
@@ -55,10 +57,36 @@ To set the time zone:
 
 1.	Click the **Settings** menu ![Settings icon](images/settings.png).
 2.	Select the **Timezone UTC** indicator.
-3.	Select **Timezone Local** or **-8:00**. 
+3.	Select **Timezone UTC** or your local time zone, for example -7:00. 
 
-## Suppression rules
-The suppression rules control what alerts are suppressed. You can suppress alerts so that certain activities are not flagged as suspicious. For more information see, [Suppress alerts](manage-alerts-windows-defender-advanced-threat-protection.md#suppress-alerts).
+### Regional settings
+To apply different date formats for Windows Defender ATP, use regional settings for IE and Edge. If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
+
+
+**Internet Explorer (IE) and Microsoft Edge (Edge)**
+
+IE and Edge use the **Region** settings configured in the **Clocks, Language, and Region** option in the Control panel. 
+
+
+#### Known issues with regional formats
+
+**Date and time formats**<br>
+There are some known issues with the time and date formats. 
+
+The following date formats are supported:
+- MM/dd/yyyy
+- dd/MM/yyyy
+
+The following date and time formats are currently not supported:
+- Date format yyyy-MM-dd
+- Date format dd-MMM-yy
+- Date format dd/MM/yy
+- Date format MM/dd/yy
+- Date format with yy. Will only show yyyy.
+- Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
+
+**Decimal symbol used in numbers**<br>
+Decimal symbol used is always a dot, even if a comma is selected in  the **Numbers** format settings in **Region** settings. For example, 15,5K is displayed as 15.5K.
 
 ## License
 Click the license link in the **Settings** menu to view the license agreement information for Windows Defender ATP.

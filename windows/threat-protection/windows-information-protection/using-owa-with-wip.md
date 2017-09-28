@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Using Outlook on the web with Windows Information Protection (WIP)

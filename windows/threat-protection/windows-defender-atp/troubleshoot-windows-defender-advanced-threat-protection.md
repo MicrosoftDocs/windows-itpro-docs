@@ -50,6 +50,26 @@ If onboarding endpoints successfully completes but Windows Defender ATP does not
 
 For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).
 
+#### Known issues with regional formats
+
+**Date and time formats**<br>
+There are some known issues with the time and date formats. 
+
+The following date formats are supported:
+- MM/dd/yyyy
+- dd/MM/yyyy
+
+The following date and time formats are currently not supported:
+- Date format yyyy/MM/dd
+- Date format dd/MM/yy
+- Date format with yy. Will only show yyyy.
+- Time format HH:mm:ss is not supported (the 12 hour AM/PM format is not supported). Only the 24-hour format is supported.
+
+**Use of comma to indicate thousand**<br>
+Support of use of comma as a separator in numbers are not supported. Regions where a number is separated with a comma to indicate a thousand, will only see the use of a dot as a separator. For example, 15,5K is displayed as 15.5K.
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
+
 
 ### Related topic
 - [Troubleshoot Windows Defender Advanced Threat Protection onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)

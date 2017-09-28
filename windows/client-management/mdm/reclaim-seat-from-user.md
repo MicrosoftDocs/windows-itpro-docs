@@ -1,6 +1,6 @@
 ---
 title: Reclaim seat from user
-description: The Reclaim seat from user operation returns reclaimed seats for a user in the Windows Store for Business.
+description: The Reclaim seat from user operation returns reclaimed seats for a user in the Micosoft Store for Business.
 ms.assetid: E2C3C899-D0AD-469A-A319-31A420472A4C
 ms.author: maricia
 ms.topic: article
@@ -12,7 +12,7 @@ ms.date: 06/19/2017
 
 # Reclaim seat from user
 
-The **Reclaim seat from user** operation returns reclaimed seats for a user in the Windows Store for Business.
+The **Reclaim seat from user** operation returns reclaimed seats for a user in the Micosoft Store for Business.
 
 ## Request
 

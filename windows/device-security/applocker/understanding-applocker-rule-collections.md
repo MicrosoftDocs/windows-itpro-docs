@@ -12,7 +12,8 @@ author: brianlic-msft
 # Understanding AppLocker rule collections
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic explains the five different types of AppLocker rules used to enforce AppLocker policies.
 

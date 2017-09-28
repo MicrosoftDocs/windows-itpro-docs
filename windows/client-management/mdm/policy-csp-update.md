@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/20/2017
 ---
 
 # Policy CSP - Update
@@ -471,8 +471,12 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   16 (default) – User gets all applicable upgrades from Current Branch (CB).
--   32 – User gets upgrades from Current Branch for Business (CBB).
+-  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
+-  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
+-  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
+-  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
+-  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
+
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -591,7 +595,34 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <p style="margin-left: 20px">If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
-<table style="margin-left: 20px">
+OS upgrade:
+-   Maximum deferral: 8 months
+-   Deferral increment: 1 month
+-   Update type/notes:
+   - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
+
+Update:
+-   Maximum deferral: 1 month
+-   Deferral increment: 1 week
+-   Update type/notes:
+    If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
+        - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+        - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+        - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+        - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+        - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+        - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+        - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+        - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+
+Other/cannot defer:
+-   Maximum deferral: No deferral
+-   Deferral increment: No deferral
+-   Update type/notes:
+    Any update category not specifically enumerated above falls into this category.
+        - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
+
+<!--<table style="margin-left: 20px">
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -640,7 +671,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -1253,12 +1284,12 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
 
-<p style="margin-left: 20px">Allows the IT admin to set a device to CBB train.
+<p style="margin-left: 20px">Allows the IT admin to set a device to Semi-Annual Channel train.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default) – User gets upgrades from Current Branch.
--   1 – User gets upgrades from Current Branch for Business.
+-   0 (default) – User gets upgrades from Semi-Annual Channel (Targeted).
+-   1 – User gets upgrades from Semi-Annual Channel.
 
 <!--EndDescription-->
 <!--EndPolicy-->

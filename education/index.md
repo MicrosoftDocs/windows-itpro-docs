@@ -1,7 +1,7 @@
 --- 
 layout: HubPage
 hide_bc: true
-title: Microsoft Education documentation and resources | Microsoft Docs
+title: Microsoft 365 Education documentation and resources | Microsoft Docs
 description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
 author: CelesteDG
 ms.author: celested
@@ -10,7 +10,7 @@ ms.author: celested
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="http://www.microsoft.com/education">
+                <a href="http://www.microsoft.com/education" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -28,7 +28,7 @@ ms.author: celested
                 </a>
             </li>
             <li>
-                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education">
+                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -46,7 +46,7 @@ ms.author: celested
                 </a>
             </li>
             <li>
-                <a href="/education/windows/test-windows10s-for-edu">
+                <a href="/education/windows/test-windows10s-for-edu" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -75,7 +75,26 @@ ms.author: celested
                         <a href="#itpro-all"></a>
                         <ul id="itpro-all" class="cardsC">
                             <li>
-                                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education">
+                                <a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/M365-education.svg" alt="Learn about Microsoft 365 Education" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft 365 Education</h3>
+                                                    <p>Find out how to empower educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -94,7 +113,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1#ID0EAAAAEAAA=Education">
+                                <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1#ID0EAAAAEAAA=Education" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -113,7 +132,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/intune-education">
+                                <a href="/intune-education" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -132,7 +151,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/education/windows">
+                                <a href="/education/windows" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -151,7 +170,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Overview-of-School-Data-Sync-f3d1147b-4ade-4905-8518-508e729f2e91">
+                                <a href="https://support.office.com/article/Overview-of-School-Data-Sync-f3d1147b-4ade-4905-8518-508e729f2e91" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -170,7 +189,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/active-directory/">
+                                <a href="/azure/active-directory/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -189,7 +208,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-store/index?toc=/microsoft-store/education/toc.json">
+                                <a href="/microsoft-store/index?toc=/microsoft-store/education/toc.json" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -208,7 +227,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/education/windows/school-get-minecraft">
+                                <a href="/education/windows/school-get-minecraft" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -227,7 +246,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/education/windows/use-set-up-school-pcs-app">
+                                <a href="/education/windows/use-set-up-school-pcs-app" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -246,7 +265,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://onedrive.live.com/view.aspx?resid=91F4E618548FC604!2261&ithint=file%2cdocx&app=Word&authkey=!AOgLvpbaerOOfwM">
+                                <a href="https://onedrive.live.com/view.aspx?resid=91F4E618548FC604!2261&ithint=file%2cdocx&app=Word&authkey=!AOgLvpbaerOOfwM" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -275,7 +294,7 @@ ms.author: celested
                         <a href="#teachers-all"></a>
                         <ul id="teachers-all" class="cardsC">
                             <li>
-                                <a href="http://support.microsoft.com/products/education">
+                                <a href="http://support.microsoft.com/products/education" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -294,7 +313,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="http://support.office.com">
+                                <a href="http://support.office.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -313,7 +332,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="http://support.microsoft.com/products/windows">
+                                <a href="http://support.microsoft.com/products/windows" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -332,7 +351,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/microsoft-store/index?toc=/microsoft-store/education/toc.json">
+                                <a href="/microsoft-store/index?toc=/microsoft-store/education/toc.json" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -351,7 +370,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/education/windows/teacher-get-minecraft">
+                                <a href="/education/windows/teacher-get-minecraft" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -370,7 +389,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="http://education.microsoft.com">
+                                <a href="http://education.microsoft.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -389,7 +408,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://education.microsoft.com/courses-and-resources/resources/meet-microsoft-teams">
+                                <a href="https://education.microsoft.com/courses-and-resources/resources/meet-microsoft-teams" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -408,7 +427,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/education/windows/use-set-up-school-pcs-app">
+                                <a href="/education/windows/use-set-up-school-pcs-app" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -437,7 +456,7 @@ ms.author: celested
                         <a href="#students-all"></a>
                         <ul id="students-all" class="cardsC">
                             <li>
-                                <a href="http://support.microsoft.com/products/education">
+                                <a href="http://support.microsoft.com/products/education" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -456,7 +475,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="http://support.office.com">
+                                <a href="http://support.office.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -475,7 +494,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="http://support.microsoft.com/products/windows">
+                                <a href="http://support.microsoft.com/products/windows" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -494,7 +513,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="http://imagine.microsoft.com">
+                                <a href="http://imagine.microsoft.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -523,7 +542,7 @@ ms.author: celested
                         <a href="#developer-all"></a>
                         <ul id="developer-all" class="cardsC">
                             <li>
-                                <a href="/windows/uwp/apps-for-education/">
+                                <a href="/windows/uwp/apps-for-education/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -542,7 +561,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="/windows/uwp/apps-for-education/take-a-test-api">
+                                <a href="/windows/uwp/apps-for-education/take-a-test-api" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -561,7 +580,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://dev.office.com/industry-verticals/edu">
+                                <a href="https://dev.office.com/industry-verticals/edu" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -590,7 +609,7 @@ ms.author: celested
                         <a href="#partner-all"></a>
                         <ul id="partner-all" class="cardsC">
                             <li>
-                                <a href="https://www.mepn.com">
+                                <a href="https://www.mepn.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -609,7 +628,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.mepn.com/MEPN/AEPHome.aspx">
+                                <a href="https://www.mepn.com/MEPN/AEPHome.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -628,7 +647,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.mepn.com/MEPN/AEPSearch.aspx">
+                                <a href="https://www.mepn.com/MEPN/AEPSearch.aspx" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -647,7 +666,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.yammer.com/mepn/">
+                                <a href="https://www.yammer.com/mepn/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

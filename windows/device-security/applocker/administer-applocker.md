@@ -12,7 +12,8 @@ author: brianlic-msft
 # Administer AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
 
