@@ -43,7 +43,7 @@
 ##### [Take response actions on a machine](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Collect investigation package](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package)
 ###### [Run antivirus scan](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)
-###### [Restrict app execution](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#restict-app-execution)
+###### [Restrict app execution](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)
 ###### [Remove app restriction](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#remove-app-restriction)
 ###### [Isolate machines from the network](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
 ###### [Release machine from the isolation](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
