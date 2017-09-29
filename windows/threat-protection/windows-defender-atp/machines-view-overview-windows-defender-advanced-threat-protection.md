@@ -58,8 +58,6 @@ You can use the following filters to limit the list of machines displayed during
 - Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
-- Linux
-- Mac OS
 - Other
 
 

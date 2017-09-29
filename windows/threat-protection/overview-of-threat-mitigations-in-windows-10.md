@@ -431,7 +431,7 @@ Examples:
     Set-ProcessMitigation -Name notepad.exe -Enable SEHOP -Disable MandatoryASLR,DEPATL
     ```
 
--   **Convert Attack Surface Reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET’s Attack Surface Reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](/windows/device-security/device-guard/deploy-device-guard-deploy-code-integrity-policies). This will enable protections on Windows 10 equivalent to EMET’s ASR protections.
+-   **Convert Attack surface reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET’s Attack surface reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](/windows/device-security/device-guard/deploy-device-guard-deploy-code-integrity-policies). This will enable protections on Windows 10 equivalent to EMET’s ASR protections.
 
 -   **Convert Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET “Certificate Trust” XML file (pinning rules file), you can also use ConvertTo-ProcessMitigationPolicy to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in [Enterprise Certificate Pinning](/windows/access-protection/enterprise-certificate-pinning). For example:
 
