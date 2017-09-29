@@ -8,13 +8,20 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 08/17/2017
+ms.date: 09/25/2017
 ms.localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
+
+## September 2017
+
+New or changed topic | Description
+--- | ---
+[Top support solutions for Surface Hub](support-solutions-surface-hub.md) | New
+[PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) | Updated account creation scripts
 
 ## August 2017
 

@@ -102,7 +102,7 @@ changepk.exe /ProductKey %ProductKey%
 ### Obtaining an Azure AD licence
 
 Enterprise Agreement/Software Assurance (EA/SA):
-- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD (ideally to groups using the new Azure AD Premium feature for group assignment).
+- Organizations with a traditional EA must order a $0 SKU, process e-mails sent to the license administrator for the company, and assign licenses using Azure AD (ideally to groups using the new Azure AD Premium feature for group assignment). For more information, see [Enabling Subscription Activation with an existing EA](https://docs.microsoft.com/en-us/windows/deployment/deploy-enterprise-licenses#enabling-subscription-activation-with-an-existing-ea).
 - The license administrator can assign seats to Azure AD users with the same process that is used for O365.
 - New EA/SA Windows Enterprise customers can acquire both an SA subscription and an associated $0 cloud subscription.
 

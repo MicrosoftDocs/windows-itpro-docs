@@ -12,7 +12,8 @@ author: brianlic-msft
 # Understand AppLocker policy design decisions
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies by using AppLocker within a Windows operating system environment.
 

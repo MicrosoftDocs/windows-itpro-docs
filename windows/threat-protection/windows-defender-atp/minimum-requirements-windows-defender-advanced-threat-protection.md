@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -22,9 +23,11 @@ ms.localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
 There are some minimum requirements for onboarding your network and endpoints.
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-abovefoldlink1)
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 ## Minimum requirements
 You must be on Windows 10, version 1607 at a minimum.
@@ -35,7 +38,7 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 
 -	Windows 10 Enterprise E5
 -	Windows 10 Education E5
-- Secure Productive Enterprise E5 (SPE E5) which includes Windows 10 Enterprise E5
+- Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 

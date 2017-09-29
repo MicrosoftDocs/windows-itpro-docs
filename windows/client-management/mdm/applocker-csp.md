@@ -266,9 +266,9 @@ FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corp
 
 You can get the publisher name and product name of apps using a web API.
 
-**To find publisher and product name for Microsoft apps in Windows Store for Business**
+**To find publisher and product name for Microsoft apps in Microsoft Store for Business**
 
-1.  Go to the Windows Store for Business website, and find your app. For example, Microsoft OneNote.
+1.  Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
 2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https:<span><\span>//www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
 3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 

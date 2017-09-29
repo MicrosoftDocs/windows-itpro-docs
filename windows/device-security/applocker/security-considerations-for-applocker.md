@@ -12,7 +12,8 @@ author: brianlic-msft
 # Security considerations for AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional describes the security considerations you need to address when implementing AppLocker.
 

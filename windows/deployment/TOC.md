@@ -221,6 +221,7 @@
 ### [Windows Insider Program for Business](update/waas-windows-insider-for-business.md)
 #### [Windows Insider Program for Business using Azure Active Directory](update/waas-windows-insider-for-business-aad.md)
 #### [Windows Insider Program for Business Frequently Asked Questions](update/waas-windows-insider-for-business-faq.md)
+#### [Olympia Corp enrollment](update/olympia/olympia-enrollment-guidelines.md)
 ### [Change history for Update Windows 10](update/change-history-for-update-windows-10.md)
 
 ## Windows Analytics
@@ -244,3 +245,5 @@
 #### [Using Device Health](update/device-health-using.md)
 
 ## [Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md)
+
+## [Architectural planning posters for Windows 10](windows-10-architecture-posters.md)

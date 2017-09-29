@@ -12,8 +12,8 @@ author: brianlic-msft
 # Create your AppLocker planning document
 
 **Applies to**
-
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This planning topic for the IT professional summarizes the information you need to research and include in your AppLocker planning document.
 

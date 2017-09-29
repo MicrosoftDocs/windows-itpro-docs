@@ -1,6 +1,6 @@
 ---
 title: Get product packages
-description: The Get product packages operation retrieves the information about applications in the Windows Store for Business.
+description: The Get product packages operation retrieves the information about applications in the Micosoft Store for Business.
 ms.assetid: 039468BF-B9EE-4E1C-810C-9ACDD55C0835
 ms.author: maricia
 ms.topic: article
@@ -12,7 +12,7 @@ ms.date: 06/19/2017
 
 # Get product packages
 
-The **Get product packages** operation retrieves the information about applications in the Windows Store for Business.
+The **Get product packages** operation retrieves the information about applications in the Micosoft Store for Business.
 
 ## Request
 
