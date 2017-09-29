@@ -15,8 +15,9 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 >[!NOTE]
 >For release dates and servicing options for each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info).
- 
- 
+
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+  
 ## Deployment
 
 ### Windows Imaging and Configuration Designer (ICD)
