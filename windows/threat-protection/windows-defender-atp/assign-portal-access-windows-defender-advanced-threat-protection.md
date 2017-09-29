@@ -82,3 +82,6 @@ For more information see, [Manage Azure AD group and role membership](https://te
 7.	Under **Directory role**, select **Limited administrator**, then **Security Reader** or **Security Administrator**.
 
 ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
+
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portalaccess-belowfoldlink)

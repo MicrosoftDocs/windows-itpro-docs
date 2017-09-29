@@ -966,3 +966,5 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 <BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
 <BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
 <BR>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
