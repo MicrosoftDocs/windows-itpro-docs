@@ -45,3 +45,5 @@ Topic | Description
 [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md) |  Onboard Windows Server 2012 R2 and Windows Server 2016 to Windows Defender ATP 
 [Configure proxy and Internet settings](configure-proxy-internet-windows-defender-advanced-threat-protection.md)| Enable communication with the Windows Defender ATP cloud service by configuring the proxy and Internet connectivity settings.
 [Troubleshoot onboarding issues](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md) | Learn about resolving issues that might arise during onboarding.
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

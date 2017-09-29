@@ -27,7 +27,7 @@ ms.date: 09/05/2017
 
 There are some minimum requirements for onboarding your network and endpoints.
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-abovefoldlink1)
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 ## Minimum requirements
 You must be on Windows 10, version 1607 at a minimum.

@@ -24,6 +24,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
+
 Use the **Preferences setup** menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
 
 ## In this section
