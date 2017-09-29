@@ -74,6 +74,11 @@ ms.author: celested
                     <li>
                         <a href="#itpro-all"></a>
                         <ul id="itpro-all" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Get started with deploying and managing a full cloud IT solution for your school, and follow the links for in-depth information about the technologies and features.</p>
+                                </div>
+                            </li>
                             <li>
                                 <a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx" target="_blank">
                                     <div class="cardSize">
@@ -293,6 +298,11 @@ ms.author: celested
                     <li>
                         <a href="#teachers-all"></a>
                         <ul id="teachers-all" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Looking for information and resources for teachers about Microsoft Education products? Start here.</p>
+                                </div>
+                            </li>
                             <li>
                                 <a href="http://support.microsoft.com/products/education" target="_blank">
                                     <div class="cardSize">
@@ -455,6 +465,11 @@ ms.author: celested
                     <li>
                         <a href="#students-all"></a>
                         <ul id="students-all" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Students can find Help on Class Notebooks, Office, Windows and more, and download software and development tools for school projects.</p>
+                                </div>
+                            </li>
                             <li>
                                 <a href="http://support.microsoft.com/products/education" target="_blank">
                                     <div class="cardSize">
@@ -541,6 +556,11 @@ ms.author: celested
                     <li>
                         <a href="#developer-all"></a>
                         <ul id="developer-all" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here.</p>
+                                </div>
+                            </li>
                             <li>
                                 <a href="/windows/uwp/apps-for-education/" target="_blank">
                                     <div class="cardSize">
@@ -608,6 +628,11 @@ ms.author: celested
                     <li>
                         <a href="#partner-all"></a>
                         <ul id="partner-all" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Looking for resources available to Microsoft Education partners? Start here.</p>
+                                </div>
+                            </li>
                             <li>
                                 <a href="https://www.mepn.com" target="_blank">
                                     <div class="cardSize">
