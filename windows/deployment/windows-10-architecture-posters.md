@@ -4,7 +4,7 @@ description: Provides architural planning posters for Windows 10 in the enterpri
 ms.prod: w10
 ms.author: elizapo
 author: lizap
-ms.date: 09/22/2017  
+ms.date: 09/28/2017  
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.localizationpriority: low
@@ -21,5 +21,5 @@ You can download the following posters for architectural information about deplo
   Learn how you can set up and pre-configure Windows 10 devices.
 - [Deploy Windows 10 - Windows servicing](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/master/windows/media/ModernSecureDeployment/WindowsServicing.pdf)
   Learn how to keep Windows up to date.
-- [Deploy Windows 10 - Protection solutions](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/master/windows/media/ModernSecureDeployment/WindowsServicing.pdf)
+- [Deploy Windows 10 - Protection solutions](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/master/windows/media/ModernSecureDeployment/ProtectionSolutions.pdf)
   Learn about the two tiers of protection available for Windows 10 devices.
