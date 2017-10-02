@@ -114,7 +114,7 @@ If you're using Microsoft Store for Business and you want employees to only see 
 
 [Manage access to private store](/microsoft-store/manage-access-to-private-store)
 
- 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897).  
 
  
 
