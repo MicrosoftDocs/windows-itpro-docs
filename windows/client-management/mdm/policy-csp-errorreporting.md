@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - ErrorReporting
@@ -14,11 +14,30 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## ErrorReporting policies  
 
+<dl>
+  <dd>
+    <a href="#errorreporting-customizeconsentsettings">ErrorReporting/CustomizeConsentSettings</a>
+  </dd>
+  <dd>
+    <a href="#errorreporting-disablewindowserrorreporting">ErrorReporting/DisableWindowsErrorReporting</a>
+  </dd>
+  <dd>
+    <a href="#errorreporting-displayerrornotification">ErrorReporting/DisplayErrorNotification</a>
+  </dd>
+  <dd>
+    <a href="#errorreporting-donotsendadditionaldata">ErrorReporting/DoNotSendAdditionalData</a>
+  </dd>
+  <dd>
+    <a href="#errorreporting-preventcriticalerrordisplay">ErrorReporting/PreventCriticalErrorDisplay</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="errorreporting-customizeconsentsettings"></a>**ErrorReporting/CustomizeConsentSettings**  
 
@@ -45,6 +64,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting determines the consent behavior of Windows Error Reporting for specific event types.
 
@@ -79,6 +107,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="errorreporting-disablewindowserrorreporting"></a>**ErrorReporting/DisableWindowsErrorReporting**  
 
@@ -105,6 +134,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting turns off Windows Error Reporting, so that reports are not collected or sent to either Microsoft or internal servers within your organization when software unexpectedly stops working or fails.
 
@@ -129,6 +167,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="errorreporting-displayerrornotification"></a>**ErrorReporting/DisplayErrorNotification**  
 
@@ -155,6 +194,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting controls whether users are shown an error dialog box that lets them report an error.
 
@@ -183,6 +231,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="errorreporting-donotsendadditionaldata"></a>**ErrorReporting/DoNotSendAdditionalData**  
 
@@ -209,6 +258,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting controls whether additional data in support of error reports can be sent to Microsoft automatically.
 
@@ -233,6 +291,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="errorreporting-preventcriticalerrordisplay"></a>**ErrorReporting/PreventCriticalErrorDisplay**  
 
@@ -259,6 +318,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting prevents the display of the user interface for critical errors.
 
