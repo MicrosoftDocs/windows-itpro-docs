@@ -84,7 +84,7 @@ Once an app is in your private store, people in your org can install the app on 
 3.  Use **Refine results** to search for online-licensed apps under **License type**.
 4.  From the list of online-licensed apps, click the ellipses for the app you want, and then choose **Add to private store**.
 
-The value under **Private store** for the app will change to pending. It will take approximately twelve hours before the app is available in the private store.
+The value under **Private store** for the app will change to pending. It will take approximately thirty-six hours before the app is available in the private store.
 Employees can claim apps that admins added to the private store by doing the following.
 
 **To claim an app from the private store**
