@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Display
@@ -14,11 +14,21 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## Display policies  
 
+<dl>
+  <dd>
+    <a href="#display-turnoffgdidpiscalingforapps">Display/TurnOffGdiDPIScalingForApps</a>
+  </dd>
+  <dd>
+    <a href="#display-turnongdidpiscalingforapps">Display/TurnOnGdiDPIScalingForApps</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="display-turnoffgdidpiscalingforapps"></a>**Display/TurnOffGdiDPIScalingForApps**  
 
@@ -45,6 +55,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 
@@ -63,6 +82,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="display-turnongdidpiscalingforapps"></a>**Display/TurnOnGdiDPIScalingForApps**  
 
@@ -89,6 +109,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">GDI DPI Scaling enables applications that are not DPI aware to become per monitor DPI aware.
 

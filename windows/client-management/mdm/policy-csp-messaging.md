@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Messaging
@@ -14,11 +14,24 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## Messaging policies  
 
+<dl>
+  <dd>
+    <a href="#messaging-allowmms">Messaging/AllowMMS</a>
+  </dd>
+  <dd>
+    <a href="#messaging-allowmessagesync">Messaging/AllowMessageSync</a>
+  </dd>
+  <dd>
+    <a href="#messaging-allowrcs">Messaging/AllowRCS</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="messaging-allowmms"></a>**Messaging/AllowMMS**  
 
@@ -45,6 +58,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -58,6 +80,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="messaging-allowmessagesync"></a>**Messaging/AllowMessageSync**  
 
@@ -84,6 +107,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables text message back up and restore and Messaging Everywhere. This policy allows an organization to disable these features to avoid information being stored on servers outside of their control.
 
@@ -94,6 +126,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="messaging-allowrcs"></a>**Messaging/AllowRCS**  
 
@@ -120,6 +153,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.

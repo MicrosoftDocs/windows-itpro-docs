@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Start
@@ -14,11 +14,99 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## Start policies  
 
+<dl>
+  <dd>
+    <a href="#start-allowpinnedfolderdocuments">Start/AllowPinnedFolderDocuments</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfolderdownloads">Start/AllowPinnedFolderDownloads</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfolderfileexplorer">Start/AllowPinnedFolderFileExplorer</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfolderhomegroup">Start/AllowPinnedFolderHomeGroup</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfoldermusic">Start/AllowPinnedFolderMusic</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfoldernetwork">Start/AllowPinnedFolderNetwork</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfolderpersonalfolder">Start/AllowPinnedFolderPersonalFolder</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfolderpictures">Start/AllowPinnedFolderPictures</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfoldersettings">Start/AllowPinnedFolderSettings</a>
+  </dd>
+  <dd>
+    <a href="#start-allowpinnedfoldervideos">Start/AllowPinnedFolderVideos</a>
+  </dd>
+  <dd>
+    <a href="#start-forcestartsize">Start/ForceStartSize</a>
+  </dd>
+  <dd>
+    <a href="#start-hideapplist">Start/HideAppList</a>
+  </dd>
+  <dd>
+    <a href="#start-hidechangeaccountsettings">Start/HideChangeAccountSettings</a>
+  </dd>
+  <dd>
+    <a href="#start-hidefrequentlyusedapps">Start/HideFrequentlyUsedApps</a>
+  </dd>
+  <dd>
+    <a href="#start-hidehibernate">Start/HideHibernate</a>
+  </dd>
+  <dd>
+    <a href="#start-hidelock">Start/HideLock</a>
+  </dd>
+  <dd>
+    <a href="#start-hidepowerbutton">Start/HidePowerButton</a>
+  </dd>
+  <dd>
+    <a href="#start-hiderecentjumplists">Start/HideRecentJumplists</a>
+  </dd>
+  <dd>
+    <a href="#start-hiderecentlyaddedapps">Start/HideRecentlyAddedApps</a>
+  </dd>
+  <dd>
+    <a href="#start-hiderestart">Start/HideRestart</a>
+  </dd>
+  <dd>
+    <a href="#start-hideshutdown">Start/HideShutDown</a>
+  </dd>
+  <dd>
+    <a href="#start-hidesignout">Start/HideSignOut</a>
+  </dd>
+  <dd>
+    <a href="#start-hidesleep">Start/HideSleep</a>
+  </dd>
+  <dd>
+    <a href="#start-hideswitchaccount">Start/HideSwitchAccount</a>
+  </dd>
+  <dd>
+    <a href="#start-hideusertile">Start/HideUserTile</a>
+  </dd>
+  <dd>
+    <a href="#start-importedgeassets">Start/ImportEdgeAssets</a>
+  </dd>
+  <dd>
+    <a href="#start-nopinningtotaskbar">Start/NoPinningToTaskbar</a>
+  </dd>
+  <dd>
+    <a href="#start-startlayout">Start/StartLayout</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderdocuments"></a>**Start/AllowPinnedFolderDocuments**  
 
@@ -45,6 +133,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
 
@@ -56,6 +153,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderdownloads"></a>**Start/AllowPinnedFolderDownloads**  
 
@@ -82,6 +180,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
 
@@ -93,6 +200,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderfileexplorer"></a>**Start/AllowPinnedFolderFileExplorer**  
 
@@ -119,6 +227,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
 
@@ -130,6 +247,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderhomegroup"></a>**Start/AllowPinnedFolderHomeGroup**  
 
@@ -156,6 +274,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 
@@ -167,6 +294,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldermusic"></a>**Start/AllowPinnedFolderMusic**  
 
@@ -193,6 +321,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
 
@@ -204,6 +341,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldernetwork"></a>**Start/AllowPinnedFolderNetwork**  
 
@@ -230,6 +368,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
 
@@ -241,6 +388,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderpersonalfolder"></a>**Start/AllowPinnedFolderPersonalFolder**  
 
@@ -267,6 +415,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
 
@@ -278,6 +435,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfolderpictures"></a>**Start/AllowPinnedFolderPictures**  
 
@@ -304,6 +462,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
 
@@ -315,6 +482,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldersettings"></a>**Start/AllowPinnedFolderSettings**  
 
@@ -341,6 +509,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
 
@@ -352,6 +529,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-allowpinnedfoldervideos"></a>**Start/AllowPinnedFolderVideos**  
 
@@ -378,6 +556,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
 
@@ -389,6 +576,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-forcestartsize"></a>**Start/ForceStartSize**  
 
@@ -415,6 +603,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -432,6 +629,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hideapplist"></a>**Start/HideAppList**  
 
@@ -458,6 +656,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -483,6 +690,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hidechangeaccountsettings"></a>**Start/HideChangeAccountSettings**  
 
@@ -509,6 +717,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
@@ -524,6 +741,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hidefrequentlyusedapps"></a>**Start/HideFrequentlyUsedApps**  
 
@@ -550,6 +768,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -572,6 +799,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hidehibernate"></a>**Start/HideHibernate**  
 
@@ -598,6 +826,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
@@ -616,6 +853,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hidelock"></a>**Start/HideLock**  
 
@@ -642,6 +880,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
@@ -657,6 +904,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hidepowerbutton"></a>**Start/HidePowerButton**  
 
@@ -683,6 +931,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -701,6 +958,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hiderecentjumplists"></a>**Start/HideRecentJumplists**  
 
@@ -727,6 +985,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -752,6 +1019,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hiderecentlyaddedapps"></a>**Start/HideRecentlyAddedApps**  
 
@@ -778,6 +1046,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -800,6 +1077,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hiderestart"></a>**Start/HideRestart**  
 
@@ -826,6 +1104,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
@@ -841,6 +1128,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hideshutdown"></a>**Start/HideShutDown**  
 
@@ -867,6 +1155,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
@@ -882,6 +1179,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hidesignout"></a>**Start/HideSignOut**  
 
@@ -908,6 +1206,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
@@ -923,6 +1230,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hidesleep"></a>**Start/HideSleep**  
 
@@ -949,6 +1257,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
@@ -964,6 +1281,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hideswitchaccount"></a>**Start/HideSwitchAccount**  
 
@@ -990,6 +1308,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
@@ -1005,6 +1332,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-hideusertile"></a>**Start/HideUserTile**  
 
@@ -1031,6 +1359,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -1050,6 +1387,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-importedgeassets"></a>**Start/ImportEdgeAssets**  
 
@@ -1076,6 +1414,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy requires reboot to take effect.
@@ -1096,6 +1443,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-nopinningtotaskbar"></a>**Start/NoPinningToTaskbar**  
 
@@ -1122,6 +1470,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
@@ -1140,6 +1497,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="start-startlayout"></a>**Start/StartLayout**  
 
@@ -1166,6 +1524,16 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!IMPORTANT]
 > This node is set on a per-user basis and must be accessed using the following paths:
