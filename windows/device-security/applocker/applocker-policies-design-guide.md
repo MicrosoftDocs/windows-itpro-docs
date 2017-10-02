@@ -12,7 +12,8 @@ author: brianlic-msft
 # AppLocker design guide
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 

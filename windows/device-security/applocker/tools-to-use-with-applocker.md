@@ -12,7 +12,8 @@ author: brianlic-msft
 # Tools to use with AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 

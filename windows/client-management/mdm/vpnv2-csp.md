@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/07/2017
+ms.date: 09/18/2017
 ---
 
 # VPNv2 CSP
@@ -35,7 +35,7 @@ The XSDs for all EAP methods are shipped in the box and can be found at the foll
 
 The following diagram shows the VPNv2 configuration service provider in tree format.
 
-![vpnv2 csp diagram](images/provisioning-csp-vpnv2-rs1.png)
+![vpnv2 csp diagram](images/provisioning-csp-vpnv2.png)
 
 <a href="" id="device-or-user-profile"></a>**Device or User profile**  
 For user profile, use **./User/Vendor/MSFT** path and for device profile, use **./Device/Vendor/MSFT** path.
@@ -302,6 +302,14 @@ When the DeviceTunnel profile is turned on, it does the following things:
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 
 Value type is bool. Supported operations include Get, Add, Replace, and Delete.
+
+<a href="" id="vpnv2-profilename-registerdns"></a>**VPNv2/***ProfileName***/RegisterDNS**
+Allows registration of the connection's address in DNS.
+
+Valid values:
+
+-   False = Do not register the connection's address in DNS (default).
+-   True = Register the connection's addresses in DNS.
 
 <a href="" id="vpnv2-profilename-dnssuffix"></a>**VPNv2/***ProfileName***/DnsSuffix**  
 Optional. Specifies one or more comma separated DNS suffixes. The first in the list is also used as the primary connection specific DNS suffix for the VPN Interface. The entire list will also be added into the SuffixSearchList.

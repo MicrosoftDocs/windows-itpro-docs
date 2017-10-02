@@ -21,6 +21,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink) 
+
 ## Investigate machines
 Investigate the details of an alert raised on a specific machine to identify other behaviors or events that might be related to the alert or the potential scope of breach.
 
@@ -56,6 +58,55 @@ Clicking on the number of total logged on users in the Logged on users tile open
 You'll also see details such as logon types for each user account, the user group, and when the account logon occurred.
 
  For more information, see [Investigate user entities](investigate-user-windows-defender-advanced-threat-protection.md).
+
+## Manage machine group and tags
+Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 
+
+Machine related properties are being extended to account for:
+
+- Group affiliation
+- Dynamic context capturing  
+
+
+
+### Group machines
+Machine group affiliation can represent geographic location, specific activity, importance level and others. Grouping machines with similar attributes can be handy when you need to apply contextual action on a specific list of machines. After creating groups, you can apply the Group filter on the Machines list to get a narrowed list of machines.
+
+Machine group is defined in the following registry key entry of the machine:
+
+-	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
+-	Registry key value (string): Group
+
+
+### Set standard tags on machines
+Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
+
+1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
+
+    -	**Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
+    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
+    -	**Machines list** - Select the machine name from the list of machines.
+    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
+
+    You can also get to the alert page through the file and IP views.
+
+2.	Open the **Actions** menu and select **Manage tags**.
+
+    ![Image of taking action to manage tags on a machine](images/atp-manage-tags.png)
+
+3. Enter tags on the machine. To add more tags, click the + icon.
+4. Click **Save and close**. 
+
+    ![Image of adding tags on a machine](images/atp-save-tag.png)
+
+    Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** or **Groups** filter to see the relevant list of machines.
+
+### Manage machine tags
+You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
+
+![Image of adding tags on a machine](images/atp-tag-management.png)
+
+
 
 ## Alerts related to this machine
 The **Alerts related to this machine** section provides a list of alerts that are associated with the machine. You can also manage alerts from this section by clicking the circle icons to the left of the alert (or using Ctrl or Shift + click to select multiple alerts).
@@ -93,18 +144,8 @@ Use the search bar to look for specific timeline events. Harness the power of us
     -	Behaviors mode: displays "detections" and selected events of interest
     -	Verbose mode: displays all raw events without aggregation or filtering
 
-- **Event type** - Click the drop-down button to filter by the following levels:
-    - Windows Defender ATP alerts
-    - Windows Defender AV alerts
-    - Response actions
-    - AppGuard related events
-    - Windows Defender Device Guard events
-    - Process events
-    - Network events
-    - File events
-    - Registry events
-    - Load DLL events
-    - Other events <br><br>
+- **Event type** - Click the drop-down button to filter by events such as Windows     - Windows Defender ATP alerts, Windows Defender Application Guard events, registry events, file events, and others. 
+    
     Filtering by event type allows you to define precise queries so that you see events with a specific focus. For example, you can search for a file name, then filter the results to only see Process events matching the search criteria or to only view file events, or even better: to view only network events over a period of time to make sure no suspicious outbound communications go unnoticed.
 
 -	**User account** – Click the drop-down button to filter the machine timeline by the following user associated events:

@@ -27,6 +27,8 @@ ms.date: 09/05/2017
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-abovefoldlink) 
+
 Learn about new features in the Windows Defender ATP preview release and be among the first to try upcoming features by turning on the preview experience.
 
 You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
@@ -34,6 +36,9 @@ You'll have access to upcoming features which you can provide feedback on to hel
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Preferences setup** > **Preview experience**.
+
+    ![Image of Preferences setup and preview experience](images/atp-preview-features.png)
+
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Preview features
@@ -56,7 +61,7 @@ You can lock down a device and prevent subsequent attempts of potentially malici
 - [Run Windows Defender Antivirus scan on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)<br>
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
 
-- [Manage machine group and tags](respond-machine-alerts-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)<br>
+- [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)<br>
 Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident.
 
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
@@ -66,5 +71,5 @@ Windows Defender ATP supports the use of Power BI data connectors to enable you 
     Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities.
 
 
-    
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 

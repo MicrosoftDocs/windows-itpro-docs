@@ -12,7 +12,8 @@ author: brianlic-msft
 # Enable the DLL rule collection
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes the steps to enable the DLL rule collection feature for AppLocker.
 

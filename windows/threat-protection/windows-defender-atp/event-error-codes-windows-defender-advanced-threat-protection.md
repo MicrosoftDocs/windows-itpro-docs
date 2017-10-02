@@ -29,14 +29,14 @@ ms.date: 09/05/2017
 
 You can review event IDs in the [Event Viewer](https://msdn.microsoft.com/library/aa745633(v=bts.10).aspx) on individual endpoints.
 
-For example, if endpoints are not appearing in the **Machines list** list, you might need to look for event IDs on the endpoints. You can then use this table to determine further troubleshooting steps.
+For example, if endpoints are not appearing in the **Machines list**, you might need to look for event IDs on the endpoints. You can then use this table to determine further troubleshooting steps.
 
 > [!NOTE]
 > It can take several days for endpoints to begin reporting to the Windows Defender ATP service.
 
 **Open Event Viewer and find the Windows Defender ATP service event log:**
 
-1.  Click **Start**, type **Event Viewer**, and press **Enter**.
+1.  Click **Start** on the Windows menu, type **Event Viewer**, and press **Enter**.
 
 2.  In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
     open the log.
@@ -334,7 +334,7 @@ See [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defen
 </tbody>
 </table>
 
-
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## Related topics
 - [Configure Windows Defender ATP endpoints](configure-endpoints-windows-defender-advanced-threat-protection.md)

@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+ms.localizationpriority: medium
 ms.author: jdecker
 ms.date: 08/21/2017
 ---
@@ -59,3 +59,5 @@ Use these settings to configure policies for shared PC mode.
 ## Related topics
 
 - [Set up shared or guest PC](../set-up-shared-or-guest-pc.md)
+
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 

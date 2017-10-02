@@ -29,6 +29,8 @@ BitLocker is a data protection feature that encrypts the hard drives on your com
 -   [BitLocker Network Unlock](#bkmk-bnusect)
 -   [Other questions](#bkmk-other)
 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+
 ## <a href="" id="bkmk-overview"></a>Overview and requirements
 
 ### <a href="" id="bkmk-whatisbitlocker"></a>How does BitLocker work?
@@ -151,7 +153,15 @@ The following types of system changes can cause an integrity check failure and p
 
 ### <a href="" id="bkmk-examplesosrec"></a>What causes BitLocker to start into recovery mode when attempting to start the operating system drive?
 
-Because BitLocker is designed to protect your computer from numerous attacks, there are numerous reasons why BitLocker could start in recovery mode. In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. The TPM is not involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
+Because BitLocker is designed to protect your computer from numerous attacks, there are numerous reasons why BitLocker could start in recovery mode. 
+For example: 
+
+- Changing the BIOS boot order to boot another drive in advance of the hard drive.
+- Adding or removing hardware, such as inserting a new card in the computer, including some PCMIA wireless cards.
+- Removing, inserting, or completely depleting the charge on a smart battery on a portable computer.
+
+In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. 
+The TPM is not involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
 
 ### <a href="" id="bkmk-driveswap"></a>Can I swap hard disks on the same computer if BitLocker is enabled on the operating system drive?
 

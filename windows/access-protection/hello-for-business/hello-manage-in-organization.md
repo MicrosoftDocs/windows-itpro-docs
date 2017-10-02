@@ -25,7 +25,7 @@ You can create a Group Policy or mobile device management (MDM) policy that will
 >
 >Beginning in version 1607, Windows Hello as a convenience PIN is disabled by default on all domain-joined computers. To enable a convenience PIN for Windows 10, version 1607, enable the Group Policy setting **Turn on convenience PIN sign-in**. 
 >
->Use **Windows Hello for Business** policy settings to manage PINs for Windows Hello for Business.
+>Use **PIN Complexity** policy settings to manage PINs for Windows Hello for Business.
  
 ## Group Policy settings for Windows Hello for Business
 
@@ -292,71 +292,6 @@ The following table lists the MDM policy settings that you can configure for Win
 >[!NOTE]  
 > If policy is not configured to explicitly require letters or special characters, users will be restricted to creating a numeric PIN.
  
-## Prerequisites
-
-To deploy Windows Hello for Business, in some modes you must add Windows Server 2016 domain controllers to your Active Directory environment, but you don’t have to replace or remove your existing Active Directory servers — the servers required for Windows Hello for Business build on and add capability to your existing infrastructure. You don’t have to change the domain or forest functional level, and you can either add on-premises servers or use Azure Active Directory to deploy Windows Hello for Business in your network. 
-
-You’ll need this software to set Windows Hello for Business policies in your enterprise.
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Windows Hello for Business mode</th>
-<th align="left">Azure AD</th>
-<th align="left">Active Directory (AD) on-premises (only supported with Windows 10, version 1703 clients)</th>
-<th align="left">Azure AD/AD hybrid (available with production release of Windows Server 2016)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Key-based authentication</td>
-<td align="left">Azure AD subscription</td>
-<td align="left"><ul>
-<li>Active Directory Federation Service (AD FS) (Windows Server 2016)</li>
-<li>A few Windows Server 2016 domain controllers on-site</li>
-</ul></td>
-<td align="left"><ul>
-<li>Azure AD subscription</li>
-<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
-<li>A few Windows Server 2016 domain controllers on-site</li>
-<li>A management solution, such as Configuration Manager, Group Policy, or MDM</li>
-<li>Active Directory Certificate Services (AD CS) without Network Device Enrollment Service (NDES)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Certificate-based authentication</td>
-<td align="left"><ul>
-<li>Azure AD subscription</li>
-<li>Intune or non-Microsoft mobile device management (MDM) solution</li>
-<li>PKI infrastructure</li>
-</ul></td>
-<td align="left"><ul>
-<li>ADFS (Windows Server 2016)</li>
-<li>Active Directory Domain Services (AD DS) Windows Server 2016 schema</li>
-<li>PKI infrastructure</li>
-</ul></td>
-<td align="left"><ul>
-<li>Azure AD subscription</li>
-<li>[Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=616792)</li>
-<li>AD CS with NDES</li>
-<li>Configuration Manager for domain-joined certificate enrollment, or InTune for non-domain-joined devices, or a non-Microsoft MDM service that supports Windows Hello for Business</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
- 
-Configuration Manager and MDM provide the ability to manage Windows Hello for Business policy and to deploy and manage certificates protected by Windows Hello for Business.
-
-Azure AD provides the ability to register devices with your enterprise and to provision Windows Hello for Business for organization accounts.
-
->[!IMPORTANT]
->Active Directory on-premises deployment **is not currently available** and will become available with a future update of ADFS on Windows Server 2016. The requirements listed in the above table will apply when this deployment type becomes available.
-
 
 ## How to use Windows Hello for Business with Azure Active Directory
 
@@ -380,3 +315,5 @@ If you want to use Windows Hello for Business with certificates, you’ll need a
 - [Windows Hello errors during PIN creation](hello-errors-during-pin-creation.md)
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
+
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 

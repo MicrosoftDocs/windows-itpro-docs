@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
-localizationpriority: medium
+ms.localizationpriority: medium
 ms.author: jdecker
 ms.date: 08/21/2017
 ---
@@ -13,7 +13,7 @@ ms.date: 08/21/2017
 # UsbErrorsOEMOverride (reference)
 
 
-Use UsbErrorsOEMOverride settings to .
+Allows an OEM to hide the USB option UI in Settings and all USB device errors. 
 
 
 ## Applies to
@@ -24,4 +24,4 @@ Use UsbErrorsOEMOverride settings to .
 
 ## HideUsbErrorNotifyOptionUI
 
-
+Configure to **Show** or **Hide** the USB error notification.

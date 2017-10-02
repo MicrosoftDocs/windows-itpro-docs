@@ -5,4 +5,5 @@
 ##[Available policies for Microsoft Edge](available-policies.md)
 ##[Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md)
 ##[Security enhancements for Microsoft Edge](security-enhancements-microsoft-edge.md)
+##[Microsoft Edge Frequently Asked Questions (FAQs)](microsoft-edge-faq.md)
 

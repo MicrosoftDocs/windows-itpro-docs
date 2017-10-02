@@ -26,7 +26,7 @@ ms.author: celested
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723346" target="_blank">Deploy a custom Windows 10 Start menu</a></li>
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723347" target="_blank">Manage Windows 10 updates and upgrades</a></li>
   <li><a href="https://technet.microsoft.com/en-us/windows/mt723344" target="_blank">Reprovision devices at the end of the school year</a></li>  <li><a href="https://technet.microsoft.com/en-us/windows/mt723343" target="_blank">Use MDT to deploy Windows 10</a></li>
-  <li><a href="https://technet.microsoft.com/en-us/windows/mt723348" target="_blank">Use Windows Store for Business</a></li>
+  <li><a href="https://technet.microsoft.com/en-us/windows/mt723348" target="_blank">Use Microsoft Store for Business</a></li>
 </ul>
 </p>
 

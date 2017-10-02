@@ -25,6 +25,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink) 
+
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details on the Action center.
 
 >[!NOTE]
@@ -93,11 +95,15 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 > Windows Defender ATP will remove all files that were quarantined on this machine in the last 30 days.
 
 ## Block files in your network
-You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
+You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
 >[!NOTE]
 >This feature is only available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled.  For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
-This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. The coverage will be extended over time. The action takes effect on machines with the latest Windows 10 Insider Preview build.
+This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. This response action is available for machines on Windows 10, version 1703 or later.
+
+>[!IMPORTANT]
+> The PE file needs to be in the machine timeline for you to be able to take this action.  
+
 
 ### Enable the block file feature
 1.	In the navigation pane, select **Preference Setup** > **Advanced features** > **Block file**.
@@ -109,9 +115,7 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 3. Type a comment and select **Yes, block file** to take action on the file.
 
-
     The Action center shows the submission information:
-
     ![Image of block file](images/atp-blockfile.png)
 
   - **Submission time** - Shows when the action was submitted. <br>

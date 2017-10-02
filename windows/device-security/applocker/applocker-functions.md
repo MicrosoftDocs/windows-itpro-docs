@@ -12,7 +12,8 @@ author: brianlic-msft
 # AppLocker functions
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for the IT professional lists the functions and security levels for the Software Restriction Policies (SRP) and AppLocker features.
 
