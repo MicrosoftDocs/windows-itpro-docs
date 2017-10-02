@@ -7,8 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.author: macapara
 author: mjcaparas
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 ---
 
 # Troubleshoot custom threat intelligence issues
@@ -21,6 +23,7 @@ localizationpriority: high
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
 
 You might need to troubleshoot issues while using the custom threat intelligence feature.
 
@@ -43,6 +46,9 @@ If your client secret expires or if you've misplaced the copy provided when you 
 6. Click **Save**. The key value is displayed.
 
 7. Copy the value and save it in a safe place.
+
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troubleshootcustomti-belowfoldlink) 
 
 
 ## Related topics

@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/13/2017
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Start layout XML for desktop editions of Windows 10 (reference)
@@ -32,8 +32,7 @@ On Windows 10 for desktop editions, the customized Start works by:
 >[!NOTE]
 >Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
 
->[!NOTE]
->Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/library/jj649079.aspx).
+
 
 ## LayoutModification XML
 
@@ -191,7 +190,7 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 
   To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app. 
 
-  The following example shows how to pin the Internet Explorer Windows desktop application:
+  The following example shows how to pin the File Explorer Windows desktop application:
 
   ```XML
     <start:DesktopApplicationTile

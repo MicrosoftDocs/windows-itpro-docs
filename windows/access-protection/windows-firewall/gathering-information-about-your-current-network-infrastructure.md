@@ -15,7 +15,7 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-Perhaps the most important aspect of planning for Windows Firewall with Advanced Security deployment is the network architecture, because IPsec is layered on the Internet Protocol itself. An incomplete or inaccurate understanding of the network can prevent any Windows Firewall with Advanced Security solution from being successful. Understanding subnet layout, IP addressing schemes, and traffic patterns are part of this effort, but accurately documenting the following components are important to completing the planning phase of this project:
+Perhaps the most important aspect of planning for Windows Defender Firewall with Advanced Security deployment is the network architecture, because IPsec is layered on the Internet Protocol itself. An incomplete or inaccurate understanding of the network can prevent any Windows Defender Firewall solution from being successful. Understanding subnet layout, IP addressing schemes, and traffic patterns are part of this effort, but accurately documenting the following components are important to completing the planning phase of this project:
 
 -   **Network segmentation**. This includes IP addressing maps, showing how your routers separate each network segment. It includes information about how the routers are configured, and what security filters they impose on network traffic flowing through them.
 
@@ -31,7 +31,7 @@ The goal is to have enough information to be able to identify an asset by its ne
 
 Do not use a complex and poorly documented network as a starting point for the design, because it can leave too many unidentified areas that are likely to cause problems during implementation.
 
-This guidance helps obtain the most relevant information for planning Windows Firewall with Advanced Security implementation, but it does not try to address other issues, such as TCP/IP addressing or virtual local area network (VLAN) segmentation.
+This guidance helps obtain the most relevant information for planning Windows Defender Firewall implementation, but it does not try to address other issues, such as TCP/IP addressing or virtual local area network (VLAN) segmentation.
 
 ## Network segmentation
 
@@ -100,7 +100,7 @@ When you examine traffic flow, look closely at how all managed and unmanaged dev
 
 -   How do servers and clients communicate with each other?
 
--   Are there security devices or projects currently implemented or planned that could affect an isolation deployment? For example, if you use Windows Firewall on your devices to "lock down" specific ports, such as UDP 500, IKE negotiations fail.
+-   Are there security devices or projects currently implemented or planned that could affect an isolation deployment? For example, if you use Windows Defender Firewall on your devices to "lock down" specific ports, such as UDP 500, IKE negotiations fail.
 
 Some of the more common applications and protocols are as follows:
 
@@ -108,6 +108,6 @@ Some of the more common applications and protocols are as follows:
 
 -   **Remote procedure call (RPC)**. RPC operates by listening on a port known as the *endpoint mapper*, TCP port 135. The response to a query on this port is an instruction to begin communication on another port in the ephemeral range (ports numbered over 1024). In a network that is segmented by firewalls, RPC communication presents a configuration challenge because it means opening the RPC listener port and all ports greater than 1024. Opening so many ports increases the attack surface of the whole network and reduces the effectiveness of the firewalls. Because many applications depend on RPC for basic functionality, any firewall and connection security policy must take RPC requirements into account.
 
--   **Other traffic**. Windows Firewall with Advanced Security can help secure transmissions between devices by providing authentication of the packets in addition to encrypting the data that they contain. The important thing to do is to identify what must be protected, and the threats that must be mitigated. Examine and model other traffic or traffic types that must be secured.
+-   **Other traffic**. Windows Defender Firewall can help secure transmissions between devices by providing authentication of the packets in addition to encrypting the data that they contain. The important thing to do is to identify what must be protected, and the threats that must be mitigated. Examine and model other traffic or traffic types that must be secured.
 
 **Next: **[Gathering Information about Your Active Directory Deployment](gathering-information-about-your-active-directory-deployment.md)

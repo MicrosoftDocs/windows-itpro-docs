@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 07/06/2017
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - WindowsDefenderSecurityCenter
@@ -31,7 +31,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -64,7 +64,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -100,7 +100,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -139,7 +139,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -175,7 +175,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -211,7 +211,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -247,7 +247,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -283,7 +283,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -319,7 +319,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -355,7 +355,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -372,7 +372,7 @@ ms.date: 07/06/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
 
-<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace and Delete. 
+<p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -388,7 +388,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -409,7 +409,6 @@ ms.date: 07/06/2017
 
 - 0 - (Disable) Notifications contain a default notification text.
 - 1 - (Enable) Notifications contain the company name and contact options.
- 
 
 <!--EndDescription-->
 <!--EndPolicy-->
@@ -425,7 +424,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -461,7 +460,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -494,7 +493,7 @@ ms.date: 07/06/2017
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>MobileEnterprise</th>
+	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -511,7 +510,17 @@ ms.date: 07/06/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. The help portal URL this is displayed to users. The default browser is used to initiate this action. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options.
 
-<p style="margin-left: 20px">Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete. 
+<p style="margin-left: 20px">Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
+
+Footnote:
+
+-   1 - Added in Windows 10, version 1607.
+-   2 - Added in Windows 10, version 1703.
+-   3 - Added in Windows 10, version 1709.
+
+<!--EndPolicies-->
+

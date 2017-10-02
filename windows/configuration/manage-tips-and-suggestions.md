@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Manage Windows 10 and Microsoft Store tips, tricks, and suggestions
@@ -44,7 +44,7 @@ Windows 10, version 1607 (also known as the Anniversary Update), provides organi
 | Windows 10 Pro Education | Yes (default)  | Yes | No (setting cannot be changed) |
 | Windows 10 Education | Yes (default) | Yes | No (setting cannot be changed) |
 
-
+[Learn more about policy settings for Windows Spotlight.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-spotlight)
 
 ## Related topics
 

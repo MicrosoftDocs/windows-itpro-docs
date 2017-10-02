@@ -10,7 +10,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Online deployment with Office 365 (Surface Hub)
@@ -83,11 +83,8 @@ If you have a pure, online (O365) deployment, then you can [use the provided Pow
     Set-MsolUser -UserPrincipalName 'HUB01@contoso.com' -PasswordNeverExpires $true
     ```
 
-7.  Surface Hub requires a license for Skype for Business functionality.
-    - Your Surface Hub account requires a Lync Online (Plan 2) or Lync Online (Plan 3) license, but it does not require an Exchange Online license.
-    - You'll need to have Lync Online (Plan 2) or higher in your O365 plan. The plan needs to support conferencing capability.
-    - If you need Enterprise Voice (PSTN telephony) using telephony service providers for the Surface Hub, you need Lync Online (Plan 3).    
-
+7.  Surface Hub requires a license for Skype for Business functionality. In order to enable Skype for Business, your environment will need to meet the [prerequisites for Skype for Business online](hybrid-deployment-surface-hub-device-accounts.md#sfb-online).
+   
     Next, you can use `Get-MsolAccountSku` to retrieve a list of available SKUs for your O365 tenant.
 
     Once you list out the SKUs, you can add a license using the `Set-MsolUserLicense` cmdlet. In this case, `$strLicense` is the SKU code that you see (for example, *contoso:STANDARDPACK*).

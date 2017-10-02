@@ -151,7 +151,15 @@ The following types of system changes can cause an integrity check failure and p
 
 ### <a href="" id="bkmk-examplesosrec"></a>What causes BitLocker to start into recovery mode when attempting to start the operating system drive?
 
-Because BitLocker is designed to protect your computer from numerous attacks, there are numerous reasons why BitLocker could start in recovery mode. In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. The TPM is not involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
+Because BitLocker is designed to protect your computer from numerous attacks, there are numerous reasons why BitLocker could start in recovery mode. 
+For example: 
+
+- Changing the BIOS boot order to boot another drive in advance of the hard drive.
+- Adding or removing hardware, such as inserting a new card in the computer, including some PCMIA wireless cards.
+- Removing, inserting, or completely depleting the charge on a smart battery on a portable computer.
+
+In BitLocker, recovery consists of decrypting a copy of the volume master key using either a recovery key stored on a USB flash drive or a cryptographic key derived from a recovery password. 
+The TPM is not involved in any recovery scenarios, so recovery is still possible if the TPM fails boot component validation, malfunctions, or is removed.
 
 ### <a href="" id="bkmk-driveswap"></a>Can I swap hard disks on the same computer if BitLocker is enabled on the operating system drive?
 
@@ -188,6 +196,12 @@ You can use the Manage-bde.exe command-line tool to replace your TPM-only authen
 `manage-bde –protectors –delete %systemdrive% -type tpm`
 
 `manage-bde –protectors –add %systemdrive% -tpmandpin <4-20 digit numeric PIN>`
+
+
+### <a href="" id="bkmk-add-auth"></a> When should an additional method of authentication be considered?
+
+New hardware that meets [Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/) requirements make a PIN less critical as a mitigation, and having a TPM-only protector is likely sufficient when combined with policies like device lockout. For example, Surface Pro and Surface Book do not have external DMA ports to attack. 
+For older hardware, where a PIN may be needed, it’s recommended to enable [enhanced PINs](bitlocker-group-policy-settings.md#bkmk-unlockpol2) that allow non-numeric characters such as letters and punctuation marks, and to set the PIN length based on your risk tolerance and the hardware anti-hammering capabilities available to the TPMs in your computers. 
 
 ### <a href="" id="bkmk-recoveryinfo"></a>If I lose my recovery information, will the BitLocker-protected data be unrecoverable?
 
@@ -394,6 +408,11 @@ Yes. However, shadow copies made prior to enabling BitLocker will be automatical
 ### <a href="" id="bkmk-vhd"></a>Does BitLocker support virtual hard disks (VHDs)?
 
 BitLocker is not supported on bootable VHDs, but BitLocker is supported on data volume VHDs, such as those used by clusters, if you are running Windows 10, Windows 8.1, Windows 8, Windows Server 2012, or Windows Server 2012 R2.
+
+### <a href="" id="bkmk-VM"></a> Can I use BitLocker with virtual machines (VMs)?
+
+Yes. Password protectors and virtual TPMs can be used with BitLocker to protect virtual machines. VMs can be domain joined, Azure AD-joined, or workplace-joined (in **Settings** under **Accounts** > **Access work or school** > **Connect to work or school** to receive policy. You can enable encryption either while creating the VM or by using other existing management tools such as the BitLocker CSP, or even by using a startup script or logon script delivered by Group Policy. Windows Server 2016 also supports [Shielded VMs and guarded fabric](https://docs.microsoft.com/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node) to protect VMs from malicious administrators.  
+
 
 ## More information
 

@@ -8,13 +8,32 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
-localizationpriority: medium
+ms.date: 09/25/2017
+ms.localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
+
+## September 2017
+
+New or changed topic | Description
+--- | ---
+[Top support solutions for Surface Hub](support-solutions-surface-hub.md) | New
+[PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) | Updated account creation scripts
+
+## August 2017
+
+
+| New or changed topic | Description |
+| --- | --- |
+[Accessibility](accessibility-surface-hub.md) | Added information about Narrator
+[Sign in to Surface Hub with Microsoft Authenticator](surface-hub-authenticator-app.md) | New
+
+
+
+
 
 ## July 2017
 
@@ -22,6 +41,8 @@ This topic lists new and updated topics in the [Surface Hub Admin Guide]( surfac
 | --- | --- |
 | [Windows updates](manage-windows-updates-for-surface-hub.md) | Changed deferral recommendations for Windows Updates |
 | [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Added Whiteboard URLs to prerequisites |
+| [Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md#skype-for-business-online) | Updated the Skype for Business Online requirements |
+| [Prepare your environment for Surface Hub](prepare-your-environment-for-surface-hub.md)  | Added that Surface Hub supports 802.1X using PEAP-MSCHAPv2 |
 
 ## June 2017
 

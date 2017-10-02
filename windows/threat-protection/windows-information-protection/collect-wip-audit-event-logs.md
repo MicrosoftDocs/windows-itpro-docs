@@ -6,8 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.author: lizross
-localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # How to collect Windows Information Protection (WIP) audit event logs

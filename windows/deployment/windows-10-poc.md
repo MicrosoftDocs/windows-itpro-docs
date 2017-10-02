@@ -6,7 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 08/23/2017
 author: greg-lindsay
 ---
 
@@ -771,6 +772,27 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Add-DnsServerForwarder -IPAddress 192.168.0.2
     </pre>
 
+    **Configure service and user accounts**
+
+    Windows 10 deployment with MDT and System Center Configuration Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
+
+    >To keep this test lab relatively simple, we will not create a custom OU structure and set permissions. Required permissions are enabled by adding accounts to the Domain Admins group. To configure these settings in a production environment, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
+
+    On DC1, open an elevated Windows PowerShell prompt and type the following commands:
+
+    <pre style="overflow-y: visible">
+    New-ADUser -Name User1 -UserPrincipalName user1 -Description "User account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
+    New-ADUser -Name MDT_BA -UserPrincipalName MDT_BA -Description "MDT Build Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
+    New-ADUser -Name CM_JD -UserPrincipalName CM_JD -Description "Configuration Manager Join Domain Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
+    New-ADUser -Name CM_NAA -UserPrincipalName CM_NAA -Description "Configuration Manager Network Access Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
+    Add-ADGroupMember "Domain Admins" MDT_BA,CM_JD,CM_NAA
+    Set-ADUser -Identity user1 -PasswordNeverExpires $true
+    Set-ADUser -Identity administrator -PasswordNeverExpires $true
+    Set-ADUser -Identity MDT_BA -PasswordNeverExpires $true
+    Set-ADUser -Identity CM_JD -PasswordNeverExpires $true
+    Set-ADUser -Identity CM_NAA -PasswordNeverExpires $true
+    </pre>
+
 12. Minimize the DC1 VM window but **do not stop** the VM.
 
     Next, the client VM will be started and joined to the contoso.com domain. This is done before adding a gateway to the PoC network so that there is no danger of duplicate DNS registrations for the physical client and its cloned VM in the corporate domain.
@@ -983,27 +1005,6 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     runas /noprofile /env /user:administrator@contoso.com "cmd /c slmgr -rearm"
     Restart-Computer
     </pre>
-
-### Configure service and user accounts
-
-Windows 10 deployment with MDT and System Center Configuration Manager requires specific accounts to perform some actions. Service accounts will be created to use for these tasks. A user account is also added in the contoso.com domain that can be used for testing purposes. In the test lab environment, passwords are set to never expire.
-
->To keep this test lab relatively simple, we will not create a custom OU structure and set permissions. Required permissions are enabled by adding accounts to the Domain Admins group. To configure these settings in a production environment, see [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
-
-On DC1, open an elevated Windows PowerShell prompt and type the following commands:
-
-<pre style="overflow-y: visible">
-New-ADUser -Name User1 -UserPrincipalName user1 -Description "User account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
-New-ADUser -Name MDT_BA -UserPrincipalName MDT_BA -Description "MDT Build Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
-New-ADUser -Name CM_JD -UserPrincipalName CM_JD -Description "Configuration Manager Join Domain Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
-New-ADUser -Name CM_NAA -UserPrincipalName CM_NAA -Description "Configuration Manager Network Access Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -Enabled $true
-Add-ADGroupMember "Domain Admins" MDT_BA,CM_JD,CM_NAA
-Set-ADUser -Identity user1 -PasswordNeverExpires $true
-Set-ADUser -Identity administrator -PasswordNeverExpires $true
-Set-ADUser -Identity MDT_BA -PasswordNeverExpires $true
-Set-ADUser -Identity CM_JD -PasswordNeverExpires $true
-Set-ADUser -Identity CM_NAA -PasswordNeverExpires $true
-</pre>
 
 This completes configuration of the starting PoC environment. Additional services and tools are installed in subsequent guides.
 

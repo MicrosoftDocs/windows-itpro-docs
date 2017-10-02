@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
@@ -14,6 +14,10 @@ ms.date: 07/10/2017
 ---
 
 # Configure Microsoft Store for Education
+
+> [!div class="step-by-step"]
+[<< Use School Data Sync to import student data](use-school-data-sync.md)
+[Use Intune for Education to manage groups, apps, and settings >>](use-intune-for-education.md)
 
 You'll need to configure Microsoft Store for Education to accept the services agreement and make sure your Microsoft Store account is associated with Intune for Education.
 
@@ -52,8 +56,15 @@ You can watch the descriptive audio version here: [Microsoft Education: Configur
 
 Your Microsoft Store for Education account is now linked to Intune for Education so let's set that up next.
 
+<!--
 > [!div class="nextstepaction"]
 > [Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
+-->
+
+> [!div class="step-by-step"]
+[<< Use School Data Sync to import student data](use-school-data-sync.md)
+[Use Intune for Education to manage groups, apps, and settings >>](use-intune-for-education.md)
+
 
 ## Related topic
 [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](get-started-with-microsoft-education.md)

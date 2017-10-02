@@ -11,6 +11,19 @@ author: brianlic-msft
 # Change history for device security
 This topic lists new and updated topics in the [Device security](index.md) documentation.
 
+## August 2017
+|New or changed topic |Description |
+|---------------------|------------|
+| [BitLocker: Management recommendations for enterprises](bitlocker/bitlocker-management-for-enterprises.md) | New BitLocker security topic. |
+| [Accounts: Block Microsoft accounts](security-policy-settings/accounts-block-microsoft-accounts.md) | Revised description |
+
+
+## July 2017
+|New or changed topic |Description |
+|---------------------|------------|
+| [How Windows 10 uses the Trusted Platform Module](tpm/how-windows-uses-the-tpm.md) | New TPM security topic. |
+
+
 ## May 2017
 |New or changed topic |Description |
 |---------------------|------------|

@@ -7,6 +7,8 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+ms.author: TrudyHa
+ms.date: 06/29/2017
 ---
 
 # App inventory management for Microsoft Store for Business and Education
@@ -20,7 +22,7 @@ You can manage all apps that you've acquired on your **Apps & software** page. T
 
 All of these apps are treated the same once they are in your inventory and you can perform app lifecycle tasks for them: distribute apps, add apps to private store, review license details, and reclaim app licenses.
 
-<!--- ![Image shows Inventory page in Windows Store for Business with status status options for an app.](images/wsfb-inventoryaddprivatestore.png) -->
+<!--- ![Image shows Inventory page in Microsoft Store for Business with status status options for an app.](images/wsfb-inventoryaddprivatestore.png) -->
 
 Microsoft Store for Business and Education shows this info for each app in your inventory:
 - Name
@@ -166,3 +168,15 @@ You can download offline-licensed apps from your inventory. You'll need to downl
 For more information about online and offline licenses, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model).
 
 For more information about downloading offline-licensed apps, see [Download offline apps](distribute-offline-apps.md).
+
+## Manage products programmatically 
+
+Microsoft Store for Business and Education provides a set of Admin management APIs. If you orgranization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business). 
+
+You can download a preview PoweShell script that uses REST APIs. The script is available from PowerShell Gallery. You can use to the script to:
+- View items in inventory (**Apps & software**)
+- Manage licenses - assigning and removing
+- Perform bulk options using .csv files - this automates license management for customers with large numbers of licenses
+
+> [!NOTE]
+> The Microsoft Store for Business and Education Admin role is required to manage products and to use the MSStore module. This requires advanced knowledge of PowerShell.  

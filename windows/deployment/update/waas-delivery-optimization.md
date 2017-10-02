@@ -5,8 +5,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -20,7 +21,7 @@ ms.author: daniha
 
 Delivery Optimization is a self-organizing distributed cache solution for businesses looking to reduce bandwidth consumption for operating system updates, operating system upgrades, and applications by allowing clients to download those elements from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), and Windows Update for Business. This functionality is similar to BranchCache in other systems, such as System Center Configuration Manager. 
 
-Delivery Optimization is a cloud managed solution. Having access to the Delivery Optimization cloud services, is a requirement for it to be enabled. This mean that in order to utilize the peer-to-peer functionality of Delivery Optimization, machines need to have access to the internet.
+Delivery Optimization is a cloud managed solution. Having access to the Delivery Optimization cloud services, is a requirement for it to be enabled. This means that in order to utilize the peer-to-peer functionality of Delivery Optimization, machines need to have access to the internet.
 
 For more details, see [Download mode](#download-mode).
 
@@ -204,7 +205,7 @@ On devices that are not preferred, you can choose to set the following policy to
 - [Overview of Windows as a service](waas-overview.md)
 - [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
 - [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing branches for Windows 10 updates](waas-servicing-branches-windows-10-updates.md)
+- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 

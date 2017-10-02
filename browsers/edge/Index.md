@@ -6,7 +6,7 @@ ms.prod: edge
 ms.mktglfcycl: general
 ms.sitesec: library
 title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros)
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Microsoft Edge - Deployment Guide for IT Pros
@@ -23,7 +23,7 @@ Microsoft Edge is the new, default web browser for Windows 10, helping you to e
 Microsoft Edge lets you stay up-to-date through the Windows Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
 
 >[!Note]
->For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892).
+>For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=55956). For a detailed report that provides you with a framework to evaluate the potential financial impact of adopting Microsoft Edge within your organization, you can download the full study here: [Total Economic Impact of Microsoft Edge: Forrester Study](https://www.microsoft.com/download/details.aspx?id=55847).
 
 >Also, if you've arrived here looking for Internet Explorer 11 content, you'll need to go to the [Internet Explorer 11 (IE11)](https://docs.microsoft.com/en-us/internet-explorer/) area. 
 
@@ -37,6 +37,7 @@ Microsoft Edge lets you stay up-to-date through the Windows Store and to manage 
 | [Available policies for Microsoft Edge](available-policies.md)  |Microsoft Edge works with Group Policy and Microsoft Intune to help you manage your organization's computer settings.<br><br>Group Policy objects (GPO's) can include registry-based Administrative Template policy settings, security settings, software deployment information, scripts, folder redirection, and preferences. By using Group Policy and Intune, you can set up a policy setting once, and then copy that setting onto many computers. For example, you can set up multiple security settings in a GPO that's linked to a domain, and then apply all of those settings to every computer in the domain. |
 | [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md) |If you have specific web sites and apps that you know have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list so that the web sites will automatically open using Internet Explorer 11. Additionally, if you know that your intranet sites aren't going to work properly with Microsoft Edge, you can set all intranet sites to automatically open using IE11.<br><br>Using Enterprise Mode means that you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working on IE11. |
 | [Security enhancements for Microsoft Edge](security-enhancements-microsoft-edge.md) |Microsoft Edge is designed with significant security improvements over existing browsers, helping to defend people from increasingly sophisticated and prevalent web-based attacks against Windows. |
+|[Microsoft Edge Frequently Asked Questions (FAQs)](microsoft-edge-faq.md)|Answering frequently asked questions about Microsoft Edge features, integration, support, and potential problems.
 
 ## Interoperability goals and enterprise guidance
 
@@ -58,7 +59,9 @@ You'll need to keep running them using IE11. If you don't have IE11 installed an
 
 ## Related topics
 
-- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/en-us/download/details.aspx?id=53892)
+- [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=55956)
+
+- [Total Economic Impact of Microsoft Edge: Forrester Study](https://www.microsoft.com/download/details.aspx?id=55847)
 
 - [Download Internet Explorer 11](https://go.microsoft.com/fwlink/p/?linkid=290956)
 

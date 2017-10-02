@@ -8,7 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: jdeckerms
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 

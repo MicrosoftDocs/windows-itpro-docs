@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.topic: get-started
-localizationpriority: high
+ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
@@ -20,9 +20,7 @@ If you are setting up a Windows 10 device invidividually, and network bandwidth 
 You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
 <center><iframe src="https://www.youtube.com/embed/nADWqBYvqXk" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
-<!--
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/nADWqBYvqXk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
--->
+
 You can watch the descriptive audio version here: [Microsoft Education: Set up a new Windows 10 education devices using the Windows setup experience (DA)](https://www.youtube.com/watch?v=_UtS1Cz2Pno)
 
 ## To set up Windows 10 devices using OOBE

@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 08/09/2017
 ---
 
 # EnterpriseDataProtection CSP
@@ -44,8 +44,8 @@ The following diagram shows the EnterpriseDataProtection CSP in tree format.
 
 -   0 (default) – Off / No protection (decrypts previously protected data).
 -   1 – Silent mode (encrypt and audit only).
--   2 – Override mode (encrypt, prompt, and audit).
--   3 – Block mode (encrypt, block, and audit).
+-   2 – Allow override mode (encrypt, prompt and allow overrides, and audit).
+-   3 – Hides overrides (encrypt, prompt but hide overrides, and audit).
 
 <p style="margin-left: 20px">Supported operations are Add, Get, Replace and Delete. Value type is integer.
 

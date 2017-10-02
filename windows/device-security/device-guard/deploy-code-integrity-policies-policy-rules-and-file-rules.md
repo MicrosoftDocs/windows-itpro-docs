@@ -1,10 +1,10 @@
 ---
 title: Deploy code integrity policies - policy rules and file rules (Windows 10)
-description: This article provides information about two elements in code integrity policies, called policy rules and file rules. Code integrity policies are part of Device Guard in Windows 10. 
+description: This article provides information about two elements in code integrity policies, called policy rules and file rules. Code integrity policies are part of Windows Defender Device Guard in Windows 10. 
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 author: brianlic-msft
 ---
 
@@ -15,8 +15,8 @@ author: brianlic-msft
 -   Windows Server 2016
 
 Code integrity policies provide control over a computer running Windows 10 by specifying whether a driver or application is trusted and can be run. For an overview of code integrity, see:
-- [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats) in "Introduction to Device Guard: virtualization-based security and code integrity policies."
-- [Code integrity policy formats and signing](requirements-and-deployment-planning-guidelines-for-device-guard.md#code-integrity-policy-formats-and-signing) in "Requirements and deployment planning guidelines for Device Guard."
+- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats) in "Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies."
+- [Code integrity policy formats and signing](requirements-and-deployment-planning-guidelines-for-device-guard.md#code-integrity-policy-formats-and-signing) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
 
 If you already understand the basics of code integrity policy and want procedures for creating, auditing, and merging code integrity policies, see [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md).
 
@@ -29,7 +29,7 @@ This topic includes the following sections:
 
 ## Overview of the process of creating code integrity policies
 
-A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. Code integrity policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of code integrity policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional code integrity policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the planning steps in [Planning and getting started on the Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. Code integrity policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of code integrity policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional code integrity policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the planning steps in [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
 > **Note**&nbsp;&nbsp;Each computer can have only **one** code integrity policy at a time. Whichever way you deploy this policy, it is renamed to SIPolicy.p7b and copied to **C:\\Windows\\System32\\CodeIntegrity** and, for UEFI computers, **&lt;EFI System Partition&gt;\\Microsoft\\Boot**. Keep this in mind when you create your code integrity policies.
 
@@ -47,7 +47,7 @@ To modify the policy rule options of an existing code integrity policy, use the 
 
     ` Set-RuleOption -FilePath <Path to policy> -Option 0`
 
-    Note that a policy that was created without the `-UserPEs` option is empty of user mode executables, that is, applications. If you enable UMCI (Option 0) for such a policy and then attempt to run an application, Device Guard will see that the application is not on its list (which is empty of applications), and respond. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. To create a policy that includes user mode executables (applications), when you run `New-CIPolicy`, include the `-UserPEs` option. 
+    Note that a policy that was created without the `-UserPEs` option is empty of user mode executables, that is, applications. If you enable UMCI (Option 0) for such a policy and then attempt to run an application, Windows Defender Device Guard will see that the application is not on its list (which is empty of applications), and respond. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. To create a policy that includes user mode executables (applications), when you run `New-CIPolicy`, include the `-UserPEs` option. 
 
 -   To disable UMCI on an existing code integrity policy, delete rule option 0 by running the following command:
 
@@ -80,7 +80,7 @@ RuleOption -Help** in a Windows PowerShell session. Table 2 describes each rule 
 
 File rule levels allow administrators to specify the level at which they want to trust their applications. This level of trust could be as fine-tuned as the hash of each binary or as general as a CA certificate. You specify file rule levels both when you create a new code integrity policy from a scan and when you create a policy from audit events. In addition, to combine rule levels found in multiple policies, you can merge the policies. When merged, code integrity policies combine their file rules, so that any application that would be allowed by either of the original policies will be allowed by the combined policy. 
 
-Each file rule level has its benefit and disadvantage. Use Table 3 to select the appropriate protection level for your available administrative resources and Device Guard deployment scenario.
+Each file rule level has its benefit and disadvantage. Use Table 3 to select the appropriate protection level for your available administrative resources and Windows Defender Device Guard deployment scenario.
 
 Table 3. Code integrity policy - file rule levels
 
@@ -113,5 +113,5 @@ They could also choose to create a catalog that captures information about the u
 
 ## Related topics
 
-- [How Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-device-guard-features-help-protect-against-threats)
+- [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats)
 - [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)

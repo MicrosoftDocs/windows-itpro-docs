@@ -5,7 +5,8 @@ ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
+ms.date: 09/05/2017
 author: greg-lindsay
 ---
 
@@ -17,8 +18,8 @@ Learn about deployment in Windows 10 for IT professionals. This includes deploy
 |------|------------|
 |[What's new in Windows 10 deployment](deploy-whats-new.md) |See this topic for a summary of new features and some recent changes related to deploying Windows 10 in your organization. |
 |[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md) |To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task. |
-|[Windows 10 Enterprise E3 in CSP overview](deploy-whats-new.md) |Windows 10 Enterprise E3 in CSP is a new offering that delivers, by subscription, exclusive features reserved for Windows 10 Enterprise edition. |
-|[Resolve Windows 10 upgrade errors](windows-10-enterprise-e3-overview.md) |This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. |
+|[Windows 10 Subscription Activation](windows-10-enterprise-subscription-activation.md) |Windows 10 Enterprise has traditionally been sold as on premises software, however, with Windows 10 version 1703 (also known as the Creator’s Update), both Windows 10 Enterprise E3 and Windows 10 Enterprise E5 are available as true online services via subscription. You can move from Windows 10 Pro to Windows 10 Enterprise with no keys and no reboots. If you are using a Cloud Service Providers (CSP) see the related topic: [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md). |
+|[Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) |This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. |
 
 
 ## Deploy Windows 10
@@ -27,6 +28,7 @@ Windows 10 upgrade options are discussed and information is provided about plann
 
 |Topic |Description |
 |------|------------|
+|[Overview of Windows AutoPilot](windows-10-auto-pilot.md) |Windows AutoPilot deployment is a new cloud service from Microsoft that provides a zero touch experience for deploying Windows 10 devices. |
 |[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md) |This topic provides information about support for upgrading directly to Windows 10 from a previous operating system. |
 |[Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) |This topic provides information about support for upgrading from one edition of Windows 10 to another. |
 |[Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md) |With Upgrade Readiness, enterprises now have the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With Windows telemetry enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded. | 

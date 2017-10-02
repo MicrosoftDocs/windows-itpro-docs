@@ -4,13 +4,18 @@ description: This topic lists new and updated topics in the Microsoft Edge docum
 ms.prod: edge
 ms.mktglfcycl: explore
 ms.sitesec: library
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Change history for Microsoft Edge
 This topic lists new and updated topics in the Microsoft Edge documentation for both Windows 10 and Windows 10 Mobile.
 
 For a detailed feature list of what's in the current Microsoft Edge releases, the Windows Insider Preview builds, and what was introduced in previous releases, see the [Microsoft Edge changelog](https://developer.microsoft.com/microsoft-edge/platform/changelog/).
+
+## September 2017
+|New or changed topic | Description |
+|---------------------|-------------|
+|[Microsoft Edge - Frequently Asked Questions (FAQs) for IT Pros](microsoft-edge-faq.md) | New |
 
 ## February 2017
 |New or changed topic | Description |

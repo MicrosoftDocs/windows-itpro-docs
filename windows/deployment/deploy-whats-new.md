@@ -3,10 +3,11 @@ title: What's new in Windows 10 deployment
 description: Changes and new features related to Windows 10 deployment
 keywords: deployment, automate, tools, configure, news
 ms.mktglfcycl: deploy
-localizationpriority: high
+ms.localizationpriority: high
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
+ms.date: 08/23/2017
 author: greg-lindsay
 ---
 
@@ -26,12 +27,20 @@ This topic provides an overview of new solutions and online content related to d
 
 ## Windows 10 Enterprise upgrade
 
+Windows 10 version 1703 includes a Windows 10 Enterprise E3 and E5 benefit to Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA). These customers can now subscribe users to Windows 10 Enterprise E3 or E5 and activate their subscriptions on up to five devices. Virtual machines can also be activated. For more information, see [Windows 10 Enterprise Subscription Activation](windows-10-enterprise-subscription-activation.md).
+
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. With Windows 10 Enterprise E3 in CSP, small and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
 
-For more information, see [Windows 10 Enterprise E3 in CSP Overview](windows-10-enterprise-e3-overview.md)
+For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md)
 
 
 ## Deployment solutions and tools
+
+### Windows AutoPilot
+
+Windows AutoPilot streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows AutoPilot to reset, repurpose and recover devices.
+
+Windows AutoPilot joins devices to Azure Active Directory (Azure AD), optionally enrolls into MDM services, configures security policies, and sets a custom out-of-box-experience (OOBE) for the end user. For more information, see [Overview of Windows AutoPilot](windows-10-auto-pilot.md).
 
 ### Upgrade Readiness
 
@@ -55,6 +64,9 @@ Update Compliance is a solution built using OMS Logs and Analytics that provides
 
 For more information about Update Compliance, see [Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md).
 
+### Device Health
+
+Device Health is the newest Windows Analytics solution that complements the existing Upgrade Readiness and Update Compliance solutions by helping to identify devices crashes and the cause. Device drivers that are causing crashes are identified along with alternative drivers that might reduce the number of crashes.  Windows Information Protection misconfigurations are also identified. For more information, see [Monitor the health of devices with Device Health](update/device-health-monitor.md)
 
 ### MBR2GPT
 
@@ -67,7 +79,7 @@ For more information, see [MBR2GPT.EXE](mbr-to-gpt.md).
 
 ### Microsoft Deployment Toolkit (MDT)
 
-MDT build 884 is available, including support for:
+MDT build 8443 is available, including support for:
 - Deployment and upgrade of Windows 10, version 1607 (including Enterprise LTSB and Education editions) and Windows Server 2016.
 - The Windows ADK for Windows 10, version 1607.
 - Integration with Configuration Manager version 1606.

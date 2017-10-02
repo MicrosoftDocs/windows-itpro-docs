@@ -7,8 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.author: lizross
-localizationpriority: high
+ms.localizationpriority: medium
 ---
 
 # Determine the Enterprise Context of an app running in Windows Information Protection (WIP)

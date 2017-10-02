@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: plan
 description: Review this list of tasks and references before you create and deploy your Internet Explorer 11 custom install packages.
 author: eross-msft

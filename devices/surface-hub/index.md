@@ -9,7 +9,7 @@ ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
 ms.date: 06/19/2017
-localizationpriority: medium
+ms.localizationpriority: medium
 ---
 
 # Microsoft Surface Hub admin guide
@@ -44,6 +44,7 @@ In some ways, adding your new Surface Hub is just like adding any other Microsof
 | [Manage Microsoft Surface Hub](manage-surface-hub.md) | How to manage your Surface Hub after finishing the first-run program. |
 | [PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) | 
 | [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md) | This topic provides guidance on Wi-Fi Direct security risks, how the Surface Hub has addressed those risks, and how Surface Hub administrators can configure the device for the highest level of security.  | PowerShell scripts to help set up and manage your Surface Hub. |
+| [Top support solutions for Surface Hub](support-solutions-surface-hub.md) | These are the top Microsoft Support solutions for common issues experienced using Surface Hub. | 
 | [Troubleshoot Microsoft Surface Hub](troubleshoot-surface-hub.md) | Troubleshoot common problems, including setup issues, Exchange ActiveSync errors. |
 | [Troubleshoot Miracast on Surface Hub](miracast-troubleshooting.md) | Learn how to resolve Miracast issues. |
 | [Useful downloads for Surface Hub administrators](surface-hub-downloads.md) | This topic provides links to useful Surface Hub documents, such as product datasheets, the site readiness guide, and user's guide. |

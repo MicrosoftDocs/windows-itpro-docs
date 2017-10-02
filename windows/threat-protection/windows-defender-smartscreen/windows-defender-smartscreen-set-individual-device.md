@@ -7,8 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
-ms.author: lizross
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Set up and use Windows Defender SmartScreen on individual devices

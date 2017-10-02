@@ -1,5 +1,5 @@
 ---
-localizationpriority: low
+ms.localizationpriority: low
 ms.mktglfcycl: deploy
 description: How to use the Additional Settings page in IEAK 11 Customization Wizard for additional settings that relate to your employee’s desktop, operating system, and security.
 author: eross-msft

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
 author: DaniHalfin
-localizationpriority: high
+ms.localizationpriority: high
 ms.author: daniha
 ms.date: 07/07/2017
 ---
@@ -36,12 +36,12 @@ Sign-in using _Enterprise Admin_ equivalent credentials on Windows Server 2012 o
 1. Open an elevated Windows PowerShell prompt.
 2. Use the following command to install the Active Directory Certificate Services role.   
     ```PowerShell
-    Add-WindowsFeature Adcs-Cert-Authority -IncludeManageTools
+    Add-WindowsFeature Adcs-Cert-Authority -IncludeManagementTools
     ```
 
 3. Use the following command to configure the Certificate Authority using a basic certificate authority configuration.   
     ```PowerShell
-    Install-AdcsCertificateAuthority
+    Install-AdcsCertificationAuthority
     ```   
     
 ## Configure a Production Public Key Infrastructure
@@ -54,9 +54,9 @@ Clients need to trust domain controllers and the best way to do this is to ensur
 
 Domain controllers automatically request a domain controller certificate (if published) when they discover an enterprise certificate authority is added to Active Directory.  However, certificates based on the Domain Controller and Domain Controller Authentication certificate templates do not include the KDC Authentication object identifier (OID), which was later added to the Kerberos RFC.  Therefore, domain controllers need to request a certificate based on the Kerberos Authentication certificate template.
 
-By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template.  However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs.  To ensure domain controllers request the proper certificate with the best available cryptography, use the Kerberos Authentication certificate template a baseline to create an updated domain controller certificate template.
+By default, the Active Directory Certificate Authority provides and publishes the Kerberos Authentication certificate template.  However, the cryptography configuration included in the provided template is based on older and less performant cryptography APIs.  To ensure domain controllers request the proper certificate with the best available cryptography, use the Kerberos Authentication certificate template as a baseline to create an updated domain controller certificate template.
 
-Sign-in a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
+Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Kerberos Authentication** template in the details pane and click **Duplicate Template**.
@@ -73,7 +73,7 @@ Many domain controllers may have an existing domain controller certificate.  The
 
 The Kerberos Authentication certificate template is the most current certificate template designated for domain controllers and should be the one you deploy to all your domain controllers (2008 or later).   The autoenrollment feature in Windows enables you to effortlessly replace these domain controller certificates.  You can use the following configuration to replace older domain controller certificates with a new certificate using the Kerberos Authentication certificate template. 
 
-Sign-in a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
+Sign-in to a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Domain Controller Authentication (Kerberos)** (or the name of the certificate template you created in the previous section) template in the details pane and click **Properties**.
@@ -90,7 +90,7 @@ The certificate template is configured to supersede all the certificate template
 
 Windows 10 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
 
-Sign-in a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
+Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 1.	Open the **Certificate Authority** management console.
 2.	Right-click **Certificate Templates** and click **Manage**.
 3.	In the **Certificate Template Console**, right-click the **Web Server** template in the details pane and click **Duplicate Template**.
@@ -150,7 +150,7 @@ Domain controllers automatically request a certificate from the domain controlle
 
 ### Deploy the Domain Controller Auto Certificate Enrollment Group Policy Object
 
-Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
+Sign-in to a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 1.	Start the **Group Policy Management Console** (gpmc.msc)
 2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO…**
 3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.

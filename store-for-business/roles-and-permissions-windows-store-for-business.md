@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-localizationpriority: high
+ms.localizationpriority: high
 ---
 
 # Roles and permissions in Microsoft Store for Business and Education
@@ -89,7 +89,7 @@ These permissions allow people to:
 
 3.  Click **Add people**, type a name, choose the role you want to assign, and click **Save** .
 
-    <!--- ![Image showing Assign roles to people box in Windows Store for Business.](images/wsfb-permissions-assignrole.png) -->
+    <!--- ![Image showing Assign roles to people box in Microsoft Store for Business.](images/wsfb-permissions-assignrole.png) -->
 
 4.  If you don't find the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md).
 

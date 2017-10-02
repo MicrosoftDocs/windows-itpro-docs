@@ -6,6 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
+ms.date: 08/30/2017
 ---
 
 # Policy CSP - DeviceGuard
@@ -142,6 +143,6 @@ Footnote:
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>DeviceGuard policies supported by Microsoft Surface Hub  
 
--   [DeviceGuard/AllowKernelControlFlowGuard](#None)  
+-   [DeviceGuard/AllowKernelControlFlowGuard](#deviceguard-allowkernelcontrolflowguard)  
 <!--EndSurfaceHub-->
 

@@ -12,7 +12,8 @@ author: brianlic-msft
 # Understanding the file hash rule condition in AppLocker
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic explains the AppLocker file hash rule condition, the advantages and disadvantages, and how it is applied.
 

@@ -68,7 +68,7 @@ The following image shows the EnterpriseModernAppManagement configuration servic
     -   PackageDetails - returns all inventory attributes of the package. This includes all information from PackageNames parameter, but does not validate RequiresReinstall.
     -   RequiredReinstall - Validates the app status of the apps in the inventory query to determine if they require a reinstallation. This attribute may impact system performance depending on the number of apps installed. Requiring reinstall occurs when resource package updates or when the app is in a tampered state.
 -   Source - specifies the app classification that aligns to the existing inventory nodes. You can use a specific filter or if no filter is specified then all sources will be returned. If no value is specified, all classifications are returned. Valid values are:
-    -   AppStore - This classification is for apps that were acquired from Windows Store. These were apps directly installed from Windows Store or enterprise apps from Windows Store for Business.
+    -   AppStore - This classification is for apps that were acquired from Windows Store. These were apps directly installed from Windows Store or enterprise apps from Microsoft Store for Business.
     -   nonStore - This classification is for apps that were not acquired from the Windows Store.
     -   System - Apps that are part of the OS. You cannot uninstall these apps. This classification is read-only and can only be inventoried.
 -   PackageTypeFilter - Specifies one or multiple types of packages you can use to query the user or device. Multiple values must be separated by |. Valid values are:

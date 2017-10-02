@@ -5,7 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+author: jaimeo
 ---
 
 # Get started with Upgrade Readiness
@@ -43,7 +43,7 @@ Upgrade Readiness is offered as a solution in the Microsoft Operations Managemen
 >[!IMPORTANT]
 >Upgrade Readiness is a free solution.  When configured correctly, all data associated with the Upgrade Readiness solution are exempt from billing in both OMS and Azure.  Upgrade Readiness data **do not** count toward OMS daily upload limits.
 
-If you are already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Select the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution's details page. Upgrade Readiness is now visible in your workspace.
+If you are already using OMS, you’ll find Upgrade Readiness in the Solutions Gallery. Select the **Upgrade Readiness** tile in the gallery and then click **Add** on the solution's details page. Upgrade Readiness is now visible in your workspace. While you have this dialog open, you should also consider adding the [Device Health](../update/device-health-monitor.md) and [Update Compliance](../update/update-compliance-monitor.md) solutions as well, if you haven't already. To do so, just select the check boxes for those solutions.
 
 If you are not using OMS:
 
@@ -54,9 +54,9 @@ If you are not using OMS:
 
     > If your organization does not have an Azure subscription, create a new one or select the default OMS Azure subscription from the list. Your workspace opens.
 
-1.  To add the Upgrade Readiness solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Readiness** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Readiness.
+5.  To add the Upgrade Readiness solution to your workspace, go to the **Solutions Gallery**. Select the **Upgrade Readiness** tile in the gallery and then select **Add** on the solution’s details page. The solution is now visible on your workspace. Note that you may need to scroll to find Upgrade Readiness.
 
-2.  Click the **Upgrade Readiness** tile to configure the solution. The **Settings Dashboard** opens.
+6.  Click the **Upgrade Readiness** tile to configure the solution. The **Settings Dashboard** opens.
 
 ### Generate your commercial ID key
 
@@ -64,7 +64,7 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
 1.  On the Settings Dashboard, navigate to the **Windows telemetry** panel.
 
-    ![upgrade-readiness-telemetry](../images/upgrade-analytics-telemetry.png)
+    ![Windows Telemetry dialog showing button for "how to enable telemetry," the current commercial ID key, and a Subsribe button](../images/upgrade-analytics-telemetry.png)
 
 2. On the Windows telemetry panel, copy and save your commercial ID key. You’ll need to insert this key into the Upgrade Readiness deployment script later so it can be deployed to user computers.
 
@@ -84,9 +84,9 @@ To enable data sharing, whitelist the following endpoints. Note that you may nee
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10.vortex-win.data.microsoft.com/collect/v1`<br>`https://Vortex-win.data.microsoft.com/health/keepalive`                                                                                                      | Connected User Experience and Telemetry component endpoint. User computers send data to Microsoft through this endpoint.             |
-| `https://settings.data.microsoft.com/qos`                                                                                                                                  | Enables the compatibility update KB to send data to Microsoft.                                                                       |
-| `https://go.microsoft.com/fwlink/?LinkID=544713`<br>`https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`                                         | This service provides driver information about whether there will be a driver available post-upgrade for the hardware on the system. |
+| `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint.
+| `https://Vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
+| `https://settings.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
 
 Note: The compatibility update KB runs under the computer’s system account. 
 
@@ -138,7 +138,7 @@ To ensure that user computers are receiving the most up to date data from Micros
 - Schedule the Upgrade Readiness deployment script to automatically run so that you don’t have to manually initiate an inventory scan each time the compatibility update KBs are updated. 
 - Schedule monthly user computer scans to view monthly active computer and usage information.
 
->When you run the deployment script, it initiates a full scan. The daily scheduled task to capture the deltas are created when the update package is installed. A full scan averages to about 2 MB, but the delta scans are very small. For Windows 10 devices, its already part of the OS. This is the **Windows Compat Appraiser** task. Deltas are invoked via the nightly scheduled task.  It attempts to run around 3AM, but if system is off at that time, the task will run when the system is turned on. 
+>When you run the deployment script, it initiates a full scan. The daily scheduled task to capture the deltas is created when the update package is installed. For Windows 10 devices, it's already part of the OS. A full scan averages about 2 MB, but the delta scans are very small. The scheduled task is named **Windows Compatibility Appraiser** and can be found in the Task Scheduler Library under Microsoft > Windows > Application Experience. Deltas are invoked via the nightly scheduled task. It attempts to run around 3:00AM every day. If the system is powered off at that time, the task will run when the system is turned on. 
 
 ### Distribute the deployment script at scale
 

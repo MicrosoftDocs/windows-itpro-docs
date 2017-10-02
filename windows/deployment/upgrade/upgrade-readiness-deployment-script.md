@@ -13,11 +13,11 @@ author: greg-lindsay
 To automate the steps provided in [Get started with Upgrade Readiness](upgrade-readiness-get-started.md), and to troubleshoot data sharing issues, you can run the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409), developed by Microsoft.
 
 >[!IMPORTANT]
->Upgrade Readiness was previously called Upgrade Analytics.  References to Upgrade Analytics in any scripts or online content pertain to the Upgrade Readiness solution.
+>Upgrade Readiness was previously called Upgrade Analytics. References to Upgrade Analytics in any scripts or online content pertain to the Upgrade Readiness solution.
 
 For detailed information about using the Upgrade Readiness (also known as upgrade analytics) deployment script, see the [Upgrade Analytics blog](https://blogs.technet.microsoft.com/upgradeanalytics/2016/09/20/new-version-of-the-upgrade-analytics-deployment-script-available/).
 
-> The following guidance applies to version 11.11.16 or later of the Upgrade Readiness deployment script. If you are using an older version, please download the latest from the [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
+> The following guidance applies to version 11.11.16 or later of the Upgrade Readiness deployment script. If you are using an older version, download the latest from the [Download Center](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409).
 
 The Upgrade Readiness deployment script does the following:
 
@@ -31,7 +31,7 @@ The Upgrade Readiness deployment script does the following:
 
 To run the Upgrade Readiness deployment script:
 
-1.  Download the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract the .zip file. Inside, there are two folders: **Pilot** and **Deployment**. The **Pilot** folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The **Deployment** folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly.  Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
+1.  Download the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract the .zip file. Inside, there are two folders: **Pilot** and **Deployment**. The **Pilot** folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The **Deployment** folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly. Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
 
 2.  Edit the following parameters in RunConfig.bat:
 
@@ -66,7 +66,7 @@ To run the Upgrade Readiness deployment script:
     \*vortex\*.data.microsoft.com<BR>
     \*settings\*.data.microsoft.com
 
-5.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script.  If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
+5.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script. If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
@@ -81,7 +81,7 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>1 - Unexpected error occurred while executiEng the script.</td>
-        <td> The files in the deployment script are likely corrupted.  Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966) from the download center and try again.</td>
+        <td> The files in the deployment script are likely corrupted. Download the [latest script](https://go.microsoft.com/fwlink/?LinkID=822966) from the download center and try again.</td>
     </tr>
     <tr>
         <td>2 - Error when logging to console. $logMode = 0.<BR>(console only)</td>
@@ -132,15 +132,16 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>13 - Can’t connect to Microsoft - setting. </td>
-        <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
+        <td>An error occurred connecting to  https://settings.data.microsoft.com/qos. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Verify that the required endpoints are whitelisted correctly. See Whitelist select endpoints for more details. 
+14 </td>
     </tr>
     <tr>
         <td>14 - Can’t connect to Microsoft - compatexchange.</td>
-        <td>An error occurred connecting to https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc . This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
+        <td>An error occurred connecting to https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
     </tr>
     <tr>
         <td>15 - Function CheckVortexConnectivity failed with an unexpected exception.</td>
-        <td>This error will prevent the collected data from being sent to Upgrade Readiness.  To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Check the logs for the exception message and the HResult.</td>
+        <td>This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing). Check the logs for the exception message and the HResult.</td>
     </tr>
     <tr>
         <td>16 - The computer requires a reboot before running the script.</td>
@@ -196,10 +197,10 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>29 - Connectivity check failed for proxy authentication. </td>
-        <td>Install the cumulative updates on the computer and enable the **DisableEnterpriseAuthProxy** authentication proxy setting.
+        <td>Instal cumulative updates on the computer and enable the **DisableEnterpriseAuthProxy** authentication proxy setting.
             <BR>The **DisableEnterpriseAuthProxy** setting is enabled by default for Windows 7.  
             <BR>For Windows 8.1 computers, set the **DisableEnterpriseAuthProxy** setting to **0** (not disabled). 
-            <BR>For more information on authentication proxy support, see [this blog post](https://go.microsoft.com/fwlink/?linkid=838688).</td>
+            <BR>For more information on authentication proxy support, see [Authentication proxy support added in new version (12.28.16) of the Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?linkid=838688).</td>
     </tr>
     <tr>
         <td>30 - Connectivity check failed. Registry key property **DisableEnterpriseAuthProxy** is not enabled.</td>
@@ -209,7 +210,7 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>31 - There is more than one instance of the Upgrade Readiness data collector running at the same time on this computer. </td>
-        <td>Use the Windows Task Manager to check if **CompatTelRunner.exe** is running, and wait until it has completed to rerun the script.  The Upgrade Readiness task is scheduled to run daily at 3 a.m.</td>
+        <td>Use the Windows Task Manager to check if **CompatTelRunner.exe** is running, and wait until it has completed to rerun the script. The Upgrade Readiness task is scheduled to run daily at 3 a.m.</td>
     </tr>
     <tr>
         <td>32 - Appraiser version on the machine is outdated. </td>
@@ -217,7 +218,7 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>33 - **CompatTelRunner.exe** exited with an exit code </td>
-        <td>**CompatTelRunner.exe** runs the appraise task on the machine. If it fails, it will provide a specific exit code. The script will return exit code 33 when **CompatTelRunner.exe** itself exits with an exit code. Please check the logs for more details.</td>
+        <td>**CompatTelRunner.exe** runs the appraise task on the machine. If it fails, it will provide a specific exit code. The script will return exit code 33 when **CompatTelRunner.exe** itself exits with an exit code. Check the logs for more details. Also see the **Note** following this table for additional steps to follow.</td>
     </tr>
     <tr>
         <td>34 - Function **CheckProxySettings** failed with an unexpected exception. </td>
@@ -278,7 +279,49 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
 <tr>
         <td>48 - **CommercialID** mentioned in RunConfig.bat should be a GUID.</td>
-        <td>**CommercialID** is mentioned in RunConfig.bat, but it is not a GUID. Copy the commercialID from your workspace.  To find the commercialID, in the OMS portal click **Upgrade Readiness > Settings**.</td>
+        <td>**CommercialID** is mentioned in RunConfig.bat, but it is not a GUID. Copy the commercialID from your workspace. To find the commercialID, in the OMS portal click **Upgrade Readiness > Settings**.</td>
+    </tr>
+<tr>
+        <td>50 - Diagtrack Service is not running.</td>
+        <td>Diagtrack Service is required to send data to Microsoft. Enable and run the 'Connected User Experiences and Telemetry' service. </td>
+    </tr>
+<tr>
+        <td>51 - RunCensus failed with an unexpected exception.</td>
+        <td>RunCensus explitly runs the process used to collect device information. The method failed with an unexpected exception. Check the ExceptionHResult and ExceptionMessage for more details. </td>
+    </tr>
+<tr>
+        <td>52 - DeviceCensus.exe not found on a Windows 10 machine.</td>
+        <td>On computers running Windows 10, the process devicecensus.exe should be present in the <windows directory>\system32 folder. Error code 52 is returned if the process was not found. Ensure that it exists at the specified location. </td>
+    </tr>
+<tr>
+        <td>53 - There is a different CommercialID present at the GPO path:  "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection". This will take precedence over the CommercialID provided in the script.</td>
+        <td>Provide the correct CommercialID at the GPO location. </td>
     </tr>
 </table>
+
+>[!NOTE]
+>**Additional steps to follow if you receive exit code 33**
+
+>Check the exit code for any of these messages:
+>
+>- CompatTelRunner.exe exited with last error code: 0x800703F1 
+>- CompatTelRunner.exe exited with last error code: 0x80070005 
+>- CompatTelRunner.exe exited with last error code: 0x80080005
+> 
+>
+>If the exit code includes any of those messages, then run these commands from an elevated command prompt:
+>
+>1. Net stop diagtrack
+>2. Net stop pcasvc
+>3. Net stop dps
+>4. Del %windir%\appcompat\programs\amcache.hve
+>5. reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v AmiHivePermissionsCorrect /f
+>6. reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags" /v LogFlags /t REG_DWORD /d 4 /f
+>7. Net start diagtrack
+>8. Net start pcasvc
+>9. Net start dps
+>
+>Then run the Enterprise Config script (RunConfig.bat) again. 
+>
+>If the script still fails, then send mail to **uasupport@microsoft.com** including log files from the RunConfig.bat script. These log files are stored on the drive that is specified in the RunConfig.bat file. By default this is set to **%SystemDrive%\UADiagnostics**. The log file is named with the format **UA_yyyy_mm_dd_hh_mm_ss_machineID.txt**. There will be some additional logs generated under your **<system drive>\Windows\Temp** directory with the names similar to **AslLog_....txt**. You should send those logs as well.
 
