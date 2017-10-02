@@ -72,7 +72,7 @@ The table shows the minimum requirements for each deployment.
 ## Frequently Asked Questions
 
 ### What is the user experience for Windows Hello for Business?
-The user experience for Windows Hello for Business occurs after user sign once you deploy Windows Hello for Business policy settings to your environment.
+The user experience for Windows Hello for Business occurs after user sign-in, after you deploy Windows Hello for Business policy settings to your environment.
 
 > [!VIDEO https://www.youtube.com/embed/FJqHPTZTpNM]
  
