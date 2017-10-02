@@ -44,7 +44,7 @@ Microsoft Store adds the app to **Apps & software**. Click **Manage**, **Apps & 
 
     <!--- ![Image showing options from Action for each app in Inventory.](images/wsfb-inventoryaddprivatestore.png) -->
 
-The value under **Private store** for the app will change to pending. It will take approximately twelve hours before the app is available in the private store.
+The value under **Private store** for the app will change to pending. It will take approximately thirty-six hours before the app is available in the private store.
 
 Employees can claim apps that admins added to the private store by doing the following.
 
