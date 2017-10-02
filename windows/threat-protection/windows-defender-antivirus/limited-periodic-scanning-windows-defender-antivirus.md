@@ -1,7 +1,7 @@
 ---
-title: Configure always-on real-time protection in Windows Defender AV
-description: Enable and configure real-time protectoin features such as behavior monitoring, heuristics, and machine-learning in Windows Defender AV
-keywords: real-time protection, rtp, machine-learning, behavior monitoring, heuristics
+title: Enable the limited periodic scanning feature in Windows Defender AV
+description: Limited periodic scanning lets you use Windows Defender AV in addition to your other installed AV providers
+keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: w10
@@ -16,13 +16,13 @@ ms.date: 08/25/2017
 
 
 
-# Enable and configure Windows Defender AV always-on protection and monitoring
+# Use limited periodic scanning in Windows Defender AV
 
 
 
 **Applies to:**
 
-- Windows 10
+- Windows 10, version 1609
 
 
 **Audience**
@@ -32,68 +32,37 @@ ms.date: 08/25/2017
 
 **Manageability available with**
 
-- Group Policy
+- Windows Defender Security Center app
 
 
+Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 device.
+
+It can only be enabled in certain situations. See the [Windows Defender Antivirus compatibility](windows-defender-antivirus-compatibility.md) topic for more information on when limited periodic scanning can be enabled, and how Windows Defender Antivirus works with other AV products.
 
 
-Always-on protection consists of real-time protection, behavior monitoring, and heuristics to identify malware based on known suspicious and malicious activities. 
+## How to enable limited periodic scanning
 
-These activities include events such as processes making unusual changes to existing files, modifying or creating automatic startup registry keys and startup locations (also known as auto-start extensibility points, or ASEPs), and other changes to the file system or file structure.
+By default, Windows Defender AV will enable itself on a Windows 10 device if there is no other antivirus product installed, or if the other AV product is out-of-date, expired, or not working correctly.
 
+If Windows Defender AV is enabled, the usual options will appear to configure Windows Defender AV on that device:
 
-## Configure and enable always-on protection
-
-You can configure how always-on protection works with the Group Policy settings described in this section.
-
-To configure these settings:
-
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
-
-5.  Expand the tree to **Windows components > Windows Defender Antivirus** and then the **Location** specified in the table below.
-
-6. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
+![Windows Defender Security Center app showing Windows Defender AV options, including scan options, settings, and update options](images/vtp-wdav.png)
 
 
+If another AV product is installed and working correctly, Windows Defender AV will disable itself. The Windows Defender Security Center app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options:
+
+![Windows Defender Security Center app showing ContosoAV as the installed and running antivirus provider. There is a single link to open ContosoAV settings.](images/vtp-3ps.png)
+
+Underneath any 3rd party AV products, a new link will appear as **Windows Defender Antivirus options**. Clicking this link will expand to show the toggle that enables limited periodic scanning. 
 
 
-Location | Setting | Description | Default setting (if not configured)
----|---|---|---
-Real-time protection | Monitor file and program activity on your computer | The AV engine makes note of any file changes (file writes, such as moves, copies, or modifications) and general program activity (programs that are opened or running and that cause other programs to run) | Enabled
-Real-time protection | Scan all downloaded files and attachments | Downloaded files and attachments are automatically scanned. This operates in addition to Windows Defender SmartScreen filter, which scans files before and during downloading | Enabled
-Real-time protection | Turn on process scanning whenever real-time protection is enabled | You can independently enable the AV engine to scan running processes for suspicious modifications or behaviors. This is useful if you have disabled real-time protection | Enabled
-Real-time protection | Turn on behavior monitoring | The AV engine will monitor file processes, file and registry changes, and other events on your endpoints for suspicious and known malicious activity | Enabled
-Real-time protection | Turn on raw volume write notifications | Information about raw volume writes will be analyzed by behavior monitoring | Enabled
-Real-time protection | Define the maximum size of downloaded files and attachments to be scanned | You can define the size in kilobytes | Enabled 
-Real-time protection | Configure monitoring for incoming and outgoing file and program activity | Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Note that fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes. | Enabled (both directions) 
-Scan	| Turn on heuristics | Heuristic protection will disable or block suspicious activity immediately before the AV engine is asked to detect the activity | Enabled
-Root | Allow antimalware service to startup with normal priority | You can lower the priority of the AV engine, which may be useful in lightweight deployments where you want to have as lean a startup process as possible. This may impact protection on the endpoint. | Enabled
-Root | Allow antimalware service to remain running always | If protection updates have been disabled, you can set Windows Defender AV to still run. This lowers the protection on the endpoint. | Disabled
+![The limited periodic option is a toggle to enable or disable **periodic scanning**](images/vtp-3ps-lps.png)
+
+Sliding the swtich to **On** will show the standard Windows Defender AV options underneath the 3rd party AV product. The limited periodic scanning option will appear at the bottom of the page.
 
 
+![When enabled, periodic scanning shows the normal Windows Defender AV options](images/vtp-3ps-lps-on.png)
 
-
-## Disable real-time protection
-> [!WARNING]
-> Disabling real-time protection will drastically reduce the protection on your endpoints and is not recommended.
-
-The main real-time protection capability is enabled by default, but you can disable it with Group Policy:
-
-**Use Group Policy to disable real-time protection:**
-
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
-
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Real-time protection**.
-
-6. Double-click the **Turn off real-time protection** setting and set the option to **Enabled**. Click **OK**. 
 
 
 

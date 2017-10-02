@@ -121,7 +121,7 @@ This section describes how to perform some of the most common tasks when reviewi
 
 >[!NOTE]
 >If you switch **Real-time protection** off, it will automatically turn back on after a short delay. This is to ensure you are protected from malware and threats.  
->If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Defender Security Center app. A setting will appear that will allow you to enable limited periodic scanning.
+>If you install another antivirus product, Windows Defender AV will automatically disable itself and will indicate this in the Windows Defender Security Center app. A setting will appear that will allow you to enable [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
 
 
 <a id="exclusions"></a>

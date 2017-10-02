@@ -30,7 +30,7 @@ ms.date: 09/07/2017
 
 Windows Defender Antivirus is automatically enabled and installed on endpoints and devices that are running Windows 10.
 
-However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender AV will automatically disable itself. 
+However, on endpoints and devices that are protected with a non-Microsoft antivirus or antimalware app, Windows Defender AV will automatically disable itself. You can then choose to enable an optional, limited protection feature, called [limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md).
 
 If you are also using Windows Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode.
 
@@ -60,11 +60,11 @@ Windows Server 2016 | Windows Defender AV | No | Active mode
 
 This table describes what each of the three states do:
 
-State | Description | Real-time protection and cloud-delivered protection | Limited periodic scanning | File scanning and detection information | Threat remediation | Threat definition updates
--|-|-|-|-|-|-
+State | Description | [Real-time protection](configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | [Limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md) | [File scanning and detection information](customize-run-review-remediate-scans-windows-defender-antivirus.md) | [Threat remediation](configure-remediation-windows-defender-antivirus.md) | [Threat definition updates](manage-updates-baselines-windows-defender-antivirus.md)
+:-|:-|:-:|:-:|:-:|:-:|:-:
 Passive mode | Windows Defender AV will not be used as the antivirus app, and threats will not be remediated by Windows Defender AV. Files will be scanned and reports will be provided for threat detections which are shared with the Windows Defender ATP service.  | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)]
 Automatic disabled mode | Windows Defender AV will not be used as the antivirus app. Files will not be scanned and threats will not be remediated. | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark no](images/svg/check-no.md)] 
-Active mode | Windows Defender AV is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files will be scanned and threats remediated, and detection information will be reported in your confirmation tool (such as Configuration Manager or the Windows Defender AV app on the machine itself). | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)]
+Active mode | Windows Defender AV is used as the antivirus app on the machine. All configuration made with Configuration Manager, Group Policy, Intune, or other management products will apply. Files will be scanned and threats remediated, and detection information will be reported in your configuration tool (such as Configuration Manager or the Windows Defender AV app on the machine itself). | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)]
 
 Passive mode is enabled if you are enrolled in Windows Defender ATP because [the service requires common information sharing from the Windows Defender AV service](../windows-defender-atp/defender-compatibility-windows-defender-advanced-threat-protection.md) in order to properly monitor your devices and network for intrusion attempts and attacks. 
 
