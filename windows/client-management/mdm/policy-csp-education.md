@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Education
@@ -14,11 +14,24 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## Education policies  
 
+<dl>
+  <dd>
+    <a href="#education-defaultprintername">Education/DefaultPrinterName</a>
+  </dd>
+  <dd>
+    <a href="#education-preventaddingnewprinters">Education/PreventAddingNewPrinters</a>
+  </dd>
+  <dd>
+    <a href="#education-printernames">Education/PrinterNames</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="education-defaultprintername"></a>**Education/DefaultPrinterName**  
 
@@ -45,6 +58,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. This policy allows IT Admins to set the user's default printer. 
 
@@ -52,6 +74,7 @@ The policy value is expected to be the name (network host name) of an installed 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="education-preventaddingnewprinters"></a>**Education/PreventAddingNewPrinters**  
 
@@ -78,6 +101,15 @@ The policy value is expected to be the name (network host name) of an installed 
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. Allows IT Admins to prevent user installation of additional printers from the printers settings.
 
@@ -88,6 +120,7 @@ The following list shows the supported values:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="education-printernames"></a>**Education/PrinterNames**  
 
@@ -114,6 +147,15 @@ The following list shows the supported values:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. Allows IT Admins to automatically provision printers based on their names (network host names).
 

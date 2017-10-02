@@ -25,7 +25,7 @@ ms.date: 09/08/2017
 >[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
-In hybrid deployments, users register the public portion of their Windows Hello for Business crednetial with Azure.  Azure AD Connect syncrhonizes the Windows Hello for Business public key to Active Directory.  
+In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure.  Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  
 
 The key-trust model needs Windows Server 2016 domain controllers, which configures the key registration permissions automatically; however, the certificate-trust model does not and requires you to add the permissions manually.
 
