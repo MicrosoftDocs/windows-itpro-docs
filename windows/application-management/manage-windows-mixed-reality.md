@@ -12,6 +12,7 @@ ms.date: 10/17/2017
 ---
 
 # Enable or block Windows Mixed Reality apps in the enterprise
+
 **Applies to**
 
 -   Windows 10
@@ -22,16 +23,16 @@ Windows 10, version 1709 (also known as the Fall Creators Update), introduces [W
 <span id="enable" />
 ## Enable Windows Mixed Reality in WSUS
 
-To enable users to download Windows Mixed Reality software (feature on demand package), IT admin need to do the following. 
-Enterprises that are using Creator’s Update clients + WSUS can approve Windows Mixed Reality package by unblocking the following KBs (I’m double checking with WSD to confirm the KB numbers) 
-4016509
-3180030
-3197985
+To enable users to download the Windows Mixed Reality software, enterprises using WSUS can approve Windows Mixed Reality package by unblocking the following KBs:
+  
+- KB4016509
+- KB3180030
+- KB3197985
  
-Enterprises that use RS3 client will not be able to install FOD directly from WSUS. Instead, the enterprise IT admin/user will need to user one of the two options listed below to install Windows Mixed Reality software.
-Have user manually install the Mixed Reality Software 
-IT admin can create Side by side feature store (shared folder) using instructions here:
-https://technet.microsoft.com/en-us/library/jj127275(v=ws.11).aspx
+Enterprises will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
+
+- Manually install the Mixed Reality Software 
+- IT admin can create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx)
 
 
 <span id="block" /> 
