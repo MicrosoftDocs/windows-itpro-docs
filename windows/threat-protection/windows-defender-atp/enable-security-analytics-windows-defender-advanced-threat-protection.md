@@ -32,7 +32,7 @@ Set the baselines for calculating the score of Windows Defender security control
 
 1. In the navigation pane, select **Preferences setup** > **Security Analytics**.
 
-  ![Image of Security Analytics controls from Preferences setup menu](images/atp-enable-security-analytics.png)
+    ![Image of Security Analytics controls from Preferences setup menu](images/atp-enable-security-analytics.png)
 
 2. Select the security control, then toggle the setting between **On** and **Off**.
 
