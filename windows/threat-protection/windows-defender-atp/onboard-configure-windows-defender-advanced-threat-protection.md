@@ -25,6 +25,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+
 You need to onboard to Windows Defender ATP before you can use the service.
 
 For more information, see [Onboard your Windows 10 endpoints to Windows Defender ATP](https://www.youtube.com/watch?v=JT7VGYfeRlA&feature=youtu.be).
