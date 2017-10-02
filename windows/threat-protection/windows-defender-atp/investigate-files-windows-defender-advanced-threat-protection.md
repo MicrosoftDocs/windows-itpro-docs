@@ -24,6 +24,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigatefiles-abovefoldlink) 
+
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
 You can get information from the following sections in the file view:

@@ -25,6 +25,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
+
 The **Security operations dashboard** displays a snapshot of:
 
 - The latest active alerts on your network
@@ -115,6 +117,9 @@ For more information on the service health, see [Check the Windows Defender ATP 
 The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
 
 ![Image of daily machines reporting tile](images/atp-daily-machines-reporting.png)
+
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-secopsdashboard-belowfoldlink)
 
 ## Related topics
 - [View and organize the Windows Defender Advanced Threat Protection Alerts queue ](alerts-queue-windows-defender-advanced-threat-protection.md)

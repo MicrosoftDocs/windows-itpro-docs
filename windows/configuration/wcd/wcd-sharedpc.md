@@ -59,3 +59,5 @@ Use these settings to configure policies for shared PC mode.
 ## Related topics
 
 - [Set up shared or guest PC](../set-up-shared-or-guest-pc.md)
+
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 

@@ -23,6 +23,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-powerbireports-abovefoldlink) 
+
 Understand the security status of your organization, including the status of machines, alerts, and investigations using the Windows Defender ATP reporting feature that integrates with Power BI. 
 
 Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
