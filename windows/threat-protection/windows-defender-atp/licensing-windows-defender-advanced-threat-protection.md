@@ -40,7 +40,7 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 ## Cloud Service Provider validation
 
-The easiest way to gain access into which license is provisioned to your company, and to check the license state, is to check the **Office 365 admin center**.
+To gain access into which licenses are provisioned to your company and to check the state of the licenses, go to the **Office 365 admin center**.
 
 3. From the **Partner portal**, click on the **Administer services > Office 365**.
 
