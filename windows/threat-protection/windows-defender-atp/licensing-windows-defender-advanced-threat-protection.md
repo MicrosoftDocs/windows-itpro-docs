@@ -24,9 +24,9 @@ ms.date: 09/10/2017
 
 [!include[Prerelease information](prerelease.md)]
 
-## Checking license state
+## Check license state
 
-Checking for the license state and whether it got properly provisioned, can be done via the **Office 365 admin center** or via the **Microsoft Azure portal**.
+Checking for the license state and whether it got properly provisioned, can be done through the **Office 365 admin center** or through the **Microsoft Azure portal**.
 
 1. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
 
@@ -48,7 +48,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 	![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
-## Accessing the Windows Defender ATP portal for the first time
+## Access the Windows Defender ATP portal for the first time
 
 When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.com) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the set up wizard there will be a dedicated cloud instance of Windows Defender ATP created.
 
@@ -76,7 +76,7 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 	> [!NOTE]
 	> This option can be changed at a later time.
 
-	![Image of data retention set up](images\atp-data-retention-policy.png)
+   ![Image of data retention set up](images\atp-data-retention-policy.png)
 
 5. You will need to indicate the size of your organization based on an estimate of the number of employees currently employed.
 
