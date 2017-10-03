@@ -61,7 +61,7 @@ You can lock down a device and prevent subsequent attempts of potentially malici
 - [Run Windows Defender Antivirus scan on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)<br>
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
 
-- [Manage machine group and tags](respond-machine-alerts-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)<br>
+- [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)<br>
 Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident.
 
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
