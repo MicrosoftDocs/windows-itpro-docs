@@ -21,20 +21,17 @@ IT admins or technical teachers can use Windows Automatic Redeployment to quickl
 
 To enable Windows Automatic Redeployment in Windows 10, version 1709 (Fall Creators Update), you must:
 
-1. Enable the policy for the feature.
-2. Trigger a reset for each device.
+1. Enable the policy for the feature
+2. Trigger a reset for each device
 
 ## How to enable Windows Automatic Redeployment
-**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Windows Automatic Redeployment. It is a policy node in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (True)
+**DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Windows Automatic Redeployment. It is a policy node in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (True). This ensures that Windows Automatic Redeployment isn't triggered by accident.
 
 You can set the policy using one of these methods:
 
-1. Windows Configuration Designer
-    
-    You can use Windows Configuration Designer to create a provisioning package and set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting.
+1. MDM provider, such as Intune for Education
 
-2. MDM provider, such as Intune for Education
-    **Namrata - Is this statement about Intune for Education, correct? I couldn't actually verify it in the latest I4E builds**
+    **Namrata/Dennis ** - *Is the following statement about Intune for Education, correct? I couldn't actually verify it in the latest I4E builds*
     - Intune for Education automatically sets this policy in the **All devices** group policy configuration.
     - If you're using an MDM provider other than Intune for Education, check your MDM provider documentation on how to set this policy. If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
@@ -43,25 +40,27 @@ You can set the policy using one of these methods:
         - Data type:  Boolean
         - Value:  1
 
+2. Windows Configuration Designer
+    
+    You can [use Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting and create a provisioning package.
+
 3. Set up School PCs app
 
-    In the Set up School PCs app, you can... TBD. 
-
-    For more info, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
+    In the Set up School PCs app, you can... **TBD - Waiting for a SUSPC build that has this functionality and will link to the updated SUSPC docs when that's done**. For more info, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
 
 
 ## How to trigger Windows Automatic Redeployment
-Windows Automatic Redeployment is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execution and once it's done, the device is again ready for use.
+Windows Automatic Redeployment is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 
 
 **To trigger Windows Automatic Redeployment**
 
-- From the Windows device lock screen, enter the keystroke: **![Windows key](images/windows_glyph.png) + CTRL + R**. 
+1. From the Windows device lock screen, enter the keystroke: **CTRL + ![Windows key](images/windows_glyph.png) + R**. 
 
     This will open up a custom login screen for Windows Automatic Redeployment. The screen serves two purposes:
     1. Confirm/verify that the end user has the right to trigger Windows Automatic Redeployment
     2. Notify the user in case a provisioning package, created using Windows Configuration Designer or Set up School PCs, will be used as part of the process.
 
-    Once the user enters their credentials, no additional input is required.
+2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and start the reset process.
 
 
 ## Related topics
