@@ -28,7 +28,7 @@ ms.date: 09/10/2017
 
 Checking for the license state and whether it got properly provisioned, can be done through the **Office 365 admin center** or through the **Microsoft Azure portal**.
 
-1. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
+  1. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
 
 - On the screen you will see all the provisioned licenses and their current **Status**.
 
@@ -46,7 +46,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
   4. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
 
-	![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
+   ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
 ## Access the Windows Defender ATP portal for the first time
 
