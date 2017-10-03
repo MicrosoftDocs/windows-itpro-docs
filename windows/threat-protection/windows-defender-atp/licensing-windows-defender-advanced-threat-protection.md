@@ -30,7 +30,7 @@ Checking for the license state and whether it got properly provisioned, can be d
 
   1. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
 
-- On the screen you will see all the provisioned licenses and their current **Status**.
+  - On the screen you will see all the provisioned licenses and their current **Status**.
 
 	 ![Image of billing licenses](images\atp-billing-licenses.png)
 
