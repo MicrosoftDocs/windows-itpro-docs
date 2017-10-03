@@ -21,10 +21,10 @@ IT admins or technical teachers can use Windows Automatic Redeployment to quickl
 
 To enable Windows Automatic Redeployment in Windows 10, version 1709 (Fall Creators Update), you must:
 
-1. Enable the policy for the feature
-2. Trigger a reset for each device
+1. [Enable the policy for the feature](#enable-windows-automatic-redeployment)
+2. [Trigger a reset for each device](#trigger-windows-automatic-redeployment)
 
-## How to enable Windows Automatic Redeployment
+## Enable Windows Automatic Redeployment
 **DisableAutomaticReDeploymentCredentials** is a policy that enables or disables the visibility of the credentials for Windows Automatic Redeployment. It is a policy node in the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials**. By default, this policy is set to 1 (True). This ensures that Windows Automatic Redeployment isn't triggered by accident.
 
 You can set the policy using one of these methods:
@@ -49,7 +49,7 @@ You can set the policy using one of these methods:
     In the Set up School PCs app, you can... **TBD - Waiting for a SUSPC build that has this functionality and will link to the updated SUSPC docs when that's done**. For more info, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
 
 
-## How to trigger Windows Automatic Redeployment
+## Trigger Windows Automatic Redeployment
 Windows Automatic Redeployment is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 
 
 **To trigger Windows Automatic Redeployment**
