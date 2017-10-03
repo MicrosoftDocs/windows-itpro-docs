@@ -34,7 +34,7 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 	 ![Image of billing licenses](images\atp-billing-licenses.png)
 
-2. To view your licenses go to the **Microsoft Azure portal** and navigate to the **All resources** icon ![Image of Azure All resources icon](images\atp-azure-license-icon.png).
+  2. To view your licenses go to the **Microsoft Azure portal** and navigate to the **All resources** icon ![Image of Azure All resources icon](images\atp-azure-license-icon.png).
 
 	![Image of Azure Licensing page](images\atp-licensing-azure-portal.png)
 
