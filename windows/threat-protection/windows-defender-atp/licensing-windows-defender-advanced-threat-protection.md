@@ -42,9 +42,9 @@ Checking for the license state and whether it got properly provisioned, can be d
 
 To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the **Office 365 admin center**.
 
-3. From the **Partner portal**, click on the **Administer services > Office 365**.
+1. From the **Partner portal**, click on the **Administer services > Office 365**.
 
-4. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
+2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer **Office 365 admin center**.
 
    ![Image of O365 admin portal](images\atp-O365-admin-portal-customer.png)
 
