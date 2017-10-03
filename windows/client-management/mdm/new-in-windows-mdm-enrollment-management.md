@@ -1000,8 +1000,17 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">Microsoft Store for Business</td>
-<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
+<td style="vertical-align:top">Microsoft Store for Business and Microsoft Store</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
+</td></tr>
+<td style="vertical-align:top">[MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>New features in the Settings app:</p>
+<ul>
+<li>User sees installation progress of critical policies during MDM enrollment.</li>
+<li>User knows what policies, profiles, apps MDM has configured</li>
+<li>IT helpdesk can get detailed MDM diagnostic information using client tools</li>
+</ul>
+<p>For details, see [Managing connection](mdm-enrollment-of-windows-devices.md#managing-connections) and [Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1384,8 +1393,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Starting in Windows 10, version 1709, AssignedAccess CSP is also supported in Windows 10 Pro.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">Microsoft Store for Business</td>
-<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
+<td style="vertical-align:top">Microsoft Store for Business and Microsoft Store</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
@@ -1401,8 +1410,19 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[EntepriseAPN CSP](enterpriseapn-csp.md)</td>
 <td style="vertical-align:top"><p>Added a SyncML example.</p>
 </td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
 <td style="vertical-align:top"><p>Added RegisterDNS setting in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>New features in the Settings app:</p>
+<ul>
+<li>User sees installation progress of critical policies during MDM enrollment.</li>
+<li>User knows what policies, profiles, apps MDM has configured</li>
+<li>IT helpdesk can get detailed MDM diagnostic information using client tools</li>
+</ul>
+<p>For details, see [Managing connections](mdm-enrollment-of-windows-devices.md#managing-connections) and [Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)</p>
 </td></tr>
 </tbody>
 </table>
