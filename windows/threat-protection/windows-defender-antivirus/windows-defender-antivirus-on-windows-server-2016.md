@@ -61,7 +61,7 @@ By default, Windows Defender AV is installed and functional on Windows Server 20
 
 If the interface is not installed, you can add it in the **Add Roles and Features Wizard** at the **Features** step, under **Windows Defender Features** by selecting the **GUI for Windows Defender** option.
 
-![](images/server-add-gui.png)
+![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
 
 See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
 
