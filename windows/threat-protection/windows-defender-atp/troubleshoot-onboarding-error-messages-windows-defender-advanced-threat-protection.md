@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/10/2017
 ---
 
-## Troubleshooting onboarding and error messages
+## Troubleshoot onboarding and error messages
 
 **Applies to:**
 
