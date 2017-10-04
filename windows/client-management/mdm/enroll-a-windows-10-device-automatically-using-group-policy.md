@@ -27,7 +27,7 @@ Here is a partial screenshot of the result:
 
 ![device status result](images/autoenrollment-device-status.png)
 
-The auto-enrollment relies of the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1611, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically AAD registered.
+The auto-enrollment relies of the presence of an MDM service and the Azure Active Directory registration for the PC. Starting in Windows 10, version 1511, once the enterprise has registered its AD with Azure AD, a Windows PC that is domain joined is automatically AAD registered.
 
 > [!Note]  
 > In Windows 10, version 1709, the enrollment protocol was updated to check whether the device is domain-joined. For details, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx). For examples, see section 4.3.1 RequestSecurityToken of the the MS-MDE2 protocol documentation. 
