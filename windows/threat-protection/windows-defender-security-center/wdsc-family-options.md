@@ -1,2 +1,0 @@
-- Family options, which includes access to parental controls along with tips and information for keeping kids safe online
-    - Home users can learn more at the [Help protection your family online in Windows Defender Security Center topic at support.microsoft.com](https://support.microsoft.com/en-us/help/4013209/windows-10-protect-your-family-online-in-windows-defender)
