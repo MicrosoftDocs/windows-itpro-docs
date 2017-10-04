@@ -125,11 +125,11 @@ See the following links for more information on the features in the Windows Defe
 
 You can customize notifcations so they show information to users about how to get more help from your organization's help desk.
 
-![](images/security-center-custom-notif.png)
+![Sample notification that says Action blocked: Contos caused Windows Defender Security Center to block this action. Contact your IT help desk.](images/security-center-custom-notif.png)
 
 This information will also appear as a pop-out window on the Windows Defender Security Center app.
 
-![](images/security-center-custom-flyout.png)
+![Screenshot of the Windows Defender Security Center app showing sample phone number and email address to contact support on the bottom right of the app](images/security-center-custom-flyout.png)
 
 Users can click on the displayed information to get more help:
 - Clicking **Call** or the phone number will open Skype to start a call to the displayed number
