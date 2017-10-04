@@ -34,8 +34,6 @@ However, on endpoints and devices that are protected with a non-Microsoft antivi
 
 If you are also using Windows Defender Advanced Threat Protection, then Windows Defender AV will enter a passive mode.
 
-On Windows Server 2016, Windows Defender AV will not enter passive or disabled mode if you have also installed a third-party antivirus product. See [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md) topic for key differences and management options for Windows Server installations.
-
 The following matrix illustrates the states that Windows Defender AV will enter when third-party antivirus products or Windows Defender ATP are also used. 
 
 Windows version | Antimalware protection offered by | Organization enrolled in Windows Defender ATP | Windows Defender AV state
@@ -44,10 +42,16 @@ Windows 10 | A third-party product that is not offered or developed by Microsoft
 Windows 10 | A third-party product that is not offered or developed by Microsoft | No | Automatic disabled mode
 Windows 10 | Windows Defender AV | Yes | Active mode
 Windows 10 | Windows Defender AV | No | Active mode
-Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | Yes | Active mode
-Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | No | Active mode
+Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | Yes | Active mode<sup>[[1](#fn1)]</sup>
+Windows Server 2016 | A third-party product that is not offered or developed by Microsoft | No | Active mode<sup>[[1](#fn1)]<sup>
 Windows Server 2016 | Windows Defender AV | Yes | Active mode
 Windows Server 2016 | Windows Defender AV | No | Active mode
+
+
+(<a href="#fn1" id="ref1">1</a>)  On Windows Server 2016, Windows Defender AV will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [uninstall Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md# to prevent problems caused by having multiple antivirus products installed on a machine.
+See the [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md#install-or-uninstall-windows-defender-av-on-windows-server-2016) topic for key differences and management options for Windows Server installations.
+
+
 
 
 >[!IMPORTANT]
@@ -60,7 +64,7 @@ Windows Server 2016 | Windows Defender AV | No | Active mode
 
 This table describes what each of the three states do:
 
-State | Description | [Real-time protection](configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | [Limited periodic scanning](limited-periodic-scanning-windows-defender-antivirus.md) | [File scanning and detection information](customize-run-review-remediate-scans-windows-defender-antivirus.md) | [Threat remediation](configure-remediation-windows-defender-antivirus.md) | [Threat definition updates](manage-updates-baselines-windows-defender-antivirus.md)
+State | Description | [Real-time protection](configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | [Limited periodic scanning availability](limited-periodic-scanning-windows-defender-antivirus.md) | [File scanning and detection information](customize-run-review-remediate-scans-windows-defender-antivirus.md) | [Threat remediation](configure-remediation-windows-defender-antivirus.md) | [Threat definition updates](manage-updates-baselines-windows-defender-antivirus.md)
 :-|:-|:-:|:-:|:-:|:-:|:-:
 Passive mode | Windows Defender AV will not be used as the antivirus app, and threats will not be remediated by Windows Defender AV. Files will be scanned and reports will be provided for threat detections which are shared with the Windows Defender ATP service.  | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)]
 Automatic disabled mode | Windows Defender AV will not be used as the antivirus app. Files will not be scanned and threats will not be remediated. | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark yes](images/svg/check-yes.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark no](images/svg/check-no.md)] | [!include[Check mark no](images/svg/check-no.md)] 
