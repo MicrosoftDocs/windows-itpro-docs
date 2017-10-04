@@ -52,6 +52,8 @@ This feature is only available if you have an active Office 365 E5 or the Threat
 
 When you enable this feature, you'll be able to incorporate data from Office 365 Advanced Threat Protection into the Windows Defender ATP portal to conduct a holistic security investigation across Office 365 mailboxes and Windows machines.
 
+To receive contextual machine integration in Office 365 Threat Intelligence, you'll need to enable the Windows Defender ATP settings in the Security & Compliance dashboard. For more information, see [Office 365 Threat Intelligence overview](https://support.office.com/en-us/article/Office-365-Threat-Intelligence-overview-32405DA5-BEE1-4A4B-82E5-8399DF94C512).
+
 ## Enable advanced features
 1. In the navigation pane, select **Preferences setup** > **Advanced features**.
 2. Select the advanced feature you want to configure and toggle the setting between **On** and **Off**.
