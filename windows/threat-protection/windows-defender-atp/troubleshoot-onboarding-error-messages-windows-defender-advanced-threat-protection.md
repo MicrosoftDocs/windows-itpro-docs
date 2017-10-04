@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/10/2017
 ---
 
-## Troubleshooting onboarding and error messages
+## Troubleshoot onboarding and error messages
 
 **Applies to:**
 
@@ -43,7 +43,7 @@ Potential reasons:
 For both cases you should contact Microsoft support at [General Windows Defender ATP Support](https://support.microsoft.com/en-us/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
 [Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
 
-![Image of no subscriptions found](images/atp-no-subscriptions-found.png)
+![Image of no subscriptions found](images\atp-no-subscriptions-found.png)
 
 ## Your subscription has expired
 
@@ -54,14 +54,14 @@ You can choose to renew or extend the license at any point in time. When accessi
 > [!NOTE]
 > For security reasons, the package used to offboard endpoints will expire 30 days after the date it was downloaded. Expired offboarding packages sent to an endpoint will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-![Image of subscription expired](images/atp-subscription-expired.png)
+![Image of subscription expired](images\atp-subscription-expired.png)
 
 ## You are not authorized to access the portal
 
 If you receive a **You are not authorized to access the portal**, be aware that Windows Defender ATP is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
 **Assigning user access to the Windows Defender ATP portal** details are available at the [docs.microsoft.com](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) site.
 
-![Image of not authorized to access portal](images/atp-not-authorized-to-access-portal.png)
+![Image of not authorized to access portal](images\atp-not-authorized-to-access-portal.png)
 
 ## Related topics
 - [Validating licensing provisioning and completing setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
