@@ -87,6 +87,8 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 You can also uninstall Windows Defender AV completely with the **Remove Roles and Features Wizard** by deselecting the **Windows Defender Features** option at the **Features** step in the wizard.
 
+This is useful if you have a third-party antivirus product installed on the machine already. Multiple AV products can cause problems when installed and actively running on the same machine. See the question "Should I run Microsoft security software at the same time as other security products?" on the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/en-us/wdsi/help/antimalware-faq).
+
 >[!NOTE]
 >Deselecting **Windows Defender** on its own under the **Windows Defender Features** section will automatically prompt you to remove the interface option **GUI for Windows Defender**. 
 
@@ -144,8 +146,6 @@ By default, Windows Update does not download and install updates automatically o
 
 To ensure that protection from malware is maintained, we recommend that you enable the following services:
 
--   Windows Defender Network Inspection service
-
 -   Windows Error Reporting service
 
 -   Windows Update service
@@ -155,9 +155,8 @@ The following table lists the services for Windows Defender and the dependent se
 |Service Name|File Location|Description|
 |--------|---------|--------|
 |Windows Defender Service (Windefend)|C:\Program Files\Windows Defender\MsMpEng.exe|This is the main Windows Defender Antivirus service that needs to be running at all times.|
-|Windows Defender Network Inspection Service (Wdnissvc)|C:\Program Files\Windows Defender\NisSrv.exe|This service is invoked when Windows Defender Antivirus encounters a trigger to load it.|
 |Windows Error Reporting Service (Wersvc)|C:\WINDOWS\System32\svchost.exe -k WerSvcGroup|This service sends error reports back to Microsoft.|
-|Windows Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Firewall service enabled.|
+|Windows Defender Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Defender Firewall service enabled.|
 |Windows Update (Wuauserv)|C:\WINDOWS\system32\svchost.exe -k netsvcs|Windows Update is needed to get definition updates and antimalware engine updates|
 
 
