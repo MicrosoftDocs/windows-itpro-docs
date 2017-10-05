@@ -32,7 +32,7 @@ We need an email address in case we need to contact you about your Microsoft Sto
 
 **To update Organization information**
 1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com)
-2. Click **Manage**, click **Payments & billing**, and then click **Edit**.
+2. Click **Manage**, click **Billing**, **Account profile**, and then click **Edit**.
 
 ## Organization tax information   
 Taxes for Microsoft Store for Business purchases are determined by your business address. Businesses in these countries can provide their VAT number or local equivalent:
@@ -87,7 +87,7 @@ If you qualify for tax-exempt status in your market, start a service request to 
 
 **To start a service request**
 1.  Sign in to the [Store for Business](http://businessstore.microsoft.com).
-2.	Click **Support**, and then under **Store or account support** click **Start a service request**.
+2.	Click **Manage**, click **Support**, and then under **Store settings & configuration** click **Create technical support ticket**.
 
 You’ll need this documentation:
 
@@ -124,8 +124,8 @@ You can purchase apps from Microsoft Store for Business using your credit card. 
 **To add a new payment option** 
 
 1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
-2. Click **Manage**, and then click **Payments & billing**. 
-3. Under **Payment options**, click **Show my payment options**, and then select the type of credit card that you want to add. 
+2. Click **Manage**,  click **Billing**, and then click **Payments methods**.  
+3. Click **Add a payment options**, and then select the type of credit card that you want to add. 
 4. Add information to any required fields, and then click **Next**. 
 
 Once you click Next, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise, you will be prompted for additional information or notified if there are any problems. 
@@ -136,10 +136,10 @@ Once you click Next, the information you provided will be validated with a tes
 **To update a payment option** 
 
 1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
-2. Click **Manage**, and then click **Payments & billng**. 
-3. Under **Payment options** > **Show my payment options**, select the payment option that you want to update, and then click **Update**. 
+2. Click **Manage**, click **Billing**, and then click **Payments methods**. 
+3. Select the payment option that you want to update, and then click **Update**. 
 4. Enter any updated information in the appropriate fields, and then click **Next**. 
-Once you click **Next**, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise,you will be prompted for additional information or notified if there are any problems. 
+Once you click **Next**, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise, you will be prompted for additional information or notified if there are any problems. 
  
 > [!NOTE]
 > Certain actions, like updating or adding a payment option, require temporary “test authorization” transactions to validate the payment option. These may appear on your statement as $0.00 authorizations or as small pending transactions. These transactions are temporary and should not impact your account unless you make several changes in a short period of time, or have a low balance.
@@ -153,8 +153,8 @@ Admins can decide whether or not offline licenses are shown for apps in Microsof
 **To set offline license visibility**
 
 1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
-2. Click **Manage**, and then click **Payments & billing**. 
-3. Under **Offline licensing**, click **Show offline licensed apps to people shopping in the store** to show availability for both online and offline licenses.
+2. Click **Manage**, and then click **Settings - Shop**. 
+3. Under **Shopping experience** turn on or turn off  **Show offline apps**,to show availability for offline-licensed apps.
 
 You have the following distribution options for offline-licensed apps:
 - Include the app in a provisioning package, and then use it as part of imaging a device.

@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 09/19/2017
 ---
 
 # MDM enrollment of Windows-based devices
@@ -178,35 +178,33 @@ All Windows 10-based devices can be connected to a work or school account. You 
 
 ### Using the Settings app
 
-1.  Launch the Settings app.
+1.  Launch the Settings app and then click **Accounts**. Click **Start**, then the Settings icon, and then select **Accounts**
 
-    ![windows settings page](images/unifiedenrollment-rs1-21.png)
+    ![windows settings page](images/unifiedenrollment-rs1-21-b.png)
 
-2.  Next, navigate to **Accounts**.
+2.  Navigate to **Access work or school**.
 
-    ![windows settings accounts select](images/unifiedenrollment-rs1-22.png)
+    ![select access work or school](images/unifiedenrollment-rs1-23-b.png)
 
-3.  Navigate to **Access work or school**.
+3.  Click **Connect**.
 
-    ![select access work or school](images/unifiedenrollment-rs1-23.png)
+    ![connect to work or school](images/unifiedenrollment-rs1-24-b.png)
 
-4.  Click **Connect**.
+4.  Type in your Azure AD username. This is the email address you use to log into Office 365 and similar services.
 
-    ![connect to work or school](images/unifiedenrollment-rs1-24.png)
+    ![join work or school account to azure ad](images/unifiedenrollment-rs1-25-b.png)
 
-5.  Type in your Azure AD username. This is the email address you use to log into Office 365 and similar services.
-
-    ![join work or school account to azure ad](images/unifiedenrollment-rs1-25.png)
-
-6.  If the tenant is a cloud only tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly into the page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
+5.  If the tenant is a cloud only tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly into the page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
     If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant is not configured for auto-enrollment, you will have to go through the enrollment flow a second time to connect your device to MDM.
 
+    Starting in Windows 10, version 1709, you will see the status page that shows the progress of your device being set up.
+
     ![corporate sign in](images/unifiedenrollment-rs1-26.png)
 
-7.  After you complete the flow, your Microsoft account will be connected to your work or school account.
+6.  After you complete the flow, your Microsoft account will be connected to your work or school account.
 
     ![account successfully added](images/unifiedenrollment-rs1-27.png)
 
@@ -238,11 +236,12 @@ All Windows 10-based devices can be connected to an MDM. You can connect to an 
 
 6.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information.
 
-    Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
+    Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. Starting in Windows 10, version 1709, you will see the enrollment progress on screen.
+
+ ![corporate sign in](images/unifiedenrollment-rs1-33-b.png)
 
     After you complete the flow, your device will be connected to your organization’s MDM.
-
-    ![corporate sign in](images/unifiedenrollment-rs1-33.png)
+   
 
 ### Connecting to MDM on a phone (Enrolling in device management)
 
@@ -343,16 +342,7 @@ The following procedure describes how users can connect their devices to MDM usi
 
 Your work or school connections can be managed on the **Settings** &gt; **Accounts** &gt; **Access work or school** page. Your connections will show on this page and clicking on one will expand options for that connection.
 
-![managing work or school account](images/unifiedenrollment-rs1-34.png)
-
-### Manage
-
-The **Manage** button can be found on work or school connections involving Azure AD. This includes the following scenarios:
-
--   Connecting your device to an Azure AD domain
--   Connecting to a work or school account.
-
-Clicking on the manage button will open the Azure AD portal associated with that connection in your default browser.
+![managing work or school account](images/unifiedenrollment-rs1-34-b.png)
 
 ### Info
 
@@ -364,7 +354,12 @@ The **Info** button can be found on work or school connections involving MDM. Th
 
 Clicking the **Info** button will open a new page in the Settings app that provides details about your MDM connection. You’ll be able to view your organization’s support information (if configured) on this page. You’ll also be able to start a sync session which will force your device to communicate to the MDM server and fetch any updates to policies if needed.
 
-![work or school info](images/unifiedenrollment-rs1-35.png)
+Starting in Windows 10, version 1709, clicking the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screehshot.
+
+![work or school info](images/unifiedenrollment-rs1-35-b.png)
+
+> [!Note]  
+> Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
 
 ### Disconnect
 
@@ -375,19 +370,16 @@ The **Disconnect** button can be found on all work connections. Generally, click
 
 > **Warning**  Disconnecting might result in the loss of data on the device.
 
- 
-
-![disconnect work or school account](images/unifiedenrollment-rs1-36.png)
-
 ## Collecting diagnostic logs
 
 
 You can collect diagnostic logs around your work connections by going to **Settings** &gt; **Accounts** &gt; **Access work or school**, and clicking the **Export your management logs** link under **Related Settings**. After you click the link, click **Export** and follow the path displayed to retrieve your management log files.
 
-![collecting enrollment management log files](images/unifiedenrollment-rs1-37.png)
+Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** &gt; **Accounts** &gt; **Access work or school**, and clicking the **Info** button. At the bottom of the Settings page you will see the button to create a report. Here is an example screenshot.
+
+![collecting enrollment management log files](images/unifiedenrollment-rs1-37-c.png)
 
  
-
 
 
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/07/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Handwriting
@@ -14,11 +14,18 @@ ms.date: 09/07/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
-##  Handwriting policies  
+<!--StartPolicies-->
+## Handwriting policies  
 
+<dl>
+  <dd>
+    <a href="#handwriting-paneldefaultmodedocked">Handwriting/PanelDefaultModeDocked</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="handwriting-paneldefaultmodedocked"></a>**Handwriting/PanelDefaultModeDocked**  
 
@@ -45,6 +52,15 @@ ms.date: 09/07/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10. version 1709. This policy allows an enterprise to configure the default mode for the handwriting panel.
 
@@ -70,3 +86,4 @@ Footnote:
 -   3 - Added in Windows 10, version 1709.
 
 <!--EndPolicies-->
+

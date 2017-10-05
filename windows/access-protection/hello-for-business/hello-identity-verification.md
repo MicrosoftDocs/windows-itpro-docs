@@ -71,6 +71,23 @@ The table shows the minimum requirements for each deployment.
 
 ## Frequently Asked Questions
 
+### What is the user experience for Windows Hello for Business?
+The user experience for Windows Hello for Business occurs after user sign-in, after you deploy Windows Hello for Business policy settings to your environment.
+
+> [!VIDEO https://www.youtube.com/embed/FJqHPTZTpNM]
+ 
+</br>
+
+> [!VIDEO https://www.youtube.com/embed/etXJsZb8Fso]
+
+### What happens when my user forgets their PIN?
+
+If the user can sign-in with a password, they can reset their PIN by clicking the "I forgot my PIN" link in settings.  Beginning with the Fall Creators Update, users can reset their PIN above the lock screen by clicking the "I forgot my PIN" link on the PIN credential provider.
+
+> [!VIDEO https://www.youtube.com/embed/KcVTq8lTlkI]
+
+For on-premises deployments, devices must be well connected to their on-premises network (domain controllers and/or certificate authority) to reset their PINs.  Hybrid customers can onboard their Azure tenant to use the Windows Hello for Business PIN reset service to reset their PINs without access to their corporate network.
+
 ### Do I need Windows Server 2016 domain controllers?
 There are many deployment options from which to choose. Some of those options require an adequate number of Windows Server 2016 domain controllers in the site where you have deployed Windows Hello for Business. There are other deployment options that use existing Windows Server 2008 R2 or later domain controllers. Choose the deployment option that best suits your environment
 

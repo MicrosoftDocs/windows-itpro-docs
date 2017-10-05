@@ -86,7 +86,7 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 | --- | --- | --- |
 | [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
 | [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Pro (1709 only), Enterprise, Education |
-| [Create a provisioning package using Windows Configuration Designer](#wizard) | All (domain, local standard, local administrator, etc) | Pro, Enterprise, Education |
+| [Create a provisioning package using Windows Configuration Designer](#wizard) | All (domain, local standard, local administrator, etc) | Pro (1709 only), Enterprise, Education |
 | [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
 
