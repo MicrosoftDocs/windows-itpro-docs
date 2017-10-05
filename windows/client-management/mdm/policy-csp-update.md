@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Update
@@ -14,11 +14,150 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## Update policies  
 
+<dl>
+  <dd>
+    <a href="#update-activehoursend">Update/ActiveHoursEnd</a>
+  </dd>
+  <dd>
+    <a href="#update-activehoursmaxrange">Update/ActiveHoursMaxRange</a>
+  </dd>
+  <dd>
+    <a href="#update-activehoursstart">Update/ActiveHoursStart</a>
+  </dd>
+  <dd>
+    <a href="#update-allowautoupdate">Update/AllowAutoUpdate</a>
+  </dd>
+  <dd>
+    <a href="#update-allowautowindowsupdatedownloadovermeterednetwork">Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</a>
+  </dd>
+  <dd>
+    <a href="#update-allowmuupdateservice">Update/AllowMUUpdateService</a>
+  </dd>
+  <dd>
+    <a href="#update-allownonmicrosoftsignedupdate">Update/AllowNonMicrosoftSignedUpdate</a>
+  </dd>
+  <dd>
+    <a href="#update-allowupdateservice">Update/AllowUpdateService</a>
+  </dd>
+  <dd>
+    <a href="#update-autorestartdeadlineperiodindays">Update/AutoRestartDeadlinePeriodInDays</a>
+  </dd>
+  <dd>
+    <a href="#update-autorestartnotificationschedule">Update/AutoRestartNotificationSchedule</a>
+  </dd>
+  <dd>
+    <a href="#update-autorestartrequirednotificationdismissal">Update/AutoRestartRequiredNotificationDismissal</a>
+  </dd>
+  <dd>
+    <a href="#update-branchreadinesslevel">Update/BranchReadinessLevel</a>
+  </dd>
+  <dd>
+    <a href="#update-deferfeatureupdatesperiodindays">Update/DeferFeatureUpdatesPeriodInDays</a>
+  </dd>
+  <dd>
+    <a href="#update-deferqualityupdatesperiodindays">Update/DeferQualityUpdatesPeriodInDays</a>
+  </dd>
+  <dd>
+    <a href="#update-deferupdateperiod">Update/DeferUpdatePeriod</a>
+  </dd>
+  <dd>
+    <a href="#update-deferupgradeperiod">Update/DeferUpgradePeriod</a>
+  </dd>
+  <dd>
+    <a href="#update-detectionfrequency">Update/DetectionFrequency</a>
+  </dd>
+  <dd>
+    <a href="#update-disabledualscan">Update/DisableDualScan</a>
+  </dd>
+  <dd>
+    <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
+  </dd>
+  <dd>
+    <a href="#update-engagedrestartsnoozeschedule">Update/EngagedRestartSnoozeSchedule</a>
+  </dd>
+  <dd>
+    <a href="#update-engagedrestarttransitionschedule">Update/EngagedRestartTransitionSchedule</a>
+  </dd>
+  <dd>
+    <a href="#update-excludewudriversinqualityupdate">Update/ExcludeWUDriversInQualityUpdate</a>
+  </dd>
+  <dd>
+    <a href="#update-fillemptycontenturls">Update/FillEmptyContentUrls</a>
+  </dd>
+  <dd>
+    <a href="#update-ignoremoappdownloadlimit">Update/IgnoreMOAppDownloadLimit</a>
+  </dd>
+  <dd>
+    <a href="#update-ignoremoupdatedownloadlimit">Update/IgnoreMOUpdateDownloadLimit</a>
+  </dd>
+  <dd>
+    <a href="#update-pausedeferrals">Update/PauseDeferrals</a>
+  </dd>
+  <dd>
+    <a href="#update-pausefeatureupdates">Update/PauseFeatureUpdates</a>
+  </dd>
+  <dd>
+    <a href="#update-pausefeatureupdatesstarttime">Update/PauseFeatureUpdatesStartTime</a>
+  </dd>
+  <dd>
+    <a href="#update-pausequalityupdates">Update/PauseQualityUpdates</a>
+  </dd>
+  <dd>
+    <a href="#update-pausequalityupdatesstarttime">Update/PauseQualityUpdatesStartTime</a>
+  </dd>
+  <dd>
+    <a href="#update-requiredeferupgrade">Update/RequireDeferUpgrade</a>
+  </dd>
+  <dd>
+    <a href="#update-requireupdateapproval">Update/RequireUpdateApproval</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduleimminentrestartwarning">Update/ScheduleImminentRestartWarning</a>
+  </dd>
+  <dd>
+    <a href="#update-schedulerestartwarning">Update/ScheduleRestartWarning</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduledinstallday">Update/ScheduledInstallDay</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduledinstalleveryweek">Update/ScheduledInstallEveryWeek</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduledinstallfirstweek">Update/ScheduledInstallFirstWeek</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduledinstallfourthweek">Update/ScheduledInstallFourthWeek</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduledinstallsecondweek">Update/ScheduledInstallSecondWeek</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduledinstallthirdweek">Update/ScheduledInstallThirdWeek</a>
+  </dd>
+  <dd>
+    <a href="#update-scheduledinstalltime">Update/ScheduledInstallTime</a>
+  </dd>
+  <dd>
+    <a href="#update-setautorestartnotificationdisable">Update/SetAutoRestartNotificationDisable</a>
+  </dd>
+  <dd>
+    <a href="#update-setedurestart">Update/SetEDURestart</a>
+  </dd>
+  <dd>
+    <a href="#update-updateserviceurl">Update/UpdateServiceUrl</a>
+  </dd>
+  <dd>
+    <a href="#update-updateserviceurlalternate">Update/UpdateServiceUrlAlternate</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**  
 
@@ -45,6 +184,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursStart**) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time.
 
@@ -57,6 +205,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-activehoursmaxrange"></a>**Update/ActiveHoursMaxRange**  
 
@@ -83,6 +232,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT admin to specify the max active hours range. This value sets max number of active hours from start time.
 
@@ -92,6 +250,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-activehoursstart"></a>**Update/ActiveHoursStart**  
 
@@ -118,6 +277,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin (when used with **Update/ActiveHoursEnd**) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time.
 
@@ -130,6 +298,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-allowautoupdate"></a>**Update/AllowAutoUpdate**  
 
@@ -156,6 +325,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Enables the IT admin to manage automatic update behavior to scan, download, and install updates.
 
@@ -178,6 +356,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-allowautowindowsupdatedownloadovermeterednetwork"></a>**Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork**  
 
@@ -204,6 +383,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Option to download updates automatically over metered connections (off by default). Value type is integer.  
 
@@ -213,8 +401,10 @@ ms.date: 08/30/2017
 A significant number of devices primarily use cellular data and do not have Wi-Fi access, which leads to a lower number of devices getting updates. Since a large number of devices have large data plans or unlimited data, this policy can unblock devices from getting updates.
 
 This policy is accessible through the Update setting in the user interface or Group Policy.
+
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**  
 
@@ -241,6 +431,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
 
@@ -251,6 +450,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-allownonmicrosoftsignedupdate"></a>**Update/AllowNonMicrosoftSignedUpdate**  
 
@@ -277,6 +477,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution.
 
@@ -291,6 +500,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**  
 
@@ -317,6 +527,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Windows Store.
 
@@ -334,6 +553,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-autorestartdeadlineperiodindays"></a>**Update/AutoRestartDeadlinePeriodInDays**  
 
@@ -360,6 +580,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy defines the deadline in days after which a reboot for updates will become mandatory.
 
@@ -369,6 +598,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-autorestartnotificationschedule"></a>**Update/AutoRestartNotificationSchedule**  
 
@@ -395,6 +625,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart reminder notifications.
 
@@ -404,6 +643,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-autorestartrequirednotificationdismissal"></a>**Update/AutoRestartRequiredNotificationDismissal**  
 
@@ -430,6 +670,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.
 
@@ -440,6 +689,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-branchreadinesslevel"></a>**Update/BranchReadinessLevel**  
 
@@ -466,16 +716,29 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   16 (default) – User gets all applicable upgrades from Current Branch (CB).
--   32 – User gets upgrades from Current Branch for Business (CBB).
+-  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
+-  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
+-  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
+-  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
+-  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-deferfeatureupdatesperiodindays"></a>**Update/DeferFeatureUpdatesPeriodInDays**  
 
@@ -502,6 +765,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
@@ -514,6 +786,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-deferqualityupdatesperiodindays"></a>**Update/DeferQualityUpdatesPeriodInDays**  
 
@@ -540,6 +813,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Defers Quality Updates for the specified number of days.
 
@@ -547,6 +829,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-deferupdateperiod"></a>**Update/DeferUpdatePeriod**  
 
@@ -573,6 +856,15 @@ This policy is accessible through the Update setting in the user interface or Gr
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices.
@@ -591,7 +883,34 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <p style="margin-left: 20px">If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
-<table style="margin-left: 20px">
+OS upgrade:
+-   Maximum deferral: 8 months
+-   Deferral increment: 1 month
+-   Update type/notes:
+   - Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
+
+Update:
+-   Maximum deferral: 1 month
+-   Deferral increment: 1 week
+-   Update type/notes:
+    If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
+        - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+        - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+        - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+        - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+        - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+        - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+        - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+        - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+
+Other/cannot defer:
+-   Maximum deferral: No deferral
+-   Deferral increment: No deferral
+-   Update type/notes:
+    Any update category not specifically enumerated above falls into this category.
+        - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
+
+<!--<table style="margin-left: 20px">
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -640,10 +959,11 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**  
 
@@ -670,6 +990,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
@@ -687,6 +1016,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-detectionfrequency"></a>**Update/DetectionFrequency**  
 
@@ -713,11 +1043,21 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-disabledualscan"></a>**Update/DisableDualScan**  
 
@@ -744,6 +1084,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709, but was added to 1607 and 1703 service releases. Do not allow update deferral policies to cause scans against Windows Update. If this policy is not enabled, then configuring deferral policies will result in the client unexpectedly scanning Windows update.  With the policy enabled, those scans are prevented, and users can configure deferral policies as much as they like.
 
@@ -758,6 +1107,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartdeadline"></a>**Update/EngagedRestartDeadline**  
 
@@ -784,6 +1134,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to be automatically executed within the specified period.  If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (pending user scheduling).
 
@@ -793,6 +1152,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-engagedrestartsnoozeschedule"></a>**Update/EngagedRestartSnoozeSchedule**  
 
@@ -819,6 +1179,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the number of days a user can snooze Engaged restart reminder notifications.
 
@@ -828,6 +1197,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-engagedrestarttransitionschedule"></a>**Update/EngagedRestartTransitionSchedule**  
 
@@ -854,6 +1224,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to control the timing before transitioning from Auto restarts scheduled outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending.
 
@@ -863,6 +1242,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-excludewudriversinqualityupdate"></a>**Update/ExcludeWUDriversInQualityUpdate**  
 
@@ -889,6 +1269,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
@@ -902,6 +1291,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-fillemptycontenturls"></a>**Update/FillEmptyContentUrls**  
 
@@ -928,6 +1318,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in the April service release of Windows 10, version 1607. Allows Windows Update Agent to determine the download URL when it is missing from the metadata.  This scenario will occur when intranet update service stores the metadata files but the download contents are stored in the ISV file cache (specified as the <a href="#update-updateserviceurlalternate">alternate download URL</a>).
 
@@ -941,6 +1340,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-ignoremoappdownloadlimit"></a>**Update/IgnoreMOAppDownloadLimit**  
 
@@ -967,6 +1367,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for apps and their updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
@@ -990,6 +1399,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-ignoremoupdatedownloadlimit"></a>**Update/IgnoreMOUpdateDownloadLimit**  
 
@@ -1016,6 +1426,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to ignore the MO download limit (allow unlimited downloading) over a cellular network for OS updates. If lower-level limits (for example, mobile caps) are required, those limits are controlled by external policies. 
 
@@ -1037,6 +1456,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-pausedeferrals"></a>**Update/PauseDeferrals**  
 
@@ -1063,6 +1483,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use PauseDeferrals for Windows 10, version 1511 devices.
@@ -1081,6 +1510,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-pausefeatureupdates"></a>**Update/PauseFeatureUpdates**  
 
@@ -1107,6 +1537,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
@@ -1120,6 +1559,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-pausefeatureupdatesstarttime"></a>**Update/PauseFeatureUpdatesStartTime**  
 
@@ -1146,6 +1586,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
 
@@ -1153,6 +1602,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-pausequalityupdates"></a>**Update/PauseQualityUpdates**  
 
@@ -1179,6 +1629,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
 
@@ -1189,6 +1648,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-pausequalityupdatesstarttime"></a>**Update/PauseQualityUpdatesStartTime**  
 
@@ -1215,6 +1675,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
 
@@ -1222,6 +1691,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-requiredeferupgrade"></a>**Update/RequireDeferUpgrade**  
 
@@ -1248,20 +1718,30 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in [Changes in Windows 10, version 1607 for update management](device-update-management.md#windows10version1607forupdatemanagement). You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices.
 
 
-<p style="margin-left: 20px">Allows the IT admin to set a device to CBB train.
+<p style="margin-left: 20px">Allows the IT admin to set a device to Semi-Annual Channel train.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 (default) – User gets upgrades from Current Branch.
--   1 – User gets upgrades from Current Branch for Business.
+-   0 (default) – User gets upgrades from Semi-Annual Channel (Targeted).
+-   1 – User gets upgrades from Semi-Annual Channel.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-requireupdateapproval"></a>**Update/RequireUpdateApproval**  
 
@@ -1288,6 +1768,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
@@ -1304,6 +1793,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduleimminentrestartwarning"></a>**Update/ScheduleImminentRestartWarning**  
 
@@ -1330,6 +1820,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
 
@@ -1339,6 +1838,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-schedulerestartwarning"></a>**Update/ScheduleRestartWarning**  
 
@@ -1365,6 +1865,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -1378,6 +1887,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallday"></a>**Update/ScheduledInstallDay**  
 
@@ -1404,6 +1914,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Enables the IT admin to schedule the day of the update installation.
 
@@ -1424,6 +1943,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstalleveryweek"></a>**Update/ScheduledInstallEveryWeek**  
 
@@ -1450,6 +1970,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the every week. Value type is integer. Supported values:
 <ul>
@@ -1459,6 +1988,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallfirstweek"></a>**Update/ScheduledInstallFirstWeek**  
 
@@ -1485,6 +2015,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the first week of the month. Value type is integer. Supported values:
 <ul>
@@ -1494,6 +2033,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallfourthweek"></a>**Update/ScheduledInstallFourthWeek**  
 
@@ -1520,6 +2060,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the fourth week of the month. Value type is integer. Supported values:
 <ul>
@@ -1529,6 +2078,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallsecondweek"></a>**Update/ScheduledInstallSecondWeek**  
 
@@ -1555,6 +2105,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the second week of the month. Value type is integer. Supported values:
 <ul>
@@ -1564,6 +2123,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstallthirdweek"></a>**Update/ScheduledInstallThirdWeek**  
 
@@ -1590,6 +2150,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enables the IT admin to schedule the update installation on the third week of the month. Value type is integer. Supported values:
 <ul>
@@ -1599,6 +2168,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-scheduledinstalltime"></a>**Update/ScheduledInstallTime**  
 
@@ -1625,6 +2195,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
@@ -1642,6 +2221,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-setautorestartnotificationdisable"></a>**Update/SetAutoRestartNotificationDisable**  
 
@@ -1668,6 +2248,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart notifications for update installations.
 
@@ -1678,6 +2267,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-setedurestart"></a>**Update/SetEDURestart**  
 
@@ -1704,6 +2294,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips the check for battery level to ensure that the reboot will happen at ScheduledInstallTime.
 
@@ -1714,6 +2313,7 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-updateserviceurl"></a>**Update/UpdateServiceUrl**  
 
@@ -1740,6 +2340,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!Important]  
 > Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enteprise and IoT Mobile.
@@ -1773,6 +2382,7 @@ Example
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**  
 
@@ -1799,6 +2409,15 @@ Example
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 

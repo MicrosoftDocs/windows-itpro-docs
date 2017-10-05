@@ -25,57 +25,14 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
+
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
 >[!NOTE]
 > These response actions are only available for machines on Windows 10, version  1703.
 
-## Manage machine group and tags
-Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident. 
-
-Machine related properties are being extended to account for:
-
-- Group affiliation
-- Dynamic context capturing  
-
-
-
-### Group machines
-Machine group affiliation can represent geographic location, specific activity, importance level and others. Grouping machines with similar attributes can be handy when you need to apply contextual action on a specific list of machines. After creating groups, you can apply the Group filter on the Machines list to get a narrowed list of machines.
-
-Machine group is defined in the following registry key entry of the machine:
-
--	Registry key: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging\`
--	Registry key value (string): Group
-
-
-### Set standard tags on machines
-Dynamic context capturing is achieved using tags. By tagging machines, you can keep track of individual machines in your organization. After adding tags on machines, you can apply the Tags filter on the Machines list to get a narrowed list of machines with the tag.
-
-1.	Select the machine that you want to manage tags on. You can select or search for a machine from any of the following views:
-
-    -	**Security operations dashboard** - Select the machine name from the Top machines with active alerts section.
-    -	**Alerts queue** - Select the machine name beside the machine icon from the alerts queue.
-    -	**Machines list** - Select the machine name from the list of machines.
-    -	**Search box** - Select Machine from the drop-down menu and enter the machine name.
-
-    You can also get to the alert page through the file and IP views.
-
-2.	Open the **Actions** menu and select **Manage tags**.
-
-    ![Image of taking action to manage tags on a machine](images/atp-manage-tags.png)
-
-3. Enter tags on the machine. To add more tags, click the + icon.
-4. Click **Save and close**. 
-
-    ![Image of adding tags on a machine](images/atp-save-tag.png)
-
-    Tags are added to the machine view and will also be reflected on the **Machines list** view. You can then use the **Tags** or **Groups** filter to see the relevant list of machines.
-
-### Manage machine tags
-You can manage tags from the Actions button or by selecting a machine from the Machines list and opening the machine details panel. 
-
-![Image of adding tags on a machine](images/atp-tag-management.png)
 
 
 ## Collect investigation package from machines
@@ -156,7 +113,7 @@ As part of the investigation or response process, you can remotely initiate an a
 
     ![Image of action center with antivirus scan](images/atp-av-scan-action-center.png)
 
-    - **Submission time** - Shows when the isolation action was submitted.
+    - **Submission time** - Shows when the action was submitted.
     - **Status** - Indicates any pending actions or the results of completed actions.
 
 The machine timeline will include a new event, reflecting that a scan action was submitted on the machine. Windows Defender AV alerts will reflect any detections that surfaced during the scan.
@@ -188,7 +145,7 @@ The action to restrict an application from running applies a code integrity poli
     ![Image of action center with app restriction](images/atp-action-center-app-restriction.png)
 
 
-  - **Submission time** - Shows when the isolation action was submitted.
+  - **Submission time** - Shows when the action was submitted.
   - **Status** - Indicates any pending actions or the results of completed actions.
 
 When the application execution restriction configuration is applied, a new event is reflected in the machine timeline.
@@ -244,7 +201,7 @@ On Windows 10, version 1710 and above, you'll have additional control over the n
    The Action center shows the submission information:
     ![Image of machine isolation](images/atp-machine-isolation.png)
 
-   - **Submission time** - Shows when the isolation action was submitted.
+   - **Submission time** - Shows when the action was submitted.
    - **Status** - Indicates any pending actions or the results of completed actions. Additional indications will be provided if you've enabled Outlook and Skype for Business communication.  
 
 When the isolation configuration is applied, a new event is reflected in the machine timeline.

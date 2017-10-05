@@ -22,7 +22,7 @@ You can configure a mobile device management (MDM) tool to synchronize your Micr
 
 Your MDM tool needs to be installed and configured in Azure AD, in the same Azure AD directory used with Microsoft Store.
 
-In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Microsoft Store for Business or Microsoft Store for Education. This allows the MDM tool to call Microsoft Store management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md) and [Manage apps you purchased from the Windows Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+In Azure AD management portal, find the MDM application, and then add it to your directory. Once the MDM has been configured in Azure AD, you can authorize the tool to work with the Microsoft Store for Business or Microsoft Store for Education. This allows the MDM tool to call Microsoft Store management tool services. For more information, see [Configure MDM provider](configure-mdm-provider-windows-store-for-business.md) and [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 Microsoft Store services provide:
 
@@ -44,11 +44,11 @@ MDM tool requirements:
 
 ## Distribute offline-licensed apps
 
-If your vendor doesn’t support the ability to synchronize applications from the management tool services, or can't connect to the management tool services, your vendor may support the ability to deploy offline licensed applications by downloading the application and license from the store and then deploying the app through your MDM. For more information on online and offline licensing with Store for Business, see [Apps in the Windows Store for Business.](apps-in-windows-store-for-business.md#licensing-model)
+If your vendor doesn’t support the ability to synchronize applications from the management tool services, or can't connect to the management tool services, your vendor may support the ability to deploy offline licensed applications by downloading the application and license from the store and then deploying the app through your MDM. For more information on online and offline licensing with Store for Business, see [Apps in the Microsoft Store for Business.](apps-in-windows-store-for-business.md#licensing-model)
 
 This diagram shows how you can use a management tool to distribute offline-licensed app to employees in your organization. Once synchronized from Store for Business, management tools can use the Windows Management framework to distribute applications to devices.
 
-![Image showing flow for distributing offline-licensed app from Windows Store for Business to employees in your organization.](images/wsfb-offline-distribute-mdm.png)
+![Image showing flow for distributing offline-licensed app from Microsoft Store for Business to employees in your organization.](images/wsfb-offline-distribute-mdm.png)
 
 ## Distribute online-licensed apps
 
@@ -60,12 +60,3 @@ This diagram shows how you can use a management tool to distribute an online-lic
 
 [Configure MDM Provider](configure-mdm-provider-windows-store-for-business.md)
 [Manage apps you purchased from the Microsoft Store for Business and Education with Microsoft Intune](https://technet.microsoft.com/library/mt676514.aspx)
-
- 
-
- 
-
-
-
-
-

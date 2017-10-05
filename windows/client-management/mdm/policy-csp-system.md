@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - System
@@ -14,11 +14,54 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## System policies  
 
+<dl>
+  <dd>
+    <a href="#system-allowbuildpreview">System/AllowBuildPreview</a>
+  </dd>
+  <dd>
+    <a href="#system-allowembeddedmode">System/AllowEmbeddedMode</a>
+  </dd>
+  <dd>
+    <a href="#system-allowexperimentation">System/AllowExperimentation</a>
+  </dd>
+  <dd>
+    <a href="#system-allowfontproviders">System/AllowFontProviders</a>
+  </dd>
+  <dd>
+    <a href="#system-allowlocation">System/AllowLocation</a>
+  </dd>
+  <dd>
+    <a href="#system-allowstoragecard">System/AllowStorageCard</a>
+  </dd>
+  <dd>
+    <a href="#system-allowtelemetry">System/AllowTelemetry</a>
+  </dd>
+  <dd>
+    <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
+  </dd>
+  <dd>
+    <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
+  </dd>
+  <dd>
+    <a href="#system-disableonedrivefilesync">System/DisableOneDriveFileSync</a>
+  </dd>
+  <dd>
+    <a href="#system-disablesystemrestore">System/DisableSystemRestore</a>
+  </dd>
+  <dd>
+    <a href="#system-limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
+  </dd>
+  <dd>
+    <a href="#system-telemetryproxy">System/TelemetryProxy</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowbuildpreview"></a>**System/AllowBuildPreview**  
 
@@ -45,6 +88,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
@@ -62,6 +114,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowembeddedmode"></a>**System/AllowEmbeddedMode**  
 
@@ -88,6 +141,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether set general purpose device to be in embedded mode.
 
@@ -100,6 +162,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowexperimentation"></a>**System/AllowExperimentation**  
 
@@ -126,6 +189,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is not supported in Windows 10, version 1607.
@@ -142,6 +214,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowfontproviders"></a>**System/AllowFontProviders**  
 
@@ -168,6 +241,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Boolean policy setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. If you enable this setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text. If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally-installed fonts.
 
@@ -189,6 +271,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowlocation"></a>**System/AllowLocation**  
 
@@ -215,6 +298,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow app access to the Location service.
 
@@ -234,6 +326,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
@@ -260,6 +353,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Controls whether the user is allowed to use the storage card for device storage. This setting prevents programmatic access to the storage card.
 
@@ -272,6 +374,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowtelemetry"></a>**System/AllowTelemetry**  
 
@@ -298,12 +401,28 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow the device to send diagnostic and usage telemetry data, such as Watson.
 
 <p style="margin-left: 20px">The following tables describe the supported values:
 
-<table style="margin-left: 20px">
+Windows 8.1 Values:
+
+-   0 - Not allowed.
+-   1 – Allowed, except for Secondary Data Requests.
+-   2 (default) – Allowed.
+
+<!--<table style="margin-left: 20px">
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -324,10 +443,17 @@ ms.date: 08/30/2017
 <td style="vertical-align:top"><p>2 (default) – Allowed.</p></td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
+Windows 10 Values:
 
-<table style="margin-left: 20px">
+-   0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
+    Note: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+-   1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.
+-   2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.
+-   3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.
+
+<!--<table style="margin-left: 20px">
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -354,7 +480,7 @@ ms.date: 08/30/2017
 <td style="vertical-align:top"><p>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</p></td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 
 > [!IMPORTANT]
@@ -365,6 +491,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-allowusertoresetphone"></a>**System/AllowUserToResetPhone**  
 
@@ -391,6 +518,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow the user to factory reset the phone by using control panel and hardware key combination.
 
@@ -403,6 +539,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
@@ -429,6 +566,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 N/A
 
@@ -447,6 +593,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
 
@@ -473,6 +620,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
 
@@ -497,6 +653,7 @@ ADMX Info:
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-disablesystemrestore"></a>**System/DisableSystemRestore**  
 
@@ -523,6 +680,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Allows you to disable System Restore.
 
@@ -553,6 +719,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-limitenhanceddiagnosticdatawindowsanalytics"></a>**System/LimitEnhancedDiagnosticDataWindowsAnalytics**  
 
@@ -579,6 +746,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy setting, in combination with the System/AllowTelemetry 
  policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
@@ -595,9 +771,9 @@ ADMX Info:
    
 <p style="margin-left: 20px">If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
-
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="system-telemetryproxy"></a>**System/TelemetryProxy**  
 
@@ -624,6 +800,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows you to specify the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests. The format for this setting is *&lt;server&gt;:&lt;port&gt;*. The connection is made over a Secure Sockets Layer (SSL) connection. If the named proxy fails, or if there is no proxy specified when this policy is enabled, the Connected User Experiences and Telemetry data will not be transmitted and will remain on the local device.
 

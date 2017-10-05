@@ -12,7 +12,8 @@ ms.pagetype: security
 # Document the Group Policy structure and AppLocker rule enforcement
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker.
 

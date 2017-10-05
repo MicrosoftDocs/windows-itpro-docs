@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 09/07/2017
 ---
 
 
@@ -56,21 +56,58 @@ This topic includes the following instructions for setting up and running Window
 -   [Configure automatic exclusions](#BKMK_DefExclusions)
 
 <a name="BKMK_UsingDef"></a>
-## Enable the interface
-By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs. 
+## Enable or disable the interface on Windows Server 2016
+By default, Windows Defender AV is installed and functional on Windows Server 2016. The user interface is installed by default on some SKUs, but is not required.
 
-You can enable or disable the interface by using the **Add Roles and Features Wizard** or PowerShellCmdlets, as described in the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic.
+If the interface is not installed, you can add it in the **Add Roles and Features Wizard** at the **Features** step, under **Windows Defender Features** by selecting the **GUI for Windows Defender** option.
 
-The following PowerShell cmdlet will enable the interface: 
+![Add roles and feature wizard showing the GUI for Windows Defender option](images/server-add-gui.png)
+
+See the [Install or uninstall roles, role services, or features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features) topic for information on using the wizard.
+
+The following PowerShell cmdlet will also enable the interface: 
 
 ```PowerShell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-The following cmdlet will disable the interface:
+To hide the interface, use the **Remove Roles and Features Wizard** and deselect the **GUI for Windows Defender** option at the **Features** step, or use the following PowerShell cmdlet:
+
+
+```PowerShell
+Uninstall-WindowsFeature -Name Windows-Defender-GUI
+```
+
+
+>[!IMPORTANT]
+> Windows Defender AV will still run normally without the user interface, but the user interface cannot be enabled if you disable the core **Windows Defender** feature.
+
+## Install or uninstall Windows Defender AV on Windows Server 2016
+
+
+You can also uninstall Windows Defender AV completely with the **Remove Roles and Features Wizard** by deselecting the **Windows Defender Features** option at the **Features** step in the wizard.
+
+This is useful if you have a third-party antivirus product installed on the machine already. Multiple AV products can cause problems when installed and actively running on the same machine. See the question "Should I run Microsoft security software at the same time as other security products?" on the [Windows Defender Security Intelligence Antivirus and antimalware software FAQ](https://www.microsoft.com/en-us/wdsi/help/antimalware-faq).
+
+>[!NOTE]
+>Deselecting **Windows Defender** on its own under the **Windows Defender Features** section will automatically prompt you to remove the interface option **GUI for Windows Defender**. 
+
+
+
+
+The following PowerShell cmdlet will also uninstall Windows Defender AV on Windows Server 2016:
+
 
 ```PS
-Uninstall-WindowsFeature -Name Windows-Server-Antimalware
+Uninstall-WindowsFeature -Name Windows-Defender
+```
+
+To install Windows Defender AV again, use the **Add Roles and Features Wizard** and ensure the **Windows Defender** feature is selected. You can also enable the interface by selecting the **GUID for Windows Defender** option.
+
+You can also use the following PowerShell cmdlet to install Windows Defender AV:
+
+```PS
+Install-WindowsFeature -Name Windows-Defender
 ```
 
 > [!TIP]
@@ -109,8 +146,6 @@ By default, Windows Update does not download and install updates automatically o
 
 To ensure that protection from malware is maintained, we recommend that you enable the following services:
 
--   Windows Defender Network Inspection service
-
 -   Windows Error Reporting service
 
 -   Windows Update service
@@ -120,9 +155,8 @@ The following table lists the services for Windows Defender and the dependent se
 |Service Name|File Location|Description|
 |--------|---------|--------|
 |Windows Defender Service (Windefend)|C:\Program Files\Windows Defender\MsMpEng.exe|This is the main Windows Defender Antivirus service that needs to be running at all times.|
-|Windows Defender Network Inspection Service (Wdnissvc)|C:\Program Files\Windows Defender\NisSrv.exe|This service is invoked when Windows Defender Antivirus encounters a trigger to load it.|
 |Windows Error Reporting Service (Wersvc)|C:\WINDOWS\System32\svchost.exe -k WerSvcGroup|This service sends error reports back to Microsoft.|
-|Windows Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Firewall service enabled.|
+|Windows Defender Firewall (MpsSvc)|C:\WINDOWS\system32\svchost.exe -k LocalServiceNoNetwork|We recommend leaving the Windows Defender Firewall service enabled.|
 |Windows Update (Wuauserv)|C:\WINDOWS\system32\svchost.exe -k netsvcs|Windows Update is needed to get definition updates and antimalware engine updates|
 
 

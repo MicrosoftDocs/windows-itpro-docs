@@ -12,7 +12,8 @@ author: brianlic-msft
 # Export an AppLocker policy to an XML file
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This topic for IT professionals describes the steps to export an AppLocker policy to an XML file for review or testing.
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.

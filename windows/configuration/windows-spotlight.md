@@ -79,7 +79,7 @@ Pay attention to the checkbox in **Options**. In addition to providing the path 
 
 [Manage Windows 10 Start layout options](windows-10-start-layout-options-and-policies.md)
 
- 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
 
  
 

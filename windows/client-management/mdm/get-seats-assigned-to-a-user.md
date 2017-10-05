@@ -1,6 +1,6 @@
 ---
 title: Get seats assigned to a user
-description: The Get seats assigned to a user operation retrieves information about assigned seats in the Windows Store for Business.
+description: The Get seats assigned to a user operation retrieves information about assigned seats in the Micosoft Store for Business.
 ms.assetid: CB963E44-8C7C-46F9-A979-89BBB376172B
 ms.author: maricia
 ms.topic: article
@@ -12,7 +12,7 @@ ms.date: 06/19/2017
 
 # Get seats assigned to a user
 
-The **Get seats assigned to a user** operation retrieves information about assigned seats in the Windows Store for Business.
+The **Get seats assigned to a user** operation retrieves information about assigned seats in the Micosoft Store for Business.
 
 ## Request
 

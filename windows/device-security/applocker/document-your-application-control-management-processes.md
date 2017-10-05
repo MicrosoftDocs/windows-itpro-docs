@@ -12,7 +12,8 @@ author: brianlic-msft
 # Document your application control management processes
 
 **Applies to**
--   Windows 10
+ -   Windows 10 
+ -   Windows Server
 
 This planning topic describes the AppLocker policy maintenance information to record for your design document.
 

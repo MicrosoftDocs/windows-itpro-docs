@@ -5,6 +5,7 @@ ms.assetid: 5a37e390-8617-4768-9eee-50397fbbb2e1
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.date: 09/07/2017
 author: greg-lindsay
 ---
 
@@ -27,6 +28,8 @@ The following sections discuss common issues that you might see when you run the
 [Offline Migration Problems](#bkmk-offline)
 
 [Hard Link Migration Problems](#bkmk-hardlink)
+
+[USMT does not migrate the Start layout](#usmt-does-not-migrate-the-start-layout)
 
 ## General Guidelines for Identifying Migration Problems
 
@@ -222,6 +225,28 @@ There are three typical causes for this issue.
 
 **Resolution:** To migrate PST files that are not linked to Outlook profiles, you must create a separate migration rule to capture these files.
 
+### USMT does not migrate the Start layout
+
+**Description:** You are using USMT to migrate profiles from one installation of Windows 10 to another installation of Windows 10 on different hardware. After migration, the user signs in on the new device and does not have the Start menu layout they had previously configured.
+
+**Cause:** A code change in the Start Menu with Windows 10 version 1607 and later is incompatible with this USMT function.
+
+**Resolution:** The following workaround is available:
+
+1. With the user signed in, back up the Start layout using the following Windows PowerShell command. You can specify a different path if desired:
+
+    ```
+    Export-StartLayout -Path "C:\Layout\user1.xml"
+    ```
+2. Migrate the user's profile with USMT.
+3. Before the user signs in on the new device, import the Start layout using the following Windows PowerShell command:
+
+    ```
+    Import-StartLayout –LayoutPath "C:\Layout\user1.xml" –MountPath %systemdrive%
+    ```
+
+This workaround changes the Default user's Start layout. The workaround does not scale to a mass migrations or multiuser devices, but it can potentially unblock some scenarios. If other users will sign on to the device you should delete layoutmodification.xml from the Default user profile. Otherwise, all users who sign on to that device will use the imported Start layout.
+
 ## <a href="" id="bkmk-offline"></a>Offline Migration Problems
 
 
@@ -285,6 +310,10 @@ USMTutils /rd <storedir>
 ```
 
 You should also reboot the machine.
+
+
+
+
 
 ## Related topics
 

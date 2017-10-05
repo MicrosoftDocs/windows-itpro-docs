@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
+ms.date: 09/15/2017
 ---
 
 # Change history for Configure Windows 10
@@ -17,7 +18,9 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 ## September 2017
 | New or changed topic | Description |
 | --- | --- |
-| [Per-user services in Windows](per-user-services-in-windows.md) | New |
+| [Per-user services in Windows 10](per-user-services-in-windows.md) | New |
+| [Remove background task resource restrictions](enterprise-background-activity-controls.md) | New |
+| [Understand the different apps included in Windows 10](apps-in-windows-10.md) | New |
 
 ## July 2017
 | New or changed topic | Description |

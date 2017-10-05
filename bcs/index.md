@@ -3,6 +3,7 @@ layout: HubPage
 hide_bc: true
 author: CelesteDG
 ms.author: celested
+keywords: Microsoft 365 Business, Microsoft 365, business, Microsoft 365 Business documentation, docs, documentation
 ms.topic: hub-page
 ms.localizationpriority: high
 audience: microsoft-business 
@@ -19,7 +20,7 @@ description: Learn about the product documentation and resources available for M
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/ih_learn-about.png" alt="Learn about Microsoft 365 Business" />
+                                        <img data-hoverimage="/media/common/i_whats-new.svg" src="/media/common/i_whats-new.png" alt="Learn about Microsoft 365 Business" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -37,7 +38,7 @@ description: Learn about the product documentation and resources available for M
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/ih_tools.svg" src="/media/common/ih_tools.png" alt="Get started using Microsoft 365 Business" />
+                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.png" alt="Get started using Microsoft 365 Business" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -123,6 +124,7 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    <!--
                     <li>
                         <a href="#user-mgmt">User management</a>
                         <ul id="user-mgmt" class="cardsC">
@@ -171,14 +173,72 @@ description: Learn about the product documentation and resources available for M
                             </li>
                         </ul>
                     </li>
+                    -->
                     <li>
-                        <a href="#device-mgmt">Device management</a>
-                        <ul id="device-mgmt" class="cardsC">
+                        <a href="#user-device-mgmt">User and device management</a>
+                        <ul id="user-device-mgmt" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Find help on managing your organization's devices from the Microsoft 365 Business admin center.</p>
+                                    <p>Manage customers/users in your organization and find help on managing your organization's devices from the Microsoft 365 Business admin center.</p>
                                 </div>
                             </li>
+                           <li>
+                                <a href="https://support.office.com/article/96153102-1db1-4df8-bca5-38cea80b65ce" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-user-management-add-customer-1.svg" alt="Add a new user and assign licenses" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Add a new customer/user</h3>
+                                                    <p>Onboarding a new user? Use the admin center to add a new user and assign licenses.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-user-management-remove-customer-2.svg" alt="Follow the links to remove a customer/user" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Remove a customer/user</h3>
+                                                    <p>Need to remove a user? You'll need to <a href="https://support.office.com/article/80bdae57-f8bc-4e40-a58c-956007117ecb">remove company data from devices</a> and <a href="https://support.office.com/article/c4db6caf-74df-4734-b1dd-53e371c7a3c3">reset Windows 10 devices to their factory settings</a>.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-upgrade-2.svg" alt="Upgrade to Windows 10" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows devices for Microsoft 365 Business users</h3>
+                                                    <p>Once you've upgraded your device to Windows 10 Pro, join it to your organization's Azure AD, and get it ready for use.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
                             <li>
                                 <a href="https://support.office.com/article/ed34fff3-2881-4ed4-9906-1ba6bb8dd804" target="_blank">
                                     <div class="cardSize">
@@ -272,12 +332,88 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set device configurations for Windows 10 PCs" />
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set device protection settings for Windows 10 PCs" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Set device configurations for Windows 10 PCs</h3>
-                                                    <p>Learn how to create, edit, or delete an app management policy in Microsoft 365 Business.</p>
+                                                    <h3>Set device protection settings for Windows 10 PCs</h3>
+                                                    <p>Learn how to secure Windows 10 PCs and what settings you can configure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/02e74022-44af-414b-9d74-0ebf5c2197f0" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-policies-set-device-config-1.svg" alt="Set app protection settings for Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set app protection settings for Windows 10 devices</h3>
+                                                    <p>Learn how to create and assign app protection settings for Windows 10 devices and what settings you can configure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/6f2b80b4-81c3-4714-a7bc-ae69313e8a33" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-iw-devicesetup-setup-1.svg" alt="Set app protection settings for Android or iOS devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set app protection settings for Android or iOS devices</h3>
+                                                    <p>Learn how to create, edit, or delete an app management policy for Android or iOS devices, and what settings you can configure.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/f3433b6b-02f7-447f-9d62-306bf03638b0" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Validate app protection settings on Android devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Validate app protection settings on Android devices</h3>
+                                                    <p>Follow the steps to confirm that the settings you chose are working on Android devices.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/2ec03d29-cc1d-4e74-a985-fb55a4b62966" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-password-3.svg" alt="Validate app protection settings on iOS devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Validate app protection settings on iOS devices</h3>
+                                                    <p>Follow the steps to confirm that the settings you chose are working on iOS devices.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -369,162 +505,7 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/article/2d7ff45e-0da0-4caa-89a9-48cabf41f193" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-upgrade-2.svg" alt="Upgrade to Windows 10" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Upgrade to Windows 10</h3>
-                                                    <p>Set up Windows 10 PCs for Microsoft 365 Business users.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                                        
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#troub-support">Troubleshooting and support</a>
-                        <ul id="troub-support" class="cardsC">
-                            <li class="fullSpan">
-                                <div class="container intro">
-                                    <p>Looking for help or can't find what you need? Try these resources.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="https://www.microsoft.com/solution-providers/search" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-find-partner-1.svg" alt="Find a Microsoft-certified service provider" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Find a Partner</h3>
-                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified solution provider who can help you locally or remotely. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364#bkmk_support" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Technical Support</h3>
-                                                    <p>Submit a technical support request for Microsoft 365 Business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li> 
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-troubleshooting-3.svg" alt="Find solutions for common Microsoft 365 Business issues" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Troubleshoot problems - Coming soon</h3>
-                                                    <p>Find solutions for common Microsoft 365 Business issues.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                          
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#adv-mgmt">Advanced management</a>
-                        <ul id="adv-mgmt" class="cardsC">
-                            <li class="fullSpan">
-                                <div class="container intro">
-                                    <p>See these links for more in-depth information about these products and features.</p>
-                                </div>
-                            </li>
-                            <!--
-                            <li>
-                                <a href="https://docs.microsoft.com/intune">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-intune-1.svg" alt="Microsoft Intune" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Microsoft Intune</h3>
-                                                    <p>Need to update other policies or take advantage of the full Intune capabilities? </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            -->
-                            <li>
-                                <a href="https://docs.microsoft.com/en-us/windows/windows-10/" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-windows10-2.svg" alt="Learn more about Windows 10" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Windows 10</h3>
-                                                    <p>Find out what's new, how to apply custom configurations to devices, managing apps, deployment, and more.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://msdn.microsoft.com/partner-center/autopilot" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
-                                                    <p>Deploy Windows 10 devices using Windows AutoPilot from the Partner Center.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            </li>                                      
                         </ul>
                     </li>
                     <li>
@@ -573,27 +554,6 @@ description: Learn about the product documentation and resources available for M
                                     </div>
                                 </a>
                             </li>
-                            <!--
-                            <li>
-                                <a href="#">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-advanced-management- management-4_placeholder.svg" alt="Manage changes" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Change management</h3>
-                                                    <p>tbd</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            -->
                             <li>
                                 <a href="https://support.office.com/article/74a1ef8b-3844-4d08-9980-9f8f7a36000f" target="_blank">
                                     <div class="cardSize">
@@ -694,6 +654,314 @@ description: Learn about the product documentation and resources available for M
                                     <p>Not finding the info that you need? Check out the <a href="https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791" target="_blank">Office 365 Admin Help</a> for more info. </p>
                                 </div>
                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#adv-mgmt">Advanced management</a>
+                        <ul id="adv-mgmt" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>See these links for more in-depth information about these products and features.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://docs.microsoft.com/en-us/windows/windows-10/" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-windows10-2.svg" alt="Learn more about Windows 10" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Windows 10</h3>
+                                                    <p>Find out what's new, how to apply custom configurations to devices, managing apps, deployment, and more.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://msdn.microsoft.com/partner-center/autopilot" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
+                                                    <p>Deploy Windows 10 devices using Windows AutoPilot from the Partner Center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#trouble-support">Troubleshooting and support</a>
+                        <ul id="trouble-support" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Looking for help or can't find what you need? Try these resources.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.microsoft.com/solution-providers/search" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-find-partner-1.svg" alt="Find a Microsoft-certified service provider" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Find a Partner</h3>
+                                                    <p>Visit the Microsoft Partner Center to locate a Microsoft-certified solution provider who can help you locally or remotely. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364#bkmk_support" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-technical-support-4.svg" alt="Submit a technical support request for Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft Technical Support</h3>
+                                                    <p>Submit a technical support request for Microsoft 365 Business.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="#">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-troubleshooting-3.svg" alt="Find solutions for common Microsoft 365 Business issues" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Troubleshoot problems - Coming soon</h3>
+                                                    <p>Find solutions for common Microsoft 365 Business issues.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                          
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#videos">Video tutorials</a>
+                        <ul id="videos" class="cardsG">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Some of the tasks covered in the step-by-step guides are also available as video tutorials. Follow these links to start watching.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2_1280x720_3400.mp4" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/icon_video.svg" alt="Set up Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Microsoft 365 Business</h3>
+                                                    <p>Watch how you can quickly set up Microsoft 365 Business using the setup wizard from the Microsoft 365 Business admin center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://videoplayercdn.osi.office.net/embed/a5734146-620a-4cec-8618-536b3ca37972_1280x720_3400.mp4" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/icon_video.svg" alt="Secure Windows 10 devices with Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Secure Windows 10 devices with Microsoft 365 Business</h3>
+                                                    <p>Check out how to use a policy to secure Windows 10 devices and how to verify the policy is applied correctly.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="http://videoplayercdn.osi.office.net/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9_1280x720_3400.mp4" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/icon_video.svg" alt="Secure Microsoft Office apps on iOS devices with Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Secure Microsoft Office apps on iOS devices with Microsoft 365 Business</h3>
+                                                    <p>See how you can use a policy to secure Office apps on iOS devices and how to verify the policy is working.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/oJpeTq0Dyxk" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/icon_video.svg" alt="Set up Windows devices for Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows devices for Microsoft 365 Business</h3>
+                                                    <p>Upgrade your Windows 7, 8, or 8.1 Pro devices to Windows 10 Pro, and get your devices set up and joined to your organization.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=qoDIyUOtZ6o" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/icon_video.svg" alt="Demo: Microsoft 365 Business first run experience" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Demo: Microsoft 365 Business first run experience</h3>
+                                                    <p>Watch one of our customers show you how easy it is to set up Microsoft 365 Business.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=5kH-4gX-4NU" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/icon_video.svg" alt="Demo: Secure data and end user devices with Microsoft 365 Business" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Demo: Secure data and end user devices with Microsoft 365 Business</h3>
+                                                    <p>See how your users can set up their mobile devices and how to remove company data once your employee leaves the organization.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a data-default="true" href="#partner-resources">Partner resources</a>
+                        <ul id="partner-resources" class="cardsC">
+                            <li class="fullSpan">
+                                <div class="container intro">
+                                    <p>Looking for resources available to Microsoft 365 Business partners? Start here.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://partners.office.com/smb" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/partner-resource-training-1.svg" alt="SMB resources and training" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>SMB resources and training</h3>
+                                                    <p>Find the latest training offerings and updates, and other resources.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://partners.office.com/news" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="images/partner-news-2.svg" alt="News for partners" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>News articles</h3>
+                                                    <p>Read the latest news articles on Office 365 and Microsoft 365.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="https://office365partnerportal-staging.azurewebsites.net/fasttrack-and-partners" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1"> 
+                                                        <img src="media/hub-partner/partner-fastrack-3.svg" alt="FastTrack and partners" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>FastTrack and partners</h3>
+                                                    <p>Get the full suite of best practices, tools, remote assistance, and resources to help you and your customers move to Microsoft 365.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            -->
                         </ul>
                     </li>
                 </ul>

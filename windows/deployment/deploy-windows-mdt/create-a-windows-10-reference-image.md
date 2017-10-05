@@ -642,3 +642,5 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)
 
 [Configure MDT settings](configure-mdt-settings.md)
+
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897).

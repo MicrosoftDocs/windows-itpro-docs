@@ -32,8 +32,7 @@ On Windows 10 for desktop editions, the customized Start works by:
 >[!NOTE]
 >Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/en-US/library/jj649079.aspx).
 
->[!NOTE]
->Using the layout modification XML to configure Start is not supported with roaming user profiles. For more information, see [Deploy Roaming User Profiles](https://technet.microsoft.com/library/jj649079.aspx).
+
 
 ## LayoutModification XML
 

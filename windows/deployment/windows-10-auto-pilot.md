@@ -18,7 +18,7 @@ ms.date: 06/30/2017
 
 -   Windows 10
 
-Windows AutoPilot is a collection of technologies used to setup and pre-configure new devices, getting them ready for productive use. In addition, you can use Windows AutoPilot to reset, repurpose and recover devices.</br>
+Windows AutoPilot is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. In addition, you can use Windows AutoPilot to reset, repurpose and recover devices.</br>
 This solution enables an IT department to achieve the above with little to no infrastructure to manage, with a process that's easy and simple.
 
 ## Benefits of Windows AutoPilot
@@ -39,7 +39,7 @@ Windows AutoPilot allows you to:
 ### Prerequisites
 
 * [Devices must be registered to the organization](#registering-devices-to-your-organization)
-* Devices have to be pre-installed with Windows 10, version 1703 or later
+* Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
 * Devices must have access to the internet
 * [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
 * Microsoft Intune or other MDM services to manage your devices
@@ -100,3 +100,5 @@ In order for your devices to be auto-enrolled into MDM management, MDM auto-enro
 
 >[!NOTE]
 >MDM auto-enrollment requires an Azure AD Premium P1 or P2 subscription.
+
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 

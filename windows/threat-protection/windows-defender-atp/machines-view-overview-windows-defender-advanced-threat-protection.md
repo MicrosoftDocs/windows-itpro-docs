@@ -25,6 +25,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
+
 The **Machines list** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
 
 Use the Machines list in these main scenarios:
@@ -37,7 +39,7 @@ Use the Machines list in these main scenarios:
 ## Sort, filter, and download the list of machines from the Machines list
 You can sort the **Machines list** by clicking on any column header to sort the view in ascending or descending order.  
 
-Filter the **Machines list** by time period, **OS Platform**, **Health**, **Security state**, **Malware category alerts**, or **Groups** to focus on certain sets of machines, according to the desired criteria.  
+Filter the **Machines list** by **Time**, **OS Platform**, **Health**, **Security state**, **Malware category alerts**, **Groups**, or **Tags** to focus on certain sets of machines, according to the desired criteria.  
 
 You can also download the entire list in CSV format using the **Export to CSV** feature.
 
@@ -56,29 +58,31 @@ You can use the following filters to limit the list of machines displayed during
 - Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
-- Linux
-- Mac OS
 - Other
 
-**Health**</br>
-- All
-- Well configure
-- Requires attention - Depending on the Windows Defender security controls configured in your enterprise, you'll see various available filters.
- 
 
 **Sensor health state**</br>
 Filter the list to view specific machines grouped together by the following machine health states:
 
 - **Active** – Machines that are actively reporting sensor data to the service.
 -	**Misconfigured** – Machines that have impaired communications with service or are unable to send sensor data. Misconfigured machines can further be classified to:
-  - Impaired communications
   - No sensor data
+  - Impaired communications
 
   For more information on how to address issues on misconfigured machines see,  [Fix unhealthy sensors](fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md).
 -	**Inactive** – Machines that have completely stopped sending signals for more than 7 days.
 
 
-**Malware category**</br>
+**Security state**</br>
+Filter the list to view specific machines that are well configured or require attention based on the Windows Defender security controls that are enabled in your organization. 
+
+
+- **Well configured** - Machines have the Windows Defender security controls well configured. 
+- **Requires attention** - Machines where improvements can be made to increase the overall security posture of your organization.
+
+For more information, see [View the Security Analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md).
+
+**Malware category alerts**</br>
 Filter the list to view specific machines grouped together by the following malware categories:
   -	**Ransomware** – Ransomware use common methods to encrypt files using keys that are known only to attackers. As a result, victims are unable to access the contents of the encrypted files. Most ransomware display or drop a ransom note—an image or an HTML file that contains information about how to obtain the attacker-supplied decryption tool for a fee.
   -	**Credential theft** – Spying tools, whether commercially available or solely used for unauthorized purposes, include general purpose spyware, monitoring software, hacking programs, and password stealers.
@@ -88,6 +92,8 @@ Filter the list to view specific machines grouped together by the following malw
   -	**General malware** – Malware are malicious programs that perform unwanted actions, including actions that can disrupt, cause direct damage, and facilitate intrusion and data theft. Some malware can replicate and spread from one machine to another. Others are able to receive commands from remote attackers and perform activities associated with cyberattacks.
   -	**PUA** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
 
+## Groups and tags
+You can filter the list based on the grouping and tagging that you've added to individual machines. For more information, see [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags).
 
 ## Export machine list to CSV
 You can  download a full list of all the machines in your organization, in CSV format. Click the **Export to CSV** button to download the entire list as a CSV file.
@@ -99,13 +105,11 @@ Exporting the list in CSV format displays the data in an unfiltered manner. The 
 You can sort the **Machines list** by the following columns:
 
 - **Machine name** - Name or GUID of the machine
-- **Domain** - Domain where the machine is joined in
-- **OS Platform** - Indicates the OS of the machine
 - **Health State** – Indicates if the machine is misconfigured or is not sending sensor data
 - **Last seen** - Date and time when the machine last reported sensor data
 - **Internal IP** - Local internal Internet Protocol (IP) address of the machine
 - **Active Alerts** - Number of alerts reported by the machine by severity
-- **Active malware detections** - Number of active malware detections reported by the machine
+- **Active malware alerts** - Number of active malware detections reported by the machine
 
 > [!NOTE]
 > The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.

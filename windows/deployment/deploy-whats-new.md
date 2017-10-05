@@ -79,7 +79,7 @@ For more information, see [MBR2GPT.EXE](mbr-to-gpt.md).
 
 ### Microsoft Deployment Toolkit (MDT)
 
-MDT build 884 is available, including support for:
+MDT build 8443 is available, including support for:
 - Deployment and upgrade of Windows 10, version 1607 (including Enterprise LTSB and Education editions) and Windows Server 2016.
 - The Windows ADK for Windows 10, version 1607.
 - Integration with Configuration Manager version 1606.
