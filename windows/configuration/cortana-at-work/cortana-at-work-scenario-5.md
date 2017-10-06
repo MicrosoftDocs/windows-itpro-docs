@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: high
+ms.author: lizross
 ---
 
 # Test scenario 5 - Use Cortana to send email to a co-worker
