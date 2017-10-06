@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 08/29/2017
+ms.date: 10/04/2017
 ---
 
 # Get started: Deploy and manage a full cloud IT solution with Microsoft Education
@@ -146,6 +146,15 @@ To learn more about the services and tools mentioned in this walkthrough, and le
   - Deployment using PowerSchool Sync: <a href="https://aka.ms/sdspowerschool" target="_blank">How to deploy School Data Sync by using PowerSchool Sync</a> and <a href="https://aka.ms/sdspowerschoolattributes" target="_blank">School Data Sync required attributes for PowerSchool Sync</a>
   - Deployment using Clever Sync: <a href="https://aka.ms/sdsclever" target="_blank">How to deploy School Data Sync by using Clever Sync</a> and <a href="https://aka.ms/sdscleverattributes" target="_blank">School Data Sync required attributes for Clever sync</a>
   - Deployment using OneRoster CSV files: <a href="https://aka.ms/sdsoneroster" target="_blank">How to deploy School Data Sync by using OneRoster CSV files</a>
+- Azure Active Directory features used by Intune for Education, including: 
+  - Single Sign-On (SSO) - Allow your Azure AD users to access SSO-enabled apps, so they don’t need to type in their credentials to access these apps. 
+  - MDM auto-enrollment - Devices are automatically enrolled with Intune upon being joined with Azure AD join. 
+- <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-windows-enterprise-state-roaming-overview" target="_blank">Enterprise state roaming</a> - Keep school data and personal data separate on your devices. 
+  - Dynamic groups - You can use dynamic groups to create rules that populate your groups (for example, a group with all 9th graders) instead of having to manually add or remove members of the groups. The group stays updated by continually staying populated with members that fit the rules you pick. 
+  - <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-passwords-writeback" target="_blank">Password write-back</a> - Allows you to configure Azure AD to write passwords back to your on-premises Active Directory. It removes the need to set up and manage a complicated on-premises self-service password reset solution, and it provides a convenient cloud-based way for your users to reset their on-premises passwords wherever they are. 
+  - Administrative units
+  - Additional local administrators
+  - <a href="https://www.microsoft.com/download/details.aspx?id=53947" target="_blank">Self-service BitLocker recovery</a> - A self-service portal that allows your employees to retrieve their BitLocker recovery key and avoid support calls.
 
 **For teachers**
 
