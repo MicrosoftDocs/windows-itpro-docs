@@ -48,7 +48,8 @@ Windows Server 2016 | Windows Defender AV | Yes | Active mode
 Windows Server 2016 | Windows Defender AV | No | Active mode
 
 
-(<a href="#fn1" id="ref1">1</a>)  On Windows Server 2016, Windows Defender AV will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [uninstall Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md# to prevent problems caused by having multiple antivirus products installed on a machine.
+(<a id="fn1">1</a>)  On Windows Server 2016, Windows Defender AV will not enter passive or disabled mode if you have also installed a third-party antivirus product. If you install a third-party antivirus product, you should [uninstall Windows Defender AV on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md) to prevent problems caused by having multiple antivirus products installed on a machine.
+
 See the [Windows Defender Antivirus on Windows Server 2016](windows-defender-antivirus-on-windows-server-2016.md#install-or-uninstall-windows-defender-av-on-windows-server-2016) topic for key differences and management options for Windows Server installations.
 
 
@@ -62,7 +63,7 @@ See the [Windows Defender Antivirus on Windows Server 2016](windows-defender-ant
 >Windows Defender is also offered for [consumer devices on Windows 8.1 and Windows Server 2012](https://technet.microsoft.com/en-us/library/dn344918#BKMK_WindowsDefender), although it does not provide enterprise-level management (or an interface on Windows Server 2012 Server Core installations). 
 
 
-This table describes what each of the three states do:
+This table indicates the functionality and features that are available in each state:
 
 State | Description | [Real-time protection](configure-real-time-protection-windows-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-windows-defender-antivirus.md) | [Limited periodic scanning availability](limited-periodic-scanning-windows-defender-antivirus.md) | [File scanning and detection information](customize-run-review-remediate-scans-windows-defender-antivirus.md) | [Threat remediation](configure-remediation-windows-defender-antivirus.md) | [Threat definition updates](manage-updates-baselines-windows-defender-antivirus.md)
 :-|:-|:-:|:-:|:-:|:-:|:-:
