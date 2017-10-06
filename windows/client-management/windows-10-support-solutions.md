@@ -40,7 +40,7 @@ These are the top Microsoft Support solutions for the most common issues experie
 - [Resolve Windows 10 upgrade errors : Technical information for IT Pros](/windows/deployment/upgrade/resolve-windows-10-upgrade-errors)
 - [Windows OOBE fails when you start a new Windows-based computer for the first time](https://support.microsoft.com/help/4020048/windows-oobe-fails-when-you-start-a-new-windows-based-computer-for-the)
 - ["0xc1800118" error when you push Windows 10 Version 1607 by using WSUS](https://support.microsoft.com/help/3194588/-0xc1800118-error-when-you-push-windows-10-version-1607-by-using-wsus)
-- [0xC1900101 error when Windows 10 upgrade fails after the second system restart'(https://support.microsoft.com/help/3208485/0xc1900101-error-when-windows-10-upgrade-fails-after-the-second-system)
+- [0xC1900101 error when Windows 10 upgrade fails after the second system restart](https://support.microsoft.com/help/3208485/0xc1900101-error-when-windows-10-upgrade-fails-after-the-second-system)
 - [Updates fix in-place upgrade to Windows 10 version 1607 problem](https://support.microsoft.com/help/4020149/updates-fix-in-place-upgrade-to-windows-10-version-1607-problem)
 - [OOBE update for Windows 10 Version 1703: May 9, 2017](https://support.microsoft.com/help/4020008)
 - [OOBE update for Windows 10 Version 1607: May 30, 2017](https://support.microsoft.com/help/4022632)
