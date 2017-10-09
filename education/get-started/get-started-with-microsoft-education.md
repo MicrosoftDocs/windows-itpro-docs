@@ -140,7 +140,7 @@ See the <a href="https://docs.microsoft.com/education" target="_blank">Microsoft
 
 To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
 - <a href="https://docs.microsoft.com/education/windows/education-scenarios-store-for-business" target="_blank">Working with Microsoft Store for Education</a>
-- *Resources for anyone who uses Office 365* and *Resources for admins* in <a href="https://support.office.com/en-US/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14" target="_blank">Get started with Office 365 for Education</a>
+- *Resources for anyone who uses Office 365* and *Resources for admins* in <a href="https://support.office.com/article/AB02ABE5-A1EE-458C-B749-5B44416CCF14" target="_blank">Get started with Office 365 for Education</a>
 - School Data Sync deployment options
   - Deployment using CSV files: <a href="https://aka.ms/sdscsv" target="_blank">How to deploy School Data Sync by using CSV files</a> and <a href="https://aka.ms/sdscsvattributes" target="_blank">CSV files for School Data Sync</a>
   - Deployment using PowerSchool Sync: <a href="https://aka.ms/sdspowerschool" target="_blank">How to deploy School Data Sync by using PowerSchool Sync</a> and <a href="https://aka.ms/sdspowerschoolattributes" target="_blank">School Data Sync required attributes for PowerSchool Sync</a>
@@ -149,9 +149,9 @@ To learn more about the services and tools mentioned in this walkthrough, and le
 - Azure Active Directory features used by Intune for Education, including: 
   - Single Sign-On (SSO) - Allow your Azure AD users to access SSO-enabled apps, so they don’t need to type in their credentials to access these apps. 
   - MDM auto-enrollment - Devices are automatically enrolled with Intune upon being joined with Azure AD join. 
-- <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-windows-enterprise-state-roaming-overview" target="_blank">Enterprise state roaming</a> - Keep school data and personal data separate on your devices. 
+- <a href="https://docs.microsoft.com/azure/active-directory/active-directory-windows-enterprise-state-roaming-overview" target="_blank">Enterprise state roaming</a> - Keep school data and personal data separate on your devices. 
   - Dynamic groups - You can use dynamic groups to create rules that populate your groups (for example, a group with all 9th graders) instead of having to manually add or remove members of the groups. The group stays updated by continually staying populated with members that fit the rules you pick. 
-  - <a href="https://docs.microsoft.com/en-us/azure/active-directory/active-directory-passwords-writeback" target="_blank">Password write-back</a> - Allows you to configure Azure AD to write passwords back to your on-premises Active Directory. It removes the need to set up and manage a complicated on-premises self-service password reset solution, and it provides a convenient cloud-based way for your users to reset their on-premises passwords wherever they are. 
+  - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback" target="_blank">Password write-back</a> - Allows you to configure Azure AD to write passwords back to your on-premises Active Directory. It removes the need to set up and manage a complicated on-premises self-service password reset solution, and it provides a convenient cloud-based way for your users to reset their on-premises passwords wherever they are. 
   - Administrative units
   - Additional local administrators
   - <a href="https://www.microsoft.com/download/details.aspx?id=53947" target="_blank">Self-service BitLocker recovery</a> - A self-service portal that allows your employees to retrieve their BitLocker recovery key and avoid support calls.
@@ -159,7 +159,7 @@ To learn more about the services and tools mentioned in this walkthrough, and le
 **For teachers**
 
 Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:
-- *Resources for anyone who uses Office 365* in <a href="https://support.office.com/en-US/article/Get-started-with-Office-365-Education-AB02ABE5-A1EE-458C-B749-5B44416CCF14" target="_blank">Get started with Office 365 for Education</a>
+- *Resources for anyone who uses Office 365* in <a href="https://support.office.com/article/AB02ABE5-A1EE-458C-B749-5B44416CCF14" target="_blank">Get started with Office 365 for Education</a>
 - <a href="https://education.microsoft.com/windows-10-online-resources-for-teachers" target="_blank">Windows 10 online resources for teachers</a>
 
 
