@@ -65,9 +65,9 @@ Use to install an app from the Microsoft Store for Business.
 
 Setting | Description
 --- | ---
-Flags | Select `0` to 
-ProductID |
-SkuID |
+Flags | Description not available at this time. 
+ProductID | Enter the product ID. [Learn how to find the product ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
+SkuID | Enter the SKU ID. [Learn how to find the SKU ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
 
 ## UserContextApp
 
