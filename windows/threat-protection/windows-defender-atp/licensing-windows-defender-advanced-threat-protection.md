@@ -122,9 +122,9 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 ![Image of final endpoint setup before WDATP access](images\atp-final-onboard-endpoints-warning-before-atp-access.png)
 
-11. Success! You will now launch Windows Defender ATP for the first time.
+11.  Success! You will now launch Windows Defender ATP for the first time.
 
-	![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
+![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
 
 	For more information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 
