@@ -28,14 +28,14 @@ For more information about a listed feature or functionality and its replacemen
 |**Microsoft Paint**  <br> Will be available through the Windows Store. Functionality integrated into Paint 3D.| | X |
 |**Outlook Express**  <br>  Removing this non-functional legacy code.| X | |
 |**Reader app**  <br>  Functionality to be integrated into Microsoft Edge.| X | |
-|**Reading List** Functionality to be integrated into Microsoft Edge.| X | |
+|**Reading List** <br> Functionality to be integrated into Microsoft Edge.| X | |
 |**Resilient File System (ReFS)**  <br>  Creation ability will be available in the following editions only: Windows 10 Enterprise and Windows 10 Pro for Workstations.  Creation ability will be removed from all other editions. All other editions will have Read and Write ability. <br> (added: August 17, 2017)| | X |
 |**RSA/AES Encryption for IIS**  <br>  We recommend that users use CNG encryption provider.| | X |
 |**Screen saver functionality in Themes** <br>  To be disabled in Themes (classified as **Removed** in this table). Screen saver functionality in Group Policies, Control Panel, and Sysprep is now deprecated but continues to be functional. Lockscreen features and policies are preferred. | X | X |
 |**Sync your settings** <br> Back-end changes: In future releases, the back-end storage for the current sync process will change. A single cloud storage system will be used for Enterprise State Roaming and all other users. The "Sync your settings" options and the Enterprise State Roaming feature will continue to work. <br>(updated: August 17, 2017) |  | X |
 |**Syskey.exe** <br> Removing this nonsecure security feature. We recommend that users use BitLocker instead. For more information, see the following Knowledge Base article: [4025993 Syskey.exe utility is no longer supported in Windows 10 RS3 and Windows Server 2016 RS3](https://support.microsoft.com/help/4025993/syskey-exe-utility-is-no-longer-supported-in-windows-10-rs3-and-window)| X | |
 |**System Image Backup (SIB) Solution** <br> We recommend that users use full-disk backup solutions from other vendors.| | X |
-|**TCP Offload Engine** <br> Removing this legacy code. This functionality was previously transitioned to the Stack TCP Engine. For more information, see the following PFE Platform Blog article: [Why Are We Deprecating Network Performance Features?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193/| X ||
+|**TCP Offload Engine** <br> Removing this legacy code. This functionality was previously transitioned to the Stack TCP Engine. For more information, see the following PFE Platform Blog article: [Why Are We Deprecating Network Performance Features?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193)| X ||
 |**Tile Data Layer** <br> To be replaced by the Tile Store.| X ||
 |**TLS RC4 Ciphers** <br> To be disabled by default. For more information, see the following Windows IT Center topic: [TLS (Schannel SSP) changes in Windows 10 and Windows Server 2016](/windows-server/security/tls/tls-schannel-ssp-changes-in-windows-10-and-windows-server)|| X|
 |**Trusted Platform Module (TPM) Owner Password Management**  <br>This legacy code to be removed.|| X |
