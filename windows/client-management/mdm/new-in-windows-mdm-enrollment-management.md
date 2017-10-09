@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/19/2017
+ms.date: 10/02/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1013,6 +1013,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <p>For details, see [Managing connection](mdm-enrollment-of-windows-devices.md#managing-connections) and [Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)</p>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)</td>
+<td style="vertical-align:top"><p>Added new topic to introduce a new Group Policy for automatic MDM enrollment.</p>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
@@ -1413,6 +1417,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <tr class="odd">
 <td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
 <td style="vertical-align:top"><p>Added RegisterDNS setting in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)</td>
+<td style="vertical-align:top"><p>Added new topic to introduce a new Group Policy for automatic MDM enrollment.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)</td>
