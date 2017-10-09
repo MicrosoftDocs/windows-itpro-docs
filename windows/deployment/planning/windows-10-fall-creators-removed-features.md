@@ -45,16 +45,16 @@ If you have Windows 10 Enterprise or Windows 10 Pro for Workstations: You can cr
 If you have any other edition of Windows 10: You can read and write volumes, but you can't create volumes. If you need to create volumes, upgrade to the Enterprise or Pro for Workstations edition.
 
 ### Syskey.exe
-Removed this security feature. Intead, we recommend using [BitLocker](/device-security/bitlocker/bitlocker-overview). For more information, see [4025993 Syskey.exe utility is no longer supported in Windows 10 RS3 and Windows Server 2016 RS3](https://support.microsoft.com/help/4025993/syskey-exe-utility-is-no-longer-supported-in-windows-10-rs3-and-window).
+Removed this security feature. Instead, we recommend using [BitLocker](/device-security/bitlocker/bitlocker-overview). For more information, see [4025993 Syskey.exe utility is no longer supported in Windows 10 RS3 and Windows Server 2016 RS3](https://support.microsoft.com/help/4025993/syskey-exe-utility-is-no-longer-supported-in-windows-10-rs3-and-window).
 
 ### TCP Offload Engine
-Removed this code. The TCP Offload Engine fuctionality is now available in the Stack TCP Engine. For more information, see [Why Are We Deprecating Network Performance Features (KB4014193)?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193/)
+Removed this code. The TCP Offload Engine functionality is now available in the Stack TCP Engine. For more information, see [Why Are We Deprecating Network Performance Features (KB4014193)?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193/)
 
 ### TPM Owner Password Management
 Removed this code.
 
 ## Features being considered for replacement starting after Windows Fall Creators Update
-We are considering removing the following features and functionalities from the installed product image, starting with releases after Windows 10, version 1709. Eventually, we might completely remove them and replace them with other features or functionality (or, in some instances, make them available from different sources). These features and fuctionalities are *still available* in this release, but **you should begin planning now to either use alternate methods or to replace any applications, code, or usage that depend on these features.**
+We are considering removing the following features and functionalities from the installed product image, starting with releases after Windows 10, version 1709. Eventually, we might completely remove them and replace them with other features or functionality (or, in some instances, make them available from different sources). These features and functionalities are *still available* in this release, but **you should begin planning now to either use alternate methods or to replace any applications, code, or usage that depend on these features.**
 
 If you have feedback to share about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app).
 
