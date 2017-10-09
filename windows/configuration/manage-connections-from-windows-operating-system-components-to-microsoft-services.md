@@ -31,6 +31,8 @@ To help make it easier to deploy settings to restrict connections from Windows 1
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+
 ## What's new in Windows 10, version 1703
 
 Here's a list of changes that were made to this article for Windows 10, version 1703:
@@ -71,7 +73,7 @@ See the following table for a summary of the management settings for Windows 10 
 
 | Setting | UI | Group Policy | MDM policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
-| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | | | |
+| [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | | | |
 | [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | 
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
@@ -100,13 +102,14 @@ See the following table for a summary of the management settings for Windows 10 
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.10 Call history](#bkmk-priv-callhistory) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.11 Email](#bkmk-priv-email) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[17.12 Messaging](#bkmk-priv-messaging) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[17.13 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[17.14 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[17.15 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[17.16 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[17.17 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[17.18 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
-| &nbsp;&nbsp;&nbsp;&nbsp;[17.19 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.13 Phone calls](#bkmk-priv-phone-calls) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.14 Radios](#bkmk-priv-radios) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.15 Other devices](#bkmk-priv-other-devices) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.16 Feedback & diagnostics](#bkmk-priv-feedback) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.17 Background apps](#bkmk-priv-background) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.18 Motion](#bkmk-priv-motion) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.19 Tasks](#bkmk-priv-tasks) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[17.20 App Diagnostics](#bkmk-priv-diag) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |  ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [18. Software Protection Platform](#bkmk-spp) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [19. Sync your settings](#bkmk-syncsettings) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [20. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -124,7 +127,7 @@ See the following table for a summary of the management settings for Windows Ser
 
 | Setting | UI | Group Policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: |
-| [1. Certificate trust lists](#certificate-trust-lists) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [2. Cortana and Search](#bkmk-cortana) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [4. Device metadata retrieval](#bkmk-devinst) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
@@ -150,7 +153,7 @@ See the following table for a summary of the management settings for Windows Ser
 
 | Setting | Group Policy | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
-| [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [6. Font streaming](#font-streaming) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [13. Network Connection Status Indicator](#bkmk-ncsi) | ![Check mark](images/checkmark.png) | | |
@@ -165,7 +168,7 @@ See the following table for a summary of the management settings for Windows Ser
 
 | Setting | Registry | Command line |
 | - | :-: | :-: | :-: | :-: | :-: |
-| [1. Certificate trust lists](#certificate-trust-lists) | ![Check mark](images/checkmark.png) | |
+| [1. Automatic Root Certificates Update](#automatic-root-certificates-update) | ![Check mark](images/checkmark.png) | |
 | [3. Date & Time](#bkmk-datetime) | ![Check mark](images/checkmark.png) | |
 | [20. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
 | [27. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | |
@@ -174,15 +177,14 @@ See the following table for a summary of the management settings for Windows Ser
 
 Use the following sections for more information about how to configure each setting.
 
-### <a href="" id="certificate-trust-lists"></a>1. Certificate trust lists
+### <a href="" id="automatic-root-certificates-update"></a>1. Automatic Root Certificates Update
 
-A certificate trust list is a predefined list of items, such as a list of certificate hashes or a list of file name, that are signed by a trusted entity. Windows automatically downloads an updated certificate trust list when it is available.
-
-To turn off the automatic download of an updated certificate trust list, you can turn off automatic root updates, which also includes the disallowed certificate list and the pin rules list.
+The Automatic Root Certificates Update component is designed to automatically check the list of trusted authorities on Windows Update to see if an update is available. 
+For more information, see [Automatic Root Certificates Update Configuration](https://technet.microsoft.com/library/cc733922.aspx). 
+Although not recommended, you can turn off Automatic Root Certificates Update, which also prevents updates to the disallowed certificate list and the pin rules list.
 
 > [!CAUTION] 
 > By not automatically downloading the root certificates, the device might have not be able to connect to some websites.
-
 
 For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
 
@@ -1267,7 +1269,38 @@ To turn off **Choose apps that can read or send messages**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-radios"></a>17.13 Radios
+### <a href="" id="bkmk-priv-phone-calls"></a>17.13 Phone calls
+
+In the **Phone calls** area, you can choose which apps can make phone calls.
+
+To turn off **Let apps make phone calls**:
+
+-   Turn off the feature in the UI.
+
+    -or-
+
+-   Apply the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **App Privacy** &gt; **Let Windows apps make phone calls**
+
+    -   Set the **Select a setting** box to **Force Deny**.
+    
+    -or-
+
+-    Apply the Privacy/LetAppsAccessPhone MDM policy from the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessphone), where:
+
+    -   **0**. User in control
+    -   **1**. Force allow
+    -   **2**. Force deny
+
+     -or-
+
+-   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessPhone**, with a value of 2 (two).
+
+
+To turn off **Choose apps that can make phone calls**:
+
+-   Turn off the feature in the UI for each app.
+
+### <a href="" id="bkmk-priv-radios"></a>17.14 Radios
 
 In the **Radios** area, you can choose which apps can turn a device's radio on or off.
 
@@ -1298,7 +1331,7 @@ To turn off **Choose apps that can control radios**:
 
 -   Turn off the feature in the UI for each app.
 
-### <a href="" id="bkmk-priv-other-devices"></a>17.14 Other devices
+### <a href="" id="bkmk-priv-other-devices"></a>17.15 Other devices
 
 In the **Other Devices** area, you can choose whether devices that aren't paired to PCs, such as an Xbox One, can share and sync info.
 
@@ -1332,7 +1365,7 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
     -   Set the **Select a setting** box to **Force Deny**.
 
-### <a href="" id="bkmk-priv-feedback"></a>17.15 Feedback & diagnostics
+### <a href="" id="bkmk-priv-feedback"></a>17.16 Feedback & diagnostics
 
 In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft.
 
@@ -1417,7 +1450,7 @@ To turn off tailored experiences with relevant tips and recommendations by using
 
 - Apply the Group Policy: **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**
 
-### <a href="" id="bkmk-priv-background"></a>17.16 Background apps
+### <a href="" id="bkmk-priv-background"></a>17.17 Background apps
 
 In the **Background Apps** area, you can choose which apps can run in the background.
 
@@ -1440,7 +1473,7 @@ To turn off **Let apps run in the background**:
     -   **2**. Force deny
 
 
-### <a href="" id="bkmk-priv-motion"></a>17.17 Motion
+### <a href="" id="bkmk-priv-motion"></a>17.18 Motion
 
 In the **Motion** area, you can choose which apps have access to your motion data.
 
@@ -1464,7 +1497,7 @@ To turn off **Let Windows and your apps use your motion data and collect motion 
 
 -   Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\Policies\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessMotion**, with a value of 2 (two).
 
-### <a href="" id="bkmk-priv-tasks"></a>17.18 Tasks
+### <a href="" id="bkmk-priv-tasks"></a>17.19 Tasks
 
 In the **Tasks** area, you can choose which apps have access to your tasks.
 
@@ -1486,7 +1519,7 @@ To turn this off:
     -   **1**. Force allow
     -   **2**. Force deny
 
-### <a href="" id="bkmk-priv-diag"></a>17.19 App Diagnostics
+### <a href="" id="bkmk-priv-diag"></a>17.20 App Diagnostics
 
 In the **App diagnostics** area, you can choose which apps have access to your diagnostic information.
 

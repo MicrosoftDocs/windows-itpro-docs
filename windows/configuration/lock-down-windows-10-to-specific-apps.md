@@ -23,7 +23,7 @@ ms.author: jdecker
 A [kiosk device](set-up-a-kiosk-for-windows-10-for-desktop-editions.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package.
 
 >[!NOTE]
->For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk. Avoid applying AppLocker rules to devices running the multi-app kiosk configuration described in this topic.
+>For devices running versions of Windows 10 earlier than version 1709, you can [create AppLocker rules](lock-down-windows-10-applocker.md) to configure a multi-app kiosk. 
 
 The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access. 
 
@@ -40,7 +40,7 @@ If you don't want to use a provisioning package, you can deploy the configuratio
 
 ## Prerequisites
 
-- (latest version of WCD -- is Store version okay at GA?)
+- Windows Configuration Designer (Windows 10, version 1709)
 - The kiosk device must be running Windows 10 (S, Pro, Enterprise, or Education), version 1709
 
 
@@ -361,7 +361,7 @@ Provisioning packages can be applied to a device during the first-run experience
 
 Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML. 
 
-If your test device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely. 
+If your device is enrolled with a MDM server which supports applying the assigned access configuration, you can use it to apply the setting remotely. 
 
 The OMA-URI for multi-app policy is `./Device/Vendor/MSFT/AssignedAccess/Configuration`.
 
@@ -573,7 +573,7 @@ Remove Task Manager |		Enabled
 Remove Change Password option in Security Options UI |		Enabled
 Remove Sign Out option in Security Options UI	 |	Enabled
 Remove All Programs list from the Start Menu	 |	Enabled – Remove and disable setting
-Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
+Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers</br></br>**Note:** Users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears expalining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
 
 
 

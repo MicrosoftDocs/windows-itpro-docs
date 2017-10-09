@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - RemoteAssistance
@@ -14,11 +14,27 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## RemoteAssistance policies  
 
+<dl>
+  <dd>
+    <a href="#remoteassistance-customizewarningmessages">RemoteAssistance/CustomizeWarningMessages</a>
+  </dd>
+  <dd>
+    <a href="#remoteassistance-sessionlogging">RemoteAssistance/SessionLogging</a>
+  </dd>
+  <dd>
+    <a href="#remoteassistance-solicitedremoteassistance">RemoteAssistance/SolicitedRemoteAssistance</a>
+  </dd>
+  <dd>
+    <a href="#remoteassistance-unsolicitedremoteassistance">RemoteAssistance/UnsolicitedRemoteAssistance</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remoteassistance-customizewarningmessages"></a>**RemoteAssistance/CustomizeWarningMessages**  
 
@@ -45,6 +61,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting lets you customize warning messages.
 
@@ -75,6 +100,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remoteassistance-sessionlogging"></a>**RemoteAssistance/SessionLogging**  
 
@@ -101,6 +127,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting allows you to turn logging on or off. Log files are located in the user's Documents folder under Remote Assistance.
 
@@ -127,6 +162,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remoteassistance-solicitedremoteassistance"></a>**RemoteAssistance/SolicitedRemoteAssistance**  
 
@@ -153,6 +189,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer.
 
@@ -187,6 +232,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remoteassistance-unsolicitedremoteassistance"></a>**RemoteAssistance/UnsolicitedRemoteAssistance**  
 
@@ -213,6 +259,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting allows you to turn on or turn off Offer (Unsolicited) Remote Assistance on this computer.
 

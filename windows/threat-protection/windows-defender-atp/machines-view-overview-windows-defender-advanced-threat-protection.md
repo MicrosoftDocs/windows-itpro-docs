@@ -25,6 +25,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-machinesview-abovefoldlink)
+
 The **Machines list** shows a list of the machines in your network, the domain of each machine, when it last reported and the local IP Address it reported on, its **Health state**, the number of active alerts on each machine categorized by alert severity level, and the number of active malware detections. This view allows viewing machines ranked by risk or sensor health state, and keeping track of all machines that are reporting sensor data in your network.
 
 Use the Machines list in these main scenarios:
@@ -56,8 +58,6 @@ You can use the following filters to limit the list of machines displayed during
 - Windows 10
 - Windows Server 2012 R2
 - Windows Server 2016
-- Linux
-- Mac OS
 - Other
 
 
@@ -93,7 +93,7 @@ Filter the list to view specific machines grouped together by the following malw
   -	**PUA** – Unwanted software is a category of applications that install and perform undesirable activity without adequate user consent. These applications are not necessarily malicious, but their behaviors often negatively impact the computing experience, even appearing to invade user privacy. Many of these applications display advertising, modify browser settings, and install bundled software.
 
 ## Groups and tags
-You can filter the list based on the grouping and tagging that you've added to individual machines. For more information, see [Manage machine group and tags](respond-machine-alerts-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags).
+You can filter the list based on the grouping and tagging that you've added to individual machines. For more information, see [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags).
 
 ## Export machine list to CSV
 You can  download a full list of all the machines in your organization, in CSV format. Click the **Export to CSV** button to download the entire list as a CSV file.

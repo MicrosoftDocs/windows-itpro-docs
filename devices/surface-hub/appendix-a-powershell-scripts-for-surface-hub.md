@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 08/16/2017
+ms.date: 09/25/2017
 ms.localizationpriority: medium
 ---
 
@@ -297,11 +297,6 @@ PrintSuccess "Connected to Lync Server Remote PowerShell"
 
 Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessLync -AllowClobber -WarningAction SilentlyContinue
-
-# In case there was any uncaught errors
-ExitIfError("Remote connections failed. Please check your credentials and try again.")
-
-
 
 ## Create the Exchange mailbox ##
 # Note: These exchange commandlets do not always throw their errors as exceptions 
@@ -669,11 +664,6 @@ catch
 
 Import-PSSession $sessExchange -AllowClobber -WarningAction SilentlyContinue
 Import-PSSession $sessCS -AllowClobber -WarningAction SilentlyContinue
- 
-# In case there was any uncaught errors
-ExitIfError "Remote connection failed. Please check your credentials and try again."
-
-
 
 ## Create the Exchange mailbox ##
 # Note: These exchange commandlets do not always throw their errors as exceptions 
@@ -1571,8 +1561,7 @@ catch
 
 Import-PSSession $sessCS -AllowClobber
 
-# In case there was any uncaught errors
-ExitIfError("Remote connection failed. Please check your credentials and try again.")
+
 Write-Host "--------------------------------------------------------------." -foregroundcolor "magenta"
 
 # Getting registrar pool

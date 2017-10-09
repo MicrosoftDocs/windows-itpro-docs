@@ -24,6 +24,8 @@ ms.date: 09/05/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-gensettings-abovefoldlink)
+
 During the onboarding process, a wizard takes you through the general settings of Windows Defender ATP. After onboarding, you might want to update some settings which you'll be able to do through the **Preferences setup** menu.
 
 1. In the navigation pane, select **Preferences setup** > **General**.

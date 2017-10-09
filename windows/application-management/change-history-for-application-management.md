@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 | New or changed topic | Description |
 | --- | --- |
 | [Per-user services in Windows 10](per-user-services-in-windows.md) | New |
+| [Remove background task resource restrictions](enterprise-background-activity-controls.md) | New |
 | [Understand the different apps included in Windows 10](apps-in-windows-10.md) | New |
 
 ## July 2017

@@ -20,7 +20,7 @@ description: Learn about the product documentation and resources available for M
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/ih_learn-about.svg" src="/media/common/ih_learn-about.png" alt="Learn about Microsoft 365 Business" />
+                                        <img data-hoverimage="/media/common/i_whats-new.svg" src="/media/common/i_whats-new.png" alt="Learn about Microsoft 365 Business" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -38,7 +38,7 @@ description: Learn about the product documentation and resources available for M
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/media/common/ih_tools.svg" src="/media/common/ih_tools.png" alt="Get started using Microsoft 365 Business" />
+                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.png" alt="Get started using Microsoft 365 Business" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -786,7 +786,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_video.svg" alt="Set up Microsoft 365 Business" />
+                                                        <img src="images/icon_video.svg" alt="Set up Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -805,7 +805,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_video.svg" alt="Secure Windows 10 devices with Microsoft 365 Business" />
+                                                        <img src="images/icon_video.svg" alt="Secure Windows 10 devices with Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -824,7 +824,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_video.svg" alt="Secure Microsoft Office apps on iOS devices with Microsoft 365 Business" />
+                                                        <img src="images/icon_video.svg" alt="Secure Microsoft Office apps on iOS devices with Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -843,7 +843,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_video.svg" alt="Set up Windows devices for Microsoft 365 Business" />
+                                                        <img src="images/icon_video.svg" alt="Set up Windows devices for Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -862,7 +862,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_video.svg" alt="Demo: Microsoft 365 Business first run experience" />
+                                                        <img src="images/icon_video.svg" alt="Demo: Microsoft 365 Business first run experience" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -881,7 +881,7 @@ description: Learn about the product documentation and resources available for M
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/media/common/i_video.svg" alt="Demo: Secure data and end user devices with Microsoft 365 Business" />
+                                                        <img src="images/icon_video.svg" alt="Demo: Secure data and end user devices with Microsoft 365 Business" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

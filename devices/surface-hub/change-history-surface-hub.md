@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 08/17/2017
+ms.date: 10/05/2017
 ms.localizationpriority: medium
 ---
 
@@ -16,11 +16,18 @@ ms.localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## Octoboer 2017
+
+New or changed topic | Description |
+--- | ---
+[Install apps on your Microsoft Surface Hub](install-apps-on-surface-hub.md) | Updated instructions to use Windows Team device family
+
 ## September 2017
 
 New or changed topic | Description
 --- | ---
 [Top support solutions for Surface Hub](support-solutions-surface-hub.md) | New
+[PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md) | Updated account creation scripts
 
 ## August 2017
 
