@@ -114,6 +114,12 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 	![Image of Windows Defender ATP cloud instance](images\atp-windows-cloud-instance-creation.png)
 
+	![Image of Onboard endpoints and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
+
+	![Image of setup imcomplete](images\atp-setup-incomplete.png)
+
+	![Image of final endpoint setup before WDATP access](images\atp-final-onboard-endpoints-warning-before-atp-access.png)
+
 10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
 
 	![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
