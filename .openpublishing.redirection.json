@@ -76,6 +76,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/surface/surface-diagnostic-toolkit.md",
+"redirect_url": "/surface/index",
+"redirect_document_id": true
+},
+{
 "source_path": "devices/surface-hub/i-am-done-finishing-your-surface-hub-meeting.md",
 "redirect_url": "/surface-hub/finishing-your-surface-hub-meeting",
 "redirect_document_id": true
