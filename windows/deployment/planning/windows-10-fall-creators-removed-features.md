@@ -53,7 +53,7 @@ Removed this legacy code. The TCP Offload Engine fuctionality is now available i
 ### TPM Owner Password Management
 Removed this legacy code.
 
-## Features being considered for replacement starting with Windows Fall Creators Update
+## Features being considered for replacement starting after Windows Fall Creators Update
 We are considering removing the following features and functionalities from the installed product image, starting with releases after Windows 10, version 1709. Eventually, we might completely remove them and replace them with other features or functionality (or, in some instances, make them available from different sources). These features and fuctionalities are *still available* in this release, but **you should begin planning now to either use alternate methods or to replace any applications, code, or usage that depend on these features.**
 
 If you have feedback to share about the proposed replacement of any of these features, you can use the [Feedback Hub app](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app).
