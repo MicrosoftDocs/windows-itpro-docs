@@ -24,6 +24,8 @@ ms.date: 09/10/2017
 
 [!include[Prerelease information](prerelease.md)]
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-validatelicense-abovefoldlink)  
+
 ## Check license state
 
 Checking for the license state and whether it got properly provisioned, can be done through the **Office 365 admin center** or through the **Microsoft Azure portal**.
