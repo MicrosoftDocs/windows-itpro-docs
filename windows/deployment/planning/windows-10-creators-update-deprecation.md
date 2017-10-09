@@ -6,13 +6,13 @@ ms.mktglfcycl: plan
 ms.localizationpriority: high
 ms.sitesec: library
 author: lizap
-ms.date: 09/12/2017
+ms.date: 10/17/2017
 ---
 # Features that are removed or deprecated in Windows 10 Creators Update
 
 > Applies to: Windows 10
 
-The following features and functionalities in the Windows 10 Creators Update edition (version 1703) have either been removed from the product in the current release (*Removed*) or are not in active development and are planned for potential removal in subsequent releases (*Deprecated*).
+The following features and functionalities in the Windows 10 Creators Update edition (Windows 10, version 1703) have either been removed from the product in the current release (*Removed*) or are not in active development and are planned for potential removal in subsequent releases (*Deprecated*).
 
 This list is intended for IT professionals who are updating operating systems in a commercial environment. The plan and list are subject to change and may not include every deprecated feature or functionality. For more details about a listed feature or functionality and its replacement, see the documentation for that feature.
 
