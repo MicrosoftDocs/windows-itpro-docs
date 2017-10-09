@@ -40,7 +40,7 @@ With Microsoft Education, schools can:
 - **Collaborate in a modern classroom** - Help students become career-ready with Office apps like Word, Excel, PowerPoint, and OneNote. Increase comprehension and outcomes with the most advanced teaching apps like integrated Learning Tools.
 - **Go beyond the browser with inspiring apps for classroom learning** - Inspire with Minecraft: Education Edition and innovative apps from the Microsoft Store for Education.
 
-Go to the <a href="https://www.microsoft.com/en-us/education" target="_blank">Microsoft Education site</a> to learn more. See <a href="https://www.microsoft.com/en-us/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools" target="_blank">How to buy</a> to learn about pricing and purchasing options for schools, students, and teachers as well as academic pricing and offers for qualified K-12 and higher education institutions.
+Go to the <a href="https://www.microsoft.com/education" target="_blank">Microsoft Education site</a> to learn more. See <a href="https://www.microsoft.com/education/buy-license/overview-of-how-to-buy/default.aspx?tabshow=schools" target="_blank">How to buy</a> to learn about pricing and purchasing options for schools, students, and teachers as well as academic pricing and offers for qualified K-12 and higher education institutions.
 
 ## What we're doing
 The end-to-end process for deploying and managing a full cloud IT solution with Microsoft Education is outlined here. Depending on your [setup scenario](#setup-options), you may not need to implement all these steps. 
