@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Printers
@@ -14,11 +14,24 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## Printers policies  
 
+<dl>
+  <dd>
+    <a href="#printers-pointandprintrestrictions">Printers/PointAndPrintRestrictions</a>
+  </dd>
+  <dd>
+    <a href="#printers-pointandprintrestrictions-user">Printers/PointAndPrintRestrictions_User</a>
+  </dd>
+  <dd>
+    <a href="#printers-publishprinters">Printers/PublishPrinters</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="printers-pointandprintrestrictions"></a>**Printers/PointAndPrintRestrictions**  
 
@@ -45,6 +58,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
 
@@ -82,6 +104,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="printers-pointandprintrestrictions-user"></a>**Printers/PointAndPrintRestrictions_User**  
 
@@ -108,6 +131,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 This policy setting controls the client Point and Print behavior, including the security prompts for Windows Vista computers. The policy setting applies only to non-Print Administrator clients, and only to computers that are members of a domain.
 
@@ -145,6 +177,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="printers-publishprinters"></a>**Printers/PublishPrinters**  
 
@@ -171,6 +204,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Determines whether the computer's shared printers can be published in Active Directory.
 

@@ -1,5 +1,5 @@
 ---
-title: DesktopBackgrounAndColors (Windows 10)
+title: DesktopBackgroundAndColors (Windows 10)
 description: This section describes the DesktopBackgrounAndColors settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,7 +10,7 @@ ms.author: jdecker
 ms.date: 08/21/2017
 ---
 
-# DesktopBackgrounAndColors (Windows Configuration Designer reference)
+# DesktopBackgroundAndColors (Windows Configuration Designer reference)
 
 Do not use. Instead, use the [Personalization settings](wcd-personalization.md).
 

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub, store
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 10/05/2017
 ms.localizationpriority: medium
 ---
 
@@ -18,8 +18,8 @@ ms.localizationpriority: medium
 You can install additional apps on your Surface Hub to fit your team or organization's needs. There are different methods for installing apps depending on whether you are developing and testing an app, or deploying a released app. This topic describes methods for installing apps for either scenario.
 
 A few things to know about apps on Surface Hub:
-- Surface Hub only runs [Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp). Apps created using the [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) will not run on Surface Hub. See a [list of apps that work with Surface Hub](https://www.microsoft.com/surface/support/surface-hub/surface-hub-apps).
-- Apps must be targeted for the [Universal device family](https://msdn.microsoft.com/library/windows/apps/dn894631).
+- Surface Hub only runs [Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp). Apps created using the [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) will not run on Surface Hub. See a [list of apps that work with Surface Hub](https://support.microsoft.com/help/4040382/surface-Apps-that-work-with-Microsoft-Surface-Hub).
+- Apps must be targeted for the [Universal device family](https://msdn.microsoft.com/library/windows/apps/dn894631) or Windows Team device family.
 - By default, apps must be Store-signed to be installed. During testing and development, you can also choose to run developer-signed UWP apps by placing the device in developer mode.- When submitting an app to the Microsoft Store, developers need to set Device family availability and Organizational licensing options to make sure an app will be available to run on Surface Hub.
 - You need admin credentials to install apps on your Surface Hub. Since the device is designed to be used in communal spaces like meeting rooms, people can't access the Microsoft Store to download and install apps.
 
@@ -56,11 +56,12 @@ During app submission, developers need to set **Device family availability** and
 **To set device family availability**  
 1. On the [Windows Dev Center](https://developer.microsoft.com), navigate to your app submission page.
 2. Select **Packages**.
-3. Under Device family availability, select these options:
-    - **Windows 10 Desktop** (other device families are optional)
+3. Under **Device family availability**, select these options:
+    
+    - **Windows 10 Team**
     - **Let Microsoft decide whether to make the app available to any future device families**
   
-![Image showing Device family availability page - part of Microsoft Store app submission process.](images/sh-device-family-availability.png)  
+![Image showing Device family availability page - part of Microsoft Store app submission process.](images/device-family.png)  
     
 For more information, see [Device family availability](https://msdn.microsoft.com/windows/uwp/publish/upload-app-packages#device-family-availability).
 
@@ -126,7 +127,7 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 |-----------------------------|----------------------------------------|
 | On-premises MDM with System Center Configuration Manager (beginning in version 1602) | Yes |
 | Hybrid MDM with System Center Configuration Manager and Microsoft Intune | Yes |
-| Microsoft Intune standalone | No |
+| Microsoft Intune standalone | Yes |
 | Third-party MDM provider    | Check to make sure your MDM provider supports deploying offline-licensed app packages. |
 
 **To deploy apps remotely using System Center Configuration Manager (either on-prem MDM or hybrid MDM)**

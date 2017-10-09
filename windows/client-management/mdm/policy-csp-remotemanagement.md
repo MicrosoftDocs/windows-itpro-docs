@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - RemoteManagement
@@ -14,11 +14,60 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## RemoteManagement policies  
 
+<dl>
+  <dd>
+    <a href="#remotemanagement-allowbasicauthentication-client">RemoteManagement/AllowBasicAuthentication_Client</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-allowbasicauthentication-service">RemoteManagement/AllowBasicAuthentication_Service</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-allowcredsspauthenticationclient">RemoteManagement/AllowCredSSPAuthenticationClient</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-allowcredsspauthenticationservice">RemoteManagement/AllowCredSSPAuthenticationService</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-allowremoteservermanagement">RemoteManagement/AllowRemoteServerManagement</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-allowunencryptedtraffic-client">RemoteManagement/AllowUnencryptedTraffic_Client</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-allowunencryptedtraffic-service">RemoteManagement/AllowUnencryptedTraffic_Service</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-disallowdigestauthentication">RemoteManagement/DisallowDigestAuthentication</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-disallownegotiateauthenticationclient">RemoteManagement/DisallowNegotiateAuthenticationClient</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-disallownegotiateauthenticationservice">RemoteManagement/DisallowNegotiateAuthenticationService</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-disallowstoringofrunascredentials">RemoteManagement/DisallowStoringOfRunAsCredentials</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-specifychannelbindingtokenhardeninglevel">RemoteManagement/SpecifyChannelBindingTokenHardeningLevel</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-trustedhosts">RemoteManagement/TrustedHosts</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-turnoncompatibilityhttplistener">RemoteManagement/TurnOnCompatibilityHTTPListener</a>
+  </dd>
+  <dd>
+    <a href="#remotemanagement-turnoncompatibilityhttpslistener">RemoteManagement/TurnOnCompatibilityHTTPSListener</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-allowbasicauthentication-client"></a>**RemoteManagement/AllowBasicAuthentication_Client**  
 
@@ -45,6 +94,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -63,6 +121,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-allowbasicauthentication-service"></a>**RemoteManagement/AllowBasicAuthentication_Service**  
 
@@ -89,6 +148,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -107,6 +175,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-allowcredsspauthenticationclient"></a>**RemoteManagement/AllowCredSSPAuthenticationClient**  
 
@@ -133,6 +202,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -151,6 +229,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-allowcredsspauthenticationservice"></a>**RemoteManagement/AllowCredSSPAuthenticationService**  
 
@@ -177,6 +256,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -195,6 +283,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-allowremoteservermanagement"></a>**RemoteManagement/AllowRemoteServerManagement**  
 
@@ -221,6 +310,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -239,6 +337,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-allowunencryptedtraffic-client"></a>**RemoteManagement/AllowUnencryptedTraffic_Client**  
 
@@ -265,6 +364,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -283,6 +391,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-allowunencryptedtraffic-service"></a>**RemoteManagement/AllowUnencryptedTraffic_Service**  
 
@@ -309,6 +418,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -327,6 +445,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-disallowdigestauthentication"></a>**RemoteManagement/DisallowDigestAuthentication**  
 
@@ -353,6 +472,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -371,6 +499,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-disallownegotiateauthenticationclient"></a>**RemoteManagement/DisallowNegotiateAuthenticationClient**  
 
@@ -397,6 +526,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -415,6 +553,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-disallownegotiateauthenticationservice"></a>**RemoteManagement/DisallowNegotiateAuthenticationService**  
 
@@ -441,6 +580,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -459,6 +607,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-disallowstoringofrunascredentials"></a>**RemoteManagement/DisallowStoringOfRunAsCredentials**  
 
@@ -485,6 +634,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -503,6 +661,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-specifychannelbindingtokenhardeninglevel"></a>**RemoteManagement/SpecifyChannelBindingTokenHardeningLevel**  
 
@@ -529,6 +688,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -547,6 +715,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-trustedhosts"></a>**RemoteManagement/TrustedHosts**  
 
@@ -573,6 +742,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -591,6 +769,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-turnoncompatibilityhttplistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPListener**  
 
@@ -617,6 +796,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
@@ -635,6 +823,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="remotemanagement-turnoncompatibilityhttpslistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPSListener**  
 
@@ -661,6 +850,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]

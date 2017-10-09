@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/25/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP
@@ -21,6 +21,26 @@ The Policy configuration service provider has the following sub-categories:
 
 -   Policy/Config/*AreaName* – Handles the policy configuration request from the server.
 -   Policy/Result/*AreaName* – Provides a read-only path to policies enforced on the device.
+
+<a href="" id="policy-scope"></a>
+
+> [!Important]
+> Policy scope is the level at which a policy can be configured. Some policies can only be configured at the device level, meaning the policy will take effect independent of who is logged into the device. Other policies can be configured at the user level, meaning the policy will only take effect for that user. 
+>
+> The allowed scope of a specific policy is represented below its table of supported Windows editions.  To configure a policy under a specific scope (user vs. device), please use the following paths:
+>
+> User scope:
+> -   **./User/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> -   **./User/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+>
+> Device scope:
+> -   **./Device/Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> -   **./Device/Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
+>
+> For device wide configuration the **_Device/_**  portion may be omitted from the path, deeming the following paths respectively equivalent:
+>
+> - **./Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
+> - **./Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 
 The following diagram shows the Policy configuration service provider in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 

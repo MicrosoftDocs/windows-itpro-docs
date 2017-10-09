@@ -39,7 +39,7 @@ Windows AutoPilot allows you to:
 ### Prerequisites
 
 * [Devices must be registered to the organization](#registering-devices-to-your-organization)
-* Devices have to be pre-installed with Windows 10, version 1703 or later
+* Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
 * Devices must have access to the internet
 * [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
 * Microsoft Intune or other MDM services to manage your devices

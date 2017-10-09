@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - DeviceLock
@@ -14,11 +14,63 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## DeviceLock policies  
 
+<dl>
+  <dd>
+    <a href="#devicelock-allowidlereturnwithoutpassword">DeviceLock/AllowIdleReturnWithoutPassword</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-allowscreentimeoutwhilelockeduserconfig">DeviceLock/AllowScreenTimeoutWhileLockedUserConfig</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-allowsimpledevicepassword">DeviceLock/AllowSimpleDevicePassword</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-alphanumericdevicepasswordrequired">DeviceLock/AlphanumericDevicePasswordRequired</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-devicepasswordenabled">DeviceLock/DevicePasswordEnabled</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-devicepasswordexpiration">DeviceLock/DevicePasswordExpiration</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-devicepasswordhistory">DeviceLock/DevicePasswordHistory</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-enforcelockscreenandlogonimage">DeviceLock/EnforceLockScreenAndLogonImage</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-enforcelockscreenprovider">DeviceLock/EnforceLockScreenProvider</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-maxdevicepasswordfailedattempts">DeviceLock/MaxDevicePasswordFailedAttempts</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-maxinactivitytimedevicelock">DeviceLock/MaxInactivityTimeDeviceLock</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-maxinactivitytimedevicelockwithexternaldisplay">DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-mindevicepasswordcomplexcharacters">DeviceLock/MinDevicePasswordComplexCharacters</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-mindevicepasswordlength">DeviceLock/MinDevicePasswordLength</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-preventlockscreenslideshow">DeviceLock/PreventLockScreenSlideShow</a>
+  </dd>
+  <dd>
+    <a href="#devicelock-screentimeoutwhilelocked">DeviceLock/ScreenTimeoutWhileLocked</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-allowidlereturnwithoutpassword"></a>**DeviceLock/AllowIdleReturnWithoutPassword**  
 
@@ -45,6 +97,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -63,6 +124,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-allowscreentimeoutwhilelockeduserconfig"></a>**DeviceLock/AllowScreenTimeoutWhileLockedUserConfig**  
 
@@ -89,6 +151,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -110,6 +181,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-allowsimpledevicepassword"></a>**DeviceLock/AllowSimpleDevicePassword**  
 
@@ -136,6 +208,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
 
@@ -152,6 +233,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-alphanumericdevicepasswordrequired"></a>**DeviceLock/AlphanumericDevicePasswordRequired**  
 
@@ -178,6 +260,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Determines the type of PIN or password required. This policy only applies if the **DeviceLock/DevicePasswordEnabled** policy is set to 0 (required).
 
@@ -202,6 +293,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-devicepasswordenabled"></a>**DeviceLock/DevicePasswordEnabled**  
 
@@ -228,6 +320,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether device lock is enabled.
 
@@ -278,6 +379,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-devicepasswordexpiration"></a>**DeviceLock/DevicePasswordExpiration**  
 
@@ -304,6 +406,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies when the password expires (in days).
 
@@ -322,6 +433,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-devicepasswordhistory"></a>**DeviceLock/DevicePasswordHistory**  
 
@@ -348,6 +460,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies how many passwords can be stored in the history that can’t be used.
 
@@ -368,6 +489,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-enforcelockscreenandlogonimage"></a>**DeviceLock/EnforceLockScreenAndLogonImage**  
 
@@ -394,6 +516,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the default lock screen and logon image shown when no user is signed in. It also sets the specified image for all users, which replaces the default image. The same image is used for both the lock and logon screens. Users will not be able to change this image.
 
@@ -405,6 +536,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-enforcelockscreenprovider"></a>**DeviceLock/EnforceLockScreenProvider**  
 
@@ -431,6 +563,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Restricts lock screen image to a specific lock screen provider. Users will not be able change this provider.
 
@@ -442,6 +583,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-maxdevicepasswordfailedattempts"></a>**DeviceLock/MaxDevicePasswordFailedAttempts**  
 
@@ -468,6 +610,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 The number of authentication failures allowed before the device will be wiped. A value of 0 disables device wipe functionality.
 
@@ -493,6 +644,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-maxinactivitytimedevicelock"></a>**DeviceLock/MaxInactivityTimeDeviceLock**  
 
@@ -519,6 +671,15 @@ The number of authentication failures allowed before the device will be wiped. A
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. Users can select any existing timeout value less than the specified maximum time in the Settings app. Note the Lumia 950 and 950XL have a maximum timeout value of 5 minutes, regardless of the value set by this policy.
 
@@ -535,6 +696,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-maxinactivitytimedevicelockwithexternaldisplay"></a>**DeviceLock/MaxInactivityTimeDeviceLockWithExternalDisplay**  
 
@@ -561,6 +723,15 @@ The number of authentication failures allowed before the device will be wiped. A
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked while connected to an external display.
 
@@ -575,6 +746,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-mindevicepasswordcomplexcharacters"></a>**DeviceLock/MinDevicePasswordComplexCharacters**  
 
@@ -601,6 +773,15 @@ The number of authentication failures allowed before the device will be wiped. A
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password.
 
@@ -677,6 +858,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-mindevicepasswordlength"></a>**DeviceLock/MinDevicePasswordLength**  
 
@@ -703,6 +885,15 @@ The number of authentication failures allowed before the device will be wiped. A
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies the minimum number or characters required in the PIN or password.
 
@@ -724,6 +915,7 @@ The number of authentication failures allowed before the device will be wiped. A
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-preventlockscreenslideshow"></a>**DeviceLock/PreventLockScreenSlideShow**  
 
@@ -750,6 +942,15 @@ The number of authentication failures allowed before the device will be wiped. A
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Disables the lock screen slide show settings in PC Settings and prevents a slide show from playing on the lock screen.
 
@@ -774,6 +975,7 @@ ADMX Info:
 
 <!--EndADMX-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="devicelock-screentimeoutwhilelocked"></a>**DeviceLock/ScreenTimeoutWhileLocked**  
 
@@ -800,6 +1002,15 @@ ADMX Info:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.

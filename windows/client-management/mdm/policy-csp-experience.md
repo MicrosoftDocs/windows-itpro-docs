@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/30/2017
+ms.date: 09/29/2017
 ---
 
 # Policy CSP - Experience
@@ -14,11 +14,72 @@ ms.date: 08/30/2017
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-<!--StartPolicies-->
 <hr/>
 
+<!--StartPolicies-->
 ## Experience policies  
 
+<dl>
+  <dd>
+    <a href="#experience-allowcopypaste">Experience/AllowCopyPaste</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowcortana">Experience/AllowCortana</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowdevicediscovery">Experience/AllowDeviceDiscovery</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowfindmydevice">Experience/AllowFindMyDevice</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowmanualmdmunenrollment">Experience/AllowManualMDMUnenrollment</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowsimerrordialogpromptwhennosim">Experience/AllowSIMErrorDialogPromptWhenNoSIM</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowscreencapture">Experience/AllowScreenCapture</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowtailoredexperienceswithdiagnosticdata">Experience/AllowTailoredExperiencesWithDiagnosticData</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowtaskswitcher">Experience/AllowTaskSwitcher</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowthirdpartysuggestionsinwindowsspotlight">Experience/AllowThirdPartySuggestionsInWindowsSpotlight</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowvoicerecording">Experience/AllowVoiceRecording</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowwindowsconsumerfeatures">Experience/AllowWindowsConsumerFeatures</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowwindowsspotlight">Experience/AllowWindowsSpotlight</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowwindowsspotlightonactioncenter">Experience/AllowWindowsSpotlightOnActionCenter</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowwindowsspotlightwindowswelcomeexperience">Experience/AllowWindowsSpotlightWindowsWelcomeExperience</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowwindowstips">Experience/AllowWindowsTips</a>
+  </dd>
+  <dd>
+    <a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
+  </dd>
+  <dd>
+    <a href="#experience-donotshowfeedbacknotifications">Experience/DoNotShowFeedbackNotifications</a>
+  </dd>
+</dl>
+
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowcopypaste"></a>**Experience/AllowCopyPaste**  
 
@@ -45,6 +106,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -60,6 +130,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowcortana"></a>**Experience/AllowCortana**  
 
@@ -86,6 +157,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether Cortana is allowed on the device. If you enable or don’t configure this setting, Cortana is allowed on the device. If you disable this setting, Cortana is turned off. When Cortana is off, users will still be able to use search to find items on the device.
 
@@ -106,6 +186,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowdevicediscovery"></a>**Experience/AllowDeviceDiscovery**  
 
@@ -132,6 +213,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows users to turn on/off device discovery UX.
 
@@ -146,6 +236,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowfindmydevice"></a>**Experience/AllowFindMyDevice**  
 
@@ -172,6 +263,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy turns on Find My Device.
 
@@ -186,6 +286,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowmanualmdmunenrollment"></a>**Experience/AllowManualMDMUnenrollment**  
 
@@ -212,6 +313,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow the user to delete the workplace account using the workplace control panel.
 
@@ -228,6 +338,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowsimerrordialogpromptwhennosim"></a>**Experience/AllowSIMErrorDialogPromptWhenNoSIM**  
 
@@ -254,6 +365,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -268,6 +388,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
 
@@ -294,6 +415,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -310,6 +440,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowsyncmysettings"></a>**Experience/AllowSyncMySettings**  
 
@@ -336,6 +467,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows or disallows all Windows sync settings on the device. For information about what settings are sync'ed, see [About sync setting on Windows 10 devices](http://windows.microsoft.com/windows-10/about-sync-settings-on-windows-10-devices).
 
@@ -346,6 +486,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowtailoredexperienceswithdiagnosticdata"></a>**Experience/AllowTailoredExperiencesWithDiagnosticData**  
 
@@ -372,6 +513,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -391,6 +541,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowtaskswitcher"></a>**Experience/AllowTaskSwitcher**  
 
@@ -417,6 +568,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -431,6 +591,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowthirdpartysuggestionsinwindowsspotlight"></a>**Experience/AllowThirdPartySuggestionsInWindowsSpotlight**  
 
@@ -457,6 +618,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only available for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
@@ -471,6 +641,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowvoicerecording"></a>**Experience/AllowVoiceRecording**  
 
@@ -497,6 +668,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 Mobile and not supported in Windows 10 for desktop.
@@ -513,6 +693,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsconsumerfeatures"></a>**Experience/AllowWindowsConsumerFeatures**  
 
@@ -539,6 +720,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -562,6 +752,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlight"></a>**Experience/AllowWindowsSpotlight**  
 
@@ -588,6 +779,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only available for Windows 10 Enterprise and Windows 10 Education.
@@ -604,6 +804,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlightonactioncenter"></a>**Experience/AllowWindowsSpotlightOnActionCenter**  
 
@@ -630,6 +831,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -645,6 +855,7 @@ ms.date: 08/30/2017
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowsspotlightwindowswelcomeexperience"></a>**Experience/AllowWindowsSpotlightWindowsWelcomeExperience**  
 
@@ -671,6 +882,15 @@ ms.date: 08/30/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
@@ -687,6 +907,7 @@ The Windows welcome experience feature introduces onboard users to Windows; for 
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-allowwindowstips"></a>**Experience/AllowWindowsTips**  
 
@@ -713,6 +934,15 @@ The Windows welcome experience feature introduces onboard users to Windows; for 
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Enables or disables Windows Tips / soft landing.
 
@@ -723,6 +953,7 @@ Enables or disables Windows Tips / soft landing.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-configurewindowsspotlightonlockscreen"></a>**Experience/ConfigureWindowsSpotlightOnLockScreen**  
 
@@ -749,6 +980,15 @@ Enables or disables Windows Tips / soft landing.
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 > [!NOTE]
 > This policy is only available for Windows 10 Enterprise and Windows 10 Education.
@@ -764,6 +1004,7 @@ Enables or disables Windows Tips / soft landing.
 
 <!--EndDescription-->
 <!--EndPolicy-->
+<hr/>
 <!--StartPolicy-->
 <a href="" id="experience-donotshowfeedbacknotifications"></a>**Experience/DoNotShowFeedbackNotifications**  
 
@@ -790,6 +1031,15 @@ Enables or disables Windows Tips / soft landing.
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Prevents devices from showing feedback questions from Microsoft.
 
