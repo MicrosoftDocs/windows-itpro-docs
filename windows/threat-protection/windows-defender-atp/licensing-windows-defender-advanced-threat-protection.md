@@ -114,20 +114,19 @@ When accessing the [Windows Defender ATP portal](https://SecurityCenter.Windows.
 
 	![Image of Windows Defender ATP cloud instance](images\atp-windows-cloud-instance-creation.png)
 
-10.  You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
+10. You are almost done. You will now get the option to onboard endpoints in your organization by downloading a configuration policy package to onboard Windows10 machines to the service. This function is always accessible as long there is a valid license for Windows Defender ATP in place.
 
-   ![Image of Onboard endpoints and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
+	![Image of Onboard endpoints and run detection test](images\atp-onboard-endpoints-run-detection-test.png)
 
-   ![Image of setup imcomplete](images\atp-setup-incomplete.png)
+	![Image of setup imcomplete](images\atp-setup-incomplete.png)
 
-   ![Image of final endpoint setup before WDATP access](images\atp-final-onboard-endpoints-warning-before-atp-access.png)
+	![Image of final endpoint setup before WDATP access](images\atp-final-onboard-endpoints-warning-before-atp-access.png)
 
 11. Success! You will now launch Windows Defender ATP for the first time.
 
 	![Image of onboard endpoints](images\atp-onboard-endpoints-WDATP-portal.png)
 
-	For more information on completing the set up process please see [Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
-
+For more information on completing the set up process please see[Configure endpoints](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/configure-endpoints-windows-defender-advanced-threat-protection). 
 ## Related topics
 - [Onboard and set up Windows Defender Advanced Threat Protection](onboard-configure-windows-defender-advanced-threat-protection.md)
 - [Troubleshoot onboarding process and error messages](troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
