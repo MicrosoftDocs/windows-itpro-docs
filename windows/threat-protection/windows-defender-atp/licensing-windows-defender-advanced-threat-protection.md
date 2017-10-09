@@ -28,13 +28,13 @@ ms.date: 09/10/2017
 
 Checking for the license state and whether it got properly provisioned, can be done through the **Office 365 admin center** or through the **Microsoft Azure portal**.
 
-  1. In the **Office 365 admin center** navigate to **Billing** > **Licenses**.
+  1. In the **Office 365 admin center** navigate to **Billing** > **Subscriptions**.
 
     - On the screen you will see all the provisioned licenses and their current **Status**.
 
-   ![Image of billing licenses](images\atp-billing-licenses.png)
+   ![Image of billing licenses](images\atp-billing-subscriptions.png)
 
-  2. To view your licenses go to the **Microsoft Azure portal** and navigate to the **All resources** icon ![Image of Azure All resources icon](images\atp-azure-license-icon.png).
+  2. To view your licenses go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    ![Image of Azure Licensing page](images\atp-licensing-azure-portal.png)
 
