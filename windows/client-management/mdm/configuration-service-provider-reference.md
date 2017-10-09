@@ -2537,6 +2537,7 @@ The CSPs supported in Windows 10 S is the same as in Windows 10 Pro except that 
 - [ActiveSync CSP](activesync-csp.md)
 - [APPLICATION CSP](application-csp.md)
 - [AppLocker CSP](applocker-csp.md)
+- [AssignedAccess CSP](assignedaccess-csp.md)
 - [BOOTSTRAP CSP](bootstrap-csp.md)
 - [CellularSettings CSP](cellularsettings-csp.md)
 - [CertificateStore CSP](certificatestore-csp.md)
