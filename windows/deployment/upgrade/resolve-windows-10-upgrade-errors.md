@@ -129,7 +129,8 @@ Extend codes can be matched to the phase and operation when an error occurred. T
 
 The following tables provide the corresponding phase and operation for values of an extend code:
 
-<TABLE cellspacing=0 cellpadding=0>
+
+<table cellspacing=0 cellpadding=0>
 <TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
 <TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
 <TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
@@ -140,7 +141,7 @@ The following tables provide the corresponding phase and operation for values of
 <TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
 </TABLE>
 
-<TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
 <TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></TD>
 <TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <TABLE cellspacing=0 cellpadding=0>
@@ -196,31 +197,26 @@ Several log files are created during each phase of the upgrade process. These lo
 
 <P>The following table describes some log files and how to use them for troubleshooting purposes:
 
-<TABLE>
+<table>
 <TR>
 <td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
-
-<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
+<tr><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
 <TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
 <TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC
 <TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
 <TR><TD>Rollback:<BR>$Windows.~BT\Sources\Rollback<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
 <TR><TD>Pre-initialization (prior to downlevel):<BR>Windows</TD><TD>Contains information about initializing setup.<TD>If setup fails to launch.
 <TR><TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
-
 <TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
-
 <TR><TD>miglog.xml<TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about what was migrated during the installation.<TD>Identify post upgrade data migration issues.
-
 <TR><TD>BlueBox.log<TD>Down-Level:<BR>Windows\Logs\Mosetup<TD>Contains information communication between setup.exe and Windows Update.<TD>Use during WSUS and WU down-level failures or for 0xC1900107.
-
 <TR><TD>Supplemental rollback logs:<BR>
 Setupmem.dmp<BR>
 setupapi.dev.log<BR>
 Event logs (*.evtx)
 
 
-<TD>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.
+<td>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.
 <TD>
 Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<BR>
 Setupapi: Device install issues - 0x30018<BR>
@@ -232,7 +228,7 @@ Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
 
 A setupact.log or setuperr.log entry includes the following elements:
 
-<OL>
+<ol>
 <LI><B>The date and time</B> - 2016-09-08 09:20:05.
 <LI><B>The log level</B> - Info, Warning, Error, Fatal Error.
 <LI><B>The logging component</B> - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
@@ -255,7 +251,7 @@ See the following example:
 
 <P>To analyze Windows Setup log files:
 
-<OL>
+<ol>
 <LI>Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
 <LI>Based on the [extend code](#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
 <LI>Open the log file in a text editor, such as notepad.
@@ -284,7 +280,7 @@ For example, assume that the error code for an error is 0x8007042B - 0x2000D. Se
 
 >Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
 
-<P><B>setuperr.log</B> content:
+<p><B>setuperr.log</B> content:
 
 <pre style="font-size: 10px; overflow-y: visible">
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
