@@ -78,7 +78,7 @@ Microsoft recommends that you install the latest security updates. The June 2017
 
 For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
 
-Microsoft recommends that you block the following icrosoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet:
+Microsoft recommends that you block the following Microsoft-signed applications and PowerShell files by merging the following policy into your existing policy to add these deny rules using the Merge-CIPolicy cmdlet:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
