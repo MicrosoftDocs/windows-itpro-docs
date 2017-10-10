@@ -15,7 +15,7 @@ ms.date: 10/17/2017
 # Reset devices with Windows Automatic Redeployment 
 **Applies to:**
 
--   Windows 10 
+-   Windows 10, version 1709 
 
 IT admins or technical teachers can use Windows Automatic Redeployment to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use. With Windows Automatic Redeployment, devices are returned to a fully configured or known IT-approved state.
 
