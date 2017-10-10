@@ -43,9 +43,8 @@ After completing the instructions in this guide, you will have a PoC environment
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed. 
 
 <div style='font-size:9.0pt'>
-
-<table border=1 cellspacing=0 cellpadding=0>
-<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
+<table border="1" cellspacing="0" cellpadding="0">
+<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B></td><TD BGCOLOR="#a0e4fa"><B>Description</B></td><TD BGCOLOR="#a0e4fa"><B>Time</B></td></tr>
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>Informational
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>Informational
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>Informational
@@ -59,7 +58,6 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)<TD>Terms used in this guide.<TD>Informational
 </table>
-
 </div>
 
 ## Hardware and software requirements
