@@ -44,9 +44,8 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border=1 cellspacing=0 cellpadding=0>
 <TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
-
 <TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>Informational
 <TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>Informational
 <TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>Informational
@@ -74,7 +73,7 @@ Harware requirements are displayed below:
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border=1 cellspacing=0 cellpadding=0>
     <tr>
         <TD></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
@@ -292,7 +291,7 @@ When creating a VM in Hyper-V, you must specify either generation 1 or generatio
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border=1 cellspacing=0 cellpadding=0>
     <tr>
         <td></td>
         <td>Architecture</td>
@@ -363,7 +362,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border=1 cellspacing=0 cellpadding=0>
     <tr>
         <td>OS</td>
         <td>Partition style</td>
@@ -1073,7 +1072,7 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border=1 cellspacing=0 cellpadding=0>
 <TR><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
 <TR><TD>GPT<TD>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
 <TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
