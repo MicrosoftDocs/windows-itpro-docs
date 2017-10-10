@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/29/2017
+ms.date: 10/10/2017
 ---
 
 # Policy CSP - Browser
@@ -231,7 +231,7 @@ ms.date: 09/29/2017
 
 <p style="margin-left: 20px">To verify AllowAutofill is set to 0 (not allowed):
 
-1.  Open Microsoft Edge or Microsoft Edge for Windows 10 Mobile.
+1.  Open Microsoft Edge.
 2.  In the upper-right corner of the browser, click **…**.
 3.  Click **Settings** in the drop down list, and select **View Advanced Settings**.
 4.  Verify the setting **Save form entries** is greyed out.
@@ -1177,8 +1177,8 @@ Employees cannot remove these search engines, but they can set any one as the de
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
 
