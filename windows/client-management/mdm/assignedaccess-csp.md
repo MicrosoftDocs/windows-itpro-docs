@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/19/2017
+ms.date: 10/03/2017
 ---
 
 # AssignedAccess CSP
@@ -19,16 +19,17 @@ The AssignedAccess configuration service provider (CSP) is used set the device t
 
 For step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](http://go.microsoft.com/fwlink/p/?LinkID=722211)
 
-> **Note**  The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting in Windows 10, version 1709 it is also supported in Windows 10 Pro.
+> [!Note]
+> The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting in Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S.
 
 The following diagram shows the AssignedAccess configuration service provider in tree format
 
 ![assignedaccess csp diagram](images/provisioning-csp-assignedaccess.png)
 
-<a href="" id="--vendor-msft-assignedaccess"></a>**./Vendor/MSFT/AssignedAccess**  
+<a href="" id="--vendor-msft-assignedaccess"></a>**./Device/Vendor/MSFT/AssignedAccess**  
 Root node for the CSP.
 
-<a href="" id="assignedaccess-kioskmodeapp"></a>**AssignedAccess/KioskModeApp**  
+<a href="" id="assignedaccess-kioskmodeapp"></a>**./Device/Vendor/MSFT/AssignedAccess/KioskModeApp**  
 A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, follow the information in [this Microsoft website](http://go.microsoft.com/fwlink/p/?LinkId=404220).
 
 In Windows 10, version 1607, you can use a provisioned app to configure the kiosk mode. For more information about how to remotely provision an app, see [Enterprise app management](enterprise-app-management.md).
@@ -49,7 +50,7 @@ For a local account, the domain name should be the device name. When Get is exec
 
 The supported operations are Add, Delete, Get and Replace. When there's no configuration, the Get and Delete methods fail. When there's already a configuration for kiosk mode app, the Add method fails. The data pattern for Add and Replace is the same.
 
-<a href="" id="assignedaccess-configuration"></a>**AssignedAccess/Configuration**  
+<a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**  
 Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Overview of the AssignedAccessConfiguration XML](#overview-of-the-assignedaccessconfiguration-xml). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd). 
 
 Enterprises can use this to easily configure and manage the curated lockdown experience. 
