@@ -36,7 +36,7 @@ Enterprises will not be able to install Windows Mixed Reality Feature on Demand 
 
 
 <span id="block" /> 
-## block
+## Block the Mixed Reality Portal
 
 You can use the [AppLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
 
