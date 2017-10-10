@@ -29,7 +29,7 @@ To enable Windows Automatic Redeployment in Windows 10, version 1709 (Fall Creat
 
 You can set the policy using one of these methods:
 
-1. MDM provider, such as Intune for Education
+- MDM provider, such as Intune for Education
 
     **Namrata/Dennis ** - *Is the following statement about Intune for Education, correct? I couldn't actually verify it in the latest I4E builds*
     - Intune for Education automatically sets this policy in the **All devices** group policy configuration.
@@ -40,11 +40,11 @@ You can set the policy using one of these methods:
         - Data type:  Boolean
         - Value:  1
 
-2. Windows Configuration Designer
+- Windows Configuration Designer
     
     You can [use Windows Configuration Designer](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings > Policies > CredentialProviders > DisableAutomaticReDeploymentCredentials** setting and create a provisioning package.
 
-3. Set up School PCs app
+- Set up School PCs app
 
     In the Set up School PCs app, you can... **TBD - Waiting for a SUSPC build that has this functionality and will link to the updated SUSPC docs when that's done**. For more info, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
 
@@ -56,12 +56,26 @@ Windows Automatic Redeployment is a two-step process: trigger it and then authen
 
 1. From the Windows device lock screen, enter the keystroke: **CTRL + ![Windows key](images/windows_glyph.png) + R**. 
 
+    ![Enter CTRL+Windows key+R on the Windows lockscreen](images/windows-automatic-redeployment-lockscreen.png)
+
     This will open up a custom login screen for Windows Automatic Redeployment. The screen serves two purposes:
     1. Confirm/verify that the end user has the right to trigger Windows Automatic Redeployment
     2. Notify the user in case a provisioning package, created using Windows Configuration Designer or Set up School PCs, will be used as part of the process.
 
-2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and start the reset process.
+    ![Custom login screen for Windows Automatic Redeployment](images/windows-automatic-redeployment-customlogin.png)
 
+2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and trigger Windows Automatic Redeployment.
+
+    Once Windows Automatic Redeployment is triggered, the reset process starts. 
+    
+    After reset, the device:
+    - Sets the region, language, and keyboard
+    - Connects to Wi-files
+    - Applies the provisioning package, if you created one, and repplies this to the device. This includes re-installing any apps that are part of the provisioning package.
+
+    ![Notification that provisioning is complete](images/windows-automatic-redeployment-provisioningcomplete.png)
+
+    Once provisioning is complete, the device is again ready for use.
 
 ## Related topics
 
