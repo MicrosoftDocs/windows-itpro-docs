@@ -31,14 +31,55 @@ To enable users to download the Windows Mixed Reality software, enterprises usin
  
 Enterprises will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
 
-- Manually install the Mixed Reality Software 
+- Manually install the Mixed Reality software 
 - IT admin can create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx)
 
 
 <span id="block" /> 
 ## block
 
-Since MRP is an app and blocking this app is sufficient for your scenario, via AppLocker should be sufficient for now. To make sure enterprise understand it, please file a doc bug to publish the instruction of leveraging AppLocker CSP to block Mixed Reality Portal and control Oasis. In the doc, AppLocker CSP doc is here: https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/applocker-csp it has a list of inbox app that could be controlled by this CSP, MRP/Oasis needs to be listed there as well. Provide the content and assign to Maricia – cpub writer for CSP. 
+You can use the [AppLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
+
+In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryVersionRange="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+        <Add>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/PolicyManager/My/ApplicationManagement/ApplicationRestrictions</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Type xmlns="syncml:metinf">text/plain</Type>
+                </Meta>
+                <Data>  
+ &lt;RuleCollection Type="Appx" EnforcementMode="Enabled"&gt;
+    &lt;FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
+      &lt;Conditions&gt;
+        &lt;FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*"&gt;
+          &lt;BinaryVersionRange LowSection="0.0.0.0" HighSection="*" /&gt;
+        &lt;/FilePublisherCondition&gt;
+      &lt;/Conditions&gt;
+    &lt;/FilePublisherRule&gt;
+    &lt;FilePublisherRule Id="d26da4e7-0b01-484d-a8d3-d5b5341b2d55" Name="Block Mixed Reality Portal" Description="" UserOrGroupSid="S-1-1-0" Action="Deny"&gt;
+      &lt;Conditions&gt;
+        &lt;FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.HolographicFirstRun" BinaryName="*"&gt;
+          &lt;BinaryVersionRange LowSection="*" HighSection="*" /&gt;
+        &lt;/FilePublisherCondition&gt;
+      &lt;/Conditions&gt;
+    &lt;/FilePublisherRule&gt;
+  &lt;/RuleCollection&gt;&gt;
+                </Data>
+            </Item>
+        </Add>
+        <Final/>
+    </SyncBody>
+</SyncML>
+
+``` 
 
 
 ## Related topics
