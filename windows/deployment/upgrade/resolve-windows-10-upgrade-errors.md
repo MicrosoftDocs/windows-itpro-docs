@@ -131,15 +131,15 @@ The following tables provide the corresponding phase and operation for values of
 
 
 <table cellspacing=0 cellpadding=0>
-<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
-</TABLE>
+<tr><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
+</table>
 
 <table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
 <TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></TD>
