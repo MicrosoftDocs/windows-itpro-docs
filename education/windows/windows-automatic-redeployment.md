@@ -46,8 +46,14 @@ You can set the policy using one of these methods:
 
 - Set up School PCs app
 
-    In the Set up School PCs app, you can... **TBD - Waiting for a SUSPC build that has this functionality and will link to the updated SUSPC docs when that's done**. For more info, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
+    Windows Automatic Redeployment on the Set up School PCs app is coming soon. We'll update the documentation once the feature is available on the app. In the meantime, you'll want to make sure you are running Windows 10, version 1709 on the student PCs if you want to use Windows Automatic Redeployment through the Set up School PCs app. You can check the version several ways:
+    - Log into the PCs, go to the **Settings > System > About** page, look in the **Windows specifications** section and confirm **Version** is set to 1709.
+    - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you are using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
+    - Reach out to your device manufacturer.
+    
+    <!-- Add this link back when the SUSPC topic has been updated with the Windows Automatic Redeployment info
+    For more info, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
+    -->
 
 ## Trigger Windows Automatic Redeployment
 Windows Automatic Redeployment is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 
