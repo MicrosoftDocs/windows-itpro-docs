@@ -62,7 +62,7 @@ WIM = Windows image (Microsoft)
 
 The following steps can resolve many Windows upgrade problems.
 
-<OL>
+<ol>
 <LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
 <UL>
@@ -249,7 +249,7 @@ See the following example:
 
 >The following instructions are meant for IT professionals. Also see the [Upgrade error codes](#upgrade-error-codes) section in this guide to familiarize yourself with [result codes](#result-codes) and [extend codes](#extend-codes).
 
-<P>To analyze Windows Setup log files:
+<p>To analyze Windows Setup log files:
 
 <ol>
 <LI>Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
@@ -259,11 +259,11 @@ See the following example:
 <LI>To find the last occurrence of the result code:
   <OL type="a">
   <LI>Scroll to the bottom of the file and click after the last character.
-  <LI>Click **Edit**.
-  <LI>Click **Find**.
+  <LI>Click <B>Edit</B>.
+  <LI>Click <B>Find</B>.
   <LI>Type the result code.
-  <LI>Under **Direction** select **Up**.
-  <LI>Click **Find Next**.
+  <LI>Under <B>Direction</B> select <b>Up</b>.
+  <LI>Click <b>Find Next</b>.
   </OL>
 <LI> When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
 <LI> Search for the following important text strings:
