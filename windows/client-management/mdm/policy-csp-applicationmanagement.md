@@ -496,13 +496,6 @@ ms.date: 09/29/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows disabling of the retail catalog and only enables the Private store.
 
-> [!IMPORTANT]
-> This node must be accessed using the following paths:
->
-> -   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/ApplicationManagement/RequirePrivateStoreOnly** to get the result.
-
-
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 (default) – Allow both public and Private store.

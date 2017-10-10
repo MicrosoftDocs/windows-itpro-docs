@@ -64,13 +64,6 @@ ms.date: 09/29/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that turns off notification mirroring.
 
-> [!IMPORTANT]
-> This node must be accessed using the following paths:
->
-> -   **./User/Vendor/MSFT/Policy/Config/Notifications/DisallowNotificationMirroring** to set the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/Notifications/DisallowNotificationMirroring** to get the result.
-
-
 <p style="margin-left: 20px">For each user logged into the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device will not get mirrored to other devices of the same logged in user. If you disable or do not configure this policy (set value to 0) the notifications received by this user on this device will be mirrored to other devices of the same logged in user. This feature can be turned off by apps that do not want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
 
 <p style="margin-left: 20px">No reboot or service restart is required for this policy to take effect.
