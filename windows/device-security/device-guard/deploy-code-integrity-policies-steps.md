@@ -122,6 +122,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny  ID="ID_DENY_FSI"           FriendlyName="fsi.exe"            FileName="fsi.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_FSI_ANYCPU"    FriendlyName="fsiAnyCpu.exe"      FileName="fsiAnyCpu.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_MSHTA"         FriendlyName="mshta.exe"          FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_VISUALUIAVERIFY"         FriendlyName="visualuiaverifynative.exe"          FileName="visualuiaverifynative.exe" MinimumFileVersion = "65535.65535.65535.65535" />
 
     <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6" />
     <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF" />
@@ -405,6 +406,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_FSI" />
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU" />
           <FileRuleRef RuleID="ID_DENY_MSHTA" />
+          <FileRuleRef RuleID="ID_DENY_VISUALUIAVERIFY" />
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />
@@ -657,7 +659,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
       </ProductSigners>
     </SigningScenario>
   </SigningScenarios>
-  <UpdatePolicySigners />v
+  <UpdatePolicySigners />
   <CiSigners />
   <HvciOptions>0</HvciOptions>
 </SiPolicy>
