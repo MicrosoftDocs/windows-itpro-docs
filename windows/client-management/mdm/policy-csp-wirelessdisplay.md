@@ -234,7 +234,12 @@ ms.date: 09/29/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. Setting this policy controls whether or not the wireless display can send input&#8212;keyboard, mouse, pen, and touch input if the display supports it&#8212;back to the source device.
+
+<p style="margin-left: 20px">Allowed values:
+
+-   0 - Wireless display input disabled.
+-   1 (default) - Wireless display input enabled.
 
 <!--EndDescription-->
 <!--EndPolicy-->
