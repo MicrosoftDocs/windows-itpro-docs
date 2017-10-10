@@ -58,7 +58,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <TR><TD>[Configure VMs](#configure-vms)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
 <TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
 <TR><TD>[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)<TD>Terms used in this guide.<TD>Informational
-</TABLE>
+</table>
 
 </div>
 
