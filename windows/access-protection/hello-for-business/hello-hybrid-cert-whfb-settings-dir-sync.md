@@ -20,7 +20,7 @@ ms.date: 09/08/2017
 [< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
 [Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
 
-## Directory Syncrhonization
+## Directory Synchronization
 
 >[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.

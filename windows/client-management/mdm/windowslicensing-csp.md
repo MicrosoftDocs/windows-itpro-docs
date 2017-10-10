@@ -110,6 +110,9 @@ The following are valid edition upgrade paths when using this node through an MD
 
 -   Windows 10 Mobile to Windows 10 Mobile Enterprise
 
+> [!Warning]
+> Edition upgrades do not support Volume Licence (VL) keys.
+
 <a href="" id="licensekeytype"></a>**LicenseKeyType**  
 Returns the parameter type used by Windows 10 devices for an edition upgrade, activation, or product key change.
 
