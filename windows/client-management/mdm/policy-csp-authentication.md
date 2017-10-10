@@ -119,13 +119,6 @@ ms.date: 09/29/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows an EAP cert-based authentication for a single sign on (SSO) to access internal resources.
 
-> [!IMPORTANT]
-> This node must be accessed using the following paths:
->
-> -   **./User/Vendor/MSFT/Policy/Config/Authentication/AllowEAPCertSSO** to set the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/Authentication/AllowEAPCertSSO** to get the result.
-
-
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 – Not allowed.
