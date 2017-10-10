@@ -106,8 +106,8 @@ Note: If only a result code is returned, this can be because a tool is being use
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
 1. Identify the error code type, either Win32 or NTSTATUS, using the first hexidecimal digit:
-        <BR>8 = Win32 error code (ex: 0x**8**0070070)
-        <BR>C = NTSTATUS value (ex: 0x**C**1900107)
+        <br>8 = Win32 error code (ex: 0x**8**0070070)
+        <br>C = NTSTATUS value (ex: 0x**C**1900107)
 2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits correspond to the last 16 bits of the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure.
 3. Based on the type of error code determined in the first step, match the 4 digits derived from the second step to either a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx), or an [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx). 
 
@@ -198,29 +198,28 @@ Several log files are created during each phase of the upgrade process. These lo
 <P>The following table describes some log files and how to use them for troubleshooting purposes:
 
 <table>
-<TR>
-<td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
-<tr><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
-<TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
-<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC
-<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
-<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Rollback<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
-<TR><TD>Pre-initialization (prior to downlevel):<BR>Windows</TD><TD>Contains information about initializing setup.<TD>If setup fails to launch.
-<TR><TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
-<TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
-<TR><TD>miglog.xml<TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about what was migrated during the installation.<TD>Identify post upgrade data migration issues.
-<TR><TD>BlueBox.log<TD>Down-Level:<BR>Windows\Logs\Mosetup<TD>Contains information communication between setup.exe and Windows Update.<TD>Use during WSUS and WU down-level failures or for 0xC1900107.
+<TR><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
+<tr><TD rowspan=5>setupact.log</td><TD>Down-Level:<BR>$Windows.~BT\Sources\Panther</td><TD>Contains information about setup actions during the downlevel phase. </td>
+<TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.</td>
+<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC</td>
+<TD>Contains information about actions during the OOBE phase.</td><TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.</td>
+<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Rollback<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.</td>
+<TR><TD>Pre-initialization (prior to downlevel):<BR>Windows</TD><TD>Contains information about initializing setup.<TD>If setup fails to launch.</td>
+<TR><TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.</td>
+<TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.</td>
+<TR><TD>miglog.xml<TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about what was migrated during the installation.<TD>Identify post upgrade data migration issues.</td>
+<TR><TD>BlueBox.log<TD>Down-Level:<BR>Windows\Logs\Mosetup<TD>Contains information communication between setup.exe and Windows Update.<TD>Use during WSUS and WU down-level failures or for 0xC1900107.</td>
 <TR><TD>Supplemental rollback logs:<BR>
 Setupmem.dmp<BR>
 setupapi.dev.log<BR>
-Event logs (*.evtx)
+Event logs (*.evtx)</td>
 
 
-<td>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.
+<td>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.</td>
 <TD>
 Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<BR>
 Setupapi: Device install issues - 0x30018<BR>
-Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
+Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
 
 </TABLE>
 
