@@ -536,8 +536,8 @@ The Multi-Factor Authentication server communicates with the Azure MFA cloud ser
 
 
 ## Follow the Windows Hello for Business on premises certificate trust deployment guide
-1. [Validate Active Directory prerequisites](hello-cert-trust-validate-ad-prereq.md)
-2. [Validate and Configure Public Key Infrastructure](hello-cert-trust-validate-pki.md)
-3. [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-cert-trust-adfs.md)
-4. [Validate and Deploy Multifactor Authentication Services (MFA)](hello-cert-trust-validate-deploy-mfa.md)
-5. [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
+1. [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
+2. [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
+3. [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-key-trust-adfs.md)
+4. [Validate and Deploy Multifactor Authentication Services (MFA)](hello-key-trust-validate-deploy-mfa.md)
+5. [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)

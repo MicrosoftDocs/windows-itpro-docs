@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.localizationpriority: high
-ms.author: daniha
-ms.date: 07/07/2017
+author: DaniHalfinauthor: mikestephens-MS
+ms.author: mstephen
+localizationpriority: high
+ms.date: 10/08/2017
 ---
 # Configure Windows Hello for Business Policy settings
 
