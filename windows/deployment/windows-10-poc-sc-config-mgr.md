@@ -37,8 +37,10 @@ This guide provides end-to-end instructions to install and configure System Cent
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
+<br>
+
 <div style='font-size:9.0pt'>
-<TABLE border="1" cellspacing="0" cellpadding="0">
+<table border="1" cellspacing="0" cellpadding="0">
 <tr><td BGCOLOR="#a0e4fa"><b>Topic</b><td BGCOLOR="#a0e4fa"><b>Description</b><td BGCOLOR="#a0e4fa"><b>Time</b>
 
 <tr><td>[Install prerequisites](#install-prerequisites)<td>Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.<td>60 minutes
@@ -53,7 +55,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 <tr><td>[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)<td>Replace a client computer with Windows 10 using Configuration Manager.<td>90 minutes
 <tr><td>[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)<td>Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT<td>90 minutes
 
-</TABLE>
+</table>
 
 </div>
 
