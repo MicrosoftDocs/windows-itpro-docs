@@ -153,9 +153,9 @@ The following tables provide the corresponding phase and operation for values of
   </tr>
 </table>
 
-### table within table with border 0
+### table within table with border 1
 
-<table border="0">
+<table border="1">
   <tr>
     <td>
     <table><tr><td>One</td></tr></table>
@@ -166,14 +166,14 @@ The following tables provide the corresponding phase and operation for values of
   </tr>
 </table>
 
-### table within table with td align
+### table within table with td align in quotes
 
 <table>
   <tr>
-    <td align=center>
+    <td align="center">
     <table><tr><td>One</td></tr></table>
     </td>
-    <td align=right>
+    <td align="right">
     <table><tr><td>Two</td></tr></table>
     </td>
   </tr>
