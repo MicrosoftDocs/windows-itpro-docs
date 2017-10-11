@@ -181,8 +181,8 @@ The following tables provide the corresponding phase and operation for values of
 
 ### original
 
-<table border=0 style='border-collapse:collapse;border:none'>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
+<table border="0" style='border-collapse:collapse;border:none'>
+<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
 <tr><td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
 <table>
 <tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
