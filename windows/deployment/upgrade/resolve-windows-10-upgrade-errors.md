@@ -129,48 +129,6 @@ Extend codes can be matched to the phase and operation when an error occurred. T
 
 The following tables provide the corresponding phase and operation for values of an extend code:
 
-### table zero
-
-<table cellspacing=0 cellpadding=0>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><b>Phase</b>
-<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNKNOWN
-<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_DOWNLEVEL
-<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_SAFE_OS
-<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
-</table>
-
-
-### table 0.5
-
-<table>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><b>Phase</b>
-<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNKNOWN
-<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_DOWNLEVEL
-<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_SAFE_OS
-<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
-</table>
-
-### table 0.55
-
-<table>
-<tr><td colspan=2 align="center" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><b>Phase</b>
-<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNKNOWN
-<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_DOWNLEVEL
-<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_SAFE_OS
-<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
-</table>
-
-### table 0.6
-
 <table>
 <tr><td colspan="2" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
 <tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><b>Phase</b>
@@ -181,151 +139,6 @@ The following tables provide the corresponding phase and operation for values of
 <tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OOBE_BOOT
 <tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
 </table>
-
-### table 0.7
-
-<table>
-<tr><td colspan="2" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td><b>Hex</b><td><b>Phase</b>
-<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNKNOWN
-<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_DOWNLEVEL
-<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_SAFE_OS
-<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
-</table>
-
-### table one
-
-<table cellspacing=0 cellpadding=0>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
-</table>
-
-### table two
-
-<table cellspacing=0 cellpadding=0>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td><b>Hex</b><td><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
-<tr><td><span style='font-size:9.0pt'>0<td><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
-<tr><td><span style='font-size:9.0pt'>1<td><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
-<tr><td><span style='font-size:9.0pt'>2<td><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
-<tr><td><span style='font-size:9.0pt'>3<td><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
-<tr><td><span style='font-size:9.0pt'>4<td><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
-<tr><td><span style='font-size:9.0pt'>5<td><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
-</table>
-
-### table three
-
-<table cellspacing=0 cellpadding=0>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td><b>Hex</b><td><b>Phase</b>
-<tr><td>0<td>SP_EXECUTION_UNKNOWN
-<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
-<tr><td>2<td>SP_EXECUTION_SAFE_OS
-<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
-<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
-<tr><td>5<td>SP_EXECUTION_UNINSTALL
-</table>
-
-### table four
-
-<table>
-<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td><b>Hex</b><td><b>Phase</b>
-<tr><td>0<td>SP_EXECUTION_UNKNOWN
-<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
-<tr><td>2<td>SP_EXECUTION_SAFE_OS
-<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
-<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
-<tr><td>5<td>SP_EXECUTION_UNINSTALL
-</table>
-
-### table 4.5
-
-<table>
-<tr><td colspan="2" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
-<tr><td><b>Hex</b><td><b>Phase</b>
-<tr><td>0<td>SP_EXECUTION_UNKNOWN
-<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
-<tr><td>2<td>SP_EXECUTION_SAFE_OS
-<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
-<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
-<tr><td>5<td>SP_EXECUTION_UNINSTALL
-</table>
-
-### table five
-
-<table>
-<tr><td><b>Extend code: phase</b></td>
-<tr><td><b>Hex</b><td><b>Phase</b>
-<tr><td>0<td>SP_EXECUTION_UNKNOWN
-<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
-<tr><td>2<td>SP_EXECUTION_SAFE_OS
-<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
-<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
-<tr><td>5<td>SP_EXECUTION_UNINSTALL
-</table>
-
-
-### rest of the stuff - one
-
-
-<table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
-<tr><td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<table cellspacing=0 cellpadding=0>
-<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_UNKNOWN
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_COPY_PAYLOAD
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_UPDATES
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>6<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REPLICATE_OC
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>7<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_DRVIERS
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>8<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_SAFE_OS
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>9<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_ROLLBACK
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>A<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>B<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>C<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_APPLY_IMAGE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>D<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_MIGRATE_DATA
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>E<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SET_PRODUCT_KEY
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>F<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_UNATTEND
-</table>
-</td>
-<td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<table cellspacing=0 cellpadding=0>
-<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><b>Operation</b>
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>10<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_DRIVER
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>11<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ENABLE_FEATURE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>12<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DISABLE_FEATURE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>13<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>14<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>15<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_FILE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>16<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_REGISTRY
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>17<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>18<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SYSPREP
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>19<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_OOBE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1A<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1B<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_FIRST_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1C<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1D<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_OOBE_BOOT
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1E<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PRE_OOBE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1F<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_POST_OOBE
-<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>20<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
-</table>
-</td>
-</tr>
-</table>
-
-### rest of the stuff - two
 
 <table border=0 style='border-collapse:collapse;border:none'>
 <tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
@@ -375,13 +188,14 @@ The following tables provide the corresponding phase and operation for values of
 </tr>
 </table>
 
+
 For example: An extend code of **0x4000D**, represents a problem during phase 4 (**0x4**) with data migration (**000D**).
 
 ## Log files
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
-<P>The following table describes some log files and how to use them for troubleshooting purposes:
+The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
 <table>
 <TR><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
