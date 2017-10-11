@@ -2,6 +2,7 @@
 ## [What's new in MDM enrollment and management](new-in-windows-mdm-enrollment-management.md)
 ## [Mobile device enrollment](mobile-device-enrollment.md)
 ### [MDM enrollment of Windows devices](mdm-enrollment-of-windows-devices.md)
+### [Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)
 ### [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
 ### [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 ### [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)

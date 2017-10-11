@@ -111,9 +111,6 @@ ms.date: 09/29/2017
     <a href="#internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
-    <a href="#internetexplorer-disableblockingofoutdatedactivexcontrols">InternetExplorer/DisableBlockingOfOutdatedActiveXControls</a>
-  </dd>
-  <dd>
     <a href="#internetexplorer-disablebypassofsmartscreenwarnings">InternetExplorer/DisableBypassOfSmartScreenWarnings</a>
   </dd>
   <dd>
@@ -288,9 +285,6 @@ ms.date: 09/29/2017
     <a href="#internetexplorer-internetzonenavigatewindowsandframes">InternetExplorer/InternetZoneNavigateWindowsAndFrames</a>
   </dd>
   <dd>
-    <a href="#internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</a>
-  </dd>
-  <dd>
     <a href="#internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</a>
   </dd>
   <dd>
@@ -298,9 +292,6 @@ ms.date: 09/29/2017
   </dd>
   <dd>
     <a href="#internetexplorer-internetzoneusepopupblocker">InternetExplorer/InternetZoneUsePopupBlocker</a>
-  </dd>
-  <dd>
-    <a href="#internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone">InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</a>
   </dd>
   <dd>
     <a href="#internetexplorer-intranetzoneallowaccesstodatasources">InternetExplorer/IntranetZoneAllowAccessToDataSources</a>
@@ -334,9 +325,6 @@ ms.date: 09/29/2017
   </dd>
   <dd>
     <a href="#internetexplorer-intranetzoneinitializeandscriptactivexcontrols">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls</a>
-  </dd>
-  <dd>
-    <a href="#internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
   </dd>
   <dd>
     <a href="#internetexplorer-intranetzonejavapermissions">InternetExplorer/IntranetZoneJavaPermissions</a>
@@ -690,9 +678,6 @@ ms.date: 09/29/2017
     <a href="#internetexplorer-restrictedsiteszonenavigatewindowsandframes">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames</a>
   </dd>
   <dd>
-    <a href="#internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</a>
-  </dd>
-  <dd>
     <a href="#internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins">InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins</a>
   </dd>
   <dd>
@@ -706,9 +691,6 @@ ms.date: 09/29/2017
   </dd>
   <dd>
     <a href="#internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles">InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</a>
-  </dd>
-  <dd>
-    <a href="#internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter">InternetExplorer/RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</a>
   </dd>
   <dd>
     <a href="#internetexplorer-restrictedsiteszoneturnonprotectedmode">InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode</a>
@@ -759,16 +741,7 @@ ms.date: 09/29/2017
     <a href="#internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</a>
   </dd>
   <dd>
-    <a href="#internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols">InternetExplorer/TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</a>
-  </dd>
-  <dd>
     <a href="#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls</a>
-  </dd>
-  <dd>
-    <a href="#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</a>
-  </dd>
-  <dd>
-    <a href="#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
   </dd>
   <dd>
     <a href="#internetexplorer-trustedsiteszonejavapermissions">InternetExplorer/TrustedSitesZoneJavaPermissions</a>
@@ -2633,61 +2606,6 @@ Note that Adobe Flash can still be disabled through the "Add-on List" and "Deny 
 ADMX Info:  
 -   GP English name: *Turn off Adobe Flash in Internet Explorer and prevent applications from using Internet Explorer technology to instantiate Flash objects*
 -   GP name: *DisableFlashInIE*
--   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="internetexplorer-disableblockingofoutdatedactivexcontrols"></a>**InternetExplorer/DisableBlockingOfOutdatedActiveXControls**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Turn off blocking of outdated ActiveX controls for Internet Explorer*
--   GP name: *VerMgmtDisable*
 -   GP path: *Windows Components/Internet Explorer/Security Features/Add-on Management*
 -   GP ADMX file name: *inetres.admx*
 
@@ -6094,61 +6012,6 @@ ADMX Info:
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Run .NET Framework-reliant components not signed with Authenticode*
--   GP name: *IZ_PolicyUnsignedFrameworkComponentsURLaction_1*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
 <a href="" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode"></a>**InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode**  
 
 <!--StartSKU-->
@@ -6307,61 +6170,6 @@ ADMX Info:
 ADMX Info:  
 -   GP English name: *Use Pop-up Blocker*
 -   GP name: *IZ_PolicyBlockPopupWindows_1*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone"></a>**InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Web sites in less privileged Web content zones can navigate into this zone*
--   GP name: *IZ_PolicyZoneElevationURLaction_1*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Internet Zone*
 -   GP ADMX file name: *inetres.admx*
 
@@ -7037,61 +6845,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, ActiveX controls that cannot be made safe are not loaded with parameters or scripted.
 
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Initialize and script ActiveX controls not marked as safe*
--   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_3*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Intranet Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -14184,61 +13937,6 @@ ADMX Info:
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains"></a>**InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Navigate windows and frames across different domains*
--   GP name: *IZ_PolicyNavigateSubframesAcrossDomains_7*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
 <a href="" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins"></a>**InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins**  
 
 <!--StartSKU-->
@@ -14507,61 +14205,6 @@ ADMX Info:
 ADMX Info:  
 -   GP English name: *Show security warning for potentially unsafe files*
 -   GP name: *IZ_Policy_UnsafeFiles_7*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter"></a>**InternetExplorer/RestrictedSitesZoneTurnOnCrossSiteScriptingFilter**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Turn on Cross-Site Scripting Filter*
--   GP name: *IZ_PolicyTurnOnXSSFilter_Both_Restricted*
 -   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Restricted Sites Zone*
 -   GP ADMX file name: *inetres.admx*
 
@@ -15526,61 +15169,6 @@ ADMX Info:
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Don't run antimalware programs against ActiveX controls*
--   GP name: *IZ_PolicyAntiMalwareCheckingOfActiveXControls_5*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
 <a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls**  
 
 <!--StartSKU-->
@@ -15627,116 +15215,6 @@ If you disable this policy setting, ActiveX controls that cannot be made safe ar
 
 If you do not configure this policy setting, users are queried whether to allow the control to be loaded with parameters or scripted.
 
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Initialize and script ActiveX controls not marked as safe*
--   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_5*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-<!--EndDescription-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<!--StartADMX-->
-ADMX Info:  
--   GP English name: *Initialize and script ActiveX controls not marked as safe*
--   GP name: *IZ_PolicyScriptActiveXNotMarkedSafe_5*
--   GP path: *Windows Components/Internet Explorer/Internet Control Panel/Security Page/Trusted Sites Zone*
--   GP ADMX file name: *inetres.admx*
-
-<!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe"></a>**InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).

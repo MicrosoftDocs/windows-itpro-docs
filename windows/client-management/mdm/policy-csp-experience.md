@@ -736,13 +736,6 @@ ms.date: 09/29/2017
 
 <p style="margin-left: 20px">This policy allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
 
-> [!IMPORTANT]
-> This node must be accessed using the following paths:
->
-> -   **./User/Vendor/MSFT/Policy/Config/Experience/AllowWindowsConsumerFeatures** to set the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/Experience/AllowWindowsConsumerFeatures** to get the result.
-
- 
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 – Not allowed.

@@ -6,10 +6,30 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/14/2017
+ms.date: 10/10/2017
 ---
 
-# Olympia Corp enrollment guidelines
+# Olympia Corp
+
+## What is Windows Insider Lab for Enterprise and Olympia Corp?
+
+Windows Insider Lab for Enterprise is intended for Windows Insiders who want to try new experimental and pre-release Enterprise Privacy and Security features*. To get the complete experience of these Enterprise features, Olympia Corp, a virtual corporation has been set up to reflect the IT infrastructure of real world business. Selected customers are invited to join Olympia Corp and try these features.
+
+As an Olympia user, you will have an opportunity to: 
+
+-   Use various Enterprise features like WIP (Windows Information Protection), ATP (Advanced Threat Protection), WDAG (Windows Defender Application Guard), and APP-V (Application virtualization).
+-   Learn how Microsoft is preparing for GDPR, as well as enabling enterprise customers to prepare for their own readiness.
+-   Validate and test pre-release software in your environment.
+-   Provide feedback.
+-   Interact with engineering team members through a variety of communication channels.
+
+\* Enterprise features may have reduced, or different security, privacy, accessibility, availability, and reliability standards relative to commercially provided services and software. We may change or discontinue any of the Enterprise features at any time without notice.
+
+For more information about Olympia Corp, please see [https://olympia.windows.com/Info/FAQ](https://olympia.windows.com/Info/FAQ).
+
+To request an Olympia Corp account, please fill out the survey at [https://aka.ms/RegisterOlympia](https://aka.ms/RegisterOlympia).
+
+## Enrollment guidelines
 
 Welcome to Olympia Corp. Here are the steps to add your account to your PC.
 
@@ -23,7 +43,7 @@ Choose one of the following two enrollment options:
 
 <a id="enrollment-keep-current-edition"></a>
 
-## Keep your current Windows 10 edition
+### Keep your current Windows 10 edition
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your PC (see [local administrator](https://support.microsoft.com/en-us/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
@@ -57,7 +77,7 @@ Choose one of the following two enrollment options:
 
 <a id="enrollment-upgrade-to-enterprise"></a>
 
-## Upgrade your Windows 10 edition from Pro to Enterprise
+### Upgrade your Windows 10 edition from Pro to Enterprise
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your PC (see [local administrator](https://support.microsoft.com/en-us/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 

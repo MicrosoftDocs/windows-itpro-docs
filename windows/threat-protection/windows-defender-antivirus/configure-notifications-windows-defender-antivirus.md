@@ -82,19 +82,7 @@ Hiding notifications can be useful in situations where you cannot hide the entir
 > [!NOTE]
 > Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
 
-**Use Group Policy to display additional, custom text in notifications:**
-
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
-
-3.  In the **Group Policy Management Editor** go to **Computer configuration**.
-
-4.  Click **Policies** then **Administrative templates**.
-
-5.  Expand the tree to **Windows components > Windows Defender Antivirus > Client interface**. 
-
-6.  Double-click the **Display additional text to clients when they need to perform an action** setting and set the option to **Enabled**. 
-
-7. Enter the additional text you want to be shown to users. Click **OK**. 
+See the [Customize the Windows Defender Security Center app for your organization](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center-antivirus.md) topic for instructions to add cusomt contact information to the notifications that users see on their machines.
 
 **Use Group Policy to hide notifications:**
 

@@ -75,6 +75,7 @@ Telephone activation is primarily used in situations where a computer is isolate
 
 **Note**  
 A specialized method, Token-based activation, is available for specific situations when approved customers rely on a public key infrastructure in a completely isolated, and usually high-security, environment. For more information, contact your Microsoft Account Team or your service representative.
+Token-based Activation option is available for Windows 10 Enterprise LTSB editions (Version 1507 and 1607).
 
 ### Multiple activation key
 
