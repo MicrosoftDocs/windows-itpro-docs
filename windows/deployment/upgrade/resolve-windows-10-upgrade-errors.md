@@ -153,78 +153,18 @@ The following tables provide the corresponding phase and operation for values of
   </tr>
 </table>
 
-### MD table
+### table within table with border 0
 
-|Extend code: operation|
-|HexOperation
-0SP_EXECUTION_OP_UNKNOWN
-1SP_EXECUTION_OP_COPY_PAYLOAD
-2SP_EXECUTION_OP_DOWNLOAD_UPDATES
-3SP_EXECUTION_OP_INSTALL_UPDATES
-4SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
-5SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
-6SP_EXECUTION_OP_REPLICATE_OC
-7SP_EXECUTION_OP_INSTALL_DRVIERS
-8SP_EXECUTION_OP_PREPARE_SAFE_OS
-9SP_EXECUTION_OP_PREPARE_ROLLBACK
-ASP_EXECUTION_OP_PREPARE_FIRST_BOOT
-BSP_EXECUTION_OP_PREPARE_OOBE_BOOT
-CSP_EXECUTION_OP_APPLY_IMAGE
-DSP_EXECUTION_OP_MIGRATE_DATA
-ESP_EXECUTION_OP_SET_PRODUCT_KEY
-FSP_EXECUTION_OP_ADD_UNATTEND|Hex|Operation|0|SP_EXECUTION_OP_UNKNOWN|1|SP_EXECUTION_OP_COPY_PAYLOAD|2|SP_EXECUTION_OP_DOWNLOAD_UPDATES|3|SP_EXECUTION_OP_INSTALL_UPDATES|4|SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT|5|SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE|6|SP_EXECUTION_OP_REPLICATE_OC|7|SP_EXECUTION_OP_INSTALL_DRVIERS|8|SP_EXECUTION_OP_PREPARE_SAFE_OS|9|SP_EXECUTION_OP_PREPARE_ROLLBACK|A|SP_EXECUTION_OP_PREPARE_FIRST_BOOT|B|SP_EXECUTION_OP_PREPARE_OOBE_BOOT|C|SP_EXECUTION_OP_APPLY_IMAGE|D|SP_EXECUTION_OP_MIGRATE_DATA|E|SP_EXECUTION_OP_SET_PRODUCT_KEY|F|SP_EXECUTION_OP_ADD_UNATTEND|HexOperation
-10SP_EXECUTION_OP_ADD_DRIVER
-11SP_EXECUTION_OP_ENABLE_FEATURE
-12SP_EXECUTION_OP_DISABLE_FEATURE
-13SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
-14SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
-15SP_EXECUTION_OP_CREATE_FILE
-16SP_EXECUTION_OP_CREATE_REGISTRY
-17SP_EXECUTION_OP_BOOT
-18SP_EXECUTION_OP_SYSPREP
-19SP_EXECUTION_OP_OOBE
-1ASP_EXECUTION_OP_BEGIN_FIRST_BOOT
-1BSP_EXECUTION_OP_END_FIRST_BOOT
-1CSP_EXECUTION_OP_BEGIN_OOBE_BOOT
-1DSP_EXECUTION_OP_END_OOBE_BOOT
-1ESP_EXECUTION_OP_PRE_OOBE
-1FSP_EXECUTION_OP_POST_OOBE
-20SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE|Hex|Operation|10|SP_EXECUTION_OP_ADD_DRIVER|11|SP_EXECUTION_OP_ENABLE_FEATURE|12|SP_EXECUTION_OP_DISABLE_FEATURE|13|SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS|14|SP_EXECUTION_OP_REGISTER_SYNC_PROCESS|15|SP_EXECUTION_OP_CREATE_FILE|16|SP_EXECUTION_OP_CREATE_REGISTRY|17|SP_EXECUTION_OP_BOOT|18|SP_EXECUTION_OP_SYSPREP|19|SP_EXECUTION_OP_OOBE|1A|SP_EXECUTION_OP_BEGIN_FIRST_BOOT|1B|SP_EXECUTION_OP_END_FIRST_BOOT|1C|SP_EXECUTION_OP_BEGIN_OOBE_BOOT|1D|SP_EXECUTION_OP_END_OOBE_BOOT|1E|SP_EXECUTION_OP_PRE_OOBE|1F|SP_EXECUTION_OP_POST_OOBE|20|SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE|
-|Hex|Operation|
-|0|SP_EXECUTION_OP_UNKNOWN|
-|1|SP_EXECUTION_OP_COPY_PAYLOAD|
-|2|SP_EXECUTION_OP_DOWNLOAD_UPDATES|
-|3|SP_EXECUTION_OP_INSTALL_UPDATES|
-|4|SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT|
-|5|SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE|
-|6|SP_EXECUTION_OP_REPLICATE_OC|
-|7|SP_EXECUTION_OP_INSTALL_DRVIERS|
-|8|SP_EXECUTION_OP_PREPARE_SAFE_OS|
-|9|SP_EXECUTION_OP_PREPARE_ROLLBACK|
-|A|SP_EXECUTION_OP_PREPARE_FIRST_BOOT|
-|B|SP_EXECUTION_OP_PREPARE_OOBE_BOOT|
-|C|SP_EXECUTION_OP_APPLY_IMAGE|
-|D|SP_EXECUTION_OP_MIGRATE_DATA|
-|E|SP_EXECUTION_OP_SET_PRODUCT_KEY|
-|F|SP_EXECUTION_OP_ADD_UNATTEND|
-|Hex|Operation|
-|10|SP_EXECUTION_OP_ADD_DRIVER|
-|11|SP_EXECUTION_OP_ENABLE_FEATURE|
-|12|SP_EXECUTION_OP_DISABLE_FEATURE|
-|13|SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS|
-|14|SP_EXECUTION_OP_REGISTER_SYNC_PROCESS|
-|15|SP_EXECUTION_OP_CREATE_FILE|
-|16|SP_EXECUTION_OP_CREATE_REGISTRY|
-|17|SP_EXECUTION_OP_BOOT|
-|18|SP_EXECUTION_OP_SYSPREP|
-|19|SP_EXECUTION_OP_OOBE|
-|1A|SP_EXECUTION_OP_BEGIN_FIRST_BOOT|
-|1B|SP_EXECUTION_OP_END_FIRST_BOOT|
-|1C|SP_EXECUTION_OP_BEGIN_OOBE_BOOT|
-|1D|SP_EXECUTION_OP_END_OOBE_BOOT|
-|1E|SP_EXECUTION_OP_PRE_OOBE|
-|1F|SP_EXECUTION_OP_POST_OOBE|
-|20|SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE|
+<table border="0">
+  <tr>
+    <td>
+    <table><tr><td>One</td></tr></table>
+    </td>
+    <td>
+    <table><tr><td>Two</td></tr></table>
+    </td>
+  </tr>
+</table>
 
 ### original
 
@@ -429,6 +369,56 @@ FSP_EXECUTION_OP_ADD_UNATTEND|Hex|Operation|0|SP_EXECUTION_OP_UNKNOWN|1|SP_EXECU
 ### removed table style and td align, throughout and removed span
 
 <table border=0>
+<tr><td colspan=2 BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
+<tr><td style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_UNKNOWN
+<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_COPY_PAYLOAD
+<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
+<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'>6<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_REPLICATE_OC
+<tr><td style='padding:0in 4pt 0in 4pt'>7<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_DRVIERS
+<tr><td style='padding:0in 4pt 0in 4pt'>8<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_SAFE_OS
+<tr><td style='padding:0in 4pt 0in 4pt'>9<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_ROLLBACK
+<tr><td style='padding:0in 4pt 0in 4pt'>A<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>B<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>C<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_APPLY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'>D<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_MIGRATE_DATA
+<tr><td style='padding:0in 4pt 0in 4pt'>E<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_SET_PRODUCT_KEY
+<tr><td style='padding:0in 4pt 0in 4pt'>F<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ADD_UNATTEND
+</table>
+</td>
+<td style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'>10<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ADD_DRIVER
+<tr><td style='padding:0in 4pt 0in 4pt'>11<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ENABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'>12<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_DISABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'>13<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'>14<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'>15<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_CREATE_FILE
+<tr><td style='padding:0in 4pt 0in 4pt'>16<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_CREATE_REGISTRY
+<tr><td style='padding:0in 4pt 0in 4pt'>17<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>18<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_SYSPREP
+<tr><td style='padding:0in 4pt 0in 4pt'>19<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'>1A<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1B<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_END_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1C<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1D<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_END_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1E<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PRE_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'>1F<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_POST_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'>20<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
+</table>
+</td>
+</tr>
+</table>
+
+### removed table style and td align, throughout and removed span and table border
+
+<table>
 <tr><td colspan=2 BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
 <tr><td style='border:dotted #A6A6A6 1.0pt;'>
 <table>
