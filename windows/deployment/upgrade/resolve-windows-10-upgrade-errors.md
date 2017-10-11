@@ -153,7 +153,33 @@ The following tables provide the corresponding phase and operation for values of
   </tr>
 </table>
 
-### table within table with border 1
+### table within table plus tr style element
+
+<table>
+  <tr style='border-collapse:collapse;border:none'>
+    <td>
+    <table><tr><td>One</td></tr></table>
+    </td>
+    <td>
+    <table><tr><td>Two</td></tr></table>
+    </td>
+  </tr>
+</table>
+
+### table within table plus td style element
+
+<table>
+  <tr>
+    <td style='border-collapse:collapse;border:none'>
+    <table><tr><td>One</td></tr></table>
+    </td>
+    <td>
+    <table><tr><td>Two</td></tr></table>
+    </td>
+  </tr>
+</table>
+
+### table within table with border 1, no style elements
 
 <table border="1">
   <tr>
