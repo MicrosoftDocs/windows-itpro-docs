@@ -132,7 +132,7 @@ The following tables provide the corresponding phase and operation for values of
 ### table one
 
 <table cellspacing=0 cellpadding=0>
-<tr><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
+<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
 <tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
 <tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
 <tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
@@ -145,7 +145,7 @@ The following tables provide the corresponding phase and operation for values of
 ### table two
 
 <table cellspacing=0 cellpadding=0>
-<tr><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
+<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
 <tr><td><b>Hex</b><td><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
 <tr><td><span style='font-size:9.0pt'>0<td><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
 <tr><td><span style='font-size:9.0pt'>1<td><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
@@ -158,7 +158,7 @@ The following tables provide the corresponding phase and operation for values of
 ### table three
 
 <table cellspacing=0 cellpadding=0>
-<tr><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
+<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
 <tr><td><b>Hex</b><td><b>Phase</b>
 <tr><td>0<td>SP_EXECUTION_UNKNOWN
 <tr><td>1<td>SP_EXECUTION_DOWNLEVEL
@@ -167,6 +167,33 @@ The following tables provide the corresponding phase and operation for values of
 <tr><td>4<td>SP_EXECUTION_OOBE_BOOT
 <tr><td>5<td>SP_EXECUTION_UNINSTALL
 </table>
+
+### table four
+
+<table>
+<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
+<tr><td><b>Hex</b><td><b>Phase</b>
+<tr><td>0<td>SP_EXECUTION_UNKNOWN
+<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
+<tr><td>2<td>SP_EXECUTION_SAFE_OS
+<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
+<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
+<tr><td>5<td>SP_EXECUTION_UNINSTALL
+</table>
+
+### table five
+
+<table>
+<tr><td><b>Extend code: phase</b></td>
+<tr><td><b>Hex</b><td><b>Phase</b>
+<tr><td>0<td>SP_EXECUTION_UNKNOWN
+<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
+<tr><td>2<td>SP_EXECUTION_SAFE_OS
+<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
+<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
+<tr><td>5<td>SP_EXECUTION_UNINSTALL
+</table>
+
 
 ### rest of the stuff
 
