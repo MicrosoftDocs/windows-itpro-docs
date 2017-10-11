@@ -73,7 +73,7 @@ The deployment script displays the following exit codes to let you know if it wa
 <div font-size='7pt;'>
 <table border='1' cellspacing='0' cellpadding='0'>
     <tr>
-        <td BGCOLOR="#a0e4fa" width=5>Exit code and meaning</td>
+        <td BGCOLOR="#a0e4fa" width="5">Exit code and meaning</td>
         <td BGCOLOR="#a0e4fa">Suggested fix</td>
     </tr>
     <tr><td>0 - Success</td>

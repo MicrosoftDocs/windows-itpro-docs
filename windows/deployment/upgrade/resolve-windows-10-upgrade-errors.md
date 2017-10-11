@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+ms.date: 10/10/2017
 ms.localizationpriority: high
 ---
 
@@ -21,8 +22,8 @@ ms.localizationpriority: high
 
 This topic contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. The following sections and procedures are provided in this guide:
 
-- [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<BR>
-- [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<BR>
+- [The Windows 10 upgrade process](#the-windows-10-upgrade-process): An explanation of phases used during the upgrade process.<br>
+- [Quick fixes](#quick-fixes): Steps you can take to eliminate many Windows upgrade errors.<br>
 - [Upgrade error codes](#upgrade-error-codes): The components of an error code are explained.
     - [Result codes](#result-codes): Information about result codes.
     - [Extend codes](#extend-codes): Information about extend codes.
@@ -53,15 +54,15 @@ The Windows Setup application is used to upgrade a computer to Windows 10, or to
 
 ![Upgrade process](../images/upgrade-process.png)
 
-DU = Driver/device updates.<BR>
-OOBE = Out of box experience.<BR>
+DU = Driver/device updates.<br>
+OOBE = Out of box experience.<br>
 WIM = Windows image (Microsoft)
 
 ## Quick fixes
 
 The following steps can resolve many Windows upgrade problems.
 
-<OL>
+<ol>
 <LI>Remove nonessential external hardware, such as docks and USB devices.</LI> 
 <LI>Check all hard drives for errors and attempt repairs. To automatically repair hard drives, open an elevated command prompt, switch to the drive you wish to repair, and type the following command. You will be required to reboot the computer if the hard drive being repaired is also the system drive.
 <UL>
@@ -100,13 +101,13 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 ### Result codes
 
->A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <BR>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](#resolution-procedures) section later in this topic.
+>A result code of **0xC1900101** is generic and indicates that a rollback occurred. In most cases, the cause is a driver compatibility issue. <br>To troubleshoot a failed upgrade that has returned a result code of 0xC1900101, analyze the extend code to determine the Windows Setup phase, and see the [Resolution procedures](#resolution-procedures) section later in this topic.
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
 1. Identify the error code type, either Win32 or NTSTATUS, using the first hexidecimal digit:
-        <BR>8 = Win32 error code (ex: 0x**8**0070070)
-        <BR>C = NTSTATUS value (ex: 0x**C**1900107)
+        <br>8 = Win32 error code (ex: 0x**8**0070070)
+        <br>C = NTSTATUS value (ex: 0x**C**1900107)
 2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits correspond to the last 16 bits of the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure.
 3. Based on the type of error code determined in the first step, match the 4 digits derived from the second step to either a [Win32 error code](https://msdn.microsoft.com/en-us/library/cc231199.aspx), or an [NTSTATUS value](https://msdn.microsoft.com/en-us/library/cc704588.aspx). 
 
@@ -128,64 +129,67 @@ Extend codes can be matched to the phase and operation when an error occurred. T
 
 The following tables provide the corresponding phase and operation for values of an extend code:
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 5.4pt 0in 5.4pt'><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
-</TABLE>
+<br>
 
-<TABLE border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
-<TR><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></TD>
-<TR><TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 4pt 0in 4pt'><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_UNKNOWN
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_COPY_PAYLOAD
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_UPDATES
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>6<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REPLICATE_OC
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>7<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_DRVIERS
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>8<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_SAFE_OS
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>9<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_ROLLBACK
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>A<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>B<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>C<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_APPLY_IMAGE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>D<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_MIGRATE_DATA
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>E<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SET_PRODUCT_KEY
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>F<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_UNATTEND
-</TABLE>
-</TD>
-<TD align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt'><b>Hex</b><TD style='padding:0in 4pt 0in 4pt'><b>Operation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>10<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_DRIVER
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>11<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ENABLE_FEATURE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>12<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DISABLE_FEATURE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>13<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>14<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>15<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_FILE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>16<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_REGISTRY
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>17<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>18<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SYSPREP
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>19<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_OOBE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1A<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1B<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_FIRST_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1C<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1D<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_OOBE_BOOT
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1E<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PRE_OOBE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1F<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_POST_OOBE
-<TR><TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>20<TD style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
-</TABLE>
-</TD>
-</TR>
-</TABLE>
+<table cellspacing="0" cellpadding="0">
+<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><b>Phase</b>
+<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNKNOWN
+<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_DOWNLEVEL
+<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_SAFE_OS
+<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
+</table>
+
+
+<table border="0" style='border-collapse:collapse;border:none'>
+<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
+<tr><td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_UNKNOWN
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_COPY_PAYLOAD
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>6<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REPLICATE_OC
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>7<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_DRVIERS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>8<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_SAFE_OS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>9<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_ROLLBACK
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>A<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>B<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>C<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_APPLY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>D<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_MIGRATE_DATA
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>E<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SET_PRODUCT_KEY
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>F<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_UNATTEND
+</table>
+</td>
+<td align="left" valign="top" style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>10<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_DRIVER
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>11<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ENABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>12<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DISABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>13<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>14<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>15<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_FILE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>16<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_REGISTRY
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>17<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>18<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SYSPREP
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>19<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1A<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1B<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1C<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1D<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1E<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PRE_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1F<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_POST_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>20<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
+</table>
+</td>
+</tr>
+</table>
 
 For example: An extend code of **0x4000D**, represents a problem during phase 4 (**0x4**) with data migration (**000D**).
 
@@ -193,45 +197,38 @@ For example: An extend code of **0x4000D**, represents a problem during phase 4 
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
-<P>The following table describes some log files and how to use them for troubleshooting purposes:
+The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
-<TABLE>
-<TR>
-<td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
+<br>
 
-<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
-<TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
-<TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC
-<TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
-<TR><TD>Rollback:<BR>$Windows.~BT\Sources\Rollback<TD>Contains information about actions during rollback.<TD>Investigating generic rollbacks - 0xC1900101.
-<TR><TD>Pre-initialization (prior to downlevel):<BR>Windows</TD><TD>Contains information about initializing setup.<TD>If setup fails to launch.
-<TR><TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about setup actions during the installation.<TD>Investigate post-upgrade related issues.
-
-<TR><TD>setuperr.log<TD>Same as setupact.log<TD>Contains information about setup errors during the installation.<TD>Review all errors encountered during the installation phase.
-
-<TR><TD>miglog.xml<TD>Post-upgrade (after OOBE):<BR>Windows\Panther<TD>Contains information about what was migrated during the installation.<TD>Identify post upgrade data migration issues.
-
-<TR><TD>BlueBox.log<TD>Down-Level:<BR>Windows\Logs\Mosetup<TD>Contains information communication between setup.exe and Windows Update.<TD>Use during WSUS and WU down-level failures or for 0xC1900107.
-
-<TR><TD>Supplemental rollback logs:<BR>
-Setupmem.dmp<BR>
-setupapi.dev.log<BR>
-Event logs (*.evtx)
-
-
-<TD>$Windows.~BT\Sources\Rollback<TD>Additional logs collected during rollback.
-<TD>
-Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<BR>
-Setupapi: Device install issues - 0x30018<BR>
-Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.
-
-</TABLE>
+<table>
+<tr><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
+<tr><td rowspan="5">setupact.log</td><td>Down-Level:<br>$Windows.~BT\Sources\Panther</td><td>Contains information about setup actions during the downlevel phase. </td>
+<td>All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.</td>
+<tr><td>OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC</td>
+<td>Contains information about actions during the OOBE phase.</td><td>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.</td>
+<tr><td>Rollback:<br>$Windows.~BT\Sources\Rollback<td>Contains information about actions during rollback.<td>Investigating generic rollbacks - 0xC1900101.</td>
+<tr><td>Pre-initialization (prior to downlevel):<br>Windows</td><td>Contains information about initializing setup.<td>If setup fails to launch.</td>
+<tr><td>Post-upgrade (after OOBE):<br>Windows\Panther<td>Contains information about setup actions during the installation.<td>Investigate post-upgrade related issues.</td>
+<tr><td>setuperr.log<td>Same as setupact.log<td>Contains information about setup errors during the installation.<td>Review all errors encountered during the installation phase.</td>
+<tr><td>miglog.xml<td>Post-upgrade (after OOBE):<br>Windows\Panther<td>Contains information about what was migrated during the installation.<td>Identify post upgrade data migration issues.</td>
+<tr><td>BlueBox.log<td>Down-Level:<br>Windows\Logs\Mosetup<td>Contains information communication between setup.exe and Windows Update.<td>Use during WSUS and WU down-level failures or for 0xC1900107.</td>
+<tr><td>Supplemental rollback logs:<br>
+Setupmem.dmp<br>
+setupapi.dev.log<br>
+Event logs (*.evtx)</td>
+<td>$Windows.~BT\Sources\Rollback<td>Additional logs collected during rollback.</td>
+<td>
+Setupmem.dmp: If OS bugchecks during upgrade, setup will attempt to extract a mini-dump.<br>
+Setupapi: Device install issues - 0x30018<br>
+Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
+</table>
 
 ### Log entry structure
 
 A setupact.log or setuperr.log entry includes the following elements:
 
-<OL>
+<ol>
 <LI><B>The date and time</B> - 2016-09-08 09:20:05.
 <LI><B>The log level</B> - Info, Warning, Error, Fatal Error.
 <LI><B>The logging component</B> - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
@@ -252,9 +249,9 @@ See the following example:
 
 >The following instructions are meant for IT professionals. Also see the [Upgrade error codes](#upgrade-error-codes) section in this guide to familiarize yourself with [result codes](#result-codes) and [extend codes](#extend-codes).
 
-<P>To analyze Windows Setup log files:
+<br>To analyze Windows Setup log files:
 
-<OL>
+<ol>
 <LI>Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
 <LI>Based on the [extend code](#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
 <LI>Open the log file in a text editor, such as notepad.
@@ -262,11 +259,11 @@ See the following example:
 <LI>To find the last occurrence of the result code:
   <OL type="a">
   <LI>Scroll to the bottom of the file and click after the last character.
-  <LI>Click **Edit**.
-  <LI>Click **Find**.
+  <LI>Click <B>Edit</B>.
+  <LI>Click <B>Find</B>.
   <LI>Type the result code.
-  <LI>Under **Direction** select **Up**.
-  <LI>Click **Find Next**.
+  <LI>Under <B>Direction</B> select <b>Up</b>.
+  <LI>Click <b>Find Next</b>.
   </OL>
 <LI> When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
 <LI> Search for the following important text strings:
@@ -283,7 +280,7 @@ For example, assume that the error code for an error is 0x8007042B - 0x2000D. Se
 
 >Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
 
-<P><B>setuperr.log</B> content:
+<br><B>setuperr.log</B> content:
 
 <pre style="font-size: 10px; overflow-y: visible">
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
@@ -306,7 +303,7 @@ The first line indicates there was an error **0x00000570** with the file **C:\Pr
 
 Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
 
-<P><B>setupact.log</B> content:
+<br><B>setupact.log</B> content:
 
 <pre style="font-size: 10px; overflow-y: visible">
 27:00, Info                   Gather started at 10/5/2016 23:27:00
@@ -329,15 +326,16 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 27:08, Info                   Gather ended at 10/5/2016 23:27:08 with result 44
 27:08, Info                   Leaving MigGather method
 27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
-</PRE>
+</pre>
 
-<P>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
+
+<br>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
 ## Resolution procedures
 
 ### 0xC1900101
 
-A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<BR>
+A frequently observed result code is 0xC1900101. This result code can be thrown at any stage of the upgrade process, with the exception of the downlevel phase. 0xC1900101 is a generic rollback code, and usually indicates that an incompatible driver is present. The incompatible driver can cause blue screens, system hangs, and unexpected reboots. Analysis of supplemental log files is often helpful, such as:<br>
 
 - The minidump file: $Windows.~bt\Sources\Rollback\setupmem.dmp, 
 - Event logs: $Windows.~bt\Sources\Rollback\*.evtx 
@@ -345,346 +343,346 @@ A frequently observed result code is 0xC1900101. This result code can be thrown 
 
 The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  To resolve a rollback due to driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/en-us/kb/929135) before initiating the upgrade process. 
 
-<P>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
+<br>See the following general troubleshooting procedures associated with a result code of 0xC1900101:
 
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border="1" cellspacing="0" cellpadding="0">
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20004</B>
-</TABLE>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20004</B>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation
-<BR>This is generally caused by out-of-date drivers. 
-</TABLE>
-</TD>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an error during the SAFE_OS with the INSTALL_RECOVERY_ENVIRONMENT operation
+<br>This is generally caused by out-of-date drivers. 
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Uninstall antivirus applications.
-<BR>Remove all unused SATA devices.
-<BR>Remove all unused devices and drivers.
-<BR>Update drivers and BIOS.
-</TABLE>
-</TD>
-</TR>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Uninstall antivirus applications.
+<br>Remove all unused SATA devices.
+<br>Remove all unused devices and drivers.
+<br>Update drivers and BIOS.
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x2000c</B>
-</TABLE>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x2000c</B>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.
-<BR>This is generally caused by out-of-date drivers. 
-</TABLE>
-</TD>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows Setup encountered an unspecified error during Wim apply in the WinPE phase.
+<br>This is generally caused by out-of-date drivers. 
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
-<BR>Contact your hardware vendor to obtain updated device drivers.
-<BR>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
-</TABLE>
-</TD>
-</TR>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
+<br>Contact your hardware vendor to obtain updated device drivers.
+<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
+</table>
+</td>
+</tr>
 
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20017
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x20017
 
-</TABLE>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
-<BR>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
-<P>This is a safeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software. 
-</TABLE>
-</TD>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
+<br>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
+<br>This is a safeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software. 
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-Ensure that all that drivers are updated.<BR>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+Ensure that all that drivers are updated.<br>
 Open the Setuperr.log and Setupact.log files in the %windir%\Panther directory, and then locate the problem drivers.
-<BR>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).
-<BR>Update or uninstall the problem drivers.
-</TABLE>
-</TD>
-</TR>
+<br>For more information, see [Understanding Failures and Log Files](https://technet.microsoft.com/en-us/library/ee851579.aspx).
+<br>Update or uninstall the problem drivers.
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x30018</B>
-</TABLE>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x30018</B>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A device driver has stopped responding to setup.exe during the upgrade process.
-</TABLE>
-</TD>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A device driver has stopped responding to setup.exe during the upgrade process.
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
-<BR>Contact your hardware vendor to obtain updated device drivers.
-<BR>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
-</TABLE>
-</TD>
-</TR>
+<br>Contact your hardware vendor to obtain updated device drivers.
+<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process. 
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x3000D</B>
-</TABLE>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x3000D</B>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Installation failed during the FIRST_BOOT phase while attempting the MIGRATE_DATA operation.
-<BR>This can occur due to a problem with a display driver.
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Installation failed during the FIRST_BOOT phase while attempting the MIGRATE_DATA operation.
+<br>This can occur due to a problem with a display driver.
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.
-<BR>Update or uninstall the display driver.
-</TABLE>
-</TD>
-</TR>
+<br>Update or uninstall the display driver.
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x4000D</B>
-</TABLE>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x4000D</B>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A rollback occurred due to a driver configuration issue.
-<P>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.  
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A rollback occurred due to a driver configuration issue.
+<br>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.  
 
-<P>This can occur due to incompatible drivers.  
+<br>This can occur due to incompatible drivers.  
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-<P>Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors. 
-<p>Review the rollback log and determine the stop code.
-<BR>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  An example analysis is shown below. This example is not representative of all cases:
-<p>Info SP     Crash 0x0000007E detected
-<BR>Info SP       Module name           : 
-<BR>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
-<BR>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A
-<BR>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728
-<BR>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40
-<BR>Info SP     Cannot recover the system.
-<BR>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<br>Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors. 
+<br>Review the rollback log and determine the stop code.
+<br>The rollback log is located in the **C:\$Windows.~BT\Sources\Panther** folder.  An example analysis is shown below. This example is not representative of all cases:
+<br>Info SP     Crash 0x0000007E detected
+<br>Info SP       Module name           : 
+<br>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005
+<br>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A
+<br>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728
+<br>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40
+<br>Info SP     Cannot recover the system.
+<br>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.
 
 
-<P>Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<BR>
+<br>Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>
 
-1. Make sure you have enough disk space.<BR>
-2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<BR>
-3. Try changing video adapters.<BR>
-4. Check with your hardware vendor for any BIOS updates.<BR>
+1. Make sure you have enough disk space.<br>
+2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<br>
+3. Try changing video adapters.<br>
+4. Check with your hardware vendor for any BIOS updates.<br>
 5. Disable BIOS memory options such as caching or shadowing.
 </p>
-</TABLE>
-</TD>
-</TR>
+</table>
+</td>
+</tr>
 
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x40017</B>
-</TABLE>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>0xC1900101 - 0x40017</B>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows 10 upgrade failed after the second reboot.
-<BR>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers.
-</TABLE>
-</TD>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Windows 10 upgrade failed after the second reboot.
+<br>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers.
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<BR>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>Clean boot into Windows, and then attempt the upgrade to Windows 10.<br>
 
 For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/en-us/kb/929135).
 
-<BR><BR>Ensure you select the option to "Download and install updates (recommended)."
-</TABLE>
-</TD>
-</TR>
+<br><br>Ensure you select the option to "Download and install updates (recommended)."
+</table>
+</td>
+</tr>
 
-</TABLE>
+</table>
 
 <h3 id="0x800xxxxx">0x800xxxxx</h3>
 
-<P>Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
+<br>Result codes starting with the digits 0x800 are also important to understand. These error codes indicate general operating system errors, and are not unique to the Windows upgrade process. Examples include timeouts, devices not functioning, and a process stopping unexpectedly.
 
-<P>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
+<br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
-<P><TABLE border=1 cellspacing=0 cellpadding=0>
+<br><table border="1" cellspacing="0" cellpadding="0">
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 800040005 - 0x20007
 
-</TABLE>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 An unspecified error occurred with a driver during the SafeOS phase.
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
 
-</TABLE>
-</TD>
-</TR>
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 800704B8 - 0x3001A
 
-</TABLE>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 An extended error has occurred during the first boot phase.
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 Disable or uninstall non-Microsoft antivirus applications, disconnect all unnecessary devices, and perform a [clean boot](https://support.microsoft.com/en-us/kb/929135).
 
-</TABLE>
-</TD>
-</TR>
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 8007042B - 0x4000D
 
-</TABLE>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 The installation failed during the second boot phase while attempting the MIGRATE_DATA operation. 
-<BR>This issue can occur due to file system, application, or driver issues.
+<br>This issue can occur due to file system, application, or driver issues.
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 [Analyze log files](#analyze-log-files) in order to determine the file, application, or driver that is not able to be migrated. Disconnect, update, remove, or replace the device or object.
 
-</TABLE>
-</TD>
-</TR>
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 8007001F - 0x3000D
 
-</TABLE>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DATA operation.  
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 [Analyze log files](#analyze-log-files) in order to determine the files or registry entires that are blocking data migration. 
 
@@ -694,73 +692,73 @@ Note: If a previous upgrade did not complete, invalid profiles might exist in th
 
 To repair this error, ensure that deleted accounts are not still present in the Windows registry and that files under the \\Users directory are valid. Delete the invalid files or user profiles that are causing this error. The specific files and profiles that are causing the error will be recorded in the Windows setup log files.  
 
-</TABLE>
-</TD>
-</TR>
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 8007001F - 0x4000D
 
-</TABLE>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 General failure, a device attached to the system is not functioning.  
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 [Analyze log files](#analyze-log-files) in order to determine the device that is not functioning properly. Disconnect, update, or replace the device.
 
-</TABLE>
-</TD>
-</TR>
+</table>
+</td>
+</tr>
 
-<TR><TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 8007042B - 0x4001E
 
-</TABLE>
+</table>
 
-<P><TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<br><table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 The installation failed during the second boot phase while attempting the PRE_OOBE operation.
 
-</TABLE>
-</TD>
+</table>
+</td>
 
-<TD align="left" valign="top" style='border:solid #000000 1.0pt;'>
+<td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
-<TABLE cellspacing=0 cellpadding=0>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<TR><TD style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
+<table cellspacing="0" cellpadding="0">
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 This error has more than one possible cause. Attempt [quick fixes](#quick-fixes), and if not successful, [analyze log files](#analyze-log-files) in order to determine the problem and solution.
 
-</TABLE>
-</TD>
-</TR>
+</table>
+</td>
+</tr>
 
-</TABLE>
+</table>
 
 
 ### Other result codes
@@ -782,7 +780,7 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 <tr>
 <td>0xC1900200</td>
 <td>Setup.exe has detected that the machine does not meet the minimum system requirements.</td>
-<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <P>See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)  for information.</td>
+<td>Ensure the system you are trying to upgrade meets the minimum system requirements. <br>See [Windows 10 specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications)  for information.</td>
 </tr>
 
 
@@ -790,13 +788,13 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 <td>0x80090011</td>
 <td>A device driver error occurred during user data migration.</td>
 <td>Contact your hardware vendor and get all the device drivers updated. It is recommended to have an active internet connection during upgrade process. 
-<P>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</td>
+<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</td>
 </tr>
 <tr>
 <td>0xC7700112</td>
 <td>Failure to complete writing data to the system drive, possibly due to write access failure on the hard disk.</td>
 <td>This issue is resolved in the latest version of Upgrade Assistant. 
-<P>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</td>
+<br>Ensure that "Download and install updates (recommended)" is accepted at the start of the upgrade process.</td>
 </tr>
 
 <tr>
@@ -808,9 +806,9 @@ This error has more than one possible cause. Attempt [quick fixes](#quick-fixes)
 <tr>
 <td>0x80246007</td>
 <td>The update was not downloaded successfully.</td>
-<td>Attempt other methods of upgrading the operating system.<BR>
+<td>Attempt other methods of upgrading the operating system.<br>
 Download and run the media creation tool. See [Download windows 10](https://www.microsoft.com/en-us/software-download/windows10). 
-<BR>Attempt to upgrade using .ISO or USB.<BR>
+<br>Attempt to upgrade using .ISO or USB.<br>
 **Note**: Windows 10 Enterprise isn’t available in the media creation tool. For more information, go to the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx).
 </td>
 </tr>
@@ -846,7 +844,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <td>The user has chosen to cancel because the system does not pass the compatibility scan to install the update. Setup.exe will report this error when it can upgrade the machine with user data but cannot migrate installed applications.</td>
 <td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See [Windows 10 Pre-Upgrade Validation using SETUP.EXE](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/) for more information.
 
-<P>You can also download the [Windows Assessment and Deployment Kit (ADK) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740) and install Application Compatibility Tools.
+<br>You can also download the [Windows Assessment and Deployment Kit (ADK) for Windows 10](http://go.microsoft.com/fwlink/p/?LinkId=526740) and install Application Compatibility Tools.
 </td>
 </tr>
 
@@ -856,9 +854,9 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <td>This error is specific to upgrades using System Center Configuration Manager 2012 R2 SP1 CU3 (5.00.8238.1403)</td>
 <td>Analyze the SMSTS.log and verify that the upgrade is failing on "Apply Operating system" Phase: Error 80072efe DownloadFileWithRanges() failed. 80072efe. ApplyOperatingSystem (0x0760)
 
-<P>The error 80072efe means that the connection with the server was terminated abnormally.
+<br>The error 80072efe means that the connection with the server was terminated abnormally.
 
-<P>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.
+<br>To resolve this issue, try the OS Deployment test on a client in same VLAN as the Configuration Manager server. Check the network configuration for random client-server connection issues happening on the remote VLAN.
 </td>
 </tr>
 
@@ -874,7 +872,7 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 <li>Enable the Upgrades classification.</li>
 <li>Perform a full synch.</li>
 </ol>
-<p>For detailed information on how to run these steps check out <a href="http://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
+<br>For detailed information on how to run these steps check out <a href="http://blogs.technet.com/b/wsus/archive/2016/01/30/quot-help-i-synched-upgrades-too-soon-quot.aspx">How to delete upgrades in WSUS</a>.</p>
 </td>
 </tr>
 
@@ -901,60 +899,60 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 
 ### Other error codes
 
-<TABLE>
+<table>
 
-<TR><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</TD></TR>
-<TR><TD>0x80070003- 0x20007
-<TD>This is a failure during SafeOS phase driver installation. 
+<tr><td BGCOLOR="#a0e4fa">Error Codes<td BGCOLOR="#a0e4fa">Cause<td BGCOLOR="#a0e4fa">Mitigation</td></tr>
+<tr><td>0x80070003- 0x20007
+<td>This is a failure during SafeOS phase driver installation. 
 
-<TD>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
-</TD></TR>
-<TR><TD>0x8007025D - 0x2000C
-<TD>This error occurs if the ISO file's metadata is corrupt.<TD>"Re-download the ISO/Media and re-attempt the upgrade.
+<td>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
+</td></tr>
+<tr><td>0x8007025D - 0x2000C
+<td>This error occurs if the ISO file's metadata is corrupt.<td>"Re-download the ISO/Media and re-attempt the upgrade.
 
 Alternatively, re-create installation media the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10).
 
-</TD></TR>
-<TR><TD>0x80070490 - 0x20007<TD>An incompatible device driver is present.
+</td></tr>
+<tr><td>0x80070490 - 0x20007<td>An incompatible device driver is present.
 
-<TD>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
+<td>[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations) on the computer, and [analyze log files](#analyze-log-files) to determine the problem driver.
 
-</TD></TR>
-<TR><TD>0xC1900101 - 0x2000c
-<TD>An unspecified error occurred in the SafeOS phase during WIM apply. This can be caused by an outdated driver or disk corruption.
-<TD>Run checkdisk to repair the file system. For more information, see the [quick fixes](#quick-fixes) section in this guide.
-<P>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</TD></TR>
-<TR><TD>0xC1900200 - 0x20008
+</td></tr>
+<tr><td>0xC1900101 - 0x2000c
+<td>An unspecified error occurred in the SafeOS phase during WIM apply. This can be caused by an outdated driver or disk corruption.
+<td>Run checkdisk to repair the file system. For more information, see the [quick fixes](#quick-fixes) section in this guide.
+<br>Update drivers on the computer, and select "Download and install updates (recommended)" during the upgrade process. Disconnect devices other than the mouse, keyboard and display.</td></tr>
+<tr><td>0xC1900200 - 0x20008
 
-<TD>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
+<td>The computer doesn’t meet the minimum requirements to download or upgrade to Windows 10.
 
-<TD>See [Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) and verify the computer meets minimum requirements.
+<td>See [Windows 10 Specifications](https://www.microsoft.com/en-us/windows/windows-10-specifications) and verify the computer meets minimum requirements.
 
-<BR>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</TD></TR>
-<TR><TD>0x80070004 - 0x3000D
-<TD>This is a problem with data migration during the first boot phase. There are multiple possible causes.
+<br>Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</td></tr>
+<tr><td>0x80070004 - 0x3000D
+<td>This is a problem with data migration during the first boot phase. There are multiple possible causes.
 
-<TD>[Analyze log files](#analyze-log-files) to determine the issue.</TD></TR>
-<TR><TD>0xC1900101 - 0x4001E
-<TD>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
-<TD>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.</TD></TR>
-<TR><TD>0x80070005 - 0x4000D
-<TD>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
-<TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access denied.</TD></TR>
-<TR><TD>0x80070004 - 0x50012
-<TD>Windows Setup failed to open a file. 
-<TD>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access problems.</TD></TR>
-<TR><TD>0xC190020e 
-<BR>0x80070070 - 0x50011
-<BR>0x80070070 - 0x50012
-<BR>0x80070070 - 0x60000
-<TD>These errors indicate the computer does not have enough free space available to install the upgrade.
-<TD>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to [free up drive space](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space) before proceeding with the upgrade.
+<td>[Analyze log files](#analyze-log-files) to determine the issue.</td></tr>
+<tr><td>0xC1900101 - 0x4001E
+<td>Installation failed in the SECOND_BOOT phase with an error during PRE_OOBE operation.
+<td>This is a generic error that occurs during the OOBE phase of setup. See the [0xC1900101](#0xc1900101) section of this guide and review general troubleshooting procedures described in that section.</td></tr>
+<tr><td>0x80070005 - 0x4000D
+<td>The installation failed in the SECOND_BOOT phase with an error in during MIGRATE_DATA operation. This error indicates that access was denied while attempting to migrate data.
+<td>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access denied.</td></tr>
+<tr><td>0x80070004 - 0x50012
+<td>Windows Setup failed to open a file. 
+<td>[Analyze log files](#analyze-log-files) to determine the data point that is reporting access problems.</td></tr>
+<tr><td>0xC190020e 
+<br>0x80070070 - 0x50011
+<br>0x80070070 - 0x50012
+<br>0x80070070 - 0x60000
+<td>These errors indicate the computer does not have enough free space available to install the upgrade.
+<td>To upgrade a computer to Windows 10, it requires 16 GB of free hard drive space for a 32-bit OS, and 20 GB for a 64-bit OS. If there is not enough space, attempt to [free up drive space](https://support.microsoft.com/en-us/help/17421/windows-free-up-drive-space) before proceeding with the upgrade.
  
-<P>Note: If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
-</TD></TR>
+<br>Note: If your device allows it, you can use an external USB drive for the upgrade process. Windows setup will back up the previous version of Windows to a USB external drive. The external drive must be at least 8GB (16GB is recommended). The external drive should be formatted using NTFS.  Drives that are formatted in FAT32 may run into errors due to FAT32 file size limitations. USB drives are preferred over SD cards because drivers for SD cards are not migrated if the device does not support Connected Standby.
+</td></tr>
 
-</TABLE>
+</table>
 
 
 
@@ -962,9 +960,9 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 ## Related topics
 
 [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/en-us/windows/dn798755.aspx)
-<BR>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
-<BR>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
-<BR>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<BR>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/en-us/windows/dn798752.aspx)
+<br>[Windows 10 Specifications](https://www.microsoft.com/en-us/windows/Windows-10-specifications)
+<br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
+<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
 
 Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
