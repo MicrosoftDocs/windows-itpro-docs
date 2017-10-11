@@ -140,6 +140,19 @@ The following tables provide the corresponding phase and operation for values of
 <tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
 </table>
 
+### is table within table supported?
+
+<table>
+  <tr>
+    <td>
+    <table><tr><td>One</td></tr></table>
+    </td>
+    <td>
+    <table><tr><td>Two</td></tr></table>
+    </td>
+  </tr>
+</table>
+
 ### original
 
 <table border=0 style='border-collapse:collapse;border:none'>
@@ -242,7 +255,7 @@ The following tables provide the corresponding phase and operation for values of
 
 ### removed table style and td align
 
-<table border=0>
+<table>
 <tr><td colspan=2 BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
 <tr><td style='border:dotted #A6A6A6 1.0pt;'>
 <table>
