@@ -70,22 +70,14 @@ There are multiple ways to configure VBS features for Windows Defender Device Gu
 
     Figure 3. Enable VBS
 
-5.  Select the **Enabled** button, and then choose a secure boot option, such as **Secure Boot**, from the **Select Platform Security Level** list.
+5.  Select the **Enabled** button, and for **Select Platform Security Level**,  choose a secure boot option.
 
-    ![Group Policy, Turn On Virtualization Based Security](images/device-guard-gp.png)
+    - **Secure Boot** provides as much protection as a computer’s hardware can support. If the computer does not have input/output memory management units (IOMMUs), enable **Secure Boot**.
+    - **Secure Boot with DMA** enables Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS (hardware-based) protection, although it can have Windows Defender Application Control enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by a code integrity policy, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats).
 
-    Figure 4. Configure VBS, Secure Boot setting (in Windows 10, version 1607)
+    For **Virtualization Based Protection of Code Integrity**, select an option as follows:
 
-    > **Important**&nbsp;&nbsp;These settings include **Secure Boot** and **Secure Boot with DMA**. In most situations we recommend that you choose **Secure Boot**. This option provides secure boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have secure boot with DMA protection. A computer without IOMMUs will simply have secure boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable secure boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS (hardware-based) protection, although it can have code integrity policies enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by a code integrity policy, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats).
-
-6. For **Virtualization Based Protection of Code Integrity**, select the appropriate option.
-
-    > [!WARNING]
-    >  Virtualization-based protection of code integrity may be incompatible with some devices and applications. We strongly recommend testing this configuration in your lab before enabling virtualization-based protection of code integrity on production systems. Failure to do so may result in unexpected failures up to and including data loss or a blue screen error (also called a stop error).
-    
-    Select an option as follows:
-
-    - With Windows 10, version 1607 or Windows Server 2016, choose an appropriate option:<br>For an initial deployment or test deployment, we recommend **Enabled without lock**.<br>When your deployment is stable in your environment, we recommend changing to **Enabled with lock**. This option helps protect the registry from tampering, either through malware or by an unauthorized person.
+    - Beginning with Windows 10, version 1607 and Windows Server 2016:<br>For an initial deployment or test deployment, we recommend **Enabled without lock**.<br>When your deployment is stable in your environment, we recommend changing to **Enabled with lock**. This option helps protect the registry from tampering, either through malware or by an unauthorized person.
 
     - With earlier versions of Windows 10:<br>Select the **Enable Virtualization Based Protection of Code Integrity** check box.
 

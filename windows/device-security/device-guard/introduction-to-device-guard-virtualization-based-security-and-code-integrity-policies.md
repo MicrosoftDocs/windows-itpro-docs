@@ -14,9 +14,9 @@ author: brianlic-msft
 -   Windows 10
 -   Windows Server 2016
 
-With thousands of new malicious files created every day, using traditional methods like antivirus solutions—signature-based detection to fight against malware—provides an inadequate defense against new attacks. Windows Defender Device Guard on Windows 10 Enterprise changes from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. 
+With thousands of new malicious files created every day, using traditional methods like antivirus solutions—signature-based detection to fight against malware—provides an inadequate defense against new attacks. Windows Defender Device Guard changes from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. 
 
-Beginning with Windows 10, verwsion 1709, you designate these trusted apps by using Windows Defender Application Control (Windows Defender AC). On previous versions of Windows 10, this is done by creating code integrity policies.
+Beginning with Windows 10, version 1709, you designate these trusted apps by using Windows Defender Application Control (Windows Defender AC). On previous versions of Windows 10, this is done by creating code integrity policies.
 
 Like the operating system, code integrity contains two primary components: kernel mode code integrity (KMCI) and user mode code integrity (UMCI). KMCI protects the kernel mode from running unsigned drivers. Beginning with Windows 10 and Windows Server 2016, UMCI is also available to help protect against viruses and malware.
 
