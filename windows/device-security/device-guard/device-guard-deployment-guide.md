@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 10/11/2017
 ---
 
 # Windows Defender Device Guard deployment guide

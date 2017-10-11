@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: mdsakibMSFT
+ms.date: 10/11/2017
 ---
 
 # Deploy Managed Installer for Windows Defender Device Guard
