@@ -40,7 +40,7 @@ Enterprises will not be able to install Windows Mixed Reality Feature on Demand 
 
 You can use the [AppLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) to block the Mixed Reality software.
 
-In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryVersionRange="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
+In the following example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
