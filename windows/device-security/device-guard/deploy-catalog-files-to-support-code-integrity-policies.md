@@ -28,7 +28,7 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 
 1.  Be sure that a code integrity policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
 
-    Package Inspector does not always detect installation files that have been removed from the computer during the installation process. To ensure that these binaries are also trusted, deploy a code integrity policy in audit mode. You can use the code integrity policy that you created and audited in [Create a code integrity policy from a golden computer](deploy-code-integrity-policies-steps.md#create-a-code-integrity-policy-from-a-golden-computer) and [Audit code integrity policies](deploy-code-integrity-policies-steps.md#audit-code-integrity-policies).
+    Package Inspector does not always detect installation files that have been removed from the computer during the installation process. To ensure that these binaries are also trusted, deploy a code integrity policy in audit mode. You can use the code integrity policy that you created and audited in [Create a code integrity policy from a reference computer](deploy-code-integrity-policies-steps.md#create-a-code-integrity-policy-from-a-reference-computer) and [Audit code integrity policies](deploy-code-integrity-policies-steps.md#audit-code-integrity-policies).
 
     > **Note**&nbsp;&nbsp;This process should **not** be performed on a system with an enforced Windows Defender Device Guard policy, only with a policy in audit mode. If a policy is currently being enforced, you will not be able to install and run the application.
 
