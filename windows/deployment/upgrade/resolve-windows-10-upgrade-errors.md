@@ -166,6 +166,19 @@ The following tables provide the corresponding phase and operation for values of
   </tr>
 </table>
 
+### table within table with td align
+
+<table>
+  <tr>
+    <td align=center>
+    <table><tr><td>One</td></tr></table>
+    </td>
+    <td align=right>
+    <table><tr><td>Two</td></tr></table>
+    </td>
+  </tr>
+</table>
+
 ### original
 
 <table border=0 style='border-collapse:collapse;border:none'>
