@@ -129,6 +129,7 @@ Extend codes can be matched to the phase and operation when an error occurred. T
 
 The following tables provide the corresponding phase and operation for values of an extend code:
 
+### table one
 
 <table cellspacing=0 cellpadding=0>
 <tr><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
@@ -140,6 +141,35 @@ The following tables provide the corresponding phase and operation for values of
 <tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
 <tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
 </table>
+
+### table two
+
+<table cellspacing=0 cellpadding=0>
+<tr><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
+<tr><td><b>Hex</b><td><span style='padding:0in 1pt 0in 1pt;'><b>Phase</b>
+<tr><td><span style='font-size:9.0pt'>0<td><span style='font-size:9.0pt'>SP_EXECUTION_UNKNOWN
+<tr><td><span style='font-size:9.0pt'>1<td><span style='font-size:9.0pt'>SP_EXECUTION_DOWNLEVEL
+<tr><td><span style='font-size:9.0pt'>2<td><span style='font-size:9.0pt'>SP_EXECUTION_SAFE_OS
+<tr><td><span style='font-size:9.0pt'>3<td><span style='font-size:9.0pt'>SP_EXECUTION_FIRST_BOOT
+<tr><td><span style='font-size:9.0pt'>4<td><span style='font-size:9.0pt'>SP_EXECUTION_OOBE_BOOT
+<tr><td><span style='font-size:9.0pt'>5<td><span style='font-size:9.0pt'>SP_EXECUTION_UNINSTALL
+</table>
+
+### table three
+
+<table cellspacing=0 cellpadding=0>
+<tr><TD colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: phase</B></TD>
+<tr><td><b>Hex</b><td><b>Phase</b>
+<tr><td>0<td>SP_EXECUTION_UNKNOWN
+<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
+<tr><td>2<td>SP_EXECUTION_SAFE_OS
+<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
+<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
+<tr><td>5<td>SP_EXECUTION_UNINSTALL
+</table>
+
+### rest of the stuff
+
 
 <table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
 <tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
