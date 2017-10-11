@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/15/2017
+ms.date: 10/10/2017
 ---
 
 # Olympia Corp
