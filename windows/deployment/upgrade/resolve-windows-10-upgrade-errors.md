@@ -563,12 +563,12 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 
 <br>See the following general troubleshooting procedures associated with a result code of 0x800xxxxx:
 
-<br><table border=1 cellspacing="0" cellpadding="0">
+<br><table border="1" cellspacing="0" cellpadding="0">
 
 <tr><td align="left" valign="top" style='border:solid #000000 1.0pt;'>
 
 <table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><B>Code</B>
+<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
 800040005 - 0x20007
