@@ -38,20 +38,20 @@ This guide provides end-to-end instructions to install and configure System Cent
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
 <div style='font-size:9.0pt'>
-<TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
+<TABLE border="1" cellspacing="0" cellpadding="0">
+<tr><td BGCOLOR="#a0e4fa"><b>Topic</b><td BGCOLOR="#a0e4fa"><b>Description</b><td BGCOLOR="#a0e4fa"><b>Time</b>
 
-<TR><TD>[Install prerequisites](#install-prerequisites)<TD>Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.<TD>60 minutes
-<TR><TD>[Install System Center Configuration Manager](#install-system-center-configuration-manager)<TD>Download System Center Configuration Manager, configure prerequisites, and install the package.<TD>45 minutes
-<TR><TD>[Download MDOP and install DaRT](#download-mdop-and-install-dart)<TD>Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.<TD>15 minutes
-<TR><TD>[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)<TD>Prerequisite procedures to support Zero Touch installation.<TD>60 minutes
-<TR><TD>[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)<TD>Use the MDT wizard to create the boot image in Configuration Manager.<TD>20 minutes
-<TR><TD>[Create a Windows 10 reference image](#create-a-windows-10-reference-image)<TD>This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.<TD>0-60 minutes
-<TR><TD>[Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image)<TD>Add a Windows 10 operating system image and distribute it.<TD>10 minutes<TR><TD>[Create a task sequence](#create-a-task-sequence)<TD>Create a Configuration Manager task sequence with MDT integration using the MDT wizard<TD>15 minutes
-<TR><TD>[Finalize the operating system configuration](#finalize-the-operating-system-configuration)<TD>Enable monitoring, configure rules, and distribute content.<TD>30 minutes
-<TR><TD>[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)<TD>Deploy Windows 10 using Configuration Manager deployment packages and task sequences.<TD>60 minutes
-<TR><TD>[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)<TD>Replace a client computer with Windows 10 using Configuration Manager.<TD>90 minutes
-<TR><TD>[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)<TD>Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT<TD>90 minutes
+<tr><td>[Install prerequisites](#install-prerequisites)<td>Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.<td>60 minutes
+<tr><td>[Install System Center Configuration Manager](#install-system-center-configuration-manager)<td>Download System Center Configuration Manager, configure prerequisites, and install the package.<td>45 minutes
+<tr><td>[Download MDOP and install DaRT](#download-mdop-and-install-dart)<td>Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.<td>15 minutes
+<tr><td>[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)<td>Prerequisite procedures to support Zero Touch installation.<td>60 minutes
+<tr><td>[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)<td>Use the MDT wizard to create the boot image in Configuration Manager.<td>20 minutes
+<tr><td>[Create a Windows 10 reference image](#create-a-windows-10-reference-image)<td>This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.<td>0-60 minutes
+<tr><td>[Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image)<td>Add a Windows 10 operating system image and distribute it.<td>10 minutes<tr><td>[Create a task sequence](#create-a-task-sequence)<td>Create a Configuration Manager task sequence with MDT integration using the MDT wizard<td>15 minutes
+<tr><td>[Finalize the operating system configuration](#finalize-the-operating-system-configuration)<td>Enable monitoring, configure rules, and distribute content.<td>30 minutes
+<tr><td>[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)<td>Deploy Windows 10 using Configuration Manager deployment packages and task sequences.<td>60 minutes
+<tr><td>[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)<td>Replace a client computer with Windows 10 using Configuration Manager.<td>90 minutes
+<tr><td>[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)<td>Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT<td>90 minutes
 
 </TABLE>
 
@@ -417,12 +417,12 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 4. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
 
 5. Use the following settings for the New Deployment Share Wizard:
-    - Deployment share path: **C:\MDTBuildLab**<BR>
-    - Share name: **MDTBuildLab$**<BR>
-    - Deployment share description: **MDT build lab**<BR>
-    - Options: click **Next** to accept the default<BR>
-    - Summary: click **Next**<BR>
-    - Progress: settings will be applied<BR>
+    - Deployment share path: **C:\MDTBuildLab**<br>
+    - Share name: **MDTBuildLab$**<br>
+    - Deployment share description: **MDT build lab**<br>
+    - Options: click **Next** to accept the default<br>
+    - Summary: click **Next**<br>
+    - Progress: settings will be applied<br>
     - Confirmation: click **Finish**
 
 6. Expand the **Deployment Shares** node, and then expand **MDT build lab**.
@@ -432,18 +432,18 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 7. Right-click the **Windows 10** folder created in the previous step, and then click **Import Operating System**.
 
 8. Use the following settings for the Import Operating System Wizard: 
-    - OS Type: **Full set of source files**<BR>
-    - Source: **D:\\** <BR>
-    - Destination: **W10Ent_x64**<BR>
+    - OS Type: **Full set of source files**<br>
+    - Source: **D:\\** <br>
+    - Destination: **W10Ent_x64**<br>
     - Summary: click **Next**
     - Confirmation: click **Finish**
 
 9. For purposes of this test lab, we will not add applications, such as Microsoft Office, to the deployment share. For information about adding applications, see the [Add applications](deploy-windows-mdt/create-a-windows-10-reference-image.md#sec03) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
 
 10. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node under **MDT Build Lab** and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
-    - Task sequence ID: **REFW10X64-001**<BR>
-    - Task sequence name: **Windows 10 Enterprise x64 Default Image** <BR>
-    - Task sequence comments: **Reference Build**<BR>
+    - Task sequence ID: **REFW10X64-001**<br>
+    - Task sequence name: **Windows 10 Enterprise x64 Default Image** <br>
+    - Task sequence comments: **Reference Build**<br>
     - Template: **Standard Client Task Sequence**
     - Select OS: click **Windows 10 Enterprise Evaluation in W10Ent_x64 install.wim**
     - Specify Product Key: **Do not specify a product key at this time**
@@ -638,27 +638,27 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 4. In the **State Restore** group, click the **Set Status 5** action, click **Add** in the upper left corner, point to **User State**, and click **Request State Store**. This adds a new action immediately after **Set Status 5**.
 
-5. Configure the **Request State Store** action that was just added with the following settings:<BR>
-    - Request state storage location to: **Restore state from another computer**<BR>
-    - Select the **If computer account fails to connect to state store, use the Network Access account** checkbox.<BR>
-    - Options tab: Select the **Continue on error** checkbox.<BR>
-    - Add Condition: **Task Sequence Variable**:<BR>
-        - Variable: **USMTLOCAL** <BR>
-        - Condition: **not equals**<BR>
-        - Value: **True**<BR>
-        - Click **OK**.<BR>
-    - Click **Apply**<BR>.
+5. Configure the **Request State Store** action that was just added with the following settings:<br>
+    - Request state storage location to: **Restore state from another computer**<br>
+    - Select the **If computer account fails to connect to state store, use the Network Access account** checkbox.<br>
+    - Options tab: Select the **Continue on error** checkbox.<br>
+    - Add Condition: **Task Sequence Variable**:<br>
+        - Variable: **USMTLOCAL** <br>
+        - Condition: **not equals**<br>
+        - Value: **True**<br>
+        - Click **OK**.<br>
+    - Click **Apply**<br>.
 
 6. In the **State Restore** group, click **Restore User State**, click **Add**, point to **User State**, and click **Release State Store**.
 
-7. Configure the **Release State Store** action that was just added with the following settings:<BR>
-    - Options tab: Select the **Continue on error** checkbox.<BR>
-    - Add Condition: **Task Sequence Variable**:<BR>
-        - Variable: **USMTLOCAL** <BR>
-        - Condition: **not equals**<BR>
-        - Value: **True**<BR>
-        - Click **OK**.<BR>
-    - Click **OK**<BR>.
+7. Configure the **Release State Store** action that was just added with the following settings:<br>
+    - Options tab: Select the **Continue on error** checkbox.<br>
+    - Add Condition: **Task Sequence Variable**:<br>
+        - Variable: **USMTLOCAL** <br>
+        - Condition: **not equals**<br>
+        - Value: **True**<br>
+        - Click **OK**.<br>
+    - Click **OK**<br>.
 
 
 ### Finalize the operating system configuration
@@ -668,12 +668,12 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 1. In the MDT deployment workbench on SRV1, right-click **Deployment Shares** and then click **New Deployment Share**.
 
 2. Use the following settings for the New Deployment Share Wizard:
-    - Deployment share path: **C:\MDTProduction**<BR>
-    - Share name: **MDTProduction$**<BR>
-    - Deployment share description: **MDT Production**<BR>
-    - Options: click **Next** to accept the default<BR>
-    - Summary: click **Next**<BR>
-    - Progress: settings will be applied<BR>
+    - Deployment share path: **C:\MDTProduction**<br>
+    - Share name: **MDTProduction$**<br>
+    - Deployment share description: **MDT Production**<br>
+    - Options: click **Next** to accept the default<br>
+    - Summary: click **Next**<br>
+    - Progress: settings will be applied<br>
     - Confirmation: click **Finish**
 
 3. Right-click the **MDT Production** deployment share, and click **Properties**. 
@@ -724,10 +724,10 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 2. On the General page, next to **Collection**, click **Browse**, select the **All Unknown Computers** collection, click **OK**, and then click **Next**.
 
-3. On the Deployment Settings page, use the following settings:<BR>
-    - Purpose: **Available**<BR>
-    - Make available to the following: **Only media and PXE**<BR>
-    - Click **Next**.<BR>
+3. On the Deployment Settings page, use the following settings:<br>
+    - Purpose: **Available**<br>
+    - Make available to the following: **Only media and PXE**<br>
+    - Click **Next**.<br>
 4. Click **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
 
 5. Click **Close**.
@@ -910,14 +910,14 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 1. On SRV1, in the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
 
 2. Use the following settings in the **Create Device Collection Wizard**:
-    - General > Name: **Install Windows 10 Enterprise x64**<BR>
-    - General > Limiting collection: **All Systems**<BR>
-    - Membership Rules > Add Rule: **Direct Rule**<BR>
-    - The **Create Direct Membership Rule Wizard** opens, click **Next**<BR>
-    - Search for Resources > Resource class: **System Resource**<BR>
-    - Search for Resources > Attribute name: **Name**<BR>
-    - Search for Resources > Value: **%**<BR>
-    - Select Resources > Value: Select the computername associated with the PC1 VM<BR>
+    - General > Name: **Install Windows 10 Enterprise x64**<br>
+    - General > Limiting collection: **All Systems**<br>
+    - Membership Rules > Add Rule: **Direct Rule**<br>
+    - The **Create Direct Membership Rule Wizard** opens, click **Next**<br>
+    - Search for Resources > Resource class: **System Resource**<br>
+    - Search for Resources > Attribute name: **Name**<br>
+    - Search for Resources > Value: **%**<br>
+    - Select Resources > Value: Select the computername associated with the PC1 VM<br>
     - Click **Next** twice and then click **Close** in both windows (Next, Next, Close, then Next, Next, Close)
 
 3. Double-click the Install Windows 10 Enterprise x64 device collection and verify that the PC1 computer account is displayed.
@@ -925,14 +925,14 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 4. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64** and then click **Deploy**.
 
 5. Use the following settings in the Deploy Sofware wizard:
-    - General > Collection: Click Browse and select **Install Windows 10 Enterprise x64**<BR>
-    - Deployment Settings > Purpose: **Available**<BR>
-    - Deployment Settings > Make available to the following: **Configuration Manager clients, media and PXE**<BR>
-    - Scheduling > Click **Next**<BR>
-    - User Experience > Click **Next**<BR>
-    - Alerts > Click **Next**<BR>
-    - Distribution Points > Click **Next**<BR>
-    - Summary > Click **Next**<BR>
+    - General > Collection: Click Browse and select **Install Windows 10 Enterprise x64**<br>
+    - Deployment Settings > Purpose: **Available**<br>
+    - Deployment Settings > Make available to the following: **Configuration Manager clients, media and PXE**<br>
+    - Scheduling > Click **Next**<br>
+    - User Experience > Click **Next**<br>
+    - Alerts > Click **Next**<br>
+    - Distribution Points > Click **Next**<br>
+    - Summary > Click **Next**<br>
     - Verify that the wizard completed successfully and then click **Close**
 
 
@@ -970,14 +970,14 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 1. On SRV1, in the Configuration Manager console, in the Assets and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
 
 2. Use the following settings in the **Create Device Collection Wizard**:
-    - General > Name: **USMT Backup (Replace)**<BR>
-    - General > Limiting collection: **All Systems**<BR>
-    - Membership Rules > Add Rule: **Direct Rule**<BR>
-    - The **Create Direct Membership Rule Wizard** opens, click **Next**<BR>
-    - Search for Resources > Resource class: **System Resource**<BR>
-    - Search for Resources > Attribute name: **Name**<BR>
-    - Search for Resources > Value: **%**<BR>
-    - Select Resources > Value: Select the computername associated with the PC1 VM (GREGLIN-PC1 in this example).<BR>
+    - General > Name: **USMT Backup (Replace)**<br>
+    - General > Limiting collection: **All Systems**<br>
+    - Membership Rules > Add Rule: **Direct Rule**<br>
+    - The **Create Direct Membership Rule Wizard** opens, click **Next**<br>
+    - Search for Resources > Resource class: **System Resource**<br>
+    - Search for Resources > Attribute name: **Name**<br>
+    - Search for Resources > Value: **%**<br>
+    - Select Resources > Value: Select the computername associated with the PC1 VM (GREGLIN-PC1 in this example).<br>
     - Click **Next** twice and then click **Close** in both windows.
 
 3. Click **Device Collections** and then double-click **USMT Backup (Replace)**. Verify that the computer name/hostname associated with PC1 is displayed in the collection. Do not proceed until this name is displayed.  
@@ -985,13 +985,13 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 ### Create a new deployment
 
 In the Configuration Manager console, in the Software Library workspace under Operating Systems, click **Task Sequences**, right-click **Replace Task Sequence**, click **Deploy**, and use the following settings:
-- General > Collection: **USMT Backup (Replace)**<BR>
-- Deployment Settings > Purpose: **Available**<BR>
-- Deployment Settings > Make available to the following: **Only Configuration Manager Clients**<BR>
-- Scheduling: Click **Next**<BR>
-- User Experience: Click **Next**<BR>
-- Alerts: Click **Next**<BR>
-- Distribution Points: Click **Next**<BR>
+- General > Collection: **USMT Backup (Replace)**<br>
+- Deployment Settings > Purpose: **Available**<br>
+- Deployment Settings > Make available to the following: **Only Configuration Manager Clients**<br>
+- Scheduling: Click **Next**<br>
+- User Experience: Click **Next**<br>
+- Alerts: Click **Next**<br>
+- Distribution Points: Click **Next**<br>
 - Click **Next** and then click **Close**.
 
 ### Verify the backup

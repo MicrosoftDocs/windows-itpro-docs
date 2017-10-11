@@ -39,16 +39,16 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
+<table border="1" cellspacing="0" cellpadding="0">
+<tr><td BGCOLOR="#a0e4fa"><B>Topic</B><td BGCOLOR="#a0e4fa"><B>Description</B><td BGCOLOR="#a0e4fa"><B>Time</B>
 
-<TR><TD>[About MDT](#about-mdt)<TD>A high-level overview of the Microsoft Deployment Toolkit (MDT).<TD>Informational
-<TR><TD>[Install MDT](#install-mdt)<TD>Download and install MDT.<TD>40 minutes
-<TR><TD>[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)<TD>A reference image is created to serve as the template for deploying new images.<TD>90 minutes
-<TR><TD>[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)<TD>The reference image is deployed in the PoC environment.<TD>60 minutes
-<TR><TD>[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)<TD>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<TD>60 minutes
-<TR><TD>[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)<TD>Back up an existing client computer, then restore this backup to a new computer.<TD>60 minutes
-<TR><TD>[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)<TD>Log locations and troubleshooting hints.<TD>Informational
+<tr><td>[About MDT](#about-mdt)<td>A high-level overview of the Microsoft Deployment Toolkit (MDT).<td>Informational
+<tr><td>[Install MDT](#install-mdt)<td>Download and install MDT.<td>40 minutes
+<tr><td>[Create a deployment share and reference image](#create-a-deployment-share-and-reference-image)<td>A reference image is created to serve as the template for deploying new images.<td>90 minutes
+<tr><td>[Deploy a Windows 10 image using MDT](#deploy-a-windows-10-image-using-mdt)<td>The reference image is deployed in the PoC environment.<td>60 minutes
+<tr><td>[Refresh a computer with Windows 10](#refresh-a-computer-with-windows-10)<td>Export user data from an existing client computer, wipe the computer, install a new operating system, and then restore user data and settings.<td>60 minutes
+<tr><td>[Replace a computer with Windows 10](#replace-a-computer-with-windows-10)<td>Back up an existing client computer, then restore this backup to a new computer.<td>60 minutes
+<tr><td>[Troubleshooting logs, events, and utilities](#troubleshooting-logs-events-and-utilities)<td>Log locations and troubleshooting hints.<td>Informational
 </TABLE>
 
 </div>
