@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfinauthor: mikestephens-MS
+author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
 ms.date: 10/08/2017
@@ -23,10 +23,7 @@ Install the Remote Server Administration Tools for Windows 10 on a computer runn
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
-On-premises certificate-based deployments of Windows Hello for Business needs three Group Policy settings:
-* Enable Windows Hello for Business
-* Use certificate for on-premises authentication
-* Enable automatic enrollment of certificates
+On-premises certificate-based deployments of Windows Hello for Business needs one Group Policy setting:  Enable Windows Hello for Business
 
 ## Enable Windows Hello for Business Group Policy
 
@@ -34,17 +31,6 @@ The Enable Windows Hello for Business Group Policy setting is the configuration 
 
 You can configure the Enable Windows Hello for Business Group Policy setting for computer or users. Deploying this policy setting to computers results in ALL users that sign-in that computer to attempt a Windows Hello for Business enrollment. Deploying this policy setting to a user results in only that user attempting a Windows Hello for Business enrollment.  Additionally, you can deploy the policy setting to a group of users so only those users attempt a Windows Hello for Business enrollment. If both user and computer policy settings are deployed, the user policy setting has precedence.
 
-## Use certificate for on-premises authentication
-
-The Use certificate for on-premises authentication Group Policy setting determines if the on-premises deployment uses the key-trust or certificate trust on-premises authentication model.  You must configure this Group Policy setting to configure Windows to enroll for a Windows Hello for Business authentication certificate. If you do not configure this policy setting, Windows considers the deployment to use key-trust on-premises authentication, which requires a sufficient number of Windows Server 2016 domain controllers to handle the Windows Hello for Business key-trust authentication requests.
-
-You can configure this Group Policy setting for computer or users. Deploying this policy setting to computers results in ALL users requesting a Windows Hello for Business authentication certificate.  Deploying this policy setting to a user results in only that user requesting a Windows Hello for Business authentication certificate. Additionally, you can deploy the policy setting to a group of users so only those users request a Windows Hello for Business authentication certificate. If both user and computer policy settings are deployed, the user policy setting has precedence.
-
-## Enable automatic enrollment of certificates
-
-Windows Hello for Business provisioning performs the initial enrollment of the Windows Hello for Business authentication certificate. This certificate expires based on the duration configured in the Windows Hello for Business authentication certificate template. The Windows 10, version 1703 certificate auto enrollment was updated to renew these certificates before they expire, which significantly reduces user authentication failures from expired user certificates. 
-
-The process requires no user interaction provided the user signs-in using Windows Hello for Business.  The certificate is renewed in the background before it expires.
 
 ## Create the Windows Hello for Business Group Policy object
 
@@ -57,20 +43,7 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 6. In the navigation pane, expand **Policies** under **User Configuration**.
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
 8. In the content pane, double-click **Use Windows Hello for Business**. Click **Enable** and click **OK**.
-9. Double-click **Use certificate for on-premises authentication**. Click **Enable** and click **OK**.  Close the **Group Policy Management Editor**.
-
-## Configure Automatic Certificate Enrollment
-
-1. Start the **Group Policy Management Console** (gpmc.msc).
-2. Expand the domain and select the **Group Policy Object** node in the navigation pane.
-3. Right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
-4. In the navigation pane, expand **Policies** under **User Configuration**.
-5. Expand **Windows Settings > Security Settings**, and click **Public Key Policies**.
-6. In the details pane, right-click **Certificate Services Client – Auto-Enrollment** and select **Properties**.
-7. Select **Enabled** from the **Configuration Model** list.
-8. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
-9. Select the **Update certificates that use certificate templates** check box.
-10.	Click **OK**. Close the **Group Policy Management Editor**.
+9. Close the **Group Policy Management Editor**.
 
 ## Configure Security in the Windows Hello for Business Group Policy object
 
