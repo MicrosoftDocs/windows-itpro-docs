@@ -290,6 +290,106 @@ The following tables provide the corresponding phase and operation for values of
 </tr>
 </table>
 
+### removed table style and td align, throughout
+
+<table border=0>
+<tr><td colspan=2 BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
+<tr><td style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><span style='padding:0in 5.4pt 0in 5.4pt;'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>0<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_UNKNOWN
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_COPY_PAYLOAD
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>2<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>3<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>4<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>5<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>6<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REPLICATE_OC
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>7<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_INSTALL_DRVIERS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>8<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_SAFE_OS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>9<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_ROLLBACK
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>A<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>B<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>C<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_APPLY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>D<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_MIGRATE_DATA
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>E<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SET_PRODUCT_KEY
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>F<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_UNATTEND
+</table>
+</td>
+<td style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>10<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_DRIVER
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>11<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ENABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>12<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_DISABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>13<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>14<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>15<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_FILE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>16<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_CREATE_REGISTRY
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>17<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>18<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_SYSPREP
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>19<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1A<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1B<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1C<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1D<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_END_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1E<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_PRE_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>1F<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_POST_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>20<td style='padding:0in 4pt 0in 4pt'><span style='font-size:9.0pt'>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
+</table>
+</td>
+</tr>
+</table>
+
+### removed table style and td align, throughout and removed span
+
+<table border=0>
+<tr><td colspan=2 BGCOLOR="#a0e4fa"><B>Extend code: operation</B></td>
+<tr><td style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_UNKNOWN
+<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_COPY_PAYLOAD
+<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_DOWNLOAD_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_UPDATES
+<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_ENVIRONMENT
+<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_RECOVERY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'>6<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_REPLICATE_OC
+<tr><td style='padding:0in 4pt 0in 4pt'>7<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_INSTALL_DRVIERS
+<tr><td style='padding:0in 4pt 0in 4pt'>8<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_SAFE_OS
+<tr><td style='padding:0in 4pt 0in 4pt'>9<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_ROLLBACK
+<tr><td style='padding:0in 4pt 0in 4pt'>A<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>B<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PREPARE_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>C<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_APPLY_IMAGE
+<tr><td style='padding:0in 4pt 0in 4pt'>D<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_MIGRATE_DATA
+<tr><td style='padding:0in 4pt 0in 4pt'>E<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_SET_PRODUCT_KEY
+<tr><td style='padding:0in 4pt 0in 4pt'>F<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ADD_UNATTEND
+</table>
+</td>
+<td style='border:dotted #A6A6A6 1.0pt;'>
+<table>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 4pt 0in 4pt'><b>Operation</b>
+<tr><td style='padding:0in 4pt 0in 4pt'>10<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ADD_DRIVER
+<tr><td style='padding:0in 4pt 0in 4pt'>11<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ENABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'>12<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_DISABLE_FEATURE
+<tr><td style='padding:0in 4pt 0in 4pt'>13<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_REGISTER_ASYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'>14<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_REGISTER_SYNC_PROCESS
+<tr><td style='padding:0in 4pt 0in 4pt'>15<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_CREATE_FILE
+<tr><td style='padding:0in 4pt 0in 4pt'>16<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_CREATE_REGISTRY
+<tr><td style='padding:0in 4pt 0in 4pt'>17<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>18<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_SYSPREP
+<tr><td style='padding:0in 4pt 0in 4pt'>19<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'>1A<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_BEGIN_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1B<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_END_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1C<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_BEGIN_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1D<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_END_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>1E<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_PRE_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'>1F<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_POST_OOBE
+<tr><td style='padding:0in 4pt 0in 4pt'>20<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OP_ADD_PROVISIONING_PACKAGE
+</table>
+</td>
+</tr>
+</table>
+
 For example: An extend code of **0x4000D**, represents a problem during phase 4 (**0x4**) with data migration (**000D**).
 
 ## Log files
