@@ -127,7 +127,7 @@ Now the device is Azure AD joined to the company’s subscription.
 
 ### Step 2: Verify that Pro edition is activated
 
-Windows 10 Pro just be successfully activated in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 7a**.
+Windows 10 Pro must be successfully activated in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 7a**.
 
 <span id="win-10-pro-activated"/>
 <img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
