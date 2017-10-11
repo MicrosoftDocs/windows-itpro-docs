@@ -185,7 +185,20 @@ The following tables provide the corresponding phase and operation for values of
 ### table four
 
 <table>
-<tr><td colspan=2 align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
+<tr><td colspan="2" align="center" valign="top" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
+<tr><td><b>Hex</b><td><b>Phase</b>
+<tr><td>0<td>SP_EXECUTION_UNKNOWN
+<tr><td>1<td>SP_EXECUTION_DOWNLEVEL
+<tr><td>2<td>SP_EXECUTION_SAFE_OS
+<tr><td>3<td>SP_EXECUTION_FIRST_BOOT
+<tr><td>4<td>SP_EXECUTION_OOBE_BOOT
+<tr><td>5<td>SP_EXECUTION_UNINSTALL
+</table>
+
+### table 4.5
+
+<table>
+<tr><td colspan="2" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
 <tr><td><b>Hex</b><td><b>Phase</b>
 <tr><td>0<td>SP_EXECUTION_UNKNOWN
 <tr><td>1<td>SP_EXECUTION_DOWNLEVEL
@@ -270,7 +283,7 @@ Several log files are created during each phase of the upgrade process. These lo
 
 <table>
 <TR><td BGCOLOR="#a0e4fa"><B>Log file</td><td BGCOLOR="#a0e4fa"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><B>Description</td><td BGCOLOR="#a0e4fa"><B>When to use</td>
-<tr><TD rowspan=5>setupact.log</td><TD>Down-Level:<BR>$Windows.~BT\Sources\Panther</td><TD>Contains information about setup actions during the downlevel phase. </td>
+<tr><TD rowspan="5">setupact.log</td><TD>Down-Level:<BR>$Windows.~BT\Sources\Panther</td><TD>Contains information about setup actions during the downlevel phase. </td>
 <TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.</td>
 <TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC</td>
 <TD>Contains information about actions during the OOBE phase.</td><TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.</td>
