@@ -156,6 +156,19 @@ The following tables provide the corresponding phase and operation for values of
 <tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
 </table>
 
+### table 0.55
+
+<table>
+<tr><td colspan=2 align="center" BGCOLOR="#a0e4fa"><b>Extend code: phase</b></td>
+<tr><td style='padding:0in 4pt 0in 4pt'><b>Hex</b><td style='padding:0in 5.4pt 0in 5.4pt'><b>Phase</b>
+<tr><td style='padding:0in 4pt 0in 4pt'>0<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNKNOWN
+<tr><td style='padding:0in 4pt 0in 4pt'>1<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_DOWNLEVEL
+<tr><td style='padding:0in 4pt 0in 4pt'>2<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_SAFE_OS
+<tr><td style='padding:0in 4pt 0in 4pt'>3<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_FIRST_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>4<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_OOBE_BOOT
+<tr><td style='padding:0in 4pt 0in 4pt'>5<td style='padding:0in 4pt 0in 4pt'>SP_EXECUTION_UNINSTALL
+</table>
+
 ### table 0.6
 
 <table>
