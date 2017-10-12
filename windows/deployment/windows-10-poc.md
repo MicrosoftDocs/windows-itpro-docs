@@ -74,7 +74,7 @@ Harware requirements are displayed below:
 
 <div style='font-size:9.0pt'>
 
-<table border=1 cellspacing="0" cellpadding="0">
+<table border="1" cellspacing="0" cellpadding="0">
     <tr>
         <td></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
