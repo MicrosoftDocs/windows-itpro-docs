@@ -83,12 +83,13 @@ The following fields are available:
 - **SessionId:** Session identifier
 - **Sign-in error status:**
 - **SubStatus:** Sign-in error sub-status
-- **UserTag:** Count of the number of times a user has selected a provider                                                                                                                                                                                                                                                           |
+- **UserTag:** Count of the number of times a user has selected a provider
+
 ## Microsoft.Windows.Kernel.Power.OSStateChange
 This event denotes the transition between operating system states (e.g., On, Off, Sleep, etc.). By using this event with Windows Analytics, organizations can use this to monitor reliability and performance of managed devices
 
 The following fields are available:
-                                                                                      |
+
 - **AcPowerOnline:** If "TRUE," the device is using AC power. If "FALSE," the device is using battery power.
 - **ActualTransitions:** The number of transitions between operating system states since the last system boot
 - **BatteryCapacity:** Maximum battery capacity in mWh
@@ -112,7 +113,8 @@ The following fields are available:
 ## Microsoft.Windows.LogonController.LogonAndUnlockSubmit
 Sends details of the user attempting to sign into or unlock the device.
 
-The following fields are available:                                                                                                                                                                                                                                            |
+The following fields are available:
+
 - **isSystemManagedAccount:** Indicates if the user's account is System Managed
 - **isUnlockScenario:** Flag indicating whether the event is a Logon or an Unlock
 - **PartA_UserSid:** The security identifier of the user
@@ -124,11 +126,13 @@ Sends details about any error codes detected during a failed sign-in.
 The following fields are available:
 
 - **ntsStatus:** The NTSTATUS error code status returned from an attempted sign-in
-- **ntsSubstatus:** The NTSTATUS error code sub-status returned from an attempted sign-in                                                                                                                                                                                                                                                 |
+- **ntsSubstatus:** The NTSTATUS error code sub-status returned from an attempted sign-in 
+
 ## Microsoft.Windows.Security.Biometrics.Service.BioServiceActivityCapture
 Indicates that a biometric capture was compared to known templates
 
-The following fields are available:                                                                                                                                                                                                                                                |
+The following fields are available:
+
 - **captureDetail:** Result of biometric capture, either matched to an enrollment or an error 
 - **captureSuccessful:** Indicates whether a biometric capture was successfully matched or not
 - **hardwareId:** ID of the sensor that collected the biometric capture
@@ -142,34 +146,39 @@ The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize whic
 The following fields are available:
 
 - **certBinary:** Binary blob of public certificate as presented to the client (does not include any private keys)
-- **certThumbprint:** Certificate thumbprint                                                                                                                                                                                                                                                                                                |
+- **certThumbprint:** Certificate thumbprint
+
 ## Microsoft.Windows.Security.Certificates.PinRulesCheckedAnalytics
 The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
 
 The following fields are available:
-                       |
+
 - **caThumbprints:** Intermediate certificate thumbprints
 - **rootThumbprint:** Root certificate thumbprint
 - **serverName:** Server name associated with the certificate
 - **serverThumbprint:** Server certificate thumbprint
-- **statusBits:** Certificate status                                                                                                                                                                                                                                                                                                    |
+- **statusBits:** Certificate status
+
 ## Microsoft.Windows.Security.Certificates.PinRulesServerCertUsedAnalytics
 The Microsoft.Windows.Security.Certificates.Pin\*Analytics events summarize which server certificates the client encounters. By using this event with Windows Analytics, organizations can use this to determine potential scope and impact of pending certificate revocations or expirations.
-                        |
+
 The following fields are available:
 
 - **certBinary:** Binary blob of public certificate as presented to the client (does not include any private keys)
-- **certThumbprint:** Certificate thumbprint                                                                                                                                                                                                                                                                                                |
+- **certThumbprint:** Certificate thumbprint
+
 ## Microsoft.Windows.Security.Winlogon.SystemBootStop
 System boot has completed.
 
-The following field is available:                                                                                                                                                                                                                                                                                                  |
-- **ticksSinceBoot:** Duration of boot event (milliseconds)                                                                                                                                                                                                                                                                                 |
+The following field is available:
+
+- **ticksSinceBoot:** Duration of boot event (milliseconds)
+
 ## Microsoft.Windows.Shell.Desktop.LogonFramework.AllLogonTasks
 This event summarizes the logon procedure to help Microsoft improve performance and reliability. By using this event with Windows Analytics organizations can help identify logon problems on managed devices.
 
 The following fields are available:
-                                                                                                        |
+
 - **isAadUser:** Indicates whether the current logon is for an Azure Active Directory account
 - **isDomainUser:** Indicates whether the current logon is for a domain account
 - **isMSA:** Indicates whether the current logon is for a Microsoft Account
@@ -177,7 +186,8 @@ The following fields are available:
 - **logonTypeFlags:** Flags indicating logon type (first logon vs. a later logon)
 - **systemManufacturer:** Device manufacturer
 - **systemProductName:** Device product name
-- **wilActivity:** Indicates errors in the task to help Microsoft improve reliability.                                                                                         |
+- **wilActivity:** Indicates errors in the task to help Microsoft improve reliability.
+
 ## Microsoft.Windows.Shell.Desktop.LogonFramework.LogonTask
 This event describes system tasks which are part of the user logon sequence and helps Microsoft to improve reliability.
 
@@ -186,23 +196,26 @@ The following fields are available:
 - **isStartWaitTask:** Flag indicating whether the task starts a background task 
 - **isWaitMethod:** Flag indicating the task is waiting on a background task
 - **logonTask:** Indicates which logon step is currently occurring
-- **wilActivity:** Indicates errors in the task to help Microsoft improve reliability.                                                                                                                                                                                                                                                   |
+- **wilActivity:** Indicates errors in the task to help Microsoft improve reliability.
+
 ## Microsoft.Windows.Shell.Explorer.DesktopReady
-Initialization of Explorer is complete.                                                                                                                                                                                                                                                                                |
+Initialization of Explorer is complete.
+
 ## Microsoft-Windows-Security-EFS-EDPAudit-ApplicationLearning.EdpAuditLogApplicationLearning
 For a device subject to Windows Information Protection policy, learning events are generated when an app encounters a policy boundary (for example, trying to open a work document from a personal app). These events help the WIP administrator tune policy rules and prevent unnecessary user disruption.
 
 The following fields are available:
-           |
+
 - **actiontype:** Indicates what type of resource access the app was attempting (for example, opening a local document vs. a network resource) when it encountered a policy boundary. Useful for Windows Information Protection administrators to tune policy rules.
 - **appIdType:** Based on the type of application, this indicates what type of app rule a Windows Information Protection administrator would need to create for this app.
 - **appname:** App that triggered the event
-- **status:** Indicates whether errors occurred during WIP learning events                                                                                                                                                                                                                                                          |
+- **status:** Indicates whether errors occurred during WIP learning events
+
 ## Win32kTraceLogging.AppInteractivitySummary
 Summarizes which app windows are being used (for example, have focus) to help Microsoft improve compatibility and user experience. Also helps organizations (by using Windows Analytics) to understand and improve application reliability on managed devices.
 
 The following fields are available:
-                                                        |
+   
 - **AggregationDurationMS:** Actual duration of aggregation period (in milliseconds)
 - **AggregationFlags:** Flags denoting aggregation settings
 - **AggregationPeriodMS:** Intended duration of aggregation period (in milliseconds)
@@ -248,4 +261,4 @@ The following fields are available:
 - **ViewFlags:** Flags denoting  properties of an app view (for example, special VR view or not)
 - **WindowFlags:** Flags denoting runtime properties of an app window
 - **WindowHeight:** Number of vertical pixels in the application window
-- **WindowWidth:** Number of horizontal pixels in the application window|
+- **WindowWidth:** Number of horizontal pixels in the application window
