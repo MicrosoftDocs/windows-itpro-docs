@@ -29,10 +29,9 @@ To enable Windows Automatic Redeployment in Windows 10, version 1709 (Fall Creat
 
 You can set the policy using one of these methods:
 
-- MDM provider, such as Intune for Education
+- MDM provider
 
-    **Namrata/Dennis ** - *Is the following statement about Intune for Education, correct? I couldn't actually verify it in the latest I4E builds*
-    - Intune for Education automatically sets this policy in the **All devices** group policy configuration.
+    - Windows Automatic Redeployment in Intune for Education is coming soon. In a future update of Intune for Education, new tenants will automatically have the Windows Automatic Redeployment setting enabled by default on the **All devices** group as part of initial tenant configuration. A future update will also enable you to toggle a Windows Automatic Redeployment setting so you can target devices more granularly.
     - If you're using an MDM provider other than Intune for Education, check your MDM provider documentation on how to set this policy. If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
         For example, in Intune, create a new configuration policy and add an OMA-URI. 
