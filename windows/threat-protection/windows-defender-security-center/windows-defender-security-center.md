@@ -18,7 +18,7 @@ ms.date: 08/25/2017
 
 
 
-# The Windows Defender Security Center
+# The Windows Defender Security Center app
 
 **Applies to**
 
@@ -27,16 +27,17 @@ ms.date: 08/25/2017
 
 
 
-In Windows 10, version 1703 we introduced the new Windows Defender Security Center app, which brings together common Windows security features into one app.
+In Windows 10, version 1703 we introduced the new Windows Defender Security Center app, which brings together common Windows security features into one app. Many settings that were previously part of the individual features and main Windows Settings have been combined and moved to the new app, which is installed out-of-the-box as part of Windows 10, version 1703. 
 
 
 ![Screen shot of the Windows Defender Security Center app showing that the device is protected and five icons for each of the features](images/security-center-home.png)
 
 
-Many settings that were previously part of the individual features and main Windows Settings have been combined and moved to the new app, which is installed out-of-the-box as part of Windows 10, version 1703. In Windows 10, version 1709, we increased the scope of the app to also show information from third-party antivirus and firewall apps.
+
+In Windows 10, version 1709, we increased the scope of the app to also show information from third-party antivirus and firewall apps.
 
 >[!NOTE]
->The Windows Defender Security Center app is a client interface on Windows 10, version 1703. It is not the Windows Defender Security Center web portal console that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+>The Windows Defender Security Center app is a client interface on Windows 10, version 1703 and later. It is not the Windows Defender Security Center web portal console that is used to review and manage [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 
 This library describes the Windows defender Security Center app, and provides information on configuring certain features, inlcuding:
 

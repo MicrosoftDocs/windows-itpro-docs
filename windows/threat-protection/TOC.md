@@ -1,5 +1,6 @@
 # [Threat protection](index.md)
 ## [Windows Defender Security Center](windows-defender-security-center\windows-defender-security-center.md)
+
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp\windows-defender-advanced-threat-protection.md)
 ### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
 ### [Preview features](windows-defender-atp\preview-windows-defender-advanced-threat-protection.md)
