@@ -16,19 +16,25 @@ author: brianlic-msft
 
 For an overview of the process described in the following procedures, see [Deploy code integrity policies: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md). To understand how the deployment of code integrity policies fits with other steps in the Windows Defender Device Guard deployment process, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
-## Create a code integrity policy from a golden computer
+## Create a code integrity policy from a reference computer
 
-The process for creating a golden code integrity policy from a reference system is straightforward. This section outlines the process that is required to successfully create a code integrity policy with Windows PowerShell. First, for this example, you must initiate variables to be used during the creation process. Rather than using variables, you can simply use the full file paths in the command. Next, you create the code integrity policy by scanning the system for installed applications. When created, the policy file is converted to binary format so that Windows can consume its contents.
+This section outlines the process to create a code integrity policy with Windows PowerShell. 
+For this example, you must initiate variables to be used during the creation process or use the full file paths in the command. 
+Then create the code integrity policy by scanning the system for installed applications. 
+The policy file is converted to binary format when it gets created so that Windows can interpret it.
 
 > [!Note] 
-> Before you begin this procedure, make sure that the reference PC is virus and malware-free,and that any software you want to be scanned is installed on the system before creating the code integrity policy. 
+> Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the code integrity policy. 
 
 ### Scripting and applications
 
-Each installed software application should be validated as trustworthy before you create a policy. We recommend that you review the reference PC for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want it to run scripts. 
-You can remove or disable such software on reference PCs used to create code integrity policies. You can also fine-tune your control by using Windows Defender Device Guard in combination with AppLocker, as described in [Windows Defender Device Guard with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
+Each installed software application should be validated as trustworthy before you create a policy. 
+We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. 
+Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want it to run scripts. 
+You can remove or disable such software on the reference computer. 
+You can also fine-tune your control by [using Windows Defender Device Guard in combination with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
 
-Members of the security community<sup>\*</sup> continuously collaborate with Microsoft® to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Device Guard code integrity policies. 
+Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Device Guard code integrity policies. 
 
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent Application Whitelisting policies, including Windows Defender Device Guard:
 
@@ -70,11 +76,15 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 <br />
 
 >[!Note]
->This application list is fluid and will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
+>This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
-Certain software applications may allow additional code to run by design. These types of applications should be blocked by your Windows Defender Device Guard policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Device Guard bypass, you should add deny rules to your code integrity policies for that application’s previous, less secure versions. 
+Certain software applications may allow additional code to run by design. 
+These types of applications should be blocked by your Windows Defender Device Guard policy. 
+In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Device Guard bypass, you should add deny rules to your code integrity policies for that application’s previous, less secure versions. 
 
-Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in in-box PowerShell modules that allowed an attacker to bypass Windows Defender Device Guard code integrity policies. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
+Microsoft recommends that you install the latest security updates. 
+The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Device Guard code integrity policies. 
+These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
 For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
 
@@ -681,7 +691,7 @@ To create a code integrity policy, copy each of the following commands into an e
 
     ` New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt `
 
-    > [!Notes] 
+    > [!Note] 
     
     > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the code integrity policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Device Guard. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
     
@@ -725,7 +735,7 @@ When code integrity policies are run in audit mode, it allows administrators to 
 
     > [!Note]
     
-    > - The illustration shows the example file name *DeviceGuardPolicy.bin* because this name was used earlier in this topic, in [Create a code integrity policy from a golden computer](#create-a-code-integrity-policy-from-a-golden-computer). Also, this policy file does not need to be copied to every system. You can instead copy the code integrity policies to a file share to which all computer accounts have access.
+    > - The illustration shows the example file name *DeviceGuardPolicy.bin* because this name was used earlier in this topic, in [Create a code integrity policy from a reference computer](#create-a-code-integrity-policy-from-a-golden-computer). Also, this policy file does not need to be copied to every system. You can instead copy the code integrity policies to a file share to which all computer accounts have access.
 
     > - Any policy you select here is converted to SIPolicy.p7b when it is deployed to the individual computers.
 
@@ -892,14 +902,16 @@ Now that this policy is in enforced mode, you can deploy it to your test compute
 
 ## Signing code integrity policies with SignTool.exe
 
-Signed code integrity policies give organizations the highest level of malware protection available in Windows 10. In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed code integrity policies than unsigned ones. Before you sign and deploy a signed code integrity policy, we recommend that you audit the policy to discover any blocked applications that should be allowed to run. For more information about how to audit code integrity policies, see the [Audit code integrity policies](#audit-code-integrity-policies) section.
+Signed code integrity policies give organizations the highest level of malware protection available in Windows 10. 
+In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. 
+These policies are designed to prevent administrative tampering and kernel mode exploit access. 
+With this in mind, it is much more difficult to remove signed code integrity policies. 
+Before you sign and deploy a signed code integrity policy, we recommend that you [audit the policy](#audit-code-integrity-policies) to discover any blocked applications that should be allowed to run. 
 
-Signing code integrity policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. If you do not currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md) to create one with your on-premises CA. 
+Signing code integrity policies by using an on-premises CA-generated certificate or a purchased code signing certificate is straightforward. 
+If you do not currently have a code signing certificate exported in .pfx format (containing private keys, extensions, and root certificates), see [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md) to create one with your on-premises CA. 
 
 Before signing code integrity policies for the first time, be sure to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”) to leave troubleshooting options available to administrators. To ensure that a rule option is enabled, you can run a command such as `Set-RuleOption -FilePath <PathAndFilename> -Option 9` even if you're not sure whether the option is already enabled—if so, the command has no effect. When validated and ready for enterprise deployment, you can remove these options. For more information about rule options, see [Code integrity policy rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md#code-integrity-policy-rules) in "Deploy code integrity policies: policy rules and file rules."
-
-> [!Note] 
-> Signing code integrity policies is the last step in a code integrity deployment. It is much more difficult to remove a signed code integrity policy than an unsigned one. Before you deploy a signed code integrity policy to deployed client computers, be sure to test its effect on a subset of computers.
 
 To sign a code integrity policy with SignTool.exe, you need the following components:
 
