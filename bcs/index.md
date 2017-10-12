@@ -421,6 +421,25 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
+                                <a href="https://support.office.com/article/aad21b1a-c775-469a-b89c-c5d1d59d27db" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-intune-1.svg" alt="Mapping Microsoft 365 Business protection features to Intune settings" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Microsoft 365 Business protection features to Intune settings mapping</h3>
+                                                    <p>Find out how the Android and iOS app policy settings map to Intune settings.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://support.office.com/article/6b70fa27-d171-4593-8ecf-f78bb4ed2e99" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
