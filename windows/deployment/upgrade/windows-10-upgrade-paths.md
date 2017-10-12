@@ -32,7 +32,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>Windows 10 Home</td>
         <td>Windows 10 Pro</td>
-        <td>Windows 10 Pro for Education</td>
+        <td>Windows 10 Pro Education</td>
         <td>Windows 10 Education</td>
         <td>Windows 10 Enterprise</td>
         <td>Windows 10 Mobile</td>
