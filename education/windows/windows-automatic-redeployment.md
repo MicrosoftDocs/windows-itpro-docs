@@ -31,7 +31,7 @@ You can set the policy using one of these methods:
 
 - MDM provider
 
-    - Windows Automatic Redeployment in Intune for Education is coming soon. In a future update of Intune for Education, new tenants will automatically have the Windows Automatic Redeployment setting enabled by default on the **All devices** group as part of initial tenant configuration. A future update will also enable you to toggle a Windows Automatic Redeployment setting so you can target devices more granularly.
+    - Windows Automatic Redeployment in Intune for Education is coming soon. In a future update of Intune for Education, new tenants will automatically have the Windows Automatic Redeployment setting enabled by default on the **All devices** group as part of initial tenant configuration. You will also be able to manage this setting to target different groups in the admin console.
     - If you're using an MDM provider other than Intune for Education, check your MDM provider documentation on how to set this policy. If your MDM provider doesn't explicitly support this policy, you can manually set this policy if your MDM provider allows specific OMA-URIs to be manually set.
 
         For example, in Intune, create a new configuration policy and add an OMA-URI. 
