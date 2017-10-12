@@ -1,6 +1,20 @@
+---
+title: Customize Windows Defender Security Center contact information
+description: Provide information to your employees on how to contact your IT department when a security issue occurs
+keywords: wdsc, security center, defender, notification, customize, contact, it department, help desk, call, help site
+search.product: eADQiWindows 10XVcnh
+ms.pagetype: security
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+ms.localizationpriority: medium
+author: iaanw
+ms.author: iawilt
+ms.date: 10/12/2017
+---
 
-
-## Customize the Windows Defender Security Center app for your organization
+# Customize the Windows Defender Security Center app for your organization
 
 You can add information about your organization in a contact card to the Windows Defender Security Center app. This can include a link to a support site, a phone number for a help desk, and an email address for email-based support. 
 
@@ -17,7 +31,7 @@ Users can click on the displayed information to easily initiate a support reques
 - Clicking **Help portal** or the website URL will open the machine's default web browser and go to the displayed address
 
 
-### Use Group Policy to enable and customize contact information
+## Use Group Policy to enable and customize contact information
 
 There are two stages to using the contact card and customized notifications. First, you have to enable the contact card or custom notifications (or both), and then you must specify at least a name for your organization and one piece of contact information.
 
