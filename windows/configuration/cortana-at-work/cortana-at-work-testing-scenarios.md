@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: high
+ms.author: lizross
 ---
 
 # Testing scenarios using Cortana in your business or organization

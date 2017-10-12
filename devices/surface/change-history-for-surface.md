@@ -11,6 +11,12 @@ author: jdeckerms
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## October 2017
+
+New or changed topics | Description 
+--- | ---
+Microsoft Surface Diagnostic Toolkit | Topic removed. The Microsoft Surface Diagnostic Toolkit is no longer available for download.
+
 ## September 2017
 
 New or changed topic | Description

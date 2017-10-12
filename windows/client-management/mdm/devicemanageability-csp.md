@@ -37,17 +37,17 @@ Returns the versions of all configuration service providers supported on the dev
 Added in Windows 10, version 1709. Interior node.
 
 <a href="" id="capabilities-cspversions"></a>**Provider/_ProviderID_**  
-Added in Windows 10, version 1709. Provider ID of the configuration source.
+Added in Windows 10, version 1709. Provider ID of the configuration source. ProviderID should be unique among the different config sources.
 
 <a href="" id="capabilities-cspversions"></a>**Provider/_ProviderID_/ConfigInfo**  
 Added in Windows 10, version 1709. Configuration information string value set by the configuration source. Recommended to be used during sync session.
 
-The MDM server can query ConfigInfo to determine the settings of the traditional PC management system. The MDM can also configure ConfigInfo with its own device management information.
+ConfigInfo value can only be set by the provider that owns the ProviderID. The value is readable by other config sources.
 
 Data type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="capabilities-cspversions"></a>**Provider/_ProviderID_/EnrollmentInfo**  
-Added in Windows 10, version 1709. Enrollment information string value set by the configuration source. Recommended to send to server during MDM enrollment.
+Added in Windows 10, version 1709. Enrollment information string value set by the configuration source and sent during MDM enrollment. It is readable by MDM server during sync session.
 
 Data type is string. Supported operations are Add, Get, Delete, and Replace. 
 

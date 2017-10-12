@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt, sccm
 ms.localizationpriority: high
-ms.date: 08/23/2017
+ms.date: 10/10/2017
 author: greg-lindsay
 ---
 
@@ -42,25 +42,25 @@ After completing the instructions in this guide, you will have a PoC environment
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed. 
 
+<br>
+
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TD BGCOLOR="#a0e4fa"><B>Topic</B><TD BGCOLOR="#a0e4fa"><B>Description</B><TD BGCOLOR="#a0e4fa"><B>Time</B>
-
-<TR><TD>[Hardware and software requirements](#hardware-and-software-requirements)<TD>Prerequisites to complete this guide.<TD>Informational
-<TR><TD>[Lab setup](#lab-setup)<TD>A description and diagram of the PoC environment.<TD>Informational
-<TR><TD>[Configure the PoC environment](#configure-the-poc-environment)<TD>Parent topic for procedures.<TD>Informational
-<TR><TD>[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<TD>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<TD>10 minutes
-<TR><TD>[Download VHD and ISO files](#download-vhd-and-iso-files)<TD>Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.<TD>30 minutes
-<TR><TD>[Convert PC to VM](#convert-pc-to-vm)<TD>Convert a physical computer on your network to a VM hosted in Hyper-V.<TD>30 minutes
-<TR><TD>[Resize VHD](#resize-vhd)<TD>Increase the storage capacity for one of the Windows Server VMs.<TD>5 minutes
-<TR><TD>[Configure Hyper-V](#configure-hyper-v)<TD>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<TD>15 minutes
-<TR><TD>[Configure service and user accounts](#configure-service-and-user-accounts)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
-<TR><TD>[Configure VMs](#configure-vms)<TD>Start virtual machines and configure all services and settings.<TD>60 minutes
-<TR><TD>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<TD>Verify and troubleshoot network connectivity and services in the PoC environment.<TD>30 minutes
-<TR><TD>[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)<TD>Terms used in this guide.<TD>Informational
-</TABLE>
-
+<table border="1" cellspacing="0" cellpadding="0">
+<tr><TD BGCOLOR="#a0e4fa"><B>Topic</B></td><TD BGCOLOR="#a0e4fa"><B>Description</B></td><TD BGCOLOR="#a0e4fa"><B>Time</B></td></tr>
+<tr><td>[Hardware and software requirements](#hardware-and-software-requirements)<td>Prerequisites to complete this guide.<td>Informational
+<tr><td>[Lab setup](#lab-setup)<td>A description and diagram of the PoC environment.<td>Informational
+<tr><td>[Configure the PoC environment](#configure-the-poc-environment)<td>Parent topic for procedures.<td>Informational
+<tr><td>[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)<td>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<td>10 minutes
+<tr><td>[Download VHD and ISO files](#download-vhd-and-iso-files)<td>Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.<td>30 minutes
+<tr><td>[Convert PC to VM](#convert-pc-to-vm)<td>Convert a physical computer on your network to a VM hosted in Hyper-V.<td>30 minutes
+<tr><td>[Resize VHD](#resize-vhd)<td>Increase the storage capacity for one of the Windows Server VMs.<td>5 minutes
+<tr><td>[Configure Hyper-V](#configure-hyper-v)<td>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<td>15 minutes
+<tr><td>[Configure service and user accounts](#configure-service-and-user-accounts)<td>Start virtual machines and configure all services and settings.<td>60 minutes
+<tr><td>[Configure VMs](#configure-vms)<td>Start virtual machines and configure all services and settings.<td>60 minutes
+<tr><td>[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)<td>Verify and troubleshoot network connectivity and services in the PoC environment.<td>30 minutes
+<tr><td>[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)<td>Terms used in this guide.<td>Informational
+</table>
 </div>
 
 ## Hardware and software requirements
@@ -74,9 +74,9 @@ Harware requirements are displayed below:
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border="1" cellspacing="0" cellpadding="0">
     <tr>
-        <TD></td>
+        <td></td>
         <td BGCOLOR="#a0e4fa">**Computer 1** (required)</td>
         <td BGCOLOR="#a0e4fa">**Computer 2** (recommended)</td>
     </tr>
@@ -230,7 +230,7 @@ When you have completed installation of Hyper-V on the host computer, begin conf
     After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
 
     <TABLE BORDER=1>
-    <TR><TD> ![VHD](images/download_vhd.png) </TD></TR>
+    <tr><td> ![VHD](images/download_vhd.png) </TD></TR>
     </TABLE>
 
 2. Download the file to the **C:\VHD** directory. When the download is complete, rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is done to make the filename simple to recognize and type.
@@ -262,7 +262,7 @@ w10-enterprise.iso
 
 >Important: Do not attempt to use the VM resulting from the following procedure as a reference image. Also, to avoid conflicts with existing clients, do not start the VM outside the PoC network.
 
-<TABLE BORDER=2><TR><TD>
+<TABLE BORDER=2><tr><td>
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
 <BR>
 <OL>
@@ -292,7 +292,7 @@ When creating a VM in Hyper-V, you must specify either generation 1 or generatio
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border=1 cellspacing="0" cellpadding="0">
     <tr>
         <td></td>
         <td>Architecture</td>
@@ -363,7 +363,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
+<table border=1 cellspacing="0" cellpadding="0">
     <tr>
         <td>OS</td>
         <td>Partition style</td>
@@ -1073,18 +1073,18 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 <div style='font-size:9.0pt'>
 
-<TABLE border=1 cellspacing=0 cellpadding=0>
-<TR><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
-<TR><TD>GPT<TD>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
-<TR><TD>Hyper-V<TD>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
-<TR><TD>Hyper-V host<TD>The computer where Hyper-V is installed.
-<TR><TD>Hyper-V Manager<TD>The user-interface console used to view and configure Hyper-V.
-<TR><TD>MBR<TD>Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.
-<TR><TD>Proof of concept (PoC)<TD>Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process. 
-<TR><TD>Shadow copy<TD>A copy or "snapshot" of a computer at a point in time, created by the Volume Shadow Copy Service (VSS), typically for backup purposes.
-<TR><TD>Virtual machine (VM)<TD>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
-<TR><TD>Virtual switch<TD>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
-<TR><TD>VM snapshot<TD>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
+<table border="1" cellspacing="0" cellpadding="0">
+<tr><TD BGCOLOR="#a0e4fa"><B>Term</B><TD BGCOLOR="#a0e4fa"><B>Definition</B>
+<tr><td>GPT<td>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
+<tr><td>Hyper-V<td>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
+<tr><td>Hyper-V host<td>The computer where Hyper-V is installed.
+<tr><td>Hyper-V Manager<td>The user-interface console used to view and configure Hyper-V.
+<tr><td>MBR<td>Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.
+<tr><td>Proof of concept (PoC)<td>Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process. 
+<tr><td>Shadow copy<td>A copy or "snapshot" of a computer at a point in time, created by the Volume Shadow Copy Service (VSS), typically for backup purposes.
+<tr><td>Virtual machine (VM)<td>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
+<tr><td>Virtual switch<td>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
+<tr><td>VM snapshot<td>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
 </TABLE>
 
 </div>
