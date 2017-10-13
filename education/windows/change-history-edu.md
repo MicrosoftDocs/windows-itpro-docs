@@ -81,13 +81,13 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 
 | New or changed topic | Description |
 | --- | --- |
-| [Upgrade Windows 10 Pro to Pro Education from Windows Store for Business] | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. As of May 2017, this topic has been replaced with [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md). |
+| [Upgrade Windows 10 Pro to Pro Education from Microsoft Store for Business] | New. Learn how to opt-in to a free upgrade to Windows 10 Pro Education. As of May 2017, this topic has been replaced with [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md). |
 
 ## November 2016
 
 | New or changed topic | Description|
 | --- | --- |
-| [Working with Windows Store for Business – education scenarios](education-scenarios-store-for-business.md)  | New. Learn about education scenarios for Windows Store for Business.  |
+| [Working with Microsoft Store for Business – education scenarios](education-scenarios-store-for-business.md)  | New. Learn about education scenarios for Microsoft Store for Business.  |
 | [For teachers - get Minecraft: Education Edition](teacher-get-minecraft.md)  | Updates. Subscription support for Minecraft: Education Edition.  |
 | [For IT administrators - get Minecraft: Education Edition](school-get-minecraft.md)  | Updates. Subscription support for Minecraft: Education Edition.  |
 

@@ -21,11 +21,11 @@ The Windows 10 S self-installer will allow you to test Windows 10 S on a variety
 
 Windows 10 S is built to give schools the familiar, robust, and productive experiences you count on from Windows in an experience that's been streamlined for security and performance in the classroom, and built to work with Microsoft Education<sup>[2](#footnote2)</sup>.
 
-Windows 10 S is different from other editions of Windows 10 as everything that runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Windows Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install apps from the Windows Store.
+Windows 10 S is different from other editions of Windows 10 as everything that runs on the device is verfied by Microsoft for security and performance. Therefore, Windows 10 S works exclusively with apps from the Microsoft Store. Some accessories and apps compatible with Windows 10 may not work and performance may vary. Certain default settings, features, and apps cannot be changed. When you install Windows 10 S, your existing applications and settings will be deleted and you will only be able to install apps from the Microsoft Store.
 
 **Configuring Windows 10 S for school use is easy:** Education customers must configure **SetEduPolicies** for use in K-12 schools. For more information on how to do these, see [Use the Set up School PCs app](use-set-up-school-pcs-app.md) and [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md). 
 
-**Installing Office 365 for Windows 10 S (Education preview)**: To install the Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Windows Store. 
+**Installing Office 365 for Windows 10 S (Education preview)**: To install the Office applications in a school environment, you must use the free Set up School PCs app, which is available on the Microsoft Store for Education and from the Microsoft Store. 
 
 As we finalize development of Office 365 for Windows 10 S (Education preview), the applications will be updated automatically. You must have an Office license to activate the applications once they are installed.To learn more about Office 365 for Education plans, see [FAQ: Office on Windows 10 S](https://support.office.com/article/717193b5-ff9f-4388-84c0-277ddf07fe3f).
 
@@ -33,7 +33,7 @@ As we finalize development of Office 365 for Windows 10 S (Education preview), t
 
 ### Important information
 
-Before you install Windows 10 S, be aware that non-Windows Store apps will not work, peripherals that require custom drivers may not work, and other errors may occur. In particular, this release of Windows 10 S:
+Before you install Windows 10 S, be aware that non-Microsoft Store apps will not work, peripherals that require custom drivers may not work, and other errors may occur. In particular, this release of Windows 10 S:
 * Is intended for education customers to test compatibility with existing hardware
 * May not work with some device drivers, which may not yet be ready for Windows 10 S and may cause some loss in functionality
 * May not be compatible with all peripherals that require custom drivers and, even if compatible, may cause aspects of the peripheral to not function
@@ -194,7 +194,7 @@ To use an installation media to reinstall Windows 10, follow these steps.
     If you're not seeing the setup screen, your PC might not be set up to boot from a drive. Check your PC manufacturer's website for information on how to change your PC's boot order, and then try again.
 
 8. Select **Install now**.
-9. On the **Enter the product key to active Windows** page, enter a product key if you have one. If you upgraded to Windows 10 for free, or bought and activated Windows 10 from the Windows Store, select **Skip** and Windows will automatically activate later. For more information, see [Activation in Windows 10](https://support.microsoft.com/en-us/help/12440/windows-10-activation).
+9. On the **Enter the product key to active Windows** page, enter a product key if you have one. If you upgraded to Windows 10 for free, or bought and activated Windows 10 from the Microsoft Store, select **Skip** and Windows will automatically activate later. For more information, see [Activation in Windows 10](https://support.microsoft.com/en-us/help/12440/windows-10-activation).
 10. On the **License terms** page, select **I accept the license terms** if you agree, and then select **Next**.
 11. On the **Which type of installation do you want?** page, select **Custom**.
 12. On the **where do you want to install Windows?** page, select a partition, select a formatting option (if necessary), and then follow the instructions.
