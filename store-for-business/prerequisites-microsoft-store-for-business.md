@@ -21,7 +21,6 @@ There are a few prerequisites for using Microsoft Store for Business or Microsof
 
 ## Prerequisites
 
-
 You'll need this software to work with Microsoft Store for Business or Education.
 
 ### Required
@@ -45,7 +44,7 @@ While not required, you can use a management tool to distribute and manage apps.
 
 ## Proxy configuration
 
-If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Microsoft Store. Some of the Microsoft Store features use Windows Store app and Microsoft Store services. Devices using Microsoft Store – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy sever to block traffic, your configuration needs to allow these URLs:
+If your organization restricts computers on your network from connecting to the Internet, there is a set of URLs that need to be available for devices to use Microsoft Store. Some of the Microsoft Store features use Store services. Devices using Microsoft Store – either to acquire, install, or update apps – will need access to these URLs. If you use a proxy sever to block traffic, your configuration needs to allow these URLs:
 
 -   login.live.com
 -   login.windows.net
