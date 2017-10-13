@@ -180,33 +180,26 @@ No. A potential alternative is Desired State Configuration (DSC), a feature of t
 
 No. SCM only supported SCAP 1.0, which was not updated as SCAP evolved. The new toolkit likewise does not include SCAP support.
 
-
-## Related Resources
-
--   [Security Baseline Blog](https://blogs.technet.microsoft.com/secguide/2017/09/27/security-baseline-for-windows-10-fall-creators-update-v1709-draft/)
--   [Microsoft Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
-
-- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
-
-<br />
-
-**Community**
+## Community
 
 -  Microsoft security guidance blog -a new discussion forum page where people can ask questions and leave comments.
 
-<br />
 
-[![Foo](images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
+[![Microsoft Security Guidance Blog](images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
 
+
+## Related Videos
+
+You may also be interested in this channel 9 msdn video: 
+-   [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-174-Security-Baseline-Policy-Analyzer-and-LGPO)
 
 ## See Also
 
 -   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 -   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
 -   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
+-   [Security Baseline Blog](https://blogs.technet.microsoft.com/secguide/2017/09/27/security-baseline-for-windows-10-fall-creators-update-v1709-draft/)
+-   [Microsoft Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
 
-<br />
+- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
 
-**Related videos**
-
-You may also be interested in this channel 9 msdn video: [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-174-Security-Baseline-Policy-Analyzer-and-LGPO)
