@@ -68,7 +68,7 @@ To verify authorship of data, a user can sign it by using a private key that is 
 
 ## New and changed functionality as of Windows 8.1
 
-Enhancements in Windows 8.1 enabled developers to build Windows Store apps to create and manage virtual smart cards.
+Enhancements in Windows 8.1 enabled developers to build Microsoft Store apps to create and manage virtual smart cards.
 
 The DCOM Interfaces for Trusted Platform Module (TPM) Virtual Smart Card device management protocol provides a Distributed Component Object Model (DCOM) Remote Protocol interface used for creating and destroying virtual smart cards. A virtual smart card is a device that presents a device interface complying with the PC/SC specification for PC-connected interface devices to its host operating system (OS) platform. This protocol does not assume anything about the underlying implementation of virtual smart card devices. In particular, while it is primarily intended for the management of virtual smart cards based on TPMs, it can also be used to manage other types of virtual smart cards.
 
@@ -92,9 +92,9 @@ Starting with Windows 8.1, application developers can build into their apps the 
 
 **What works differently?**
 
-Starting with Windows 8.1, Windows Store app developers are able to build apps that have the capability to prompt the user to reset or unblock and change a virtual smart card PIN. This places more responsibility on the user to maintain their virtual smart card but it can also provide a more consistent user experience and administration experience in your organization.
+Starting with Windows 8.1, Microsoft Store app developers are able to build apps that have the capability to prompt the user to reset or unblock and change a virtual smart card PIN. This places more responsibility on the user to maintain their virtual smart card but it can also provide a more consistent user experience and administration experience in your organization.
 
-For more information about developing Windows Store apps with these capabilities, see [Trusted Platform Module Virtual Smart Card Management Protocol](https://msdn.microsoft.com/library/hh880895.aspx).
+For more information about developing Microsoft Store apps with these capabilities, see [Trusted Platform Module Virtual Smart Card Management Protocol](https://msdn.microsoft.com/library/hh880895.aspx).
 
 For more information about managing these capabilities in virtual smart cards, see [Understanding and Evaluating Virtual Smart Cards](virtual-smart-card-understanding-and-evaluating.md).
 
