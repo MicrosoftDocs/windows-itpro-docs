@@ -20,9 +20,6 @@ ms.localizationpriority: medium
 
 System Center Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
 
->[!IMPORTANT]
->If you previously created a WIP policy using System Center Configuration Manager version 1511 or 1602, you’ll need to recreate it using version 1606 or later. Editing a WIP policy created in version 1511 or 1602 is not supported in later versions and there is no migration path between older and newer WIP policies.
-
 ## Add a WIP policy
 After you’ve installed and set up System Center Configuration Manager for your organization, you must create a configuration item for WIP, which in turn becomes your WIP policy.
 
@@ -57,7 +54,7 @@ The **Create Configuration Item Wizard** starts.
 
 The **Configure Windows Information Protection settings** page appears, where you'll configure your policy for your organization.
 
-### Add app rules to your policy
+## Add app rules to your policy
 During the policy-creation process in System Center Configuration Manager, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
@@ -65,7 +62,7 @@ The steps to add your app rules are based on the type of rule template being app
 >[!IMPORTANT]
 >Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
-#### Add a store app rule to your policy
+### Add a store app rule to your policy
 For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
 
 **To add a store app**
@@ -150,7 +147,7 @@ If you don't know the publisher or product name, you can find them for both desk
         }
     ```
 
-#### Add a desktop app rule to your policy
+### Add a desktop app rule to your policy
 For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
 **To add a desktop app to your policy**
@@ -223,7 +220,7 @@ Path                   Publisher
 ```
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
-#### Add an AppLocker policy file
+### Add an AppLocker policy file
 For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create an app rule and xml file using the AppLocker tool**
@@ -314,7 +311,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
     The file is imported and the apps are added to your **App Rules** list.
 
-#### Exempt apps from WIP restrictions
+### Exempt apps from WIP restrictions
 If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
 **To exempt a store app, a desktop app, or an AppLocker policy file app rule**
@@ -339,7 +336,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 5.	Click **OK**.
 
-### Manage the WIP-protection level for your enterprise data
+## Manage the WIP-protection level for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
 We recommend that you start with **Silent** or **Override** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Override** or **Hide Overrides**.
@@ -356,7 +353,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
 
 ![Create Configuration Item wizard, choose your WIP-protection level](images/wip-sccm-appmgmt.png)
 
-### Define your enterprise-managed identity domains
+## Define your enterprise-managed identity domains
 Corporate identity, usually expressed as your primary internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you’ve marked as protected by WIP. For example, emails using contoso.com are identified as being corporate and are restricted by your Windows Information Protection policies.
 
 You can specify multiple domains owned by your enterprise by separating them with the "|" character. For example, (contoso.com|newcontoso.com). With multiple domains, the first one is designated as your corporate identity and all of the additional ones as being owned by the first one. We strongly recommend that you include all of your email address domains in this list.
@@ -367,7 +364,7 @@ You can specify multiple domains owned by your enterprise by separating them wit
 
     ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity](images/wip-sccm-corp-identity.png)
 
-### Choose where apps can access enterprise data
+## Choose where apps can access enterprise data
 After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
 
 There are no default locations included with WIP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
@@ -451,7 +448,7 @@ There are no default locations included with WIP, you must add each of your netw
     
     For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
 
-### Choose your optional WIP-related settings
+## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional WIP settings.
 
 ![Create Configuration Item wizard, Choose any additional, optional settings](images/wip-sccm-additionalsettings.png)
@@ -488,7 +485,7 @@ After you've decided where your protected apps can access enterprise data on you
 
 2. After you pick all of the settings you want to include, click **Summary**.
 
-### Review your configuration choices in the Summary screen
+## Review your configuration choices in the Summary screen
 After you've finished configuring your policy, you can review all of your info on the **Summary** screen.
 
 **To view the Summary screen**
@@ -516,6 +513,3 @@ After you’ve created your WIP policy, you'll need to deploy it to your organiz
 - [How to collect Windows Information Protection (WIP) audit event logs](collect-wip-audit-event-logs.md)
 
 - [General guidance and best practices for Windows Information Protection (WIP)](guidance-and-best-practices-wip.md)
-
->[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

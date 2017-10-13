@@ -458,6 +458,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-browser.md#browser-allowsmartscreen" id="browser-allowsmartscreen">Browser/AllowSmartScreen</a>
   </dd>
+  <!--<dd>
+    <a href="./policy-csp-browser.md#browser-alwaysenablebookslibrary" id="browser-alwaysenablebookslibrary">Browser/AlwaysEnableBooksLibrary</a>
+  </dd>-->
   <dd>
     <a href="./policy-csp-browser.md#browser-clearbrowsingdataonexit" id="browser-clearbrowsingdataonexit">Browser/ClearBrowsingDataOnExit</a>
   </dd>
@@ -693,6 +696,12 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-defender.md#defender-cloudextendedtimeout" id="defender-cloudextendedtimeout">Defender/CloudExtendedTimeout</a>
   </dd>
   <dd>
+    <a href="./policy-csp-defender.md#defender-controlledfolderaccessallowedapplications" id="defender-controlledfolderaccessallowedapplications">Defender/ControlledFolderAccessAllowedApplications</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-defender.md#defender-controlledfolderaccessprotectedfolders" id="defender-controlledfolderaccessprotectedfolders">Defender/ControlledFolderAccessProtectedFolders</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-defender.md#defender-daystoretaincleanedmalware" id="defender-daystoretaincleanedmalware">Defender/DaysToRetainCleanedMalware</a>
   </dd>
   <dd>
@@ -709,12 +718,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-excludedprocesses" id="defender-excludedprocesses">Defender/ExcludedProcesses</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-defender.md#defender-controlledfolderaccessallowedapplications" id="defender-controlledfolderaccessallowedapplications">Defender/ControlledFolderAccessAllowedApplications</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-defender.md#defender-controlledfolderaccessprotectedfolders" id="defender-controlledfolderaccessprotectedfolders">Defender/ControlledFolderAccessProtectedFolders</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-puaprotection" id="defender-puaprotection">Defender/PUAProtection</a>
@@ -1149,9 +1152,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash" id="internetexplorer-disableadobeflash">InternetExplorer/DisableAdobeFlash</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-disableblockingofoutdatedactivexcontrols" id="internetexplorer-disableblockingofoutdatedactivexcontrols">InternetExplorer/DisableBlockingOfOutdatedActiveXControls</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings" id="internetexplorer-disablebypassofsmartscreenwarnings">InternetExplorer/DisableBypassOfSmartScreenWarnings</a>
   </dd>
   <dd>
@@ -1326,9 +1326,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonenavigatewindowsandframes" id="internetexplorer-internetzonenavigatewindowsandframes">InternetExplorer/InternetZoneNavigateWindowsAndFrames</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode" id="internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode" id="internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode">InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</a>
   </dd>
   <dd>
@@ -1336,9 +1333,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzoneusepopupblocker" id="internetexplorer-internetzoneusepopupblocker">InternetExplorer/InternetZoneUsePopupBlocker</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone" id="internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone">InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowaccesstodatasources" id="internetexplorer-intranetzoneallowaccesstodatasources">InternetExplorer/IntranetZoneAllowAccessToDataSources</a>
@@ -1372,9 +1366,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrols" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrols">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe" id="internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe">InternetExplorer/IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-intranetzonejavapermissions" id="internetexplorer-intranetzonejavapermissions">InternetExplorer/IntranetZoneJavaPermissions</a>
@@ -1728,9 +1719,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframes" id="internetexplorer-restrictedsiteszonenavigatewindowsandframes">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains" id="internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains">InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins" id="internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins">InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins</a>
   </dd>
   <dd>
@@ -1744,9 +1732,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles" id="internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles">InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter" id="internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter">InternetExplorer/RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnonprotectedmode" id="internetexplorer-restrictedsiteszoneturnonprotectedmode">InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode</a>
@@ -1797,16 +1782,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols" id="internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols">InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls</a>
   </dd>
   <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols" id="internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols">InternetExplorer/TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe" id="internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe">InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</a>
   </dd>
   <dd>
     <a href="./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonejavapermissions" id="internetexplorer-trustedsiteszonejavapermissions">InternetExplorer/TrustedSitesZoneJavaPermissions</a>
@@ -1899,9 +1875,6 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon" id="localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon">LocalPoliciesSecurityOptions/Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn</a>
   </dd>
   <dd>
-    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode">LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation" id="localpoliciessecurityoptions-useraccountcontrol-allowuiaccessapplicationstopromptforelevation">LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation</a>
   </dd>
   <dd>
@@ -1915,6 +1888,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations" id="localpoliciessecurityoptions-useraccountcontrol-onlyelevateuiaccessapplicationsthatareinstalledinsecurelocations">LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode" id="localpoliciessecurityoptions-useraccountcontrol-runalladministratorsinadminapprovalmode">LocalPoliciesSecurityOptions/UserAccountControl_RunAllAdministratorsInAdminApprovalMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-localpoliciessecurityoptions.md#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation" id="localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation">LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation</a>
@@ -2681,7 +2657,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-system.md#system-disablesystemrestore" id="system-disablesystemrestore">System/DisableSystemRestore</a>
   </dd>
   <dd>
-    <a href="./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics" id="limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
+    <a href="./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics" id="system-limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
   </dd>
   <dd>
     <a href="./policy-csp-system.md#system-telemetryproxy" id="system-telemetryproxy">System/TelemetryProxy</a>
@@ -3094,7 +3070,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/CheckSignaturesOnDownloadedPrograms](./policy-csp-internetexplorer.md#internetexplorer-checksignaturesondownloadedprograms)
 -   [InternetExplorer/ConsistentMimeHandlingInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-consistentmimehandlinginternetexplorerprocesses)
 -   [InternetExplorer/DisableAdobeFlash](./policy-csp-internetexplorer.md#internetexplorer-disableadobeflash)
--   [InternetExplorer/DisableBlockingOfOutdatedActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-disableblockingofoutdatedactivexcontrols)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarnings](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarnings)
 -   [InternetExplorer/DisableBypassOfSmartScreenWarningsAboutUncommonFiles](./policy-csp-internetexplorer.md#internetexplorer-disablebypassofsmartscreenwarningsaboutuncommonfiles)
 -   [InternetExplorer/DisableConfiguringHistory](./policy-csp-internetexplorer.md#internetexplorer-disableconfiguringhistory)
@@ -3152,11 +3127,9 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/InternetZoneLaunchingApplicationsAndFilesInIFRAME](./policy-csp-internetexplorer.md#internetexplorer-internetzonelaunchingapplicationsandfilesiniframe)
 -   [InternetExplorer/InternetZoneLogonOptions](./policy-csp-internetexplorer.md#internetexplorer-internetzonelogonoptions)
 -   [InternetExplorer/InternetZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-internetzonenavigatewindowsandframes)
--   [InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode](./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentsnotsignedwithauthenticode)
 -   [InternetExplorer/InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode](./policy-csp-internetexplorer.md#internetexplorer-internetzonerunnetframeworkreliantcomponentssignedwithauthenticode)
 -   [InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles](./policy-csp-internetexplorer.md#internetexplorer-internetzoneshowsecuritywarningforpotentiallyunsafefiles)
 -   [InternetExplorer/InternetZoneUsePopupBlocker](./policy-csp-internetexplorer.md#internetexplorer-internetzoneusepopupblocker)
--   [InternetExplorer/InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone](./policy-csp-internetexplorer.md#internetexplorer-internetzonewebsitesinlessprivilegedzonescannavigateintothiszone)
 -   [InternetExplorer/IntranetZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowaccesstodatasources)
 -   [InternetExplorer/IntranetZoneAllowAutomaticPromptingForActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowautomaticpromptingforactivexcontrols)
 -   [InternetExplorer/IntranetZoneAllowAutomaticPromptingForFileDownloads](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowautomaticpromptingforfiledownloads)
@@ -3168,7 +3141,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/IntranetZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneallowuserdatapersistence)
 -   [InternetExplorer/IntranetZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-intranetzonedonotrunantimalwareagainstactivexcontrols)
 -   [InternetExplorer/IntranetZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe](./policy-csp-internetexplorer.md#internetexplorer-intranetzoneinitializeandscriptactivexcontrolsnotmarkedsafe)
 -   [InternetExplorer/IntranetZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-intranetzonejavapermissions)
 -   [InternetExplorer/IntranetZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-intranetzonenavigatewindowsandframes)
 -   [InternetExplorer/LocalMachineZoneAllowAccessToDataSources](./policy-csp-internetexplorer.md#internetexplorer-localmachinezoneallowaccesstodatasources)
@@ -3286,13 +3258,11 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/RestrictedSitesZoneLaunchingApplicationsAndFilesInIFRAME](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonelaunchingapplicationsandfilesiniframe)
 -   [InternetExplorer/RestrictedSitesZoneLogonOptions](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonelogonoptions)
 -   [InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframes)
--   [InternetExplorer/RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonenavigatewindowsandframesacrossdomains)
 -   [InternetExplorer/RestrictedSitesZoneRunActiveXControlsAndPlugins](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonerunactivexcontrolsandplugins)
 -   [InternetExplorer/RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonerunnetframeworkreliantcomponentssignedwithauthenticode)
 -   [InternetExplorer/RestrictedSitesZoneScriptActiveXControlsMarkedSafeForScripting](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonescriptactivexcontrolsmarkedsafeforscripting)
 -   [InternetExplorer/RestrictedSitesZoneScriptingOfJavaApplets](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszonescriptingofjavaapplets)
 -   [InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneshowsecuritywarningforpotentiallyunsafefiles)
--   [InternetExplorer/RestrictedSitesZoneTurnOnCrossSiteScriptingFilter](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnoncrosssitescriptingfilter)
 -   [InternetExplorer/RestrictedSitesZoneTurnOnProtectedMode](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneturnonprotectedmode)
 -   [InternetExplorer/RestrictedSitesZoneUsePopupBlocker](./policy-csp-internetexplorer.md#internetexplorer-restrictedsiteszoneusepopupblocker)
 -   [InternetExplorer/ScriptedWindowSecurityRestrictionsInternetExplorerProcesses](./policy-csp-internetexplorer.md#internetexplorer-scriptedwindowsecurityrestrictionsinternetexplorerprocesses)
@@ -3309,10 +3279,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 -   [InternetExplorer/TrustedSitesZoneAllowSmartScreenIE](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowsmartscreenie)
 -   [InternetExplorer/TrustedSitesZoneAllowUserDataPersistence](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneallowuserdatapersistence)
 -   [InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedonotrunantimalwareagainstactivexcontrols)
--   [InternetExplorer/TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonedontrunantimalwareprogramsagainstactivexcontrols)
 -   [InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControls](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrols)
--   [InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedassafe)
--   [InternetExplorer/TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszoneinitializeandscriptactivexcontrolsnotmarkedsafe)
 -   [InternetExplorer/TrustedSitesZoneJavaPermissions](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonejavapermissions)
 -   [InternetExplorer/TrustedSitesZoneNavigateWindowsAndFrames](./policy-csp-internetexplorer.md#internetexplorer-trustedsiteszonenavigatewindowsandframes)
 -   [Kerberos/AllowForestSearchOrder](./policy-csp-kerberos.md#kerberos-allowforestsearchorder)
