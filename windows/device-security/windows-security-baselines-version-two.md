@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
-ms.author: saguadre
+ms.author: sagaudre
 author: sabrinagaudreau
 ms.date: 10/17/2017
 ---
@@ -30,7 +30,7 @@ Here is a good blog about [Sticking with Well-Known and Proven Solutions](https:
 
 Every organization faces security threats. However, the types of security threats that are of most concern to one organization can be completely different from another organization. For example, an e-commerce company may focus on protecting its Internet-facing web apps, while a hospital may focus on protecting confidential patient information. The one thing that all organizations have in common is a need to keep their apps and devices secure. These devices must be compliant with the security standards (or security baselines) defined by the organization. 
 
-A security baseline is a collection of settings that have a security impact and include Microsoft’s recommended value for configuring those settings along with guidance on the security impact of those settings. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers. 
+A security baseline is a group of settings that reflects Microsoft recommendations and explains their security impact. These settings are based on feedback from Microsoft security engineering teams, product groups, partners, and customers. 
 
 ## Why are security baselines needed? 
 
@@ -50,11 +50,11 @@ You can use security baselines to:
 
 ## Where can I get the security baselines? 
 
-You can get the security baselines using the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit which comprises tools that can assist an admin with managing the baselines in addition to the actual security baselines.
+You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit which comprises tools that can assist an admin with managing the baselines in addition to the actual security baselines.
 
 ## Microsoft Security Compliance Toolkit 1.0
 
-### What is the Security Compliance Toolkit (SCT)?**
+### What is the Security Compliance Toolkit (SCT)?
 
 The Security Compliance Toolkit is a set of tools that allows enterprise security administrators to download, analyze, test, edit and store Microsoft-recommended security configuration baselines for Windows and other Microsoft products.
 
@@ -79,15 +79,16 @@ The Security Compliance Toolkit consists of:
     -   Policy Analyzer tool
     -   Local Group Policy Object (LGPO) tool
 
-Using the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319), you can download the tools along with the baselines for the relevant Windows versions.
+
+You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions.
 
 ### What is the Policy Analyzer tool?
 
 The Policy Analyzer is a utility for analyzing and comparing sets of Group Policy Objects (GPOs). Its main features are:
--   Highlight when a set of Group Policies has redundant settings or internal inconsistencies;
--   Highlight the differences between versions or sets of Group Policies;
--   Compare GPOs against current local policy and local registry settings; and
--   Export results to a Microsoft Excel spreadsheet.
+-   Highlight when a set of Group Policies has redundant settings or internal inconsistencies
+-   Highlight the differences between versions or sets of Group Policies
+-   Compare GPOs against current local policy and local registry settings
+-   Export results to a Microsoft Excel spreadsheet
 
 Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. It also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
 
@@ -145,7 +146,7 @@ Internet Explorer 11 | [SecGuide](https://blogs.technet.microsoft.com/secguide/2
 > [!NOTE]
 > Browser baselines are built-in to new OS versions starting with Windows 10
 
-## Frequently asked questions (FAQ)
+## Get Support
 
 **What is the Microsoft Security Compliance Manager (SCM)?**
 
@@ -156,7 +157,7 @@ More information about this change can be found on the Microsoft
 
 **Where can I get an older version of a Windows baseline?**
 
-Any version of Windows before Windows 10 1703, will still be downloadable using SCM. Any future versions will be available through SCT. See matrix below to see if your Windows version is available on SCT.
+Any version of Windows baseline before Windows 10 1703, will still be downloadable using SCM. Any future versions of Windows baseline will be available through SCT. See matrix below to see if your version of Windows baseline is available on SCT.
 
 -   [SCM 4.0 Download](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
 -   [SCM Frequently Asked Questions (FAQ)](https://social.technet.microsoft.com/wiki/contents/articles/1836.microsoft-security-compliance-manager-scm-frequently-asked-questions-faq.aspx)
@@ -169,7 +170,7 @@ The toolkit supports formats created by the Windows GPO backup feature (.pol, in
 
 **Does SCT support Desired State Configuration (DSC) file format?**
 
-Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration. We are currently working on the development of a tool that will provide customers with these features. This is set to be released by the end of 2017. 
+Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools are coming online to convert GPOs and DSC and to validate system configuration. We are currently working on the development of a tool that will provide customers with these features.
 
 **Does SCT support the creation of System Center Configuration Manager (SCCM) DCM packs?**
 
@@ -189,18 +190,13 @@ No. SCM only supported SCAP 1.0, which was not updated as SCAP evolved. The new 
 
 <br />
 
-![Blog posts](images/download-center.png)
-
-<br />
-
 **Community**
 
-- [Microsoft security guidance blog](https://blogs.technet.microsoft.com/secguide/) -a new discussion forum page where people can ask questions and leave comments.
+-  Microsoft security guidance blog -a new discussion forum page where people can ask questions and leave comments.
 
 <br />
 
-![Community](images/community.png)
-
+[![Foo](images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
 
 
 ## See Also
