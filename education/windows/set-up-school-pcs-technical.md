@@ -136,7 +136,7 @@ The Set up School PCs app produces a specialized provisioning package that makes
 - By default, saving content locally to the PC is blocked, but you can choose to enable it. This prevents data loss by forcing students to save to the cloud.
 - A custom Start layout, taskbar layout, and lock screen image are set.
 - Prohibits unlocking the PC to developer mode.
-- Prohibits untrusted Windows Store apps from being installed.
+- Prohibits untrusted Microsoft Store apps from being installed.
 - Prohibits students from removing MDM.
 - Prohibits students from adding new provisioning packages.
 - Prohibits student from removing existing provisioning packages (including the one set by Set up School PCs).
