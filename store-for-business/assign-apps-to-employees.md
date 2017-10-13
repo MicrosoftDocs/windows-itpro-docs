@@ -29,7 +29,7 @@ Admins, Purchasers, and Basic Purchasers can assign online-licensed apps to empl
     Click the app, and then click **Assign User**.
 4.  Type the email address for the person you're assigning the app to, and click **Assign**.
 
-Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
+Employees will receive an email with a link that will install the app on their device. Click the link to start Microsoft Store app, and then click **Install**. Also, in Microsoft Store app, they can find the app under **My Library**.
 
  
 

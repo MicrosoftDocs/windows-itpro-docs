@@ -21,7 +21,7 @@ ms.localizationpriority: high
 
 A single-use or *kiosk* device is easy to set up in Windows 10 for desktop editions. 
 
-- Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer (Windows 10, version 1607 or later) to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application (Windows 10 Enterprise or Education only).
+- Use the [Provision kiosk devices wizard](#wizard) in Windows Configuration Designer (Windows 10, version 1607 or later) to create a provisioning package that configures a kiosk device running either a Universal Windows app or a Classic Windows application (Windows 10 Enterprise or Education only). In Windows 10, version 1709, you can use the [Provision kiosk devices wizard](#wizard) to configure a kiosk device running a Universal Windows app for Windows 10 Pro.
 
     or
     
@@ -85,8 +85,8 @@ Using assigned access, Windows 10 runs the designated Universal Windows app abo
 | Method | Account type | Windows 10 edition |
 | --- | --- | --- |
 | [Use Settings on the PC](#set-up-assigned-access-in-pc-settings) | Local standard | Pro, Enterprise, Education |
-| [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
-| [Create a provisioning package using Windows Configuration Designer](#wizard) | All (domain, local standard, local administrator, etc) | Enterprise, Education |
+| [Apply a mobile device management (MDM) policy](#set-up-assigned-access-in-mdm) | All (domain, local standard, local administrator, etc) | Pro (1709 only), Enterprise, Education |
+| [Create a provisioning package using Windows Configuration Designer](#wizard) | All (domain, local standard, local administrator, etc) | Pro (1709 only), Enterprise, Education |
 | [Run a PowerShell script](#set-up-assigned-access-using-windows-powershell) | Local standard | Pro, Enterprise, Education |
 
 
