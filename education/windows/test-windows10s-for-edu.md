@@ -165,7 +165,7 @@ After going back to your previous edition of Windows 10, you may receive the fol
 
 > For security and performance, this mode of Windows only runs verified apps from the Store.
 
-If see this message, follow these steps to stop receiving the message:
+If you see this message, follow these steps to stop receiving the message:
 
 1. Restart your PC and enter UEFI/BIOS. Depending on your PC, you may need to press **Delete**, **F1**, or **F2** as soon as the PC begins to power on.
 2. Once you've accessed the UEFI/BIOS, look for the menu item labeled **Security** or **Security Settings** and navigate to it.
