@@ -60,7 +60,6 @@ The Security Compliance Toolkit is a set of tools that allows enterprise securit
 
 It enables the administrators to effectively manage their enterprise’s Group Policy Objects (GPOs). Using the toolkit, administrators can compare their current GPOs with Microsoft-recommended GPO baselines or other baselines, edit them, store them in GPO backup file format, and apply them broadly through Active Directory or individually through local policy.<p></p>
 
-![Security Compliance Toolkit](images/security-compliance-toolkit.png)
 
 The Security Compliance Toolkit consists of:
 
