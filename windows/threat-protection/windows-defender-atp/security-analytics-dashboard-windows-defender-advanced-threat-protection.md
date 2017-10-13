@@ -225,13 +225,13 @@ For an endpoint to be considered "well configured", it must comply to a minimum 
 The following settings must be configured with the following settings:
 - Check apps and files: **Warn** or **Block** 
 - SmartScreen for Microsoft Edge: **Warn** or **Block**
-- SmartScreen for Windows Store apps: **Warn** or **Off**
+- SmartScreen for Microsoft store apps: **Warn** or **Off**
 
 
 You can take the following actions to increase the overall security score of your organization:
 - Set **Check app and files** to **Warn** or **Block**
 - Set **SmartScreen for Microsoft Edge** to **Warn** or **Block**
-- Set **SmartScreen for Windows Store apps** to **Warn** or **Off**
+- Set **SmartScreen for Microsoft store apps** to **Warn** or **Off**
 
 For more information, see [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 
