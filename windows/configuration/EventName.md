@@ -51,17 +51,6 @@ The following fields are available:
 - **TargetAppType:** Application type
 - **TargetAppVer:** Application version
 - **TerminateCount:** Number of times a process terminated
-- **UTCMetadata_Commandline:** [not enough info]
-- **UTCMetadata_ImageChecksum:** Checksum for image
-- **UTCMetadata_ImageFileName:** Image filename
-- **UTCMetadata_ImageTimeDateStamp:** Image time and date stamp
-- **UTCMetadata_PackageName:** Name of package
-- **UTCMetadata_PRAID:** [not enough info]
-- **UTCReplace_CommandLineHash_FromEventData:**
-- **UTCReplace_LicenseType_FromEventData:**
-- **UTCReplace_TargetAppId_FromEventData:**
-- **UTCReplace_TargetAppType_FromEventData:**
-- **UTCReplace_TargetAppVer_FromEventData:**
 - **WriteCountAtExit_Sum:** Total number of IO writes for a process when it exited
 - **WriteSizeInKBAtExit_Sum:** Total size of IO writes for a process when it exited          
 
@@ -81,7 +70,7 @@ The following fields are available:
 - **ProviderStatusIcon:** Indicates which status icon should be displayed
 - **ReturnCode:** Output of the ReportResult function
 - **SessionId:** Session identifier
-- **Sign-in error status:**
+- **Sign-in error status:** The sign-in error status
 - **SubStatus:** Sign-in error sub-status
 - **UserTag:** Count of the number of times a user has selected a provider
 
@@ -255,9 +244,6 @@ The following fields are available:
 - **UserActiveDurationMS:** Total time that the user was active including all input methods
 - **UserActiveTransitionCount:** Number of transitions in and out of user activity
 - **UserOrDisplayActiveDurationMS:** Total time the user was using the display
-- **UTCReplace_AppId:**
-- **UTCReplace_AppVersion:**
-- **UTCReplace_CommandLineHash:**
 - **ViewFlags:** Flags denoting  properties of an app view (for example, special VR view or not)
 - **WindowFlags:** Flags denoting runtime properties of an app window
 - **WindowHeight:** Number of vertical pixels in the application window
