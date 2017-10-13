@@ -205,11 +205,11 @@ With Protected Processes, Windows 10 prevents untrusted processes from interacti
 
 ### Universal Windows apps protections
 
-When users download Universal Windows apps from the Windows Store, it’s unlikely that they will encounter malware because all apps go through a careful screening process before being made available in the store. Apps that organizations build and distribute through sideloading processes will need to be reviewed internally to ensure that they meet organizational security requirements.
+When users download Universal Windows apps from the Microsoft Store, it’s unlikely that they will encounter malware because all apps go through a careful screening process before being made available in the store. Apps that organizations build and distribute through sideloading processes will need to be reviewed internally to ensure that they meet organizational security requirements.
 
 Regardless of how users acquire Universal Windows apps, they can use them with increased confidence. Universal Windows apps run in an AppContainer sandbox with limited privileges and capabilities. For example, Universal Windows apps have no system-level access, have tightly controlled interactions with other apps, and have no access to data unless the user explicitly grants the application permission.
 
-In addition, all Universal Windows apps follow the security principle of least privilege. Apps receive only the minimum privileges they need to perform their legitimate tasks, so even if an attacker exploits an app, the damage the exploit can do is severely limited and should be contained within the sandbox. The Windows Store displays the exact capabilities the app requires (for example, access to the camera), along with the app’s age rating and publisher.
+In addition, all Universal Windows apps follow the security principle of least privilege. Apps receive only the minimum privileges they need to perform their legitimate tasks, so even if an attacker exploits an app, the damage the exploit can do is severely limited and should be contained within the sandbox. The Microsoft Store displays the exact capabilities the app requires (for example, access to the camera), along with the app’s age rating and publisher.
 
 ### Windows heap protections
 
