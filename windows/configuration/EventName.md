@@ -19,7 +19,10 @@ ms.author: jaimeo
 
 - Windows 10, version 1709 and later
 
-LOREM IPSUM DOLOR EST [intro/framing material to come from Matt]
+Windows Analytics Device Health reports are powered by diagnostic data not included in the Basic level. This includes crash reports and certain OS telemetry events. Organizations sending Enhanced or Full level diagnostic data were able to participate in Device Health, but some organizations which required detailed event and field level documentation were unable to move from Basic to Enhanced. 
+
+In Windows 10, version 1709, we introduce the Limit Enhanced diagnostic data to the minimum required by Windows Analytics feature. When enabled, this feature limits the operating system telemetry events included in the Enhanced level to only those described below. Note that the Enhanced level also includes limited crash reports, which are not described below. For more information on the Enhanced level, see <LINK TO 1709 telemetry overview doc>.
+
 
 ## KernelProcess.AppStateChangeSummary
 This event summarizes application usage and performance characteristics to help Microsoft improve performance and reliability. Organizations can use this event with Windows Analytics to gain insights into application reliability.
