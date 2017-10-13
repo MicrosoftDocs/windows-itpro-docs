@@ -5,7 +5,7 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
-author: sagaudre
+author: brianlic-msft
 ---
 
 # Microsoft Security Baselines
