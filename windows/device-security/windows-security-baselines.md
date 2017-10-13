@@ -5,7 +5,9 @@ keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
-author: brianlic-msft
+ms.author: saguadre
+author: sabrinagaudreau
+ms.date: 10/17/2017
 ---
 
 # Microsoft Security Baselines
@@ -209,10 +211,4 @@ No. SCM only supported SCAP 1.0, which was not updated as SCAP evolved. The new 
 
 **Related videos**
 
-This is the video we would like to include: https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-174-Security-Baseline-Policy-Analyzer-and-LGPO
-
-![Microsoft Intune Updates](images/microsoft-intune-updates.png)
-
-<br />
-
-![Enterprise Mobility Security](images/enterprise-mobility-security.png)
+You may also be interested in this channel 9 msdn video: [Defrag Tools](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-174-Security-Baseline-Policy-Analyzer-and-LGPO)
