@@ -182,7 +182,7 @@ No. SCM only supported SCAP 1.0, which was not updated as SCAP evolved. The new 
 
 ## Community
 
--  Microsoft security guidance blog -a new discussion forum page where people can ask questions and leave comments.
+-  Microsoft Security Guidance blog -a new discussion forum page where people can ask questions and leave comments.
 
 
 [![Microsoft Security Guidance Blog](images/community.png)](https://blogs.technet.microsoft.com/secguide/) 
