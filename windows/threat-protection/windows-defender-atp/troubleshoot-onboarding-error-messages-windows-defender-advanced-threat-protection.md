@@ -25,7 +25,7 @@ ms.date: 09/10/2017
 
 [!include[Prerelease information](prerelease.md)]
 
->Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)  
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
 You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when setting up your Windows Defender ATP service.
