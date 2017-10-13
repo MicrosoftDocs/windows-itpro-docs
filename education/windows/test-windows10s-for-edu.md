@@ -163,9 +163,7 @@ If going back is not available:
 
 After going back to your previous edition of Windows 10, you may receive the following message when launching Win32 apps:
 
-```
-For security and performance, this mode of Windows only runs verified apps from the Store.
-```
+> For security and performance, this mode of Windows only runs verified apps from the Store.
 
 If see this message, follow these steps to stop receiving the message:
 
