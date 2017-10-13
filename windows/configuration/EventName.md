@@ -1,6 +1,6 @@
 ---
-description: Use this article to learn more about what Windows diagnostic data is gathered at the ENHANCEDMINUS level.
-title: Windows 10, version 1709 ENHANCEDMINUS diagnostic events and fields (Windows 10)
+description: Use this article to learn more about the enhanced telemetry events used by Windows Analytics
+title: Windows 10, version 1709 enhanced telemtry events and fields used by Windows Analytics (Windows 10)
 keywords: privacy, telemetry
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -13,7 +13,7 @@ ms.author: jaimeo
 ---
 
 
-# Windows 10, version 1709 ENAHANCEDMINUS level Windows diagnostic events and fields
+# Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics
 
  **Applies to**
 
