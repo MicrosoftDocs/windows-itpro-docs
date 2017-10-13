@@ -25,9 +25,9 @@ Welcome to Windows 10, version 1709, also known as the Fall Creators Update. Use
 
 Before you install any version of Windows 10, make sure you visit the [Windows 10 Specifications & Systems Requirements](https://www.microsoft.com/windows/windows-10-specifications) page. This page contains the minimum systems requirements and important notes to install Windows 10, as well as feature deprecation information and additional requirements to use certain features.
 
-## What's new in Windows 10, version 1709 IT pro content
+## What's new in Windows 10, version 1709 IT Pro content
 
-Take a look at the [What's new in Windows 10, version 1709 IT pro content](whats-new-windows-10-version-1709), for the latest updates in content. Use this topic to easily navigate the documentation for the new features in Windows 10, version 1709.
+Take a look at the [What's new in Windows 10, version 1709 IT Pro content](whats-new-windows-10-version-1709), for the latest updates in content. Use this topic to easily navigate the documentation for the new features in Windows 10, version 1709.
 
 ## Windows 10 release information and update history
 
@@ -41,5 +41,8 @@ If you'd like to gain some insight into preview, or in-development features, vis
 
 Having problems with your latest deployment of Windows 10, version 1709? Check out the [Top support solutions for Windows 10](/windows/client-management/windows-10-support-solutions) topic, where we've collected the top Microsoft Support solutions for the most common issues experienced when using Windows 10 in an enterprise or IT pro environment.
 
-
 > Want even more information? Visit the [Windows 10 lifecycle page](https://www.microsoft.com/itpro/windows-10) on the [Windows IT Pro Center](https://itpro.windows.com).
+
+Ready to get started with Windows 10, version 1709?
+> [!div class="nextstepaction"]
+> [Deploy and Update Windows 10](/windows/deployment)

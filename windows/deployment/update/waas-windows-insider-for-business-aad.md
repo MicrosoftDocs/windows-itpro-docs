@@ -18,7 +18,7 @@ ms.author: daniha
 
 > **Looking for information about Windows 10 for personal or home use?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-We recently added features and benefits to better support the IT Professionals and business users in our Insider community. This includes the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. 
+We recently added features and benefits to better support the IT Professionals and business users in our Windows Insider community. This includes the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. 
 
 >[!NOTE]
 >At this point, the Windows Insider Program for Business only supports Azure Active Directory (and not Active Directory on premises) as a corporate authentication method.
@@ -33,8 +33,8 @@ In order to get the most benefit out of the Windows Insider Program for Business
 ## Register your organization's Azure AD domain to the Windows Insider Program for Business
 Rather than have each user in your organization register for Windows 10 Insider Preview builds, you can now simply register your domain – and cover all users with just one registration.
 
-1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register you organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
-2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.
+1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
+2. **Register your domain**. Rather than have each user register individually for Windows Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.
 
 >[!IMPORTANT]
 >The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
@@ -46,7 +46,7 @@ Simply go to **Settings > Accounts > Access work or school**. If a corporate acc
 
 ## Enroll a device with an Azure Active Directory account
 1. Navigate to the [**Getting Started**](https://insider.windows.com/en-us/getting-started/) page on [Windows Insider](https://insider.windows.com).
-2. Go to the **Register your organization account** and follow the instructions.
+2. Go to **Register your organization account** and follow the instructions.
 3. On your Windows 10 device, go to **Settings > Updates & Security >  Windows Insider Program**. 
 4. Enter the AAD account that you used to register and follow the on-screen directions. 
 

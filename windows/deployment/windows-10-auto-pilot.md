@@ -80,6 +80,7 @@ Options available for Windows 10, version 1703:
 * Skipping Work or Home usage selection (*Automatic*)
 * Skipping OEM registration, OneDrive and Cortana (*Automatic*)
 * Skipping privacy settings
+* Skipping EULA (*staring with Windows 10, version 1709*)
 * Preventing the account used to set-up the device from getting local administrator permissions
 
 We are working to add additional options to further personalize and streamline the setup experience in future releases.

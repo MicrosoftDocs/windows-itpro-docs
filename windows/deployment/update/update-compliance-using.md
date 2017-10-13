@@ -72,6 +72,8 @@ See below for a few topics related to Log Analytics:
 * To develop your own custom data views in Operations Management Suite or [Power BI](https://powerbi.microsoft.com/); check out documentation on [analyzing data for use in Log Analytics](https://docs.microsoft.com/azure/log-analytics/log-analytics-dashboards). 
 * [Gain an overview of Log Analytics’ alerts](https://docs.microsoft.com/azure/log-analytics/log-analytics-alerts) and learn how to utilize it to always stay informed about the most critical issues you care about. 
 
+>[!NOTE]
+>You can use the Feedback Hub App on Windows 10 devices to [provide feedback about Update Compliance](feedback-hub://?referrer=itProDocs&tabid=2&contextid=797) and other Windows Analytics solutions. 
 
 ## Related topics
 
