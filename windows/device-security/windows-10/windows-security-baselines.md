@@ -10,7 +10,9 @@ author: sagaudre
 ---
 # Microsoft Security Baselines
 
-**Applies to:**  Windows 10
+**Applies to:**  
+
+-   Windows 10
 
 ## Using security baselines in your organization 
 
@@ -89,13 +91,14 @@ The Policy Analyzer is a utility for analyzing and comparing sets of Group Polic
 
 Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. It also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
 
-More information on the Policy Analyzer tool can be found on the [Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+More information on the Policy Analyzer tool can be found on the [Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/22/new-tool-policy-analyzer/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
 ## What is the Local Group Policy Object (LGPO) tool?
 
 LGPO is a tool for transferring Group Policy directly between a host’s registry and a GPO backup file, bypassing the Domain Controller. This gives administrators a simple way to verify the effects of their Group Policy settings directly. 
 Documentation for the LGPO tool can be found on the [Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
+<br />
 
 ## Version Matrix
 
@@ -112,7 +115,7 @@ Windows 7 |[7601 (SP1)](https://technet.microsoft.com/library/ee712767.aspx)| Oc
 
 <br />
 
-### Server Versions
+**Server Versions**
 
 | Name | Build | Baseline Release Date | Security Tools |
 |---|---|---|---|
@@ -122,11 +125,11 @@ Windows 7 |[7601 (SP1)](https://technet.microsoft.com/library/ee712767.aspx)| Oc
 Windows Server 2008 R2 |[SP1](https://technet.microsoft.com/library/gg236605.aspx)|2009 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
 | Windows Server 2008 |[SP2](https://technet.microsoft.com/library/cc514539.aspx)| 2008 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx) |
 |Windows Server 2003 R2|[Technet](https://technet.microsoft.com/library/cc163140.aspx)| 2003 | [SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)|
-|Windows Server 2003|[Technet](https://technet.microsoft.com/library/cc163140.aspx)|2003|
+|Windows Server 2003|[Technet](https://technet.microsoft.com/library/cc163140.aspx)|2003|[SCM 4.0](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)|
 
 <br />
 
-### Microsoft Products
+**Microsoft Products**
 
 | Name | Details| Security Tools|
 |---|---|---|
@@ -153,15 +156,16 @@ Internet Explorer 11 | [SecGuide](https://blogs.technet.microsoft.com/secguide/2
 The Security Compliance Manager is now retired and is no longer supported. It has been replaced by the Security Compliance Toolkit. The reason for this is that SCM was an incredibly complex and large program that needed to be updated for every Windows release. In order to provide a better service for our customers, we have moved to SCT where we can publish baselines through the Microsoft Download Center in a lightweight .zip file that contains GPO backups, GPO reports, Excel spreadsheets, WMI filters, and scripts to apply the settings to local policy.
 
 More information about this change can be found on the Microsoft 
-[Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/).
+[Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2017/06/15/security-compliance-manager-scm-retired-new-tools-and-procedures/).
 
 **Where can I get an older version of a Windows baseline?**
 
 Any version of Windows before Windows 10 1703, will still be downloadable using SCM. Any future versions will be available through SCT. See matrix below to see if your Windows version is available on SCT.
-•	SCM 4.0 Download
-•	SCM Frequently Asked Questions (FAQ)
-•	SCM Release Notes
-•	SCM Baseline Download Help
+
+-   [SCM 4.0 Download](https://technet.microsoft.com/solutionaccelerators/cc835245.aspx)
+-   [SCM Frequently Asked Questions (FAQ)](https://social.technet.microsoft.com/wiki/contents/articles/1836.microsoft-security-compliance-manager-scm-frequently-asked-questions-faq.aspx)
+-   [SCM Release Notes](https://social.technet.microsoft.com/wiki/contents/articles/1864.microsoft-security-compliance-manager-scm-release-notes.aspx)
+-   [SCM Baseline Download Help](https://social.technet.microsoft.com/wiki/contents/articles/1865.microsoft-security-compliance-manager-scm-baseline-download-help.aspx)
 
 **What file formats are supported by the new SCT?**
 
@@ -173,26 +177,19 @@ Not yet. PowerShell-based DSC is rapidly gaining popularity, and more DSC tools 
 
 **Does SCT support the creation of System Center Configuration Manager (SCCM) DCM packs?**
 
-No. A potential alternative is Desired State Configuration (DSC), a feature of the Windows Management Framework. A tool that supports conversion of GPO backups to DSC format can be found here.
+No. A potential alternative is Desired State Configuration (DSC), a feature of the [Windows Management Framework](https://www.microsoft.com/download/details.aspx?id=40855). A tool that supports conversion of GPO backups to DSC format can be found [here](https://github.com/Microsoft/BaselineManagement).
 
 **Does SCT support the creation of Security Content Automation Protocol (SCAP)-format policies?**
 
 No. SCM only supported SCAP 1.0, which was not updated as SCAP evolved. The new toolkit likewise does not include SCAP support.
 
-## Community
 
-**Links**
+## Related Resources
 
-- [Microsoft security guidance blog](https://blogs.technet.microsoft.com/secguide/) - a new discussion forum page where people can ask questions and leave comments.
+-   [Security Baseline Blog](https://blogs.technet.microsoft.com/secguide/2017/09/27/security-baseline-for-windows-10-fall-creators-update-v1709-draft/)
+-   [Microsoft Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
 
-
-<br />
-
-![Community](images/community.png)
-
-<br />
-
-- [Microsoft Download Center:](https://www.microsoft.com/download/details.aspx?id=55319) 
+- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
 
 <br />
 
@@ -200,7 +197,26 @@ No. SCM only supported SCAP 1.0, which was not updated as SCAP evolved. The new 
 
 <br />
 
-## Videos
+**Community**
+
+- [Microsoft security guidance blog](https://blogs.technet.microsoft.com/secguide/) -a new discussion forum page where people can ask questions and leave comments.
+
+<br />
+
+![Community](images/community.png)
+
+<br />
+
+## See Also
+
+-   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
+-   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
+-   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
+
+<br />
+
+**Related videos**
+
 This is the video we would like to include: https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-174-Security-Baseline-Policy-Analyzer-and-LGPO
 
 ![Microsoft Intune Updates](images/microsoft-intune-updates.png)
@@ -208,16 +224,3 @@ This is the video we would like to include: https://channel9.msdn.com/Shows/Defr
 <br />
 
 ![Enterprise Mobility Security](images/enterprise-mobility-security.png)
-
-<br />
-
-## Related Resources
-
--   [Security Baseline Blog](https://blogs.technet.microsoft.com/secguide/2017/09/27/security-baseline-for-windows-10-fall-creators-update-v1709-draft/)
--   [Microsoft Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
- 
-## See Also
-
--   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
--   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
--   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
