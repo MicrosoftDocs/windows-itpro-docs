@@ -27,7 +27,7 @@ Before you install any version of Windows 10, make sure you visit the [Windows 1
 
 ## What's new in Windows 10, version 1709 IT Pro content
 
-Take a look at the [What's new in Windows 10, version 1709 IT Pro content](whats-new-windows-10-version-1709), for the latest updates in content. Use this topic to easily navigate the documentation for the new features in Windows 10, version 1709.
+Take a look at the [What's new in Windows 10, version 1709 IT Pro content](whats-new-windows-10-version-1709.md), for the latest updates in content. Use this topic to easily navigate the documentation for the new features in Windows 10, version 1709.
 
 ## Windows 10 release information and update history
 
