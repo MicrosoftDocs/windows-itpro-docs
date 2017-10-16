@@ -1,5 +1,5 @@
 ---
-title: What's new in Windows 10, version 1703
+title: What's new in Windows 10, version 1709
 description: New and updated IT Pro content about new features in Windows 10, version 1709 (also known as the Fall Creators Update).
 keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
@@ -70,7 +70,7 @@ This version of Windows 10 introduces [Windows Mixed Reality](https://blogs.wind
 
 ### Kiosk Configuration
 
-The AssignedAccess CSP has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For more information, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality).
+The AssignedAccess CSP has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For more information, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps).
 
 
 ## Security
