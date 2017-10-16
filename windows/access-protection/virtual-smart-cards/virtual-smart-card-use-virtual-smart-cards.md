@@ -40,9 +40,9 @@ Virtual smart cards can also be created and deleted by using APIs. For more info
 
 -   [ITPMVirtualSmartCardManagerStatusCallBack](https://msdn.microsoft.com/library/windows/desktop/hh707161(v=vs.85).aspx)
 
-You can use APIs that were introduced in the Windows.Device.SmartCards namespace in Windows Server 2012 R2 and Windows 8.1 to build Windows Store apps to manage the full lifecycle of virtual smart cards. For information about how to build an app to do this, see [Strong Authentication: Building Apps That Leverage Virtual Smart Cards in Enterprise, BYOD, and Consumer Environments | Build 2013 | Channel 9](http://channel9.msdn.com/events/build/2013/2-041).
+You can use APIs that were introduced in the Windows.Device.SmartCards namespace in Windows Server 2012 R2 and Windows 8.1 to build Microsoft Store apps to manage the full lifecycle of virtual smart cards. For information about how to build an app to do this, see [Strong Authentication: Building Apps That Leverage Virtual Smart Cards in Enterprise, BYOD, and Consumer Environments | Build 2013 | Channel 9](http://channel9.msdn.com/events/build/2013/2-041).
 
-The following table describes the features that can be developed in a Windows Store app:
+The following table describes the features that can be developed in a Microsoft Store app:
 
 | Feature                                      | Physical Smart Card | Virtual Smart Card |
 |----------------------------------------------|---------------------|--------------------|

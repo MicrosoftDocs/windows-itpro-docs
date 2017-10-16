@@ -146,7 +146,7 @@ For info on how to distribute **Minecraft: Education Edition**, see [For teacher
 3. Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
 4. Type the email address, or name for the student that you're assigning the app to, and click **Assign**.
 
-Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
+Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.
 
 ### Purchase additional licenses
 Applies to: IT admins and teachers

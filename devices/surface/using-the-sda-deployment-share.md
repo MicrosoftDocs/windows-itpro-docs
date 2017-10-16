@@ -29,7 +29,7 @@ One of the primary scenarios for use of SDA is as a Proof of Concept. A *Proof o
 
 Using SDA to prepare a PoC of Surface devices enables you to very quickly prepare a demonstration of Surface device or devices, which gives you more time for customization or preparation. The flexibility of SDA even lets you import resources, like applications and drivers, from existing MDT deployment infrastructure. See the [Work with existing deployment shares](#work-with-existing-deployment-shares) section later in this article for more information.
 
-SDA is also an excellent PoC of the capabilities of MDT. SDA demonstrates just how quickly an MDT deployment environment can be prepared and made ready for deployment to devices. It also shows just how flexible and customizable the MDT solution can be, with support for Windows 10 and Windows 8.1, for Windows Store and desktop applications, and several models of Surface devices.
+SDA is also an excellent PoC of the capabilities of MDT. SDA demonstrates just how quickly an MDT deployment environment can be prepared and made ready for deployment to devices. It also shows just how flexible and customizable the MDT solution can be, with support for Windows 10 and Windows 8.1, for Microsoft Store and desktop applications, and several models of Surface devices.
 
 Some recommendations for a successful PoC with SDA are:
 

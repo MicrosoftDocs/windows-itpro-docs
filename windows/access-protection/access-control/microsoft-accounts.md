@@ -20,7 +20,7 @@ When a user signs in with a Microsoft account, the device is connected to cloud 
 
 ## <a href="" id="bkmk-benefits"></a>How a Microsoft account works
 
-The Microsoft account allows users to sign in to websites that support this service by using a single set of credentials. Users' credentials are validated by a Microsoft account authentication server that is associated with a website. The Windows Store is an example of this association. When new users sign in to websites that are enabled to use Microsoft accounts, they are redirected to the nearest authentication server, which asks for a user name and password. Windows uses the Schannel Security Support Provider to open a Transport Level Security/Secure Sockets Layer (TLS/SSL) connection for this function. Users then have the option to use Credential Manager to store their credentials.
+The Microsoft account allows users to sign in to websites that support this service by using a single set of credentials. Users' credentials are validated by a Microsoft account authentication server that is associated with a website. The Microsoft Store is an example of this association. When new users sign in to websites that are enabled to use Microsoft accounts, they are redirected to the nearest authentication server, which asks for a user name and password. Windows uses the Schannel Security Support Provider to open a Transport Level Security/Secure Sockets Layer (TLS/SSL) connection for this function. Users then have the option to use Credential Manager to store their credentials.
 
 When users sign in to websites that are enabled to use a Microsoft account, a time-limited cookie is installed on their computers, which includes a triple DES encrypted ID tag. This encrypted ID tag has been agreed upon between the authentication server and the website. This ID tag is sent to the website, and the website plants another time-limited encrypted HTTP cookie on the user’s computer. When these cookies are valid, users are not required to supply a user name and password. If a user actively signs out of their Microsoft account, these cookies are removed.
 
@@ -70,13 +70,13 @@ Users can add security information to their Microsoft accounts through the **Acc
 
 Although the Microsoft account was designed to serve consumers, you might find situations where your domain users can benefit by using their personal Microsoft account in your enterprise. The following list describes some advantages.
 
--   **Download Windows Store apps**:
+-   **Download Microsoft Store apps**:
 
-    If your enterprise chooses to distribute software through the Windows Store, your users can use their Microsoft accounts to download and use them on up to five devices running any version of Windows 10, Windows 8.1, Windows 8, or Windows RT.
+    If your enterprise chooses to distribute software through the Microsoft Store, your users can use their Microsoft accounts to download and use them on up to five devices running any version of Windows 10, Windows 8.1, Windows 8, or Windows RT.
 
 -   **Single sign-on**:
 
-    Your users can use Microsoft account credentials to sign in to devices running Windows 10, Windows 8.1, Windows 8 or Windows RT. When they do this, Windows works with your Windows Store app to provide authenticated experiences for them. Users can associate a Microsoft account with their sign-in credentials for Windows Store apps or websites, so that these credentials roam across any devices running these supported versions.
+    Your users can use Microsoft account credentials to sign in to devices running Windows 10, Windows 8.1, Windows 8 or Windows RT. When they do this, Windows works with your Microsoft Store app to provide authenticated experiences for them. Users can associate a Microsoft account with their sign-in credentials for Microsoft Store apps or websites, so that these credentials roam across any devices running these supported versions.
 
 -   **Personalized settings synchronization**:
 
@@ -84,7 +84,7 @@ Although the Microsoft account was designed to serve consumers, you might find s
 
 -   **App synchronization**:
 
-    Windows Store apps can store user-specific settings so that these settings are available to any device. As with operating system settings, these user-specific app settings are available whenever the user signs in with the same Microsoft account on any device that is running a supported version of Windows and is connected to the cloud. After the user signs in, that device automatically downloads the settings from the cloud and applies them when the app is installed.
+    Microsoft Store apps can store user-specific settings so that these settings are available to any device. As with operating system settings, these user-specific app settings are available whenever the user signs in with the same Microsoft account on any device that is running a supported version of Windows and is connected to the cloud. After the user signs in, that device automatically downloads the settings from the cloud and applies them when the app is installed.
 
 -   **Integrated social media services**:
 

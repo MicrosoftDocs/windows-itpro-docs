@@ -106,7 +106,7 @@ For this example, we’re going to add Microsoft Power BI, a store app, to the *
 If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
 
 **To find the publisher and product name values for Store apps without installing them**
-1.	Go to the [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft Power BI*.
+1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft Power BI*.
 
 2.	Copy the ID value from the app URL. For example, Microsoft Power BI ID URL is https://www.microsoft.com/en-us/store/p/microsoft-power-bi/9nblgggzlxn1, and you'd copy the ID value, `9nblgggzlxn1`.
 

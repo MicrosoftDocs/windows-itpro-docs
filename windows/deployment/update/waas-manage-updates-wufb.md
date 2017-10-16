@@ -57,6 +57,29 @@ Both Feature and Quality Updates can be deferred from deploying to client device
 >[!NOTE]
 >For information about classification GUIDs, see [WSUS Classification GUIDs](https://msdn.microsoft.com/en-us/library/ff357803.aspx).
 
+## Changes to Windows Update for Business in Windows 10, version 1709
+
+The group policy path for Windows Update for Business was changed to correctly reflect its association to Windows Update for Business.
+
+| Prior to Windows 10, version 1709 | Windows 10, version 1709 |
+| --- | --- |
+| Computer Configuration > Administrative Templates > Windows Components > Windows Update > Defer Windows Update | Computer Configuration > Administrative Templates > Windows Components > Windows Update > Windows Update for Business | 
+
+We have added the ability to manage Windows Insider preview builds and their delivery:
+
+The **Manage preview builds** setting gives administrators control over enabling or disabling preview build installation on a device. You can also decide to stop preview builds once the release is public.
+* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
+* MDM: **Update/ManagePreviewBuilds**
+
+>[!IMPORTANT]
+>This policy replaces the "Toggle user control over Insider builds" policy under that is only supported up to Windows 10, version 1703. You can find the older policy here:
+>* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Toggle user control over Insider builds**
+>* MDM: **System/AllowBuildPreview**
+
+The policy settings to **Select when Feature Updates are received** is now called **Select when Preview Builds and Feature Updates are received**. In addition to previous functionality, it now allows you to choose between preview flight rings, and allows you to defer or pause their delivery.
+* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and Feature Updates are received*
+* MDM: **Update/BranchReadinessLevel**
+
 ## Changes to Windows Update for Business in Windows 10, version 1703
 
 ### Options added to Settings
@@ -102,6 +125,10 @@ Update Compliance, now **available in public preview**, provides a holistic view
 ![Update Compliance Dashboard](images/waas-wufb-update-compliance.png)
 
 For more information about Update Compliance, see [Monitor Windows Updates using Update Compliance](update-compliance-monitor.md).
+
+## Manage Windows Update for Business with Intune
+
+Microsoft Intune provides the ability to configure Windows Update for Business settings on devices. Intune doesn’t store the updates, but only the update policy assignment. For more information, see [Manage software updates](https://docs.microsoft.com/intune/windows-update-for-business-configure).
 
 ## Steps to manage updates for Windows 10
 

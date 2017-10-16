@@ -230,11 +230,11 @@ The following diagram shows the Update policies in a tree format.
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
 
 
-<p style="margin-left: 20px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Windows Store.
+<p style="margin-left: 20px">Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft.
 
-<p style="margin-left: 20px">Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Windows Store
+<p style="margin-left: 20px">Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft
 
-<p style="margin-left: 20px">Enabling this policy will disable that functionality, and may cause connection to public services such as the Windows Store to stop working.
+<p style="margin-left: 20px">Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft to stop working.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

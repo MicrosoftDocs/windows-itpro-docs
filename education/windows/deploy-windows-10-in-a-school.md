@@ -45,7 +45,7 @@ This school configuration has the following characteristics:
 - The classrooms connect to each other through multiple subnets.
 - All devices in each classroom connect to a single subnet.
 - All devices have high-speed, persistent connections to each other and to the Internet.
-- All teachers and students have access to Windows Store or Windows Store for Business.
+- All teachers and students have access to Microsoft Store or Microsoft Store for Business.
 - All devices receive software updates from Intune (or another device management system).
 - You install a 64-bit version of Windows 10 on the admin device.
 - You install the Windows Assessment and Deployment Kit (Windows ADK) on the admin device.
@@ -105,7 +105,7 @@ The high-level process for deploying and configuring devices within individual c
 1. Prepare the admin device for use, which includes installing the Windows ADK and MDT.
 2. On the admin device, create and configure the Office 365 Education subscription that you will use for each classroom in the school.
 3. On the admin device, configure integration between on-premises AD DS and Azure AD (if you have an on premises AD DS configuration).
-4. On the admin device, create and configure a Windows Store for Business portal.
+4. On the admin device, create and configure a Microsoft Store for Business portal.
 5. On the admin device, prepare for management of the Windows 10 devices after deployment.
 6. On the student and faculty devices, deploy Windows 10 to new or existing devices, or upgrade eligible devices to Windows 10.
 7. On the admin device, manage the Windows 10 devices and apps, the Office 365 subscription, and the AD DS and Azure AD integration.
@@ -525,57 +525,57 @@ For more information about:
 - Azure AD editions, see [Azure Active Directory editions](https://azure.microsoft.com/en-us/documentation/articles/active-directory-editions/).
 - How to assign user licenses for Azure AD Premium, see [How to assign EMS/Azure AD Premium licenses to user accounts](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/How-to-assign-Azure-AD-Premium-Licenses-to-user-accounts).
 
-## Create and configure a Windows Store for Business portal
+## Create and configure a Microsoft Store for Business portal
 
-Windows Store for Business allows you to create your own private portal to manage Windows Store apps in your institution. With Windows Store for Business, you can do the following:
+Microsoft Store for Business allows you to create your own private portal to manage Microsoft Store apps in your institution. With Microsoft Store for Business, you can do the following:
 
-- Find and acquire Windows Store apps.
+- Find and acquire Microsoft Store apps.
 - Manage apps, app licenses, and updates.
 - Distribute apps to your users. 
 
-For more information about Windows Store for Business, see [Windows Store for Business overview](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview).
+For more information about Microsoft Store for Business, see [Microsoft Store for Business overview](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview).
 
-The following section shows you how to create a Windows Store for Business portal and configure it for your school.
+The following section shows you how to create a Microsoft Store for Business portal and configure it for your school.
 
-### Create and configure your Windows Store for Business portal
+### Create and configure your Microsoft Store for Business portal
 
-To create and configure your Windows Store for Business portal, simply use the administrative account for your Office 365 subscription to sign in to Windows Store for Business. Windows Store for Business automatically creates a portal for your institution and uses your account as its administrator.
+To create and configure your Microsoft Store for Business portal, simply use the administrative account for your Office 365 subscription to sign in to Microsoft Store for Business. Microsoft Store for Business automatically creates a portal for your institution and uses your account as its administrator.
 
-#### To create and configure a Windows Store for Business portal
+#### To create and configure a Microsoft Store for Business portal
 
 1. In Microsoft Edge or Internet Explorer, type `http://microsoft.com/business-store` in the address bar.
-2. On the **Windows Store for Business** page, click **Sign in with an organizational account**.<p>**Note**&nbsp;&nbsp;If your institution has AD DS, then don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
-3. On the Windows Store for Business sign-in page, use the administrative account for the Office 365 subscription you created in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) section to sign in.
-4. On the **Windows Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**
-5. In the **Welcome to the Windows Store for Business** dialog box, click **OK**.
+2. On the **Microsoft Store for Business** page, click **Sign in with an organizational account**.<p>**Note**&nbsp;&nbsp;If your institution has AD DS, then don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
+3. On the Microsoft Store for Business sign-in page, use the administrative account for the Office 365 subscription you created in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) section to sign in.
+4. On the **Microsoft Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**
+5. In the **Welcome to the Microsoft Store for Business** dialog box, click **OK**.
 
-After you create the Windows Store for Business portal, configure it by using the commands in the settings menu listed in Table 7. Depending on your institution, you may (or may not) need to change these settings to further customize your portal. 
+After you create the Microsoft Store for Business portal, configure it by using the commands in the settings menu listed in Table 7. Depending on your institution, you may (or may not) need to change these settings to further customize your portal. 
 
-*Table 7. Menu selections to configure Windows Store for Business settings*
+*Table 7. Menu selections to configure Microsoft Store for Business settings*
 
 | Menu selection        | What you can do in this menu |
 |---------------| -------------------|
-|Account information|Displays information about your Windows Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure Portal. For more information, see [Update Windows Store for Business account settings](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings).|
+|Account information|Displays information about your Microsoft Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure Portal. For more information, see [Update Microsoft Store for Business account settings](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings).|
 |Device Guard signing|Allows you to upload and sign Device Guard catalog and policy files. For more information about Device Guard, see [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide).|
 |LOB publishers| Allows you to add line-of-business (LOB) publishers that can then publish apps to your private store. LOB publishers are usually internal developers or software vendors that are working with your institution. For more information, see [Working with line-of-business apps](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps).|
 |Management tools| Allows you to add tools that you can use to distribute (deploy) apps in your private store. For more information, see [Distribute apps with a management tool](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-with-management-tool).|
 |Offline licensing|Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see [Licensing model: online and offline licenses](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).|
-|Permissions|Allows you to grant other users in your organization the ability to buy, manage, and administer your Windows Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
-|Private store|Allows you to change the organization name used in your Windows Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
+|Permissions|Allows you to grant other users in your organization the ability to buy, manage, and administer your Microsoft Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
+|Private store|Allows you to change the organization name used in your Microsoft Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
 <p>
 ### Find, acquire, and distribute apps in the portal
 
-Now that you have created your Windows Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Windows Store for Business.
+Now that you have created your Microsoft Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Microsoft Store for Business.
 
-**Note**&nbsp;&nbsp;Your educational institution can now use a credit card to pay for apps in Windows Store for Business.
+**Note**&nbsp;&nbsp;Your educational institution can now use a credit card to pay for apps in Microsoft Store for Business.
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users.
 
-For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
 
 ### Summary
 
-At the end of this section, you should have a properly configured Windows Store for Business portal. You have also found and acquired your apps from Windows Store. Finally, you should have deployed all your Windows Store apps to your users. Now, you’re ready to deploy Windows Store apps to your users.
+At the end of this section, you should have a properly configured Microsoft Store for Business portal. You have also found and acquired your apps from Microsoft Store. Finally, you should have deployed all your Microsoft Store apps to your users. Now, you’re ready to deploy Microsoft Store apps to your users.
 
 ## Plan for deployment
 
@@ -598,7 +598,7 @@ Depending on your school’s requirements, you may need any combination of the f
  - Upgrade institution-owned devices to Windows 10 Education.
  - Deploy new instances of Windows 10 Education so that new devices have a known configuration.
 
-**Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Windows Store for Business. These features are not available in Windows 10 Home.
+**Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business. These features are not available in Windows 10 Home.
 
 One other consideration is the mix of processor architectures you will support. If you can, support only 64-bit versions of Windows 10. If you have devices that can run only 32 bit versions of Windows 10, you will need to import both 64-bit and 32-bit versions of the Windows 10 editions listed above.
 
@@ -716,14 +716,14 @@ Import device drivers for each device in your institution. For more information 
 </tr>
 
 <tr>
-<td valign="top">3. Create MDT applications for Windows Store apps</td>
-<td>Create an MDT application for each Windows Store app you want to deploy. You can deploy Windows Store apps by using *sideloading*, which allows you to use the **Add-AppxPackage** Windows PowerShell cmdlet to deploy the .appx files associated with the app (called *provisioned apps*). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>
+<td valign="top">3. Create MDT applications for Microsoft Store apps</td>
+<td>Create an MDT application for each Microsoft Store app you want to deploy. You can deploy Microsoft Store apps by using *sideloading*, which allows you to use the **Add-AppxPackage** Windows PowerShell cmdlet to deploy the .appx files associated with the app (called *provisioned apps*). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>
 
-Prior to sideloading the .appx files, obtain the Windows Store .appx files that you will use to deploy (sideload) the apps in your provisioning package. For apps in Windows Store, you will need to obtain the .appx files from the app software vendor directly. If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Windows Store or Windows Store for Business.<br/><br/>
+Prior to sideloading the .appx files, obtain the Microsoft Store .appx files that you will use to deploy (sideload) the apps in your provisioning package. For apps in Microsoft Store, you will need to obtain the .appx files from the app software vendor directly. If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Microsoft Store or Microsoft Store for Business.<br/><br/>
 
-If you have Intune, you can deploy Windows Store apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Windows Store apps, and you can use it for ongoing management of Windows Store apps. This is the preferred method of deploying and managing Windows Store apps.<br/><br/>
+If you have Intune, you can deploy Microsoft Store apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Microsoft Store apps, and you can use it for ongoing management of Microsoft Store apps. This is the preferred method of deploying and managing Microsoft Store apps.<br/><br/>
 
-In addition, you must prepare your environment for sideloading (deploying) Windows Store apps. For more information about how to:<br/><br/>
+In addition, you must prepare your environment for sideloading (deploying) Microsoft Store apps. For more information about how to:<br/><br/>
 <ul>
 <li>Prepare your environment for sideloading, see [Sideload LOB apps in Windows 10](https://technet.microsoft.com/en-us/itpro/windows/deploy/sideload-apps-in-windows-10).</li>
 <li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
@@ -930,9 +930,9 @@ Microsoft has several recommended settings for educational institutions. Table 1
 </tr>
 
 <tr>
-<td valign="top">Control Windows Store access</td>
-<td>You can control access to Windows Store and whether existing Windows Store apps receive updates. You can only disable the Windows Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>
-**Group Policy**. You can disable the Windows Store app by using the **Turn off the Store Application** Group Policy setting. You can prevent Windows Store apps from receiving updates by using the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Windows Store in my enterprise environment?](https://technet.microsoft.com/en-us/library/hh832040.aspx#BKMK_UseGP).<br/><br/>
+<td valign="top">Control Microsoft Store access</td>
+<td>You can control access to Microsoft Store and whether existing Microsoft Store apps receive updates. You can only disable the Microsoft Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>
+**Group Policy**. You can disable the Microsoft Store app by using the **Turn off the Store Application** Group Policy setting. You can prevent Microsoft Store apps from receiving updates by using the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Microsoft Store in my enterprise environment?](https://technet.microsoft.com/en-us/library/hh832040.aspx#BKMK_UseGP).<br/><br/>
 **Intune**. You can enable or disable the camera by using the **Allow application store** policy setting in the **Apps** section of a **Windows 10 General Configuration** policy.
 </td>
 </tr>
@@ -1015,7 +1015,7 @@ For more information about Intune, see [Documentation for Microsoft Intune](http
 
 ### Deploy apps by using Intune
 
-You can use Intune to deploy Windows Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices) Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or are managed by another solution.
+You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices) Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or are managed by another solution.
 
 For more information about how to configure Intune to manage your apps, see [Deploy and configure apps with Microsoft Intune](https://docs.microsoft.com/en-us/intune/).
 
@@ -1037,7 +1037,7 @@ Prior to deployment of Windows 10, ensure that you complete the tasks listed in 
 | ---| --- |
 |   |The target devices have sufficient system resources to run Windows 10. |
 |   | Identify the necessary devices drivers, and import them to the MDT deployment share.|
-|   | Create an MDT application for each Windows Store and Windows desktop app.|
+|   | Create an MDT application for each Microsoft Store and Windows desktop app.|
 |   | Notify the students and faculty about the deployment.|
 <p>
 ### Perform the deployment
@@ -1078,7 +1078,7 @@ As a final quality control step, verify the device configuration to ensure that 
 - Windows Update is active and current with software updates.
 - Windows Defender is active and current with malware signatures.
 - The SmartScreen Filter is active.
-- All Windows Store apps are properly installed and updated.
+- All Microsoft Store apps are properly installed and updated.
 - All Windows desktop apps are properly installed and updated.
 - Printers are properly configured.
 
@@ -1179,9 +1179,9 @@ For more information, see the [Deploy apps by using Intune](#deploy-apps-by-usin
 </tr>
 
 <tr>
-<td>Install new or update existing Windows Store apps that are used in the curriculum.<br/><br/>
-Windows Store apps are automatically updated from Windows Store. The menu bar in the Windows Store app shows whether any Windows Store app updates are available for download.<br/><br/>
-You can also deploy Windows Store apps directly to devices by using Intune. For more information, see the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.
+<td>Install new or update existing Microsoft Store apps that are used in the curriculum.<br/><br/>
+Microsoft Store apps are automatically updated from Microsoft Store. The menu bar in the Microsoft Store app shows whether any Microsoft Store app updates are available for download.<br/><br/>
+You can also deploy Microsoft Store apps directly to devices by using Intune. For more information, see the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.
 
 </td>
 <td></td>
