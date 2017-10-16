@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.author: sagaudre
-author: sabrinagaudreau
+author: brianlic-msft
 ms.date: 10/17/2017
 ---
 
