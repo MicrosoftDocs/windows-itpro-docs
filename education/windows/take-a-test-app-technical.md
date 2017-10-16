@@ -87,6 +87,16 @@ When Take a Test is running, the following functionality is available to student
     - Ctrl+Alt+Del 
     - Alt+F4 (Take a Test will restart if the student is using a dedicated test account)
 
+## Permissive mode
+
+Starting with Windows 10, version 1709 (Fall Creators Update), assessments can now run in permissive mode. This mode enables students who need access to other apps, like accessibility tools, to use the apps.
+
+When permissive mode is triggered in lockdown mode, Take a Test transitions from lockdown mode to running windows mode on the user's desktop. The student can then run allowed apps during the test.
+
+When running tests in this mode, keep the following in mind:
+- Permissive mode is not supported in kiosk mode (dedicated test account).
+- Permissive mode can be triggered from the web app running within Take a Test. Alternatively, you can create a link or shortcut without "#enforcelockdown" and it will launch in permissive mode.
+
 
 ## Learn more
 
