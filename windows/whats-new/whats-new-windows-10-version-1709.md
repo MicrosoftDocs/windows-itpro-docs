@@ -1,15 +1,19 @@
 ---
 title: What's new in Windows 10, version 1703
 description: New and updated IT Pro content about new features in Windows 10, version 1709 (also known as the Fall Creators Update).
-keywords: ["What's new in Windows 10", "Windows 10", "fall creators update"]
+keywords: ["What's new in Windows 10", "Windows 10", "Fall Creators Update"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
+ms.date: 10/17/2017
 ms.localizationpriority: high
 ---
 
 # What's new in Windows 10, version 1709 IT Pro content
+
+**Applies to**
+-   Windows 10, version 1709
 
 Below is a list of some of the new and updated content that discusses IT Pro features in Windows 10, version 1709, also known as the Fall Creators Update. Windows 10, version 1709 also contains all features and fixes included in previous cumulative updates to Windows 10, version 1703.
 
@@ -96,7 +100,7 @@ Windows Information Protection is now designed to work with Microsoft Office and
 
 ### Windows Hello
 
-Windows Hello enables better trust decisions when signing in, through the use of new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when you are not present. Details about this feature will be available soon. For general information, see [Windows Unlock with Windows Hello companion (IoT) devices](https://docs.microsoft.com/windows/uwp/security/companion-device-unlock).
+New features in Windows Hello  enable a better device lock experience, using multifactor unlock with new location and user proximity signals. Using Bluetooth signals, you can configure your Windows 10 device to automatically lock when you walk away from it, or to prevent others from accessing the device when  you are not present. More details about this feature will be available soon. For general information, see [Windows Hello for Business](https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-identity-verification).
 
 ### BitLocker
 
