@@ -67,7 +67,7 @@ Before you can use Application Guard in enterprise mode, you must install a vers
 
     ![Group Policy editor with Neutral resources setting](images/appguard-gp-network-isolation-neutral.png)
 
-5.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Turn On/Off Windows Defender Application Guard (WDAG)** setting.
+5.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Turn on Windows Defender Application Guard in Enterprise Mode** setting.
 
 6.	Click **Enabled**.
 
