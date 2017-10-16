@@ -111,7 +111,7 @@ To do this through the **new Azure portal**:
 All devices enrolled in the Windows Insider Program (physical or virtual) will receive Windows 10 Insider Preview builds (regardless of registration with MSA or AAD).
 
 ### Once I register with my corporate account in AAD, do I need to keep my Microsoft account for the Windows Insider Program?
-No, once you set up your device using AAD credentials – all feedback and flighting on that machine will be under your AAD account. You may need MSA for other machines that aren’t being used on your corporate network or to get Windows store app updates.
+No, once you set up your device using AAD credentials – all feedback and flighting on that machine will be under your AAD account. You may need MSA for other machines that aren’t being used on your corporate network or to get Microsoft Store App updates.
 
 ### How do I stop receiving updates? 
 You can simply “unlink” your account by going to **Settings > Updates & Security > Windows Insider Program**, select Windows Insider Account and click **Unlink**.
