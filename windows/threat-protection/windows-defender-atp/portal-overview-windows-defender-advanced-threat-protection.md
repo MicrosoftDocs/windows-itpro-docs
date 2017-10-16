@@ -63,7 +63,7 @@ The following table provides information on the icons used all throughout the po
 
 Icon | Description
 :---|:---
-![ATP logo icon](images\atp-logo-icon.png)| ATP logo
+![ATP logo icon](images\atp-logo-icon.png)| Windows Defender ATP logo
 ![Alert icon](images\alert-icon.png)| Alert – Indication of an activity correlated with advanced attacks.
 ![Detection icon](images\detection-icon.png)| Detection – Indication of a malware threat detection.
 ![Active threat icon](images\active-threat-icon.png)| Active threat – Threats actively executing at the time of detection.
@@ -72,10 +72,10 @@ Icon | Description
 ![Thunderbolt icon](images\atp-thunderbolt-icon.png)| Indicates events that triggered an alert in the **Alert process tree**.
 ![Machine icon](images\atp-machine-icon.png)| Machine icon
 ![Windows Defender AV events icon](images\atp-windows-defender-av-events-icon.png)| Windows Defender AV events
-![Application Guard events icon](images\atp-Application-Guard-events-icon.png)| Application Guard events
-![Device Guard events icon](images\atp-Device-Guard-events-icon.png)| Device Guard events
-![Exploit Guard events icon](images\atp-Exploit-Guard-events-icon.png)| Exploit Guard events
-![Smart Screen events icon](images\atp-Smart-Screen-events-icon.png)| Smart Screen events
+![Application Guard events icon](images\atp-Application-Guard-events-icon.png)| Windows Defender Application Guard events
+![Device Guard events icon](images\atp-Device-Guard-events-icon.png)| Windows Defender Device Guard events
+![Exploit Guard events icon](images\atp-Exploit-Guard-events-icon.png)| Windows Defender Exploit Guard events
+![Smart Screen events icon](images\atp-Smart-Screen-events-icon.png)| Windows Defender Smart Screen events
 ![Firewall events icon](images\atp-Firewall-events-icon.png)| Firewall events
 ![Response action icon](images\atp-respond-action-icon.png)| Response action
 ![Process events icon](images\atp-process-event-icon.png)| Process events
