@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 # System requirements for Windows Defender Application Guard
 
 **Applies to:**
-- Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)
+- Windows 10, version 1709
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Windows Defender Application Guard (Application Guard) is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 

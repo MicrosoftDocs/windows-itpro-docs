@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 # Testing scenarios using Windows Defender Application Guard in your business or organization
 
 **Applies to:**
-- Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)
+- Windows 10, version 1709
 
 We've come up with a list of suggested testing scenarios that you can use to test Windows Defender Application Guard (Application Guard) in your organization.
 

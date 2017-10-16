@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 # Configure Windows Defender Application Guard policy settings
 
 **Applies to:**
-- Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)
+- Windows 10, version 1709
 
 Windows Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a GPO, which is linked to a domain, and then apply all those settings to every computer in the domain.
 

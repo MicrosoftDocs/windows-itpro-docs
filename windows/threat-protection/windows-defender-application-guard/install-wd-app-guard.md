@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 # Prepare and install Windows Defender Application Guard
 
 **Applies to:**
-- Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)
+- Windows 10, version 1709
 
 ## Prepare to install Windows Defender Application Guard 
 Before you can install and use Windows Defender Application Guard, you must determine which way you intend to use it in your enterprise. You can use Application Guard in either **Standalone** or **Enterprise-managed** mode.
