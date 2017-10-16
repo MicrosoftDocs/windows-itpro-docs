@@ -65,13 +65,37 @@ The following table provides information on the icons used all throughout the po
 
 Icon | Description
 :---|:---
-![Alert icon](images/alert-icon.png)| Alert – Indication of an activity correlated with advanced attacks.
-![Detection icon](images/detection-icon.png)| Detection – Indication of a malware threat detection.
-![Active threat icon](images/active-threat-icon.png)| Active threat – Threats actively executing at the time of detection.
-![Remediated icon](images/remediated-icon.png)| Remediated – Threat removed from the machine
-![Not remediated icon](images/not-remediated-icon.png)| Not remediated – Threat not removed from the machine.
-![Thunderbolt icon](images/atp-thunderbolt-icon.png) | Indicates events that triggered an alert in the **Alert process tree**.
-
+![ATP logo icon](images\atp-logo-icon.png)| Windows Defender ATP logo
+![Alert icon](images\alert-icon.png)| Alert – Indication of an activity correlated with advanced attacks.
+![Detection icon](images\detection-icon.png)| Detection – Indication of a malware threat detection.
+![Active threat icon](images\active-threat-icon.png)| Active threat – Threats actively executing at the time of detection.
+![Remediated icon](images\remediated-icon.png)| Remediated – Threat removed from the machine.
+![Not remediated icon](images\not-remediated-icon.png)| Not remediated – Threat not removed from the machine.
+![Thunderbolt icon](images\atp-thunderbolt-icon.png)| Indicates events that triggered an alert in the **Alert process tree**.
+![Machine icon](images\atp-machine-icon.png)| Machine icon
+![Windows Defender AV events icon](images\atp-windows-defender-av-events-icon.png)| Windows Defender Antivirus events
+![Application Guard events icon](images\atp-Application-Guard-events-icon.png)| Windows Defender Application Guard events
+![Device Guard events icon](images\atp-Device-Guard-events-icon.png)| Windows Defender Device Guard events
+![Exploit Guard events icon](images\atp-Exploit-Guard-events-icon.png)| Windows Defender Exploit Guard events
+![SmartScreen events icon](images\atp-Smart-Screen-events-icon.png)| Windows Defender SmartScreen events
+![Firewall events icon](images\atp-Firewall-events-icon.png)| Firewall events
+![Response action icon](images\atp-respond-action-icon.png)| Response action
+![Process events icon](images\atp-process-event-icon.png)| Process events
+![Network communication events icon](images\atp-network-communications-icon.png)| Network events
+![File observed events icon](images\atp-file-observed-icon.png)| File  events
+![Registry events icon](images\atp-registry-event-icon.png)| Registry events
+![Module load DLL events icon](images\atp-module-load-icon.png)| Load DLL events
+![Other events icon](images\atp-Other-events-icon.png)| Other events
+![Access token modification icon](images\atp-access-token-modification-icon.png)| Access token modification
+![File creation icon](images\atp-file-creation-icon.png)| File creation
+![Signer icon](images\atp-signer-icon.png)| Signer
+![File path icon](images\atp-File-path-icon.png)| File path
+![Command line icon](images\atp-command-line-icon.png)| Command line
+![Unsigned file icon](images\atp-unsigned-file-icon.png)| Unsigned file
+![Process tree icon](images\atp-process-tree.png)| Process tree
+![Memory allocation icon](images\atp-memory-allocation-icon.png)| Memory allocation
+![Process injection icon](images\atp-process-injection.png)| Process injection
+![Powershell command run icon](images\atp-powershell-command-run-icon.png)| Powershell command run
 
 ## Related topic
 [Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md)
