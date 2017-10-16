@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Check sensor health state in Windows Defender ATP
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-checksensor-abovefoldlink)
 
@@ -32,8 +32,9 @@ The sensor health tile provides information on the individual endpoint’s abili
 ![Windows Defender ATP sensor health tile](images/atp-portal-sensor.png)
 
 There are two status indicators on the tile that provide information on the number of machines that are not reporting properly to the service:
--	**Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
 - **Misconfigured** - These machines might partially be reporting sensor data to the Windows Defender ATP service and might have configuration errors that need to be corrected.
+- **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service for more than seven days in the past month.
+
 
 Clicking any of the groups directs you to Machines list, filtered according to your choice.
 
@@ -50,10 +51,11 @@ You can also download the entire list in CSV format using the **Export to CSV** 
 
 You can filter the health state list by the following status:
 - **Active** - Machines that are actively reporting to the Windows Defender ATP service.
-- **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service.
 - **Misconfigured** - These machines might partially be reporting sensor data to the Windows Defender ATP service but have configuration errors that need to be corrected. Misconfigured machines can have either one or a combination of the following issues:
   - **No sensor data** - Machines has stopped sending sensor data. Limited alerts can be triggered from the machine.
   - **Impaired communications** - Ability to communicate with machine is impaired. Sending files for deep analysis, blocking files, isolating machine from network and other actions that require communication with the machine may not work.
+- **Inactive** - Machines that have stopped reporting to the Windows Defender ATP service.
+
 
 You can view the machine details when you click on a misconfigured or inactive machine. You’ll see more specific machine information when you click the information icon.
 

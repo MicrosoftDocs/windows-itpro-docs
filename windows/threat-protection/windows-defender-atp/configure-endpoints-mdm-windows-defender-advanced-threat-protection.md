@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Configure endpoints using Mobile Device Management tools
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
@@ -44,11 +44,11 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
 1. Open the Microsoft Intune configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Select **Endpoint management** on the **Navigation pane**.
+    a.  Select **Endpoint management** > **Clients** on the **Navigation pane**.
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
-      ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
+        ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
@@ -98,6 +98,7 @@ You can use the following onboarding policies to deploy configuration settings o
 - Health Status for onboarded machines
 - Configuration for onboarded machines
 
+> [!div class="mx-tableFixed"]
 Policy | OMA-URI | Type | Value | Description
 :---|:---|:---|:---|:---
 Onboarding | ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Onboarding | String | Copy content from onboarding MDM file |  Onboarding
@@ -182,7 +183,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** on the **Navigation pane**.
+    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 

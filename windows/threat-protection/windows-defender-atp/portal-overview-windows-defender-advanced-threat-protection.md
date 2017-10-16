@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: DulceMV
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Windows Defender Advanced Threat Protection portal overview
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portaloverview-abovefoldlink) 
 
@@ -40,8 +40,8 @@ When you open the portal, you’ll see the main areas of the application:
  ![Windows Defender Advanced Threat Protection portal](images/atp-portal.png)
 
 - (1) Navigation pane
-- (2) Main portal Search
-- (3) Feedback, Settings, Help and support
+- (2) Main portal
+- (3) Search, Feedback, Settings, Help and support
 
 > [!NOTE]
 > Malware related detections will only appear if your endpoints are using [Windows Defender Antivirus](https://technet.microsoft.com/library/mt622091(v=vs.85).aspx) as the default real-time protection antimalware product.
@@ -50,15 +50,15 @@ You can navigate through the portal using the menu options available in all sect
 
 Area | Description
 :---|:---
-(1) Search bar, Feedback, Settings, Help and support | **Search** - Provides access to the search bar where you can search for file, IP, machine, URL, and user. Displays the Search box: the drop-down list allows you to select the entity type and then enter the search query text.  </br> **Feedback** -Access the feedback button to provide comments about the portal. </br> **Settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br> **Help and support** - Gives you access to the Windows Defender ATP guide, Microsoft support, and Premier support.
-(2) Navigation pane | Use the navigation pane to move between the **Dashboards**, **Alerts queue**, **Machines list**, **Service health**, **Preferences setup**, and **Endpoint management**.
+(1) Navigation pane | Use the navigation pane to move between the **Dashboards**, **Alerts queue**, **Machines list**, **Service health**, **Preferences setup**, and **Endpoint management**.
 **Dashboards**	| Enables you to view the Security operations or the Security analytics dashboard.
 **Alerts queue** | Enables you to view separate queues of new, in progress, resolved alerts, alerts assigned to you, and suppression rules.
 **Machines list** | Displays the list of machines that are onboarded to Windows Defender ATP, some information about them, and the corresponding number of alerts.
 **Service health** | Provides information on the current status of the Window Defender ATP service. You'll be able to verify that the service health is healthy or if there are current issues.
-**Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set email notifications, activate the preview experience, enable or turn off advanced features, and build Power BI reports.
-**Endpoint management** |	Allows you to download the onboarding configuration package. It provides access to endpoint offboarding.
-(3) Main portal| Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
+**Preferences setup** |	Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as email notifications, activate the preview experience, enable or turn off advanced features, SIEM integration, threat intel API, build Power BI reports, and set baselines for the Security analytics dashboard.
+**Endpoint management** |	Provides access to endpoints such as clients and servers. Allows you to download the onboarding configuration package for endpoints. It also provides access to endpoint offboarding.
+(2) Main portal| Main area where you will see the different views such as the Dashboards, Alerts queue, and Machines list.
+(3) Search bar, Feedback, Settings, Help and support | **Search** - Provides access to the search bar where you can search for file, IP, machine, URL, and user. Displays the Search box: the drop-down list allows you to select the entity type and then enter the search query text.  </br> **Feedback** - Access the feedback button to provide comments about the portal. </br> **Settings** - Gives you access to the configuration settings where you can set time zones and view license information. </br> **Help and support** - Gives you access to the Windows Defender ATP guide, Microsoft support, and Premier support.
 
 ## Windows Defender ATP icons
 The following table provides information on the icons used all throughout the portal:

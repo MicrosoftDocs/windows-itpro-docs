@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 There are some minimum requirements for onboarding your network and endpoints.
 
@@ -63,7 +63,7 @@ Endpoints on your network must be running one of these editions.
 The hardware requirements for Windows Defender ATP on endpoints is the same as those for the supported editions.
 
 > [!NOTE]
-> Endpoints that are running Windows Server and mobile versions of Windows are not supported.
+> Endpoints that are running mobile versions of Windows are not supported.
 
 #### Internet connectivity
 Internet connectivity on endpoints is required.
