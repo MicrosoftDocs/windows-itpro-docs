@@ -49,8 +49,10 @@ Yes. Starting with Windows 10, version 1709, the Windows Insider Program for Bus
 
 See more information on the [Getting started with Windows Insider Program for Business](waas-windows-insider-for-business.md#getting-started-with-windows-insider-program-for-business) section.
 
-### How can I find out if my corporate account is on Azure Active Directory? 
-On your PC, go to **Settings > Accounts > Access work or school**. If your organization has set up your corporate account in Azure Active Directory and it is connected to your PC, you will see the account listed.  
+### <a id="connected-to-aad"> </a>How can I find out if my corporate account is on Azure Active Directory? 
+On your PC, go to **Settings > Accounts > Access work or school**. If your organization has set up your corporate account in Azure Active Directory and it is connected to your PC, you will see the account listed as highlighted in the image below.
+
+![Device connected to Work Account](images/waas-wipfb-work-account.jpg)
 
 ### I have more than one Azure Active Directory account. Which should I use? 
 Register for Windows Insider Program for Business with the same active account that you use to access your corporate email in Office 365 and other Microsoft services. To ensure you get the most benefit out of the Windows Insider Program for Business and that your company is fully represented, do not set up a separate tenant for testing activities. There will be no modifications to the AAD tenant to support Windows Insider Program for Business, and it will only be used as an authentication method. 
