@@ -661,7 +661,7 @@
 ### [Understanding PCR banks on TPM 2.0 devices](tpm/switch-pcr-banks-on-tpm-2-0-devices.md)
 ### [TPM recommendations](tpm/tpm-recommendations.md)
 
-# [Windows security baselines](windows-security-baselines-version-two.md)
+# [Windows security baselines](windows-security-baselines.md)
 ## [Security Compliance Toolkit](security-compliance-toolkit-10.md)
 ## [Get support](get-support-for-security-baselines.md)
 

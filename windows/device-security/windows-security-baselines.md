@@ -22,7 +22,7 @@ ms.date: 10/17/2017
 
 Microsoft is dedicated to providing its customers with secure operating systems, such as Windows 10 and Windows Server, and secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control over your environments by providing various configuration capabilities. 
 
-Even though Windows and Windows Server are designed to be secure out-of-the-box, many organizations still want more granular control over their security environments. To navigate such environments, organizations need guidance on configuring various security features that have a large number of settings. Microsoft provides this guidance in the form of security baselines.
+Even though Windows and Windows Server are designed to be secure out-of-the-box, many organizations still want more granular control over their security configurations. To navigate the large number of controls, organizations need guidance on configuring various security features. Microsoft provides this guidance in the form of security baselines.
 
 We recommend that you implement an industry-standard configuration that is broadly known and well-tested, such as Microsoft security baselines, as opposed to creating a baseline yourself. This helps increase flexibility and reduce costs. 
 
@@ -51,6 +51,8 @@ You can use security baselines to:
 ## Where can I get the security baselines? 
 
 You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit (SCT), which comprises tools that can assist admins in managing  baselines in addition to the security baselines.
+
+The security baselines are included in the [Security Compliance Toolkit (SCT)](images/security-compliance-toolkit-1.png), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
 
 [![Security Compliance Toolkit](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
 [![Get Support](images/get-support.png)](get-support.md) 

@@ -14,7 +14,7 @@ ms.date: 10/17/2017
 
 **What is the Microsoft Security Compliance Manager (SCM)?**
 
-The Security Compliance Manager (SCM) has now been retired and is no longer supported. The reason is that SCM was an incredibly complex and large program that needed to be updated for every Windows release. It has been replaced by the Security Compliance Toolkit (SCT). To provide a better service for our customers, we have moved to SCT with which we can publish baselines through the Microsoft Download Center in a lightweight .zip file that contains GPO backups, GPO reports, Excel spreadsheets, WMI filters, and scripts to apply the settings to local policy.
+The Security Compliance Manager (SCM) is now retired and is no longer supported. The reason is that SCM was an incredibly complex and large program that needed to be updated for every Windows release. It has been replaced by the Security Compliance Toolkit (SCT). To provide a better service for our customers, we have moved to SCT with which we can publish baselines through the Microsoft Download Center in a lightweight .zip file that contains GPO backups, GPO reports, Excel spreadsheets, WMI filters, and scripts to apply the settings to local policy.
 
 More information about this change can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2017/06/15/security-compliance-manager-scm-retired-new-tools-and-procedures/).
 
@@ -29,7 +29,7 @@ Any version of Windows baseline before Windows 10 1703 can still be downloaded u
 
 **What file formats are supported by the new SCT?**
 
-The toolkit supports formats created by the Windows GPO backup feature (.pol, .inf, and .csv). Policy Analyzer saves its data in XML files with a .PolicyRules file extension. LGPO also supports its own LGPO text file format as a text-based analog for the binary registry.pol file format. See the [LGPO documentation](https://www.microsoft.com/download/details.aspx?id=55319) for more information. Keep in mind that SCM’s .cab files are no longer supported.
+The toolkit supports formats created by the Windows GPO backup feature (.pol, .inf, and .csv). Policy Analyzer saves its data in XML files with a .PolicyRules file extension. LGPO also supports its own LGPO text file format as a text-based analog for the binary registry.pol file format. See the LGPO documentation for more information. Keep in mind that SCM’s .cab files are no longer supported.
 
 **Does SCT support Desired State Configuration (DSC) file format?**
 
@@ -43,8 +43,7 @@ No. A potential alternative is Desired State Configuration (DSC), a feature of t
 
 No. SCM supported only SCAP 1.0, which was not updated as SCAP evolved. The new toolkit likewise does not include SCAP support.
 
-
-
+<br />
 
 ## Version Matrix
 
@@ -93,3 +92,6 @@ Internet Explorer 11 | [SecGuide](https://blogs.technet.microsoft.com/secguide/2
 > [!NOTE]
 > Browser baselines are built-in to new OS versions starting with Windows 10
 
+## See also
+
+[Windows Security Baselines](windows-security-baselines-version-two.md)
