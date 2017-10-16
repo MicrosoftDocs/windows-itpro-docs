@@ -75,7 +75,7 @@ Windows Automatic Redeployment is a two-step process: trigger it and then authen
     - Applies the provisioning package, if you created one, and replies this to the device. This includes re-installing any apps that are part of the provisioning package.
     - Is returned to a known good managed state, connected to Azure AD and MDM.
 
-    ![Notification that provisioning is complete](images/windows-automatic-redeployment-provisioningcomplete.png)
+     ![Notification that provisioning is complete](images/windows-automatic-redeployment-provisioningcomplete.png)
 
     Once provisioning is complete, the device is again ready for use.
 
