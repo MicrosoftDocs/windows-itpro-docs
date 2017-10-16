@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 06/28/2017
+ms.date: 10/17/2017
 ---
 
 # Change history for Deploy Windows 10
