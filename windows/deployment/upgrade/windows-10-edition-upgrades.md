@@ -35,7 +35,7 @@ X = unsupported <BR>
 | Using a provisioning package |![unsupported](../images/x_blk.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |
 | Using a command-line tool |![unsupported](../images/x_blk.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |![supported](../images/check_grn.png) |![unsupported](../images/x_blk.png) |
 | Entering a product key manually |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |![supported](../images/check_grn.png) |![unsupported](../images/x_blk.png) |
-| Purchasing a license from the Windows Store |![supported](../images/check_grn.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |
+| Purchasing a license from the Microsoft Store |![supported](../images/check_grn.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |![unsupported](../images/x_blk.png) |
 -->
 
 | Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Using Microsoft Store for Business or PC | Entering a product key manually | Purchasing a license from the Microsoft Store |
@@ -99,10 +99,10 @@ If you are upgrading only a few devices, you may want to enter a product key for
 
 4.  Follow the on-screen instructions.
 
-## Upgrade by purchasing a license from the Windows Store
-If you do not have a product key, you can upgrade your edition of Windows 10 through the Windows Store.
+## Upgrade by purchasing a license from the Microsoft Store
+If you do not have a product key, you can upgrade your edition of Windows 10 through the Microsoft Store.
 
-**To upgrade through the Windows Store**
+**To upgrade through the Microsoft Store**
 
 1.  From either the **Start** menu or the **Start** screen, type 'Activation' and click on the Activation shortcut.
 
@@ -110,6 +110,6 @@ If you do not have a product key, you can upgrade your edition of Windows 10 th
 
 3.  Follow the on-screen instructions.
     
-    **Note**<br>If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Windows Store, click [here](ms-windows-store://windowsupgrade/).
+    **Note**<br>If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
 
  
