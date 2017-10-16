@@ -94,7 +94,7 @@ In the import process example shown in the [Deploy Windows 10 to Surface devices
 
 Installation of applications in an upgrade deployment is not always necessary because the applications from the previous environment will remain on the device. (For example, in the [Deploy Windows 10 to Surface devices with MDT](deploy-windows-10-to-surface-devices-with-mdt.md) article, the deployment includes Office 365 which is not required in an upgrade deployment where the user is already using Office 365 on the device.)
 
-There are still some circumstances where you will want to deploy an application, even during an upgrade deployment. For example, you may have Surface Pro 3 devices on which you would like to add the Surface app. To deploy the Surface app in an upgrade scenario use the same process as you would for a traditional deployment. See the [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business) article for instructions on how to add the Surface app to an MDT task sequence.
+There are still some circumstances where you will want to deploy an application, even during an upgrade deployment. For example, you may have Surface Pro 3 devices on which you would like to add the Surface app. To deploy the Surface app in an upgrade scenario use the same process as you would for a traditional deployment. See the [Deploy Surface app with Microsoft Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business) article for instructions on how to add the Surface app to an MDT task sequence.
 
 ### Create the upgrade task sequence
 

@@ -72,7 +72,7 @@ While not required, you can use a management tool to distribute and manage apps.
 
 The first step for getting your organization started with Store for Business and Education is signing up. Sign up using an existing account (the same one you use for Office 365, Dynamics 365, Intune, Azure, etc.) or we’ll quickly create an account for you. You must be a Global Administrator for your organization.
 
-For more information, see [Sign up for Store for Business and Education](sign-up-windows-store-for-business.md).
+For more information, see [Sign up for Store for Business and Education](sign-up-microsoft-store-for-business.md).
 
 ## Set up
 
@@ -109,7 +109,7 @@ Line-of-business (LOB) apps are also supported through Microsoft Store. You can 
 
  Store for Business and Education supports two license options for apps: online and offline. **Online** licensing is the default licensing model and is similar to the licensing model for Microsoft Store. Online licensed apps require users and devices to connect to Microsoft Store services to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt in their apps for offline licensing when they submit them to the developer center.
 
-For more information, see [Apps in Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model).
+For more information, see [Apps in Microsoft Store for Business](apps-in-microsoft-store-for-business.md#licensing-model).
 
 ## Distribute apps and content
 
@@ -126,7 +126,7 @@ App distribution is handled through two channels, either through the Microsoft S
 
 Management tools can synchronize content that has been acquired in the Store for Business. If an offline application has been purchased this will also include the app package, license and metadata for the app (like, icons, count, or localized product descriptions). Using the metadata, management tools can enable portals or apps as a destination for employees to acquire apps.
 
-For more information, see [Distribute apps to your employees from Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
+For more information, see [Distribute apps to your employees from Microsoft Store for Business](distribute-apps-to-your-employees-microsoft-store-for-business.md).
 
 ## Manage Microsoft Store for Business settings and content
 
@@ -146,7 +146,7 @@ Once you are signed up with the Business store and have purchased apps, Admins c
 - Manage app updates for all apps, or customize updates for each app. Online apps will automatically update from the Store. Offline apps can be updated using a management server.
 - Download apps for offline installs
 
-For more information, see [Manage settings in the Store for Business](manage-settings-windows-store-for-business.md) and [Manage apps](manage-apps-windows-store-for-business-overview.md).
+For more information, see [Manage settings in the Store for Business](manage-settings-microsoft-store-for-business.md) and [Manage apps](manage-apps-windows-store-for-business-overview.md).
 
 ## Supported markets
 

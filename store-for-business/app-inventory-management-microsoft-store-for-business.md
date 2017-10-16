@@ -47,14 +47,14 @@ There are a couple of ways to find specific apps, or groups of apps in your inve
 
 **Search** - Use the Search box to search for an app.<br>
 **Refine results** - Use **Refine results** to scope your list of apps by one or more of these app attributes:
-- **License type** - Online or offline licenses. For more info, see [Apps in Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model).
+- **License type** - Online or offline licenses. For more info, see [Apps in Microsoft Store for Business](apps-in-microsoft-store-for-business.md#licensing-model).
 - **Supported devices** - Lists the devices that apps in your inventory were originally written to support. This list is cumulative for all apps in your inventory.
 - **Source** - **Store**, for apps acquired from Store for Business, or LOB, for line-of-business apps.
 - **Product type** - Product categories, such as app, or game. 
 - **Private store** - Whether or not the app is in the private store, or status if the app is being added or removed from private store. 
 
 ## Manage apps in your inventory
-Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
+Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
 
 | Action | Online-licensed app | Offline-licensed app |
 | ------ | ------------------- | -------------------- |
@@ -165,7 +165,7 @@ You can download offline-licensed apps from your inventory. You'll need to downl
 - App license
 - App framework
 
-For more information about online and offline licenses, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model).
+For more information about online and offline licenses, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md#licensing-model).
 
 For more information about downloading offline-licensed apps, see [Download offline apps](distribute-offline-apps.md).
 
