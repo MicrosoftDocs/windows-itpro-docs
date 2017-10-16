@@ -94,4 +94,4 @@ Internet Explorer 11 | [SecGuide](https://blogs.technet.microsoft.com/secguide/2
 
 ## See also
 
-[Windows Security Baselines](windows-security-baselines-version-two.md)
+[Windows Security Baselines](windows-security-baselines.md)
