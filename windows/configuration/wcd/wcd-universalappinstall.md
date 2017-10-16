@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 10/17/2017
 ---
 
 # UniversalAppInstall (reference)
@@ -24,6 +24,7 @@ Use UniversalAppInstall settings to install Windows apps from the Microsoft Stor
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [DeviceContextApp](#devicecontextapp) | X |  | X |  |   |
 | [DeviceContextAppLicense](#devicecontextapplicense) | X |  | X |  |   |
+| [StoreInstall](#storeinstall) | X | X | X | X | X  |
 | [UserContextApp](#usercontextapp) | X | X | X | X | X  |
 | [UserContextAppLicense](#usercontextapplicense) | X | X | X | X | X  |
 
@@ -54,6 +55,19 @@ Use to specify the license file for the provisioned app.
 
 2. Select the LicenseProductId in the Available Customizations pane, and then browse to and select the app license file.
 
+
+## StoreInstall
+
+Use to install an app from the Microsoft Store for Business.
+
+1. Enter a package family name, and then click **Add**.
+2. Configure the following required settings for the app package.
+
+Setting | Description
+--- | ---
+Flags | Description not available at this time. 
+ProductID | Enter the product ID. [Learn how to find the product ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
+SkuID | Enter the SKU ID. [Learn how to find the SKU ID.](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-education-powershell-module#view-items-in-products-and-services)
 
 ## UserContextApp
 

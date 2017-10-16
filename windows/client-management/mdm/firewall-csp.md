@@ -193,7 +193,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">Supported operation is Get.</p>
 
 <a href="" id="packagefamilyname"></a>**FirewallRules/_FirewallRuleName_/App/PackageFamilyName**
-<p style="margin-left: 20px">This App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of a Windows Store application.</p>
+<p style="margin-left: 20px">This App/Id value represents the PackageFamilyName of the app. The PackageFamilyName is the unique name of a Microsoft Store application.</p>
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Replace, and Delete.</p>
 
 <a href="" id="filepath"></a>**FirewallRules/_FirewallRuleName_/App/FilePath**

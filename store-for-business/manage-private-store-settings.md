@@ -19,9 +19,9 @@ ms.localizationpriority: high
 
 The private store is a feature in Microsoft Store for Business and Education that organizations receive during the sign up process. When admins add apps to the private store, all people in the organization can view and download the apps. Only online-licensed apps can be distributed from your private store.
 
-The name of your private store is shown on a tab in Windows Store app, or on [Microsoft Store for Business](https://businessstore.microsoft.com), or [Microsoft Store for Education](https://educationstore.microsoft.com).
+The name of your private store is shown on a tab in Microsoft Store app, or on [Microsoft Store for Business](https://businessstore.microsoft.com), or [Microsoft Store for Education](https://educationstore.microsoft.com).
 
-![Image showing Windows Store app with private store tab highlighted.](images/wsfb-wsappprivatestore.png)
+![Image showing Microsoft Store app with private store tab highlighted.](images/wsfb-wsappprivatestore.png)
 
 You can change the name of your private store in Microsoft Store.
 

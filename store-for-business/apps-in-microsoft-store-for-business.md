@@ -40,7 +40,7 @@ Apps that you acquire from Microsoft Store only work on Windows 10-based device
 
 Some apps are free, and some apps charge a price. Currently, you can pay for apps with a credit card. We'll be adding more payment options over time.
 
-Some apps which are available to consumers in the Windows Store might not be available to organizations in Microsoft Store for Business and Education. App developers can opt-out their apps, and they also need to meet eligibility requirements for Microsoft Store for Business and Education. For more information, see [Organizational licensing options](https://msdn.microsoft.com/windows/uwp/publish/organizational-licensing). 
+Some apps which are available to consumers in Microsoft Store might not be available to organizations in Microsoft Store for Business and Education. App developers can opt-out their apps, and they also need to meet eligibility requirements for Microsoft Store for Business and Education. For more information, see [Organizational licensing options](https://msdn.microsoft.com/windows/uwp/publish/organizational-licensing). 
 
 Line-of-business (LOB) apps are also supported using Microsoft Store. Admins can invite IT devs and ISVs to be LOB publishers. Apps developed by your LOB publishers that are submitted to Microsoft Store are only available to your organization. Once an administrator accepts an app submitted by one of their LOB publishers, the app can be distributed just like any other app. For more information, see [Working with Line-of-Business apps](working-with-line-of-business-apps.md).
 
@@ -55,7 +55,7 @@ If an employee makes an in-app purchase, they'll make it with their personal Mic
 Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
-Online licensing is the default licensing model and is similar to the Windows Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
+Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 

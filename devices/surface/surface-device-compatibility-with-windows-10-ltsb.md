@@ -38,7 +38,7 @@ The LTSB servicing option is designed for device types and scenarios where the k
 
 * Devices that run productivity software such as Microsoft Office
 
-* Devices that use Windows Store applications
+* Devices that use Microsoft Store applications
 
 * Devices that are used for general Internet browsing (for example, research or access to social media)
 

@@ -9,7 +9,6 @@ ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: high
 ---
-
 # Available Windows Defender SmartScreen Group Policy and mobile device management (MDM) settings
 **Applies to:**
 
@@ -34,7 +33,7 @@ SmartScreen uses registry-based Administrative Template policy settings. For mor
 <tr>
 <td>Administrative Templates\Windows Components\Windows Defender SmartScreen\Explorer\Configure App Install Control</td>
 <td>Windows 10, version 1703</td>
-<td>This setting helps protect PCs by allowing users to install apps only from the Windows Store. SmartScreen must be enabled for this feature to work properly.<p>If you enable this setting, your employees can only install apps from the Windows Store.<p>If you disable this setting, your employees can install apps from anywhere, including as a download from the Internet.<p>If you don't configure this setting, your employees can choose whether they can install from anywhere or only from Windows Store.</td>
+<td>This setting helps protect PCs by allowing users to install apps only from the Microsoft Store. SmartScreen must be enabled for this feature to work properly.<p>If you enable this setting, your employees can only install apps from the Microsoft Store.<p>If you disable this setting, your employees can install apps from anywhere, including as a download from the Internet.<p>If you don't configure this setting, your employees can choose whether they can install from anywhere or only from Microsoft Store.</td>
 </tr>
 <tr>
 <td><strong>Windows 10, version 1703:</strong><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen<p><strong>Windows 10, Version 1607 and earlier:</strong><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
@@ -97,7 +96,7 @@ If you manage your policies using Microsoft Intune, you'll want to use these MDM
 <li><strong>Data type.</strong> Integer</li>
 <li><strong>Allowed values:</strong><ul>
 <li><strong>0 .</strong> Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.</li>
-<li><strong>1.</strong> Turns on Application Installation Control, allowing users to install apps from the Windows Store only.</li></ul></li></ul>
+<li><strong>1.</strong> Turns on Application Installation Control, allowing users to install apps from the Microsoft Store only.</li></ul></li></ul>
 </td>
 </tr>
 <tr>

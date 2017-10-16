@@ -28,10 +28,10 @@ Before purchasing apps that have a fee, you need to add or update your organizat
 
 We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don’t have an address, we’ll ask you to enter it during your first purchase. 
 
-We need an email address in case we need to contact you about your Microsoft Store for Business and Education account. This email account should reach the admin for your organization’s Office 365 or Azure AD tenant that is used with Microsoft Store. 
+We need an email address in case we need to contact you about your Microsoft Store for Business and for Education account. This email account should reach the admin for your organization’s Office 365 or Azure AD tenant that is used with Microsoft Store. 
 
 **To update Organization information**
-1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com)
+1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com)
 2. Click **Manage**, click **Billing**, **Account profile**, and then click **Edit**.
 
 ## Organization tax information   
@@ -86,7 +86,7 @@ These countries can provide their VAT number or local equivalent in **Payments &
 If you qualify for tax-exempt status in your market, start a service request to establish tax exempt status for your organization. 
 
 **To start a service request**
-1.  Sign in to the [Store for Business](http://businessstore.microsoft.com).
+1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com).
 2.	Click **Manage**, click **Support**, and then under **Store settings & configuration** click **Create technical support ticket**.
 
 You’ll need this documentation:
@@ -119,14 +119,14 @@ You can purchase apps from Microsoft Store for Business using your credit card. 
 5. Japan Commercial Bureau (JCB)
 
 > [!NOTE]
-> Not all cards available in all countries. When you add a payment option, Store for Business shows which cards are available in your region.
+> Not all cards available in all countries. When you add a payment option, Microsoft Store for Business shows which cards are available in your region.
 
 **To add a new payment option** 
 
 1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
-2. Click **Manage**,  click **Billing**, and then click **Payments methods**.  
+2. Click **Manage**, click **Billing**, and then click **Payments methods**.  
 3. Click **Add a payment options**, and then select the type of credit card that you want to add. 
-4. Add information to any required fields, and then click **Next**. 
+4. Add information to required fields, and then click **Next**. 
 
 Once you click Next, the information you provided will be validated with a test authorization transaction and, if validated, the payment option will be added to your list of available payment options. Otherwise, you will be prompted for additional information or notified if there are any problems. 
 
@@ -135,7 +135,7 @@ Once you click Next, the information you provided will be validated with a tes
 
 **To update a payment option** 
 
-1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
+1. Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, click **Billing**, and then click **Payments methods**. 
 3. Select the payment option that you want to update, and then click **Update**. 
 4. Enter any updated information in the appropriate fields, and then click **Next**. 
@@ -146,17 +146,17 @@ Once you click **Next**, the information you provided will be validated with a
 
 ## Offline licensing
 
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on the Store for Business licensing model, see [licensing model](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).
+Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on Microsoft Store for Business licensing model, see [licensing model](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).
 
 Admins can decide whether or not offline licenses are shown for apps in Microsoft Store. 
 
 **To set offline license visibility**
 
-1. Sign in to the [Store for Business](http://businessstore.microsoft.com) or [Store for Education](https://educationstore.microsoft.com). 
+1. Sign in to the [Microsoft Store for Business](http://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com). 
 2. Click **Manage**, and then click **Settings - Shop**. 
 3. Under **Shopping experience** turn on or turn off  **Show offline apps**,to show availability for offline-licensed apps.
 
 You have the following distribution options for offline-licensed apps:
 - Include the app in a provisioning package, and then use it as part of imaging a device.
 - Distribute the app through a management tool. 
-For more information, see [Distribute apps to your employees from the Store for Business](distribute-apps-with-management-tool.md).
+For more information, see [Distribute apps to your employees from Microsoft Store for Business](distribute-apps-with-management-tool.md).

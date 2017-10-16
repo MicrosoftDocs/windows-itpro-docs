@@ -45,7 +45,7 @@ When Take a Test is running, the following MDM policies are applied to lock down
 | Policy | Description | Value |
 |---|---|---|
 | AllowToasts | Disables toast notifications from being shown | 0 |
-| AllowAppStoreAutoUpdate | Disables automatic updates for Windows Store apps that are installed on the PC | 0 |
+| AllowAppStoreAutoUpdate | Disables automatic updates for Microsoft Store apps that are installed on the PC | 0 |
 | AllowDeviceDiscovery | Disables UI for screen sharing | 0 |
 | AllowInput Panel | Disables the onscreen keyboard which will disable auto-fill | 0 |
 | AllowCortana | Disables Cortana functionality | 0 |
