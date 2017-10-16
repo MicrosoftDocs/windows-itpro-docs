@@ -75,7 +75,7 @@ Icon | Description
 ![Application Guard events icon](images\atp-Application-Guard-events-icon.png)| Windows Defender Application Guard events
 ![Device Guard events icon](images\atp-Device-Guard-events-icon.png)| Windows Defender Device Guard events
 ![Exploit Guard events icon](images\atp-Exploit-Guard-events-icon.png)| Windows Defender Exploit Guard events
-![Smart Screen events icon](images\atp-Smart-Screen-events-icon.png)| Windows Defender Smart Screen events
+![SmartScreen events icon](images\atp-Smart-Screen-events-icon.png)| Windows Defender SmartScreen events
 ![Firewall events icon](images\atp-Firewall-events-icon.png)| Firewall events
 ![Response action icon](images\atp-respond-action-icon.png)| Response action
 ![Process events icon](images\atp-process-event-icon.png)| Process events
