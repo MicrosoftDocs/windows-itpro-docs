@@ -39,7 +39,7 @@ X = unsupported <BR>
 -->
 
 | Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Using Microsoft Store for Business or PC | Entering a product key manually | Purchasing a license from the Microsoft Store |
-|-----------------|--------------------------------------|------------------------------|---------------------------|---------------------------------------|-------------------------------------|-----------------------------------------------|
+|-----------------| ------------------------------------ | ---- ----------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |
 | **Home > Pro** | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) |
 | **Home > Pro for Advanced PCs** | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) |
 | **Home > Pro Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) (MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
