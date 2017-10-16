@@ -102,4 +102,4 @@ In order for your devices to be auto-enrolled into MDM management, MDM auto-enro
 >[!NOTE]
 >MDM auto-enrollment requires an Azure AD Premium P1 or P2 subscription.
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-auto-pilot.md). 

@@ -200,4 +200,4 @@ With all these options, which an organization chooses depends on the resources, 
 - [Walkthrough: use Intune to configure Windows Update for Business](waas-wufb-intune.md)
 - [Manage device restarts after updates](waas-restart.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=waas-overview.md). 
