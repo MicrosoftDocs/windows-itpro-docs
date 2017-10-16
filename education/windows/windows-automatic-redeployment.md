@@ -72,7 +72,7 @@ Windows Automatic Redeployment is a two-step process: trigger it and then authen
     After reset, the device:
     - Sets the region, language, and keyboard.
     - Connects to Wi-Fi.
-    - Applies the provisioning package, if you created one, and replies this to the device. This includes re-installing any apps that are part of the provisioning package.
+    - If you provided a provisioning package when Windows Automatic Redeployment is triggered, the system will apply this new provisioning package. Otherwise, the system will re-apply the original provisioning package on the device. 
     - Is returned to a known good managed state, connected to Azure AD and MDM.
 
      ![Notification that provisioning is complete](images/windows-automatic-redeployment-provisioningcomplete.png)

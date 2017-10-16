@@ -61,6 +61,10 @@ There are several ways to configure devices for assessments. You can:
 
     You can enable this using a schema activation.
 
+- **Configure Take a Test to run in permissive mode**
+
+    Starting with Windows 10, version 1709 (Fall Creators Update), assessments can now run in permissive mode. This mode enables students who need access to other apps, like accessibility tools, to use the apps. See [Permissive mode](take-a-test-app-technical.md#permissive-mode) for more info.
+
 
 ## How to exit Take a Test
 To exit the Take a Test app at any time, press Ctrl+Alt+Delete.
