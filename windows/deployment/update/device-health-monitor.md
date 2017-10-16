@@ -5,6 +5,7 @@ keywords: oms, operations management suite, wdav, health, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
+ms.localizationpriority: medium
 ms.date: 10/17/2017
 ms.pagetype: deploy
 author: jaimeo
@@ -39,9 +40,11 @@ An overview of the processes used by the Device Health solution is provided belo
 
 Use of Windows Analytics Device Health requires one of the following licenses:
 
-- Windows 10 Enterprise E3 per-device with active Software Assurance
+- Windows 10 Enterprise or Windows 10 Education per-device with active Software Assurance
 - Windows 10 Enterprise E3 or E5 per-device or per-user subscription (including Microsoft 365 F1, E3, or E5)
+- Windows 10 Education A3 or A5 (including Microsoft 365 Education A3 or A5)
 - Windows VDA E3 or E5 per-device or per-user subscription
+
 
 You don't have to install Windows 10 Enterprise on a per-device basis--you just need enough of the above licenses for the number of devices using Device Health. 
 
