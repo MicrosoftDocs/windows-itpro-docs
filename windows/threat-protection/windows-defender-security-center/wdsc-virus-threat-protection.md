@@ -24,10 +24,10 @@ ms.date: 10/16/2017
 
 The **Virus & threat protection** section contains information and settings for antivirus protection from Windows Defender Antivirus and third-party AV products. IT administrators and IT pros can get more information and documentation about configuration from the following:
 
-- [Windows Defender Antivirus in the Windows Defender Security Center app](../windows-defender-antivirus/windows-defender-security-center-antivirus)
-- [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10)
+- [Windows Defender Antivirus in the Windows Defender Security Center app](../windows-defender-antivirus/windows-defender-security-center-antivirus.md)
+- [Windows Defender Antivirus documentation library](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md)
 
-In Windows 10, version 1709, the section also provides configuration options for Controlled folder access. IT administrators can get more information at the [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard) topic in the Windows Defender Exploit Guard library.
+In Windows 10, version 1709, the section also provides configuration options for Controlled folder access. IT administrators can get more information at the [Controlled folder access](../windows-defender-exploit-guard/controlled-folders-exploit-guard.md) topic in the Windows Defender Exploit Guard library.
 
 You can also choose to hide the section from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
