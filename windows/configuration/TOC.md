@@ -1,6 +1,7 @@
 # [Configure Windows 10](index.md)
 ## [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
 ## [Windows 10, version 1709 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
+## [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](EventName.md)
 ## [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)
 ## [Windows 10 Diagnostic Data for the Full telemetry level](windows-diagnostic-data.md)
 ## [Beginning your General Data Protection Regulation (GDPR) journey for Windows 10](gdpr-win10-whitepaper.md)
