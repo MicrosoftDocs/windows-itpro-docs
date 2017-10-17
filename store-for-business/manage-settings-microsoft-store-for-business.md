@@ -23,7 +23,7 @@ You can add users and groups, as well as update some of the settings associated 
 
 | Topic | Description |
 | ----- | ----------- |
-| [Update Microsoft Store for Business and Education account settings](update-windows-store-for-business-account-settings.md) | **Billing - Account profile**  in Microsoft Store for Business shows information about your organization that you can update. Payment options can be managed on **Billing - Payment methods**, and offline license settings can be managed on **Settings - Shop**. |
-| [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md) | Microsoft Store for Business manages permissions with a set of roles. Currently, you can [assign these roles to individuals in your organization](roles-and-permissions-windows-store-for-business.md), but not to groups. |
+| [Update Microsoft Store for Business and Education account settings](update-microsoft-store-for-business-account-settings.md) | **Billing - Account profile**  in Microsoft Store for Business shows information about your organization that you can update. Payment options can be managed on **Billing - Payment methods**, and offline license settings can be managed on **Settings - Shop**. |
+| [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-microsoft-store-for-business.md) | Microsoft Store for Business manages permissions with a set of roles. You can [assign these roles to individuals in your organization](roles-and-permissions-microsoft-store-for-business.md) and to groups.|
 
 

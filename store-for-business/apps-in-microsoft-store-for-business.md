@@ -64,11 +64,11 @@ Distribution options for online-licensed apps include the ability to:
 - Distribute through a management tool.
 
 ### Offline licensing
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsoft Store. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
+Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store. This model means organizations can deploy apps when users or devices do not have connectivity to Microsoft Store. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://docs.microsoft.com/en-us/microsoft-store/update-microsoft-store-for-business-account-settings#offline-licensing). 
 
 You have the following distribution options for offline-licensed apps:
 
 - Include the app in a provisioning package, and then use it as part of imaging a device.
 - Distribute the app through a management tool.
 
-For more information, see [Distribute apps to your employees from Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
+For more information, see [Distribute apps to your employees from Microsoft Store for Business](distribute-apps-to-your-employees-microsoft-store-for-business.md).

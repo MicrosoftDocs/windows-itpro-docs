@@ -23,6 +23,7 @@ The topics in this library have been updated for Windows 10, version 1709 (also 
 - [Create a Windows 10 kiosk that runs multiple apps](lock-down-windows-10-to-specific-apps.md)
 - [Multi-app kiosk XML reference](multi-app-kiosk-xml.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
+- [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](EventName.md)
 
 
 ## September 2017
