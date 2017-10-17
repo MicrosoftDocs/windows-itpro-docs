@@ -15,7 +15,7 @@ This topic lists new and updated topics in the [Deploy Windows 10](index.md) doc
 ## RELEASE: Windows 10, version 1709
 | New or changed topic | Description |
 |----------------------|-------------|
-| [Windows 10 edition upgrade](windows-10-edition-upgrades.md) | Updated the edition upgrade table to include all other Windows 10 editions previously not on the list and the supported upgrade methods for upgrade path. |
+| [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) | Updated the edition upgrade table to include all other Windows 10 editions previously not on the list and the supported upgrade methods for upgrade path. |
 
 ## July 2017
 | New or changed topic | Description |
