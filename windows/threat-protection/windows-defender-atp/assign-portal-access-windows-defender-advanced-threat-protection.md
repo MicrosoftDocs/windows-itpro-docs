@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Assign user access to the Windows Defender ATP portal
@@ -24,7 +24,7 @@ ms.date: 09/05/2017
 - Office 365
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -83,7 +83,7 @@ For more information see, [Manage Azure AD group and role membership](https://te
 
 7.	Under **Directory role**, select **Limited administrator**, then **Security Reader** or **Security Administrator**.
 
-![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
+    ![Image of Microsoft Azure portal](images/atp-azure-ui-user-access.png)
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-portalaccess-belowfoldlink)

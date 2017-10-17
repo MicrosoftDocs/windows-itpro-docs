@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 10/02/2017
+ms.date: 10/17/2017
 ---
 
 # View the Windows Defender Advanced Threat Protection Security analytics dashboard
@@ -22,7 +22,7 @@ ms.date: 10/02/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-sadashboard-abovefoldlink) 
 
@@ -179,7 +179,7 @@ Block Win32 imports from Macro code in Office | 92E97FA1-2EDF-4476-BDD6-9DD0B4DD
 
 
 ##### Controlled Folder Access
-The Controlled Folder Access setting must be configured to **Audit** or **Block mode**.
+The Controlled Folder Access setting must be configured to **Audit mode** or **Enabled**.
 
 >[!NOTE]
 > Audit mode, allows you to see audit events in the Windows Defender ATP Machine timeline however it does not block suspicious applications.
@@ -225,13 +225,13 @@ For an endpoint to be considered "well configured", it must comply to a minimum 
 The following settings must be configured with the following settings:
 - Check apps and files: **Warn** or **Block** 
 - SmartScreen for Microsoft Edge: **Warn** or **Block**
-- SmartScreen for Windows Store apps: **Warn** or **Off**
+- SmartScreen for Microsoft store apps: **Warn** or **Off**
 
 
 You can take the following actions to increase the overall security score of your organization:
 - Set **Check app and files** to **Warn** or **Block**
 - Set **SmartScreen for Microsoft Edge** to **Warn** or **Block**
-- Set **SmartScreen for Windows Store apps** to **Warn** or **Off**
+- Set **SmartScreen for Microsoft store apps** to **Warn** or **Off**
 
 For more information, see [Windows Defender SmartScreen](../windows-defender-smartscreen/windows-defender-smartscreen-overview.md).
 

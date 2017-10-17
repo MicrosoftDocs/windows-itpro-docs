@@ -21,6 +21,7 @@ Learn about managing applications in Windows 10 and Windows 10 Mobile clients.
 |---|---|
 |[Sideload apps in Windows 10](sideload-apps-in-windows-10.md)| Requirements and instructions for side-loading LOB applications on Windows 10 and Windows 10 Mobile clients|
 | [Remove background task resource restrictions](enterprise-background-activity-controls.md) | Windows provides controls to manage which experiences may run in the background.  |
+| [Enable or block Windows Mixed Reality apps in the enterprise](manage-windows-mixed-reality.md) | Learn how to enable or block Windows Mixed Reality apps. |
 |[App-V](app-v/appv-getting-started.md)| Microsoft Application Virtualization (App-V) for Windows 10 enables organizations to deliver Win32 applications to users as virtual applications|
 | [Service Host process refactoring](svchost-service-refactoring.md) | Changes to Service Host grouping in Windows 10  |
 |[Per User services in Windows 10](sideload-apps-in-windows-10.md)| Overview of per user services and instructions for viewing and disabling them in Windows 10 and Windows 2016|

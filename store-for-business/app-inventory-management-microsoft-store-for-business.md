@@ -47,14 +47,14 @@ There are a couple of ways to find specific apps, or groups of apps in your inve
 
 **Search** - Use the Search box to search for an app.<br>
 **Refine results** - Use **Refine results** to scope your list of apps by one or more of these app attributes:
-- **License type** - Online or offline licenses. For more info, see [Apps in Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model).
+- **License type** - Online or offline licenses. For more info, see [Apps in Microsoft Store for Business](apps-in-microsoft-store-for-business.md#licensing-model).
 - **Supported devices** - Lists the devices that apps in your inventory were originally written to support. This list is cumulative for all apps in your inventory.
 - **Source** - **Store**, for apps acquired from Store for Business, or LOB, for line-of-business apps.
 - **Product type** - Product categories, such as app, or game. 
 - **Private store** - Whether or not the app is in the private store, or status if the app is being added or removed from private store. 
 
 ## Manage apps in your inventory
-Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
+Each app in the Store for Business has an online, or an offline license. For more information on Store for Business licensing model, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md#licensing-model). There are different actions you can take depending on the app license type. They're summarized in this table.
 
 | Action | Online-licensed app | Offline-licensed app |
 | ------ | ------------------- | -------------------- |
@@ -79,7 +79,7 @@ Once an app is in your private store, people in your org can install the app on 
 
 **To make an app in Apps & software available in your private store**
 
-1.  Sign in to the [Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
+1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://businessstore.microsoft.com).
 2.  Click **Manage**, and then choose **Apps & software**.
 3.  Use **Refine results** to search for online-licensed apps under **License type**.
 4.  From the list of online-licensed apps, click the ellipses for the app you want, and then choose **Add to private store**.
@@ -89,7 +89,7 @@ Employees can claim apps that admins added to the private store by doing the fol
 
 **To claim an app from the private store**
 
-1.	Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Windows Store app.
+1.	Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Microsoft Store app.
 2.	Click the private store tab.
 3.	Click the app you want to install, and then click **Install**.
 
@@ -112,7 +112,7 @@ The app will still be in your inventory, but your employees will not have access
 3.	Find an app, click the ellipses under **Action**, and then choose **Assign to people**.
 4.	Type the email address for the employee that you're assigning the app to, and click **Confirm**.
 
-Employees will receive an email with a link that will install the app on their device. Click the link to start the Windows Store app, and then click **Install**. Also, in the Windows Store app, they can find the app under **My Library**.
+Employees will receive an email with a link that will install the app on their device. Click the link to start the Microsoft Store app, and then click **Install**. Also, in the Microsoft Store app, they can find the app under **My Library**.
 
 ## Manage app licenses
 
@@ -165,7 +165,7 @@ You can download offline-licensed apps from your inventory. You'll need to downl
 - App license
 - App framework
 
-For more information about online and offline licenses, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md#licensing-model).
+For more information about online and offline licenses, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md#licensing-model).
 
 For more information about downloading offline-licensed apps, see [Download offline apps](distribute-offline-apps.md).
 
