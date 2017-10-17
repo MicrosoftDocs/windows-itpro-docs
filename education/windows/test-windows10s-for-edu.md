@@ -167,14 +167,20 @@ After going back to your previous edition of Windows 10, you may receive the fol
 
 If you see this message, follow these steps to stop receiving the message:
 
-1. Restart your PC and enter UEFI/BIOS. Depending on your PC, you may need to press **Delete**, **F1**, or **F2** as soon as the PC begins to power on.
-2. Once you've accessed the UEFI/BIOS, look for the menu item labeled **Security** or **Security Settings** and navigate to it.
-3. Look for an option called **Secure boot configuration**, **Secure boot**, or **UEFI Boot** and disable this option.
-4. Save your settings and then exit UEFI/BIOS. This will restart your PC.
-5. After Windows is done booting up, confirm that you no longer see the message. 
+1. If you have BitLocker enabled, disable it first in the Control Panel. Go to **Manage BitLocker** and select **Turn off BitLocker**.
+2. Open Windows **Settings** and go to **Update & security > Recovery**.
+3. In the **Recover** page, find **Advanced startup** and select **Restart now** to start your PC.
+4. After restarting, in the **Choose an option** page, select **Troubleshoot**.
+5. In the **Troubleshoot** page, select **Advanced options**, and in the **Advanced options** page select **UEFI Firmware Settings**.
+6. In the **UEFI Firmware Settings** page, select **Restart** to get to the device-specific UEFI/BIOS menu.
+7. Once you've accessed UEFI, look for the menu item labeled **Security** or **Security Settings** and navigate to it.
+8. Look for an option called **Secure boot configuration**, **Secure boot**, or **UEFI Boot**. If you can't find one of these options, check the **Boot** menu.
+9. Disable the secure boot/UEFI boot option.
+10. Save your settings and then exit UEFI. This will restart your PC.
+11. After Windows is done booting up, confirm that you no longer see the message. 
 
     > [!NOTE]
-    > We recommend following these steps again to re-enable the **Secure boot configuration**, **Secure boot**, or **UEFI Boot** option, which you disabled in step 3. 
+    > We recommend following these steps again to re-enable the **Secure boot configuration**, **Secure boot**, or **UEFI Boot** option, which you disabled in step 9, and then subsequently re-enable BitLocker (if you previously had this enabled). 
 
 ### Use installation media to reinstall Windows 10
 
