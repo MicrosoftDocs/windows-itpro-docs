@@ -1,7 +1,7 @@
 # [Threat protection](index.md)
 
 
-## [The Windows Defender Security Center](windows-defender-security-center\windows-defender-security-center.md)
+## [The Windows Defender Security Center app](windows-defender-security-center\windows-defender-security-center.md)
 ### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center\wdsc-customize-contact-information.md)
 ### [Hide Windows Defender Security Center app notifications](windows-defender-security-center\wdsc-hide-notifications.md)
 ### [Virus and threat protection](windows-defender-security-center\wdsc-virus-threat-protection.md)
