@@ -22,7 +22,7 @@ ms.date: 10/16/2017
 - Windows 10, version 1703 and later
 
 
-The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. It administrators and IT pros should reference the appropriate documentation library for the issues they are seeing, such as the [configure the Load and unload device drivers security policy setting](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using System Center Configuration Manager](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
+The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they are seeing, such as the [configure the Load and unload device drivers security policy setting](https://docs.microsoft.com/en-us/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using System Center Configuration Manager](https://docs.microsoft.com/en-us/windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
 
 The [Windows 10 IT pro troubleshooting topic](https://docs.microsoft.com/en-us/windows/client-management/windows-10-support-solutions), and the main [Windows 10 documentation library](https://docs.microsoft.com/en-us/windows/windows-10/) can also be helpful for resolving issues.
 
