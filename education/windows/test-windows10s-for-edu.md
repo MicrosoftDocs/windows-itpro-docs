@@ -176,8 +176,8 @@ If you see this message, follow these steps to stop receiving the message:
 7. Once you've accessed UEFI, look for the menu item labeled **Security** or **Security Settings** and navigate to it.
 8. Look for an option called **Secure boot configuration**, **Secure boot**, or **UEFI Boot**. If you can't find one of these options, check the **Boot** menu.
 9. Disable the secure boot/UEFI boot option.
-4. Save your settings and then exit UEFI. This will restart your PC.
-5. After Windows is done booting up, confirm that you no longer see the message. 
+10. Save your settings and then exit UEFI. This will restart your PC.
+11. After Windows is done booting up, confirm that you no longer see the message. 
 
     > [!NOTE]
     > We recommend following these steps again to re-enable the **Secure boot configuration**, **Secure boot**, or **UEFI Boot** option, which you disabled in step 9, and then subsequently re-enable BitLocker (if you previously had this enabled). 
