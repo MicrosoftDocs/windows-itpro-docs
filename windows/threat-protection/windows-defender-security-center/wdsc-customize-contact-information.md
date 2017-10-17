@@ -11,10 +11,22 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 10/12/2017
+ms.date: 10/16/2017
 ---
 
 # Customize the Windows Defender Security Center app for your organization
+
+**Applies to**
+
+- Windows 10, version 1709
+
+**Audience**
+
+- Enterprise security administrators
+
+**Manageability available with**
+
+- Group Policy
 
 You can add information about your organization in a contact card to the Windows Defender Security Center app. This can include a link to a support site, a phone number for a help desk, and an email address for email-based support. 
 
@@ -25,11 +37,14 @@ This information will also be shown in some enterprise-specific notifications (i
 ![](images/security-center-custom-notif.png)
 
 
-Users can click on the displayed information to easily initiate a support request:
+Users can click on the displayed information to initiate a support request:
 - Clicking **Call** or the phone number will open Skype to start a call to the displayed number
 - Clicking **Email** or the email address will create a new email in the machine's default email app address to the displayed email
 - Clicking **Help portal** or the website URL will open the machine's default web browser and go to the displayed address
 
+## Requirements
+
+You must have Windows 10, version 1709 (the Fall Creators Update). The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
 ## Use Group Policy to enable and customize contact information
 
@@ -62,6 +77,6 @@ This can only be done in Group Policy.
 
 
 >[!IMPORTANT]
->You must specify the contact company name and at least one contact method - email, phone number, or website URL. If you do not specify the contact name and a contact method the customization will not apply: the contact card will not show, and notifications will not be customized.
+>You must specify the contact company name and at least one contact method - email, phone number, or website URL. If you do not specify the contact name and a contact method the customization will not apply, the contact card will not show, and notifications will not be customized.
 
 

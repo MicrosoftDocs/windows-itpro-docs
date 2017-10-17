@@ -12,4 +12,9 @@ ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
 ms.date: 10/12/2017
----
+
+
+
+1709 - Add  CFA
+
+In Windows 10, version 1709, the section also provides configuration options for Controlled folder access. IT administrators can get more information at the [Controlled folder access](windows-defender-exploit-guard\controlled-folders-exploit-guard.md) topic in the Windows Defender Exploit Guard library.
