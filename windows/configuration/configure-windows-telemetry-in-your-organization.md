@@ -293,7 +293,7 @@ In Windows 10, version 1709, we introduce the **Limit Enhanced diagnostic data t
 
     b. Using MDM, use the Policy CSP to set the **System/AllowTelemetry** value to **2**.
 
--AND-
+    -AND-
 
 2.	Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
 
