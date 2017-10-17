@@ -59,9 +59,9 @@ If you're using Microsoft Store and you want employees to only see apps you're m
 
 4. On the **Only display the private store within the Microsoft Store app** setting page, click **Enabled**, and then click **OK**.
 
-You can also prevent employees from using Microsoft Store. For more information, see [Configure access to Microsoft Store](/windows/configuration/stop-employees-from-using-the-windows-store).
+You can also prevent employees from using Microsoft Store. For more information, see [Configure access to Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store).
 
 ## Related topics
 
 [Distribute apps using your private store](distribute-apps-from-your-private-store.md)
-[Configure access to Microsoft Store](/windows/configuration/stop-employees-from-using-the-windows-store)
+[Configure access to Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store)

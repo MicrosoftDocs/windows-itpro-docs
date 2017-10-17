@@ -146,7 +146,7 @@ Once you click **Next**, the information you provided will be validated with a
 
 ## Offline licensing
 
-Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on Microsoft Store for Business licensing model, see [licensing model](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).
+Offline licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business. This model means organizations can deploy apps when users or devices do not have connectivity to the Store. For more information on Microsoft Store for Business licensing model, see [licensing model](https://docs.microsoft.com/microsoft-store/apps-in-microsoft-store-for-business#licensing-model).
 
 Admins can decide whether or not offline licenses are shown for apps in Microsoft Store. 
 

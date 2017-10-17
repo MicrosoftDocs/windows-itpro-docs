@@ -91,5 +91,5 @@ These permissions allow people to:
 
     <!--- ![Image showing Assign roles to people box in Microsoft Store for Business.](images/wsfb-permissions-assignrole.png) -->
 
-4.  If you don't find the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-windows-store-for-business.md).
+4.  If you don't find the name you want, you might need to add people to your Azure AD directory. For more information, see [Manage user accounts in Microsoft Store for Business and Education](manage-users-and-groups-microsoft-store-for-business.md).
 

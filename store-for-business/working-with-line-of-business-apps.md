@@ -78,7 +78,7 @@ After an app is published and available in the Store, ISVs publish an updated ve
 For more information, see [Organizational licensing options]( https://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](https://go.microsoft.com/fwlink/p/?LinkId=627543).<br>
  
  >[!Note]
- > In order to get the LOB app, the organization must be located in a [supported market](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
+ > In order to get the LOB app, the organization must be located in a [supported market](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
 
 ## <a href="" id="add-lob-app-to-inventory"></a>Add app to inventory (admin)
 
@@ -91,16 +91,7 @@ After an ISV submits the LOB app for your company or school, someone with Micros
 3.  Click the ellipses under **Action** for the app you want to add to your inventory, and then choose **Add to inventory**.
 
 After you add the app to your inventory, you can choose how to distribute the app. For more information, see:
--   [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md)
+-   [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-microsoft-store-for-business.md)
 -   [Distribute apps from your private store](distribute-apps-from-your-private-store.md)
 -   [Assign apps to employees](assign-apps-to-employees.md)
 -   [Distribute offline apps](distribute-offline-apps.md)
-
- 
-
- 
-
-
-
-
-

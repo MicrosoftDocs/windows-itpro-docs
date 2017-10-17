@@ -11,12 +11,12 @@ ms.localizationpriority: high
 ---
 
 # Acquire apps in Microsoft Store for Business and Education
-As an admin, you can acquire apps from the Microsoft Store for Business and Education for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-windows-store-for-business.md).
+As an admin, you can acquire apps from the Microsoft Store for Business and Education for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md).
 
 ## App licensing model
-The Microsoft Store supports two options to license apps: online and offline. **Online** licensing is the default licensing model. Online licensed apps require users and devices to connect to the Microsoft Store services to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#offline-licensing). 
+The Microsoft Store supports two options to license apps: online and offline. **Online** licensing is the default licensing model. Online licensed apps require users and devices to connect to the Microsoft Store services to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#offline-licensing). 
 
-For more information on the Microsoft Store licensing model, see [licensing model](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).
+For more information on the Microsoft Store licensing model, see [licensing model](https://docs.microsoft.com/microsoft-store/apps-in-microsoft-store-for-business#licensing-model).
 
 ## Payment options
 Some apps are free, and some have a price. Apps can be purchased in the Microsoft Store using your credit card. You can enter your credit card information on **Account Information**, or when you purchase an app. Currently, we accept these credit cards:
@@ -41,14 +41,14 @@ There are a couple of things we need to know when you pay for apps. You can add 
 6.	If you don’t have a payment method saved in **Billing - Payment methods**, we will prompt you for one.
 7.	Add your credit card or debit card info, and click **Next**. Your card info is saved as a payment option on **Billing - Payment methods**.
 
-You’ll also need to have your business address saved on ****Billing - Account profile***. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings#organization-tax-information). 
+You’ll also need to have your business address saved on ****Billing - Account profile***. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#organization-tax-information). 
 
 Microsoft Store adds the app to your inventory. From **Inventory** or **Apps & software**, you can:
 - Distribute the app: add to private store, or assign licenses
 - View app licenses: review current licenses, reclaim and reassign licenses
 - View app details: review the app details page and purchase more licenses
 
-For info on distributing apps, see [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md).
+For info on distributing apps, see [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-microsoft-store-for-business.md).
 
 For info on offline-licensed apps, see [Distribute offline apps](distribute-offline-apps.md).
 

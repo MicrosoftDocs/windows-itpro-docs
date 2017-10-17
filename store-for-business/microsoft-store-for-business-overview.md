@@ -88,7 +88,7 @@ After your admin signs up for the Store for Business and Education, they can ass
 > [!NOTE]
 > Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](https://docs.microsoft.com/education/windows/education-scenarios-store-for-business?toc=/microsoft-store/education/toc.json#manage-domain-settings).
  
-In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-windows-store-for-business.md).
+In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
 
 Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with Store for Business and Education.
 
@@ -146,7 +146,7 @@ Once you are signed up with the Business store and have purchased apps, Admins c
 - Manage app updates for all apps, or customize updates for each app. Online apps will automatically update from the Store. Offline apps can be updated using a management server.
 - Download apps for offline installs
 
-For more information, see [Manage settings in the Store for Business](manage-settings-microsoft-store-for-business.md) and [Manage apps](manage-apps-windows-store-for-business-overview.md).
+For more information, see [Manage settings in the Store for Business](manage-settings-microsoft-store-for-business.md) and [Manage apps](manage-apps-microsoft-store-for-business-overview.md).
 
 ## Supported markets
 
