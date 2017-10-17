@@ -161,6 +161,21 @@ If going back is not available:
 * Check if you can restore your PC to factory settings. This will reinstall the version of Windows that came with your PC and remove personal files, apps, and drivers you installed and any changes you made to **Settings**. Go to **Settings > Update & security > Recovery > Reset this PC > Get started** and look for **Restore factory settings**.
 * If you have a product key for your previous version of Windows, use the media creation tool to create installation media of your previous Windows 10 edition and use it to do a clean install.
 
+After going back to your previous edition of Windows 10, you may receive the following message when launching Win32 apps:
+
+> For security and performance, this mode of Windows only runs verified apps from the Store.
+
+If you see this message, follow these steps to stop receiving the message:
+
+1. Restart your PC and enter UEFI/BIOS. Depending on your PC, you may need to press **Delete**, **F1**, or **F2** as soon as the PC begins to power on.
+2. Once you've accessed the UEFI/BIOS, look for the menu item labeled **Security** or **Security Settings** and navigate to it.
+3. Look for an option called **Secure boot configuration**, **Secure boot**, or **UEFI Boot** and disable this option.
+4. Save your settings and then exit UEFI/BIOS. This will restart your PC.
+5. After Windows is done booting up, confirm that you no longer see the message. 
+
+    > [!NOTE]
+    > We recommend following these steps again to re-enable the **Secure boot configuration**, **Secure boot**, or **UEFI Boot** option, which you disabled in step 3. 
+
 ### Use installation media to reinstall Windows 10
 
 > [!WARNING]
