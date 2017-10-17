@@ -172,7 +172,7 @@ If you see this message, follow these steps to stop receiving the message:
 3. In the **Recover** page, find **Advanced startup** and select **Restart now** to start your PC.
 4. After restarting, in the **Choose an option** page, select **Troubleshoot**.
 5. In the **Troubleshoot** page, select **Advanced options**, and in the **Advanced options** page select **UEFI Firmware Settings**.
-6. In the **UEFI Firmware Settings** page, select **Restart** to get to the device-specific BIOS menu.
+6. In the **UEFI Firmware Settings** page, select **Restart** to get to the device-specific UEFI/BIOS menu.
 7. Once you've accessed UEFI, look for the menu item labeled **Security** or **Security Settings** and navigate to it.
 8. Look for an option called **Secure boot configuration**, **Secure boot**, or **UEFI Boot**. If you can't find one of these options, check the **Boot** menu.
 9. Disable the secure boot/UEFI boot option.
