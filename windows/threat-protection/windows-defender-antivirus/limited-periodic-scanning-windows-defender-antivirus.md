@@ -22,7 +22,7 @@ ms.date: 10/02/2017
 
 **Applies to:**
 
-- Windows 10, version 1609
+- Windows 10, version 1703
 
 
 **Audience**
