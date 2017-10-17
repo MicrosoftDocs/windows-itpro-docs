@@ -33,9 +33,6 @@ Your environment needs the following hardware to run Windows Defender Applicatio
 
 |Software|Description|
 |--------|-----------|
-|Operating system|Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)|
+|Operating system|Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)|
 |Browser|Microsoft Edge and Internet Explorer|
 |Management system|[Microsoft Intune](https://docs.microsoft.com/en-us/intune/)<br><br>**-OR-**<br><br>[System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/)<br><br>**-OR-**<br><br>[Group Policy](https://technet.microsoft.com/en-us/library/cc753298(v=ws.11).aspx)<br><br>**-OR-**<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product.|
-
->[!Important]
->Windows Defender Application Guard only works with Microsoft Edge and Internet Explorer. Allowing other browsers in your organization can also allow for  Please use appropriate measures to block installation and usage of 3rd party browsers. <Link to App Locker page>
