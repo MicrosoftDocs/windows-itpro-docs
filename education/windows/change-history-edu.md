@@ -20,7 +20,6 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 | New or changed topic | Description |
 | --- | ---- |
 | [Reset devices with Windows Automatic Redeployment](windows-automatic-redeployment.md) | New. Learn how you can use this new feature to quickly reset student PCs from the lock screen and apply original settings and management enrollment (Azure Active Directory and device management) so the devices are ready to use and returned to a fully configured or known IT-approved state. |
-| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | Updated the *Go back to your previous edition of Windows 10* section with new information on how to work around cases where Win32 apps are blocked after switching from Windows 10 S back to your previous Windows edition. |
 | [Take a Test app technical reference](take-a-test-app-technical.md) | Updated. Starting with Windows 10, version 1709 (Fall Creators Update), assessments can now run in permissive mode. This mode enables students who need access to other apps, like accessibility tools, to use the apps. |
 
 ## September 2017
