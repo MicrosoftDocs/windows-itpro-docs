@@ -87,29 +87,22 @@ Semi-Annual Channel (Targeted) is the default servicing channel for all Windows 
 
 ## Enroll devices in the Windows Insider Program
 
-Enrolling devices in the Windows Insider Program is simple and requires only a Microsoft account. To enroll a device in the Windows Insider Program, complete the following steps on the device that you want to enroll: 
+To get started with the Windows Insider Program for Business, you will need to follow a few simple steps:
 
-1. Go to **Start** > **Settings** > **Update & security** > **Windows Insider Program**.
+1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
+2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+3. Make sure the **Allow Telemetry** setting is set to **2** or higher.
+4. Starting with Windows 10, version 1709, set policies to manage preview builds and their delivery:
 
-2. Select **Get started**.  
-    >[!NOTE]
-    >If you didn’t use a Microsoft account to log in to the computer, you’ll be prompted to log in. If you don’t have a Microsoft account, you can create one now. 
-    
-3. Read the privacy statement and program terms, and then click **Next**.
+The **Manage preview builds** setting gives administrators control over enabling or disabling preview build installation on a device. You can also decide to stop preview builds once the release is public.
+* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
+* MDM: **Update/ManagePreviewBuilds**
 
-6.	Click **Confirm**, and then select a time to restart the computer.
+The **Branch Readiness Level** settings allows you to choose between preview flight rings, and allows you to defer or pause the delivery of updates.
+* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and Feature Updates are received*
+* MDM: **Update/BranchReadinessLevel**
 
-## Install your first preview build from the Windows Insider Program
-
-After enrolling your devices, you are ready to install your first preview build. To do so, go to **Start** > **Settings** > **Update & security** > **Windows Insider Program** to select your Insider level. The device receives the most recent Windows Insider build for the Insider level you select. 
-
-The options for Insider level are:
-- **Release Preview**: Insiders on this level receive builds of Windows just before Microsoft releases them for Semi-Annual Channel. Although these builds aren’t final, they are the most complete and stable builds available to Windows Insider Program participants. This level provides the best testing platform for organizations that conduct early application compatibility testing on Windows Insider PCs.
-- **Slow**: The Slow Windows Insider level is for users who enjoy seeing new builds of Windows with minimal risk to their devices but still want to provide feedback to Microsoft about their experience with the new build.
-- **Fast**: This level is best for Insiders who would like to be the first to experience new builds of Windows, participate in identifying and reporting issues to Microsoft, and provide suggestions on new functionality. 
-
->[!NOTE]
->Once your machine is updated to Windows 10 and you select your desired flight ring, the process known as "Compatibility check" will need to run in the background. There is no manual way to force this process to run. This process allows for the discovery of your OS type (32-bit, 64-bit), build edition (Home, Pro, Enterprise), country and language settings, and other required information. Once this process is complete, your machine will be auto-targeted for the next available flight for your selected ring. For the first build on any given machine, this may take up to 24 hours to complete.
+For more information, see [Windows Insider Program for Business](waas-windows-insider-for-business.md)
 
 ## Block access to Windows Insider Program
 
@@ -117,6 +110,12 @@ To prevent devices in your enterprise from being enrolled in the Insider Program
 
 - Group Policy: Computer Configuration\Administrative Templates\Windows Components\Data Collection and Preview Builds\\**Toggle user control over Insider builds**
 - MDM: Policy CSP - [System/AllowBuildPreview](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx#System_AllowBuildPreview)
+
+>[!IMPORTANT]
+>Starting with Windows 10, version 1709, this policy is replaced by **Manage preview builds** policy.
+> * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
+> * MDM: **Update/ManagePreviewBuilds**
+
 
 ## Switching channels
 

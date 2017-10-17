@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Troubleshoot custom threat intelligence issues
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 You might need to troubleshoot issues while using the custom threat intelligence feature.
 

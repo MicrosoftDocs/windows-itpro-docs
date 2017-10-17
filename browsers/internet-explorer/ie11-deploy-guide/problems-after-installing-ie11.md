@@ -59,7 +59,7 @@ After you turn each item back on, see if IE crashes or slows down. Doing it this
 If the **Use software rendering instead of GPU rendering** option is greyed out, it means that your current video card or video driver doesn't support GPU hardware acceleration. For more information, see [Windows 10 Support](https://go.microsoft.com/fwlink/?LinkId=746588).
 
 ## Adaptive streaming and DRM playback don’t work with Windows Server 2012 R2
-IE11 in Windows Server 2012 R2 doesn’t include media features like adaptive streaming or Digital Rights Management (DRM) playback. To add these features, you’ll need to download and install the Media Feature Pack from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=320789), as well as an app that uses PlayReady DRM from the Windows Store, such as the Xbox Music app or Xbox Video app. The app must be installed to specifically turn on DRM features, while all other media features are installed with the Media Feature Pack.
+IE11 in Windows Server 2012 R2 doesn’t include media features like adaptive streaming or Digital Rights Management (DRM) playback. To add these features, you’ll need to download and install the Media Feature Pack from the [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=320789), as well as an app that uses PlayReady DRM from the Microsoft Store, such as the Xbox Music app or Xbox Video app. The app must be installed to specifically turn on DRM features, while all other media features are installed with the Media Feature Pack.
 
  
 

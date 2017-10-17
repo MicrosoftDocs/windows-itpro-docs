@@ -19,7 +19,7 @@ author: miladCA
 >[!NOTE]
 >The Surface app ships in Surface Studio.
 
-The Surface app is a lightweight Windows Store app that provides control of many Surface-specific settings and options, including: 
+The Surface app is a lightweight Microsoft Store app that provides control of many Surface-specific settings and options, including: 
 
 * Enable or disable the Windows button on the Surface device 
 
@@ -31,11 +31,11 @@ The Surface app is a lightweight Windows Store app that provides control of many
 
 * Quick access to support documentation and information for your device 
 
-If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface app (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Windows Store or your Microsoft Store for Business. 
+If your organization is preparing images that will be deployed to your Surface devices, you may want to include the Surface app (formerly called the Surface Hub) in your imaging and deployment process instead of requiring users of each individual device to download and install the app from the Microsoft Store or your Microsoft Store for Business. 
 
 ##Surface app overview
 
-The Surface app is available as a free download from the [Windows Store](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Windows Store, but if your organization uses Microsoft Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Microsoft Store for Business, see [Microsoft Store for Business](https://technet.microsoft.com/windows/store-for-business) in the Windows TechCenter. 
+The Surface app is available as a free download from the [Microsoft Store](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P). Users can download and install it from the Microsoft Store, but if your organization uses Microsoft Store for Business instead, you will need to add it to your store’s inventory and possibly include the app as part of your Windows deployment process. These processes are discussed throughout this article. For more information about Microsoft Store for Business, see [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/) in the Windows TechCenter. 
 
 ##Add Surface app to a Microsoft Store for Business account 
 
@@ -45,7 +45,7 @@ Before users can install or deploy an app from a company’s Microsoft Store for
 
 2. Log on to the portal. 
 
-3. Enable offline licensing: click **Manage->Store settings**, and then select the **Show offline licensed apps to people shopping in the store** checkbox, as shown in Figure 1. For more information about Microsoft Store for Business app licensing models, see [Apps in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing_model).<br/> <br/>
+3. Enable offline licensing: click **Manage->Store settings**, and then select the **Show offline licensed apps to people shopping in the store** checkbox, as shown in Figure 1. For more information about Microsoft Store for Business app licensing models, see [Apps in Microsoft Store for Business and Education](https://docs.microsoft.com/microsoft-store/).<br/> <br/>
    ![Show offline licenses apps checkbox](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *Figure 1. Enable apps for offline use*
 
@@ -113,7 +113,7 @@ The following procedure provisions the Surface app onto your computer and makes 
     Add-AppxProvisionedPackage –Online –PackagePath <DownloadPath>\ Microsoft.SurfaceHub_10.0.342.0_neutral_~_8wekyb3d8bbwe.AppxBundle –LicensePath <DownloadPath>\ Microsoft.SurfaceHub_8wekyb3d8bbwe_a53ef8ab-9dbd-dec1-46c5-7b664d4dd003.xml
     ```
 
-    Where `<DownloadPath>` is the folder where you downloaded the AppxBundle and license file from the Windows Store for Business account.
+    Where `<DownloadPath>` is the folder where you downloaded the AppxBundle and license file from the Microsoft Store for Business account.
 
     For example, if you downloaded the files to c:\Temp, the command you run is:
     ````

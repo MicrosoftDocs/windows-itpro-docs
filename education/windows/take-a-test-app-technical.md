@@ -45,7 +45,7 @@ When Take a Test is running, the following MDM policies are applied to lock down
 | Policy | Description | Value |
 |---|---|---|
 | AllowToasts | Disables toast notifications from being shown | 0 |
-| AllowAppStoreAutoUpdate | Disables automatic updates for Windows Store apps that are installed on the PC | 0 |
+| AllowAppStoreAutoUpdate | Disables automatic updates for Microsoft Store apps that are installed on the PC | 0 |
 | AllowDeviceDiscovery | Disables UI for screen sharing | 0 |
 | AllowInput Panel | Disables the onscreen keyboard which will disable auto-fill | 0 |
 | AllowCortana | Disables Cortana functionality | 0 |
@@ -86,6 +86,16 @@ When Take a Test is running, the following functionality is available to student
 
     - Ctrl+Alt+Del 
     - Alt+F4 (Take a Test will restart if the student is using a dedicated test account)
+
+## Permissive mode
+
+Starting with Windows 10, version 1709 (Fall Creators Update), assessments can now run in permissive mode. This mode enables students who need access to other apps, like accessibility tools, to use the apps.
+
+When permissive mode is triggered in lockdown mode, Take a Test transitions from lockdown mode to running windows mode on the user's desktop. The student can then run allowed apps during the test.
+
+When running tests in this mode, keep the following in mind:
+- Permissive mode is not supported in kiosk mode (dedicated test account).
+- Permissive mode can be triggered from the web app running within Take a Test. Alternatively, you can create a link or shortcut without "#enforcelockdown" and it will launch in permissive mode.
 
 
 ## Learn more

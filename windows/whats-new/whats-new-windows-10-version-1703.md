@@ -12,20 +12,20 @@ ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
 
 # What's new in Windows 10, version 1703 IT pro content
 
-Below is a list of some of the new and updated content that discusses Information Technology (IT) pro features in Windows 10, version 1703 (also known as the Creators Update).
+Below is a list of some of what's new in Information Technology (IT) pro features in Windows 10, version 1703 (also known as the Creators Update).
 
 For more general info about Windows 10 features, see [Features available only on Windows 10](https://www.microsoft.com/windows/features). For info about previous versions of Windows 10, see [What's New in Windows 10](index.md). Also see this blog post: [What’s new for IT pros in the Windows 10 Creators Update](https://blogs.technet.microsoft.com/windowsitpro/2017/04/05/whats-new-for-it-pros-in-the-windows-10-creators-update/).
 
 >[!NOTE]
 >Windows 10, version 1703 contains all fixes included in previous cumulative updates to Windows 10, version 1607. For info about each version, see [Windows 10 release information](https://technet.microsoft.com/en-us/windows/release-info). For a list of removed features, see [Features that are removed or deprecated in Windows 10 Creators Update](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=whats-new-windows-10-version-1703.md). 
  
 ## Configuration
 
 ### Windows Configuration Designer
 
-Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool for creating provisioning packages is renamed **Windows Configuration Designer**. The new Windows Configuration Designer is available in [Windows Store as an app](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on earlier versions of Windows, you can still install Windows Configuration Designer from the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
+Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool for creating provisioning packages is renamed **Windows Configuration Designer**. The new Windows Configuration Designer is available in [Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22) as an app. To run Windows Configuration Designer on earlier versions of Windows, you can still install Windows Configuration Designer from the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
 Windows Configuration Designer in Windows 10, version 1703, includes several new wizards to make it easier to create provisioning packages.
 
