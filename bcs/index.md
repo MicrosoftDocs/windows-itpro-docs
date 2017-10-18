@@ -636,15 +636,15 @@ description: Learn about the product documentation and resources available for M
                         </ul>
                     </li>
                     <li>
-                        <a href="#partner-trouble-support">Troubleshooting and support</a>
-                        <ul id="partner-trouble-support" class="cardsC">
+                        <a href="#partner-support">Support</a>
+                        <ul id="partner-support" class="cardsC">
                             <li class="fullSpan">
                                 <div class="container intro">
-                                    <p>Looking for help or can't find what you need? Try these resources.</p>
+                                    <p>Looking for help or can't find what you need?</p>
                                 </div>
                             </li>
                             <li>
-                                <a href="." target="_blank">
+                                <a href="https://partnercenter.microsoft.com/partner/support" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -654,8 +654,8 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>File a support ticket - TBD</h3>
-                                                    <p>File a ticket for Microsoft 365 Business.</p>
+                                                    <h3>Microsoft Partner support</h3>
+                                                    <p>Find support and help resources for Microsoft Partners.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -837,7 +837,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://partners.office.com/smb" target="_blank">
+                                <a href="https://partners.office.com/microsoft365/#m365business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -847,7 +847,7 @@ description: Learn about the product documentation and resources available for M
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>SMB resources and training</h3>
+                                                    <h3>Microsoft 365 Business resources and training</h3>
                                                     <p>Find the latest training offerings and updates, and other resources.</p>
                                                 </div>
                                             </div>
@@ -867,7 +867,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>News articles</h3>
-                                                    <p>Read the latest news articles on Office 365 and Microsoft 365.</p>
+                                                    <p>Read the latest partner news articles on Office 365 and Microsoft 365.</p>
                                                 </div>
                                             </div>
                                         </div>
