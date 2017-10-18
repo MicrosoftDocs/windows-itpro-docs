@@ -71,6 +71,6 @@ You may also be interested in this msdn channel 9 video:
 -   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 -   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
 -   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
--   [Security Baseline Blog](https://blogs.technet.microsoft.com/secguide/2017/09/27/security-baseline-for-windows-10-fall-creators-update-v1709-draft/)
+-   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
 -   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
 -   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
