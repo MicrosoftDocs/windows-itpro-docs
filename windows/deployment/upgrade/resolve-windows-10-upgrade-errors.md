@@ -199,7 +199,7 @@ Several log files are created during each phase of the upgrade process. These lo
 <TR>
 <td BGCOLOR="#a0e4fa"><B>Log file<td BGCOLOR="#a0e4fa"><B>Phase: Location<td BGCOLOR="#a0e4fa"><B>Description<td BGCOLOR="#a0e4fa"><B>When to use
 
-<TR><TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
+<TR><TD rowspan=5>setupact.log<TD rowspan=5>setupact.log<TD>Down-Level:<BR>$Windows.~BT\Sources\Panther<TD>Contains information about setup actions during the downlevel phase. 
 <TD>All down-level failures and starting point for rollback investigations.<BR> This is the most important log for diagnosing setup issues.
 <TR><TD>OOBE:<BR>$Windows.~BT\Sources\Panther\UnattendGC
 <TD>Contains information about actions during the OOBE phase.<TD>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.
