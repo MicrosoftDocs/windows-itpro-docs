@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 10/10/2017
+ms.date: 10/18/2017
 author: greg-lindsay
 ---
 
@@ -82,11 +82,11 @@ Devices currently running Windows 10 Pro, version 1703 can get Windows 10 Enterp
 
 **Scenario #1**:  Using KMS for activation, just purchased Windows 10 Enterprise E3 or E5 subscriptions (or for some reason have had an E3 or E5 subscription for a while but haven’t yet deployed Windows 10 Enterprise), and you are using Windows 10 1607 or above.
 
-All you need to do to change all of your Windows 10 Pro machines to Windows 10 Enterprise is to run this command on each machine:
+All you need to do to change all of your Windows 10 Pro devices to Windows 10 Enterprise is to run this command on each computer:
 
-    ```
-    cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
-    ```
+<pre style="overflow-y: visible">
+cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
+</pre>
     
 This key comes from [Appendix A: KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx) in the Volume Activation guide.  The command causes the OS to change to Windows 10 Enterprise and then seek out the KMS server to reactivate.  It is also possible to inject the Windows 10 Pro key from this article if you wish to step back down from Enterprise to Pro.
 
