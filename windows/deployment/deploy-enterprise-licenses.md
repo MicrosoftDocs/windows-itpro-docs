@@ -30,7 +30,7 @@ If you are an EA customer with an existing Office 365 tenant, use the following 
 
 >Use the following process if you need to update contact information and retrigger activation in order to resend the activation email:
 
-1. Sign in to the Microsoft Volume Licensing Service Center
+1. Sign in to the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 2. Click on **Subscriptions**.
 3. Click on **Online Services Agreement List**.
 4. Enter your agreement number, and then click **Search**.

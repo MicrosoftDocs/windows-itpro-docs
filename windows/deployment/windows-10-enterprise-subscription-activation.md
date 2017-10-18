@@ -50,8 +50,8 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following: 
 
-- Windows 10 (Pro or Enterprise) version 1703 or later installed and **activated** on the devices to be upgraded
-- Azure Active Directory (Azure AD) available for identity management
+- Windows 10 (Pro or Enterprise) version 1703 or later installed and **activated** on the devices to be upgraded.
+- Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Active Directory joined with Azure AD Connect. Workgroup-joined devices are not supported.
 
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3 or E5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
@@ -83,9 +83,11 @@ Devices currently running Windows 10 Pro, version 1703 can get Windows 10 Enterp
 **Scenario #1**:  Using KMS for activation, just purchased Windows 10 Enterprise E3 or E5 subscriptions (or for some reason have had an E3 or E5 subscription for a while but haven’t yet deployed Windows 10 Enterprise), and you are using Windows 10 1607 or above.
 
 All you need to do to change all of your Windows 10 Pro machines to Windows 10 Enterprise is to run this command on each machine:
+
     ```
     cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
     ```
+    
 This key comes from [Appendix A: KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx) in the Volume Activation guide.  The command causes the OS to change to Windows 10 Enterprise and then seek out the KMS server to reactivate.  It is also possible to inject the Windows 10 Pro key from this article if you wish to step back down from Enterprise to Pro.
 
 **Scenario #2**:  Using Azure AD-joined devices or Active Directory-joined devices running Windows 10 1709 or later, and with Azure AD synchronization configured, just follow the steps in [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md) to acquire a $0 SKU and get a new Windows 10 Enterprise E3 or E5 license in Azure AD. Then, assign that license to all of your Azure AD users. These can be AD-synced accounts.  The device will automatically change from Windows 10 Pro to Windows 10 Enterprise when that user signs in.
