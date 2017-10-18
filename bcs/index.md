@@ -488,25 +488,6 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/365-1b3b5318-6977-42ed-b5c7-96fa74b08846" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="images/bcs-partner-identity-manager.svg" alt="Identity integration" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Identity migration with Azure AD Connect</h3>
-                                                    <p>Got on-premises AD and plan to move your organization’s identity management to the cloud? Do a one-time sync using Azure AD Connect.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://support.office.com/article/FDECCEED-0702-4AF3-85BE-F2A0013937EF" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -518,7 +499,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Identity migration with minimal hybrid migration</h3>
-                                                    <p>Or, if you have Exchange servers and plan to also migrate email to the cloud, do a one-time sync using minimal hybrid migration.</p>
+                                                    <p>If you have Exchange servers and plan to migrate email to the cloud, do a one-time sync using minimal hybrid migration.</p>
                                                 </div>
                                             </div>
                                         </div>
