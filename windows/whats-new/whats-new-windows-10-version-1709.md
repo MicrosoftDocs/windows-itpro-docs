@@ -43,7 +43,7 @@ IT Pros can use Windows Automatic Redeployment to quickly remove personal files,
 
 ### Windows Update for Business (WUfB)
 
-WUfB now has additional controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb).
+WUfB now has additional controls available to manage Windows Insider Program enrollment through policies. For more information, see [Manage Windows Insider Program flights](https://docs.microsoft.com/en-us/windows/deployment/update/waas-configure-wufb#configure-when-devices-receive-windows-insider-preview-builds).
 
 ### Windows Insider Program for Business
 
@@ -105,6 +105,10 @@ New features in Windows Hello  enable a better device lock experience, using mul
 ### BitLocker
 
 The minimum PIN length is being changed from 6 to 4, with a default of 6. For more information, see [BitLocker Group Policy settings](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-group-policy-settings#bkmk-unlockpol3).
+
+### Windows security baselines
+
+Microsoft has released new [Windows security baselines](https://docs.microsoft.com/en-us/windows/device-security/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](https://docs.microsoft.com/en-us/windows/device-security/security-compliance-toolkit-10).
 
 
 ## Windows Analytics

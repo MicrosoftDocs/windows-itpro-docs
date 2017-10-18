@@ -52,7 +52,7 @@ You can use security baselines to:
 
 You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit (SCT), which comprises tools that can assist admins in managing  baselines in addition to the security baselines.
 
-The security baselines are included in the [Security Compliance Toolkit (SCT)](images/security-compliance-toolkit-1.png), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
+The security baselines are included in the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
 
 [![Security Compliance Toolkit](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
 [![Get Support](images/get-support.png)](get-support-for-security-baselines.md) 
@@ -71,7 +71,6 @@ You may also be interested in this msdn channel 9 video:
 -   [System Center Configuration Manager (SCCM)](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 -   [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
 -   [Configuration Management for Nano Server](https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers/)
--   [Security Baseline Blog](https://blogs.technet.microsoft.com/secguide/2017/09/27/security-baseline-for-windows-10-fall-creators-update-v1709-draft/)
--   [Microsoft Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
-
-- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
+-   [Microsoft Security Guidance Blog](https://blogs.technet.microsoft.com/secguide/)
+-   [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
+-   [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 

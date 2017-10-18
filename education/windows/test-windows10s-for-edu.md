@@ -169,7 +169,7 @@ If you see this message, follow these steps to stop receiving the message:
 
 1. If you have BitLocker enabled, disable it first in the Control Panel. Go to **Manage BitLocker** and select **Turn off BitLocker**.
 2. Open Windows **Settings** and go to **Update & security > Recovery**.
-3. In the **Recover** page, find **Advanced startup** and select **Restart now** to start your PC.
+3. In the **Recovery** page, find **Advanced startup** and select **Restart now** to start your PC.
 4. After restarting, in the **Choose an option** page, select **Troubleshoot**.
 5. In the **Troubleshoot** page, select **Advanced options**, and in the **Advanced options** page select **UEFI Firmware Settings**.
 6. In the **UEFI Firmware Settings** page, select **Restart** to get to the device-specific UEFI/BIOS menu.
