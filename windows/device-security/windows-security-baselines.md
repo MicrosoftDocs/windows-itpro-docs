@@ -52,7 +52,7 @@ You can use security baselines to:
 
 You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit (SCT), which comprises tools that can assist admins in managing  baselines in addition to the security baselines.
 
-The security baselines are included in the [Security Compliance Toolkit (SCT)](images/security-compliance-toolkit-1.png), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
+The security baselines are included in the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
 
 [![Security Compliance Toolkit](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
 [![Get Support](images/get-support.png)](get-support-for-security-baselines.md) 
