@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 # Frequently asked questions - Windows Defender Application Guard 
 
 **Applies to:**
-- Windows 10, version 1709
+- Windows 10 Enterpise edition, version 1709
 
 Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
