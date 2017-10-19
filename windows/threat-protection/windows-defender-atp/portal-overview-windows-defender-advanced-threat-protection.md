@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: DulceMV
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 10/19/2017
 ---
 
 # Windows Defender Advanced Threat Protection portal overview
