@@ -51,8 +51,13 @@ Enable security information and event management (SIEM) integration so you can p
 4. Copy the individual values or select **Save details to file** to download a file that contains all the values.
 
 5. Select **Generate tokens** to get an access and refresh token.
+  
+  > [!NOTE]
+  > You'll need to generate new Access token every 90 days. 
 
 You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
+
+
 
 ## Related topics
 - [Configure Splunk to pull Windows Defender ATP alerts](configure-splunk-windows-defender-advanced-threat-protection.md)
