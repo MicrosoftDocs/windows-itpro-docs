@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 # System requirements for Windows Defender Application Guard
 
 **Applies to:**
-- Windows 10, version 1709
+- Windows 10 Enterprise edition, version 1709
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Windows Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 
@@ -33,6 +33,6 @@ Your environment needs the following hardware to run Windows Defender Applicatio
 
 |Software|Description|
 |--------|-----------|
-|Operating system|Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)|
+|Operating system|Windows 10 Enterprise edition, version 1709|
 |Browser|Microsoft Edge and Internet Explorer|
 |Management system|[Microsoft Intune](https://docs.microsoft.com/en-us/intune/)<br><br>**-OR-**<br><br>[System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/)<br><br>**-OR-**<br><br>[Group Policy](https://technet.microsoft.com/en-us/library/cc753298(v=ws.11).aspx)<br><br>**-OR-**<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product.|
