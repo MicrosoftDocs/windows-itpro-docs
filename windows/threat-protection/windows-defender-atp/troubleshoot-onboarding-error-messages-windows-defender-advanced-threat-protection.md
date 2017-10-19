@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 09/10/2017
 ---
 
-# Troubleshoot onboarding and error messages
+# Troubleshoot subscription and portal access issues
 
 **Applies to:**
 
@@ -26,10 +26,10 @@ ms.date: 09/10/2017
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
-You might need to troubleshoot the Windows Defender ATP onboarding process if you encounter issues.
-This page provides detailed steps to troubleshoot onboarding issues that might occur when setting up your Windows Defender ATP service.
 
-If you receive an error message, the Windows Defender ATP portal will provide detailed explanation on what the issue is and relevant links will be supplied.
+This page provides detailed steps to troubleshoot issues that might occur when setting up your Windows Defender ATP service.
+
+If you receive an error message, the Windows Defender ATP portal will provide a detailed explanation on what the issue is and relevant links will be supplied.
 
 ## No subscriptions found
 

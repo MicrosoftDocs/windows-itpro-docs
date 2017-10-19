@@ -48,7 +48,7 @@ For more information on using Windows Defender ATP CSP see, [WindowsAdvancedThre
 
     b.  Select **Mobile Device Management/Microsoft Intune** > **Download package** and save the .zip file.
 
-        ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
+      ![Endpoint onboarding](images/atp-mdm-onboarding-package.png)
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named  *WindowsDefenderATP.onboarding*.
 
