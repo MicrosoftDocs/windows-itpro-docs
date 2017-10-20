@@ -59,5 +59,6 @@ The Universal Windows Platform ensures that consumers will have great battery li
 
 ## See also
 
-[Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsruninbackground)
+- [Run in the background indefinitely](https://docs.microsoft.com/windows/uwp/launch-resume/run-in-the-background-indefinetly)
+- [Policy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#privacy-letappsruninbackground)
 [Optimize background activity](https://docs.microsoft.com/windows/uwp/debug-test-perf/optimize-background-activity)

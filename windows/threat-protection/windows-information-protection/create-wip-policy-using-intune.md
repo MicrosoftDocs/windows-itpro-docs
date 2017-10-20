@@ -33,7 +33,7 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
 
     ![Microsoft Intune: Fill out the required Name and optional Description fields](images/intune-generalinfo.png)
 
-### Add app rules to your policy
+## Add app rules to your policy
 During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
 The steps to add your app rules are based on the type of rule template being applied. You can add a store app (also known as a Universal Windows Platform (UWP) app), a signed Windows desktop app, or an AppLocker policy file.
@@ -41,7 +41,7 @@ The steps to add your app rules are based on the type of rule template being app
 >[!Important]
 >Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<p>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **App Rules** list. If you don’t get this statement, it’s possible that you could experience app compat issues due to an app losing the ability to access a necessary file after revocation.
 
-#### Add a store app rule to your policy
+### Add a store app rule to your policy
 For this example, we’re going to add Microsoft OneNote, a store app, to the **App Rules** list.
 
 **To add a store app**
@@ -66,7 +66,7 @@ For this example, we’re going to add Microsoft OneNote, a store app, to the **
 If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
 
 **To find the Publisher and Product Name values for Store apps without installing them**
-1.	Go to the [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft OneNote*.
+1.	Go to the [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkID=722910) website, and find your app. For example, *Microsoft OneNote*.
 
 2.	Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -118,7 +118,7 @@ If you don't know the publisher or product name, you can find them for both desk
         }
     ```
 
-#### Add a desktop app rule to your policy
+### Add a desktop app rule to your policy
 For this example, we’re going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
 **To add a desktop app**
@@ -191,7 +191,7 @@ In this example, you'd get the following info:
 ```
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
-#### Add an AppLocker policy file
+### Add an AppLocker policy file
 For this example, we’re going to add an AppLocker XML file to the **App Rules** list. You’ll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
 
 **To create an app rule and xml file using the AppLocker tool**
@@ -282,7 +282,7 @@ For this example, we’re going to add an AppLocker XML file to the **App Rules*
 
     The file is imported and the apps are added to your **App Rules** list.
 
-#### Exempt apps from WIP restrictions
+### Exempt apps from WIP restrictions
 If you're running into compatibility issues where your app is incompatible with WIP, but still needs to be used with enterprise data, you can exempt the app from the WIP restrictions. This means that your apps won't include auto-encryption or tagging and won't honor your network restrictions. It also means that your exempted apps might leak.
 
 **To exempt a store app, a desktop app, or an AppLocker policy file app rule**
@@ -306,7 +306,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 5.	Click **OK**.
 
-### Manage the WIP protection mode for your enterprise data
+## Manage the WIP protection mode for your enterprise data
 After you've added the apps you want to protect with WIP, you'll need to apply a management and protection mode.
 
 We recommend that you start with **Silent** or **Allow Overrides** while verifying with a small group that you have the right apps on your protected apps list. After you're done, you can change to your final enforcement policy, either **Allow Overrides** or **Hide Overrides**.
@@ -320,7 +320,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
 ![Microsoft Intune, Set the protection mode for your data](images/intune-protection-mode.png)
 
-### Define your enterprise-managed corporate identity
+## Define your enterprise-managed corporate identity
 Corporate identity, usually expressed as your primary Internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you’ve marked as protected by WIP. For example, emails using contoso.com are identified as being corporate and are restricted by your Windows Information Protection policies.
 
 You can specify multiple domains owned by your enterprise by separating them with the "|" character. For example, (`contoso.com|newcontoso.com`). With multiple domains, the first one is designated as your corporate identity and all of the additional ones as being owned by the first one. We strongly recommend that you include all of your email address domains in this list.
@@ -330,7 +330,7 @@ You can specify multiple domains owned by your enterprise by separating them wit
 
     ![Microsoft Intune, Set your primary Internet domains](images/intune-corporate-identity.png)
 
-### Choose where apps can access enterprise data
+## Choose where apps can access enterprise data
 After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
 
 There are no default locations included with WIP, you must add each of your network locations. This area applies to any network endpoint device that gets an IP address in your enterprise’s range and is also bound to one of your enterprise domains, including SMB shares. Local file system locations should just maintain encryption (for example, on local NTFS, FAT, ExFAT).
@@ -412,7 +412,7 @@ There are no default locations included with WIP, you must add each of your netw
 
     For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
 
-### Choose to set up Azure Rights Management with WIP
+## Choose to set up Azure Rights Management with WIP
 WIP can integrate with Microsoft Azure Rights Management to enable secure sharing of files via removable drives such as USB drives. For more info about Azure Rights Management, see [Microsoft Azure Rights Management](https://products.office.com/en-us/business/microsoft-azure-rights-management). To integrate Azure Rights Management with WIP, you must already have Azure Rights Management set up.
 
 To configure WIP to use Azure Rights Management, you must set the **AllowAzureRMSForEDP** MDM setting to **1** in Microsoft Intune. This setting tells WIP to encrypt files copied to removable drives with Azure Rights Management, so they can be shared amongst your employees on computers running at least Windows 10, version 1703.
@@ -422,7 +422,7 @@ Optionally, if you don’t want everyone in your organization to be able to shar
 >[!NOTE]
 >For more info about setting the **AllowAzureRMSForEDP** and the **RMSTemplateIDForEDP** MDM settings, see the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterprisedataprotection-csp) topic. For more info about setting up and using a custom template, see [Configuring custom templates for the Azure Rights Management service](https://docs.microsoft.com/en-us/information-protection/deploy-use/configure-custom-templates) topic.
 
-### Choose your optional WIP-related settings
+## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you’ll be asked to decide if you want to add any optional WIP settings.
 
 ![Microsoft Intune, Choose any additional, optional settings](images/intune-optional-settings.png)

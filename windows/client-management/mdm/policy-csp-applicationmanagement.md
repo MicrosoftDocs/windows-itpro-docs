@@ -92,7 +92,7 @@ ms.date: 09/29/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether non Windows Store apps are allowed.
+<p style="margin-left: 20px">Specifies whether non Microsoft Store apps are allowed.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -141,7 +141,7 @@ ms.date: 09/29/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether automatic update of apps from Windows Store are allowed.
+<p style="margin-left: 20px">Specifies whether automatic update of apps from Microsoft Store are allowed.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -448,7 +448,7 @@ ms.date: 09/29/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that disables the launch of all apps from Windows Store that came pre-installed or were downloaded.
+<p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
@@ -495,13 +495,6 @@ ms.date: 09/29/2017
 <!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows disabling of the retail catalog and only enables the Private store.
-
-> [!IMPORTANT]
-> This node must be accessed using the following paths:
->
-> -   **./User/Vendor/MSFT/Policy/Config/ApplicationManagement/RequirePrivateStoreOnly** to set the policy.
-> -   **./User/Vendor/MSFT/Policy/Result/ApplicationManagement/RequirePrivateStoreOnly** to get the result.
-
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

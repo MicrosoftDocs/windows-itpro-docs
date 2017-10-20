@@ -8,13 +8,20 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 09/25/2017
+ms.date: 10/19/2017
 ms.localizationpriority: medium
 ---
 
 # Change history for Surface Hub
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
+
+## Octoboer 2017
+
+New or changed topic | Description |
+--- | ---
+[Install apps on your Microsoft Surface Hub](install-apps-on-surface-hub.md) | Updated instructions to use Windows Team device family
+[Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)  | Clarified user sign-in on Surface Hub
 
 ## September 2017
 

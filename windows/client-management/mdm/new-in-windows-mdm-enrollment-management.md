@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/19/2017
+ms.date: 10/02/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1000,8 +1000,21 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added new policies.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">Microsoft Store for Business</td>
-<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
+<td style="vertical-align:top">Microsoft Store for Business and Microsoft Store</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
+</td></tr>
+<td style="vertical-align:top">[MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>New features in the Settings app:</p>
+<ul>
+<li>User sees installation progress of critical policies during MDM enrollment.</li>
+<li>User knows what policies, profiles, apps MDM has configured</li>
+<li>IT helpdesk can get detailed MDM diagnostic information using client tools</li>
+</ul>
+<p>For details, see [Managing connection](mdm-enrollment-of-windows-devices.md#managing-connections) and [Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)</td>
+<td style="vertical-align:top"><p>Added new topic to introduce a new Group Policy for automatic MDM enrollment.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
@@ -1149,7 +1162,7 @@ The software version information from **DevDetail/SwV** does not match the versi
 
     To workaround this issue, remove the Windows Phone 8.1 publisher rule and add the specific product ID for each Silverlight app you want to allow to the allowed app list.
 
--   Some apps (specifically those that are published in Windows Store as AppX Bundles) are blocked from installing even when they are included in the app list.
+-   Some apps (specifically those that are published in Microsoft Store as AppX Bundles) are blocked from installing even when they are included in the app list.
 
     No workaround is available at this time. An OS update to fix this issue is coming soon.
 
@@ -1384,8 +1397,8 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top"><p>Starting in Windows 10, version 1709, AssignedAccess CSP is also supported in Windows 10 Pro.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">Microsoft Store for Business</td>
-<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business.</p>
+<td style="vertical-align:top">Microsoft Store for Business and Microsoft Store</td>
+<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
 </td></tr>
 <tr class="even">
 <td style="vertical-align:top">The [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://msdn.microsoft.com/en-us/library/mt221945.aspx)</td>
@@ -1401,8 +1414,23 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <td style="vertical-align:top">[EntepriseAPN CSP](enterpriseapn-csp.md)</td>
 <td style="vertical-align:top"><p>Added a SyncML example.</p>
 </td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[VPNv2 CSP](vpnv2-csp.md)</td>
 <td style="vertical-align:top"><p>Added RegisterDNS setting in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)</td>
+<td style="vertical-align:top"><p>Added new topic to introduce a new Group Policy for automatic MDM enrollment.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)</td>
+<td style="vertical-align:top"><p>New features in the Settings app:</p>
+<ul>
+<li>User sees installation progress of critical policies during MDM enrollment.</li>
+<li>User knows what policies, profiles, apps MDM has configured</li>
+<li>IT helpdesk can get detailed MDM diagnostic information using client tools</li>
+</ul>
+<p>For details, see [Managing connections](mdm-enrollment-of-windows-devices.md#managing-connections) and [Collecting diagnostic logs](mdm-enrollment-of-windows-devices.md#collecting-diagnostic-logs)</p>
 </td></tr>
 </tbody>
 </table>

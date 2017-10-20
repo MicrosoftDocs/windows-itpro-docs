@@ -13,12 +13,12 @@ ms.date: 08/11/2017
 # Prepare and install Windows Defender Application Guard
 
 **Applies to:**
-- Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)
+- Windows 10 Enterprise edition, version 1709
 
 ## Prepare to install Windows Defender Application Guard 
 Before you can install and use Windows Defender Application Guard, you must determine which way you intend to use it in your enterprise. You can use Application Guard in either **Standalone** or **Enterprise-managed** mode.
 
-- **Standalone mode.** Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode, you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the Application Guard in standalone mode testing scenario. <!--Need link after topic is created-->
+- **Standalone mode.** Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode, you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-wd-app-guard.md) testing scenario.
 
 - **Enterprise-managed mode.** You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to load non-enterprise domain(s) in the container.
 

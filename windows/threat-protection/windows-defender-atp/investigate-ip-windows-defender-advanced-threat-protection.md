@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 # Investigate an IP address associated with a Windows Defender ATP alert
 
@@ -22,7 +22,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -32,15 +32,22 @@ Identifying all machines in the organization that communicated with a suspected 
 
 You can find information from the following sections in the IP address view:
 
-- IP address details
+- IP worldwide, Reverse DNS names
+- Alerts related to this IP
 - IP in organization
-- Communication with IP from organization
+- Most recent observed machines with IP
 
-The IP address details section shows attributes of the IP address such as its ASN and its reverse IPs.
+## IP Worldwide and Reverse DNS names
+The IP address details section shows attributes of the IP address such as its ASN and its Reverse DNS names.
 
+## Alerts related to this IP
+The **Alerts related to this IP** section provides a list of alerts that are associated with the IP. 
+
+## IP in organization
 The **IP in organization** section provides details on the prevalence of the IP address in the organization.
 
-The **Communication with IP in organization** section provides a chronological view on the events and associated alerts that were observed on the IP address.
+## Most recent observed machines with IP
+The **Most recent observed machines with IP** section provides a chronological view on the events and associated alerts that were observed on the IP address.
 
 **Investigate an external IP:**
 

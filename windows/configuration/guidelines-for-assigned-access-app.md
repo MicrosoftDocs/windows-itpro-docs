@@ -8,7 +8,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
-ms.date: 06/29/2017
+ms.date: 10/20/2017
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -31,11 +31,7 @@ The following guidelines may help you choose an appropriate Windows app for your
 
 - Apps that are generated using the [Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) cannot be used as kiosk apps.
 
-## Guidelines for using Remote Desktop app 
 
-Kiosk apps open in full screen. When you assign [Remote Desktop](https://www.microsoft.com/store/apps/9wzdncrfj3ps) as the kiosk app, make sure the **Start connections in full screen** setting in the Remote Desktop app is set to **Off**.
-
-![Toggle Start connections in full screen to off](images/rdc.png)
 
 
 ## Guidelines for Windows apps that launch other apps

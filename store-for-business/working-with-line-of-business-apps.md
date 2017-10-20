@@ -19,29 +19,23 @@ ms.localizationpriority: high
 
 Your company or school can make line-of-business (LOB) applications available through Microsoft Store for Business or Microsoft Store for Education. These apps are custom to your school or organization – they might be internal apps, or apps specific to your school, business, or industry.
 
-Developers within your organization, or ISVs that you invite, can become LOB publishers and submit apps to Microsoft Store for your company or school. Once an LOB publisher submits an app for your company, the app is only available to your company. LOB publishers submit apps through the Windows Dev Center using the same process as all apps that are in the Store, and then can be managed or deployed using the same process as any other app that has been acquired through the Store.
+Developers within your organization, or ISVs that you invite, can become LOB publishers and submit apps to Microsoft Store for your company or school. Once an LOB publisher submits an app for your company, the app is only available to your company. LOB publishers submit apps through the Windows Dev Center using the same process as all apps that are in Microsoft Store, and then can be managed or deployed using the same process as any other app that has been acquired through Microsoft Store.
 
-One advantage of making apps available through Microsoft Store is that the app has been signed by the Store, and uses the standard Store policies. For organizations that can’t submit their application through the Windows Dev Center (for example, those needing additional capabilities or due to compliance purposes), [Sideloading](https://go.microsoft.com/fwlink/p/?LinkId=623433) is also supported in Windows 10.
+One advantage of making apps available through Microsoft Store for Business is that the app has been signed by Microsoft Store, and uses the standard Microsoft Store policies. For organizations that can’t submit their application through the Windows Dev Center (for example, those needing additional capabilities or due to compliance purposes), [Sideloading](https://go.microsoft.com/fwlink/p/?LinkId=623433) is also supported on Windows 10.
 
 ## <a href="" id="adding-lob-apps"></a>Adding LOB apps to your private store
 
-Admins and ISVs each own different parts of the process for getting LOB apps created, submitted, and deployed to your employees or students. Admins use the Store for Business portal; ISVs or devs use the Windows Dev center on MSDN. 
+Admins and ISVs each own different parts of the process for getting LOB apps created, submitted, and deployed to your employees or students. Admins use Microsoft Store for Business  or Microsoft Store for Education portal; ISVs or devs use the Windows Dev center on MSDN. 
 
 Here’s what’s involved:
-
--   The Store for Business admin invites a developer or ISV to become an LOB publisher for your company.
-
--   LOB publisher develops and submits app to the Store, tagging the app so it is only available to your company.
-
--   The Store for Business admin accepts the app and can distribute the app to employees in your company.
+-   Microsoft Store for Business admin invites a developer or ISV to become an LOB publisher for your company.
+-   LOB publisher develops and submits app to Microsoft Store, tagging the app so it is only available to your company.
+-   Microsoft Store for Business admin accepts the app and can distribute the app to employees in your company.
 
 You'll need to set up:
-
 -   Your company needs to be signed up with Microsoft Store for Business or Microsoft Store for Education.
-
 -   LOB publishers need to have an active developer account. To learn more about account options, see [Ready to sign up](https://go.microsoft.com/fwlink/p/?LinkId=623432).
-
--   LOB publishers need to have an app in the Store, or have an app ready to submit to the Store.
+-   LOB publishers need to have an app in Microsoft Store, or have an app ready to submit to the Store.
 
 ## <a href="" id="add-lob-publisher"></a>Add an LOB publisher (Admin)
 
@@ -49,7 +43,7 @@ Admins need to invite developer or ISVs to become an LOB publisher.
 
 **To invite a developer to become an LOB publisher**
 
-1.  Sign in to the [Microsoft Store for Business]( https://go.microsoft.com/fwlink/p/?LinkId=623531).
+1.  Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com).
 2.  Click **Manage**, click **Permissions**, and then choose **Line-of-business publishers**.
 3.  On the Line-of business publishers page, click **Invite** to send an email invitation to a developer.
  >[!Note]
@@ -84,7 +78,7 @@ After an app is published and available in the Store, ISVs publish an updated ve
 For more information, see [Organizational licensing options]( https://go.microsoft.com/fwlink/p/?LinkId=708615) and [Distributing LOB apps to enterprises](https://go.microsoft.com/fwlink/p/?LinkId=627543).<br>
  
  >[!Note]
- > In order to get the LOB app, the organization must be located in a [supported market](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
+ > In order to get the LOB app, the organization must be located in a [supported market](https://docs.microsoft.com/microsoft-store/microsoft-store-for-business-overview#supported-markets), and you must not have excluded that market when submitting your app.
 
 ## <a href="" id="add-lob-app-to-inventory"></a>Add app to inventory (admin)
 
@@ -92,25 +86,12 @@ After an ISV submits the LOB app for your company or school, someone with Micros
 
 **To add the LOB app to your inventory**
 
-1.  Sign in to the Store for Business.
-2.  Click **Manage**, click **Apps & Software**, and then choose **New LOB apps**.
+1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com).
+2.  Click **Manage**, click **Products & services**, and then choose **New LOB apps**.
 3.  Click the ellipses under **Action** for the app you want to add to your inventory, and then choose **Add to inventory**.
 
 After you add the app to your inventory, you can choose how to distribute the app. For more information, see:
-
--   [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-windows-store-for-business.md)
-
+-   [Distribute apps to your employees from the Microsoft Store for Business](distribute-apps-to-your-employees-microsoft-store-for-business.md)
 -   [Distribute apps from your private store](distribute-apps-from-your-private-store.md)
-
 -   [Assign apps to employees](assign-apps-to-employees.md)
-
 -   [Distribute offline apps](distribute-offline-apps.md)
-
- 
-
- 
-
-
-
-
-

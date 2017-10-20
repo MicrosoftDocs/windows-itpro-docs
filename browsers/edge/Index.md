@@ -20,7 +20,7 @@ ms.localizationpriority: high
 
 Microsoft Edge is the new, default web browser for Windows 10, helping you to experience modern web standards, better performance, improved security, and increased reliability. Microsoft Edge also introduces new features like Web Note, Reading View, and Cortana that you can use along with your normal web browsing abilities.
 
-Microsoft Edge lets you stay up-to-date through the Windows Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
+Microsoft Edge lets you stay up-to-date through the Microsoft Store and to manage your enterprise through Group Policy or your mobile device management (MDM) tools.
 
 >[!Note]
 >For more info about the potential impact of using Microsoft Edge in a large organization, you can download an infographic from here: [Total Economic Impact of Microsoft Edge: Infographic](https://www.microsoft.com/download/details.aspx?id=55956). For a detailed report that provides you with a framework to evaluate the potential financial impact of adopting Microsoft Edge within your organization, you can download the full study here: [Total Economic Impact of Microsoft Edge: Forrester Study](https://www.microsoft.com/download/details.aspx?id=55847).
@@ -55,7 +55,7 @@ However, if you're running web apps that continue to use:
 
 * legacy document modes
 
-You'll need to keep running them using IE11. If you don't have IE11 installed anymore, you can download it from the Windows Store or from the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956). Alternatively, you can also use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. For info about Enterprise Mode and Edge, see [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md).
+You'll need to keep running them using IE11. If you don't have IE11 installed anymore, you can download it from the Microsoft Store or from the [Internet Explorer 11 download page](https://go.microsoft.com/fwlink/p/?linkid=290956). Alternatively, you can also use Enterprise Mode with Microsoft Edge to transition only the sites that need these technologies to load in IE11. For info about Enterprise Mode and Edge, see [Use Enterprise Mode to improve compatibility](emie-to-improve-compatibility.md).
 
 ## Related topics
 

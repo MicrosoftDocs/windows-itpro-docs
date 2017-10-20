@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: high
+ms.author: lizross
 ---
 
 # Test scenario 3 - Set a reminder for a specific location using Cortana at work

@@ -89,14 +89,14 @@ Students will receive an email with a link that will install the app on their PC
 
 ![Email with Get the app link](images/minecraft-student-install-email.png)
 
-1. Click **Get the app** to start the app install in Windows Store app. 
-2. In Windows Store app, click **Install**. 
+1. Click **Get the app** to start the app install in Microsoft Store app. 
+2. In Microsoft Store app, click **Install**. 
 
-     ![Windows Store app with Minecraft page](images/minecraft-in-windows-store-app.png)
+     ![Microsoft Store app with Minecraft page](images/minecraft-in-windows-store-app.png)
 
-      After installing the app, students can find Minecraft: Education Edition in Windows Store app under **My Library**.
+      After installing the app, students can find Minecraft: Education Edition in Microsoft Store app under **My Library**.
 
-    ![Windows Store app showing access to My Library](images/minecraft-private-store.png) 
+    ![Microsoft Store app showing access to My Library](images/minecraft-private-store.png) 
 
       When students click **My Library** they'll find apps assigned to them.
 
@@ -113,17 +113,17 @@ Download for others allows teachers or IT admins to download a packages that the
 - Windows 10 (at least version 1511) is required for PCs running Minecraft: Education Edition.
 
 #### Check for updates
-Minecraft: Education Edition will not install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Windows Store apps. 
+Minecraft: Education Edition will not install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Microsoft Store apps. 
 
 **To check for app updates**
-1. Start Windows Store app on the PC (click **Start**, and type **Store**).
+1. Start Microsoft Store app on the PC (click **Start**, and type **Store**).
 2. Click the account button, and then click **Downloads and updates**.
 
-      ![Windows Store app showing access to My Library](images/minecraft-private-store.png)
+      ![Microsoft Store app showing access to My Library](images/minecraft-private-store.png)
       
 3. Click **Check for updates**, and install all available updates. 
 
-      ![Windows Store app showing access to My Library](images/mc-check-for-updates.png)
+      ![Microsoft Store app showing access to My Library](images/mc-check-for-updates.png)
       
 4. Restart the computer before installing Minecraft: Education Edition. 
    
@@ -132,7 +132,7 @@ You'll download a .zip file, extract the files, and then use one of the files to
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**.
 
-    ![Windows Store app showing access to My Library](images/mc-dnld-others-teacher.png)
+    ![Microsoft Store app showing access to My Library](images/mc-dnld-others-teacher.png)
  
 2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
 3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  

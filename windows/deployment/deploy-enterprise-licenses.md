@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 08/23/2017
+ms.date: 10/10/2017
 author: greg-lindsay
 ---
 
@@ -22,11 +22,21 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 
 If you are an EA customer with an existing Office 365 tenant, use the following steps to enable Windows 10 Subscription licenses on your existing tenant:
 
-1.	Work with your reseller to place an order for $0 SKU. There are two SKUs available, depending on their current Windows Enterprise SA license:<BR>
+1.	Work with your reseller to place an order for one $0 SKU per user. There are two SKUs available, depending on their current Windows Enterprise SA license:<BR>
     a.	**AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3<BR>
     b.	**AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5<BR>
 2.	After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
 3.	The admin can now assign subscription licenses to users.
+
+>Use the following process if you need to update contact information and retrigger activation in order to resend the activation email:
+
+1. Sign in to the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+2. Click on **Subscriptions**.
+3. Click on **Online Services Agreement List**.
+4. Enter your agreement number, and then click **Search**.
+5. Click the **Service Name**.
+6. In the **Subscription Contact** section, click the name listed under **Last Name**.
+7. Update the contact information, then click **Update Contact Details**. This will trigger a new email.
 
 Also in this article:
 - [Explore the upgrade experience](#explore-the-upgrade-experience): How to upgrade devices using the deployed licenses.
@@ -74,9 +84,9 @@ The following methods are available to assign licenses:
 
 Now that your subscription has been established and Windows 10 Enterprise E3 or E5 licenses have been assigned to users, the users are ready to upgrade their devices running Windows 10 Pro, version 1703 edition to Windows 10 Enterprise edition. So what will the users experience? How will they upgrade their devices?
 
-### Step 1: Join users’ devices to Azure AD
+### Step 1: Join Windows 10 Pro devices to Azure AD
 
-Users can join a device to Azure AD the first time they start the device (during setup), or they can join a device that they already use running Windows 10 Pro, version 1703.
+Users can join a Windows 10 Pro device to Azure AD the first time they start the device (during setup), or they can join a device that they already use running Windows 10 Pro, version 1703.
 
 **To join a device to Azure AD the first time the device is started**
 
@@ -125,7 +135,18 @@ Now the device is Azure AD joined to the company’s subscription.
 
 Now the device is Azure AD joined to the company’s subscription.
 
-### Step 2: Sign in using Azure AD account
+### Step 2: Verify that Pro edition is activated
+
+Windows 10 Pro must be successfully activated in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 7a**.
+
+<span id="win-10-pro-activated"/>
+<img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
+<BR>**Figure 7a - Windows 10 Pro activation in Settings** <BR>
+
+Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled. 
+
+
+### Step 3: Sign in using Azure AD account
 
 Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account, as illustrated in **Figure 8**. The Windows 10 Enterprise E3 or E5 license associated with the user will enable Windows 10 Enterprise edition capabilities on the device.
 
@@ -133,7 +154,7 @@ Once the device is joined to your Azure AD subscription, the user will sign in b
 
 **Figure 8. Sign in by using Azure AD account**
 
-### Step 3: Verify that Enterprise edition is enabled
+### Step 4: Verify that Enterprise edition is enabled
 
 You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 9**.
 

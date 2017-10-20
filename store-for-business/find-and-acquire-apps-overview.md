@@ -24,7 +24,7 @@ Use the Microsoft Store for Business and Education to find apps for your organiz
 
 | Topic | Description |
 | ----- | ----------- |
-| [Apps in the Microsoft Store for Business and Education](apps-in-windows-store-for-business.md) | Store for Business and Education has thousands of apps from many different categories. |
-| [Acquire apps in the Microsoft Store for Business and Education](acquire-apps-windows-store-for-business.md) | You can acquire apps from the Microsoft Store for Business and Education for your employees. |
+| [Apps in the Microsoft Store for Business and Education](apps-in-microsoft-store-for-business.md) | Store for Business and Education has thousands of apps from many different categories. |
+| [Acquire apps in the Microsoft Store for Business and Education](acquire-apps-microsoft-store-for-business.md) | You can acquire apps from the Microsoft Store for Business and Education for your employees. |
 | [Working with line-of-business apps](working-with-line-of-business-apps.md) | Your company can make line-of-business (LOB) applications available through Microsoft Store for Business and Education. These apps are custom to your company – they might be internal business apps, or apps specific to your business or industry. |
 

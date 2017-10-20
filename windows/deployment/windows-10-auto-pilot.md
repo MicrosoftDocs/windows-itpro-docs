@@ -39,7 +39,7 @@ Windows AutoPilot allows you to:
 ### Prerequisites
 
 * [Devices must be registered to the organization](#registering-devices-to-your-organization)
-* Devices have to be pre-installed with Windows 10, version 1703 or later
+* Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
 * Devices must have access to the internet
 * [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
 * Microsoft Intune or other MDM services to manage your devices
@@ -80,6 +80,7 @@ Options available for Windows 10, version 1703:
 * Skipping Work or Home usage selection (*Automatic*)
 * Skipping OEM registration, OneDrive and Cortana (*Automatic*)
 * Skipping privacy settings
+* Skipping EULA (*staring with Windows 10, version 1709*)
 * Preventing the account used to set-up the device from getting local administrator permissions
 
 We are working to add additional options to further personalize and streamline the setup experience in future releases.
@@ -101,4 +102,4 @@ In order for your devices to be auto-enrolled into MDM management, MDM auto-enro
 >[!NOTE]
 >MDM auto-enrollment requires an Azure AD Premium P1 or P2 subscription.
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-auto-pilot.md). 

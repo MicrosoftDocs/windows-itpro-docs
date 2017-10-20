@@ -1,7 +1,24 @@
 # [Threat protection](index.md)
-## [Windows Defender Security Center](windows-defender-security-center\windows-defender-security-center.md)
+
+
+## [The Windows Defender Security Center app](windows-defender-security-center\windows-defender-security-center.md)
+### [Customize the Windows Defender Security Center app for your organization](windows-defender-security-center\wdsc-customize-contact-information.md)
+### [Hide Windows Defender Security Center app notifications](windows-defender-security-center\wdsc-hide-notifications.md)
+### [Virus and threat protection](windows-defender-security-center\wdsc-virus-threat-protection.md)
+### [Device performance and health](windows-defender-security-center\wdsc-device-performance-health.md)
+### [Firewall and network protection](windows-defender-security-center\wdsc-firewall-network-protection.md)
+### [App and browser control](windows-defender-security-center\wdsc-app-browser-control.md)
+### [Family options](windows-defender-security-center\wdsc-family-options.md)
+
+
+
+
+
+
 ## [Windows Defender Advanced Threat Protection](windows-defender-atp\windows-defender-advanced-threat-protection.md)
 ### [Minimum requirements](windows-defender-atp\minimum-requirements-windows-defender-advanced-threat-protection.md)
+### [Validate licensing and complete setup](windows-defender-atp\licensing-windows-defender-advanced-threat-protection.md)
+#### [Troubleshoot onboarding and error messages](windows-defender-atp\troubleshoot-onboarding-error-messages-windows-defender-advanced-threat-protection.md)
 ### [Preview features](windows-defender-atp\preview-windows-defender-advanced-threat-protection.md)
 ### [Data storage and privacy](windows-defender-atp\data-storage-privacy-windows-defender-advanced-threat-protection.md)
 ### [Assign user access to the portal](windows-defender-atp\assign-portal-access-windows-defender-advanced-threat-protection.md)
@@ -124,6 +141,7 @@
 #### [Enable SIEM integration](windows-defender-atp\enable-siem-integration-windows-defender-advanced-threat-protection.md)
 #### [Enable Threat intel API](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
+#### [Enable Security Analytics security controls](windows-defender-atp\enable-security-analytics-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender ATP settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender ATP service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 ### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
@@ -135,6 +153,7 @@
 ### [Windows Defender AV on Windows Server 2016](windows-defender-antivirus\windows-defender-antivirus-on-windows-server-2016.md)
 
 ### [Windows Defender Antivirus compatibility](windows-defender-antivirus\windows-defender-antivirus-compatibility.md)
+#### [Use limited periodic scanning in Windows Defender AV](windows-defender-antivirus\limited-periodic-scanning-windows-defender-antivirus.md)
 
 
 ### [Evaluate Windows Defender Antivirus protection](windows-defender-antivirus\evaluate-windows-defender-antivirus.md)
@@ -235,16 +254,18 @@
 ###[Frequently Asked Questions - Windows Defender Application Guard](windows-defender-application-guard\faq-wd-app-guard.md)
 
 ## [Protect your enterprise data using Windows Information Protection (WIP)](windows-information-protection\protect-enterprise-data-using-wip.md)
-### [Create a Windows Information Protection (WIP) policy](windows-information-protection\overview-create-wip-policy.md)
+### [Create a Windows Information Protection (WIP) policy using Microsoft Intune](windows-information-protection\overview-create-wip-policy.md)
 #### [Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune.md)
 ##### [Deploy your Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune.md)
 ##### [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the classic console for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune.md)
-#### [Create a Windows Information Protection (WIP) with enrollment policy using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)
+#### [Create a Windows Information Protection (WIP) policy with MDM using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-intune-azure.md)
 ##### [Deploy your Windows Information Protection (WIP) policy using the Azure portal for Microsoft Intune](windows-information-protection\deploy-wip-policy-using-intune-azure.md)
 ##### [Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune](windows-information-protection\create-vpn-and-wip-policy-using-intune-azure.md)
+#### [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-mam-intune-azure.md)
+### [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](windows-information-protection\overview-create-wip-policy-sccm.md)
 #### [Create and deploy a Windows Information Protection (WIP) policy using System Center Configuration Manager](windows-information-protection\create-wip-policy-using-sccm.md)
-#### [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
-#### [Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](windows-information-protection\wip-app-enterprise-context.md)
+### [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)
+### [Determine the Enterprise Context of an app running in Windows Information Protection (WIP)](windows-information-protection\wip-app-enterprise-context.md)
 ### [Mandatory tasks and settings required to turn on Windows Information Protection (WIP)](windows-information-protection\mandatory-settings-for-wip.md)
 ### [Testing scenarios for Windows Information Protection (WIP)](windows-information-protection\testing-scenarios-for-wip.md)
 ### [Limitations while using Windows Information Protection (WIP)](windows-information-protection\limitations-with-wip.md)
