@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 10/19/2017
+ms.date: 10/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -16,12 +16,17 @@ ms.localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
-## Octoboer 2017
+## October 2017
 
 New or changed topic | Description |
 --- | ---
 [Install apps on your Microsoft Surface Hub](install-apps-on-surface-hub.md) | Updated instructions to use Windows Team device family
+[Hybrid deployment](hybrid-deployment-surface-hub-device-accounts.md) | Updated the instructions for Exchange on-premises 
+[Create a device account using UI](create-a-device-account-using-office-365.md) | Updated the instructions
 [Differences between Surface Hub and Windows 10 Enterprise](differences-between-surface-hub-and-windows-10-enterprise.md)  | Clarified user sign-in on Surface Hub
+[Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | Removed **How to control and manage Whiteboard to Whiteboard collaboration** due to issues with the EnterpriseModernAppmanagement CSP losing state during End Session. 
+| [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md) | Removed settings for managing Whiteboard collaboration. |
+
 
 ## September 2017
 
@@ -56,7 +61,7 @@ New or changed topic | Description
 | New or changed topic | Description |
 | --- | --- |
 | [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md) | New |
-| [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md#whiteboard-collaboration-settings) | Added settings for managing Whiteboard collaboration |
+| [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md) | Added settings for managing Whiteboard collaboration |
 
 ## RELEASE: Windows 10, version 1703
 

@@ -23,7 +23,7 @@ With Windows 10 version 1703 (also known as the Creator’s Update), both Window
 Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
 
 See the following topics in this article:
-- [The evolution of Windows 10 deployment](#the-evolution-of-deployment): 
+- [The evolution of Windows 10 deployment](#the-evolution-of-deployment): A short history of Windows deployment.
 - [Requirements](#requirements): Prerequisites to use the Windows 10 Enterprise subscription model.
 - [Benefits](#benefits): Advantages of Windows 10 Enterprise + subscription-based licensing.
 - [How it works](#how-it-works): A summary of the subscription-based licensing option.
