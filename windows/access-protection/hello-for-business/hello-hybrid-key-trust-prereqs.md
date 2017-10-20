@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/09/2017
+ms.date: 10/20/2017
 ---
 # Hybrid Windows Hello for Business Prerequisites
 
@@ -30,11 +30,11 @@ The distributed systems on which these technologies were built involved several 
 * [Device Registration](#device-registration)
   
 ## Directories ##
-Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2.
+Hybrid Windows Hello for Business needs two directories: on-premises Active Directory and a cloud Azure Active Directory.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2. The 
 
 A hybrid Windows Hello for Busines deployment needs an Azure Active Directory subscription.  The hybrid key trust deployment, may not require Azure Active Directory premium subscription.
 
-Windows Hello for Business can be deployed in any environment with Windows Server 2008 R2 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory schema.  In addition to the Windows Server 2016 Active Directory schema, key trust deployments need an adequate number of Windows Server 2016 domain controllers at each site where users authenticate using Windows Hello for Business.
+You can deploye Windows Hello for Business in any environment with Windows Server 2008 R2 or later domain controllers.  Azure device registration and Windows Hello for Business require the Windows Server 2016 Active Directory schema.  In addition to the Windows Server 2016 Active Directory schema, key trust deployments need an adequate number of Windows Server 2016 domain controllers at each site where users authenticate using Windows Hello for Business.
  
 Review these requirements and those from the Windows Hello for Business planning guide and worksheet.  Based on your deployment decisions you may need to upgrade your on-premises Active Directory or your Azure Active Directory subscription to meet your needs.
 

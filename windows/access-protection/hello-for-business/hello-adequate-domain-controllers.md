@@ -17,19 +17,23 @@ ms.date: 10/09/2017
 -   Windows 10
 
 
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
+>This section only applies to Hybrid and On-premises key trust deployments.
 
-## One size does not fit all
+## How many is adequate
 
 How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2016 includes the KDC AS Requests performance counter.  You can use these counters to determine how much of a domain controllers load is due to initial Kerberos authentication.  It’s important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication—it remains unchanged.
 
-Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys.  This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2016 domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers.  Therefore, user in a key trust deployment user must authenticate to a Windows Server 2016 domain controller.
+Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys.  This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2016 domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers.  Therefore, users in a key trust deployment must authenticate to a Windows Server 2016 domain controller.
   
-Determining an adequate number of Windows Server 2016 domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with  public key trust.  What many administrators do not realize is that adding the most current version of a domain controller (in this case Windows Server 2016) to a deployment of existing domain controllers (Windows Server 2008R2 or Windows Server 2012R2) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as “piling on”.   To illustrate the “piling on” concept, consider the following scenario.
+Determining an adequate number of Windows Server 2016 domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with public key trust. What many administrators do not realize is that adding the most current version of a domain controller (in this case Windows Server 2016) to a deployment of existing domain controllers (Windows Server 2008R2 or Windows Server 2012R2) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as “piling on”.   To illustrate the “piling on” concept, consider the following scenario.
  
 Consider a controlled environment where there are 1000 client computers and the authentication load of these 1000 client computers is evenly distributed across 10 domain controllers in the environment.  The Kerberos AS requests load would look something like the following.
 
 ![dc-chart1](images/dc-chart1.png)
+|: Kerberos AS Requests :|
+|     |:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|:DC1:|
+|:WHFB|:0:|:0:|:0:|:0:|:0:|:0:|:0:|:0:|:0:|:0:|:0:|:0:|
+|:Pasword|:100:|100:|100:|100:|100:|100:|100:|100:|100:|100:|100:|1000:|
 
 The environment changes.  The first change includes DC1 upgraded to Windows Server 2016 to support Windows Hello for Business key-trust authentication. Next, 100 clients enroll for Windows Hello for Business using the public key trust deployment.   Given all other factors stay constant, the authentication would now look like the following.
 
