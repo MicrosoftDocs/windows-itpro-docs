@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 10/11/2017
+ms.date: 10/20/2017
 ---
 
 # Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies
