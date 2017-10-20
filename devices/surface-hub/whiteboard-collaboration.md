@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 07/13/2017
+ms.date: 10/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -54,22 +54,6 @@ After you’re done, you can export a copy of the Whiteboard collaboration for y
 >[!TIP]
 >When you start a collaboration session, Whiteboard creates a folder named **Whiteboard App Data** in your OneDrive for Business to store your shared whiteboards. After some collaboration sessions, this folder may continue to sync or process changes indefinitely. You can fix this by choosing to not sync the **Whiteboard App Data** folder to your device. Disabling sync for this folder won't limit your ability to use Whiteboard for collaboration sessions.
 
-## How to control and manage Whiteboard to Whiteboard collaboration
-
-Whiteboard has settings that can be managed via MDM. These allow you to disable or enable collaboration functionality in case your organization can’t meet the prerequisites or you’d rather not have your organization use this feature. 
-
-The value for each setting can be True or False. The default value for each setting is False. 
- 
-The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/` and the string from the OMA URI column in the table. For example, the full OMA URI for **Enable sign-in** is `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableSignIn`.
-
-| Setting | Details | OMA URI | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
-| --- | ---- | --- |---- | --- | --- |
-| Enable sign-in | Users can sign in and authenticate | EnableSignIn  | Yes <br> [Use a custom policy.](manage-settings-with-mdm-for-surface-hub.md#example-intune)  |  Yes.<br> [Use a custom setting.](manage-settings-with-mdm-for-surface-hub.md#example-sccm) | Yes |
-| Disable sign-in | Users are unable to sign in and access collaboration or education features | DisableSignIn  | Yes <br> [Use a custom policy.](manage-settings-with-mdm-for-surface-hub.md#example-intune)  |  Yes.<br> [Use a custom setting.](manage-settings-with-mdm-for-surface-hub.md#example-sccm) | Yes |
-| Disable Collaboration | Users can sign in but not create or join collaborative sessions | DisableCollaboration  | Yes <br> [Use a custom policy.](manage-settings-with-mdm-for-surface-hub.md#example-intune)  |  Yes.<br> [Use a custom setting.](manage-settings-with-mdm-for-surface-hub.md#example-sccm) | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
-
-Whiteboard also has other MDM settings that can be managed and set for defaults, exporting, and sharing. You can see these additional settings in [Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md#whiteboard-collaboration-settings).
 
 
 
