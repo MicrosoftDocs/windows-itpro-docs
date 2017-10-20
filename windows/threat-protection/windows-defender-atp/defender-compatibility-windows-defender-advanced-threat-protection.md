@@ -30,7 +30,7 @@ ms.date: 10/17/2017
 
 The Windows Defender Advanced Threat Protection agent depends on Windows Defender Antivirus for some capabilities such as file scanning.
 
-You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Update Windows Defender signatures](https://support.microsoft.com/en-us/help/4027712/windows-update-windows-defender-signatures).
+You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
 If an onboarded endpoint is protected by a third-party antimalware client, Windows Defender Antivirus on that endpoint will enter into passive mode.
 

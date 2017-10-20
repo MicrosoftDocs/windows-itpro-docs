@@ -123,7 +123,7 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
 ## Windows Defender Antivirus signature updates are configured
 The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
 
-You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Update Windows Defender signatures](https://support.microsoft.com/en-us/help/4027712/windows-update-windows-defender-signatures).
+You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
 

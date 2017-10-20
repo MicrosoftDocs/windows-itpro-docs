@@ -130,6 +130,7 @@ If the deployment tools used does not indicate an error in the onboarding proces
 - [Ensure the service is set to start](#ensure-the-service-is-set-to-start)
 - [Ensure the endpoint has an Internet connection](#ensure-the-endpoint-has-an-internet-connection)
 - [Ensure that Windows Defender is not disabled by a policy](#ensure-that-windows-defender-is-not-disabled-by-a-policy)
+- [Ensure that Windows Defender Antivirus signature updates are configured](#ensure-that-windows-defender-antivirus-signature-updates-are-configured)
 
 
 ### View agent onboarding errors in the endpoint event log
@@ -264,6 +265,15 @@ If the verification fails and your environment is using a proxy to connect to th
   2. Ensure that the value ```DisableAntiSpyware``` is not present.
 
     ![Image of registry key for Windows Defender](images/atp-disableantispyware-regkey.png)
+
+### Ensure that Windows Defender Antivirus signature updates are configured
+The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
+
+You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
+
+When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
+
+For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
 
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:

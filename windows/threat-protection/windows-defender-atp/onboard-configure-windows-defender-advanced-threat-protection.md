@@ -1,7 +1,7 @@
 ---
 title: Onboard endpoints and set up the Windows Defender ATP user access
 description: Set up user access in Azure Active Directory and use Group Policy, SCCM, or do manual registry changes to onboard endpoints to the service.
-keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy
+keywords: onboarding, windows defender advanced threat protection onboarding, windows atp onboarding, sccm, group policy, mdm, local script
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -39,6 +39,16 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
   - Secure Productive Enterprise E5 (SPE E5) which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
+
+## Windows Defender Antivirus configuration requirement
+The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
+
+You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
+
+When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
+
+For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
+
 
 ## In this section
 Topic | Description
