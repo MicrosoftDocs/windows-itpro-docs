@@ -18,6 +18,9 @@ ms.date: 10/11/2017
 
 Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that run on Windows 10 Enterprise edition and Windows Server. When these features are configured together, Windows Defender Device Guard will lock a device down so that it can only run trusted applications that you define in your code integrity policies. If the app isn’t trusted, it can’t run, period. 
 
+> [!NOTE]
+> Beginning with Windows 10, version 1709, configurable code integrity policies are known as Windows Defender Application Control.
+
 With hardware that meets basic qualifications, Windows Defender Device Guard can also use virtualization-based security to isolate the Code Integrity service and run it alongside the Windows kernel in a hypervisor-protected container. Even if an attacker manages to get control of the Windows kernel itself, the ability to run malicious executable code is much less likely. 
 
 This guide explores the individual features in Windows Defender Device Guard as well as how to plan for, configure, and deploy them. It includes:

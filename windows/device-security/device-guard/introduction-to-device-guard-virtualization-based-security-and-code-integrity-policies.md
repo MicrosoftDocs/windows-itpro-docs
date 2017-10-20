@@ -17,9 +17,12 @@ ms.date: 10/11/2017
 
 With thousands of new malicious files created every day, using traditional methods like antivirus solutions—signature-based detection to fight against malware—provides an inadequate defense against new attacks. Windows Defender Device Guard changes from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. You designate these trusted apps by creating *code integrity policies*.
 
+> [!NOTE]
+> Beginning with Windows 10, version 1709, configurable code integrity policies are known as Windows Defender Application Control.
+
 On hardware that includes CPU virtualization extensions (called "Intel VT-x" or "AMD-V") and second-level address translation (SLAT), Windows Defender Device Guard can also use Virtualization Based Security (VBS) to run the Code Integrity service alongside the kernel in a Windows hypervisor-protected container, which increases the security of code integrity policies. On hardware that includes input/output memory management units (IOMMUs), Windows Defender Device Guard can also help protect against DMA attacks. The following table provides more information about how Windows Defender Device Guard and these hardware features can help protect against various threats.
 
-When configurable code integrity policies and hardware-based security features are combined, Windows Defender Device Guard provides a locked-down configuration for computers. But they can also be deployed independently. To help distinguish the value of each offering, beginning with Windows 10 version 1709, configurable code integrity policies are known as Windows Defender Application Control. The virtualization-based security of code integrity policies is part of Windows Defender Exploit Guard. Windows Defender Device Guard is the locked-down configuration you can achieve by using Windows Defender Application Control, Windows Defender Exploit Guard, and other Hardware and BIOS configuration options.    
+When Windows Defender Application Control and hardware-based security features are combined, Windows Defender Device Guard provides a locked-down configuration for computers. 
 
 ## How Windows Defender Device Guard features help protect against threats
 
@@ -37,9 +40,9 @@ In this guide, you learn about the individual features found within Windows Defe
 
 ## New and changed functionality
 
-As of Windows 10, version 1709, configurable code integrity policies are known as Windows Defender Application Control. 
+Beginning with Windows 10, version 1709, configurable code integrity policies are known as Windows Defender Application Control. 
 
-As of Windows 10, version 1703, you can use code integrity policies not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). For more information, see [Use a code integrity policy to control specific plug-ins, add-ins, and modules](deploy-code-integrity-policies-steps.md#plug-ins).
+Beginning with Windows 10, version 1703, you can use code integrity policies not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser). For more information, see [Use a code integrity policy to control specific plug-ins, add-ins, and modules](deploy-code-integrity-policies-steps.md#plug-ins).
 
 ## Tools for managing Windows Defender Device Guard features
 
