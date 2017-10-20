@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Configure endpoints using System Center Configuration Manager
@@ -24,7 +24,7 @@ ms.date: 09/05/2017
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - System Center 2012 Configuration Manager or later versions
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
 
@@ -48,7 +48,7 @@ You can use existing System Center Configuration Manager functionality to create
 
 1. Open the SCCM configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** on the **Navigation pane**.
+    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
 
     b. Select **System Center Configuration Manager 2012/2012 R2/1511/1602**, click **Download package**, and save the .zip file.
 
@@ -120,7 +120,7 @@ For security reasons, the package used to offboard endpoints will expire 30 days
 
 1.	Get the offboarding package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a. Click **Endpoint management** on the **Navigation pane**.
+    a. Click **Endpoint management** > **Clients** on the **Navigation pane**.
 
     b. Click the **Endpoint offboarding** section.
 

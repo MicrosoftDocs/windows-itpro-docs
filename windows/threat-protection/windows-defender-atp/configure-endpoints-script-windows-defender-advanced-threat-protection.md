@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Configure endpoints using a local script
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
@@ -35,7 +35,7 @@ You can also manually onboard individual endpoints to Windows Defender ATP. You 
 ## Onboard endpoints
 1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Windows Defender ATP portal](https://securitycenter.windows.com/):
 
-    a.  Click **Endpoint management** on the **Navigation pane**.
+    a.  Click **Endpoint management** > **Clients** on the **Navigation pane**.
 
     b.  Select **Local Script**, click **Download package** and save the .zip file.
 

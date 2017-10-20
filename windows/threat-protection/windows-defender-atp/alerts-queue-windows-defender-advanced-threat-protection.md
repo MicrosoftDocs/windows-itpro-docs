@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # View and organize the Windows Defender Advanced Threat Protection Alerts queue
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-alertsq-abovefoldlink) 
 
@@ -74,6 +74,8 @@ Reviewing the various alerts and their severity can help you decide on the appro
 **Detection source**</br>
 - Windows Defender AV
 - Windows Defender ATP
+- Windows Defender SmartScreen
+- Others
 
 >[!NOTE]
 >The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender as the default real-time protection antimalware product.
@@ -92,7 +94,7 @@ Selecting an alert brings up the **Alert management** pane where you can manage 
 You can take immediate action on an alert and see details about an alert in the **Alert management** pane:
 
 - Change the status of an alert from new, to in progress, or resolved.
-- Specify the alert classification from true alert or false alert.
+- Specify the alert classification from true alert or false alert by selecting **In progress**.
   Selecting true alert displays the **Determination** drop-down list to provide additional information about the true alert:
     - APT
     - Malware

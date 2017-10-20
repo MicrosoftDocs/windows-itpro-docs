@@ -84,11 +84,11 @@ Table 1. Google App replacements
 
 It may be that you will decide to replace Google Apps after you deploy Windows devices. For more information on making this decision, see the [Select cloud services migration strategy](#select-cs-migrationstrat) section of this guide.
 
-**Find the same or similar apps in the Windows Store**
+**Find the same or similar apps in the Microsoft Store**
 
-In many instances, software vendors will create a version of their app for multiple platforms. You can search the Windows Store to find the same or similar apps to any apps not identified in the [Select Google Apps replacements](#select-googleapps) section.
+In many instances, software vendors will create a version of their app for multiple platforms. You can search the Microsoft Store to find the same or similar apps to any apps not identified in the [Select Google Apps replacements](#select-googleapps) section.
 
-In other instances, the offline app does not have a version written for the Windows Store or is not a web app. In these cases, look for an app that provides similar functions. For example, you might have a graphing calculator offline Android app published on the Chrome OS, but the software publisher does not have a version for Windows devices. Search the Windows Store for a graphing calculator app that provides similar features and functionality. Use that Windows Store app as a replacement for the graphing calculator offline Android app published on the Chrome OS.
+In other instances, the offline app does not have a version written for the Microsoft Store or is not a web app. In these cases, look for an app that provides similar functions. For example, you might have a graphing calculator offline Android app published on the Chrome OS, but the software publisher does not have a version for Windows devices. Search the Microsoft Store for a graphing calculator app that provides similar features and functionality. Use that Microsoft Store app as a replacement for the graphing calculator offline Android app published on the Chrome OS.
 
 Record the Windows app that replaces the Chromebook app in your app portfolio.
 

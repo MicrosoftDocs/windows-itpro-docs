@@ -662,6 +662,8 @@
 ### [TPM recommendations](tpm/tpm-recommendations.md)
 
 ## [Windows security baselines](windows-security-baselines.md)
+### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
+### [Get support](get-support-for-security-baselines.md)
 
 ## [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 

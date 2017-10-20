@@ -7,12 +7,15 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date:  10/17/2017
 ---
 
 # CallAndMessagingEnhancement (Windows Configuration Designer reference)
 
 Use to configure call origin and blocking apps.
+
+>[!IMPORTANT]
+>These settings are intended to be used only by manufacturers, mobile operators, and solution providers when configuring devices, and are not intended for use by administrators in the enterprise.
 
 ## Applies to
 

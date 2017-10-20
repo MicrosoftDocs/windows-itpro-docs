@@ -8,19 +8,19 @@ author: brianlic-msft
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.date: 10/17/2017
 ---
 
 # Windows 10 and Windows 10 Mobile
 
 Find the latest how to and support content that IT pros need to evaluate, plan, deploy, secure and manage devices running Windows 10 or Windows 10 Mobile.
 
-<center>
-<iframe src="https://channel9.msdn.com/Events/Ignite/Australia-2017/WIN212/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/rsiyZEAnap8" frameborder="0" allowfullscreen></iframe></center>
 
 <table border="0" width="100%" align='center'>
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
-      <a href="/windows/whats-new/whats-new-windows-10-version-1703"> 
+      <a href="/windows/whats-new/whats-new-windows-10-version-1709"> 
         <img src="images/whats-new-highlight.png" width='142' height='142' alt="Read what's new in Windows 10" title="whats new icon" />
       </a>
       <br/>What's New?
@@ -73,18 +73,14 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
 </table>
 
 ## Get to know Windows as a Service (WaaS)
-<table border="0" width="100%" align='center'>
-<tr>
-<td valign=top style='width:40%; border:0;'><center><img style='border:thin silver solid' src="images/w10-WaaS-poster.png" alt="Get to know Windows as a Service (WaaS) " title="Get to know Windows as a Service (WaaS)" /></center></td>
-  <td valign=top style='width:60%; border:0;'>The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
+
+![Get to know Windows as a Service (WaaS)](images/w10-WaaS-poster.png)
+
+The Windows 10 operating system introduces a new way to build, deploy, and service Windows: Windows as a service. Microsoft has reimagined each part of the process, to simplify the lives of IT pros and maintain a consistent Windows 10 experience for its customers.
 
   These improvements focus on maximizing customer involvement in Windows development, simplifying the deployment and servicing of Windows client computers, and leveling out the resources needed to deploy and maintain Windows over time.
   
-  - <a href='/windows/deployment/update/waas-overview'>Read more about Windows as a Service</a>
-
-  </td>
-</tr>
-<table>
+  - [Read more about Windows as a Service](/windows/deployment/update/waas-overview)
 
 ## Related topics
 [Windows 10 TechCenter](https://go.microsoft.com/fwlink/?LinkId=620009)

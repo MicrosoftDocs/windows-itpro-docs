@@ -19470,7 +19470,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -19494,7 +19494,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -19518,7 +19518,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31512,7 +31512,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31536,7 +31536,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31560,7 +31560,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31608,7 +31608,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31632,7 +31632,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31656,7 +31656,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31704,7 +31704,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31728,7 +31728,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31752,7 +31752,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31800,7 +31800,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31824,7 +31824,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31848,7 +31848,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31896,7 +31896,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31920,7 +31920,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31944,7 +31944,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31992,7 +31992,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32016,7 +32016,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32040,7 +32040,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32088,7 +32088,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32112,7 +32112,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32136,7 +32136,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32184,7 +32184,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32208,7 +32208,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32232,7 +32232,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32280,7 +32280,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32304,7 +32304,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32328,7 +32328,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32376,7 +32376,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32400,7 +32400,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32424,7 +32424,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32472,7 +32472,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32496,7 +32496,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32520,7 +32520,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32568,7 +32568,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32592,7 +32592,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32616,7 +32616,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32856,7 +32856,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32880,7 +32880,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32904,7 +32904,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -35902,7 +35902,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Windows Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
+            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Microsoft Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -41148,7 +41148,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -41172,7 +41172,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -41196,7 +41196,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -53941,7 +53941,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -53965,7 +53965,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -53989,7 +53989,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54036,7 +54036,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54060,7 +54060,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54084,7 +54084,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54131,7 +54131,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54155,7 +54155,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54179,7 +54179,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54226,7 +54226,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54250,7 +54250,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54274,7 +54274,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54321,7 +54321,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54345,7 +54345,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54369,7 +54369,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54416,7 +54416,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54440,7 +54440,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54464,7 +54464,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54511,7 +54511,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54535,7 +54535,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54559,7 +54559,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54606,7 +54606,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54630,7 +54630,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54654,7 +54654,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54701,7 +54701,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54725,7 +54725,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54749,7 +54749,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54796,7 +54796,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54820,7 +54820,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54844,7 +54844,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54891,7 +54891,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54915,7 +54915,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54939,7 +54939,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54986,7 +54986,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55010,7 +55010,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55034,7 +55034,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55271,7 +55271,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55295,7 +55295,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55319,7 +55319,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -58356,7 +58356,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Windows Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
+            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Microsoft Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>

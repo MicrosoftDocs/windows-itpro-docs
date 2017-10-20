@@ -301,7 +301,7 @@ There are three scenarios for using Windows Hello for Business in Azure AD–onl
 - **Organizations that use the free tier of Azure AD**. For these organizations, Microsoft has not enabled automatic domain join to Azure AD. Organizations that have signed up for the free tier have the option to enable or disable this feature, so automatic domain join won’t be enabled unless and until the organization’s administrators decide to enable it. When that feature is enabled, devices that join the Azure AD domain by using the Connect to work or school dialog box will be automatically registered with Windows Hello for Business support, but previously joined devices will not be registered. 
 - **Organizations that have subscribed to Azure AD Premium** have access to the full set of Azure AD MDM features. These features include controls to manage Windows Hello for Business. You can set policies to disable or force the use of Windows Hello for Business, require the use of a TPM, and control the length and strength of PINs set on the device.
 
-If you want to use Windows Hello for Business with certificates, you’ll need a device registration system. That means that you set up Configuration Manager Technical Preview, Intune, or a compatible non-Microsoft MDM system and enable it to enroll devices. This is a prerequisite step to use Windows Hello for Business with certificates, no matter the IDP, because the enrollment system is responsible for provisioning the devices with the necessary certificates. 
+If you want to use Windows Hello for Business with certificates, you’ll need a device registration system. That means that you set up Configuration Manager, Microsoft Intune, or a compatible non-Microsoft MDM system and enable it to enroll devices. This is a prerequisite step to use Windows Hello for Business with certificates, no matter the IDP, because the enrollment system is responsible for provisioning the devices with the necessary certificates. 
 
 
 
@@ -316,4 +316,4 @@ If you want to use Windows Hello for Business with certificates, you’ll need a
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897).

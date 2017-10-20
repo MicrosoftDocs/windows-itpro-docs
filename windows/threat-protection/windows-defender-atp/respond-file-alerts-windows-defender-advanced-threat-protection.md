@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Take response actions on a file
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink) 
 
@@ -77,7 +77,7 @@ In the machine timeline, a new event is added for each machine where a file was 
 
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
-### Remove file from quarantine
+## Remove file from quarantine
 You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each machine where the file was quarantined.
 
 1.	Open an elevated command–line prompt on the endpoint:
@@ -136,7 +136,7 @@ When a file is being blocked on the endpoint, the following notification is disp
 
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
-### Remove file from blocked list
+## Remove file from blocked list
 1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
   - **Alerts** - Click the file links from the Description or Details in the Artifact timeline <br>
@@ -189,7 +189,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
   - Search box - select **File** from the drop–down menu and enter the file name <br>
 2. In the **Deep analysis** section of the file view, click **Submit**.
 
-![You can only submit PE files in the file details section](images/submit-file.png)
+    ![You can only submit PE files in the file details section](images/submit-file.png)
 
 >**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
 
@@ -202,10 +202,10 @@ A progress bar is displayed and provides information on the different stages of 
 
 View the deep analysis report that Windows Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
 
-You can view the comprehensive report that provides details on:
+You can view the comprehensive report that provides details on the following sections:
 
-– Observed behaviors
-– Associated artifacts
+- Behaviors
+- Observables
 
 The details provided can help you investigate if there are indications of a potential attack.
 
@@ -213,9 +213,9 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Click **See the report below**. Information on the analysis is displayed.
 
-![The deep analysis report shows detailed information across a number of categories](images/analysis-results.png)
+    ![The deep analysis report shows detailed information across a number of categories](images/analysis-results.png)
 
-### Troubleshooting deep analysis
+### Troubleshoot deep analysis
 
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 

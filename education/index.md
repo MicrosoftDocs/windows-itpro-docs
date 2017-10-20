@@ -304,25 +304,6 @@ ms.author: celested
                                 </div>
                             </li>
                             <li>
-                                <a href="http://support.microsoft.com/products/education" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
-                                                        <img src="/media/hubs/education/education-teachers-help.svg" alt="Get started for educators" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Get started for educators</h3>
-                                                    <p>Get started using Class Notebook in OneNote, create lessons and assignments, plan lessons, and more.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="http://support.office.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -334,7 +315,7 @@ ms.author: celested
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Office help and training</h3>
-                                                    <p>Discover everything you need to know about Office products.</p>
+                                                    <p>Training, tips, short videos, and tutorials to get the most out of Office.</p>
                                                 </div>
                                             </div>
                                         </div>

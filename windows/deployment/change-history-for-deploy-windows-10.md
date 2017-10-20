@@ -6,11 +6,16 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 06/28/2017
+ms.date: 10/17/2017
 ---
 
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10).
+
+## RELEASE: Windows 10, version 1709
+| New or changed topic | Description |
+|----------------------|-------------|
+| [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) | Updated the edition upgrade table to include all other Windows 10 editions previously not on the list and the supported upgrade methods for upgrade path. |
 
 ## July 2017
 | New or changed topic | Description |
