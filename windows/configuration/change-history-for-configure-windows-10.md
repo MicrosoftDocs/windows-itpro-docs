@@ -8,12 +8,18 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 09/25/2017
+ms.date: 10/20/2017
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## October 2017
+
+New or changed topic | Description
+--- | ---
+[Guidelines for choosing an app for assigned access](guidelines-for-assigned-access-app.md) | Added that Microsoft Edge is not supported for assigned access | Removed **Guidelines for using Remote Desktop app**; the behavior for Remote Desktop has changed so that it's no longer necessary to turn off **Start connections in full screen** for assigned access.
 
 
 ## RELEASE: Windows 10, version 1709
