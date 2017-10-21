@@ -30,10 +30,7 @@ The new deployment baseline helps organizations who are moving to Azure and Offi
  
 This baseline provides detailed procedures to move your environment from an on-premises only environment to a hybrid environment using Windows Hello for Business to authenticate to Azure Active Directory and to your on-premises Active Directory using a single Windows sign-in.
  
-## Federated Baseline ##
-The federated baseline helps organizations that have completed their federation with Azure Active Directory and Office 365 and enables them to introduce Windows Hello for Business into their hybrid environment.  This baseline exclusively focuses on the procedures needed to add Azure Device Registration and Windows Hello for Business to an existing hybrid deployment.
-
-Regardless of the baseline you choose, you’re next step is to familiarize yourself with the prerequisites needed for the deployment.  Many of the prerequisites will be new for organizations and individuals pursuing the new deployment baseline. Organizations and individuals starting from the federated baseline will likely be familiar with most of the prerequisites, but should validate they are using the proper versions that include the latest updates.
+You’re next step is to familiarize yourself with the prerequisites needed for the deployment.  Many of the prerequisites will be new for organizations and individuals pursuing the new deployment baseline. Organizations and individuals starting from the federated baseline will likely be familiar with most of the prerequisites, but should validate they are using the proper versions that include the latest updates.
 
 > [!div class="nextstepaction"]
 > [Prerequistes](hello-hybrid-key-trust-prereqs.md)
@@ -46,6 +43,7 @@ Regardless of the baseline you choose, you’re next step is to familiarize your
 1. Overview (*You are here*)
 2. [Prerequistes](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
-4. [Device Registration](hello-hybrid-key-trust-devreg.md)
-5. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
-6. [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
+4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
+5. [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
+6. [Configure Windows Hello for Business settings](hello-hybrid-key-whfb-settings.md)
+7. [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
