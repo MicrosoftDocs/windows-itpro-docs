@@ -28,7 +28,7 @@
 #### [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings.md)
 #### [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
 
-## [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
+### [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
 #### [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
 #### [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
 #### [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-key-trust-adfs.md)
