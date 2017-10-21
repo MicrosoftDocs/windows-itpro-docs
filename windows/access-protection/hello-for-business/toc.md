@@ -13,7 +13,7 @@
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
 ## [Windows Hello for Business Deployment Guide](hello-deployment-guide.md)
-### Hybrid Azure AD Joined Key Trust Deployment(hello-hybrid-key-trust.md)
+### [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
 #### [Prerequistes](hello-hybrid-key-trust-prereqs.md)
 #### [New Installation Baseline](hello-hybrid-key-new-install.md)
 #### [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
