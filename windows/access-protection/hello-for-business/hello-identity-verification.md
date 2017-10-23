@@ -71,6 +71,12 @@ The table shows the minimum requirements for each deployment.
 
 ## Frequently Asked Questions
 
+### What is the password-less strategy?
+
+Watch Senior Program Manager Karanbir Singh's Ignite 2017 presentation **Microsoft's guide for going password-less**
+
+> [!VIDEO https://www.youtube.com/embed/mXJS615IGLM]
+
 ### What is the user experience for Windows Hello for Business?
 The user experience for Windows Hello for Business occurs after user sign-in, after you deploy Windows Hello for Business policy settings to your environment.
 
@@ -79,6 +85,9 @@ The user experience for Windows Hello for Business occurs after user sign-in, af
 </br>
 
 > [!VIDEO https://www.youtube.com/embed/etXJsZb8Fso]
+
+
+
 
 ### What happens when my user forgets their PIN?
 
