@@ -127,9 +127,9 @@ When Windows Defender Antivirus is not the active antimalware in your organizati
 
 For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
 
-## Windows Defender Early Launch Antimalware (ELAM) driver is enabled
-If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
+## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
+If you're running Windows Defender Antivirus as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-minreq-belowfoldlink1)

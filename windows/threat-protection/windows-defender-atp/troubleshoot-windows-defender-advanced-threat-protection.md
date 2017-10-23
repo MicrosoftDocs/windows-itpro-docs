@@ -48,7 +48,7 @@ See the topic [Review events and errors on endpoints with Event Viewer](event-er
 
 If onboarding endpoints successfully completes but Windows Defender ATP does not start after a reboot and shows error 577, check that Windows Defender is not disabled by a policy.
 
-For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).
+For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 #### Known issues with regional formats
 
