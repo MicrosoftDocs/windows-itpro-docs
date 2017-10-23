@@ -51,7 +51,7 @@ Install-Module -Name MSStore
 
 ``` 
 
-## Import MIcrosoft Store for Business and Education PowerShell module into the PowerShell session
+## Import Microsoft Store for Business and Education PowerShell module into the PowerShell session
 Once you install the module on your Windows 10 device, you will need to then import it into each PowerShell session you start.
 
 ```powershell
