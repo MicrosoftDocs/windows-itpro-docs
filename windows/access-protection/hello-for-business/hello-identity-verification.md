@@ -7,10 +7,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.localizationpriority: high
-ms.author: daniha
-ms.date: 09/08/2017
+author: mikestephens-MS
+ms.author: mstephen
+localizationpriority: high
+ms.date: 10/20/2017
 ---
 # Windows Hello for Business
 
@@ -65,7 +65,7 @@ The table shows the minimum requirements for each deployment.
 | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |
 | Windows Server 2016 Domain Controllers | Windows Server 2008 R2 or later Domain Controllers |
 | Windows Server 2012 or later Certificate Authority | Windows Server 2012 or later Certificate Authority |
-| N/A | Windows Server 2016 AD FS with [KB4022723 update](https://support.microsoft.com/en-us/help/4022723) |
+| Windows Server 2016 AD FS with [KB4022723 update](https://support.microsoft.com/en-us/help/4022723) | Windows Server 2016 AD FS with [KB4022723 update](https://support.microsoft.com/en-us/help/4022723) |
 | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter | AD FS with Azure MFA Server, or</br>AD FS with 3rd Party MFA Adapter |
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
 

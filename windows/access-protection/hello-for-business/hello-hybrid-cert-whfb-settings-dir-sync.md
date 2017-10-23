@@ -32,7 +32,7 @@ The key-trust model needs Windows Server 2016 domain controllers, which configur
 > [!IMPORTANT]
 > If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**.
 
-### Configure Permissions for Key Syncrhonization
+### Configure Permissions for Key Synchronization
 
 Sign-in a domain controller or management workstations with *Domain Admin* equivalent credentials.
 
