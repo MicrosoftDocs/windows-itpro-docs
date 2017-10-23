@@ -112,7 +112,7 @@ You can sort the **Machines list** by the following columns:
 - **Active malware alerts** - Number of active malware detections reported by the machine
 
 > [!NOTE]
-> The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
+> The **Active malware detections** filter column will only appear if your endpoints are using [Windows Defender Antivirus](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md) as the active real-time protection antimalware product.
 
 
 ## Related topics
