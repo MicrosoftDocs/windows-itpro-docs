@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: kaushika-msft
 ms.author: jdecker
-ms.date: 09/07/2017
+ms.date: 10/24/2017
 ms.localizationpriority: medium
 ---
 
@@ -17,6 +17,8 @@ ms.localizationpriority: medium
 
 Microsoft regularly releases both updates and solutions for Surface Hub. To ensure your devices can receive future updates, including security updates, it's important to keep your Surface Hub devices updated. For a complete listing of the update history, see [Surface Hub update history](https://www.microsoft.com/surface/support/surface-hub/surface-hub-update-history) and [Known issues and additional information about Microsoft Surface Hub](https://support.microsoft.com/help/4025643).
 
+>[!TIP]
+>Looking for [Surface Hub warranty information](https://support.microsoft.com/help/4040687/surface-surface-documents)?
 
 These are the top Microsoft Support solutions for common issues experienced when using Surface Hub.
 
@@ -36,7 +38,6 @@ These are the top Microsoft Support solutions for common issues experienced when
 ## Connect app issues
 
 - [The Connect app in Surface Hub exits unexpectedly](https://support.microsoft.com/help/3157417/the-connect-app-in-surface-hub-exits-unexpectedly)
-
 
 
  
