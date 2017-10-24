@@ -1,5 +1,5 @@
 ﻿---
-title: Hybrid Windows Hello for Business Provisioning (Windows Hello for Business)
+title: Hybrid Windows Hello for Business key trust Provisioning (Windows Hello for Business)
 description: Provisioning for Hybrid Windows Hello for Business Deployments
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
@@ -45,7 +45,7 @@ The provisioning flow has all the information it needs to complete the Windows H
 * A fresh, successful multi-factor authentication
 * A validated PIN that meets the PIN complexity requirements
 
-The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect syncrhonizes the user's key to the on-prem Active Directory.
+The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  When key registration completes, Windows Hello for Business provisioning informs the user  they can use their PIN to sign-in.  The user may close the provisiong application and see their desktop.  While the user has completed provisioning, Azure AD Connect syncrhonizes the user's key to Active Directory.   
 
 > [!IMPORTANT]
 > The minimum time needed to syncrhonize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval. 
@@ -53,23 +53,17 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 > Read [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
 
 > [!NOTE]
-> Microsoft is actively investigating ways to reduce the syncrhonization latency and delays in certificate enrollment with the goal to make certificate enrollment occur real-time.  
-  
-After a successful key registration, Windows creates a certificate request using the same key pair to request a certificate.  Windows send the certificate request to the AD FS server for certificate enrollment.
-  
-The AD FS registration authority verifies the key used in the certificate request matches the key that was previously registered. On a successful match, the AD FS registration authority signs the certificate request using its enrollment agent certificate and sends it to the certificate authority.
-
-The certificate authority validates the certificate was signed by the registration authority. On successful validation of the signature, it issues a certificate based on the request and returns the certificate to the AD FS registration authority.  The registration authority returns the certificate to Windows where it then installs the certificate in the current user’s certificate store.  Once this process completes, the Windows Hello for Business provisioning workflow informs the user  they can use their PIN to sign-in through the Windows Action Center.
+> Microsoft is actively investigating ways to reduce the synchronization latency and delays.  
 
 <br><br>
 
 <hr>
 
-## Follow the Windows Hello for Business hybrid certificate trust deployment guide
+## Follow the Windows Hello for Business hybrid key trust deployment guide
 1. [Overview](hello-hybrid-cert-trust.md)
 2. [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-cert-new-install.md)
-4. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
-5. [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings-policy.md)
-6. Sign-in and Provision(*You are here*) 
-
+4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
+5. [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+6. [Configure Windows Hello for Business settings](hello-hybrid-cert-whfb-settings.md)
+7. Sign-in and Provision(*You are here*)
