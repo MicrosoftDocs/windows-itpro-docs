@@ -18,7 +18,7 @@ ms.date: 10/20/2017
 
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
-The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 
+Configure the appropriate security groups to effeiciently deploy Windows Hello for Business to users. 
 
 
 ### Creating Security Groups
