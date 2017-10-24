@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
-ms.date: 10/17/2017
+ms.date: 10/24/2017
 ---
 
 # Enable or block Windows Mixed Reality apps in the enterprise
@@ -29,9 +29,18 @@ To enable users to download the Windows Mixed Reality software, enterprises usin
 - KB3180030
 - KB3197985
  
-Enterprises will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
+Enterprises devices running Windows 10, version 1709, will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
 
 - Manually install the Mixed Reality software 
+  
+  - [Download the Microsoft Windows Holographic Desktop Feature on Demand package.](http://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab)
+ 
+  - Open a command prompt as administrator and run the following command to install the package:
+  
+    `dism /online /add-package /packagepath:"path to the cab file"`
+  
+  - Go to **Settings** > **Update & Security** > **Windows Update** and **Check for updates**.
+      
 - IT admin can create [Side by side feature store (shared folder)](https://technet.microsoft.com/library/jj127275.aspx)
 
 
