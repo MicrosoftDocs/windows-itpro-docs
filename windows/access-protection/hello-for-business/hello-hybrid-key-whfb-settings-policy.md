@@ -16,13 +16,9 @@ ms.date: 10/20/2017
 **Applies to**
 -   Windows 10
 
-> [!div class="step-by-step"]
-[< Configure PKI ](hello-hybrid-key-whfb-settings-pki.md)
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Policy Configuration
-
->[!IMPORTANT]
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703.

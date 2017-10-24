@@ -22,13 +22,11 @@ Key trust deployments need an adequate number of 2016 domain controllers to ensu
 
 The key registration process for the On-prem deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The minimum required domain functional and forest functional levels for Windows Hello for Business deployment is Windows Server 2008 R2.
 
-Ensure each site where you plan to deploy key trust Windows Hello for Business has an adequate number of Windows Server 2016 domain controllers/
-
 ## Create the Windows Hello for Business Users Security Global Group
 
 The Windows Hello for Business Users group is used to make it easy to deploy Windows Hello for Business in phases.  You assign Group Policy permissions to this group to simplify the deployment by simply adding the users to the group.  This provides users with the proper permissions to provision Windows Hello for Business.
 
-Sign-in a domain controller or management workstation with Domain Admin equivalent credentials.
+Sign-in a domain controller or management workstation with _Domain Admin_ equivalent credentials.
 
 1.	Open **Active Directory Users and Computers**.
 2.	Click **View** and click **Advanced Features**.

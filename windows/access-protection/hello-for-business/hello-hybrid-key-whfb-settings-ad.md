@@ -16,10 +16,6 @@ ms.date: 10/20/2017
 **Applies to**
 -   Windows 10
 
->[!div class="step-by-step"]
-[< Configure Windows Hello for Business](hello-hybrid-key-whfb-settings.md)
-[Configure Azure AD Connect >](hello-hybrid-key-whfb-settings-dir-sync.md)
-
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 The key synchronization process for the hybrid deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema. 

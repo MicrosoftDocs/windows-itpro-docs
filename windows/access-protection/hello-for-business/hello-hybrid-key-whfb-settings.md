@@ -16,10 +16,6 @@ ms.date: 09/08/2017
 **Applies to**
 -   Windows 10
 
-> [!div class="step-by-step"]
-[Configure Active Directory >](hello-hybrid-key-whfb-settings-ad.md)
-
->[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
  
 You are ready to configure your hybrid key trust environment for Windows Hello for Business.

@@ -17,10 +17,6 @@ ms.date: 10/20/2017
 **Applies to**
 -   Windows 10
 
-> [!div class="step-by-step"]
-[< Configure Azure AD Connect](hello-hybrid-key-whfb-settings-dir-sync.md)
-[Configure policy settings >](hello-hybrid-key-whfb-settings-policy.md)
-
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 Windows Hello for Business deployments rely on certificates.  Hybrid deployments uses publicly issued server authentication certifcates to validate the name of the server to which they are connecting and to encyrpt the data that flows them and the client computer.
