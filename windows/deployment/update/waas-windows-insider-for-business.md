@@ -35,7 +35,7 @@ The Windows Insider Program isn’t intended to replace Semi-Annual Channel depl
 
 ## Getting started with Windows Insider Program for Business
 
-To get started with the Windows Insider Program for Business, you will need to follow a few simple steps:
+To get started with the Windows Insider Program for Business, you can follow a few simple steps:
 
 1. [Register your organizational Azure AD account](#individual-registration) to the Windows Insider Program for Business.
 2. [Register your organization's Azure AD domain](#organizational-registration) to the Windows Insider Program for Business.</br>**Note:** Registering user has to be a Global Administrator in the Azure AD domain.
@@ -98,7 +98,9 @@ The **Branch Readiness Level** settings allows you to choose between preview [fl
 
 ![Select when Preview Builds and Feature Updates are received group policy](images/waas-wipfb-policy1.png)
 
-If you want to manage Windows Insider preview builds prior to Windows 10, version 1709, follow these steps:
+### Individual enrollment
+
+If you want to manage Windows Insider preview builds prior to Windows 10, version 1709, or wish to enroll a single device, follow these steps:
 
 1. Enroll your device by going to **Start > Settings > Update & security > Windows Insider Program** and selecting **Get Started**. Sign-in using the account you used to register for the Windows Insider Program.
 2. After reading the privacy statement and clicking **Next**, **Confirm** and schedule a restart.
@@ -179,6 +181,8 @@ When providing feedback, please consider the following:
 
 >[!TIP]
 >You can then track feedback provided by all users in your organization through the Feedback Hub. Simply filter by **My Organization**. 
+>
+>If you're signed in to the Feedback Hub App using your personal Microsoft Account (MSA), you can switch to your work account, by clicking on your account, signing out, and signing back in.
 
 >[!NOTE]
 >If you signed into the Feedback Hub previously with your MSA, your feedback and badges will not be transferred to your AAD sing-in. However, you can switch back to your MSA account in the Feedback Hub to access feedback you’ve submitted and badges you’ve earned.
@@ -263,6 +267,9 @@ If you no longer plan to manage Windows Insider Preview policies for your organi
 Unregistering will not allow any other administrators at your organization to continue to set policies to manage Windows Insider Preview builds across your organization.
 
 Your individual registration with the Insider program will not be impacted. If you wish to leave the Insider program, see the [leave the program](https://insider.windows.com/en-us/how-to-overview/#leave-the-program) instructions.
+
+>[!IMPORTANT]
+>Once your domain is unregistered, setting the **Branch Readiness Level** to preview builds will have no effect. Return this setting to its unconfigured state in order to enable user to control it from their device.
 
 ## Additional help resources
 

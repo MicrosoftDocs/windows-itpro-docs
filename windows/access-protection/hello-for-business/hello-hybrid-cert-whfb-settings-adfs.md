@@ -18,13 +18,7 @@ ms.date: 09/08/2017
 
 ## Federation Services
 
->[!IMPORTANT]
 >This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
-
->[!div class="step-by-step"]
-[< Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
-[Configure policy settings >](hello-hybrid-cert-whfb-settings-policy.md)
-
 
 The Windows Server 2016 Active Directory Fedeartion Server Certificate Registration Authority (AD FS RA) enrolls for an enrollment agent certificate. Once the registration authority verifies the certificate request, it signs the certificate request using its enrollment agent certificate and sends it to the certificate authority. 
 
