@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 10/02/2017
+ms.date: 10/25/2017
 ---
 
 # Configure non-Windows endpoints
