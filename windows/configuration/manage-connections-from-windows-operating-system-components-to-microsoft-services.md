@@ -617,7 +617,7 @@ To turn off OneDrive in your organization:
 
     -and-
 
--   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\\\OneDrive\\PreventNetworkTrafficPreUserSignIn**, with a value of 1 (one).    
+-   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\OneDrive\\PreventNetworkTrafficPreUserSignIn**, with a value of 1 (one).    
 
 ### <a href="" id="bkmk-preinstalledapps"></a>16. Preinstalled apps
 
