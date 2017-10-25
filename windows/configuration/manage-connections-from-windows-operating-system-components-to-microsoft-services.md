@@ -33,6 +33,12 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
 
+## What's new in Windows 10, version 1709 
+
+Here's a list of changes that were made to this article for Windows 10, version 1709:
+
+- Added the Phone calls section.
+
 ## What's new in Windows 10, version 1703
 
 Here's a list of changes that were made to this article for Windows 10, version 1703:
@@ -321,7 +327,7 @@ To turn off Find My Device:
 
 -   Disable the Group Policy: **Computer Configuration** > **Administrative Template** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**
 
-You can also create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Device Metadata!PreventDeviceMetadataFromNetwork** to 1 (one).
+You can also create a new REG\_DWORD registry setting **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FindMyDevice\\AllowFindMyDevice** to 0 (zero).
 
 ### <a href="" id="font-streaming"></a>6. Font streaming
 
@@ -608,6 +614,10 @@ To turn off OneDrive in your organization:
     -or-
 
 -   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\OneDrive!DisableFileSyncNGSC**, with a value of 1 (one).
+
+    -and-
+
+-   Create a REG\_DWORD registry setting called **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\OneDrive\\PreventNetworkTrafficPreUserSignIn**, with a value of 1 (one).    
 
 ### <a href="" id="bkmk-preinstalledapps"></a>16. Preinstalled apps
 
@@ -1129,7 +1139,7 @@ To turn off **Let apps access my name, picture, and other account info**:
     
     -or-
 
-- Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessContacts**, with a value of 2 (two).
+- Create a REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\Windows\\AppPrivacy!LetAppsAccessAccountInfo**, with a value of 2 (two).
 
 To turn off **Choose the apps that can access your account info**:
 
