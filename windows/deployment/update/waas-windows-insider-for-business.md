@@ -185,7 +185,7 @@ When providing feedback, please consider the following:
 >If you're signed in to the Feedback Hub App using your personal Microsoft Account (MSA), you can switch to your work account, by clicking on your account, signing out, and signing back in.
 
 >[!NOTE]
->If you signed into the Feedback Hub previously with your MSA, your feedback and badges will not be transferred to your AAD sing-in. However, you can switch back to your MSA account in the Feedback Hub to access feedback you’ve submitted and badges you’ve earned.
+>If you signed into the Feedback Hub previously with your MSA, your feedback and badges will not be transferred to your Azure AD sign-in. However, you can switch back to your MSA account in the Feedback Hub to access feedback you’ve submitted and badges you’ve earned.
 
 ### User consent requirement
 
@@ -269,7 +269,7 @@ Unregistering will not allow any other administrators at your organization to co
 Your individual registration with the Insider program will not be impacted. If you wish to leave the Insider program, see the [leave the program](https://insider.windows.com/en-us/how-to-overview/#leave-the-program) instructions.
 
 >[!IMPORTANT]
->Once your domain is unregistered, setting the **Branch Readiness Level** to preview builds will have no effect. Return this setting to its unconfigured state in order to enable user to control it from their device.
+>Once your domain is unregistered, setting the **Branch Readiness Level** to preview builds will have no effect. Return this setting to its unconfigured state in order to enable users to control it from their devices.
 
 ## Additional help resources
 
