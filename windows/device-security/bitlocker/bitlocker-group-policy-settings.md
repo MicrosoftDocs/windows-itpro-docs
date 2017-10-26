@@ -1100,7 +1100,7 @@ This policy setting is used to control the encryption method and cipher strength
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>
-<td align="left"><p>Beginning with Windows 10, version 1511, BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. Windows Phone does not support XTS.</p></td>
+<td align="left"><p>Beginning with Windows 10, version 1511, BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. Windows Phone does not support XTS; it uses AES-CSB 128-bit by default and supports AES-CBC 256-bit by policy.</p></td>
 </tr>
 </tbody>
 </table>
