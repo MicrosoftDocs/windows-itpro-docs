@@ -18,5 +18,38 @@ If you have a Microsoft 365 Business Preview CSP subscription, follow this guide
 **How to transition a preview subscription to GA**
 
 1. Log in to <a href="https://partnercenter.microsoft.com" target="_blank">Partner Center</a>.
-2. Find **Subscriptions** and select **Add subscription**.
-3. In the **New subscription** page, choose **Small business** and then select **Microsoft 365 Business**.
+2. From the dashboard, select **Customers**, and then find and select the company name.
+
+    The subscriptions for the company will be listed.
+
+    ![Customer's subscriptions in Partner Center](images/pc_customer_subscriptions_1.png)
+    
+3. In the company's **Subscriptions** page, select **Add subscription**.
+4. In the **New subscription** page, select **Small business** and then select **Microsoft 365 Business** from the list.
+5. Add the number of licenses and then select **Next: Review** to review the subscription and then select **Submit**.
+
+    ![Review the new subscription to Microsoft 365 Business](images/pc_customer_reviewnewsubscription.png)
+
+    The **License-based subscriptions** will show **Microsoft 365 Business Preview** and **Microsoft 365 Business**. You'll need to suspend the Preview subscription next.
+
+6. Select **Microsoft 365 Business Preview**.
+7. In the **Microsoft 365 Business Preview** page, select **Suspended** to suspend the Preview subscription.
+
+    ![Suspend the Microsoft 365 Business Preview subscription](images/pc_customer_m365bpreview_suspend.png)
+
+8. Select **Submit** to confirm.
+
+    In the **Subscriptions** page, confirm that the **Microsoft 365 Business Preview** status shows **Suspended**.
+
+    ![Confirm the Preview subscription status is suspended](images/pc_customer_m365bpreview_suspend_confirm.png)
+
+9. Optionally, you can also validate the license agreement. To do this:
+    1. Select **Users and licenses*8 from the company's **Subscriptions** page.
+    2. From the **Users and licenses** page, select a user.
+    3. In the user's page, check the **Assign licenses** section and confirm that it shows **Microsoft 365 Business**.
+
+        ![Confirm the Microsoft 365 Business license is assigned to the user](images/pc_customer_userslicenses_m365b_validate.png)
+
+## Related topics
+TBD
+
