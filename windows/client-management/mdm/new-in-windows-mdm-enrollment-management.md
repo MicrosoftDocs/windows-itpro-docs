@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 10/02/2017
+ms.date: 10/25/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1366,6 +1366,36 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### October 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Updated the DDF content for Windows 10 version 1709. Added a link to the download of Policy DDF for Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the following policies:</p>
+<ul>
+<li>Defender/ControlledFolderAccessAllowedApplications - string separator is |.</li>
+<li>Defender/ControlledFolderAccessProtectedFolders - string separator is |.</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 
 ### September 2017
 
