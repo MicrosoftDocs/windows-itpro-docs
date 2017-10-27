@@ -288,6 +288,3 @@ Your individual registration with the Insider program will not be impacted. If y
 - [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
-- [Manage updates using Windows Update for Business](waas-manage-updates-wufb.md)
-- [Manage Windows 10 updates using Windows Server Update Services (WSUS)](waas-manage-updates-wsus.md)
-- [Manage Windows 10 updates using System Center Configuration Manager](waas-manage-updates-configuration-manager.md)

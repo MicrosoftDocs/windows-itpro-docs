@@ -1100,19 +1100,25 @@ This policy setting is used to control the encryption method and cipher strength
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>
-<td align="left"><p>BitLocker uses the default encryption method of AES 128-bit or the encryption method that is specified by the setup script.</p></td>
+<td align="left"><p>Beginning with Windows 10, version 1511, BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. Windows Phone does not support XTS; it uses AES-CBC 128-bit by default and supports AES-CBC 256-bit by policy.</p></td>
 </tr>
 </tbody>
 </table>
  
 **Reference**
 
-By default, BitLocker uses AES 128-bit encryption. Available options are AES-128 and AES-256. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128).
+The values of this policy determine the strength of the cipher that BitLocker uses for encryption. 
+Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128).
+
+If you enable this setting, you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. 
+For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. 
+For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10, version 1511 or later.
+
 Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
 
 >**Warning:**  This policy does not apply to encrypted drives. Encrypted drives utilize their own algorithm, which is set by the drive during partitioning.
  
-When this policy setting is disabled, BitLocker uses AES with the same bit strength (128-bit or 256-bit) as specified in the policy setting **Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)**. If neither policy is set, BitLocker uses the default encryption method, AES-128, or the encryption method that is specified in the setup script.
+When this policy setting is disabled or not configured, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method that is specified in the setup script.
 
 ### <a href="" id="bkmk-hdefxd"></a>Configure use of hardware-based encryption for fixed data drives
 
