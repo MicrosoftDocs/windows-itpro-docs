@@ -11,7 +11,7 @@ ms.author: mstephen
 localizationpriority: high
 ms.date: 10/20/2017
 ---
-# Hybrid Key tust Windows Hello for Business Prerequisites
+# Hybrid Key trust Windows Hello for Business Prerequisites
 
 **Applies to**
 -   Windows 10
@@ -64,7 +64,6 @@ The minimum required enterprise certificate authority that can be used with Wind
 ### Section Review
 > [!div class="checklist"]  
 > * Windows Server 2012 Issuing Certificate Authority
-> * Windows Server 2016 Active Directory Federation Services
 
 <br>
 
@@ -99,8 +98,8 @@ Hybrid Windows Hello for Business deployments can use Azure’s Multifactor Auth
 ### Section Review 
 > [!div class="checklist"]
 > * Azure MFA Service
-> * Windows Server 2016 AD FS and Azure
-> * Windows Server 2016 AD FS and third party MFA Adapter
+> * Windows Server 2016 AD FS and Azure (optional, if federated)
+> * Windows Server 2016 AD FS and third party MFA Adapter (optiona, if federated)
 
 <br>
 
