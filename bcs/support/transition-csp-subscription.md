@@ -60,15 +60,44 @@ The following table summarizes the impact to customers who don't transition from
 
 |       | T-0 to T+30     | T+30 to T+60 | T+60 to T+120 | Beyond T+120  |
 |-------|-----------------|--------------|---------------|---------------|
-| State | In grace period | Expired      | Disabled      | Deprovisioned |
-| Service impacts                                                        |
-| Microsoft 365 Business admin portal | No impact to functionality | No impact to functionality | Can add/delete users, purchase subscriptions.</br> Cannot assign/revoke licenses. | Customer's subscription and all data is deleted. Admin can manage other paid subscriptions. |
-| Office apps                         | No end user impact | No end user impact | Office enters reduced functionality mode.</br> Users can view files only. | Office enters reduced functionality mode.</br> Users can view files only. |
-| Cloud services (SharePoint Online, Exchange Online, Skype, Teams, and more) | No end user impact | No end user impact | End users and admins have no access to data in the cloud. | Customer's subscription and all data are deleted. |
-| EM+S components | No admin impact</br> No end user impact | No admin impact</br> No end user impact | Capability will cease to be enforced. See [tbd](tbd) for more info. | Capability will cease to be enforced. See [tbd](tbd) for more info. |
-| Windows 10 Business | No admin impact</br> No end user impact | No admin impact</br> No end user impact | Capability will cease to be enforced. See [tbd](tbd) for more info. | Capability will cease to be enforced. See [tbd](tbd) for more info. |
-| Azure AD login to a Windows 10 PC | No admin impact</br> No end user impact | No admin impact</br> No end user impact | No admin impact</br> No end user impact | Once the tenant is deleted, a user can log in with local credentials only. Re-image the device if there are no local credentials. |
+| **State** | In grace period | Expired      | Disabled      | Deprovisioned |
+| **Service impacts**                                                        |
+| **Microsoft 365 Business admin portal** | No impact to functionality | No impact to functionality | Can add/delete users, purchase subscriptions.</br> Cannot assign/revoke licenses. | Customer's subscription and all data is deleted. Admin can manage other paid subscriptions. |
+| **Office apps**                         | No end user impact | No end user impact | Office enters reduced functionality mode.</br> Users can view files only. | Office enters reduced functionality mode.</br> Users can view files only. |
+| **Cloud services (SharePoint Online, Exchange Online, Skype, Teams, and more)** | No end user impact | No end user impact | End users and admins have no access to data in the cloud. | Customer's subscription and all data are deleted. |
+| **EM+S components** | No admin impact</br> No end user impact | No admin impact</br> No end user impact | Capability will cease to be enforced.</br> See [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) and [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration) for more info. | Capability will cease to be enforced.</br> See [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) and [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration) for more info. |
+| **Windows 10 Business** | No admin impact</br> No end user impact | No admin impact</br> No end user impact | Capability will cease to be enforced.</br> See [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) and [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration) for more info. | Capability will cease to be enforced.</br> See [Mobile device impacts upon subscription expiration](#mobile-device-impacts-upon-subscription-expiration) and [Windows 10 PC impacts upon subscription expiration](#windows-10-pc-impacts-upon-subscription-expiration) for more info. |
+| **Azure AD login to a Windows 10 PC** | No admin impact</br> No end user impact | No admin impact</br> No end user impact | No admin impact</br> No end user impact | Once the tenant is deleted, a user can log in with local credentials only. Re-image the device if there are no local credentials. |
 
-## Related topics
-TBD
+## Mobile device impacts upon subscription expiration
+
+The followint table summarizes the impact to the app management policies on mobile devices.
+
+|                            | Fully licensed experience                      | T+60 days post expiration          |
+|----------------------------|------------------------------------------------|------------------------------------|
+| **Delete work files from an inactive device** | Work files are removed after selected days | Work files remain on the user's personal devices |
+| **Force users to save all work files to OneDrive for Business** | Work files can only be saved to OneDrive for Business | Work files can be saved anywhere |
+| **Encrypt work files** | Work files are encrypted | Work files are no longer encrypted.</br> Security policies are removed and Office data on apps is removed. |
+| **Require PIN or fingerprint to access Office apps** | Restricted access to apps | No app-level access restriction |
+| **Reset PIN when login fails** | Restricted access to apps | No app-level access restriction |
+| **Require users to sign in again after Office apps have been idle** | Sign-in required | No sign-in required to access apps |
+| **Deny access to work files on jailbroken or rooted devices** | Work files cannot be accessed on jailbroken/rooted devices | Work files can be accessed on jailbroken/rooted devices |
+| **Allow users to copy content from Office apps to Personal apps** | Copy/paste restricted to apps available as part of Microsoft 365 Business subscription | Copy/paste available to all apps |
+
+## Windows 10 PC impacts upon subscription expiration
+
+The following table summarizes the impact to the Windows 10 device configuration policies.
+
+|                            | Fully licensed experience                      | T+60 days post expiration          |
+|----------------------------|------------------------------------------------|------------------------------------|
+| **Help protect PCs from threats using Windows Defender** | Turn on/off is outside of user control | User may turn on/off Windows Defender on the Windows 10 PC |
+| **Help protect PCs from web-based threats in Microsoft Edge** | PC protection in Microsoft Edge | User may turn on/off PC protection in Microsoft Edge |
+| **Turn off device screen when idle** | Admin defines screen timeout interval policy | Screen timeout can be configured by end user |
+| **Allow users to download apps from Microsoft Store** | Admin defines if a user can download apps from Microsoft Store | User can download apps from Microsoft Store anytime |
+| **Allow users to access Cortana** | Admin defines policy on user access to Cortana | User devices to turn on/off Cortana |
+| **Allow users to receive tips and advertisements from Microsoft** | Admin defines policy on user receive tips and advertisements from Microsoft | User may turn on/off tips and advertisements from Microsoft |
+| **Allow users to copy content from Office apps into personal apps** | Admin defines policy to keep Windows 10 devices up-to-date | Users can decide when to update Windows |
+
+
+
 
