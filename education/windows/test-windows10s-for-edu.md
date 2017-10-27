@@ -99,11 +99,6 @@ Check with your device manufacturer before trying Windows 10 S on your device to
 > [!NOTE]
 > If you don't see any device listed on the manufacturer's web site, check back again later as more devices get added in the future.
 
-<!--
-* [Microsoft](https://www.microsoft.com/surface/en-us/support/windows-and-office/surface-devices-that-work-with-windows-10-s)
-
-If you don't see your manufacturer or device model listed, you can still proceed and provide feedback, but be aware that you may not be able to get support from your device manufacturer to install Windows 10 S and you may experience limited or incomplete functionality on Windows features, device hardware, peripherals, and others.
--->
 
 ## Kept files
 
