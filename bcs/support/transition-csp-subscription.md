@@ -13,7 +13,7 @@ ms.date: 11/01/2017
 
 # Transition a Microsoft 365 Business CSP subscription
 
-If you have a Microsoft 365 Business Preview CSP subscription, follow this guide to find out how you can transition your existing preview subscription to GA (general availability).
+If you have a Microsoft 365 Business Preview CSP subscription, follow this guide to find out how you can transition your existing preview subscription to Microsoft 365 Business GA (general availability).
 
 **How to transition a preview subscription to GA**
 
@@ -43,14 +43,14 @@ If you have a Microsoft 365 Business Preview CSP subscription, follow this guide
 
     ![Confirm the Preview subscription status is suspended](images/pc_customer_m365bpreview_suspend_confirm.png)
 
-9. Optionally, you can also validate the license agreement. To do this:
-    1. Select **Users and licenses*8 from the company's **Subscriptions** page.
+9. Optionally, you can also validate the license agreement. To do this, follow these steps:
+    1. Select **Users and licenses** from the company's **Subscriptions** page.
     2. From the **Users and licenses** page, select a user.
     3. In the user's page, check the **Assign licenses** section and confirm that it shows **Microsoft 365 Business**.
 
         ![Confirm the Microsoft 365 Business license is assigned to the user](images/pc_customer_userslicenses_m365b_validate.png)
 
-## During and post transition impact to customers and users
+## Impact to customers and users during and after transition
 
 There is no impact to customers and users during transition and post transition.
 
