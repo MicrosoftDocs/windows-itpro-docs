@@ -38,6 +38,11 @@ ms.date: 06/13/2017
 
 You can exclude certain files from being scanned by Windows Defender AV by modifying exclusion lists. 
 
+Generally, you shouldn't need to apply exclusions. Windows Defender AV includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+
+>[!TIP]
+>We don't use exclusions in our deployment of Windows Defender AV at Microsoft!
+
 This topic describes how to configure exclusion lists for the following:
 
 Exclusion | Examples | Exclusion list
@@ -49,7 +54,7 @@ A specific process | The executable file c:\test\process.exe | File and folder e
 
 This means the exclusion lists have the following characteristics:
 - Folder exclusions will apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
-- File extensions will apply to any file name with the defined extension, regardless of where the file is located.
+- File extensions will apply to any file name with the defined extension if a path or folder is not defined.
 
 >[!IMPORTANT]
 >The use of wildcards such as the asterisk (\*) will alter how the exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
@@ -195,25 +200,30 @@ See [Add exclusions in the Windows Defender Security Center app](windows-defende
 <a id="wildcards"></a>
 ## Use wildcards in the file name and folder path or extension exclusion lists
 
-You can use the asterisk \*, question mark ?, or environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the file name or folder path exclusion list. The way in which these wildcards are interpreted differs from their usual usage in other apps and languages, so you should read this section to understand their specific limitations.
+You can use the asterisk `*`, question mark `?`, or environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the file name or folder path exclusion list. The way in which these wildcards are interpreted differs from their usual usage in other apps and languages, so you should read this section to understand their specific limitations.
 
 >[!IMPORTANT]
 >There are key limitations and usage scenarios for these wildcards:
 >
 >- Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
 >- You cannot use a wildcard in place of a drive letter.
->- The use of asterisk \* in a folder exclusion will stand in place for a single folder
+>- The use of asterisk `*` in a folder exclusion will stand in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
 
 
 The following table describes how the wildcards can be used and provides some examples.
 
 Wildcard | Use in file and file extension exclusions | Use in folder exclusions | Example use | Example matches
 ---|---|---|---
-\* (asterisk) | Replaces any number of characters  | Replaces a single folder | <ol><li>C:\MyData\my\*.zip</li><li>C:\somepath\\\*\Data</li></ol> | <ol><li>C:\MyData\my-archived-files-43.zip</li><li>Any file in C:\somepath\folder1\Data or C:\somepath\folder2\Data</li></ol>
-? (question mark) | Replaces a single character | Replaces a single character in a folder name | <ol><li>C:\MyData\my\?.zip</li><li>C:\somepath\\\?\Data</li><li>C:\somepath\\\test0?\Data</li></ol> | <ol><li>C:\MyData\my1.zip</li><li>Any file in C:\somepath\P\Data</li><li>Any file in C:\somepath\test01\Data</li></ol>
-Environment variables | The defined variable will be populated as a path when the exclusion is evaluated | Same as file and extension use |  <ol><li>%ALLUSERSPROFILE%\CustomLogFiles</li></ol> | <ol><li>C:\ProgramData\CustomLogFiles\Folder1\file1.txt</li></ol>
+`*` (asterisk) | Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument.  | Replaces a single folder. <br />Use multiple `*` with folder slashes `\` to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included. | <ol><li>C:\MyData\my\\**\***.txt</li><li>C:\somepath\\**\***\Data</li><li>C:\Serv\\**\***\\**\***\Backup</ol> | <ol><li><i>C:\MyData\\<b>notes</b>.txt</i></li><li>Any file in: <ul><li><i>C:\somepath\\<b>Archives</b>\Data</i> and its subfolders</li><li><i>C:\somepath\\<b>Authorized</b>\Data</i> and its subfolders</li></ul><li>Any file in:<ul><li><i>C:\Serv\\<b>Primary</b>\\<b>Denied</b>\Backup</i> and its subfolders</li><li><i>C:\Serv\\<b>Secondary</b>\\<b>Allowed</b>\Backup</i> and its subfolders</ol>
+`?` (question mark) | Replaces a single character. <br />Only applies to files in the last folder defined in the argument.  | Replaces a single character in a folder name. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included. | <ol><li>C:\MyData\my<b>?</b>.zip</li><li>C:\somepath\\<b>?</b>\Data</li><li>C:\somepath\\test0<b>?</b>\Data</li></ol> | <ol><li><i>C:\MyData\my<b>1</b>.zip</i></li><li>Any file in <i>C:\somepath\\<b>P</b>\Data</i> and its subfolders</li><li>Any file in <i>C:\somepath\test0<b>1</b>\Data</i> and its subfolders</li></ol>
+Environment variables | The defined variable will be populated as a path when the exclusion is evaluated | Same as file and extension use |  <ol><li><b>%ALLUSERSPROFILE%</b>\CustomLogFiles</li></ol> | <ol><li><i><b>C:\ProgramData</b>\CustomLogFiles\Folder1\file1.txt</i></li></ol>
 
-
+>[!IMPORTANT]
+>If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
+>
+>For example, you can exclude all files that start with "date" in the folders *c:\data\final\marked* and *c:\data\review\marked* by using the rule argument <b>c:\data\\\*\marked\date*.\*</b>.
+>
+>This argument, however, will not match any folders in subfolders under *c:\data\final\marked* or *c:\data\review\marked*.
 
 
 <a id="review"></a>
