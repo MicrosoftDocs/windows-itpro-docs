@@ -78,7 +78,7 @@ Reviewing the various alerts and their severity can help you decide on the appro
 - Others
 
 >[!NOTE]
->The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender as the default real-time protection antimalware product.
+>The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender Antivirus as the default real-time protection antimalware product.
 
 **View**</br>
 - **Flat view** - Lists alerts individually with alerts having the latest activity displayed at the top.

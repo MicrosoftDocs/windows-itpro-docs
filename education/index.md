@@ -175,7 +175,7 @@ ms.author: celested
                                 </a>
                             </li>
                             <li>
-                                <a href="https://support.office.com/article/Overview-of-School-Data-Sync-f3d1147b-4ade-4905-8518-508e729f2e91" target="_blank">
+                                <a href="https://docs.microsoft.com/schooldatasync/" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

@@ -18,7 +18,7 @@ This topic explains recommendations for managing BitLocker, both on-premises usi
 
 The ideal for modern BitLocker management is to eliminate the need for IT admins to set management policies using tools or other mechanisms by having Windows perform tasks that it is more practical to automate. This vision leverages modern hardware developments. The growth of TPM 2.0, Secure Boot, and other hardware improvements, for example, has helped to alleviate the support burden on the helpdesk, and we are seeing a consequent decrease in support call volumes, yielding improved user satisfaction.
 
-Therefore, we recommend that you upgrade your hardware so that your devices comply with InstantGo or [Hardware Security Test Interface (HSTI)](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx) specifications to take advantage of their automated features, for example, when using Azure Active Directory (Azure AD). 
+Therefore, we recommend that you upgrade your hardware so that your devices comply with Modern Standby or [Hardware Security Test Interface (HSTI)](https://msdn.microsoft.com/library/windows/hardware/mt712332.aspx) specifications to take advantage of their automated features, for example, when using Azure Active Directory (Azure AD). 
 
 Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently-asked questions, and also provides BitLocker recommendations for:
 
@@ -42,7 +42,7 @@ Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been p
 |Cloud-managed|[MDM](#MDM) |Auto-encryption|[Scripts](#powershell)|[MDM](#MDM)/EAS|
 
 <br />
-*PC hardware that supports InstantGo or HSTI 
+*PC hardware that supports Modern Standby or HSTI 
 
 <br />
 <br />
@@ -50,7 +50,7 @@ Though much  Windows BitLocker [documentation](bitlocker-overview.md) has been p
  <a id="dom_join"></a>
 ## Recommendations for domain-joined computers
 
-Windows continues to be the focus for new features and improvements for built-in encryption management, for example, automatically enabling encryption on devices that support InstantGo beginning with Windows 8.1. For more information, see  [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption).
+Windows continues to be the focus for new features and improvements for built-in encryption management, for example, automatically enabling encryption on devices that support Modern Standby beginning with Windows 8.1. For more information, see  [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption).
 
 Companies that image their own computers using Microsoft System Center 2012 Configuration Manager SP1 (SCCM) or later can use an existing task sequence to [pre-provision BitLocker](https://technet.microsoft.com/library/hh846237.aspx#BKMK_PreProvisionBitLocker) encryption while in Windows Preinstallation Environment (WinPE) and can then [enable protection](https://technet.microsoft.com/library/hh846237.aspx#BKMK_EnableBitLocker). This can help ensure that computers are encrypted from the start, even before users receive them. As part of the imaging process, a company could also decide to use SCCM to pre-set any desired [BitLocker Group Policy](https://technet.microsoft.com/library/ee706521(v=ws.10).aspx).
 
@@ -75,7 +75,7 @@ Devices joined to Azure Active Directory (Azure AD) are managed using Mobile Dev
 
 Starting with Windows 10 version 1703 (also known as the Windows Creators Update), the enablement of BitLocker can be triggered over MDM either by the [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) or the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp). The BitLocker CSP adds policy options that go beyond ensuring that encryption has occurred, and is available on computers that run Windows 10 Business or Enterprise editions and on Windows Phones.
 
-For hardware that is compliant with InstantGo and HSTI, when using either of these features, BitLocker Device Encryption is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if required. For older devices that are not yet encrypted, beginning with Windows 10 version 1703 (the Windows 10 Creators Update), admins can use the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to trigger encryption and store the recovery key in Azure AD.
+For hardware that is compliant with Modern Standby and HSTI, when using either of these features, BitLocker Device Encryption is automatically turned on whenever the user joins a device to Azure AD. Azure AD provides a portal where recovery keys are also backed up, so users can retrieve their own recovery key for self-service, if required. For older devices that are not yet encrypted, beginning with Windows 10 version 1703 (the Windows 10 Creators Update), admins can use the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to trigger encryption and store the recovery key in Azure AD.
 
 
 <a id="work_join"></a>

@@ -18,6 +18,12 @@ ms.localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
+## October 2017
+
+| New or changed topic | Description |
+| --- | --- |
+| [Manage Windows device deployment with Windows AutoPilot Deployment](add-profile-to-devices.md) | Update. Add profile settings with supported build info.  |
+
 ## September 2017
 
 | New or changed topic | Description |

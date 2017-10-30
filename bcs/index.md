@@ -3,7 +3,7 @@ layout: HubPage
 hide_bc: true
 author: CelesteDG
 ms.author: celested
-keywords: Microsoft 365 Business, Microsoft 365, business, Microsoft 365 Business documentation, docs, documentation
+keywords: Microsoft 365 Business, Microsoft 365, business, SMB, small to midsize business, Microsoft 365 Business documentation, docs, documentation, technical information
 ms.topic: hub-page
 ms.localizationpriority: high
 audience: microsoft-business 
@@ -608,6 +608,25 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
                                                     <p>Deploy Windows 10 devices using Windows AutoPilot from the Partner Center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/be5b6d90-3344-4c5e-bf40-5733eb845beb" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
+                                                    <p>Alternatively, use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1541,6 +1560,25 @@ description: Learn about the product documentation and resources available for M
                                                 <div class="cardText">
                                                     <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
                                                     <p>Deploy Windows 10 devices using Windows AutoPilot from the Partner Center.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://support.office.com/article/be5b6d90-3344-4c5e-bf40-5733eb845beb" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
+                                                    <p>Alternatively, use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
                                                 </div>
                                             </div>
                                         </div>

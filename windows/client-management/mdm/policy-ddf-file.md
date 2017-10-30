@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/23/2017
+ms.date: 10/26/2017
 ---
 
 # Policy DDF file
@@ -19,6 +19,7 @@ This topic shows the OMA DM device description framework (DDF) for the **Policy*
 
 You can download the DDF files from the links below:
 
+- [Download the Policy DDF file for Windows 10, version 1709](http://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)
 - [Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
 - [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
 - [Download the Policy DDF file for Windows 10, version 1607 release 8C](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)
@@ -50,7 +51,7 @@ The XML below is the DDF for Windows 10, version 1709.
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/5.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/6.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -2549,30 +2550,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableBlockingOfOutdatedActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>DisableBypassOfSmartScreenWarnings</NodeName>
           <DFProperties>
             <AccessType>
@@ -3869,30 +3846,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</NodeName>
           <DFProperties>
             <AccessType>
@@ -3942,30 +3895,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>InternetZoneUsePopupBlocker</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -4230,30 +4159,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>IntranetZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -7061,30 +6966,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>RestrictedSitesZoneRunActiveXControlsAndPlugins</NodeName>
           <DFProperties>
             <AccessType>
@@ -7182,30 +7063,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -7613,79 +7470,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -7916,6 +7701,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
+        <Node>
+          <NodeName>HidePeopleBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
         <Node>
           <NodeName>StartLayout</NodeName>
           <DFProperties>
@@ -8190,6 +7999,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8334,6 +8144,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8358,6 +8169,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8381,6 +8193,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8428,6 +8241,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8452,6 +8266,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8475,6 +8290,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8499,6 +8315,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8523,6 +8340,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8547,6 +8365,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8574,6 +8393,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8597,6 +8417,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8620,6 +8441,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8649,6 +8471,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8672,6 +8495,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8695,6 +8519,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8718,6 +8543,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8741,6 +8567,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8799,6 +8626,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -8931,6 +8759,7 @@ If you disable or don't configure this setting (default), employees can add, imp
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8954,6 +8783,7 @@ If you disable or don't configure this setting (default), employees can add, imp
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -8979,6 +8809,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -9005,6 +8836,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9028,6 +8860,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9051,6 +8884,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9074,6 +8908,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9127,6 +8962,7 @@ If you disable or don't configure this setting, employees will see the favorites
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -9180,6 +9016,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -9204,6 +9041,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -9365,6 +9203,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9589,6 +9428,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9612,6 +9452,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -9636,6 +9477,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -9660,6 +9502,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -9684,6 +9527,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -9707,6 +9551,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -10534,33 +10379,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableFlashInIE</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DisableBlockingOfOutdatedActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -12023,33 +11841,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</NodeName>
           <DFProperties>
             <AccessType>
@@ -12127,33 +11918,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyBlockPopupWindows_1</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -12429,33 +12193,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>IntranetZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -15614,33 +15351,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>RestrictedSitesZoneRunActiveXControlsAndPlugins</NodeName>
           <DFProperties>
             <AccessType>
@@ -15772,33 +15482,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_UnsafeFiles_7</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Restricted</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -16235,88 +15918,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -16436,6 +16038,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -16550,6 +16153,31 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFType>
         </DFProperties>
         <Node>
+          <NodeName>HidePeopleBar</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>StartLayout</NodeName>
           <DFProperties>
             <AccessType>
@@ -16636,7 +16264,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/5.0/MDM/Policy</MIME>
+        <MIME>com.microsoft/6.0/MDM/Policy</MIME>
       </DFType>
     </DFProperties>
     <Node>
@@ -19470,7 +19098,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -19494,7 +19122,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -19518,7 +19146,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -19986,7 +19614,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>EnableWindowsAutoPilotResetCredentials</NodeName>
+          <NodeName>DisableAutomaticReDeploymentCredentials</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -20744,6 +20372,54 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ControlledFolderAccessAllowedApplications</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ControlledFolderAccessProtectedFolders</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DaysToRetainCleanedMalware</NodeName>
           <DFProperties>
             <AccessType>
@@ -20768,7 +20444,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>EnableGuardMyFolders</NodeName>
+          <NodeName>EnableControlledFolderAccess</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -20865,54 +20541,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>ExcludedProcesses</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>GuardedFoldersAllowedApplications</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>GuardedFoldersList</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -23724,30 +23352,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableBlockingOfOutdatedActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>DisableBypassOfSmartScreenWarnings</NodeName>
           <DFProperties>
             <AccessType>
@@ -25092,30 +24696,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</NodeName>
           <DFProperties>
             <AccessType>
@@ -25165,30 +24745,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>InternetZoneUsePopupBlocker</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -25453,30 +25009,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>IntranetZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -28284,30 +27816,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>RestrictedSitesZoneRunActiveXControlsAndPlugins</NodeName>
           <DFProperties>
             <AccessType>
@@ -28405,30 +27913,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -28860,79 +28344,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description></Description>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Add />
@@ -29754,66 +29166,6 @@ Default: No message.</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccountsAndShares</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Network access: Do not allow anonymous enumeration of SAM accounts and shares
-
-This security setting determines whether anonymous enumeration of SAM accounts and shares is allowed.
-
-Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. If you do not want to allow anonymous enumeration of SAM accounts and shares, then enable this policy.
-
-Default: Disabled.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Network access: Restrict anonymous access to Named Pipes and Shares
-
-When enabled, this security setting restricts anonymous access to shares and pipes to the settings for:
-
-Network access: Named pipes that can be accessed anonymously
-Network access: Shares that can be accessed anonymously
-Default: Enabled.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</NodeName>
           <DFProperties>
             <AccessType>
@@ -29855,34 +29207,6 @@ This policy is supported on at least Windows Server 2016.</Description>
             <Description>Network security: Allow PKU2U authentication requests to this computer to use online identities.
 
 This policy will be turned off by default on domain joined machines. This would prevent online identities from authenticating to the domain joined machine.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RecoveryConsole_AllowAutomaticAdministrativeLogon</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Recovery console: Allow automatic administrative logon
-
-This security setting determines if the password for the Administrator account must be given before access to the system is granted. If this option is enabled, the Recovery Console does not require you to provide a password, and it automatically logs on to the system.
-
-Default: This policy is not defined and automatic administrative logon is not allowed.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30488,7 +29812,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description></Description>
+            <Description>This policy setting allows backup and restore of cellular text messages to Microsoft's cloud services.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30512,7 +29836,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description></Description>
+            <Description>This policy setting allows you to enable or disable the sending and receiving cellular MMS messages.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -30536,7 +29860,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description></Description>
+            <Description>This policy setting allows you to enable or disable the sending and receiving of cellular RCS (Rich Communication Services) messages.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -31512,7 +30836,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31536,7 +30860,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31560,7 +30884,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31608,7 +30932,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31632,7 +30956,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31656,7 +30980,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31704,7 +31028,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31728,7 +31052,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31752,7 +31076,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31800,7 +31124,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31824,7 +31148,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31848,7 +31172,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31896,7 +31220,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31920,7 +31244,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31944,7 +31268,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -31992,7 +31316,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32016,7 +31340,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32040,7 +31364,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32088,7 +31412,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32112,7 +31436,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32136,7 +31460,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32184,7 +31508,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32208,7 +31532,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32232,7 +31556,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32280,7 +31604,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32304,7 +31628,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32328,7 +31652,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32376,7 +31700,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32400,7 +31724,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32424,7 +31748,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32472,7 +31796,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32496,7 +31820,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32520,7 +31844,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32568,7 +31892,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32592,7 +31916,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32616,7 +31940,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32856,7 +32180,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32880,7 +32204,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -32904,7 +32228,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DFFormat>
               <chr/>
             </DFFormat>
@@ -34560,6 +33884,30 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>AllowOnlineTips</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>AllowPowerSleep</NodeName>
           <DFProperties>
             <AccessType>
@@ -35274,30 +34622,6 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>HidePeopleBar</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>HidePowerButton</NodeName>
           <DFProperties>
             <AccessType>
@@ -35894,6 +35218,30 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>DisableEnterpriseAuthProxy</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DisableOneDriveFileSync</NodeName>
           <DFProperties>
             <AccessType>
@@ -35902,7 +35250,7 @@ The options are:
               <Get />
               <Replace />
             </AccessType>
-            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Microsoft Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
+            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Windows Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -35951,6 +35299,30 @@ The options are:
               <Replace />
             </AccessType>
             <Description>Diagnostic files created when a feedback is filed in the Feedback Hub app will always be saved locally. If this policy is not present or set to false, users will be presented with the option to save locally. The default is to not save locally.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LimitEnhancedDiagnosticDataWindowsAnalytics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. To enable this behavior you must complete two steps: 1. Enable this policy setting 2. Set Allow Telemetry to level 2 (Enhanced) When you configure these policy settings, a Basic level of diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: https://go.microsoft.com/fwlink/?linkid=847594. Enabling Enhanced diagnostic data in the Allow Telemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional Enhanced level telemetry data. This setting has no effect on computers configured to send Full, Basic or Security level diagnostic data to Microsoft. If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the Allow Telemetry policy.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -38467,6 +37839,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -38491,6 +37864,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38514,6 +37888,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38557,6 +37932,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38580,6 +37956,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38603,6 +37980,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38760,6 +38138,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38806,6 +38185,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38829,6 +38209,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -38853,6 +38234,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38876,6 +38258,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -38924,6 +38307,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38947,6 +38331,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -38970,6 +38355,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -39789,6 +39175,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -39813,6 +39200,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -39836,6 +39224,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -39860,6 +39249,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40004,6 +39394,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="3,4,6,7"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40047,6 +39438,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40070,6 +39462,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40093,6 +39486,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40182,6 +39576,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40206,6 +39601,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40229,6 +39625,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40276,6 +39673,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40300,6 +39698,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40323,6 +39722,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40347,6 +39747,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40371,6 +39772,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40395,6 +39797,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40422,6 +39825,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40445,6 +39849,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40468,6 +39873,7 @@ If you disable this setting, the Microsoft Compatibility List will not be used d
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40497,6 +39903,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40520,6 +39927,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40543,6 +39951,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40566,6 +39975,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40589,6 +39999,7 @@ This policy will only apply on domain joined machines or when the device is MDM 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40647,6 +40058,7 @@ This setting can only be used with domain-joined or MDM-enrolled devices. For mo
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40779,6 +40191,7 @@ If you disable or don't configure this setting (default), employees can add, imp
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40802,6 +40215,7 @@ If you disable or don't configure this setting (default), employees can add, imp
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40827,6 +40241,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -40853,6 +40268,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40876,6 +40292,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40899,6 +40316,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40922,6 +40340,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -40975,6 +40394,7 @@ If you disable or don't configure this setting, employees will see the favorites
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -41028,6 +40448,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -41052,6 +40473,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -41096,6 +40518,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -41148,7 +40571,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -41172,7 +40595,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -41196,7 +40619,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -41280,6 +40703,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,2"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -41349,6 +40773,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -41372,6 +40797,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -41396,6 +40822,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -41420,6 +40847,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -41443,6 +40871,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -41679,13 +41108,13 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>EnableWindowsAutoPilotResetCredentials</NodeName>
+          <NodeName>DisableAutomaticReDeploymentCredentials</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
             <Description></Description>
-            <DefaultValue>0</DefaultValue>
+            <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -41698,7 +41127,8 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
       </Node>
@@ -41881,6 +41311,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -42432,6 +41863,54 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>ControlledFolderAccessAllowedApplications</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ControlledFolderAccessProtectedFolders</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue></DefaultValue>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>DaysToRetainCleanedMalware</NodeName>
           <DFProperties>
             <AccessType>
@@ -42456,7 +41935,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>EnableGuardMyFolders</NodeName>
+          <NodeName>EnableControlledFolderAccess</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -42553,54 +42032,6 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
         </Node>
         <Node>
           <NodeName>ExcludedProcesses</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>GuardedFoldersAllowedApplications</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>GuardedFoldersList</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -42903,6 +42334,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -42951,6 +42383,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,2,3,99,100"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
@@ -43307,6 +42740,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -43331,6 +42765,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,2"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
@@ -43355,6 +42790,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="1,3"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -43473,6 +42909,7 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -44247,6 +43684,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -44271,6 +43709,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44294,6 +43733,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44317,6 +43757,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44340,6 +43781,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44363,6 +43805,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44386,6 +43829,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44409,6 +43853,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44432,6 +43877,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44455,6 +43901,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44478,6 +43925,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -44502,6 +43950,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -44526,6 +43975,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -44636,6 +44086,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -44679,6 +44130,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -45483,33 +44935,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>DisableFlashInIE</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DisableBlockingOfOutdatedActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~SecurityFeatures~IESF_AddOnManagement</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>VerMgmtDisable</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -47026,33 +46451,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>InternetZoneRunNETFrameworkReliantComponentsNotSignedWithAuthenticode</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyUnsignedFrameworkComponentsURLaction_1</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode</NodeName>
           <DFProperties>
             <AccessType>
@@ -47130,33 +46528,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_PolicyBlockPopupWindows_1</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>InternetZoneWebsitesInLessPrivilegedZonesCanNavigateIntoThisZone</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_InternetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyZoneElevationURLaction_1</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -47432,33 +46803,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
         </Node>
         <Node>
           <NodeName>IntranetZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_IntranetZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_3</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -50617,33 +49961,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>RestrictedSitesZoneNavigateWindowsAndFramesAcrossDomains</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyNavigateSubframesAcrossDomains_7</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>RestrictedSitesZoneRunActiveXControlsAndPlugins</NodeName>
           <DFProperties>
             <AccessType>
@@ -50775,33 +50092,6 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
             <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>IZ_Policy_UnsafeFiles_7</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RestrictedSitesZoneTurnOnCrossSiteScriptingFilter</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_RestrictedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyTurnOnXSSFilter_Both_Restricted</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -51265,88 +50555,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>TrustedSitesZoneDontRunAntimalwareProgramsAgainstActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyAntiMalwareCheckingOfActiveXControls_5</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControls</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description></Description>
-            <DefaultValue></DefaultValue>
-            <DFFormat>
-              <chr/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ADMXBacked>inetres.admx</MSFT:ADMXBacked>
-            <MSFT:ADMXCategory>inetres~AT~WindowsComponents~InternetExplorer~InternetCPL~IZ_SecurityPage~IZ_TrustedSitesZone</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>IZ_PolicyScriptActiveXNotMarkedSafe_5</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TrustedSitesZoneInitializeAndScriptActiveXControlsNotMarkedSafe</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
@@ -51621,6 +50830,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -51645,6 +50855,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -51695,6 +50906,7 @@ If you disable or do not configure this policy (recommended), users will be able
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,3"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
@@ -52187,66 +51399,6 @@ Default: No message.</Description>
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccountsAndShares</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Network access: Do not allow anonymous enumeration of SAM accounts and shares
-
-This security setting determines whether anonymous enumeration of SAM accounts and shares is allowed.
-
-Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. If you do not want to allow anonymous enumeration of SAM accounts and shares, then enable this policy.
-
-Default: Disabled.</Description>
-            <DefaultValue>0</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Network access: Restrict anonymous access to Named Pipes and Shares
-
-When enabled, this security setting restricts anonymous access to shares and pipes to the settings for:
-
-Network access: Named pipes that can be accessed anonymously
-Network access: Shares that can be accessed anonymously
-Default: Enabled.</Description>
-            <DefaultValue>1</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM</NodeName>
           <DFProperties>
             <AccessType>
@@ -52286,34 +51438,6 @@ This policy is supported on at least Windows Server 2016.</Description>
 
 This policy will be turned off by default on domain joined machines. This would prevent online identities from authenticating to the domain joined machine.</Description>
             <DefaultValue>1</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RecoveryConsole_AllowAutomaticAdministrativeLogon</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Recovery console: Allow automatic administrative logon
-
-This security setting determines if the password for the Administrator account must be given before access to the system is granted. If this option is enabled, the Recovery Console does not require you to provide a password, and it automatically logs on to the system.
-
-Default: This policy is not defined and automatic administrative logon is not allowed.</Description>
-            <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -52494,6 +51618,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,3"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
@@ -52811,6 +51936,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -52855,6 +51981,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -52878,6 +52005,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -52907,7 +52035,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description></Description>
+            <Description>This policy setting allows backup and restore of cellular text messages to Microsoft's cloud services.</Description>
             <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
@@ -52921,7 +52049,6 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -52931,7 +52058,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description></Description>
+            <Description>This policy setting allows you to enable or disable the sending and receiving cellular MMS messages.</Description>
             <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
@@ -52955,7 +52082,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description></Description>
+            <Description>This policy setting allows you to enable or disable the sending and receiving of cellular RCS (Rich Communication Services) messages.</Description>
             <DefaultValue>1</DefaultValue>
             <DFFormat>
               <int/>
@@ -53554,6 +52681,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -53577,6 +52705,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:StartOSVerison>10.0.10240</MSFT:StartOSVerison>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -53601,6 +52730,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecureZeroHasNoLimits</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -53624,6 +52754,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -53941,7 +53072,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -53965,7 +53096,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the camera. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -53989,7 +53120,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the camera privacy setting for the listed apps. This setting overrides the default LetAppsAccessCamera policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54036,7 +53167,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54060,7 +53191,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to contacts. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54084,7 +53215,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the contacts privacy setting for the listed apps. This setting overrides the default LetAppsAccessContacts policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54131,7 +53262,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54155,7 +53286,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to email. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54179,7 +53310,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the email privacy setting for the listed apps. This setting overrides the default LetAppsAccessEmail policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54226,7 +53357,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54250,7 +53381,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to location. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54274,7 +53405,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the location privacy setting for the listed apps. This setting overrides the default LetAppsAccessLocation policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54321,7 +53452,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54345,7 +53476,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to read or send messages (text or MMS). This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54369,7 +53500,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the messaging privacy setting for the listed apps. This setting overrides the default LetAppsAccessMessaging policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54416,7 +53547,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54440,7 +53571,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to the microphone. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54464,7 +53595,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the microphone privacy setting for the listed apps. This setting overrides the default LetAppsAccessMicrophone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54511,7 +53642,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54535,7 +53666,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to motion data. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54559,7 +53690,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the motion privacy setting for the listed apps. This setting overrides the default LetAppsAccessMotion policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54606,7 +53737,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54630,7 +53761,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to notifications. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54654,7 +53785,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the notifications privacy setting for the listed apps. This setting overrides the default LetAppsAccessNotifications policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54701,7 +53832,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54725,7 +53856,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are not allowed to make phone calls. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54749,7 +53880,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the phone call privacy setting for the listed apps. This setting overrides the default LetAppsAccessPhone policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54796,7 +53927,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54820,7 +53951,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to control radios. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54844,7 +53975,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the radios privacy setting for the listed apps. This setting overrides the default LetAppsAccessRadios policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54891,7 +54022,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54915,7 +54046,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are denied access to tasks. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54939,7 +54070,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the tasks privacy setting for the listed apps. This setting overrides the default LetAppsAccessTasks policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -54986,7 +54117,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55010,7 +54141,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not have access to trusted devices. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55034,7 +54165,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'trusted devices' privacy setting for the listed apps. This setting overrides the default LetAppsAccessTrustedDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55271,7 +54402,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55295,7 +54426,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps will not be allowed to communicate with unpaired wireless devices. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55319,7 +54450,7 @@ The options are:
             <AccessType>
               <Get />
             </AccessType>
-            <Description>List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
+            <Description>List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the 'Communicate with unpaired wireless devices' privacy setting for the listed apps. This setting overrides the default LetAppsSyncWithDevices policy setting for the specified apps.</Description>
             <DefaultValue></DefaultValue>
             <DFFormat>
               <chr/>
@@ -55357,6 +54488,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56441,6 +55573,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56464,6 +55597,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56487,6 +55621,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56715,6 +55850,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56738,6 +55874,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -56762,6 +55899,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56785,6 +55923,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -56809,6 +55948,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -56945,6 +56085,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -56969,6 +56110,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -56992,6 +56134,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57015,6 +56158,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57038,7 +56182,32 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowOnlineTips</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description></Description>
+            <DefaultValue>1</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57062,6 +56231,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57086,6 +56256,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57110,6 +56281,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57134,6 +56306,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57157,6 +56330,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57181,6 +56355,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57247,6 +56422,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57271,6 +56447,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57295,6 +56472,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57339,6 +56517,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57382,6 +56561,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57406,6 +56586,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57430,6 +56611,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57454,6 +56636,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57478,6 +56661,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57502,6 +56686,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57526,6 +56711,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57550,6 +56736,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57574,6 +56761,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57598,6 +56786,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1,65535"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57670,6 +56859,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57693,6 +56883,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57717,6 +56908,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57740,30 +56932,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>HidePeopleBar</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.</Description>
-            <DefaultValue>0</DefaultValue>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57787,6 +56956,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57810,6 +56980,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57834,6 +57005,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -57858,6 +57030,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57881,6 +57054,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57904,6 +57078,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57927,6 +57102,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57950,6 +57126,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -57973,6 +57150,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58020,6 +57198,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58182,6 +57361,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58228,6 +57408,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58274,6 +57455,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58320,6 +57502,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58351,12 +57534,12 @@ The options are:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DisableOneDriveFileSync</NodeName>
+          <NodeName>DisableEnterpriseAuthProxy</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
-            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Microsoft Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
+            <Description>This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.</Description>
             <DefaultValue>0</DefaultValue>
             <DFFormat>
               <int/>
@@ -58370,6 +57553,30 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DisableOneDriveFileSync</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting lets you prevent apps and features from working with files on OneDrive. If you enable this policy setting: users can’t access OneDrive from the OneDrive app and file picker; Windows Store apps can’t access OneDrive using the WinRT API; OneDrive doesn’t appear in the navigation pane in File Explorer; OneDrive files aren’t kept in sync with the cloud; Users can’t automatically upload photos and videos from the camera roll folder. If you disable or do not configure this policy setting, apps and features can work with OneDrive file storage.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58421,6 +57628,30 @@ The options are:
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>LimitEnhancedDiagnosticDataWindowsAnalytics</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. To enable this behavior you must complete two steps: 1. Enable this policy setting 2. Set Allow Telemetry to level 2 (Enhanced) When you configure these policy settings, a Basic level of diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: https://go.microsoft.com/fwlink/?linkid=847594. Enabling Enhanced diagnostic data in the Allow Telemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional Enhanced level telemetry data. This setting has no effect on computers configured to send Full, Basic or Security level diagnostic data to Microsoft. If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the Allow Telemetry policy.</Description>
+            <DefaultValue>0</DefaultValue>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
         <Node>
@@ -58486,6 +57717,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58510,6 +57742,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58534,6 +57767,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58582,6 +57816,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58606,6 +57841,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58630,6 +57866,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58654,6 +57891,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58677,6 +57915,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58792,6 +58031,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>desktop</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -58975,6 +58215,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58998,6 +58239,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59044,6 +58286,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="15,30,60,120,240"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59090,6 +58333,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="2,4,8,16,32"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59366,6 +58610,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59389,6 +58634,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59780,6 +59026,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="15,30,60"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59803,6 +59050,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="2,4,8,12,24"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59939,6 +59187,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59962,6 +59211,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -59985,6 +59235,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60008,6 +59259,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60031,6 +59283,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60453,6 +59706,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -60575,6 +59829,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60618,6 +59873,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60641,6 +59897,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60666,6 +59923,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60691,6 +59949,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60716,6 +59975,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
@@ -60742,6 +60002,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60765,6 +60026,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -60790,6 +60052,7 @@ The options are:
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
             <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>

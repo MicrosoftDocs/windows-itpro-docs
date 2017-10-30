@@ -75,8 +75,8 @@ Follow theses actions to correct known issues related to a misconfigured machine
 - [Ensure the telemetry and diagnostics service is enabled](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-the-telemetry-and-diagnostics-service-is-enabled)</br>
 If the endpoints aren't reporting correctly, you might need to check that the Windows 10 telemetry and diagnostics service is set to automatically start and is running on the endpoint.
 
-- [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy)</br>
-If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Early Launch Antimalware (ELAM) driver to be enabled.
+- [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)</br>
+If your endpoints are running a third-party antimalware client, the Windows Defender ATP agent needs the Windows Defender Antivirus Early Launch Antimalware (ELAM) driver to be enabled.
 
 If you took corrective actions and the machine status is still misconfigured, [open a support ticket](http://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 

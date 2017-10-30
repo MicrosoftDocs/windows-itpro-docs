@@ -66,7 +66,7 @@ breach. You can submit files for deep analysis and receive the results
 without leaving the [Windows Defender ATP portal](https://securitycenter.windows.com).
 
 Windows Defender ATP works with existing Windows security technologies
-on endpoints, such as Windows Defender, AppLocker, and Device Guard. It
+on endpoints, such as Windows Defender Antivirus, AppLocker, and Windows Defender Device Guard. It
 can also work side-by-side with third-party security solutions and
 antimalware products.
 
