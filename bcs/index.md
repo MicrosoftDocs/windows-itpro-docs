@@ -14,7 +14,7 @@ description: Learn about the product documentation and resources available for M
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -930,7 +930,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1899,7 +1899,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://support.office.com" target="_blank">
+                                <a href="https://support.office.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1918,7 +1918,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="http://support.microsoft.com/products/windows" target="_blank">
+                                <a href="https://support.microsoft.com/products/windows" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1952,7 +1952,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
