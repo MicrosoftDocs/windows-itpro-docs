@@ -48,8 +48,16 @@ A specific file in a specific folder | The file c:\sample\sample.test only | Fil
 A specific process | The executable file c:\test\process.exe | File and folder exclusions
 
 This means the exclusion lists have the following characteristics:
-- Folder exclusions will apply to all files and folders under that folder.
+- Folder exclusions will apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
 - File extensions will apply to any file name with the defined extension, regardless of where the file is located.
+
+>[!IMPORTANT]
+>The use of wildcards such as the asterisk (\*) will alter how the exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
+>
+>You cannot exclude mapped network drives
+>Folders that are reparse points that are created after the Windows Defender AV service starts and that are added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
+
+
 
 
 To exclude files opened by a specific process, see the [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md) topic.
@@ -187,21 +195,23 @@ See [Add exclusions in the Windows Defender Security Center app](windows-defende
 <a id="wildcards"></a>
 ## Use wildcards in the file name and folder path or extension exclusion lists
 
-You can use the asterisk \*, question mark ?, or environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the file name or folder path exclusion list.
+You can use the asterisk \*, question mark ?, or environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the file name or folder path exclusion list. The way in which these wildcards are interpreted differs from their usual usage in other apps and languages, so you should read this section to understand their specific limitations.
 
 >[!IMPORTANT]
->Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
-
-You cannot use a wildcard in place of a drive letter.
+>There are key limitations and usage scenarios for these wildcards:
+>
+>- Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
+>- You cannot use a wildcard in place of a drive letter.
+>- The use of asterisk \* in a folder exclusion will stand in place for a single folder
 
 
 The following table describes how the wildcards can be used and provides some examples.
 
-Wildcard | Use | Example use | Example matches
+Wildcard | Use in file and file extension exclusions | Use in folder exclusions | Example use | Example matches
 ---|---|---|---
-\* (asterisk) | Replaces any number of characters | <ul><li>C:\MyData\my\*.zip</li><li>C:\somepath\\\*\Data</li></ul> | <ul><li>C:\MyData\my-archived-files-43.zip</li><li>Any file in C:\somepath\folder1\folder2\Data</li></ul>
-? (question mark) | Replaces a single character | <ul><li>C:\MyData\my\?.zip</li><li>C:\somepath\\\?\Data</li></ul> | <ul><li>C:\MyData\my1.zip</li><li>Any file in C:\somepath\P\Data</li></ul>
-Environment variables | The defined variable will be populated as a path when the exclusion is evaluated |  <ul><li>%ALLUSERSPROFILE%\CustomLogFiles</li></ul> | <ul><li>C:\ProgramData\CustomLogFiles\Folder1\file1.txt</li></ul>
+\* (asterisk) | Replaces any number of characters  | Replaces a single folder | <ol><li>C:\MyData\my\*.zip</li><li>C:\somepath\\\*\Data</li></ol> | <ol><li>C:\MyData\my-archived-files-43.zip</li><li>Any file in C:\somepath\folder1\Data or C:\somepath\folder2\Data</li></ol>
+? (question mark) | Replaces a single character | Replaces a single character in a folder name | <ol><li>C:\MyData\my\?.zip</li><li>C:\somepath\\\?\Data</li><li>C:\somepath\\\test0?\Data</li></ol> | <ol><li>C:\MyData\my1.zip</li><li>Any file in C:\somepath\P\Data</li><li>Any file in C:\somepath\test01\Data</li></ol>
+Environment variables | The defined variable will be populated as a path when the exclusion is evaluated | Same as file and extension use |  <ol><li>%ALLUSERSPROFILE%\CustomLogFiles</li></ol> | <ol><li>C:\ProgramData\CustomLogFiles\Folder1\file1.txt</li></ol>
 
 
 
