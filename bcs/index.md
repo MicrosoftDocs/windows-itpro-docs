@@ -626,7 +626,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
-                                                    <p>Alternatively, you can use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
+                                                    <p>Alternatively, use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1578,7 +1578,7 @@ description: Learn about the product documentation and resources available for M
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
-                                                    <p>Alternatively, you can use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
+                                                    <p>Alternatively, use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
                                                 </div>
                                             </div>
                                         </div>
