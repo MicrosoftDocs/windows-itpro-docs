@@ -100,7 +100,7 @@ The following table defines which Windows features require TPM support.
 |-------------------------|--------------|--------------------|--------------------|----------|
 | Measured Boot           | Yes          | Yes                | Yes                | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot         |
 | BitLocker               | Yes           | Yes                | Yes                | TPM 1.2 or 2.0 is required  |
-| Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires InstantGo/Connected Standby certification, which requires TPM 2.0. | 
+| Device Encryption       | Yes          | N/A                | Yes                | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0. | 
 | Device Guard            | No           | Yes                | Yes                |          |
 | Credential Guard        | No           | Yes                | Yes                | Windows 10, version 1507 (End of Life as of May 2017) only supported TPM 2.0 for Credential Guard. Beginning with Windows 10, version 1511, TPM 1.2 and 2.0 are supported.   |
 | Device Health Attestation| Yes         | Yes                | Yes                |          |
