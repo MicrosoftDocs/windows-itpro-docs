@@ -573,9 +573,10 @@ Remove Task Manager |		Enabled
 Remove Change Password option in Security Options UI |		Enabled
 Remove Sign Out option in Security Options UI	 |	Enabled
 Remove All Programs list from the Start Menu	 |	Enabled – Remove and disable setting
-Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers</br></br>**Note:** Users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears expalining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
+Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
 
-
+>[!NOTE]
+>When **Prevent access to drives from My Computer** is enabled, users can browse the directory structure in File Explorer, but they cannot open folders and access the contents. Also, they cannot use the **Run** dialog box or the **Map Network Drive** dialog box to view the directories on these drives. The icons representing the specified drives still appear in File Explorer, but if users double-click the icons, a message appears expalining that a setting prevents the action. This setting does not prevent users from using programs to access local and network drives. It does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
 
 
 
