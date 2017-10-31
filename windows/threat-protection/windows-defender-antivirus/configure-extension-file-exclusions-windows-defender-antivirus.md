@@ -220,28 +220,28 @@ The following table describes how the wildcards can be used and provides some ex
         <th>Example matches></th>
     </tr>
     <tr>
-        <td><b>*</b> (asterisk)</td>
+        <td><b>\*</b> (asterisk)</td>
         <td>Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument. </td>
-        <td>Replaces a single folder. <br />Use multiple <b>*</b> with folder slashes <b>\</b> to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included.</td>
+        <td>Replaces a single folder. <br />Use multiple <b>\*</b> with folder slashes <b>\\</b> to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included.</td>
         <td>
             <ol>
-                <li>C:\MyData\my\<b>*</b>.txt</li>
-                <li>C:\somepath\<b>*</b>\Data</li>
-                <li>C:\Serv\<b>*</b>\<b>*</b>\Backup
+                <li>C:\MyData\my\\<b>\*</b>.txt</li>
+                <li>C:\somepath\\<b>\*</b>\Data</li>
+                <li>C:\Serv\\<b>\*</b>\\<b>\*</b>\Backup
             </ol>
         </td>
         <td>
             <ol>
-                <li><i>C:\MyData\<b>notes</b>.txt</i></li>
+                <li><i>C:\MyData\\<b>notes</b>.txt</i></li>
                 <li>Any file in: 
                     <ul>
-                        <li><i>C:\somepath\<b>Archives</b>\Data</i> and its subfolders</li>
-                        <li><i>C:\somepath\<b>Authorized</b>\Data</i> and its subfolders</li>
+                        <li><i>C:\somepath\\<b>Archives</b>\Data</i> and its subfolders</li>
+                        <li><i>C:\somepath\\<b>Authorized</b>\Data</i> and its subfolders</li>
                     </ul>
                 <li>Any file in:
                 <ul>
-                    <li><i>C:\Serv\<b>Primary</b>\<b>Denied</b>\Backup</i> and its subfolders</li>
-                    <li><i>C:\Serv\<b>Secondary</b>\<b>Allowed</b>\Backup</i> and its subfolders</li>
+                    <li><i>C:\Serv\\<b>Primary</b>\\<b>Denied</b>\Backup</i> and its subfolders</li>
+                    <li><i>C:\Serv\\<b>Secondary</b>\\<b>Allowed</b>\Backup</i> and its subfolders</li>
                 </ul>
             </ol>
         </td>
@@ -268,15 +268,15 @@ The following table describes how the wildcards can be used and provides some ex
         <td>
             <ol>
                 <li><i>C:\MyData\my<b>1</b>.zip</i></li>
-                <li>Any file in <i>C:\somepath\<b>P</b>\Data</i> and its subfolders</li>
+                <li>Any file in <i>C:\somepath\\<b>P</b>\Data</i> and its subfolders</li>
                 <li>Any file in <i>C:\somepath\test0<b>1</b>\Data</i> and its subfolders</li>
             </ol>
         </td>
     </tr>
     <tr>
         <td>Environment variables</td>
-        <td>The defined variable will be populated as a path when the exclusion is evaluated</td>
-        <td>Same as file and extension use </td>
+        <td>The defined variable will be populated as a path when the exclusion is evaluated.</td>
+        <td>Same as file and extension use. </td>
         <td>
             <ol>
                 <li><b>%ALLUSERSPROFILE%</b>\CustomLogFiles</li>
