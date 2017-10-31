@@ -6,15 +6,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 10/04/2017
+ms.date: 10/31/2017
 ---
 
 # What's new in Microsoft Store for Business and Education
 
-Microsoft Store for Business and Education regularly releases new and improved feaures. Take a look below to see what's available to you today. 
+Microsoft Store for Business and Education regularly releases new and improved feaures.  
 
 ## Latest updates for Store for Business and Education
 
+**October 2017**
+
+We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
+
+<!---
 |  |  |
 |-----------------------|---------------------------------|
 | <iframe width="288" height="232" src="https://www.youtube.com/embed/IpLIZU_j7Z0" frameborder="0" allowfullscreen></iframe>| **Manage Windows device deployment with Windows AutoPilot Deployment** <br /><br /> In Microsoft Store for Business, you can manage devices for your organization and apply an AutoPilot deployment profile to your devices. When people in your organization run the out-of-box experience on the device, the profile configures Windows, based on the AutoPilot deployment profile you applied to the device.<br /><br />[Get more info](add-profile-to-devices.md)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education  |
@@ -24,12 +29,16 @@ Microsoft Store for Business and Education regularly releases new and improved f
 | ![Microsoft Store for Business Products and Services page, Subscription tab with Office 365 subscription acquired by reseller.](images/msfb-wn-1709-o365-csp.png) |**Manage Office 365 subscriptions acquired by partners**<br /><br />Office 365 subscriptions purchased for your organization by a partner or reseller can be managed in Microsoft Store for Business. Admins can assign and manage licenses for these subscriptions. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education  | 
 | ![Microsoft Store for Business shop page.](images/msfb-wn-1709-edge-ext.png) |**Edge extensions in Microsoft Store**<br /><br />Edge Extensions are now available from Microsoft Store! You can acquire and distribute them from Microsoft Store for Business just like any other app. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
 | ![Search results in Microsoft Store for Business showing sub categories.](images/msfb-wn-1709-search-result-sub-cat.png) |**Search results in Microsoft Store for Business**<br /><br />Search results now have sub categories to help you refine search results. <br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+-->
 
-<!---
 ## Previous releases and updates
 
-[August 2017](release-history-microsoft-store-business-education.md#august-2017)
-- Item 1
-- Item 2
-- Item 3 
--->
+[September 2017](release-history-microsoft-store-business-education.md#september-2017)
+- Manage Windows device deployment with Windows AutoPilot Deployment
+- Request an app
+- My organization
+- Manage prepaid Office 365 subscriptions
+- Manage Office 365 subscriptions acquired by partners
+- Edge extensions in Microsoft Store
+- Search results in Microsoft Store for Business
+ 
