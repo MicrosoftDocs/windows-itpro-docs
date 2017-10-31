@@ -56,6 +56,5 @@ Windows Defender ATP supports the use of Power BI data connectors to enable you 
     Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities.
 
 
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 
