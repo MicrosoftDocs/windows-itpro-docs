@@ -30,7 +30,6 @@
 ###### [Configure endpoints using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#configure-endpoints-using-microsoft-intune)
 ##### [Configure endpoints using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 ##### [Configure non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
-#### [Configure non-Windows endpoints](windows-defender-atp\configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)
 #### [Configure server endpoints](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
 #### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
