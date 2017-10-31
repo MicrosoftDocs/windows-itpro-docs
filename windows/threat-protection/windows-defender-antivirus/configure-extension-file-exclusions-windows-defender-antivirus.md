@@ -261,7 +261,7 @@ The following table describes how the wildcards can be used and provides some ex
         <td>
             <ol>
                 <li>C:\MyData\my<b>?</b>.zip</li>
-                <li>C:\somepath\<b>?</b>\Data</li>
+                <li>C:\somepath\\<b>?</b>\Data</li>
                 <li>C:\somepath\test0<b>?</b>\Data</li>
             </ol>
         </td>
@@ -295,7 +295,7 @@ The following table describes how the wildcards can be used and provides some ex
 >
 >For example, you can exclude all files that start with "date" in the folders *c:\data\final\marked* and *c:\data\review\marked* by using the rule argument <b>c:\data\\\*\marked\date*.\*</b>.
 >
->This argument, however, will not match any folders in subfolders under *c:\data\final\marked* or *c:\data\review\marked*.
+>This argument, however, will not match any files in **subfolders** under *c:\data\final\marked* or *c:\data\review\marked*.
 
 
 <a id="review"></a>
