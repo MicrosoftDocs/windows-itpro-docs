@@ -4,10 +4,10 @@ description: Delivery Optimization is a new peer-to-peer distribution method in 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: DaniHalfin
+author: JaimeO
 ms.localizationpriority: high
-ms.author: daniha
-ms.date: 07/27/2017
+ms.author: jaimeo
+ms.date: 11/01/2017
 ---
 
 # Configure Delivery Optimization for Windows 10 updates
@@ -19,16 +19,16 @@ ms.date: 07/27/2017
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-Delivery Optimization is a self-organizing distributed cache solution for businesses looking to reduce bandwidth consumption for operating system updates, operating system upgrades, and applications by allowing clients to download those elements from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), and Windows Update for Business. This functionality is similar to BranchCache in other systems, such as System Center Configuration Manager. 
+Windows updates, upgrades, and applications can be very large files. Downloading and distributing updates can consume quite a bit of processor and network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these elements among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those elements from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), and Windows Update for Business. This functionality is similar to BranchCache in other systems, such as System Center Configuration Manager. 
 
-Delivery Optimization is a cloud managed solution. Having access to the Delivery Optimization cloud services, is a requirement for it to be enabled. This means that in order to utilize the peer-to-peer functionality of Delivery Optimization, machines need to have access to the internet.
+Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
 For more details, see [Download mode](#download-mode).
 
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
-By default in Windows 10 Enterprise and Education, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
+By default in Windows 10 Enterprise and Education editions, Delivery Optimization allows peer-to-peer sharing on the organization's own network only, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
 ## Delivery Optimization options
 
@@ -58,13 +58,13 @@ Several Delivery Optimization features are configurable:
 | [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) | DOAllowVPNPeerCaching | 1703 |
 | [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) | DOMinBatteryPercentageAllowedToUpload | 1703 |
 
-When configuring Delivery Optimization on Windows 10 devices, the first and most important thing to configure, would be [Download mode](#download-mode). Download mode dictates how Delivery Optimization downloads Windows updates.
+When configuring Delivery Optimization on Windows 10 devices, the first and most important thing to configure is the [Download mode](#download-mode), which dictates how Delivery Optimization downloads Windows updates.
 
 While every other feature setting is optional, they offer enhanced control of the Delivery Optimization behavior.
 
 [Group ID](#group-id), combined with Group [Download mode](#download-mode), enables administrators to create custom device groups that will share content between devices in the group.
 
-Delivery Optimization uses locally cached updates. In cases where devices have ample local storage and you would like to cache more content, or if you have limited storage and would like to cache less, use the settings below to adjust the Delivery Optimization cache to suit your scenario:
+Delivery Optimization uses locally cached updates. In cases where devices have ample local storage and you would like to cache more content, or if you have limited storage and would like to cache less, use the following settings to adjust the Delivery Optimization cache to suit your scenario:
 - [Max Cache Size](#max-cache-size) and [Absolute Max Cache Size](#absolute-max-cache-size) control the amount of space the Delivery Optimization cache can use.
 - [Max Cache Age](#max-cache-age) controls the retention period for each update in the cache.
 - The system drive is the default location for the Delivery Optimization cache. [Modify Cache Drive](#modify-cache-drive) allows administrators to change that location.
@@ -72,22 +72,22 @@ Delivery Optimization uses locally cached updates. In cases where devices have a
 >[!NOTE]
 >It is possible to configure preferred cache devices. For more information, see [Set “preferred” cache devices for Delivery Optimization](#set-preferred-cache-devices).
 
-All cached files have to be above a set minimum size. This size is automatically set by the Delivery Optimization cloud services. Administrators may choose to change it, which will result in increased performance, when local storage is sufficient and the network isn't strained or congested. [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size) determines the minimum size of files to be cached.
+All cached files have to be above a set minimum size. This size is automatically set by the Delivery Optimization cloud services, but when local storage is sufficient and the network isn't strained or congested, administrators might choose to change it to obtain increased performance. You can set the minimum size of files to cache by adjusting [Minimum Peer Caching Content File Size](#minimum-peer-caching-content-file-size).
 
-There are additional options available to robustly control the impact Delivery Optimization has on your network:
-- [Maximum Download Bandwidth](#maximum-download-bandwidth) and [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) controls the download bandwidth used by Delivery Optimization.
+Additional options available that control the impact Delivery Optimization has on your network include the following:
+- [Maximum Download Bandwidth](#maximum-download-bandwidth) and [Percentage of Maximum Download Bandwidth](#percentage-of-maximum-download-bandwidth) control the download bandwidth used by Delivery Optimization.
 - [Max Upload Bandwidth](#max-upload-bandwidth) controls the Delivery Optimization upload bandwidth usage.
-- [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers per month.
+- [Monthly Upload Data Cap](#monthly-upload-data-cap) controls the amount of data a client can upload to peers each month.
 - [Minimum Background QoS](#minimum-background-qos) lets administrators guarantee a minimum download speed for Windows updates. This is achieved by adjusting the amount of data downloaded directly from Windows Update or WSUS servers, rather than other peers in the network.
 
-Various controls allow administrators to further customize scenarios where Delivery Optimization will be used:
+Administrators can further customize scenarios where Delivery Optimization will be used with the following settings:
 - [Minimum RAM (inclusive) allowed to use Peer Caching](#minimum-ram-allowed-to-use-peer-caching) sets the minimum RAM required for peer caching to be enabled.
 - [Minimum disk size allowed to use Peer Caching](#minimum-disk-size-allowed-to-use-peer-caching) sets the minimum disk size required for peer caching to be enabled.
 - [Enable Peer Caching while the device connects via VPN](#enable-peer-caching-while-the-device-connects-via-vpn) allows clients connected through VPN to use peer caching.
-- [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) controls the minimum battery level required for uploads to occur. Enabling this policy is required to allow upload while on battery.
+- [Allow uploads while the device is on battery while under set Battery level](#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) controls the minimum battery level required for uploads to occur. You must enable this policy to allow upload while on battery.
 
 ### How Microsoft uses Delivery Optimization
-In Microsoft, to help ensure that ongoing deployments weren’t affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
+At Microsoft, to help ensure that ongoing deployments weren’t affecting our network and taking away bandwidth for other services, Microsoft IT used a couple of different bandwidth management strategies. Delivery Optimization, peer-to-peer caching enabled through Group Policy, was piloted and then deployed to all managed devices using Group Policy. Based on recommendations from the Delivery Optimization team, we used the "group" configuration to limit sharing of content to only the devices that are members of the same Active Directory domain. The content is cached for 24 hours. More than 76 percent of content came from peer devices versus the Internet.
 
 For more details, check out the [Adopting Windows as a Service at Microsoft](https://www.microsoft.com/itshowcase/Article/Content/851/Adopting-Windows-as-a-service-at-Microsoft) technical case study.
 
@@ -95,7 +95,7 @@ Provided below is a detailed description of every configurable feature setting. 
 
 ### Download mode
 
-Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers.  The following table shows the available download mode options and what they do.
+Download mode dictates which download sources clients are allowed to use when downloading Windows updates in addition to Windows Update servers. The following table shows the available download mode options and what they do.
 
 | Download mode option | Functionality when set |
 | --- | --- |
@@ -107,11 +107,11 @@ Download mode dictates which download sources clients are allowed to use when do
 |Bypass (100) |	Bypass Delivery Optimization and use BITS, instead. For example, select this mode so that clients can use BranchCache. |
 
 >[!NOTE]
->Group mode is a best effort optimization and should not be relied on for an authentication of identity of devices participating in the group.
+>Group mode is a best-effort optimization and should not be relied on for an authentication of identity of devices participating in the group.
 
 ### Group ID
 
-By default, peer sharing on clients using the group download mode is limited to the same domain in Windows 10, version 1511, and the same domain and AD DS site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but do not fall within those domain or AD DS site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example create a sub-group representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to peer. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group. 
+By default, peer sharing on clients using the group download mode is limited to the same domain in Windows 10, version 1511, and the same domain and AD DS site in Windows 10, version 1607. By using the Group ID setting, you can optionally create a custom group that contains devices that should participate in Delivery Optimization but do not fall within those domain or AD DS site boundaries, including devices in another domain. Using Group ID, you can further restrict the default group (for example, you could create a sub-group representing an office building), or extend the group beyond the domain, allowing devices in multiple domains in your organization to be peers. This setting requires the custom group to be specified as a GUID on each device that participates in the custom group. 
 
 >[!NOTE]
 >To generate a GUID using Powershell, use [```[guid]::NewGuid()```](https://blogs.technet.microsoft.com/heyscriptingguy/2013/07/25/powertip-create-a-new-guid-by-using-powershell/)
@@ -133,7 +133,7 @@ This setting specifies the required minimum disk size (capacity in GB) for the d
 
 ### Max Cache Age
 
-In environments configured for Delivery Optimization, you may want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client computer. The default Max Cache Age value is 259,200 seconds (3 days). Alternatively, organizations may choose to set this value to “0” which means “unlimited” to avoid peers re-downloading content. When “Unlimited” value is set, Delivery Optimization will hold the files in the cache longer and will clean up the cache as needed (for example when the cache size exceeded the maximum space allowed).
+In environments configured for Delivery Optimization, you might want to set an expiration on cached updates and Windows application installation files. If so, this setting defines the maximum number of seconds each file can be held in the Delivery Optimization cache on each Windows 10 client computer. The default Max Cache Age value is 259,200 seconds (3 days). Alternatively, organizations might choose to set this value to “0” which means “unlimited” to avoid peers re-downloading content. When “Unlimited” value is set, Delivery Optimization will hold the files in the cache longer and will clean up the cache as needed (for example when the cache size exceeded the maximum space allowed).
 
 ### Max Cache Size
 
@@ -193,6 +193,23 @@ To specify which devices are preferred, you can set the **Max Cache Age** config
 On devices that are not preferred, you can choose to set the following policy to prioritize data coming from local peers instead of the Internet:
 
 -  Set **DOMinBackgroundQoS** with a low value, for example `64` which is the equivalent of 64 KB/s.
+
+
+## Windows PowerShell cmdlets for analyzing usage
+Starting in Windows 10, version 1703, you can use two new PowerShell cmdlets to check the performance of Delivery Optimization:
+
+**Get-DeliveryOptimizationStatus** returns a real-time snapshot of all current Delivery Optimization jobs
+
+| Key | Value |
+| --- | --- |
+| File ID | A GUID that identifies the file being processed |
+| FileSize | Size of the file |
+| TotalBytesDownloaded | Amount of the the file processed so far |
+| PercentPeerCaching | |
+| BytesFromPeers | Total bytes from Peers (sum of bytes from LAN, Group, and Internet Peers) |
+|
+
+- `Get-DeliveryOptimizationPerfSnap`
 
 ## Learn more
 
