@@ -19,19 +19,19 @@ ms.date: 11/01/2017
 ### What is Microsoft 365 Business? 
 Microsoft 365 is an integrated solution that brings together best-in-class productivity tools, security and device management capabilities for small to medium-sized businesses. 
 
-A holistic set of business productivity and collaboration tools 
+**A holistic set of business productivity and collaboration tools** 
 * Word, Excel, PowerPoint, Outlook, OneNote, Publisher, and Access 
 * Exchange, OneDrive, Skype for Business, Microsoft Teams, SharePoint 
 * Business apps from Office (Bookings, Outlook Customer Manager, MileIQ<sup>[1](#footnote1)</sup>, Listings<sup>[1](#footnote1)</sup>, Connections<sup>[1](#footnote1)</sup>, Invoicing<sup>[1](#footnote1)</sup>) 
  
-Enterprise-grade device management and security capabilities 
+**Enterprise-grade device management and security capabilities** 
 * App protection for Office mobile apps 
 * Device management for Windows 10 PCs 
 * Consistent security configuration across devices 
 * Protection of company data across devices 
 * Windows Defender, always-on and up-to-date 
  
-Simplified device deployment and user setup 
+**Simplified device deployment and user setup** 
 * Single admin console to setup and manage users and devices 
 * Auto-installation of Office apps on Windows 10 PCs 
 * Always up-to-date Office + Windows 10 
@@ -178,7 +178,7 @@ The General Data Protection Regulation (GDPR) is a comprehensive new privacy law
 
 
 ## Footnotes
-<sup><a name="footnote1">**1**</a></sup> <small></small> </br>
+<sup><a name="footnote1">**1**</a></sup> <small>Available in US, UK, and Canada.</small> </br>
 <sup><a name="footnote2">**2**</a></sup> <small>Devices running Windows 7 or 8.1 Pro are eligible for an upgrade to Windows 10 Pro within the Microsoft 365 Business preview.</small>
  
 
