@@ -100,7 +100,7 @@ Download mode dictates which download sources clients are allowed to use when do
 | Download mode option | Functionality when set |
 | --- | --- |
 | HTTP Only (0) | This setting disables peer-to-peer caching but still allows Delivery Optimization to download content from Windows Update servers or WSUS servers. This mode uses additional metadata provided by the Delivery Optimization cloud services for a peerless reliable and efficient download experience. |
-| LAN (1 – Default) | This default operating mode for Delivery Optimization enables peer sharing on the same network. | 
+| LAN (1 – Default) | This default operating mode for Delivery Optimization enables peer sharing on the same network. Delivery Optimization uses the client's public IP address to determine which peers are on the same network. The cloud service matches clients that connect to the Internet using the same public IP and returns to the client a list of private IPs to connect to on that network. The clients then attempt to connect to each other via the private subnet IP. If devices in different branches use different public IPs then there should be no connectivity between branches. | 
 | Group (2) | When group mode is set, the group is automatically selected based on the device’s Active Directory Domain Services (AD DS) site (Windows 10, version 1607) or the domain the device is authenticated to (Windows 10, version 1511). In group mode, peering occurs across internal subnets, between devices that belong to the same group, including devices in remote offices. You can use the GroupID option to create your own custom group independently of domains and AD DS sites. Group download mode is the recommended option for most organizations looking to achieve the best bandwidth optimization with Delivery Optimization. |
 | Internet (3) | Enable Internet peer sources for Delivery Optimization. |
 | Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable, unreachable or when the content file size is less than 10 MB. In this mode, Delivery Optimization provides a reliable download experience, with no peer-to-peer caching. |
@@ -198,18 +198,70 @@ On devices that are not preferred, you can choose to set the following policy to
 ## Windows PowerShell cmdlets for analyzing usage
 Starting in Windows 10, version 1703, you can use two new PowerShell cmdlets to check the performance of Delivery Optimization:
 
-**Get-DeliveryOptimizationStatus** returns a real-time snapshot of all current Delivery Optimization jobs
+`Get-DeliveryOptimizationStatus` returns a real-time snapshot of all current Delivery Optimization jobs.
 
 | Key | Value |
 | --- | --- |
 | File ID | A GUID that identifies the file being processed |
+| Priority | Priority of the download; values are **foreground** or **background** |
 | FileSize | Size of the file |
 | TotalBytesDownloaded | Amount of the the file processed so far |
-| PercentPeerCaching | |
-| BytesFromPeers | Total bytes from Peers (sum of bytes from LAN, Group, and Internet Peers) |
-|
+| PercentPeerCaching |[???] |
+| BytesFromPeers | Total bytes from peer computers participating in Delivery Optimization (sum of bytes from LAN, Group, and Internet Peers) |
+| BytesfromHTTP | Total number of bytes received over HTTP |
+| DownloadDuration | Total download time in seconds |
+| Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but is not seeding yet); **Caching** (download completed successfully and is seeding); **Paused** (download/upload paused by Windows Update) |
 
-- `Get-DeliveryOptimizationPerfSnap`
+Using the `-Verbose` option returns additional information:
+
+| Key | Value |
+| --- | --- |
+| HTTPUrl| The URL where the download originates |
+| BytesFromLANPeers | Total bytes from peer computers on the same LAN | 
+| BytesFromGroupPeers | Total bytes from peer copmuters in the same Group | 
+| BytesFrom IntPeers | Total bytes from [???}] |
+| HTTPConnectionCount | Number of active connections over HTTP | 
+| LANConnectionCount | Number of active connections over LAN |
+| GroupConnectionCount | Number of active connections to other computers in the Group | 
+| IntConnectionCount | Number of active connections to [???] | 
+| DownloadMode | Indicates [???] |
+ 
+
+- `Get-DeliveryOptimizationPerfSnap` returns a list of key performance data:
+
+- Number of files downloaded 
+- Number of files uploaded 
+- Total bytes downloaded 
+- Total bytes uploaded 
+- Average transfer size (download); that is, the number bytes downloaded divided by the number of files 
+- Average transfer size (upload); the number of bytes uploaded divided by the number of files
+- Peer efficiency: [???]
+
+Using the `-Verbose` option returns additional information:
+
+- Bytes from peers (per type) 
+- Bytes from CDN  [???]
+- Average number of peer connections per download 
+
+## Frequently asked questions
+
+**Does Delivery Optimization work with WSUS?**: Yes. Devices must also have an Internet connection.
+
+**Which ports does Delivery Optimization use?**: For peer-to-peer traffic, it uses 7680 or 3544 (Teredo). For client service, it uses port 80/443.
+
+**What are the requirements if I use a proxy?**: You must allow Byte Range requests. See [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update) for details.
+
+**What hostnames should I allow through my firewall to support Delivery Optimization?**: For the Delivery Optimization service itself: ***.do.dsp.mp.microsoft.com**.
+
+To allow the download payloads:
+- *.download.windowsupdate.com 
+- *.windowsupdate.com
+- *.dl.delivery.mp.microsoft.com
+- *.emdl.ws.microsoft.com
+
+
+
+
 
 ## Learn more
 
