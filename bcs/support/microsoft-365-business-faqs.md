@@ -178,7 +178,7 @@ The General Data Protection Regulation (GDPR) is a comprehensive new privacy law
 
 
 ## Footnotes
-<sup><a name="footnote1">**1**</a></sup> <small></small>
+<sup><a name="footnote1">**1**</a></sup> <small></small> </br>
 <sup><a name="footnote2">**2**</a></sup> <small>Devices running Windows 7 or 8.1 Pro are eligible for an upgrade to Windows 10 Pro within the Microsoft 365 Business preview.</small>
  
 
