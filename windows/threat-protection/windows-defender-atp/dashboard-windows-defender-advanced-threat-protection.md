@@ -52,10 +52,10 @@ Each group is further sub-categorized into their corresponding alert severity le
 
 For more information see, [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
 
-The **Latest ATP alerts** section includes the latest active alerts in your network. Each row includes an alert severity category and a short description of the alert. Click an alert to see its detailed view, or **Alerts queue** at the top of the list to go directly to the Alerts queue. For more information see,  [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
+The **Latest active alerts** section includes the latest active alerts in your network. Each row includes an alert severity category and a short description of the alert. Click an alert to see its detailed view, or **Alerts queue** at the top of the list to go directly to the Alerts queue. For more information see,  [Investigate Windows Defender Advanced Threat Protection alerts](investigate-alerts-windows-defender-advanced-threat-protection.md) and [Alerts overview](alerts-queue-windows-defender-advanced-threat-protection.md).
 
 ## Daily machines reporting
-The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting alerts daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
+The **Daily machines reporting** tile shows a bar graph that represents the number of machines reporting daily in the last 30 days. Hover over individual bars on the graph to see the exact number of machines reporting in each day.
 
 ![Image of daily machines reporting tile](images/atp-daily-machines-reporting.png)
 

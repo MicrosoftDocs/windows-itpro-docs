@@ -38,7 +38,7 @@ Microsoft 365 Business enables you to:
 Where can I find out more about Microsoft 365 Business? 
 --------------------------------------------------------
 
-Customers and partners can visit [http://www.microsoft.com/microsoft-365/business](http://www.microsoft.com/microsoft-365/business) where they can sign up to see a demo of Microsoft 365 Business in
+Customers and partners can visit [https://www.microsoft.com/microsoft-365/business](https://www.microsoft.com/microsoft-365/business) where they can sign up to see a demo of Microsoft 365 Business in
 action. The preview will be accessible from the web site on August 2, 2017.
 
 Who should consider adopting Microsoft 365 Business? 
@@ -51,7 +51,7 @@ How can I get Microsoft 365 Business for my business?
 ------------------------------------------------------
 
 Microsoft 365 Business may be purchased through a [Microsoft Partner](https://partnercenter.microsoft.com/en-us/pcv/search) or directly from
-[Microsoft](http://www.microsoft.com/microsoft-365/business). In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to
+[Microsoft](https://www.microsoft.com/microsoft-365/business). In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to
 maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure including Microsoft solutions.
 
 How much will Microsoft 365 Business cost? 
@@ -332,4 +332,4 @@ What is the GDPR and how does Microsoft 365 Business help customers with their c
 -------------------------------------------------------------------------------------------------------
 
 The General Data Protection Regulation (GDPR) is a comprehensive new privacy law that gives residents of the European Union (EU) greater control over their “personal data” and requires organizations to maintain the integrity of that personal data. The GDPR requires organizations that control, or process personal data tied to EU residents to only use third-party data processors that meet the GDPR’s requirements for personal data processing. In March 2017, Microsoft made
-available contractual guarantees that provide these assurances. Customers who have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available as add-ons (e.g. Azure Information Protection) and in other Suites (e.g. Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](http://www.microsoft.com/gdpr).
+available contractual guarantees that provide these assurances. Customers who have questions about how Microsoft can help them meet their additional GDPR obligations should learn about the advanced compliance and security capabilities available as add-ons (e.g. Azure Information Protection) and in other Suites (e.g. Microsoft 365 Enterprise E5). To learn more, visit [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr).
