@@ -40,8 +40,8 @@ You can contain an attack in your organization by stopping the malicious process
 >[!IMPORTANT]
 >You can only take this action if:
 > - The machine you're taking the action on is running Windows 10, version 1703 or later
-> - The file does not belong to the system or not signed by Microsoft
-> - Windows Defender Antivirus must at least be running on Passive mode
+> - The file does not belong to trusted third-party publishers or not signed by Microsoft
+> - Windows Defender Antivirus must at least be running on Passive mode 
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistency such as registry keys.
 
@@ -79,7 +79,7 @@ When the file is being removed from an endpoint, the following notification is s
 
 In the machine timeline, a new event is added for each machine where a file was stopped and quarantined.
 
->[!NOTE]
+>[!IMPORTANT]
 >The **Action** button is turned off for files signed by Microsoft as well as trusted third–party publishers to prevent the removal of critical system files and files used by important applications.
 
 ![Image of action button turned off](images/atp-file-action.png)

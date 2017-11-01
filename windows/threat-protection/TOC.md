@@ -69,6 +69,7 @@
 ###### [Stop and quarantine files in your network](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
 ###### [Remove file from quarantine](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-quarantine)
 ###### [Block files in your network](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#block-files-in-your-network)
+###### [Remove file from blocked list](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#remove-file-from-blocked-list)
 ###### [Check activity details in Action center](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
 ###### [Deep analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#deep-analysis)
 ####### [Submit files for analysis](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#submit-files-for-analysis)
