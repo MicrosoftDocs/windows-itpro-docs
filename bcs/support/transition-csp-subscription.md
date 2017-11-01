@@ -1,6 +1,6 @@
 ---
 title: Transition a Microsoft 365 Business CSP subscription 
-description: Find out how you can transition a Microsoft 365 Business CSP subscription. 
+description: Find out how you can transition a Microsoft 365 Business CSP subscription from preview to GA. 
 author: CelesteDG 
 ms.author: celested 
 ms.topic: article 
