@@ -41,7 +41,7 @@ You can exclude certain files from being scanned by Windows Defender AV by modif
 Generally, you shouldn't need to apply exclusions. Windows Defender AV includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
 
 >[!TIP]
->We don't use exclusions in our deployment of Windows Defender AV at Microsoft!
+>The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
 
 This topic describes how to configure exclusion lists for the following:
 
@@ -59,8 +59,9 @@ This means the exclusion lists have the following characteristics:
 >[!IMPORTANT]
 >The use of wildcards such as the asterisk (\*) will alter how the exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
 >
->You cannot exclude mapped network drives
->Folders that are reparse points that are created after the Windows Defender AV service starts and that are added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
+>You cannot exclude mapped network drives. You must specify the actual network path.
+>
+>Folders that are reparse points that are created after the Windows Defender AV service starts and that have been added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
 
 
 
@@ -70,11 +71,11 @@ To exclude files opened by a specific process, see the [Configure and validate e
 
 The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md).
 
-Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). However, changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
+>[!IMPORTANT]
+>Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). 
+>
+>Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
 
-You can add, remove, and review the lists for exclusions in [Group Policy](#gp), [System Center Configuration Manager, Microsoft Intune, and with the Windows Defender Security Center app](#man-tools), and you can [use wildcards](#wildcards) to further customize the lists.
-
-You can also [use PowerShell cmdlets and WMI to configure the exclusion lists](#ps), including [reviewing](#review) and [validating](#validate) your lists. 
 
 
 By default, local changes made to the lists (by users with administrator privileges; this includes changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in the case of conflicts. 
@@ -92,7 +93,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 **Use Group Policy to configure folder or file extension exclusions:**
 
 >[!NOTE]
->If you include a fully qualified path to a file, then only that file will be excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder will be excluded.
+>If you specify a fully qualified path to a file, then only that file will be excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder will be excluded.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -107,7 +108,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
     1. Set the option to **Enabled**. 
     2. Under the **Options** section, click **Show...**
-    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column for all processes.
+    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
 
 7. Click **OK**. 
 
@@ -117,7 +118,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
     1. Set the option to **Enabled**. 
     2. Under the **Options** section, click **Show...**
-    3. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column for all processes.
+    3. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
 
 
 9. Click **OK**. 
@@ -225,7 +226,7 @@ The following table describes how the wildcards can be used and provides some ex
         <td>Replaces a single folder. <br />Use multiple <b>\*</b> with folder slashes <b>\\</b> to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included.</td>
         <td>
             <ol>
-                <li>C:\MyData\my\\<b>\*</b>.txt</li>
+                <li>C:\MyData\\<b>\*</b>.txt</li>
                 <li>C:\somepath\\<b>\*</b>\Data</li>
                 <li>C:\Serv\\<b>\*</b>\\<b>\*</b>\Backup
             </ol>
@@ -303,6 +304,11 @@ The following table describes how the wildcards can be used and provides some ex
 
 You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), or the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
 
+>[!IMPORTANT]
+>Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). 
+>
+>Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
+
 If you use PowerShell, you can retrieve the list in two ways:
 
 - Retrieve the status of all Windows Defender AV preferences. Each of the lists will be displayed on separate lines, but the items within each list will be combined into the same line.
@@ -364,6 +370,14 @@ You can also use the following PowerShell code, which calls the .NET WebClient c
 $client = new-object System.Net.WebClient
 $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt")
 ```
+
+If you do not have Internet access, you can create your own EICAR test file by writing the EICAR string to a new text file with the following PowerShell command:
+
+```PowerShell
+[io.file]::WriteAllText("test.txt",'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*')
+```
+
+You can also copy the string into a blank text file and attempt to save it with the file name or in the folder you are attempting to exclude.
 
 
 
