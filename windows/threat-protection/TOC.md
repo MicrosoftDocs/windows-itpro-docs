@@ -229,6 +229,7 @@
 #### [Evaluate Attack surface reduction](windows-defender-exploit-guard\evaluate-attack-surface-reduction.md)
 #### [Enable Attack surface reduction](windows-defender-exploit-guard\enable-attack-surface-reduction.md)
 #### [Customize Attack surface reduction](windows-defender-exploit-guard\customize-attack-surface-reduction.md)
+### [Troubleshoot Attack surface reduction rules](windows-defender-exploit-guard\troubleshoot-asr.md)
 ### [Network Protection](windows-defender-exploit-guard\network-protection-exploit-guard.md)
 #### [Evaluate Network Protection](windows-defender-exploit-guard\evaluate-network-protection.md)
 #### [Enable Network Protection](windows-defender-exploit-guard\enable-network-protection.md)
