@@ -29,17 +29,26 @@ ms.date: 10/17/2017
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details on the Action center.
 
->[!NOTE]
-> These response actions are only available for machines on Windows 10, version  1703.
+>[!IMPORTANT]
+>These response actions are only available for machines on Windows 10, version 1703 or later.
 
 You can also submit files for deep analysis to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file.
 
 ## Stop and quarantine files in your network
 You can contain an attack in your organization by stopping the malicious process and quarantine the file where it was observed.
 
+>[!IMPORTANT]
+>You can only take this action if:
+> - The machine you're taking the action on is running Windows 10, version 1703 or later
+> - The file does not belong to the system or not signed by Microsoft
+> - Windows Defender Antivirus must at least be running on Passive mode
+
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistency such as registry keys.
 
-The action takes effect on machines with the latest Windows 10, version 1703 where the file was observed in the last 30 days.
+The action takes effect on machines with the latest Windows 10, version 1703 and above where the file was observed in the last 30 days.
+
+>[!NOTE]
+>You’ll be able to remove the file from quarantine at any time.
 
 ### Stop and quarantine files
 1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
