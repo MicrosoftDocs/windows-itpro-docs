@@ -7,7 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
-author: mtniehaus
+ms.date: 10/26/2017
+author: greg-lindsay
 ---
 
 # Windows 10 deployment scenarios
@@ -26,19 +27,19 @@ The in-place upgrade process is designed to be extremely reliable, with the abil
 
 Because existing applications are preserved through the process, the upgrade process uses the standard Windows installation media image (Install.wim); custom images are not needed and cannot be used because the upgrade process is unable to deal with conflicts between apps in the old and new operating system. (For example, Contoso Timecard 1.0 in Windows 7 and Contoso Timecard 3.0 in the Windows 10 image.)
 
+Scenarios that support in-place upgrade with some additional procedures include changing from BIOS to UEFI boot mode and upgrade of devices that use non-Microsoft disk encryption software.
+
+- **Legacy BIOS to UEFI booting**: To perform an in-place upgrade on a UEFI-capable system that currently boots using legacy BIOS, first perform the in-place upgrade to Windows 10, maintaining the legacy BIOS boot mode. Windows 10 does not require UEFI, so it will work fine to upgrade a system using legacy BIOS emulation. After the upgrade, if you wish to enable Windows 10 features that require UEFI (such as Secure Boot), you can convert the system disk to a format that supports UEFI boot using the [MBR2GPT](https://docs.microsoft.com/en-us/windows/deployment/mbr-to-gpt) tool. Note: [UEFI specification](http://www.uefi.org/specifications) requires GPT disk layout. After the disk has been converted, you must also configure the firmware to boot in UEFI mode.
+
+-   **Non-Microsoft disk encryption software**: While devices encrypted with BitLocker can easily be upgraded, more work is necessary for non-Microsoft disk encryption tools. Some ISVs will provide instructions on how to integrate their software into the in-place upgrade process. Check with your ISV to see if they have instructions. The following articles provide details on how to provision encryption drivers for use during Windows Setup via the ReflectDrivers setting:
+    - [Windows Setup Automation Overview](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-automation-overview)
+    - [Windows Setup Command-Line Options](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-command-line-options)
+
 There are some situations where you cannot use in-place upgrade; in these situations, you can use traditional deployment (wipe-and-load) instead. Examples of these situations include:
 
 -   Changing from Windows 7, Windows 8, or Windows 8.1 x86 to Windows 10 x64. The upgrade process cannot change from a 32-bit operating system to a 64-bit operating system, because of possible complications with installed applications and drivers.
-
--   Changing from legacy BIOS to UEFI booting. Some organizations deployed earlier versions of Windows on UEFI-enabled systems, leveraging the legacy BIOS capabilities of these systems. Because changing from legacy BIOS to UEFI requires changing the hardware configuration, disk configuration, and OS configuration, this is not possible using in-place upgrade.
-<p>**Note**<br>Windows 10 does not require UEFI, so it would work fine to upgrade a system using legacy BIOS emulation. Some Windows 10 features, such as Secure Boot, would not be available after doing this.
-
 -   Windows To Go and Boot from VHD installations. The upgrade process is unable to upgrade these installations. Instead, new installations would need to be performed.
-
--   Devices that use third-party disk encryption software. While devices encrypted with BitLocker can easily be upgraded, more work is necessary for third-party disk encryption tools. Some ISVs will provide instructions on how to integrate their software into the in-place upgrade process (check with your ISV to see if they have instructions), but if not available a traditional deployment would be needed.
-
 -   Updating existing images. While it might be tempting to try to upgrade existing Windows 7, Windows 8, or Windows 8.1 images to Windows 10 by installing the old image, upgrading it, and then recapturing the new Windows 10 image, this is not supported – preparing an upgraded OS for imaging (using Sysprep.exe) is not supported and will not work when it detects the upgraded OS.
-
 -   Dual-boot and multi-boot systems. The upgrade process is designed for devices running a single OS; if using dual-boot or multi-boot systems with multiple operating systems (not leveraging virtual machines for the second and subsequent operating systems), additional care should be taken.
 
 ## Dynamic provisioning
