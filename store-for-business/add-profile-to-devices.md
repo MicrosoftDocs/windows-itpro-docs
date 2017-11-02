@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 09/12/2017
+ms.date: 10/26/2017
 ms.localizationpriority: high
 ---
 
@@ -42,7 +42,17 @@ These settings are configured with all AutoPilot deployment profiles:
 ### AutoPilot deployment profiles - optional settings
 These settings are off by default. You can turn them on for your AutoPilot deployment profiles:
 - Skip privacy settings
-- Disable local admin account creation on the device
+
+### Support for AutoPilot profile settings
+AutoPilot profile settings are supported beginning with the version of Windows they were introduced in. This table summarizes the settings and what they are supported on. 
+
+| Setting | Supported on  |
+| ------- | ------------- |
+| Deployment default features| Windows 10, version 1703 or later |
+| Skip privacy settings | Windows 10, version 1703 or later |
+| Disable local admin account creation on the device | Windows 10, version 1703 or later | 
+| Skip End User License Agreement (EULA) | Windows 10, version 1709 or later. </br> [Learn about Windows AutoPilot EULA dismissal](https://docs.microsoft.com/windows/deployment/Windows-AutoPilot-EULA-note) |
+
 
 ## Windows AutoPilot deployment profiles in Microsoft Store for Business and Education
 You can manage new devices in Microsoft Store for Business or Microsoft Store for Education. Devices need to meet these requirements:

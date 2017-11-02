@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 09/08/2017
+ms.date: 10/20/2017
 ---
 # Hybrid Windows Hello for Business Provisioning
 
@@ -24,9 +24,7 @@ The Windows Hello for Business provisioning begins immediately after the user ha
 
 ![Event358](images/Event358.png)
 
-The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **EnterpriseJoined** reads **Yes**.
-
-![dsreg output](images/dsregcmd.png)
+The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
 
 
 Windows Hello for Business provisioning begins with a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
@@ -39,7 +37,7 @@ The provisioning flow proceeds to the Multi-Factor authentication portion of the
 
 After a successful MFA, the provisioning flow asks the user to create and validate a PIN.  This PIN must observe any PIN complexity requirements that you deployed to the environment.
 
-<createaPin.png>
+![Create a PIN during provisioning](images/createPin.png)
 
 The provisioning flow has all the information it needs to complete the Windows Hello for Business enrollment.
 * A successful single factor authentication (username and password at sign-in)
@@ -50,7 +48,9 @@ The provisioning flow has all the information it needs to complete the Windows H
 The remainder of the provisioning includes Windows Hello for Business requesting an asymmetric key pair for the user, preferably from the TPM (or required if explicitly set through policy). Once the key pair is acquired, Windows communicates with Azure Active Directory to register the public key.  AAD Connect syncrhonizes the user's key to the on-prem Active Directory.
 
 > [!IMPORTANT]
-> The minimum time needed to syncrhonize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes.  This synchronization latency delays the certificate enrollment for the user.  After the user's public key has synchronized to Active Directory, the user's certificate enrolls automatically as long as the user's session is active (actively working or locked, but still signed-in).  Also, the Action Center notifies the user thier PIN is ready for use.
+> The minimum time needed to syncrhonize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval. 
+> **This synchronization latency delays the the user's ability to authenticate and use on-premises resouces until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
+> Read [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
 
 > [!NOTE]
 > Microsoft is actively investigating ways to reduce the syncrhonization latency and delays in certificate enrollment with the goal to make certificate enrollment occur real-time.  

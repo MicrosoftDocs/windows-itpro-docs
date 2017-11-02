@@ -7,13 +7,14 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
+ms.author: lizross
+ms.date: 10/26/2017
 ms.localizationpriority: medium
 ---
 
 # Limitations while using Windows Information Protection (WIP)
+
 **Applies to:**
-
-
 -   Windows 10, version 1607 and later
 -   Windows 10 Mobile, version 1607 and later
 
@@ -81,6 +82,11 @@ This table provides info about the most common problems you might encounter whil
         <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see [Out-of-date ActiveX control blocking](https://technet.microsoft.com/en-us/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking).</td>
     </tr>
     <tr>
+         <td>Resilient File System (ReFS) isn't currently supported with WIP.</td>
+        <td>Trying to save or transfer WIP files to ReFS will fail.</td>
+        <td>Format drive for NTFS, or use a different drive.</td>
+    </tr>
+    <tr>
         <td>WIP isn’t turned on if any of the following folders have the <strong>MakeFolderAvailableOfflineDisabled</strong> option set to <strong>False</strong>:
             <ul>
                 <li>AppDataRoaming</li>
@@ -99,9 +105,10 @@ This table provides info about the most common problems you might encounter whil
             </ul>
         </td>
         <td>WIP isn’t turned on for employees in your organization.</td>
-        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).</td>
+        <td>Don’t set the <strong>MakeFolderAvailableOfflineDisabled</strong> option to <strong>False</strong> for any of the specified folders.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see [Can't open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/en-us/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection).
+        </td>
     </tr>
 </table>
 
 >[!NOTE]
->Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to TechNet content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       
+>Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       

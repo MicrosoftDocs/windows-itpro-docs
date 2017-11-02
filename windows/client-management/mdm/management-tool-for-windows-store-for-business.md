@@ -1,6 +1,6 @@
 ---
-title: Management tool for the Micosoft Store for Business
-description: The Micosoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk.
+title: Management tool for the Microsoft Store for Business
+description: The Microsoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk.
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_tool'
 - 'p\_phDeviceMgmt.management\_tool\_for\_windows\_store\_for\_business'
@@ -10,12 +10,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 10/27/2017
 ---
 
-# Management tool for the Micosoft Store for Business
+# Management tool for the Microsoft Store for Business
 
-The Micosoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. The Store for Business enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.
+The Microsoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. The Store for Business enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.
 
 Here's the list of the available capabilities:
 
@@ -26,7 +26,7 @@ Here's the list of the available capabilities:
 -   Custom Line of Business app support –Enables management and distribution of enterprise applications through the Store for Business.
 -   Support for Windows desktop and mobile devices - The Store for Business supports both desktop and mobile devices.
 
-For additional information about Store for Business, see the TechNet topics in [Micosoft Store for Business](https://technet.microsoft.com/library/mt606951.aspx).
+For additional information about Store for Business, see the TechNet topics in [Microsoft Store for Business](https://technet.microsoft.com/library/mt606951.aspx).
 
 ## Management services
 

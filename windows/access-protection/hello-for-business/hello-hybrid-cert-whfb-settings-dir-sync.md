@@ -16,14 +16,9 @@ ms.date: 09/08/2017
 **Applies to**
 -   Windows 10
 
->[!div class="step-by-step"]
-[< Configure Active Directory](hello-hybrid-cert-whfb-settings-ad.md)
-[Configure PKI >](hello-hybrid-cert-whfb-settings-pki.md)
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Directory Synchronization
-
->[!IMPORTANT]
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 In hybrid deployments, users register the public portion of their Windows Hello for Business credential with Azure.  Azure AD Connect synchronizes the Windows Hello for Business public key to Active Directory.  
 
@@ -32,7 +27,7 @@ The key-trust model needs Windows Server 2016 domain controllers, which configur
 > [!IMPORTANT]
 > If you already have a Windows Server 2016 domain controller in your domain, you can skip **Configure Permissions for Key Synchronization**.
 
-### Configure Permissions for Key Syncrhonization
+### Configure Permissions for Key Synchronization
 
 Sign-in a domain controller or management workstations with *Domain Admin* equivalent credentials.
 

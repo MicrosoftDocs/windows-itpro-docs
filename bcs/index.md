@@ -3,7 +3,7 @@ layout: HubPage
 hide_bc: true
 author: CelesteDG
 ms.author: celested
-keywords: Microsoft 365 Business, Microsoft 365, business, Microsoft 365 Business documentation, docs, documentation
+keywords: Microsoft 365 Business, Microsoft 365, business, SMB, small to midsize business, Microsoft 365 Business documentation, docs, documentation, technical information
 ms.topic: hub-page
 ms.localizationpriority: high
 audience: microsoft-business 
@@ -14,7 +14,7 @@ description: Learn about the product documentation and resources available for M
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
             <li>
-                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -615,6 +615,25 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
+                                <a href="https://support.office.com/article/be5b6d90-3344-4c5e-bf40-5733eb845beb" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
+                                                    <p>Alternatively, use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://support.office.com/article/aad21b1a-c775-469a-b89c-c5d1d59d27db" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -661,7 +680,26 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </a>
-                            </li> 
+                            </li>
+                            <li>
+                                <a href="support/transition-csp-subscription.md" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management- billing-7.svg" alt="Billing" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Transition a Microsoft 365 Business CSP subscription</h3>
+                                                    <p>Find out how you can transition a Microsoft 365 Business CSP subscription from preview to GA.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                             <!-- placeholder
                             <li>
                                 <a href="#">
@@ -911,7 +949,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1548,6 +1586,25 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
+                                <a href="https://support.office.com/article/be5b6d90-3344-4c5e-bf40-5733eb845beb" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management-auto-pilot-3.svg" alt="Use Windows AutoPilot to deploy Windows 10 devices" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Set up Windows 10 devices using Windows AutoPilot</h3>
+                                                    <p>Alternatively, use the Microsoft 365 Business admin center's step-by-step guide to add Windows AutoPilot devices and profiles.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://support.office.com/article/aad21b1a-c775-469a-b89c-c5d1d59d27db" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
@@ -1861,7 +1918,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://support.office.com" target="_blank">
+                                <a href="https://support.office.com" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1880,7 +1937,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="http://support.microsoft.com/products/windows" target="_blank">
+                                <a href="https://support.microsoft.com/products/windows" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1914,7 +1971,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
+                                <a href="https://www.microsoft.com/en-us/microsoft-365/business" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

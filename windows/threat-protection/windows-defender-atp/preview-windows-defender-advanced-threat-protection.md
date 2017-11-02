@@ -42,7 +42,18 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Preview features
-There are currently no preview features.
+The following features are included in the preview release:
+
+- [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
+Windows Defender ATP supports the onboarding of the following servers:
+    - Windows Server 2012 R2
+    - Windows Server 2016
+
+- [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
+Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
+
+- [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)<br>
+    Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities.
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  

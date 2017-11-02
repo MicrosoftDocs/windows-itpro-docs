@@ -78,6 +78,8 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 >[!NOTE]
 >Windows security features have been rebranded as Windows Defender security features, including Windows Defender Device Guard, Windows Defender Credential Guard, and Windows Defender Firewall.
 
+**Windows security baselines** have been updated for Windows 10. A [security baseline](https://docs.microsoft.com/en-us/windows/device-security/windows-security-baselines) is a group of Microsoft-recommended configuration settings and explains their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](https://docs.microsoft.com/en-us/windows/device-security/security-compliance-toolkit-10).
+
 ### Windows Defender ATP 
 
 Windows Defender ATP has been expanded with powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. For more information, see [View the Windows Defender Advanced Threat Protection Security analytics dashboard](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/security-analytics-dashboard-windows-defender-advanced-threat-protection).

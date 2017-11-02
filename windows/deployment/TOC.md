@@ -13,6 +13,7 @@
 ### [Overview of Windows AutoPilot](windows-10-auto-pilot.md)
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
+### [Windows 10 volume license media](windows-10-media.md)
 
 ### [Windows 10 deployment test lab](windows-10-poc.md)
 #### [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
@@ -196,7 +197,7 @@
 ####### [Recognized Environment Variables](usmt/usmt-recognized-environment-variables.md)
 ####### [XML Elements Library](usmt/usmt-xml-elements-library.md)
 ###### [Offline Migration Reference](usmt/offline-migration-reference.md)
-
+### [Install fonts in Windows 10](windows-10-missing-fonts.md)
 ### [Change history for deploy Windows 10](change-history-for-deploy-windows-10.md)
 
 ## [Update Windows 10](update/index.md)
