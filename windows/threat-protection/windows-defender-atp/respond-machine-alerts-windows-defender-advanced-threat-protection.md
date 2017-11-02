@@ -29,7 +29,7 @@ ms.date: 10/17/2017
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
 >[!IMPORTANT]
-> These response actions are only available for PCs on Windows 10, version  1703 and later. 
+> These response actions are only available for machines on Windows 10, version  1703 and later. 
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.

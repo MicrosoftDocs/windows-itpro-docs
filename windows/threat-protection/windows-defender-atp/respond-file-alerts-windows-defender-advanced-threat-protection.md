@@ -106,12 +106,12 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 ## Block files in your network
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
->[!NOTE]
+>[!IMPORTANT]
 >- This feature is only available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled.  For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
 >- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. 
 >- This response action is only available for machines on Windows 10, version 1703 or later.
 
->[!IMPORTANT]
+>[!NOTE]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
 
 
