@@ -41,7 +41,7 @@ You can contain an attack in your organization by stopping the malicious process
 >You can only take this action if:
 > - The machine you're taking the action on is running Windows 10, version 1703 or later
 > - The file does not belong to trusted third-party publishers or not signed by Microsoft
-> - Windows Defender Antivirus must at least be running on Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility).
+> - Windows Defender Antivirus must at least be running on Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistency such as registry keys.
 
