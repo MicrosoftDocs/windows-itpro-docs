@@ -43,7 +43,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 <p style="margin-left: 20px">The data type format is node.
 
-<p style="margin-left: 20px">Supported operations are Get, Add, and Delete .
+<p style="margin-left: 20px">Supported operations are Get, Add, and Replace.
 
 <p style="margin-left: 20px">Calling Delete on this node should delete the certificates and the keys that were installed by the corresponding PFX blob.
 
@@ -67,7 +67,7 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 <p style="margin-left: 20px">Date type is string.
 
-<p style="margin-left: 20px">Supported operations are Get, Add, and Replace.
+<p style="margin-left: 20px">Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertblob"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertBlob**  
 <p style="margin-left: 20px">CRYPT\_DATA\_BLOB structure that contains a PFX packet with the exported and encrypted certificates and keys. The Add operation triggers the addition to the PFX certificate. This requires that all the other nodes under UniqueID that are parameters for PFX installation (Container Name, KeyLocation, CertPassword, KeyExportable) are present before this is called. This also sets the Status node to the current Status of the operation.
@@ -142,7 +142,6 @@ The following image shows the ClientCertificateInstall configuration service pro
 <a href="" id="clientcertificateinstall-scep-uniqueid"></a>**ClientCertificateInstall/SCEP/****_UniqueID_**  
 <p style="margin-left: 20px">A unique ID to differentiate different certificate installation requests.
 
-<p style="margin-left: 20px">Supported operations are Get, Add, Replace, and Delete.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install**  
 <p style="margin-left: 20px">A node required for SCEP certificate enrollment. Parent node to group SCEP cert installation related requests.
@@ -157,14 +156,14 @@ The following image shows the ClientCertificateInstall configuration service pro
 
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Get, Add, and Replace.
+<p style="margin-left: 20px">Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-challenge"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/Challenge**  
 <p style="margin-left: 20px">Required for SCEP certificate enrollment. B64 encoded SCEP enrollment challenge. Challenge is deleted shortly after the Exec command is accepted.
 
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-ekumapping"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/EKUMapping**  
 <p style="margin-left: 20px">Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs are separated by a plus **+**. For example, *OID1*+*OID2*+*OID3*.
@@ -174,7 +173,7 @@ Data type is string.
 
 <p style="margin-left: 20px">Data type is int.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectname"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectName**  
 <p style="margin-left: 20px">Required. Specifies the subject name.
@@ -199,7 +198,12 @@ Data type is string.
 | 4     | Private key protected by Windows Hello for Business (formerly known as Microsoft Passport for Work). If this option is specified, the ContainerName must be specifed, otherwise enrollment will fail. |
 
  
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
+
+<a href="" id="clientcertificateinstall-scep-uniqueid-install-keyusage"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyUsage**  
+<p style="margin-left: 20px">Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have second (0x20) or forth (0x80) or both bits set. If the value doesn’t have those bits set, configuration will fail.
+
+<p style="margin-left: 20px"> Supported operations are Add, Get, Delete, and Replace. Value type is integer.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-retrydelay"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryDelay**  
 <p style="margin-left: 20px">Optional. When the SCEP server sends a pending status, this value specifies the device retry waiting time in minutes.
@@ -210,7 +214,7 @@ Data type is string.
 
 <p style="margin-left: 20px">The minimum value is 1.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-retrycount"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryCount**  
 <p style="margin-left: 20px">Optional. Unique to SCEP. Specifies the device retry times when the SCEP server sends a pending status.
@@ -223,7 +227,7 @@ Data type is string.
 
 <p style="margin-left: 20px">Minimum value is 0, which indicates no retry.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-templatename"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/TemplateName**  
 <p style="margin-left: 20px">Optional. OID of certificate template name.
@@ -233,7 +237,7 @@ Data type is string.
  
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-keylength"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyLength**  
 <p style="margin-left: 20px">Required for enrollment. Specify private key length (RSA).
@@ -244,7 +248,7 @@ Data type is string.
 
 <p style="margin-left: 20px">For Windows Hello for Business (formerly known as Microsoft Passport for Work) , only 2048 is the supported key length.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-hashalgorithm"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/HashAlgorithm**  
 <p style="margin-left: 20px">Required. Hash algorithm family (SHA-1, SHA-2, SHA-3) specified by MDM server. If multiple hash algorithm families are specified, they must be separated with **+**.
@@ -253,14 +257,14 @@ Data type is string.
 
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-cathumbprint"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/CAThumbprint**  
 <p style="margin-left: 20px">Required. Specifies Root CA thumbprint. This is a 20-byte value of the SHA1 certificate hash specified as a hexadecimal string value. When client authenticates the SCEP server, it checks the CA certificate from the SCEP server to verify a match with this certificate. If it is not a match, the authentication will fail.
 
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectalternativenames"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectAlternativeNames**  
 <p style="margin-left: 20px">Optional. Specifies subject alternative names (SAN). Multiple alternative names can be specified by this node. Each name is the combination of name format+actual name. Refer to the name type definitions in MSDN for more information.
@@ -269,7 +273,7 @@ Data type is string.
 
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiod"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriod**  
 <p style="margin-left: 20px">Optional. Specifies the units for the valid certificate period.
@@ -285,7 +289,7 @@ Data type is string.
 > **Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
  
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-validperiodunits"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ValidPeriodUnits**  
 <p style="margin-left: 20px">Optional. Specifies the desired number of units used in the validity period. This is subject to SCEP server configuration. Default value is 0. The unit type (days, months, or years) are defined in the ValidPeriod node. Note the valid period specified by MDM will overwrite the valid period specified in the certificate template. For example, if ValidPeriod is Days and ValidPeriodUnits is 30, it means the total valid duration is 30 days.
@@ -295,21 +299,21 @@ Data type is string.
 >**Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
  
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-containername"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/ContainerName**  
 <p style="margin-left: 20px">Optional. Specifies the Windows Hello for Business container name (if Windows Hello for Business KSP is chosen for the node). If this node is not specified when Windows Hello for Business KSP is chosen, the enrollment will fail.
 
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-customtexttoshowinprompt"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/CustomTextToShowInPrompt**  
 <p style="margin-left: 20px">Optional. Specifies the custom text to show on the Windows Hello for Business PIN prompt during certificate enrollment. The admin can choose to provide more contextual information in this field for why the user needs to enter the PIN and what the certificate will be used for.
 
 <p style="margin-left: 20px">Data type is string.
 
-<p style="margin-left: 20px">Supported operations are Add, Get, and Replace.
+<p style="margin-left: 20px">Supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-enroll"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/Enroll**  
 <p style="margin-left: 20px">Required. Triggers the device to start the certificate enrollment. The device will not notify MDM server after certificate enrollment is done. The MDM server could later query the device to find out whether new certificate is added.
