@@ -15,6 +15,12 @@ ms.date: 08/01/2017
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## November 2017
+
+| New or changed topic | Description |
+| --- | ---- |
+| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | Updated the the list of device manufacturers. |
+
 ## RELEASE: Windows 10, version 1709 (Fall Creators Update)
 
 | New or changed topic | Description |
