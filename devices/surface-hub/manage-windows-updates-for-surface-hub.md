@@ -57,9 +57,6 @@ Surface Hubs, like all Windows 10 devices, include **Windows Update for Business
 1. [Group Surface Hub into deployment rings](#group-surface-hub-into-deployment-rings)
 2. [Configure when Surface Hub receives updates](#configure-when-surface-hub-receives-updates).
 
-> [!NOTE]
-> You can use Microsoft Intune, System Center Configuration Manager, or a supported third-party MDM provider to set up WUfB. [Walkthrough: use Microsoft Intune to configure Windows Update for Business.](https://technet.microsoft.com/itpro/windows/manage/waas-wufb-intune)
-
 
 ### Group Surface Hub into deployment rings
 Use deployment rings to control when updates roll out to your Surface Hubs, giving you time to validate them. For example, you can update a small pool of devices first to verify quality before a broader roll-out to your organization. Depending on who manages Surface Hub in your organization, consider incorporating Surface Hub into the deployment rings that you've built for your other Windows 10 devices. For more information about deployment rings, see [Build deployment rings for Windows 10 updates](https://technet.microsoft.com/itpro/windows/manage/waas-deployment-rings-windows-10-updates).
