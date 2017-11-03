@@ -11,6 +11,12 @@ author: jdeckerms
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## November 2017
+
+|New or changed topic | Description |
+| --- | --- |
+|[Surface Dock Updater](surface-dock-updater.md) | Added version 2.7.136.0 information  |
+
 ## October 2017
 
 New or changed topics | Description 
