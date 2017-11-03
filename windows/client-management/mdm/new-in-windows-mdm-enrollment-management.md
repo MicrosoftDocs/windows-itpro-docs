@@ -1395,6 +1395,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added SyncML examples for the new Configuration node.</p>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
 <td style="vertical-align:top"><p>Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.</p>
 </td></tr>
