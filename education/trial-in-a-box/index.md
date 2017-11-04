@@ -86,7 +86,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/it-admin.png" alt="Microsoft 365 Education Trial in a Box for school IT admins" />
+                                                        <img src="images/it-admin.svg" alt="Microsoft 365 Education Trial in a Box for school IT admins" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -105,7 +105,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/student.png" alt="Microsoft 365 Education Trial in a Box for students" />
+                                                        <img src="images/student.svg" alt="Microsoft 365 Education Trial in a Box for students" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -124,7 +124,7 @@ ms.author: celested
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1"> 
-                                                        <img src="images/teacher.png" alt="Microsoft 365 Education Trial in a Box for teachers" />
+                                                        <img src="images/teacher.svg" alt="Microsoft 365 Education Trial in a Box for teachers" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
