@@ -85,7 +85,7 @@ ms.author: celested
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage"> 
                                                         <img src="images/it-admin.svg" alt="Microsoft 365 Education Trial in a Box for school IT admins" />
                                                     </div>
                                                 </div>
@@ -104,7 +104,7 @@ ms.author: celested
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage"> 
                                                         <img src="images/student.svg" alt="Microsoft 365 Education Trial in a Box for students" />
                                                     </div>
                                                 </div>
@@ -123,7 +123,7 @@ ms.author: celested
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1"> 
+                                                    <div class="cardImage"> 
                                                         <img src="images/teacher.svg" alt="Microsoft 365 Education Trial in a Box for teachers" />
                                                     </div>
                                                 </div>
