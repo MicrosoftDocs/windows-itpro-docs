@@ -31,6 +31,7 @@
 ##### [Configure endpoints using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
 ##### [Configure non-persistent virtual desktop infrastructure (VDI) machines](windows-defender-atp\configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)
 #### [Configure server endpoints](windows-defender-atp\configure-server-endpoints-windows-defender-advanced-threat-protection.md)
+#### [Run a detection test on a newly onboarded endpoint](windows-defender-atp\run-detection-test-windows-defender-advanced-threat-protection.md)
 #### [Configure proxy and Internet connectivity settings](windows-defender-atp\configure-proxy-internet-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot onboarding issues](windows-defender-atp\troubleshoot-onboarding-windows-defender-advanced-threat-protection.md)
 ### [Portal overview](windows-defender-atp\portal-overview-windows-defender-advanced-threat-protection.md)
