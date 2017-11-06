@@ -56,6 +56,8 @@ ms.date: 10/17/2017
 
 9. Click **OK** and close any open GPMC windows.
 
+>[!TIP]
+> After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
 ## Additional Windows Defender ATP configuration settings
 For each endpoint, you can state whether samples can be collected from the endpoint when a request is made through the Windows Defender ATP portal to submit a file for deep analysis.
