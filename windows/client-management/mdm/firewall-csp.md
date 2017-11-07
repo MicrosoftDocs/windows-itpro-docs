@@ -290,7 +290,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 </ul>
 <p style="margin-left: 20px">Value type is string. Supported operations are Get and Replace.</p>
 
-<a href="" id="interfacetypes"></a>**FirewallRules/FirewallRuleName/InterfaceTypes**
+<a href="" id="interfacetypes"></a>**FirewallRules/_FirewallRuleName_/InterfaceTypes**
 <p style="margin-left: 20px">Comma separated list of interface types. Valid values:</p>
 <ul>
 <li>RemoteAccess</li>
