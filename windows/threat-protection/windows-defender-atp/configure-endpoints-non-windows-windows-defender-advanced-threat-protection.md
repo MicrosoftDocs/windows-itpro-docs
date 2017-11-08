@@ -20,7 +20,7 @@ ms.date: 11/07/2017
 - Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!includePrerelease information]
 
 Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
