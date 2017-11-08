@@ -6,6 +6,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 11/06/2017
+ms.author: jdecker
 ---
 
 # Create a provisioning package with multivariant settings
@@ -44,12 +46,12 @@ The following table shows the conditions supported in Windows 10 provisioning fo
 
 | Condition Name | Condition priority | Windows 10 Mobile | Windows 10 for desktop editions | Value type | Value description |
 | --- | --- | --- | --- | --- | --- |
-| MNC | P0 | Supported | N/A | Digit string | Use to target settings based on the Mobile Network Code (MNC) value. |
-| MCC | P0 | Supported | N/A | Digit string | Use to target settings based on the Mobile Country Code (MCC) value. |
-| SPN | P0 | Supported | N/A | String | Use to target settings based on the Service Provider Name (SPN) value. |
-| PNN | P0 | Supported | N/A | String | Use to target settings based on public land mobile network (PLMN) Network Name value. |
-| GID1 | P0 | Supported | N/A | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
-| ICCID | P0 | Supported | N/A | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
+| MNC | P0 | Supported | Supported | Digit string | Use to target settings based on the Mobile Network Code (MNC) value. |
+| MCC | P0 | Supported | Supported | Digit string | Use to target settings based on the Mobile Country Code (MCC) value. |
+| SPN | P0 | Supported | Supported | String | Use to target settings based on the Service Provider Name (SPN) value. |
+| PNN | P0 | Supported | Supported | String | Use to target settings based on public land mobile network (PLMN) Network Name value. |
+| GID1 | P0 | Supported | Supported | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
+| ICCID | P0 | Supported | Supported | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
 | Roaming | P0 | Supported | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). | 
 | UICC | P0 | Supported | N/A | Enumeration | Use to specify the Universal Integrated Circuit Card (UICC) state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
 | UICCSLOT | P0 | Supported | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
