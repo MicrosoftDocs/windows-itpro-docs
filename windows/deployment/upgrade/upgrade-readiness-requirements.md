@@ -57,6 +57,7 @@ See [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields
 `https://v10.vortex-win.data.microsoft.com/collect/v1`<BR>
 `https://vortex-win.data.microsoft.com/health/keepalive`<BR>
 `https://settings.data.microsoft.com/qos`<BR>
+`https://settings-win.data.microsoft.com/qos`<BR>
 `https://go.microsoft.com/fwlink/?LinkID=544713`<BR>
 `https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc`<BR>
 
