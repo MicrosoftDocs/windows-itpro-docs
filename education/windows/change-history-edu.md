@@ -20,6 +20,8 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 | New or changed topic | Description |
 | --- | ---- |
 | [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | Updated the the list of device manufacturers. |
+| [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md) | Updated instances of the parameter enablePrint, or enablePrinting, to requirePrinting. |
+| [Set up Take a Test on a single PC](take-a-test-single-pc.md) | Updated instances of the parameter enablePrint, or enablePrinting, to requirePrinting. |
 
 ## RELEASE: Windows 10, version 1709 (Fall Creators Update)
 
