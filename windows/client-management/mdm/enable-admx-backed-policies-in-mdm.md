@@ -6,13 +6,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/11/2017
+ms.date: 11/01/2017
 ---
 
 # Enable ADMX-backed policies in MDM
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This is a step-by-step guide to configuring ADMX-backed policies in MDM.
 

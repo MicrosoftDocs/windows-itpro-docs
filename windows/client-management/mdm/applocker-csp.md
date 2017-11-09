@@ -876,29 +876,28 @@ The following example disables the Mixed Reality Portal. In the example, the **I
                     <Type xmlns="syncml:metinf">text/plain</Type>
                 </Meta>
                 <Data>  
- &lt;RuleCollection Type="Appx" EnforcementMode="Enabled"&gt;
-    &lt;FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
-      &lt;Conditions&gt;
-        &lt;FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*"&gt;
-          &lt;BinaryVersionRange LowSection="0.0.0.0" HighSection="*" /&gt;
-        &lt;/FilePublisherCondition&gt;
-      &lt;/Conditions&gt;
-    &lt;/FilePublisherRule&gt;
-    &lt;FilePublisherRule Id="d26da4e7-0b01-484d-a8d3-d5b5341b2d55" Name="Block Mixed Reality Portal" Description="" UserOrGroupSid="S-1-1-0" Action="Deny"&gt;
-      &lt;Conditions&gt;
-        &lt;FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.HolographicFirstRun" BinaryName="*"&gt;
-          &lt;BinaryVersionRange LowSection="*" HighSection="*" /&gt;
-        &lt;/FilePublisherCondition&gt;
-      &lt;/Conditions&gt;
-    &lt;/FilePublisherRule&gt;
-  &lt;/RuleCollection&gt;&gt;
+                  &lt;RuleCollection Type="Appx" EnforcementMode="Enabled"&gt;
+                   &lt;FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
+                    &lt;Conditions&gt;
+                      &lt;FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*"&gt;
+                        &lt;BinaryVersionRange LowSection="0.0.0.0" HighSection="*" /&gt;
+                      &lt;/FilePublisherCondition&gt;
+                    &lt;/Conditions&gt;
+                  &lt;/FilePublisherRule&gt;
+                  &lt;FilePublisherRule Id="d26da4e7-0b01-484d-a8d3-d5b5341b2d55" Name="Block Mixed Reality Portal" Description="" UserOrGroupSid="S-1-1-0" Action="Deny"&gt;
+                   &lt;Conditions&gt;
+                     &lt;FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.HolographicFirstRun" BinaryName="*"&gt;
+                      &lt;BinaryVersionRange LowSection="*" HighSection="*" /&gt;
+                      &lt;/FilePublisherCondition&gt;
+                    &lt;/Conditions&gt;
+                  &lt;/FilePublisherRule&gt;
+                 &lt;/RuleCollection&gt;&gt;
                 </Data>
             </Item>
         </Add>
         <Final/>
     </SyncBody>
 </SyncML>
-
 ``` 
 
 The following example for Windows 10 Mobile denies all apps and allows the following apps:
