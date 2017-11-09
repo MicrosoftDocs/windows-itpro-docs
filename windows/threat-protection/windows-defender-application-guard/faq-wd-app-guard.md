@@ -21,6 +21,15 @@ Answering frequently asked questions about Windows Defender Application Guard (A
 
 | | |
 |---|----------------------------|
+|**Q:** |Can I enable Application Guard on machines equipped with 4GB RAM?|
+|**A:** |We recommend 8GB RAM for optimal performance but you may use the following registry values to enable Application Guard on machines that aren't meeting the recommended hardware configuration. |
+||HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount       - Default is 4 cores. |
+||HKLM\software\Microsoft\Hvsi\SpecRequiredMemoryInGB            - Default is 8GB.|
+||HKLM\software\Microsoft\Hvsi\SpecRequiredFreeDiskSpaceInGB - Default is 5GB.|
+<br>
+
+| | |
+|---|----------------------------|
 |**Q:** |Can employees download documents from the Application Guard Edge session onto host devices?|
 |**A:** |It's not possible to download files from the isolated Application Guard container to the host PC. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device.|
 <br>
