@@ -118,6 +118,7 @@ When you go through the first-run program for your Surface Hub, there's some inf
 ## More information
 
 - [Surface Hub and the Skype for Business Trusted Domain List](https://blogs.technet.microsoft.com/y0av/2017/10/25/95/)
+- [Surface Hub in a Multi-Domain Environment](https://blogs.technet.microsoft.com/y0av/2017/11/08/11/)
 
  
 
