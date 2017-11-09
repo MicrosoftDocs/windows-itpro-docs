@@ -173,7 +173,7 @@ Depending on the severity of the attack and the sensitivity of the machine, you 
 
 This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
 
-On Windows 10, version 1710 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity.
+On Windows 10, version 1709 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity.
 
 >[!NOTE]
 >You’ll be able to reconnect the machine back to the network at any time.
