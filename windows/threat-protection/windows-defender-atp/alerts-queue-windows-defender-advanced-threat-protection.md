@@ -80,7 +80,7 @@ The Windows Defender ATP alert severity represents the severity of the detected 
 
 So, for example:
 -	The severity of a Windows Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage incurred.
--	An alert about a commercial malware was detected while executing, but blocked and remediated by Windows Defender AV, is categorized as  ‘Low’ because it may have caused some damage to the individual machine but poses no organizational threat.
+-	An alert about a commercial malware was detected while executing, but blocked and remediated by Windows Defender AV, is categorized as  "Low" because it may have caused some damage to the individual machine but poses no organizational threat.
 -	An alert about malware detected while executing which can pose a threat not only to the individual machine but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
 -	Suspicious behavioral alerts which were not blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
 
