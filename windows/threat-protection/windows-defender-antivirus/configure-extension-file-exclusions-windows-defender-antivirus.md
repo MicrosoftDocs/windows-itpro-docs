@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 06/13/2017
+ms.date: 10/30/2017
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -38,6 +38,11 @@ ms.date: 06/13/2017
 
 You can exclude certain files from being scanned by Windows Defender AV by modifying exclusion lists. 
 
+Generally, you shouldn't need to apply exclusions. Windows Defender AV includes a number of automatic exclusions based on known operating system behaviors and typical management files, such as those used in enterprise management, database management, and other enterprise scenarios and situations.
+
+>[!TIP]
+>The default antimalware policy we deploy at Microsoft doesn't set any exclusions by default.
+
 This topic describes how to configure exclusion lists for the following:
 
 Exclusion | Examples | Exclusion list
@@ -48,20 +53,29 @@ A specific file in a specific folder | The file c:\sample\sample.test only | Fil
 A specific process | The executable file c:\test\process.exe | File and folder exclusions
 
 This means the exclusion lists have the following characteristics:
-- Folder exclusions will apply to all files and folders under that folder.
-- File extensions will apply to any file name with the defined extension, regardless of where the file is located.
+- Folder exclusions will apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
+- File extensions will apply to any file name with the defined extension if a path or folder is not defined.
+
+>[!IMPORTANT]
+>The use of wildcards such as the asterisk (\*) will alter how the exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
+>
+>You cannot exclude mapped network drives. You must specify the actual network path.
+>
+>Folders that are reparse points that are created after the Windows Defender AV service starts and that have been added to the exclusion list will not be included. You must restart the service (by restarting Windows) for new reparse points to be recognized as a valid exclusion target.
+
+
 
 
 To exclude files opened by a specific process, see the [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-windows-defender-antivirus.md) topic.
 
 
-The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [always-on real-time protection and monitoring](configure-real-time-protection-windows-defender-antivirus.md).
+The exclusions apply to [scheduled scans](scheduled-catch-up-scans-windows-defender-antivirus.md), [on-demand scans](run-scan-windows-defender-antivirus.md), and [real-time protection](configure-real-time-protection-windows-defender-antivirus.md).
 
-Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). However, changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
+>[!IMPORTANT]
+>Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). 
+>
+>Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
 
-You can add, remove, and review the lists for exclusions in [Group Policy](#gp), [System Center Configuration Manager, Microsoft Intune, and with the Windows Defender Security Center app](#man-tools), and you can [use wildcards](#wildcards) to further customize the lists.
-
-You can also [use PowerShell cmdlets and WMI to configure the exclusion lists](#ps), including [reviewing](#review) and [validating](#validate) your lists. 
 
 
 By default, local changes made to the lists (by users with administrator privileges; this includes changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists will take precedence in the case of conflicts. 
@@ -79,7 +93,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 **Use Group Policy to configure folder or file extension exclusions:**
 
 >[!NOTE]
->If you include a fully qualified path to a file, then only that file will be excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder will be excluded.
+>If you specify a fully qualified path to a file, then only that file will be excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder will be excluded.
 
 1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
 
@@ -94,7 +108,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
     1. Set the option to **Enabled**. 
     2. Under the **Options** section, click **Show...**
-    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column for all processes.
+    3. Enter each folder on its own line under the **Value name** column. If you are entering a file, ensure you enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.
 
 7. Click **OK**. 
 
@@ -104,7 +118,7 @@ You can [configure how locally and globally defined exclusions lists are merged]
 
     1. Set the option to **Enabled**. 
     2. Under the **Options** section, click **Show...**
-    3. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column for all processes.
+    3. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
 
 
 9. Click **OK**. 
@@ -187,29 +201,113 @@ See [Add exclusions in the Windows Defender Security Center app](windows-defende
 <a id="wildcards"></a>
 ## Use wildcards in the file name and folder path or extension exclusion lists
 
-You can use the asterisk \*, question mark ?, or environment variables (such as %ALLUSERSPROFILE%) as wildcards when defining items in the file name or folder path exclusion list.
+You can use the asterisk `*`, question mark `?`, or environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the file name or folder path exclusion list. The way in which these wildcards are interpreted differs from their usual usage in other apps and languages, so you should read this section to understand their specific limitations.
 
 >[!IMPORTANT]
->Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
-
-You cannot use a wildcard in place of a drive letter.
+>There are key limitations and usage scenarios for these wildcards:
+>
+>- Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
+>- You cannot use a wildcard in place of a drive letter.
+>- The use of asterisk `*` in a folder exclusion will stand in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
 
 
 The following table describes how the wildcards can be used and provides some examples.
+<table>
+    <tr>
+        <th>Wildcard</th>
+        <th>Use in file and file extension exclusions</th>
+        <th>Use in folder exclusions</th>
+        <th>Example use</th>
+        <th>Example matches></th>
+    </tr>
+    <tr>
+        <td><b>\*</b> (asterisk)</td>
+        <td>Replaces any number of characters. <br />Only applies to files in the last folder defined in the argument. </td>
+        <td>Replaces a single folder. <br />Use multiple <b>\*</b> with folder slashes <b>\\</b> to indicate multiple, nested folders. </br>After matching to the number of wilcarded and named folders, all subfolders will also be included.</td>
+        <td>
+            <ol>
+                <li>C:\MyData\\<b>\*</b>.txt</li>
+                <li>C:\somepath\\<b>\*</b>\Data</li>
+                <li>C:\Serv\\<b>\*</b>\\<b>\*</b>\Backup
+            </ol>
+        </td>
+        <td>
+            <ol>
+                <li><i>C:\MyData\\<b>notes</b>.txt</i></li>
+                <li>Any file in: 
+                    <ul>
+                        <li><i>C:\somepath\\<b>Archives</b>\Data</i> and its subfolders</li>
+                        <li><i>C:\somepath\\<b>Authorized</b>\Data</i> and its subfolders</li>
+                    </ul>
+                <li>Any file in:
+                <ul>
+                    <li><i>C:\Serv\\<b>Primary</b>\\<b>Denied</b>\Backup</i> and its subfolders</li>
+                    <li><i>C:\Serv\\<b>Secondary</b>\\<b>Allowed</b>\Backup</i> and its subfolders</li>
+                </ul>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>?</b> (question mark) 
+        </td>
+        <td>
+            Replaces a single character. <br />
+            Only applies to files in the last folder defined in the argument.
+        </td>
+        <td>
+            Replaces a single character in a folder name. </br>
+            After matching to the number of wilcarded and named folders, all subfolders will also be included.
+        </td>
+        <td>
+            <ol>
+                <li>C:\MyData\my<b>?</b>.zip</li>
+                <li>C:\somepath\\<b>?</b>\Data</li>
+                <li>C:\somepath\test0<b>?</b>\Data</li>
+            </ol>
+        </td>
+        <td>
+            <ol>
+                <li><i>C:\MyData\my<b>1</b>.zip</i></li>
+                <li>Any file in <i>C:\somepath\\<b>P</b>\Data</i> and its subfolders</li>
+                <li>Any file in <i>C:\somepath\test0<b>1</b>\Data</i> and its subfolders</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td>Environment variables</td>
+        <td>The defined variable will be populated as a path when the exclusion is evaluated.</td>
+        <td>Same as file and extension use. </td>
+        <td>
+            <ol>
+                <li><b>%ALLUSERSPROFILE%</b>\CustomLogFiles</li>
+            </ol> 
+        </td>
+        <td>
+            <ol>
+                <li><i><b>C:\ProgramData</b>\CustomLogFiles\Folder1\file1.txt</i></li>
+            </ol>
+        </td>
+    </tr>
+</table>
 
-Wildcard | Use | Example use | Example matches
----|---|---|---
-\* (asterisk) | Replaces any number of characters | <ul><li>C:\MyData\my\*.zip</li><li>C:\somepath\\\*\Data</li></ul> | <ul><li>C:\MyData\my-archived-files-43.zip</li><li>Any file in C:\somepath\folder1\folder2\Data</li></ul>
-? (question mark) | Replaces a single character | <ul><li>C:\MyData\my\?.zip</li><li>C:\somepath\\\?\Data</li></ul> | <ul><li>C:\MyData\my1.zip</li><li>Any file in C:\somepath\P\Data</li></ul>
-Environment variables | The defined variable will be populated as a path when the exclusion is evaluated |  <ul><li>%ALLUSERSPROFILE%\CustomLogFiles</li></ul> | <ul><li>C:\ProgramData\CustomLogFiles\Folder1\file1.txt</li></ul>
-
-
+>[!IMPORTANT]
+>If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
+>
+>For example, you can exclude all files that start with "date" in the folders *c:\data\final\marked* and *c:\data\review\marked* by using the rule argument <b>c:\data\\\*\marked\date*.\*</b>.
+>
+>This argument, however, will not match any files in **subfolders** under *c:\data\final\marked* or *c:\data\review\marked*.
 
 
 <a id="review"></a>
 ## Review the list of exclusions
 
 You can retrieve the items in the exclusion list with PowerShell, [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings), [Intune](https://docs.microsoft.com/en-us/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune), or the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions).
+
+>[!IMPORTANT]
+>Changes made via Group Policy to the exclusion lists **will show** in the lists in the [Windows Defender Security Center app](windows-defender-security-center-antivirus.md#exclusions). 
+>
+>Changes made in the Windows Defender Security Center app **will not show** in the Group Policy lists.
 
 If you use PowerShell, you can retrieve the list in two ways:
 
@@ -272,6 +370,14 @@ You can also use the following PowerShell code, which calls the .NET WebClient c
 $client = new-object System.Net.WebClient
 $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt")
 ```
+
+If you do not have Internet access, you can create your own EICAR test file by writing the EICAR string to a new text file with the following PowerShell command:
+
+```PowerShell
+[io.file]::WriteAllText("test.txt",'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*')
+```
+
+You can also copy the string into a blank text file and attempt to save it with the file name or in the folder you are attempting to exclude.
 
 
 
