@@ -47,20 +47,20 @@ To see a list of alerts, click any of the queues under the **Alerts queue** opti
 ##  Sort, filter, and group the alerts list
 You can sort and filter the alerts using the available filters or clicking on a column's header that will sort the view in ascending or descending order.
 
-**Time period**</br>
+### Time period
 - 1 day
 - 3 days
 - 7 days
 - 30 days
 - 6 months
 
-**OS Platform**<br>
+### OS Platform
   - Windows 10
   - Windows Server 2012 R2
   - Windows Server 2016
   - Other
 
-**Severity**</br>
+### Severity
 
 Alert severity | Description
 :---|:---
@@ -71,7 +71,21 @@ Informational </br>(Grey) | Informational alerts are those that might not be con
 
 Reviewing the various alerts and their severity can help you decide on the appropriate action to protect your organization's endpoints.
 
-**Detection source**</br>
+#### Understanding alert severity
+It is important to understand that the Windows Defender Antivirus (Windows Defender AV) and Windows Defender ATP alert severities are different because they represent different scopes.
+
+The Windows Defender AV threat severity represents the absolute severity of the detected threat (malware), and is assigned based on the potential risk to the individual machine, if infected.
+
+The Windows Defender ATP alert severity represents the severity of the detected behavior, the actual risk to the machine but more importantly the potential risk to the organization. 
+
+So, for example:
+-	The severity of a Windows Defender ATP alert about a Windows Defender AV detected threat that was completely prevented and did not infect the machine is categorized as "Informational" because there was no actual damage incurred.
+-	An alert about a commercial malware was detected while executing, but blocked and remediated by Windows Defender AV, is categorized as  "Low" because it may have caused some damage to the individual machine but poses no organizational threat.
+-	An alert about malware detected while executing which can pose a threat not only to the individual machine but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
+-	Suspicious behavioral alerts which were not blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
+
+
+### Detection source
 - Windows Defender AV
 - Windows Defender ATP
 - Windows Defender SmartScreen
@@ -80,7 +94,7 @@ Reviewing the various alerts and their severity can help you decide on the appro
 >[!NOTE]
 >The Windows Defender Antivirus filter will only appear if your endpoints are using Windows Defender Antivirus as the default real-time protection antimalware product.
 
-**View**</br>
+### View
 - **Flat view** - Lists alerts individually with alerts having the latest activity displayed at the top.
 - **Grouped view** - Groups alerts by alert ID, file hash, malware family, or other attribute to enable more efficient alert triage and management. Alert grouping reduces the number of rows in the queue by aggregating similar alerts together.
 
