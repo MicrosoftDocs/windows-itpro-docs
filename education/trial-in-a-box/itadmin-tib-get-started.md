@@ -39,11 +39,11 @@ TBD
 ## Try out Microsoft 365 Education in 5 easy steps
 Turn on your devices and get going by trying out these 5 easy admin tasks:
 
-1. Log in with your IT admin credentials.
-2. Reset a password for a user in the Office 365 admin center.
-3. Modify default policies in Intune for Education.
-4. Buy an app from Microsoft Store for Education and deploy it to your device.
-5. Add a new default home page for devices in your tenant.
+1. [Log in with your IT admin credentials](#log-in).
+2. [Reset a password for a user in the Office 365 admin center](#reset-a-user-password).
+3. [Modify default policies in Intune for Education](#modify-policies).
+4. [Buy an app from Microsoft Store for Education and deploy it to your device](#buy-and-deploy-apps).
+5. [Add a new default home page for devices in your tenant](#add-new-settings).
 
 TBD - Creating a new diagram to reflect the steps we have here
 
@@ -51,6 +51,30 @@ TBD - Creating a new diagram to reflect the steps we have here
 
 ![Deploy and manage a full cloud IT solution using Microsoft Education](images/MSES_Get_Started_IT_082917.png)
 
+## Log in
+TBD
+
+## Reset a user password
+To reset a password for someone else in your school, follow these steps.
+
+1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
+2. In the admin center, select **Users**, and then select the user whose password you want to reset.
+3. Select **Reset password**.
+4. Choose whether you'd like an auto-generated password or enter a password for the user.
+
+    > [!NOTE]
+    > We recommend keeping the **Make this user change their password when they first sign in** option checked.
+
+5. Select **Reset**.
+
+## Modify policies
+TBD
+
+## Buy and deploy apps
+TBD
+
+## Add new settings
+TBD
 
 ## Get more info
 Select one of the following roles to get started for students and teachers.
