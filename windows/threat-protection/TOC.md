@@ -60,7 +60,7 @@
 #### [Manage alerts](windows-defender-atp\manage-alerts-windows-defender-advanced-threat-protection.md)
 #### [Take response actions](windows-defender-atp\response-actions-windows-defender-advanced-threat-protection.md)
 ##### [Take response actions on a machine](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md)
-###### [Collect investigation package](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package)
+###### [Collect investigation package](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#collect-investigation-package-from-machines)
 ###### [Run antivirus scan](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)
 ###### [Restrict app execution](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)
 ###### [Remove app restriction](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#remove-app-restriction)
