@@ -175,14 +175,6 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<p style="margin-left: 20px">Benefit to the customer:
-
-<p style="margin-left: 20px">Before this setting, enterprise customers could not set up Cortana during out-of-box experience (OOBE) at all, even though Cortana is the “voice” that walks you through OOBE. By sending AllowCortana in initial enrollment, enterprise customers can allow their employees to see the Cortana consent page. This enables them to choose to use Cortana and make their lives easier and more productive.
-
-<p style="margin-left: 20px">Sample scenario:
-
-<p style="margin-left: 20px">An enterprise employee customer is going through OOBE and enjoys Cortana’s help in this process. The customer is happy to learn during OOBE that Cortana can help them be more productive, and chooses to set up Cortana before OOBE finishes. When their setup is finished, they are immediately ready to engage with Cortana to help manage their schedule and more.
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>

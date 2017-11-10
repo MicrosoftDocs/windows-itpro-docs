@@ -939,6 +939,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
 <td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
@@ -1393,6 +1397,10 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Defender/ControlledFolderAccessAllowedApplications - string separator is |.</li>
 <li>Defender/ControlledFolderAccessProtectedFolders - string separator is |.</li>
 </ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
