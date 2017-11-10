@@ -180,7 +180,7 @@ Depending on the severity of the attack and the sensitivity of the machine, you 
 >[!IMPORTANT]
 >- Full isolation is available for machines on Windows 10, version 1703.
 >- Selective isolation is available for machines on Windows 10, version 1709 or later.
->- 
+
 
 This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
 
