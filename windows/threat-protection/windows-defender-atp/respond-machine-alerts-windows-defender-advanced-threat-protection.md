@@ -124,7 +124,7 @@ In addition to the ability of containing an attack by stopping malicious process
 
 >[!IMPORTANT]
 > - This action is available for machines on Windows 10, version  1709 or later.
-> - This action needs to meet the Windows Defender Application Control code integrity policy formas and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 
 The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
