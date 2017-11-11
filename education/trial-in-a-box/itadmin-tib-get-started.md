@@ -147,7 +147,14 @@ The Microsoft Store for Education is where you can shop for more apps for your s
     > Sync happens automatically, but it may take up to 36 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps.
 
 ### Add new settings
-TBD
+Update settings for all devices in your tenant by setting a custom lock screen image and a custom desktop image.
+
+1. Go or log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
+2. Select **Group > All Devices > Settings** and expand **Windows interface customizations**.
+3. In **Set custom lock screen image**, specify the location of a .jpg or .png less than 20 MB in size to set it as the custom sign-in screen image.
+4. In **Set custom desktop image**, specify the location of a .jpg or .png less than 20 MB in size to set it as the custom desktop background.
+
+    ![Available settings for customizing the Windows interface](images/i4e_groups_settings_wincustomizations.png)
 
 ## Get more info
 Select one of the following roles to get started for students and teachers.
