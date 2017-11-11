@@ -34,10 +34,16 @@ Microsoft 365 Education Trial in a Box lets you try out Microsoft 365 Education 
 And the devices are for your school to keep!
 
 ## What's in the IT admin box?
-TBD
+Your box should contain:
+* A Getting Started guide
+* Two new PCs:
+    * A notebook running Windows 10 S, Fall Creators Update
+    * A 2-in-1 laptop running Windows 10 S, Fall Creators Update and a digital pen
+* Information about your 12-month trial subscription to Microsoft 365 Education A3, and the services and features included with it
+* Information on the customer support hotline
 
 ## Try out Microsoft 365 Education in 5 easy steps
-Turn on your devices and get going by trying out these 5 easy admin tasks:
+Get going with Microsoft 365 Education by trying out these 5 easy admin tasks:
 
 1. [Log in with your IT admin credentials](#log-in).
 2. [Reset a password for a user in the Office 365 admin center](#reset-a-user-password).
@@ -54,8 +60,11 @@ TBD - Creating a new diagram to reflect the steps we have here
 ## Log in
 To get started with your Microsoft 365 Education Trial in a Box, log in with the account credentials included in your box.
 
-1. Turn on the device.
+1. Turn on the notebook, which you can designate as the IT admin device.
 2. In the log in screen, enter your account details.
+
+    > [!NOTE]
+    > To get the most out of Microsoft 365 Education, we've pre-configured your tenant for you so you don't need to set it up. Your tenant is also pre-populated with fictitious Student Information System (SIS) data.
 
 ## Reset a user password
 To reset a password for someone else in your school, follow these steps.
