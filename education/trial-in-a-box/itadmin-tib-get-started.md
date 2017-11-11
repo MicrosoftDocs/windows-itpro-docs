@@ -19,7 +19,7 @@ ms.date: 12/04/2017
 
 **Applies to:**
 
--   Windows 10 S Fall Creators Update, Microsoft Intune for Education, Microsoft Store for Education, Set up School PCs
+-   Windows 10 S Fall Creators Update, Microsoft Intune for Education, Microsoft Store for Education
 
 Hello, IT administrators! In this guide, we'll show you how you can quickly and easily try out Microsoft 365 Education, consisting of all the new and existing cloud services and tools that you need to try out a full IT cloud solution for your school.
 
@@ -48,16 +48,12 @@ Get going with Microsoft 365 Education by trying out these 5 easy admin tasks:
 1. [Log in with your IT admin credentials](#log-in).
 2. [Reset a password for a user in the Office 365 admin center](#reset-a-user-password).
 3. [Go through Intune for Education express configuration](#go-through-intune-for-education-express-configuration).
-4. [Buy an app from Microsoft Store for Education and deploy it to your device](#buy-and-deploy-apps).
+4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#buy-and-deploy-apps).
 5. [Add a new default home page for devices in your tenant](#add-new-settings).
 
-TBD - Creating a new diagram to reflect the steps we have here
+![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_trialinabox_steps.png)
 
-**Figure 1** - Microsoft Education IT administrator workflow
-
-![Deploy and manage a full cloud IT solution using Microsoft Education](images/MSES_Get_Started_IT_082917.png)
-
-## Log in
+### Log in
 To get started with your Microsoft 365 Education Trial in a Box, log in with the account credentials included in your box.
 
 1. Turn on the notebook, which you can designate as the IT admin device.
@@ -66,7 +62,7 @@ To get started with your Microsoft 365 Education Trial in a Box, log in with the
     > [!NOTE]
     > To get the most out of Microsoft 365 Education, we've pre-configured your tenant for you so you don't need to set it up. Your tenant is also pre-populated with fictitious Student Information System (SIS) data.
 
-## Reset a user password
+### Reset a user password
 To reset a password for someone else in your school, follow these steps.
 
 1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
@@ -87,7 +83,7 @@ To reset a password for someone else in your school, follow these steps.
 
 5. Select **Reset** to complete resetting the user's password.
 
-## Go through Intune for Education express configuration
+### Go through Intune for Education express configuration
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. 
@@ -120,10 +116,10 @@ Intune for Education provides an **Express configuration** option so you can get
 8. Click **Next** and review the list of apps and settings you selected to apply.
 9. Click **Save** and then click **All done** to go back to the dashboard.
 
-## Buy and deploy apps
+### Buy and deploy apps
 TBD
 
-## Add new settings
+### Add new settings
 TBD
 
 ## Get more info
