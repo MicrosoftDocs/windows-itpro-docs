@@ -43,7 +43,7 @@ Your box should contain:
 * Information on the customer support hotline
 
 ## Try out Microsoft 365 Education in 5 easy steps
-Get going with Microsoft 365 Education by trying out these 5 easy admin tasks:
+Get going with Microsoft 365 Education by trying out these 5 easy tasks:
 
 1. [Log in with your IT admin credentials](#log-in).
 2. [Reset a password for a user in the Office 365 admin center](#reset-a-user-password).
@@ -117,7 +117,34 @@ Intune for Education provides an **Express configuration** option so you can get
 9. Click **Save** and then click **All done** to go back to the dashboard.
 
 ### Buy and deploy apps
-TBD
+The Microsoft Store for Education is where you can shop for more apps for your school.
+
+1. In Intune for Education, select **Apps** and then in the **Store apps** section, select **+ New app** to go to the <a href="https://educationstore.microsoft.com" target="_blank">Microsoft Store for Education</a>.
+2. Select **Sign in** and start shopping for apps for your school.
+
+    ![Microsoft Store for Education site](images/msfe_portal.png)
+
+3. Check some of the categories for suggested apps or search the Store for a free educational or reference app. Find ones that you haven't already installed during express configuration for Intune for Education. For example, these apps are free:
+    - Duolingo - Learn Languages for Free
+    - Khan Academy
+    - My Study Life
+    - Arduino IDE
+
+4. Find or select the app you want to install and click **Get the app**.
+5. In the app's Store page, click the **...** button and select **Add to private store**. 
+
+    Repeat steps 3-5 to install another app or go to the next step.
+
+6. Select **Manage > Products & services** to verify that the apps you purchased appear in your inventory.
+
+    The apps will show up in your inventory along with the apps that Microsoft automatically provisioned for your education tenant.
+
+    ![List of apps bought for the school](images/msfe_boughtapps.png)
+
+    In the **Private store** column of the **Products & services** page, the status for some apps will indicate that it's "In private store" while others will say "Adding to private store" or "Not applicable". We won't go over this in the walkthrough, but you can learn more about this in <a href="https://docs.microsoft.com/microsoft-store/distribute-apps-from-your-private-store" target="_blank">Distribute apps using your private store</a>.
+
+    > [!NOTE]  
+    > Sync happens automatically, but it may take up to 36 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps.
 
 ### Add new settings
 TBD
