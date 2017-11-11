@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/10/2017
 ---
 
 # Take response actions on a file
@@ -29,17 +29,26 @@ ms.date: 10/17/2017
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details on the Action center.
 
->[!NOTE]
-> These response actions are only available for machines on Windows 10, version  1703.
+>[!IMPORTANT]
+>These response actions are only available for machines on Windows 10, version 1703 or later.
 
 You can also submit files for deep analysis to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file.
 
 ## Stop and quarantine files in your network
 You can contain an attack in your organization by stopping the malicious process and quarantine the file where it was observed.
 
+>[!IMPORTANT]
+>You can only take this action if:
+> - The machine you're taking the action on is running Windows 10, version 1703 or later
+> - The file does not belong to trusted third-party publishers or not signed by Microsoft
+> - Windows Defender Antivirus must at least be running on Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistency such as registry keys.
 
-The action takes effect on machines with the latest Windows 10, version 1703 where the file was observed in the last 30 days.
+The action takes effect on machines with Windows 10, version 1703 or later, where the file was observed in the last 30 days.
+
+>[!NOTE]
+>You’ll be able to remove the file from quarantine at any time.
 
 ### Stop and quarantine files
 1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
@@ -70,7 +79,7 @@ When the file is being removed from an endpoint, the following notification is s
 
 In the machine timeline, a new event is added for each machine where a file was stopped and quarantined.
 
->[!NOTE]
+>[!IMPORTANT]
 >The **Action** button is turned off for files signed by Microsoft as well as trusted third–party publishers to prevent the removal of critical system files and files used by important applications.
 
 ![Image of action button turned off](images/atp-file-action.png)
@@ -97,11 +106,12 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 ## Block files in your network
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
->[!NOTE]
->This feature is only available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled.  For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
-This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. This response action is available for machines on Windows 10, version 1703 or later.
-
 >[!IMPORTANT]
+>- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
+>- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. 
+>- This response action is available for machines on Windows 10, version 1703 or later.
+
+>[!NOTE]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
 
 
