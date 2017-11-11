@@ -26,7 +26,7 @@ Hello, IT administrators! In this guide, we'll show you how you can quickly and 
 ## What's Trial in a Box?
 Microsoft 365 Education Trial in a Box lets you try out Microsoft 365 Education with new Windows 10 devices for education. With Trial in a Box, you:
 * Try out two new devices running Windows 10 S Fall Creators Update for just $99
-* Get a 12-month trial subscription to Microosft 365 Education A3
+* Get a 12-month trial subscription to Microsoft 365 Education A3
 * Can call a customer support hotline for any questions related to Trial in a Box
 * Get a quick start guide and device reset tools in the box 
 * Work with a pre-setup test tenant so you can focus on deploying and managing apps, devices, and users and trying out other features that you get with Microsoft 365 Education
