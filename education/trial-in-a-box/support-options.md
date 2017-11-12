@@ -36,7 +36,7 @@ Forget your password? Follow these steps to recover it.
 1. Go to <a href="https://portal.office.com/" target="_blank">https://portal.office.com</a>
 2. Select **Can't access your account** and follow the prompts to get back into your account.
 
-  ![Recover your account](images/officeportal_accessaccount.png)
+  ![Recover your account](images/officeportal_cantaccessaccount.png)
 
 ## Microsoft 365 Education support
 When you need help setting up your device or have a question about using Microsoft 365 Education, follow these steps.
