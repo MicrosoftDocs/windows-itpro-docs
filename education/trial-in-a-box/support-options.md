@@ -1,0 +1,52 @@
+---
+title: Microsoft 365 Education Trial in a Box support
+description: Need help or have a question about using Microsoft 365 Education? Start here. 
+keywords: support, troubleshooting, education, Microsoft 365 Education, trial in a box, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.topic: article
+ms.localizationpriority: high
+ms.pagetype: edu
+author: CelesteDG
+ms.author: celested
+ms.date: 12/04/2017
+---
+
+# Microsoft 365 Education Trial in a Box support
+Need help or have a question about using Microsoft 365 Education? Start here.
+
+## Troubleshooting tips
+
+### Update your admin contact info
+Update your admin contact info in the Office 365 admin center to help recover your account if you lose access.
+
+1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
+2. In the admin center dashboard, select your profile on the upper righthand corner and select **My account** from the options.
+3. Select **Personal info** and then edit **Contact details** to update  your phone, primary email address, and alternate email address. 
+
+  > [!NOTE]
+  > For the alternate email address, make sure you use a different address from your Office 365 email address.
+
+  ![Complete your contact details](images/o365_adminaccountinfo.png)
+
+### Recover your password
+Forget your password? Follow these steps to recover it.
+
+1. Go to <a href="https://portal.office.com/" target="_blank">https://portal.office.com</a>
+2. Select **Can't access your account** and follow the prompts to get back into your account.
+
+  ![Recover your account](images/officeportal_accessaccount.png)
+
+## Microsoft 365 Education support
+When you need help setting up your device or have a question about using Microsoft 365 Education, follow these steps.
+
+1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
+2. Select **Need help?** at the bottom of the page.
+
+  ![Select Need help to get support](images/o365_needhelp.png)
+
+3. Enter your question or open a support ticket. 
+
+  ![Describe the issue or what you need help with](images/o365_support_options.png)
+
