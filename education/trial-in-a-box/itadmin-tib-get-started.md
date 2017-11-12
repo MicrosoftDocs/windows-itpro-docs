@@ -5,7 +5,7 @@ keywords: education, Microsoft 365 Education, trial, full cloud IT solution, sch
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.topic: hero-article
+ms.topic: get-started
 ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
@@ -27,7 +27,7 @@ Hello, IT administrators! In this guide, we'll show you how you can quickly and 
 Microsoft 365 Education Trial in a Box lets you try out Microsoft 365 Education with new Windows 10 devices for education. With Trial in a Box, you:
 * Try out two new devices running Windows 10 S Fall Creators Update for just $99
 * Get a 12-month trial subscription to Microsoft 365 Education A3
-* Can call a customer support hotline for any questions related to Trial in a Box
+* Get customer support for any questions related to Microsoft 365 Education
 * Get a quick start guide and device reset tools in the box 
 * Work with a pre-setup test tenant so you can focus on deploying and managing apps, devices, and users and trying out other features that you get with Microsoft 365 Education
 
@@ -40,7 +40,7 @@ Your box should contain:
     * A notebook running Windows 10 S, Fall Creators Update
     * A 2-in-1 laptop running Windows 10 S, Fall Creators Update and a digital pen
 * Information about your 12-month trial subscription to Microsoft 365 Education A3, and the services and features included with it
-* Information on the customer support hotline
+* Information about how to get support for Microsoft 365 Education
 
 ## Try out Microsoft 365 Education in 5 easy steps
 Get going with Microsoft 365 Education by trying out these 5 easy tasks:
@@ -52,6 +52,8 @@ Get going with Microsoft 365 Education by trying out these 5 easy tasks:
 5. [Add a new default home page for devices in your tenant](#add-new-settings).
 
 ![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_trialinabox_steps.png)
+
+If you run into any problems while following the steps in this guide, or you have questions about Microsoft 365 Education, see [Microsoft 365 Education support](support-options.md).
 
 ### Log in
 To get started with your Microsoft 365 Education Trial in a Box, log in with the account credentials included in your box.
