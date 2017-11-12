@@ -163,5 +163,5 @@ Select one of the following roles to get started for students and teachers.
 
 | Student | Teacher |
 | :---: | :---: |
-| ![Get started for students](images/student1.svg) | ![Get started for teachers](images/teacher1.svg) |
+| ![Get started for students](images/student2.svg) | ![Get started for teachers](images/teacher2.svg) |
 
