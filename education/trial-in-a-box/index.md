@@ -28,24 +28,6 @@ ms.author: celested
                 </a>
             </li>
             <li>
-                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education" target="_blank">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_get-started.svg" src="/media/common/i_get-started.svg" alt="For IT Pros: Get started with Microsoft Education" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">For IT Pros: Get Started using Microsoft Education</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
                 <a href="/education/windows/test-windows10s-for-edu" target="_blank">
                     <div class="cardSize">
                         <div class="cardPadding">
