@@ -80,7 +80,7 @@ ms.author: celested
                                 </div>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/en-us/education/get-started/get-started-with-microsoft-education" target="_blank">
+                                <a href="itadmin-tib-get-started.md" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
