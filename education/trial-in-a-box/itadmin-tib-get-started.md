@@ -158,6 +158,13 @@ Update settings for all devices in your tenant by setting a custom lock screen i
 
     ![Available settings for customizing the Windows interface](images/i4e_groups_settings_wincustomizations.png)
 
+## Other tasks
+Looking for other IT admin tasks to try? See these instructions:
+* [Verify correct device setup](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) - See the steps and check if the apps you bought from the Microsoft Store Education appear in the Windows Start screen's **Recently added** section.
+* [Verify the device is Azure AD joined](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
+* [Add more users](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
+* [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) - Got your own device and want to try joining it to your Trial in a Box test tenant? Follow the steps here.
+
 ## Get more info
 Select one of the following roles to get started for students and teachers.
 
