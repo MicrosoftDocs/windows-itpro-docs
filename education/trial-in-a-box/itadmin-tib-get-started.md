@@ -49,7 +49,7 @@ Get going with Microsoft 365 Education by trying out these 5 easy tasks:
 2. [Reset a password for a user in the Office 365 admin center](#reset-a-user-password).
 3. [Go through Intune for Education express configuration](#go-through-intune-for-education-express-configuration).
 4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#buy-and-deploy-apps).
-5. [Add a new default home page for devices in your tenant](#add-new-settings).
+5. [Add a new settings for devices in your tenant](#add-new-settings).
 
 ![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_trialinabox_steps.png)
 
@@ -153,14 +153,15 @@ Update settings for all devices in your tenant by setting a custom lock screen i
 
 1. Go or log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
 2. Select **Group > All Devices > Settings** and expand **Windows interface customizations**.
-3. In **Set custom lock screen image**, specify the location of a .jpg or .png less than 20 MB in size to set it as the custom sign-in screen image.
-4. In **Set custom desktop image**, specify the location of a .jpg or .png less than 20 MB in size to set it as the custom desktop background.
+3. In **Choose folders that appear in the Start menu**, select **Documents** and **Downloads**.
 
     ![Available settings for customizing the Windows interface](images/i4e_groups_settings_wincustomizations.png)
 
 ## Other tasks
 Looking for other IT admin tasks to try? See these instructions:
-* [Verify correct device setup](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) - See the steps and check if the apps you bought from the Microsoft Store Education appear in the Windows Start screen's **Recently added** section.
+* [Verify correct device setup](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) - See the steps and:
+    * Confirm that the apps you bought from the Microsoft Store Education appear in the Windows Start screen's **Recently added** section.
+    * Confirm that the folders you added, if you chose to customize the Windows interface from Intune for Education, appear on the Start menu.
 * [Verify the device is Azure AD joined](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
 * [Add more users](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) - Got your own device and want to try joining it to your Trial in a Box test tenant? Follow the steps here.
