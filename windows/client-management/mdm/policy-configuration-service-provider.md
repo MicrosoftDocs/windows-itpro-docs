@@ -335,6 +335,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-authentication.md#authentication-allowfastreconnect" id="authentication-allowfastreconnect">Authentication/AllowFastReconnect</a>
   </dd>
   <dd>
+    <a href="./policy-csp-authentication.md#authentication-allowfidodevicesignon" id="authentication-allowfidodevicesignon">Authentication/AllowFidoDeviceSignon</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-authentication.md#authentication-allowsecondaryauthenticationdevice" id="authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
   </dd>
 </dl>
@@ -2398,7 +2401,13 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-search.md#search-allowsearchtouselocation" id="search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>
   </dd>
   <dd>
+    <a href="./policy-csp-search.md#search-allowstoringimagesfromvisionsearch">Search/AllowStoringImagesFromVisionSearch</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-search.md#search-allowusingdiacritics" id="search-allowusingdiacritics">Search/AllowUsingDiacritics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-search.md#search-allowwindowsindexer" id="search-allowwindowsindexer">Search/AllowWindowsIndexer</a>
   </dd>
   <dd>
     <a href="./policy-csp-search.md#search-alwaysuseautolangdetection" id="search-alwaysuseautolangdetection">Search/AlwaysUseAutoLangDetection</a>
@@ -2616,6 +2625,9 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-storage.md#storage-enhancedstoragedevices" id="storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
+  </dd>
 </dl>
 
 ### System policies
@@ -2793,6 +2805,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-update.md#update-ignoremoupdatedownloadlimit" id="update-ignoremoupdatedownloadlimit">Update/IgnoreMOUpdateDownloadLimit</a>
   </dd>
   <dd>
+    <a href="./policy-csp-update.md#update-managepreviewbuilds">Update/ManagePreviewBuilds</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-update.md#update-pausedeferrals" id="update-pausedeferrals">Update/PauseDeferrals</a>
   </dd>
   <dd>
@@ -2955,6 +2970,12 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### WirelessDisplay policies
 
 <dl>
+  <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsadvertisement">WirelessDisplay/AllowMdnsAdvertisement</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery">WirelessDisplay/AllowMdnsDiscovery</a>
+  </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc" id="wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>
   </dd>

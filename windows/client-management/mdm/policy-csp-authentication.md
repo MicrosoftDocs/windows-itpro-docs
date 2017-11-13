@@ -29,6 +29,9 @@ ms.date: 11/01/2017
     <a href="#authentication-allowfastreconnect">Authentication/AllowFastReconnect</a>
   </dd>
   <dd>
+    <a href="#authentication-allowfidodevicesignon">Authentication/AllowFidoDeviceSignon</a>
+  </dd>
+  <dd>
     <a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
   </dd>
 </dl>
@@ -170,6 +173,46 @@ ms.date: 11/01/2017
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Specifies whether Fast Identity Online (FIDO) device can be used to sign on.
+
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 - Do not allow. The FIDO device credential provider disabled. 
+-   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
+
+<p style="margin-left: 20px">Value type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->
