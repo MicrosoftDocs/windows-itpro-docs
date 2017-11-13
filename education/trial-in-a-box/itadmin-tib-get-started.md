@@ -34,7 +34,7 @@ Get going with Microsoft 365 Education by trying out these 5 easy tasks:
 4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#buy-and-deploy-apps).
 5. [Add a new settings for devices in your tenant](#add-new-settings).
 
-![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_trialinabox_adminsteps.png)
+![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_tib_itadminsteps.png)
 
 If you run into any problems while following the steps in this guide, or you have questions about Microsoft 365 Education, see [Microsoft 365 Education support](support-options.md).
 
