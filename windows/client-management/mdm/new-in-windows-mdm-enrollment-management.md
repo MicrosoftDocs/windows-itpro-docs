@@ -1026,6 +1026,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
 <li>Authentication/AllowAadPasswordReset</li>
+<li>Authentication/AllowFidoDeviceSignon</li>
 <li>Browser/LockdownFavorites</li>
 <li>Browser/ProvisionFavorites</li>
 <li>CredentialProviders/DisableAutomaticReDeploymentCredentials</li>
@@ -1080,9 +1081,11 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PrinterNames</li>
 <li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Storage/AllowDiskHealthModelUpdates</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 <li>Update/DisableDualScan</li>
+<li>Update/ManagePreviewBuilds</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
 <li>Update/ScheduledInstallFourthWeek</li>
@@ -1102,6 +1105,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
 <li>WindowsDefenderSecurityCenter/Phone</li>
 <li>WindowsDefenderSecurityCenter/URL</li>
+<li>WirelessDisplay/AllowMdnsAdvertisement</li>
+<li>WirelessDisplay/AllowMdnsDiscovery</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1396,6 +1401,14 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Defender/ControlledFolderAccessAllowedApplications - string separator is |.</li>
 <li>Defender/ControlledFolderAccessProtectedFolders - string separator is |.</li>
+</ul>
+<p>Added the following policies for Windows 10, version 1709:</p>
+<ul>
+<li>Authentication/AllowFidoDeviceSignon</li>
+<li>Storage/EnhancedStorageDevices</li>
+<li>Update/ManagePreviewBuilds</li>
+<li>WirelessDisplay/AllowMdnsAdvertisement</li>
+<li>WirelessDisplay/AllowMdnsDiscovery</li>
 </ul>
 </td></tr>
 <tr class="even">
