@@ -73,7 +73,7 @@ ms.author: celested
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>IT admin</h3>
-                                                    <p>Get going with Microsoft 365 Education--log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings.</p>
+                                                    <p>Get going with Microsoft 365 Education&mdash;log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings.</p>
                                                 </div>
                                             </div>
                                         </div>
