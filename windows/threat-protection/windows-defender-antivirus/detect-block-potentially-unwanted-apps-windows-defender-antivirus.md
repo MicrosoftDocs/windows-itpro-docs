@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 11/01/2017
 ---
 
 # Detect and block Potentially Unwanted Applications
@@ -45,8 +45,10 @@ These applications can increase the risk of your network being infected with mal
 
 PUAs are blocked when a user attempts to download or install the detected file, and if the file meets one of the following conditions:
 - The file is being scanned from the browser
-- The file is in the %downloads% folder
-- The file is in the %temp% folder
+- The file is in a folder with "**downloads**" in the path
+- The file is in a folder with "**temp**" in the path
+- The file is on the user's Dekstop
+- The file does not meet one of these conditions and is not under *%programfiles%*, *%appdata%*, or *%windows%*
 
 The file is placed in the quarantine section so it won't run. 
 
@@ -58,6 +60,8 @@ They will also appear in the usual [quarantine list in the Windows Defender Secu
 ## View PUA events
 
 PUA events are reported in the Windows Event Viewer and not in System Center Configuration Manager or Intune. 
+
+Hoever, PUA detections will be reported if you have set up email notifications for detections.
 
 See [Troubleshoot event IDs](troubleshoot-windows-defender-antivirus.md) for details on viewing Windows Defender Antivirus events. PUA events are recorded under event ID 1160.
 

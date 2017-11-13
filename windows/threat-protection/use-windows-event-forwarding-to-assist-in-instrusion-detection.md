@@ -606,9 +606,9 @@ Here are the minimum steps for WEF to operate:
   <Query Id="7" Path="Microsoft-Windows-DNS-Client/Operational">
     <!-- DNS Client events Query Completed (3008) -->
     <Select Path="Microsoft-Windows-DNS-Client/Operational">*[System[(EventID=3008)]]</Select>
-<!—suppresses local machine name resolution events-->
+<!-- suppresses local machine name resolution events -->
 <Suppress Path="Microsoft-Windows-DNS-Client/Operational">*[EventData[Data[@Name="QueryOptions"]="140737488355328"]]</Suppress>
-<!—suppresses empty name resolution events -->
+<!-- suppresses empty name resolution events -->
 <Suppress Path="Microsoft-Windows-DNS-Client/Operational">*[EventData[Data[@Name="QueryResults"]=""]]</Suppress>
   </Query>
   <Query Id="8" Path="Security">
@@ -636,7 +636,7 @@ Here are the minimum steps for WEF to operate:
     <Select Path="Microsoft-Windows-DriverFrameworks-UserMode/Operational">*[System[(EventID=2004)]]</Select>
   </Query>
 <Query Id="14" Path=" Windows PowerShell">
-    <!—Legacy PowerShell pipeline execution details (800) -->
+    <!-- Legacy PowerShell pipeline execution details (800) -->
     <Select Path=" Windows PowerShell">*[System[(EventID=800)]]</Select>
   </Query>
 </QueryList> 

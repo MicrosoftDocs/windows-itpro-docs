@@ -108,7 +108,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 3. Right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
 4. In the navigation pane, expand **Policies** under **User Configuration**.
 5. Expand **Windows Settings > Security Settings**, and click **Public Key Policies**.
-6. In the details pane, right-click **Certificate Services Client � Auto-Enrollment** and select **Properties**.
+6. In the details pane, right-click **Certificate Services Client - Auto-Enrollment** and select **Properties**.
 7. Select **Enabled** from the **Configuration Model** list.
 8. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
 9. Select the **Update certificates that use certificate templates** check box.

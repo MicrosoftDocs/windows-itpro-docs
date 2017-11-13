@@ -6,13 +6,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 08/18/2017
+ms.date: 11/01/2017
 ---
 
 # Firewall CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 The Firewall configuration service provider (CSP) allows the mobile device management (MDM) server to configure the Windows Defender Firewall global settings, per profile settings, as well as the desired set of custom rules to be enforced on the device.  Using the Firewall CSP the IT admin can now manage non-domain devices, and reduce the risk of network security threats across all systems connecting to the corporate network.  This CSP is new in the next major update to Windows 10.
  
@@ -265,7 +263,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 <p style="margin-left: 20px">If not specified - a new rule is disabled by default.</p>
 <p style="margin-left: 20px">Boolean value. Supported operations are Get and Replace.</p>
 
-<a href="" id="profiles"></a>**FirewallRules_FirewallRuleName_/Profiles**
+<a href="" id="profiles"></a>**FirewallRules/_FirewallRuleName_/Profiles**
 <p style="margin-left: 20px">Specifies the profiles to which the rule belongs: Domain, Private, Public. .  See [FW_PROFILE_TYPE](https://msdn.microsoft.com/en-us/library/cc231559.aspx) for the bitmasks that are used to identify profile types.</p>
 <p style="margin-left: 20px">If not specified, the default is All.</p>
 <p style="margin-left: 20px">Value type is integer. Supported operations are Get and Replace.</p>
@@ -292,7 +290,7 @@ The following diagram shows the Firewall configuration service provider in tree 
 </ul>
 <p style="margin-left: 20px">Value type is string. Supported operations are Get and Replace.</p>
 
-<a href="" id="interfacetypes"></a>**FirewallRules/FirewallRuleName/InterfaceTypes**
+<a href="" id="interfacetypes"></a>**FirewallRules/_FirewallRuleName_/InterfaceTypes**
 <p style="margin-left: 20px">Comma separated list of interface types. Valid values:</p>
 <ul>
 <li>RemoteAccess</li>

@@ -10,14 +10,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 10/25/2017
+ms.date: 11/01/2017
 ---
 
 # What's new in MDM enrollment and management
 
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
@@ -942,6 +939,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
 <td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
@@ -990,6 +991,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <ul>
 <li>Installation/CurrentStatus</li>
 </ul>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
+<td style="vertical-align:top"><p>Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.</p>
 </td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
@@ -1392,6 +1397,18 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>Defender/ControlledFolderAccessAllowedApplications - string separator is |.</li>
 <li>Defender/ControlledFolderAccessProtectedFolders - string separator is |.</li>
 </ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added SyncML examples for the new Configuration node.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
+<td style="vertical-align:top"><p>Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.</p>
 </td></tr>
 </tbody>
 </table>
