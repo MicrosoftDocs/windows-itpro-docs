@@ -1,5 +1,5 @@
 ---
-title: Get started with Microsoft 365 Education Trial in a Box
+title: Get started for IT admins
 description: Try out Microsoft 365 Education to implement a full cloud infrastructure for your school, manage devices and apps, and configure and deploy policies to your Windows 10 devices.
 keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
@@ -13,7 +13,7 @@ ms.author: celested
 ms.date: 12/04/2017
 ---
 
-# Get started: Microsoft 365 Education Trial in a Box
+# Get started for IT admins
 
 ![Learn how to deploy and manage a cloud solution with MSES!](images/mses_getstarted_banner.png)
 
@@ -22,25 +22,6 @@ ms.date: 12/04/2017
 -   Windows 10 S Fall Creators Update, Microsoft Intune for Education, Microsoft Store for Education
 
 Hello, IT administrators! In this guide, we'll show you how you can quickly and easily try out Microsoft 365 Education, consisting of all the new and existing cloud services and tools that you need to try out a full IT cloud solution for your school.
-
-## What's Trial in a Box?
-Microsoft 365 Education Trial in a Box lets you try out Microsoft 365 Education with new Windows 10 devices for education. With Trial in a Box, you:
-* Try out two new devices running Windows 10 S Fall Creators Update for just $99
-* Get a 12-month trial subscription to Microsoft 365 Education A3
-* Get customer support for any questions related to Microsoft 365 Education
-* Get a quick start guide and device reset tools in the box 
-* Work with a pre-setup test tenant so you can focus on deploying and managing apps, devices, and users and trying out other features that you get with Microsoft 365 Education
-
-And the devices are for your school to keep!
-
-## What's in the IT admin box?
-Your box should contain:
-* A Getting Started guide
-* Two new PCs:
-    * A notebook running Windows 10 S, Fall Creators Update
-    * A 2-in-1 laptop running Windows 10 S, Fall Creators Update and a digital pen
-* Information about your 12-month trial subscription to Microsoft 365 Education A3, and the services and features included with it
-* Information about how to get support for Microsoft 365 Education
 
 ## Try out Microsoft 365 Education in 5 easy steps
 Get going with Microsoft 365 Education by trying out these 5 easy tasks:
@@ -167,9 +148,4 @@ Looking for other IT admin tasks to try? See these instructions:
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) - Got your own device and want to try joining it to your Trial in a Box test tenant? Follow the steps here.
 
 ## Get more info
-Select one of the following roles to get started for students and teachers.
-
-| Student | Teacher |
-| :---: | :---: |
-| ![Get started for students](images/student2.svg) | ![Get started for teachers](images/teacher2.svg) |
-
+[Microsoft 365 Education Trial in a Box](index.md)

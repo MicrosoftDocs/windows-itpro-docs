@@ -1,127 +1,51 @@
---- 
-layout: HubPage
-hide_bc: true
-title: Microsoft 365 Education trial in a box | Microsoft Docs
-description: Find step-by-step instructions for school IT administrators, teachers, and students participating in Microsoft 365 Education trial in a box.
+---
+title: Microsoft 365 Education Trial in a Box
+description: For IT admins, teachers, and students, discover what you can do with Microsoft 365 Education. Try it out with our Trial in a Box program. 
+keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, IT admin, teacher, student, explore, Trial in a Box
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.topic: article
+ms.localizationpriority: high
+ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
+ms.date: 12/04/2017
 ---
-<div id="main" class="v2">
-    <div class="container">
-        <ul class="cardsY panelContent featuredContent">
-            <li>
-                <a href="https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx" target="_blank">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_advanced.svg" src="/media/common/i_advanced.svg" alt="Learn more about Microsoft 365 Education products." />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Learn about Microsoft 365 Education</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="/education/windows/test-windows10s-for-edu" target="_blank">
-                    <div class="cardSize">
-                        <div class="cardPadding">
-                            <div class="card">
-                                <div class="cardImageOuter">
-                                    <div class="cardImage">
-                                        <img data-hoverimage="/media/common/i_download-install.svg" src="/media/common/i_download-install.svg" alt="Test Windows 10 S for education" />
-                                    </div>
-                                </div>
-                                <div class="cardText">
-                                    <span class="likeAnH3">Test Windows 10 S for Education</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="container">
-        <h1>Microsoft 365 Education Trial in a Box</h1>
-        <ul class="pivots">
-            <li>
-                <a href="#audience">Audience</a>
-                <ul id="audience">
-                    <li>
-                        <a href="#audience-all"></a>
-                        <ul id="audience-all" class="cardsW">
-                            <li class="fullSpan">
-                                <div class="container intro">
-                                    <p>Looking for step-by-step info about Microsoft 365 Education Trial in a Box? Select your role to get started.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="itadmin-tib-get-started.md" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage"> 
-                                                        <img src="images/it-admin1.svg" alt="Microsoft 365 Education Trial in a Box for school IT admins" class="center" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>IT admin</h3>
-                                                    <p>Get going with Microsoft 365 Education--log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage"> 
-                                                        <img src="images/student2.svg" alt="Microsoft 365 Education Trial in a Box for students" class="center" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Student</h3>
-                                                    <p>TBD</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education" target="_blank">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage"> 
-                                                        <img src="images/teacher2.svg" alt="Microsoft 365 Education Trial in a Box for teachers" class="center" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Teacher</h3>
-                                                    <p>TBD</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</div>
+
+# Microsoft 365 Education Trial in a Box
+
+![Learn how to deploy and manage a cloud solution with MSES!](images/mses_getstarted_banner.png)
+
+**Applies to:**
+
+-   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
+
+Are you an IT admin, teacher, or student and you want to try out Microsoft 365 Education? Now you can with Microsoft 365 Education Trial in a Box. 
+
+## What's Trial in a Box?
+Microsoft 365 Education Trial in a Box lets you try out Microsoft 365 Education with new Windows 10 devices for education. With Trial in a Box, you:
+* Try out two new devices running Windows 10 S Fall Creators Update for just $99
+* Get a 12-month trial subscription to Microsoft 365 Education A3
+* Get customer support for any questions related to Microsoft 365 Education
+* Get a quick start guide and device reset tools in the box 
+* Use preconfigured accounts so you can focus on the tasks you need to learn and get the most out of Microsoft 365 Education
+
+And the devices are for your school to keep!
+
+## What's in the IT admin box?
+Your box should contain:
+* A Getting Started guide
+* Two new PCs:
+    * A notebook running Windows 10 S, Fall Creators Update
+    * A 2-in-1 laptop running Windows 10 S, Fall Creators Update and a digital pen
+* Information about your 12-month trial subscription to Microsoft 365 Education A3, and the services and features included with it
+* Information about how to get support for Microsoft 365 Education
+
+## Get started!
+Choose your role to get started.
+
+| [![Get started for IT admins](images/it-admin1.svg)](itadmin-tib-get-started.md) | [![Get started for students](images/student2.svg)](https://docs.microsoft.com/education) | [![Get started for teachers](images/teacher2.svg)](https://docs.microsoft.com/education) |
+| :---: | :---: | :---: |
+| **IT Admin** </br>Get going with Microsoft 365 Education--log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **Student** </br>TBD | **Teacher** </br>TBD |
+
