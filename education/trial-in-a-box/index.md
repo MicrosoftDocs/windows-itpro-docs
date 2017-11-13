@@ -45,7 +45,7 @@ Your box should contain:
 ## Get started!
 Choose your role to get started.
 
-| [![Get started for IT admins](images/it-admin1.svg)](itadmin-tib-get-started.md) | [![Get started for students](images/student2.svg)](https://docs.microsoft.com/education) | [![Get started for teachers](images/teacher2.svg)](https://docs.microsoft.com/education) |
+| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for students](images/student.png)](https://docs.microsoft.com/education) | [![Get started for teachers](images/teacher.png)](https://docs.microsoft.com/education) |
 | :---: | :---: | :---: |
 | **IT Admin** </br>Get going with Microsoft 365 Education&mdash;log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **Student** </br>TBD | **Teacher** </br>TBD |
 
