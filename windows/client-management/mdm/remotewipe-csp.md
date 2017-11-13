@@ -42,6 +42,9 @@ The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which 
 
 Supported operation is Exec.
 
+<a href="" id="doWipePersistUserData"></a>**doWipePersistUserData**  
+Added in Windows 10 Fall Creators Edition.  Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
+
 ## The Remote Wipe Process
 
 
