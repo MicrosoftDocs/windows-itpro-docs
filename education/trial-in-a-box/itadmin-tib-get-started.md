@@ -15,7 +15,9 @@ ms.date: 12/04/2017
 
 # Get started for IT admins
 
+<!--
 ![Learn how to deploy and manage a cloud solution with MSES!](images/mses_getstarted_banner.png)
+-->
 
 **Applies to:**
 
