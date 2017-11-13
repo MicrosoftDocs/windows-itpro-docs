@@ -47,5 +47,5 @@ Choose your role to get started.
 
 | [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for students](images/student.png)](https://docs.microsoft.com/education) | [![Get started for teachers](images/teacher.png)](https://docs.microsoft.com/education) |
 | :---: | :---: | :---: |
-| **[IT Admin](itadmin-tib-get-started.md)** </br>Get going with Microsoft 365 Education&mdash;log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **Student** </br>TBD | **Teacher** </br>TBD |
+| **[IT Admin](itadmin-tib-get-started.md)** </br>Get going with Microsoft 365 Education&mdash;log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Student](https://docs.microsoft.com/education)** </br>Learn how to use Microsoft Read Aloud, submit assignments, do something, etc etc TBD. | **[Teacher](https://docs.microsoft.com/education)** </br>Create a class notebook, collaborate with students in your classroom using Teams, and so on and so forth TBD. |
 
