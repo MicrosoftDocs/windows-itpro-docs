@@ -1,7 +1,7 @@
 ---
 title: Get started for IT admins
 description: Try out Microsoft 365 Education to implement a full cloud infrastructure for your school, manage devices and apps, and configure and deploy policies to your Windows 10 devices.
-keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
+keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,7 +21,7 @@ ms.date: 12/04/2017
 
 **Applies to:**
 
--   Windows 10 S Fall Creators Update, Microsoft Intune for Education, Microsoft Store for Education
+-   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education
 
 Hello, IT administrators! In this guide we'll show you how you can quickly and easily try out Microsoft 365 Education, which consists of all the new and existing cloud services and tools that you need to try out a full IT cloud solution for your school.
 
