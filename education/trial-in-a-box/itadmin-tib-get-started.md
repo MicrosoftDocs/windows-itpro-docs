@@ -23,7 +23,7 @@ ms.date: 12/04/2017
 
 -   Windows 10 S Fall Creators Update, Microsoft Intune for Education, Microsoft Store for Education
 
-Hello, IT administrators! In this guide, we'll show you how you can quickly and easily try out Microsoft 365 Education, consisting of all the new and existing cloud services and tools that you need to try out a full IT cloud solution for your school.
+Hello, IT administrators! In this guide we'll show you how you can quickly and easily try out Microsoft 365 Education, which consists of all the new and existing cloud services and tools that you need to try out a full IT cloud solution for your school.
 
 ## Try out Microsoft 365 Education in 5 easy steps
 Get going with Microsoft 365 Education by trying out these 5 easy tasks:
