@@ -46,7 +46,13 @@ When you need help setting up your device or have a question about using Microso
 
   ![Select Need help to get support](images/o365_needhelp.png)
 
-3. Enter your question or open a support ticket. 
+3. Choose how you want to get help.
+  * To see available solutions or answers to your question, type your question in the **Need help?** field and select **Get help** to see a list of available solutions including articles.
+  * To talk directly to a support representative, in **Let us call you**, enter the phone number where you can be reached. This section also shows you the expected wait time.
 
-  ![Describe the issue or what you need help with](images/o365_support_options.png)
+    ![Option to have a support representative call you](images/o365_needhelp_callingoption.png)
 
+    If you chose to have a support representative call you, a new support ticket will be opened and you can track these in **Support tickets**.
+
+    ![Track your support tickets](images/o365_needhelp_supporttickets.png)
+    

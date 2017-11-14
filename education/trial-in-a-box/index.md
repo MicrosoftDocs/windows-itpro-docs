@@ -21,26 +21,25 @@ ms.date: 12/04/2017
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
 
-Are you an IT admin, teacher, or student and you want to try out Microsoft 365 Education? Now you can with Microsoft 365 Education Trial in a Box. 
+Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education. 
 
-## What's Trial in a Box?
-Microsoft 365 Education Trial in a Box lets you try out Microsoft 365 Education with new Windows 10 devices for education. With Trial in a Box, you:
-* Try out two new devices running Windows 10 S Fall Creators Update for just $99
-* Get a 12-month trial subscription to Microsoft 365 Education A3
-* Get customer support for any questions related to Microsoft 365 Education
-* Get a quick start guide and device reset tools in the box 
-* Use preconfigured accounts so you can focus on the tasks you need to learn and get the most out of Microsoft 365 Education
+With Microsoft 365 Education Trial in a Box:
+* IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
+* Teachers can enhance independence for students of all abilities with intelligent tools like Office Lens and Learning Tools, spark creativity, collaboration, and problem-solving with Office, OneNote Class Notebook and Sway, amd connect with others
+* Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to live in 3D
 
-And the devices are for your school to keep!
+And more! 
 
-## What's in the IT admin box?
-Your box should contain:
+## What's in the box?
+Your box contains:
 * A Getting Started guide
 * Two new PCs:
     * A notebook running Windows 10 S, Fall Creators Update
     * A 2-in-1 laptop running Windows 10 S, Fall Creators Update and a digital pen
 * Information about your 12-month trial subscription to Microsoft 365 Education A3, and the services and features included with it
 * Information about how to get support for Microsoft 365 Education
+
+Best of all, the devices are for your school to keep.
 
 ## Get started!
 Choose your role to get started.
