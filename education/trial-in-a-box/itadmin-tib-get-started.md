@@ -26,7 +26,6 @@ ms.date: 12/04/2017
 Hello, IT administrators! In this guide we'll show you how you can quickly and easily try out Microsoft 365 Education, which consists of all the new and existing cloud services and tools that you need to try out a full IT cloud solution for your school.
 
 ## Try out Microsoft 365 Education in 5 easy steps
-Get going with Microsoft 365 Education by trying out these 5 easy tasks:
 
 1. [Log in with your IT admin credentials](#log-in).
 2. [Reset a password for a user in the Office 365 admin center](#reset-a-user-password).
