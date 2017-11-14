@@ -23,6 +23,7 @@ ms.date: 12/04/2017
 
 Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education. 
 
+## What's Trial in a Box?
 With Microsoft 365 Education Trial in a Box:
 * IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
 * Teachers can enhance independence for students of all abilities with intelligent tools like Office Lens and Learning Tools, spark creativity, collaboration, and problem-solving with Office, OneNote Class Notebook and Sway, amd connect with others
