@@ -35,8 +35,8 @@ Hello, IT administrators! In this guide we'll show you how you can quickly and e
 
 ![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_tib_itadminsteps.png)
 
-    > [!NOTE]
-    > To get the most out of Microsoft 365 Education, we've pre-configured your tenant for you so you don't need to set it up. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
+> [!NOTE]
+> To get the most out of Microsoft 365 Education, we've pre-configured your tenant for you so you don't need to set it up. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
 If you run into any problems while following the steps in this guide, or you have questions about Microsoft 365 Education, see [Microsoft 365 Education support](support-options.md).
 
