@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 09/05/2017
+ms.date: 11/14/2017
 author: greg-lindsay
 ---
 
@@ -25,7 +25,15 @@ Deployment instructions are provided for the following scenarios:
 - VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
 - VMs must be Active Directory-joined or Azure Active Directory-joined.
 - VMs must be generation 1.
-- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
+- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+
+## Activation
+
+The underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. 
+
+Procedures in this topic provide a Windows 10 Pro Generic Volume License Key (GVLK). Activation with this key is accomplished using a Volume License KMS activation server provided by the QMTH. Alternatively, a KMS activation server on your corporate network can be used if you have configured a private connection, such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
+
+For examples of activation issues, see [Troubleshoot the user experience](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#troubleshoot-the-user-experience).
 
 ## Active Directory-joined VMs
 
