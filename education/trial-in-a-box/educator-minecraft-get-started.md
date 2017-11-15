@@ -19,7 +19,7 @@ By using Minecraft as a platform for learning, educators like you can motivate a
 To begin this experience, follow these steps.
 
 1. Go to <a href="https://aka.ms/lessonhub" target="_blank">https://aka.ms/lessonhub</a>.
-2. In the **Details** section, click the **Download world** link.
+2. In the **Details** section, click the **Download World** link.
 
   ![Select the download world link](images/mcee_downloadworld.png)
 
