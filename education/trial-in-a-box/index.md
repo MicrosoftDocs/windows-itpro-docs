@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Education Trial in a Box
-description: For IT admins, teachers, and students, discover what you can do with Microsoft 365 Education. Try it out with our Trial in a Box program. 
-keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, IT admin, teacher, student, explore, Trial in a Box
+description: For IT admins, educators, and students, discover what you can do with Microsoft 365 Education. Try it out with our Trial in a Box program. 
+keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, IT admin, educator, student, explore, Trial in a Box
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -26,7 +26,7 @@ Microsoft 365 Education empowers educators to unlock creativity, promote teamwor
 ## What's Trial in a Box?
 With Microsoft 365 Education Trial in a Box:
 * IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
-* Teachers can enhance independence for students of all abilities with intelligent tools like Office Lens and Learning Tools, spark creativity, collaboration, and problem-solving with Office, OneNote Class Notebook and Sway, amd connect with others
+* Educators can enhance independence for students of all abilities with intelligent tools like Office Lens and Learning Tools, spark creativity, collaboration, and problem-solving with Office, OneNote Class Notebook and Sway, amd connect with others
 * Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to live in 3D
 
 And more! 
@@ -45,7 +45,7 @@ Best of all, the devices are for your school to keep.
 ## Get started!
 Choose your role to get started.
 
-| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for students](images/student.png)](https://docs.microsoft.com/education) | [![Get started for teachers](images/teacher.png)](https://docs.microsoft.com/education) |
+| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for students](images/student.png)](https://docs.microsoft.com/education) | [![Get started for educators](images/teacher.png)](https://docs.microsoft.com/education) |
 | :---: | :---: | :---: |
-| **[IT Admin](itadmin-tib-get-started.md)** </br>Log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Student](https://docs.microsoft.com/education)** </br>Learn how to use Microsoft Read Aloud, submit assignments, do something, etc etc TBD. | **[Teacher](https://docs.microsoft.com/education)** </br>Create a class notebook, collaborate with students in your classroom using Teams, and so on and so forth TBD. |
+| **[IT Admin](itadmin-tib-get-started.md)** </br>Log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Student](https://docs.microsoft.com/education)** </br>Learn how to use Microsoft Read Aloud, submit assignments, do something, etc etc TBD. | **[Educator](https://docs.microsoft.com/education)** </br>Create a class notebook, collaborate with students in your classroom using Teams, and so on and so forth TBD. |
 

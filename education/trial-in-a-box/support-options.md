@@ -55,4 +55,6 @@ When you need help setting up your device or have a question about using Microso
     If you chose to have a support representative call you, a new support ticket will be opened and you can track these in **Support tickets**.
 
     ![Track your support tickets](images/o365_needhelp_supporttickets.png)
-    
+
+## Get more info
+[Microsoft 365 Education Trial in a Box](index.md)
