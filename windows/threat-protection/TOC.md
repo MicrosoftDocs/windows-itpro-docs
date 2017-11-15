@@ -25,7 +25,7 @@
 ### [Onboard endpoints and set up access](windows-defender-atp\onboard-configure-windows-defender-advanced-threat-protection.md)
 #### [Configure client endpoints](windows-defender-atp\configure-endpoints-windows-defender-advanced-threat-protection.md)
 ##### [Configure endpoints using Group Policy](windows-defender-atp\configure-endpoints-gp-windows-defender-advanced-threat-protection.md)
-##### [Configure endpoints using System Security Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
+##### [Configure endpoints using System Center Configuration Manager](windows-defender-atp\configure-endpoints-sccm-windows-defender-advanced-threat-protection.md)
 ##### [Configure endpoints using Mobile Device Management tools](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md)
 ###### [Configure endpoints using Microsoft Intune](windows-defender-atp\configure-endpoints-mdm-windows-defender-advanced-threat-protection.md#configure-endpoints-using-microsoft-intune)
 ##### [Configure endpoints using a local script](windows-defender-atp\configure-endpoints-script-windows-defender-advanced-threat-protection.md)
