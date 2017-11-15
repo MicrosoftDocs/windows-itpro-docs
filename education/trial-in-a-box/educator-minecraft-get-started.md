@@ -32,12 +32,10 @@ To begin this experience, follow these steps.
   > [!TIP]
   > The mouse works as eyes in the game so move your mouse to take a look around the world. **WASD** keys allow you to walk forward, backward, left, and right side in the game. Explore and have fun!
 
+  ![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
+
 ## Stay in touch
 Stay in touch with us through our site at <a href="https://education.minecraft.net" target="_blank">https://education.minecraft.net</a> and follow @playcraftlearn on Twitter to keep up with our community news!
  
-## Minecraft controls
-
-![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
-
 ## Get more info
 [Microsoft 365 Education Trial in a Box](index.md)
