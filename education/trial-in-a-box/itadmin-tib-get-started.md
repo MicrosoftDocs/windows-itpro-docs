@@ -131,7 +131,7 @@ The Microsoft Store for Education is where you can shop for more apps for your s
     > Sync happens automatically, but it may take up to 36 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps.
 
 ### Add new settings
-Update settings for all devices in your tenant by setting a custom lock screen image and a custom desktop image.
+Update settings for all devices in your tenant by adding a **Documents** and **Downloads** folder to all devices managed in Intune for Education.
 
 1. Go or log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
 2. Select **Group > All Devices > Settings** and expand **Windows interface customizations**.
