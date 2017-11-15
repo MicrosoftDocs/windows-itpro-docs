@@ -1,5 +1,5 @@
 ---
-title: Inspire with Minecraft: Education Edition
+title: Inspire with Minecraft Education Edition
 description: Get a brief introduction to Minecraft Education Edition to discover the myriad ways you can use Minecraft to teach core subject areas in schools, and motivate and inspire every student to achieve more.
 keywords: education, Minecraft, Education Edition, Microsoft 365 Education, Minecraft controls, lesson hub
 ms.prod: w10
