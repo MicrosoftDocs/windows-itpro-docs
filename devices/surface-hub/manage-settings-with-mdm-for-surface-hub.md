@@ -87,6 +87,8 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 | Disable auto-populating the sign-in dialog with invitees from scheduled meetings | Properties/DisableSignInSuggestions | Yes </br>  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Disable "My meetings and files" feature in Start menu | Properties/DoNotShowMyMeetingsAndFiles | Yes </br>  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package. 
+| Set the LanProfile for 802.1x Wired Auth | Dot3/LanProfile | Yes <br> [Use a custom policy.](#example-intune)  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Set the EapUserData for 802.1x Wired Auth | Dot3/EapUserData | Yes <br> [Use a custom policy.](#example-intune)  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 
 ### Supported Windows 10 settings
 

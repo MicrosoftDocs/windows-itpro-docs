@@ -17,6 +17,8 @@ This topic shows the OMA DM device description framework (DDF) for the **RemoteW
 
 You can download the Windows 10 version 1607 DDF files from [here](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip).
 
+The XML below is the DDF for Windows 10, version 1709.
+
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
@@ -106,6 +108,27 @@ You can download the Windows 10 version 1607 DDF files from [here](http://downlo
                     <MIME>text/plain</MIME>
                 </DFType>
                 <Description>Exec on this node will perform a remote wipe on the device and fully clean the internal drive. In some device configurations, this command may leave the device unable to boot. The return status code shows whether the device accepted the Exec command.</Description>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>doWipePersistUserData</NodeName>
+            <DFProperties>
+              <AccessType>
+                  <Exec />
+              </AccessType>
+              <DFFormat>
+                  <chr />
+              </DFFormat>
+              <Occurrence>
+                  <One />
+              </Occurrence>
+              <Scope>
+                  <Permanent />
+              </Scope>
+              <DFType>
+                  <MIME>text/plain</MIME>
+              </DFType>
+              <Description>Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.</Description>
             </DFProperties>
         </Node>
     </Node>
