@@ -16,6 +16,13 @@ ms.localizationpriority: medium
 
 This topic lists new and updated topics in the [Surface Hub Admin Guide]( surface-hub-administrators-guide.md).
 
+## November 2017
+
+New or changed topic | Description 
+--- | ---
+[Enable 802.1x wired authentication](enable-8021x-wired-authentication.md) | New
+[Manage settings with an MDM provider (Surface Hub)](manage-settings-with-mdm-for-surface-hub.md) | Added settings for 802.1x wired authentication.
+
 ## October 2017
 
 New or changed topic | Description |
