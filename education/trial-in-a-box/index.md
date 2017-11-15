@@ -31,14 +31,17 @@ With Microsoft 365 Education Trial in a Box:
 
 And more! 
 
-## What's in the box?
-Your box contains:
-* A Getting Started guide
-* Two new PCs:
-    * A notebook running Windows 10 S, Fall Creators Update
-    * A 2-in-1 laptop running Windows 10 S, Fall Creators Update and a digital pen
-* Information about your 12-month trial subscription to Microsoft 365 Education A3, and the services and features included with it
-* Information about how to get support for Microsoft 365 Education
+## What's in Trial in a Box?
+
+* **Support**
+    - *Getting Started Guide* provides start-to-finish instructions so you can quickly begin using your PCs
+    - Live Customer Support in case you need it
+* **Two (2) new PCs**
+    - A powerful notebook running Windows 10 S Fall Creators Update
+    - A high-performing 2-in-1 laptop running Windows 10 S Fall Creators Update and a digital pen
+* **Software**
+    - A one-year trial subscription of Microsoft 365 Education software on the PCs and in the cloud to test both device experiences
+    - Software includes Office 365 for Education, Minecraft: Education Edition, OneNote, Microsoft Teams for Education, and Intune for Education to enable easy setup and secure management of classroom devices
 
 Best of all, the devices are for your school to keep.
 
