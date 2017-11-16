@@ -15,15 +15,13 @@ ms.date: 12/04/2017
 
 # Microsoft 365 Education Trial in a Box
 
-<!--
-![Learn how to deploy and manage a cloud solution with MSES!](images/mses_getstarted_banner.png)
--->
+![Microsoft 365 Education Trial in a Box header image](images/TrialInABox_Header_Map_Graphic-01.png)
 
 **Applies to:**
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
 
-| ![Trial in a Box image](images/trial-in-a-box.png) | Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education. |
+Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
 ## What's Trial in a Box?
 With Microsoft 365 Education Trial in a Box:
