@@ -29,7 +29,7 @@ Hello, IT administrators! In this guide we'll show you how you can quickly and e
 4. [Configure settings for users and devices in your tenant](#configure-new-settings)
 5. [Enable Microsoft Teams](#enable-microsoft-teams)
 
-![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_tib_itadminsteps2.png)
+![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_tib_itadminsteps_2.png)
 
 > [!NOTE]
 > To get the most out of Microsoft 365 Education, we've pre-configured your tenant for you so you don't need to set it up. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
