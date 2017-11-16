@@ -15,10 +15,6 @@ ms.date: 12/04/2017
 
 # Get started for IT admins
 
-<!--
-![Learn how to deploy and manage a cloud solution with MSES!](images/mses_getstarted_banner.png)
--->
-
 **Applies to:**
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education
