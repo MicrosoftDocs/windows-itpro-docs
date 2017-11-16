@@ -37,11 +37,11 @@ And more!
     - *Getting Started Guide* provides start-to-finish instructions so you can quickly begin using your PCs
     - Live Customer Support in case you need it
 * **Two (2) new PCs**
-    - A powerful notebook running Windows 10 S<sup>[1](#footnote1)</sup>, <sup>[2](#footnote2)</sup> Fall Creators Update
-    - A high-performing 2-in-1 laptop running Windows 10 S<sup>[1](#footnote1)</sup>, <sup>[2](#footnote2)</sup> Fall Creators Update and a digital pen
+    - A powerful notebook running Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> Fall Creators Update
+    - A high-performing 2-in-1 laptop running Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> Fall Creators Update and a digital pen
 * **Software**
     - A one-year trial subscription of Microsoft 365 Education software on the PCs and in the cloud to test both device experiences
-    - Software includes Office 365 for Education, Minecraft: Education Edition, OneNote, Microsoft Teams for Education, and Intune for Education to enable easy setup and secure management of classroom devices
+    - Software includes Office 365 for Education, Minecraft: Education Edition, Microsoft OneNote, Microsoft Teams for Education, and Intune for Education to enable easy setup and secure management of classroom devices
 
 Best of all, the devices are for your school to keep.
 
