@@ -37,8 +37,8 @@ And more!
     - *Getting Started Guide* provides start-to-finish instructions so you can quickly begin using your PCs
     - Live Customer Support in case you need it
 * **Two (2) new PCs**
-    - A powerful notebook running Windows 10 S Fall Creators Update
-    - A high-performing 2-in-1 laptop running Windows 10 S Fall Creators Update and a digital pen
+    - A powerful notebook running Windows 10 S<sup>[1](#footnote1)</sup><sup>[2](#footnote2)</sup> Fall Creators Update
+    - A high-performing 2-in-1 laptop running Windows 10 S<sup>[1](#footnote1)</sup><sup>[2](#footnote2)</sup> Fall Creators Update and a digital pen
 * **Software**
     - A one-year trial subscription of Microsoft 365 Education software on the PCs and in the cloud to test both device experiences
     - Software includes Office 365 for Education, Minecraft: Education Edition, OneNote, Microsoft Teams for Education, and Intune for Education to enable easy setup and secure management of classroom devices
@@ -48,7 +48,11 @@ Best of all, the devices are for your school to keep.
 ## Get started!
 Choose your role to get started.
 
-| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for students](images/student.png)](https://docs.microsoft.com/education) | [![Get started for educators](images/teacher.png)](https://docs.microsoft.com/education) |
-| :---: | :---: | :---: |
-| **[IT Admin](itadmin-tib-get-started.md)** </br>Log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Student](https://docs.microsoft.com/education)** </br>Learn how to use Microsoft Read Aloud, submit assignments, do something, etc etc TBD. | **[Educator](https://docs.microsoft.com/education)** </br>Create a class notebook, collaborate with students in your classroom using Teams, and so on and so forth TBD. |
+| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for educators](images/teacher.png)](https://docs.microsoft.com/education) |
+| :---: | :---: | 
+| **[IT Admin](itadmin-tib-get-started.md)** </br>Log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Educator](https://docs.microsoft.com/education)** </br>Create a class notebook, collaborate with students in your classroom using Teams, and so on and so forth TBD. |
 
+
+
+<a name="footnote1"></a><sup>1</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
+<a name="footnote2"></a><sup>2</sup> <small>Streamlined for security and superior performance. Windows 10 S works exclusively with apps from the Microsoft Store. Some accessories and apps compatible with Windows 10 may not work, and performance may vary. Certain default settings, features, and apps cannot be changed.  </small><br/>
