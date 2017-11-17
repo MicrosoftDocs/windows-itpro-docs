@@ -144,5 +144,8 @@ Looking for other IT admin tasks to try? See these instructions:
 * [Add more users](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) - Got your own device and want to try joining it to your Trial in a Box test tenant? Follow the steps here.
 
+## Configure new devices
+Want to try Microsoft 365 Education on more devices and join them to your preconfigured tenant? You can quickly set up new PCs for students using the **Set up School PCs** app. See [Configure new devices for your school](itadmin-configure-devices.md)
+
 ## Get more info
 [Microsoft 365 Education Trial in a Box](index.md)
