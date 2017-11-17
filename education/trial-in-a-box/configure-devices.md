@@ -114,4 +114,7 @@ A provisioning package is a method for applying settings to Windows 10 without n
 
 That's it! You're done. The PC is now ready to use. You can use the account details for one of the other users in your preconfigured tenant to test the device and the Microsoft 365 Education tools and services that are part of your 1-year trial.
 
-
+## Get more info
+Learn more about the Set up School PCs app: 
+* [Technical reference for the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/set-up-school-pcs-technical)
+* [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app)
