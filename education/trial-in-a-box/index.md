@@ -48,11 +48,15 @@ Best of all, the devices are for your school to keep.
 ## Get started!
 Choose your role to get started.
 
-| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for educators](images/teacher.png)](https://docs.microsoft.com/education) |
+| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) |
 | :---: | :---: | 
-| **[IT Admin](itadmin-tib-get-started.md)** </br>Log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Educator](https://docs.microsoft.com/education)** </br>Create a class notebook, collaborate with students in your classroom using Teams, and so on and so forth TBD. |
+| **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks: log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Educator](https://docs.microsoft.com/education)** </br>Try Microsoft Teams and test drive some teaching tasks, use Immersive Reader to read a document, try OneNote and experience the power of inking and media-rich projects, and more!  |
 
-
-
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <a name="footnote1"></a><sup>1</sup> <small>Devices must be configured for educational use by applying **[SetEduPolicies](https://docs.microsoft.com/en-us/education/windows/configure-windows-for-education#setedupolicies)** using the Set up School PCs app.</small><br/>
 <a name="footnote2"></a><sup>2</sup> <small>Streamlined for security and superior performance. Windows 10 S works exclusively with apps from the Microsoft Store. Some accessories and apps compatible with Windows 10 may not work, and performance may vary. Certain default settings, features, and apps cannot be changed.  </small><br/>

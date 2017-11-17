@@ -25,11 +25,12 @@ Using Microsoft 365 Education hardware, software, and apps, jump right in wi
  
 Follow along here for step-by-step directions and visit [https://aka.ms/m365edutrial](https://aka.ms/m365edutrial) for more demonstrations and support.
 
-![Microsoft 365 Education Trial in a Box educator journey banner](images/educator_getstarted_banner)
+![Microsoft 365 Education Trial in a Box educator journey banner](images/educator_getstarted_banner.png)
 
-## Set your priority, then choose your point of entry
 Sample the ways Microsoft 365 Education and your Windows 10 S device meet your instructional goals.
 
+| Set your priority | Choose your point of entry |
+|-------------------|----------------------------|
 | ![Actviate 21st century learning](images/activate_21st_learning.png) | **With Microsoft Teams**, students collaborate and contribute to real-time discussion. [Try this!](#microsoft-teams) [Watch this!](https://youtu.be/N7uiMs4dPcg)<br/>**With OneNote**, students experience the power of inking and media-rich projects. [Try this!](#onenote) <br/>**With Microsoft Teams**, students practice digital citizenship in a safe environment. |
 | ![Meet diverse needs](images/meet_diverse_needs.png) | **With Microsoft Learning Tools**, students are supported in their literacy development. [Try this!](#learning-tools) [Watch this!](https://www.youtube.com/watch?v=3Ztr44aKmQ8&feature=youtu.be)<br/>**With Microsoft Translator**, teachers offer real-time translation for students and parents. [Watch this!](https://youtu.be/16yAGeP2FuM)<br/>**With Ink to Math in OneNote**, students bring mathematical solutions to life. |
 | ![Foster professional collaboration](images/foster_prof_collab.png) | With Microsoft Forms, teachers collect, share, and visualize data easily. [Try this!](#microsoft-forms) <br/>With Microsoft Teams, teachers optimize collaboration across departments and schools. [Watch this!](https://youtu.be/N7uiMs4dPcg) <br/>**With OneNote Staff Notebook**, school leaders and teachers coordinate observations and communicate school-wide initiatives |
@@ -162,7 +163,7 @@ Remix 3D is not only an online catalog with a large collection of free 3D models
 6. The 3D object will appear on your slide. Selecting the model will make an icon appear in the middle of the object. Selecting and holding on this icon will allow you to drag and change the angle of the object.
 
 **EXTRA CREDIT!  Create your own 3D image**
- 
+
 **Task:** Construct your own simple 3D prototype of a pyramid in Microsoft Paint 3D 
  
 **Background:** Bring classrooms diagrams and illustrations to life with 3D images that you can draw on, move, and manipulate to view from different angles. After creating your 3D prototype, you and your students can enter virtual reality yourselves and interact with your object in the Mixed Reality Viewer app—try it out! 
