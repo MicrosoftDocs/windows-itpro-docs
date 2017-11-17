@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 11/16/2017
 ---
 
 # Policy CSP - Authentication
@@ -204,15 +204,16 @@ ms.date: 11/01/2017
 
 <!--EndSKU-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709. Specifies whether Fast Identity Online (FIDO) device can be used to sign on.
+<p style="margin-left: 20px">Preview release in Windows 10, version 1709. Supported in the next release. Specifies whether Fast Identity Online (FIDO) device can be used to sign on. This policy enables the Windows logon credential provider for FIDO 2.0
 
+<p style="margin-left: 20px">Value type is integer.
+
+<p style="margin-left: 20px">Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password everytime they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
 -   0 - Do not allow. The FIDO device credential provider disabled. 
 -   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
-
-<p style="margin-left: 20px">Value type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->
