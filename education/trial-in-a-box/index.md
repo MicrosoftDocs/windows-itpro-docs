@@ -21,13 +21,16 @@ ms.date: 12/04/2017
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
 
+**Welcome to Microsoft 365 Education Trial in a Box! Here's where you can get started.**
+
+## What's Microsoft 365 Education?
 Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
 ## What's Trial in a Box?
 With Microsoft 365 Education Trial in a Box:
-* IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
 * Educators can enhance independence for students of all abilities with intelligent tools like Office Lens and Learning Tools, spark creativity, collaboration, and problem-solving with Office, OneNote Class Notebook and Sway, amd connect with others
 * Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to live in 3D
+* IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
 
 And more! 
 
@@ -48,9 +51,9 @@ Best of all, the devices are for your school to keep.
 ## Get started!
 Choose your role to get started.
 
-| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) |
+| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) |
 | :---: | :---: | 
-| **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks: log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings. | **[Educator](https://docs.microsoft.com/education)** </br>Try Microsoft Teams and test drive some teaching tasks, use Immersive Reader to read a document, try OneNote and experience the power of inking and media-rich projects, and more!  |
+| **[Educator](https://docs.microsoft.com/education)** </br>Try Microsoft Teams and test drive some teaching tasks, use Immersive Reader to read a document, try OneNote and experience the power of inking and media-rich projects, and more! | **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks: log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings.  |
 
 <br/>
 <br/>
