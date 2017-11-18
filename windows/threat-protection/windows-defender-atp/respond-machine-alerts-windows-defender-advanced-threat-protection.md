@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/10/2017
 ---
 
 # Take response actions on a machine
@@ -24,19 +24,18 @@ ms.date: 10/17/2017
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
-
-
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
 
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
->[!NOTE]
-> These response actions are only available for machines on Windows 10, version  1703.
-
-
+>[!IMPORTANT]
+> These response actions are only available for machines on Windows 10, version  1703 or later. 
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
+
+>[!IMPORTANT]
+> This response action is available for machines on Windows 10, version  1703 or later.
 
 You can download the package (Zip file) and investigate the events that occurred on a machine.
 
@@ -89,8 +88,10 @@ The package contains the following folders:
 ## Run Windows Defender Antivirus scan on machines
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
 
->[!NOTE]
-> A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not.
+>[!IMPORTANT]
+>- This action is available for machines on Windows 10, version  1709 or later.
+>- A Windows Defender Antivirus (Windows Defender AV) scan can run alongside other antivirus solutions, whether Windows Defender AV is the active antivirus solution or not. Windows Defender AV can be in Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+
 
 1.	Select the machine that you want to run the scan on. You can select or search for a machine from any of the following views:
 
@@ -120,6 +121,11 @@ The machine timeline will include a new event, reflecting that a scan action was
 
 ## Restrict app execution
 In addition to the ability of containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
+
+>[!IMPORTANT]
+> - This action is available for machines on Windows 10, version  1709 or later.
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+
 
 The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
 
@@ -171,9 +177,14 @@ Depending on the severity of the attack and the state of the machine, you can ch
 ## Isolate machines from the network
 Depending on the severity of the attack and the sensitivity of the machine, you might want to isolate the machine from the network. This action can help prevent the attacker from controlling the compromised machine and performing further activities such as data exfiltration and lateral movement.
 
+>[!IMPORTANT]
+>- Full isolation is available for machines on Windows 10, version 1703.
+>- Selective isolation is available for machines on Windows 10, version 1709 or later.
+
+
 This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
 
-On Windows 10, version 1710 and above, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity.
+On Windows 10, version 1709 or later, you'll have additional control over the network isolation level. You can also choose to enable Outlook and Skype for Business connectivity.
 
 >[!NOTE]
 >You’ll be able to reconnect the machine back to the network at any time.

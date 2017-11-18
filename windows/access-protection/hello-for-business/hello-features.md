@@ -19,7 +19,7 @@ Consider these additional features you can use after your organization deploys W
 * [Conditional access](#conditional-access)
 * [Dynamic lock](#dynamic-lock)
 * [PIN reset](#PIN-reset)
-* [Privileged workstation](#Priveleged-workstation)
+* [Privileged credentials](#Priveleged-crednetials)
 * [Mulitfactor Unlock](#Multifactor-unlock)
 
 
@@ -142,14 +142,14 @@ On-premises deployments provide users with the ability to reset forgotton PINs e
 >[!NOTE]
 > Visit the [Frequently Asked Questions](https://docs.microsoft.com/en-us/windows/access-protection/hello-for-business/hello-identity-verification#frequently-asked-questions) section of the Windows Hello for Business page and watch the **What happens when the user forgets their PIN?** video.
 
-## Privileged Workstation
+## Privileged Credentials
 
 **Requirements**
 * Hybrid and On-premises Windows Hello for Business deployments
 * Domain Joined or Hybird Azure joined devices
 * Windows 10, version 1709
 
-The privileged workstation scenario enables administrators to perform elevated, admistrative funcions by enrolling both their non-privileged and privileged credentials on their device.
+The privileged credentials scenario enables administrators to perform elevated, admistrative funcions by enrolling both their non-privileged and privileged credentials on their device.
 
 By design, Windows 10 does not enumerate all Windows Hello for Business users from within a user's session.  Using the computer Group Policy setting, Allow enumeration of emulated smartd card for all users, you can configure a device to all this enumeration on selected devices.  
 

@@ -142,6 +142,8 @@
 ### [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
 #### [EnterpriseModernAppManagement DDF](enterprisemodernappmanagement-ddf.md)
 #### [EnterpriseModernAppManagement XSD](enterprisemodernappmanagement-xsd.md)
+### [eUICCs CSP](euiccs-csp.md)
+#### [eUICCs DDF file](euiccs-ddf-file.md)
 ### [FileSystem CSP](filesystem-csp.md)
 ### [Firewall CSP](firewall-csp.md)
 #### [Firewall DDF file](firewall-ddf-file.md)
