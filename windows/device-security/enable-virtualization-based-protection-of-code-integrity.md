@@ -45,7 +45,7 @@ If your device already has a WDAC policy (SIPolicy.p7b), please contact your IT 
 
    a. Click Start, type **Turn Windows Features on or off** and press ENTER. 
 
-   b. Select **Hyper-V** > **Hyper-V Platform** > **Hypervisor** and click **OK**.  
+   b. Select **Hyper-V** > **Hyper-V Platform** > **Hyper-V Hypervisor** and click **OK**.  
 
       ![Turn Windows features on or off](images\turn-windows-features-on-or-off.png)
 
