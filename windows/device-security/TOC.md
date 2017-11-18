@@ -125,7 +125,7 @@
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
-## [How to opt-in to HVCI](how-to-opt-in-to-hvci-for-windows-devices.md)
+## [Enable HVCI](enable-virtualization-based-protection-of-code-integrity.md)
 
 ## [Security auditing](auditing\security-auditing-overview.md)
 ### [Basic security audit policies](auditing\basic-security-audit-policies.md)
