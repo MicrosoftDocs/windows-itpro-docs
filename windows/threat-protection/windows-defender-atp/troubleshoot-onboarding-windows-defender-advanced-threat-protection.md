@@ -277,7 +277,10 @@ If you encounter issues while onboarding a server, go through the following veri
 
 - In **Event Viewer**, check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
 
-- Check if the **Microsoft Monitoring Agent** is running on the server. 
+- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example, 
+
+    ![Image of Services](images/atp-services.png)
+
 - Check to see that machines are reflected in the **Machines list** in the portal. 
 
 - [Run a detection test](run-detection-test-windows-defender-advanced-threat-protection.md) on the server.
