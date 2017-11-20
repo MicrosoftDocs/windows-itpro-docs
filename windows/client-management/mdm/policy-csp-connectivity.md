@@ -159,7 +159,7 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Do not allow the cellular data channel. The user can turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
 -   1 (default) – Allow the cellular data channel. The user can turn it off.
 -   2 - Allow the cellular data channel. The user cannot turn it off.
 
@@ -206,7 +206,7 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Do not allow cellular data roaming. The user can turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
 -   1 (default) – Allow cellular data roaming.
 -   2 - Allow cellular data roaming on. The user cannot turn it off.
 
