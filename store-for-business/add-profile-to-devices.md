@@ -60,7 +60,7 @@ You can manage new devices in Microsoft Store for Business or Microsoft Store fo
 - New devices that have not been through Windows out-of-box experience. 
 
 ## Add devices and apply AutoPilot deployment profile
-To manage devices through Microsoft Store for Business and Education, you'll need a .csv file that contains specific information about the devices. You should be able to get this from your Microsoft account contact, or the store where you purchased the devices. Upload the .csv file to Microsoft Store to add the devices. 
+To manage devices through Microsoft Store for Business and Education, you'll need a .csv file that contains specific information about the devices. To generate the CSV for your existing devices, run the following [PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.0/DisplayScript) on each device. Upload the .csv file to Microsoft Store to add the devices. 
 
 ### Device information file format
 Columns in the device information file need to use this naming and be in this order:
