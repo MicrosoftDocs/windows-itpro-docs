@@ -67,7 +67,9 @@ For more information see, [**Assign user access to the portal**](https://docs.mi
 ## Data currently isn't available on some tiles
 If your organization uses Privileged Access Workstations (PAWs) (internally referred to as "secure admin workstations", or SAWs) to access the Windows Defender ATP portal, some information might not be loaded on portal. 
 
-You'll need to whitelist the 
+You might see messages such as "Data currently isn't available" or "No items to show in queue. Check back soon or change your filtering criteria". 
+
+To address this, you'll need to whitelist the `security.windows.com` domain and all sub-domains under it. 
 
 
 
