@@ -35,7 +35,7 @@ The tables list:
 - [Internal Windows Defender AV client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
 >[!TIP]
->You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com) to confirm the features are working, including:
+>You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
 >- Cloud-delivered protection
 >- Fast learning (including Black at first sight)
 >- Potentially unwanted application blocking

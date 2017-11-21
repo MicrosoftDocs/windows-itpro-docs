@@ -45,7 +45,7 @@ You can also [specify how long the file should be prevented from running](config
 
 
 >[!TIP]
->You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com) to confirm the features are working and see how Cloud-delivered protection and the Block at first sight features work.
+>You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
 
 
 ## How it works
