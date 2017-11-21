@@ -36,7 +36,7 @@ Windows Defender Advanced Threat Protection requires one of the following Micros
 
   -	Windows 10 Enterprise E5
   -	Windows 10 Education E5
-  - Secure Productive Enterprise E5 (SPE E5) which includes Windows 10 Enterprise E5
+  - Microsoft 365 E5 which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 
