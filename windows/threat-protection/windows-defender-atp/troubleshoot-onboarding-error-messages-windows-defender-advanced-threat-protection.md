@@ -64,5 +64,12 @@ For more information see, [**Assign user access to the portal**](https://docs.mi
 
 ![Image of not authorized to access portal](images\atp-not-authorized-to-access-portal.png)
 
+## Data currently isn't available on some tiles
+If your organization uses Privileged Access Workstations (PAWs) (internally referred to as "secure admin workstations", or SAWs) to access the Windows Defender ATP portal, some information might not be loaded on portal. 
+
+You'll need to whitelist the 
+
+
+
 ## Related topics
 - [Validating licensing provisioning and completing setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)
