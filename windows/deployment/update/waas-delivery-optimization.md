@@ -19,7 +19,7 @@ ms.date: 11/13/2017
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-Windows updates, upgrades, and applications can be very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these elements among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those elements from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or System Center Configuration Manager when installation Express Updates is enabled.  
+Windows updates, upgrades, and applications can contain packages with very large files. Downloading and distributing updates can consume quite a bit of network resources on the devices receiving them. You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages among multiple devices in your deployment. Delivery Optimization can accomplish this because it is a self-organizing distributed cache that allows clients to download those packages from alternate sources (such as other peers on the network) in addition to the traditional Internet-based Windows Update servers. You can use Delivery Optimization in conjunction with stand-alone Windows Update, Windows Server Update Services (WSUS), Windows Update for Business, or System Center Configuration Manager when installation of Express Updates is enabled.  
 
 Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
@@ -252,13 +252,19 @@ Using the `-Verbose` option returns additional information:
 
 **What are the requirements if I use a proxy?**: You must allow Byte Range requests. See [Proxy requirements for Windows Update](https://support.microsoft.com/help/3175743/proxy-requirements-for-windows-update) for details.
 
-**What hostnames should I allow through my firewall to support Delivery Optimization?**: For the Delivery Optimization service itself: **\*.do.dsp.mp.microsoft.com**.
+**What hostnames should I allow through my firewall to support Delivery Optimization?**: 
 
-To allow the download payloads:
-- *.download.windowsupdate.com 
-- *.windowsupdate.com
+For communication between clients and the Delivery Optimization cloud service: **\*.do.dsp.mp.microsoft.com**.
+
+For Delivery Optimization metadata: 
+
 - *.dl.delivery.mp.microsoft.com
 - *.emdl.ws.microsoft.com
+
+For the payloads (optional):
+
+- *.download.windowsupdate.com 
+- *.windowsupdate.com
 
 
 
