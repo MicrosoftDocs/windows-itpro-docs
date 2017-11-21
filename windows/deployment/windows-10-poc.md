@@ -92,7 +92,7 @@ Harware requirements are displayed below:
     </tr>
     <tr>
         <td BGCOLOR="#a0e4fa">**OS**</td>
-        <td>Windows 8.1/10 or Windows Server 2012/2012 R2/2016<B>*</B></td>
+        <td>Windows 8.1/10 or Windows Server 2012/2012 R2/2016<b>\*</b></td>
         <td>Windows 7 or a later</td>
     </tr>
     <tr>
@@ -129,7 +129,7 @@ Harware requirements are displayed below:
 </table>
 
 
-<B>*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Providing all steps in this guide as Hyper-V WMI or as 2008 R2 Hyper-V Manager procedures is beyond the scope of the guide.</I>
+<B>\*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Providing all steps in this guide as Hyper-V WMI or as 2008 R2 Hyper-V Manager procedures is beyond the scope of the guide.</I>
 <BR>
 <BR>The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
@@ -229,7 +229,7 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
     After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
 
-    <TABLE BORDER=1>
+    <TABLE BORDER="1">
     <tr><td> ![VHD](images/download_vhd.png) </TD></TR>
     </TABLE>
 
@@ -262,7 +262,7 @@ w10-enterprise.iso
 
 >Important: Do not attempt to use the VM resulting from the following procedure as a reference image. Also, to avoid conflicts with existing clients, do not start the VM outside the PoC network.
 
-<TABLE BORDER=2><tr><td>
+<TABLE BORDER="2"><tr><td>
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
 <BR>
 <OL>
@@ -292,7 +292,7 @@ When creating a VM in Hyper-V, you must specify either generation 1 or generatio
 
 <div style='font-size:9.0pt'>
 
-<table border=1 cellspacing="0" cellpadding="0">
+<table border="1" cellspacing="0" cellpadding="0">
     <tr>
         <td></td>
         <td>Architecture</td>
@@ -363,7 +363,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
 
 <div style='font-size:9.0pt'>
 
-<table border=1 cellspacing="0" cellpadding="0">
+<table border="1" cellspacing="0" cellpadding="0">
     <tr>
         <td>OS</td>
         <td>Partition style</td>
@@ -372,8 +372,8 @@ The following table displays the Hyper-V VM generation to choose based on the OS
         <td>Procedure</td>
     </tr>
     <tr>
-        <td rowspan=4>Windows 7</td>
-        <td rowspan=2>MBR</td>
+        <td rowspan="4">Windows 7</td>
+        <td rowspan="2">MBR</td>
         <td>32</td>
         <td>1</td>
         <td>[Prepare a generation 1 VM](#prepare-a-generation-1-vm)</td>
@@ -384,7 +384,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
         <td>[Prepare a generation 1 VM](#prepare-a-generation-1-vm)</td>
     </tr>
     <tr>
-        <td rowspan=2>GPT</td>
+        <td rowspan="2">GPT</td>
         <td>32</td>
         <td>N/A</td>
         <td>N/A</td>
@@ -395,8 +395,8 @@ The following table displays the Hyper-V VM generation to choose based on the OS
         <td>[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)</td>
     </tr>
     <tr>
-        <td rowspan=4>Windows 8 or later</td>
-        <td rowspan=2>MBR</td>
+        <td rowspan="4">Windows 8 or later</td>
+        <td rowspan="2">MBR</td>
         <td>32</td>
         <td>1</td>
         <td>[Prepare a generation 1 VM](#prepare-a-generation-1-vm)</td>
@@ -407,7 +407,7 @@ The following table displays the Hyper-V VM generation to choose based on the OS
         <td>[Prepare a generation 1 VM](#prepare-a-generation-1-vm)</td>
     </tr>
     <tr>
-        <td rowspan=2>GPT</td>
+        <td rowspan="2">GPT</td>
         <td>32</td>
         <td>1</td>
         <td>[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)</td>
@@ -513,7 +513,7 @@ Notes:<BR>
 
 ### Resize VHD
 
-<HR size=4>
+<HR size="4">
 **<I>Enhanced session mode</I>**
 
 **Important**: Before proceeding, verify that you can take advantage of [enhanced session mode](https://technet.microsoft.com/windows-server-docs/compute/hyper-v/learn-more/Use-local-resources-on-Hyper-V-virtual-machine-with-VMConnect) when completing instructions in this guide. Enhanced session mode enables you to copy and paste the commands from the Hyper-V host to VMs, between VMs, and between RDP sessions. After copying some text, you can paste into a Windows PowerShell window by simply right-clicking. Before right-clicking, do not left click other locations as this can empty the clipboard. You can also copy and paste <U>files</U> directly from one computer to another by right-clicking and selecting copy on one computer, then right-clicking and selecting paste on another computer.
@@ -524,7 +524,7 @@ To ensure that enhanced session mode is enabled on the Hyper-V host, type the fo
 
 >If enhanced session mode was not previously enabled, close any existing virtual machine connections and re-open them to enable access to enhanced session mode. As mentioned previously: instructions to "type" commands provided in this guide can be typed, but the preferred method is to copy and paste these commands. Most of the commands to this point in the guide have been brief, but many commands in sections below are longer and more complex.
 
-<HR size=4>
+<HR size="4">
 
 The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 100GB to support installing imaging tools and storing OS images.
 

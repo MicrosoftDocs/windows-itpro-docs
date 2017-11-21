@@ -1029,6 +1029,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Authentication/AllowFidoDeviceSignon</li>
 <li>Browser/LockdownFavorites</li>
 <li>Browser/ProvisionFavorites</li>
+<li>Cellular/LetAppsAccessCellularData</li>
+<li>Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</li>
 <li>CredentialProviders/DisableAutomaticReDeploymentCredentials</li>
 <li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
@@ -1081,6 +1085,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PrinterNames</li>
 <li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Start/HidePeopleBar</li>
 <li>Storage/AllowDiskHealthModelUpdates</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
@@ -1377,6 +1382,44 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 ## Change history in MDM documentation
 
+### November 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following policies for Windows 10, version 1709:</p>
+<ul>
+<li>Authentication/AllowFidoDeviceSignon</li>
+<li>Cellular/LetAppsAccessCellularData</li>
+<li>Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</li>
+<li>Start/HidePeopleBar</li>
+<li>Storage/EnhancedStorageDevices</li>
+<li>Update/ManagePreviewBuilds</li>
+<li>WirelessDisplay/AllowMdnsAdvertisement</li>
+<li>WirelessDisplay/AllowMdnsDiscovery</li>
+</ul>
+<p>Added missing policies from previous releases:</p>
+<ul>
+<li>Connectivity/DisallowNetworkConnectivityActiveTest</li>
+<li>Search/AllowWindowsIndexer</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
 ### October 2017
 
 <table class="mx-tdBreakAll">
@@ -1401,14 +1444,6 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>Defender/ControlledFolderAccessAllowedApplications - string separator is |.</li>
 <li>Defender/ControlledFolderAccessProtectedFolders - string separator is |.</li>
-</ul>
-<p>Added the following policies for Windows 10, version 1709:</p>
-<ul>
-<li>Authentication/AllowFidoDeviceSignon</li>
-<li>Storage/EnhancedStorageDevices</li>
-<li>Update/ManagePreviewBuilds</li>
-<li>WirelessDisplay/AllowMdnsAdvertisement</li>
-<li>WirelessDisplay/AllowMdnsDiscovery</li>
 </ul>
 </td></tr>
 <tr class="even">
