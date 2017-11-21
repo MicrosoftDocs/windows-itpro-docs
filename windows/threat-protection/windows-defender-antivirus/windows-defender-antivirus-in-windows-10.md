@@ -42,6 +42,13 @@ Some of the highlights of Windows Defender AV include:
 - [Always-on scanning](configure-real-time-protection-windows-defender-antivirus.md), using advanced file and process behavior monitoring and other heuristics (also known as "real-time protection")
 - [Dedicated protection updates](manage-updates-baselines-windows-defender-antivirus.md) based on machine-learning, human and automated big-data analysis, and in-depth threat resistance research
 
+
+>[!TIP]
+>You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com) to confirm the features are working and see how they work, including:
+>- Cloud-delivered protection
+>- Fast learning (including Black at first sight)
+>- Potentially unwanted application blocking
+
 ## What's new in Windows 10, version 1703
 
 New features for Windows Defender AV in Windows 10, version 1703 include:
