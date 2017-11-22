@@ -65,12 +65,19 @@ For more information see, [**Assign user access to the portal**](https://docs.mi
 ![Image of not authorized to access portal](images\atp-not-authorized-to-access-portal.png)
 
 ## Data currently isn't available on some tiles
-If your organization uses Privileged Access Workstations (PAWs) (internally referred to as "secure admin workstations", or SAWs) to access the Windows Defender ATP portal, some information might not be loaded on portal. 
+If the portal dashboard, and other sections show an error message such as "Data currently isn't available":
 
-You might see messages such as "Data currently isn't available" or "No items to show in queue. Check back soon or change your filtering criteria". 
+![Image of data currently isn't available](images/atp-data-not-available.png)
 
-To address this, you'll need to whitelist the `security.windows.com` domain and all sub-domains under it. 
+You'll need ensure that the following URLs are whitelisted:
 
+- dc.services.visualstudio.com
+- machinehealth-eus-prd.cloudapp.net
+- machinehealth-cus-prd.cloudapp.net
+- security.windows.com (and domain and all sub-domains under it)
+- winatpfeedback.windows.com
+- winatpmanagement-us.windows.com
+- winatpservicehealth.windows.com
 
 
 ## Related topics
