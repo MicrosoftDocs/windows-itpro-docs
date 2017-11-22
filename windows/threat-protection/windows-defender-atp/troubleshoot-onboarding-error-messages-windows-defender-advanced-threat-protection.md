@@ -64,7 +64,7 @@ For more information see, [**Assign user access to the portal**](https://docs.mi
 
 ![Image of not authorized to access portal](images\atp-not-authorized-to-access-portal.png)
 
-## Data currently isn't available on some tiles
+## Data currently isn't available on some sections of the portal
 If the portal dashboard, and other sections show an error message such as "Data currently isn't available":
 
 ![Image of data currently isn't available](images/atp-data-not-available.png)
