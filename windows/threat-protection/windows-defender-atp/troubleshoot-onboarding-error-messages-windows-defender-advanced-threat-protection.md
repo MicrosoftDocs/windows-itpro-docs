@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
 ms.localizationpriority: high
-ms.date: 09/10/2017
+ms.date: 11/22/2017
 ---
 
 # Troubleshoot subscription and portal access issues
@@ -69,15 +69,7 @@ If the portal dashboard, and other sections show an error message such as "Data 
 
 ![Image of data currently isn't available](images/atp-data-not-available.png)
 
-You'll need ensure that the following URLs are whitelisted:
-
-- dc.services.visualstudio.com
-- machinehealth-eus-prd.cloudapp.net
-- machinehealth-cus-prd.cloudapp.net
-- security.windows.com (and domain and all sub-domains under it)
-- winatpfeedback.windows.com
-- winatpmanagement-us.windows.com
-- winatpservicehealth.windows.com
+You'll need to whitelist the `security.windows.com` and all sub-domains under it.
 
 
 ## Related topics
