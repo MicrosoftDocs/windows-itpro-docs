@@ -35,7 +35,7 @@ If your device already has a WDAC policy (SIPolicy.p7b), please contact your IT 
 
 1. Download the [Enable HVCI cabinet file](http://download.microsoft.com/download/7/A/F/7AFBCDD1-578B-49B0-9B27-988EAEA89A8B/EnableHVCI.cab).
 2. Open the cabinet file.
-3. Right-click the SIPolicy.p7b file and extract it. Then copy or move the file to the following location: 
+3. Right-click the SIPolicy.p7b file and extract it. Then move it to the following location: 
 
    C:\Windows\System32\CodeIntegrity
 
@@ -46,7 +46,7 @@ If your device already has a WDAC policy (SIPolicy.p7b), please contact your IT 
 
    a. Click Start, type **Turn Windows Features on or off** and press ENTER. 
 
-   b. Select **Hyper-V** > **Hyper-V Platform** > **Hypervisor** and click **OK**.  
+   b. Select **Hyper-V** > **Hyper-V Platform** > **Hyper-V Hypervisor** and click **OK**.  
 
       ![Turn Windows features on or off](images\turn-windows-features-on-or-off.png)
 
