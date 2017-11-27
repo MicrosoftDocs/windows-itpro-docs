@@ -44,6 +44,7 @@ Use of Windows Analytics Device Health requires one of the following licenses:
 - Windows 10 Enterprise E3 or E5 per-device or per-user subscription (including Microsoft 365 F1, E3, or E5)
 - Windows 10 Education A3 or A5 (including Microsoft 365 Education A3 or A5)
 - Windows VDA E3 or E5 per-device or per-user subscription
+- Windows Server 2016 and on
 
 
 You don't have to install Windows 10 Enterprise on a per-device basis--you just need enough of the above licenses for the number of devices using Device Health. 

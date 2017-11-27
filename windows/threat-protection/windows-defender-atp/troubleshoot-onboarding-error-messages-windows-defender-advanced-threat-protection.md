@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
 ms.localizationpriority: high
-ms.date: 09/10/2017
+ms.date: 11/22/2017
 ---
 
 # Troubleshoot subscription and portal access issues
@@ -63,6 +63,14 @@ If you receive a **You are not authorized to access the portal**, be aware that 
 For more information see, [**Assign user access to the portal**](https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
 ![Image of not authorized to access portal](images\atp-not-authorized-to-access-portal.png)
+
+## Data currently isn't available on some sections of the portal
+If the portal dashboard, and other sections show an error message such as "Data currently isn't available":
+
+![Image of data currently isn't available](images/atp-data-not-available.png)
+
+You'll need to whitelist the `security.windows.com` and all sub-domains under it.
+
 
 ## Related topics
 - [Validating licensing provisioning and completing setup for Windows Defender ATP](licensing-windows-defender-advanced-threat-protection.md)

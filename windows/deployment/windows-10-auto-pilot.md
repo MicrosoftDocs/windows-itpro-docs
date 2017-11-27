@@ -39,6 +39,7 @@ Windows AutoPilot allows you to:
 ### Prerequisites
 
 * [Devices must be registered to the organization](#registering-devices-to-your-organization)
+* [Company branding needs to be configured](#configure-company-branding-for-oobe)
 * Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
 * Devices must have access to the internet
 * [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
@@ -76,7 +77,7 @@ If you would like to capture that information by yourself, you can use the [Get-
 By uploading this information to the Microsoft Store for Business or Partner Center admin portal, you'll be able to assign devices to your organization.
 Additional options and customization is available through these portals to pre-configure the devices.
 
-Options available for Windows 10, version 1703:
+Options available for Windows 10, starting with version 1703:
 * Skipping Work or Home usage selection (*Automatic*)
 * Skipping OEM registration, OneDrive and Cortana (*Automatic*)
 * Skipping privacy settings
@@ -86,6 +87,12 @@ Options available for Windows 10, version 1703:
 We are working to add additional options to further personalize and streamline the setup experience in future releases.
 
 To see additional details on how to customize the OOBE experience and how to follow this process, see guidance for [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).
+
+#### Configure company branding for OOBE
+
+In order for your company branding to appear during the Out-of-the-Box Experience, you'll need to configure it in Azure Active Directory first.
+
+See [Add company branding to your directory](https://docs.microsoft.com/azure/active-directory/customize-branding#add-company-branding-to-your-directory), to configure these settings. 
 
 ### IT-Driven
 
