@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 07/28/2017
+ms.date: 11/21/2017
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -33,12 +33,13 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
 
-## What's new in Windows 10, version 1709 
+## What's new in Windows 10, version 1709
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
 
 - Added the Phone calls section.
 - Added the Storage Health section.
+- Added discussion of apps for websites in the Microsoft Store section.
 
 ## What's new in Windows 10, version 1703
 
@@ -1809,6 +1810,10 @@ You can turn off the ability to launch apps from the Microsoft Store that were p
     -or-
 
     -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore!AutoDownload**, with a value of 2 (two).
+
+### <a href="" id="bkmk-apps-for-websites"></a>26.1 Apps for websites
+
+You can turn off apps for websites, preventing customers who visit websites that are registered with their associated app from directly launching the app.
 
 Disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Configure web-to-app linking with URI handlers**
 
