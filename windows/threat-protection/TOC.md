@@ -136,6 +136,7 @@
 #### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
 ##### [Inactive machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#inactive-machines)
 ##### [Misconfigured machines](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md#misconfigured-machines)
+### [Windows Defender ATP service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
 ### [Configure Windows Defender ATP preferences settings](windows-defender-atp\preferences-setup-windows-defender-advanced-threat-protection.md)
 #### [Update general settings](windows-defender-atp\general-settings-windows-defender-advanced-threat-protection.md)
 #### [Turn on advanced features](windows-defender-atp\advanced-features-windows-defender-advanced-threat-protection.md)
@@ -145,8 +146,9 @@
 #### [Enable Threat intel API](windows-defender-atp\enable-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Enable and create Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 #### [Enable Security Analytics security controls](windows-defender-atp\enable-security-analytics-windows-defender-advanced-threat-protection.md)
+
 ### [Windows Defender ATP settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
-### [Windows Defender ATP service health](windows-defender-atp\service-status-windows-defender-advanced-threat-protection.md)
+### [Windows Defender ATP Community Center]()
 ### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
 ### [Review events and errors on endpoints with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
