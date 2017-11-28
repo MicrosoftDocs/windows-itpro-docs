@@ -41,10 +41,6 @@ In addition to the product documentation available online, supplemental product 
 <col width="50%" />
 </colgroup>
 <tbody>
-<tr class="odd">
-<td align="left"><p><strong>MDOP Videos</strong></p></td>
-<td align="left"><p>For a list of available MDOP videos, go to [Microsoft Desktop Optimization Pack Technologies Videos](https://go.microsoft.com/fwlink/?LinkId=234275) (https://go.microsoft.com/fwlink/?LinkId=234275).</p></td>
-</tr>
 <tr class="even">
 <td align="left"><p><strong>MDOP Virtual Labs</strong></p></td>
 <td align="left"><p>For a list of available MDOP virtual labs, go to [Microsoft Desktop Optimization Pack (MDOP) Virtual Labs](https://go.microsoft.com/fwlink/?LinkId=234276) (https://go.microsoft.com/fwlink/?LinkId=234276).</p></td>
