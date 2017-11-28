@@ -17,6 +17,14 @@ author: brianlic-msft
  
 Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
 
+The following known issue has been fixed in the [Cumulative Security Update for November 2017](https://support.microsoft.com/help/4051033):
+
+-  Scheduled tasks with stored credentials fail to run when Credential Guard is enabled. The task fails and reports event ID 104 with the following message: <br>
+   "Task Scheduler failed to log on ‘\Test’ . <br>
+   Failure occurred in ‘LogonUserExEx’ . <br>
+   User Action: Ensure the credentials for the task are correctly specified. <br>
+   Additional Data: Error Value: 2147943726. 2147943726 : ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
+
 The following known issues have been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
 
 -	 [KB4015217 Windows Defender Credential Guard generates double bad password count on Active Directory domain-joined Windows 10 machines](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
