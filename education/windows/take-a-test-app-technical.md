@@ -86,7 +86,7 @@ When Take a Test is running, the following functionality is available to student
 
     - Ctrl+Alt+Del 
 
-        * On Windows 10 Enterprise or Windows 10 Education versions, IT admins can choose to block this functionality by configuring a [keyboard filter](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/keyboardfilter)
+        On Windows 10 Enterprise or Windows 10 Education versions, IT admins can choose to block this functionality by configuring a [keyboard filter](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/keyboardfilter).
 
     - Alt+F4 (Take a Test will restart if the student is using a dedicated test account)
 
