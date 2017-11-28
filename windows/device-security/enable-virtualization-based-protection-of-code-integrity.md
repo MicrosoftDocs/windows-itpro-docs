@@ -34,7 +34,9 @@ If your device already has a WDAC policy (SIPolicy.p7b), please contact your IT 
 > You must be an administrator to perform this procedure. 
 
 1. Download the [Enable HVCI cabinet file](http://download.microsoft.com/download/7/A/F/7AFBCDD1-578B-49B0-9B27-988EAEA89A8B/EnableHVCI.cab).
+
 2. Open the cabinet file.
+
 3. Right-click the SIPolicy.p7b file and extract it. Then move it to the following location: 
 
    C:\Windows\System32\CodeIntegrity
