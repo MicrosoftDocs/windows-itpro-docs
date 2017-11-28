@@ -16,7 +16,7 @@ ms.date: 11/07/2017
 - Windows 10
 - Windows Server 2016 
 
-Virtualization-based protection of code integrity (herein refered to as HVCI) is a powerful system mitigation, which leverages hardware virtualization and the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code. 
+Virtualization-based protection of code integrity (herein referred to as HVCI) is a powerful system mitigation, which leverages hardware virtualization and the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code. 
 Code integrity validation is performed in a secure environment that is resistant to attack from malicious software, and page permissions for kernel mode are set and maintained by the Hyper-V hypervisor.  
 
 Some applications, including device drivers, may be incompatible with HVCI. 
