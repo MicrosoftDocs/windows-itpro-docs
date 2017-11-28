@@ -19,7 +19,7 @@ Windows Defender Credential Guard has certain application requirements. Windows 
 
 The following known issue has been fixed in the [Cumulative Security Update for November 2017](https://support.microsoft.com/help/4051033):
 
--  Scheduled tasks with stored credentials fail to run when Credential Guard is enabled. The task fails and reports event ID 104 with the following message: <br>
+-  Scheduled tasks with stored credentials fail to run when Credential Guard is enabled. The task fails and reports Event ID 104 with the following message: <br>
    "Task Scheduler failed to log on ‘\Test’ . <br>
    Failure occurred in ‘LogonUserExEx’ . <br>
    User Action: Ensure the credentials for the task are correctly specified. <br>
