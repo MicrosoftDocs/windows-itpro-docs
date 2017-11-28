@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 08/07/2017
+ms.date: 11/28/2017
 ---
 
 # Take a Test app technical reference 
@@ -85,7 +85,13 @@ When Take a Test is running, the following functionality is available to student
 - The student can exit the test by pressing one of the following key combinations: 
 
     - Ctrl+Alt+Del 
+
+        * On Windows 10 Enterprise or Windows 10 Education versions, IT admins can choose to block this functionality by configuring a [keyboard filter](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/keyboardfilter)
+
     - Alt+F4 (Take a Test will restart if the student is using a dedicated test account)
+
+        > [!NOTE]
+        > Alt+F4 is disabled in Windows 10, version 1703 (Creators Update) and later.
 
 ## Permissive mode
 
