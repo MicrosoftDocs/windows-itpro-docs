@@ -16,7 +16,7 @@ ms.date: 11/07/2017
 - Windows 10
 - Windows Server 2016 
 
-Virtualization-based protection of code integrity (herein refered to as HVCI) is a powerful system mitigation, which leverages hardware virtualization and the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code. 
+Virtualization-based protection of code integrity (herein referred to as HVCI) is a powerful system mitigation, which leverages hardware virtualization and the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code. 
 Code integrity validation is performed in a secure environment that is resistant to attack from malicious software, and page permissions for kernel mode are set and maintained by the Hyper-V hypervisor.  
 
 Some applications, including device drivers, may be incompatible with HVCI. 
@@ -34,7 +34,9 @@ If your device already has a WDAC policy (SIPolicy.p7b), please contact your IT 
 > You must be an administrator to perform this procedure. 
 
 1. Download the [Enable HVCI cabinet file](http://download.microsoft.com/download/7/A/F/7AFBCDD1-578B-49B0-9B27-988EAEA89A8B/EnableHVCI.cab).
+
 2. Open the cabinet file.
+
 3. Right-click the SIPolicy.p7b file and extract it. Then move it to the following location: 
 
    C:\Windows\System32\CodeIntegrity
