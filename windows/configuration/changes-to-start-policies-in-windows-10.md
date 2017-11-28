@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 11/28/2017
 ---
 
 # Changes to Group Policy settings for Windows 10 Start
@@ -92,10 +93,6 @@ These policy settings are available in **Administrative Templates\\Start Menu an
 <tr class="odd">
 <td align="left">Start Layout</td>
 <td align="left"><p>This applies a specific Start layout, and it also prevents users from changing the layout. This policy can be configured in <strong>User Configuration</strong> or <strong>Computer Configuration</strong>.</p>
-<div class="alert">
-<strong>Note</strong>  
-<p>Start Layout policy setting applies only to Windows 10 Enterprise and Windows 10 Education.</p>
-</div>
 <div>
  
 </div></td>
