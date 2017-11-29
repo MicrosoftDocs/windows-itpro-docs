@@ -24,8 +24,8 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
 
 **[Watch this!](https://www.youtube.com/watch?v=nt3hz2vVf8c)** See how Microsoft Learning Tools change lives.
 
-<center><iframe src="https://www.youtube.com/watch?v=nt3hz2vVf8c" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
- 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
+
 **Try this!** Use Immersive Reader to read "Learning design thinking from the ancient Egyptians" in Word Online. 
 
 1. Select Learning design thinking from the ancient Egyptians to open it in Word Online.  
@@ -37,7 +37,7 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
 
   | Text to Speech | Text Preferences | Grammar Options | Line Focus |
   | :------------: | :--------------: | :-------------: | :--------: |
-  | ![Word Online Text to Speech](images/word_online_tts.png) | ![Word Online Text Preferences](images/word_online_text_preferences.png) | ![Word Online Grammar Options](images/word_online_grammar_options.png) | ![Word Online Line Focus](images/word_online_line_focus.png) |
+  | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
 ## Microsoft Teams
 **With Microsoft Teams**, students collaborate in real-time.
@@ -46,7 +46,7 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
 
 **[Watch this!](https://youtu.be/N7uiMs4dPcg)** See how Microsoft Teams for Education works in the classroom.
 
-<center><iframe src="https://youtu.be/N7uiMs4dPcg" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 **Try this!** Take a guided tour of Microsoft Teams and test drive some teaching tasks. 
 
@@ -63,7 +63,7 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
 
 **[Watch this!](https://www.youtube.com/watch?v=hMmRud4B54o&feature=youtu.be)** See how OneNote allows teachers to differentiate instruction allow for rich collaboration.
 
-<center><iframe src="https://www.youtube.com/watch?v=hMmRud4B54o&feature=youtu.be" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
 
 **Try this!** Reimagine the Great Pyramids of Giza
 
@@ -90,7 +90,7 @@ Minecraft: Education Edition is an open-world game that promotes creativity, col
 
 **[Watch this!](https://youtu.be/3rKuSlgqePo)** Learn about Code Builder for Minecraft: Education Edition.
 
-<center><iframe src="https://youtu.be/3rKuSlgqePo" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
 
 **Try this!** Explore a Minecraft world 
 
