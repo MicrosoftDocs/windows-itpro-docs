@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Education support
-description: Need help or have a question about using Microsoft 365 Education? Start here. 
+title: Microsoft Education Trial in a Box support
+description: Need help or have a question about using Microsoft Education Trial in a Box? Start here. 
 keywords: support, troubleshooting, education, Microsoft 365 Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,8 +13,8 @@ ms.author: celested
 ms.date: 12/04/2017
 ---
 
-# Microsoft 365 Education support
-Need help or have a question about using Microsoft 365 Education? Start here.
+# Microsoft Education Trial in a Box support
+Need help or have a question about using Microsoft Education? Start here.
 
 ## Troubleshooting tips
 
@@ -38,8 +38,8 @@ Forget your password? Follow these steps to recover it.
 
   ![Recover your account](images/officeportal_cantaccessaccount.png)
 
-## Microsoft 365 Education support
-When you need help setting up your device or have a question about using Microsoft 365 Education, follow these steps.
+## Microsoft Education support
+When you need help setting up your device or have a question about using Microsoft Education, follow these steps.
 
 1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
 2. Select **Need help?** at the bottom of the page.
@@ -57,4 +57,4 @@ When you need help setting up your device or have a question about using Microso
     ![Track your support tickets](images/o365_needhelp_supporttickets.png)
 
 ## Get more info
-[Microsoft 365 Education Trial in a Box](index.md)
+[Microsoft Education Trial in a Box](index.md)

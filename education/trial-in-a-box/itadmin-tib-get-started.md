@@ -21,26 +21,26 @@ ms.date: 12/04/2017
 
 Hello, IT administrators! In this guide we'll show you how you can quickly and easily try out Microsoft 365 Education, which consists of all the new and existing cloud services and tools that you need to try out a full IT cloud solution for your school.
 
-## Try out Microsoft Education in 5 easy steps
+## Try out Microsoft 365 Education in 5 easy steps
 
 1. [Log in with your IT admin credentials](#log-in).
 2. [Configure a new device with Set up School PCs](#configure-a-new-device-with-set-up-school-pcs)
 3. [Go through Intune for Education express configuration](#go-through-intune-for-education-express-configuration).
 4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#buy-and-deploy-apps).
-5. [Add a new settings for devices in your tenant](#add-new-settings).
+5. [Add new folders to all devices in your tenant](#add-new-folders-to-all-devices-in-your-tenant).
 
-![Deploy and manage a full cloud IT solution using Microsoft Education](images/m365edu_tib_itadminsteps.png)
+![Complete these 5 easy IT admin tasks](images/msedu_tib_adminsteps.png)
 
 > [!NOTE]
 > To get the most out of Microsoft 365 Education, we've pre-configured your tenant for you so you don't need to set it up. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
-If you run into any problems while following the steps in this guide, or you have questions about Microsoft 365 Education, see [Microsoft 365 Education support](support-options.md).
+If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft 365 Education support](support-options.md).
 
 ## Log in
-To get started with your Microsoft Education Trial in a Box, log in with the account credentials included in your box.
+To try out the IT admin tasks, start by logging in as an IT admin.
 
-1. Turn on the notebook, which you can designate as the IT admin device.
-2. In the log in screen, enter your account details.
+1. Turn **Device A**.
+2. In the log in screen, login in with the IT admin credentials included in your Trial in a Box.
 
 ## Configure a new device with Set up School PCs
 Quickly set up **Device B** using the **Set up School PCs** app. A PC that's been set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
@@ -54,7 +54,7 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
 
 ### Create the provisioning package
 
-1. Launch the Set up School PCs app.
+1. On **Device A**, launch the Set up School PCs app.
 
     ![Launch the Set up School PCs app](images/suspc_start.png)
 
@@ -99,7 +99,7 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
   3. Enter the assessment URL. You can leave the URL blank so that students can enter one later. This enables teachers to use the the Take a Test account for daily quizzes or tests by having students manually enter a URL.
 
 8. **Add recommended apps** lets you choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
-  * **Office 365 for Windows 10 S (Education Preview)** - These are perfect for the Trial in a Box PCs. If you try to install this app on other editions of Windows, setup will fail.
+  * **Office 365 for Windows 10 S (Education Preview)** - These are perfect for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail.
   * **Minecraft: Education Edition** - Don't select this. This is already provisioned as part of your tenant.
   * **Other apps fit for the classroom**
 
@@ -109,34 +109,32 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
 
     ![Select the section or page name to make a change](images/suspc_review_summary.png)
 
-10. Accept the summary and then insert a USB drive.
+10. Accept the summary and then insert a USB drive in **Device A**.
 11. Select the drive and then **Save** to create the provisioning package. 
 
     > [!NOTE]
     > The provisioning package on your USB drive will be named SetUpSchoolPCs_*ABCDE* (Expires *MM-DD-YYYY*).ppkg, where **ABCDE* is the device name you added (if any), and **MM-DD-YYYY** is the month, day, and year when the package will expire.
 
-12. Follow the instructions in the **Get the student PCs ready** page to start setting up the student PCs. 
-13. Follow the instructions in the **Install the package** page to apply the provisioning package to the student PCs. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).
+12. Follow the instructions in the **Get the student PCs ready** page to start setting up **Device B**. 
+13. Follow the instructions in the **Install the package** page to apply the provisioning package to **Device B**. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).
 
     Select **Create new package** if you need to create a new provisioning package. Otherwise, remove the USB drive.
 
 ### Apply the provisioning package
-
 A provisioning package is a method for applying settings to Windows 10 without needing to reimage the device. When Windows 10 refers to a *package*, it means your provisioning package, and when it refers to *provisioning*, it means applying the provisioning package to the student PC.
 
-> [!NOTE]  
-> The student PC must contain a new or reset image and the PC must not already have been through first-run setup (OOBE).
+**To set up Device B using the Set up School PCs provisioning package**
 
-**To set up the student PC using the Set up School PCs provisioning package**
+1. Start with **Device B** turned off or with the PC on the first-run setup screen. In Windows 10 S Fall Creators Update, the first-run setup screen says **Let's start with region. Is this right?**. 
 
-1. Start with the student PC turned off or with the PC on the first-run setup screen. In Windows 10 S Fall Creators Update, the first-run setup screen says **Let's start with region. Is this right?**. 
+    If the PC has passed the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
 
-    If the PC has gone past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
-
-2. Insert the USB drive. Windows will recognize the drive and automatically install the provisioning package. 
+2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. You can remove the USB drive when you see the message that you can remove the removable media. You can then use the USB drive to start provisioning another student PC.
 
-That's it! You're done. The PC is now ready to use. You can use the account details for one of the other users in your preconfigured tenant to test the device and the Microsoft 365 Education tools and services that are part of your 1-year trial.
+That's it! You're done. **Device B** is now ready to use. You can use the account details for one of the other users in your preconfigured tenant to test the device and the Microsoft 365 Education tools and services that are part of your 1-year trial.
+
+You can complete the rest of the IT admin tasks using **Device A**.
 
 ## Go through Intune for Education express configuration
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
@@ -201,14 +199,14 @@ The Microsoft Store for Education is where you can shop for more apps for your s
     > [!NOTE]  
     > Sync happens automatically, but it may take up to 36 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps.
 
-## Add new settings
-Update settings for all devices in your tenant by adding a **Documents** and **Downloads** folder to all devices managed in Intune for Education.
+## Add new folders to all devices in your tenant
+Update settings for all devices in your tenant by adding the **Documents** and **Downloads** folders to all devices managed in Intune for Education.
 
 1. Go or log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
 2. Select **Group > All Devices > Settings** and expand **Windows interface customizations**.
 3. In **Choose folders that appear in the Start menu**, select **Documents** and **Downloads**.
 
-    ![Available settings for customizing the Windows interface](images/i4e_groups_settings_wincustomizations.png)
+    ![Choose folders that appear in the Start menu](images/i4e_groups_alldevices_newfolders.png)
 
 ## Other tasks
 Looking for other IT admin tasks to try? See these instructions:

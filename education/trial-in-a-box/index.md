@@ -50,6 +50,8 @@ Choose your role to get started.
 | [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | |
 |  | **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks:</br>- Log in with your IT admin credentials</br>- Configure a new device with Set up School PCs</br>- Go through Intune for Education express configuration</br>- Buy apps from the Microsoft Store for Education and deploy it to devices in your tenant </br>- Add new settings for devices in your tenant  |
 
+If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education support](support-options.md).
+
 <br/>
 <br/>
 <br/>
