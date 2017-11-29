@@ -21,10 +21,10 @@ ms.date: 12/04/2017
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
 
-**Welcome to Microsoft 365 Education Trial in a Box! Here's where you can get started.**
+**Welcome to Microsoft Education Trial in a Box! Here's where you can get started.**
 
-## What's Microsoft 365 Education?
-Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
+## What's Microsoft Education?
+Microsoft Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
 ## What's Trial in a Box?
 With Microsoft Education Trial in a Box:
@@ -45,9 +45,10 @@ Best of all, the devices are for your school to keep.
 ## Get started!
 Choose your role to get started.
 
-| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) |
-| :---: | :---: | 
-| **[Educator](https://docs.microsoft.com/education)** </br>Try Microsoft Teams and test drive some teaching tasks, use Immersive Reader to read a document, try OneNote and experience the power of inking and media-rich projects, and more! | **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks: log in, reset a user password, configure Intune for Education, buy and deploy apps, and add new settings.  |
+| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | **[Educator](https://docs.microsoft.com/education)** </br>- Use Immersive Reader to read in Word Online</br>- Take a guided tour of Microsoft Teams and test drive some teaching tasks</br>- Reimagine the Great Pyramids of Giza </br>- Explore a Minecraft world |
+| :---: |:---| 
+| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | |
+|  | **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks:</br>- Log in with your IT admin credentials</br>- Configure a new device with Set up School PCs</br>- Go through Intune for Education express configuration</br>- Buy apps from the Microsoft Store for Education and deploy it to devices in your tenant </br>- Add new settings for devices in your tenant  |
 
 <br/>
 <br/>

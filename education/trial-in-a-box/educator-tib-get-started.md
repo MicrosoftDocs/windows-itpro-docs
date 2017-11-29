@@ -22,7 +22,7 @@ ms.date: 12/04/2017
  
 Learning Tools is a set of features available in Word, OneNote, and the Edge browser that helps increase fluency for English language learners, build confidence for emerging readers, and offer text decoding solutions for students with learning differences such as dyslexia. In this activity, launch Immersive Reader directly from a document to enter a full-screen reading mode and explore options to hear text read aloud, change the spacing on lines, and highlight for syntax. 
 
-**[Watch this!](https://www.youtube.com/watch?v=nt3hz2vVf8c)** See how Microsoft Learning Tools change lives.
+**[Watch this!](https://www.youtube.com/watch?v=nt3hz2vVf8c)** See how Microsoft Learning Tools change lives.</br>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -44,7 +44,7 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
 
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom discussion, respond to student questions, organize content, and more!  
 
-**[Watch this!](https://youtu.be/N7uiMs4dPcg)** See how Microsoft Teams for Education works in the classroom.
+**[Watch this!](https://youtu.be/N7uiMs4dPcg)** See how Microsoft Teams for Education works in the classroom.</br>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -61,7 +61,7 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
   
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
 
-**[Watch this!](https://www.youtube.com/watch?v=hMmRud4B54o&feature=youtu.be)** See how OneNote allows teachers to differentiate instruction allow for rich collaboration.
+**[Watch this!](https://www.youtube.com/watch?v=hMmRud4B54o&feature=youtu.be)** See how OneNote allows teachers to differentiate instruction allow for rich collaboration.</br>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -88,7 +88,7 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
   
 Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination. This brief introduction to a Minecraft: Education Edition world reveals the myriad ways you can use Minecraft to teach core subject area concepts ranging from fractions to elements of storytelling.  
 
-**[Watch this!](https://youtu.be/3rKuSlgqePo)** Learn about Code Builder for Minecraft: Education Edition.
+**[Watch this!](https://youtu.be/3rKuSlgqePo)** Learn about Code Builder for Minecraft: Education Edition.</br>
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
 

@@ -36,23 +36,23 @@ Hello, IT administrators! In this guide we'll show you how you can quickly and e
 
 If you run into any problems while following the steps in this guide, or you have questions about Microsoft 365 Education, see [Microsoft 365 Education support](support-options.md).
 
-### Log in
+## Log in
 To get started with your Microsoft Education Trial in a Box, log in with the account credentials included in your box.
 
 1. Turn on the notebook, which you can designate as the IT admin device.
 2. In the log in screen, enter your account details.
 
-### Configure a new device with Set up School PCs
+## Configure a new device with Set up School PCs
 Quickly set up **Device B** using the **Set up School PCs** app. A PC that's been set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 
-#### Download, install, and get ready
+### Download, install, and get ready
 
 1. [Download the latest Set up School PCs app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
 2. Install the app on your work PC, or the Trial in a Box **Device A**.
 3. Make sure you're connected to your school's network.
 4. Use the USB drive that came in the Trial in a Box accessories box to save the provisioning package.
 
-#### Create the provisioning package
+### Create the provisioning package
 
 1. Launch the Set up School PCs app.
 
@@ -120,7 +120,7 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
 
     Select **Create new package** if you need to create a new provisioning package. Otherwise, remove the USB drive.
 
-## Apply the provisioning package
+### Apply the provisioning package
 
 A provisioning package is a method for applying settings to Windows 10 without needing to reimage the device. When Windows 10 refers to a *package*, it means your provisioning package, and when it refers to *provisioning*, it means applying the provisioning package to the student PC.
 
@@ -138,7 +138,7 @@ A provisioning package is a method for applying settings to Windows 10 without n
 
 That's it! You're done. The PC is now ready to use. You can use the account details for one of the other users in your preconfigured tenant to test the device and the Microsoft 365 Education tools and services that are part of your 1-year trial.
 
-### Go through Intune for Education express configuration
+## Go through Intune for Education express configuration
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. 
@@ -171,7 +171,7 @@ Intune for Education provides an **Express configuration** option so you can get
 8. Click **Next** and review the list of apps and settings you selected to apply.
 9. Click **Save** and then click **All done** to go back to the dashboard.
 
-### Buy and deploy apps
+## Buy and deploy apps
 The Microsoft Store for Education is where you can shop for more apps for your school.
 
 1. In Intune for Education, select **Apps** and then in the **Store apps** section, select **+ New app** to go to the <a href="https://educationstore.microsoft.com" target="_blank">Microsoft Store for Education</a>.
@@ -201,7 +201,7 @@ The Microsoft Store for Education is where you can shop for more apps for your s
     > [!NOTE]  
     > Sync happens automatically, but it may take up to 36 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps.
 
-### Add new settings
+## Add new settings
 Update settings for all devices in your tenant by adding a **Documents** and **Downloads** folder to all devices managed in Intune for Education.
 
 1. Go or log in to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
