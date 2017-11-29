@@ -55,7 +55,7 @@ Choose your role to get started.
 
 |  |  |
 | :---: |:---| 
-| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | **[Educator](https://docs.microsoft.com/education)** </br></br>- Use Immersive Reader to read in Word Online</br>- Take a guided tour of Microsoft Teams and test drive some teaching tasks</br>- Reimagine the Great Pyramids of Giza </br>- Explore a Minecraft world |
+| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | **[Educator](educator-tib-get-started.md)** </br></br>- Use Immersive Reader to read in Word Online</br>- Take a guided tour of Microsoft Teams and test drive some teaching tasks</br>- Reimagine the Great Pyramids of Giza </br>- Explore a Minecraft world |
 | [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | **[IT Admin](itadmin-tib-get-started.md)** </br></br>Learn these 5 easy tasks:</br>- Log in with your IT admin credentials</br>- Configure **Device B** with Set up School PCs</br>- Go through Intune for Education express configuration</br>- Buy apps from the Microsoft Store for Education and deploy it to devices in your tenant </br>- Add new folders to all devices in your tenant |
 |  |  |
 
