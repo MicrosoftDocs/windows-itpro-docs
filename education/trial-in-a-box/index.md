@@ -36,21 +36,30 @@ And more!
 
 ## What's in Trial in a Box?
 
-* **Support** - A *Getting Started Guide* provides start-to-finish instructions so you can quickly begin using your PCs and live customer support in case you need it.
-* **Two (2) Windows 10 S devices** - A 2-in-1 convertible PC that supports digital ink, and an affordable PC designed to survive the rigors of classroom life. Both PCs are running Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> with Fall Creators Update already installed.
-* **Microsoft 365 Education Trial subscription** - A one-year trial subscription of Microsoft Education software to test both device experiences. This includes: Microsoft 365 Education, Minecraft: Education Edition, OneNote, Microsoft Teams for Education, and Intune for Education to enable easy setup and secure management of classroom devices.
+* **Support**
+
+    A *Getting Started Guide* provides start-to-finish instructions so you can quickly begin using your PCs and live customer support in case you need it.
+
+* **Two (2) Windows 10 S devices**
+
+    A 2-in-1 convertible PC that supports digital ink, and an affordable PC designed to survive the rigors of classroom life. Both PCs are running Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> with Fall Creators Update already installed.
+
+* **Microsoft 365 Education Trial subscription**
+
+    A one-year trial subscription of Microsoft Education software to test both device experiences. This includes: Microsoft 365 Education, Minecraft: Education Edition, OneNote, Microsoft Teams for Education, and Intune for Education to enable easy setup and secure management of classroom devices.
 
 Best of all, the devices are for your school to keep.
 
 ## Get started!
 Choose your role to get started.
 
-| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | **[Educator](https://docs.microsoft.com/education)** </br>- Use Immersive Reader to read in Word Online</br>- Take a guided tour of Microsoft Teams and test drive some teaching tasks</br>- Reimagine the Great Pyramids of Giza </br>- Explore a Minecraft world |
+|  |  |
 | :---: |:---| 
-| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | |
-|  | **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks:</br>- Log in with your IT admin credentials</br>- Configure a new device with Set up School PCs</br>- Go through Intune for Education express configuration</br>- Buy apps from the Microsoft Store for Education and deploy it to devices in your tenant </br>- Add new settings for devices in your tenant  |
+| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | **[Educator](https://docs.microsoft.com/education)** </br>- Use Immersive Reader to read in Word Online</br>- Take a guided tour of Microsoft Teams and test drive some teaching tasks</br>- Reimagine the Great Pyramids of Giza </br>- Explore a Minecraft world |
+| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | **[IT Admin](itadmin-tib-get-started.md)** </br>Learn these 5 easy tasks:</br>- Log in with your IT admin credentials</br>- Configure **Device B** with Set up School PCs</br>- Go through Intune for Education express configuration</br>- Buy apps from the Microsoft Store for Education and deploy it to devices in your tenant </br>- Add new folders to all devices in your tenant |
 
-If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education support](support-options.md).
+
+If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education Trial in a Box support](support-options.md).
 
 <br/>
 <br/>
