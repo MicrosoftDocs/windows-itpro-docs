@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Education Trial in a Box
+title: Microsoft Education Trial in a Box
 description: For IT admins, educators, and students, discover what you can do with Microsoft 365 Education. Try it out with our Trial in a Box program. 
 keywords: education, Microsoft 365 Education, trial, full cloud IT solution, school, deploy, setup, IT admin, educator, student, explore, Trial in a Box
 ms.prod: w10
@@ -13,9 +13,9 @@ ms.author: celested
 ms.date: 12/04/2017
 ---
 
-# Microsoft 365 Education Trial in a Box
+# Microsoft Education Trial in a Box
 
-![Microsoft 365 Education Trial in a Box header image](images/TrialInABox_Header_Map_Graphic-01.png)
+![Microsoft Education Trial in a Box header image](images/TrialInABox_Header_Map_Graphic-01.png)
 
 **Applies to:**
 
@@ -27,7 +27,7 @@ ms.date: 12/04/2017
 Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
 
 ## What's Trial in a Box?
-With Microsoft 365 Education Trial in a Box:
+With Microsoft Education Trial in a Box:
 * Educators can enhance independence for students of all abilities with intelligent tools like Office Lens and Learning Tools, spark creativity, collaboration, and problem-solving with Office, OneNote Class Notebook and Sway, amd connect with others
 * Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to live in 3D
 * IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
