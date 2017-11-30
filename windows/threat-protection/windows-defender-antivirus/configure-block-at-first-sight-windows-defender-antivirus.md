@@ -43,6 +43,11 @@ You can also [specify how long the file should be prevented from running](config
 > [!IMPORTANT]
 > There is no specific individual setting in System Center Configuration Manager to enable or disable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly. You must use Group Policy settings to enable or disable the feature.
 
+
+>[!TIP]
+>You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
+
+
 ## How it works
 
 When a Windows Defender Antivirus client encounters a suspicious but undetected file, it queries our cloud protection backend. The cloud backend will apply heuristics, machine learning, and automated analysis of the file to determine the files as malicious or clean. 
