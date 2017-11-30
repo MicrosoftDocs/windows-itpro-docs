@@ -101,7 +101,7 @@ To configure and apply deployment profiles, see guidance for the various availab
 
 ##### Configure company branding for OOBE
 
-In order for your company branding to appear during the Out-of-the-Box Experience, you'll need to configure it in Azure Active Directory first.
+In order for your company branding to appear during the OOBE, you'll need to configure it in Azure Active Directory first.
 
 See [Add company branding to your directory](https://docs.microsoft.com/azure/active-directory/customize-branding#add-company-branding-to-your-directory), to configure these settings. 
 
