@@ -10,24 +10,30 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/28/2017
+ms.date: 11/30/2017
 ---
+
 
 # Access the Windows Defender ATP Community Center
 
 **Applies to:**
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+[!include[Prerelease information](prerelease.md)]
+
 The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
 
-There are several spaces you can explore to learn about specific information about the product:
+There are several spaces you can explore to learn about specific information:
+- Announcements 
 - What's new
-- Announcements
 - Threat Intelligence
 
->@yarden - not sure where these categories went. as of 11/28 - therewere no spaces available for clicking at the top of the community.
 
-In the navigation pane, select **Community center**.  A new browser tab opens and takes you to the Windows Defender ATP Tech Community page. 
+There are several ways you can access the Community Center:
+- In the Windows Defender ATP portal navigation pane, select **Community center**.  A new browser tab opens and takes you to the Windows Defender ATP Tech Community page. 
+- Access the community through the [Windows Defender Advanced Threat Protection Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced) page
+
+
 You can instantly view and read conversations that have been posted in the community. 
 
-To get the full experience within the community, you'll need to join. For more information on how to get started in the Microsoft Tech Community, see [Microsoft Tech Community: Getting Started](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15).
+To get the full experience within the community such as being able to comment on posts, you'll need to join the community. For more information on how to get started in the Microsoft Tech Community, see [Microsoft Tech Community: Getting Started](https://techcommunity.microsoft.com/t5/Getting-Started/Microsoft-Tech-Community-Getting-Started-Guide/m-p/77888#M15).

@@ -148,7 +148,7 @@
 #### [Enable Security Analytics security controls](windows-defender-atp\enable-security-analytics-windows-defender-advanced-threat-protection.md)
 
 ### [Windows Defender ATP settings](windows-defender-atp\settings-windows-defender-advanced-threat-protection.md)
-### [Windows Defender ATP Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
+### [Access the Windows Defender ATP Community Center](windows-defender-atp\community-windows-defender-advanced-threat-protection.md)
 ### [Troubleshoot Windows Defender ATP](windows-defender-atp\troubleshoot-windows-defender-advanced-threat-protection.md)
 ### [Review events and errors on endpoints with Event Viewer](windows-defender-atp\event-error-codes-windows-defender-advanced-threat-protection.md)
 ### [Windows Defender Antivirus compatibility with Windows Defender ATP](windows-defender-atp\defender-compatibility-windows-defender-advanced-threat-protection.md)
