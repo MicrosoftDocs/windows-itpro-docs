@@ -43,7 +43,7 @@ A user account with the AGPM Administrator (Full Control) role, the user account
 
     -   Client: %LocalAppData%\\Microsoft\\AGPM\\agpm.log
 
-    -   Server: %CommonAppData%\\Microsoft\\AGPM\\agpmserv.log
+    -   Server: %ProgramData%\\Microsoft\\AGPM\\agpmserv.log
 
 ### Additional considerations
 
