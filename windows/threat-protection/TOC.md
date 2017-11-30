@@ -93,7 +93,7 @@
 #### [Experiment with custom threat intelligence alerts](windows-defender-atp\experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot custom threat intelligence issues](windows-defender-atp\troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 ### [Use the Windows Defender ATP exposed APIs](windows-defender-atp\exposed-apis-windows-defender-advanced-threat-protection.md)
-#### [Supported Windows Defender ATP APIs](windows-defender-atp\supported-apis-windows-defender-advanced-threat-protection.md)
+#### [Supported Windows Defender ATP query APIs](windows-defender-atp\supported-apis-windows-defender-advanced-threat-protection.md)
 ##### Actor
 ###### [Get actor information](windows-defender-atp\get-actor-information-windows-defender-advanced-threat-protection.md)
 ###### [Get actor related alerts](windows-defender-atp\get-actor-related-alerts-windows-defender-advanced-threat-protection.md)
@@ -131,6 +131,23 @@
 ###### [Get user information](windows-defender-atp\get-user-information-windows-defender-advanced-threat-protection.md)
 ###### [Get user related alerts](windows-defender-atp\get-user-related-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Get user related machines](windows-defender-atp\get-user-related-machines-windows-defender-advanced-threat-protection.md)
+
+#### [Supported Windows Defender ATP response APIs](windows-defender-atp\supported-response-apis-windows-defender-advanced-threat-protection.md)
+##### [Collect investigation package API](windows-defender-atp\collect-investigation-package-windows-defender-advanced-threat-protection.md)
+##### [Isolate machine API](windows-defender-atp\isolate-machine-windows-defender-advanced-threat-protection.md)
+##### [Release machine from isolation API](windows-defender-atp\unisolate-machine-windows-defender-advanced-threat-protection.md)
+##### [Restrict app execution API](windows-defender-atp\restrict-code-execution-windows-defender-advanced-threat-protection.md)
+##### [Remove app restriction API](windows-defender-atp\unrestrict-code-execution-windows-defender-advanced-threat-protection.md)
+##### [Run antivirus scan API](windows-defender-atp\run-av-scan-windows-defender-advanced-threat-protection.md)
+##### [Stop and quarantine file API](windows-defender-atp\stop-quarantine-file-windows-defender-advanced-threat-protection.md)
+##### [Request sample API](windows-defender-atp\request-sample-windows-defender-advanced-threat-protection.md)
+##### [Block file API](windows-defender-atp\block-file-windows-defender-advanced-threat-protection.md)
+##### [Unblock file API](windows-defender-atp\unblock-file-windows-defender-advanced-threat-protection.md)
+##### [Get package SAS URI API](windows-defender-atp\get-package-sas-uri-windows-defender-advanced-threat-protection.md)
+##### [Get MachineAction object API](windows-defender-atp\get-machineaction-object-windows-defender-advanced-threat-protection.md)
+##### [Get FileMachineAction object API](windows-defender-atp\get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
+
+
 ### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)
 ### [Check sensor state](windows-defender-atp\check-sensor-status-windows-defender-advanced-threat-protection.md)
 #### [Fix unhealthy sensors](windows-defender-atp\fix-unhealhty-sensors-windows-defender-advanced-threat-protection.md)
