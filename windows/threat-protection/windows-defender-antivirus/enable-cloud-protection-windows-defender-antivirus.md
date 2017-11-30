@@ -86,10 +86,10 @@ Use the following cmdlets to enable cloud-delivered protection:
 
 ```PowerShell
 Set-MpPreference -MAPSReporting Advanced
-Set-MpPreference -SubmitSamplesConsent 3
+Set-MpPreference -SubmitSamplesConsent Always
 ```
 >[!NOTE]
->You can also set -SubmitSamplesConsent to 1. Setting it to 0 will lower the protection state of the device, and setting it to 2 means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
+>You can also set -SubmitSamplesConsent to `None`. Setting it to `Never` will lower the protection state of the device, and setting it to 2 means the [Block at First Sight](configure-block-at-first-sight-windows-defender-antivirus.md) feature will not function.
 
 
 See [Use PowerShell cmdlets to configure and run Windows Defender Antivirus](use-powershell-cmdlets-windows-defender-antivirus.md)  and [Defender cmdlets](https://technet.microsoft.com/en-us/library/dn433280.aspx) for more information on how to use PowerShell with Windows Defender Antivirus.

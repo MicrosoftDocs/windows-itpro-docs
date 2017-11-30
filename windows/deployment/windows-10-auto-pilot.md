@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 06/30/2017
+ms.date: 11/30/2017
 ---
 
 # Overview of Windows AutoPilot
