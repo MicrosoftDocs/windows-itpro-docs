@@ -21,22 +21,22 @@ ms.date: 12/04/2017
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
 
-## What's Microsoft Education?
-Microsoft Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
+Welcome to the Microsoft Education Trial in a Box!
 
 ## What's Trial in a Box?
+Trial in a Box lets you evaluate our latest solutions for education.
+
 With Microsoft Education Trial in a Box:
-* Educators can enhance independence for students of all abilities with intelligent tools like Office Lens and Learning Tools, spark creativity, collaboration, and problem-solving with Office, OneNote Class Notebook and Sway
-* Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to live in 3D
+* Educators can enhance independence for students of all abilities with intelligent tools like Microsoft Learning Tools, spark creativity, collaboration, and problem-solving with OneNote
+* Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to life in 3D
 * IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
 
 ## What's in Trial in a Box?
 
-* **Support** - A *Getting Started Guide* provides start-to-finish instructions so you can quickly begin using your PCs and live customer support in case you need it.
-
-* **Two (2) Windows 10 S devices** - A 2-in-1 convertible PC that supports digital ink, and an affordable PC designed to survive the rigors of classroom life. Both PCs are running Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> with Fall Creators Update already installed.
-
-* **Microsoft 365 Education Trial subscription** - A one-year trial subscription of Microsoft Education software to test both device experiences. This includes: Microsoft 365 Education, Minecraft: Education Edition, OneNote, Microsoft Teams for Education, and Intune for Education to enable easy setup and secure management of classroom devices.
+* **User name and passwords** - We've already set up a cloud-based school using Microsoft 365 Education. Your login credentials are included in the kit.
+* **Device A** - A 2-in-1 convertible PC that supports digital ink. This device is pre-configured with Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> and ready for login so you can try the Microsoft Education classroom experience. 
+* **Device B** - An affordable PC designed to survive the rigors of classroom life. This PC has a fresh installation of Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> so you can see how easy it is to set up a brand new device.
+* **Accessories** - A wireless mouse to use with Minecraft: Education Edition, a USB memory stick to set up school PCs, and a network adapter (just in case).
 
 ## Get started!
 Choose your role to get started.

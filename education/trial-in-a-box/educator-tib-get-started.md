@@ -26,7 +26,7 @@ Hello, Teachers! In this guide we'll show you how you can quickly and easily try
 4. [Minecraft: Education Edition](#minecraft-education-edition)
 
 ## Microsoft Learning tools
-</br></br>
+</br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Learning Tools is a set of features available in Word, OneNote, and the Edge browser that helps:
@@ -48,7 +48,7 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
 ## Microsoft Teams
-</br></br>
+</br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. Throughhis guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
@@ -62,7 +62,7 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
 3. Follow along with the guide.
 
 ## OneNote
-</br></br>
+</br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
   
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
@@ -86,7 +86,7 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
     ![OneNote Researcher](images/onenote_researcher.png)
 
 ## Minecraft: Education Edition
-</br></br>
+</br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
   
 Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
