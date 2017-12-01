@@ -14,21 +14,29 @@ ms.date: 12/04/2017
 ---
 
 # Get started for Educators
+Hello, Teachers! In this guide we'll show you how you can quickly and easily try out a few transformational tools in Microsoft 365 Education.
 
-![Microsoft Education Trial in a Box educator journey banner](images/educator_getstarted_banner.png)
+Explore these four tools in Microsoft 365 Education.
 
-## Learning tools
-**With Microsoft Learning Tools**, students are supported in their literacy development. 
- 
-Learning Tools is a set of features available in Word, OneNote, and the Edge browser that helps increase fluency for English language learners, build confidence for emerging readers, and offer text decoding solutions for students with learning differences such as dyslexia. In this activity, launch Immersive Reader directly from a document to enter a full-screen reading mode and explore options to hear text read aloud, change the spacing on lines, and highlight for syntax. 
+> [!NOTE] In progress - Celeste will put together a graphic for educators similar to what we have for IT admin
 
-**[Watch this!](https://www.youtube.com/watch?v=nt3hz2vVf8c)** See how Microsoft Learning Tools change lives.</br></br>
+1. [Microsoft Learning Tools](#microsoft-learning-tools)
+2. [Microsoft Teams](#microsoft-teams)
+3. [OneNote](#onenote)
+4. [Minecraft: Education Edition](#minecraft-education-edition)
 
+## Microsoft Learning tools
+</br></br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
-**Try this!** Use Immersive Reader to read "Learning design thinking from the ancient Egyptians" in Word Online. 
+Learning Tools is a set of features available in Word, OneNote, and the Edge browser that helps:
+* Increase fluency for English language learners
+* Build confidence for emerging readers
+* Provides text decoding solutions for students with learning differences such as dyslexia 
 
-1. Select Learning design thinking from the ancient Egyptians to open it in Word Online.  
+**Try this!** Launch Immersive Reader directly from "Learning design thinking from the ancient Egyptians" in Word Online. Hear text read aloud, change the spacing of lines, and highlight for syntax.
+
+1. Select "Learning design thinking from the ancient Egyptians" to open it in Word Online.  
 2. Select the **View** tab, then **Immersive Reader**. Immersive Reader will launch into a full-screen experience.
 
   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
@@ -40,32 +48,26 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
 ## Microsoft Teams
-**With Microsoft Teams**, students collaborate in real-time.
-
-Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom discussion, respond to student questions, organize content, and more!  
-
-**[Watch this!](https://youtu.be/N7uiMs4dPcg)** See how Microsoft Teams for Education works in the classroom.</br></br>
-
+</br></br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. Throughhis guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
 
 **Try this!** Take a guided tour of Microsoft Teams and test drive some teaching tasks. 
 
-1. Open your browser and visit <a href="http://teams-edustart.stagingk.1000heads.net/" target="_blank">http://teams-edustart.stagingk.1000heads.net/</a>.
+1. Open your browser and visit <a href="https://aka.ms/EduTeamsWalkthrough" target="_blank">https://aka.ms/EduTeamsWalkthrough</a>.
 2. Sign in using these credentials:
   - User: MSFT
   - Password: onStage!
 3. Follow along with the guide.
 
 ## OneNote
-**With OneNote**, students experience the power of inking and media-rich projects.  
+</br></br>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
   
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
 
-**[Watch this!](https://www.youtube.com/watch?v=hMmRud4B54o&feature=youtu.be)** See how OneNote allows teachers to differentiate instruction allow for rich collaboration.</br></br>
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
-
-**Try this!** Reimagine the Great Pyramids of Giza
+**Try this!** See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other studentscollaborate with peers and leverage multiple features.  
 
 1. Open the Windows **Start** menu ![Windows Start menu](images/windows_start.png) and select the OneNote for Windows 10 app. 
 2. OneNote will automatically open to the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
@@ -84,26 +86,25 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
     ![OneNote Researcher](images/onenote_researcher.png)
 
 ## Minecraft: Education Edition
-**With Minecraft: Education Edition**, students code, create, and visualize new worlds. 
-  
-Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination. This brief introduction to a Minecraft: Education Edition world reveals the myriad ways you can use Minecraft to teach core subject area concepts ranging from fractions to elements of storytelling.  
-
-**[Watch this!](https://youtu.be/3rKuSlgqePo)** Learn about Code Builder for Minecraft: Education Edition.</br></br>
-
+</br></br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
+  
+Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
+
 
 **Try this!** Explore a Minecraft world 
 
-1. Open your browser and visit <a href="https://aka.ms/lessonhub" target="_blank">https://aka.ms/lessonhub</a>.
-2. Scroll down to the **Details** section and select **Download World**.
+1. First, connect the included mouse to your computer. Minecraft: Education Edition operates best with a mouse.
+2. Open your browser and visit <a href="https://aka.ms/lessonhub" target="_blank">https://aka.ms/lessonhub</a>.
+3. Scroll down to the **Details** section and select **Download World**.
 
   ![Select the download world link](images/mcee_downloadworld.png)
 
-3. When prompted, save the world.
-4. Double click on the world to launch it in Minecraft: Education Edition.
-5. Once inside the world, use the guide to walk around and click on the different subject area examples to learn more about teaching and learning with Minecraft: Education Edition. 
+4. When prompted, save the world.
+5. Double click on the world to launch it in Minecraft: Education Edition.
+6. Once inside the world, use the guide to walk around and click on the different subject area examples to learn more about teaching and learning with Minecraft: Education Edition. 
 
-  To visit a specific subject area section, right click on the button under the name of that subject area. Remember that the mouse works as your “eyes” in the game. Simply move your mouse around to take a look around the world. Use the Minecraft Controls key included below to walk forwards, backwards, left, and right in the game. Explore and have fun!
+  To visit a specific subject area section, right click on the button under the name of that subject area. Remember that the mouse works as your “eyes” in the game. Simply move your mouse around to look around the world. Use the Minecraft Controls key included below to walk forwards, backwards, left, and right in the game. Explore and have fun!
 
   ![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
 
