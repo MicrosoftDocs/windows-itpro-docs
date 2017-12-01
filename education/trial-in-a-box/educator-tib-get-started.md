@@ -16,9 +16,9 @@ ms.date: 12/04/2017
 # Get started for Educators
 Hello, Teachers! In this guide we'll show you how you can quickly and easily try out a few transformational tools in Microsoft 365 Education.
 
-Explore these four tools in Microsoft 365 Education.
-
 > [!NOTE] In progress - Celeste will put together a graphic for educators similar to what we have for IT admin
+
+## Explore these four tools in Microsoft 365 Education
 
 1. [Microsoft Learning Tools](#microsoft-learning-tools)
 2. [Microsoft Teams](#microsoft-teams)
