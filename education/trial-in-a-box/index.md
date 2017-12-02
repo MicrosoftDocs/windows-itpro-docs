@@ -41,11 +41,9 @@ With Microsoft Education Trial in a Box:
 ## Get started!
 Choose your role to get started.
 
-|  |  |
-| :---: |:---| 
-| [![Get started for educators](images/teacher.png)](educator-tib-get-started.md) | **[Educator](educator-tib-get-started.md)** |
-| [![Get started for IT admins](images/it-admin.png)](itadmin-tib-get-started.md) | **[IT Admin](itadmin-tib-get-started.md)** |
-|  |  |
+| **[Educator](educator-tib-get-started.md)** | **[IT Admin](itadmin-tib-get-started.md)** |
+| :---: | :---: | 
+| [![Get started for Educators](images/teacher_rotated.png)](educator-tib-get-started.md) | [![Get started for IT Admins](images/itadmin_rotated.png)](itadmin-tib-get-started.md) |
 
 </br>
 If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education Trial in a Box support](support-options.md).
