@@ -25,7 +25,7 @@ Hello, Teachers! In this guide we'll show you how you can quickly and easily try
 3. [OneNote](#onenote)
 4. [Minecraft: Education Edition](#minecraft-education-edition)
 
-## Microsoft Learning tools
+## Microsoft Learning Tools
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -112,4 +112,5 @@ Stay in touch with us through our site at <a href="https://education.minecraft.n
 
 
 ## Get more info
+[Education help center](https://support.office.com/en-us/education)</br>
 [Microsoft Education Trial in a Box](index.md)
