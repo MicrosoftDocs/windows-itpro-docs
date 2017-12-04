@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 
 New or changed topic | Description
 --- | ---
+|[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)| Added events that were added in November. |
 [Create a provisioning package with multivariant settings](provisioning-packages/provisioning-multivariant.md) | Add support for desktop to [Conditions](provisioning-packages/provisioning-multivariant.md#conditions) table.
 
 ## October 2017
