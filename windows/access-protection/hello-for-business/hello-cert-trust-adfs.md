@@ -325,6 +325,9 @@ Sign-in to an **AD FS Windows Server 2016** computer with _Enterprise Admin_ equ
 >[!NOTE]
 >If you gave your Windows Hello for Business Authentication certificate template a different name, then replace **WHFBAuthentication** in the above command with the name of your certificate template. It’s important that you use the template name rather than the template display name. You can view the template name on the **General** tab of the certificate template using the Certificate Template management console (certtmpl.msc).  Or, you can view the template name using the **Get-CATemplate** ADCS Administration Windows PowerShell cmdlet on our Windows Server 2012 or later certificate authority.
 
+>[NOTE]
+>If the certutil.exe command is throwing a "too many arguments" error, log onto a Windows 10 (1709 was tested) machine with an Exterprise Admin account and run it from there.
+
 ### Publish Enrollment Agent and Windows Hello For Business Authentication templates to the Certificate Authority
 
 Sign-in a certificate authority or management workstations with _Enterprise Admin_ equivalent credentials.
