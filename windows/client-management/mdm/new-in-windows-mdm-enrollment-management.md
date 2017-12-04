@@ -855,7 +855,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdnstage.redmond.corp.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx)</td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
 <td style="vertical-align:top"><p>Added new classes and properties.</p>
 </td></tr>
 <td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
