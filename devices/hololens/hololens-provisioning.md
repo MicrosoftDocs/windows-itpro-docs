@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # Configure HoloLens using a provisioning package test
 
-Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes the Imaging and Configuration Designer (ICD), a tool for configuring images and runtime settings which are then built into provisioning packages. 
+Windows provisioning makes it easy for IT administrators to configure end-user devices without imaging. The Windows Assessment and Deployment Kit (ADK) for Windows 10 includes the Windows Configuration Designer, a tool for configuring images and runtime settings which are then built into provisioning packages. 
 
 Some of the HoloLens configurations that you can apply in a provisioning package: 
 - Upgrade to Windows Holographic for Business
@@ -19,14 +19,14 @@ Some of the HoloLens configurations that you can apply in a provisioning package
 - Set up a Wi-Fi connection
 - Apply certificatess to the device
 
-To install Windows ICD and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
+To install Windows Configuration Designer and create provisioning packages, you must [install the Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or install [Windows Configuration Designer](https://www.microsoft.com/store/apps/9nblggh4tx22) from the Microsoft Store.
 
 When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration Designer** from the **Select the features you want to install** dialog box.
 
 ![Choose Configuration Designer](images/adk-install.png)
 
 > [!NOTE]
-> In previous versions of the Windows 10 ADK, you had to install additional features for Windows ICD to run. Starting in version 1607, you can install Windows ICD without other ADK features.
+> In previous versions of the Windows 10 ADK, you had to install additional features for Windows Configuration Designer to run. Starting in version 1607, you can install Windows Configuration Designer without other ADK features.
 
 
 ## Create a provisioning package for HoloLens
@@ -34,7 +34,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 >[!NOTE]
 >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
-1. On the Windows ICD start page, select **Advanced provisioning**.
+1. On the Windows Configuration Designer start page, select **Advanced provisioning**.
 
 2. In the **Enter project details** window, specify a name for your project and the location for your project. Optionally, enter a brief description to describe your project.
 
@@ -67,9 +67,9 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 
 6. On the **Select security details for the provisioning package**, click **Next**.
 
-7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.
+7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows Configuration Designer uses the project folder as the output location.
 
-    Optionally, you can click Browse to change the default output location.
+    Optionally, you can click **Browse** to change the default output location.
 
 8. Click **Next**.
 
@@ -80,7 +80,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 
 ## Apply a provisioning package to HoloLens
 
-1. Connect the device via USB to a PC and start the device, but do not continue past the **fit** page of OOBE (the first page with the blue box).
+1. Connect the device via USB to a PC and start the device, but do not continue past the **Fit** page of OOBE (the first page with the blue box).
 
 2. Briefly press and release the **Volume Down** and **Power** buttons simultaneously.
 
@@ -101,7 +101,7 @@ When you run ADKsetup.exe for Windows 10, version 1607, select **Configuration D
 
 Provisioning packages make use of configuration service providers (CSPs). If you're not familiar with CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 
-In Windows ICD, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens). The following table describes settings that you might want to configure for HoloLens.
+In Windows Configuration Designer, when you create a provisioning package for Windows Holographic, the settings in **Available customizations** are based on [CSPs that are supported in Windows Holographic](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens). The following table describes settings that you might want to configure for HoloLens.
 
 ![Common runtime settings for HoloLens](images/icd-settings.png)
 
