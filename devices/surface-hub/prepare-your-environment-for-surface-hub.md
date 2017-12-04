@@ -117,8 +117,9 @@ When you go through the first-run program for your Surface Hub, there's some inf
 
 ## More information
 
-- [Surface Hub and the Skype for Business Trusted Domain List](https://blogs.technet.microsoft.com/y0av/2017/10/25/95/)
-- [Surface Hub in a Multi-Domain Environment](https://blogs.technet.microsoft.com/y0av/2017/11/08/11/)
+- [Blog post: Surface Hub and the Skype for Business Trusted Domain List](https://blogs.technet.microsoft.com/y0av/2017/10/25/95/)
+- [Blog post: Surface Hub in a Multi-Domain Environment](https://blogs.technet.microsoft.com/y0av/2017/11/08/11/)
+- [Blog post: Configuring a proxy for your Surface Hub](https://blogs.technet.microsoft.com/y0av/2017/12/03/7/)
 
  
 
