@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 09/08/2017
+ms.date: 10/20/2017
 ---
 # Windows Hello for Business Certificate Trust New Installation
 
@@ -23,7 +23,6 @@ Windows Hello for Business involves configuring distributed technologies that ma
 * [Active Directory](#active-directory)
 * [Public Key Infrastructure](#public-key-infrastructure)
 * [Azure Active Directory](#azure-active-directory)
-* [Directory Synchronization](#directory-synchronization)
 * [Active Directory Federation Services](#active-directory-federation-services)
 
 

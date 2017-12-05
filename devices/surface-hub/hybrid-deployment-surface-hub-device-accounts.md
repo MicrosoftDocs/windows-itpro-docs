@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 10/20/2017
 ms.localizationpriority: medium
 ---
 
 # Hybrid deployment (Surface Hub)
-A hybrid deployment requires special processing to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-prem](#exchange-on-prem), [Exchange hosted online](#exchange-online), Skype for Business on-prem, Skype for Business online, and Skype for Business hybrid. Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided Powershell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
+A hybrid deployment requires special processing to set up a device account for your Microsoft Surface Hub. If you’re using a hybrid deployment, in which your organization has a mix of services, with some hosted on-premises and some hosted online, then your configuration will depend on where each service is hosted. This topic covers hybrid deployments for [Exchange hosted on-premises](#exchange-on-prem), [Exchange hosted online](#exchange-online), Skype for Business on-premises, Skype for Business online, and Skype for Business hybrid. Because there are so many different variations in this type of deployment, it's not possible to provide detailed instructions for all of them. The following process will work for many configurations. If the process isn't right for your setup, we recommend that you use PowerShell (see [Appendix: PowerShell](appendix-a-powershell-scripts-for-surface-hub.md)) to achieve the same end result as documented here, and for other deployment options. You should then use the provided Powershell script to verify your Surface Hub setup. (See [Account Verification Script](appendix-a-powershell-scripts-for-surface-hub.md#acct-verification-ps-scripts).)
 
-## Exchange on-prem
-Use this procedure if you use Exchange on-prem.
+## Exchange on-premises
+Use this procedure if you use Exchange on-premises.
 
-1.  For this procedure, you'll be using AD admin tools to add an email address for your on-prem domain account. This account will be synced to Office 365.
+1.  For this procedure, you'll be using AD admin tools to add an email address for your on-premises domain account. This account will be synced to Office 365.
 
     - In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
     - Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.<p>
@@ -36,15 +36,25 @@ Use this procedure if you use Exchange on-prem.
 
         ![Image with account name, logon name, and password options for new user.](images/hybriddeployment-03a.png)
 
-2.  After you've created the account, run a directory synchronization. When it's complete, go to the users page in your Office 365 admin center and verify that the account created in the previous steps has merged to online.
+
 
 3.  Enable the remote mailbox.
 
-    Open your on-prem Exchange Management Shell with administrator permissions, and run this cmdlet.
+    Open your on-premises Exchange Management Shell with administrator permissions, and run this cmdlet.
 
     ```ps1
     Enable-RemoteMailbox 'HUB01@contoso.com' -RemoteRoutingAddress 'HUB01@contoso.com' -Room
     ```
+    >[!NOTE]
+    >If you don't have an on-premises Exchange environment to run this cmdlet, you can make the same changes directly to the Active Directory object for the account.
+    >
+    >msExchRemoteRecipientType = 33
+    >
+    >msExchRecipientDisplayType = -2147481850
+    >
+    >msExchRecipientTypeDetails = 8589934592
+    
+2.  After you've created the account, run a directory synchronization. When it's complete, go to the users page in your Office 365 admin center and verify that the account created in the previous steps has merged to online.
     
 4.  Connect to Microsoft Exchange Online and set some properties for the account in Office 365.
 
@@ -71,14 +81,10 @@ Use this procedure if you use Exchange on-prem.
     $easPolicy = New-MobileDeviceMailboxPolicy -Name “SurfaceHubs” -PasswordEnabled $false
     ```
 
-    Once you have a compatible policy, then you will need to apply the policy to the device account. However, policies can only be applied to user accounts and not to resource mailboxes. You'll need to convert the mailbox into a user type, apply the policy, and then convert it back into a mailbox; you may need to re-enable it and set the password again too.
+    Once you have a compatible policy, then you will need to apply the policy to the device account. 
 
     ```ps1
-    Set-Mailbox 'HUB01@contoso.com' -Type Regular
     Set-CASMailbox 'HUB01@contoso.com' -ActiveSyncMailboxPolicy $easPolicy.id
-    Set-Mailbox 'HUB01@contoso.com' -Type Room
-    $credNewAccount = Get-Credential -Message “Please provide the Surface Hub username and password”
-    Set-Mailbox 'HUB01@contoso.com' -RoomMailboxPassword $credNewAccount.Password -EnableRoomMailboxAccount $true
     ```
 
 6.  Set Exchange properties.
@@ -112,7 +118,7 @@ Use this procedure if you use Exchange on-prem.
     Set-MsolUserLicense -UserPrincipalName 'HUB01@contoso.com' -AddLicenses $strLicense
     ```
 
-Next, you enable the device account with [Skype for Business Online](#skype-for-business-online), [Skype for Business on-prem](#skype-for-business-on-prem), or [Skype for Business hybrid](#skype-for-business-hybrid).
+Next, you enable the device account with [Skype for Business Online](#skype-for-business-online), [Skype for Business on-premises](#skype-for-business-on-premises), or [Skype for Business hybrid](#skype-for-business-hybrid).
 
 <span id="sfb-online"/>
 ### Skype for Business Online
@@ -177,7 +183,7 @@ The following table lists the Office 365 plans and Skype for Business options.
 
 For validation, you should be able to use any Skype for Business client (PC, Android, etc.) to sign in to this account.
 
-### Skype for Business on-prem
+### Skype for Business on-premises
 
 To run this cmdlet, you will need to connect to one of the Skype front-ends. Open the Skype PowerShell and run:
 
@@ -191,9 +197,9 @@ If your organization has set up [hybrid connectivity between Skype for Business 
 
 The Surface Hub requires a Skype account of the type `meetingroom`, while a normal user would use a user type account in Skype. If your Skype server is set up for hybrid where you might have users on the local Skype server as well as users hosted in Office 365, you might run into a few issues when trying to create a Surface Hub account.
 
-In a hybrid Skype environment, you have to create the user on-prem first, then move the user to the cloud. This means that your user is present in both environments (which makes SIP routing possible). The move from on-prem to online is done via the [Move-CsUser](https://technet.microsoft.com/library/gg398528.aspx) cmdlet which can only be used against user type accounts, not meetingroom type accounts. Because of this, you will not be able to move a Surface Hub account that has a meetingroom type of account. You might think of using the [Move-CsMeetingRoom](https://technet.microsoft.com/library/jj204889.aspx?f=255&mspperror=-2147217396) cmdlet, unfortunately this will not work between the on-prem Skype server and Office 365 - it only works across on-prem Skype pools.
+In a hybrid Skype environment, you have to create the user on-premises first, then move the user to the cloud. This means that your user is present in both environments (which makes SIP routing possible). The move from on-premises to online is done via the [Move-CsUser](https://technet.microsoft.com/library/gg398528.aspx) cmdlet which can only be used against user type accounts, not meetingroom type accounts. Because of this, you will not be able to move a Surface Hub account that has a meetingroom type of account. You might think of using the [Move-CsMeetingRoom](https://technet.microsoft.com/library/jj204889.aspx?f=255&mspperror=-2147217396) cmdlet, unfortunately this will not work between the on-preisesm Skype server and Office 365 - it only works across on-premises Skype pools.
 
-To have a functional Surface Hub account in a Skype hybrid configuration, create the Skype account as a normal user type account, instead of creating the account as a meetingroom. Enable the account on the on-prem Skype server first:
+To have a functional Surface Hub account in a Skype hybrid configuration, create the Skype account as a normal user type account, instead of creating the account as a meetingroom. Enable the account on the on-premises Skype server first:
 
 ```
 Enable-CsUser -Identity 'HUB01@contoso.com' -RegistrarPool "registrarpoolfqdn" -SipAddressType UserPrincipalName
@@ -263,9 +269,9 @@ Use this procedure if you use Exchange online.
     Set-CalendarProcessing -Identity 'HUB01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Surface Hub room!"
     ```
 
-5.  Add email address for your on-prem domain account.
+5.  Add email address for your on-premises domain account.
 
-    For this procedure, you'll be using AD admin tools to add an email address for your on-prem domain account.
+    For this procedure, you'll be using AD admin tools to add an email address for your on-preises domain account.
     
     - In **Active Directory Users and Computers** AD tool, right-click on the folder or Organizational Unit that your Surface Hub accounts will be created in, click **New**, and **User**.
     - Type the display name from the previous cmdlet into the **Full name** box, and the alias into the **User logon name** box. Click **Next**.
@@ -308,7 +314,7 @@ Use this procedure if you use Exchange online.
     Set-MsolUserLicense -UserPrincipalName 'HUB01@contoso.com' -AddLicenses $strLicense
     ```
 
-Next, you enable the device account with [Skype for Business Online](#sfb-online), [Skype for Business on-prem](#sfb-onprem), or [Skype for Business hybrid](#sfb-hybrid).
+Next, you enable the device account with [Skype for Business Online](#sfb-online), [Skype for Business on-premises](#sfb-onprem), or [Skype for Business hybrid](#sfb-hybrid).
 
 
 ### Skype for Business Online    
@@ -358,7 +364,7 @@ In order to enable Skype for Business, your environment will need to meet the [p
 For validation, you should be able to use any Skype for Business client (PC, Android, etc) to sign in to this account.
 
 <span id="sfb-onprem"/>
-### Skype for Business on-prem
+### Skype for Business on-premises
 
 To run this cmdlet, you will need to connect to one of the Skype front-ends. Open the Skype PowerShell and run:
 
@@ -373,9 +379,9 @@ If your organization has set up [hybrid connectivity between Skype for Business 
 
 The Surface Hub requires a Skype account of the type *meetingroom*, while a normal user would use a *user* type account in Skype. If your Skype server is set up for hybrid where you might have users on the local Skype server as well as users hosted in Office 365, you might run into a few issues when trying to create a Surface Hub account.
  
-In a hybrid Skype environment, you have to create the user on-prem first, then move the user to the cloud. This means that your user is present in both environments (which makes SIP routing possible). The move from on-prem to online is done via the [Move-CsUser](https://technet.microsoft.com/library/gg398528.aspx) cmdlet which can only be used against user type accounts, not meetingroom type accounts. Because of this, you will not be able to move a Surface Hub account that has a meetingroom type of account. You might think of using the [Move-CsMeetingRoom](https://technet.microsoft.com/library/jj204889.aspx?f=255&MSPPError=-2147217396) cmdlet, unfortunately this will not work between the on-prem Skype server and Office 365 - it only works across on-prem Skype pools.
+In a hybrid Skype environment, you have to create the user on-premises first, then move the user to the cloud. This means that your user is present in both environments (which makes SIP routing possible). The move from on-premises to online is done via the [Move-CsUser](https://technet.microsoft.com/library/gg398528.aspx) cmdlet which can only be used against user type accounts, not meetingroom type accounts. Because of this, you will not be able to move a Surface Hub account that has a meetingroom type of account. You might think of using the [Move-CsMeetingRoom](https://technet.microsoft.com/library/jj204889.aspx?f=255&MSPPError=-2147217396) cmdlet, unfortunately this will not work between the on-premises Skype server and Office 365 - it only works across on-premises Skype pools.
  
-In order to have a functional Surface Hub account in a Skype hybrid configuration, create the Skype account as a normal user type account, instead of creating the account as a meetingroom. First follow the Exchange steps - either [online](#exchange-online) or [on-prem](#exchange-on-prem) - and, instead of enabling the user for Skype for Business Online as described, [enable the account](https://technet.microsoft.com/library/gg398711.aspx) on the on-prem Skype server:
+In order to have a functional Surface Hub account in a Skype hybrid configuration, create the Skype account as a normal user type account, instead of creating the account as a meetingroom. First follow the Exchange steps - either [online](#exchange-online) or [on-premises](#exchange-on-premises) - and, instead of enabling the user for Skype for Business Online as described, [enable the account](https://technet.microsoft.com/library/gg398711.aspx) on the on-premises Skype server:
 
 ``` 
 Enable-CsUser -Identity 'HUB01@contoso.com' -RegistrarPool "registrarpoolfqdn" -SipAddressType UserPrincipalName

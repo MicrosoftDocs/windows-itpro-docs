@@ -11,6 +11,12 @@ author: brianlic-msft
 # Change history for threat protection
 This topic lists new and updated topics in the [Threat protection](index.md) documentation.
 
+## October 2017
+|New or changed topic |Description |
+|---------------------|------------|
+|[Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](windows-information-protection\create-and-verify-an-efs-dra-certificate.md)|Added auto-recovery section.
+|[Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](windows-information-protection\create-wip-policy-using-mam-intune-azure.md)|New topic for MAM using the Azure portal.|
+
 ## June 2017
 |New or changed topic |Description |
 |---------------------|------------|

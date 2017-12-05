@@ -292,8 +292,8 @@ Device Guard policy into the UpdateSigner section.
 
 On computers with Device Guard, Microsoft proposes to move from a world where unsigned apps can be run without restriction to a world where only signed and trusted code is allowed to run on Windows 10.
 
-With Windows 10, organizations will make line-of-business (LOB) apps available to members of the organization through the Windows Store infrastructure. More specifically, LOB apps will be available in a private store within the public Windows Store. Windows Store signs and distributes Universal 
-Windows apps and Classic Windows apps. All apps downloaded from the Windows Store are signed.
+With Windows 10, organizations will make line-of-business (LOB) apps available to members of the organization through the Microsoft Store infrastructure. More specifically, LOB apps will be available in a private store within the public Microsoft Store. Microsoft Store signs and distributes Universal 
+Windows apps and Classic Windows apps. All apps downloaded from the Microsoft Store are signed.
 
 In organizations today, the vast majority of LOB applications are unsigned. Code signing is frequently viewed as a tough problem to solve for a variety of reasons, like the lack of code signing expertise. Even if code signing is a best practice, a lot of internal applications are not signed.
 

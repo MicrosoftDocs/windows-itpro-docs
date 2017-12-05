@@ -12,7 +12,7 @@ ms.date: 08/21/2017
 
 # DeviceManagement (Windows Configuration Designer reference)
 
-Use to...
+Use to configure device management settings.
 
 ## Applies to
 

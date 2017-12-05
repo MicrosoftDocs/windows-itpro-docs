@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 10/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -34,29 +34,17 @@ If you prefer to use a graphical user interface, you can create a device account
 
     ![Office 365 admin center.](images/setupdeviceaccto365-02.png)
 
-3.  Once you are at the Office 365 Admin Center, navigate to **Users** in the left panel, and then click **Active Users**.
+3. In the Office 365 Admin Center, navigate to **Resources** in the left panel, and then click **Rooms & equipment**.
 
-    ![office 365 admin center dashboard shwoing active users.](images/setupdeviceaccto365-03.png)
+    ![Rooms & equipment option in Office 365 admin center](images/room-equipment.png)
+    
+4. Click **Add** to create a new Room account. Enter a display name and email address for the account, and then click **Add**.
 
-4.  On the controls above the list of users, click **+** to create a new user. You'll need to enter a **Display name**, **User name**, **Password** and an email address for the recipient of the password. Optionally you can change the password manually, but we recommend that you use the auto-generated option. You also need to assign this account a license that gives the account access to Exchange and Skype for Business services.
+    ![Create new room account window](images/room-add.png)
 
-    ![screen to create a new user account.](images/setupdeviceaccto365-04.png)
+5. Select the Room account you just created in the Active Users list. In the right panel, you can see the account properties and several optional actions. Click **Reset password** to change the password, and unselect **Make this user change their password when they first sign in**, because it is not possible to change the password from the Surface Hub sign-in flow.
 
-    Click **Create**.
-
-5.  Once the account has been successfully created, click **Close** on the resulting dialog box, and you will see the admin center Active Users list again.
-
-    ![Confirmation screen for creating a new account.](images/setupdeviceaccto365-05.png)
-
-6.  Select the user you just created from the **Active Users** list. You need to disable the Skype for Business license, because you can’t create a Skype Meeting Room with this option.
-
-    ![office 365 admin center showing properties for the new user account. ](images/setupdeviceaccto365-06.png)
-
-    In the right panel you can see the account properties and several optional actions. The process so far has created a regular Skype account for this user, which you need to disable. Click **Edit** for the **Assigned license** section, then click the dropdown arrow next to the license to expand the details.
-
-    ![assign license for Skype for Business online.](images/setupdeviceaccto365-07.png)
-
-    From the list, select **Skype for Business Online (Plan 2)**, and then click **SAVE**. The license may vary depending on your organization (for example, you might have Plan 2, or Plan 3). 
+6. In the **Assigned license** section, click **Edit**, and then click the dropdown arrow next to the appropriate license to expand the details. Select a user location, and in the list of licenses, toggle on **Skype for Business Online (Plan 2)**, and then click **Save**. The license may vary depending on your organization (for example, you might have Plan 2 or Plan 3).
 
 ### <a href="" id="create-device-acct-o365-mbx-policy"></a>Create a mobile device mailbox (ActiveSync) policy from the Exchange Admin Center
 
@@ -70,7 +58,7 @@ If you prefer to use a graphical user interface, you can create a device account
 
 3.  To create a Mobile Device Mailbox Policy, click **Mobile** from the left panel and then click **Mobile device mailbox policies**. Surface Hubs require an account with a mobile device mailbox policy that does not require a password, so if you already have an existing policy that matches this requirement, you can apply that policy to the account. Otherwise use the following steps to create a new one to be used only for Surface Hub device accounts.
 
-    ![Excahnge admin center - creating a mobile device mailbox policy.](images/setupdeviceaccto365-10.png)
+    ![Exchange admin center - creating a mobile device mailbox policy.](images/setupdeviceaccto365-10.png)
 
 4.  To create a New Surface Hub mobile device mailbox policy, click the **+** button from the controls above the list of policies to add a new policy. For the name, provide a name that will help you distinguish this policy from other device accounts (for example, *SurfaceHubDeviceMobilePolicy*). Make sure the policy does not require a password for the devices assigned to, so make sure **Require a Password** remains unchecked, then click **Save**.
 
@@ -184,21 +172,7 @@ Now that you're connected to the online services, you can finish setting up the 
 
     ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-23.png)
 
-2.  You need to convert the account into to a room mailbox, so run:
 
-    ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-24.png)
-
-    ``` syntax
-    Set-Mailbox $strEmail -Type Room
-    ```
-
-3.  In order for the device account to be authenticated on a Surface Hub, you need to enable the room mailbox account and set a password, so the account can be used by the device to get meeting information using ActiveSync and log in to Skype for Business.
-
-    ``` syntax
-    Set-Mailbox $strEmail -RoomMailboxPassword (ConvertTo-SecureString  -String "<your password>" -AsPlainText -Force) -EnableRoomMailboxAccount $true
-    ```
-
-    ![Image showing PowerShell cmdlet.](images/setupdeviceaccto365-25.png)
 
 4.  Various Exchange properties can be set on the device account to improve the meeting experience. You can see which properties need to be set in the [Exchange properties](exchange-properties-for-surface-hub-device-accounts.md) section.
 

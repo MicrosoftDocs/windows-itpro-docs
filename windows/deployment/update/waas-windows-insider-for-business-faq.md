@@ -7,6 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 10/17/2017
 ---
 
 # Windows Insider Program for Business Frequently Asked Questions
@@ -16,13 +17,13 @@ ms.author: daniha
 
 - Windows 10
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
+> **Looking for information about Windows 10 for personal or home use?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 ### Are the Windows Insider Program and Windows Insider Program for Business separate programs?
 No, in fact just the opposite. The Windows Insider Program was created in 2014 to help Microsoft engage with Windows Fans worldwide. Windows Insiders are the first to be able to try new Windows features that we introduce through Windows 10 Insider Preview Builds. At the same time, they can provide feedback through the Feedback Hub App which helps create even better versions of Windows for all users. The Windows Insider Program for Business enables you to incorporate Insider Preview builds into your deployment plans using your corporate credentials, deepen connections with the IT Pro community, collect feedback within your organization, and increase the visibility of your organization’s feedback – especially on features that support productivity and business needs. Together we can resolve blocking or critical issues to better support your organization’s needs sooner. Incorporating the Windows Insider Program for Business into your deployment plans enables you to prepare your organization for the next update of Windows 10, to deploy new services and tools more quickly, to help secure your applications, and to increase productivity and confidence in the stability of your environment. Windows Insider Program for Business participants collaborate with the Windows team to build and document features, infuse innovation, and plan for what’s around the bend. We’ve architected some great features together, received amazing feedback, and we’re not done.
 
 ### What Languages are available? 
-Insider Preview builds are available in the following languages: English (United States), English (United Kingdom), Chinese (Simplified), Chinese (Traditional), Portuguese (Brazilian), Japanese,Russian, German, French, French (Canada), Korean, Italian, Spanish, Spanish (Latin America), Swedish, Finnish, Turkish, Arabic, Dutch, Czech, Polish, Thai, Catalan, Hindi, and Vietnamese.
+Insider Preview builds are available in the following languages: English (United States), English (United Kingdom), Chinese (Simplified), Chinese (Traditional), Portuguese (Brazilian), Japanese, Russian, German, French, French (Canada), Korean, Italian, Spanish, Spanish (Latin America), Swedish, Finnish, Turkish, Arabic, Dutch, Czech, Polish, Thai, Catalan, Hindi, and Vietnamese.
 
 If your Windows build is not in one of the available base languages, you will not receive Insider Preview builds.
 
@@ -31,7 +32,7 @@ Hindi, Catalan, and Vietnamese can only be installed as a language pack over [su
 >[!NOTE]
 > To learn how to install a language pack, see [How to add an input language to your PC Additional](https://support.microsoft.com/instantanswers/60f32ff8-8697-4452-af7d-647439c38433/how-to-add-and-switch-input-languages-on-your-pc).
 
-### How do I register for  the Windows Insider Program for Business? 
+### How do I register for the Windows Insider Program for Business? 
 To register for the Windows Insider Program for Business, follow the steps below using your corporate account in Azure Active Directory (AAD). This account is the same account that you use for Office 365 and other Microsoft services. 
 
 1. Visit https://insider.windows.com and click **Get Started**. 
@@ -41,11 +42,24 @@ To register for the Windows Insider Program for Business, follow the steps below
 >[!NOTE]
 >Make sure that you have administrator rights to your machine and that it has latest Windows updates.
 
-### How can I find out if my corporate account is on Azure Active Directory? 
-On your PC, go to **Settings > Accounts > Access work or school**. If your organization has set up your corporate account in Azure Active Directory and it is connected to your PC, you will see the account listed.  
+### Are there any management capabilities that allow an IT admin to manage settings for a corporate environment? 
+Yes. Starting with Windows 10, version 1709, the Windows Insider Program for Business now enables administrators to apply the following group policies to help them manage their organization’s preview builds: 
+ 
+**Manage preview builds:** Administrators can enable or prevent builds from installing on a device. You also have an option to disable preview builds once the release is public.    
+**Branch Readiness Level:** Administrators can set the Windows readiness level, including Fast, Slow, Release Preview Rings of Windows Insider Preview) and allows administrators to defer or pause delivery of updates.  
+
+See more information on the [Getting started with Windows Insider Program for Business](waas-windows-insider-for-business.md#getting-started-with-windows-insider-program-for-business) section.
+
+### <a id="connected-to-aad"> </a>How can I find out if my corporate account is on Azure Active Directory? 
+On your PC, go to **Settings > Accounts > Access work or school**. If your organization has set up your corporate account in Azure Active Directory and it is connected to your PC, you will see the account listed as highlighted in the image below.
+
+![Device connected to Work Account](images/waas-wipfb-work-account.jpg)
 
 ### I have more than one Azure Active Directory account. Which should I use? 
 Register for Windows Insider Program for Business with the same active account that you use to access your corporate email in Office 365 and other Microsoft services. To ensure you get the most benefit out of the Windows Insider Program for Business and that your company is fully represented, do not set up a separate tenant for testing activities. There will be no modifications to the AAD tenant to support Windows Insider Program for Business, and it will only be used as an authentication method. 
+
+### Can I register multiple users from my organization at the same time for the Windows Insider Program for Business? 
+Yes. The Windows Insider Program for Business now allows organizations to register their domain and control settings centrally rather than require each user to register individually for Insider Preview builds. In order to register, follow instructions on the [Getting started with Windows Insider Program for Business](waas-windows-insider-for-business.md#getting-started-with-windows-insider-program-for-business) section.
 
 ### My account is listed in Active Directory but not Azure Active Directory. Can I still register using my Active Directory credentials?
 No. At this point, we are only supporting Azure Active Directory as a corporate authentication method. If you’d like to suggest or upvote another authentication method, please visit this [forum](https://answers.microsoft.com/en-us/insider/forum/insider_wintp).

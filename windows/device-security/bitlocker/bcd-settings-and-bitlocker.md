@@ -126,11 +126,12 @@ This following is a full list of BCD settings with friendly names which are igno
 | 0x15000042 | all| keyringaddress| 
 | 0x15000047 | all| configaccesspolicy| 
 | 0x1500004b | all| integrityservices| 
-| 0x1500004c|all| volumebandid| 
+| 0x1500004c | all| volumebandid| 
 | 0x15000051 | all| initialconsoleinput| 
 | 0x15000052 | all| graphicsresolution| 
 | 0x15000065 | all| displaymessage| 
-| 0x15000066| all| displaymessageoverride| 
+| 0x15000066 | all| displaymessageoverride|
+| 0x15000081 | all| logcontrol|
 | 0x16000009 | all| recoveryenabled| 
 | 0x1600000b | all| badmemoryaccess| 
 | 0x1600000f | all| traditionalkseg| 

@@ -97,10 +97,7 @@ Because many entities can use the TPM, a single authorization success cannot res
 
 TPM 2.0 has well defined anti-hammering behavior. This is in contrast to TPM 1.2 for which the anti-hammering protection was implemented by the manufacturer, and the logic varied widely throughout the industry.
 
-> [!WARNING]
-> For the purposes of this topic, Windows 8 Certified Hardware also pertains to Windows 8.1 systems. The following references to “Windows” include these supported Windows versions.
-
-For Windows 8 Certified Hardware systems with TPM 2.0, the TPM is configured by Windows to lock after 32 authorization failures and to forget one authorization failure every two hours. This means that a user could quickly attempt to use a key with the wrong authorization value 32 times. For each of the 32 attempts, the TPM records if the authorization value was correct or not. This inadvertently causes the TPM to enter a locked state after 32 failed attempts.
+For systems with TPM 2.0, the TPM is configured by Windows to lock after 32 authorization failures and to forget one authorization failure every two hours. This means that a user could quickly attempt to use a key with the wrong authorization value 32 times. For each of the 32 attempts, the TPM records if the authorization value was correct or not. This inadvertently causes the TPM to enter a locked state after 32 failed attempts.
 
 Attempts to use a key with an authorization value for the next two hours would not return success or failure; instead the response indicates that the TPM is locked. After two hours, one authorization failure is forgotten and the number of authorization failures remembered by the TPM drops to 31, so the TPM leaves the locked state and returns to normal operation. With the correct authorization value, keys could be used normally if no authorization failures occur during the next two hours. If a period of 64 hours elapses with no authorization failures, the TPM does not remember any authorization failures, and 32 failed attempts could occur again.
 
@@ -112,10 +109,28 @@ In some enterprise situations, the TPM owner authorization value is configured t
 
 TPM 2.0 allows some keys to be created without an authorization value associated with them. These keys can be used when the TPM is locked. For example, BitLocker with a default TPM-only configuration is able to use a key in the TPM to start Windows, even when the TPM is locked.
 
-### Rationale behind the Windows 8.1 and Windows 8 defaults
+### Rationale behind the defaults
 
-Windows relies on the TPM 2.0 anti-hammering protection for multiple features. The defaults that are selected for Windows 8 balance trade-offs for different scenarios.
-For example, when BitLocker is used with a TPM plus PIN configuration, it needs the number of PIN guesses to be limited over time. If the computer is lost, someone could make only 32 PIN guesses immediately, and then only one more guess every two hours. This totals about 4415 guesses per year. This makes a good standard for system administrators to determine how many PIN characters to use for BitLocker deployments.
+Originally, BitLocker allowed from 4 to 20 characters for a PIN. 
+Windows Hello has its own PIN for logon, which can be 4 to 127 characters. 
+Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks. 
+
+The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](trusted-platform-module-services-group-policy-settings.md)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made. 
+
+The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. 
+For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. 
+A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. 
+This totals a maximum of about 4415 guesses per year. 
+If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in a little over two years. 
+
+Increasing the PIN length requires a greater number of guesses for an attacker. 
+In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
+
+Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello. 
+To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters. 
+If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended. 
+
+### TPM-based smart cards
 
 The Windows TPM-based smart card, which is a virtual smart card, can be configured to allow sign in to the system. In contrast with physical smart cards, the sign-in process uses a TPM-based key with an authorization value. The following list shows the advantages of virtual smart cards:
 

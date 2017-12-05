@@ -7,12 +7,15 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 10/17/2017
 ---
 
 # ApplicationManagement (Windows Configuration Designer reference)
 
 Use these settings to manage app installation and management.
+
+>[!NOTE]
+>ApplicationManagement settings are not available in Windows 10, version 1709.
 
 ## Applies to
 

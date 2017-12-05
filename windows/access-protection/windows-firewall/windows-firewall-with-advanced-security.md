@@ -36,7 +36,7 @@ To help address your organizational network security challenges, Windows Defende
 
 | Topic | Description
 | - | - |
-| [Isolating Windows Store Apps on Your Network](isolating-apps-on-your-network.md) | You can customize your Windows Defender Firewall configuration to isolate the network access of Windows Store apps that run on devices. |
+| [Isolating Microsoft Store Apps on Your Network](isolating-apps-on-your-network.md) | You can customize your Windows Defender Firewall configuration to isolate the network access of Microsoft Store apps that run on devices. |
 | [Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012](securing-end-to-end-ipsec-connections-by-using-ikev2.md) | You can use IKEv2 to help secure your end-to-end IPSec connections. |
 | [Windows Defender Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall-with-advanced-security-administration-with-windows-powershell.md) | Learn more about using Windows PowerShell to manage the Windows Defender Firewall. |
 | [Windows Defender Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md) | Learn how to create a design for deploying Windows Defender Firewall with Advanced Security. |

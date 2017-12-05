@@ -1,6 +1,7 @@
 # [Manage applications in Windows 10](index.md)
 ## [Sideload apps](sideload-apps-in-windows-10.md)
 ## [Remove background task resource restrictions](enterprise-background-activity-controls.md)
+## [Enable or block Windows Mixed Reality apps in the enterprise](manage-windows-mixed-reality.md)
 ## [Application Virtualization (App-V) for Windows](app-v/appv-for-windows.md)
 ### [Getting Started with App-V](app-v/appv-getting-started.md)
 #### [What's new in App-V for Windows 10, version 1703 and earlier](app-v/appv-about-appv.md)

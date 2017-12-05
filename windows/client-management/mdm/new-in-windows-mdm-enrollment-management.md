@@ -10,14 +10,11 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 10/02/2017
+ms.date: 12/04/2017
 ---
 
 # What's new in MDM enrollment and management
 
-
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This topic provides information about what's new and breaking changes in Windows 10 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 
@@ -858,7 +855,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdnstage.redmond.corp.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx)</td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
 <td style="vertical-align:top"><p>Added new classes and properties.</p>
 </td></tr>
 <td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
@@ -942,6 +939,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top">[Firewall CSP](firewall-csp.md)</td>
 <td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
+<tr class="even">
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+</td></tr>
 <tr class="odd">
 <td style="vertical-align:top">[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)</td>
 <td style="vertical-align:top">New CSP added in Windows 10, version 1709. Also added the DDF topic [WindowsDefenderApplicationGuard DDF file](windowsdefenderapplicationguard-ddf-file.md).</td>
@@ -992,6 +993,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="odd">
+<td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
+<td style="vertical-align:top"><p>Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.</p>
+</td></tr>
+<tr class="odd">
 <td style="vertical-align:top">[Bitlocker CSP](bitlocker-csp.md)</td>
 <td style="vertical-align:top"><p>Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.</p>
 </td></tr>
@@ -1021,8 +1026,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
 <li>Authentication/AllowAadPasswordReset</li>
+<li>Authentication/AllowFidoDeviceSignon</li>
 <li>Browser/LockdownFavorites</li>
 <li>Browser/ProvisionFavorites</li>
+<li>Cellular/LetAppsAccessCellularData</li>
+<li>Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</li>
 <li>CredentialProviders/DisableAutomaticReDeploymentCredentials</li>
 <li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
@@ -1075,9 +1085,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PrinterNames</li>
 <li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Start/HidePeopleBar</li>
+<li>Storage/AllowDiskHealthModelUpdates</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 <li>Update/DisableDualScan</li>
+<li>Update/ManagePreviewBuilds</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
 <li>Update/ScheduledInstallFourthWeek</li>
@@ -1097,6 +1110,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
 <li>WindowsDefenderSecurityCenter/Phone</li>
 <li>WindowsDefenderSecurityCenter/URL</li>
+<li>WirelessDisplay/AllowMdnsAdvertisement</li>
+<li>WirelessDisplay/AllowMdnsDiscovery</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1162,7 +1177,7 @@ The software version information from **DevDetail/SwV** does not match the versi
 
     To workaround this issue, remove the Windows Phone 8.1 publisher rule and add the specific product ID for each Silverlight app you want to allow to the allowed app list.
 
--   Some apps (specifically those that are published in Windows Store as AppX Bundles) are blocked from installing even when they are included in the app list.
+-   Some apps (specifically those that are published in Microsoft Store as AppX Bundles) are blocked from installing even when they are included in the app list.
 
     No workaround is available at this time. An OS update to fix this issue is coming soon.
 
@@ -1366,6 +1381,107 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### December 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Configuration service provider reference](configuration-service-provider-reference.md)</td>
+<td style="vertical-align:top"><p>Added new section [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</p>
+</td></tr>
+</tbody>
+</table>
+
+### November 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following policies for Windows 10, version 1709:</p>
+<ul>
+<li>Authentication/AllowFidoDeviceSignon</li>
+<li>Cellular/LetAppsAccessCellularData</li>
+<li>Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</li>
+<li>Start/HidePeopleBar</li>
+<li>Storage/EnhancedStorageDevices</li>
+<li>Update/ManagePreviewBuilds</li>
+<li>WirelessDisplay/AllowMdnsAdvertisement</li>
+<li>WirelessDisplay/AllowMdnsDiscovery</li>
+</ul>
+<p>Added missing policies from previous releases:</p>
+<ul>
+<li>Connectivity/DisallowNetworkConnectivityActiveTest</li>
+<li>Search/AllowWindowsIndexer</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
+
+### October 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy DDF file](policy-ddf-file.md)</td>
+<td style="vertical-align:top"><p>Updated the DDF content for Windows 10 version 1709. Added a link to the download of Policy DDF for Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Updated the following policies:</p>
+<ul>
+<li>Defender/ControlledFolderAccessAllowedApplications - string separator is |.</li>
+<li>Defender/ControlledFolderAccessProtectedFolders - string separator is |.</li>
+</ul>
+</td></tr>
+<tr class="even">
+<td style="vertical-align:top">[eUICCs CSP](euiccs-csp.md)</td>
+<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[AssignedAccess CSP](assignedaccess-csp.md)</td>
+<td style="vertical-align:top"><p>Added SyncML examples for the new Configuration node.</p>
+</td></tr>
+<tr class="odd">
+<td style="vertical-align:top">[DMClient CSP](dmclient-csp.md)</td>
+<td style="vertical-align:top"><p>Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.</p>
+</td></tr>
+</tbody>
+</table>
+
 
 ### September 2017
 

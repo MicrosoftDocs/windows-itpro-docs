@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub, mobility
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 10/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -86,7 +86,9 @@ For more information, see [SurfaceHub configuration service provider](https://ms
 | Allow device account to be used for proxy authentication | Properties/AllowAutoProxyAuth | Yes </br>  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Disable auto-populating the sign-in dialog with invitees from scheduled meetings | Properties/DisableSignInSuggestions | Yes </br>  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 | Disable "My meetings and files" feature in Start menu | Properties/DoNotShowMyMeetingsAndFiles | Yes </br>  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package. 
+| Set the LanProfile for 802.1x Wired Auth | Dot3/LanProfile | Yes <br> [Use a custom policy.](#example-intune)  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+| Set the EapUserData for 802.1x Wired Auth | Dot3/EapUserData | Yes <br> [Use a custom policy.](#example-intune)  | Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Supported Windows 10 settings
 
@@ -183,27 +185,7 @@ The following tables include info on Windows 10 settings that have been validate
 | Set Network proxy | Use to configure a proxy server for ethernet and Wi-Fi connections. | [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
-### Whiteboard collaboration settings
 
-MDM settings for Whiteboard collaboration use the **AppManagement/AppStore** node of the [EnterpriseModernAppManagement CSP](https://docs.microsoft.com/windows/client-management/mdm/enterprisemodernappmanagement-csp#appmanagement-appstore) to configure an **AppSettingPolicy**. 
-
-The value for each setting can be **True** or **False**. The default value for each setting is **False**. 
-
-The OMA URI for each setting consists of `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/` and the string from the **OMA URI** column in the table. For example, the full OMA URI for **Enable sign-in** is `./User/Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/AppStore/Microsoft.Office.Whiteboard_8wekyb3d8bbwe/AppSettingPolicy/EnableSignIn`.
-
-
-| Setting | Details | OMA URI | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
-| --- | ---- | --- |---- | --- | --- |
-| Enable sign-in | Users can sign in and authenticate | EnableSignIn  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable sign-in | Users are unable to sign in and access collaboration or education features | DisableSignIn  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Collaboration | Users can sign in but not create or join collaborative sessions | DisableCollaboration  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Sharing | Hide entry points for the Share button, hiding export in the Share charm and Collaboration | DisableSharing  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Export | Users cannot send whiteboards using email, thumb drives, or other mechanisms through the Share charm | DisableExport  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Enable Ink to Shape | **Ink to Shape** is on by default when users open Whiteboard | EnableInkShapes  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Ink to Shape | **Ink to Shape** is off by default when users open Whiteboard | DisableInkShapes  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Enable Ink to Table | **Ink to Table** is on by default when users open Whiteboard | EnableInkTables  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-| Disable Search | Hide entry points for Bing Search | DisableSearch  | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
-\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Generate OMA URIs for settings 
 You need to use a setting’s OMA URI to create a custom policy in Intune, or a custom setting in System Center Configuration Manager.

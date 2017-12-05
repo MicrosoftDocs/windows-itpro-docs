@@ -28,6 +28,16 @@ If you are an EA customer with an existing Office 365 tenant, use the following 
 2.	After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
 3.	The admin can now assign subscription licenses to users.
 
+>Use the following process if you need to update contact information and retrigger activation in order to resend the activation email:
+
+1. Sign in to the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+2. Click on **Subscriptions**.
+3. Click on **Online Services Agreement List**.
+4. Enter your agreement number, and then click **Search**.
+5. Click the **Service Name**.
+6. In the **Subscription Contact** section, click the name listed under **Last Name**.
+7. Update the contact information, then click **Update Contact Details**. This will trigger a new email.
+
 Also in this article:
 - [Explore the upgrade experience](#explore-the-upgrade-experience): How to upgrade devices using the deployed licenses.
 - [Troubleshoot the user experience](#troubleshoot-the-user-experience): Examples of some license activation issues that can be encountered, and how to resolve them.

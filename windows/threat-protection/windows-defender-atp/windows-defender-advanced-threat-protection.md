@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)
 >
@@ -66,7 +66,7 @@ breach. You can submit files for deep analysis and receive the results
 without leaving the [Windows Defender ATP portal](https://securitycenter.windows.com).
 
 Windows Defender ATP works with existing Windows security technologies
-on endpoints, such as Windows Defender, AppLocker, and Device Guard. It
+on endpoints, such as Windows Defender Antivirus, AppLocker, and Windows Defender Device Guard. It
 can also work side-by-side with third-party security solutions and
 antimalware products.
 
@@ -98,6 +98,7 @@ Topic | Description
 [Use the Windows Defender Advanced Threat Protection portal](use-windows-defender-advanced-threat-protection.md) | Learn about the capabilities of Windows Defender ATP to help you investigate alerts that might be indicators of possible breaches in your enterprise.
 [Pull alerts to your SIEM tools](configure-siem-windows-defender-advanced-threat-protection.md) | Learn about pulling alerts from the Windows Defender ATP portal using supported security information and events management (SIEM) tools.
 [Use the threat intelligence API to create custom alerts](use-custom-ti-windows-defender-advanced-threat-protection.md) | Understand threat intelligence concepts, then enable the custom threat intelligence application so that you can proceed to create custom threat intelligence alerts that are specific to your organization.
+[Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md) | Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you to automate workflows and innovate based on Windows Defender ATP capabilities.
 [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md) | Understand the security status of your organization, including the status of machines, alerts, and investigations using the Windows Defender ATP reporting feature that integrates with Power BI. 
 [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md) | Check the sensor health state on endpoints to verify that they are providing sensor data and communicating with the Windows Defender ATP service.
 [Configure Windows Defender ATP preferences settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Use the Preferences setup menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
@@ -105,7 +106,7 @@ Topic | Description
 [Windows Defender ATP service health](service-status-windows-defender-advanced-threat-protection.md) | Verify that the service health is running properly or if there are current issues.
 [Troubleshoot Windows Defender Advanced Threat Protection](troubleshoot-windows-defender-advanced-threat-protection.md) | This topic contains information to help IT Pros find workarounds for the known issues and troubleshoot issues in Windows Defender ATP.
 [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)| Review events and errors associated with event IDs to determine if further troubleshooting steps are required.
-[Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md) | Learn about how Windows Defender works in conjunction with Windows Defender ATP.
+[Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md) | Learn about how Windows Defender Antivirus works in conjunction with Windows Defender ATP.
 
 ## Related topic
 [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)

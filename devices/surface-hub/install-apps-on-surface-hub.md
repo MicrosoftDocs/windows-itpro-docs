@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub, store
 author: jdeckerms
 ms.author: jdecker
-ms.date: 10/05/2017
+ms.date: 10/20/2017
 ms.localizationpriority: medium
 ---
 
@@ -127,7 +127,7 @@ To deploy apps to a large number of Surface Hubs in your organization, use a sup
 |-----------------------------|----------------------------------------|
 | On-premises MDM with System Center Configuration Manager (beginning in version 1602) | Yes |
 | Hybrid MDM with System Center Configuration Manager and Microsoft Intune | Yes |
-| Microsoft Intune standalone | Yes |
+| [Microsoft Intune standalone](https://docs.microsoft.com/intune/windows-store-for-business) | Yes |
 | Third-party MDM provider    | Check to make sure your MDM provider supports deploying offline-licensed app packages. |
 
 **To deploy apps remotely using System Center Configuration Manager (either on-prem MDM or hybrid MDM)**

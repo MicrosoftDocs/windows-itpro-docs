@@ -190,6 +190,23 @@ With version 1703, pausing through the settings app will provide a more consiste
 - Any pending update installations are canceled
 - Any update installation running when pause is activated will attempt to rollback
 
+## Configure when devices receive Windows Insider preview builds
+
+Starting with Windows 10, version 1709, you can set policies to manage preview builds and their delivery:
+
+The **Manage preview builds** setting gives administrators control over enabling or disabling preview build installation on a device. You can also decide to stop preview builds once the release is public.
+* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
+* MDM: **Update/ManagePreviewBuilds**
+
+>[!IMPORTANT]
+>This policy replaces the "Toggle user control over Insider builds" policy under that is only supported up to Windows 10, version 1703. You can find the older policy here:
+>* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Toggle user control over Insider builds**
+>* MDM: **System/AllowBuildPreview**
+
+The policy settings to **Select when Feature Updates are received** allows you to choose between preview flight rings, and allows you to defer or pause their delivery.
+* Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and Feature Updates are received*
+* MDM: **Update/BranchReadinessLevel**
+
 ## Exclude drivers from Quality Updates
 
 In Windows 10, starting with version 1607, you can selectively option out of receiving driver update packages as part of your normal quality update cycle.  This policy will not pertain to updates to inbox drivers (which will be packaged within a security or critical update) or to Feature Updates, where drivers may be dynamically installed to ensure the Feature Update process can complete.

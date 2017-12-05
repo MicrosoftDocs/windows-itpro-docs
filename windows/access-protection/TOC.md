@@ -69,7 +69,7 @@
 ### [Windows 10 credential theft mitigation guide abstract](windows-credential-theft-mitigation-guide-abstract.md)
 
 ## [Windows Firewall with Advanced Security](windows-firewall/windows-firewall-with-advanced-security.md)
-### [Isolating Windows Store Apps on Your Network](windows-firewall/isolating-apps-on-your-network.md)
+### [Isolating Microsoft Store Apps on Your Network](windows-firewall/isolating-apps-on-your-network.md)
 ### [Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012](windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2.md)
 ### [Windows Firewall with Advanced Security Administration with Windows PowerShell](windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell.md)
 ### [Windows Firewall with Advanced Security Design Guide](windows-firewall/windows-firewall-with-advanced-security-design-guide.md)

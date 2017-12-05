@@ -16,9 +16,9 @@ ms.author: daniha
 
 - Windows 10
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
+> **Looking for information about Windows 10 for personal or home use?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-We recently added features and benefits to better support the IT Professionals and business users in our Insider community. This includes the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. 
+We recently added features and benefits to better support the IT Professionals and business users in our Windows Insider community. This includes the option to download Windows 10 Insider Preview builds using your corporate credentials in Azure Active Directory (AAD). By enrolling devices in AAD, you increase the visibility of feedback submitted by users in your organization – especially on features that support your specific business needs. 
 
 >[!NOTE]
 >At this point, the Windows Insider Program for Business only supports Azure Active Directory (and not Active Directory on premises) as a corporate authentication method.
@@ -30,15 +30,25 @@ We recently added features and benefits to better support the IT Professionals a
 
 In order to get the most benefit out of the Windows Insider Program for Business, organizations should not use a test tenant of AAD. There will be no modifications to the AAD tenant to support the Windows Insider Program as it will only be used as an authentication method.
 
+## Register your organization's Azure AD domain to the Windows Insider Program for Business
+Rather than have each user in your organization register for Windows 10 Insider Preview builds, you can now simply register your domain – and cover all users with just one registration.
+
+1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/en-us/insidersigninaad/).
+2. **Register your domain**. Rather than have each user register individually for Windows Insider Preview builds, administrators can simply [register their domain](https://insider.windows.com/en-us/for-business-organization-admin/) and control settings centrally.
+
+>[!IMPORTANT]
+>The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+
 ## Check if a device is connected to your company’s Azure Active Directory subscription
 Simply go to **Settings > Accounts > Access work or school**. If a corporate account is on Azure Active Directory and it is connected to the device, you will see the account listed as highlighted in the image below.
 
 ![Device connected to Work Account](images/waas-wipfb-work-account.jpg)
 
 ## Enroll a device with an Azure Active Directory account
-1. Visit [insider.windows.com](https://insider.windows.com). Sign-in with your corporate account in AAD and follow the on-screen registration directions. 
-2. On your Windows 10 device, go to **Settings > Updates & Security >  Windows Insider Program**. 
-3. Enter the AAD account that you used to register and follow the on-screen directions. 
+1. Navigate to the [**Getting Started**](https://insider.windows.com/en-us/getting-started/) page on [Windows Insider](https://insider.windows.com).
+2. Go to **Register your organization account** and follow the instructions.
+3. On your Windows 10 device, go to **Settings > Updates & Security >  Windows Insider Program**. 
+4. Enter the AAD account that you used to register and follow the on-screen directions. 
 
 >[!NOTE]
 >Make sure that you have administrator rights to the machine and that it has latest Windows updates. 
@@ -61,7 +71,7 @@ With the current version of the Feedback Hub app, we need the user's consent to 
 
 ![Feedback Hub consent to AAD pop-up](images/waas-wipfb-aad-consent.png)
 
-Once agreed, everything will work fine and that user won't be prompted for permission again.
+Once agreed, everything will work fine, and that user won't be prompted for permission again.
 
 ### Something went wrong
 
@@ -73,7 +83,7 @@ In case the administrators blocked this option, when the user signs in with the 
 
 This blocks the user from signing in, which means they won't be able to use the Feedback Hub app with their AAD credentials.
 
-**To fix this issue**, an adminsitrator of the AAD directory will need to enable user consent for apps to access their data.
+**To fix this issue**, an administrator of the AAD directory will need to enable user consent for apps to access their data.
 
 To do this through the **classic Azure portal**:
 1. Go to https://manage.windowsazure.com/ .
@@ -101,7 +111,7 @@ To do this through the **new Azure portal**:
 All devices enrolled in the Windows Insider Program (physical or virtual) will receive Windows 10 Insider Preview builds (regardless of registration with MSA or AAD).
 
 ### Once I register with my corporate account in AAD, do I need to keep my Microsoft account for the Windows Insider Program?
-No, once you set up your device using AAD credentials – all feedback and flighting on that machine will be under your AAD account. You may need MSA for other machines that aren’t being used on your corporate network or to get Windows store app updates.
+No, once you set up your device using AAD credentials – all feedback and flighting on that machine will be under your AAD account. You may need MSA for other machines that aren’t being used on your corporate network or to get Microsoft Store App updates.
 
 ### How do I stop receiving updates? 
 You can simply “unlink” your account by going to **Settings > Updates & Security > Windows Insider Program**, select Windows Insider Account and click **Unlink**.

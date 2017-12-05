@@ -1,6 +1,6 @@
 ---
-title: Windows 10, version 1703 Diagnostic Data (Windows 10)
-description: Use this article to learn about the types of that is collected the the Full telemetry level.
+title: Windows 10 diagnostic data for the Full telemetry level (Windows 10)
+description: Use this article to learn about the types of data that is collected the the Full telemetry level.
 keywords: privacy,Windows 10
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -8,13 +8,15 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: eross-msft
 ms.author: lizross
-ms.date: 09/14/2017
+ms.date: 10/17/2017
 ---
 
-# Windows 10, version 1703 Diagnostic Data
+# Windows 10 diagnostic data for the Full telemetry level
 
-Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full telemetry level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1703 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md).
+**Applies to:**
+- Windows 10, version 1703 and later
 
+Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full telemetry level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1709 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md) and [Windows 10, version 1703 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md).
 
 The data covered in this article is grouped into the following categories:
 
@@ -35,7 +37,7 @@ Most diagnostic events contain a header of common data:
 
 | Category Name | Examples |
 | - | - |
-| Common Data | Information that is added to most diagnostic events, if relevant and available:<br><ul><li>OS name, version, build, and [locale](https://msdn.microsoft.com/library/windows/desktop/dd318716.aspx)</li><li>User ID -- a unique identifier associated with the user's Microsoft Account (if one is used) or local account. The user's Microsoft Account identifier is not collected from devices configured to send Basic diagnostic data</li><li>Xbox UserID</li><li>Environment from which the event was logged -- Application ID of app or component that logged the event, Session GUID. Used to track events over a given period of time such the period an app is running or between boots of the OS.</li><li>The diagnostic event name, Event ID, [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803.aspx) opcode, version, schema signature, keywords, and flags</li><li>HTTP header information including IP address. This is not the IP address of the device but the source address in the network packet header received by the diagnostics ingestion service.</li><li>Various IDs that are used to correlate and sequence related events together.</li><li>Device ID. This is not the user provided device name, but an ID that is unique for that device.</li><li>Device class -- Desktop, Server, or Mobile</li><li>Event collection time</li><li>Diagnostic level --  Basic or Full, Sample level -- for sampled data, what sample level is this device opted into</li></ul> |
+| Common Data | Information that is added to most diagnostic events, if relevant and available:<br><ul><li>OS name, version, build, and [locale](https://msdn.microsoft.com/library/windows/desktop/dd318716.aspx)</li><li>User ID -- a unique identifier associated with the user's Microsoft Account (if one is used) or local account. The user's Microsoft Account identifier is not collected from devices configured to send Basic diagnostic data</li><li>Xbox UserID</li><li>Environment from which the event was logged -- Application ID of app or component that logged the event, Session GUID. Used to track events over a given period of time such the period an app is running or between boots of the OS.</li><li>The diagnostic event name, Event ID, [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803.aspx) opcode, version, schema signature, keywords, and flags</li><li>HTTP header information, including the IP address. This IP address is the source address that’s provided by the network packet header and received by the diagnostics ingestion service.</li><li>Various IDs that are used to correlate and sequence related events together.</li><li>Device ID. This is not the user provided device name, but an ID that is unique for that device.</li><li>Device class -- Desktop, Server, or Mobile</li><li>Event collection time</li><li>Diagnostic level --  Basic or Full, Sample level -- for sampled data, what sample level is this device opted into</li></ul> |
 
 ## ​Device, Connectivity, and Configuration data
 

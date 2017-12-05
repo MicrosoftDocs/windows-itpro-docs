@@ -140,7 +140,7 @@ Group Policy settings can be set to open either IE or Internet Explorer for the 
 
 |Setting |Result |
 |--------|-------|
-|Let IE decide |Links open in the same type of experience from where they're launched. For example, clicking a link from a Windows Store app, opens IE. However, clicking a link from a desktop app, opens Internet Explorer for the desktop. |
+|Let IE decide |Links open in the same type of experience from where they're launched. For example, clicking a link from a Microsoft Store app, opens IE. However, clicking a link from a desktop app, opens Internet Explorer for the desktop. |
 |Always in IE11 |Links always open in IE. |
 |Always in Internet Explorer for the desktop |Links always open in Internet Explorer for the desktop. |
 

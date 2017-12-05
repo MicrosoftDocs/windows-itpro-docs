@@ -29,7 +29,6 @@ PowerShell scripts to help set up and manage your Microsoft Surface Hub.
     -   [Auto-accepting and declining meeting requests](#auto-accept-meetings-cmdlet)
     -   [Accepting external meeting requests](#accept-ext-meetings-cmdlet)
 
-You can check online for updated versions at [Surface Hub device account scripts](http://aka.ms/surfacehubscripts).
 
 ## <a href="" id="scripts-for-admins"></a>PowerShell scripts for Surface Hub administrators
 

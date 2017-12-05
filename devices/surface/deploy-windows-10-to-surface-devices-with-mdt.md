@@ -530,9 +530,9 @@ Now that the installation and configuration files are prepared, the application 
 
 #### Import Surface app installer
 
-The Surface app is a Windows Store app that provides the user with greater control over specific Surface device functions and capabilities (for example, control over the sensitivity of the Surface Pen). It is a highly recommended app for Surface devices to provide end users with the best experience and greatest control over their device. Find out more about the Surface app at [Install and use the Surface app](https://www.microsoft.com/surface/support/apps-and-windows-store/surface-app?os=windows-10).
+The Surface app is a Microsoft Store app that provides the user with greater control over specific Surface device functions and capabilities (for example, control over the sensitivity of the Surface Pen). It is a highly recommended app for Surface devices to provide end users with the best experience and greatest control over their device. Find out more about the Surface app at [Install and use the Surface app](https://www.microsoft.com/surface/support/apps-and-windows-store/surface-app?os=windows-10).
 
-To perform a deployment of the Surface app, you will need to download the app files through Windows Store for Business. You can find detailed instructions on how to download the Surface app through Windows Store for Business at [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business).
+To perform a deployment of the Surface app, you will need to download the app files through Microsoft Store for Business. You can find detailed instructions on how to download the Surface app through Microsoft Store for Business at [Deploy Surface app with Microsoft Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business).
 
 After you have downloaded the installation files for Surface app, including the AppxBundle and license files, you can import these files into the deployment share through the same process as a desktop application like Microsoft Office. Both the AppxBundle and license files must be together in the same folder for the import process to complete successfully. Use the following command on the **Command Details** page to install the Surface app:
    ```

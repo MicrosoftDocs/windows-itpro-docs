@@ -40,7 +40,7 @@ Windows 10 includes comprehensive MDM capabilities that can be managed by Micros
 The built-in MDM client is common to all editions of the Windows 10 operating system, including desktop, mobile, and Internet of Things (IoT). The client provides a single interface through which you can manage any device that runs Windows 10. The client has two important roles: device enrollment in an MDM system and device management.
 
 Organizations typically have two scenarios to consider when it comes to device deployment: Bring Your Own (BYO) personal devices and Choose Your Own (CYO) company-owned devices. In both cases, the device must be enrolled in an MDM system, which would configure it with settings appropriate for the organization and the employee. 
-Windows 10 Mobile device management capabilities support both personal devices used in the BYO scenario and corporate devices used in the CYO scenario. The operating system offers a flexible approach to registering devices with directory services and MDM systems. IT organizations can provision comprehensive device-configuration profiles based on their business needs to control and protect mobile business data. Apps can be provisioned easily to personal or corporate devices through the Windows Store for Business, or by using their MDM system, which can also work with the Windows Store for Business for public store apps. 
+Windows 10 Mobile device management capabilities support both personal devices used in the BYO scenario and corporate devices used in the CYO scenario. The operating system offers a flexible approach to registering devices with directory services and MDM systems. IT organizations can provision comprehensive device-configuration profiles based on their business needs to control and protect mobile business data. Apps can be provisioned easily to personal or corporate devices through the Microsoft Store for Business, or by using their MDM system, which can also work with the Microsoft Store for Business for public store apps. 
 Knowing who owns the device and what the employee will use it for are the major factors in determining your management strategy and which controls your organization should put in place. Whether personal devices, corporate devices, or a mixture of the two, deployment processes and configuration policies may differ. 
 
 For **personal devices**, companies need to be able to manage corporate apps and data on the device without impeding the employee’s ability to personalize it to meet their individual needs. The employee owns the device and corporate policy allows them to use it for both business and personal purposes, with the ability to add personal apps at their discretion. The main concern with personal devices is how organizations can prevent corporate data from being compromised, while still keeping personal data private and under the sole control of the employee. This requires that the device be able to support separation of apps and data with strict control of business and personal data traffic.
@@ -200,8 +200,8 @@ For more information about health attestation in Windows 10 Mobile, see the [Win
 **Windows Update for Business**
 Microsoft designed Windows Update for Business to provide IT administrators with additional Windows Update-centric management capabilities, such as the ability to deploy updates to groups of devices and to define maintenance windows for installing updates.  
 
-**Windows Store for Business**
-The Windows Store for Business is the place where IT administrators can find, acquire, manage, and distribute apps to Windows 10 devices. This includes both internal line-of-business (LOB) apps, as well as commercially available third-party apps. 
+**Microsoft Store for Business**
+The Microsoft Store for Business is the place where IT administrators can find, acquire, manage, and distribute apps to Windows 10 devices. This includes both internal line-of-business (LOB) apps, as well as commercially available third-party apps. 
 
 ## Configure
 
@@ -216,7 +216,7 @@ Not all MDM systems support every setting described in this guide. Some support 
 
 Enforcing what accounts employees can use on a corporate device is important for avoiding data leaks and protecting privacy. Limiting the device to just one account controlled by the organization will reduce the risk of a data breach. However, you can choose to allow employees to add a personal Microsoft Account or other consumer email accounts. 
 
--   **Allow Microsoft Account** Specifies whether users are allowed to add a Microsoft Account to the device and use this account to authenticate to cloud services, such as purchasing apps in Windows Store, Xbox, or Groove.
+-   **Allow Microsoft Account** Specifies whether users are allowed to add a Microsoft Account to the device and use this account to authenticate to cloud services, such as purchasing apps in Microsoft Store, Xbox, or Groove.
 -   **Allow Adding Non-Microsoft Accounts** Specifies whether users are allowed to add email accounts other than Microsoft accounts.
 
 ### <a href="" id="email-account"></a>Email accounts
@@ -304,7 +304,7 @@ In addition to SCEP certificate management, Windows 10 Mobile supports deploymen
 Get more detailed information about MDM certificate management in the [Client Certificate Install CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920023(v=vs.85).aspx) and [Install digital certificates on Windows 10 Mobile](/windows/access-protection/installing-digital-certificates-on-windows-10-mobile).
 Use the Allow Manual Root Certificate Installation setting to prevent users from manually installing root and intermediate CA certificates intentionally or accidently.
 
->**Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Windows Store. This Windows 10 Mobile app can help you:
+>**Note:** To diagnose certificate-related issues on Windows 10 Mobile devices, use the free Certificates app in Microsoft Store. This Windows 10 Mobile app can help you:
 -   View a summary of all personal certificates
 -   View the details of individual certificates
 -   View the certificates used for VPN, Wi-Fi, and email authentication
@@ -403,7 +403,7 @@ For more details on proxy settings, see [CM_ProxyEntries CSP](https://msdn.micro
 
 *Applies to: Corporate and personal devices*
 
-Organizations often use a VPN to control access to apps and resources on their company’s intranet. In addition to native Microsoft Point to Point Tunneling Protocol (PPTP), Layer 2 Tunneling Protocol (L2TP), and Internet Key Exchange Protocol version 2 (IKEv2) VPNs, Windows 10 Mobile supports SSL VPN connections, which require a downloadable plugin from the Windows Store and are specific to the VPN vendor of your choice. These plugins work like apps and can be installed directly from the Windows Store using your MDM system (see App Management).
+Organizations often use a VPN to control access to apps and resources on their company’s intranet. In addition to native Microsoft Point to Point Tunneling Protocol (PPTP), Layer 2 Tunneling Protocol (L2TP), and Internet Key Exchange Protocol version 2 (IKEv2) VPNs, Windows 10 Mobile supports SSL VPN connections, which require a downloadable plugin from the Microsoft Store and are specific to the VPN vendor of your choice. These plugins work like apps and can be installed directly from the Microsoft Store using your MDM system (see App Management).
 
 You can create and provision multiple VPN connection profiles and then deploy them to managed devices that run Windows 10 Mobile. 
 To create a VPN profile that uses native Windows 10 Mobile VPN protocols (such as IKEv2, PPTP, or L2TP), you can use the following settings:
@@ -421,11 +421,11 @@ To create a VPN profile that uses native Windows 10 Mobile VPN protocols (such a
 
 >**Note:** The easiest way to create a profile for a single sign-on experience with an EAP configuration XML is through the rasphone tool on a Windows 10 PC. Once you run the rasphone.exe, the configuration wizard will walk you through the necessary steps. For step-by-step instructions on creating the EAP configuration XML blob, see EAP configuration. You can use the resulting XML blob in the MDM system to create the VPN profile on Windows 10 Mobile phone. If you have multiple certificates on the devices, you may want to configure filtering conditions for automatic certificate selection, so the employee does not need to select an authentication certificate every time the VPN is turned on. See this article for details. Windows 10 for PCs and Windows 10 Mobile have the same VPN client.
 
-Windows Store–based VPN plugins for the VPN connection allow you to create a VPN plugin profile with the following attributes:
+Microsoft Store–based VPN plugins for the VPN connection allow you to create a VPN plugin profile with the following attributes:
 
 -   **VPN server** A comma-separated list of VPN servers; you can specify the servers with a URL, fully qualified host name, or IP address
 -   **Custom configuration** An HTML-encoded XML blob for SSL–VPN plugin–specific configuration information (e.g., authentication information) that the plugin provider requires
--   **Windows Store VPN plugin family name** Specifies the Windows Store package family name for the Windows Store–based VPN plugin
+-   **Microsoft Store VPN plugin family name** Specifies the Microsoft Store package family name for the Microsoft Store–based VPN plugin
 
 In addition, you can specify per VPN Profile:
 
@@ -491,36 +491,36 @@ Windows 10 makes it possible to develop apps that work seamlessly across multipl
 
 For compatibility with existing apps, Windows Phone 8.1 apps still run on Windows 10 Mobile devices, easing the migration to the newest platform. Microsoft recommend migrating your apps to UWP to take full advantage of the improvements in Windows 10 Mobile. In addition, bridges have been developed to easily and quickly update existing Windows Phone 8.1 (Silverlight) and iOS apps to the UWP.
 
-Microsoft also made it easier for organizations to license and purchase UWP apps via Windows Store for Business and deploy them to employee devices using the Windows Store, or an MDM system, that can be integrated with the Windows Store for Business. Putting apps into the hands of mobile workers is critical, but you also need an efficient way to ensure those apps comply with corporate policies for data security. 
+Microsoft also made it easier for organizations to license and purchase UWP apps via Microsoft Store for Business and deploy them to employee devices using the Microsoft Store, or an MDM system, that can be integrated with the Microsoft Store for Business. Putting apps into the hands of mobile workers is critical, but you also need an efficient way to ensure those apps comply with corporate policies for data security. 
 
 To learn more about Universal Windows apps, see the [Guide to Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/en-us/library/windows/apps/dn894631.aspx) for additional information, or take this [Quick Start Challenge: Universal Windows Apps in Visual Studio](https://mva.microsoft.com/en-US/training-courses/quick-start-challenge-universal-windows-apps-in-visual-studio-14477?l=Be2FMfgmB_505192797). Also, see [Porting apps to Windows 10](https://msdn.microsoft.com/en-us/windows/uwp/porting/index). 
 
-### <a href="" id="windows-store-for-business"></a>Windows Store for Business: Sourcing the right app
+### <a href="" id="windows-store-for-business"></a>Microsoft Store for Business: Sourcing the right app
 
 *Applies to: Corporate and personal devices*
 
-The first step in app management is to obtain the apps your users need. You can develop your own apps or source your apps from the Windows Store. With Windows Phone 8.1, an MSA was needed to acquire and install apps from the Windows Store. With the Windows Store for Business, Microsoft enables organizations to acquire apps for employees from a private store with the Windows Store, without the need for MSAs on Windows 10 devices. 
+The first step in app management is to obtain the apps your users need. You can develop your own apps or source your apps from the Microsoft Store. With Windows Phone 8.1, an MSA was needed to acquire and install apps from the Microsoft Store. With the Microsoft Store for Business, Microsoft enables organizations to acquire apps for employees from a private store with the Microsoft Store, without the need for MSAs on Windows 10 devices. 
 
-Windows Store for Business is a web portal that allows IT administrators to find, acquire, manage, and distribute apps to Windows 10 devices. 
+Microsoft Store for Business is a web portal that allows IT administrators to find, acquire, manage, and distribute apps to Windows 10 devices. 
 
-Azure AD authenticated managers have access to Windows Store for Business functionality and settings, and store managers can create a private category of apps that are specific and private to their organization. (You can get more details about what specific Azure AD accounts have access to Windows Store for Business here). Windows Store for Business enables organizations to purchase app licenses for their organization and make apps available to their employees. In addition to commercially available apps, your developers can publish line-of-business (LOB) apps to Windows Store for Business by request. You can also integrate their Windows Store for Business subscriptions with their MDM systems, so the MDM system can distribute and manage apps from Windows Store for Business.
+Azure AD authenticated managers have access to Microsoft Store for Business functionality and settings, and store managers can create a private category of apps that are specific and private to their organization. (You can get more details about what specific Azure AD accounts have access to Microsoft Store for Business here). Microsoft Store for Business enables organizations to purchase app licenses for their organization and make apps available to their employees. In addition to commercially available apps, your developers can publish line-of-business (LOB) apps to Microsoft Store for Business by request. You can also integrate their Microsoft Store for Business subscriptions with their MDM systems, so the MDM system can distribute and manage apps from Microsoft Store for Business.
 
-Windows Store for Business supports app distribution under two licensing models: online and offline. 
+Microsoft Store for Business supports app distribution under two licensing models: online and offline. 
 
 The online model (store-managed) is the recommended method, and supports both personal device and corporate device management scenarios. To install online apps, the device must have Internet access at the time of installation. On corporate devices, an employee can be authenticated with an Azure AD account to install online apps. On personal devices, an employee must register their device with Azure AD to be able to install corporate licensed online apps.
 Corporate device users will find company licensed apps in the Store app on their phone in a private catalog. When an MDM system is associated with the Store for Business, IT administrators can present Store apps within the MDM system app catalog where users can find and install their desired apps. IT administrators can also push required apps directly to employee devices without the employee’s intervention. 
 
 Employees with personal devices can install apps licensed by their organization using the Store app on their device. They can use either the Azure AD account or Microsoft Account within the Store app if they wish to purchase personal apps. If you allow employees with corporate devices to add a secondary Microsoft Account (MSA), the Store app on the device provides a unified method for installing personal and corporate apps.
 
-Online licensed apps do not need to be transferred or downloaded from the Windows Store to the MDM system to be distributed and managed. When an employee chooses a company-owned app, it will automatically be installed from the cloud. Also, apps will be automatically updated when a new version is available or can be removed if needed. When an app is removed from a device by the MDM system or the user, Windows Store for Business reclaims the license so it can be used for another user or on another device. 
+Online licensed apps do not need to be transferred or downloaded from the Microsoft Store to the MDM system to be distributed and managed. When an employee chooses a company-owned app, it will automatically be installed from the cloud. Also, apps will be automatically updated when a new version is available or can be removed if needed. When an app is removed from a device by the MDM system or the user, Microsoft Store for Business reclaims the license so it can be used for another user or on another device. 
 
-To distribute an app offline (organization-managed), the app must be downloaded from the Windows Store for Business. This can be accomplished in the Windows Store for Business portal by an authorized administrator. Offline licensing requires the app developer to opt-in to the licensing model, as the Windows Store is no longer able to track licenses for the developer. If the app developer doesn’t allow download of the app from Windows Store, then you must obtain the files directly from the developer or use the online licensing method. 
+To distribute an app offline (organization-managed), the app must be downloaded from the Microsoft Store for Business. This can be accomplished in the Microsoft Store for Business portal by an authorized administrator. Offline licensing requires the app developer to opt-in to the licensing model, as the Microsoft Store is no longer able to track licenses for the developer. If the app developer doesn’t allow download of the app from Microsoft Store, then you must obtain the files directly from the developer or use the online licensing method. 
 
-To install acquired Windows Store or LOB apps offline on a Windows 10 Mobile device, IT administrators can use an MDM system. The MDM system distributes the app packages that you downloaded from Windows Store (also called sideloading) to Windows 10 Mobile devices. Support for offline app distribution depends on the MDM system you are using, so consult your MDM vendor documentation for details. You can fully automate the app deployment process so that no user intervention is required.
+To install acquired Microsoft Store or LOB apps offline on a Windows 10 Mobile device, IT administrators can use an MDM system. The MDM system distributes the app packages that you downloaded from Microsoft Store (also called sideloading) to Windows 10 Mobile devices. Support for offline app distribution depends on the MDM system you are using, so consult your MDM vendor documentation for details. You can fully automate the app deployment process so that no user intervention is required.
 
-Windows Store apps or LOB apps that have been uploaded to the Windows Store for Business are automatically trusted on all Windows devices, as they are cryptographically signed with Windows Store certificates. LOB apps that are uploaded to the Windows Store for Business are private to your organization and are never visible to other companies or consumers. If you do not want to upload your LOB apps, you have to establish trust for the app on your devices. To establish this trust, you’ll need to generate a signing certificate with your Public Key Infrastructure and add your chain of trust to the trusted certificates on the device (see the certificates section). You can install up to 20 self-signed LOB apps per device with Windows 10 Mobile. To install more than 20 apps on a device, you can purchase a signing certificate from a trusted public Certificate Authority, or upgrade your devices to Windows 10 Mobile Enterprise edition.
+Microsoft Store apps or LOB apps that have been uploaded to the Microsoft Store for Business are automatically trusted on all Windows devices, as they are cryptographically signed with Microsoft Store certificates. LOB apps that are uploaded to the Microsoft Store for Business are private to your organization and are never visible to other companies or consumers. If you do not want to upload your LOB apps, you have to establish trust for the app on your devices. To establish this trust, you’ll need to generate a signing certificate with your Public Key Infrastructure and add your chain of trust to the trusted certificates on the device (see the certificates section). You can install up to 20 self-signed LOB apps per device with Windows 10 Mobile. To install more than 20 apps on a device, you can purchase a signing certificate from a trusted public Certificate Authority, or upgrade your devices to Windows 10 Mobile Enterprise edition.
 
-Learn more about the [Windows Store for Business](/microsoft-store/index). 
+Learn more about the [Microsoft Store for Business](/microsoft-store/index). 
 
 ### <a href="" id="managing-apps"></a>Managing apps
 
@@ -528,19 +528,19 @@ Learn more about the [Windows Store for Business](/microsoft-store/index).
 
 IT administrators can control which apps are allowed to be installed on Windows 10 Mobile devices and how they should be kept up-to-date. 
 
-Windows 10 Mobile includes AppLocker, which enables administrators to create allow or disallow (sometimes also called whitelist/blacklist) lists of apps from the Windows Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Windows Store. 
+Windows 10 Mobile includes AppLocker, which enables administrators to create allow or disallow (sometimes also called whitelist/blacklist) lists of apps from the Microsoft Store. This capability extends to built-in apps, as well, such as Xbox, Groove, text messaging, email, and calendar, etc. The ability to allow or deny apps helps to ensure that people use their mobile devices for their intended purposes. However, it is not always an easy approach to find a balance between what employees need or request and security concerns. Creating allow or disallow lists also requires keeping up with the changing app landscape in the Microsoft Store. 
 
 For more details, see [AppLocker CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn920019(v=vs.85).aspx).
 
 In addition to controlling which apps are allowed, IT professionals can also implement additional app management settings on Windows 10 Mobile, using an MDM.
 
 -   **Allow All Trusted Apps** Whether users can sideload apps on the device.
--   **Allow App Store Auto Update** Whether automatic updates of apps from Windows Store are allowed.
+-   **Allow App Store Auto Update** Whether automatic updates of apps from Microsoft Store are allowed.
 -   **Allow Developer Unlock** Whether developer unlock is allowed.
 -   **Allow Shared User App Data** Whether multiple users of the same app can share data.
--   **Allow Store** Whether Windows Store app is allowed to run. This will completely block the user from installing apps from the Store, but will still allow app distribution through an MDM system. 
+-   **Allow Store** Whether Microsoft Store app is allowed to run. This will completely block the user from installing apps from the Store, but will still allow app distribution through an MDM system. 
 -   **Application Restrictions** An XML blob that defines the app restrictions for a device. The XML blob can contain an app allow or deny list. You can allow or deny apps based on their app ID or publisher. See AppLocker above.
--   **Disable Store Originated Apps** Disables the launch of all apps from Windows Store that came pre-installed or were downloaded before the policy was applied.
+-   **Disable Store Originated Apps** Disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded before the policy was applied.
 -   **Require Private Store Only** Whether the private store is exclusively available to users in the Store app on the device. If enabled, only the private store is available. If disabled, the retail catalog and private store are both available.
 -   **Restrict App Data to System Volume** Whether app data is allowed only on the system drive or can be stored on an SD card.
 -   **Restrict App to System Volume** Whether app installation is allowed only to the system drive or can be installed on an SD card.
@@ -1035,7 +1035,7 @@ The remote assistance features in Windows 10 Mobile help resolve issues that use
 
 These remote management features help organizations reduce the IT effort required to manage devices. They also help users quickly regain use of their device should they misplace it or forget the device password.
 
->**Remote control software** Microsoft does not provide build-in remote control software, but works with partners to deliver these capabilities and services. With version 1607, remote assistant and control applications are available in the Windows Store.
+>**Remote control software** Microsoft does not provide build-in remote control software, but works with partners to deliver these capabilities and services. With version 1607, remote assistant and control applications are available in the Microsoft Store.
 
 ## Retire
 
@@ -1065,7 +1065,7 @@ A better option than wiping the entire device is to use Windows Information Prot
 - [Mobile device management](https://go.microsoft.com/fwlink/p/?LinkId=734050)
 - [Enterprise Mobility + Security](https://go.microsoft.com/fwlink/p/?LinkId=723984)
 - [Overview of Mobile Device Management for Office 365](https://go.microsoft.com/fwlink/p/?LinkId=734052)
-- [Windows Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=722910)
+- [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=722910)
 
 
 ## Revision History

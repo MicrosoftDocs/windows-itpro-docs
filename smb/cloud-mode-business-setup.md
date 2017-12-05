@@ -18,19 +18,19 @@ author: CelesteDG
 
 **Applies to:**
 
--   Office 365 Business Premium, Azure AD Premium, Intune, Windows Store for Business, Windows 10
+-   Office 365 Business Premium, Azure AD Premium, Intune, Microsoft Store for Business, Windows 10
 
 Are you ready to move your business to the cloud or wondering what it takes to make this happen with Microsoft cloud services and tools?
 
-In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Office 365 Business Premium, Microsoft Azure AD, Intune, Windows Store for Business, and Windows 10. We'll show you the basics on how to:
+In this walkthrough, we'll show you how to deploy and manage a full cloud IT solution for your small to medium business using Office 365 Business Premium, Microsoft Azure AD, Intune, Microsoft Store for Business, and Windows 10. We'll show you the basics on how to:
 - Acquire an Office 365 business domain
 - Add Microsoft Intune and Azure Active Directory (AD) Premium licenses to your business tenant
-- Set up Windows Store for Business and manage app deployment and sync with Intune
+- Set up Microsoft Store for Business and manage app deployment and sync with Intune
 - Add users and groups in Azure AD and Intune
 - Create policies and app deployment rules
 - Log in as a user and start using your Windows device
 
-Go to the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for your business.
+Go to the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for your business.
 
 ## Prerequisites
 Here's a few things to keep in mind before you get started:
@@ -53,7 +53,7 @@ To set up your Office 365 business tenant, see <a href="https://support.office.c
 
 If this is the first time you're setting this up, and you'd like to see how it's done, you can follow these steps to get started:
 
-1. Go to the <a href="https://business.microsoft.com/en-us/products/office-365" target="_blank">Office 365</a> page in the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
+1. Go to the <a href="https://business.microsoft.com/en-us/products/office-365" target="_blank">Office 365</a> page in the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
 
   **Figure 1** - Try or buy Office 365
 
@@ -165,7 +165,7 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 
   ![Microsoft Intune management portal](images/intune_portal_home.png)
 
-Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Windows Store for Business for app distribution](#17-configure-windows-store-for-business-for-app-distribution).
+Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Microsoft Store for Business for app distribution](#17-configure-windows-store-for-business-for-app-distribution).
 
 ### 1.4 Add Azure AD to your domain
 Microsoft Azure is an open and flexible cloud platform that enables you to quickly build, deploy, and manage apps across a global network of Microsoft-managed datacenters. In this walkthrough, we won't be using the full power of Azure and we'll primarily use it to create groups that we then use for provisioning through Intune. 
@@ -287,10 +287,10 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 
   ![Configure automatic MDM enrollment with Intune](images/azure_portal_classic_configure_intune_mdm_enrollment.png)
 
-### 1.7 Configure Windows Store for Business for app distribution
-Next, you'll need to configure Windows Store for Business to distribute apps with a management tool such as Intune.
+### 1.7 Configure Microsoft Store for Business for app distribution
+Next, you'll need to configure Microsoft Store for Business to distribute apps with a management tool such as Intune.
 
-In this part of the walkthrough, we'll be working on the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a> and <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a>.
+In this part of the walkthrough, we'll be working on the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a> and <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Microsoft Store for Business</a>.
 
 **To associate your Store account with Intune and configure synchronization**
 
@@ -301,33 +301,33 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 
   ![Set up mobile device management in Intune](images/intune_admin_mdm_configure.png)
 
-3. Sign into <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> using the same tenant account that you used to sign into Intune.
+3. Sign into <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Microsoft Store for Business</a> using the same tenant account that you used to sign into Intune.
 4. Accept the EULA.
 5. In the Store portal, select **Settings > Management tools** to go to the management tools page.
-6. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune ready to use with Windows Store for Business.
+6. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune ready to use with Microsoft Store for Business.
 
   **Figure 25** - Activate Intune as the Store management tool
 
   ![Activate Intune from the Store portal](images/wsfb_management_tools_activate.png)
 
 7. Go back to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin > Mobile Device Management**, expand **Windows**, and then choose **Store for Business**.
-8. In the **Windows Store for Business** page, select **Configure Sync** to sync your Store for Business volume-purchased apps with Intune.
+8. In the **Microsoft Store for Business** page, select **Configure Sync** to sync your Store for Business volume-purchased apps with Intune.
 
   **Figure 26** - Configure Store for Business sync in Intune
 
   ![Configure Store for Business sync in Intune](images/intune_admin_mdm_store_sync.png)
 
-9. In the **Configure Windows Store for Business app sync** dialog box, check **Enable Windows Store for Business sync**. In the **Language** dropdown list, choose the language in which you want apps from the Store to be displayed in the Intune console and then click **OK**.
+9. In the **Configure Microsoft Store for Business app sync** dialog box, check **Enable Microsoft Store for Business sync**. In the **Language** dropdown list, choose the language in which you want apps from the Store to be displayed in the Intune console and then click **OK**.
 
-  **Figure 27** - Enable Windows Store for Business sync in Intune
+  **Figure 27** - Enable Microsoft Store for Business sync in Intune
 
   ![Enable Store for Business sync in Intune](images/intune_configure_store_app_sync_dialog.png)
 
-  The **Windows Store for Business** page will refresh and it will show the details from the sync.
+  The **Microsoft Store for Business** page will refresh and it will show the details from the sync.
 
 **To buy apps from the Store**
 
-In your <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> portal, you can see the list of apps that you own by going to **Manage > Inventory**. You should see the following apps in your inventory:
+In your <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Microsoft Store for Business</a> portal, you can see the list of apps that you own by going to **Manage > Inventory**. You should see the following apps in your inventory:
 - Sway
 - OneNote
 - PowerPoint Mobile
@@ -336,11 +336,11 @@ In your <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_
 
 In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps > Apps > Volume-Purchased Apps** and verify that you can see the same list of apps appear on Intune.
 
-In the following example, we'll show you how to buy apps through the Windows Store for Business and then make sure the apps appear on Intune.
+In the following example, we'll show you how to buy apps through the Microsoft Store for Business and then make sure the apps appear on Intune.
 
 **Example 1 - Add other apps like Reader and InstaNote**
 
-1. In the <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Windows Store for Business</a> portal, click **Shop**, scroll down to the **Made by Microsoft** category, and click **Show all** to see all the Microsoft apps in the list.
+1. In the <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Microsoft Store for Business</a> portal, click **Shop**, scroll down to the **Made by Microsoft** category, and click **Show all** to see all the Microsoft apps in the list.
 
   **Figure 28** - Shop for Store apps
 
@@ -364,7 +364,7 @@ In the following example, we'll show you how to buy apps through the Windows Sto
 If you need to sync your most recently purchased apps and have it appear in your catalog, you can do this by forcing a sync.
 
 1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin > Mobile Device Management > Windows > Store for Business**.
-2. In the **Windows Store for Business** page, click **Sync now** to force a sync.
+2. In the **Microsoft Store for Business** page, click **Sync now** to force a sync.
 
   **Figure 30** - Force a sync in Intune
 
@@ -568,8 +568,8 @@ To learn more about the services and tools mentioned in this walkthrough, and le
 - <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a>
 - Common admin tasks in Office 365 including email and OneDrive in <a href="https://support.office.com/en-us/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91" target="_blank">Manage Office 365</a>
 - More info about managing devices, apps, data, troubleshooting, and more in <a href="https://docs.microsoft.com/en-us/intune/" target="_blank">Intune documentation</a>
-- Learn more about Windows 10 in <a href="http://technet.microsoft.com/windows/windows10.aspx" target="_blank">Windows 10 guide for IT pros</a>
-- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/windows-store-for-business" target="_blank">Windows Store for Business</a>
+- Learn more about Windows 10 in <a href="https://technet.microsoft.com/windows/windows10.aspx" target="_blank">Windows 10 guide for IT pros</a>
+- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/windows-store-for-business" target="_blank">Microsoft Store for Business</a>
 
 ### For information workers
 Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:

@@ -50,7 +50,7 @@ The Surface WOL driver conforms to the WOL standard, whereby the device is woken
 >[!NOTE]
 >To send a magic packet and wake up a device by using WOL, you must know the MAC address of the target device and Ethernet adapter. Because the magic packet does not use the IP network protocol, it is not possible to use the IP address or DNS name of the device.
 
-Many management solutions, such as System Center Configuration Manager, provide built-in support for WOL. There are also many solutions, including Windows Store apps, PowerShell modules, third-party applications, and third-party management solutions that allow you to send a magic packet to wake up a device. For example, you can use the [Wake On LAN PowerShell module](https://gallery.technet.microsoft.com/scriptcenter/Wake-On-Lan-815424c4) from the TechNet Script Center. 
+Many management solutions, such as System Center Configuration Manager, provide built-in support for WOL. There are also many solutions, including Microsoft Store apps, PowerShell modules, third-party applications, and third-party management solutions that allow you to send a magic packet to wake up a device. For example, you can use the [Wake On LAN PowerShell module](https://gallery.technet.microsoft.com/scriptcenter/Wake-On-Lan-815424c4) from the TechNet Script Center. 
 
 >[!NOTE]
 >After a device has been woken up with a magic packet, the device will return to sleep if an application is not actively preventing sleep on the system or if the AllowSystemRequiredPowerRequests registry key is not configured to 1, which allows applications to prevent sleep. See the [WOL driver](#wol-driver) section of this article for more information about this registry key.

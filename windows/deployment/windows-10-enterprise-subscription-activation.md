@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 10/10/2017
+ms.date: 10/18/2017
 author: greg-lindsay
 ---
 
@@ -23,6 +23,7 @@ With Windows 10 version 1703 (also known as the Creator’s Update), both Window
 Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
 
 See the following topics in this article:
+- [The evolution of Windows 10 deployment](#the-evolution-of-deployment): A short history of Windows deployment.
 - [Requirements](#requirements): Prerequisites to use the Windows 10 Enterprise subscription model.
 - [Benefits](#benefits): Advantages of Windows 10 Enterprise + subscription-based licensing.
 - [How it works](#how-it-works): A summary of the subscription-based licensing option.
@@ -30,12 +31,27 @@ See the following topics in this article:
 
 For information on how to deploy Windows 10 Enterprise licenses, see [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
+## The evolution of deployment
+
+>The original version of this section can be found at [Changing between Windows SKUs](https://blogs.technet.microsoft.com/mniehaus/2017/10/09/changing-between-windows-skus/).
+
+The following figure illustrates how deploying Windows 10 has evolved with each release. With this release, deployment is automatic.
+
+![Illustration of how Windows 10 deployment has evolved](images/sa-evolution.png)
+
+- **Windows 7** required you to redeploy the operating system using a full wipe-and-load process if you wanted to change from Windows 7 Professional to Windows 10 Enterprise.<br>
+- **Windows 8.1** added support for a Windows 8.1 Pro to Windows 8.1 Enterprise in-place upgrade (considered a “repair upgrade” because the OS version was the same before and after).  This was a lot easier than wipe-and-load, but it was still time-consuming.<br>
+- **Windows 10 1507** added the ability to install a new product key using a provisioning package or using MDM to change the SKU.  This required a reboot, which would install the new OS components, and took several minutes to complete. However, it was a lot quicker than in-place upgrade.<br>
+- **Windows 10 1607** made a big leap forward. Now you can just change the product key and the SKU instantly changes from Windows 10 Pro to Windows 10 Enterprise.  In addition to provisioning packages and MDM, you can just inject a key using SLMGR.VBS (which injects the key into WMI), so it became trivial to do this using a command line.<br>
+- **Windows 10 1703** made this “step-up” from Windows 10 Pro to Windows 10 Enterprise automatic for those that subscribed to Windows 10 Enterprise E3 or E5 via the CSP program.<br>
+- **Windows 10 1709** adds support for Windows 10 Subscription Activation, very similar to the CSP support but for large enterprises, enabling the use of Azure AD for assigning licenses to users. When those users sign in on an AD or Azure AD-joined machine, it automatically steps up from Windows 10 Pro to Windows 10 Enterprise.
+
 ## Requirements
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following: 
 
-- Windows 10 (Pro or Enterprise) version 1703 or later installed and **activated** on the devices to be upgraded
-- Azure Active Directory (Azure AD) available for identity management
+- Windows 10 (Pro or Enterprise) version 1703 or later installed and **activated** on the devices to be upgraded.
+- Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Active Directory joined with Azure AD Connect. Workgroup-joined devices are not supported.
 
 For Microsoft customers that do not have EA or MPSA, you can obtain Windows 10 Enterprise E3 or E5 through a cloud solution provider (CSP). Identity management and device requirements are the same when you use CSP to manage licenses, with the exception that Windows 10 Enterprise E3 is also available through CSP to devices running Windows 10, version 1607. For more information about obtaining Windows 10 Enterprise E3 through your CSP, see [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md).
@@ -61,6 +77,24 @@ You can benefit by moving to Windows as an online service in the following ways:
 When a licensed user signs in to a device that meets requirements using the Azure AD credentials associated with a Windows 10 Enterprise E3 or E5 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise and all the appropriate Windows 10 Enterprise features are unlocked. When a user’s subscription expires or is transferred to another user, the Windows 10 Enterprise device reverts seamlessly to Windows 10 Pro edition, after a grace period of up to 90 days.
 
 Devices currently running Windows 10 Pro, version 1703 can get Windows 10 Enterprise Semi-Annual Channel on up to five devices for each user covered by the license. This benefit does not include Long Term Servicing Channel.
+
+### Scenarios
+
+**Scenario #1**:  Using KMS for activation, just purchased Windows 10 Enterprise E3 or E5 subscriptions (or for some reason have had an E3 or E5 subscription for a while but haven’t yet deployed Windows 10 Enterprise), and you are using Windows 10 1607 or above.
+
+All you need to do to change all of your Windows 10 Pro devices to Windows 10 Enterprise is to run this command on each computer:
+
+<pre style="overflow-y: visible">
+cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
+</pre>
+    
+This key comes from [Appendix A: KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx) in the Volume Activation guide.  The command causes the OS to change to Windows 10 Enterprise and then seek out the KMS server to reactivate.  It is also possible to inject the Windows 10 Pro key from this article if you wish to step back down from Enterprise to Pro.
+
+**Scenario #2**:  Using Azure AD-joined devices or Active Directory-joined devices running Windows 10 1709 or later, and with Azure AD synchronization configured, just follow the steps in [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md) to acquire a $0 SKU and get a new Windows 10 Enterprise E3 or E5 license in Azure AD. Then, assign that license to all of your Azure AD users. These can be AD-synced accounts.  The device will automatically change from Windows 10 Pro to Windows 10 Enterprise when that user signs in.
+
+In summary, if you have a Windows 10 Enterprise E3 or E5 subscription, but are still running Windows 10 Pro, it’s really simple (and quick) to move to Windows 10 Enterprise using one of the scenarios above.
+
+If you’re running Windows 7, it can be more work.  A wipe-and-load approach works, but it is likely to be easier to upgrade from Windows 7 Pro directly to Windows 10 Enterprise. This is a supported path, and completes the move in one step.  This method also works if you are running Windows 8.1 Pro.
 
 ### Licenses
 

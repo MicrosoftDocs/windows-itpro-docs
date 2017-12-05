@@ -16,7 +16,7 @@ author: brianlic-msft
 
 -   Windows 10
 -   Windows 10 Mobile
--   Windows Server 2016
+-   Windows Server
 
 At Microsoft, we use Windows telemetry to inform our decisions and focus our efforts in providing the most robust, most valuable platform for your business and the people who count on Windows to enable them to be as productive as possible. Telemetry gives users a voice in the operating system’s development. This guide describes the importance of Windows telemetry and how we protect that data. Additionally, it differentiates between telemetry and functional data. It also describes the telemetry levels that Windows supports. Of course, you can choose how much telemetry is shared with Microsoft, and this guide demonstrates how.
 
@@ -27,15 +27,15 @@ To frame a discussion about telemetry, it is important to understand Microsoft�
 -	**Security.** We encrypt telemetry in transit from your device and protect that data at our secure data centers.
 -	**Strong legal protections.** We respect customers’ local privacy laws and fight for legal protection of their privacy as a fundamental human right.
 -	**No content-based targeting.** We take steps to avoid and minimize the collection of customer content, such as the content of files, chats, or emails, through the Windows telemetry system.  Customer content inadvertently collected is kept confidential and not used for user targeting.
--	**Benefits to you.** We collect Windows telemetry to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all of our customers.
+-	**Benefits to you.** We collect Windows telemetry to help provide you with an up-to-date, more secure, reliable and performant product, and to improve Windows for all our customers.
 
 This article applies to Windows and Windows Server telemetry only. Other Microsoft or third-party apps, such as System Center Configuration Manager, System Center Endpoint Protection, or System Center Data Protection Manager, might send data to their cloud services in ways that are inconsistent with this guide. Their publishers are responsible for notifying users of their privacy policies, telemetry controls, and so on. This article describes the types of telemetry we may gather, the ways you might manage it in your organization, and some examples of how telemetry can provide you with valuable insights into your enterprise deployments. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
-Use this article to make informed decisions about how you might configure telemetry in your organization. Telemetry is a term that means different things to different people and organizations. For the purpose of this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
+Use this article to make informed decisions about how you might configure telemetry in your organization. Telemetry is a term that means different things to different people and organizations. For this article, we discuss telemetry as system data that is uploaded by the Connected User Experience and Telemetry component. The telemetry data is used to help keep Windows devices secure by identifying malware trends and other threats and to help Microsoft improve the quality of Windows and Microsoft services.
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting telmhelp@microsoft.com.
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=configure-windows-telemetry-in-your-organization.md). 
 
 ## Overview
 
@@ -85,7 +85,8 @@ Windows and Windows Server telemetry gives every user a voice in the operating s
 
 Our ability to collect telemetry that drives improvements to Windows and Windows Server helps raise the bar for app and device driver quality. Telemetry helps us to quickly identify and fix critical reliability and security issues with apps and device drivers on given configurations. For example, we can identify an app that hangs on devices using a specific version of a video driver, allowing us to work with the app and device driver vendor to quickly fix the issue. The result is less downtime and reduced costs and increased productivity associated with troubleshooting these issues.
 
-A real-world example of how Windows telemetry helps us quickly identify and fix issues is a particular version of a video driver that was crashing on some devices running Windows 10, causing the device to reboot. We detected the problem in our telemetry, and immediately contacted the third-party developer who builds the video driver. Working with the developer, we provided an updated driver to Windows Insiders within 24 hours. Based on telemetry from the Windows Insiders’ devices, we were able to validate the new version of the video driver, and rolled it out to the broad public as an update the next day. Telemetry helped us find, fix, and resolve this problem in just 48 hours, providing a better user experience and reducing costly support calls.
+#### Real-world example of how Windows telemetry helps
+There was a version of a video driver that was crashing on some devices running Windows 10, causing the device to reboot. We detected the problem in our telemetry, and immediately contacted the third-party developer who builds the video driver. Working with the developer, we provided an updated driver to Windows Insiders within 24 hours. Based on telemetry from the Windows Insiders’ devices, we were able to validate the new version of the video driver, and rolled it out to the broad public as an update the next day. Telemetry helped us find, fix, and resolve this problem in just 48 hours, providing a better user experience and reducing costly support calls.
 
 ### Improve end-user productivity
 
@@ -130,7 +131,7 @@ Windows 10 and Windows Server 2016 includes the Connected User Experience and Te
 
 1. Operating system features and some management applications are instrumented to publish events and data. Examples of management applications include Virtual Machine Manager (VMM), Server Manager, and Storage Spaces.
 2. Events are gathered using public operating system event logging and tracing APIs.
-3. You can configure the telemetry level by using an MDM policy, Group Policy, or registry settings.
+3. You can configure the telemetry level by using MDM policy, Group Policy, or registry settings.
 4. The Connected User Experience and Telemetry component transmits the telemetry data.
 
 Info collected at the Enhanced and Full levels of telemetry is typically gathered at a fractional sampling rate, which can be as low as 1% of devices reporting data at those levels.
@@ -154,16 +155,14 @@ The following table defines the endpoints for telemetry services:
 
 ### Data use and access
 
-The principle of least privileged access guides access to telemetry data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft may share business reports with OEMs and third party partners that include aggregated and anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
+The principle of least privileged access guides access to telemetry data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft may share business reports with OEMs and third-party partners that include aggregated and anonymized telemetry information. Data-sharing decisions are made by an internal team including privacy, legal, and data management.
 
 ### Retention
 
-Microsoft believes in and practices information minimization. We strive to gather only the info we need, and store it for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Microsoft Store purchase history. 
+Microsoft believes in and practices information minimization. We strive to gather only the info we need and to store it only for as long as it’s needed to provide a service or for analysis. Much of the info about how Windows and apps are functioning is deleted within 30 days. Other info may be retained longer, such as error reporting data or Microsoft Store purchase history. 
 
 ## Telemetry levels
-
-
-This section explains the different telemetry levels in Windows 10, Windows Server 2016, and System Center. These levels are available on all desktop and mobile editions of Windows 10, with the exception of the **Security** level which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
+This section explains the different telemetry levels in Windows 10, Windows Server 2016, and System Center. These levels are available on all desktop and mobile editions of Windows 10, except for the **Security** level, which is limited to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016.
 
 The telemetry data is categorized into four levels:
 
@@ -188,8 +187,6 @@ The Security level gathers only the telemetry info that is required to keep Wind
 
 Windows Server Update Services (WSUS) and System Center Configuration Manager functionality is not affected at this level, nor is telemetry data about Windows Server features or System Center gathered.
 
- 
-
 The data gathered at this level includes:
 
 -   **Connected User Experience and Telemetry component settings**. If general telemetry data has been gathered and is queued, it is sent to Microsoft. Along with this telemetry, the Connected User Experience and Telemetry component may download a configuration settings file from Microsoft’s servers. This file is used to configure the Connected User Experience and Telemetry component itself. The data gathered by the client for this request includes OS information, device id (used to identify what specific device is requesting settings) and device class (for example, whether the device is server or desktop).
@@ -199,16 +196,12 @@ The data gathered at this level includes:
     > [!NOTE]  
     > You can turn off the MSRT infection report. No MSRT information is included if MSRT is not used. If Windows Update is turned off, MSRT will not be offered to users. For more info, see Microsoft KB article [891716](http://support.microsoft.com/kb/891716).
 
-     
-
 -   **Windows Defender/Endpoint Protection**. Windows Defender and System Center Endpoint Protection requires some information to function, including: anti-malware signatures, diagnostic information, User Account Control settings, Unified Extensible Firmware Interface (UEFI) settings, and IP address.
 
     > [!NOTE]  
-    > This reporting can be turned off and no information is included if a customer is using third party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender).
+    > This reporting can be turned off and no information is included if a customer is using third-party antimalware software, or if Windows Defender is turned off. For more info, see [Windows Defender](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender).
 
-    Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
-
-     
+    Microsoft recommends that Windows Update, Windows Defender, and MSRT remain enabled unless the enterprise uses alternative solutions such as Windows Server Update Services, System Center Configuration Manager, or a third-party antimalware solution. Windows Update, Windows Defender, and MSRT provide core Windows functionality such as driver and OS updates, including security updates.
 
 For servers with default telemetry settings and no Internet connectivity, you should set the telemetry level to **Security**. This stops data gathering for events that would not be uploaded due to the lack of Internet connectivity.
 
@@ -216,7 +209,7 @@ No user content, such as user files or communications, is gathered at the **Secu
 
 ### Basic level
 
-The Basic level gathers a limited set of data that’s critical for understanding the device and its configuration. This level also includes the **Security** level data. This level helps to identify problems that can occur on a particular hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. The Connected User Experience and Telemetry component does not gather telemetry data about System Center, but it can transmit telemetry for other non-Windows applications if they have user consent.
+The Basic level gathers a limited set of data that’s critical for understanding the device and its configuration. This level also includes the **Security** level data. This level helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version. The Connected User Experience and Telemetry component does not gather telemetry data about System Center, but it can transmit telemetry for other non-Windows applications if they have user consent.
 
 The normal upload range for the Basic telemetry level is between 109 KB - 159 KB per day, per device.
 
@@ -279,11 +272,40 @@ The data gathered at this level includes:
 
 -   **Some crash dump types**. All crash dump types, except for heap dumps and full dumps.
 
-If the Connected User Experience and Telemetry component detects a problem on Windows 10 that requires gathering more detailed instrumentation, the Connected User Experience and Telemetry component at the **Enhanced** telemetry level will only gather data about the events associated with the specific issue.
+If the Connected User Experience and Telemetry component detects a problem on Windows 10 that requires gathering more detailed instrumentation, the Connected User Experience and Telemetry component at the **Enhanced** telemetry level will only gather data about the events associated with the specific issue.
+
+#### Limit Enhanced diagnostic data to the minimum required by Windows Analytics
+Windows Analytics Device Health reports are powered by diagnostic data not included in the **Basic** level, such as crash reports and certain operating system events. In the past, organizations sending **Enhanced** or **Full** level diagnostic data were able to participate in Device Health. However, organizations that required detailed event and field level documentation were unable to move from **Basic** to **Enhanced**.
+
+In Windows 10, version 1709, we introduce the **Limit Enhanced diagnostic data to the minimum required by Windows Analytics** feature. When enabled, this feature lets you send only the following subset of **Enhanced** level diagnostic data. For more info about Device Health, see the [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor) topic.
+
+- **Operating system events.** Limited to a small set required for analytics reports and documented in the [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://docs.microsoft.com/windows/configuration/eventname) topic.
+
+- **Some crash dump types.** All crash dump types, except for heap and full dumps.
+
+**To turn on this behavior for devices**
+
+1.	Set the diagnostic data level to **Enhanced**, using either Group Policy or MDM.
+
+    a. Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data Collection and Preview Builds/Allow telemetry** setting to **2**.
+
+    -OR-
+
+    b. Using MDM, use the Policy CSP to set the **System/AllowTelemetry** value to **2**.
+
+    -AND-
+
+2.	Enable the **LimitEnhancedDiagnosticDataWindowsAnalytics** setting, using either Group Policy or MDM.
+
+    a.	Using Group Policy, set the **Computer Configuration/Administrative Templates/Windows Components/Data collection and Preview builds/Limit Enhanced diagnostic data to the minimum required by Windows Analytics** setting to **Enabled**.
+    
+    -OR-
+
+    b. Using MDM, use the Policy CSP to set the **System/LimitEnhancedDiagnosticDataWindowsAnalytics** value to **1**.
 
 ### Full level
 
-The Full level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the **Basic**, **Enhanced**, and **Security** levels.
+The **Full** level gathers data necessary to identify and to help fix problems, following the approval process described below. This level also includes data from the **Basic**, **Enhanced**, and **Security** levels.
 
 Additionally, at this level, devices opted in to the [Windows Insider Program](http://insider.windows.com) will send events, such as reliability and app responsiveness. that can show Microsoft how pre-release binaries and features are performing. These events help us make decisions on which builds are flighted. All devices in the [Windows Insider Program](http://insider.windows.com) are automatically set to this level.
 
@@ -301,7 +323,7 @@ However, before more data is gathered, Microsoft’s privacy governance team, in
 
 Sharing telemetry data with Microsoft provides many benefits to enterprises, so we do not recommend turning it off. For most enterprise customers, simply adjusting the telemetry level and managing specific components is the best option.
 
-Customers can set the telemetry level in both the user interface and with existing management tools. Users can change the telemetry level in the **Diagnostic and usage data** setting. In the Settings app, it is in **Privacy\Feedback & diagnostics**. They can choose between Basic, Enhanced, and Full. The Security level is not available.
+Customers can set the telemetry level in both the user interface and with existing management tools. Users can change the telemetry level in the **Diagnostic data** setting. In the **Settings** app, it is in **Privacy\Feedback & diagnostics**. They can choose between Basic, Enhanced, and Full. The Security level is not available.
 
 IT pros can use various methods, including Group Policy and Mobile Device Management (MDM), to choose a telemetry level.  If you’re using Windows 10 Enterprise, Windows 10 Education, or Windows Server 2016, the Security telemetry level is available when managing the policy. Setting the telemetry level through policy overrides users’ choices. The remainder of this section describes how to do that.
 
@@ -347,7 +369,7 @@ Use the [Policy Configuration Service Provider (CSP)](http://msdn.microsoft.com/
 
 ### Use Registry Editor to set the telemetry level
 
-Use Registry Editor to manually set the registry level on each device in your organization, or write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
+Use Registry Editor to manually set the registry level on each device in your organization or you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
 
 1.  Open Registry Editor, and go to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\DataCollection**.
 

@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 # Turn on the preview experience in Windows Defender ATP
 
@@ -22,13 +22,17 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-previewsettings-abovefoldlink)
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
 1. In the navigation pane, select **Preferences setup** > **Preview experience**.
+
+    ![Image of Preferences setup and preview experience](images/atp-preview-features.png)
+
+
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 ## Related topics

@@ -13,7 +13,7 @@ ms.date: 08/11/2017
 # Testing scenarios using Windows Defender Application Guard in your business or organization
 
 **Applies to:**
-- Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)
+- Windows 10 Enterpise edition, version 1709
 
 We've come up with a list of suggested testing scenarios that you can use to test Windows Defender Application Guard (Application Guard) in your organization.
 
@@ -22,20 +22,18 @@ You can see how an employee would use standalone mode with Application Guard.
 
 **To test Application Guard in Standalone mode**
 
-1.	Download the latest Windows Insider Program build (15257 or later).
+1.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
 
-2.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
-
-3.	Restart the device, start Microsoft Edge, and then click **New Application Guard window** from the menu.
+2.	Restart the device, start Microsoft Edge, and then click **New Application Guard window** from the menu.
 
     ![New Application Guard window setting option](images/appguard-new-window.png)
  
-4.	Wait for Application Guard to set up the isolated environment.
+3.	Wait for Application Guard to set up the isolated environment.
 
     >[!NOTE]
     >Starting Application Guard too quickly after restarting the device might cause it to take a bit longer to load. However, subsequent starts should occur without any perceivable delays. 
  
-5. Go to an untrusted, but safe URL (for this example, we used msn.com) and view the new Microsoft Edge window, making sure you see the Application Guard visual cues.
+4. Go to an untrusted, but safe URL (for this example, we used msn.com) and view the new Microsoft Edge window, making sure you see the Application Guard visual cues.
 
     ![Untrusted website running in Application Guard](images/appguard-visual-cues.png)
 
@@ -43,15 +41,13 @@ You can see how an employee would use standalone mode with Application Guard.
 How to install, set up, turn on, and configure Application Guard for Enterprise-managed mode.
 
 ### Install, set up, and turn on Application Guard
-Before you can use Application Guard in enterprise mode, you must install a version of Windows 10 that includes the functionality. Then, you must use Group Policy to set up the required settings.
+Before you can use Application Guard in enterprise mode, you must install Windows 10 Enterprise edition, version 1709, which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
-1.	Download the latest Windows Insider Program build (15257 or later).
+1.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
 
-2.	Install Application Guard, using the [installation](#install-set-up-and-turn-on-application-guard) steps in this guide.
+2.	Restart the device and then start Microsoft Edge.
 
-3.	Restart the device and then start Microsoft Edge.
-
-4.	Set up the Network Isolation settings in Group Policy:
+3.	Set up the Network Isolation settings in Group Policy:
 
     a.	Click on the **Windows** icon, type _Group Policy_, and then click **Edit Group Policy**.
     
@@ -67,22 +63,22 @@ Before you can use Application Guard in enterprise mode, you must install a vers
 
     ![Group Policy editor with Neutral resources setting](images/appguard-gp-network-isolation-neutral.png)
 
-5.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Turn On/Off Windows Defender Application Guard (WDAG)** setting.
+4.	Go to the **Administrative Templates\System\Windows Components\Windows Defender Application Guard\Turn on Windows Defender Application Guard in Enterprise Mode** setting.
 
-6.	Click **Enabled**.
+5.	Click **Enabled**.
 
     ![Group Policy editor with Turn On/Off setting](images/appguard-gp-turn-on.png)
 
     >[!NOTE]
     >Enabling this setting verifies that all the necessary settings are properly configured on your employee devices, including the network isolation settings set earlier in this scenario.
 
-7. Start Microsoft Edge and type _www.microsoft.com_.
+6. Start Microsoft Edge and type _www.microsoft.com_.
     
     After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you’ve marked as trusted and shows the site directly on the host PC instead of in Application Guard.
 
     ![Trusted website running on Microsoft Edge](images/appguard-turned-on-with-trusted-site.png)
 
-8.	In the same Microsoft Edge browser, type any URL that isn’t part of your trusted or neutral site lists.
+7.	In the same Microsoft Edge browser, type any URL that isn’t part of your trusted or neutral site lists.
  
     After you submit the URL, Application Guard determines the URL is untrusted and redirects the request to the hardware-isolated environment.
 

@@ -6,13 +6,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/29/2017
+ms.date: 11/01/2017
 ---
 
 # Policy CSP - DeviceLock
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 <hr/>
 
@@ -794,8 +793,8 @@ The number of authentication failures allowed before the device will be wiped. A
 
 -   1 - Digits only
 -   2 - Digits and lowercase letters are required
--   3 - Digits, lowercase letters, and uppercase letters are required
--   4 - Digits, lowercase letters, uppercase letters, and special characters are required
+-   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
+-   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop.
 
 <p style="margin-left: 20px">The default value is 1. The following list shows the supported values and actual enforced values:
 

@@ -54,6 +54,8 @@ The following table lists the different parts of Start and any applicable policy
 | Taskbar | MDM: **Start/NoPinningToTaskbar** | none |
 
 
+[Learn how to customize and export Start layout](customize-and-export-start-layout.md)
+
  ## Taskbar options
 
 Starting in Windows 10, version 1607, you can pin additional apps to the taskbar and remove default pinned apps from the taskbar. You can specify different taskbar configurations based on device locale or region.
@@ -111,7 +113,7 @@ The new taskbar layout for upgrades to Windows 10, version 1607 or later, will a
 - [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-start-layout-options-and-policies.md). 
 
 
 

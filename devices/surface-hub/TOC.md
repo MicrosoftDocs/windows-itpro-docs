@@ -37,6 +37,7 @@
 ### [Save your BitLocker key](save-bitlocker-key-surface-hub.md)
 ### [Connect other devices and display with Surface Hub](connect-and-display-with-surface-hub.md)
 ### [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md)
+### [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md)
 ### [Using a room control system](use-room-control-system-with-surface-hub.md)
 ## [PowerShell for Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md)
 ## [How Surface Hub addresses Wi-Fi Direct security issues](surface-hub-wifi-direct.md)

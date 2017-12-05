@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 # Create and build Power BI reports using Windows Defender ATP data
 

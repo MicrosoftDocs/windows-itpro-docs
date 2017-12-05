@@ -42,9 +42,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 You can watch the video to see how to use the Set up School PCs app, or follow the step-by-step guide. </br>
 
 <center><iframe src="https://www.youtube.com/embed/2ZLup_-PhkA" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
-<!--
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/2ZLup_-PhkA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
--->
+
 You can watch the descriptive audio version here: [Microsoft Education: Use the Set up School PCs app (DA)](https://www.youtube.com/watch?v=qqe_T2LkGsI)
 
 ## Tips for success
@@ -102,6 +100,9 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
 ## Prerequisites
 
 - [Download the latest Set up School PCs app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
+
+  The app supports these languages: Chinese (Simplified), Chinese (Traditional), Danish, Dutch, English (United Kingdom), English (United States), French, German, Italian, Japanese, Korean, Norwegian, Polish, Portuguese (Brazil), Russian, Spanish (Spain), Spanish (Mexico), Swedish, and Turkish.
+
 - Install the app on your work PC and make sure you're connected to your school's network. 
 - You must have Office 365 and Azure Active Directory.
 - You must have the Microsoft Store for Education configured.

@@ -11,6 +11,21 @@ author: brianlic-msft
 # Change history for device security
 This topic lists new and updated topics in the [Device security](index.md) documentation.
 
+## November 2017
+|New or changed topic |Description |
+|---------------------|------------|
+| [How to enable virtualization-based protection of code integrity](enable-virtualization-based-protection-of-code-integrity.md)| New. Explains how to enable HVCI.  |
+
+## October 2017
+|New or changed topic |Description |
+|---------------------|------------|
+| [TPM fundamentals](tpm/tpm-fundamentals.md)<br>[BitLocker Group Policy settings](bitlocker/bitlocker-group-policy-settings.md) | Explained the change to allow reducing the maximum PIN length from 6 characters to 4. |
+| [Windows security baselines](windows-security-baselines.md) | New. Security baselines added for Windows 10, versions 1703 and 1709. |
+| [Security Compliance Toolkit](security-compliance-toolkit-10.md) | New. Includes a link to tools for managing security baselines. |
+| [Get support for security baselines](get-support-for-security-baselines.md) | New. Explains supported versions for security baselines and other support questions.  |
+
+
+
 ## August 2017
 |New or changed topic |Description |
 |---------------------|------------|

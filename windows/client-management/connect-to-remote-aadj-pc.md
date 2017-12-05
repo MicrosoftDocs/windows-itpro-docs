@@ -8,6 +8,8 @@ ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerms
 ms.localizationpriority: medium
+ms.author: jdecker
+ms.date: 11/28/2017
 ---
 
 # Connect to remote Azure Active Directory-joined PC
@@ -17,7 +19,7 @@ ms.localizationpriority: medium
 
 -   Windows 10
 
-From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is joined to Azure Active Directory (Azure AD).
+From its release, Windows 10 has supported remote connections to PCs that are joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup).
 
 ![Remote Desktop Connection client](images/rdp.png)
 
@@ -33,7 +35,13 @@ From its release, Windows 10 has supported remote connections to PCs that are jo
 
   3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users to connect to the PC, you must allow remote connections for the local **Authenticated Users** group. Click **Select Users**.
   >[!NOTE]
-  >You cannot specify individual Azure AD accounts for remote connections.
+  >You can specify individual Azure AD accounts for remote connections by having the user sign in to the remote device at least once and then running the following PowerShell cmdlet:
+  >
+  >`net localgroup "Remote Desktop Users" /add "AzureAD\FirstnameLastname"`
+  >
+  >In Windows 10, version 1709, the user does not have to sign in to the remote device first.
+  >
+  >In Windows 10, version 1709, you can add other Azure AD users to the **Administrators** group on a device in **Settings** and restrict remote credentials to **Administrators**. If there is a problem connecting remotely, make sure that both devices are joined to Azure AD and that TPM is functioning properly on both devices.
 
   4. Enter **Authenticated Users**, then click **Check Names**. If the **Name Not Found** window opens, click **Locations** and select this PC.
 

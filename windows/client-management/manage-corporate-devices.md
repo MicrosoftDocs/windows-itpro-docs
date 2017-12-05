@@ -27,7 +27,7 @@ You can use the same management tools to manage all device types running Windows
 | --- | --- |
 | [Manage Windows 10 in your organization - transitioning to modern management](manage-windows-10-in-your-organization-modern-management.md) | Strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment | 
 | [Connect to remote Azure Active Directory-joined PC](connect-to-remote-aadj-pc.md) | How to use Remote Desktop Connection to connect to an Azure AD-joined PC |
-| [Manage Windows 10 and Windows Store tips, tricks, and suggestions](/windows/configuration/manage-tips-and-suggestions) | Options to manage user experiences to provide a consistent and predictable experience for employees |
+| [Manage Windows 10 and Microsoft Store tips, tricks, and suggestions](/windows/configuration/manage-tips-and-suggestions) | Options to manage user experiences to provide a consistent and predictable experience for employees |
 | [New policies for Windows 10](new-policies-for-windows-10.md) | New Group Policy settings added in Windows 10 |
 | [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md) | Group Policy settings that apply only to Windows 10 Enterprise and Windows 10 Education |
 | [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10) | Changes to the Group Policy settings that you use to manage Start |

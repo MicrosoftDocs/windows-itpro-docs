@@ -16,6 +16,11 @@ ms.date: 06/13/2017
 
 This topic lists new and updated topics in the [Client management](index.md) documentation for Windows 10 and Windows 10 Mobile.
 
+## RELEASE: Windows 10, version 1709
+
+The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update).
+
+
 ## July 2017 
 
 | New or changed topic | Description |

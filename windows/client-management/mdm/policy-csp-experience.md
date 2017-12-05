@@ -6,13 +6,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/29/2017
+ms.date: 11/01/2017
 ---
 
 # Policy CSP - Experience
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 <hr/>
 
@@ -176,14 +175,6 @@ ms.date: 09/29/2017
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
-<p style="margin-left: 20px">Benefit to the customer:
-
-<p style="margin-left: 20px">Before this setting, enterprise customers could not set up Cortana during out-of-box experience (OOBE) at all, even though Cortana is the “voice” that walks you through OOBE. By sending AllowCortana in initial enrollment, enterprise customers can allow their employees to see the Cortana consent page. This enables them to choose to use Cortana and make their lives easier and more productive.
-
-<p style="margin-left: 20px">Sample scenario:
-
-<p style="margin-left: 20px">An enterprise employee customer is going through OOBE and enjoys Cortana’s help in this process. The customer is happy to learn during OOBE that Cortana can help them be more productive, and chooses to set up Cortana before OOBE finishes. When their setup is finished, they are immediately ready to engage with Cortana to help manage their schedule and more.
-
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -323,7 +314,7 @@ ms.date: 09/29/2017
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Specifies whether to allow the user to delete the workplace account using the workplace control panel.
+<p style="margin-left: 20px">Specifies whether to allow the user to delete the workplace account using the workplace control panel. If the device is Azure Active Directory joined and MDM enrolled (e.g. auto-enrolled), which is majority of the case for Intune, then disabling the MDM unenrollment has no effect.
 
 > [!NOTE]
 > The MDM server can always remotely delete the account.

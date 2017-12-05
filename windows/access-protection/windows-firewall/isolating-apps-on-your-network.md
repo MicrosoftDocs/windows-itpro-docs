@@ -1,6 +1,6 @@
 ---
-title: Isolating Windows Store Apps on Your Network (Windows 10)
-description: Isolating Windows Store Apps on Your Network
+title: Isolating Microsoft Store Apps on Your Network (Windows 10)
+description: Isolating Microsoft Store Apps on Your Network
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,19 +8,19 @@ ms.pagetype: security
 author: brianlic-msft
 ---
 
-# Isolating Windows Store Apps on Your Network
+# Isolating Microsoft Store Apps on Your Network
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-When you add new devices to your network, you may want to customize your Windows Defender Firewall with Advanced Security configuration to isolate the network access of the new Windows Store apps that run on them. Developers who build Windows Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
+When you add new devices to your network, you may want to customize your Windows Defender Firewall with Advanced Security configuration to isolate the network access of the new Microsoft Store apps that run on them. Developers who build Microsoft Store apps can declare certain app capabilities that enable different classes of network access. A developer can decide what kind of network access the app requires and configure this capability for the app. When the app is installed on a device, appropriate firewall rules are automatically created to enable access. You can then customize the firewall configuration to further fine-tune this access if they desire more control over the network access for the app.
 
 For example, a developer can decide that their app should only connect to trusted local networks (such as at home or work), and not to the Internet. In this way, developers can define the scope of network access for their app. This network isolation prevents an app from accessing a network and a connection type (inbound or outbound) if the connection has not been configured for the app. Then the network administrator can customize the firewall to further restrict the resources that the app can access.
 
 The ability to set and enforce these network boundaries ensures that apps that get compromised can only access networks where they have been explicitly granted access. This significantly reduces the scope of their impact on other apps, the  device, and the network. In addition, apps can be isolated and protected from malicious access from the network.
 
-When creating new Windows Store apps, a developer can define the following network capabilities for their app:
+When creating new Microsoft Store apps, a developer can define the following network capabilities for their app:
 
 -   **Home\\Work Networking**
 
@@ -40,7 +40,7 @@ When creating new Windows Store apps, a developer can define the following netwo
 
 **In this topic**
 
-To isolate Windows Store apps on your network, you need to use Group Policy to define your network isolation settings and create custom Windows Store app firewall rules.
+To isolate Microsoft Store apps on your network, you need to use Group Policy to define your network isolation settings and create custom Microsoft Store app firewall rules.
 
 -   [Prerequisites](#prerequisites)
 
@@ -52,16 +52,16 @@ To isolate Windows Store apps on your network, you need to use Group Policy to d
 
 -   A domain controller is installed on your network, and your devices are joined to the Windows domain.
 
--   Your Windows Store app is installed on the client device.
+-   Your Microsoft Store app is installed on the client device.
 
--   The Remote Server Administration Tools (RSAT) are installed on your client device. When you perform the following steps from your client device, you can select your Windows Store app when you create Windows Defender Firewall rules.
+-   The Remote Server Administration Tools (RSAT) are installed on your client device. When you perform the following steps from your client device, you can select your Microsoft Store app when you create Windows Defender Firewall rules.
 
     >**Note:**  You can install the RSAT on your device running Windows 10 from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 
      
 ## Step 1: Define your network
 
-The **Home\\Work Networking** capability enables access to intranet resources. Administrators can use Group Policy settings to define the scope of the intranet. This ensures that Windows Store apps can access intranet resources appropriately.
+The **Home\\Work Networking** capability enables access to intranet resources. Administrators can use Group Policy settings to define the scope of the intranet. This ensures that Microsoft Store apps can access intranet resources appropriately.
 
 A network endpoint is considered part of the **Home\\Work Network** if:
 
@@ -111,7 +111,7 @@ All other endpoints that do not meet the previously stated criteria are consider
 
 ## Step 2: Create custom firewall rules
 
-Windows Store apps can declare many capabilities in addition to the network capabilities discussed previously. For example, apps can declare capabilities to access user identity, the local file system, and certain hardware devices.
+Microsoft Store apps can declare many capabilities in addition to the network capabilities discussed previously. For example, apps can declare capabilities to access user identity, the local file system, and certain hardware devices.
 
 The following table provides a complete list of the possible app capabilities.
 
@@ -134,7 +134,7 @@ The following table provides a complete list of the possible app capabilities.
 | **Webcam** | webcam| Provides access to the webcam's video feed.| 
 | **Other devices (represented by GUIDs)** | &lt;GUID&gt;| Includes specialized devices and Windows Portable Devices.| 
 
-You can create a Windows Defender Firewall policy that is scoped to a set of apps that use a specified capability or scoped to a specific Windows Store app.
+You can create a Windows Defender Firewall policy that is scoped to a set of apps that use a specified capability or scoped to a specific Microsoft Store app.
 
 For example, you could create a Windows Defender Firewall policy to block Internet access for any apps on your network that have the Documents Library capability.
 
@@ -180,7 +180,7 @@ For example, you could create a Windows Defender Firewall policy to block Intern
 
 19. Click **Apply to application packages only**, and then click **OK**.
 
-    >**Important:**  You must do this to ensure that the rule applies only to Windows Store apps and not to other apps. Desktop apps declare all capabilities by default, and this rule would apply to them if you do not configure it this way.
+    >**Important:**  You must do this to ensure that the rule applies only to Microsoft Store apps and not to other apps. Desktop apps declare all capabilities by default, and this rule would apply to them if you do not configure it this way.
 
 20. Click **OK** to close the **Properties** dialog box.
 

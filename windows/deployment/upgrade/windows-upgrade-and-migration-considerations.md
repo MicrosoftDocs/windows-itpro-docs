@@ -29,7 +29,7 @@ With Windows Easy Transfer, files and settings can be transferred using a netwo
 ### Migrate with the User State Migration Tool
 You can use USMT to automate migration during large deployments of the Windows operating system. USMT uses configurable migration rule (.xml) files to control exactly which user accounts, user files, operating system settings, and application settings are migrated and how they are migrated. You can use USMT for both *side-by-side* migrations, where one piece of hardware is being replaced, or *wipe-and-load* (or *refresh*) migrations, when only the operating system is being upgraded.
 
-## Upgrade and migration monsiderations
+## Upgrade and migration considerations
 Whether you are upgrading or migrating to a new version of Windows, you must be aware of the following issues and considerations:
 
 ### Application compatibility

@@ -6,7 +6,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-author: greg-lindsay
+author: DaniHalfin
+ms.author: daniha
+ms.date: 10/17/2017
 ---
 
 # Monitor Windows Updates and Windows Defender Antivirus with Update Compliance
@@ -15,7 +17,7 @@ author: greg-lindsay
 
 With Windows 10, organizations need to change the way they approach monitoring and deploying updates. Update Compliance is a powerful set of tools that enable organizations to monitor and track all important aspects of the new servicing strategy from Microsoft: [Windows as a Service](waas-overview.md).
 
-Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/en-us/documentation/articles/operations-management-suite-overview/).
+Update Compliance is a solution built within Operations Management Suite (OMS), a cloud-based monitoring and automation service which has a flexible servicing subscription based off data usage/retention. For more information about OMS, see [Operations Management Suite overview](http://azure.microsoft.com/documentation/articles/operations-management-suite-overview/).
 
 Update Compliance uses the Windows telemetry that is part of all Windows 10 devices. It collects system data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then sends this data privately to a secure cloud to be stored for analysis and usage within the solution. 
 
@@ -52,7 +54,7 @@ These steps are illustrated in following diagram:
 ![Update Compliance architecture](images/uc-01-wdav.png)
 
 >[!NOTE]
->This process assumes that Windows telemetry is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started#deploy-your-commercial-id-to-your-windows-10-devices.
+>This process assumes that Windows telemetry is enabled and you [have assigned your Commercial ID to devices](update-compliance-get-started.md#deploy-your-commercial-id-to-your-windows-10-devices).
 
 
 

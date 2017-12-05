@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 11/10/2017
 ---
 
 # Take response actions on a file
@@ -23,23 +23,32 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responddile-abovefoldlink) 
 
 Quickly respond to detected attacks by stopping and quarantining files or blocking a file. After taking action on files, you can check activity details on the Action center.
 
->[!NOTE]
-> These response actions are only available for machines on Windows 10, version  1703.
+>[!IMPORTANT]
+>These response actions are only available for machines on Windows 10, version 1703 or later.
 
 You can also submit files for deep analysis to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file.
 
 ## Stop and quarantine files in your network
 You can contain an attack in your organization by stopping the malicious process and quarantine the file where it was observed.
 
+>[!IMPORTANT]
+>You can only take this action if:
+> - The machine you're taking the action on is running Windows 10, version 1703 or later
+> - The file does not belong to trusted third-party publishers or not signed by Microsoft
+> - Windows Defender Antivirus must at least be running on Passive mode. For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
+
 The **Stop and Quarantine File** action includes stopping running processes, quarantining the files, and deleting persistency such as registry keys.
 
-The action takes effect on machines with the latest Windows 10, version 1703 where the file was observed in the last 30 days.
+The action takes effect on machines with Windows 10, version 1703 or later, where the file was observed in the last 30 days.
+
+>[!NOTE]
+>You’ll be able to remove the file from quarantine at any time.
 
 ### Stop and quarantine files
 1.	Select the file you want to stop and quarantine. You can select a file from any of the following views or use the Search box:
@@ -70,14 +79,14 @@ When the file is being removed from an endpoint, the following notification is s
 
 In the machine timeline, a new event is added for each machine where a file was stopped and quarantined.
 
->[!NOTE]
+>[!IMPORTANT]
 >The **Action** button is turned off for files signed by Microsoft as well as trusted third–party publishers to prevent the removal of critical system files and files used by important applications.
 
 ![Image of action button turned off](images/atp-file-action.png)
 
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
-### Remove file from quarantine
+## Remove file from quarantine
 You can roll back and remove a file from quarantine if you’ve determined that it’s clean after an investigation. Run the following command on each machine where the file was quarantined.
 
 1.	Open an elevated command–line prompt on the endpoint:
@@ -97,11 +106,12 @@ You can roll back and remove a file from quarantine if you’ve determined that 
 ## Block files in your network
 You can prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on machines in your organization.
 
->[!NOTE]
->This feature is only available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled.  For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
-This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. This response action is available for machines on Windows 10, version 1703 or later.
-
 >[!IMPORTANT]
+>- This feature is available if your organization uses Windows Defender Antivirus and Cloud–based protection is enabled. For more information, see [Manage cloud–based protection](../windows-defender-antivirus/deploy-manage-report-windows-defender-antivirus.md). </br></br>
+>- This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including _.exe_ and _.dll_ files. The coverage will be extended over time. 
+>- This response action is available for machines on Windows 10, version 1703 or later.
+
+>[!NOTE]
 > The PE file needs to be in the machine timeline for you to be able to take this action.  
 
 
@@ -136,7 +146,7 @@ When a file is being blocked on the endpoint, the following notification is disp
 
 For prevalent files in the organization, a warning is shown before an action is implemented to validate that the operation is intended.
 
-### Remove file from blocked list
+## Remove file from blocked list
 1.	Select the file you want to remove from the blocked list. You can select a file from any of the following views or use the Search box:
 
   - **Alerts** - Click the file links from the Description or Details in the Artifact timeline <br>
@@ -189,7 +199,7 @@ When the sample is collected, Windows Defender ATP runs the file in is a secure 
   - Search box - select **File** from the drop–down menu and enter the file name <br>
 2. In the **Deep analysis** section of the file view, click **Submit**.
 
-![You can only submit PE files in the file details section](images/submit-file.png)
+    ![You can only submit PE files in the file details section](images/submit-file.png)
 
 >**Note**&nbsp;&nbsp;Only PE files are supported, including _.exe_ and _.dll_ files
 
@@ -202,10 +212,10 @@ A progress bar is displayed and provides information on the different stages of 
 
 View the deep analysis report that Windows Defender ATP provides to see the details of the deep analysis that was conducted on the file you submitted. This feature is available in the file view context.
 
-You can view the comprehensive report that provides details on:
+You can view the comprehensive report that provides details on the following sections:
 
-– Observed behaviors
-– Associated artifacts
+- Behaviors
+- Observables
 
 The details provided can help you investigate if there are indications of a potential attack.
 
@@ -213,9 +223,9 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Click **See the report below**. Information on the analysis is displayed.
 
-![The deep analysis report shows detailed information across a number of categories](images/analysis-results.png)
+    ![The deep analysis report shows detailed information across a number of categories](images/analysis-results.png)
 
-### Troubleshooting deep analysis
+### Troubleshoot deep analysis
 
 If you encounter a problem when trying to submit a file, try each of the following troubleshooting steps.
 

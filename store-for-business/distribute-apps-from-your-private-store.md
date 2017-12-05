@@ -18,7 +18,7 @@ ms.localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-The private store is a feature in Microsoft Store for Business and Education that organizations receive during the signup process. When admins add apps to the private store, all employees in the organization can view and download the apps. Your private store is available as a tab in the Windows Store, and is usually named for your company or organization. Only apps with online licenses can be added to the private store.
+The private store is a feature in Microsoft Store for Business and Education that organizations receive during the signup process. When admins add apps to the private store, all employees in the organization can view and download the apps. Your private store is available as a tab in Micrsoft Store app, and is usually named for your company or organization. Only apps with online licenses can be added to the private store.
 
 You can make an app available in your private store when you acquire the app, or you can do it later from your inventory. Once the app is in your private store, employees can claim and install the app.
 
@@ -50,13 +50,13 @@ Employees can claim apps that admins added to the private store by doing the fol
 
 **To claim an app from the private store**
 
-1. Sign in to your computer with your Azure Active Directory (AD) credentials, and start the Windows Store app.
+1. Sign in to your computer with your Azure Active Directory (AD) credentials, and start Microsoft Store app.
 2. Click the **private store** tab.
 3. Click the app you want to install, and then click **Install**.
 
 ## Related topics
 - [Manage access to private store](manage-access-to-private-store.md)
-- [Configure access to Windows Store](/windows/configuration/stop-employees-from-using-the-windows-store)
+- [Configure access to Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store)
 
  
 

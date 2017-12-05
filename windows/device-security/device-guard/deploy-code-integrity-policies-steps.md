@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 10/20/2017
 ---
 
 # Deploy code integrity policies: steps
@@ -72,6 +73,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 |Matt Nelson | @enigma0x3| 
 |Oddvar Moe |@Oddvarmoe|
 |Alex Ionescu | @aionescu|
+|Lee Christensen|@tifkin_|
 
 <br />
 
@@ -133,6 +135,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
     <Deny  ID="ID_DENY_FSI_ANYCPU"    FriendlyName="fsiAnyCpu.exe"      FileName="fsiAnyCpu.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_MSHTA"         FriendlyName="mshta.exe"          FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
     <Deny  ID="ID_DENY_VISUALUIAVERIFY"         FriendlyName="visualuiaverifynative.exe"          FileName="visualuiaverifynative.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_RUNSCRIPTHELPER"         FriendlyName="runscripthelper.exe"                FileName="runscripthelper.exe" MinimumFileVersion="65535.65535.65535.65535" />
 
     <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6" />
     <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF" />
@@ -417,6 +420,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_FSI_ANYCPU" />
           <FileRuleRef RuleID="ID_DENY_MSHTA" />
           <FileRuleRef RuleID="ID_DENY_VISUALUIAVERIFY" />
+          <FileRuleRef RuleID="ID_DENY_RUNSCRIPTHELPER"/>
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />

@@ -34,7 +34,7 @@ When a device running Windows 10 Mobile is joined to Azure AD, the device can e
 
 -   Enable enterprise roaming of settings. (Not currently supported but on roadmap)
 
--   Use Windows Store for Business to target applications to users.
+-   Use Microsoft Store for Business to target applications to users.
 
 ## <a href="" id="bkmk-upgrade"></a>Are you upgrading current devices to Windows 10 Mobile?
 
@@ -58,7 +58,7 @@ Even though Azure AD Join on Windows 10 Mobile provides the best overall experi
 
 -   You can add access to Azure AD-backed resources on the device without resetting the device.
 
-However, neither of these methods provides SSO in the Windows Store or SSO to resources on-premises, and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=734996)
+However, neither of these methods provides SSO in the Microsoft Store or SSO to resources on-premises, and does not provide the ability to roam settings based on the Azure AD account using enterprise roaming. [Learn about enterprise state roaming in Azure AD.](https://go.microsoft.com/fwlink/p/?LinkId=734996)
 
 Using **Settings** &gt; **Accounts** &gt; **Your email and accounts** &gt; **Add work or school account**, users can add their Azure AD account to the device. Alternatively, a work account can be added when the user signs in to an application like Mail, Word, etc. If you [enable auto-enrollment in your MDM settings](https://go.microsoft.com/fwlink/p/?LinkID=691615), the device will automatically be enrolled in MDM.
 
@@ -188,10 +188,10 @@ To see the Notebooks that your Azure AD account has access to, tap **More Notebo
 
 ![see more notebooks](images/aadjonenote3.jpg)
 
-## Use Windows Store for Business
+## Use Microsoft Store for Business
 
 
-[Microsoft Store for Business](/microsoft-store/index) allows you to specify applications to be available to your users in the Windows Store application. These applications show up on a tab titled for your company. Applications approved in the Microsoft Store for Business portal can be installed by users.
+[Microsoft Store for Business](/microsoft-store/index) allows you to specify applications to be available to your users in the Microsoft Store application. These applications show up on a tab titled for your company. Applications approved in the Microsoft Store for Business portal can be installed by users.
 
 ![company tab on store](images/aadjwsfb.jpg)
 

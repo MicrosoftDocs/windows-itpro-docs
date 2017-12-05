@@ -82,7 +82,7 @@ Hiding notifications can be useful in situations where you cannot hide the entir
 > [!NOTE]
 > Hiding notifications will only occur on endpoints to which the policy has been deployed. Notifications related to actions that must be taken (such as a reboot) will still appear on the [System Center Configuration Manager Endpoint Protection monitoring dashboard and reports](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/monitor-endpoint-protection).
 
-See the [Customize the Windows Defender Security Center app for your organization](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center-antivirus.md) topic for instructions to add cusomt contact information to the notifications that users see on their machines.
+See the [Customize the Windows Defender Security Center app for your organization](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center-antivirus) topic for instructions to add custom contact information to the notifications that users see on their machines.
 
 **Use Group Policy to hide notifications:**
 

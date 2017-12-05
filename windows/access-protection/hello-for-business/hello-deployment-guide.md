@@ -6,10 +6,10 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: DaniHalfin
-ms.localizationpriority: high
-ms.author: daniha
-ms.date: 09/08/2017
+author: mikestephens-MS
+ms.author: mstephen
+localizationpriority: high
+ms.date: 10/20/2017
 ---
 # Windows Hello for Business Deployment Guide
 
@@ -28,7 +28,7 @@ This deployment guide is to guide you through deploying Windows Hello for Busine
 This guide assumes a baseline infrastructure exists that meets the requirements for your deployment.  For either hybrid or on-premises deployments, it is expected that you have: 
 * A well-connected, working network
 * Internet access
-   * Multifactor Authentication Server to support MFA during Windows Hello for Business provisioning
+* Multifactor Authentication Server to support MFA during Windows Hello for Business provisioning
 * Proper name resolution, both internal and external names
 * Active Directory and an adequate number of domain controllers per site to support authentication
 * Active Directory Certificate Services 2012 or later
@@ -47,7 +47,9 @@ Hybrid deployments are for enterprises that use Azure Active Directory.  On-prem
 The trust model determines how you want users to authentication to the on-premises Active Directory. Remember hybrid environments use Azure Active Directory and on-premises Active Directory. The key-trust model is for enterprises who do not want to issue end-entity certificates to their users and they have an adequate number of 2016 domain controllers in each site to support the authentication. The certificate-trust model is for enterprise that do want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today. The certificate trust model is also enterprise who are not ready to deploy Windows Server 2016 domain controllers.
 
 Following are the various deployment guides included in this topic:
+* [Hybrid Key Trust Deployment](hello-hybrid-key-trust.md)
 * [Hybrid Certificate Trust Deployment](hello-hybrid-cert-trust.md)
+* [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
 * [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 
 

@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 10/20/2017
 ---
 
 # Optional: Create a code signing certificate for code integrity policies

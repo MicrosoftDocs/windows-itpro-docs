@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: DulceMV
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Windows Defender Advanced Threat Protection settings
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-settings-abovefoldlink)
 
@@ -60,7 +60,7 @@ To set the time zone:
 3.	Select **Timezone UTC** or your local time zone, for example -7:00. 
 
 ### Regional settings
-To apply different date formats for Windows Defender ATP, use regional settings for IE and Edge. If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
+To apply different date formats for Windows Defender ATP, use regional settings for Internet Explorer (IE) and Microsoft Edge (Edge). If you're using another browser such as Google Chrome, follow the required steps to change the time and date settings for that browser. 
 
 
 **Internet Explorer (IE) and Microsoft Edge (Edge)**

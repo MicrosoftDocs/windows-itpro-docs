@@ -48,10 +48,10 @@ You can use the deployment goals to form one of these Windows Defender Firewall 
 
 In addition to descriptions and example for each design, you will find guidelines for gathering required data about your environment. You can then use these guidelines to plan and design your Windows Defender Firewall with Advanced Security deployment. After you read this guide, and finish gathering, documenting, and mapping your organization's requirements, you have the information that you need to begin deploying Windows Defender Firewall using the guidance in the Windows Defender Firewall with Advanced Security Deployment Guide.
 
-You can find the Windows Defender Firewal with Advanced Security
+You can find the Windows Defender Firewall with Advanced Security
 Deployment Guide at these locations:
 
--   (Web page)
+-   [Windows Defender Firewall with Advanced Security Deployment Guide](windows-firewall-with-advanced-security-deployment-guide.md)
 
 -   (Downloadable Word document)
 

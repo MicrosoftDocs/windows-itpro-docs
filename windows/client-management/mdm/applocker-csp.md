@@ -33,7 +33,7 @@ Defines the root node for the AppLocker configuration service provider.
 <a href="" id="applicationlaunchrestrictions"></a>**ApplicationLaunchRestrictions**  
 Defines restrictions for applications.
 
-> **Note**  
+> [!NOTE]  
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
 > 
 > In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
@@ -120,7 +120,7 @@ In addition, each **Grouping** node contains one or more of the following nodes:
 </tr>
 <tr class="even">
 <td><p><strong>StoreApps</strong></p></td>
-<td><p>Defines restrictions for running apps from the Windows Store.</p>
+<td><p>Defines restrictions for running apps from the Microsoft Store.</p>
 <p>Supported operations are Get, Add, Delete, and Replace.</p></td>
 </tr>
 <tr class="odd">
@@ -571,6 +571,10 @@ The following list shows the apps that may be included in the inbox.
 <td>906beeda-b7e6-4ddc-ba8d-ad5031223ef9</td>
 <td>906beeda-b7e6-4ddc-ba8d-ad5031223ef9</td>
 </tr>
+<tr>
+<td>Mixed Reality Portal</td>
+<td></td>
+<td>Microsoft.Windows.HolographicFirstRun</td>
 <tr class="even">
 <td>Money</td>
 <td>1e0440f1-7abf-4b9a-863d-177970eefb5e</td>
@@ -855,6 +859,46 @@ The following example blocks the usage of the map application.
   </SyncBody>
 </SyncML>	
 ```
+
+The following example disables the Mixed Reality Portal. In the example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
+
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+        <Add>
+            <CmdID>$CmdID$</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>./Vendor/MSFT/PolicyManager/My/ApplicationManagement/ApplicationRestrictions</LocURI>
+                </Target>
+                <Meta>
+                    <Format xmlns="syncml:metinf">chr</Format>
+                    <Type xmlns="syncml:metinf">text/plain</Type>
+                </Meta>
+                <Data>  
+                  &lt;RuleCollection Type="Appx" EnforcementMode="Enabled"&gt;
+                   &lt;FilePublisherRule Id="a9e18c21-ff8f-43cf-b9fc-db40eed693ba" Name="(Default Rule) All signed packaged apps" Description="Allows members of the Everyone group to run packaged apps that are signed." UserOrGroupSid="S-1-1-0" Action="Allow"&gt;
+                    &lt;Conditions&gt;
+                      &lt;FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*"&gt;
+                        &lt;BinaryVersionRange LowSection="0.0.0.0" HighSection="*" /&gt;
+                      &lt;/FilePublisherCondition&gt;
+                    &lt;/Conditions&gt;
+                  &lt;/FilePublisherRule&gt;
+                  &lt;FilePublisherRule Id="d26da4e7-0b01-484d-a8d3-d5b5341b2d55" Name="Block Mixed Reality Portal" Description="" UserOrGroupSid="S-1-1-0" Action="Deny"&gt;
+                   &lt;Conditions&gt;
+                     &lt;FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.HolographicFirstRun" BinaryName="*"&gt;
+                      &lt;BinaryVersionRange LowSection="*" HighSection="*" /&gt;
+                      &lt;/FilePublisherCondition&gt;
+                    &lt;/Conditions&gt;
+                  &lt;/FilePublisherRule&gt;
+                 &lt;/RuleCollection&gt;&gt;
+                </Data>
+            </Item>
+        </Add>
+        <Final/>
+    </SyncBody>
+</SyncML>
+``` 
 
 The following example for Windows 10 Mobile denies all apps and allows the following apps:
 

@@ -55,7 +55,7 @@ This district configuration has the following characteristics:
 * The classrooms connect to each other through multiple subnets.
 * All devices in each classroom connect to a single subnet.
 * All devices have high-speed, persistent connections to each other and to the Internet.
-* All teachers and students have access to Windows Store or Windows Store for Business.
+* All teachers and students have access to Microsoft Store or Microsoft Store for Business.
 * You install a 64-bit version of Windows 10 on the admin device.
 * You install the Windows Assessment and Deployment Kit (Windows ADK) on the admin device.
 * You install the 64-bit version of the Microsoft Deployment Toolkit (MDT) 2013 Update 2 on the admin device.
@@ -125,7 +125,7 @@ The high-level process for deploying and configuring devices within individual c
 
 3. On the admin device, configure integration between on-premises AD DS and Azure AD (if you have an on premises AD DS configuration).
 
-4. On the admin device, create and configure a Windows Store for Business portal.
+4. On the admin device, create and configure a Microsoft Store for Business portal.
 
 5. On the admin device, prepare for management of the Windows 10 devices after deployment.
 
@@ -149,7 +149,7 @@ In this district, you looked at the final configuration of your individual class
 
 ## Select deployment and management methods
 
-Now that you know what a typical district looks like and how to configure the devices in your district, you need to make a few decisions. You must select the methods you’ll use to deploy Windows 10 to the faculty and student devices in your district. Next, you must select the method you’ll use to manage configuration settings for your users and devices. Finally, you must select the method you’ll use to manage Windows desktop apps, Windows Store apps, and software updates.
+Now that you know what a typical district looks like and how to configure the devices in your district, you need to make a few decisions. You must select the methods you’ll use to deploy Windows 10 to the faculty and student devices in your district. Next, you must select the method you’ll use to manage configuration settings for your users and devices. Finally, you must select the method you’ll use to manage Windows desktop apps, Microsoft Store apps, and software updates.
 
 ### Typical deployment and management scenarios
 
@@ -196,7 +196,7 @@ To deploy Windows 10 and your apps, you can use MDT by itself or System Center C
 
 <tr>
 <td valign="top">MDT</td>
-<td><p>MDT is an on-premises solution that supports initial operating system deployment and upgrade. You can use MDT to deploy and upgrade Windows 10. In addition, you can initially deploy Windows desktop and Windows Store apps and software updates.<br/><br/>
+<td><p>MDT is an on-premises solution that supports initial operating system deployment and upgrade. You can use MDT to deploy and upgrade Windows 10. In addition, you can initially deploy Windows desktop and Microsoft Store apps and software updates.<br/><br/>
 Select this method when you:</p>
 <ul>
 <li>Want to deploy Windows 10 to institution-owned and personal devices. (Devices need not be domain joined.)</li>
@@ -229,7 +229,7 @@ Select this method when you:</p>
 
 <tr>
 <td valign="top">System Center Configuration Manager</td>
-<td><p>System Center Configuration Manager is an on-premises solution that supports operating system management throughout the entire operating system life cycle. You can use System Center Configuration Manager to deploy and upgrade Windows 10. In addition, you can manage Windows desktop and Windows Store apps and software updates as well as provide antivirus and antimalware protection.<br/><br/>
+<td><p>System Center Configuration Manager is an on-premises solution that supports operating system management throughout the entire operating system life cycle. You can use System Center Configuration Manager to deploy and upgrade Windows 10. In addition, you can manage Windows desktop and Microsoft Store apps and software updates as well as provide antivirus and antimalware protection.<br/><br/>
 Select this method when you:</p>
 <ul>
 <li>Want to deploy Windows 10 to institution-owned devices that are domain joined (personal devices are typically not domain joined).</li>
@@ -240,7 +240,7 @@ Select this method when you:</p>
 <p>The advantages of this method are that:</p>
 <ul>
 <li>You can deploy Windows 10 operating systems.</li>
-<li>You can manage (deploy) Windows desktop and Windows Store apps throughout entire application life cycle.</li>
+<li>You can manage (deploy) Windows desktop and Microsoft Store apps throughout entire application life cycle.</li>
 <li>You can manage software updates for Windows 10 and apps.</li>
 <li>You can manage antivirus and malware protection.</li>
 <li>It scales to large number of users and devices.</li>
@@ -381,7 +381,7 @@ Use the information in Table 6 to determine which combination of app and update 
 
 <tr>
 <td valign="top">System Center Configuration Manager</td>
-<td><p>System Center Configuration Manager is an on-premises solution that allows you to specify configuration settings for Windows 10; previous versions of Windows; and other operating systems, such as iOS or Android, through integration with Intune.<br/><br/>System Center Configuration Manager supports application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager. You can also manage Windows desktop and Windows Store applications.<br/><br/>Select this method when you:</p>
+<td><p>System Center Configuration Manager is an on-premises solution that allows you to specify configuration settings for Windows 10; previous versions of Windows; and other operating systems, such as iOS or Android, through integration with Intune.<br/><br/>System Center Configuration Manager supports application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager. You can also manage Windows desktop and Microsoft Store applications.<br/><br/>Select this method when you:</p>
 <ul>
 <li>Selected System Center Configuration Manager to deploy Windows 10.</li>
 <li>Want to manage institution-owned devices that are domain joined (personally owned devices are typically not domain joined).</li>
@@ -441,7 +441,7 @@ Select this method when you:</p>
 <tr>
 <td valign="top">System Center Configuration Manager and Intune (hybrid)</td>
 <td><p>System Center Configuration Manager and Intune together extend System Center Configuration Manager from an on-premises management system for domain-joined devices to a solution that can manage devices regardless of their location and connectivity options. This hybrid option provides the benefits of both System Center Configuration Manager and Intune.<br/><br/>
-System Center Configuration Manager and Intune in the hybrid configuration allow you to support application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager, and you can manage Windows desktop and Windows Store applications for both institution-owned and personal devices.<br/><br/>
+System Center Configuration Manager and Intune in the hybrid configuration allow you to support application management throughout the entire application life cycle. You can deploy, upgrade, manage multiple versions, and retire applications by using System Center Configuration Manager, and you can manage Windows desktop and Microsoft Store applications for both institution-owned and personal devices.<br/><br/>
 Select this method when you:</p>
 <ul>
 <li>Selected System Center Configuration Manager to deploy Windows 10.</li>
@@ -488,7 +488,7 @@ Record the app and update management methods that you selected in Table 7.
 *Table 7. App and update management methods selected*
 
 #### Summary
-In this section, you selected the methods that you will use to deploy Windows 10 to the faculty and student devices in your district. You selected the methods that you will use to manage configuration settings. Finally, you selected the methods that you will use to manage Windows desktop apps, Windows Store apps, and software updates.
+In this section, you selected the methods that you will use to deploy Windows 10 to the faculty and student devices in your district. You selected the methods that you will use to manage configuration settings. Finally, you selected the methods that you will use to manage Windows desktop apps, Microsoft Store apps, and software updates.
 
 ## Prepare the admin device
 
@@ -526,7 +526,7 @@ For more information about how to create a deployment share, see [Step 3-1: Crea
 
 >**Note**&nbsp;&nbsp;If you selected System Center Configuration Manager to deploy Windows 10 or manage your devices (in the [Select the deployment methods](#select-the-deployment-methods) and [Select the configuration setting management methods](#select-the-configuration-setting-management-methods) sections, respectively), perform the steps in this section. Otherwise, skip this section and continue to the next.
 
-You can use System Center Configuration Manager to manage Windows 10 deployments, Windows desktop apps, Windows Store apps, and software updates. To manage System Center Configuration Manager, you use the Configuration Manager console. You must install the Configuration Manager console on every device you use to manage System Center Configuration Manager (specifically, the admin device). The Configuration Manager console is automatically installed when you install System Center Configuration Manager primary site servers.
+You can use System Center Configuration Manager to manage Windows 10 deployments, Windows desktop apps, Microsoft Store apps, and software updates. To manage System Center Configuration Manager, you use the Configuration Manager console. You must install the Configuration Manager console on every device you use to manage System Center Configuration Manager (specifically, the admin device). The Configuration Manager console is automatically installed when you install System Center Configuration Manager primary site servers.
 
 For more information about how to install the Configuration Manager console, see [Install System Center Configuration Manager consoles](https://technet.microsoft.com/en-us/library/mt590197.aspx#bkmk_InstallConsole).
 
@@ -823,7 +823,7 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 |-------|---------------------------------------------|
 |Ldifde.exe|This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript|This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/en-us/scriptcenter/dd939958.aspx).|
-|Windows PowerShell|This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
+|Windows PowerShell|This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
 
 *Table 12. AD DS bulk-import account methods*
 
@@ -835,7 +835,7 @@ After you have selected your user and group account bulk import method, you’re
 |-------|-------------------|
 |Ldifde.exe |Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript |VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).|
-|Windows PowerShell |Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx). |
+|Windows PowerShell |Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx). |
 
 *Table 13. Source file format for each bulk import method*
 
@@ -849,7 +849,7 @@ For more information about how to import user accounts into AD DS by using:
 
 * Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).
 * VBScript, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).
-* Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
+* Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
 
 #### Summary
 
@@ -908,62 +908,62 @@ If you enabled Azure AD Premium in the [Enable Azure AD Premium](#enable-azure-a
 
 For more information about assigning user licenses for Azure AD Premium, see [How to assign EMS/Azure AD Premium licenses to user accounts](https://channel9.msdn.com/Series/Azure-Active-Directory-Videos-Demos/How-to-assign-Azure-AD-Premium-Licenses-to-user-accounts).
 
-## Create and configure a Windows Store for Business portal
+## Create and configure a Microsoft Store for Business portal
 
-Windows Store for Business allows you to create your own private portal to manage Windows Store apps in your institution. With Windows Store for Business, you can:
+Microsoft Store for Business allows you to create your own private portal to manage Microsoft Store apps in your institution. With Microsoft Store for Business, you can:
 
-* Find and acquire Windows Store apps.
+* Find and acquire Microsoft Store apps.
 * Manage apps, app licenses, and updates.
 * Distribute apps to your users.
 
 
-For more information about Windows Store for Business, see [Windows Store for Business overview](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview).
+For more information about Microsoft Store for Business, see [Microsoft Store for Business overview](https://technet.microsoft.com/itpro/windows/whats-new/windows-store-for-business-overview).
 
-This section shows you how to create a Windows Store for Business portal and configure it for your school.
+This section shows you how to create a Microsoft Store for Business portal and configure it for your school.
 
-### Create and configure your Windows Store for Business portal
+### Create and configure your Microsoft Store for Business portal
 
-To create and configure your Windows Store for Business portal, simply use the administrative account for your Office 365 subscription to sign in to Windows Store for Business. Windows Store for Business automatically creates a portal for your institution and uses your account as its administrator.
+To create and configure your Microsoft Store for Business portal, simply use the administrative account for your Office 365 subscription to sign in to Microsoft Store for Business. Microsoft Store for Business automatically creates a portal for your institution and uses your account as its administrator.
 
-#### To create and configure a Windows Store for Business portal
+#### To create and configure a Microsoft Store for Business portal
 
-1. In Microsoft Edge or Internet Explorer, type `http://microsoft.com/business-store` in the address bar.
+1. In Microsoft Edge or Internet Explorer, type `https://microsoft.com/business-store` in the address bar.
 
-2. On the **Windows Store for Business** page, click **Sign in with an organizational account**.
+2. On the **Microsoft Store for Business** page, click **Sign in with an organizational account**.
 
-3. On the Windows Store for Business sign-in page, use the administrative account for the Office 365 subscription you created in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) section to sign in.
+3. On the Microsoft Store for Business sign-in page, use the administrative account for the Office 365 subscription you created in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) section to sign in.
 
-4. On the **Windows Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**.
+4. On the **Microsoft Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**.
 
-5. In the **Welcome to the Windows Store for Business** dialog box, click **OK**.
+5. In the **Welcome to the Microsoft Store for Business** dialog box, click **OK**.
 
-After you create the Windows Store for Business portal, configure it by using the commands in the **Settings** menu listed in Table 14. Depending on your institution, you may (or may not) need to change these settings to further customize your portal.
+After you create the Microsoft Store for Business portal, configure it by using the commands in the **Settings** menu listed in Table 14. Depending on your institution, you may (or may not) need to change these settings to further customize your portal.
 
 |Menu selection|What can you do in this menu|
 |--------------|----------------------------|
-|Account information |Displays information about your Windows Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure Management Portal. For more information, see [Update Windows Store for Business account settings](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings).|
+|Account information |Displays information about your Microsoft Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure Management Portal. For more information, see [Update Microsoft Store for Business account settings](https://technet.microsoft.com/itpro/windows/manage/update-windows-store-for-business-account-settings).|
 |Device Guard signing |Allows you to upload and sign Device Guard catalog and policy files. For more information about Device Guard, see [Device Guard deployment guide](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide).|
 |LOB publishers |Allows you to add line-of-business (LOB) publishers that can then publish apps to your private store. LOB publishers are usually internal developers or software vendors that are working with your institution. For more information, see [Working with line-of-business apps](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps).|
 |Management tools |Allows you to add tools that you can use to distribute (deploy) apps in your private store. For more information, see [Distribute apps with a management tool](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-with-management-tool).|
-|Offline licensing|Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see the “Licensing model: online and offline licenses” section in [Apps in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).|
-|Permissions |Allows you to grant other users in your organization the ability to buy, manage, and administer your Windows Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
-|Private store |Allows you to change the organization name used in your Windows Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
+|Offline licensing|Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see the “Licensing model: online and offline licenses” section in [Apps in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/apps-in-windows-store-for-business#licensing-model).|
+|Permissions |Allows you to grant other users in your organization the ability to buy, manage, and administer your Microsoft Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business).|
+|Private store |Allows you to change the organization name used in your Microsoft Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store).|
 
-*Table 14. Menu selections to configure Windows Store for Business settings*
+*Table 14. Menu selections to configure Microsoft Store for Business settings*
 
 ### Find, acquire, and distribute apps in the portal
 
-Now that you have created your Windows Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this from the **Inventory** page in Windows Store for Business.
+Now that you have created your Microsoft Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this from the **Inventory** page in Microsoft Store for Business.
 
->**Note**&nbsp;&nbsp;Your educational institution can now use a credit card or purchase order to pay for apps in Windows Store for Business.
+>**Note**&nbsp;&nbsp;Your educational institution can now use a credit card or purchase order to pay for apps in Microsoft Store for Business.
 
 You can deploy apps to individual users or make apps available to users through your private store. Deploying apps to individual users restricts the app to those specified users. Making apps available through your private store allows all your users to install the apps.
 
-For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Windows Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
+For more information about how to find, acquire, and distribute apps in the portal, see [App inventory management for Microsoft Store for Business](https://technet.microsoft.com/itpro/windows/manage/app-inventory-managemement-windows-store-for-business).
 
 #### Summary
 
-At the end of this section, you should have a properly configured Windows Store for Business portal. You have also found and acquired your apps from Windows Store. Finally, you should have deployed all your Windows Store apps to your users. Now, you’re ready to deploy Windows Store apps to your users.
+At the end of this section, you should have a properly configured Microsoft Store for Business portal. You have also found and acquired your apps from Microsoft Store. Finally, you should have deployed all your Microsoft Store apps to your users. Now, you’re ready to deploy Microsoft Store apps to your users.
 
 ## Plan for deployment
 
@@ -987,7 +987,7 @@ Depending on your school’s requirements, you may need any combination of the f
   * Upgrade institution-owned devices to Windows 10 Education.
   * Deploy new instances of Windows 10 Education so that new devices have a known configuration.
 
->**Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Windows Store for Business—features not available in Windows 10 Home. For more information about how to upgrade Windows 10 Home to Windows 10 Pro or Windows 10 Education, see [Windows 10 edition upgrade](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades).
+>**Note**&nbsp;&nbsp;Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business—features not available in Windows 10 Home. For more information about how to upgrade Windows 10 Home to Windows 10 Pro or Windows 10 Education, see [Windows 10 edition upgrade](https://technet.microsoft.com/itpro/windows/deploy/windows-10-edition-upgrades).
 
 For more information about the Windows 10 editions, see [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare).
 
@@ -1075,7 +1075,7 @@ At the end of this section, you should know the Windows 10 editions and processo
 
 ## Prepare for deployment
 
-Before you can deploy Windows 10 and your apps to devices, you need to prepare your MDT environment, Windows Deployment Services, and System Center Configuration Manager (if you selected it to do operating system deployment in the [Select the deployment methods](#select-the-deployment-methods) section). In this section, you ensure that the deployment methods you selected in the [Select the deployment methods](#select-the-deployment-methods) section have the necessary Windows 10 editions and versions, Windows desktop apps, Windows Store apps, and device drivers.
+Before you can deploy Windows 10 and your apps to devices, you need to prepare your MDT environment, Windows Deployment Services, and System Center Configuration Manager (if you selected it to do operating system deployment in the [Select the deployment methods](#select-the-deployment-methods) section). In this section, you ensure that the deployment methods you selected in the [Select the deployment methods](#select-the-deployment-methods) section have the necessary Windows 10 editions and versions, Windows desktop apps, Microsoft Store apps, and device drivers.
 
 ### Configure the MDT deployment share
 
@@ -1110,18 +1110,18 @@ Import device drivers for each device in your institution. For more information 
 </tr>
 
 <tr>
-<td valign="top">3. Create MDT applications for Windows Store apps</td>
-<td>Create an MDT application for each Windows Store app you want to deploy. You can deploy Windows Store apps by using <i>sideloading</i>, which allows you to use the **Add-AppxPackage** Windows PowerShell cmdlet to deploy the .appx files associated with the app (called *provisioned apps*). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>
-<p>Prior to sideloading the .appx files, obtain the Windows Store .appx files that you will use to deploy (sideload) the apps in your provisioning package. For apps in Windows Store, you will need to obtain the .appx files by performing one of the following tasks:</p>
+<td valign="top">3. Create MDT applications for Microsoft Store apps</td>
+<td>Create an MDT application for each Microsoft Store app you want to deploy. You can deploy Microsoft Store apps by using <i>sideloading</i>, which allows you to use the **Add-AppxPackage** Windows PowerShell cmdlet to deploy the .appx files associated with the app (called *provisioned apps*). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>
+<p>Prior to sideloading the .appx files, obtain the Microsoft Store .appx files that you will use to deploy (sideload) the apps in your provisioning package. For apps in Microsoft Store, you will need to obtain the .appx files by performing one of the following tasks:</p>
 <ul>
-<li>For offline-licensed apps, download the .appx files from the Windows Store for Business.</li>
+<li>For offline-licensed apps, download the .appx files from the Microsoft Store for Business.</li>
 <li>For apps that are not offline licensed, obtain the .appx files from the app software vendor directly.</li>
 </ul>
-<br/>If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Windows Store or Windows Store for Business.<br/><br/>
-If you have Intune or System Center Configuration Manager, you can deploy Windows Store apps after you deploy Windows 10, as described in the [Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune) and [Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) sections. This method provides granular deployment of Windows Store apps, and you can use it for ongoing management of Windows Store apps. This is the preferred method of deploying and managing Windows Store apps.<br/><br/>
-In addition, you must prepare your environment for sideloading Windows Store apps. For more information about how to:<br/><br/>
+<br/>If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Microsoft Store or Microsoft Store for Business.<br/><br/>
+If you have Intune or System Center Configuration Manager, you can deploy Microsoft Store apps after you deploy Windows 10, as described in the [Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune) and [Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) sections. This method provides granular deployment of Microsoft Store apps, and you can use it for ongoing management of Microsoft Store apps. This is the preferred method of deploying and managing Microsoft Store apps.<br/><br/>
+In addition, you must prepare your environment for sideloading Microsoft Store apps. For more information about how to:<br/><br/>
 <ul>
-<li>Prepare your environment for sideloading, see [Try it out: sideload Windows Store apps](https://technet.microsoft.com/en-us/windows/jj874388.aspx).</li>
+<li>Prepare your environment for sideloading, see [Try it out: sideload Microsoft Store apps](https://technet.microsoft.com/en-us/windows/jj874388.aspx).</li>
 <li>Create an MDT application, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).</li>
 </ul>
 
@@ -1198,9 +1198,9 @@ Deploying a new System Center Configuration Manager infrastructure is beyond the
     Create a System Center Configuration Manager driver package for each device type in your district. For more information, see [Manage drivers in System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627934.aspx).
 4. Add Windows apps.
 
-    Install the Windows apps (Windows desktop and Windows Store apps) that you want to deploy after the task sequence deploys your customized image (a thick, reference image that include Windows 10 and your core Windows desktop apps). These apps are in addition to the apps included in your reference image. You can only deploy Windows Store apps after you deploy Windows 10 because you cannot capture Windows Store apps in a reference image. Windows Store apps target users, not devices.
+    Install the Windows apps (Windows desktop and Microsoft Store apps) that you want to deploy after the task sequence deploys your customized image (a thick, reference image that include Windows 10 and your core Windows desktop apps). These apps are in addition to the apps included in your reference image. You can only deploy Microsoft Store apps after you deploy Windows 10 because you cannot capture Microsoft Store apps in a reference image. Microsoft Store apps target users, not devices.
 
-    Create a System Center Configuration Manager application for each Windows desktop or Windows Store app that you want to deploy after you apply the reference image to a device. For more information, see [Deploy and manage applications with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627959.aspx).
+    Create a System Center Configuration Manager application for each Windows desktop or Microsoft Store app that you want to deploy after you apply the reference image to a device. For more information, see [Deploy and manage applications with System Center Configuration Manager](https://technet.microsoft.com/en-us/library/mt627959.aspx).
 
 ### Configure Window Deployment Services for MDT
 
@@ -1278,12 +1278,12 @@ You initially configured the MDT deployment share in the [Configure the MDT depl
     For more information, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
 2. Create an MDT application for each desktop app you want to include in your reference image.
 
-    You create MDT applications by using the New Application Wizard in the Deployment Workbench. As part of creating the MDT application, specify the command-line parameters used to install the app without user intervention (unattended installation). For more information, see [Create a New Application in the Deployment Workbench](http://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).
+    You create MDT applications by using the New Application Wizard in the Deployment Workbench. As part of creating the MDT application, specify the command-line parameters used to install the app without user intervention (unattended installation). For more information, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).
 3. Customize the task sequence to install the MDT applications that you created in step 2.
 
     You can add an **Install Application** task sequence step to your task sequence. Then, you can customize the **Install Application** task sequence step to install a specific app, which automatically installs the app with no user interaction required when your run the task sequence.
 
-    You need to add an **Install Application** task sequence step for each app you want to include in your reference image. For more information, see [Customize Application Installation in Task Sequences](http://technet.microsoft.com/en-us/library/dn759415.aspx#CustomizeApplicationInstallationinTaskSequences).
+    You need to add an **Install Application** task sequence step for each app you want to include in your reference image. For more information, see [Customize Application Installation in Task Sequences](https://technet.microsoft.com/en-us/library/dn759415.aspx#CustomizeApplicationInstallationinTaskSequences).
 4. Create a selection profile that contains the drivers for the device.
 
     A *selection profile* lets you select specific device drivers. For example, if you want to deploy the device drivers for a Surface Pro 4 device, you can create a selection profile that contains only the Surface Pro 4 device drivers.
@@ -1397,10 +1397,10 @@ Use the information in Table 17 to help you determine whether you need to config
 </tr>
 
 <tr>
-<td valign="top">Control Windows Store access</td>
-<td>You can control access to Windows Store and whether existing Windows Store apps receive updates. You can only disable the Windows Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>
-**Group Policy.** To disable the Windows Store app, use the **Turn off the Store Application** group policy setting. To prevent Windows Store apps from receiving updates, use the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Windows Store in my enterprise environment?](https://technet.microsoft.com/en-us/library/hh832040.aspx#BKMK_UseGP).<br/><br/>
-**Intune.** To enable or disable Windows Store access, use the **Allow application store** policy setting in the **Apps** section of a **Windows 10 General Configuration policy**.
+<td valign="top">Control Microsoft Store access</td>
+<td>You can control access to Microsoft Store and whether existing Microsoft Store apps receive updates. You can only disable the Microsoft Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>
+**Group Policy.** To disable the Microsoft Store app, use the **Turn off the Store Application** group policy setting. To prevent Microsoft Store apps from receiving updates, use the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Microsoft Store in my enterprise environment?](https://technet.microsoft.com/en-us/library/hh832040.aspx#BKMK_UseGP).<br/><br/>
+**Intune.** To enable or disable Microsoft Store access, use the **Allow application store** policy setting in the **Apps** section of a **Windows 10 General Configuration policy**.
 
 </td>
 </tr>
@@ -1499,7 +1499,7 @@ For more information about Intune, see [Microsoft Intune Documentation](https://
 
 If you selected to deploy and manage apps by using System Center Configuration Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager) section.
 
-You can use Intune to deploy Windows Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
+You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
 
 For more information about how to configure Intune to manage your apps, see the following resources:
 
@@ -1511,7 +1511,7 @@ For more information about how to configure Intune to manage your apps, see the 
 
 ### Deploy and manage apps by using System Center Configuration Manager
 
-You can use System Center Configuration Manager to deploy Windows Store and Windows desktop apps. System Center Configuration Manager allows you to create a System Center Configuration Manager application that you can use to deploy apps to different devices (such as Windows 10 desktop, Windows 10 Mobile, iOS, or Android devices) by using *deployment types*. You can think of a System Center Configuration Manager application as a box. You can think of deployment types as one or more sets of installation files and installation instructions within that box.
+You can use System Center Configuration Manager to deploy Microsoft Store and Windows desktop apps. System Center Configuration Manager allows you to create a System Center Configuration Manager application that you can use to deploy apps to different devices (such as Windows 10 desktop, Windows 10 Mobile, iOS, or Android devices) by using *deployment types*. You can think of a System Center Configuration Manager application as a box. You can think of deployment types as one or more sets of installation files and installation instructions within that box.
 
 For example, you could create a Skype application that contains a deployment type for Windows 10 desktop, Windows 10 Mobile, iOS, and Android. You can deploy the one application to multiple device types.
 
@@ -1560,7 +1560,7 @@ Prior to deployment of Windows 10, complete the tasks in Table 18. Most of these
 |----|----|
 |1. |Ensure that the target devices have sufficient system resources to run Windows 10.|
 |2. |Identify the necessary devices drivers, and then import them into the MDT deployment share or System Center Configuration Manager.|
-|3. |For each Windows Store and Windows desktop app, create an MDT application or System Center Configuration Manager application.|
+|3. |For each Microsoft Store and Windows desktop app, create an MDT application or System Center Configuration Manager application.|
 |4. |Notify the students and faculty about the deployment.|
 
 *Table 18. Deployment preparation checklist*
@@ -1616,7 +1616,7 @@ As a final quality control step, verify the device configuration to ensure that 
 * Windows Update is active and current with software updates.
 * Windows Defender is active and current with malware signatures.
 * The SmartScreen Filter is active.
-* All Windows Store apps are properly installed and updated.
+* All Microsoft Store apps are properly installed and updated.
 * All Windows desktop apps are properly installed and updated.
 * Printers are properly configured.
 
@@ -1735,9 +1735,9 @@ For more information, see:
 </tr>
 
 <tr>
-<td>Install new or update existing Windows Store apps used in the curriculum.<br/><br/>
-Windows Store apps are automatically updated from Windows Store. The menu bar in the Windows Store app shows whether any Windows Store app updates are available for download.<br/><br/>
-You can also deploy Windows Store apps directly to devices by using Intune, System Center Configuration Manager, or both in a hybrid configuration. For more information, see:
+<td>Install new or update existing Microsoft Store apps used in the curriculum.<br/><br/>
+Microsoft Store apps are automatically updated from Microsoft Store. The menu bar in the Microsoft Store app shows whether any Microsoft Store app updates are available for download.<br/><br/>
+You can also deploy Microsoft Store apps directly to devices by using Intune, System Center Configuration Manager, or both in a hybrid configuration. For more information, see:
 <ul>
 <li>[Deploy and manage apps by using Intune](#deploy-and-manage-apps-by-using-intune)</li>
 <li>[Deploy and manage apps by using System Center Configuration Manager](#deploy-and-manage-apps-by-using-system-center-configuration-manager)</li>
@@ -1853,4 +1853,4 @@ You have now identified the tasks you need to perform monthly, at the end of an 
 * [Manage Windows 10 updates and upgrades in a school environment (video)](https://technet.microsoft.com/en-us/windows/mt723347)
 * [Reprovision devices at the end of the school year (video)](https://technet.microsoft.com/en-us/windows/mt723344)
 * [Use MDT to deploy Windows 10 in a school (video)](https://technet.microsoft.com/en-us/windows/mt723343)
-* [Use Windows Store for Business in a school environment (video)](https://technet.microsoft.com/en-us/windows/mt723348)
+* [Use Microsoft Store for Business in a school environment (video)](https://technet.microsoft.com/en-us/windows/mt723348)

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: isaiahng
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 10/19/2017
 ms.localizationpriority: medium
 ---
 
@@ -30,12 +30,12 @@ Surface Hub doesn't have a lock screen or a screen saver, but it has a similar f
 
 *Organization policies that this may affect:* <br> Settings for lock screen, screen timeout, and screen saver don't apply for Surface Hub.
 
-### User logon
+### User sign-in
 
-Surface Hub is designed to be used in communal spaces, such as meeting rooms. Unlike Windows PCs, anyone can walk up and use a Surface Hub without logging on. The system always runs as a local, auto logged-in, low-privilege user. It doesn't support logging in any additional users - including admin users.
+Surface Hub is designed to be used in communal spaces, such as meeting rooms. Unlike Windows PCs, anyone can walk up and use a Surface Hub without requiring a user to sign in. To enable this communal functionality, Surface Hub does not support Windows sign-in the same way that Windows 10 Enterprise does (e.g., signing in a user to the OS and using those credentials throughout the OS). Instead, there is always a local, auto signed-in, low-privilege user signed in to the Surface Hub. It doesn't support signing in any additional users, including admin users (e.g., when an admin signs in, they are not signed in to the OS).
 
-> [!NOTE]
-> Surface Hub supports signing in to Microsoft Edge and other apps. However, these credentials are deleted when users press **End session**. 
+Users can sign in to a Surface Hub, but they will not be signed in to the OS. For example, when a user signs in to Apps or My Meetings and Files, the users is signed in only to the apps or services, not to the OS. As a result, the signed-in user is able to retrieve their cloud files and personal meetings stored in the cloud, and these credentials are discarded when **End session** is activated.
+
 
 *Organization policies that this may affect:* <br> Generally, Surface Hub uses lockdown features rather than user access control to enforce security. Policies related to password requirements, interactive logon, user accounts, and access control don't apply for Surface Hub.
 
@@ -114,7 +114,7 @@ These Surface Hub features provide additional security:
 
 ### Device settings
 
-Device settings can be configured through the Settings app. The Settings app is customized for Surface Hub, but also contains many familiar settings from Windows 10 Desktop. A User Accounts Control (UAC) prompt appears when opening up the Settings app to verify the admin's credentials, but this does not log in the admin.
+Device settings can be configured through the Settings app. The Settings app is customized for Surface Hub, but also contains many familiar settings from Windows 10 Desktop. A User Accounts Control (UAC) prompt appears when opening up the Settings app to verify the admin's credentials, but this does not sign in the admin.
 
 *Organization policies that this may affect:* <br> Employees can use the Surface Hub for meetings, but cannot modify any device settings. In addition to lockdown features, this ensures that employees only use the device for meeting functions.
 
@@ -146,7 +146,7 @@ Surface Hub does not support remote assistance.
 
 ### Domain join and Azure Active Directory (Azure AD) join 
 
-Surface Hub uses domain join and Azure AD join primarily to provide a directory-backed admin group. Users can't log in with a domain account. For more information, see [Admin group management](admin-group-management-for-surface-hub.md).
+Surface Hub uses domain join and Azure AD join primarily to provide a directory-backed admin group. Users can't sign in with a domain account. For more information, see [Admin group management](admin-group-management-for-surface-hub.md).
 
 *Organization policies that this may affect:* <br> Group policies are not applied when a Surface Hub is joined to your domain. Policies related to domain membership don't apply for Surface Hub.
 

@@ -23,7 +23,7 @@ When you sign up for a [Minecraft: Education Edition](http://education.minecraft
 >[!Note]
 >If you don't have an Azure AD or Office 365 tenant, you can set up a free Office 365 Education subscription when you request Minecraft: Education Edition. For more information see [Office 365 Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans).
 
-## Add Minecraft to your Windows Store for Education 
+## Add Minecraft to your Microsoft Store for Education 
 
 You can start with the Minecraft: Education Edition trial to get individual copies of the app. For more information, see [Minecraft: Education Edition - direct purchase](#individual-copies). 
 
@@ -60,7 +60,7 @@ Qualified education institutions can purchase Minecraft: Education Edition licen
 
 - Your channel partner will submit and process your volume license order, your licenses will be shown on [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx), and the licenses will be available in your [Microsoft Store for Education](https://www.microsoft.com/business-store) inventory. 
 - You’ll receive an email with a link to Microsoft Store for Education. 
-- Sign in to [Windows Store for Education](https://educationstore.microsoft.com) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
+- Sign in to [Microsoft Store for Education](https://educationstore.microsoft.com) to distribute and manage the Minecraft: Education Edition licenses. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft)
 
 ## Minecraft: Education Edition payment options
 You can pay for Minecraft: Education Edition with a debit or credit card, or with an invoice. 
@@ -114,7 +114,7 @@ After Minecraft: Education Edition is added to your Microsoft Store for Educatio
 Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store). 
 
 <!---
-Here's the page you'll see for Minecraft: Education Edition licenses purchased directly through the Windows Store for Business. 
+Here's the page you'll see for Minecraft: Education Edition licenses purchased directly through the Microsoft Store for Business. 
 
 ![App distribution options - individual copies](images/mc-install-for-me-teacher.png)
 
@@ -178,14 +178,14 @@ Enter email addresses for your students, and each student will get an email with
 
     ![Email with Get the app link](images/minecraft-student-install-email.png)
 
-2. Click **Get the app** to start the app install in Windows Store app. 
-3. In Windows Store app, click **Install**. 
+2. Click **Get the app** to start the app install in Microsoft Store app. 
+3. In Microsoft Store app, click **Install**. 
 
-    ![Windows Store app with Minecraft page](images/minecraft-in-windows-store-app.png)
+    ![Microsoft Store app with Minecraft page](images/minecraft-in-windows-store-app.png)
 
-    After installing the app, students can find Minecraft: Education Edition in Windows Store app under **My Library**. Windows Store app is preinstalled with Windows 10.
+    After installing the app, students can find Minecraft: Education Edition in Microsoft Store app under **My Library**. Microsoft Store app is preinstalled with Windows 10.
 
-    ![Windows Store app showing access to My Library](images/minecraft-private-store.png) 
+    ![Microsoft Store app showing access to My Library](images/minecraft-private-store.png) 
 
     When students click **My Library** they'll find apps assigned to them.
 
@@ -202,17 +202,17 @@ Download for others allows teachers or IT admins to download an app that they ca
 - Windows 10 (at least version 1511) is required for PCs running Minecraft: Education Edition.
 
 **Check for updates**</br>
-Minecraft: Education Edition will not install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Windows Store apps. 
+Minecraft: Education Edition will not install if there are updates pending for other apps on the PC. Before installing Minecraft, check to see if there are pending updates for Microsoft Store apps. 
 
 **To check for app updates**
-1. Start Windows Store app on the PC (click **Start**, and type **Store**).
+1. Start Microsoft Store app on the PC (click **Start**, and type **Store**).
 2. Click the account button, and then click **Downloads and updates**.
 
-      ![Windows Store app showing access to My Library](images/minecraft-private-store.png)
+      ![Microsoft Store app showing access to My Library](images/minecraft-private-store.png)
       
 3. Click **Check for updates**, and install all available updates. 
 
-      ![Windows Store app showing access to My Library](images/mc-check-for-updates.png)
+      ![Microsoft Store app showing access to My Library](images/mc-check-for-updates.png)
       
 4. Restart the computer before installing Minecraft: Education Edition.  
 
@@ -221,7 +221,7 @@ You'll download a .zip file, extract the files, and then use one of the files to
 
 1. **Download Minecraft Education Edition.zip**. From the **Minecraft: Education Edition** page, click **Download for others** tab, and then click **Download**.
 
-    ![Windows Store app showing access to My Library](images/mc-dnld-others-teacher.png)
+    ![Microsoft Store app showing access to My Library](images/mc-dnld-others-teacher.png)
  
 2. **Extract files**. Find the .zip file that you downloaded and extract the files. This is usually your **Downloads** folder, unless you chose to save the .zip file to a different location. Right-click the file and choose **Extract all**.
 3. **Save to USB drive**. After you've extracted the files, save the Minecraft: Education Edition folder to a USB drive, or to a network location that you can access from each PC.  
@@ -235,14 +235,14 @@ You'll download a .zip file, extract the files, and then use one of the files to
 <!--- ### Access to Microsoft Store for Business
 By default, when a teacher with a work or school account acquires Minecraft: Education Edition, they are automatically signed up for Window Store for Business, and the **Basic Purchaser** role is assigned to them. **Basic Purchaser** role allows teachers to acquire Minecraft: Education Edition and to distribute it to students. 
 
-However, tenant admins can control whether or not teachers automatically sign up for Windows Store for Business, and get the **Basic Purchaser** role. You can configure this with the **Allow educators in my organization to sign up for the Windows Store for Business.** You'll find this on the **Permissions** page. 
+However, tenant admins can control whether or not teachers automatically sign up for Microsoft Store for Business, and get the **Basic Purchaser** role. You can configure this with the **Allow educators in my organization to sign up for the Microsoft Store for Business.** You'll find this on the **Permissions** page. 
 
-To prevent educators from automatically signing up for Windows Store for Business
-1.  In Windows Store for Business, click **Settings**, and then click **Permissions**. 
+To prevent educators from automatically signing up for Microsoft Store for Business
+1.  In Microsoft Store for Business, click **Settings**, and then click **Permissions**. 
 
-    ![Permission page for Windows Store for Business](images/minecraft-admin-permissions.png)
+    ![Permission page for Microsoft Store for Business](images/minecraft-admin-permissions.png)
 
-2. Click **Allow educators in my organization to sign up for the Windows Store for Business.**
+2. Click **Allow educators in my organization to sign up for the Microsoft Store for Business.**
 
 -->
 
@@ -263,21 +263,21 @@ Minecraft: Education Edition adds a new role for teachers: **Basic Purchaser**. 
 
 2. Click **Settings**, and then choose **Permissions**.
 
-    ![Permission page for Windows Store for Business](images/minecraft-admin-permissions.png)
+    ![Permission page for Microsoft Store for Business](images/minecraft-admin-permissions.png)
 
 3. Click **Add people**, type a name, select the correct person, choose the role you want to assign, and click **Save**.
 
-    ![Permission page for Windows Store for Business](images/minecraft-assign-roles.png)
+    ![Permission page for Microsoft Store for Business](images/minecraft-assign-roles.png)
     
-    Windows Store for Business updates the list of people and permissions. 
+    Microsoft Store for Business updates the list of people and permissions. 
     
-    ![Permission page for Windows Store for Business](images/minecraft-assign-roles-2.png)
+    ![Permission page for Microsoft Store for Business](images/minecraft-assign-roles-2.png)
 
 -->
 
 <!--- ## <a href="" id="private-store"></a>Private store
 
-When you create you Windows Store for Business account, you'll have a set of apps included for free in your private store. Apps in your private store are available for all people in your organization to install and use. 
+When you create you Microsoft Store for Business account, you'll have a set of apps included for free in your private store. Apps in your private store are available for all people in your organization to install and use. 
 
 These apps will automatically be in your private store:
 - Word mobile
@@ -291,7 +291,7 @@ These apps will automatically be in your private store:
 As an admin, you can remove any of these apps from the private store if you'd prefer to control how apps are distributed. --> 
 
 <!--- ## Need more copies of Minecraft: Education Edition?
-You can purchase more licenses by working with your channel partner. Licenses are available at a lower rate than the price for individual copies that are available through Windows Store for Business. Individual copies are also available through Windows Store for Business. 
+You can purchase more licenses by working with your channel partner. Licenses are available at a lower rate than the price for individual copies that are available through Microsoft Store for Business. Individual copies are also available through Microsoft Store for Business. 
 
 If you’ve purchased a volume license, be sure to let other basic purchasers in your organization know about the volume license. That should help prevent unnecessary purchases of individual copies. -->
 

@@ -23,6 +23,9 @@ Provisioning packages can be applied to a device during the first-run experience
 
 ## Desktop editions
 
+>[!NOTE]
+>In Windows 10, version 1709, you can interrupt a long-running provisioning process by pressing ESC.
+
 ### During initial setup, from a USB drive
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.

@@ -47,7 +47,7 @@ For versions of Windows prior to Windows 10, version 1511 (including Windows 10 
 
 ## Deploy Surface app with Configuration Manager
 
-With the release of Windows Store for Business, Surface app is no longer available as a driver and firmware download. Organizations that want to deploy Surface app to managed Surface devices or during deployment with the use of Configuration Manager, must acquire Surface app through Windows Store for Business and then deploy Surface app with PowerShell. You can find the PowerShell commands for deployment of Surface app, instructions to download Surface app, and prerequisite frameworks from Windows Store for Business in the [Deploy Surface app with Windows Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business) article in the TechNet Library.
+With the release of Microsoft Store for Business, Surface app is no longer available as a driver and firmware download. Organizations that want to deploy Surface app to managed Surface devices or during deployment with the use of Configuration Manager, must acquire Surface app through Microsoft Store for Business and then deploy Surface app with PowerShell. You can find the PowerShell commands for deployment of Surface app, instructions to download Surface app, and prerequisite frameworks from Microsoft Store for Business in the [Deploy Surface app with Microsoft Store for Business](https://technet.microsoft.com/itpro/surface/deploy-surface-app-with-windows-store-for-business) article in the TechNet Library.
 
 ## Use prestaged media with Surface clients
 

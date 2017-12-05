@@ -46,7 +46,7 @@ Note the following restrictions related to push notifications and WNS:
 
 ## Get WNS credentials and PFN for MDM push notification
 
-To get a PFN and WNS credentials, you must create an Windows Store app.
+To get a PFN and WNS credentials, you must create an Microsoft Store app.
 
 1.  Go to the Windows [Dashboard](https://dev.windows.com/en-US/dashboard) and sign in with your developer account.
 
@@ -69,7 +69,7 @@ To get a PFN and WNS credentials, you must create an Windows Store app.
 7.  In the **Application Registration Portal** page, you will see the properties for the app that you created, such as:
     -   Application Id
     -   Application Secrets
-    -   Windows Store Package SID, Application Identity, and Publisher.
+    -   Microsoft Store Package SID, Application Identity, and Publisher.
 
     ![mdm push notification](images/push-notification7.png)
 8.  Click **Save**.

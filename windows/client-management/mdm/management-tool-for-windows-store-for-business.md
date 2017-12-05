@@ -1,6 +1,6 @@
 ---
-title: Management tool for the Micosoft Store for Business
-description: The Micosoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk.
+title: Management tool for the Microsoft Store for Business
+description: The Microsoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk.
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_portal\_management\_tool'
 - 'p\_phDeviceMgmt.management\_tool\_for\_windows\_store\_for\_business'
@@ -10,23 +10,23 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 10/27/2017
 ---
 
-# Management tool for the Micosoft Store for Business
+# Management tool for the Microsoft Store for Business
 
-The Micosoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. The Store for Business enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.
+The Microsoft Store for Business has a new web service designed for the enterprise to acquire, manage, and distribute applications in bulk. The Store for Business enables several capabilities that are required for the enterprise to manage the lifecycle of applications from acquisition to updates.
 
 Here's the list of the available capabilities:
 
 -   Support for enterprise identities – Enables end users within an organization to use the identity that has been provided to them within the organization. This enables an organization to retain control of the application and eliminates the need for an organization to maintain another set of identities for their users.
 -   Bulk acquisition support of applications – Enables an IT administrator to acquire applications in bulk. IT departments can now take control over the procurement and distribution of applications. Previously, users acquire applications manually.
--   License reclaim and re-use – Enables an enterprise to retain value in their purchases by allowing the ability to un-assign access to an application, and then reassign the application to another user. In Windows Store today, when a user with a Microsoft account leaves the organization he retains ownership of the application.
--   Flexible distribution models for Windows Store apps – Allows the enterprise to integrate with an organization's infrastructure the processes to distribute applications to devices that are connected to Store for Business services and to devices without connectivity to the Store for Business services.
+-   License reclaim and re-use – Enables an enterprise to retain value in their purchases by allowing the ability to un-assign access to an application, and then reassign the application to another user. In Microsoft Store today, when a user with a Microsoft account leaves the organization he retains ownership of the application.
+-   Flexible distribution models for Microsoft Store apps – Allows the enterprise to integrate with an organization's infrastructure the processes to distribute applications to devices that are connected to Store for Business services and to devices without connectivity to the Store for Business services.
 -   Custom Line of Business app support –Enables management and distribution of enterprise applications through the Store for Business.
 -   Support for Windows desktop and mobile devices - The Store for Business supports both desktop and mobile devices.
 
-For additional information about Store for Business, see the TechNet topics in [Micosoft Store for Business](https://technet.microsoft.com/library/mt606951.aspx).
+For additional information about Store for Business, see the TechNet topics in [Microsoft Store for Business](https://technet.microsoft.com/library/mt606951.aspx).
 
 ## Management services
 
@@ -45,7 +45,7 @@ The Store for Business provides services that enable a management tool to synchr
 <tr class="even">
 <td style="vertical-align:top"><p>Licensing models</p></td>
 <td style="vertical-align:top"><p><strong>Offline vs. Online</strong></p>
-<p>Online-licensed applications require connectivity to the Windows Store. Users require an Azure Active Directory identity and rely on the store services on the device to be able to acquire an application from the store. It is similar to how applications are acquired from the Windows Store using a Microsoft account. Assigning or reclaiming seats for an application require a call to the Store for Business services.</p>
+<p>Online-licensed applications require connectivity to the Microsoft Store. Users require an Azure Active Directory identity and rely on the store services on the device to be able to acquire an application from the store. It is similar to how applications are acquired from the Microsoft Store using a Microsoft account. Assigning or reclaiming seats for an application require a call to the Store for Business services.</p>
 <p>Offline-licensed applications enable an organization to use the application for imaging and for devices that may not have connectivity to the store or may not have Azure Active Directory. Offline-licensed application do not require connectivity to the store, however it can be updated directly from the store if the device has connectivity and the app update policies allow updates to be distributed via the store.</p></td>
 </tr>
 </tbody>

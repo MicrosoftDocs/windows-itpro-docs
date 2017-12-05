@@ -1,11 +1,6 @@
 {
 "redirections": [
 {
-"source_path": "windows/device-security/windows-security-baselines.md",
-"redirect_url": "https://www.microsoft.com/download/details.aspx?id=55319",
-"redirect_document_id": false 
-},
-{
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
 "redirect_document_id": true
@@ -391,6 +386,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "windows/configuration/stop-employees-from-using-the-windows-store.md",
+"redirect_url": "/windows/configuration/stop-employees-from-using-microsoft-store",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/configure-devices-without-mdm.md",
 "redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
 "redirect_document_id": false
@@ -636,6 +636,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/app-inventory-management-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/app-inventory-management-microsoft-store-for-business",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/application-development-for-windows-as-a-service.md",
 "redirect_url": "https://msdn.microsoft.com/windows/uwp/get-started/application-development-for-windows-as-a-service",
 "redirect_document_id": true
@@ -693,6 +698,11 @@
 {
 "source_path": "windows/manage/manage-inventory-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/app-inventory-managemement-windows-store-for-business",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/app-inventory-managemement-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/app-inventory-managemement-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -1168,6 +1178,11 @@
 {
 "source_path": "windows/whats-new/windows-store-for-business-overview.md",
 "redirect_url": "/microsoft-store/windows-store-for-business-overview",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/windows-store-for-business-overview.md",
+"redirect_url": "/microsoft-store/microsoft-store-for-business-overview",
 "redirect_document_id": true
 },
 {
@@ -7071,6 +7086,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/acquire-apps-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/acquire-apps-microsoft-store-for-business",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/add-unsigned-app-to-code-integrity-policy.md",
 "redirect_url": "/microsoft-store/add-unsigned-app-to-code-integrity-policy",
 "redirect_document_id": true
@@ -7088,6 +7108,11 @@
 {
 "source_path": "windows/manage/apps-in-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/apps-in-windows-store-for-business",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/apps-in-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/apps-in-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -7601,6 +7626,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/configure-mdm-provider-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/configure-mdm-provider-microsoft-store-for-business",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/connect-to-remote-aadj-pc.md",
 "redirect_url": "/windows/client-management/connect-to-remote-aadj-pc",
 "redirect_document_id": true
@@ -7618,6 +7648,11 @@
 {
 "source_path": "windows/manage/distribute-apps-to-your-employees-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/distribute-apps-to-your-employees-windows-store-for-business",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/distribute-apps-to-your-employees-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/distribute-apps-to-your-employees-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -7656,6 +7691,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/manage-apps-windows-store-for-business-overview.md",
+"redirect_url": "/microsoft-store/manage-apps-microsoft-store-for-business-overview",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/manage-corporate-devices.md",
 "redirect_url": "/windows/client-management/index",
 "redirect_document_id": true
@@ -7663,6 +7703,11 @@
 {
 "source_path": "windows/manage/manage-orders-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/manage-orders-windows-store-for-business",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/manage-orders-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/manage-orders-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -7676,8 +7721,18 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/manage-settings-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/manage-settings-microsoft-store-for-business",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/manage-users-and-groups-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/manage-users-and-groups-windows-store-for-business",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/manage-users-and-groups-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/manage-users-and-groups-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -7701,6 +7756,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/prerequisites-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/prerequisites-microsoft-store-for-business",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/reset-a-windows-10-mobile-device.md",
 "redirect_url": "/windows/client-management/reset-a-windows-10-mobile-device",
 "redirect_document_id": true
@@ -7711,8 +7771,18 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/roles-and-permissions-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/roles-and-permissions-microsoft-store-for-business",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/settings-reference-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/settings-reference-windows-store-for-business",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/settings-reference-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/settings-reference-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -7726,13 +7796,28 @@
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/sign-up-windows-store-for-business-overview.md",
+"redirect_url": "/microsoft-store/sign-up-microsoft-store-for-business-overview",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/sign-up-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/sign-up-windows-store-for-business",
 "redirect_document_id": true
 },
 {
+"source_path": "store-for-business/sign-up-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/sign-up-microsoft-store-for-business",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/manage/troubleshoot-windows-store-for-business.md",
 "redirect_url": "/microsoft-store/troubleshoot-windows-store-for-business",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/troubleshoot-windows-store-for-business.md",
+"redirect_url": "/microsoft-store/troubleshoot-microsoft-store-for-business",
 "redirect_document_id": true
 },
 {
@@ -7873,6 +7958,11 @@
 {
 "source_path": "windows/manage/update-windows-store-for-business-account-settings.md",
 "redirect_url": "/microsoft-store/update-windows-store-for-business-account-settings",
+"redirect_document_id": true
+},
+{
+"source_path": "store-for-business/update-windows-store-for-business-account-settings.md",
+"redirect_url": "/microsoft-store/update-microsoft-store-for-business-account-settings",
 "redirect_document_id": true
 },
 {

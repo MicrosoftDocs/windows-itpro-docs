@@ -31,8 +31,8 @@ Windows 10 offers the ability for management servers to:
 
 Windows 10 lets you inventory all apps deployed to a user and all apps for all users of a device on Windows 10 for desktop editions. The [EnterpriseModernAppManagement](enterprisemodernappmanagement-csp.md) configuration service provider (CSP) inventories packaged apps and does not include traditional Win32 apps installed via MSI or executables. When the apps are inventoried they are separated based on the following app classifications:
 
--   Store - Apps that are from the Windows Store. Apps can be directly installed from the Store or delivered with the enterprise from the Store for Business
--   nonStore - Apps that were not acquired from the Windows Store.
+-   Store - Apps that are from the Microsoft Store. Apps can be directly installed from the Store or delivered with the enterprise from the Store for Business
+-   nonStore - Apps that were not acquired from the Microsoft Store.
 -   System - Apps that are part of the OS. You cannot uninstall these apps. This classification is read-only and can only be inventoried.
 
 These classifications are represented as nodes in the EnterpriseModernAppManagement CSP.
@@ -151,9 +151,9 @@ There are two basic types of apps you can deploy: Store apps and enterprise sign
 
 ### Unlock the device for non-Store apps
 
-To deploy app that are not from the Windows Store, you must configure the ApplicationManagement/AllowAllTrustedApps policy. This policy allows the installation of non-Store apps on the device provided that there is a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device. For more information about deploying user license, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
+To deploy app that are not from the Microsoft Store, you must configure the ApplicationManagement/AllowAllTrustedApps policy. This policy allows the installation of non-Store apps on the device provided that there is a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device. For more information about deploying user license, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
 
-The AllowAllTrustedApps policy enables the installation apps that are trusted by a certificate in the Trusted People on the device or a root certificate in the Trusted Root of the device. The policy is not configured by default, which means only apps from the Windows Store can be installed. If the management server implicitly sets the value to off, the setting is disabled in the settings panel on the device.
+The AllowAllTrustedApps policy enables the installation apps that are trusted by a certificate in the Trusted People on the device or a root certificate in the Trusted Root of the device. The policy is not configured by default, which means only apps from the Microsoft Store can be installed. If the management server implicitly sets the value to off, the setting is disabled in the settings panel on the device.
 
 For more information about the AllowAllTrustedApps policy, see [Policy CSP](policy-configuration-service-provider.md).
 
@@ -189,7 +189,7 @@ Here are some examples.
 
 Development of apps on Windows 10 no longer requires a special license. You can enable debugging and deployment of non-packaged apps using ApplicationManagement/AllowDeveloperUnlock policy in Policy CSP.
 
-AllowDeveloperUnlock policy enables the development mode on the device. The AllowDeveloperUnlock is not configured by default, which means only Windows Store apps can be installed. If the management server explicitly sets the value to off, the setting is disabled in the settings panel on the device.
+AllowDeveloperUnlock policy enables the development mode on the device. The AllowDeveloperUnlock is not configured by default, which means only Microsoft Store apps can be installed. If the management server explicitly sets the value to off, the setting is disabled in the settings panel on the device.
 
 Deployment of apps to Windows 10 for desktop editions requires that there is a chain to a certificate on the device. The app can be signed with a root certificate on the device (such as Symantec Enterprise), an enterprise owned root certificate, or a peer trust certificate deployed on the device. Deployment to Windows 10 Mobile does not validate whether the non-Store apps have a valid root of trust on the device.
 
@@ -225,19 +225,19 @@ Here is an example.
 
 ## Install your apps
 
-You can install apps to a specific user or to all users of a device. Apps are installed directly from the Windows Store or in some cases from a host location, such as a local disk, UNC path, or HTTPS location. Use the AppInstallation node of the [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) to install apps.
+You can install apps to a specific user or to all users of a device. Apps are installed directly from the Microsoft Store or in some cases from a host location, such as a local disk, UNC path, or HTTPS location. Use the AppInstallation node of the [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) to install apps.
 
 ### Deploy apps to user from the Store
 
-To deploy an app to a user directly from the Windows Store, the management server performs an Add and Exec commands on the AppInstallation node of the EnterpriseModernAppManagement CSP. This is only supported in the user context and not supported in the device context.
+To deploy an app to a user directly from the Microsoft Store, the management server performs an Add and Exec commands on the AppInstallation node of the EnterpriseModernAppManagement CSP. This is only supported in the user context and not supported in the device context.
 
-If you purchased an app from the Store for Business and the app is specified for an online license, the app and license must be acquired directly from the Windows Store.
+If you purchased an app from the Store for Business and the app is specified for an online license, the app and license must be acquired directly from the Microsoft Store.
 
 Here are the requirements for this scenario:
 
 -   The app is assigned to a user Azure Active Directory (AAD) identity in the Store for Business. You can do this directly in the Store for Business or through a management server.
--   The device requires connectivity to the Windows Store.
--   Windows Store services must be enabled on the device. Note that the UI for the Windows Store can be disabled by the enterprise admin.
+-   The device requires connectivity to the Microsoft Store.
+-   Microsoft Store services must be enabled on the device. Note that the UI for the Microsoft Store can be disabled by the enterprise admin.
 -   The user must be signed in with their AAD identity.
 
 Here are some examples.
@@ -303,7 +303,7 @@ Here are the requirements for this scenario:
 
 -   The location of the app can be a local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
 -   The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
--   The device does not need to have connectivity to the Windows Store, store services, or the have the Windows Store UI be enabled.
+-   The device does not need to have connectivity to the Microsoft Store, store services, or the have the Microsoft Store UI be enabled.
 -   The user must be logged in, but association with AAD identity is not required.
 
 > **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
@@ -420,7 +420,7 @@ Here are the requirements for this scenario:
 
 -   The location of the app can be the local files system (C:\\StagedApps\\app1.appx), a UNC path (\\\\server\\share\\app1.apx), or an HTTPS location (https://contoso.com/app1.appx\_
 -   The user must have permission to access the content location. For HTTPs, you can use server authentication or certificate authentication using a certificate associated with the enrollment. HTTP locations are supported, but not recommended because of lack of authentication requirements.
--   The device does not need to have connectivity to the Windows Store, or store services enabled.
+-   The device does not need to have connectivity to the Microsoft Store, or store services enabled.
 -   The device does not need any AAD identity or domain membership.
 -   For nonStore app, your device must be unlocked.
 -   For Store offline apps, the required licenses must be deployed prior to deploying the apps.
@@ -584,8 +584,8 @@ The Data field value of 0 (zero) indicates sucess, otherwise it is an error code
 
 You can uninstall apps from users from Windows 10 devices. To uninstall an app, you delete it from the AppManagement node of the CSP. Within the AppManagement node, packages are organized based on their origin according to the following nodes:
 
--   AppStore - These apps are for the Windows Store. Apps can be directly installed from the store or delivered to the enterprise from the Store for Business.
--   nonStore - These apps that were not acquired from the Windows Store.
+-   AppStore - These apps are for the Microsoft Store. Apps can be directly installed from the store or delivered to the enterprise from the Store for Business.
+-   nonStore - These apps that were not acquired from the Microsoft Store.
 -   System - These apps are part of the OS. You cannot uninstall these apps.
 
 To uninstall an app, you delete it under the origin node, package family name, and package full name. To uninstall a XAP, use the product ID in place of the package family nane and package full name.
@@ -717,7 +717,7 @@ Apps installed on a device can be updated using the management server. Apps can 
 
 ### Update apps directly from the store
 
-To update an app from Windows Store, the device requires contact with the store services.
+To update an app from Microsoft Store, the device requires contact with the store services.
 
 Here is an example of an update scan.
 
@@ -760,7 +760,7 @@ A provisioned app automatically updates when an app update is sent to the user. 
 
 You can prevent specific apps from being automatically updated. This allows you to turn on auto-updates for apps, with specific apps excluded as defined by the IT admin.
 
-Turning off updates only applies to updates from the Windows Store at the device level. This feature is not available at a user level. You can still update an app if the offline packages is pushed from hosted install location.
+Turning off updates only applies to updates from the Microsoft Store at the device level. This feature is not available at a user level. You can still update an app if the offline packages is pushed from hosted install location.
 
 Here is an example.
 
@@ -821,7 +821,7 @@ Here is an example.
 
 ### Restrict AppData to the system volume
 
-In Windows 10 Mobile IT administrators can set a policy to restrict user application data for a Windows Store app to the system volume, regardless of where the package is installed or moved.
+In Windows 10 Mobile IT administrators can set a policy to restrict user application data for a Microsoft Store app to the system volume, regardless of where the package is installed or moved.
 
 > **Note**  The feature is only for Windows 10 Mobile.
 

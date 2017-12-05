@@ -59,7 +59,7 @@ Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in
 <p><b><a href="https://technet.microsoft.com/library/dn645510.aspx" target="_blank">BYOD</a></b><br />Explore Bring Your Own Device (BYOD) considerations, including device types, infrastructure, and deployment models.</p>
 <p><b><a href="https://technet.microsoft.com/library/dn645488.aspx" target="_blank">Deploying Windows RT 8.1</a></b><br />Get step-by-step instructions on how to configure and deploy Windows RT devices (like Surface and other tablets) in educational environments.</p>
 <p><b><a href="https://technet.microsoft.com/library/dn645483.aspx" target="_blank">Virtual Desktop Infrastructure</a></b><br />Learn how to address challenges related to BYOD scenarios using Virtual Desktop Infrastructure (VDI).</p>
-<p><b><a href="https://technet.microsoft.com/library/dn645532.aspx" target="_blank">Windows Store apps</a></b><br />Explore Windows Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
+<p><b><a href="https://technet.microsoft.com/library/dn645532.aspx" target="_blank">Microsoft Store apps</a></b><br />Explore Microsoft Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
 <p><b><a href="https://technet.microsoft.com/library/dn645486.aspx" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
 
 ## Related topics

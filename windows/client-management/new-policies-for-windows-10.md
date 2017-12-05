@@ -1,6 +1,6 @@
 ---
 title: New policies for Windows 10 (Windows 10)
-description: Windows 10 includes the following new policies for management, in addition to policies that were available for Windows 8.1 and Windows Phone 8.1.
+description: Windows 10 includes the following new policies for management.
 ms.assetid: 1F24ABD8-A57A-45EA-BA54-2DA2238C573D
 keywords: ["MDM", "Group Policy"]
 ms.prod: w10
@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 10/24/2017
 ---
 
 # New policies for Windows 10
@@ -18,7 +19,79 @@ ms.localizationpriority: high
 -   Windows 10
 -   Windows 10 Mobile
 
-Windows 10 includes the following new policies for management, in addition to policies that were available for Windows 8.1 and Windows Phone 8.1. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://go.microsoft.com/fwlink/p/?LinkID=625081).
+Windows 10 includes the following new policies for management. [Download the complete set of Administrative Template (.admx) files for Windows 10](https://www.microsoft.com/download/details.aspx?id=56121).
+
+## New Group Policy settings in Windows 10, version 1709
+
+The following Group Policy settings were added in Windows 10, version 1709:
+
+**Control Panel**
+
+- Control Panel\Allow Online Tips
+
+**Network**
+
+- Network\Network Connectivity Status Indicator\Specify global DNS
+- Network\WWAN Service\WWAN UI Settings\Set Per-App Cellular Access UI Visibility
+- Network\WWAN Service\Cellular Data Access\Let Windows apps access cellular data
+
+**System**
+
+- System\Device Health Attestation Service\Enable Device Health Attestation Monitoring and Reporting
+- System\OS Policies\Enables Activity Feed
+- System\OS Policies\Allow publishing of User Activities
+- System\Power Management\Power Throttling Settings\Turn off Power Throttling
+- System\Storage Health\Allow downloading updates to the Disk Failure Prediction Model
+- System\Trusted Platform Module Services\Configure the system to clear the TPM if it is not in a ready state.
+
+**Windows Components**
+
+- Windows Components\App Privacy\Let Windows apps communicate with unpaired devices
+- Windows Components\Data Collection and Preview Builds\Limit Enhanced diagnostic data to the minimum required by Windows Analytics
+- Windows Components\Handwriting\Handwriting Panel Default Mode Docked
+- Windows Components\Internet Explorer\Internet Settings\Advanced settings\Browsing\Hide the button (next to the New Tab button) that opens Microsoft Edge
+- Windows Components\MDM\Auto MDM Enrollment with AAD Token
+- Windows Components\Messaging\Allow Message Service Cloud Sync
+- Windows Components\Microsoft Edge\Always show the Books Library in Microsoft Edge
+- Windows Components\Microsoft Edge\Always show the Books Library in Microsoft Edge
+- Windows Components\Microsoft Edge\Provision Favorites
+- Windows Components\Microsoft Edge\Provision Favorites
+- Windows Components\Microsoft Edge\Prevent changes to Favorites on Microsoft Edge
+- Windows Components\Microsoft Edge\Prevent changes to Favorites on Microsoft Edge
+- Windows Components\Microsoft FIDO Authentication\Enable usage of FIDO devices to sign on
+- Windows Components\OneDrive\Prevent OneDrive from generating network traffic until the user signs in to OneDrive
+- Windows Components\Push To Install\Turn off Push To Install service
+- Windows Components\Search\Allow Cloud Search
+- Windows Components\Windows Defender Application Guard\Allow data persistence for Windows Defender Application Guard
+- Windows Components\Windows Defender Application Guard\Allow auditing events in Windows Defender Application Guard
+- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Network Protection\Prevent users and apps from accessing dangerous websites
+- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure Controlled folder access
+- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Configure Attack Surface Reduction rules
+- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction\Exclude files and paths from Attack Surface Reduction Rules
+- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure allowed applications
+- Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Controlled Folder Access\Configure protected folders
+- Windows Components\Windows Defender Exploit Guard\Exploit Protection\Use a common set of exploit protection settings
+- Windows Components\Windows Defender Security Center\Virus and threat protection\Hide the Virus and threat protection area
+- Windows Components\Windows Defender Security Center\Firewall and network protection\Hide the Firewall and network protection area
+- Windows Components\Windows Defender Security Center\App and browser protection\Hide the App and browser protection area
+- Windows Components\Windows Defender Security Center\App and browser protection\Prevent users from modifying settings
+- Windows Components\Windows Defender Security Center\Device performance and health\Hide the Device performance and health area
+- Windows Components\Windows Defender Security Center\Family options\Hide the Family options area
+- Windows Components\Windows Defender Security Center\Notifications\Hide all notifications
+- Windows Components\Windows Defender Security Center\Notifications\Hide non-critical notifications
+- Windows Components\Windows Defender Security Center\Enterprise Customization\Configure customized notifications
+- Windows Components\Windows Defender Security Center\Enterprise Customization\Configure customized contact information
+- Windows Components\Windows Defender Security Center\Enterprise Customization\Specify contact company name
+- Windows Components\Windows Defender Security Center\Enterprise Customization\Specify contact phone number or Skype ID
+- Windows Components\Windows Defender Security Center\Enterprise Customization\Specify contact email address or Email ID
+- Windows Components\Windows Defender Security Center\Enterprise Customization\Specify contact website
+- Windows Components\Windows Hello for Business\Configure device unlock factors
+- Windows Components\Windows Hello for Business\Configure dynamic lock factors
+- Windows Components\Windows Hello for Business\Turn off smart card emulation
+- Windows Components\Windows Hello for Business\Allow enumeration of emulated smart card for all users
+- Windows Components\Windows Update\Allow updates to be downloaded automatically over metered connections
+- Windows Components\Windows Update\Do not allow update deferral policies to cause scans against Windows Update
+
 
 ## New Group Policy settings in Windows 10, version 1703
 
@@ -202,7 +275,7 @@ No new [Exchange ActiveSync policies](https://go.microsoft.com/fwlink/p/?LinkId=
 
 [Windows 10 Mobile and MDM](windows-10-mobile-and-mdm.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897).  
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=new-policies-for-windows-10.md).  
 
  
 

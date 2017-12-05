@@ -26,7 +26,7 @@ We want all students to have the chance to use the apps they need for success in
 Keep these best practices in mind when deploying any edition of Windows 10 in schools or districts:
 * A Microsoft account is only intended for consumer services. Enterprises and educational institutions should use enterprise versions where possible, such as Skype for Business, OneDrive for Business, and so on. For schools, consider using mobile device management (MDM) or Group Policy to block students from adding a Microsoft account as a secondary account.
 * If schools allow the use of personal accounts by their students to access personal services, schools should be aware that these accounts belong to individuals, not the school.
-* IT administrators, school officials, and teachers should also consider ratings when picking apps from the Windows Store.
+* IT administrators, school officials, and teachers should also consider ratings when picking apps from the Microsoft Store.
 * If you have students or school personnel who rely on assistive technology apps that are not available in the Microsoft Store for Education, and who are using a Windows 10 S device, configure their device to Windows 10 Pro Education to allow the download and use of non-Microsoft Store assistive technology apps. See [Switch to Windows 10 Pro Education from Windows 10 Pro or Windows 10 S](switch-to-pro-education.md) for more info.
 
 ## Windows 10 Contacts privacy settings

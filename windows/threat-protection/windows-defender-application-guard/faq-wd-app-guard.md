@@ -13,11 +13,20 @@ ms.date: 08/11/2017
 # Frequently asked questions - Windows Defender Application Guard 
 
 **Applies to:**
-- Windows 10, Windows Insider Program (Enterprise edition, Build 16188 or later)
+- Windows 10 Enterpise edition, version 1709
 
 Answering frequently asked questions about Windows Defender Application Guard (Application Guard) features, integration with the Windows operating system, and general configuration.
 
 ## Frequently Asked Questions
+
+| | |
+|---|----------------------------|
+|**Q:** |Can I enable Application Guard on machines equipped with 4GB RAM?|
+|**A:** |We recommend 8GB RAM for optimal performance but you may use the following registry values to enable Application Guard on machines that aren't meeting the recommended hardware configuration. |
+||HKLM\software\Microsoft\Hvsi\SpecRequiredProcessorCount       - Default is 4 cores. |
+||HKLM\software\Microsoft\Hvsi\SpecRequiredMemoryInGB            - Default is 8GB.|
+||HKLM\software\Microsoft\Hvsi\SpecRequiredFreeDiskSpaceInGB - Default is 5GB.|
+<br>
 
 | | |
 |---|----------------------------|

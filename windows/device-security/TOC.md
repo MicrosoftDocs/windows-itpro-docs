@@ -125,6 +125,7 @@
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
+## [Enable HVCI](enable-virtualization-based-protection-of-code-integrity.md)
 
 ## [Security auditing](auditing\security-auditing-overview.md)
 ### [Basic security audit policies](auditing\basic-security-audit-policies.md)
@@ -662,6 +663,8 @@
 ### [TPM recommendations](tpm/tpm-recommendations.md)
 
 ## [Windows security baselines](windows-security-baselines.md)
+### [Security Compliance Toolkit](security-compliance-toolkit-10.md)
+### [Get support](get-support-for-security-baselines.md)
 
 ## [Windows 10 Mobile security guide](windows-10-mobile-security-guide.md)
 

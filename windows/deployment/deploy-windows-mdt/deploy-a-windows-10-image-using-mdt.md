@@ -653,4 +653,4 @@ Figure 14. The partitions when deploying an UEFI-based machine.
 
 [Configure MDT settings](configure-mdt-settings.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=deploy-a-windows-10-image-using-mdt.md). 

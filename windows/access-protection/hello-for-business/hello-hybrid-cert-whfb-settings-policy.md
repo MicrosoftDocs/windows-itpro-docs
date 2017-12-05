@@ -16,14 +16,9 @@ ms.date: 09/08/2017
 **Applies to**
 -   Windows 10
 
-> [!div class="step-by-step"]
-[< Configure AD FS](hello-hybrid-cert-whfb-settings-adfs.md)
-
+>This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 ## Policy Configuration
-
->[!IMPORTANT]
->This guide only applies to Hybrid deployments for Windows 10, version 1703 or higher.
 
 You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703.
@@ -43,7 +38,7 @@ Domain controllers automatically request a certificate from the *Domain Controll
 
 To continue automatic enrollment and renewal of domain controller certificates that understand newer certificate template and superseded certificate template configurations, create and configure a Group Policy object for automatic certificate enrollment and link the Group Policy object to the Domain Controllers OU.
 
-#### Create a Domain Controller Automatic Certifiacte Enrollment Group Policy object
+#### Create a Domain Controller Automatic Certificate Enrollment Group Policy object
 
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
@@ -54,7 +49,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 5.	Right-click the **Domain Controller Auto Certificate Enrollment** Group Policy object and click **Edit**.
 6.	In the navigation pane, expand **Policies** under **Computer Configuration**.
 7.	Expand **Windows Settings**, **Security Settings**, and click **Public Key Policies**.
-8.	In the details pane, right-click **Certificate Services Client � Auto-Enrollment** and select **Properties**.
+8.	In the details pane, right-click **Certificate Services Client - Auto-Enrollment** and select **Properties**.
 9.	Select **Enabled** from the **Configuration Model** list.
 10.	Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
 11.	Select the **Update certificates that use certificate templates** check box.
@@ -65,7 +60,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 Sign-in a domain controller or management workstations with _Domain Admin_ equivalent credentials.
 
 1.	Start the **Group Policy Management Console** (gpmc.msc)
-2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO�**
+2.	In the navigation pane, expand the domain and expand the node that has your Active Directory domain name.  Right-click the **Domain Controllers** organizational unit and click **Link an existing GPO**
 3.	In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
 ### Windows Hello for Business Group Policy
@@ -113,7 +108,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 3. Right-click the **Enable Windows Hello for Business** Group Policy object and click **Edit**.
 4. In the navigation pane, expand **Policies** under **User Configuration**.
 5. Expand **Windows Settings > Security Settings**, and click **Public Key Policies**.
-6. In the details pane, right-click **Certificate Services Client � Auto-Enrollment** and select **Properties**.
+6. In the details pane, right-click **Certificate Services Client - Auto-Enrollment** and select **Properties**.
 7. Select **Enabled** from the **Configuration Model** list.
 8. Select the **Renew expired certificates**, **update pending certificates**, and **remove revoked certificates** check box.
 9. Select the **Update certificates that use certificate templates** check box.
@@ -133,7 +128,7 @@ The best way to deploy the Windows Hello for Business Group Policy object is to 
 
 The application of the Windows Hello for Business Group Policy object uses security group filtering.  This enables you to link the Group Policy object at the domain, ensuring the Group Policy object is within scope to all users. However, the security group filtering ensures only the users included in the *Windows Hello for Business Users* global group receive and apply the Group Policy object, which results in the provisioning of Windows Hello for Business.
 1. Start the **Group Policy Management Console** (gpmc.msc)
-2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO�**
+2. In the navigation pane, expand the domain and right-click the node that has your Active Directory domain name and click **Link an existing GPO**
 3. In the **Select GPO** dialog box, select **Enable Windows Hello for Business** or the name of the Windows Hello for Business Group Policy object you previously created and click **OK**.
 
 Just to reassure, linking the **Windows Hello for Business** Group Policy object to the domain ensures the Group Policy object is in scope for all domain users. However, not all users will have the policy settings applied to them. Only users who are members of the Windows Hello for Business group receive the policy settings. All others users ignore the Group Policy object. 

@@ -37,15 +37,15 @@ You can also configure Surface Hub to receive updates from both Windows Update f
 
 ## Surface Hub servicing model
 
-Surface Hub uses the Windows 10 servicing model, referred to as Windows as a Service (WaaS). Traditionally, new features are added only in new versions of Windows that are released every few years. Each new version required lengthy and expensive processes to deploy in an organization. As a result, end users and organizations don't frequently enjoy the benefits of new innovation. The goal of Windows as a Service is to continually provide new capabilities while maintaining a high level of quality.
+Surface Hub uses the Windows 10 servicing model, referred to as [Windows as a Service (WaaS)](https://docs.microsoft.com/windows/deployment/update/waas-overview). Traditionally, new features were added only in new versions of Windows that were released every few years. Each new version required lengthy and expensive processes to deploy in an organization. As a result, end users and organizations don't frequently enjoy the benefits of new innovation. The goal of Windows as a Service is to continually provide new capabilities while maintaining a high level of quality.
 
 Microsoft publishes two types of Surface Hub releases broadly on an ongoing basis:
-- **Feature updates** - Updates that install the latest new features, experiences, and capabilities. Microsoft expects to publish an average of two to three new feature upgrades per year.
+- **Feature updates** - Updates that install the latest new features, experiences, and capabilities. Microsoft expects to publish two tnew feature updates per year.
 - **Quality updates** - Updates that focus on the installation of security fixes, drivers, and other servicing updates. Microsoft expects to publish one cumulative quality update per month.
 
 In order to improve release quality and simplify deployments, all new releases that Microsoft publishes for Windows 10, including Surface Hub, will be cumulative. This means new feature updates and quality updates will contain the payloads of all previous releases (in an optimized form to reduce storage and networking requirements), and installing the release on a device will bring it completely up to date. Also, unlike earlier versions of Windows, you cannot install a subset of the contents of a Windows 10 quality update. For example, if a quality update contains fixes for three security vulnerabilities and one reliability issue, deploying the update will result in the installation of all four fixes.
 
-The Surface Hub operating system is available on **Current Branch (CB)** and **Current Branch for Business (CBB)**. Like other editions of Windows 10, the servicing lifetime of CB or CBB is finite. You must install new feature updates on machines running these branches in order to continue receiving quality updates.
+The Surface Hub operating system receives updates on the [Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes). Like other editions of Windows 10, the servicing lifetime ois finite. You must install new feature updates on machines running these branches in order to continue receiving quality updates.
 
 For more information on Windows as a Service, see [Overview of Windows as a service](https://technet.microsoft.com/itpro/windows/manage/waas-overview).
 
@@ -55,12 +55,10 @@ Surface Hubs, like all Windows 10 devices, include **Windows Update for Business
 
 **To set up Windows Update for Business:**
 1. [Group Surface Hub into deployment rings](#group-surface-hub-into-deployment-rings)
-2. [Configure Surface Hub to use Current Branch or Current Branch for Business](#configure-surface-hub-to-use-current-branch-or-current-branch-for-business).
 2. [Configure when Surface Hub receives updates](#configure-when-surface-hub-receives-updates).
 
 > [!NOTE]
-
-> You can use Microsoft Intune, System Center Configuration Manager, or a supported third-party MDM provider to set up WUfB. [Walkthrough: use Microsoft Intune to configure Windows Update for Business.](https://technet.microsoft.com/itpro/windows/manage/waas-wufb-intune)
+> You can use Microsoft Intune, System Center Configuration Manager, or a supported third-party MDM provider to set up WUfB. [Walkthrough: use Microsoft Intune to configure Windows Update for Business.](https://docs.microsoft.com/windows/deployment/update/waas-wufb-intune)
 
 
 ### Group Surface Hub into deployment rings
@@ -70,29 +68,22 @@ This table gives examples of deployment rings.
 
 | Deployment ring | Ring size | Servicing branch | Deferral for feature updates | Deferral for quality updates (security fixes, drivers, and other updates) | Validation step |
 | --------- | --------- | --------- | --------- | --------- | --------- |
-| Preview (e.g. non-critical or test devices) | Small | Current Branch (CB) | None. Devices receive feature updates immediately after CB is released. | None. Devices receive quality updates immediately after CB is released. | Manually test and evaluate new functionality. Pause updates if there are issues. |
-| Release (e.g. devices used by select teams) | Medium | Current Branch for Business (CBB) | None. Devices receive feature updates immediately once CBB is released. | None. Devices receive quality updates immediately after CBB is released. | Monitor device usage and user feedback. Pause updates if there are issues. |
-| Broad deployment (e.g. most of the devices in your organization) | Large | Current Branch for Business (CBB) |  120 days after CBB is released. | 7-14 days after CBB is released. | Monitor device usage and user feedback. Pause updates if there are issues. |
-| Mission critical (e.g. devices in executive boardrooms) | Small | Current Branch for Business (CBB) |  180 days after CBB is released (maximum deferral for feature updates). | 30 days after CBB is released (maximum deferral for quality updates). | Monitor device usage and user feedback. |
+| Preview (e.g. non-critical or test devices) | Small | Semi-annual channel (Targeted) | None.  | None.  | Manually test and evaluate new functionality. Pause updates if there are issues. |
+| Release (e.g. devices used by select teams) | Medium | Semi-annual channel  | None. | None.  | Monitor device usage and user feedback. Pause updates if there are issues. |
+| Broad deployment (e.g. most of the devices in your organization) | Large | Semi-annual channel |  120 days after release. | 7-14 days after release. | Monitor device usage and user feedback. Pause updates if there are issues. |
+| Mission critical (e.g. devices in executive boardrooms) | Small | Semi-annual channel |  180 days after release (maximum deferral for feature updates). | 30 days after release (maximum deferral for quality updates). | Monitor device usage and user feedback. |
 
 
-### Configure Surface Hub to use Current Branch or Current Branch for Business
-By default, Surface Hubs are configured to receive updates from Current Branch (CB). CB receives feature updates as soon as they are released by Microsoft. Current Branch for Business (CBB), on the other hand, receives feature updates at least four months after they have been initially offered to CB devices, and includes all of the quality updates that have been released in the interim. For more information on the differences between CB and CBB, see [Servicing branches](https://technet.microsoft.com/itpro/windows/manage/waas-overview#servicing-branches).
 
-**To manually configure Surface Hub to use CB or CBB:**
-1. Open **Settings** > **Update & Security** > **Windows Update**, and then select **Advanced Options**. 
-2. Select **Defer feature updates**.
-
-To configure Surface Hub to use CB or CBB remotely using MDM, set an appropriate [Update/BranchReadinessLevel](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_BranchReadinessLevel) policy.
 
 
 ### Configure when Surface Hub receives updates
 Once you've determined deployment rings for your Surface Hubs, configure update deferral policies for each ring:
-- To defer feature updates, set an appropriate [Update/DeferFeatureUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferFeatureUpdatesPeriodInDays) policy for each ring.
-- To defer quality updates, set an appropriate [Update/DeferQualityUpdatesPeriodInDays](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_DeferQualityUpdatesPeriodInDays) policy for each ring.
+- To defer feature updates, set an appropriate [Update/DeferFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays) policy for each ring.
+- To defer quality updates, set an appropriate [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays) policy for each ring.
 
 > [!NOTE]
-> If you encounter issues during the update rollout, you can pause updates using [Update/PauseFeatureUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseFeatureUpdates) and [Update/PauseQualityUpdates](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_PauseQualityUpdates).
+> If you encounter issues during the update rollout, you can pause updates using [Update/PauseFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausefeatureupdates) and [Update/PauseQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausequalityupdates).
 
 
 ## Use Windows Server Update Services

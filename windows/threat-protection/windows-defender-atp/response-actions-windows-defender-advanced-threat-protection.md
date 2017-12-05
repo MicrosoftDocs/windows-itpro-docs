@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Take response actions in Windows Defender ATP
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-responseactions-abovefoldlink) 
@@ -31,7 +31,7 @@ ms.date: 09/05/2017
 You can take response actions on machines and files to quickly respond to detected attacks so that you can contain or reduce and prevent further damage caused by malicious attackers in your organization.
 
 >[!NOTE]
-> These response actions are only available for machines on Windows 10, version  1703.
+> These response actions are only available for machines on Windows 10, version  1703 or higher.
 
 ## In this section
 Topic | Description

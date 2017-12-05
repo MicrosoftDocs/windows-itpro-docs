@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Windows Defender ATP preview features
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 The Windows Defender ATP service is constantly being updated to include new feature enhancements and capabilities.
 
@@ -44,31 +44,22 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 ## Preview features
 The following features are included in the preview release:
 
-- [Configure non-persistent virtual desktop infrastructure (VDI) machines](configure-endpoints-vdi-windows-defender-advanced-threat-protection.md)<br>
-You can now onboard VDI machines to the Windows Defender ATP service.
-
 - [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the onboarding of the following servers:
     - Windows Server 2012 R2
     - Windows Server 2016
-
-- [View the Windows Defender ATP Security analytics dashboard](security-analytics-dashboard-windows-defender-advanced-threat-protection.md)<br>
-The Security Analytics dashboard expands your visibility into the overall security posture of your organization. From this dashboard, you'll be able to quickly assess the security posture of your organization, see machines that require attention, as well as recommendations for actions to further reduce the attack surface in your organization - all in one place.
-
-- [Restrict app execution](respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)<br>
-You can lock down a device and prevent subsequent attempts of potentially malicious programs from running.
-
-- [Run Windows Defender Antivirus scan on a machine](respond-machine-alerts-windows-defender-advanced-threat-protection.md#run-windows-defender-antivirus-scan-on-machines)<br>
-As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised machine.
-
-- [Manage machine group and tags](investigate-machines-windows-defender-advanced-threat-protection.md#manage-machine-group-and-tags)<br>
-Machine group and tags support proper mapping of the network, enabling you to attach different tags to machines to capture context and to enable dynamic groups creation as part of an incident.
 
 - [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP supports the use of Power BI data connectors to enable you to connect and access Windows Defender ATP data using Microsoft Graph.
 
 - [Use the Windows Defender ATP exposed APIs](exposed-apis-windows-defender-advanced-threat-protection.md)<br>
     Windows Defender ATP exposes much of the available data and actions using a set of programmatic APIs that are part of the Microsoft Intelligence Security Graph. Those APIs will enable you, to automate workflows and innovate based on Windows Defender ATP capabilities.
+
+- [Configure non-Windows endpoints](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)<br>
+Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
+
+- [Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md)<br>
+The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. Access and join the community to learn and interact with other members on product specific information. 
 
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  

@@ -9,15 +9,15 @@ author: greg-lindsay
 
 This topic provides information on additional features that are available in Upgrade Readiness to provide insights into your environment. These include:
 
-- [Site discovery](#site-discovery): An inventory of web sites that are accessed by client computers running Windows 7 or Windows 8.1 using Internet Explorer.
+- [Site discovery](#site-discovery): An inventory of web sites that are accessed by client computers running Windows 7, Windows 8.1, or Windows 10 using Internet Explorer.
 - [Office add-ins](#office-add-ins): A list of the Microsoft Office add-ins that are installed on client computers.
 
 ## Site discovery
 
-The site discovery feature in Upgrade Readiness provides an inventory of web sites that are accessed by client computers using Internet Explorer on Windows 8.1 and Windows 7. Site discovery does not include sites that are accessed using other Web browsers, such as Microsoft Edge. Site inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data.
+The site discovery feature in Upgrade Readiness provides an inventory of web sites that are accessed by client computers using Internet Explorer on Windows 7, Windows 8.1, and Windows 10. Site discovery does not include sites that are accessed using other Web browsers, such as Microsoft Edge. Site inventory information is provided as optional data related to upgrading to Windows 10 and Internet Explorer 11, and is meant to help prioritize compatibility testing for web applications. You can make more informed decisions about testing based on usage data.
 
 > [!NOTE] 
-> Site discovery data is disabled by default; you can find documentation on what is collected in the [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965). After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, the data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
+> Site discovery data is disabled by default; you can find documentation on what is collected in the [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965). After you turn on this feature, data is collected on all sites visited by Internet Explorer, except during InPrivate sessions. In addition, data will be collected on all sites visited by Microsoft Edge on computers running Windows 10 version 1803 (including Insider Preview builds) or newer.  The data collection process is silent, without notification to the employee. You are responsible for ensuring that your use of this feature complies with all applicable local laws and regulatory requirements, including any requirements to provide notice to employees.
 
 ### Install prerequisite security update for Internet Explorer
 
@@ -26,9 +26,9 @@ Ensure the following prerequisites are met before using site discovery:
 1. Install the prerequisite KBs to add Site Discovery support and the latest fixes from the [Microsoft Update Catalog](http://www.catalog.update.microsoft.com/home.aspx). Install the following:
    - For Windows 7 and Windows 8.1 - March, 2017 (or later) Security Monthly Rollup
    - For Windows 10 - Cumulative Update for Windows 10 Version 1607 (KB4015217) (or later)
-2. Enable Internet Explorer data collection, which is disabled by default. The best way to enable it is to modify the [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md) to allow Internet Explorer data collection before you run it. In addition, to enable Site Discovery on Windows 10 set **Enhanced Telemetry Level** for the Feedback and Diagnostics setting (Privacy > Feedback & Diagnostics settings), and enable **Page Prediction within Internet Explorer 11**.
+2. Enable Internet Explorer data collection, which is disabled by default. The best way to enable it is to modify the [Upgrade Readiness deployment script](upgrade-readiness-deployment-script.md) to allow Internet Explorer data collection before you run it. In addition, to enable Site Discovery on Windows 10 you must set computers to the **Enhanced Telemetry Level** for the Feedback and Diagnostics setting (Privacy > Feedback & Diagnostics settings), and enable **Page Prediction within Internet Explorer 11**.
 
-    If necessary, you can also enable data collection by creating the following registry entry. 
+    If you do not plan to use the Upgrade Readiness deployment script to enable Site discovery, you must create the following registry entry. 
 
     HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\DataCollection 
 

@@ -6,13 +6,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/29/2017
+ms.date: 11/01/2017
 ---
 
 # Policy CSP - Start
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 <hr/>
 
@@ -67,6 +66,9 @@ ms.date: 09/29/2017
   </dd>
   <dd>
     <a href="#start-hidelock">Start/HideLock</a>
+  </dd>
+  <dd>
+    <a href="#start-hidepeoplebar">Start/HidePeopleBar</a>
   </dd>
   <dd>
     <a href="#start-hidepowerbutton">Start/HidePowerButton</a>
@@ -901,6 +903,41 @@ ms.date: 09/29/2017
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Lock" is not available.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="start-hidepeoplebar"></a>**Start/HidePeopleBar**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.
+
+<p style="margin-left: 20px">Value type is integer.
 
 <!--EndDescription-->
 <!--EndPolicy-->

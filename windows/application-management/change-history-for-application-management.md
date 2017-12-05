@@ -1,19 +1,31 @@
 ---
-title: Change history for Configure Windows 10 (Windows 10)
+title: Change history for Application management in Windows 10 (Windows 10)
 description: This topic lists changes to documentation for configuring Windows 10.
 keywords: 
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: high
+ms.localizationpriority: medium
 author: jdeckerms
-ms.date: 09/15/2017
+ms.date: 10/24/2017
 ---
 
-# Change history for Configure Windows 10
+# Change history for Application management in Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## October 2017
+
+New or changed topic | Description
+--- | ---
+[Enable or block Windows Mixed Reality apps in the enterprise](manage-windows-mixed-reality.md) | Added instructions for manually installing Windows Mixed Reality
+
+## RELEASE: Windows 10, version 1709
+
+The topics in this library have been updated for Windows 10, version 1709 (also known as the Fall Creators Update). The following new topic has been added:
+
+- [Enable or block Windows Mixed Reality apps in the enterprise](manage-windows-mixed-reality.md)
 
 ## September 2017
 | New or changed topic | Description |

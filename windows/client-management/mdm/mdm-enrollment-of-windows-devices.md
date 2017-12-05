@@ -296,20 +296,23 @@ The deep link used for connecting your device to work will always use the follow
 
 | Parameter | Description                                                  | Supported Value for Windows 10|
 |-----------|--------------------------------------------------------------|----------------------------------------------|
-| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| “mdm”                                        |
-|Username  | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
-| Servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string|
-| Accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this can be used as a token to validate the enrollment request. Added in Windows 10, version 1703. | string |
-| Deviceidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to pass in a unique device identifier. Added in Windows 10, version 1703. | GUID |
-| Tenantidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to identify which tenant the device or user belongs to. Added in Windows 10, version 1703. | GUID or string |
-| Ownership | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3 |
- 
+| mode      | Describes which mode will be executed in the enrollment app. Added in Windows 10, version 1607| “mdm”, "awa", "aadj"                                        |
+|username  | Specifies the email address or UPN of the user who should be enrolled into MDM. Added in Windows 10, version 1703. | string |
+| servername | Specifies the MDM server URL that will be used to enroll the device. Added in Windows 10, version 1703. | string|
+| accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this can be used as a token to validate the enrollment request. Added in Windows 10, version 1703. | string |
+| deviceidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to pass in a unique device identifier. Added in Windows 10, version 1703. | GUID |
+| tenantidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to identify which tenant the device or user belongs to. Added in Windows 10, version 1703. | GUID or string |
+| ownership | Custom parameter for MDM servers to use as they see fit. Typically, this can be used to determine whether the device is BYOD or Corp Owned. Added in Windows 10, version 1703. | 1, 2, or 3 |
+
+> **Note**  "awa" and "aadj" values for mode are only supported on Windows 10, version 1709 and later. 
+
 
 ### Connecting to MDM using a deep link
 
 When connecting to MDM using a deep link, the URI you should use is
 
 **ms-device-enrollment:?mode=mdm**
+**ms-device-enrollment:?mode=mdm&username=someone@example.com&servername=https://example.server.com**
 
 The following procedure describes how users can connect their devices to MDM using deep links.
 
@@ -358,8 +361,7 @@ Starting in Windows 10, version 1709, clicking the **Info** button will show a l
 
 ![work or school info](images/unifiedenrollment-rs1-35-b.png)
 
-> [!Note]  
-> Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
+> [Note] Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
 
 ### Disconnect
 

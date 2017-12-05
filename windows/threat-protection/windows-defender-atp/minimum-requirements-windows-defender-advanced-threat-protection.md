@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/05/2017
+ms.date: 10/17/2017
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -23,7 +23,7 @@ ms.date: 09/05/2017
 - Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-[!include[Prerelease information](prerelease.md)]
+
 
 There are some minimum requirements for onboarding your network and endpoints.
 
@@ -63,10 +63,10 @@ Endpoints on your network must be running one of these editions.
 The hardware requirements for Windows Defender ATP on endpoints is the same as those for the supported editions.
 
 > [!NOTE]
-> Endpoints that are running Windows Server and mobile versions of Windows are not supported.
+> Endpoints that are running mobile versions of Windows are not supported.
 
 #### Internet connectivity
-Internet connectivity on endpoints is required.
+Internet connectivity on endpoints is required either directly or through proxy.
 
 The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
 
@@ -121,15 +121,17 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
     ```
 
 ## Windows Defender Antivirus signature updates are configured
-The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. If Windows Defender Antivirus is not the active antimalware in your organization, you may need to configure the signature updates. For more information see [Configure Windows Defender Antivirus in Windows 10](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
+The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
+
+You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
 
-For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
+For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
-## Windows Defender Early Launch Antimalware (ELAM) driver is enabled
-If you're running Windows Defender as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
+## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
+If you're running Windows Defender Antivirus as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender ELAM driver is enabled. For more information, see [Ensure that Windows Defender is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or System Center Configuration Manager (current branch) version 1606, you'll need to ensure that the Windows Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Windows Defender Antivirus is not disabled by policy](troubleshoot-onboarding-windows-defender-advanced-threat-protection.md#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=technet-wd-atp-minreq-belowfoldlink1)

@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 10/20/2017
 ---
 
 # Requirements and deployment planning guidelines for Windows Defender Device Guard
@@ -116,7 +117,7 @@ Catalog files can be very useful for unsigned LOB applications that cannot easil
 
 To obtain signed applications or embed signatures in your in-house applications, you can choose from a variety of methods:
 
-- Using the Windows Store publishing process. All apps that come out of the Microsoft Store are automatically signed with special signatures that can roll-up to our certificate authority (CA) or to your own.
+- Using the Microsoft Store publishing process. All apps that come out of the Microsoft Store are automatically signed with special signatures that can roll-up to our certificate authority (CA) or to your own.
 
 - Using your own digital certificate or public key infrastructure (PKI). ISV's and enterprises can sign their own Classic Windows applications themselves, adding themselves to the trusted list of signers.
 
@@ -124,7 +125,7 @@ To obtain signed applications or embed signatures in your in-house applications,
 
 To use catalog signing, you can choose from the following options:
 
-- Use the Windows Defender Device Guard signing portal available in the Windows Store for Business. The portal is a Microsoft web service that you can use to sign your Classic Windows applications. For more information, see [Windows Defender Device Guard signing](https://technet.microsoft.com/itpro/windows/manage/device-guard-signing-portal).
+- Use the Windows Defender Device Guard signing portal available in the Microsoft Store for Business. The portal is a Microsoft web service that you can use to sign your Classic Windows applications. For more information, see [Windows Defender Device Guard signing](https://technet.microsoft.com/itpro/windows/manage/device-guard-signing-portal).
 
 - Create your own catalog files, which are described in the next section. For information about how creating catalog files fits into Windows Defender Device Guard deployment, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 

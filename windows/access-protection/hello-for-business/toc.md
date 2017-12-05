@@ -13,12 +13,27 @@
 ## [Planning a Windows Hello for Business Deployment](hello-planning-guide.md)
 
 ## [Windows Hello for Business Deployment Guide](hello-deployment-guide.md)
+### [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
+#### [Prerequistes](hello-hybrid-key-trust-prereqs.md)
+#### [New Installation Baseline](hello-hybrid-key-new-install.md)
+#### [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
+#### [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
+#### [Configure Windows Hello for Business settings](hello-hybrid-key-whfb-settings.md)
+#### [Sign-in and Provision](hello-hybrid-key-whfb-provision.md)
+
 ### [Hybrid Azure AD Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
 #### [Prerequistes](hello-hybrid-cert-trust-prereqs.md)
 #### [New Installation Baseline](hello-hybrid-cert-new-install.md)
 #### [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
 #### [Configure Windows Hello for Business policy settings](hello-hybrid-cert-whfb-settings.md)
 #### [Sign-in and Provision](hello-hybrid-cert-whfb-provision.md)
+
+### [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
+#### [Validate Active Directory prerequisites](hello-key-trust-validate-ad-prereq.md)
+#### [Validate and Configure Public Key Infrastructure](hello-key-trust-validate-pki.md)
+#### [Prepare and Deploy Windows Server 2016 Active Directory Federation Services](hello-key-trust-adfs.md)
+##### [Validate and Deploy Multifactor Authentication Services (MFA)](hello-key-trust-validate-deploy-mfa.md)
+#### [Configure Windows Hello for Business Policy settings](hello-key-trust-policy-settings.md)
 
 ### [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 #### [Validate Active Directory prerequisites](hello-cert-trust-validate-ad-prereq.md)
@@ -27,3 +42,5 @@
 #### [Validate and Deploy Multifactor Authentication Services (MFA)](hello-cert-trust-validate-deploy-mfa.md)
 ##### [Configure or Deploy Multifactor Authentication Services](hello-cert-trust-deploy-mfa.md)
 #### [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
+
+## [Windows Hello for Business Features](hello-features.md)

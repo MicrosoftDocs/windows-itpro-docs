@@ -2,7 +2,7 @@
 title: Windows 10 Mobile security guide (Windows 10)
 description: This guide provides a detailed description of the most important security features in the Windows 10 Mobile operating system—identity access and control, data protection, malware resistance, and app platform security.
 ms.assetid: D51EF508-699E-4A68-A7CD-91D821A97205
-keywords: data protection, encryption, malware resistance, smartphone, device, Windows Store
+keywords: data protection, encryption, malware resistance, smartphone, device, Microsoft Store
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -183,7 +183,7 @@ The table below outlines how Windows 10 Mobile mitigates specific malware threat
 </tr>
 <tr class="odd">
 <td align="left"><p>An unauthorized app or malware attempts to start on the device.</p></td>
-<td align="left"><p>All Windows 10 Mobile apps must come from Windows Store or Windows Store for Business. Device Guard enforces administrative policies to select exactly which apps are allowed to run.</p></td>
+<td align="left"><p>All Windows 10 Mobile apps must come from Microsoft Store or Microsoft Store for Business. Device Guard enforces administrative policies to select exactly which apps are allowed to run.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>User-level malware exploits a vulnerability in the system or an application and owns the device.</p></td>
@@ -286,7 +286,7 @@ Because this solution can detect and prevent low-level malware that may be extre
 
 Device Guard is a feature set that consists of both hardware and software system integrity–hardening features. These features revolutionize Windows operating system security by moving the entire operating system to a trust-nothing model.
 
-All apps on Windows 10 Mobile must be digitally signed and come from Windows Store or a trusted enterprise store. Device Guard implements policies that further restrict this. By default, Device Guard supports all apps from Windows Store. You can create policies that define the apps that can and cannot run on the Windows 10 Mobile device. If the app does not have a digital signature, is prevented by policy, or does not come from a trusted store, it will not run on Windows 10 Mobile.
+All apps on Windows 10 Mobile must be digitally signed and come from Microsoft Store or a trusted enterprise store. Device Guard implements policies that further restrict this. By default, Device Guard supports all apps from Microsoft Store. You can create policies that define the apps that can and cannot run on the Windows 10 Mobile device. If the app does not have a digital signature, is prevented by policy, or does not come from a trusted store, it will not run on Windows 10 Mobile.
 
 Advanced hardware features, described above, drive these security offerings. By integrating these hardware features further into the core operating system, Windows 10 Mobile can use them in new ways. To deliver this additional security, Device Guard requires UEFI with Secure Boot.
 
@@ -339,10 +339,10 @@ A set of default permissions are granted to all AppContainers, including access 
 
 The AppContainer concept is advantageous because it provides:
 -	**Attack surface reduction.** Apps can access only those capabilities that are declared in the application code and needed to perform their functions.
--	**User consent and control.** Capabilities that apps use are automatically published to the app details page in the Windows Store. App access to capabilities that may expose sensitive information automatically prompt the user to acknowledge and provide consent.
+-	**User consent and control.** Capabilities that apps use are automatically published to the app details page in the Microsoft Store. App access to capabilities that may expose sensitive information automatically prompt the user to acknowledge and provide consent.
 -	**App isolation.** Communication between Windows apps is tightly controlled. Apps are isolated from one another and can communicate only by using predefined communication channels and data types.
 
-Apps receive the minimal privileges they need to perform their legitimate tasks. This means that even if a malicious attacker exploits an app, the potential damage is limited because the app cannot elevate its privileges and is contained within its AppContainer. Windows Store displays the permissions that the app requires along with the app’s age rating and publisher.
+Apps receive the minimal privileges they need to perform their legitimate tasks. This means that even if a malicious attacker exploits an app, the potential damage is limited because the app cannot elevate its privileges and is contained within its AppContainer. Microsoft Store displays the permissions that the app requires along with the app’s age rating and publisher.
 
 The combination of Device Guard and AppContainer help to prevent unauthorized apps from running. In the event malware slips into the app ecosystem, the AppContainer helps to constrain the app and limit potential damage. The Windows 10 Mobile trust-nothing model doesn’t assume that any component is perfect. However, potential vulnerabilities in apps, AppContainers, and Windows 10 Mobile itself could give an attacker a chance to compromise a system. For this reason, redundant vulnerability mitigations are needed. The next several topics describe some of the redundant mitigations in Windows 10 Mobile.
 

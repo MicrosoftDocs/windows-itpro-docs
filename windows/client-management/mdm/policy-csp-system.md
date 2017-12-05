@@ -6,13 +6,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/29/2017
+ms.date: 11/01/2017
 ---
 
 # Policy CSP - System
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 <hr/>
 
@@ -633,7 +632,7 @@ ADMX Info:
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
 
 * Users cannot access OneDrive from the OneDrive app or file picker.
-* Windows Store apps cannot access OneDrive using the WinRT API.
+* Microsoft Store apps cannot access OneDrive using the WinRT API.
 * OneDrive does not appear in the navigation pane in File Explorer.
 * OneDrive files are not kept in sync with the cloud.
 * Users cannot automatically upload photos and videos from the camera roll folder. 
@@ -765,7 +764,7 @@ ADMX Info:
 <li>Set Allow Telemetry to level 2 (Enhanced)</li>
 </ul>
  
-<p style="margin-left: 20px">When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://go.microsoft.com/fwlink/?linkid=847594).
+<p style="margin-left: 20px">When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594).
  
 <p style="margin-left: 20px">Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
    
