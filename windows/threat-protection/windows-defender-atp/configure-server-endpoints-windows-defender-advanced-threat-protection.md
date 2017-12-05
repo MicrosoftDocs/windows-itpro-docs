@@ -40,6 +40,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 >[!TIP]
 > After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
+
 ### Turn on Server monitoring from the Windows Defender Security Center portal
 
 1. In the navigation pane, select **Endpoint management** > **Servers**. 
@@ -48,6 +49,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
     ![Image of server onboarding](images/atp-server-onboarding.png)
 
+<a name="servermma"></a>
 
 ### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP 
 

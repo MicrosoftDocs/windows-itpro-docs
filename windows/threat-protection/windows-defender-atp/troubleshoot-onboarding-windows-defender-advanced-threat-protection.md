@@ -269,21 +269,9 @@ If the verification fails and your environment is using a proxy to connect to th
 ## Troubleshoot onboarding issues on a server
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
-- Ensure that you have followed the guidance in the topic [Configure server endpoints](configure-server-endpoints-windows-defender-advanced-threat-protection.md) and have you've configured the necessary server endpoint proxy and Internet connectivity settings.
+- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#servermma)
+- [Ensure that the server endpoint proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#servermma)
 
-- Check that there is a Windows Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
-
-    ![Image of process view with Windows Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
-
-- In **Event Viewer**, check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
-
-- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example, 
-
-    ![Image of Services](images/atp-services.png)
-
-- Check to see that machines are reflected in the **Machines list** in the portal. 
-
-- [Run a detection test](run-detection-test-windows-defender-advanced-threat-protection.md) on the server.
 
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
