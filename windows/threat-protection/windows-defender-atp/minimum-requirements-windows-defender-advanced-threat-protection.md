@@ -66,7 +66,7 @@ The hardware requirements for Windows Defender ATP on endpoints is the same as t
 > Endpoints that are running mobile versions of Windows are not supported.
 
 #### Internet connectivity
-Internet connectivity on endpoints is required.
+Internet connectivity on endpoints is required either directly or through proxy.
 
 The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
 
@@ -121,11 +121,13 @@ If the **START_TYPE** is not set to **AUTO_START**, then you'll need to set the 
     ```
 
 ## Windows Defender Antivirus signature updates are configured
-The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. If Windows Defender Antivirus is not the active antimalware in your organization, you may need to configure the signature updates. For more information see [Configure Windows Defender Antivirus in Windows 10](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
+The Windows Defender ATP agent depends on the ability of Windows Defender Antivirus to scan files and provide information about them. 
+
+You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 
 When Windows Defender Antivirus is not the active antimalware in your organization and you use the Windows Defender ATP service, Windows Defender Antivirus goes on passive mode. If your organization has disabled Windows Defender Antivirus through group policy or other methods, machines that are onboarded to Windows Defender ATP must be excluded from this group policy.
 
-For more information, see the **Compatibility** section in the [Windows Defender in Windows 10 topic](../windows-defender-antivirus/windows-defender-antivirus-in-windows-10.md).
+For more information, see [Windows Defender Antivirus compatibility](../windows-defender-antivirus/windows-defender-antivirus-compatibility.md).
 
 ## Windows Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 If you're running Windows Defender Antivirus as the primary antimalware product on your endpoints, the Windows Defender ATP agent will successfully onboard.

@@ -6,11 +6,17 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 10/31/2017
+ms.date: 11/08/2017
 ---
 
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10).
+
+## November 2017
+
+New or changed topic | Description
+-- | ---
+ [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)  | Added warning that you should not use **SkipMachineOOBE** or **SkipUserOOBE** in your Unattend.xml.
 
 ## RELEASE: Windows 10, version 1709
 | New or changed topic | Description |

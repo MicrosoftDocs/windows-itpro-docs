@@ -189,9 +189,9 @@ ADMX Info:
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to hide the Switch account button on the sign-in screen, Start, and the Task Manager. If you enable this policy setting, the Switch account button is hidden from the user who is attempting to sign-in or is signed in to the computer that has this policy applied. If you disable or do not configure this policy setting, the Switch account button is accessible to the user in the three locations.
 
-<p style="margin-left: 20px">Value type is bool. The following list shows the supported values:
+<p style="margin-left: 20px">Value type is int. The following list shows the supported values:
 
--   0 (default) - Diabled (visible).
+-   0 (default) - Disabled (visible).
 -   1 - Enabled (hidden).
 
 <p style="margin-left: 20px">To validate on Desktop, do the following:

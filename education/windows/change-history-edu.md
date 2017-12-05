@@ -15,6 +15,15 @@ ms.date: 08/01/2017
 
 This topic lists new and updated topics in the [Windows 10 for Education](index.md) documentation.
 
+## November 2017
+
+| New or changed topic | Description |
+| --- | ---- |
+| [Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md) | Updated the the list of device manufacturers. |
+| [Set up Take a Test on multiple PCs](take-a-test-multiple-pcs.md) | Updated instances of the parameter enablePrint, or enablePrinting, to requirePrinting. |
+| [Set up Take a Test on a single PC](take-a-test-single-pc.md) | Updated instances of the parameter enablePrint, or enablePrinting, to requirePrinting. |
+| [Take a Test app technical reference](take-a-test-app-technical.md) | Added a note that the Alt+F4 key combination for enabling students to exit the test is disabled in Windows 10, version 1703 (Creators Update) and later. Also added additional info about the Ctrl+Alt+Del key combination. |
+
 ## RELEASE: Windows 10, version 1709 (Fall Creators Update)
 
 | New or changed topic | Description |

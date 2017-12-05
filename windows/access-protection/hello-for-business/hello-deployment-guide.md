@@ -28,7 +28,7 @@ This deployment guide is to guide you through deploying Windows Hello for Busine
 This guide assumes a baseline infrastructure exists that meets the requirements for your deployment.  For either hybrid or on-premises deployments, it is expected that you have: 
 * A well-connected, working network
 * Internet access
-   * Multifactor Authentication Server to support MFA during Windows Hello for Business provisioning
+* Multifactor Authentication Server to support MFA during Windows Hello for Business provisioning
 * Proper name resolution, both internal and external names
 * Active Directory and an adequate number of domain controllers per site to support authentication
 * Active Directory Certificate Services 2012 or later

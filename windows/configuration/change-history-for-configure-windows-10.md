@@ -8,12 +8,19 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 10/20/2017
+ms.date: 11/06/2017
 ---
 
 # Change history for Configure Windows 10
 
 This topic lists new and updated topics in the [Configure Windows 10](index.md) documentation for Windows 10 and Windows 10 Mobile.
+
+## November 2017
+
+New or changed topic | Description
+--- | ---
+|[Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)| Added events that were added in November. |
+[Create a provisioning package with multivariant settings](provisioning-packages/provisioning-multivariant.md) | Add support for desktop to [Conditions](provisioning-packages/provisioning-multivariant.md#conditions) table.
 
 ## October 2017
 

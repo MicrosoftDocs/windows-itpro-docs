@@ -680,7 +680,26 @@ description: Learn about the product documentation and resources available for M
                                         </div>
                                     </div>
                                 </a>
-                            </li> 
+                            </li>
+                            <li>
+                                <a href="support/transition-csp-subscription.md" target="_blank">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="images/bcs-partner-advanced-management- billing-7.svg" alt="Billing" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Transition a Microsoft 365 Business CSP subscription</h3>
+                                                    <p>Find out how you can transition a Microsoft 365 Business CSP subscription from preview to GA.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                             <!-- placeholder
                             <li>
                                 <a href="#">

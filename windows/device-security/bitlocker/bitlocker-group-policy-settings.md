@@ -343,7 +343,7 @@ This policy setting is used to set a minimum PIN length when you use an unlock m
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When enabled</strong></p></td>
-<td align="left"><p>You can require that startup PINS set by users must have a minimum length you choose that is between 4 and 20 digits.</p></td>
+<td align="left"><p>You can require that startup PINs set by users must have a minimum length you choose that is between 4 and 20 digits.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>

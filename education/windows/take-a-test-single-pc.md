@@ -97,9 +97,9 @@ One of the ways you can present content in a locked down manner is by embedding 
 2. To enable printing, screen capture, or both, use the above link and append one of these parameters:
 
   - `&enableTextSuggestions` - Enables text suggestions
-  - `&enablePrint` - Enables printing
+  - `&requirePrinting` - Enables printing
   - `&enableScreenCapture` - Enables screen capture
-  - `&enablePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&enablePrint`, and `&enableScreenCapture` if you want to enable more than one capability. 
+  - `&requirePrinting&enableScreenCapture` - Enables printing and screen capture; you can use a combination of `&enableTextSuggestions`, `&requirePrinting`, and `&enableScreenCapture` if you want to enable more than one capability. 
 
   If you exclude these parameters, the default behavior is disabled.
 

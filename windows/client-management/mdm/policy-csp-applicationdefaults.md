@@ -129,9 +129,4 @@ Footnote:
 
 <!--EndPolicies-->
 
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>ApplicationDefaults policies supported by Microsoft Surface Hub  
-
--   [ApplicationDefaults/DefaultAssociationsConfiguration](#applicationdefaults-defaultassociationsconfiguration)  
-<!--EndSurfaceHub-->
 

@@ -764,7 +764,7 @@ ADMX Info:
 <li>Set Allow Telemetry to level 2 (Enhanced)</li>
 </ul>
  
-<p style="margin-left: 20px">When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: [Windows 10, version 1703 basic level Windows diagnostic events and fields](https://go.microsoft.com/fwlink/?linkid=847594).
+<p style="margin-left: 20px">When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594).
  
 <p style="margin-left: 20px">Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
    

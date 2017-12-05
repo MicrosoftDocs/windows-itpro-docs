@@ -28,6 +28,13 @@ ms.date: 08/25/2017
 
 If you're an enterprise security administrator, and you want to determine how well Windows Defender Antivirus protects you from viruses, malware, and potentially unwanted applications, then you can use this guide to help you evaluate Microsoft protection.
 
+>[!TIP]
+>You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
+>- Cloud-delivered protection
+>- Fast learning (including Black at first sight)
+>- Potentially unwanted application blocking
+
+
 It explains the important features available for both small and large enterprises in Windows Defender, and how they will increase malware detection and protection across your network.
 
 You can choose to configure and evaluate each setting independently, or all at once. We have grouped similar settings based upon typical evaluation scenarios, and include instructions for using PowerShell to enable the settings.
