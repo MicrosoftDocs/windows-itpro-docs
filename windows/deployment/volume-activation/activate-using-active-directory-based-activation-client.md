@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: activation
 author: greg-lindsay
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Activate using Active Directory-based activation

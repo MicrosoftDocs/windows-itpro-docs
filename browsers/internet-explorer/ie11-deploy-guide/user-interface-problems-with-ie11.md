@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 7324faff-ccb6-4e14-ad91-af12dbca575e
 title: User interface problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

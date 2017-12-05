@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/19/2017
+ms.date: 11/15/2017
 ---
 
 # MDM enrollment of Windows-based devices

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 author: greg-lindsay
+ms.date: 07/27/2017
 ---
 
 # Windows ADK for Windows 10 scenarios for IT Pros

@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: kaushika-ainapure
 author: kaushika-msft
-ms.date: 07/19/2017
+ms.date: 07/20/2017
 ---
 
 # Changes to Service Host grouping in Windows 10

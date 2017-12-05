@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 07/27/2017
 ---
 # Appendix: Information sent to Microsoft during activation
 **Applies to**

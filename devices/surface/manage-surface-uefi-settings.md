@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices, surface
 author: miladCA
+ms.date: 07/27/2017
 ---
 
 #Manage Surface UEFI settings

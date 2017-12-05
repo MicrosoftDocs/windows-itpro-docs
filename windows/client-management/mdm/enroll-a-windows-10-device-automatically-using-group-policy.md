@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 10/02/2017
+ms.date: 10/04/2017
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy

@@ -7,7 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 10/17/2017
+ms.date: 10/27/2017
 ---
 
 # Windows Insider Program for Business

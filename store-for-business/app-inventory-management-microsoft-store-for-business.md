@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 06/29/2017
+ms.date: 10/16/2017
 ---
 
 # App inventory management for Microsoft Store for Business and Education

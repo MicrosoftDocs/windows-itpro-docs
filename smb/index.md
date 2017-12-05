@@ -10,6 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: smb
 author: CelesteDG
+ms.date: 05/01/2017
 ---
 
 # Windows 10 for SMB

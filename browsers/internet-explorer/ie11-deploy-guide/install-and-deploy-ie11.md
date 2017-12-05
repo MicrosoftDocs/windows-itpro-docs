@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: caca18c1-d5c4-4404-84f8-d02bc562915f
 title: Install and Deploy Internet Explorer 11 (IE11) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

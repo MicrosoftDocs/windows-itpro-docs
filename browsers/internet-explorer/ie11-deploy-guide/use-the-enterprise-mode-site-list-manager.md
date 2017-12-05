@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
 title: Use the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 12/04/2017
 ---
 
 
@@ -28,10 +29,10 @@ You can use IE11 and the Enterprise Mode Site List Manager to add individual web
 ## Enterprise Mode Site List Manager versions
 There are currently two versions of the Enterprise Site List Manager, both based on your schema and operating system. Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853) or the [Enterprise Mode Site List Manager (schema v.1)](https://go.microsoft.com/fwlink/p/?LinkID=394378) tool, based on your operating system.
 
-|Operating system |Schema version |Enterprise Site List Manager version |
+|Schema version |Operating system |Enterprise Site List Manager version |
 |-----------------|---------------|------------------------------------|
-|Windows 10 |Enterprise Mode schema, version 2 (v.2)<p>-OR-<p>Enterprise Mode schema, version 1 (v.1) |Windows 10 supports both versions of the enterprise mode schema. However, the Enterprise Mode Site List Manager (schema v.2) only supports the v.2 version of the schema. If you import a v.1 version schema into the Enterprise Mode Site List Manager (schema v.2), it will save the XML into the v.2 version of the schema.<p>For more info about the different schema versions, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md) |
-|Windows 7<p>-OR-<p>Windows 8.1 |Enterprise Mode schema v.1 |Uses the Enterprise Mode Site List Manager (schema v.1).<p>For more info about the different schema versions, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md) |
+|Enterprise Mode schema, version 2 (v.2) |Windows 10<br>-OR-<br>Windows 8.1<br>-OR-<br>Windows 7|Uses the Enterprise Mode Site List Manager (schema v.2) and the v.2 version of the schema. If you import a v.1 version schema into the Enterprise Mode Site List Manager (schema v.2),  the XML is saved into the v.2 version of the schema.<br><br>For more info about the v.2 version of the schema, see [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md).|
+|Enterprise Mode schema, version 1 (v.1) |Windows 10<br>-OR-<br>Windows 8.1<br>-OR-<br>Windows 7|Uses the Enterprise Mode Site List Manager (schema v.1) and the v.1 version of the schema. <br><br> For more info about the v.1 version of the schema, see [Enterprise Mode schema v.1 guidance](enterprise-mode-schema-version-1-guidance.md)|
 
 ## Using the Enterprise Mode Site List Manager
 The following topics give you more information about the things that you can do with the Enterprise Mode Site List Manager.

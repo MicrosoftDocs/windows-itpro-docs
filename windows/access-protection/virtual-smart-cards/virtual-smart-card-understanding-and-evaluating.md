@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: Justinha
+ms.date: 04/19/2017
 ---
 
 # Understanding and Evaluating Virtual Smart Cards

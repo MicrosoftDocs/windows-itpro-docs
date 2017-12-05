@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/08/2017
+ms.date: 10/10/2017
 ---
 # Prepare and Deploy Windows Server 2016 Active Directory Federation Services
 

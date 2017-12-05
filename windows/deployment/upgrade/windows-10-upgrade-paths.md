@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.pagetype: mobile
 author: greg-lindsay
+ms.date: 10/16/2017
 ---
 
 # Windows 10 upgrade paths

@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: fafeaaee-171c-4450-99f7-5cc7f8d7ba91
 title: What is the Internet Explorer 11 Blocker Toolkit? (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

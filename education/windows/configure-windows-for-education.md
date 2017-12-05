@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 06/19/2017
+ms.date: 08/31/2017
 ---
 
 # Windows 10 configuration recommendations for education customers

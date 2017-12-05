@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 08/17/2017
 ---
 
 # Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior

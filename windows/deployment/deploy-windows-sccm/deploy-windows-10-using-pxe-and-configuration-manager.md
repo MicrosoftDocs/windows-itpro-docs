@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Deploy Windows 10 using PXE and Configuration Manager

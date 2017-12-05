@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: jobotto
+ms.date: 07/27/2017
 ---
 
 # Download the latest firmware and drivers for Surface devices

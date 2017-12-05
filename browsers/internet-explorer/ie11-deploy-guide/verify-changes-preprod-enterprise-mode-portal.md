@@ -7,6 +7,7 @@ author: eross-msft
 ms.prod: ie11
 title: Verify your changes using the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 # Verify your changes using the Enterprise Mode Site List Portal

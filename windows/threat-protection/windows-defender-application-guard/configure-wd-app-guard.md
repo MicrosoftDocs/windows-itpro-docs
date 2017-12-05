@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.author: lizross
-ms.date: 08/11/2017
+ms.date: 10/19/2017
 ---
 
 # Configure Windows Defender Application Guard policy settings

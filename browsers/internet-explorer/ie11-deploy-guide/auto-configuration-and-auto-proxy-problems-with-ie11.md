@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
 title: Auto configuration and auto proxy problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

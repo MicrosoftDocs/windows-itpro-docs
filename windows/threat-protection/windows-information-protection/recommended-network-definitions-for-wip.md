@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 09/11/2017
 ---
 
 # Recommended Enterprise Cloud Resources and Neutral Resources network settings with Windows Information Protection (WIP)

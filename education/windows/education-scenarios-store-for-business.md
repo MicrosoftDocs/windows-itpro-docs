@@ -10,7 +10,7 @@ searchScope:
   - Store
 author: trudyha
 ms.author: trudyha
-ms.date: 10/27/2017
+ms.date: 11/01/2017
 ---
 
 # Working with Microsoft Store for Education

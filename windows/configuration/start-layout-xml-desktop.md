@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/13/2017
+ms.date: 09/19/2017
 ms.localizationpriority: high
 ---
 
