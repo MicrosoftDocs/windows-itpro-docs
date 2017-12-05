@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Finalize the operating system configuration for Windows 10 deployment with Configuration Manager

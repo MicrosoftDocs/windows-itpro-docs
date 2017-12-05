@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.pagetype: appcompat
 ms.sitesec: library
 author: TrudyHa
+ms.date: 04/19/2017
 ---
 
 # Using the Sdbinst.exe Command-Line Tool

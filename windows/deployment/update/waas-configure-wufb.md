@@ -7,7 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 10/13/2017
 ---
 
 # Configure Windows Update for Business

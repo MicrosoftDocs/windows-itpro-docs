@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.date: 08/17/2017
 ---
 
 # GPO\_DOMISO\_Encryption\_WS2008

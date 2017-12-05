@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: f4dbed4c-08ff-40b1-ab3f-60d3b6e8ec9b
 title: Use the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 12/04/2017
 ---
 
 

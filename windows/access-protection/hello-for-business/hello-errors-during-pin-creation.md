@@ -10,6 +10,7 @@ ms.pagetype: security
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Windows Hello errors during PIN creation

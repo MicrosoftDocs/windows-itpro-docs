@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.author: elizapo
 author: kaushika-msft
 ms.localizationpriority: high
-ms.date: 08/30/2017
+ms.date: 11/08/2017
 ---
 # Top support solutions for Windows 10
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: greg-lindsay
+ms.date: 04/19/2017
 ---
 
 # Active Directory-Based Activation Overview

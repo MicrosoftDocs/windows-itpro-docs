@@ -9,6 +9,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: miladCA
+ms.date: 07/27/2017
 ---
 
 # Advanced UEFI security features for Surface Pro 3

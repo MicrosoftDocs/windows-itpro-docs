@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 07/10/2017
+ms.date: 07/28/2017
 ---
 
 # Set up Windows 10 devices using Windows OOBE

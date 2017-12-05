@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: b0b7f60f-9099-45ab-84f4-4ac64d7bcb43
 title: .NET Framework problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

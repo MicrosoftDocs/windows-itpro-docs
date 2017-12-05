@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.author: lizross
-ms.date: 10/12/2017
+ms.date: 10/13/2017
 localizationpriority: medium
 ---
 

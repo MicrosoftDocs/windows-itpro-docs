@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: mobile, devices
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 07/27/2017
 ---
 
 # Configure devices without MDM

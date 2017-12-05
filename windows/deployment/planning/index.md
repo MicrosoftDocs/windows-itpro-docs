@@ -8,6 +8,7 @@ ms.mktglfcycl: plan
 ms.sitesec: library
 ms.localizationpriority: high
 author: TrudyHa
+ms.date: 07/27/2017
 ---
 
 # Plan for Windows 10 deployment

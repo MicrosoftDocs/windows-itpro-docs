@@ -3,6 +3,7 @@ title: Use Upgrade Readiness to manage Windows upgrades (Windows 10)
 description: Describes how to use Upgrade Readiness to manage Windows upgrades.
 ms.prod: w10
 author: jaimeo
+ms.date: 08/30/2017
 ---
 
 # Use Upgrade Readiness to manage Windows upgrades

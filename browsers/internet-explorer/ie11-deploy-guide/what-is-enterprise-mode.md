@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 3c77e9f3-eb21-46d9-b5aa-f9b2341cfefa
 title: Enterprise Mode and the Enterprise Mode Site List (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 12/04/2017
 ---
 
 

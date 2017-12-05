@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 09/20/2017
 ---
 
 # Manage Windows 10 and Microsoft Store tips, tricks, and suggestions

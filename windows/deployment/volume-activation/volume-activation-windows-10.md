@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Volume Activation for Windows 10

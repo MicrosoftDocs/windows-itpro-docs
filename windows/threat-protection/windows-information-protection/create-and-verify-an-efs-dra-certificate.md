@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 10/31/2017
 ---
 
 # Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate

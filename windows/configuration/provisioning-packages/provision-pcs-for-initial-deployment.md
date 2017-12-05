@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Provision PCs with common settings for initial deployment (desktop wizard)

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: justinha
+ms.date: 04/19/2017
 ---
 
 # Windows 10 Credential Theft Mitigation Guide Abstract

@@ -8,6 +8,7 @@ ms.sitesec: library
 author: JasonGerend
 ms.localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
+ms.date: 10/16/2017
 ---
 
 # What's new in Windows 10, version 1703 IT pro content

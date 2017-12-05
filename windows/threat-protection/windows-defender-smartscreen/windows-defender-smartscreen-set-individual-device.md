@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: high
+ms.date: 10/13/2017
 ---
 
 # Set up and use Windows Defender SmartScreen on individual devices

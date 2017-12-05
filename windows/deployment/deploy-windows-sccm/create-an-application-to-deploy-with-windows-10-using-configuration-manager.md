@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Create an application to deploy with Windows 10 using Configuration Manager

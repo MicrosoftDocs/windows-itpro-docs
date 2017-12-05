@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 10/23/2017
 ---
 
 # Fix unhealthy sensors in Windows Defender ATP

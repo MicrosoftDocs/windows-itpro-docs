@@ -7,6 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 11/29/2017
 ---
 
 # Microsoft HoloLens

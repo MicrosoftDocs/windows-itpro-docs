@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 06/13/2017
+ms.date: 07/27/2017
 ---
 
 # Configure exclusions for files opened by processes

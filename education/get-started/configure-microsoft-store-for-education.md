@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 07/10/2017
+ms.date: 08/29/2017
 ---
 
 # Configure Microsoft Store for Education

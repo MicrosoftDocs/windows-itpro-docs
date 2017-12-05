@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.localizationpriority: high
 ms.sitesec: library
 author: 
+ms.date: 08/18/2017
 ---
 
 # Windows 10 Enterprise: FAQ for IT professionals

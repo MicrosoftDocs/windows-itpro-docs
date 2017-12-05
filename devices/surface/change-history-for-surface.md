@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
+ms.date: 11/03/2017
 ---
 
 # Change history for Surface documentation

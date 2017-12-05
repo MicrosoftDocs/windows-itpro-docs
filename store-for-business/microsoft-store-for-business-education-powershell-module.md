@@ -8,7 +8,7 @@ ms.pagetype: store
 author: TrudyHa
 localizationpriority: high
 ms.author:
-ms.date:  
+ms.date: 10/22/2017
 ---
 
 # Microsoft Store for Business and Education PowerShell module - preview

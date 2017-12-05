@@ -7,6 +7,7 @@ ms.prod: ie111
 ms.assetid: d6bd71ba-5df3-4b8c-8bb5-dcbc50fd974e
 title: Use the Browsing Options page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

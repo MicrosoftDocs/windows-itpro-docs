@@ -8,6 +8,7 @@ ms.technology: storage
 ms.topic: article
 author: jasongerend
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
+ms.date: 04/19/2017
 ---
 # Windows libraries
 

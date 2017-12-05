@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/17/2017
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview
