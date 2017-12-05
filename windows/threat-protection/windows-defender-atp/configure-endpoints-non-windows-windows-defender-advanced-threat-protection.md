@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 10/25/2017
+ms.date: 11/08/2017
 ---
 
 # Configure non-Windows endpoints
@@ -20,6 +20,8 @@ ms.date: 10/25/2017
 - Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
+>Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-nonwindows-abovefoldlink) 
+
 [!include[Prerelease information](prerelease.md)]
 
 Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
@@ -27,7 +29,7 @@ Windows Defender ATP provides a centralized security operations experience for W
 You'll need to know the exact Linux distros and Mac OS X versions that are compatible with Windows Defender ATP for the integration to work. 
 
 ## Onboard non-Windows endpoints
-You'll need to take the following steps to onboard non-Windows endpoints:
+You'll need to take the following steps to oboard non-Windows endpoints:
 1. Turn on third-party integration
 2. Run a detection test
 
@@ -46,7 +48,7 @@ You'll need to take the following steps to onboard non-Windows endpoints:
 >The access token has a limited validity period. If needed, regenerate the token close to the time you need to share it with the third-party solution.
 
 ### Run detection test
-There are various methods to run a detection test. Follow the specific instructions for each third-party product as described in the portal.  The typical way of running a detection test is by creating an EICAR test file. You can create an EICAR file by saving the string displayed on the portal in an empty text file. Then, introduce the test file to a machine running the third-party antivirus solution. 
+Create an EICAR test file by saving the string displayed on the portal in an empty text file. Then, introduce the test file to a machine running the third-party antivirus solution. 
 
 The file should trigger a detection and a corresponding alert on Windows Defender ATP.
 

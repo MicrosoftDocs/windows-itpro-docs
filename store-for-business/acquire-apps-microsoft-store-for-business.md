@@ -11,7 +11,7 @@ ms.localizationpriority: high
 ---
 
 # Acquire apps in Microsoft Store for Business and Education
-As an admin, you can acquire apps from the Microsoft Store for Business and Education for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md).
+As an admin, you can acquire apps from the Microsoft Store for Business and Education for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md). The following sections explain some of the settings for shopping. 
 
 ## App licensing model
 The Microsoft Store supports two options to license apps: online and offline. **Online** licensing is the default licensing model. Online licensed apps require users and devices to connect to the Microsoft Store services to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#offline-licensing). 
@@ -30,6 +30,21 @@ Some apps are free, and some have a price. Apps can be purchased in the Microsof
 There are a couple of things we need to know when you pay for apps. You can add this info to the **Account information** or **Payments & billing** page before you buy apps. If you haven’t provided it, we’ll ask when you make a purchase. Either way works. Here’s the info you’ll need to provide:
 - Legal business address
 - Payment option (credit card)
+
+## Allow users to shop
+
+**Allow users to shop** controls the shopping experience in Microsoft Store for Education. When this setting is on, **Purchasers** and **Basic Purchasers** can purchase products and services from Microsoft Store for Education. If your school chooses to closely control how purchases are made, admins can turn off **Allow users to shop**. When the setting is off:
+- The shopping experience is not availalbe 
+- **Purchasers** and **Basic Purchasers** can't purchase products and services from Microsoft Store for Education
+- Admins can't assign shopping roles to users
+- Products and services previously purchased by **Basic Purchasers** can be managed by admins. 
+
+**To manage Allow users to shop setting**
+1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com) 
+2. Click **Manage**, and then click **Settings**. 
+3. On **Shop**, turn on or turn off **Allow users to shop**.
+
+![manage settings to control Basic Purchaser role assignment](images/sfb-allow-shop-setting.png)
 
 ## Acquire apps
 **To acquire an app**  

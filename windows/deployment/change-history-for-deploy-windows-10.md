@@ -6,16 +6,23 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-ms.date: 10/17/2017
+ms.date: 11/08/2017
 ---
 
 # Change history for Deploy Windows 10
 This topic lists new and updated topics in the [Deploy Windows 10](index.md) documentation for [Windows 10 and Windows 10 Mobile](/windows/windows-10).
 
+## November 2017
+
+New or changed topic | Description
+-- | ---
+ [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md)  | Added warning that you should not use **SkipMachineOOBE** or **SkipUserOOBE** in your Unattend.xml.
+
 ## RELEASE: Windows 10, version 1709
 | New or changed topic | Description |
 |----------------------|-------------|
 | [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) | Updated the edition upgrade table to include all other Windows 10 editions previously not on the list and the supported upgrade methods for upgrade path. |
+| [Fonts missing after upgrading to Windows 10](windows-10-missing-fonts.md)| New article about the set of fonts that have moved from being included in the default installation image to being included in Optional Features. This article includes the steps for adding these optional font features.|
 
 ## July 2017
 | New or changed topic | Description |

@@ -54,8 +54,8 @@ This school configuration has the following characteristics:
 
   **Note**&nbsp;&nbsp;In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
 - The devices use Azure AD in Office 365 Education for identity management.
-- If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](http://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).</li>
-- Use [Intune](http://technet.microsoft.com/library/jj676587.aspx), [compliance settings in Office 365](https://support.office.com/en-us/article/Manage-mobile-devices-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy](http://technet.microsoft.com/en-us/library/cc725828%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396) in AD DS to manage devices.
+- If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/).</li>
+- Use [Intune](https://technet.microsoft.com/library/jj676587.aspx), [compliance settings in Office 365](https://support.office.com/en-us/article/Manage-mobile-devices-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd?ui=en-US&rs=en-US&ad=US), or [Group Policy](https://technet.microsoft.com/en-us/library/cc725828%28v=ws.10%29.aspx?f=255&MSPPError=-2147217396) in AD DS to manage devices.
 - Each device supports a one-student-per-device or multiple-students-per-device scenario.
 - The devices can be a mixture of different make, model, and processor architecture (32 bit or 64 bit) or be identical.
 - To initiate Windows 10 deployment, use a USB flash drive, DVD-ROM or CD-ROM, or Pre-Boot Execution Environment Boot (PXE Boot).
@@ -134,7 +134,7 @@ When you install the Windows ADK on the admin device, select the following featu
 - Windows Preinstallation Environment (Windows PE)
 - User State Migration Tool (USMT)
 
-For more information about installing the Windows ADK, see [Step 2-2: Install the Windows ADK](http://technet.microsoft.com/en-us/library/dn781086.aspx?f=255&MSPPError=-2147217396#InstallWindowsADK).
+For more information about installing the Windows ADK, see [Step 2-2: Install the Windows ADK](https://technet.microsoft.com/en-us/library/dn781086.aspx?f=255&MSPPError=-2147217396#InstallWindowsADK).
 
 ### Install MDT
 
@@ -152,7 +152,7 @@ Now, you’re ready to create the MDT deployment share and populate it with the 
 
 MDT includes the Deployment Workbench, a graphical user interface that you can use to manage MDT deployment shares. A deployment share is a shared folder that contains all the MDT deployment content. The LTI Deployment Wizard accesses the deployment content over the network or from a local copy of the deployment share (known as MDT deployment media).
 
-For more information about how to create a deployment share, see [Step 3-1: Create an MDT Deployment Share](http://technet.microsoft.com/en-us/library/dn781086.aspx?f=255&MSPPError=-2147217396#CreateMDTDeployShare).
+For more information about how to create a deployment share, see [Step 3-1: Create an MDT Deployment Share](https://technet.microsoft.com/en-us/library/dn781086.aspx?f=255&MSPPError=-2147217396#CreateMDTDeployShare).
 
 ### Summary
 
@@ -162,7 +162,7 @@ In this section, you installed the Windows ADK and MDT on the admin device. You 
 
 Office 365 is one of the core components of your classroom environment. You create and manage student identities in Office 365, and students and teachers use the suite as their email, contacts, and calendar system. Teachers and students use Office 365 collaboration features such as SharePoint, OneNote, and OneDrive for Business.
 
-As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](http://www.microsoft.com/en-us/education/products/office-365-deployment-resources/default.aspx).
+As a first step in deploying your classroom, create an Office 365 Education subscription, and then configure Office 365 for the classroom. For more information about Office 365 Education deployment, see [School deployment of Office 365 Education](https://www.microsoft.com/en-us/education/products/office-365-deployment-resources/default.aspx).
 
 ### Select the appropriate Office 365 Education license plan
 
@@ -440,7 +440,7 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 |-------| ---------------------------------------------|
 |Ldifde.exe |This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript | This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/en-us/scriptcenter/dd939958.aspx).|
-|Windows PowerShell| This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
+|Windows PowerShell| This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
 <p>
 ### Create a source file that contains the user and group accounts
 
@@ -452,7 +452,7 @@ After you have selected your user and group account bulk import method, you’re
 |--------| -------------------|
 |Ldifde.exe|Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript | VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).|
-| Windows PowerShell| Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
+| Windows PowerShell| Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
 <p>
 ### Import the user accounts into AD DS
 
@@ -464,7 +464,7 @@ For more information about how to import user accounts into AD DS by using:
 
 - Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).
 - VBScript, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).
-- Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
+- Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
 
 ### Summary
 
@@ -543,7 +543,7 @@ To create and configure your Microsoft Store for Business portal, simply use the
 
 #### To create and configure a Microsoft Store for Business portal
 
-1. In Microsoft Edge or Internet Explorer, type `http://microsoft.com/business-store` in the address bar.
+1. In Microsoft Edge or Internet Explorer, type `https://microsoft.com/business-store` in the address bar.
 2. On the **Microsoft Store for Business** page, click **Sign in with an organizational account**.<p>**Note**&nbsp;&nbsp;If your institution has AD DS, then don’t create security accounts in Office 365. Instead, create the security groups in AD DS, and then use Azure AD integration to synchronize the security groups with your Office 365 tenant.
 3. On the Microsoft Store for Business sign-in page, use the administrative account for the Office 365 subscription you created in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) section to sign in.
 4. On the **Microsoft Store for Business Services Agreement** page, review the agreement, select the **I accept this agreement and certify that I have the authority to bind my organization to its terms** check box, and then click **Accept**
@@ -1125,7 +1125,7 @@ For more information about completing this task when you have:
 <li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).</li>
 <li>Group Policy, see [Windows Update for Business](https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business).</li>
 <li>Windows Server Update Services (WSUS), see [Windows Server Update Services](https://msdn.microsoft.com/en-us/library/bb332157.aspx?f=255&MSPPError=-2147217396).</li>
-<li>Neither Intune, Group Policy, or WSUS, see [Update Windows 10](http://windows.microsoft.com/en-id/windows-10/update-windows-10)</li>
+<li>Neither Intune, Group Policy, or WSUS, see [Update Windows 10](https://windows.microsoft.com/en-id/windows-10/update-windows-10)</li>
 </ul>
 </td>
 <td>X</td>
@@ -1135,7 +1135,7 @@ For more information about completing this task when you have:
 
 <tr>
 <td>Verify that Windows Defender is active and current with malware signatures.<br/><br/>
-For more information about completing this task, see [Turn Windows Defender on or off](http://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab01) and [Updating Windows Defender](http://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab03). </td>
+For more information about completing this task, see [Turn Windows Defender on or off](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab01) and [Updating Windows Defender](https://windows.microsoft.com/en-us/windows-10/how-to-protect-your-windows-10-pc#v1h=tab03). </td>
 <td>X</td>
 <td>X</td>
 <td>X</td>
@@ -1143,7 +1143,7 @@ For more information about completing this task, see [Turn Windows Defender on o
 
 <tr>
 <td>Verify that Windows Defender has run a scan in the past week and that no viruses or malware were found.<br/><br/>
-For more information about completing this task, see [How do I find and remove a virus?](http://windows.microsoft.com/en-US/windows-8/how-find-remove-virus)
+For more information about completing this task, see [How do I find and remove a virus?](https://windows.microsoft.com/en-US/windows-8/how-find-remove-virus)
 </td>
 <td>X</td>
 <td>X</td>

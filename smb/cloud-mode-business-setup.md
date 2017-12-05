@@ -30,7 +30,7 @@ In this walkthrough, we'll show you how to deploy and manage a full cloud IT sol
 - Create policies and app deployment rules
 - Log in as a user and start using your Windows device
 
-Go to the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for your business.
+Go to the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for your business.
 
 ## Prerequisites
 Here's a few things to keep in mind before you get started:
@@ -53,7 +53,7 @@ To set up your Office 365 business tenant, see <a href="https://support.office.c
 
 If this is the first time you're setting this up, and you'd like to see how it's done, you can follow these steps to get started:
 
-1. Go to the <a href="https://business.microsoft.com/en-us/products/office-365" target="_blank">Office 365</a> page in the <a href="http://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
+1. Go to the <a href="https://business.microsoft.com/en-us/products/office-365" target="_blank">Office 365</a> page in the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Office 365 Business Premium Trial or select **Buy now** to sign up for Office 365 Business Premium. In this walkthrough, we'll select **Try now**.
 
   **Figure 1** - Try or buy Office 365
 
@@ -568,7 +568,7 @@ To learn more about the services and tools mentioned in this walkthrough, and le
 - <a href="https://support.office.com/en-us/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a>
 - Common admin tasks in Office 365 including email and OneDrive in <a href="https://support.office.com/en-us/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91" target="_blank">Manage Office 365</a>
 - More info about managing devices, apps, data, troubleshooting, and more in <a href="https://docs.microsoft.com/en-us/intune/" target="_blank">Intune documentation</a>
-- Learn more about Windows 10 in <a href="http://technet.microsoft.com/windows/windows10.aspx" target="_blank">Windows 10 guide for IT pros</a>
+- Learn more about Windows 10 in <a href="https://technet.microsoft.com/windows/windows10.aspx" target="_blank">Windows 10 guide for IT pros</a>
 - Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="https://technet.microsoft.com/en-us/itpro/windows/manage/windows-store-for-business" target="_blank">Microsoft Store for Business</a>
 
 ### For information workers

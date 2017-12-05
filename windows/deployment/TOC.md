@@ -197,7 +197,7 @@
 ####### [Recognized Environment Variables](usmt/usmt-recognized-environment-variables.md)
 ####### [XML Elements Library](usmt/usmt-xml-elements-library.md)
 ###### [Offline Migration Reference](usmt/offline-migration-reference.md)
-
+### [Install fonts in Windows 10](windows-10-missing-fonts.md)
 ### [Change history for deploy Windows 10](change-history-for-deploy-windows-10.md)
 
 ## [Update Windows 10](update/index.md)

@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 10/23/2017
+ms.date: 11/01/2017
 ---
 
 # Policy DDF file
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 This topic shows the OMA DM device description framework (DDF) for the **Policy** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
 You can download the DDF files from the links below:
 
+- [Download the Policy DDF file for Windows 10, version 1709](http://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)
 - [Download the Policy DDF file for Windows 10, version 1703](http://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)
 - [Download the Policy DDF file for Windows 10, version 1607](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607.xml)
 - [Download the Policy DDF file for Windows 10, version 1607 release 8C](http://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)

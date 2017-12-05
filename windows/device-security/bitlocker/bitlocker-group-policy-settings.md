@@ -89,7 +89,7 @@ The following policies are used to support customized deployment scenarios in yo
 
 ### <a href="" id="bkmk-hstioptout"></a>Allow devices with Secure Boot and protected DMA ports to opt out of preboot PIN
 
-This policy setting allows users on devices that are compliant with InstantGo or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
+This policy setting allows users on devices that are compliant with Modern Standby or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
  
 <table>
 <colgroup>
@@ -99,7 +99,7 @@ This policy setting allows users on devices that are compliant with InstantGo or
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Policy description</strong></p></td>
-<td align="left"><p>With this policy setting, you can allow TPM-only protection for newer, more secure devices, such as devices that support InstantGo or HSTI, while requiring PIN on older devices.</p></td>
+<td align="left"><p>With this policy setting, you can allow TPM-only protection for newer, more secure devices, such as devices that support Modern Standby or HSTI, while requiring PIN on older devices.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Introduced</strong></p></td>
@@ -121,7 +121,7 @@ This policy setting allows users on devices that are compliant with InstantGo or
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When enabled</strong></p></td>
-<td align="left"><p>Users on InstantGo and HSTI compliant devices will have the choice to turn on BitLocker without preboot authentication.</p></td>
+<td align="left"><p>Users on Modern Standby and HSTI compliant devices will have the choice to turn on BitLocker without preboot authentication.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>
@@ -132,7 +132,7 @@ This policy setting allows users on devices that are compliant with InstantGo or
  
 **Reference**
 
-The preboot authentication option <b>Require startup PIN with TPM</b> of the [Require additional authentication at startup](#bkmk-unlockpol1) policy is often enabled to help ensure security for older devices that do not support InstantGo. 
+The preboot authentication option <b>Require startup PIN with TPM</b> of the [Require additional authentication at startup](#bkmk-unlockpol1) policy is often enabled to help ensure security for older devices that do not support Modern Standby. 
 But visually impaired users have no audible way to know when to enter a PIN. 
 This setting enables an exception to the PIN-required policy on secure hardware. 
 
@@ -343,7 +343,7 @@ This policy setting is used to set a minimum PIN length when you use an unlock m
 </tr>
 <tr class="even">
 <td align="left"><p><strong>When enabled</strong></p></td>
-<td align="left"><p>You can require that users enter a minimum number of digits to when setting their startup PINs.</p></td>
+<td align="left"><p>You can require that startup PINs set by users must have a minimum length you choose that is between 4 and 20 digits.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>
@@ -1100,19 +1100,25 @@ This policy setting is used to control the encryption method and cipher strength
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>When disabled or not configured</strong></p></td>
-<td align="left"><p>BitLocker uses the default encryption method of AES 128-bit or the encryption method that is specified by the setup script.</p></td>
+<td align="left"><p>Beginning with Windows 10, version 1511, BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. Windows Phone does not support XTS; it uses AES-CBC 128-bit by default and supports AES-CBC 256-bit by policy.</p></td>
 </tr>
 </tbody>
 </table>
  
 **Reference**
 
-By default, BitLocker uses AES 128-bit encryption. Available options are AES-128 and AES-256. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128).
+The values of this policy determine the strength of the cipher that BitLocker uses for encryption. 
+Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128).
+
+If you enable this setting, you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. 
+For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. 
+For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10, version 1511 or later.
+
 Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
 
 >**Warning:**  This policy does not apply to encrypted drives. Encrypted drives utilize their own algorithm, which is set by the drive during partitioning.
  
-When this policy setting is disabled, BitLocker uses AES with the same bit strength (128-bit or 256-bit) as specified in the policy setting **Choose drive encryption method and cipher strength (Windows Vista, Windows Server 2008, Windows 7)**. If neither policy is set, BitLocker uses the default encryption method, AES-128, or the encryption method that is specified in the setup script.
+When this policy setting is disabled or not configured, BitLocker will use the default encryption method of XTS-AES 128-bit or the encryption method that is specified in the setup script.
 
 ### <a href="" id="bkmk-hdefxd"></a>Configure use of hardware-based encryption for fixed data drives
 
@@ -2464,7 +2470,7 @@ reduces the likelihood of BitLocker starting in recovery mode as a result of fir
 
 PCR 7 measurements must follow the guidance that is described in [Appendix A Trusted Execution Environment EFI Protocol](http://msdn.microsoft.com/library/windows/hardware/jj923068.aspx).
 
-PCR 7 measurements are a mandatory logo requirement for systems that support InstantGo (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and Secure Boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
+PCR 7 measurements are a mandatory logo requirement for systems that support Modern Standby (also known as Always On, Always Connected PCs), such as the Microsoft Surface RT. On such systems, if the TPM with PCR 7 measurement and Secure Boot are correctly configured, BitLocker binds to PCR 7 and PCR 11 by default.
 
 ## See also
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)

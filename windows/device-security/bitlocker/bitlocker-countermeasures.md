@@ -93,7 +93,7 @@ For many years, Microsoft has recommended using pre-boot authentication to prote
 
 Although effective, pre-boot authentication is inconvenient to users. In addition, if a user forgets their PIN or loses their startup key, they’re denied access to their data until they can contact their organization’s support team to obtain a recovery key. Today, most new PCs running Windows 10, Windows 8.1, or Windows 8 provide sufficient protection against DMA attacks without requiring pre-boot authentication. For example, most modern PCs include USB port options (which are not vulnerable to DMA attacks) but do not include FireWire or Thunderbolt ports (which are vulnerable to DMA attacks).
 
-BitLocker-encrypted devices with DMA ports enabled, including FireWire or Thunderbolt ports, should be configured with pre-boot authentication if they are running Windows 10, Windows 7, Windows 8, or Windows 8.1 and disabling the ports using policy or firmware configuration is not an option. Windows 8.1 and later InstantGo devices do not need pre-boot authentication to defend against DMA-based port attacks, as the ports will not be present on certified devices. A non-InstantGo Windows 8.1 and later device requires pre-boot authentication if DMA ports are enabled on the device and additional mitigations described in this document are not implemented. Many customers find that the DMA ports on their devices are never used, and they choose to eliminate the possibility of an attack by disabling the DMA ports themselves, either at the hardware level or through Group Policy.
+BitLocker-encrypted devices with DMA ports enabled, including FireWire or Thunderbolt ports, should be configured with pre-boot authentication if they are running Windows 10, Windows 7, Windows 8, or Windows 8.1 and disabling the ports using policy or firmware configuration is not an option. Windows 8.1 and later Modern Standby devices do not need pre-boot authentication to defend against DMA-based port attacks, as the ports will not be present on certified devices. A non-Modern Standby Windows 8.1 and later device requires pre-boot authentication if DMA ports are enabled on the device and additional mitigations described in this document are not implemented. Many customers find that the DMA ports on their devices are never used, and they choose to eliminate the possibility of an attack by disabling the DMA ports themselves, either at the hardware level or through Group Policy.
 Many new mobile devices have the system memory soldered to the motherboard, which helps prevent the cold boot–style attack, where the system memory is frozen, removed, and then placed into another device. Those devices, and most PCs, can still be vulnerable when booting to a malicious operating system, however.
 
 You can mitigate the risk of booting to a malicious operating system:
@@ -133,7 +133,7 @@ While the features listed above protect the Windows boot process from malware th
 
 ### Protection After Startup: eliminate DMA availability
 
-Windows InstantGo–certified devices do not have DMA ports, eliminating the risk of DMA attacks. On other devices, you can disable FireWire, Thunderbolt, or other ports that support DMA.
+Windows Modern Standby–certified devices do not have DMA ports, eliminating the risk of DMA attacks. On other devices, you can disable FireWire, Thunderbolt, or other ports that support DMA.
 
 ## See also
 -   [Types of Attacks for Volume Encryption Keys](types-of-attacks-for-volume-encryption-keys.md)

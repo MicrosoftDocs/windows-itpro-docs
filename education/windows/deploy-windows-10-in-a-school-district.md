@@ -823,7 +823,7 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 |-------|---------------------------------------------|
 |Ldifde.exe|This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript|This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx) and [ADSI Scriptomatic](https://technet.microsoft.com/en-us/scriptcenter/dd939958.aspx).|
-|Windows PowerShell|This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
+|Windows PowerShell|This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).|
 
 *Table 12. AD DS bulk-import account methods*
 
@@ -835,7 +835,7 @@ After you have selected your user and group account bulk import method, you’re
 |-------|-------------------|
 |Ldifde.exe |Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).|
 |VBScript |VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).|
-|Windows PowerShell |Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx). |
+|Windows PowerShell |Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx). |
 
 *Table 13. Source file format for each bulk import method*
 
@@ -849,7 +849,7 @@ For more information about how to import user accounts into AD DS by using:
 
 * Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/en-us/kb/555636), [Import or Export Directory Objects Using Ldifde](https://technet.microsoft.com/library/cc816781.aspx), and [LDIFDE](https://technet.microsoft.com/library/cc755456.aspx).
 * VBScript, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://technet.microsoft.com/en-us/library/bb727091.aspx).
-* Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](http://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
+* Windows PowerShell, see [Import Bulk Users to Active Directory](https://blogs.technet.microsoft.com/bettertogether/2011/01/09/import-bulk-users-to-active-directory/) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
 
 #### Summary
 
@@ -927,7 +927,7 @@ To create and configure your Microsoft Store for Business portal, simply use the
 
 #### To create and configure a Microsoft Store for Business portal
 
-1. In Microsoft Edge or Internet Explorer, type `http://microsoft.com/business-store` in the address bar.
+1. In Microsoft Edge or Internet Explorer, type `https://microsoft.com/business-store` in the address bar.
 
 2. On the **Microsoft Store for Business** page, click **Sign in with an organizational account**.
 
@@ -1278,12 +1278,12 @@ You initially configured the MDT deployment share in the [Configure the MDT depl
     For more information, see [Create a New Task Sequence in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewTaskSequenceintheDeploymentWorkbench).
 2. Create an MDT application for each desktop app you want to include in your reference image.
 
-    You create MDT applications by using the New Application Wizard in the Deployment Workbench. As part of creating the MDT application, specify the command-line parameters used to install the app without user intervention (unattended installation). For more information, see [Create a New Application in the Deployment Workbench](http://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).
+    You create MDT applications by using the New Application Wizard in the Deployment Workbench. As part of creating the MDT application, specify the command-line parameters used to install the app without user intervention (unattended installation). For more information, see [Create a New Application in the Deployment Workbench](https://technet.microsoft.com/en-us/library/dn759415.aspx#CreateaNewApplicationintheDeploymentWorkbench).
 3. Customize the task sequence to install the MDT applications that you created in step 2.
 
     You can add an **Install Application** task sequence step to your task sequence. Then, you can customize the **Install Application** task sequence step to install a specific app, which automatically installs the app with no user interaction required when your run the task sequence.
 
-    You need to add an **Install Application** task sequence step for each app you want to include in your reference image. For more information, see [Customize Application Installation in Task Sequences](http://technet.microsoft.com/en-us/library/dn759415.aspx#CustomizeApplicationInstallationinTaskSequences).
+    You need to add an **Install Application** task sequence step for each app you want to include in your reference image. For more information, see [Customize Application Installation in Task Sequences](https://technet.microsoft.com/en-us/library/dn759415.aspx#CustomizeApplicationInstallationinTaskSequences).
 4. Create a selection profile that contains the drivers for the device.
 
     A *selection profile* lets you select specific device drivers. For example, if you want to deploy the device drivers for a Surface Pro 4 device, you can create a selection profile that contains only the Surface Pro 4 device drivers.

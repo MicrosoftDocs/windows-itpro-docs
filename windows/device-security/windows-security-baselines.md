@@ -15,7 +15,6 @@ ms.date: 10/17/2017
 **Applies to**  
 
 -   Windows 10
--   Windows Server (Semi-Annual Channel)
 -   Windows Server 2016 
 
 ## Using security baselines in your organization 
