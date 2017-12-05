@@ -269,7 +269,7 @@ If the verification fails and your environment is using a proxy to connect to th
 ## Troubleshoot onboarding issues on a server
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
-- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#servermma)
+- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-mma)
 - [Ensure that the server endpoint proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#servermma)
 
 

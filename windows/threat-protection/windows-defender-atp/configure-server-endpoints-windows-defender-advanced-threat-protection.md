@@ -49,8 +49,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
     ![Image of server onboarding](images/atp-server-onboarding.png)
 
-<a name="servermma"></a>
-
+<span id="server-mma"/>
 ### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP 
 
 1.	Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
