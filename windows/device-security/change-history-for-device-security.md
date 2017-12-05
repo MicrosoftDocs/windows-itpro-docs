@@ -11,6 +11,11 @@ author: brianlic-msft
 # Change history for device security
 This topic lists new and updated topics in the [Device security](index.md) documentation.
 
+## November 2017
+|New or changed topic |Description |
+|---------------------|------------|
+| [How to enable virtualization-based protection of code integrity](enable-virtualization-based-protection-of-code-integrity.md)| New. Explains how to enable HVCI.  |
+
 ## October 2017
 |New or changed topic |Description |
 |---------------------|------------|

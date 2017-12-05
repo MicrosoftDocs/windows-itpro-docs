@@ -58,6 +58,9 @@ Windows Defender ATP supports the use of Power BI data connectors to enable you 
 - [Configure non-Windows endpoints](configure-endpoints-non-windows-windows-defender-advanced-threat-protection.md)<br>
 Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products' sensor data. 
 
+- [Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md)<br>
+The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. Access and join the community to learn and interact with other members on product specific information. 
+
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-preview-belowfoldlink)  
 
