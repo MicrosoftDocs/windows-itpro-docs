@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/04/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -1381,6 +1381,27 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### December 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Configuration service provider reference](configuration-service-provider-reference.md)</td>
+<td style="vertical-align:top"><p>Added new section [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</p>
+</td></tr>
+</tbody>
+</table>
 
 ### November 2017
 
