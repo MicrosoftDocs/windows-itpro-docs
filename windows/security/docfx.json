@@ -31,7 +31,11 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/windows/security/breadcrumb/toc.json",
+	  "uhfHeaderId": "MSDocsHeader-WindowsIT", 
+	  "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+	  "ms.technology": "windows",
+	  "ms.topic": "article",
+	  "ms.author": "justinha",
       "extendBreadcrumb": true
     },
     "fileMetadata": {},
