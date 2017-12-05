@@ -63,6 +63,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
 Once completed, you should see onboarded servers in the portal within an hour.
 
+<span id="server-proxy"/>
 ### Configure server endpoint proxy and Internet connectivity settings 
 - Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:
