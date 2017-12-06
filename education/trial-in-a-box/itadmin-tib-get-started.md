@@ -21,24 +21,24 @@ Hello, IT administrators! In this guide, we'll show you how to quickly and easil
 
 ## Try out Microsoft Education in 5 easy steps
 
-1. [Log in with your IT admin credentials](#1-log-in).
-2. [Configure a new device with Set up School PCs](#2-configure-a-new-device-with-set-up-school-pcs)
-3. [Go through Intune for Education express configuration](#3-go-through-intune-for-education-express-configuration).
-4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#4-buy-and-deploy-apps).
-5. [Add new folders to all devices in your tenant](#5-add-new-folders-to-all-devices-in-your-tenant).
+1. [Log in with your IT admin credentials](#task1)
+2. [Configure a new device with Set up School PCs](#task2)
+3. [Go through Intune for Education express configuration](#task3)
+4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#task4)
+5. [Add new folders to all devices in your tenant](#task5)
 
 > [!NOTE]
 > To get the most out of Microsoft Education, we've pre-configured your tenant for you so you don't need to set it up. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
 If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education support](support-options.md).
 
-## <span style="color:#00BCF2">1. Log in</span>
+## <a name="task1"></a><span style="color:#00BCF2">1. Log in</span>
 To try out the IT admin tasks, start by logging in as an IT admin.
 
 1. If you're logged in to **Device A** with the teacher account, log off.
 2. Use the IT admin credentials included in your Trial in a Box to log in to the device.
 
-## <span style="color:#00BCF2">2. Configure a new device with Set up School PCs</span>
+## <a name="task2"></a><span style="color:#00BCF2">2. Configure a new device with Set up School PCs</span>
 Quickly set up **Device B** using the **Set up School PCs** app. A PC that's been set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 
 ### Download, install, and get ready
@@ -131,7 +131,7 @@ That's it! You're done. **Device B** is now ready to use. You can use the accoun
 
 You can complete the rest of the IT admin tasks using **Device A**.
 
-## <span style="color:#00BCF2">3. Go through Intune for Education express configuration</span>
+## <a name="task3"></a><span style="color:#00BCF2">3. Go through Intune for Education express configuration</span>
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. 
@@ -159,7 +159,7 @@ Intune for Education provides an **Express configuration** option so you can get
 8. Click **Next** and review the list of apps and settings you selected to apply.
 9. Click **Save** and then click **All done** to go back to the dashboard.
 
-## <span style="color:#00BCF2">4. Buy and deploy apps</span>
+## <a name="task4"></a><span style="color:#00BCF2">4. Buy and deploy apps</span>
 The Microsoft Store for Education is where you can shop for more apps for your school.
 
 1. In Intune for Education, select **Apps**. 
@@ -190,7 +190,7 @@ The Microsoft Store for Education is where you can shop for more apps for your s
     > [!NOTE]  
     > Sync happens automatically, but it may take up to 36 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps.
 
-## <span style="color:#00BCF2">5. Add new folders to all devices in your tenant</span>
+## <a name="task5"></a><span style="color:#00BCF2">5. Add new folders to all devices in your tenant</span>
 Update settings for all devices in your tenant by adding the **Documents** and **Downloads** folders to all devices managed in Intune for Education.
 
 1. Go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
@@ -199,7 +199,7 @@ Update settings for all devices in your tenant by adding the **Documents** and *
 
     ![Choose folders that appear in the Start menu](images/i4e_groups_alldevices_newfolders.png)
 
-## <span style="color:#00BCF2">Other tasks</span>
+## <a name="othertasks"></a><span style="color:#00BCF2">Other tasks</span>
 Looking for other IT admin tasks to try? 
 * [Verify correct device setup](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) 
     * Confirm that the apps you bought from the Microsoft Store for Education appear in the Windows Start screen's **Recently added** section.
