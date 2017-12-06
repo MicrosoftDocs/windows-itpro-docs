@@ -65,7 +65,7 @@
 ###### [Restrict app execution](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#restrict-app-execution)
 ###### [Remove app restriction](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#remove-app-restriction)
 ###### [Isolate machines from the network](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#isolate-machines-from-the-network)
-###### [Release machine from the isolation](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
+###### [Release machine from isolation](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#release-machine-from-isolation)
 ###### [Check activity details in Action center](windows-defender-atp\respond-machine-alerts-windows-defender-advanced-threat-protection.md#check-activity-details-in-action-center)
 ##### [Take response actions on a file](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md)
 ###### [Stop and quarantine files in your network](windows-defender-atp\respond-file-alerts-windows-defender-advanced-threat-protection.md#stop-and-quarantine-files-in-your-network)
@@ -146,6 +146,9 @@
 ##### [Get package SAS URI API](windows-defender-atp\get-package-sas-uri-windows-defender-advanced-threat-protection.md)
 ##### [Get MachineAction object API](windows-defender-atp\get-machineaction-object-windows-defender-advanced-threat-protection.md)
 ##### [Get FileMachineAction object API](windows-defender-atp\get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
+##### [Get MachineActions collection API]
+##### [Get FileMachineActions collection API]
+##### [Get FileActions collection API]
 
 
 ### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)

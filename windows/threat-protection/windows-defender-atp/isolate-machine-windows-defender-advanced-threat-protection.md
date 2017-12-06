@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/06/2017
 ---
 
 # Isolate machine
@@ -75,9 +75,15 @@ HTTP/1.1 201 Created
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#MachineActions/$entity",
-    "id": "ac19aae7-4146-4a13-a786-eb43d8557f7c",
+    "id": "b89eb834-4578-496c-8be0-03f004061435",
     "type": "Isolate",
+    "requestor": "Analyst@contoso.com ",
+    "requestorComment": "Isolate machine due to alert 1234",
     "status": "InProgress",
-    "error": "Unknown"
+    "error": "None",
+    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+    "creationDateTimeUtc": "2017-12-04T12:12:18.9725659Z",
+    "lastUpdateTimeUtc": "2017-12-04T12:12:18.9725659Z" 
 }
+
 ```

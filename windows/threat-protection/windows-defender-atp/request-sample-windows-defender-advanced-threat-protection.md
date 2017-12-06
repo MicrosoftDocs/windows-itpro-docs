@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/07/2017
 ---
 
 # Request sample
@@ -50,11 +50,13 @@ Request
 Here is an example of the request.
 
 ```
-POST https://graph.microsoft.com/testwdatppreview/machines/fb9ab6be3965095a09c057be7c90f0a2/requestSample 
+POST https://graph.microsoft.com/testwdatppreview/machines/fb9ab6be3965095a09c057be7c90f0a2/requestSample
 Content-type: application/json
 {
-  “Sha1”: “7327b54fd718525cbca07dacde913b5ac3c85673”
+  "Comment": "Request Sample on machine due to alert 32123",
+  "Sha1": "8d25682b3a82af25b42dc90291c35ff3293daa68"
 }
+
 ```
 
 Response
@@ -69,9 +71,22 @@ HTTP/1.1 201 Created
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#FileMachineActions/$entity",
-    "id": "ac19aae7-4146-4a13-a786-eb43d8557f7c",
+    "id": "c083f601-012f-4955-b4cc-fab50fb69d79",
+    "sha1": "8d25682b3a82af25b42dc90291c35ff3293daa68",
     "type": "RequestSample",
+    "requestor": "Analyst@contoso.com ",
+    "requestorComment": "test",
     "status": "InProgress",
-    "error": "Unknown"
+    "fileId": "8d25682b3a82af25b42dc90291c35ff3293daa68",
+    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+    "creationDateTimeUtc": "2017-12-04T13:39:24.9399004Z",
+    "lastUpdateDateTimeUtc": "2017-12-04T13:39:24.9399004Z",
+    "fileInstances": [
+        {
+            "filePath": "C:\\Windows\\System32\\conhost.exe",
+            "status": "InProgress"
+        }
+    ] 
 }
+
 ```

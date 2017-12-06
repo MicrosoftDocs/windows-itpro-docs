@@ -1,6 +1,6 @@
 ---
-title: Unisolate machine API
-description: Use this API to create calls related to removing a machine from isolation.
+title: Release machine from isolation API
+description: Use this API to create calls related to release a machine from isolation.
 keywords: apis, graph api, supported apis, remove machine from isolation
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/07/2017
 ---
 
-# Unisolate machine
+# Release machine from isolation
 Undo isolation of a machine.
 
 ## Permissions

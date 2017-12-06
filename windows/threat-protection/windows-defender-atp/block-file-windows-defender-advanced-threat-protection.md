@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/07/2017
 ---
 
 # Block file 
@@ -50,11 +50,12 @@ Request
 Here is an example of the request.
 
 ```
-POST https://graph.microsoft.com/testwdatppreview/machines/7327b54fd718525cbca07dacde913b5ac3c85673/block 
+POST https://graph.microsoft.com/testwdatppreview/files/7327b54fd718525cbca07dacde913b5ac3c85673/block 
 Content-type: application/json
 {
   "Comment": "Block file due to alert 32123"
 }
+
 
 ```
 
@@ -64,5 +65,20 @@ Here is an example of the response.
 
 
 ```
-HTTP/1.1 200 Ok
+HTTP/1.1 201 Created
+Content-type: application/json
+{
+    "fileIdentifier": "7327b54fd718525cbca07dacde913b5ac3c85673",
+     "fileIdentifierType": "Sha1",
+     "actionType": "Block",
+     "fileStatus": "Blocked",
+      "creationDateTimeUtc": "2017-12-04T13:06:23.4502191Z",
+      "requestor": "Analyst@contoso.com ",
+      "requestorComment": "test",
+      "cancellationDateTimeUtc": null,
+      "cancellationRequestor": null,
+      "cancellationComment": null,
+      "lastUpdateDateTimeUtc": "2017-12-04T13:06:23.4502191Z"
+}
+
 ```

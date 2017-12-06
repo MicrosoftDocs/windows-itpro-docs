@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/07/2017
 ---
 
 # Get FileMachineAction object
@@ -45,7 +45,7 @@ Request
 Here is an example of the request.
 
 ```
-GET https://graph.microsoft.com/testwdatppreview/filemachineactions/7327b54fd718525cbca07dacde913b5ac3c85673
+GET https://graph.microsoft.com/testwdatppreview/filemachineactions/3dc88ce3-dd0c-40f7-93fc-8bd14317aab6
 ```
 
 Response
@@ -54,21 +54,27 @@ Here is an example of the response.
 
 
 ```
-HTTP/1.1 201 Created
+HTTP/1.1 200 Ok
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#FileMachineActions/$entity",
-    "id": " 7327b54fd718525cbca07dacde913b5ac3c85673",
-    "sha1": "1163788484e3258ab9fcf692f7db7938f72ddfc2",
+    "id": "3dc88ce3-dd0c-40f7-93fc-8bd14317aab6",
+    "sha1": "8908b4441a2cd7285fe9c82917f69041cd467cf7",
     "type": "StopAndQuarantineFile",
+    "requestor": "Analyst@contoso.com ",
+    "requestorComment": "1104",
     "status": "Succeeded",
-    "machineId": "970a58d5f61786bb7799dfdb5395ec364ffceace",
+    "fileId": "8908b4441a2cd7285fe9c82917f69041cd467cf7",
+    "machineId": "61a2d326d2190d048950406b54af23416118094a",
+    "creationDateTimeUtc": "2017-09-06T08:04:06.1994034Z",
+    "lastUpdateDateTimeUtc": "2017-09-06T08:05:46.9200942Z",
     "fileInstances": [
         {
-            "filePath": "C:\\Users\\alex\\AppData\\Local\\AppFetch\\Temp\\3324bcb\\AppDownloader\\AnApp.appfetch.zip",
+            "filePath": "C:\\tools\\PE\\7f06a650-040b-4774-bb39-5264ea9e93fa.exe",
             "status": "Succeeded"
         }
     ]
 }
+
 
 ```

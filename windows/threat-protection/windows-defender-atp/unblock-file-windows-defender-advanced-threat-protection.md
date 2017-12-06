@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/07/2017
 ---
 
 # Unblock file 
@@ -63,5 +63,20 @@ Here is an example of the response.
 
 
 ```
-HTTP/1.1 200 Ok
+HTTP/1.1 201 Created
+Content-type: application/json
+{
+    "fileIdentifier": "7327b54fd718525cbca07dacde913b5ac3c85673",
+     "fileIdentifierType": "Sha1",
+     "actionType": "UnBlock",
+     "fileStatus": "Blocked",
+      "creationDateTimeUtc": "2017-12-04T13:06:23.4502191Z",
+      "requestor": "Analyst@contoso.com ",
+      "requestorComment": "test",
+      "cancellationDateTimeUtc": null,
+      "cancellationRequestor": null,
+      "cancellationComment": null,
+      "lastUpdateDateTimeUtc": "2017-12-04T13:06:23.4502191Z"
+}
+
 ```

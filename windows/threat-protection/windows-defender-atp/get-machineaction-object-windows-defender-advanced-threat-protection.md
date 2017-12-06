@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/07/2017
 ---
 
 # Get MachineAction object
@@ -45,7 +45,7 @@ Request
 Here is an example of the request.
 
 ```
-GET https://graph.microsoft.com/testwdatppreview/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673
+GET https://graph.microsoft.com/testwdatppreview/machineactions/2e9da30d-27f6-4208-81f2-9cd3d67893ba
 ```
 
 Response
@@ -58,10 +58,16 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#MachineActions/$entity",
-    "id": "ac19aae7-4146-4a13-a786-eb43d8557f7c",
-    "type": "UnrestrictExecution",
-    "status": "Success",
-    "error": "Unknown"
+    "id": "2e9da30d-27f6-4208-81f2-9cd3d67893ba",
+    "type": "RunAntiVirusScan",
+    "requestor": "Analyst@contoso.com ",
+    "requestorComment": "Check machine for viruses due to alert 3212",
+    "status": "Succeeded",
+    "error": "None",
+    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+    "creationDateTimeUtc": "2017-12-04T12:18:27.1293487Z",
+    "lastUpdateTimeUtc": "2017-12-04T12:18:57.5511934Z" 
 }
+
 
 ```

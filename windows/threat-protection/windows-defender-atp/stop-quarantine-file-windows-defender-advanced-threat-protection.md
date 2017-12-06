@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 09/01.2017
+ms.date: 12/07/2017
 ---
 
 # Stop and quarantine file
@@ -50,12 +50,13 @@ Request
 Here is an example of the request.
 
 ```
-POST https://graph.microsoft.com/testwdatppreview/machines/fb9ab6be3965095a09c057be7c90f0a2/unrestrictCodeExecution 
+POST https://graph.microsoft.com/testwdatppreview/machines/fb9ab6be3965095a09c057be7c90f0a2/stopAndQuarantineFile
 Content-type: application/json
 {
   "Comment": "Stop and quarantine file on machine due to alert 32123",
-  “Sha1”: “7327b54fd718525cbca07dacde913b5ac3c85673”
+  "Sha1": "87662bc3d60e4200ceaf7aae249d1c343f4b83c9"
 }
+
 ```
 Response
 
@@ -69,17 +70,27 @@ HTTP/1.1 201 Created
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#FileMachineActions/$entity",
-    "id": "5841901d-6d04-4278-b0b3-8dd6a2acc8a5",
-    "sha1": “1163788484e3258ab9fcf692f7db7938f72ddfc2”,
+    "id": "6f1d364c-680c-499a-b30c-dd9265ad4c9d",
+    "sha1": "87662bc3d60e4200ceaf7aae249d1c343f4b83c9",
     "type": "StopAndQuarantineFile",
-    "status": "Succeeded",
-    "machineId": "970a58d5f61786bb7799dfdb5395ec364ffceace",
+    "requestor": "Analyst@contoso.com ",
+    "requestorComment": " Stop and quarantine file on machine due to alert 32123",
+    "status": "InProgress",
+    "fileId": "87662bc3d60e4200ceaf7aae249d1c343f4b83c9",
+    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+    "creationDateTimeUtc": "2017-12-04T13:13:26.2106524Z",
+    "lastUpdateDateTimeUtc": "2017-12-04T13:13:58.8098277Z",
     "fileInstances": [
         {
-            "filePath": "C:\\Users\\alex\\AppData\\Local\\AppFetch\\Temp\\3324bcb\\AppDownloader\\AnApp.appfetch.zip",
-            "status": "Succeeded"
-        }
+            "filePath": "C:\\Users\\ testUser \\Downloads\\elma.exe",
+            "status": "InProgress"
+        },
+        {
+            "filePath": "C:\\Users\\testUser\\AppData\\Local\\Packages\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\TempState\\Downloads\\elma (2).exe.xc9q785.partial",
+            "status": "InProgress"
+        },
     ]
-}
+ }
+
 
 ```
