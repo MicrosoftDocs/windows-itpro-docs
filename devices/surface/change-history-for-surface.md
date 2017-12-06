@@ -12,6 +12,12 @@ ms.date: 11/03/2017
 
 This topic lists new and updated topics in the Surface documentation library.
 
+## December 2017
+
+|New or changed topic | Description |
+| --- | --- |
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information  |
+
 ## November 2017
 
 |New or changed topic | Description |
