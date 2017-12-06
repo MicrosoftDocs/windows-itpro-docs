@@ -44,7 +44,7 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
   | :------------: | :--------------: | :-------------: | :--------: |
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
-
+See how Microsoft Learning Tools change lives.
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -59,11 +59,11 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
   - Password: onStage!
 3. Follow along with the guide.
 
+See how Microsoft Teams for Education works in the classroom.
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## 3. OneNote
- 
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other studentscollaborate with peers and leverage multiple features.  
@@ -84,6 +84,7 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
 
     ![OneNote Researcher](images/onenote_researcher.png)
 
+Watch how OneNote allows teachers to differentiate instruction to allow for collaboration.
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -108,6 +109,7 @@ Minecraft: Education Edition is an open-world game that promotes creativity, col
 
 Stay in touch with us through our site at <a href="https://education.minecraft.net" target="_blank">https://education.minecraft.net</a> and follow @playcraftlearn on Twitter to keep up with our community news!
 
+Learn about Code Builder for Minecraft: Education Edition.
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
 
