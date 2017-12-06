@@ -14,18 +14,18 @@ ms.date: 12/04/2017
 ---
 
 # Get started for Educators
-Hello, Teachers! In this guide we'll show you how you can quickly and easily try out a few transformational tools in Microsoft 365 Education.
+Hello, Teachers! In this guide we'll show you how you can quickly and easily try out a few transformational tools in Microsoft Education.
 
 ![Explore these four tools for educators](images/msedu_tib_teachersteps_nologo.png)
 
-## Explore these four tools in Microsoft 365 Education
+## Explore these four tools in Microsoft Education
 
-1. [Microsoft Learning Tools](#microsoft-learning-tools)
-2. [Microsoft Teams](#microsoft-teams)
-3. [OneNote](#onenote)
-4. [Minecraft: Education Edition](#minecraft-education-edition)
+1. [Microsoft Learning Tools](#1-microsoft-learning-tools)
+2. [Microsoft Teams](#2-microsoft-teams)
+3. [OneNote](#3-onenote)
+4. [Minecraft: Education Edition](#4-minecraft-education-edition)
 
-## Microsoft Learning Tools
+## 1. Microsoft Learning Tools
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -47,7 +47,7 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
   | :------------: | :--------------: | :-------------: | :--------: |
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
-## Microsoft Teams
+## 2. Microsoft Teams
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
 
@@ -61,7 +61,7 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
   - Password: onStage!
 3. Follow along with the guide.
 
-## OneNote
+## 3. OneNote
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
   
@@ -85,7 +85,7 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
 
     ![OneNote Researcher](images/onenote_researcher.png)
 
-## Minecraft: Education Edition
+## 4. Minecraft: Education Edition
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
   
