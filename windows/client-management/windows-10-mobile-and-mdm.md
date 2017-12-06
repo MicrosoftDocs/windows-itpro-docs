@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: mobile, devices, security
 ms.localizationpriority: high
 author: AMeeus
+ms.date: 09/21/2017
 ---
 
 # Windows 10 Mobile deployment and management guide

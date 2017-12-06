@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/01/2017
 ---
 
 # View the Windows Defender Advanced Threat Protection Security operations dashboard

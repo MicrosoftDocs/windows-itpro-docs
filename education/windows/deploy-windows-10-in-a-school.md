@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: craigash
 ms.author: celested
+ms.date: 10/30/2017
 ---
 
 # Deploy Windows 10 in a school

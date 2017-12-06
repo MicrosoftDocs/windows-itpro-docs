@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: jobotto
+ms.date: 10/16/2017
 ---
 
 # Wake On LAN for Surface devices

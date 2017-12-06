@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 09/21/2017
 ---
 
 # Requirements to use AppLocker

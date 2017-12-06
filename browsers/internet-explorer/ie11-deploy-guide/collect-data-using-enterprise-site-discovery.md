@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: a145e80f-eb62-4116-82c4-3cc35fd064b6
 title: Collect data using Enterprise Site Discovery
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 # Collect data using Enterprise Site Discovery

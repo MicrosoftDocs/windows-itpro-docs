@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/04/2017
 ---
 
 # Policy CSP - ApplicationDefaults
@@ -129,9 +129,4 @@ Footnote:
 
 <!--EndPolicies-->
 
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>ApplicationDefaults policies supported by Microsoft Surface Hub  
-
--   [ApplicationDefaults/DefaultAssociationsConfiguration](#applicationdefaults-defaultassociationsconfiguration)  
-<!--EndSurfaceHub-->
 

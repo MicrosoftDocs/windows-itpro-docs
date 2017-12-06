@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 08/21/2017
+ms.date: 09/06/2017
 ---
 
 # StartupBackgroundTasks (Windows Configuration Designer reference)

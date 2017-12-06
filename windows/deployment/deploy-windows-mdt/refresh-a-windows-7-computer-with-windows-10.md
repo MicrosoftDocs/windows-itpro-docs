@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Refresh a Windows 7 computer with Windows 10

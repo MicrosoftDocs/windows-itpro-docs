@@ -9,6 +9,7 @@ ms.localizationpriority: high
 audience: microsoft-business 
 title: Microsoft 365 Business documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, information workers, and business owners.
+ms.date: 11/01/2017
 ---
 <div id="main" class="v2">
     <div class="container">

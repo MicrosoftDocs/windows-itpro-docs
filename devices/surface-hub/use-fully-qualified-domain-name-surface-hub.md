@@ -4,7 +4,7 @@ description: Troubleshoot common problems, including setup issues, Exchange Acti
 keywords: ["Troubleshoot common problems", "setup issues", "Exchange ActiveSync errors"]
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 07/27/2017
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: support

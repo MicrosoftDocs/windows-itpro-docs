@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/20/2017
+ms.date: 11/17/2017
 ---
 # Hybrid Key trust Windows Hello for Business Prerequisites
 

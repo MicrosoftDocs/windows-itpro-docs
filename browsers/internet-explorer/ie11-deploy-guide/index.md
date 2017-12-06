@@ -7,6 +7,7 @@ ms.assetid: bddc2d97-c38d-45c5-9588-1f5bbff2e9c3
 title: Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
 ms.localizationpriority: low
+ms.date: 07/27/2017
 ---
 
 

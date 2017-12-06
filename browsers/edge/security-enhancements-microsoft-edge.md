@@ -6,6 +6,7 @@ ms.sitesec: library
 ms.pagetype: security
 title: Security enhancements for Microsoft Edge (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Security enhancements for Microsoft Edge

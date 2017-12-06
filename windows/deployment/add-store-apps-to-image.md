@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 07/07/2017
+ms.date: 07/27/2017
 ---
 
 # Add Microsoft Store for Business applications to a Windows 10 image

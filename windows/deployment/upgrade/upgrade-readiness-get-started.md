@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: jaimeo
+ms.date: 09/20/2017
 ---
 
 # Get started with Upgrade Readiness

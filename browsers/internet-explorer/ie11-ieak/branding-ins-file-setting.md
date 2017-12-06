@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: cde600c6-29cf-4bd3-afd1-21563d2642df
 title: Use the Branding .INS file to create custom branding and setup info (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

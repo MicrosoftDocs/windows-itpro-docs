@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: eross-msft
 ms.author: lizross
-ms.date: 10/17/2017
+ms.date: 11/28/2017
 ---
 
 # Windows 10 diagnostic data for the Full telemetry level

@@ -9,7 +9,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: miladCA
-ms.date: 06/29/2017
+ms.date: 10/03/2017
 ---
 
 # Microsoft Surface Data Eraser

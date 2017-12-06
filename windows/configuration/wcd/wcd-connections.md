@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 10/17/2017
+ms.date: 10/09/2017
 ---
 
 # Connections (Windows Configuration Designer reference)

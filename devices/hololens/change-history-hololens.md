@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 07/27/2017
 ---
 
 # Change history for Microsoft HoloLens documentation

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: DaniHalfin
 ms.author: daniha
-ms.date: 10/17/2017
+ms.date: 10/16/2017
 ms.localizationpriority: high
 ---
 

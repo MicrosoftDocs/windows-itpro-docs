@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: eb3cce62-fc7b-41e3-97b6-2916b85bcf55
 title: Manage Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

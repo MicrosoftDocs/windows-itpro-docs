@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 09/11/2017
 ---
 
 # Protect your enterprise data using Windows Information Protection (WIP)

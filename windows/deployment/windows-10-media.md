@@ -5,7 +5,7 @@ keywords: deploy, upgrade, update, software, media
 ms.prod: w10
 ms.mktglfcycl: plan
 ms.localizationpriority: high
-ms.date: 10/18/2017
+ms.date: 10/20/2017
 ms.sitesec: library
 author: greg-lindsay
 ---

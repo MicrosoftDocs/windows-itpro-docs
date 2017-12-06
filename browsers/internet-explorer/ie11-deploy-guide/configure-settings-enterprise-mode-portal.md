@@ -7,6 +7,7 @@ author: eross-msft
 ms.prod: ie11
 title: Use the Settings page to finish setting up the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 # Use the Settings page to finish setting up the Enterprise Mode Site List Portal

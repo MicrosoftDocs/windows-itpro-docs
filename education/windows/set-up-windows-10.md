@@ -9,6 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 07/27/2017
 ---
 
 # Set up Windows devices for education

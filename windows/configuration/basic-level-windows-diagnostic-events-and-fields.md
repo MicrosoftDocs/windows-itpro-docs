@@ -9,6 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: high
 author: eross-msft
 ms.author: lizross
+ms.date: 12/04/2017
 ---
 
 
@@ -16,7 +17,7 @@ ms.author: lizross
 
  **Applies to**
 
-- Windows 10, version 1703 and later
+- Windows 10, version 1703
 
 The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information. The Basic level also helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
 
@@ -26,7 +27,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 - [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
 
 >[!Note]
->Updated July 2017 to document new and modified events. We’ve added new fields to several Appraiser events to prepare for upgrades to the next release of Windows and we’ve added a brand-new event, Census.Speech, to collect basic details about speech settings and configuration.
+>Updated November 2017 to document new and modified events. We’ve added some new events and also added new fields to existing events to prepare for upgrades to the next release of Windows.
 
 ## Common data extensions
 
@@ -592,6 +593,7 @@ The following fields are available:
 - **NotRegressed**  Does the device have a problem code on the source OS that is no better than the one it would have on the target OS?
 - **SdbDeviceBlockUpgrade**  Is there an SDB block on the PNP device that blocks upgrade?
 - **SdbDriverBlockOverridden**  Is there an SDB block on the PNP device that blocks upgrade, but that block was overridden?
+- **AssociatedDriverWillNotMigrate** Will the driver associated with this plug-and-play device migrate?
 
 
 ### Microsoft.Windows.Appraiser.General.DecisionDevicePnpRemove
@@ -1475,6 +1477,7 @@ The following fields are available:
 - **IsDERequirementMet**  Represents if the device can do device encryption.
 - **IsEDPEnabled**  Represents if Enterprise data protected on the device.
 - **ContainerType**  The type of container, such as process or virtual machine hosted.
+- **EnrollmentType** Represents the type of enrollment, such as MDM or Intune, for a particular device.
 
 
 ### Census.Firmware
@@ -1538,7 +1541,11 @@ The following fields are available:
 - **OEMModelBaseBoardVersion**  Differentiates between developer and retail devices.
 - **ActiveMicCount**  The number of active microphones attached to the device.
 - **OEMModelSystemVersion**  The system model version set on the device by the OEM.
-
+- **D3DMaxFeatureLevel** The supported Direct3D version.
+- **Gyroscope** Indicates whether the device has a gyroscope.
+- **Magnetometer** Indicates whether the device has a magnetometer.
+- **NFCProximity** Indicates whether the device supports NFC.
+- **TelemetryLevelLimitEnhanced** The telemetry level for Windows Analytics-based solutions.
 
 ### Census.Memory
 
@@ -1611,7 +1618,8 @@ The following fields are available:
 - **OSSubscriptionStatus**  Represents the existing status for enterprise subscription feature for PRO machines.
 - **ServiceMachinePort**  Retrieves the port of the KMS host used for anti-piracy.
 - **DeviceTimeZone**  The time zone that is set on the device. Example: Pacific Standard Time
-- **DeveloperUnlockStatus**  Represents if a device has been developer unlocked by the user or Group Policy. 
+- **DeveloperUnlockStatus**  Represents if a device has been developer unlocked by the user or Group Policy.
+- **AssignedAccessStatus** The kiosk configuration mode.
 
 
 ### Census.Processor
@@ -1628,6 +1636,7 @@ The following fields are available:
 - **ProcessorModel**  Retrieves the name of the processor model.
 - **SocketCount**  Number of physical CPU sockets of the machine.
 - **ProcessorIdentifier**  The processor identifier of a manufacturer.
+- **ProcessorUpdateRevision** The microcode version.
 
 
 ### Census.Speech
@@ -1713,6 +1722,8 @@ The following fields are available:
 - **IOMMUPresent**  Represents if an input/output memory management unit (IOMMU) is present.
 - **IsVirtualDevice**  Retrieves that when the Hypervisor is Microsoft's Hyper-V Hypervisor or other Hv#1 Hypervisor, this field will be set to FALSE for the Hyper-V host OS and TRUE for any guest OS's. This field should not be relied upon for non-Hv#1 Hypervisors.
 - **HyperVisor**  Retrieves whether the current OS is running on top of a Hypervisor.
+- **CloudService** Indicates which cloud service, if any, that this virtual machine is running within.
+- **isVDI** Is the device using Virtual Desktop Infrastructure?
 
 
 ### Census.WU
@@ -1738,6 +1749,12 @@ The following fields are available:
 - **OSRollbackCount**  The number of times feature updates have rolled back on the device.
 - **UninstallActive**  A flag that represents when a device has uninstalled a previous upgrade recently.
 - **AppraiserGatedStatus**  Indicates whether a device has been gated for upgrading.
+- **OSAssessmentFeatureOutOfDate** How many days has it been since a the last feature update was released but the device did not install it?
+- **OSAssessmentForFeatureUpdate** Is the device is on the latest feature update?
+- **OSAssessmentForQualityUpdate** Is the device on the latest quality update?
+- **OSAssessmentForSecurityUpdate** Is the device  on the latest security update?
+- **OSAssessmentQualityOutOfDate** How many days has it been since a the last quality update was released but the device did not install it?
+- **OSAssessmentReleaseInfoTime** The freshness of release information used to perform an assessment.
 
 
 ### Census.Xbox
@@ -1751,6 +1768,17 @@ The following fields are available:
 - **XboxLiveSandboxId**  Retrieves the developer sandbox id if the device is internal to MS.
 - **XboxConsolePreferredLanguage**  Retrieves the preferred language selected by the user on Xbox console.
 
+### Census.Security
+
+This event provides information on about security settings used to help keep Windows up-to-date and secure.
+
+- **AvailableSecurityProperties** Enumerates and reports state on the relevant security properties for Device Guard.
+- **CGRunning** Is Credential Guard running?
+- **DGState** A summary of the Device Guard state.
+- **HVCIRunning** Is HVCI running?
+- **RequiredSecurityProperties** Describes the required security properties to enable virtualization-based security.
+- **SecureBootCapable** Is this device capable of running Secure Boot?
+- **VBSState** Is virtualization-based security enabled, disabled, or running?
 
 ## Diagnostic data events
 
@@ -2001,7 +2029,24 @@ The following fields are available:
 - **aeinv**  The version of the App inventory component.
 - **devinv**  The file version of the Device inventory component.
 
+### Microsoft.Windows.Inventory.Core.InventoryDeviceUsbHubClassStartSync
 
+This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent
+
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory file generating the events
+- 
+### Microsoft.Windows.Inventory.Core.InventoryDeviceUsbHubClassAdd
+
+This event sends basic metadata about the USB hubs on the device
+
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory file generating the events
+- **TotalUserConnectablePorts**  Total number of connectable USB ports
+- **TotalUserConnectableTypeCPorts**  Total number of connectable USB Type C ports
+- 
 ### Microsoft.Windows.Inventory.Core.InventoryApplicationAdd
 
 This event sends basic metadata about an application on the system to help keep Windows up to date.
@@ -2120,6 +2165,7 @@ The following fields are available:
 - **RelativeOrientation**  Indicates if a Relative Orientation sensor is found.
 - **SimpleDeviceOrientation**  Indicates if a Simple Device Orientation sensor is found.
 - **Temperature**  Indicates if a Temperature sensor is found.
+- **EnergyMeter** Indicates if an Energy sensor is found.
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDeviceInterfaceStartSync
@@ -2282,6 +2328,7 @@ The following fields are available:
 - **SubmissionId**  The HLK submission ID for the driver package.
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **InventoryVersion**  The version of the inventory file generating the events.
+- **DriverInBox** Is the driver included with the operating system?
 
 
 ### Microsoft.Windows.Inventory.Core.InventoryDriverPackageRemove
@@ -2313,6 +2360,53 @@ The following fields are available:
 - **ChecksumDictionary**  A count of each operating system indicator.
 - **PCFP**  Equivalent to the InventoryId field that is found in other core events.
 
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAAdd
+
+This event provides a summary rollup count of conditions encountered while performing a local scan of Office files, analyzing for known VBA programmability compatibility issues between legacy office version and ProPlus, and between 32 and 64-bit versions
+
+The following fields are available:
+
+- **Design**  Count of files with design issues found
+- **Design_x64**  Count of files with 64 bit design issues found
+- **DuplicateVBA**  Count of files with duplicate VBA code
+- **HasVBA**  Count of files with VBA code
+- **Inaccessible**  Count of files that were inaccessible for scanning
+- **Issues**  Count of files with issues detected
+- **Issues_x64**  Count of files with 64-bit issues detected
+- **IssuesNone**  Count of files with no issues detected
+- **IssuesNone_x64**  Count of files with no 64-bit issues detected
+- **Locked**  Count of files that were locked, preventing scanning
+- **NoVBA**  Count of files with no VBA inside
+- **Protected**  Count of files that were password protected, preventing scanning
+- **RemLimited**  Count of files that require limited remediation changes
+- **RemLimited_x64**  Count of files that require limited remediation changes for 64-bit issues
+- **RemSignificant**  Count of files that require significant remediation changes
+- **RemSignificant_x64**  Count of files that require significant remediation changes for 64-bit issues
+- **Score**  Overall compatibility score calculated for scanned content
+- **Score_x64**  Overall 64-bit compatibility score calculated for scanned content
+- **Total**  Total number of files scanned
+- **Validation**  Count of files that require additional manual validation
+- **Validation_x64**  Count of files that require additional manual validation for 64-bit issues
+
+### Microsoft.Windows.Inventory.Core.InventoryApplicationFrameworkStartSync
+
+This event indicates that a new set of InventoryApplicationFrameworkAdd events will be sent
+
+The following fields are available:
+
+- **InventoryVersion**  The version of the inventory file generating the events
+
+### Microsoft.Windows.Inventory.Core.InventoryApplicationFrameworkAdd
+
+This event provides the basic metadata about the frameworks an application may depend on
+
+The following fields are available:
+
+- **FileId**  A hash that uniquely identifies a file
+- **Frameworks**  The list of frameworks this file depends on
+- **InventoryVersion**  The version of the inventory file generating the events
+- **ProgramId**  A hash of the Name, Version, Publisher, and Language of an application used to identify it
+
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorAdd
 
@@ -2323,6 +2417,17 @@ The following fields are available:
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 - **IndicatorValue**  The indicator value
 
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBAStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
 
 ### Microsoft.Windows.Inventory.Indicators.InventoryMiscellaneousUexIndicatorRemove
 
@@ -2341,6 +2446,98 @@ The following fields are available:
 
 - **PartB_Ms.Device.DeviceInventoryChange**  See the Common Data Fields section.
 
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeVBARuleViolationsAdd
+
+This event provides data on Microsoft Office VBA rule violations, including a rollup count per violation type, giving an indication of remediation requirements for an organization. The event identifier is a unique GUID, associated with the validation rule
+
+The following fields are available:
+
+- **Count**  Count of total Microsoft Office VBA rule violations
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInAdd
+
+This event provides data on the installed Office Add-ins.
+
+- **AddInCLSID** The CLSID key office the Office addin.
+- **AddInId** The ID of the Office addin.
+- **BinFileTimestamp** The timestamp of the Office addin.
+- **BinFileVersion** The version of the Office addin.
+- **Description** The description of the Office addin.
+- **FileId** The file ID of the Office addin.
+- **FriendlyName** The friendly name of the Office addin.
+- **FullPath** The full path to the Office addin.
+- **LoadBehavior** A Uint32 that describes the load behavior.
+- **LoadTime** The load time for the Office addin.
+- **OfficeApplication** The OIffice application for this addin.
+- **OfficeArchitecture** The architecture of the addin.
+- **OfficeVersion** The Office version for this addin.
+- **OutlookCrashingAddin** A boolean value that indicates if crashes have been found for this addin.
+- **Provider** The provider name for this addin.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeAddInStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersAdd
+
+This event provides data on the installed Office identifiers.
+
+- **OAudienceData** The Office Audience descriptor.
+- **OAudienceId** The Office Audience ID.
+- **OMID** The Office machine ID.
+- **OPlatform** The Office architecture.
+- **OVersion** The Office version
+- **OTenantId** The Office 365 Tenant GUID.
+- **OWowMID** The Office machine ID.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIdentifiersStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsStartSync
+
+This event indicates that a new sync is being generated for this object type.
+
+There are no fields in this event.
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeIESettingsAdd
+
+This event provides data on the installed Office-related Internet Explorer features.
+
+- **OIeFeatureAddon** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMachineLockdown** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMimeHandling** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeMimeSniffing** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeNoAxInstall** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeNoDownload** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeObjectCaching** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIePasswordDisable** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeSafeBind** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeSecurityBand** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeUncSaveCheck** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeValidateUrl** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeWebOcPopup** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeWinRestrict** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+- **OIeZoneElevate** For more information, see the Office-related [Internet Feature Control Keys](https://msdn.microsoft.com/en-us/library/ee330720.aspx).
+
+### Microsoft.Windows.Inventory.General.InventoryMiscellaneousOfficeProductsAdd
+
+This event describes the Office products that are installed.
+
+- **OC2rApps** The Office Click-to-Run apps.
+- **OC2rSkus** The Office Click-to-Run products.
+- **OMsiApps** The Office MSI apps.
+- **OProductCodes** The Office MSI product code.
 
 ## OneDrive events
 

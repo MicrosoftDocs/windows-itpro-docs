@@ -8,7 +8,7 @@ ms.pagetype: appcompat
 ms.sitesec: library
 author: eross-msft
 ms.author: lizross
-ms.date: 08/11/2017
+ms.date: 08/14/2017
 ms.localizationpriority: low
 ---
 

@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 07/07/2017
+ms.date: 10/23/2017
 ---
 # Validate Active Directory prerequisites
 

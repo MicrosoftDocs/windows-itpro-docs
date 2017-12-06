@@ -10,6 +10,7 @@ author: trudyha
 searchScope:
   - Store
 ms.author: trudyha
+ms.date: 07/27/2017
 ---
 
 # Get Minecraft: Education Edition

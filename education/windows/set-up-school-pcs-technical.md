@@ -9,6 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 10/13/2017
 ---
 
 # Technical reference for the Set up School PCs app 
