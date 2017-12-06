@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: f486c9db-0dc9-4cd6-8a0b-8cb872b1d361
 title: Set the default browser using Group Policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
 ms.pagetype: security
+ms.date: 09/21/2017
 ---
 
 # Document the Group Policy structure and AppLocker rule enforcement

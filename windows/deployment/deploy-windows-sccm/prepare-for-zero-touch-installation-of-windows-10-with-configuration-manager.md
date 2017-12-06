@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Prepare for Zero Touch Installation of Windows 10 with Configuration Manager

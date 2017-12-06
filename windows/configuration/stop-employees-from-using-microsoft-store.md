@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: store, mobile
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Configure access to Microsoft Store

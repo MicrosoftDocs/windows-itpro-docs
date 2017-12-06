@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 238ead3d-8920-429a-ac23-02f089c4384a
 title: Using IE7 Enterprise Mode or IE8 Enterprise Mode (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

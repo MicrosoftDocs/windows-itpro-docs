@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
+ms.date: 09/21/2017
 ---
 
 # Display a custom URL message when users try to run a blocked app

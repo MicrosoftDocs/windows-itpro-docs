@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 38a2b90f-c324-4dc8-ad30-8cd3e3e901d7
 title: Use the Custom Components page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

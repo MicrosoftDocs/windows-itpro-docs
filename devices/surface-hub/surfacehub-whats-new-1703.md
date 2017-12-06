@@ -7,7 +7,7 @@ ms.pagetype: devices
 ms.sitesec: library
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 07/27/2017
 ms.localizationpriority: medium
 ---
 

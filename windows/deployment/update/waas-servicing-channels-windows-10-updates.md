@@ -7,7 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 07/27/2017
+ms.date: 10/13/2017
 ---
 
 # Assign devices to servicing channels for Windows 10 updates

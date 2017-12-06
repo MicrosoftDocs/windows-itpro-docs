@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.author: justinha
 author: brianlic-msft
-ms.date: 11/07/2017
+ms.date: 11/28/2017
 ---
 
 # Enable virtualization-based protection of code integrity 

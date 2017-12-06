@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 6fc30e91-efac-4ba5-9ee2-fa77dcd36467
 title: Group Policy, the Local Group Policy Editor, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 10/16/2017
 author: jaimeo
 ms.author: jaimeo
 ---

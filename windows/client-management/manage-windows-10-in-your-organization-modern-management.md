@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 12/04/2017
 ---
 
 # Manage Windows 10 in your organization - transitioning to modern management

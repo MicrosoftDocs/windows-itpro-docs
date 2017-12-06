@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Lockdown features from Windows Embedded 8.1 Industry

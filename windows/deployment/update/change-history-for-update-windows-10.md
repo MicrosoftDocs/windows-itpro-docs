@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: DaniHalfin
 ms.author: daniha
-ms.date: 10/10/2017
+ms.date: 10/17/2017
 ---
 
 # Change history for Update Windows 10

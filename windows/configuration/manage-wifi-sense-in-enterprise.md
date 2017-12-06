@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 07/27/2017
 ---
 
 # Manage Wi-Fi Sense in your company

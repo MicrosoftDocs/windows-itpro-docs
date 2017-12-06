@@ -9,7 +9,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
-ms.date: 11/08/2017
+ms.date: 11/09/2017
 ---
 
 # Create a Windows 10 reference image

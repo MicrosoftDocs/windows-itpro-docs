@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.author: sagaudre
 author: brianlic-msft
-ms.date: 10/17/2017
+ms.date: 10/16/2017
 ---
 
 # Microsoft Security Compliance Toolkit 1.0

@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 10/31/2017
 ---
 
 # Manage Windows 10 Start and taskbar layout

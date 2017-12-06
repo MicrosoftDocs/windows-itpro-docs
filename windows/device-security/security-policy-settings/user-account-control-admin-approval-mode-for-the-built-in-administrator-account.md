@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 09/08/2017
 ---
 
 # User Account Control: Admin Approval Mode for the Built-in Administrator account

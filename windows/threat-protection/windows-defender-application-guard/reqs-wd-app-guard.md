@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.author: lizross
-ms.date: 08/11/2017
+ms.date: 11/09/2017
 ---
 
 # System requirements for Windows Defender Application Guard

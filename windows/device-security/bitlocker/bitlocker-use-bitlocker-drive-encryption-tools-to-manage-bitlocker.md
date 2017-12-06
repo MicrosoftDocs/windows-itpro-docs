@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 09/25/2017
 ---
 
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker

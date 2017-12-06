@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: elizapo
 author: lizap
-ms.date: 09/13/2017
+ms.date: 09/14/2017
 ---
 
 # Per-user services in Windows 10 and Windows Server 

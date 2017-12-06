@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: justinha
+ms.date: 04/19/2017
 ---
 
 # How to use single sign on (SSO) over VPN and Wi-Fi connections

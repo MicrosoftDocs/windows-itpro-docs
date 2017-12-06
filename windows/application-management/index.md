@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 09/15/2017
+ms.date: 09/26/2017
 ---
 
 # Windows 10 application management

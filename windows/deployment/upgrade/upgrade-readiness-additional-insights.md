@@ -3,6 +3,7 @@ title: Upgrade Readiness - Additional insights
 description: Explains additional features of Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
+ms.date: 10/26/2017
 ---
 
 # Upgrade Readiness - Additional insights
