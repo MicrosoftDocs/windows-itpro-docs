@@ -25,7 +25,7 @@ Hello, Teachers! In this guide we'll show you how you can quickly and easily try
 3. [OneNote](#3-onenote)
 4. [Minecraft: Education Edition](#4-minecraft-education-edition)
 
-## 1. Microsoft Learning Tools
+## <span style="color:#00BCF2">1. Microsoft Learning Tools<span>
 Learning Tools is a set of features available in Word, OneNote, and the Edge browser that helps:
 * Increase fluency for English language learners
 * Build confidence for emerging readers
@@ -48,7 +48,7 @@ See how Microsoft Learning Tools change lives.
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
 
-## 2. Microsoft Teams
+## <span style="color:#00BCF2">2. Microsoft Teams</span>
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. Throughhis guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Take a guided tour of Microsoft Teams and test drive some teaching tasks. 
@@ -63,7 +63,7 @@ See how Microsoft Teams for Education works in the classroom.
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
 
-## 3. OneNote
+## <span style="color:#00BCF2">3. OneNote</span>
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other studentscollaborate with peers and leverage multiple features.  
@@ -88,7 +88,7 @@ Watch how OneNote allows teachers to differentiate instruction to allow for coll
 </br>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
 
-## 4. Minecraft: Education Edition
+## <span style="color:#00BCF2">4. Minecraft: Education Edition</span>
 Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Explore a Minecraft world
