@@ -31,7 +31,7 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
 * Build confidence for emerging readers
 * Provides text decoding solutions for students with learning differences such as dyslexia 
 
-<span style="color:#00BCF2; font-size:2em">**Try this!**</span> Launch Immersive Reader directly from "Learning design thinking from the ancient Egyptians" in Word Online. Hear text read aloud, change the spacing of lines, and highlight for syntax.
+<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Launch Immersive Reader directly from "Learning design thinking from the ancient Egyptians" in Word Online. Hear text read aloud, change the spacing of lines, and highlight for syntax.
 
 1. Select "Learning design thinking from the ancient Egyptians" to open it in Word Online.  
 2. Select the **View** tab, then **Immersive Reader**. Immersive Reader will launch into a full-screen experience.
@@ -51,7 +51,7 @@ Learning Tools is a set of features available in Word, OneNote, and the Edge bro
 ## 2. Microsoft Teams
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. Throughhis guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
 
-<span style="color:#00BCF2; font-size:2em">**Try this!**</span> Take a guided tour of Microsoft Teams and test drive some teaching tasks. 
+<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Take a guided tour of Microsoft Teams and test drive some teaching tasks. 
 
 1. Open your browser and visit <a href="https://aka.ms/EduTeamsWalkthrough" target="_blank">https://aka.ms/EduTeamsWalkthrough</a>.
 2. Sign in using these credentials:
@@ -66,7 +66,7 @@ Microsoft Teams is a digital hub that brings conversations, content, and apps to
  
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
 
-<span style="color:#00BCF2; font-size:2em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other studentscollaborate with peers and leverage multiple features.  
+<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other studentscollaborate with peers and leverage multiple features.  
 
 1. Open the Windows **Start** menu ![Windows Start menu](images/windows_start.png) and select the OneNote for Windows 10 app. 
 2. OneNote will automatically open to the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
@@ -90,7 +90,7 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
 ## 4. Minecraft: Education Edition
 Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
 
-<span style="color:#00BCF2; font-size:2em">**Try this!**</span> Explore a Minecraft world
+<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Explore a Minecraft world
 
 1. First, connect the included mouse to your computer. Minecraft: Education Edition operates best with a mouse.
 2. Open your browser and visit <a href="https://aka.ms/lessonhub" target="_blank">https://aka.ms/lessonhub</a>.
