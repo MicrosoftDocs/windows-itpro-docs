@@ -44,6 +44,7 @@ Windows AutoPilot allows you to:
 * Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
 * Devices must have access to the internet
 * [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
+* [Users must be allowed to join devices into Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/device-management-azure-portal)
 * Microsoft Intune or other MDM services to manage your devices
 
 ## Windows AutoPilot Scenarios
