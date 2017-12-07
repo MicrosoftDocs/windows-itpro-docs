@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 12/04/2017
+ms.date: 12/08/2017
 ---
 
 # Get started for Educators

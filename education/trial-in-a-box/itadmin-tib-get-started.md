@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 12/04/2017
+ms.date: 12/08/2017
 ---
 
 # Get started for IT Admins
@@ -64,14 +64,16 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
     > [!NOTE]  
     > The name must be five (5) characters or less. Set up School PCs automatically appends `_%SERIAL%` to the prefix that you specify. `_%SERIAL%` ensures that all device names are unique. For example, if you add *Math4* as the prefix, the device names will be *Math4* followed by a random string of letters and numbers. 
 
-7. In **Configure student PC settings**, you can specify other settings for the student PC:
+7. In **Configure student PC settings**, you can specify other settings for the student PC.
 
-    ![Configure student PC settings](images/suspc_configure_pcsettings.png)
+    We recommend these settings:
 
+    ![Configure student PC settings](images/suspc_configure_pcsettings2.png)
+    
   - **Remove apps pre-installed by the device manufacturer** installs only the base Windows 10 image.
 
       > [!NOTE]  
-      > If you select this option, the provisioning process will take longer (about 30 minutes).
+      > Don't select this option. This will reset the machine and the provisioning process will take longer (about 30 minutes).
 
   - **Allow local storage (not recommended for shared devices)** lets students save files to the **Desktop** and **Documents** folder on the student PC.
   - **Optimize device for a single student, instead of a shared cart or lab** optimizes the device for use by a single student (1:1). 
