@@ -27,10 +27,10 @@ The same set of procedures used to enable Windows Defender Credential Guard on p
 
 You can use Group Policy to enable Windows Defender Credential Guard. This will add and enable the virtualization-based security features for you if needed.
 
-1.  From the Group Policy Management Console, go to **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Windows Defender Device Guard**.
+1.  From the Group Policy Management Console, go to **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard**.
 2.  Double-click **Turn On Virtualization Based Security**, and then click the **Enabled** option.
-3.  **Select Platform Security Level** box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
-4.  In the **Windows Defender Credential Guard Configuration** box, click **Enabled with UEFI lock**, and then click **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**.
+3.  In the **Select Platform Security Level** box, choose **Secure Boot** or **Secure Boot and DMA Protection**.
+4.  In the **Credential Guard Configuration** box, click **Enabled with UEFI lock**, and then click **OK**. If you want to be able to turn off Windows Defender Credential Guard remotely, choose **Enabled without lock**.
 
     ![Windows Defender Credential Guard Group Policy setting](images/credguard-gp.png)
     
@@ -109,7 +109,7 @@ You can view System Information to check that Windows Defender Credential Guard 
 
 1.  Click **Start**, type **msinfo32.exe**, and then click **System Information**.
 2.  Click **System Summary**.
-3.  Confirm that **Windows Defender Credential Guard** is shown next to **Windows Defender Device Guard Security Services Running**.
+3.  Confirm that **Credential Guard** is shown next to **Virtualization-based security**.
 
     Here's an example:
     
