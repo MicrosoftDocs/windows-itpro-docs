@@ -69,7 +69,7 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
     We recommend these settings:
 
     ![Configure student PC settings](images/suspc_configure_pcsettings2.png)
-    
+
   - **Remove apps pre-installed by the device manufacturer** installs only the base Windows 10 image.
 
       > [!NOTE]  
@@ -200,6 +200,8 @@ Update settings for all devices in your tenant by adding the **Documents** and *
 3. In **Choose folders that appear in the Start menu**, select **Documents** and **Downloads**.
 
     ![Choose folders that appear in the Start menu](images/i4e_groups_alldevices_newfolders.png)
+
+4. **Save** your changes.
 
 ## <a name="othertasks"></a>Other tasks
 Looking for other IT admin tasks to try? 
