@@ -42,7 +42,7 @@ If successful, this method returns 200, Ok response code with a collection of Fi
 
 Request
 
-Here is an example of the request on an organization that has 3 FileMachineActions.
+Here is an example of the request on an organization that has three FileMachineActions.
 
 ```
 GET https://graph.microsoft.com/testwdatppreview/filemachineactions
