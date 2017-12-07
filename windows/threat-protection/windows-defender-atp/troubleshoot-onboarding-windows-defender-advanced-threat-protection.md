@@ -272,6 +272,23 @@ If you encounter issues while onboarding a server, go through the following veri
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-mma)
 - [Ensure that the server endpoint proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-proxy)
 
+Other things to check:
+- Check that there is a Windows Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
+
+    ![Image of process view with Windows Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
+
+- Check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
+
+- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example, 
+
+    ![Image of Services](images/atp-services.png)
+
+- In **Microsoft Monitoring Agent** > **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running. 
+
+    ![Image of Microsoft Monitoring Agent Properties](images/atp-mma-properties.png)
+
+- Check to see that machines are reflected in the **Machines list** in the portal. 
+
 
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
