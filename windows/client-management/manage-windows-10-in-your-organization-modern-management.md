@@ -23,6 +23,9 @@ This six-minute video demonstrates how users can bring in a new retail device an
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/g1rIcBhhxpA" frameborder="0" allowfullscreen></iframe> 
 
+ >[!NOTE]
+ >The video demonstrates the configuration process using the classic Azure portal, which will be retired January 08, 2018. Customers should use the new Azure portal. [Learn how use the new Azure portal to perform tasks that you used to do in the classic Azure portal.](https://docs.microsoft.com/information-protection/deploy-use/migrate-portal)
+
 This topic offers guidance on strategies for deploying and managing Windows 10, including deploying Windows 10 in a mixed environment. The topic covers [management options](#reviewing-the-management-options-with-windows-10) plus the four stages of the device lifecycle:
 
 -   [Deployment and Provisioning](#deployment-and-provisioning)
