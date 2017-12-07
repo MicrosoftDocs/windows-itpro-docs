@@ -14,7 +14,7 @@ ms.date: 10/16/2017
 ---
 
 # Get FileActions collection
-Get FileActions collection API supports OData V4 queries.
+Gets collection of actions done on files. Get FileActions collection API supports OData V4 queries.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.

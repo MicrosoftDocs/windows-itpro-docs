@@ -14,7 +14,7 @@ ms.date: 12/07/2017
 ---
 
 # Get FileMachineAction object
-Get FileMachineAction object.
+Gets file and machine actions.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.

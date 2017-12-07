@@ -14,7 +14,7 @@ ms.date: 12/07/2017
 ---
 
 # Get MachineActions collection
-Get MachineAction collection API supports OData V4 queries.
+ Gets collection of actions done on machines. Get MachineAction collection API supports OData V4 queries.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.

@@ -14,7 +14,7 @@ ms.date: 12/07/2017
 ---
 
 # Get package SAS URI
-Get a URI that allows downloading an investigation package.
+Get a URI that allows downloading of an investigation package.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.

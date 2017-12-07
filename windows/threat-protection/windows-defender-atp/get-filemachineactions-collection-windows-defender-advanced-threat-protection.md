@@ -14,7 +14,7 @@ ms.date: 12/07/2017
 ---
 
 # Get FileMachineActions collection
-Get FileMachineActions collection API supports OData V4 queries.
+Get collection of file and machine actions. Get FileMachineActions collection API supports OData V4 queries.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.

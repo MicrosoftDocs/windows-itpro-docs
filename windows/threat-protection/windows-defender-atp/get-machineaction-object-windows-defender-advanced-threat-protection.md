@@ -14,7 +14,7 @@ ms.date: 12/07/2017
 ---
 
 # Get MachineAction object
-Get MachineAction object
+Get actions done on a machine.
 
 ## Permissions
 Users need to have Security administrator or Global admin directory roles.
