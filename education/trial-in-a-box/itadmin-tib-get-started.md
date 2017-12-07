@@ -59,6 +59,10 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
     1. Select **Work or school account > Use another account** and then enter your Trial in a Box admin account email and password. 
     2. Click **Accept**.
 5. Follow the instructions in the app to select your school's wireless network, or add one manually. 
+
+    > [!NOTE]
+    > For Trial in a Box, we recommend plugging in an Ethernet or wired connection to your device.
+
 6. Add a short name that Set up School PCs will use as a prefix to identify and easily manage the group of devices, apps, and other settings through Intune for Education.
   
     > [!NOTE]  
@@ -127,6 +131,9 @@ A provisioning package is a method for applying settings to Windows 10 without n
     If the PC has passed the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
 
     ![The first screen to set up a new PC in Windows 10 Fall Creators Update](images/win10_oobe_firstscreen.png)
+
+    > [!NOTE]
+    > We recommend connecting **Device B** to an Ethernet or wired connection for the best provisioning experience.
 
 2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. When prompted, remove the USB drive. You can then use the USB drive to start provisioning another student PC.
