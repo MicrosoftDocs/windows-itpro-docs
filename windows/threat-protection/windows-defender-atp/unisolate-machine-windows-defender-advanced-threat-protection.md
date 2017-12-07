@@ -68,10 +68,16 @@ HTTP/1.1 201 Created
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#MachineActions/$entity",
-    "id": "ac19aae7-4146-4a13-a786-eb43d8557f7c",
+    "id": "09a0f91e-a2eb-409d-af33-5577fe9bd558",
     "type": "Unisolate",
+    "requestor": "Analyst@ contoso.com ",
+    "requestorComment": "Unisolate machine since it was clean and validated ",
     "status": "InProgress",
-    "error": "Unknown"
+    "error": "None",
+    "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+    "creationDateTimeUtc": "2017-12-04T12:13:15.0104931Z",
+    "lastUpdateTimeUtc": "2017-12-04T12:13:15.0104931Z" 
 }
+
 
 ```

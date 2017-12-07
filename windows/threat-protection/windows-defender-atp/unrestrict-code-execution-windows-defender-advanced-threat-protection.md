@@ -1,5 +1,5 @@
 ---
-title: Unrestrict code execution  API
+title: Remove app restriction API
 description: Use this API to create calls related to removing a restriction from applications from executing.
 keywords: apis, graph api, supported apis, remove machine from isolation
 search.product: eADQiWindows 10XVcnh
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/07/2017
 ---
 
-# Unrestrict code execution
+# Remove app restriction
 Unrestrict execution of set of predefined applications.
 
 ## Permissions

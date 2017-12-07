@@ -42,7 +42,7 @@ If successful, this method returns 200, Ok response code with a collection of Ma
 
 Request
 
-Here is an example of the request on an organization that has 3 MachineActions
+Here is an example of the request on an organization that has three MachineActions.
 
 ```
 GET https://graph.microsoft.com/testwdatppreview/machineactions
@@ -110,7 +110,8 @@ GET https://graph.microsoft.com/testwdatppreview/machineactions?$filter=machineI
 
 
 
-Response 
+Response
+
 Here is an example of the response.
 
 ```

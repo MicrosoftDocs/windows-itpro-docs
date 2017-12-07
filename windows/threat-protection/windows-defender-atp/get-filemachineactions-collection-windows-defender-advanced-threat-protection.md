@@ -103,3 +103,65 @@ Content-type: application/json
 
 
 ```
+
+##Example 2
+
+Request
+
+Here is an example of a request that filters the FileMachineActions by machine ID and shows the latest two FileMachineActions.
+
+```
+GET https://graph.microsoft.com/testwdatppreview/filemachineactions?$filter=machineId eq 'f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f'&$top=2
+```
+
+Response 
+
+```
+HTTP/1.1 200 Ok
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/testwdatppreview/$metadata#FileMachineActions",
+    "value": [
+        {
+            "id": "6f1d364c-680c-499a-b30c-dd9265ad4c9d",
+            "sha1": "87662bc3d60e4200ceaf7aae249d1c343f4b83c9",
+            "type": "StopAndQuarantineFile",
+            "requestor": "Analyst@ contoso.com ",
+            "requestorComment": "test",
+            "status": "Succeeded",
+            "fileId": "87662bc3d60e4200ceaf7aae249d1c343f4b83c9",
+            "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+            "creationDateTimeUtc": "2017-12-04T13:13:26.2106524Z",
+            "lastUpdateDateTimeUtc": "2017-12-04T13:15:07.1639963Z",
+            "fileInstances": [
+                {
+                    "filePath": "C:\\Users\\ testUser \\Downloads\\elma.exe",
+                    "status": "Succeeded"
+                },
+                {
+                    "filePath": "C:\\Users\\ testUser \\AppData\\Local\\Packages\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\\TempState\\Downloads\\elma (2).exe.xc9q785.partial",
+                    "status": "Succeeded"
+                },
+            ]
+        },
+        {
+            "id": "c083f601-012f-4955-b4cc-fab50fb69d79",
+            "sha1": "8d25682b3a82af25b42dc90291c35ff3293daa68",
+            "type": "RequestSample",
+            "requestor": "Analyst@ contoso.com ",
+            "requestorComment": "test",
+            "status": "Succeeded",
+            "fileId": "8d25682b3a82af25b42dc90291c35ff3293daa68",
+            "machineId": "f46b9bb259ed4a7fb9981b73510e3cc7aa81ec1f",
+            "creationDateTimeUtc": "2017-12-04T13:39:24.9399004Z",
+            "lastUpdateDateTimeUtc": "2017-12-04T13:40:01.1094743Z",
+            "fileInstances": [
+                {
+                    "filePath": "C:\\Windows\\System32\\conhost.exe",
+                    "status": "Succeeded"
+                }
+            ]
+        }
+    ]
+}
+```
