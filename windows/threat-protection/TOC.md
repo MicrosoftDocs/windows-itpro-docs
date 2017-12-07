@@ -110,6 +110,7 @@
 ###### [Get domain related machines](windows-defender-atp\get-domain-related-machines-windows-defender-advanced-threat-protection.md)
 ###### [Get domain statistics](windows-defender-atp\get-domain-statistics-windows-defender-advanced-threat-protection.md)
 ###### [Is domain seen in organization](windows-defender-atp\is-domain-seen-in-org-windows-defender-advanced-threat-protection.md)
+
 ##### File
 ###### [Block file API](windows-defender-atp\block-file-windows-defender-advanced-threat-protection.md)
 ###### [Get file information](windows-defender-atp\get-file-information-windows-defender-advanced-threat-protection.md)
