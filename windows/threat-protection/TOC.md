@@ -145,10 +145,11 @@
 ##### [Unblock file API](windows-defender-atp\unblock-file-windows-defender-advanced-threat-protection.md)
 ##### [Get package SAS URI API](windows-defender-atp\get-package-sas-uri-windows-defender-advanced-threat-protection.md)
 ##### [Get MachineAction object API](windows-defender-atp\get-machineaction-object-windows-defender-advanced-threat-protection.md)
-##### [Get FileMachineAction object API](windows-defender-atp\get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
 ##### [Get MachineActions collection API](windows-defender-atp\get-machineactions-collection-windows-defender-advanced-threat-protection.md)
-##### [Get FileMachineActions collection API](windows-defender-atp\get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
 ##### [Get FileActions collection API](windows-defender-atp\get-fileactions-collection-windows-defender-advanced-threat-protection.md)
+##### [Get FileMachineAction object API](windows-defender-atp\get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
+##### [Get FileMachineActions collection API](windows-defender-atp\get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
+
 
 
 ### [Create and build Power BI reports using Windows Defender ATP data](windows-defender-atp\powerbi-reports-windows-defender-advanced-threat-protection.md)

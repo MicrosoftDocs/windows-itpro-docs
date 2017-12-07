@@ -39,5 +39,10 @@ Block file | Run this to prevent further propagation of an attack in your organi
 Unblock file | Allow a file run in the organization using Windows Defender Antivirus.
 Get package SAS URI | Run this to get a URI that allows downloading an investigation package.
 Get MachineAction object | Run this to get MachineAction object.
+Get MachineActions collection | Run this to get MachineAction collection.
+Get FileActions collection | Run this to get FileActions collection.
 Get FileMachineAction object | Run this to get FileMachineAction object.
+Get FileMachineActions collection | Run this to get FileMachineAction collection.
+
+
 
