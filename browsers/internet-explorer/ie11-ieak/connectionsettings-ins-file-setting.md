@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 41410300-6ddd-43b2-b9e2-0108a2221355
 title: Use the ConnectionSettings .INS file to review the network connections for install (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

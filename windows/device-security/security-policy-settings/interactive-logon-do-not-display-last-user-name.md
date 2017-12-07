@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 04/19/2017
 ---
 
 # Interactive logon: Don't display last signed-in

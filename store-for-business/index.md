@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/17/2017
 ---
 
 # Microsoft Store for Business and Education

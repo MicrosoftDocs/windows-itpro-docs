@@ -7,6 +7,7 @@ ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: high
 ms.author: lizross
+ms.date: 10/05/2017
 ---
 
 # Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization

@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 06/13/2017
+ms.date: 11/20/2017
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender AV

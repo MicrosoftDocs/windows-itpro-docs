@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 30b03c2f-e3e5-48d2-9007-e3fd632f3c18
 title: Use the Proxy .INS file to specify a proxy server (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

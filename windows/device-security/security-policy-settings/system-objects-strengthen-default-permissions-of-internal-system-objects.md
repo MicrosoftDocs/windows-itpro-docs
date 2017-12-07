@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 04/19/2017
 ---
 
 # System objects: Strengthen default permissions of internal system objects (e.g. Symbolic Links)

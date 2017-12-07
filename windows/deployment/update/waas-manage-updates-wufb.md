@@ -7,6 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 10/13/2017
 ---
 
 # Deploy updates using Windows Update for Business

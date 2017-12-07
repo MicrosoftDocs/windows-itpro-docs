@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobility
 author: mtniehaus
+ms.date: 04/19/2017
 ---
 
 # Deploy Windows To Go in your organization

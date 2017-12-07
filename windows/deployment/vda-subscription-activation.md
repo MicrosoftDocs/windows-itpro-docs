@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 11/14/2017
+ms.date: 12/05/2017
 author: greg-lindsay
 ---
 
@@ -47,7 +47,7 @@ For examples of activation issues, see [Troubleshoot the user experience](https:
 3. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
 4. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 5. Click **Add**, type **Authenticated users**, and then click **OK** three times.
-6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd).
+6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd) and then start the VM again.
 7. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 8. Open Windows Configuration Designer and click **Provison desktop services**.
 9. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name. 
@@ -90,7 +90,6 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 2. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
 3. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 4. Click **Add**, type **Authenticated users**, and then click **OK** three times.
-(https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd).
 5. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 6. Open Windows Configuration Designer and click **Provison desktop services**.
 7. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name. 

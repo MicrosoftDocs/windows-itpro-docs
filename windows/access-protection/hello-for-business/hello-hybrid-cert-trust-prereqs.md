@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 09/08/2017
+ms.date: 11/08/2017
 ---
 # Hybrid Windows Hello for Business Prerequisites
 

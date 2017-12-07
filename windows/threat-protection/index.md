@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 08/11/2017
 ---
 
 # Threat Protection

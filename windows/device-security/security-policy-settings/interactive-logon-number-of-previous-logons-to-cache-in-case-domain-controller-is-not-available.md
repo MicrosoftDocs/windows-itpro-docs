@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 04/19/2017
 ---
 
 # Interactive logon: Number of previous logons to cache (in case domain controller is not available)

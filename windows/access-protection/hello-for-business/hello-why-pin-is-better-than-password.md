@@ -10,6 +10,7 @@ ms.pagetype: security
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 10/23/2017
 ---
 
 # Why a PIN is better than a password

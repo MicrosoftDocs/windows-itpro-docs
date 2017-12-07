@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 07/27/2017
 ---
 
 # Trusted Platform Module

@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 24f4dcac-9032-4fe8-bf6d-2d712d61cb0c
 title: Deploy pinned websites using Microsoft Deployment Toolkit (MDT) 2013 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

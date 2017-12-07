@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Set up a kiosk on Windows 10 Mobile or Windows 10 Mobile Enterprise

@@ -8,6 +8,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
+ms.date: 06/21/2016
 ---
 
 # How to Revert Extension Points From an App-V 5.0 Package to an App-V 4.6 Package for a Specific User

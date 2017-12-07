@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 09/07/2017
 ms.localizationpriority: medium
 ---
 

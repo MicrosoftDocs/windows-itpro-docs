@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 19791c44-aaa7-4f37-9faa-85cbdf29f68e
 title: Use the Security Imports .INS file to import security info (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

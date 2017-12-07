@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 12/04/2017
 ---
 
 # Manage Windows 10 in your organization - transitioning to modern management
@@ -45,7 +46,7 @@ As indicated in the diagram, Microsoft continues to provide support for deep man
 With Windows 10, you can continue to use traditional OS deployment, but you can also “manage out of the box.” To transform new devices into fully-configured, fully-managed devices, you can:
 
 
--   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services like [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
+-   Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management services such as [Microsoft Autopilot] (https://docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot) or [Microsoft Intune](https://docs.microsoft.com/intune/understand-explore/introduction-to-microsoft-intune).
 
 -   Create self-contained provisioning packages built with the [Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/deploy/provisioning-packages).
 

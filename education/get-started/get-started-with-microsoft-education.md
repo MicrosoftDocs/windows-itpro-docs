@@ -10,7 +10,7 @@ ms.localizationpriority: high
 ms.pagetype: edu
 author: CelesteDG
 ms.author: celested
-ms.date: 10/04/2017
+ms.date: 10/09/2017
 ---
 
 # Get started: Deploy and manage a full cloud IT solution with Microsoft Education

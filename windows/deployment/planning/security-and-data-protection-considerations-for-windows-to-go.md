@@ -8,6 +8,7 @@ ms.mktglfcycl: plan
 ms.pagetype: mobility, security
 ms.sitesec: library
 author: mtniehaus
+ms.date: 04/19/2017
 ---
 
 # Security and data protection considerations for Windows To Go

@@ -7,6 +7,7 @@ author: eross-msft
 ms.prod: ie11
 title: View the available Enterprise Mode reports from the Enterprise Mode Site List Portal (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 # View the available Enterprise Mode reports from the Enterprise Mode Site List Portal

@@ -7,7 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
-ms.date: 07/05/2017
+ms.date: 07/27/2017
 ---
 
 # Manage device restarts after updates

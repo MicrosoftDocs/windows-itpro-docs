@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
 author: jobotto
+ms.date: 01/06/2017
 ---
 
 # Microsoft Surface Enterprise Management Mode

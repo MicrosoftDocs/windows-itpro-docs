@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: plan
 ms.sitesec: library
 author: TrudyHa
+ms.date: 07/19/2017
 ---
 
 # Change history for Plan for Windows 10 deployment

@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 10/13/2017
 ---
 
 # Create a Windows Information Protection (WIP) policy using System Center Configuration Manager

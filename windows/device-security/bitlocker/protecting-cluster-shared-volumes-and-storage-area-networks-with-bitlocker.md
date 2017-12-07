@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 06/19/2017
 ---
 
 # Protecting cluster shared volumes and storage area networks with BitLocker

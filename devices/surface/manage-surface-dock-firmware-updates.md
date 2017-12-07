@@ -9,6 +9,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: jobotto
+ms.date: 07/27/2017
 ---
 
 # Manage Surface Dock firmware updates

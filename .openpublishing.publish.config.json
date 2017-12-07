@@ -154,6 +154,23 @@
       "version": 0
     },
     {
+      "docset_name": "security",
+      "build_source_folder": "windows/security",
+      "build_output_subfolder": "security",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "LandingData": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "smb-VSTS",
       "build_source_folder": "smb",
       "build_output_subfolder": "smb-VSTS",

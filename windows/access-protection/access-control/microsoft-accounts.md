@@ -5,6 +5,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.date: 10/13/2017
 ---
 
 # Microsoft Accounts

@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
+ms.date: 09/12/2017
 ---
 
 # What does USMT migrate?

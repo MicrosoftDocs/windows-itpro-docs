@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
+ms.date: 10/17/2017
 ---
 
 # Manage access to private store

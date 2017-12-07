@@ -6,6 +6,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: heatherpoulsen
+ms.date: 04/11/2017
 ---
 
 # Deploy Surface devices

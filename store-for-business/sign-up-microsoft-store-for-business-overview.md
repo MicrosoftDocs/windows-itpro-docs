@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/13/2017
 ---
 
 # Sign up and get started

@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager

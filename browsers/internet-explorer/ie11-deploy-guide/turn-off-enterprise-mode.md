@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 5027c163-71e0-49b8-9dc0-f0a7310c7ae3
 title: Turn off Enterprise Mode (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

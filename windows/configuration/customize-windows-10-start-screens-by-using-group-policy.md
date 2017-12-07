@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
-ms.date: 10/05/2017
+ms.date: 11/15/2017
 ---
 
 # Customize Windows 10 Start and taskbar with Group Policy

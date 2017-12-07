@@ -7,6 +7,7 @@ ms.topic: hub-page
 keywords: Microsoft 365, Microsoft 365 documentation, Microsoft 365 for business, Microsoft 365 for enterprise, Microsoft 365 for education, enterprise, business, education, docs, documentation
 title: Microsoft 365 Documentation
 description: Find documentation and resources for Microsoft 365--a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security, that empowers everyone to be creative and work together, securely. 
+ms.date: 09/25/2017
 ---
 <div id="main" class="v2">
     <div class="container">

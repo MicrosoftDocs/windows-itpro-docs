@@ -3,6 +3,7 @@ title: Troubleshoot Upgrade Readiness (Windows 10)
 description: Provides troubleshooting information for Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
+ms.date: 04/19/2017
 ---
 
 # Troubleshoot Upgrade Readiness

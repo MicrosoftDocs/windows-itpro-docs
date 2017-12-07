@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: Jamiejdt
+ms.date: 07/27/2017
 ---
 
 # Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management (MDM)

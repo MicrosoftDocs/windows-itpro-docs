@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 10/16/2017
+ms.date: 10/30/2017
 ---
 
 # BitLocker CSP

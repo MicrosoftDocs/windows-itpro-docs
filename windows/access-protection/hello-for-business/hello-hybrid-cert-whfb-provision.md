@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/20/2017
+ms.date: 10/23/2017
 ---
 # Hybrid Windows Hello for Business Provisioning
 

@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+ms.date: 07/27/2017
 ---
 
 # Configure a PXE server to load Windows PE
