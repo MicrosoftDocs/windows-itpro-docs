@@ -126,10 +126,12 @@ A provisioning package is a method for applying settings to Windows 10 without n
 
     If the PC has passed the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
 
+    ![The first screen to set up a new PC in Windows 10 Fall Creators Update](images/win10_oobe_firstscreen.png)
+
 2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. When prompted, remove the USB drive. You can then use the USB drive to start provisioning another student PC.
 
-That's it! You're done. **Device B** is now ready to use. You can use the account details for one of the other users in your preconfigured tenant to test the device and the Microsoft Education tools and services that are part of your 1-year trial.
+That's it! You're done. **Device B** is now ready to use. You can select any one of the teacher or student accounts from the **User name and passwords** sheet provided in your Trial in a Box to test **Device B** and the Microsoft Education tools and services that are part of your 1-year trial.
 
 You can complete the rest of the IT admin tasks using **Device A**.
 
