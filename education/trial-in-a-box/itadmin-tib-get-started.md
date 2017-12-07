@@ -124,16 +124,16 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
 ### Apply the provisioning package
 A provisioning package is a method for applying settings to Windows 10 without needing to reimage the device. 
 
+    > [!NOTE]
+    > We recommend connecting **Device B** to an Ethernet or wired connection for the best provisioning experience.
+
 **Set up Device B using the Set up School PCs provisioning package**
 
 1. Start with **Device B** turned off or with the PC on the first-run setup screen. In Windows 10 S Fall Creators Update, the first-run setup screen says **Let's start with region. Is this right?**. 
 
-    If the PC has passed the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
-
     ![The first screen to set up a new PC in Windows 10 Fall Creators Update](images/win10_oobe_firstscreen.png)
 
-    > [!NOTE]
-    > We recommend connecting **Device B** to an Ethernet or wired connection for the best provisioning experience.
+    If the PC is past the account setup screen, reset the PC to start over. To reset the PC, go to **Settings > Update & security > Recovery > Reset this PC**.
 
 2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. When prompted, remove the USB drive. You can then use the USB drive to start provisioning another student PC.
