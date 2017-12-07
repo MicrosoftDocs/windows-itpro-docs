@@ -16,13 +16,13 @@ ms.date: 07/27/2017
 # Enterprise Certificate Pinning
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 Enterprise certificate pinning is a Windows feature for remembering, or “pinning,” a root issuing certificate authority or end entity certificate to a given domain name. 
 Enterprise certificate pinning helps reduce man-in-the-middle attacks by enabling you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates.
 
 >[!NOTE] 
-> External domain names, where the certificate issued to these domains is issued by a public certificate authority, are not ideal for enterprise certificate pinning. Web administrators should configure their web servers to use HTTP public key pinning (HPKP) and encourage users to use web browsers that support HPKP.
+> External domain names, where the certificate issued to these domains is issued by a public certificate authority, are not ideal for enterprise certificate pinning. In the past, web administrators could configure their web servers to use HTTP public key pinning (HPKP). However, due to a number of limitations, the HPKP feature is being phased out from the web. Web browsers that have supported HPKP are deprecating support for this feature. 
 
 Windows Certificate APIs (CertVerifyCertificateChainPolicy and WinVerifyTrust) are updated to check if the site’s server authentication certificate chain matches a restricted set of certificates. 
 These restrictions are encapsulated in a Pin Rules Certificate Trust List (CTL) that is configured and deployed to Windows 10 computers. 
