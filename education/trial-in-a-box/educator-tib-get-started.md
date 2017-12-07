@@ -73,9 +73,8 @@ Watch how OneNote allows teachers to differentiate instruction to allow for coll
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other students collaborate with peers and leverage multiple features.  
 
-1. Open the Windows **Start** menu ![Windows Start menu](images/windows_start.png) and select the OneNote for Windows 10 app. 
-2. OneNote will automatically open to the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
-3. Follow the instructions for the project.  Look for the **Try this!** call-outs to experiment with these engaging features: 
+1. OneNote will automatically open to the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
+2. Follow the instructions for the project.  Look for the **Try this!** call-outs to experiment with these engaging features: 
   - Discover the power of digital ink by selecting the Draw tab. Choose your pen and get scribbling.
 
     ![OneNote Draw tab](images/onenote_draw.png)

@@ -43,8 +43,8 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
 
 ### Download, install, and get ready
 
-1. [Download the latest Set up School PCs app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4ls40).
-2. Install the app on your work PC, or the Trial in a Box **Device A**.
+1. Download the latest <a href="https://educationstore.microsoft.com/en-us/store/details/set-up-school-pcs/9nblggh4ls40" target="_blank">Set up School PCs app from the Microsoft Store for Education</a>. 
+2. Install the app on the Trial in a Box **Device A**, or install the app on your work PC.
 3. Make sure you're connected to your school's network.
 
 ### Create the provisioning package
