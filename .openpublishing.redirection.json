@@ -1,6 +1,21 @@
 {
 "redirections": [
 {
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
+"redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/windows-diagnostic-data-1709.md",
+"redirect_url": "/windows/configuration/windows-diagnostic-data",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/EventName.md",
+"redirect_url": "/windows/configuration/enhanced-telemetry-windows-analytics-events-and-fields",
+"redirect_document_id": true
+},
+{
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
 "redirect_document_id": true
@@ -1201,7 +1216,7 @@
 "redirect_document_id": false
 },
 {
-"source_path": "windows/configure/basic-level-windows-diagnostic-events-and-fields.md",
+"source_path": "windows/configure/basic-level-windows-diagnostic-events-and-fields-1703.md",
 "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
 "redirect_document_id": true
 },
@@ -1526,7 +1541,7 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configure/windows-diagnostic-data.md",
+"source_path": "windows/configure/windows-diagnostic-data-1703.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
 "redirect_document_id": true
 },
