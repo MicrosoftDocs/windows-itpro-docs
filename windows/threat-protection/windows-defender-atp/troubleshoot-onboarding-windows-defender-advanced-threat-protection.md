@@ -17,11 +17,9 @@ ms.date: 11/21/2017
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Windows Server 2012 R2
+- Windows Server 2016
 
 
 
@@ -272,7 +270,7 @@ If you encounter issues while onboarding a server, go through the following veri
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-mma)
 - [Ensure that the server endpoint proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-proxy)
 
-Other things to check:
+You might also need to check the following:
 - Check that there is a Windows Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
 
     ![Image of process view with Windows Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
