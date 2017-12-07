@@ -38,18 +38,19 @@ See how Microsoft Learning Tools change lives.
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Launch Immersive Reader directly from "Learning design thinking from the ancient Egyptians" in Word Online. Hear text read aloud, change the spacing of lines, and highlight for syntax.
 
 1. Select "Learning design thinking from the ancient Egyptians" to open it in Word Online.  
-2. Select the **View** tab, then **Immersive Reader**. Immersive Reader will launch into a full-screen experience.
+2. Click **Edit Document** and then select **Edit in Browser**.
+3. Immersive Reader will launch into a full-screen experience.
 
   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
 
-3. Select these different settings to see what they do:
+4. Select these different settings to see what they do:
 
   | Text to Speech | Text Preferences | Grammar Options | Line Focus |
   | :------------: | :--------------: | :-------------: | :--------: |
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
 ## 2. Microsoft Teams
-Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. Throughhis guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
+Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
 
 See how Microsoft Teams for Education works in the classroom.
 </br>
@@ -59,18 +60,18 @@ See how Microsoft Teams for Education works in the classroom.
 
 1. Open your browser and visit <a href="https://aka.ms/EduTeamsWalkthrough" target="_blank">https://aka.ms/EduTeamsWalkthrough</a>.
 2. Sign in using these credentials:
-  - User: MSFT
-  - Password: onStage!
+  - **User**: MSFT
+  - **Password**: onStage!
 3. Follow along with the guide.
 
 ## 3. OneNote
+OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
+
 Watch how OneNote allows teachers to differentiate instruction to allow for collaboration.
 </br>
 <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
 
-OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
-
-<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other studentscollaborate with peers and leverage multiple features.  
+<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other students collaborate with peers and leverage multiple features.  
 
 1. Open the Windows **Start** menu ![Windows Start menu](images/windows_start.png) and select the OneNote for Windows 10 app. 
 2. OneNote will automatically open to the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
@@ -89,11 +90,11 @@ OneNote acts as an unlimited digital canvas for the whole class to store text, i
     ![OneNote Researcher](images/onenote_researcher.png)
 
 ## 4. Minecraft: Education Edition
+Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
+
 Learn about Code Builder for Minecraft: Education Edition.
 </br>
 <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
-
-Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Explore a Minecraft world
 
