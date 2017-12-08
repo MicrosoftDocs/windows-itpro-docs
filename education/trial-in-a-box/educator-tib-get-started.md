@@ -37,7 +37,7 @@ See how Microsoft Learning Tools change lives.
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Launch Immersive Reader directly from "Learning design thinking from the ancient Egyptians" in Word Online. Hear text read aloud, change the spacing of lines, and highlight for syntax.
 
-1. Select "Learning design thinking from the ancient Egyptians" to open it in Word Online.  
+1. On the desktop, double-click the **Learning Design** icon to open "Learning design thinking from the ancient Egyptians" in Word Online.  
 2. Click **Edit Document** and then select **Edit in Browser**.
 3. Immersive Reader will launch into a full-screen experience.
 
@@ -73,7 +73,7 @@ Watch how OneNote allows teachers to differentiate instruction to allow for coll
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other students collaborate with peers and leverage multiple features.  
 
-1. OneNote will automatically open to the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
+1. On the desktop, double-click the OneNote shortcut named **Great Pyramid** to open the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
 2. Follow the instructions for the project.  Look for the **Try this!** call-outs to experiment with these engaging features: 
   - Discover the power of digital ink by selecting the Draw tab. Choose your pen and get scribbling.
 
