@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 12/08/2017
 ---
 
 # Is IP seen in org
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Answers whether an IP was seen in the organization.
 
 ## Permissions

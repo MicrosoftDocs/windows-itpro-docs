@@ -14,6 +14,13 @@ ms.date: 12/07/2017
 ---
 
 # Run antivirus scan
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Initiate Windows Defender Antivirus scan on the machine.
 
 ## Permissions

@@ -14,6 +14,13 @@ ms.date: 12/07/2017
 ---
 
 # Unblock file 
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Allow a file to be executed in the organization, using Windows Defender Antivirus.
 
 ## Permissions

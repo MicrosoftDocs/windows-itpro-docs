@@ -14,6 +14,13 @@ ms.date: 10/16/2017
 ---
 
 # Get file related machines 
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Retrieves a collection of machines related to a given file hash.
 
 ## Permissions

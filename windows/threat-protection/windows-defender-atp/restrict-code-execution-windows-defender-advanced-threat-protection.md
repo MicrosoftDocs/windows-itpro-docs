@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 12/07/2017
+ms.date: 12/08/2017
 ---
 
-# Restrict app execution
+# Restrict app execution API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Restrict execution of set of predefined applications.
 
 ## Permissions

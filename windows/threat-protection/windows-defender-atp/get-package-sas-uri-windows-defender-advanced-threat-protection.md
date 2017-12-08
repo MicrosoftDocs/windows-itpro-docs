@@ -14,6 +14,13 @@ ms.date: 12/07/2017
 ---
 
 # Get package SAS URI
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Get a URI that allows downloading of an investigation package.
 
 ## Permissions

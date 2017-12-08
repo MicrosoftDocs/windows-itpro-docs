@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 12/07/2017
+ms.date: 12/08/2017
 ---
 
 # Remove app restriction
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Unrestrict execution of set of predefined applications.
 
 ## Permissions

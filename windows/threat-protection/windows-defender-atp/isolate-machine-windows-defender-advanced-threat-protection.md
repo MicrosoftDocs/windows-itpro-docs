@@ -14,6 +14,13 @@ ms.date: 12/06/2017
 ---
 
 # Isolate machine
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Isolates a machine from accessing external network.
 
 ## Permissions

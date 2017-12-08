@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 12/07/2017
+ms.date: 12/08/2017
 ---
 
-# Request sample
+# Request sample API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Request sample of a file from a specific machine. File will be collected from the machine and uploaded to a secure storage. 
 
 ## Permissions

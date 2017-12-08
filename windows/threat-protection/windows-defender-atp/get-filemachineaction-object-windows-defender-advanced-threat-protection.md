@@ -14,6 +14,13 @@ ms.date: 12/07/2017
 ---
 
 # Get FileMachineAction object
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Gets file and machine actions.
 
 ## Permissions

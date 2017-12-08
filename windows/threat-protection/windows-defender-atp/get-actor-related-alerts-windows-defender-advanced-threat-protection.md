@@ -14,6 +14,13 @@ ms.date: 10/16/2017
 ---
 
 # Get actor related alerts 
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Retrieves all alerts related to a given actor.
 
 ## Permissions

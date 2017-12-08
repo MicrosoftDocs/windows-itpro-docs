@@ -14,6 +14,13 @@ ms.date: 12/07/2017
 ---
 
 # Collect investigation package
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Collect investigation package from a machine.
 
 ## Permissions

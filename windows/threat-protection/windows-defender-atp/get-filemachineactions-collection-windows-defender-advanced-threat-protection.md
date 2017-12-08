@@ -14,6 +14,13 @@ ms.date: 12/07/2017
 ---
 
 # Get FileMachineActions collection
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Get collection of file and machine actions. Get FileMachineActions collection API supports OData V4 queries.
 
 ## Permissions

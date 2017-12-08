@@ -14,6 +14,13 @@ ms.date: 10/16/2017
 ---
 
 # Find machine information by interal IP 
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Find a machine entity around a specific timestamp by FQDN or internal IP.
 
 ## Permissions

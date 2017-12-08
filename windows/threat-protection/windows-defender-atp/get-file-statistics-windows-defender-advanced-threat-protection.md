@@ -14,6 +14,13 @@ ms.date: 10/16/2017
 ---
 
 # Get file statistics 
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Retrieves the prevalence for the given file.
 
 ## Permissions
