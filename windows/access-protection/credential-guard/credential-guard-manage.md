@@ -109,7 +109,7 @@ You can view System Information to check that Windows Defender Credential Guard 
 
 1.  Click **Start**, type **msinfo32.exe**, and then click **System Information**.
 2.  Click **System Summary**.
-3.  Confirm that **Credential Guard** is shown next to **Virtualization-based security**.
+3.  Confirm that **Credential Guard** is shown next to **Virtualization-based security Services Configured**.
 
     Here's an example:
     
@@ -142,7 +142,7 @@ For client machines that are running Windows 10 1703, LSAIso is running whenever
 
 If you have to disable Windows Defender Credential Guard on a PC, you can use the following set of procedures, or you can [use the Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool](#turn-off-with-hardware-readiness-tool).
 
-1.  If you used Group Policy, disable the Group Policy setting that you used to enable Windows Defender Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Windows Defender Device Guard** -&gt; **Turn on Virtualization Based Security**).
+1.  If you used Group Policy, disable the Group Policy setting that you used to enable Windows Defender Credential Guard (**Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Device Guard** -&gt; **Turn on Virtualization Based Security**).
 2.  Delete the following registry settings:
     - HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Control\\LSA\LsaCfgFlags
     - HKEY\_LOCAL\_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DeviceGuard\\EnableVirtualizationBasedSecurity
