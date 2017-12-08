@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Run antivirus scan
+# Run antivirus scan API
 
 **Applies to:**
 
