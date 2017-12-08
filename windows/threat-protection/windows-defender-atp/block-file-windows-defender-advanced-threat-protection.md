@@ -1,6 +1,6 @@
 ---
 title: Block file API
-description: Use this API to create calls related to blocking files from being executed in the organization.
+description: Use this API to blocking files from being running in the organization.
 keywords: apis, graph api, supported apis, block file
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 12/07/2017
+ms.date: 12/08/2017
 ---
 
 # Block file 
