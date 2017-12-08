@@ -23,11 +23,6 @@ ms.date: 12/08/2017
 
 Retrieves top recent alerts.
 
-**Applies to:**
-
-- Windows Defender Advanced Threat Protection (Windows Defender ATP)
-
-[!include[Prerelease information](prerelease.md)]
 
 ## Permissions
 User needs read permissions.
