@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 12/06/2017
+ms.date: 12/08/2017
 ---
 
-# Isolate machine
+# Isolate machine API
 
 **Applies to:**
 
