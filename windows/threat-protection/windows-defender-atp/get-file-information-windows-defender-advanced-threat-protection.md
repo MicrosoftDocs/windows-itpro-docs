@@ -10,10 +10,18 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 12/08/2017
 ---
 
-# Get file information
+# Get file information API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
+
 Retrieves a file by identifier Sha1, Sha256, or MD5.
 
 ## Permissions
