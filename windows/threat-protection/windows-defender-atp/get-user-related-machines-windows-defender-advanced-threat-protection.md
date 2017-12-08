@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 12/08/2017
 ---
 
-# Get user related machines
+# Get user related machines API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Retrieves a collection of machines related to a given user ID.
 
 ## Permissions
