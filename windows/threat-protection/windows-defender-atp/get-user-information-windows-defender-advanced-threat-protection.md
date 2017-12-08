@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Get user information 
+# Get user information API
 
 **Applies to:**
 

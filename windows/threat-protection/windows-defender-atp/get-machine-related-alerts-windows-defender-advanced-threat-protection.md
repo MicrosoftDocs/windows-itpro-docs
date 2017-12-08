@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Get machine related alerts  
+# Get machine related alerts  API
 
 **Applies to:**
 

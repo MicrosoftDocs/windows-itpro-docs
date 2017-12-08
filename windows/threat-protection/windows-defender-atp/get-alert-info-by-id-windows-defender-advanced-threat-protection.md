@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Get alert information by ID
+# Get alert information by ID API
 
 **Applies to:**
 

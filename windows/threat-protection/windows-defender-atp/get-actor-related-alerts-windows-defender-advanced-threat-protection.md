@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 10/16/2017
 ---
 
-# Get actor related alerts 
+# Get actor related alerts API
 
 **Applies to:**
 

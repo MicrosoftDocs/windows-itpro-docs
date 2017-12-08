@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Get FileActions collection
+# Get FileActions collection API
 
 **Applies to:**
 

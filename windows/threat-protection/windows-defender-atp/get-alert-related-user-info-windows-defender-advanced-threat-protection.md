@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Get alert related user information 
+# Get alert related user information API
 
 **Applies to:**
 

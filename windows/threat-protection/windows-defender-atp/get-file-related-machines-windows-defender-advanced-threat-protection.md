@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 10/16/2017
 ---
 
-# Get file related machines 
+# Get file related machines API
 
 **Applies to:**
 

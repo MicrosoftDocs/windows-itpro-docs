@@ -14,7 +14,7 @@ ms.date: 12/08/2017
 ---
 
 
-# Get actor information 
+# Get actor information API
 
 **Applies to:**
 

@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 10/16/2017
 ---
 
-# Get IP related machines 
+# Get IP related machines API
 Retrieves a collection of alerts related to a given IP address.
 
 ## Permissions

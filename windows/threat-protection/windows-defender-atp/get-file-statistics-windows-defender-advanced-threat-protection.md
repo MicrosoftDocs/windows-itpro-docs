@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 10/16/2017
 ---
 
-# Get file statistics 
+# Get file statistics API
 
 **Applies to:**
 

@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Get machines 
+# Get machines API
 
 **Applies to:**
 

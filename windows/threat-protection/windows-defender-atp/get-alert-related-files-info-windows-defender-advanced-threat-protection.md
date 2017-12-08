@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Get alert related files information 
+# Get alert related files information API
 
 **Applies to:**
 

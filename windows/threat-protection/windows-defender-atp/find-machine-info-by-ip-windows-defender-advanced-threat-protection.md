@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 10/16/2017
 ---
 
-# Find machine information by interal IP 
+# Find machine information by interal IP API
 
 **Applies to:**
 
