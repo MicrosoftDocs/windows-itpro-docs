@@ -53,5 +53,10 @@ More information on the Policy Analyzer tool can be found on the [Security Guida
 
 ## What is the Local Group Policy Object (LGPO) tool?
 
-LGPO is a tool for transferring Group Policy directly between a host’s registry and a GPO backup file, bypassing the Domain Controller. This gives administrators a simple way to verify the effects of their Group Policy settings directly. 
+LGPO.exe is a command-line utility that is designed to help automate management of Local Group Policy. 
+Using local policy gives administrators a simple way to verify the effects of Group Policy settings, and is also useful for managing non-domain-joined systems. 
+LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files, security templates, Advanced Auditing backup files, as well as from formatted “LGPO text” files. 
+It can export local policy to a GPO backup. 
+It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
+
 Documentation for the LGPO tool can be found on the [Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).

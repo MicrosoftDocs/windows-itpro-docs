@@ -11,6 +11,7 @@ ms.sitesec: library
 author: brecords
 ms.date: 12/07/2017
 ms.author: jdecker
+---
 
 # Download the latest firmware and drivers for Surface devices
 
