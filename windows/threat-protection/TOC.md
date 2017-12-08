@@ -93,7 +93,7 @@
 #### [Experiment with custom threat intelligence alerts](windows-defender-atp\experiment-custom-ti-windows-defender-advanced-threat-protection.md)
 #### [Troubleshoot custom threat intelligence issues](windows-defender-atp\troubleshoot-custom-ti-windows-defender-advanced-threat-protection.md)
 ### [Use the Windows Defender ATP exposed APIs](windows-defender-atp\exposed-apis-windows-defender-advanced-threat-protection.md)
-#### [Supported Windows Defender ATP query APIs](windows-defender-atp\supported-apis-windows-defender-advanced-threat-protection.md)
+#### [Supported Windows Defender ATP APIs](windows-defender-atp\supported-apis-windows-defender-advanced-threat-protection.md)
 ##### Actor
 ###### [Get actor information](windows-defender-atp\get-actor-information-windows-defender-advanced-threat-protection.md)
 ###### [Get actor related alerts](windows-defender-atp\get-actor-related-alerts-windows-defender-advanced-threat-protection.md)
