@@ -128,6 +128,7 @@
 ##### Machines
 ###### [Collect investigation package API](windows-defender-atp\collect-investigation-package-windows-defender-advanced-threat-protection.md)
 ###### [Find machine information by IP](windows-defender-atp\find-machine-info-by-ip-windows-defender-advanced-threat-protection.md)
+###### [Get machines](windows-defender-atp\get-machines-windows-defender-advanced-threat-protection.md)
 ###### [Get FileMachineAction object API](windows-defender-atp\get-filemachineaction-object-windows-defender-advanced-threat-protection.md)
 ###### [Get FileMachineActions collection API](windows-defender-atp\get-filemachineactions-collection-windows-defender-advanced-threat-protection.md)
 ###### [Get machine by ID](windows-defender-atp\get-machine-by-id-windows-defender-advanced-threat-protection.md)

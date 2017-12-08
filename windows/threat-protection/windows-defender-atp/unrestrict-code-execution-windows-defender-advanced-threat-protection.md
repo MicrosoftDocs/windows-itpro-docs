@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Remove app restriction
+# Remove app restriction API
 
 **Applies to:**
 

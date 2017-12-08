@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.date: 12/08/2017
 ---
 
-# Release machine from isolation
+# Release machine from isolation API
 
 **Applies to:**
 
