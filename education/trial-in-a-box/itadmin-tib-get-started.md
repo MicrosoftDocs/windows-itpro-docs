@@ -100,7 +100,7 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
   3. Enter the assessment URL. 
 
 9. **Add recommended apps** lets you choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
-  * **Office 365 for Windows 10 S (Education Preview)** - These are perfect for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail.
+  * **Office 365 for Windows 10 S (Education Preview)** - This is perfect for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail.
   * **Minecraft: Education Edition** - Don't select this. This is already provisioned as part of your tenant.
   * **Other apps fit for the classroom** - Optional. Choose other recommended apps to install on the PC.
 
@@ -113,8 +113,10 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
 11. Accept the summary and then insert a USB drive in **Device A**. Use the USB drive that came in the Trial in a Box accessories box to save the provisioning package.
 12. Select the drive and then **Save** to create the provisioning package. 
 
+    The provisioning package on your USB drive will be named SetUpSchoolPCs_*ABCDE* (Expires *MM-DD-YYYY*).ppkg, where *ABCDE* is the device name you added (if any), and *MM-DD-YYYY* is the month, day, and year when the package will expire.
+    
     > [!NOTE]
-    > The provisioning package on your USB drive will be named SetUpSchoolPCs_*ABCDE* (Expires *MM-DD-YYYY*).ppkg, where *ABCDE* is the device name you added (if any), and *MM-DD-YYYY* is the month, day, and year when the package will expire.
+    > If you selected **Office 365 for Windows 10 S (Education Preview)**, it will take a few minutes longer for Set up School PCs to create the provisioning package. During this time, you can jump ahead to task 3, [Intune for Education express configuration](#task3), and then finish the rest of task 2 afterwards.
 
 13. Follow the instructions in the **Get the student PCs ready** page to start setting up **Device B**. 
 14. Follow the instructions in the **Install the package** page to apply the provisioning package to **Device B**. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).
@@ -138,7 +140,7 @@ A provisioning package is a method for applying settings to Windows 10 without n
 2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. When prompted, remove the USB drive. You can then use the USB drive to start provisioning another student PC.
 
-That's it! You're done. **Device B** is now ready to use. You can select any one of the teacher or student accounts from the **User name and passwords** sheet provided in your Trial in a Box to test **Device B** and the Microsoft Education tools and services that are part of your 1-year trial.
+That's it! You're done. After provisioning **Device B**, wait for 1-2 minutes to allow the device to fully connect to the tenant. You can then select any one of the teacher or student accounts from the **User name and passwords** sheet provided in your Trial in a Box to test **Device B** and the Microsoft Education tools and services that are part of your 1-year trial.
 
 You can complete the rest of the IT admin tasks using **Device A**.
 
@@ -217,8 +219,13 @@ Looking for other IT admin tasks to try?
 * [Verify correct device setup](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) 
     * Confirm that the apps you bought from the Microsoft Store for Education appear in the Windows Start screen's **Recently added** section.
     * Confirm that the folders you added, if you chose to customize the Windows interface from Intune for Education, appear in the Start menu.
+    * If you added **Office 365 for Windows 10 S (Education Preview)** to the package and provisioned **Device B** with it, you need to click on one of the Office apps in the **Start** menu to complete app registration. 
 * [Verify the device is Azure AD joined](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
 * [Add more users](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
+* Get app updates (including updates for Office 365 for Windows 10 S)
+    1. Open the **Start** menu and go to the **Microsoft Store**.
+    2. From the **Microsoft Store**, click **...** (See more) and select **Downloads and updates**.
+    3. In the **Downloads and updates** page, click **Get updates**.
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) 
 
 ## Get more info
