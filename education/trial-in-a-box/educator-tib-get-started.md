@@ -29,7 +29,7 @@ Hello, Teachers! In this guide we'll show you how you can quickly and easily try
 Learning Tools is a set of features available in Word, OneNote, and the Edge browser that helps:
 * Increase fluency for English language learners
 * Build confidence for emerging readers
-* Provides text decoding solutions for students with learning differences such as dyslexia 
+* Provide text decoding solutions for students with learning differences such as dyslexia 
 
 See how Microsoft Learning Tools change lives.
 </br>
@@ -71,7 +71,7 @@ Watch how OneNote allows teachers to differentiate instruction to allow for coll
 </br>
 <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
 
-<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other students collaborate with peers and leverage multiple features.  
+<span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> See how a group project, “Reimagine the Great Pyramids of Giza,” comes together with opportunities to interact with other students, collaborate with peers, and leverage multiple features.  
 
 1. On the desktop, double-click the OneNote shortcut named **Great Pyramid** to open the **Reimagine the Great Pyramid of Giza** lesson page inside the 21st Century Learning notebook. 
 2. Follow the instructions for the project.  Look for the **Try this!** call-outs to experiment with these engaging features: 
@@ -80,7 +80,7 @@ Watch how OneNote allows teachers to differentiate instruction to allow for coll
     ![OneNote Draw tab](images/onenote_draw.png)
 
   - Type anywhere on the page! Just click your cursor where you want to place text. 
-  - Use the checkmark to keep track of completed tasks. 
+  - Use the checkmark in the **Home** tab to keep track of completed tasks. 
 
     ![OneNote To Do Tag](images/onenote_checkmark.png)
 
