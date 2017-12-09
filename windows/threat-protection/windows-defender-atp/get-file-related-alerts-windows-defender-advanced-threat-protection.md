@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 12/08/2017
 ---
 
-# Get file related alerts
+# Get file related alerts API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Retrieves a collection of alerts related to a given file hash.
 
 ## Permissions

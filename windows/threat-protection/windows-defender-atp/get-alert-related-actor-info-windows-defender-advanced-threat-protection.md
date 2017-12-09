@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/16/2017
+ms.date: 12/08/2017
 ---
 
-# Get alert related actor information 
+# Get alert related actor information API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Retrieves the actor information related to the specific alert.
 
 ## Permissions
