@@ -126,8 +126,8 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
 ### Apply the provisioning package
 A provisioning package is a method for applying settings to Windows 10 without needing to reimage the device. 
 
-    > [!NOTE]
-    > We recommend connecting **Device B** to an Ethernet or wired connection for the best provisioning experience.
+> [!NOTE]
+> We recommend connecting **Device B** to an Ethernet or wired connection for the best provisioning experience.
 
 **Set up Device B using the Set up School PCs provisioning package**
 
@@ -140,7 +140,7 @@ A provisioning package is a method for applying settings to Windows 10 without n
 2. Insert the USB drive into **Device B**. Windows will recognize the drive and automatically install the provisioning package. 
 3. When prompted, remove the USB drive. You can then use the USB drive to start provisioning another student PC.
 
-That's it! You're done. After provisioning **Device B**, wait for 1-2 minutes to allow the device to fully connect to the tenant. You can then select any one of the teacher or student accounts from the **User name and passwords** sheet provided in your Trial in a Box to test **Device B** and the Microsoft Education tools and services that are part of your 1-year trial.
+    After provisioning **Device B**, wait 1-2 minutes to allow the device to fully connect to the tenant. You can then select any one of the teacher or student accounts from the **User name and passwords** sheet provided in your Trial in a Box to test **Device B** and the Microsoft Education tools and services that are part of your 1-year trial.
 
 You can complete the rest of the IT admin tasks using **Device A**.
 
@@ -217,9 +217,9 @@ Update settings for all devices in your tenant by adding the **Documents** and *
 ## <a name="othertasks"></a>Other tasks
 Looking for other IT admin tasks to try? 
 * [Verify correct device setup](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) 
-    * Confirm that the apps you bought from the Microsoft Store for Education appear in the Windows Start screen's **Recently added** section.
-    * Confirm that the folders you added, if you chose to customize the Windows interface from Intune for Education, appear in the Start menu.
-    * If you added **Office 365 for Windows 10 S (Education Preview)** to the package and provisioned **Device B** with it, you need to click on one of the Office apps in the **Start** menu to complete app registration. 
+    1. Confirm that the apps you bought from the Microsoft Store for Education appear in the Windows Start screen's **Recently added** section.
+    2. Confirm that the folders you added, if you chose to customize the Windows interface from Intune for Education, appear in the Start menu.
+    3. If you added **Office 365 for Windows 10 S (Education Preview)** to the package and provisioned **Device B** with it, you need to click on one of the Office apps in the **Start** menu to complete app registration. 
 * [Verify the device is Azure AD joined](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
 * [Add more users](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
 * Get app updates (including updates for Office 365 for Windows 10 S)
