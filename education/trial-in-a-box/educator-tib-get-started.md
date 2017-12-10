@@ -8,9 +8,10 @@ ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: high
 ms.pagetype: edu
+ROBOTS: noindex,nofollow
 author: CelesteDG
 ms.author: celested
-ms.date: 12/08/2017
+ms.date: 12/11/2017
 ---
 
 # Get started for Educators
