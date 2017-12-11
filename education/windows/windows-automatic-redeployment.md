@@ -51,8 +51,8 @@ You can set the policy using one of these methods:
     - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you are using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
     - Log into the PCs, go to the **Settings > System > About** page, look in the **Windows specifications** section and confirm **Version** is set to 1709.
 
-    To use the Windows Automatic Redeployment setting in the Set up School PCs app:
-    
+To use the Windows Automatic Redeployment setting in the Set up School PCs app:
+
     * When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Automatic Redeployment** among the list of settings for the student PC as shown in the following example:
 
     ![Configure student PC settings in Set up School PCs](images/suspc_configure_pc2.jpg)
