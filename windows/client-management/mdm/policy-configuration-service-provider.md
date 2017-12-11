@@ -3489,8 +3489,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 
 <!--StartSurfaceHub-->
 ## <a href="" id="surfacehubpolicies"></a>Policies supported by Microsoft Surface Hub  
-
--   [ApplicationDefaults/DefaultAssociationsConfiguration](#applicationdefaults-defaultassociationsconfiguration)  
+  
 -   [Bluetooth/AllowAdvertising](#bluetooth-allowadvertising)  
 -   [Bluetooth/AllowDiscoverableMode](#bluetooth-allowdiscoverablemode)  
 -   [Bluetooth/AllowPrepairing](#bluetooth-allowprepairing)  

@@ -86,8 +86,8 @@ To enable data sharing, whitelist the following endpoints. Note that you may nee
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint.
-| `https://Vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
-| `https://settings.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
+| `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
+| `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
 
 Note: The compatibility update KB runs under the computer’s system account. 
 

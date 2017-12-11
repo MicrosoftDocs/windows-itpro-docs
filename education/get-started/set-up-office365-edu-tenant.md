@@ -23,10 +23,8 @@ Schools can use Office 365 to save time and be more productive. Built with power
 
 Don't have an Office 365 for Education verified tenant or just starting out? Follow these steps to set up an Office 365 for Education tenant. [Learn more about Office 365 for Education plans and pricing](https://products.office.com/academic/compare-office-365-education-plans). </br>
 
-<center><iframe src="https://www.youtube.com/embed/X7bscA-knaY" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
-<!--
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/X7bscA-knaY?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
--->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X7bscA-knaY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
 You can watch the descriptive audio version here: [Microsoft Education: Set up an Office 365 Education tenant (DA)](https://www.youtube.com/watch?v=d5tQ8KoB3ic)
 
 ## To set up a new Office 365 Education tenant

@@ -41,11 +41,8 @@ Note that for verified education tenants, Microsoft automatically provisions you
 
 You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
-<center><iframe src="https://www.youtube.com/embed/c3BLoZZw3TQ" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c3BLoZZw3TQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-<!--
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/c3BLoZZw3TQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
--->
 You can watch the descriptive audio version here: [Microsoft Education: Use Intune for Education to manage groups, apps, and settings (DA)](https://youtu.be/Tejxfc4V7cQ)
 
 ## Set up Intune for Education
