@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: jdeckerms
+ms.date: 08/08/2017
 ---
 
 # Configure kiosk and shared devices running Windows desktop editions

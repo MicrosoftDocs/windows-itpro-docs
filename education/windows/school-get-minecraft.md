@@ -10,6 +10,7 @@ author: trudyha
 searchScope:
   - Store
 ms.author: trudyha
+ms.date: 10/13/2017
 ---
 
 # For IT administrators - get Minecraft: Education Edition

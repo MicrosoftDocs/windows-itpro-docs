@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 59185370-558c-47e0-930c-8a5ed657e9e3
 title: ActiveX installation using group policy (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

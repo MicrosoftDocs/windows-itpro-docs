@@ -10,6 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: smb
 author: CelesteDG
+ms.date: 10/30/2017
 ---
 
 # Get started: Deploy and manage a full cloud IT solution for your business

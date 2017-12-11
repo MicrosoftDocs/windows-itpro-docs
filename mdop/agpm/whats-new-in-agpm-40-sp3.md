@@ -7,6 +7,7 @@ ms.pagetype: mdop
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
+ms.date: 09/27/2016
 ---
 
 
@@ -170,7 +171,6 @@ AGPM 4.0 SP3 supports the configurations in the following table. Although AGPM 
  
 
 ## Prerequisites for installing AGPM 4.0 SP3
-
 
 The following table describes the behavior of AGPM 4.0 SP3 Client and Server installers when the .NET Framework 4.5.1, PowerShell 3.0, or the GPMC in the Remote Server Administration Tools is missing.
 

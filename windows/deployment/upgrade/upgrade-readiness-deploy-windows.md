@@ -3,6 +3,7 @@ title: Upgrade Readiness - Get a list of computers that are upgrade-ready (Windo
 description: Describes how to get a list of computers that are ready to be upgraded in Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
+ms.date: 04/19/2017
 ---
 
 # Upgrade Readiness - Step 3: Deploy Windows

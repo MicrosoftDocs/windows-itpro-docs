@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 08/26/2017
 ---
 
 # Prevent users from seeing or interacting with the Windows Defender AV user interface

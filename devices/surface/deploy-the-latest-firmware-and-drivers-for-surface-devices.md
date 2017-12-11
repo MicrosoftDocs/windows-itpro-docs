@@ -8,7 +8,9 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: jobotto
+author: brecords
+ms.date: 12/07/2017
+ms.author: jdecker
 ---
 
 # Download the latest firmware and drivers for Surface devices
@@ -40,22 +42,46 @@ Recent additions to the downloads for Surface devices provide you with options t
 >A battery charge of 40% or greater is required before you install firmware to a Surface device. See [Microsoft Support article KB2909710](https://go.microsoft.com/fwlink/p/?LinkId=618106) for more information.
 
 
+## Surface Book 2
+
+
+Download the following updates for Surface Book 2 from the Microsoft Download Center.
+* SurfaceBook2_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Laptop
+
+
+Download the following updates for Surface Laptop from the Microsoft Download Center.
+* SurfaceLaptop_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Pro
+
+
+Download the following updates for Surface Pro (Model 1796) from the Microsoft Download Center.
+
+* SurfacePro_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+
+## Surface Pro with LTE Advanced
+
+
+Download the following updates for Surface Pro with LTE Advanced from the Microsoft Download Center.
+* SurfacePro_LTE_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Studio
 
+
 Download the following updates for [Surface Studio from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=54311).
 
-* SurfaceStudio_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
-
+* SurfaceStudio_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
 ## Surface Book
 
 
 Download the following updates [for Surface Book from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49497).
 
--   SurfaceBook_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+-   SurfaceBook_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
--	SurfaceBook_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
+-	SurfaceBook_Win10_xxxxx_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
@@ -64,9 +90,9 @@ Download the following updates [for Surface Book from the Microsoft Download Cen
 
 Download the following updates for [Surface Pro 4 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49498).
 
--   SurfacePro4_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+-   SurfacePro4_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
--	SurfacePro4_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
+-	SurfacePro4_Win10_xxxxx_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
 -   Wintab-xxxxx-64-bit.zip – Tablet driver update for all supported x64-based versions of Windows 8.1
 
@@ -75,13 +101,13 @@ Download the following updates for [Surface Pro 4 from the Microsoft Download Ce
 
 Download the following updates [for Surface Pro 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=38826).
 
--   SurfacePro3_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
+-   SurfacePro3_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10
 
--   SurfacePro3_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
+-   SurfacePro3_Win10_xxxxx_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
--   SurfacePro3_Win8x_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   SurfacePro3_Win8x_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
 
--   SurfacePro3_Win8x_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   SurfacePro3_Win8x_xxxxx_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
 
 -   Surface Firmware Tool.msi – Firmware tools for UEFI management
 
@@ -98,13 +124,13 @@ Download the following updates [for Surface Pro 3 from the Microsoft Download Ce
 
 Download the following updates [for Surface 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49040).
 
--  Surface3_WiFi_Win10_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10  
+-  Surface3_WiFi_Win10_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 10  
 
--   Surface3_WiFi_Win10_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
+-   Surface3_WiFi_Win10_xxxxx_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 
--   Surface3_WiFi_Win8x_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   Surface3_WiFi_Win8x_xxxxx_xxxxxx.msi – Cumulative firmware and driver update package for Windows 8.1 Pro
 
--   Surface3_WiFi_Win8x_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
+-   Surface3_WiFi_Win8x_xxxxx_xxxxxx.zip – Cumulative firmware and driver update package for Windows 8.1 Pro
 
 -   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
@@ -115,13 +141,13 @@ Download the following updates [for Surface 3 from the Microsoft Download Center
 
 Download the following updates [for AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49039).
 
--   Surface3_4GLTE-ATT_Win10_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
+-   Surface3_4GLTE-ATT_Win10_xxxxx_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
 
--   Surface3_4GLTE-ATT_Win10_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
+-   Surface3_4GLTE-ATT_Win10_xxxxx_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 10
 
--   Surface3_4GLTE-ATT_Win8x_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-ATT_Win8x_xxxxx_xxxxxx.msi – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
 
--   Surface3_4GLTE-ATT_Win8x_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-ATT_Win8x_xxxxx_xxxxxx.zip – Surface 3 LTE AT&T - Cumulative firmware and driver update for locked carrier dependent AT&T devices in the US, running Windows 8.1 Pro
 
 -   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
@@ -129,13 +155,13 @@ Download the following updates [for AT&T 4G LTE versions of Surface 3 from the M
 
 Download the following updates [for non-AT&T 4G LTE versions of Surface 3 from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49037).
 
--   Surface3_4GLTE-NorthAmericaUnlocked_Win10_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win10_xxxxx_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
 
--   Surface3_4GLTE-NorthAmericaUnlocked_Win10_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win10_xxxxx_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 10
 
--   Surface3_4GLTE-NorthAmericaUnlocked_Win8x_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win8x_xxxxx_xxxxxx.msi – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
 
--   Surface3_4GLTE-NorthAmericaUnlocked_Win8x_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
+-   Surface3_4GLTE-NorthAmericaUnlocked_Win8x_xxxxx_xxxxxx.zip – Surface 3 LTE North America - Cumulative firmware and driver update for unlocked carrier independent devices in the US, running Windows 8.1 Pro
 
 -   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
@@ -143,13 +169,13 @@ Download the following updates [for non-AT&T 4G LTE versions of Surface 3 from t
 
 Download the following updates [for 4G LTE Surface 3 versions for regions outside North America from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49041).
 
--   Surface3_4GLTE-RestOfTheWorld_Win10_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
+-   Surface3_4GLTE-RestOfTheWorld_Win10_xxxxx_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
 
--   Surface3_4GLTE-RestOfTheWorld_Win10_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
+-   Surface3_4GLTE-RestOfTheWorld_Win10_xxxxx_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 10
 
--   Surface3_4GLTE-RestOfTheWorld_Win8x_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
+-   Surface3_4GLTE-RestOfTheWorld_Win8x_xxxxx_xxxxxx.msi – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
 
--   Surface3_4GLTE-RestOfTheWorld_Win8x_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
+-   Surface3_4GLTE-RestOfTheWorld_Win8x_xxxxx_xxxxxx.zip – Surface 3 LTE rest of the world cumulative - Cumulative firmware and driver update for carrier independent devices outside of the US, as well as for Japan, running Windows 8.1 Pro
 
 -   Surface 3 AssetTag.zip – UEFI Asset Tag management tool
 
@@ -173,7 +199,7 @@ Download the following updates [for Surface Pro 2 from the Microsoft Download Ce
 ## Surface Pro
 
 
-Download the following updates [for Surface Pro from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49038).
+Download the following updates [for Surface Pro (Model 1514) from the Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=49038).
 
 -   SurfacePro\_Win10\_xxxxxx.zip – Cumulative firmware and driver update package for Windows 10
 

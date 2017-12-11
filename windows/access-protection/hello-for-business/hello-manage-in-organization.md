@@ -10,6 +10,7 @@ ms.pagetype: security
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 10/18/2017
 ---
 
 # Manage Windows Hello for Business in your organization

@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: high
-ms.date: 10/18/2017
+ms.date: 10/20/2017
 author: greg-lindsay
 ---
 

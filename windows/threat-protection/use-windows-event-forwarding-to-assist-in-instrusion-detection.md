@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: tedhardyMSFT
+ms.date: 10/27/2017
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection

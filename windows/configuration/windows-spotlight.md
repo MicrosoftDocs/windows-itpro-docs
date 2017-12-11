@@ -8,6 +8,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Configure Windows Spotlight on the lock screen

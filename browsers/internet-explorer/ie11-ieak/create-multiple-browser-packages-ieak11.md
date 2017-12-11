@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 4c5f3503-8c69-4691-ae97-1523091ab333
 title: Create multiple versions of your custom package using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

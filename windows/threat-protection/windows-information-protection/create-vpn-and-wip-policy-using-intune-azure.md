@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 09/11/2017
 ---
 
 # Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune

@@ -7,6 +7,7 @@ ms.mktglfcycl: general
 ms.sitesec: library
 title: Microsoft Edge - Deployment Guide for IT Pros (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Microsoft Edge - Deployment Guide for IT Pros

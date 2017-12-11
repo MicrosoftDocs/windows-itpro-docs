@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 9f80e39f-dcf1-4124-8931-131357f31d67
 title: Fix validation problems using the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 83af0558-9df3-4c2e-9350-44f7788efa6d
 title: Use the BrowserToolbars .INS file to customize the Internet Explorer toolbar and buttons (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

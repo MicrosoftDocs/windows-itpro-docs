@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 10/17/2017
+ms.date: 09/15/2017
 ---
 
 # TextInput (Windows Configuration Designer reference)

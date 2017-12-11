@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: justinha
+ms.date: 07/27/2017
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM

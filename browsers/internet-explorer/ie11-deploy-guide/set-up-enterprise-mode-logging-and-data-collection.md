@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 2e98a280-f677-422f-ba2e-f670362afcde
 title: Set up Enterprise Mode logging and data collection (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

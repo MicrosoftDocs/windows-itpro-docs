@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 10/17/2017
+ms.date: 10/13/2017
 ---
 
 # Windows Defender AV Status

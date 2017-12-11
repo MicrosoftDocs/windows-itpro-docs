@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: DavbeaMSFT
+ms.date: 10/16/2017
 ---
 
 # Surface device compatibility with Windows 10 Long-Term Servicing Branch (LTSB)

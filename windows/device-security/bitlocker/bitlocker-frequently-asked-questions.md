@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 localizationpriority: high
 author: brianlic-msft
+ms.date: 10/16/2017
 ---
 
 # BitLocker frequently asked questions (FAQ)

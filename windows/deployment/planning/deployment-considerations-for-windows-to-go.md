@@ -8,6 +8,7 @@ ms.mktglfcycl: plan
 ms.pagetype: mobility
 ms.sitesec: library
 author: mtniehaus
+ms.date: 04/19/2017
 ---
 
 # Deployment considerations for Windows To Go

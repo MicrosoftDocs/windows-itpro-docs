@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 7482c99f-5d79-4344-9e1c-aea9f0a68e18
 title: Group Policy and compatibility with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

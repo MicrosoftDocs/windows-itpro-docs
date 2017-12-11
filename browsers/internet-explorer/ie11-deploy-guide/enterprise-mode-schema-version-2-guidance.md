@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 909ca359-5654-4df9-b9fb-921232fc05f5
 title: Enterprise Mode schema v.2 guidance (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 12/04/2017
 ---
 
 

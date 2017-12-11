@@ -122,8 +122,7 @@ Microsoft periodically updates Surface Dock Updater. To learn more about the app
 This version of Surface Dock Updater adds support for the following:
 
 * Update for Surface Dock DisplayPort Firmware
-* Improved support for passive DisplayPort to DVI or HDMI adapters
-* Improved support for audio over DisplayPort
+* Resolves an issue with audio over passive display port adapters
 
 ### Version 2.1.15.0
 *Release date: June 19, 2017*

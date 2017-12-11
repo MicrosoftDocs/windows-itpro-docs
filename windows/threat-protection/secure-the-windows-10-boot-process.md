@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.sitesec: library
 ms.localizationpriority: medium
 author: brianlic-msft
-ms.date: 06/23/2017
+ms.date: 10/13/2017
 ---
 
 # Secure the Windows 10 boot process

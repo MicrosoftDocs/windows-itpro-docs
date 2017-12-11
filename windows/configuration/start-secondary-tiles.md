@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
+ms.date: 08/07/2017
 ---
 
 # Add image for secondary Microsoft Edge tiles 

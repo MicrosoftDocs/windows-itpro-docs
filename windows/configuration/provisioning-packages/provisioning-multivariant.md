@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
-ms.date: 11/06/2017
+ms.date: 11/08/2017
 ms.author: jdecker
 ---
 

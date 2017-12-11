@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Activate using Key Management Service

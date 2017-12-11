@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 
 author: brianlic-msft
+ms.date: 08/17/2017
 ---
 
 # Configure the Windows Defender Firewall with Advanced Security Log

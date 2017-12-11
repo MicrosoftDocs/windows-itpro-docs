@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 11/21/2017
+ms.date: 11/30/2017
 ---
 
 # Manage connections from Windows operating system components to Microsoft services

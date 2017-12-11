@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 11/14/2017
 ms.pagetype: deploy
 author: jaimeo
 ---

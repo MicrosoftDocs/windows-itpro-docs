@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: eross-msft
 ms.author: lizross
-ms.date: 10/17/2017
+ms.date: 04/05/2017
 ---
 
 # Windows 10 diagnostic data for the Full telemetry level
@@ -16,7 +16,7 @@ ms.date: 10/17/2017
 **Applies to:**
 - Windows 10, version 1703 and later
 
-Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full telemetry level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1709 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md) and [Windows 10, version 1703 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md).
+Microsoft collects Windows diagnostic data to keep Windows up-to-date, secure, and operating properly. It also helps us improve Windows and, for users who have turned on “tailored experiences”, can be used to provide more relevant tips and recommendations to tailor Microsoft products to the user’s needs.   This article describes all types diagnostic data collected by Windows at the Full telemetry level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 1709 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md) and [Windows 10, version 1703 Basic level diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md).
 
 The data covered in this article is grouped into the following categories:
 

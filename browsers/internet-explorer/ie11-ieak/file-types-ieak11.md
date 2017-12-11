@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: e5735074-3e9b-4a00-b1a7-b8fd8baca327
 title: File types used or created by IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

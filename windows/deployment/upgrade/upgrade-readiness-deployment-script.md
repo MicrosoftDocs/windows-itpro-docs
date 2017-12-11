@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+ms.date: 10/11/2017
 ---
 
 # Upgrade Readiness deployment script

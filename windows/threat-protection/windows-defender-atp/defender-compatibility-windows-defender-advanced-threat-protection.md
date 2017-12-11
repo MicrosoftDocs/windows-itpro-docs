@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/28/2017
 ---
 
 # Windows Defender Antivirus compatibility with Windows Defender ATP

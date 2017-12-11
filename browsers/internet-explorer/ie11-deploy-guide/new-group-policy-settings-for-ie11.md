@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 669cc1a6-e2cb-403f-aa31-c1de52a615d1
 title: New group policy settings for Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

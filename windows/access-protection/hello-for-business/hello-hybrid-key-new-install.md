@@ -135,7 +135,7 @@ Alternatively, you can configure Windows Server 2016 Active Directory Federation
 > * Consider using Azure Multifactor Authentication or a third-party multifactor authentication provider with Windows Server Active Directory Federation Services, if necessary.
 
 > [!div class="nextstepaction"]
-> [Configure Azure Device Registration](hello-hybrid-cert-trust-devreg.md)
+> [Configure Azure Device Registration](hello-hybrid-key-trust-devreg.md)
 
 <br><br>
 

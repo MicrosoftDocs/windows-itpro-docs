@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 5b64c9cb-f8da-411a-88e4-fa69dea473e2
 title: Security features and IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

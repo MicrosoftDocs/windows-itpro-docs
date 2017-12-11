@@ -9,6 +9,7 @@ ms.pagetype: security
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 # Windows Hello and password changes
 

@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: store, security
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/17/2017
 ---
 
 # Add unsigned app to code integrity policy

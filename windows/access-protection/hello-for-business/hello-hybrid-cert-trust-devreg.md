@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 09/08/2017
+ms.date: 10/23/2017
 ---
 # Configure Device Registration for Hybrid Windows Hello for Business
 

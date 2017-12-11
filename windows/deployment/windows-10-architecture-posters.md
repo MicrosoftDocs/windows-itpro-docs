@@ -4,7 +4,7 @@ description: Provides architural planning posters for Windows 10 in the enterpri
 ms.prod: w10
 ms.author: elizapo
 author: lizap
-ms.date: 09/28/2017  
+ms.date: 09/28/2017
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.localizationpriority: low

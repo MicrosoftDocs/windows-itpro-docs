@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
 author: jdeckerms
+ms.date: 04/25/2017
 ---
 
 # Update Product Status

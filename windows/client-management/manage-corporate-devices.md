@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: devices
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 09/21/2017
 ---
 
 # Manage corporate devices

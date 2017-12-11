@@ -7,6 +7,7 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 07/27/2017
 ---
 
 # Microsoft HoloLens in the enterprise: requirements and FAQ

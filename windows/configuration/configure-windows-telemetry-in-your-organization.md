@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 10/17/2017
 ---
 
 # Configure Windows telemetry in your organization
