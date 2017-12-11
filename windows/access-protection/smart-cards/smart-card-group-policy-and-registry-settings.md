@@ -63,6 +63,8 @@ The following smart card Group Policy settings are located in Computer Configura
 
 The registry keys are in the following locations:
 
+-   HKEY\_LOCAL\_MACHINE\\SOFTWARE\Policies\\Microsoft\\Windows\\ScPnP\\EnableScPnP
+
 -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\SmartCardCredentialProvider
 
 -   HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CertProp
