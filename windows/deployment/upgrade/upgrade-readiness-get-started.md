@@ -23,8 +23,7 @@ Before you begin, consider reviewing the following helpful information:<BR>
 
 When you are ready to begin using Upgrade Readiness, perform the following steps:
 
-1. Review [data collection and privacy](#data-collection-and-privacy) information.
-2. [Add Upgrade Readiness to OMS](#add-upgrade-readiness-to-operations-management-suite).
+1. Review [data collection and privacy](#data-collection-and-privacy) information.2. [Add Upgrade Readiness to OMS](#add-upgrade-readiness-to-operations-management-suite).
 3. [Enable data sharing](#enable-data-sharing).
 4. [Deploy required updates](#deploy-the-compatibility-update-and-related-kbs) to computers, and validate using a pilot deployment.
 5. [Deploy Upgrade Readiness at scale](#deploy-upgrade-readiness-at-scale).
@@ -33,8 +32,7 @@ When you are ready to begin using Upgrade Readiness, perform the following steps
 
 To enable system, application, and driver data to be shared with Microsoft, you must configure user computers to send data. For information about what telemetry data Microsoft collects and how that data is used and protected by Microsoft, see the following topics:
 
-- [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)
-- [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization)- [Manage connections from Windows operating system components to Microsoft services](/windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 - [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965)
 
 ## Add Upgrade Readiness to Operations Management Suite
@@ -59,7 +57,7 @@ If you are not using OMS:
 
 6.  Click the **Upgrade Readiness** tile to configure the solution. The **Settings Dashboard** opens.
 
-### Generate your commercial ID key
+i### Generate your commercial ID key
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. Generate your commercial ID key in OMS and then deploy it to user computers.
 
@@ -67,7 +65,7 @@ Microsoft uses a unique commercial ID to map information from user computers to 
 
     ![Windows Telemetry dialog showing button for "how to enable telemetry," the current commercial ID key, and a Subsribe button](../images/upgrade-analytics-telemetry.png)
 
-2. On the Windows telemetry panel, copy and save your commercial ID key. You’ll need to insert this key into the Upgrade Readiness deployment script later so it can be deployed to user computers.
+w2. On the Windows telemetry panel, copy and save your commercial ID key. You’ll need to insert this key into the Upgrade Readiness deployment script later so it can be deployed to user computers.
 
     >**Important**<br> Regenerate a commercial ID key only if your original ID key can no longer be used. Regenerating a commercial ID key resets the data in your workspace for all solutions that use the ID. Additionally, you’ll need to deploy the new commercial ID key to user computers again.
 
@@ -86,8 +84,8 @@ To enable data sharing, whitelist the following endpoints. Note that you may nee
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for Windows 10 computers. User computers send data to Microsoft through this endpoint.
-| `https://Vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
-| `https://settings.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
+| `https://vortex-win.data.microsoft.com` | Connected User Experience and Telemetry component endpoint for operating systems older than Windows 10
+| `https://settings-win.data.microsoft.com` | Enables the compatibility update to send data to Microsoft. |
 
 Note: The compatibility update KB runs under the computer’s system account. 
 
