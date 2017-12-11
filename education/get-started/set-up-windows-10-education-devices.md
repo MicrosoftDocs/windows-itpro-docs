@@ -25,12 +25,6 @@ To set up new Windows 10 devices and enroll them to your education tenant, choos
 - **Option 1: [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app)** - You can use the app to create a setup file that you can use to quickly set up one or more Windows 10 devices.
 - **Option 2: [Go through Windows OOBE and join the device to Azure AD](set-up-windows-education-devices.md)** - You can go through a typical Windows 10 device setup or first-run experience to configure your device.
 
-<!--
-> [!div class="nextstepaction"]
-> [Finish setup and other tasks](finish-setup-and-other-tasks.md)
--->
-
-
 > [!div class="step-by-step"]
 [<< Use Intune for Education to manage groups, apps, and settings](use-intune-for-education.md)
 [Finish setup and other tasks >>](finish-setup-and-other-tasks.md)

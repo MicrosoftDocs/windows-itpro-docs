@@ -25,10 +25,7 @@ Follow all the steps in this section to use SDS and sample CSV files in a trial 
 
 You can watch the video to see how this is done, or follow the step-by-step guide.</br>
 
-<center><iframe src="https://www.youtube.com/embed/ehSU8jr8T24" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
-<!--
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/ehSU8jr8T24?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
--->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ehSU8jr8T24" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 You can watch the descriptive audio version here: [Microsoft Education: Use School Data Sync to import student data (DA)](https://www.youtube.com/watch?v=l4b086IMtvc)
 
