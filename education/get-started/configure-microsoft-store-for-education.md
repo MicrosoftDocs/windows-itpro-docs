@@ -23,10 +23,7 @@ You'll need to configure Microsoft Store for Education to accept the services ag
 
 You can watch the video to see how this is done, or follow the step-by-step guide. </br>
 
-<center><iframe src="https://www.youtube.com/embed/Jnbssq0gC_g" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
-<!--
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Jnbssq0gC_g?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
--->
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Jnbssq0gC_g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 You can watch the descriptive audio version here: [Microsoft Education: Configure Microsoft Store for Education (DA)](https://www.youtube.com/watch?v=bStgEpHbEXw)
 
