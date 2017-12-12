@@ -39,6 +39,9 @@ Members of the security community<sup>\*</sup> continuously collaborate with Mic
 
 Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent Application Whitelisting policies, including Windows Defender Device Guard:
 
+- addinprocess.exe
+- addinprocess32.exe
+- addinutil.exe
 - bash.exe
 - bginfo.exe<sup>[1]</sup> 
 - cdb.exe
@@ -116,26 +119,29 @@ Microsoft recommends that you block the following Microsoft-signed applications 
   <EKUs />
   <!--File Rules-->
   <FileRules>
-    <Deny  ID="ID_DENY_BGINFO"        FriendlyName="bginfo.exe"         FileName="BGINFO.Exe" MinimumFileVersion = "4.21.0.0" />
-    <Deny  ID="ID_DENY_CBD"           FriendlyName="cdb.exe"            FileName="CDB.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_KD"            FriendlyName="kd.exe"             FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_KD_KMCI"       FriendlyName="kd.exe"             FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_NTKD"          FriendlyName="ntkd.exe"           FileName="ntkd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_WINDBG"        FriendlyName="windbg.exe"         FileName="windbg.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_MSBUILD"       FriendlyName="MSBuild.exe"        FileName="MSBuild.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_CSI"           FriendlyName="csi.exe"            FileName="csi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_DBGHOST"       FriendlyName="dbghost.exe"        FileName="DBGHOST.Exe" MinimumFileVersion = "2.3.0.0" /> 
-    <Deny  ID="ID_DENY_DBGSVC"        FriendlyName="dbgsvc.exe"         FileName="DBGSVC.Exe" MinimumFileVersion = "2.3.0.0" />    
-    <Deny  ID="ID_DENY_DNX"           FriendlyName="dnx.exe"            FileName="dnx.Exe" MinimumFileVersion = "65535.65535.65535.65535" />   
-    <Deny  ID="ID_DENY_RCSI"          FriendlyName="rcsi.exe"           FileName="rcsi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_NTSD"          FriendlyName="ntsd.exe"           FileName="ntsd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_LXSS"          FriendlyName="LxssManager.dll"    FileName="LxssManager.dll" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_BASH"          FriendlyName="bash.exe"           FileName="bash.exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_FSI"           FriendlyName="fsi.exe"            FileName="fsi.exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_FSI_ANYCPU"    FriendlyName="fsiAnyCpu.exe"      FileName="fsiAnyCpu.exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_MSHTA"         FriendlyName="mshta.exe"          FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_VISUALUIAVERIFY"         FriendlyName="visualuiaverifynative.exe"          FileName="visualuiaverifynative.exe" MinimumFileVersion = "65535.65535.65535.65535" />
-    <Deny  ID="ID_DENY_RUNSCRIPTHELPER"         FriendlyName="runscripthelper.exe"                FileName="runscripthelper.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_BGINFO"            FriendlyName="bginfo.exe"                  FileName="BGINFO.Exe" MinimumFileVersion = "4.21.0.0" />
+    <Deny  ID="ID_DENY_CBD"               FriendlyName="cdb.exe"                     FileName="CDB.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_KD"                FriendlyName="kd.exe"                      FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_KD_KMCI"           FriendlyName="kd.exe"                      FileName="kd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_NTKD"              FriendlyName="ntkd.exe"                    FileName="ntkd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_WINDBG"            FriendlyName="windbg.exe"                  FileName="windbg.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_MSBUILD"           FriendlyName="MSBuild.exe"                 FileName="MSBuild.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_CSI"               FriendlyName="csi.exe"                     FileName="csi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_DBGHOST"           FriendlyName="dbghost.exe"                 FileName="DBGHOST.Exe" MinimumFileVersion = "2.3.0.0" /> 
+    <Deny  ID="ID_DENY_DBGSVC"            FriendlyName="dbgsvc.exe"                  FileName="DBGSVC.Exe" MinimumFileVersion = "2.3.0.0" />    
+    <Deny  ID="ID_DENY_DNX"               FriendlyName="dnx.exe"                     FileName="dnx.Exe" MinimumFileVersion = "65535.65535.65535.65535" />   
+    <Deny  ID="ID_DENY_RCSI"              FriendlyName="rcsi.exe"                    FileName="rcsi.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_NTSD"              FriendlyName="ntsd.exe"                    FileName="ntsd.Exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_LXSS"              FriendlyName="LxssManager.dll"             FileName="LxssManager.dll" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_BASH"              FriendlyName="bash.exe"                    FileName="bash.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_FSI"               FriendlyName="fsi.exe"                     FileName="fsi.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_FSI_ANYCPU"        FriendlyName="fsiAnyCpu.exe"               FileName="fsiAnyCpu.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_MSHTA"             FriendlyName="mshta.exe"                   FileName="mshta.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_VISUALUIAVERIFY"   FriendlyName="visualuiaverifynative.exe"   FileName="visualuiaverifynative.exe" MinimumFileVersion = "65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_RUNSCRIPTHELPER"   FriendlyName="runscripthelper.exe"         FileName="runscripthelper.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_ADDINPROCESS"      FriendlyName="AddInProcess.exe"            FileName="AddInProcess.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_ADDINPROCESS32"    FriendlyName="AddInProcess32.exe"          FileName="AddInProcess32.exe" MinimumFileVersion="65535.65535.65535.65535" />
+    <Deny  ID="ID_DENY_ADDINUTIL"         FriendlyName="AddInUtil.exe"               FileName="AddInUtil.exe" MinimumFileVersion="65535.65535.65535.65535" />
 
     <Deny ID="ID_DENY_D_1" FriendlyName="Powershell 1" Hash="02BE82F63EE962BCD4B8303E60F806F6613759C6" />
     <Deny ID="ID_DENY_D_2" FriendlyName="Powershell 2" Hash="13765D9A16CC46B2113766822627F026A68431DF" />
@@ -421,6 +427,9 @@ Microsoft recommends that you block the following Microsoft-signed applications 
           <FileRuleRef RuleID="ID_DENY_MSHTA" />
           <FileRuleRef RuleID="ID_DENY_VISUALUIAVERIFY" />
           <FileRuleRef RuleID="ID_DENY_RUNSCRIPTHELPER"/>
+          <FileRuleRef RuleID="ID_DENY_ADDINPROCESS"/>
+          <FileRuleRef RuleID="ID_DENY_ADDINPROCESS32"/>
+          <FileRuleRef RuleID="ID_DENY_ADDINUTIL"/>
           <FileRuleRef RuleID="ID_DENY_D_1" />
           <FileRuleRef RuleID="ID_DENY_D_2" />
           <FileRuleRef RuleID="ID_DENY_D_3" />
