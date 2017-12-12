@@ -41,7 +41,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 
 You can watch the video to see how to use the Set up School PCs app, or follow the step-by-step guide. </br>
 
-<center><iframe src="https://www.youtube.com/embed/2ZLup_-PhkA" width="960" height="540" allowFullScreen frameBorder="0"></iframe></center>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2ZLup_-PhkA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 You can watch the descriptive audio version here: [Microsoft Education: Use the Set up School PCs app (DA)](https://www.youtube.com/watch?v=qqe_T2LkGsI)
 
