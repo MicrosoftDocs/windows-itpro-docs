@@ -41,7 +41,7 @@ You'll need to take the following steps to oboard non-Windows endpoints:
 
 3. 	Click **Generate access token** button and then **Copy**.
 
-4. 	Depending on the third-party implementation you're using, the implementation might vary. Refer to the third-party solution documentation for guidance on how to use the token.
+4. 	You’ll need to copy and paste the token to the third-party solution you’re using. The implementation may vary depending on the solution. 
 
 
 >[!WARNING] 
