@@ -62,9 +62,7 @@ If you are not using OMS:
 
 Microsoft uses a unique commercial ID to map information from user computers to your OMS workspace. This should be generated for you automatically. Copy your commercial ID key in OMS and then deploy it to user computers.
 
-1.	Click the Settings icon
 
- ![Windows Telemetry dialog showing button for "how to enable telemetry," the current commercial ID key, and a Subsribe button](../images/upgrade-analytics-telemetry.png)
 
 
 
