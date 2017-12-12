@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 06/19/2017
+ms.date: 11/15/2017
 ms.localizationpriority: medium
 ---
 
@@ -38,6 +38,7 @@ Learn about managing and updating Surface Hub.
 | [Save your BitLocker key](https://technet.microsoft.com/itpro/surface-hub/save-bitlocker-key-surface-hub) | Every Surface Hub is automatically set up with BitLocker drive encryption software. Microsoft strongly recommends that you make sure you back up your BitLocker recovery keys.|
 | [Connect other devices and display with Surface Hub](https://technet.microsoft.com/itpro/surface-hub/connect-and-display-with-surface-hub) | You can connect other device to your Surface Hub to display content.|
 | [Miracast on existing wireless network or LAN](miracast-over-infrastructure.md) | You can use Miracast on your wireless network or LAN to connect to Surface Hub. |
+ [Enable 802.1x wired authentication](enable-8021x-wired-authentication.md) | 802.1x Wired Authentication MDM policies have been enabled on Surface Hub devices. 
 | [Using a room control system]( https://technet.microsoft.com/itpro/surface-hub/use-room-control-system-with-surface-hub) | Room control systems can be used with your Microsoft Surface Hub.|
 
 ## Related topics

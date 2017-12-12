@@ -5,7 +5,7 @@ keywords: contribute, edit a topic
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
-ms.date: 10/09/2017
+ms.date: 10/13/2017
 ---
 
 # Editing existing Windows IT professional documentation

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 11/13/2017
 ---
 
 # Policy CSP - Search
@@ -29,7 +29,13 @@ ms.date: 11/01/2017
     <a href="#search-allowsearchtouselocation">Search/AllowSearchToUseLocation</a>
   </dd>
   <dd>
+    <a href="#search-allowstoringimagesfromvisionsearch">Search/AllowStoringImagesFromVisionSearch</a>
+  </dd>
+  <dd>
     <a href="#search-allowusingdiacritics">Search/AllowUsingDiacritics</a>
+  </dd>
+  <dd>
+    <a href="#search-allowwindowsindexer">Search/AllowWindowsIndexer</a>
   </dd>
   <dd>
     <a href="#search-alwaysuseautolangdetection">Search/AlwaysUseAutoLangDetection</a>
@@ -199,6 +205,15 @@ ms.date: 11/01/2017
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
+<a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy has been deprecated.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
 <a href="" id="search-allowusingdiacritics"></a>**Search/AllowUsingDiacritics**  
 
 <!--StartSKU-->
@@ -242,6 +257,39 @@ ms.date: 11/01/2017
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="search-allowwindowsindexer"></a>**Search/AllowWindowsIndexer**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Allow Windows indexer. Value type is integer.
+
 
 <!--EndDescription-->
 <!--EndPolicy-->

@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 08/22/2017
 ---
 
 # Apply a provisioning package

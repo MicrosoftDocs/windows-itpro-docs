@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Reset a Windows 10 Mobile device

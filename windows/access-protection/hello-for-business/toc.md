@@ -43,4 +43,4 @@
 ##### [Configure or Deploy Multifactor Authentication Services](hello-cert-trust-deploy-mfa.md)
 #### [Configure Windows Hello for Business Policy settings](hello-cert-trust-policy-settings.md)
 
-## [Windows Hello for Businesss Feature](hello-features.md)
+## [Windows Hello for Business Features](hello-features.md)

@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 ms.author: kaushika-ainapure
 author: kaushika-msft
-ms.date: 07/20/2017
+ms.date: 07/21/2017
 ---
 # Deploy application upgrades on Windows 10 Mobile
 

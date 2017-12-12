@@ -10,6 +10,7 @@ ms.pagetype: edu, devices
 ms.localizationpriority: high
 author: craigash
 ms.author: celested
+ms.date: 10/13/2017
 ---
 
 # Chromebook migration guide

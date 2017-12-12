@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 11/15/2017
 ---
 
 # Customize Windows 10 Start and taskbar with mobile device management (MDM)
@@ -40,7 +41,7 @@ Two features enable Start layout control:
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     >[!NOTE]  
-    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
 
      
 

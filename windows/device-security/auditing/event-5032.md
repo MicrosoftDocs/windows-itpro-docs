@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh
+ms.date: 04/19/2017
 ---
 
 # 5032(F): Windows Firewall was unable to notify the user that it blocked an application from accepting incoming connections on the network.

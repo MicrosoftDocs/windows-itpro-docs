@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: c4b75ad3-9c4a-4dd2-9fed-69f776f542e6
 title: Problems after installing Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 10/16/2017
 ---
 
 

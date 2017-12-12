@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/30/2017
 ---
 
 # Configure Windows Defender ATP server endpoints
@@ -20,7 +20,7 @@ ms.date: 10/17/2017
 - Windows Server 2016
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
-
+[!include[Prerelease information](prerelease.md)]
 
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configserver-abovefoldlink)
 
@@ -40,6 +40,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 >[!TIP]
 > After onboarding the endpoint, you can choose to run a detection test to verify that an endpoint is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Windows Defender ATP endpoint](run-detection-test-windows-defender-advanced-threat-protection.md).
 
+
 ### Turn on Server monitoring from the Windows Defender Security Center portal
 
 1. In the navigation pane, select **Endpoint management** > **Servers**. 
@@ -48,7 +49,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
     ![Image of server onboarding](images/atp-server-onboarding.png)
 
-
+<span id="server-mma"/>
 ### Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Windows Defender ATP 
 
 1.	Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
@@ -62,6 +63,7 @@ To onboard your servers to Windows Defender ATP, you’ll need to:
 
 Once completed, you should see onboarded servers in the portal within an hour.
 
+<span id="server-proxy"/>
 ### Configure server endpoint proxy and Internet connectivity settings 
 - Each Windows server must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that the following URLs are white-listed to permit communication with Windows Defender ATP service:

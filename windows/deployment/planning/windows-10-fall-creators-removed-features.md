@@ -6,7 +6,7 @@ ms.mktglfcycl: plan
 ms.localizationpriority: high
 ms.sitesec: library
 author: lizap
-ms.date: 10/17/2017
+ms.date: 10/09/2017
 ---
 # Features removed or planned for replacement starting with Windows 10 Fall Creators Update (version 1709)
 

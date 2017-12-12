@@ -125,6 +125,7 @@
 
 ## [Encrypted Hard Drive](encrypted-hard-drive.md)
 
+## [Enable HVCI](enable-virtualization-based-protection-of-code-integrity.md)
 
 ## [Security auditing](auditing\security-auditing-overview.md)
 ### [Basic security audit policies](auditing\basic-security-audit-policies.md)

@@ -1,7 +1,7 @@
 ---
 title: Windows Defender ATP data storage and privacy
 description: Learn about how Windows Defender ATP handles privacy and data that it collects.
-keywords: Windows Defender ATP data storage and privacy, storage, privacy
+keywords: Windows Defender ATP data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,30 +10,26 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/14/2017
 ---
 
 # Windows Defender ATP data storage and privacy
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
 
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Windows Defender ATP.
 > [!NOTE]
-> This document explains the data storage and privacy details related to Windows Defender ATP. For more information related to Windows Defender ATP and other products and services like Windows Defender and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
+> This document explains the data storage and privacy details related to Windows Defender ATP. For more information related to Windows Defender ATP and other products and services like Windows Defender Antivirus and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows 10 privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
 
 ## What data does Windows Defender ATP collect?
 
 Microsoft will collect and store information from your configured endpoints in a database specific to the service for administration, tracking, and reporting purposes.
 
-Information collected includes code file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as GUIDs, names, and the operating system version).
+Information collected includes file data (such as file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and machine details (such as machine identifiers, names, and the operating system version).
 
 Microsoft stores this data securely in Microsoft Azure and maintains it in accordance with Microsoft privacy practices and [Microsoft Trust Center policies](https://go.microsoft.com/fwlink/?linkid=827578).
 
@@ -42,11 +38,11 @@ Microsoft uses this data to:
 - Generate alerts if a possible attack was detected
 - Provide your security operations with a view into machines, files, and URLs related to threat signals from your network, enabling you to investigate and explore the presence of security threats on the network.
 
-Microsoft does not mine your data for advertising or for any other purpose other than providing you the service.
+Microsoft does not use your data for advertising or for any other purpose other than providing you the service.
 
 ## Do I have the flexibility to select where to store my data?
 
-When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not transfer the data from the specified geolocation.
+When onboarding the service for the first time, you can choose to store your data in Microsoft Azure datacenters in Europe or in the United States. Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside. Microsoft will not under any circumstance, transfer the data from the specified geolocation into another geolocation.
 
 ## Is my data isolated from other customer data?
 Yes, your data is isolated through access authentication and logical segregation based on customer identifier. Each customer can only access data collected from its own organization and generic data that Microsoft provides.
@@ -69,7 +65,7 @@ No. Customer data is isolated from other customers and is not shared. However, i
 You can choose the data retention policy for your data. This determines how long Window Defender ATP will store your data. There’s a flexibility of choosing in the range of 1 month to six months to meet your company’s regulatory compliance needs.
 
 **At contract termination or expiration**<br>
-Your data will be kept for a period of at least 90 days, during which it will be available to you. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
+Your data will be kept and will be available to you while the licence is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft’s systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
 
 
 ## Can Microsoft help us maintain regulatory compliance?

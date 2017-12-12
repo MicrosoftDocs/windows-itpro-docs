@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 11/13/2017
 ---
 
 # Policy CSP - Update
@@ -93,6 +93,9 @@ ms.date: 11/01/2017
   </dd>
   <dd>
     <a href="#update-ignoremoupdatedownloadlimit">Update/IgnoreMOUpdateDownloadLimit</a>
+  </dd>
+  <dd>
+    <a href="#update-managepreviewbuilds">Update/ManagePreviewBuilds</a>
   </dd>
   <dd>
     <a href="#update-pausedeferrals">Update/PauseDeferrals</a>
@@ -1452,6 +1455,45 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
       - `exec-device schtasks.exe -arguments ""/run /tn """"\Microsoft\Windows\WindowsUpdate\AUScheduledInstall"""" /I""`
 
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="update-managepreviewbuilds"></a>**Update/ManagePreviewBuilds**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709. Used to manage Windows 10 Insider Preview builds. Value type is integer.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 - Disable Preview builds
+-   1 - Disable Preview builds once the next release is public
+-   2 - Enable Preview builds
 
 <!--EndDescription-->
 <!--EndPolicy-->

@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 09/06/2017
+ms.date: 09/12/2017
 ---
 
 # Collect Update Compliance diagnostic data for Windows Defender AV Assessment

@@ -8,6 +8,7 @@ ms.pagetype: security
 ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 09/11/2017
 ---
 
 # Unenlightened and enlightened app behavior while using Windows Information Protection (WIP)

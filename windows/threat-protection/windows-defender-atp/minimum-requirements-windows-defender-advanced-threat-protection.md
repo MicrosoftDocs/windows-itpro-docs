@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/17/2017
 ---
 
 # Minimum requirements for Windows Defender ATP
@@ -66,7 +66,7 @@ The hardware requirements for Windows Defender ATP on endpoints is the same as t
 > Endpoints that are running mobile versions of Windows are not supported.
 
 #### Internet connectivity
-Internet connectivity on endpoints is required.
+Internet connectivity on endpoints is required either directly or through proxy.
 
 The Windows Defender ATP sensor can utilize up to 5MB daily of bandwidth  to communicate with the Windows Defender ATP cloud service and report cyber data.
 

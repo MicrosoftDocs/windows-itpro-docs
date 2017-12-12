@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Set up a shared or guest PC with Windows 10

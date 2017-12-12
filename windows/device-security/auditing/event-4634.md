@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh
+ms.date: 11/20/2017
 ---
 
 # 4634(S): An account was logged off.
@@ -23,7 +24,7 @@ author: Mir0sh
 
 This event shows that logon session was terminated and no longer exists.
 
-The main difference between “[4647](event-4647.md): User initiated logoff.” and 4647 event is that 4647 event is generated when logoff procedure was initiated by specific account using logoff function, and 4634 event shows that session was terminated and no longer exists.
+The main difference between “[4647](event-4647.md): User initiated logoff.” and 4634 event is that 4647 event is generated when logoff procedure was initiated by specific account using logoff function, and 4634 event shows that session was terminated and no longer exists.
 
 4647 is more typical for **Interactive** and **RemoteInteractive** logon types when user was logged off using standard methods. You will typically see both 4647 and 4634 events when logoff procedure was initiated by user.
 

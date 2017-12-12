@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 07/27/2017
 ---
 
 # Network security: Minimum session security for NTLM SSP based (including secure RPC) clients

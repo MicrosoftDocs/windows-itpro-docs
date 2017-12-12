@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 11/20/2017
 ---
 
 # Policy CSP - Connectivity
@@ -51,6 +51,9 @@ ms.date: 11/01/2017
   </dd>
   <dd>
     <a href="#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards">Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards</a>
+  </dd>
+  <dd>
+    <a href="#connectivity-disallownetworkconnectivityactivetests">Connectivity/DisallowNetworkConnectivityActiveTests</a>
   </dd>
   <dd>
     <a href="#connectivity-hardeneduncpaths">Connectivity/HardenedUNCPaths</a>
@@ -156,7 +159,7 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Do not allow the cellular data channel. The user can turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
 -   1 (default) – Allow the cellular data channel. The user can turn it off.
 -   2 - Allow the cellular data channel. The user cannot turn it off.
 
@@ -203,7 +206,7 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
--   0 – Do not allow cellular data roaming. The user can turn it on. This value is not supported in Windows 10, version 1511.
+-   0 – Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511.
 -   1 (default) – Allow cellular data roaming.
 -   2 - Allow cellular data roaming on. The user cannot turn it off.
 
@@ -631,6 +634,41 @@ ADMX Info:
 -   GP ADMX file name: *ICM.admx*
 
 <!--EndADMX-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="connectivity-disallownetworkconnectivityactivetests"></a>**Connectivity/DisallowNetworkConnectivityActiveTests**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+
+<!--StartDescription-->
+Added in Windows 10, version 1703. Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet.  This policy disables the NCSI active probe, preventing network connectivity to www.msftconnecttest.com.
+
+Value type is integer.
+
+<!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
 
+ms.date: 04/19/2017
 ---
 
 # Monitor user and device claims during sign-in

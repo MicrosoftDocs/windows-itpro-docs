@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 20aF07c4-051a-451f-9c46-5a052d9Ae27c
 title: Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.1) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

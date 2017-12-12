@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 ms.localizationpriority: high
 author: AMeeus
+ms.date: 10/13/2017
 ---
 # Windows 10 Mobile security guide
 

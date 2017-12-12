@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # VPN profile options

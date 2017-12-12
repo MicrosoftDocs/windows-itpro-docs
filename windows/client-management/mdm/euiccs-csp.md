@@ -6,13 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 11/15/2017
 ---
 
 # eUICCs CSP
 
 
-The eUICCs configuration service provider... This CSP was added in windows 10, version 1709.
+The eUICCs configuration service provider is used to support eUICC enterprise use cases and enables the IT admin to manage (assign, re-assign, remove) subscriptions to employees. This CSP was added in windows 10, version 1709.
 
 The following diagram shows the eUICCs configuration service provider in tree format.
 

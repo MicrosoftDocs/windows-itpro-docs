@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.author: lizross
-ms.date: 08/11/2017
+ms.date: 11/07/2017
 ---
 
 # Frequently asked questions - Windows Defender Application Guard 

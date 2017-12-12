@@ -10,11 +10,19 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 12/08/2017
 ---
 
-# Get alerts 
+# Get alerts API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Retrieves top recent alerts.
+
 
 ## Permissions
 User needs read permissions.

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 06/30/2017
+ms.date: 11/30/2017
 ---
 
 # Overview of Windows AutoPilot
@@ -39,9 +39,12 @@ Windows AutoPilot allows you to:
 ### Prerequisites
 
 * [Devices must be registered to the organization](#registering-devices-to-your-organization)
+* [Company branding needs to be configured](#configure-company-branding-for-oobe)
+* [Network connectivity to cloud services used by Windows AutoPilot](#network-connectivity-requirements)
 * Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
 * Devices must have access to the internet
 * [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
+* [Users must be allowed to join devices into Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/device-management-azure-portal)
 * Microsoft Intune or other MDM services to manage your devices
 
 ## Windows AutoPilot Scenarios
@@ -76,7 +79,13 @@ If you would like to capture that information by yourself, you can use the [Get-
 By uploading this information to the Microsoft Store for Business or Partner Center admin portal, you'll be able to assign devices to your organization.
 Additional options and customization is available through these portals to pre-configure the devices.
 
-Options available for Windows 10, version 1703:
+For information on how to upload device information, see [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#add-devices-and-apply-autopilot-deployment-profile) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot) guidance.
+
+#### OOBE customization
+
+Deployment profiles are used to configure the Out-Of-the-Box-Experience (OOBE) on devices deployed through the Windows AutoPilot Deployment Program.
+
+These are the OOBE customization options available for Windows 10, starting with version 1703:
 * Skipping Work or Home usage selection (*Automatic*)
 * Skipping OEM registration, OneDrive and Cortana (*Automatic*)
 * Skipping privacy settings
@@ -85,11 +94,43 @@ Options available for Windows 10, version 1703:
 
 We are working to add additional options to further personalize and streamline the setup experience in future releases.
 
-To see additional details on how to customize the OOBE experience and how to follow this process, see guidance for [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot).
+To configure and apply deployment profiles, see guidance for the various available administration options:
+* [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles)
+* [Microsoft Intune](https://docs.microsoft.com/intune/enrollment-autopilot)
+* [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa)
+* [Partner Center](https://msdn.microsoft.com/partner-center/autopilot)
+
+##### Configure company branding for OOBE
+
+In order for your company branding to appear during the OOBE, you'll need to configure it in Azure Active Directory first.
+
+See [Add company branding to your directory](https://docs.microsoft.com/azure/active-directory/customize-branding#add-company-branding-to-your-directory), to configure these settings. 
+
+#### Network connectivity requirements
+
+The Windows AutoPilot Deployment Program uses a number of cloud services to get your devices to a productive state. This means those services need to be accessible from devices registered as Windows Autopilot devices.
+
+To manage devices behind firewalls and proxy servers, the following URLs need to be accessible:
+
+* https://go.microsoft.com
+* https://login.microsoftonline.com
+* https://login.live.com
+* https://account.live.com
+* https://signup.live.com
+* https://licensing.mp.microsoft.com
+* https://licensing.md.mp.microsoft.com 
+* ctldl.windowsupdate.com
+* download.windowsupdate.com
+
+>[!NOTE]
+>Where not explicitly specified, both HTTPS (443) and HTTP (80) need to be accessible.
+
+>[!TIP]
+>If you're auto-enrolling your devices into Microsoft Intune, or deploying Microsoft Office, make sure you follow the networking guidlines for [Microsoft Intune](https://docs.microsoft.com/en-us/intune/network-bandwidth-use#network-communication-requirements) and [Office 365](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2).
 
 ### IT-Driven
 
-If you are planning to use to configure these devices with traditional on-premises or cloud-based solutions, the [Windows Configuration Designer](https://www.microsoft.com/store/p/windows-configuration-designer/9nblggh4tx22) can be used to help automate the process. This is more suited to scenarios in which you require a higher level of control over the provisioning process. For more information on creating provisioning packages with Windows Configuration Designer, see [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package).
+If you are planning to configure devices with traditional on-premises or cloud-based solutions, the [Windows Configuration Designer](https://www.microsoft.com/store/p/windows-configuration-designer/9nblggh4tx22) can be used to help automate the process. This is more suited to scenarios in which you require a higher level of control over the provisioning process. For more information on creating provisioning packages with Windows Configuration Designer, see [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package).
 
 ### Teacher-Driven
 

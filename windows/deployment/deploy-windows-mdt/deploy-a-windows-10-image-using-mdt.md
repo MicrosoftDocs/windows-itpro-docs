@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
 author: mtniehaus
+ms.date: 10/16/2017
 ---
 
 # Deploy a Windows 10 image using MDT

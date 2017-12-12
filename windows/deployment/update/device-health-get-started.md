@@ -5,7 +5,7 @@ keywords: Device Health, oms, operations management suite, prerequisites, requir
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 10/17/2017
+ms.date: 11/14/2017
 ms.pagetype: deploy
 author: jaimeo
 ---
@@ -22,7 +22,7 @@ Steps are provided in sections that follow the recommended setup process:
 ## Device Health prerequisites
 
 Device Health has the following requirements: 
-1. Device Health is currently only compatible with Windows 10 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
+1. Device Health is currently only compatible with Windows 10 and Windows Server 2016 devices. The solution is intended to be used with desktop devices (Windows 10 workstations and laptops). 
 2. The solution requires that at least the [enhanced level of telemetry](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#basic-level) is enabled on all devices that are intended to be displayed in the solution. To learn more about Windows telemetry, see [Configure Windows telemetry in your organization](/windows/configuration/configure-windows-telemetry-in-your-organization). 
 3. The telemetry of your organization’s Windows devices must be successfully transmitted to Microsoft. Microsoft has specified [endpoints for each of the telemetry services](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#endpoints), which must be whitelisted by your organization so the data can be transmitted. The following table is taken from the article on telemetry endpoints and summarizes the use of each endpoint:
 

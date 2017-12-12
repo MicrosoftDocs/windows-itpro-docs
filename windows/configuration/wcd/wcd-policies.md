@@ -7,7 +7,7 @@ ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: medium
 ms.author: jdecker
-ms.date: 10/17/2017
+ms.date: 10/16/2017
 ---
 
 # Policies (Windows Configuration Designer reference)

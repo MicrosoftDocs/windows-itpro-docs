@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 07/27/2017
 ---
 
 # Introduction to configuration service providers (CSPs) for IT pros

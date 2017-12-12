@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/21/2017
 ---
 
 # Enable SIEM integration in Windows Defender ATP
@@ -53,7 +53,7 @@ Enable security information and event management (SIEM) integration so you can p
 5. Select **Generate tokens** to get an access and refresh token.
   
   > [!NOTE]
-  > You'll need to generate a new Access token every 90 days. 
+  > You'll need to generate a new Refresh token every 90 days. 
 
 You can now proceed with configuring your SIEM solution or connecting to the alerts REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive alerts from the Windows Defender ATP portal.
 

@@ -5,6 +5,7 @@ title: Microsoft 365 Education documentation and resources | Microsoft Docs
 description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
 author: CelesteDG
 ms.author: celested
+ms.date: 10/30/2017
 ---
 <div id="main" class="v2">
     <div class="container">

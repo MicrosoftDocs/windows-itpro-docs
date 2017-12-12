@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Settings changed when you uninstall a provisioning package

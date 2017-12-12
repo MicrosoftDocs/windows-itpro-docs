@@ -7,6 +7,7 @@ ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: high
 ms.author: lizross
+ms.date: 10/05/2017
 ---
 
 # Test scenario 3 - Set a reminder for a specific location using Cortana at work

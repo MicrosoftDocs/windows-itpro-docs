@@ -7,17 +7,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 12/05/2017
 ---
 
 # PassportForWork DDF
 
 This topic shows the OMA DM device description framework (DDF) for the **PassportForWork** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-You can download the DDF files from the links below:
-
-- [Download all the DDF files for Windows 10, version 1703](http://download.microsoft.com/download/C/7/C/C7C94663-44CF-4221-ABCA-BC895F42B6C2/Windows10_1703_DDF_download.zip)
-- [Download all the DDF files for Windows 10, version 1607](http://download.microsoft.com/download/2/3/E/23E27D6B-6E23-4833-B143-915EDA3BDD44/Windows10_1607_DDF.zip)
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
 
 The XML below is the current version for this CSP.
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # What's new in Windows 10, versions 1507 and 1511

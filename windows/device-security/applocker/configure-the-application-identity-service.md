@@ -7,6 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: brianlic-msft
+ms.date: 09/21/2017
 ---
 
 # Configure the Application Identity service

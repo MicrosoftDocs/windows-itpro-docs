@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 04/19/2017
 ---
 
 # Network security: Do not store LAN Manager hash value on next password change

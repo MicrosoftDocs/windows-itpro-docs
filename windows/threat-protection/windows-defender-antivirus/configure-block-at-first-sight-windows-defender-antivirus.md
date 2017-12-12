@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 11/20/2017
 ---
 
 
@@ -42,6 +42,11 @@ You can also [specify how long the file should be prevented from running](config
 
 > [!IMPORTANT]
 > There is no specific individual setting in System Center Configuration Manager to enable or disable Block at First Sight. It is enabled by default when the pre-requisite settings are configured correctly. You must use Group Policy settings to enable or disable the feature.
+
+
+>[!TIP]
+>You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
+
 
 ## How it works
 

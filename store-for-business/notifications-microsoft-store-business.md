@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Notifications in Microsoft Store for Business and Education

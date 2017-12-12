@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 6ed182b0-46cb-4865-9563-70825be9a5e4
 title: Before you start using IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

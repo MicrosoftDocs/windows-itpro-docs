@@ -10,18 +10,16 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/21/2017
 ---
 
 # Troubleshoot Windows Defender Advanced Threat Protection onboarding issues
 
 **Applies to:**
 
-- Windows 10 Enterprise
-- Windows 10 Education
-- Windows 10 Pro
-- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
+- Windows Server 2012 R2
+- Windows Server 2016
 
 
 
@@ -265,12 +263,37 @@ If the verification fails and your environment is using a proxy to connect to th
 
     ![Image of registry key for Windows Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
+
+## Troubleshoot onboarding issues on a server
+If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
+
+- [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-mma)
+- [Ensure that the server endpoint proxy and Internet connectivity settings are configured properly](configure-server-endpoints-windows-defender-advanced-threat-protection.md#server-proxy)
+
+You might also need to check the following:
+- Check that there is a Windows Defender Advanced Threat Protection Service running in the **Processes** tab in **Task Manager**. For example:
+
+    ![Image of process view with Windows Defender Advanced Threat Protection Service running](images/atp-task-manager.png)
+
+- Check **Event Viewer** > **Applications and Services Logs** > **Operation Manager** to see if there are any errors.
+
+- In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example, 
+
+    ![Image of Services](images/atp-services.png)
+
+- In **Microsoft Monitoring Agent** > **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running. 
+
+    ![Image of Microsoft Monitoring Agent Properties](images/atp-mma-properties.png)
+
+- Check to see that machines are reflected in the **Machines list** in the portal. 
+
+
 ## Licensing requirements
 Windows Defender Advanced Threat Protection requires one of the following Microsoft Volume Licensing offers:
 
   -	Windows 10 Enterprise E5
   -	Windows 10 Education E5
-  - Secure Productive Enterprise E5 (SPE E5) which includes Windows 10 Enterprise E5
+  - Microsoft 365 Enterprise E5 which includes Windows 10 Enterprise E5
 
 For more information, see [Windows 10 Licensing](https://www.microsoft.com/en-us/Licensing/product-licensing/windows10.aspx#tab=2).
 

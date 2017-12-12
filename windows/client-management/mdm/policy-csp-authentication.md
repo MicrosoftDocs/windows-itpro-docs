@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 11/17/2017
 ---
 
 # Policy CSP - Authentication
@@ -27,6 +27,9 @@ ms.date: 11/01/2017
   </dd>
   <dd>
     <a href="#authentication-allowfastreconnect">Authentication/AllowFastReconnect</a>
+  </dd>
+  <dd>
+    <a href="#authentication-allowfidodevicesignon">Authentication/AllowFidoDeviceSignon</a>
   </dd>
   <dd>
     <a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
@@ -170,6 +173,47 @@ ms.date: 11/01/2017
 -   1 (default) – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="authentication-allowfidodevicesignon"></a>**Authentication/AllowFidoDeviceSignon**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Preview release in Windows 10, version 1709. Supported in the next release. Specifies whether Fast Identity Online (FIDO) device can be used to sign on. This policy enables the Windows logon credential provider for FIDO 2.0
+
+<p style="margin-left: 20px">Value type is integer.
+
+<p style="margin-left: 20px">Here is an example scenario: At Contoso, there are a lot of shared devices and kiosks that employees throughout the day using as many as 20 different devices. To minimize the loss in productivity when employees have to login with username and password everytime they pick up a device, the IT admin deploys SharePC CSP and Authentication/AllowFidoDeviceSignon policy to shared devices. The IT admin provisions and distributes FIDO 2.0 devices to employees, which allows them to authenticate to various shared devices and PCs.
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 - Do not allow. The FIDO device credential provider disabled. 
+-   1 - Allow. The FIDO device credential provider is enabled and allows usage of FIDO devices to sign into an Windows.
 
 <!--EndDescription-->
 <!--EndPolicy-->

@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 11/10/2017
+ms.date: 12/12/2017
 ---
 
 # Take response actions on a machine
@@ -29,7 +29,8 @@ ms.date: 11/10/2017
 Quickly respond to detected attacks by isolating machines or collecting an investigation package. After taking action on machines, you can check activity details on the Action center.
 
 >[!IMPORTANT]
-> These response actions are only available for machines on Windows 10, version  1703 or later. 
+> - These response actions are only available for machines on Windows 10, version  1703 or later. 
+> - For non-Windows platforms, response capabilities (such as Machine isolation) are dependent on the third-party capabilities. 
 
 ## Collect investigation package from machines
 As part of the investigation or response process, you can collect an investigation package from a machine. By collecting the investigation package, you can identify the current state of the machine and further understand the tools and techniques used by the attacker.
@@ -124,7 +125,7 @@ In addition to the ability of containing an attack by stopping malicious process
 
 >[!IMPORTANT]
 > - This action is available for machines on Windows 10, version  1709 or later.
-> - This action needs to meet the Windows Defender Application Control code integrity policy formas and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
 
 The action to restrict an application from running applies a code integrity policy that only allows running of files that are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised machines and performing further malicious activities.
@@ -180,7 +181,7 @@ Depending on the severity of the attack and the sensitivity of the machine, you 
 >[!IMPORTANT]
 >- Full isolation is available for machines on Windows 10, version 1703.
 >- Selective isolation is available for machines on Windows 10, version 1709 or later.
->- 
+
 
 This machine isolation feature disconnects the compromised machine from the network while retaining connectivity to the Windows Defender ATP service, which continues to monitor the machine.
 

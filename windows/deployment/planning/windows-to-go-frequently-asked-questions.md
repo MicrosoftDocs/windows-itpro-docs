@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: mobility
 ms.sitesec: library
 author: mtniehaus
+ms.date: 04/19/2017
 ---
 
 # Windows To Go: frequently asked questions

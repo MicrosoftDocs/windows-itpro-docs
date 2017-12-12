@@ -7,6 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 11/17/2017
 ---
 
 # Update Windows 10 in the enterprise
@@ -47,6 +48,6 @@ Windows as a service provides a new way to think about building, deploying, and 
 
 >[!TIP]
 >Windows servicing is changing, but for disaster recovery scenarios and bare-metal deployments of Windows 10, you still can use traditional imaging software such as System Center Configuration Manager or the Microsoft Deployment Toolkit. Using these tools to deploy Windows 10 images is similar to deploying previous versions of Windows.
->With each release of a new feature update for CB, Microsoft makes available new .iso files for use in updating your custom images. Each Windows 10 build has a finite servicing lifetime, so it’s important that images stay up to date with the latest build. For detailed information about how to deploy Windows 10 to bare-metal machines or to upgrade to Windows 10 from previous builds of Windows, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md).
+>With each release of a new feature update for CB, Microsoft makes available new .iso files for use in updating your custom images. Each Windows 10 build has a finite servicing lifetime, so it’s important that images stay up to date with the latest build. For detailed information about how to deploy Windows 10 to bare-metal machines or to upgrade to Windows 10 from previous builds of Windows, see [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](../deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md). Additionally, Windows 10 clients can move from any supported version of Windows 10 (i.e. Version 1511) to the latest version directly (i.e 1709).
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=index.md). 
+Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=index.md).  

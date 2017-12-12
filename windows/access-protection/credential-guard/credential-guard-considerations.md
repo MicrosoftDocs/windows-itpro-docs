@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 08/31/2017
 ---
 
 # Considerations when using Windows Defender Credential Guard

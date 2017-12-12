@@ -9,7 +9,7 @@ ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
 ms.author: jdecker
-ms.date: 10/05/2017
+ms.date: 11/15/2017
 ---
 
 # Customize Windows 10 Start and taskbar with Group Policy
@@ -47,7 +47,7 @@ Three features enable Start and taskbar layout control:
 -   The [Export-StartLayout](https://go.microsoft.com/fwlink/p/?LinkID=620879) cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     >[!NOTE]  
-    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://go.microsoft.com/fwlink/p/?LinkId=623707) cmdlet.
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
 
 -    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration. 
 

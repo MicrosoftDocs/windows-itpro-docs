@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 10/30/2017
+ms.date: 11/07/2017
 ---
 
 # Configure and validate exclusions based on file extension and folder location

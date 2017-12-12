@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 06/19/2017
+ms.date: 11/13/2017
 ---
 
 # RemoteWipe CSP
@@ -41,6 +41,9 @@ Added in Windows 10, version 1703. Exec on this node performs a remote wipe on t
 The doWipeProtected is functionally similar to doWipe. But unlike doWipe, which can be easily circumvented by simply power cycling the device, doWipeProtected will keep trying to reset the device until it’s done.
 
 Supported operation is Exec.
+
+<a href="" id="doWipePersistUserData"></a>**doWipePersistUserData**  
+Added in Windows 10, version 1709.  Exec on this node will perform a remote reset on the device and persist user accounts and data. The return status code shows whether the device accepted the Exec command.
 
 ## The Remote Wipe Process
 

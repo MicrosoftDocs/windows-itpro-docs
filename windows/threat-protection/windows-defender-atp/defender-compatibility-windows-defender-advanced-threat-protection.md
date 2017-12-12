@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/28/2017
 ---
 
 # Windows Defender Antivirus compatibility with Windows Defender ATP
@@ -29,6 +29,9 @@ ms.date: 10/17/2017
 >Want to experience Windows Defender ATP? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
 The Windows Defender Advanced Threat Protection agent depends on Windows Defender Antivirus for some capabilities such as file scanning.
+
+>[!IMPORTANT]
+>Windows Defender ATP does not adhere to the Windows Defender Antivirus Exclusions settings. 
 
 You must configure the signature updates on the Windows Defender ATP endpoints whether Windows Defender Antivirus is the active antimalware or not. For more information, see [Manage Windows Defender Antivirus updates and apply baselines](../windows-defender-antivirus/manage-updates-baselines-windows-defender-antivirus.md).
 

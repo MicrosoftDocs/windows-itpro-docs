@@ -7,6 +7,7 @@ ms.mktglfcycl: support
 ms.sitesec: library
 ms.pagetype: appcompat
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Browser: Microsoft Edge and Internet Explorer 11

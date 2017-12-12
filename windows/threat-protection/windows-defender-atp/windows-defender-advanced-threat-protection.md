@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/13/2017
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -106,7 +106,7 @@ Topic | Description
 [Windows Defender ATP service health](service-status-windows-defender-advanced-threat-protection.md) | Verify that the service health is running properly or if there are current issues.
 [Troubleshoot Windows Defender Advanced Threat Protection](troubleshoot-windows-defender-advanced-threat-protection.md) | This topic contains information to help IT Pros find workarounds for the known issues and troubleshoot issues in Windows Defender ATP.
 [Review events and errors on endpoints with Event Viewer](event-error-codes-windows-defender-advanced-threat-protection.md)| Review events and errors associated with event IDs to determine if further troubleshooting steps are required.
-[Windows Defender compatibility](defender-compatibility-windows-defender-advanced-threat-protection.md) | Learn about how Windows Defender works in conjunction with Windows Defender ATP.
+[Windows Defender Antivirus compatibility with Windows Defender ATP](defender-compatibility-windows-defender-advanced-threat-protection.md) | Learn about how Windows Defender Antivirus works in conjunction with Windows Defender ATP.
 
 ## Related topic
 [Windows Defender ATP helps detect sophisticated threats](https://www.microsoft.com/itshowcase/Article/Content/854/Windows-Defender-ATP-helps-detect-sophisticated-threats)

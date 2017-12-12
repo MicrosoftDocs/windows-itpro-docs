@@ -9,6 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 11/08/2017
 ---
 
 # Set up Take a Test on a single PC

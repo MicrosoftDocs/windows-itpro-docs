@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: 51d8f80e-93a5-41e4-9478-b8321458bc30
 title: Use the Compatibility View page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

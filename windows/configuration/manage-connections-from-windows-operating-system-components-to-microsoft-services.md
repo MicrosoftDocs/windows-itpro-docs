@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic-msft
-ms.date: 07/28/2017
+ms.date: 11/30/2017
 ---
 
 # Manage connections from Windows operating system components to Microsoft services
@@ -33,12 +33,13 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=manage-connections-from-windows-operating-system-components-to-microsoft-services.md). 
 
-## What's new in Windows 10, version 1709 
+## What's new in Windows 10, version 1709
 
 Here's a list of changes that were made to this article for Windows 10, version 1709:
 
 - Added the Phone calls section.
 - Added the Storage Health section.
+- Added discussion of apps for websites in the Microsoft Store section.
 
 ## What's new in Windows 10, version 1703
 
@@ -126,6 +127,7 @@ See the following table for a summary of the management settings for Windows 10 
 | [24. Windows Media Player](#bkmk-wmp) | ![Check mark](images/checkmark.png) | | | | ![Check mark](images/checkmark.png) |
 | [25. Windows Spotlight](#bkmk-spotlight) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |  | |
 | [27. Windows Update Delivery Optimization](#bkmk-updates) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | | |
 
@@ -153,6 +155,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [23. Windows Defender](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 | [24. Windows Media Player](#bkmk-wmp) | | | | ![Check mark](images/checkmark.png) |
 | [26. Microsoft Store](#bkmk-windowsstore) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
+| &nbsp;&nbsp;&nbsp;&nbsp;[26.1 Apps for websites](#bkmk-apps-for-websites) | | ![Check mark](images/checkmark.png) |  | |
 | [28. Windows Update](#bkmk-wu) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) | |
 
 ### Settings for Windows Server 2016 Server Core
@@ -1809,6 +1812,10 @@ You can turn off the ability to launch apps from the Microsoft Store that were p
     -or-
 
     -   Create a new REG\_DWORD registry setting in **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsStore!AutoDownload**, with a value of 2 (two).
+
+### <a href="" id="bkmk-apps-for-websites"></a>26.1 Apps for websites
+
+You can turn off apps for websites, preventing customers who visit websites that are registered with their associated app from directly launching the app.
 
 Disable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Group Policy** > **Configure web-to-app linking with URI handlers**
 

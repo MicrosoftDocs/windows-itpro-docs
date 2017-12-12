@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 09/05/2017
+ms.date: 12/05/2017
 author: greg-lindsay
 ---
 
@@ -25,7 +25,15 @@ Deployment instructions are provided for the following scenarios:
 - VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
 - VMs must be Active Directory-joined or Azure Active Directory-joined.
 - VMs must be generation 1.
-- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx).
+- VMs must hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+
+## Activation
+
+The underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. 
+
+Procedures in this topic provide a Windows 10 Pro Generic Volume License Key (GVLK). Activation with this key is accomplished using a Volume License KMS activation server provided by the QMTH. Alternatively, a KMS activation server on your corporate network can be used if you have configured a private connection, such as [ExpressRoute](https://azure.microsoft.com/services/expressroute/) or [VPN Gateway](https://azure.microsoft.com/services/vpn-gateway/).
+
+For examples of activation issues, see [Troubleshoot the user experience](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses#troubleshoot-the-user-experience).
 
 ## Active Directory-joined VMs
 
@@ -39,7 +47,7 @@ Deployment instructions are provided for the following scenarios:
 3. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
 4. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 5. Click **Add**, type **Authenticated users**, and then click **OK** three times.
-6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd).
+6. Follow the instructions to use sysprep at [Steps to generalize a VHD](https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd) and then start the VM again.
 7. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 8. Open Windows Configuration Designer and click **Provison desktop services**.
 9. Under **Name**, type **Desktop AD Enrollment Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name. 
@@ -82,7 +90,6 @@ For Azure AD-joined VMs, follow the same instructions (above) as for [Active Dir
 2. At an elevated command prompt, type **sysdm.cpl** and press ENTER.
 3. On the Remote tab, choose **Allow remote connections to this computer** and then click **Select Users**.
 4. Click **Add**, type **Authenticated users**, and then click **OK** three times.
-(https://docs.microsoft.com/azure/virtual-machines/windows/prepare-for-upload-vhd-image#steps-to-generalize-a-vhd).
 5. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 6. Open Windows Configuration Designer and click **Provison desktop services**.
 7. Under **Name**, type **Desktop Bulk Enrollment Token Pro GVLK**, click **Finish**, and then on the **Set up device** page enter a device name. 

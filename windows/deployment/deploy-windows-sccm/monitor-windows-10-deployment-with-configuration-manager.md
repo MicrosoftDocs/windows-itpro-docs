@@ -8,6 +8,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Monitor the Windows 10 deployment with Configuration Manager

@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: heatherpoulsen
+ms.date: 10/16/2017
 ---
 
 # Surface

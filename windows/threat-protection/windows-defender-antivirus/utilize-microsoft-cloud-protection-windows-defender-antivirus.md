@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 11/20/2017
 ---
 
 # Utilize Microsoft cloud-delivered protection in Windows Defender Antivirus
@@ -39,6 +39,10 @@ The following video describes how it works:
 src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
 
 Cloud-delivered protection is enabled by default, however you may need to re-enable it if it has been disabled as part of previous organizational policies.
+
+>[!TIP]
+>You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the feature is working and see how it works.
+
 
 The following table describes the differences in cloud-delivered protection between recent versions of Windows and System Center Configuration Manager.
 

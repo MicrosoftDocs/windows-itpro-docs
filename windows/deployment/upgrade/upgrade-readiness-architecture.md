@@ -3,6 +3,7 @@ title: Upgrade Readiness architecture (Windows 10)
 description: Describes Upgrade Readiness architecture.
 ms.prod: w10
 author: greg-lindsay
+ms.date: 04/25/2017
 ---
 
 # Upgrade Readiness architecture

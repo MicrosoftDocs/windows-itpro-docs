@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: Justinha
+ms.date: 10/27/2017
 ---
 
 # Overview of BitLocker Device Encryption in Windows 10

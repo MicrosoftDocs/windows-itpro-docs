@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: justinha
+ms.date: 10/13/2017
 ---
 
 # Mitigate threats by using Windows 10 security features

@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Settings and quick actions that can be locked down in Windows 10 Mobile

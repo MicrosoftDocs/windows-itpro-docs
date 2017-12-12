@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/05/2017
 ---
 
 # What's new in MDM enrollment and management
@@ -855,7 +855,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdnstage.redmond.corp.microsoft.com/en-us/library/windows/desktop/dn905224(v=vs.85).aspx)</td>
+<td style="vertical-align:top">[MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/hardware/dn905224)</td>
 <td style="vertical-align:top"><p>Added new classes and properties.</p>
 </td></tr>
 <td style="vertical-align:top">[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)</td>
@@ -1026,8 +1026,13 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p> 
 <ul>
 <li>Authentication/AllowAadPasswordReset</li>
+<li>Authentication/AllowFidoDeviceSignon</li>
 <li>Browser/LockdownFavorites</li>
 <li>Browser/ProvisionFavorites</li>
+<li>Cellular/LetAppsAccessCellularData</li>
+<li>Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</li>
 <li>CredentialProviders/DisableAutomaticReDeploymentCredentials</li>
 <li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
@@ -1080,9 +1085,12 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PrinterNames</li>
 <li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Start/HidePeopleBar</li>
+<li>Storage/AllowDiskHealthModelUpdates</li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 <li>Update/DisableDualScan</li>
+<li>Update/ManagePreviewBuilds</li>
 <li>Update/ScheduledInstallEveryWeek</li>
 <li>Update/ScheduledInstallFirstWeek</li>
 <li>Update/ScheduledInstallFourthWeek</li>
@@ -1102,6 +1110,8 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>WindowsDefenderSecurityCenter/EnableInAppCustomization</li>
 <li>WindowsDefenderSecurityCenter/Phone</li>
 <li>WindowsDefenderSecurityCenter/URL</li>
+<li>WirelessDisplay/AllowMdnsAdvertisement</li>
+<li>WirelessDisplay/AllowMdnsDiscovery</li>
 </ul>
 </td></tr>
 </tbody>
@@ -1371,6 +1381,65 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 
 
 ## Change history in MDM documentation
+
+### December 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Configuration service provider reference](configuration-service-provider-reference.md)</td>
+<td style="vertical-align:top"><p>Added new section [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)</p>
+</td></tr>
+</tbody>
+</table>
+
+### November 2017
+
+<table class="mx-tdBreakAll">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>New or updated topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="vertical-align:top">[Policy CSP](policy-configuration-service-provider.md)</td>
+<td style="vertical-align:top"><p>Added the following policies for Windows 10, version 1709:</p>
+<ul>
+<li>Authentication/AllowFidoDeviceSignon</li>
+<li>Cellular/LetAppsAccessCellularData</li>
+<li>Cellular/LetAppsAccessCellularData_ForceAllowTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_ForceDenyTheseApps</li>
+<li>Cellular/LetAppsAccessCellularData_UserInControlOfTheseApps</li>
+<li>Start/HidePeopleBar</li>
+<li>Storage/EnhancedStorageDevices</li>
+<li>Update/ManagePreviewBuilds</li>
+<li>WirelessDisplay/AllowMdnsAdvertisement</li>
+<li>WirelessDisplay/AllowMdnsDiscovery</li>
+</ul>
+<p>Added missing policies from previous releases:</p>
+<ul>
+<li>Connectivity/DisallowNetworkConnectivityActiveTest</li>
+<li>Search/AllowWindowsIndexer</li>
+</ul>
+</td></tr>
+</tbody>
+</table>
 
 ### October 2017
 
