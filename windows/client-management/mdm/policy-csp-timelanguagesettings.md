@@ -80,11 +80,3 @@ Footnote:
 
 <!--EndPolicies-->
 
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>TimeLanguageSettings policies supported by Microsoft Surface Hub  
-
--   [TimeLanguageSettings/Set24HourClock](#timelanguagesettings-set24hourclock)  
--   [TimeLanguageSettings/SetCountry](#timelanguagesettings-setcountry)  
--   [TimeLanguageSettings/SetLanguage](#timelanguagesettings-setlanguage)  
-<!--EndSurfaceHub-->
-
