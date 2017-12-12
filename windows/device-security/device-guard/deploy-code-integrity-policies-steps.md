@@ -41,7 +41,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 - addinprocess.exe
 - addinprocess32.exe
-- adinutil.exe
+- addinutil.exe
 - bash.exe
 - bginfo.exe<sup>[1]</sup> 
 - cdb.exe
