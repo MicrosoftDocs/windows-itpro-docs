@@ -11,5 +11,8 @@ Tools/NuGet/
 .openpublishing.buildcore.ps1
 packages.config
 
-# User-specific files  
+# User-specific files
 .vs/
+wdav-pm-sln.csproj
+wdav-pm-sln.csproj.user
+wdav-pm-sln.sln
