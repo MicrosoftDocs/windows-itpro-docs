@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 10/16/2017
+ms.date: 12/11/2017
 ---
 
 # Reset devices with Windows Automatic Redeployment 
@@ -46,11 +46,17 @@ You can set the policy using one of these methods:
 - Set up School PCs app
 
     Windows Automatic Redeployment in the Set up School PCs app is available in the latest release of the app. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Windows Automatic Redeployment through the Set up School PCs app. You can check the version several ways:
+<<<<<<< HEAD
+
+To use the Windows Automatic Redeployment setting in the Set up School PCs app:
+
+=======
     - Reach out to your device manufacturer.
     - If you manage your PCs using Intune or Intune for Education, you can check the OS version by checking the **OS version** info for the device. If  you are using another MDM provider, check the documentation for the MDM provider to confirm the OS version.
     - Log into the PCs, go to the **Settings > System > About** page, look in the **Windows specifications** section and confirm **Version** is set to 1709.
 
     To use the Windows Automatic Redeployment setting in the Set up School PCs app:
+>>>>>>> refs/remotes/origin/master
     * When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Automatic Redeployment** among the list of settings for the student PC as shown in the following example:
 
     ![Configure student PC settings in Set up School PCs](images/suspc_configure_pc2.jpg)

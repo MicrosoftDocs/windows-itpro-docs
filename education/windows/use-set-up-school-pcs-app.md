@@ -9,7 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
-ms.date: 10/13/2017
+ms.date: 12/11/2017
 ---
 
 # Use the Set up School PCs app 
@@ -30,6 +30,7 @@ Set up School PCs makes it easy to set up Windows 10 PCs with Microsoft's recomm
 - Sets Microsoft-recommended school PC settings, including shared PC mode which provides faster sign-in and automatic account cleanup
 - Enables optional guest account for younger students, lost passwords, or visitors
 - Enables optional secure testing account
+- Enables optional Windows Automatic Redeployment feature to return devices to a fully configured or known IT-approved state
 - Locks down the student PC to prevent mischievous activity:
     * Prevents students from removing the PC from the school's device management system
     * Prevents students from removing the Set up School PCs settings
@@ -181,12 +182,13 @@ The **Set up School PCs** app guides you through the configuration choices for t
   - Select **Let guests sign-in to these PCs** to allow guests to use student PCs without a school account. For example, if the device will be in a library and you want other users (like visiting students or teachers) to be able to use the device, you can select this option.
 
     If you select this option, this adds a **Guest** account button in the PC's sign-in screen to allow anyone to use the PC.
-
+ 
+  - Select **Enable Windows Automatic Redeployment** to reset student PCs from the lock screen any time and apply original settings and device management enrollment (AAD & MDM) so they’re ready to use. Make sure you are running Windows 10, version 1709 on the student PCs if you want to use Windows Automatic Redeployment through the Set up School PCs app.
   - To change the default lock screen background or to use your school's custom lock screen background, click **Browse** to select a new lock screen background.
 
     **Figure 4** - Configure student PC settings
 
-    ![Configure student PC settings](images/suspc_createpackage_configurestudentpcsettings.png)
+    ![Configure student PC settings](images/suspc_createpackage_configurestudentpcsettings_121117.png)
 
  When you're doing configuring the student PC settings, click **Next**.
 
