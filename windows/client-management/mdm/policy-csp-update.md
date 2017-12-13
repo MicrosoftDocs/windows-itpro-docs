@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/13/2017
+ms.date: 12/13/2017
 ---
 
 # Policy CSP - Update
@@ -1485,7 +1485,15 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Used to manage Windows 10 Insider Preview builds. Value type is integer.
 

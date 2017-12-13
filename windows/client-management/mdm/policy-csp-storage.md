@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/13/2017
+ms.date: 12/13/2017
 ---
 
 # Policy CSP - Storage
@@ -19,7 +19,7 @@ ms.date: 11/13/2017
 ## Storage policies  
 
 <dl>
-   <dd>
+  <dd>
     <a href="#storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
   </dd>
   <dd>
@@ -54,6 +54,15 @@ ms.date: 11/13/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709.  Allows disk health model updates.
 
