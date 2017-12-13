@@ -180,9 +180,3 @@ Footnote:
 
 <!--EndPolicies-->
 
-<!--StartSurfaceHub-->
-## <a href="" id="surfacehubpolicies"></a>DeviceGuard policies supported by Microsoft Surface Hub  
-
--   [DeviceGuard/AllowKernelControlFlowGuard](#deviceguard-allowkernelcontrolflowguard)  
-<!--EndSurfaceHub-->
-
