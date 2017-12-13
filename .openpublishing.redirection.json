@@ -8399,6 +8399,11 @@
 "source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
 "redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
 "redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-auto-pilot.md",
+"redirect_url": "/windows/deployment/windows-10-autopilot",
+"redirect_document_id": true
 }
 ]
 }
