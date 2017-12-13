@@ -60,7 +60,7 @@ Scan files on the network | Scan > Scan network files | Disabled | `-DisableScan
 Scan packed executables | Scan > Scan packed executables | Enabled | Not available
 Scan removable drives during full scans only | Scan > Scan removable drives | Disabled | `-DisableRemovableDriveScanning`
 Specify the level of subfolders within an archive folder to scan | Scan > Specify the maximum depth to scan archive files | 0 | Not available
- Specify the maximum CPU load (as a percentage) during a scan. This is a maximum - scans will not always use the maximum load defined here, but they will never exceed it | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
+ Specify the maximum CPU load (as a percentage) during a scan. Note: This is not a hard limit but rather a guidance for the scanning engine to not exceed this maximum on average. | Scan > Specify the maximum percentage of CPU utilization during a scan | 50 |  `-ScanAvgCPULoadFactor`
  Specify the maximum size (in kilobytes) of archive files that should be scanned. The default, **0**, applies no limit | Scan > Specify the maximum size of archive files to be scanned | No limit | Not available
 
 **Use Configuration Manager to configure scanning options:**
