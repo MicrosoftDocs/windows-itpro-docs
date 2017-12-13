@@ -197,7 +197,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
   2. Check the options whether to allow keyboard text suggestions to appear and to allow teachers to monitor online tests. 
   3. Enter the assessment URL.
 
-    You can leave the URL blank so that students can enter one later. This enables teachers to use the the Take a Test account for daily quizzes or tests by having students manually enter a URL.
+    You can leave the URL blank so that students can enter one later. This enables teachers to use the Take a Test account for daily quizzes or tests by having students manually enter a URL.
 
     **Figure 5** - Configure the Take a Test app
 

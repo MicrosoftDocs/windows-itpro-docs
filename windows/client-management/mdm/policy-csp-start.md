@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/17/2017
+ms.date: 12/13/2017
 ---
 
 # Policy CSP - Start
@@ -933,7 +933,15 @@ ms.date: 11/17/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.
 
