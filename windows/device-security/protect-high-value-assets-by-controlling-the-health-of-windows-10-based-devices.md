@@ -178,9 +178,9 @@ Windows 10 supports features to help prevent sophisticated low-level malware li
 
     Virtualization-based security isolates sensitive code like Kernel Mode Code Integrity or sensitive corporate domain credentials from the rest of the Windows operating system. For more information, refer to the [Virtualization-based security](#virtual) section.
 
--   **Hyper-V Code Integrity (HVCI).** Hyper-V Code Integrity is a feature of Device Guard that ensures only drivers, executables, and DLLs that comply with the Device Guard Code Integrity policy are allowed to run.
+-   **Hypervisor-protected Code Integrity (HVCI).** Hypervisor-protected Code Integrity is a feature of Device Guard that ensures only drivers, executables, and DLLs that comply with the Device Guard Code Integrity policy are allowed to run.
 
-    When enabled and configured, Windows 10 can start the Hyper-V virtualization-based security services, including Hyper-V Code Integrity (HVCI). HVCI helps protect the system core (kernel), privileged drivers, and system defenses, like antimalware solutions, by preventing malware from running early in the boot process, or after startup.
+    When enabled and configured, Windows 10 can start the Hyper-V virtualization-based security services. HVCI helps protect the system core (kernel), privileged drivers, and system defenses, like antimalware solutions, by preventing malware from running early in the boot process, or after startup.
 
     HVCI uses virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified.
 

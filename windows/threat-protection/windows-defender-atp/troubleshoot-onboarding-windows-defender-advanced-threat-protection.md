@@ -17,6 +17,10 @@ ms.date: 11/21/2017
 
 **Applies to:**
 
+- Windows 10 Enterprise
+- Windows 10 Education
+- Windows 10 Pro
+- Windows 10 Pro Education
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 - Windows Server 2012 R2
 - Windows Server 2016
