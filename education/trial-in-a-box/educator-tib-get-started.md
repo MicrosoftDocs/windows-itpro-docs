@@ -17,6 +17,8 @@ ms.date: 12/11/2017
 # Get started for Educators
 Hello, Teachers! In this guide we'll show you how you can quickly and easily try out a few transformational tools in Microsoft Education.
 
+Connect the device to your school's Wi-Fi and then log-in with your teacher credentials included with your Trial in a Box.
+
 ![Explore these four tools for educators](images/msedu_tib_teachersteps_nologo.png)
 
 ## Explore these four tools in Microsoft Education
