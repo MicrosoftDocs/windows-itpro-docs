@@ -24,7 +24,7 @@ You can use Group Policy settings, mobile device management (MDM) or Registry (n
 
 ## Schedule update installation
 
-In Group Policy, within **Configure Automatic Updates**, you can configure a forced restart after a specified instllation time. 
+In Group Policy, within **Configure Automatic Updates**, you can configure a forced restart after a specified installation time. 
 
 To set the time, you need to go to **Configure Automatic Updates**, select option **4 - Auto download and schedule the install**, and then enter a time in the **Scheduled install time** dropdown. Alternatively, you can specify that installation will occur during the automatic maintenance time (configured using **Computer Configuration\Administrative Templates\Windows Components\Maintenance Scheduler**).
 
