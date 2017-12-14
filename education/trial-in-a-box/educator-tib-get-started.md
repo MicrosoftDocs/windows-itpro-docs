@@ -59,11 +59,8 @@ See how Microsoft Teams for Education works in the classroom.
 
 <span style="color:#00BCF2; font-size: 1.5em">**Try this!**</span> Take a guided tour of Microsoft Teams and test drive some teaching tasks. 
 
-1. Open your browser and visit <a href="https://aka.ms/EduTeamsWalkthrough" target="_blank">https://aka.ms/EduTeamsWalkthrough</a>.
-2. Sign in using these credentials:
-  - **User**: MSFT
-  - **Password**: onStage!
-3. Follow along with the guide.
+1. Open your browser and visit <a href="https://msteamsdemo.azurewebsites.net/" target="_blank">https://msteamsdemo.azurewebsites.net/</a>.
+2. Follow along with the guide.
 
 ## 3. OneNote
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
