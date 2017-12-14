@@ -16,14 +16,14 @@ ms.date: 11/28/2017
 - Windows 10
 - Windows Server 2016 
 
-Virtualization-based protection of code integrity (herein referred to as HVCI) is a powerful system mitigation, which leverages hardware virtualization and the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code. 
+Virtualization-based protection of code integrity (herein referred to as Hypervisor-protected Code Integrity, or HVCI) is a powerful system mitigation that leverages hardware virtualization and the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code. 
 Code integrity validation is performed in a secure environment that is resistant to attack from malicious software, and page permissions for kernel mode are set and maintained by the Hyper-V hypervisor.  
 
 Some applications, including device drivers, may be incompatible with HVCI. 
 This can cause devices or software to malfunction and in rare cases may result in a Blue Screen. Such issues may occur after HVCI has been turned on or during the enablement process itself. 
 If this happens, see [Troubleshooting](#troubleshooting) for remediation steps. 
 
-## How to Turn on virtualization-based protection of code integrity on the Windows 10 Fall Creators Update (version 1709) 
+## How to turn on virtualization-based protection of code integrity on the Windows 10 Fall Creators Update (version 1709) 
 
 These steps apply to Windows 10 S, Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education. 
 
@@ -65,7 +65,7 @@ B. If you experience software or device malfunction after using the above proced
 
 C. If you experience a critical error during boot or your system is unstable after using the above procedure to turn on HVCI, you can recover using the Windows Recovery Environment (Windows RE). To boot to Windows RE, see [Windows RE Technical Reference](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). After logging in to Windows RE, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
 
-## How to Turn off HVCI on the Windows 10 Fall Creators Update
+## How to turn off HVCI on the Windows 10 Fall Creators Update
 
 1.	Rename or delete the SIPolicy.p7b file located at C:\Windows\System32\CodeIntegrity.
 2.	Restart the device.
