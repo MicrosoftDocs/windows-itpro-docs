@@ -9,3 +9,4 @@
 ## [Device security](/windows/device-security)
 ## [Threat protection](/windows/threat-protection)
 ## [Troubleshooting](/windows/client-management/windows-10-support-solutions)
+## [Other Windows client versions](https://docs.microsoft.com/previous-versions/windows)
