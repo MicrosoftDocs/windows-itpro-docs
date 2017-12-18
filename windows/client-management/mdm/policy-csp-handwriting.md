@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Handwriting
@@ -69,12 +69,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">The docked mode is especially useful in Kiosk mode where you do not expect the end-user to drag the flying-in panel out of the way. 
 
-<ul>
-<li>0 - Disabled (default)</li>
-<li>1 - Enabled</li>
-</ul>
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disabled.
+-   1 - Enabled.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

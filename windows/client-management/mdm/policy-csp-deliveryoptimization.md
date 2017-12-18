@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - DeliveryOptimization
@@ -159,9 +159,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
 
-<p style="margin-left: 20px">The default value is 0 (FALSE).
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Not allowed.
+-   1 - Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -206,16 +211,18 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
--   0 –HTTP only, no peering.
+-   0 – HTTP only, no peering.
 -   1 (default) – HTTP blended with peering behind the same NAT.
 -   2 – HTTP blended with peering across a private group. Peering occurs on devices in the same Active Directory Site (if it exists) or the same domain by default. When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2.
 -   3 – HTTP blended with Internet peering.
 -   99 - Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.
 -   100 - Bypass mode. Do not use Delivery Optimization and use BITS instead. Added in Windows 10, version 1607.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

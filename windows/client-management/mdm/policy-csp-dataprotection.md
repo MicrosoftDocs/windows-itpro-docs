@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - DataProtection
@@ -66,14 +66,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug PCI ports with no children devices until the user logs in again. Devices which were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

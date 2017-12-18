@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - AboveLock
@@ -72,14 +72,16 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Specifies whether to allow Action Center notifications above the device lock screen.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Not allowed.
+-   1 (default) - Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -120,12 +122,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether or not the user can interact with Cortana using speech while the system is locked. If you enable or don’t configure this setting, the user can interact with Cortana using speech while the system is locked. If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Not allowed.
+-   1 (default) - Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -166,14 +170,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow toast notifications above the device lock screen.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Not allowed.
+-   1 (default) - Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 
