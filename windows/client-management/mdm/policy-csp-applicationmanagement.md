@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - ApplicationManagement
@@ -93,15 +93,17 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether non Microsoft Store apps are allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Explicit deny.
--   1 – Explicit allow unlock.
--   65535 (default) – Not configured.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Explicit deny.
+-   1 - Explicit allow unlock.
+-   65535 (default) - Not configured.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -190,15 +192,17 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether developer unlock is allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Explicit deny.
--   1 – Explicit allow unlock.
--   65535 (default) – Not configured.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Explicit deny.
+-   1 - Explicit allow unlock.
+-   65535 (default) - Not configured.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -242,14 +246,16 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Specifies whether DVR and broadcasting is allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -290,14 +296,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether multiple users of the same app can share data.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Not allowed.
 -   1 – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -338,14 +346,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether app store is allowed at the device.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -449,12 +459,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Boolean value that disables the launch of all apps from Microsoft Store that came pre-installed or were downloaded.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Enable launch of apps.
 -   1 – Disable launch of apps.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -500,8 +512,6 @@ ms.date: 11/01/2017
 -   0 (default) – Allow both public and Private store.
 -   1 – Only Private store is enabled.
 
-<p style="margin-left: 20px">This is a per user policy.
-
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <!--EndDescription-->
@@ -545,14 +555,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether application data is restricted to the system drive.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 1.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 1.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -593,14 +605,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether the installation of applications is restricted to the system drive.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 1.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Not restricted.
 -   1 – Restricted.
 
-<p style="margin-left: 20px">Most restricted value is 1.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

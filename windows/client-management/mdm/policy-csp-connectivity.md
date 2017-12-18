@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/13/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Connectivity
@@ -102,11 +102,6 @@ ms.date: 12/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to enable Bluetooth or restrict access.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be greyed out and the user will not be able to turn Bluetooth on.
--   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
-
 > [!NOTE]
 >  This value is not supported in Windows Phone 8.1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile.
 
@@ -117,6 +112,13 @@ ms.date: 12/13/2017
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be greyed out and the user will not be able to turn Bluetooth on.
+-   1 – Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -264,12 +266,14 @@ ms.date: 12/13/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins the ability to disable the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (either proximally with BT/LAN or through the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   1 (default) - Allow (CDP service available).
 -   0 - Disable (CDP service not available).
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -314,14 +318,16 @@ ms.date: 12/13/2017
 
 <p style="margin-left: 20px">Allows or disallows near field communication (NFC) on the device.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Do not allow NFC capabilities.
 -   1 (default) – Allow NFC capabilities.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -368,14 +374,16 @@ ms.date: 12/13/2017
 
 <p style="margin-left: 20px">Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -416,14 +424,16 @@ ms.date: 12/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies what type of underlying connections VPN is allowed to use.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – VPN is not allowed over cellular.
 -   1 (default) – VPN can use any connection, including cellular.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -464,14 +474,16 @@ ms.date: 12/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Prevents the device from connecting to VPN when the device roams over cellular networks.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -510,6 +522,7 @@ ms.date: 12/13/2017
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -564,6 +577,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -618,6 +632,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -773,6 +788,7 @@ ADMX Info:
 
 <!--EndScope-->
 <!--StartDescription-->
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).

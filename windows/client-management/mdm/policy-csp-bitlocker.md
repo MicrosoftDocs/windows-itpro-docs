@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Bitlocker
@@ -66,13 +66,6 @@ ms.date: 11/01/2017
 > [!NOTE]
 > XTS-AES 128-bit and XTS-AES 256-bit values are only supported on Windows 10 for desktop.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   3 - AES-CBC 128-bit
--   4 - AES-CBC 256-bit
--   6 - XTS-AES 128-bit (Desktop only)
--   7 - XTS-AES 256-bit (Desktop only)
-
 <p style="margin-left: 20px">You can find the following policies in BitLocker CSP:
 <dl>
   <dd>
@@ -102,6 +95,15 @@ ms.date: 11/01/2017
 </dl>
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   3 - AES-CBC 128-bit
+-   4 - AES-CBC 256-bit
+-   6 - XTS-AES 128-bit (Desktop only)
+-   7 - XTS-AES 256-bit (Desktop only)
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

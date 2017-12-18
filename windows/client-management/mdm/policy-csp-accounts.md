@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Accounts
@@ -72,17 +72,19 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether user is allowed to add non-MSA email accounts.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 > [!NOTE]
 > This policy will only block UI/UX-based methods for adding non-Microsoft accounts. Even if this policy is enforced, you can still provision non-MSA accounts using the [EMAIL2 CSP](email2-csp.md).
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Not allowed.
+-   1 (default) - Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -123,14 +125,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Not allowed.
+-   1 (default) - Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -171,12 +175,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins the ability to disable the "Microsoft Account Sign-In Assistant" (wlidsvc) NT service.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Disabled.
--   1 (default) – Manual start.
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Disabled.
+-   1 (default) - Manual start.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

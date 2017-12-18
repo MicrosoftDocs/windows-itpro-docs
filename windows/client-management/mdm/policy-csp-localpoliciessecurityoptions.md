@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - LocalPoliciesSecurityOptions
@@ -138,12 +138,16 @@ If you select the "Users cannot add or log on with Microsoft accounts" option, e
 
 If you disable or do not configure this policy (recommended), users will be able to use Microsoft accounts with Windows.
 
-Valid values:  
-- 0 - disabled (users will be able to use Microsoft accounts with Windows)
-- 1 - enabled (users cannot add Microsoft accounts)
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - disabled (users will be able to use Microsoft accounts with Windows).
+-   1 - enabled (users cannot add Microsoft accounts).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1054,17 +1058,17 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 User Account Control: Behavior of the elevation prompt for standard users
 This policy setting controls the behavior of the elevation prompt for standard users.
 
-The options are:
-
-- 3 - Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
-
-- 0 - Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
-
-- 1 - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
-
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
+-   1 - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+-   3 (Default) - Prompt for credentials:  When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
