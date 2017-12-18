@@ -4,11 +4,11 @@ description: Find the latest how to and support content that IT pros need to eva
 ms.assetid: 345A4B4E-BC1B-4F5C-9E90-58E647D11C60
 ms.prod: w10
 ms.localizationpriority: high
-author: brianlic-msft
+author: greg-lindsay
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.date: 10/17/2017
+ms.date: 12/18/2017
 ---
 
 # Windows 10 and Windows 10 Mobile
@@ -21,22 +21,22 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/whats-new/whats-new-windows-10-version-1709"> 
-        <img src="images/whats-new-highlight5.png" alt="Read what's new in Windows 10" title="Whats new" />
+        <img src="images/whatsnew.png" alt="Read what's new in Windows 10" title="Whats new" />
       <br/>What's New? </a>
     </td>
      <td align="center" style="width:25%; border:0;">
       <a href="/windows/configuration/index">
-        <img src="images/configuration5.png" alt="Configure Windows 10 in your enterprise" title="Configure Windows 10" />
+        <img src="images/configuration.png" alt="Configure Windows 10 in your enterprise" title="Configure Windows 10" />
       <br/>Configuration </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/deployment/index">
-        <img src="images/deployment5.png" alt="Windows 10 deployment" title="Windows 10 deployment" />
+        <img src="images/deployment.png" alt="Windows 10 deployment" title="Windows 10 deployment" />
       <br/>Deployment </a>
     </td>
        <td align="center" style="width:25%; border:0;">
       <a href="/windows/client-management/index">
-        <img src="images/client-management5.png" alt="Windows 10 client management" title="Client management" />
+        <img src="images/clientmanagement.png" alt="Windows 10 client management" title="Client management" />
       <br/>Client Management </a>
     </td>
   </tr>
@@ -47,22 +47,22 @@ Find the latest how to and support content that IT pros need to evaluate, plan, 
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/application-management/index">
-        <img src="images/application-management5.png" alt="Manage applications in your Windows 10 enterprise deployment" title="Application management" />
+        <img src="images/applicationmanagement.png" alt="Manage applications in your Windows 10 enterprise deployment" title="Application management" />
       <br/>Application Management </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/access-protection/index">
-        <img src="images/access-protection5.png" alt="Windows 10 access protection" title="Windows 10 access protection" />
+        <img src="images/accessprotection.png" alt="Windows 10 access protection" title="Windows 10 access protection" />
       <br/>Access Protection </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/device-security/index">
-        <img src="images/device-security5.png" alt="Windows 10 device security" title="W10 device security" />
+        <img src="images/devicesecurity.png" alt="Windows 10 device security" title="W10 device security" />
       <br/>Device Security </a>
     </td>
     <td align="center" style="width:25%; border:0;">
       <a href="/windows/threat-protection/index">
-        <img src="images/threat-protection5.png" alt="Windows 10 threat protection" title="Windows 10 threat protection" />
+        <img src="images/threatprotection.png" alt="Windows 10 threat protection" title="Windows 10 threat protection" />
       <br/>Threat Protection </a>
     </td>
   </tr>
