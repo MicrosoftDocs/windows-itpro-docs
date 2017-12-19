@@ -30,6 +30,14 @@ The Upgrade Readiness deployment script does the following:
 6.  Initiates the collection of the telemetry data that Microsoft needs to assess your organization’s upgrade readiness.
 7.  If enabled, displays the script’s progress in a cmd window, providing you immediate visibility into issues (success or fail for each step) and/or writes to log file.
 
+## Running the script
+
+>There should be no performance impact caused by the script. The script is a light wrapper of Windows in-box components that undergo performance testing and optimization to avoid any performance impact. However, typically the script is scheduled to be run outside of working hours. 
+>
+>Do not run the script at each sign-on. It is recommended to run the script once every 30 days.
+>
+>The length of time the script takes to run on each system depends on the number of apps and drivers, and the type of hardware. Anti-virus software scanning simultaneously can increase the script run time, but the script should require no longer than 10 minutes to run, and typically the time is much shorter. If the script is observed running for an extended period of time, please run the Pilot script, and collect logs to share with Microsoft. Log files are created in the drive that is specified in the RunConfig.bat file. By default this is set to: **%SystemDrive%\UADiagnostics**.
+
 To run the Upgrade Readiness deployment script:
 
 1.  Download the [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) and extract the .zip file. Inside, there are two folders: **Pilot** and **Deployment**. The **Pilot** folder contains advanced logging that can help troubleshoot issues and is intended to be run from an elevated command prompt. The **Deployment** folder offers a lightweight script intended for broad deployment through ConfigMgr or other software deployment system. We recommend manually running the Pilot version of the script on 5-10 machines to verify that everything is configured correctly. Once you have confirmed that data is flowing successfully, proceed to run the Deployment version throughout your organization.
@@ -69,12 +77,14 @@ To run the Upgrade Readiness deployment script:
 
 5.  After you finish editing the parameters in RunConfig.bat, you are ready to run the script. If you are using the Pilot version, run RunConfig.bat from an elevated command prompt. If you are using the Deployment version, use ConfigMgr or other software deployment service to run RunConfig.bat as system.
 
+## Exit codes
+
 The deployment script displays the following exit codes to let you know if it was successful, or if an error was encountered.
 
-<div font-size='7pt;'>
-<table border='1' cellspacing='0' cellpadding='0'>
+<div font-size='5pt;'>
+<table border='1' cellspacing='0' cellpadding='0' width="100%">
     <tr>
-        <td BGCOLOR="#a0e4fa" width="5">Exit code and meaning</td>
+        <td BGCOLOR="#a0e4fa">Exit code and meaning</td>
         <td BGCOLOR="#a0e4fa">Suggested fix</td>
     </tr>
     <tr><td>0 - Success</td>
@@ -106,23 +116,28 @@ The deployment script displays the following exit codes to let you know if it wa
         <BR>See [Generate your Commercial ID key](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key) for instructions on generating a Commercial ID key for your workspace.</td>
     </tr>
     <tr>
-        <td>8 - Failure to create registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
-        <td>The Commercial Id property is set at the following registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font>
+        <td>8 - Failure to create registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
+\CurrentVersion\Policies\DataCollection**</font></td>
+        <td>The Commercial Id property is set at the following registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
+\CurrentVersion\Policies\DataCollection**</font>
         <BR>Verify that the context under which the script in running has access to the registry key.</td>
     </tr>
     <tr>
         <td>9 - The script failed to write Commercial Id to registry.
-        <BR>Error creating or updating registry key: **CommercialId** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font>
+        <BR>Error creating or updating registry key: **CommercialId** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
+\CurrentVersion\Policies\DataCollection**</font>
         </td> 
         <td>Verify that the context under which the script in running has access to the registry key.</td>
     </tr>
     <tr>
-        <td>10 - Error when writing **CommercialDataOptIn** to the registry at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
+        <td>10 - Error when writing **CommercialDataOptIn** to the registry at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
+\CurrentVersion\Policies\DataCollection**</font></td>
         <td>Verify that the deployment script is running in a context that has access to the registry key.</td>
     </tr>
     <tr>
         <td>11 - Function **SetupCommercialId** failed with an unexpected exception.</td>
-        <td>The **SetupCommercialId** function updates the Commercial Id at the registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font> <BR>Verify that the configuration script has access to this location.</td>
+        <td>The **SetupCommercialId** function updates the Commercial Id at the registry key path: <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
+\CurrentVersion\Policies\DataCollection**</font> <BR>Verify that the configuration script has access to this location.</td>
     </tr>
     <tr>
         <td>12 - Can’t connect to Microsoft - Vortex. Check your network/proxy settings.</td>
@@ -138,7 +153,7 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>14 - Can’t connect to Microsoft - compatexchange.</td>
-        <td>An error occurred connecting to https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc. This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
+        <td>An error occurred connecting to [CompatibilityExchangeService.svc](https://compatexchange1.trafficmanager.net/CompatibilityExchangeService.svc). This error will prevent the collected data from being sent to Upgrade Readiness. To resolve this issue, verify that the required endpoints are correctly whitelisted. For more information, see [Enable data sharing](https://technet.microsoft.com/en-us/itpro/windows/deploy/upgrade-readiness-get-started#enable-data-sharing).</td>
     </tr>
     <tr>
         <td>15 - Function CheckVortexConnectivity failed with an unexpected exception.</td>
@@ -161,7 +176,8 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>Check the logs for the Exception message and HResult. The script will not run further if this error is not fixed.</td> 
     </tr>
     <tr>
-        <td>20 - An error occurred when creating or updating the registry key **RequestAllAppraiserVersions** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Appraiser**</font> </td>
+        <td>20 - An error occurred when creating or updating the registry key **RequestAllAppraiserVersions** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\WindowsNT
+\CurrentVersion\AppCompatFlags\Appraiser**</font> </td>
         <td>The registry key is required for data collection to work correctly. Verify that the script is running in a context that has access to the registry key. </td>
     </tr>
     <tr>
@@ -170,14 +186,15 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
     <tr>
         <td>22 - **RunAppraiser** failed with unexpected exception.</td>
-        <td>Check the logs for the exception message and HResult. Check the **%windir%\System32*8 directory for the file **CompatTelRunner.exe**. If the file does not exist, reinstall the required compatibility updates which include this file, and check your organization's Group Policy to verify it does not remove this file.</td>
+        <td>Check the logs for the exception message and HResult. Check the **%windir%\System32** directory for the file **CompatTelRunner.exe**. If the file does not exist, reinstall the required compatibility updates which include this file, and check your organization's Group Policy to verify it does not remove this file.</td>
     </tr>
     <tr>
         <td>23 - Error finding system variable **%WINDIR%**.</td>
         <td>Verify that this environment variable is configured on the computer.</td>
     </tr>   
     <tr>
-        <td>24 - The script failed when writing **IEDataOptIn** to the registry. An error occurred when creating registry key **IEOptInLevel** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
+        <td>24 - The script failed when writing **IEDataOptIn** to the registry. An error occurred when creating registry key **IEOptInLevel** at <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
+\CurrentVersion\Policies\DataCollection**</font></td>
         <td>This is a required registry key for IE data collection to work correctly. Verify that the deployment script in running in a context that has access to the registry key. Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
@@ -242,8 +259,10 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>Check the logs for the exception message and HResult.</td>
     </tr>
     <tr>
-        <td>39 - For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>
-        or <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection**</font></td>
+        <td>39 - For Windows 10: AllowTelemetry property is not set to 1 or higher at registry key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
+\Windows\DataCollection**</font>
+        or <font size='1'>**HKLM:\SOFTWARE\Microsoft\Windows
+\CurrentVersion\Policies\DataCollection**</font></td>
         <td>For Windows 10 machines, the **AllowTelemetry** property should be set to 1 or greater to enable data collection. The script will throw an error if this is not true. For more information, see [Configure Windows telemetry in your organization](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization).</td>
     </tr>
     <tr>
@@ -272,11 +291,14 @@ The deployment script displays the following exit codes to let you know if it wa
     </tr>
 <tr>
         <td>46 - **DisableEnterpriseAuthProxy** property should be set to **1** for **ClientProxy=Telemetry** to work.</td>
-        <td>Set the **DisableEnterpriseAuthProxy** registry property to **1** at key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>.</td>
+        <td>Set the **DisableEnterpriseAuthProxy** registry property to **1** at key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
+\Windows\DataCollection**</font>.</td>
     </tr>
 <tr>
-        <td>47 - **TelemetryProxyServer** is not present in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>.</td>
-        <td>**ClientProxy** selected is **Telemetry**, but you need to add **TelemetryProxyServer** in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection**</font>.</td>
+        <td>47 - **TelemetryProxyServer** is not present in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
+\Windows\DataCollection**</font>.</td>
+        <td>**ClientProxy** selected is **Telemetry**, but you need to add **TelemetryProxyServer** in key path <font size='1'>**HKLM:\SOFTWARE\Policies\Microsoft
+\Windows\DataCollection**</font>.</td>
     </tr>
 <tr>
         <td>48 - **CommercialID** mentioned in RunConfig.bat should be a GUID.</td>
@@ -295,10 +317,13 @@ The deployment script displays the following exit codes to let you know if it wa
         <td>On computers running Windows 10, the process devicecensus.exe should be present in the <windows directory>\system32 folder. Error code 52 is returned if the process was not found. Ensure that it exists at the specified location. </td>
     </tr>
 <tr>
-        <td>53 - There is a different CommercialID present at the GPO path:  "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection". This will take precedence over the CommercialID provided in the script.</td>
+        <td>53 - There is a different CommercialID present at the GPO path:  <font size="1">**HKLM:\SOFTWARE\Policies\Microsoft
+\Windows\DataCollection**</font>. This will take precedence over the CommercialID provided in the script.</td>
         <td>Provide the correct CommercialID at the GPO location. </td>
     </tr>
 </table>
+</div>
+
 
 >[!NOTE]
 >**Additional steps to follow if you receive exit code 33**
