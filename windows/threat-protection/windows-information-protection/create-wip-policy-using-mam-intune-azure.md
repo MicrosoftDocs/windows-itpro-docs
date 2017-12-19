@@ -72,9 +72,11 @@ After you’ve set up Intune for your organization, you must create a WIP-specif
     >Optionally, you can also add your apps and set your settings from the **Add a policy** blade, but for the purposes of this documentation, we recommend instead that you create the policy first, and then use the subsequent menus that become available.
 
 ## Add apps to your Allowed apps list
-During the policy-creation process in Intune, you can choose the apps you want to give access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
+During the policy-creation process in Intune, you can choose the apps you want to allow, as well as deny, access to your enterprise data through WIP. Apps included in this list can protect data on behalf of the enterprise and are restricted from copying or moving enterprise data to unprotected apps.
 
 The steps to add your apps are based on the type of template being applied. You can add a recommended app, a store app (also known as a Universal Windows Platform (UWP) app), or a signed Windows desktop app. You can also import a list of approved apps or add exempt apps.
+
+In addition, you can create an app deny list related to the policy based on an **action** value. The action can be either **Allow** or **Deny**. When you specify the deny action for an app using the policy, corporate access is denied to the app.
 
 >[!Important]
 >Enlightened apps are expected to prevent enterprise data from going to unprotected network locations and to avoid encrypting personal data. On the other hand, WIP-unaware apps might not respect the corporate network boundary, and WIP-unaware apps will encrypt all files they create or modify. This means that they could encrypt personal data and cause data loss during the revocation process.<br><br>Care must be taken to get a support statement from the software provider that their app is safe with WIP before adding it to your **Allowed apps** list. If you don’t get this statement, it’s possible that you could experience app compatibility issues due to an app losing the ability to access a necessary file after revocation.
