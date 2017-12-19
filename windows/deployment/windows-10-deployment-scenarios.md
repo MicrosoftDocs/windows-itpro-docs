@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
-ms.date: 11/07/2017
+ms.date: 12/18/2017
 author: greg-lindsay
 ---
 
@@ -31,7 +31,7 @@ The following tables summarize different Windows 10 deployment options and requi
 | [Refresh](#computer-refresh) | Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. |[Refresh a Windows 7 computer with Windows 10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10)<br>[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager) |
 | [Replace](#computer-replace) | Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device. |[Replace a Windows 7 computer with a Windows 10 computer](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer)<br>[Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager) |
 
-Secenario details:
+OS requirements:
 <br>&nbsp;
 
 <table border="1" align='left'>
@@ -46,10 +46,7 @@ Secenario details:
       <b>Windows 10 1703 or later</b>
     </td>
      <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'>
-      <b>Windows 7 to Windows 10 1607</b>
-    </td>
-    <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'>
-      <b>Apps & settings migrated</b>
+      <b>Windows 7 up to Windows 10 1607</b>
     </td>
   </tr>
   <tr>
@@ -65,16 +62,10 @@ Secenario details:
     <td align="center" style="width:16%; border:1;"> 
       X
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      X
-    </td>
   </tr>
   <tr>
     <td align="center" style="width:16%; border:1;"> 
       In-place upgrade
-    </td>
-    <td align="center" style="width:16%; border:1;"> 
-      <b>✓</b>
     </td>
     <td align="center" style="width:16%; border:1;"> 
       <b>✓</b>
@@ -96,9 +87,6 @@ Secenario details:
     <td align="center" style="width:16%; border:1;"> 
       X
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      <b>✓</b>
-    </td>
   </tr>
   <tr>
     <td align="center" style="width:16%; border:1;"> 
@@ -110,16 +98,10 @@ Secenario details:
     <td align="center" style="width:16%; border:1;"> 
       <b>✓</b>
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      <b>✓</b>
-    </td>
-  </tr>
+   </tr>
   <tr>
     <td align="center" style="width:16%; border:1;"> 
       Provisioning packages
-    </td>
-    <td align="center" style="width:16%; border:1;"> 
-      <b>✓</b>
     </td>
     <td align="center" style="width:16%; border:1;"> 
       <b>✓</b>
@@ -141,16 +123,10 @@ Secenario details:
     <td align="center" style="width:16%; border:1;"> 
       <b>✓</b>
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      X
-    </td>
   </tr>
   <tr>
     <td align="center" style="width:16%; border:1;"> 
       Refresh
-    </td>
-    <td align="center" style="width:16%; border:1;"> 
-      <b>✓</b>
     </td>
     <td align="center" style="width:16%; border:1;"> 
       <b>✓</b>
@@ -169,13 +145,13 @@ Secenario details:
     <td align="center" style="width:16%; border:1;"> 
       <b>✓</b>
     </td>
-    <td align="center" style="width:16%; border:1;"> 
-      <b>✓</b>
-    </td>
   </tr>
 </table>
 
 <br>&nbsp;
+
+>[!NOTE]
+>There is no pre-existing OS in the Windows AutoPilot or bare metal scenarios, so apps and settings are not migrated. In all other scenarios the existing apps and user settings are typically migrated to the new operating system.
 
 ## Windows AutoPilot 
 
