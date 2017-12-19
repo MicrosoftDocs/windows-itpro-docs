@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - SmartScreen
@@ -69,12 +69,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Turns off Application Installation Control, allowing users to download and install files from anywhere on the web.
 -   1 – Turns on Application Installation Control, allowing users to only install apps from the Store.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -115,12 +117,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Turns off SmartScreen in Windows.
 -   1 – Turns on SmartScreen in Windows.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -161,12 +165,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Employees can ignore SmartScreen warnings and run malicious files.
 -   1 – Employees cannot ignore SmartScreen warnings and run malicious files.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

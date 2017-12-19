@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Settings
@@ -103,15 +103,17 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Allows the user to change Auto Play settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 > [!NOTE]
 > Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -152,12 +154,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to change Data Sense settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -198,12 +202,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to change date and time settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -244,12 +250,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows editing of the device name.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -294,12 +302,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Allows the user to change the language settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -344,12 +354,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Allows the user to change power and sleep settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -394,12 +406,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Allows the user to change the region settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -444,12 +458,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Allows the user to change sign-in options.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -490,12 +506,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows the user to change VPN settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -540,12 +558,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Allows user to change workplace settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -586,12 +606,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows user to change account settings.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

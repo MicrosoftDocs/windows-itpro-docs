@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Bluetooth
@@ -75,16 +75,18 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether the device can send out Bluetooth advertisements.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed. When set to 0, the device will not send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is not received by the peripheral.
--   1 (default) – Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral.
-
 <p style="margin-left: 20px">If this is not set or it is deleted, the default value of 1 (Allow) is used.
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed. When set to 0, the device will not send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is not received by the peripheral.
+-   1 (default) – Allowed. When set to 1, the device will send out advertisements. To verify, use any Bluetooth LE app and enable it to do advertising. Then, verify that the advertisement is received by the peripheral.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -125,16 +127,18 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether other Bluetooth-enabled devices can discover the device.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed. When set to 0, other devices will not be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you cannot see the name of the device.
--   1 (default) – Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it.
-
 <p style="margin-left: 20px">If this is not set or it is deleted, the default value of 1 (Allow) is used.
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed. When set to 0, other devices will not be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel, and verify that you cannot see the name of the device.
+-   1 (default) – Allowed. When set to 1, other devices will be able to detect the device. To verify, open the Bluetooth control panel on the device. Then, go to another Bluetooth-enabled device, open the Bluetooth control panel and verify that you can discover it.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -175,12 +179,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether to allow specific bundled Bluetooth peripherals to automatically pair with the host device.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default)– Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Maps
@@ -66,15 +66,17 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the download and update of map data over metered connections.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   65535 (default) – Not configured. User's choice.
--   0 – Disabled. Force disable auto-update over metered connection.
--   1 – Enabled. Force enable auto-update over metered connection.
-
 <p style="margin-left: 20px">After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Disabled. Force disable auto-update over metered connection.
+-   1 – Enabled. Force enable auto-update over metered connection.
+-   65535 (default) – Not configured. User's choice.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -115,15 +117,17 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Disables the automatic download and update of map data.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   65535 (default) – Not configured. User's choice.
--   0 – Disabled. Force off auto-update.
--   1 – Enabled. Force on auto-update.
-
 <p style="margin-left: 20px">After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Disabled. Force off auto-update.
+-   1 – Enabled. Force on auto-update.
+-   65535 (default) – Not configured. User's choice.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

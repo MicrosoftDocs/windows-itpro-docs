@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/13/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - DeviceLock
@@ -115,13 +115,15 @@ ms.date: 11/13/2017
 > [!NOTE]
 > This policy must be wrapped in an Atomic command.
 
- 
-<p style="margin-left: 20px">The following list shows the supported values:
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

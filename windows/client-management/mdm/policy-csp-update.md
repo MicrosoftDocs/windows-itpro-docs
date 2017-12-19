@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/13/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Update
@@ -493,14 +493,16 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <p style="margin-left: 20px">Supported operations are Get and Replace.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
 -   1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they are signed by a certificate found in the "Trusted Publishers" certificate store of the local computer.
 
-<p style="margin-left: 20px">This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -545,15 +547,17 @@ This policy is accessible through the Update setting in the user interface or Gr
 
 <p style="margin-left: 20px">Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft Store to stop working.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Update service is not allowed.
--   1 (default) – Update service is allowed.
-
 > [!NOTE]
 > This policy applies only when the desktop or device is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Update service is not allowed.
+-   1 (default) – Update service is allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -639,11 +643,13 @@ This policy is accessible through the Update setting in the user interface or Gr
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart reminder notifications.
 
-<p style="margin-left: 20px">Supported values are 15, 30, 60, 120, and 240 (minutes).
-
 <p style="margin-left: 20px">The default value is 15 (minutes).
 
 <!--EndDescription-->
+<!--SupportedValues-->
+Supported values are 15, 30, 60, 120, and 240 (minutes).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -730,7 +736,9 @@ This policy is accessible through the Update setting in the user interface or Gr
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Allows the IT admin to set which branch a device receives their updates from.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -  2  {0x2}  - Windows Insider build - Fast (added in Windows 10, version 1709)
 -  4  {0x4}  - Windows Insider build - Slow (added in Windows 10, version 1709)
@@ -738,7 +746,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 -  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
 -  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1384,10 +1392,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – Do not ignore MO download limit for apps and their updates.
--   1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
 
 <p style="margin-left: 20px">To validate this policy:
 
@@ -1400,6 +1404,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Do not ignore MO download limit for apps and their updates.
+-   1 – Ignore MO download limit (allow unlimited downloading) for apps and their updates.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1443,10 +1454,6 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 > [!WARNING]
 > Setting this policy might cause devices to incur costs from MO operators.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – Do not ignore MO download limit for OS updates.
--   1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
 
 <p style="margin-left: 20px">To validate this policy:
 
@@ -1457,6 +1464,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 3.   Verify that any downloads that are above the download size limit will complete without being paused.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Do not ignore MO download limit for OS updates.
+-   1 – Ignore MO download limit (allow unlimited downloading) for OS updates.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1881,11 +1895,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart imminent warning notifications.
 
-<p style="margin-left: 20px">Supported values are 15, 30, or 60 (minutes).
-
 <p style="margin-left: 20px">The default value is 15 (minutes).
 
 <!--EndDescription-->
+<!--SupportedValues-->
+Supported values are 15, 30, or 60 (minutes).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1930,11 +1946,13 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
 
-<p style="margin-left: 20px">Supported values are 2, 4, 8, 12, or 24 (hours).
-
 <p style="margin-left: 20px">The default value is 4 (hours).
 
 <!--EndDescription-->
+<!--SupportedValues-->
+Supported values are 2, 4, 8, 12, or 24 (hours).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Education
@@ -112,12 +112,14 @@ The policy value is expected to be the name (network host name) of an installed 
 <!--StartDescription-->
 Added in Windows 10, version 1709. Allows IT Admins to prevent user installation of additional printers from the printers settings.
 
+<!--EndDescription-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 (default) – Allow user installation.
 -   1 – Prevent user installation.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

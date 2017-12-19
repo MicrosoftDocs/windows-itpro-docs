@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Notifications
@@ -67,12 +67,14 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">No reboot or service restart is required for this policy to take effect.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default)– enable notification mirroring.
--   1 – disable notification mirroring.
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – enable notification mirroring.
+-   1 - disable notification mirroring.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 
