@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - TimeLanguageSettings
@@ -63,12 +63,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allows for the configuration of the default clock setting to be the 24 hour format. Selecting 'Set 24 hour Clock' enables this setting. Selecting 'Locale default setting' uses the default clock as prescribed by the current locale setting.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Locale default setting.
 -   1 (default) – Set 24 hour clock.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 
