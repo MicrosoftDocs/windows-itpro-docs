@@ -71,7 +71,7 @@ For more information about groups, see [Use groups to manage users and devices i
 
 ## Edition upgrade using a provisioning package
 
-Provisioning packages are files created by the Windows Imaging and Configuration Designer (ICD) tool that apply a specified configuration to a device. 
+Provisioning packages are files created by the Windows Configuration Designer tool that apply a specified configuration to a device. 
 
 ### Create a provisioning package that upgrades the Windows Holographic edition
 
@@ -106,7 +106,7 @@ Provisioning packages are files created by the Windows Imaging and Configuration
 
 7. Click **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.
 
-    Optionally, you can click Browse to change the default output location.
+    Optionally, you can click **Browse** to change the default output location.
 
 8. Click **Next**.
 
@@ -132,7 +132,7 @@ Provisioning packages are files created by the Windows Imaging and Configuration
 7. You will see whether the package was applied successfully or not. If it failed, you can fix your package and try again. If it succeeded, proceed with device setup.
 
 >[!NOTE]
->If the device was purchased before August 2016, you will need to sign into the device with aa Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package. 
+>If the device was purchased before August 2016, you will need to sign into the device with a Microsoft account, get the latest OS update, and then reset the OS in order to apply the provisioning package. 
 
 
 

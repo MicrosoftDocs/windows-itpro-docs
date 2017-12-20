@@ -8,12 +8,18 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 12/20/2017
 ---
 
 # Change history for Microsoft HoloLens documentation
 
 This topic lists new and updated topics in the [Microsoft HoloLens documentation](index.md).
+
+## December 2017
+
+New or changed topic | Description
+--- | ---
+[Enable Bitlocker device encryption for HoloLens](hololens-encryption.md) | New
 
 ## May 2017
 
