@@ -32,7 +32,7 @@ New or changed topic | Description
 ## June 2017
 | New or changed topic | Description |
 |----------------------|-------------|
-| [Overview of Windows AutoPilot](windows-10-auto-pilot.md) | New |
+| [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md) | New |
 
 ## April 2017
 | New or changed topic | Description |
