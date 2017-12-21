@@ -15,7 +15,10 @@ This topic lists new and updated topics in the Surface documentation library.
 
 |New or changed topic | Description |
 | --- | --- |
-|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information  |
+|[Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md) | Added version 3.2.45 information  |
+|[Surface device compatibility with Windows 10 Long-Term Servicing Channel (LTSC)](surface-device-compatibility-with-windows-10-ltsc.md) | Updated Current Branch (CB) or Current Branch for Business (CBB) servicing options with Semi-Annual Channel (SAC) information  |
+|[Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, Surface Pro with LTE Advanced, and Surface Pro information  |
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information |
 
 ## November 2017
 
