@@ -40,7 +40,7 @@ For more information, see [Windows 10 Enterprise E3 in CSP](windows-10-enterpris
 
 Windows AutoPilot streamlines and automates the process of setting up and configuring new devices, with minimal interaction required from the end user. You can also use Windows AutoPilot to reset, repurpose and recover devices.
 
-Windows AutoPilot joins devices to Azure Active Directory (Azure AD), optionally enrolls into MDM services, configures security policies, and sets a custom out-of-box-experience (OOBE) for the end user. For more information, see [Overview of Windows AutoPilot](windows-10-auto-pilot.md).
+Windows AutoPilot joins devices to Azure Active Directory (Azure AD), optionally enrolls into MDM services, configures security policies, and sets a custom out-of-box-experience (OOBE) for the end user. For more information, see [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md).
 
 ### Upgrade Readiness
 
