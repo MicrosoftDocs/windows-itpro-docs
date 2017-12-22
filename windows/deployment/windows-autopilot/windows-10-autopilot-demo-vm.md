@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 12/13/2017
+ms.date: 12/21/2017
 ---
 
 # Demo the Windows AutoPilot Deployment Program on a Virtual Machine
@@ -206,3 +206,4 @@ Once you select a language and a keyboard layout, your company branded sign-in s
 
 Windows AutoPilot will now take over to automatically join your Virtual Machine into Azure Active Directory and enroll it to Microsoft Intune. Use the checkpoints you've created to go through this process again with different settings.
 
+Missing something in this topic? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-autopilot-demo-vm.md). 
