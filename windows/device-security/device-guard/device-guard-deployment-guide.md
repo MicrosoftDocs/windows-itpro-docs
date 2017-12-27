@@ -38,7 +38,7 @@ This guide explores the individual features in Windows Defender Device Guard as 
 
     - [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md)
 
-- [Deploy Windows Defender Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md)
+- [Deploy virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md)
 
 ## Related topics
 
