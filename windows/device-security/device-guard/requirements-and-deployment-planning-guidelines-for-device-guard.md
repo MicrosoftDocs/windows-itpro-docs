@@ -141,7 +141,7 @@ After you have created and signed your catalog files, you can configure your WDA
 
 For information about how creating catalog files fits into Windows Defender Device Guard deployment, see [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md). For procedures for working with catalog files, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md).
 
-## WDAC policy formats and signing
+## Windows Defender Application Control policy formats and signing
 
 When you generate a WDAC policy, you are generating a binary-encoded XML document that includes configuration settings for both the User and Kernel-modes of Windows 10 Enterprise, along with restrictions on Windows 10 script hosts. You can view your original XML document in a text editor, for example if you want to check the rule options that are present in the **&lt;Rules&gt;** section of the file.
 
