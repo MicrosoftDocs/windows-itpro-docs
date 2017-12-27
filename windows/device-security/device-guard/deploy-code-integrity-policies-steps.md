@@ -35,9 +35,9 @@ Examples include software aimed at development or scripting such as msbuild.exe 
 You can remove or disable such software on the reference computer. 
 You can also fine-tune your control by [using Windows Defender Application Control in combination with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
 
-Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Device Guard code integrity policies. 
+Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
-Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent Application Whitelisting policies, including Windows Defender Device Guard:
+Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application whitelisting policies, including Windows Defender Application Control:
 
 - addinprocess.exe
 - addinprocess32.exe
