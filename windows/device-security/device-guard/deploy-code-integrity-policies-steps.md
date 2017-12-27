@@ -84,11 +84,11 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 >This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
 Certain software applications may allow additional code to run by design. 
-These types of applications should be blocked by your Windows Defender Device Guard policy. 
-In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Device Guard bypass, you should add deny rules to your code integrity policies for that application’s previous, less secure versions. 
+These types of applications should be blocked by your Windows Defender Application Control policy. 
+In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add deny rules to your WDAC policies for that application’s previous, less secure versions. 
 
 Microsoft recommends that you install the latest security updates. 
-The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Device Guard code integrity policies. 
+The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. 
 These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
 For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
@@ -690,7 +690,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 ```
 <br />
 
-To create a code integrity policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
+To create a WDAC policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
 
 1.  Initialize variables that you will use. The following example commands use **InitialScan.xml** and **DeviceGuardPolicy.bin** for the names of the files that will be created:
 
@@ -700,15 +700,15 @@ To create a code integrity policy, copy each of the following commands into an e
 
     ` $CIPolicyBin=$CIPolicyPath+"DeviceGuardPolicy.bin"`
 
-2.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a new code integrity policy by scanning the system for installed applications:
+2.  Use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a new WDAC policy by scanning the system for installed applications:
 
     ` New-CIPolicy -Level PcaCertificate -FilePath $InitialCIPolicy –UserPEs 3> CIPolicyLog.txt `
 
     > [!Note] 
     
-    > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the code integrity policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Device Guard. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
+    > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the WDAC policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the whitelist will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Application Control. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
     
-    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Code integrity file rule levels](deploy-code-integrity-policies-policy-rules-and-file-rules.md#windows-defender-application-control-file-rule-levels) in “Deploy Windows Defender Application Control: policy rules and file rules.”
+    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Windows Defender Application Control file rule levels](deploy-code-integrity-policies-policy-rules-and-file-rules.md#windows-defender-application-control-file-rule-levels) in “Deploy Windows Defender Application Control: policy rules and file rules.”
 
     > - To specify that the WDAC policy scan only a specific drive, include the **-ScanPath** parameter followed by a path. Without this parameter, the entire system is scanned.
     
@@ -718,7 +718,7 @@ To create a code integrity policy, copy each of the following commands into an e
 
     ` ConvertFrom-CIPolicy $InitialCIPolicy $CIPolicyBin`
 
-After you complete these steps, the Windows Defender Application Control binary file (DeviceGuardPolicy.bin) and original .xml file (IntialScan.xml) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
+After you complete these steps, the WDAC binary file (DeviceGuardPolicy.bin) and original .xml file (IntialScan.xml) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
 
 > [!Note] 
 > We recommend that you keep the original .xml file of the policy for use when you need to merge the WDAC policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge WDAC policies, see [Merge Windows Defender Application Control policies](#merge-windows-defender-application-control-policies).
