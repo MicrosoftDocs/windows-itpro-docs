@@ -17,7 +17,7 @@ ms.date: 10/20/2017
 
 Windows Defender Application Control (WDAC) provides control over a computer running Windows 10 by specifying whether a driver or application is trusted and can be run. For an overview of WDAC, see:
 - [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats) in "Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control."
-- [Windows Defender Application Control policy formats and signing](requirements-and-deployment-planning-guidelines-for-device-guard.md#code-integrity-policy-formats-and-signing) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
+- [Windows Defender Application Control policy formats and signing](requirements-and-deployment-planning-guidelines-for-device-guard.md#Windows-Defender-Application-Control-policy-formats-and-signing) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
 
 If you already understand the basics of WDAC and want procedures for creating, auditing, and merging WDAC policies, see [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md).
 
