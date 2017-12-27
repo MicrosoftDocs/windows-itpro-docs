@@ -1074,7 +1074,7 @@ To deploy and manage a WDAC policy with Group Policy:
 
     Figure 4. Edit the group policy for Windows Defender Application Control
 
-6.  In the **Display Windows Defender Application Control** dialog box, select the **Enabled** option, and then specify the code integrity policy deployment path.
+6.  In the **Deploy Windows Defender Application Control** dialog box, select the **Enabled** option, and then specify the code integrity policy deployment path.
 
    In this policy setting, you specify either the local path in which the policy will exist on the client computer or a Universal Naming Convention (UNC) path that the client computers will look to retrieve the latest version of the policy. For example, with DeviceGuardPolicy.bin on the test computer, the example file path would be C:\\Windows\\System32\\CodeIntegrity\\DeviceGuardPolicy.bin, as shown in Figure 5.
 
