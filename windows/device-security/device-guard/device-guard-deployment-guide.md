@@ -28,7 +28,7 @@ This guide explores the individual features in Windows Defender Device Guard as 
 
 - [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
 
-- [Deploy Windows Defender Device Guard: deploy Windows Defender Application Control policies](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control policies](deploy-device-guard-deploy-code-integrity-policies.md)
 
     - [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md)
 
