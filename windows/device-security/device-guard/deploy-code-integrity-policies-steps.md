@@ -33,7 +33,7 @@ Each installed software application should be validated as trustworthy before yo
 We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. 
 Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want it to run scripts. 
 You can remove or disable such software on the reference computer. 
-You can also fine-tune your control by [using Windows Defender Application Control in combination with AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies#device-guard-with-applocker). 
+You can also fine-tune your control by [using Windows Defender Application Control in combination with AppLocker](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#windows-defender-device-guard-with-applocker). 
 
 Members of the security community<sup>\*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
