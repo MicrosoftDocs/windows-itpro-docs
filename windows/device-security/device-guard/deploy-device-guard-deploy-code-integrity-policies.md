@@ -25,7 +25,7 @@ This section includes the following topics:
 
 To increase the protection for devices that meet certain hardware requirements, you can use virtualization-based protection of code integrity with your Windows Defender Application Control (WDAC) policies.
 - For requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
-- For steps, see [Deploy Windows Defender Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md).
+- For steps, see [Enable virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md).
 
 ## Related topics
 
