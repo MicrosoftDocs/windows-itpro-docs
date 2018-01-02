@@ -42,6 +42,9 @@ To try out the IT admin tasks, start by logging in as an IT admin.
 ## <a name="task2"></a>2. Configure a new device with Set up School PCs
 Quickly set up **Device B** using the **Set up School PCs** app. A PC that's been set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 
+> [!NOTE]
+> These instructions are a simplified version of [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app). If you want more information including tips for successfully running Set up School PCs, we recommend reading [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app).
+
 ### Download, install, and get ready
 
 1. Download the latest <a href="https://educationstore.microsoft.com/en-us/store/details/set-up-school-pcs/9nblggh4ls40" target="_blank">Set up School PCs app from the Microsoft Store for Education</a>. 
@@ -117,7 +120,7 @@ Quickly set up **Device B** using the **Set up School PCs** app. A PC that's bee
     The provisioning package on your USB drive will be named SetUpSchoolPCs_*ABCDE* (Expires *MM-DD-YYYY*).ppkg, where *ABCDE* is the device name you added (if any), and *MM-DD-YYYY* is the month, day, and year when the package will expire.
     
     > [!NOTE]
-    > If you selected **Office 365 for Windows 10 S (Education Preview)**, it will take a few minutes longer for Set up School PCs to create the provisioning package. During this time, you can jump ahead to task 3, [Intune for Education express configuration](#task3), and then finish the rest of task 2 afterwards.
+    > If you selected **Office 365 for Windows 10 S (Education Preview)**, it will take longer for Set up School PCs to create the provisioning package. During this time, you can jump ahead to task 3, [Intune for Education express configuration](#task3), and then finish the rest of task 2 afterwards.
 
 13. Follow the instructions in the **Get the student PCs ready** page to start setting up **Device B**. 
 14. Follow the instructions in the **Install the package** page to apply the provisioning package to **Device B**. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).

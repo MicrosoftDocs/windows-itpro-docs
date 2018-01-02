@@ -36,7 +36,7 @@ With Microsoft Education Trial in a Box:
 
 * **User name and passwords** - We've already set up a cloud-based school using Microsoft 365 Education. Your login credentials are included in the kit.
 * **Device A** - A 2-in-1 convertible PC that supports digital ink. This device is pre-configured with Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> and ready for login so you can try the Microsoft Education classroom experience. 
-* **Device B** - An affordable PC designed to survive the rigors of classroom life. This PC has a fresh installation of Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> so you can see how easy it is to set up a brand new device.
+* **Device B** - An affordable PC designed to survive the rigors of classroom life. This PC has the latest installation of Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> so you can see how easy it is to set up a brand new device.
 * **Accessories** - A wireless mouse to use with Minecraft: Education Edition, a USB memory stick to set up school PCs, and a network adapter (just in case).
 
 ## Get started!
