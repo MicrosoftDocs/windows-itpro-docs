@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 12/19/2017
 ---
 
 # Policy CSP - TextInput
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -48,6 +50,9 @@ ms.date: 12/14/2017
   </dd>
   <dd>
     <a href="#textinput-allowlanguagefeaturesuninstall">TextInput/AllowLanguageFeaturesUninstall</a>
+  </dd>
+  <dd>
+    <a href="#textinput-enabletouchkeyboardautoinvokeindesktopmode">TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</a>
   </dd>
   <dd>
     <a href="#textinput-excludejapaneseimeexceptjis0208">TextInput/ExcludeJapaneseIMEExceptJIS0208</a>
@@ -557,6 +562,67 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="textinput-enabletouchkeyboardautoinvokeindesktopmode"></a>**TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. 
+
+The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. 
+But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. 
+When this policy is enabled, the touch keyboard automatically shows up when the device is in the desktop mode.
+
+This policy corresponds to "Show the touch keyboard when not in tablet mode and there's no keyboard attached" in the Settings app.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disabled.
+-   1 - Enabled.
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
