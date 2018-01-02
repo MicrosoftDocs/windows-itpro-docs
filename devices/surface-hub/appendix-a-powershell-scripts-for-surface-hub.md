@@ -1568,7 +1568,7 @@ if ($online)
 {
     try {
         $strRegPool = $null;
-        $strRegPool = (Get-CsTenant).TenantPoolExtension
+        $strRegPool = (Get-CsTenant).RegistrarPool
     } catch {}
     if ($Error)
     {
