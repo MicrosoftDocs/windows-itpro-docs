@@ -9,7 +9,7 @@ author: brianlic-msft
 ms.date: 10/20/2017
 ---
 
-# Deploy Windows Defender Device Guard: deploy code integrity policies
+# Deploy Windows Defender Application Control
 
 **Applies to**
 -   Windows 10
@@ -17,17 +17,17 @@ ms.date: 10/20/2017
 
 This section includes the following topics:
 
-- [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md)
-- [Deploy code integrity policies: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md)
-- [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)
-- [Deploy catalog files to support code integrity policies](deploy-catalog-files-to-support-code-integrity-policies.md)
-- [Deploy Managed Installer for Windows Defender Device Guard](deploy-managed-installer-for-device-guard.md)
+- [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md)
+- [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md)
+- [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md)
+- [Deploy Managed Installer for Windows Defender Application Control](deploy-managed-installer-for-device-guard.md)
 
-To increase the protection for devices that meet certain hardware requirements, you can use virtualization-based security (VBS) with your code integrity policies.
+To increase the protection for devices that meet certain hardware requirements, you can use virtualization-based protection of code integrity with your Windows Defender Application Control (WDAC) policies.
 - For requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard) in "Requirements and deployment planning guidelines for Windows Defender Device Guard."
-- For steps, see [Deploy Windows Defender Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md).
+- For steps, see [Enable virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md).
 
 ## Related topics
 
-[Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+[Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
 
