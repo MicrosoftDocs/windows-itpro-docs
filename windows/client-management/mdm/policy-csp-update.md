@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 12/19/2017
 ---
 
 # Policy CSP - Update
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -111,6 +113,9 @@ ms.date: 12/14/2017
   </dd>
   <dd>
     <a href="#update-pausequalityupdatesstarttime">Update/PauseQualityUpdatesStartTime</a>
+  </dd>
+  <dd>
+    <a href="#update-phoneupdaterestrictions">Update/PhoneUpdateRestrictions</a>
   </dd>
   <dd>
     <a href="#update-requiredeferupgrade">Update/RequireDeferUpgrade</a>
@@ -1753,6 +1758,23 @@ The following list shows the supported values:
 <p style="margin-left: 20px">Value type is string. Supported operations are Add, Get, Delete, and Replace.
 
 <!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="update-phoneupdaterestrictions"></a>**Update/PhoneUpdateRestrictions**  
+
+<!--StartDescription-->
+<p style="margin-left: 20px">This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupdateapproval) instead.
+<!--EndDescription-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
