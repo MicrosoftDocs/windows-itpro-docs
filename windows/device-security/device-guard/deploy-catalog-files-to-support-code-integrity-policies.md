@@ -1,6 +1,6 @@
 ---
 title: Deploy catalog files to support code integrity policies (Windows 10)
-description: This article describes how to deploy catalog files to support code integrity policies, one of the main features that are part of Windows Defender Device Guard in Windows 10. 
+description: This article describes how to deploy catalog files to support Windows Defender Application Control, one of the main features that are part of Windows Defender Device Guard in Windows 10. 
 keywords: virtualization, security, malware
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -9,29 +9,29 @@ author: brianlic-msft
 ms.date: 10/27/2017
 ---
 
-# Deploy catalog files to support code integrity policies
+# Deploy catalog files to support Windows Defender Application Control
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-Catalog files can be important in your deployment of code integrity polices if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. To prepare to create code integrity policies that allow these trusted applications but block unsigned code (most malware is unsigned), you create a *catalog file* that contains information about the trusted applications. After you sign and distribute the catalog, your trusted applications can be handled by code integrity policies in the same way as any other signed application. With this foundation, you can more easily block all unsigned applications, allowing only signed applications to run.
+Catalog files can be important in your deployment of Windows Defender Application Control (WDAC) if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. To prepare to create WDAC policies that allow these trusted applications but block unsigned code (most malware is unsigned), you create a *catalog file* that contains information about the trusted applications. After you sign and distribute the catalog, your trusted applications can be handled by WDAC in the same way as any other signed application. With this foundation, you can more easily block all unsigned applications, allowing only signed applications to run.
 
 For more description of catalog files, see [Reviewing your applications: application signing and catalog files](requirements-and-deployment-planning-guidelines-for-device-guard.md#reviewing-your-applications-application-signing-and-catalog-files) in "Requirements and deployment planning guidelines for Windows Defender Device Guard." 
 
 ## Create catalog files
 
-The creation of a catalog file is a necessary step for adding an unsigned application to a code integrity policy.
+The creation of a catalog file simplifies the steps to run unsigned applications in the presence of a WDAC policy.
 
-To create a catalog file, you use a tool called **Package Inspector**. You must also have a code integrity policy deployed in audit mode on the computer on which you run Package Inspector, because Package Inspector does not always detect installation files that have been removed from the computer during the installation process.
+To create a catalog file, you use a tool called **Package Inspector**. You must also have a WDAC policy deployed in audit mode on the computer on which you run Package Inspector, so that Package Inspector can include any temporary installation files that are added and then removed from the computer during the installation process.
 
 > **Note**&nbsp;&nbsp;When you establish a naming convention it makes it easier to detect deployed catalog files in the future. In this guide, *\*-Contoso.cat* is used as the example naming convention. For more information about why this practice is helpful to inventory or detect catalog files, see [Inventory catalog files with System Center Configuration Manager](#inventory-catalog-files-with-system-center-configuration-manager), later in this topic.
 
-1.  Be sure that a code integrity policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
+1.  Be sure that a WDAC policy is currently deployed in audit mode on the computer on which you will run Package Inspector.
 
-    Package Inspector does not always detect installation files that have been removed from the computer during the installation process. To ensure that these binaries are also trusted, deploy a code integrity policy in audit mode. You can use the code integrity policy that you created and audited in [Create a code integrity policy from a reference computer](deploy-code-integrity-policies-steps.md#create-a-code-integrity-policy-from-a-reference-computer) and [Audit code integrity policies](deploy-code-integrity-policies-steps.md#audit-code-integrity-policies).
+    Package Inspector does not always detect temporary installation files that are added and then removed from the computer during the installation process. To ensure that these binaries are also included in your catalog file, deploy a WDAC policy in audit mode. You can use the WDAC policy that you created and audited in [Create a Windows Defender Application Control policy from a reference computer](deploy-code-integrity-policies-steps.md#create-a-windows-defender-application-control-policy-from-a-reference-computer) and [Audit Windows Defender Application Control policies](deploy-code-integrity-policies-steps.md#audit-windows-defender-application-control-policies).
 
-    > **Note**&nbsp;&nbsp;This process should **not** be performed on a system with an enforced Windows Defender Device Guard policy, only with a policy in audit mode. If a policy is currently being enforced, you will not be able to install and run the application.
+    > **Note**&nbsp;&nbsp;This process should **not** be performed on a system with an enforced Windows Defender Application Control policy, only with a policy in audit mode. If a policy is currently being enforced, you will not be able to install and run the application unless the policy already allows it.
 
 2.  Start Package Inspector, and then start scanning a local drive, for example, drive C:
 
@@ -41,7 +41,7 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
     
 3.  Copy the installation media to the local drive (typically drive C).
 
-    By copying the installation media to the local drive, you ensure that Package Inspector detects and catalogs the actual installer. If you skip this step, the future code integrity policy may trust the application to run but not to be installed.
+    By copying the installation media to the local drive, you ensure that Package Inspector detects and catalogs the actual installer. If you skip this step, the future WDAC policy may allow the application to run but not to be installed.
 
 4.  Install the application. Install it to the same drive that the application installer is located on (the drive you are scanning). Also, while Package Inspector is running, do not run any installations or updates that you don't want to capture in the catalog.
 
@@ -73,11 +73,11 @@ To create a catalog file, you use a tool called **Package Inspector**. You must 
 
 When finished, the files will be saved to your desktop. You can double-click the \*.cat file to see its contents, and you can view the \*.cdf file with a text editor. 
 
-To trust this catalog file within a code integrity policy, the catalog must first be signed. Then, the signing certificate can be added to the code integrity policy, and the catalog file can be distributed to the individual client computers. 
+To trust the contents of the catalog file within a WDAC policy, the catalog must first be signed. Then, the signing certificate can be added to the WDAC policy, and the catalog file can be distributed to the individual client computers. 
 
 For information about signing catalog files by using a certificate and SignTool.exe, a free tool available in the Windows SDK, see the next section, [Catalog signing with SignTool.exe](#catalog-signing-with-signtoolexe).
 
-For information about adding the signing certificate to a code integrity policy, see [Add a catalog signing certificate to a code integrity policy](#add-a-catalog-signing-certificate-to-a-code-integrity-policy).
+For information about adding the signing certificate to a WDAC policy, see [Add a catalog signing certificate to a Windows Defender Application Control policy](#add-a-catalog-signing-certificate-to-a-windows-defender-application-control-policy).
 
 ### Resolving package failures
 
@@ -95,7 +95,7 @@ Packages can fail for the following reasons:
     - Package Inspector is completely incompatible if files in the package (temporary or otherwise) change hash each time the package is installed. You can diagnose this by looking at the hash field in the 3077 block events when the package is failing in enforcement.  If each time you attempt to run the package you get a new block event with a different hash, the package will not work with Package Inspector
 - Files with an invalid signature blob or otherwise “unhashable” files
     - This issue arises when a file that has been signed is modified post signing in a way that invalidates the PE header and renders the file unable to be hashed by the Authenticode Spec.
-    - Device Guard uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can’t be allowed by hash due to authenticode hashing algorithm rejecting it)
+    - WDAC uses Authenticode Hashes to validate files when they are running. If the file is unhashable via the authenticode SIP, there is no way to identify the file to allow it, regardless of if you attempt to add the file to the policy directly, or re-sign the file with a Package Inspector catalog (the signature is invalidated due to file being edited, file can’t be allowed by hash due to authenticode hashing algorithm rejecting it)
     - Recent versions of InstallShield packages that use custom actions can hit this. If the DLL input to the custom action was signed before being put through InstallShield, InstallShield adds tracking markers to the file (editing it post signature) which leaves the file in this “unhashable” state and renders the file unable to be allowed by Device Guard (regardless of if you try to allow directly by policy or resign with Package Inspector)
 
 ## Catalog signing with SignTool.exe
@@ -108,7 +108,7 @@ In this section, you sign a catalog file you generated by using PackageInspector
 
 -   An internal certification authority (CA) code signing certificate or purchased code signing certificate
 
-If you do not have a code signing certificate, see [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md) for a walkthrough of how to create one. That topic uses an example certificate name of **ContosoDGSigningCert**, and the procedure that follows uses that example certificate name to sign the catalog file that you created in [Create catalog files](#create-catalog-files), earlier in this topic. If you are using an alternate certificate or catalog file, update the following steps with the appropriate variables and certificate. 
+If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md) for a walkthrough of how to create one. That topic uses an example certificate name of **ContosoDGSigningCert**, and the procedure that follows uses that example certificate name to sign the catalog file that you created in [Create catalog files](#create-catalog-files), earlier in this topic. If you are using an alternate certificate or catalog file, update the following steps with the appropriate variables and certificate. 
 
 To sign the existing catalog file, copy each of the following commands into an elevated Windows PowerShell session.
 
@@ -120,7 +120,7 @@ To sign the existing catalog file, copy each of the following commands into an e
 
     > **Note**&nbsp;&nbsp;This example specifies the catalog file you created in the [Create catalog files](#create-catalog-files) section. If you are signing another catalog file, update the *$ExamplePath* and *$CatFileName* variables with the correct information.
 
-2.  Import the code signing certificate that will be used to sign the catalog file. Import it to the signing user’s personal store. This example uses the certificate name from [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md).
+2.  Import the code signing certificate that will be used to sign the catalog file. Import it to the signing user’s personal store. This example uses the certificate name from [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md).
 
 3.  Sign the catalog file with Signtool.exe:
 
@@ -140,29 +140,29 @@ To sign the existing catalog file, copy each of the following commands into an e
 
     For testing purposes, you can manually copy signed catalog files to their intended folder. For large-scale implementations, to copy the appropriate catalog files to all desired computers, we recommend that you use Group Policy File Preferences or an enterprise systems management product such as System Center Configuration Manager. Doing this also simplifies the management of catalog versions.
 
-## Add a catalog signing certificate to a code integrity policy
+## Add a catalog signing certificate to a Windows Defender Application Control policy
 
-After the catalog file is signed, add the signing certificate to a code integrity policy, as described in the following steps.
+After the catalog file is signed, add the signing certificate to a WDAC policy, as described in the following steps.
 
 1.  If you have not already verified the catalog file digital signature, right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with the algorithm you expect.
 
-2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a code integrity policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
+2.  If you already have an XML policy file that you want to add the signing certificate to, skip to the next step. Otherwise, use [New-CIPolicy](https://technet.microsoft.com/library/mt634473.aspx) to create a WDAC policy that you will later merge into another policy (not deploy as-is). This example creates a policy called **CatalogSignatureOnly.xml** in the location **C:\\PolicyFolder**:
 
     ` New-CIPolicy -Level PcaCertificate -FilePath C:\PolicyFolder\CatalogSignatureOnly.xml –UserPEs`
 
     > **Note**&nbsp;&nbsp;Include the **-UserPEs** parameter to ensure that the policy includes user mode code integrity.
 
-3.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add the signing certificate to the code integrity policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
+3.  Use [Add-SignerRule](https://technet.microsoft.com/library/mt634479.aspx) to add the signing certificate to the WDAC policy, filling in the correct path and filenames for `<policypath>` and `<certpath>`:
 
     ` Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User `
 
-If you used step 2 to create a new code integrity policy, and want information about merging policies together, see [Merge code integrity policies](deploy-code-integrity-policies-steps.md#merge-code-integrity-policies).  
+If you used step 2 to create a new WDAC policy, and want information about merging policies together, see [Merge Windows Defender Application Control policies](deploy-code-integrity-policies-steps.md#merge-windows-defender-application-control-policies).  
 
 ## Deploy catalog files with Group Policy
 
 To simplify the management of catalog files, you can use Group Policy preferences to deploy catalog files to the appropriate computers in your organization. The following process walks you through the deployment of a signed catalog file called **LOBApp-Contoso.cat** to a test OU called DG Enabled PCs with a GPO called **Contoso DG Catalog File GPO Test**.
 
-> **Note**&nbsp;&nbsp;This walkthrough requires that you have previously created a signed catalog file and have a computer running Windows 10 on which to test a Group Policy deployment. For more information about how to create a catalog file, see [Create catalog files](#create-catalog-files), earlier in this topic. Also, before you begin testing of a catalog file with the code integrity policy it supports, review [Add a catalog signing certificate to a code integrity policy](#add-a-catalog-signing-certificate-to-a-code-integrity-policy).
+> **Note**&nbsp;&nbsp;This walkthrough requires that you have previously created a signed catalog file and have a computer running Windows 10 on which to test a Group Policy deployment. For more information about how to create a catalog file, see [Create catalog files](#create-catalog-files), earlier in this topic. Also, before you begin testing of a catalog file with the WDAC policy it supports, review [Add a catalog signing certificate to a Windows Defender Application Control policy](#add-a-catalog-signing-certificate-to-a-windows-defender-application-control-policy).
 
 **To deploy a catalog file with Group Policy:**
 
@@ -170,7 +170,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 2.  Create a new GPO: right-click an OU, for example, the **DG Enabled PCs OU**, and then click **Create a GPO in this domain, and Link it here**, as shown in Figure 2.
 
-    > **Note**&nbsp;&nbsp;You can use any OU name. Also, security group filtering is an option when you consider different ways of combining code integrity policies (or keeping them separate), as discussed in [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
+    > **Note**&nbsp;&nbsp;You can use any OU name. Also, security group filtering is an option when you consider different ways of combining WDAC policies (or keeping them separate), as discussed in [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md).
 
    ![Group Policy Management, create a GPO](images/dg-fig13-createnewgpo.png)
 
@@ -210,7 +210,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 12. Close the Group Policy Management Editor, and then update the policy on the test computer running Windows 10, by running GPUpdate.exe. When the policy has been updated, verify that the catalog file exists in C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE} on the computer running Windows 10.
 
-Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate code integrity policy, as described in [Add a catalog signing certificate to a code integrity policy](#add-a-catalog-signing-certificate-to-a-code-integrity-policy).
+Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy, as described in [Add a catalog signing certificate to a Windows Defender Application Control policy](#add-a-catalog-signing-certificate-to-a-windows-defender-application-control-policy).
 
 ## Deploy catalog files with System Center Configuration Manager
 
@@ -284,7 +284,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
 11. Close the wizard.
 
-Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate code integrity policy, as described in [Add a catalog signing certificate to a code integrity policy](#add-a-catalog-signing-certificate-to-a-code-integrity-policy).
+Before you begin testing the deployed catalog file, make sure that the catalog signing certificate has been added to an appropriate WDAC policy, as described in [Add a catalog signing certificate to a Windows Defender Application Control policy](#add-a-catalog-signing-certificate-to-a-windows-defender-application-control-policy).
 
 ## Inventory catalog files with System Center Configuration Manager
 
@@ -338,9 +338,9 @@ At the time of the next software inventory cycle, when the targeted clients rece
 
 ## Related topics
 
-- [Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
 
 - [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
 
-- [Deploy Windows Defender Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
 

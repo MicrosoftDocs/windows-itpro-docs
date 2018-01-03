@@ -9,25 +9,30 @@ author: brianlic-msft
 ms.date: 10/20/2017
 ---
 
-# Deploy Windows Defender Device Guard: enable virtualization-based security
+# Enable virtualization-based protection of code integrity
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-Hardware-based security features, also called virtualization-based security or VBS, reinforce Windows Defender Application Control. There are a few steps to configure virtualization-based security:
+Virtualization-based protection of code integrity (herein referred to as Hypervisor-protected Code Integrity, or HVCI) is a powerful system mitigation that leverages hardware virtualization and the Windows Hyper-V hypervisor to protect Windows kernel-mode processes against the injection and execution of malicious or unverified code. Code integrity validation is performed in a secure environment that is resistant to attack from malicious software, and page permissions for kernel mode are set and maintained by the Hyper-V hypervisor. When used with Windows Defender Application Control (WDAC), HVCI helps achieve a locked down configuration state known as Windows Defender Device Guard that can block many types of malware from running on computers running Windows 10 and Windows Server 2016.
 
-1.  **Decide whether to use the procedures in this topic, or to use the Windows Defender Device Guard readiness tool**. To enable VBS, you can use [the Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or follow the procedures in this topic.
+> [!NOTE]
+> Some applications, including device drivers, may be incompatible with HVCI. This can cause devices or software to malfunction and in rare cases may result in a Blue Screen. Such issues may occur after HVCI has been turned on or during the enablement process itself. We recommend testing thoroughly before enabling HVCI on production systems.
 
-2.  **Verify that hardware and firmware requirements are met**. Verify that your client computers have the hardware and firmware to run VBS. For a list of requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard).
+Use the following procedure to enable virtualization-based protection of code integrity:
 
-3.  **Enable the necessary Windows features**. You can use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or see [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-security-and-device-guard).
+1.  **Decide whether to use the procedures in this topic, or to use the Windows Defender Device Guard readiness tool**. To enable HVCI, you can use [the Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or follow the procedures in this topic.
 
-4.  **Enable additional features as desired**. You can use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or see [Enable virtualization-based security (VBS)](#enable-virtualization-based-security-vbs-and-device-guard). 
+2.  **Verify that hardware and firmware requirements are met**. Verify that your client computers have the hardware and firmware to run HVCI. For a list of requirements, see [Hardware, firmware, and software requirements for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md#hardware-firmware-and-software-requirements-for-windows-defender-device-guard).
 
-## Windows feature requirements for virtualization-based security and Windows Defender Device Guard
+3.  **Enable the necessary Windows features**. You can use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or see [Windows feature requirements for virtualization-based security](#windows-feature-requirements-for-virtualization-based-protection-of-code-integrity).
 
-Make sure these operating system features are enabled before you can enable VBS:
+4.  **Enable additional features as desired**. You can use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337) or see [Enable virtualization-based protection of code integrity](#enable-virtualization-based-protection-of-code-integrity). 
+
+## Windows feature requirements for virtualization-based protection of code integrity
+
+Make sure these operating system features are enabled before you can enable HVCI:
 
 - Beginning with Windows 10, version 1607 or Windows Server 2016:<br> 
 Hyper-V Hypervisor, which is enabled automatically. No further action is needed.
@@ -37,16 +42,16 @@ Hyper-V Hypervisor and Isolated User Mode (shown in Figure 1).
  
 ![Turn Windows features on or off](images/dg-fig1-enableos.png)
 
-**Figure 1. Enable operating system features for VBS, Windows 10, version 1511**
+**Figure 1. Enable operating system features for HVCI, Windows 10, version 1511**
 
 > [!NOTE]
 > You can configure these features by using Group Policy or Dism.exe, or manually by using Windows PowerShell or the Windows Features dialog box.
 
-## Enable Virtualization Based Security (VBS) and Windows Defender Device Guard
+## Enable virtualization-based protection of code integrity
 
-If you don't want to use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), you can use Group Policy or the Registry to enable VBS.
+If you don't want to use the [hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337), you can use Group Policy or the Registry to enable HVCI.
 
-### Use Group Policy to enable VBS and Windows Defender Device Guard
+### Use Group Policy to enable virtualization-based protection of code integrity
 
 1.  To create a new GPO, right-click the OU where you want to link the GPO, and then click **Create a GPO in this domain, and Link it here**.
 
@@ -60,12 +65,12 @@ If you don't want to use the [hardware readiness tool](https://www.microsoft.com
 
     ![Edit the group policy for Virtualization Based Security](images/dg-fig3-enablevbs.png)
 
-    Figure 3. Enable VBS
+    Figure 3. Enable virtualization-based security (VBS)
 
 5.  Select the **Enabled** button. For **Select Platform Security Level**:
 
     - **Secure Boot** provides as much protection as a computer’s hardware can support. If the computer does not have input/output memory management units (IOMMUs), enable **Secure Boot**.
-    - **Secure Boot with DMA** enables Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS (hardware-based) protection, although it can have Windows Defender Application Control enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by a code integrity policy, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats).
+    - **Secure Boot with DMA** enables Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can have WDAC enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by WDAC, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats).
 
     For **Virtualization Based Protection of Code Integrity**:
 
@@ -75,20 +80,20 @@ If you don't want to use the [hardware readiness tool](https://www.microsoft.com
 
     ![Group Policy, Turn On Virtualization Based Security](images/dg-fig7-enablevbsofkmci.png)
 
-    Figure 5. Configure VBS, Lock setting (in Windows 10, version 1607)
+    Figure 5. Configure HVCI, Lock setting (in Windows 10, version 1607)
 
 7.  Close the Group Policy Management Editor, and then restart the Windows 10 test computer. The settings will take effect upon restart.
 
 8.  Check Device Guard logs in Event Viewer at **Applications and Services Logs\\Microsoft\\Windows\\DeviceGuard-GPEXT\\Operational** for Event ID 7000, which contains the selected settings within a GPO that has been successfully processed. This event is logged only when Group Policy is used.
 
-### Use registry keys to enable VBS and Windows Defender Device Guard
+### Use registry keys to enable virtualization-based protection of code integrity
 
-Set the following registry keys to enable VBS and Windows Defender Device Guard. This provides exactly the same set of configuration options provided by Group Policy.
+Set the following registry keys to enable HVCI. This provides exactly the same set of configuration options provided by Group Policy.
 
 <!--This comment ensures that the Important above and the Warning below don't merge together. -->
 
 > [!IMPORTANT]
-> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS (hardware-based) protection, although it can still have code integrity policies enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by a code integrity policy, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats).<br>
+> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.<br>For information about how VBS uses the hypervisor to strengthen protections provided by WDAC, see [How Windows Defender Device Guard features help protect against threats](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md#how-windows-defender-device-guard-features-help-protect-against-threats).<br>
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
 #### For Windows 1607 and above
@@ -284,6 +289,6 @@ Figure 6. Windows Defender Device Guard properties in the System Summary
 
 ## Related topics
 
-- [Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
 
-- [Deploy Windows Defender Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
