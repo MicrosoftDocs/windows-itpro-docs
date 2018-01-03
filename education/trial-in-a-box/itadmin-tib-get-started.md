@@ -42,8 +42,7 @@ To try out the IT admin tasks, start by logging in as an IT admin.
 ## <a name="task2"></a>2. Configure a new device with Set up School PCs
 Quickly set up **Device B** using the **Set up School PCs** app. A PC that's been set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 
-> [!NOTE]
-> These instructions are a simplified version of [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app). If you want more information including tips for successfully running Set up School PCs, we recommend reading [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app).
+If you've previously used Set up School PCs to provision student devices, you can follow the instructions in this section to quickly configure **Device B**. Otherwise, we recommend you follow the instructions in [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app) for more detailed information, including tips for successfully running Set up School PCs.
 
 ### Download, install, and get ready
 
