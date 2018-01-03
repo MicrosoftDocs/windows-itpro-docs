@@ -16,32 +16,29 @@ ms.date: 10/20/2017
 -   Windows 10
 -   Windows Server 2016
 
-Windows Defender Device Guard is a combination of enterprise-related hardware and software security features that run on Windows 10 Enterprise edition and Windows Server. When these features are configured together, Windows Defender Device Guard will lock a device down so that it can only run trusted applications that you define in your code integrity policies. If the app isn’t trusted, it can’t run, period. 
+With thousands of new malicious files created every day, using traditional methods like antivirus solutions—signature-based detection to fight against malware—provides an inadequate defense against new attacks. Windows Defender Device Guard describes a locked-down device configuration state that uses multiple enterprise-related hardware and software security features that run on Windows 10 Enterprise edition and Windows Server. When these features are configured together, Windows Defender Device Guard changes from a mode where apps are trusted unless blocked by an antivirus or other security solution, to a mode where the operating system trusts only apps authorized by your enterprise. If the app isn’t trusted, it can’t run, period. 
 
-> [!NOTE]
-> Beginning with Windows 10, version 1709, configurable code integrity policies are known as Windows Defender Application Control.
-
-With hardware that meets basic qualifications, Windows Defender Device Guard can also use virtualization-based security to isolate the Code Integrity service and run it alongside the Windows kernel in a hypervisor-protected container. Even if an attacker manages to get control of the Windows kernel itself, the ability to run malicious executable code is much less likely. 
+Windows Defender Device Guard also uses virtualization-based security to isolate the Code Integrity service and run it alongside the Windows kernel in a hypervisor-protected container. Even if an attacker manages to get control of the Windows kernel itself, the ability to run malicious executable code is much less likely. 
 
 This guide explores the individual features in Windows Defender Device Guard as well as how to plan for, configure, and deploy them. It includes:
 
-- [Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
 
 - [Requirements and deployment planning guidelines for Windows Defender Device Guard](requirements-and-deployment-planning-guidelines-for-device-guard.md)
 
 - [Planning and getting started on the Windows Defender Device Guard deployment process](planning-and-getting-started-on-the-device-guard-deployment-process.md)
 
-- [Deploy Windows Defender Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
 
-    - [Optional: Create a code signing certificate for code integrity policies](optional-create-a-code-signing-certificate-for-code-integrity-policies.md)
+    - [Optional: Create a code signing certificate for Windows Defender Application Control](optional-create-a-code-signing-certificate-for-code-integrity-policies.md)
 
-    - [Deploy code integrity policies: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md)
+    - [Deploy Windows Defender Application Control: policy rules and file rules](deploy-code-integrity-policies-policy-rules-and-file-rules.md)
 
-    - [Deploy code integrity policies: steps](deploy-code-integrity-policies-steps.md)
+    - [Deploy Windows Defender Application Control: steps](deploy-code-integrity-policies-steps.md)
 
-    - [Deploy catalog files to support code integrity policies](deploy-catalog-files-to-support-code-integrity-policies.md)
+    - [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-code-integrity-policies.md)
 
-- [Deploy Windows Defender Device Guard: enable virtualization-based security](deploy-device-guard-enable-virtualization-based-security.md)
+- [Enable virtualization-based protection of code integrity](deploy-device-guard-enable-virtualization-based-security.md)
 
 ## Related topics
 
