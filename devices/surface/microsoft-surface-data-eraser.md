@@ -8,8 +8,9 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices, security
 ms.sitesec: library
-author: miladCA
-ms.date: 10/03/2017
+author: brecords
+ms.author: jdecker
+ms.date: 01/03/2018
 ---
 
 # Microsoft Surface Data Eraser
@@ -24,26 +25,17 @@ Find out how the Microsoft Surface Data Eraser tool can help you securely wipe d
 
 Compatible Surface devices include:
 
-- Surface Studio
-
-- Surface Pro
-
-- Surface Laptop
-
-- Surface Book
-
-- Surface Pro 4
-
-- Surface Pro 3
-
-- Surface 3
-
-- Surface 3 LTE
-
-- Surface Pro 2
-
->[!NOTE]
->Surface Pro devices with 1 TB storage are not currently supported by Microsoft Surface Data Eraser.
+* Surface Book 2
+* Surface Pro with LTE Advanced (Model 1807)
+* Surface Pro (Model 1796)
+* Surface Laptop
+* Surface Studio
+* Surface Book
+* Surface Pro 4
+* Surface 3 LTE
+* Surface 3
+* Surface Pro 3
+* Surface Pro 2
 
 Some scenarios where Microsoft Surface Data Eraser can be helpful include:
 
@@ -151,6 +143,20 @@ After you create a Microsoft Surface Data Eraser USB stick, you can boot a suppo
 
 Microsoft Surface Data Eraser is periodically updated by Microsoft. For information about the changes provided in each new version, see the following:
 
+### Version 3.2.45
+
+This version of Microsoft Surface Data Eraser adds support for the following:
+
+- Surface Book 2
+
+- Surface Pro with LTE Advanced
+
+- Surface Pro 1TB
+
+>[!NOTE]
+>Surface Data Eraser v3.2.45 and above can be used to restore Surface Pro or Surface Laptop devices with the 1TB storage option in the scenario that the device shows two separate 512GB volumes or encounters errors when attempting to deploy or install Windows 10. See [Surface Pro Model 1796 and Surface Laptop 1TB display two drives](https://support.microsoft.com/en-us/help/4046105/surface-pro-model-1796-and-surface-laptop-1tb-display-two-drives) for more information.
+
+
 ### Version 3.2.36
 
 This version of Microsoft Surface Data Eraser adds support for the following:
@@ -161,10 +167,3 @@ This version of Microsoft Surface Data Eraser adds support for the following:
 
 >[!NOTE]
 >The Microsoft Surface Data Eraser USB drive creation tool is unable to run on Windows 10 S. To wipe a Surface Laptop running Windows 10 S, you must first create the Microsoft Surface Data Eraser USB drive on another computer with Windows 10 Pro or Windows 10 Enterprise.
-
- 
-
-
-
-
-
