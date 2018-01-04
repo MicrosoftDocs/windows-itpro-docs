@@ -18,19 +18,18 @@ ms.date: 12/11/2017
 
 ![Microsoft Education Trial in a Box header image](images/TrialInABox_Header_Map_Graphic-01.png)
 
+## Welcome to the Microsoft Education Trial in a Box!
+
 **Applies to:**
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
 
-Welcome to the Microsoft Education Trial in a Box!
-
 ## What's Trial in a Box?
-Trial in a Box lets you evaluate our latest solutions for education.
+Trial in a Box puts the Microsoft education technology into an easy package so you can see how our solution can help to:
 
-With Microsoft Education Trial in a Box:
-* Educators can enhance independence for students of all abilities with intelligent tools like Microsoft Learning Tools, spark creativity, collaboration, and problem-solving with OneNote
-* Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to life in 3D
-* IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
+* Enhance independence for students of all abilities with intelligent tools like Microsoft Learning Tools, and spark creativity, collaboration, and problem-solving with OneNote.
+* Inspire creativity, collaboration, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to life in 3D.
+* Allow IT admins to quickly implement and deploy a full cloud infrastructure for their school that's secure and easy to manage.
 
 ## What's in Trial in a Box?
 
