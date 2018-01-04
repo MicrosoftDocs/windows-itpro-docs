@@ -50,10 +50,13 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
 
 * **Run the same Windows 10 build on the admin device and the student PCs**
 
-  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build (Windows 10, version 1607 or Windows 10, version 1703) as the student PCs that you're provisioning. 
+  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build as the student PCs that you're provisioning. 
 
-  > [!NOTE]
-  > If you're using the Windows 10, version 1607 build of the Set up School PCs app, do not use it to provision student PCs with Windows 10, version 1703 images. Conversely, if you're using the Windows 10, version 1703 build of Set up School PCs, do not use it to provision student PCs with Windows 10, version 1607 images. We recommend using the latest Set up School PCs app (for Windows 10, version 1703) along with Windows 10, version 1703 images on the student PCs that you're provisioning. 
+* **Ensure that the student PCs meet the minimum OS requirements for the version of Set up School PCs**
+
+ Check the minimum OS requirements for the Set up School PCs app in the **System Requirements > OS** section of the app's description on the Microsoft Store. For example, the latest version of Set up School PCs requires Windows 10 versions with build 15063.0 or higher. Do not use the app to provision student PCs with Windows 10, version 1607 (build 14393) images. 
+ 
+ We recommend using the latest Set up School PCs app along with the latest Windows 10 images on the student PCs that you're provisioning. 
 
 * **Run the app at work**
 
