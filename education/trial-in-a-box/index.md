@@ -38,15 +38,32 @@ Trial in a Box puts the Microsoft education technology into an easy package so y
 * **Device B** - An affordable PC designed to survive the rigors of classroom life. This PC has the latest installation of Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> so you can see how easy it is to set up a brand new device.
 * **Accessories** - A wireless mouse to use with Minecraft: Education Edition, a USB memory stick to set up school PCs, and a network adapter (just in case).
 
-## Get started!
+## Let's get started!
+**If you want to try the Educator Experience**
+
+1. Turn on **Device A**.
+2. Connect **Device A** to your school's Wi-Fi network.
+3. Log in using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
+4. Follow the instructions in [Get started for Educators](educator-tib-get-started.md).
+
+**If you want to try the IT Administrator Experience**
+
+1. Turn on **Device A**.
+2. Connect **Device A** to your school's Wi-Fi network.
+3. Log in using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+4. Follow the instructions in [Get started for IT Admins](itadmin-tib-get-started.md).
+
+<!--
 Choose your role to get started.
 
-| **[Educator](educator-tib-get-started.md)** | **[IT Admin](itadmin-tib-get-started.md)** |
+| **[Educator](educator-tib-get-started.md)** | **[IT Administrator](itadmin-tib-get-started.md)** |
 | :---: | :---: | 
 | [![Get started for Educators](images/teacher_rotated.png)](educator-tib-get-started.md) | [![Get started for IT Admins](images/itadmin_rotated.png)](itadmin-tib-get-started.md) |
 
 </br>
-If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education Trial in a Box support](support-options.md).
+-->
+> [!NOTE]
+> If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education Trial in a Box support](support-options.md).
 
 <br/>
 <br/>
