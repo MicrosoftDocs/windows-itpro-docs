@@ -235,6 +235,7 @@
 #### [TextInput](policy-csp-textinput.md)
 #### [TimeLanguageSettings](policy-csp-timelanguagesettings.md)
 #### [Update](policy-csp-update.md)
+#### [UserRights](policy-csp-userrights.md)
 #### [Wifi](policy-csp-wifi.md)
 #### [WindowsDefenderSecurityCenter](policy-csp-windowsdefendersecuritycenter.md)
 #### [WindowsInkWorkspace](policy-csp-windowsinkworkspace.md)
