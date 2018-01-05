@@ -2722,6 +2722,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### TaskScheduler policies
+
+<dl>
+  <dd>
+    <a href="policy-csp-taskscheduler.md#taskscheduler-enablexboxgamesavetask" id="taskscheduler-enablexboxgamesavetask">TaskScheduler/EnableXboxGameSaveTask</a>
+  </dd>
+</dl>
+
 ### TextInput policies
 
 <dl>
