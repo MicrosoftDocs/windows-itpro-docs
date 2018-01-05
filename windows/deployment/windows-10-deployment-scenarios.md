@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
-ms.date: 11/07/2017
+ms.date: 12/18/2017
 author: greg-lindsay
 ---
 
@@ -17,6 +17,141 @@ author: greg-lindsay
 -   Windows 10
 
 To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task.
+
+The following tables summarize different Windows 10 deployment options and requirements.
+
+| Scenario | Description | More information |
+| :---: | :---: | :---: |
+| [Windows AutoPilot](#windows-autopilot) | Customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured. |[Overview of Windows AutoPilot](https://docs.microsoft.com/en-us/windows/deployment/windows-10-autopilot) |
+| [In-place upgrade](#in-place-upgrade) | Use Windows Setup to update your OS and migrate apps and settings. Rollback data is saved in Windows.old. |[Perform an in-place upgrade to Windows 10 with MDT](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit)<br>[Perform an in-place upgrade to Windows 10 using Configuration Manager](https://docs.microsoft.com/windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager) |
+| [Subscription Activation](#windows-10-subscription-activation) | Switch from Windows 10 Pro to Enterprise when a subscribed user signs in. |[Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation) |
+| [AAD / MDM](#dynamic-provisioning) | The device is automatically joined to AAD and configured by MDM. |[Azure Active Directory integration with MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) |
+| [Provisioning packages](#dynamic-provisioning) | Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices. |[Configure devices without MDM](https://docs.microsoft.com/windows/configuration/configure-devices-without-mdm) |
+| [Bare metal](#new-computer) | Deploy a new device, or wipe an existing device and deploy with a fresh image. |[Deploy a Windows 10 image using MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt)<br>[Install a new version of Windows on a new computer with System Center Configuration Manager](https://docs.microsoft.com/sccm/osd/deploy-use/install-new-windows-version-new-computer-bare-metal) |
+| [Refresh](#computer-refresh) | Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. |[Refresh a Windows 7 computer with Windows 10](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10)<br>[Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager) |
+| [Replace](#computer-replace) | Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device. |[Replace a Windows 7 computer with a Windows 10 computer](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer)<br>[Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager) |
+
+OS requirements:
+<br>&nbsp;
+
+<table border="1" align='left'>
+  <tr style="text-align:center;">
+    <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'> 
+      <b>Category</b>
+    </td>
+     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'>
+      <b>Scenario</b>
+    </td>
+     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'>
+      <b>Windows 10 1703 or later</b>
+    </td>
+     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'>
+      <b>Windows 7 up to Windows 10 1607</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" style="width:16%; border:1;" rowspan="2"> 
+      Modern
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+     Windows AutoPilot
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      X
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width:16%; border:1;"> 
+      In-place upgrade
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width:16%; border:1;" rowspan="3"> 
+      Dynamic
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      Subscription Activation
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      X
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width:16%; border:1;"> 
+      AAD / MDM
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+   </tr>
+  <tr>
+    <td align="center" style="width:16%; border:1;"> 
+      Provisioning packages
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width:16%; border:1;" rowspan="3"> 
+      Traditional
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      Bare metal
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width:16%; border:1;"> 
+      Refresh
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="width:16%; border:1;"> 
+      Replace
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+    <td align="center" style="width:16%; border:1;"> 
+      <b>✓</b>
+    </td>
+  </tr>
+</table>
+
+<br>&nbsp;
+
+>[!NOTE]
+>There is no pre-existing OS in the Windows AutoPilot or bare metal scenarios, so apps and settings are not migrated. In all other scenarios the existing apps and user settings are typically migrated to the new operating system.
 
 ## Windows AutoPilot 
 
@@ -90,7 +225,7 @@ The traditional deployment scenario can be divided into different sub-scenarios.
 
 -   **Computer replace.** A replacement of the old machine with a new machine (with user-state migration and an optional full WIM image backup).
 
-###New computer
+### New computer
 This scenario occurs when you have a blank machine you need to deploy, or an existing machine you want to wipe and redeploy without needing to preserve any existing data. The setup starts from a boot media, using CD, USB, ISO, or Pre-Boot Execution Environment (PXE). You can also generate a full offline media that includes all the files needed for a client deployment, allowing you to deploy without having to connect to a central deployment share. The target can be a physical computer, a virtual machine, or a Virtual Hard Disk (VHD) running on a physical computer (boot from VHD).
 
 The deployment process for the new machine scenario is as follows:
@@ -105,7 +240,7 @@ The deployment process for the new machine scenario is as follows:
 
 After taking these steps, the computer is ready for use.
 
-###Computer refresh
+### Computer refresh
 A refresh is sometimes called wipe-and-load. The process is normally initiated in the running operating system. User data and settings are backed up and restored later as part of the deployment process. The target can be the same as for the new computer scenario.
 
 The deployment process for the wipe-and-load scenario is as follows:
@@ -124,7 +259,7 @@ The deployment process for the wipe-and-load scenario is as follows:
 
 After taking these steps, the machine is ready for use.
 
-###Computer replace
+### Computer replace
 A computer replace is similar to the refresh scenario. However, since we are replacing the machine, we divide this scenario into two main tasks: backup of the old client and bare-metal deployment of the new client. As with the refresh scenario, user data and settings are backed up and restored.
 
 The deployment process for the replace scenario is as follows:

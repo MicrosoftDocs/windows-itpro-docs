@@ -1,6 +1,11 @@
 {
 "redirections": [
 {
+"source_path": "windows/threat-protection/use-windows-event-forwarding-to-assist-in-instrusion-detection.md",
+"redirect_url": "/windows/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
 "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
 "redirect_document_id": true
@@ -8398,6 +8403,11 @@
 {
 "source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
 "redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-auto-pilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-10-autopilot",
 "redirect_document_id": true
 }
 ]

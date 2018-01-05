@@ -18,36 +18,56 @@ ms.date: 12/11/2017
 
 ![Microsoft Education Trial in a Box header image](images/TrialInABox_Header_Map_Graphic-01.png)
 
+## Welcome to the Microsoft Education Trial in a Box!
+
 **Applies to:**
 
 -   Windows 10 S Fall Creators Update, Office 365 for Education, Microsoft Intune for Education, Microsoft Store for Education, Minecraft: Education Edition
 
-Welcome to the Microsoft Education Trial in a Box!
-
 ## What's Trial in a Box?
-Trial in a Box lets you evaluate our latest solutions for education.
+Trial in a Box puts the Microsoft education technology into an easy package so you can see how our solution can help to:
 
-With Microsoft Education Trial in a Box:
-* Educators can enhance independence for students of all abilities with intelligent tools like Microsoft Learning Tools, spark creativity, collaboration, and problem-solving with OneNote
-* Students can be more creative, collaborative, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to life in 3D
-* IT admins can learn about the tools they can use to implement and deploy a full cloud infrastructure for their school that's secure and easy to manage
+* Enhance independence for students of all abilities with intelligent tools like Microsoft Learning Tools, and spark creativity, collaboration, and problem-solving with OneNote.
+* Inspire creativity, collaboration, and improve problem-solving skills with Minecraft: Education Edition and bring ideas to life in 3D.
+* Allow IT admins to quickly implement and deploy a full cloud infrastructure for their school that's secure and easy to manage.
 
 ## What's in Trial in a Box?
 
 * **User name and passwords** - We've already set up a cloud-based school using Microsoft 365 Education. Your login credentials are included in the kit.
 * **Device A** - A 2-in-1 convertible PC that supports digital ink. This device is pre-configured with Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> and ready for login so you can try the Microsoft Education classroom experience. 
-* **Device B** - An affordable PC designed to survive the rigors of classroom life. This PC has a fresh installation of Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> so you can see how easy it is to set up a brand new device.
+* **Device B** - An affordable PC designed to survive the rigors of classroom life. This PC has the latest installation of Windows 10 S<sup>[1](#footnote1),</sup> <sup>[2](#footnote2)</sup> so you can see how easy it is to set up a brand new device.
 * **Accessories** - A wireless mouse to use with Minecraft: Education Edition, a USB memory stick to set up school PCs, and a network adapter (just in case).
 
-## Get started!
+## Let's get started!
+**If you want to try the Educator Experience**
+
+1. Turn on **Device A**.
+2. Connect **Device A** to your school's Wi-Fi network.
+3. Log in using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
+4. Click the Educator image or follow the instructions in [Get started for Educators](educator-tib-get-started.md).
+
+    [![Get started for Educators](images/teacher_rotated.png)](educator-tib-get-started.md)
+    
+**If you want to try the IT Administrator Experience**
+
+1. Turn on **Device A**.
+2. Connect **Device A** to your school's Wi-Fi network.
+3. Log in using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+4. Click the IT Administrator image or follow the instructions in [Get started for IT Admins](itadmin-tib-get-started.md).
+
+    [![Get started for IT Admins](images/itadmin_rotated.png)](itadmin-tib-get-started.md)
+
+<!--
 Choose your role to get started.
 
-| **[Educator](educator-tib-get-started.md)** | **[IT Admin](itadmin-tib-get-started.md)** |
+| **[Educator](educator-tib-get-started.md)** | **[IT Administrator](itadmin-tib-get-started.md)** |
 | :---: | :---: | 
 | [![Get started for Educators](images/teacher_rotated.png)](educator-tib-get-started.md) | [![Get started for IT Admins](images/itadmin_rotated.png)](itadmin-tib-get-started.md) |
 
 </br>
-If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education Trial in a Box support](support-options.md).
+-->
+> [!NOTE]
+> If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education Trial in a Box support](support-options.md).
 
 <br/>
 <br/>

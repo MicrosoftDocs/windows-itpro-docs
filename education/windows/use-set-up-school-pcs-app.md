@@ -50,10 +50,13 @@ You can watch the descriptive audio version here: [Microsoft Education: Use the 
 
 * **Run the same Windows 10 build on the admin device and the student PCs**
 
-  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build (Windows 10, version 1607 or Windows 10, version 1703) as the student PCs that you're provisioning. 
+  It's critical that the IT administrator's or technical teacher's device is running the same Windows 10 build as the student PCs that you're provisioning. 
 
-  > [!NOTE]
-  > If you're using the Windows 10, version 1607 build of the Set up School PCs app, do not use it to provision student PCs with Windows 10, version 1703 images. Conversely, if you're using the Windows 10, version 1703 build of Set up School PCs, do not use it to provision student PCs with Windows 10, version 1607 images. We recommend using the latest Set up School PCs app (for Windows 10, version 1703) along with Windows 10, version 1703 images on the student PCs that you're provisioning. 
+* **Ensure that the student PCs meet the minimum OS requirements for the version of Set up School PCs**
+
+ Check the minimum OS requirements for the Set up School PCs app in the **System Requirements > OS** section of the app's description on the Microsoft Store. For example, the latest version of Set up School PCs requires Windows 10 versions with build 15063.0 or higher. Do not use the app to provision student PCs with Windows 10, version 1607 (build 14393) images. 
+ 
+ We recommend using the latest Set up School PCs app along with the latest Windows 10 images on the student PCs that you're provisioning. 
 
 * **Run the app at work**
 
@@ -197,7 +200,7 @@ The **Set up School PCs** app guides you through the configuration choices for t
   2. Check the options whether to allow keyboard text suggestions to appear and to allow teachers to monitor online tests. 
   3. Enter the assessment URL.
 
-    You can leave the URL blank so that students can enter one later. This enables teachers to use the the Take a Test account for daily quizzes or tests by having students manually enter a URL.
+    You can leave the URL blank so that students can enter one later. This enables teachers to use the Take a Test account for daily quizzes or tests by having students manually enter a URL.
 
     **Figure 5** - Configure the Take a Test app
 

@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Privacy
@@ -294,14 +294,17 @@ ms.date: 11/01/2017
 > [!Note]  
 > There were issues reported with the previous release of this policy and a fix was added in Windows 10, version 1709.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default)– Not allowed.
--   1 – Allowed.
 
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default)– Not allowed.
+-   1 – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -342,15 +345,18 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Updated in Windows 10, version 1709. Allows the usage of cloud based speech services for Cortana, dictation, or Store applications. Setting this policy to 1, lets Microsoft use the user's voice data to improve cloud speech services for all users.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
  
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -391,15 +397,17 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Enables or disables the Advertising ID.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Disabled.
 -   1 – Enabled.
 -   65535 (default)- Not configured.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -440,12 +448,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 Added in Windows 10, version 1709. Allows IT Admins to allow Apps/OS to publish to the activity feed.
 
+<!--EndDescription-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Disabled. Apps/OS can't publish the activities and roaming is disabled. (not published to the cloud).
 -   1 – (default) Enabled. Apps/OS can publish the activities and will be roamed across device graph.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -3576,12 +3586,14 @@ The following list shows the supported values:
 <!--StartDescription-->
 Added in Windows 10, version 1709. Allows It Admins to enable publishing of user activities to the activity feed.
 
+<!--EndDescription-->
+<!--SupportedValues-->
 The following list shows the supported values:
 
 -   0 – Disabled. Apps/OS can't publish the *user activities*.
 -   1 – (default) Enabled. Apps/OS can publish the *user activities*.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

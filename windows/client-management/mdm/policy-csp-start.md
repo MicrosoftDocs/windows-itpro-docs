@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/17/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Start
@@ -147,13 +147,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Documents shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -194,13 +196,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Downloads shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -241,13 +245,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the File Explorer shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -288,13 +294,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the HomeGroup shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -335,13 +343,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Music shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -382,13 +392,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Network shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -429,13 +441,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the PersonalFolder shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -476,13 +490,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Pictures shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -523,13 +539,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Settings shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -570,13 +588,15 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy controls the visibility of the Videos shortcut on the Start menu.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – The shortcut is hidden and disables the setting in the Settings app.
 -   1 – The shortcut is visible and disables the setting in the Settings app.
 -   65535 (default) - There is no enforced configuration and the setting can be changed by the user.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -731,17 +751,19 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Change account settings" from appearing in the user tile.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify that "Change account settings" is not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -785,11 +807,6 @@ ms.date: 11/17/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding most used apps.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable "Show most used apps" in the Settings app.
@@ -800,6 +817,13 @@ ms.date: 11/17/2017
 6.   Check that most used apps do not appear in Start.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -840,11 +864,6 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Hibernate" from appearing in the Power button.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Laptop, do the following:
 
 1.   Enable policy.
@@ -854,6 +873,13 @@ ms.date: 11/17/2017
 > This policy can only be verified on laptops as "Hibernate" does not appear on regular PC's.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -894,17 +920,19 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Lock" from appearing in the user tile.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Lock" is not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -933,7 +961,15 @@ ms.date: 11/17/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Enabling this policy removes the people icon from the taskbar as well as the corresponding settings toggle. It also prevents users from pinning people to the taskbar.
 
@@ -983,17 +1019,19 @@ ms.date: 11/17/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the Power button from appearing.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, and verify the power button is not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1037,11 +1075,6 @@ ms.date: 11/17/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently opened items in the jumplists from appearing.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable "Show recently opened items in Jump Lists on Start of the taskbar" in Settings.
@@ -1055,6 +1088,13 @@ ms.date: 11/17/2017
 9.   Right Click pinned photos app and verify that there is no jumplist of recent items.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1098,11 +1138,6 @@ ms.date: 11/17/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding recently added apps.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable "Show recently added apps" in the Settings app.
@@ -1113,6 +1148,13 @@ ms.date: 11/17/2017
 6.   Check that recently added apps do not appear in Start.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1153,17 +1195,19 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Restart" and "Update and restart" from appearing in the Power button.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Restart" and "Update and restart" are not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1204,17 +1248,19 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Shut down" and "Update and shut down" from appearing in the Power button.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify "Shut down" and "Update and shut down" are not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1255,17 +1301,19 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sign out" from appearing in the user tile.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify "Sign out" is not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1306,17 +1354,19 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Sleep" from appearing in the Power button.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the Power button, and verify that "Sleep" is not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1357,17 +1407,19 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding "Switch account" from appearing in the user tile.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
 2.   Open Start, click on the user tile, and verify that "Switch account" is not available.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1411,11 +1463,6 @@ ms.date: 11/17/2017
 
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure Start by hiding the user tile.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (do not hide).
--   1 - True (hide).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
@@ -1423,6 +1470,13 @@ ms.date: 11/17/2017
 3.   Log in, and verify that the user tile is gone from Start.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (do not hide).
+-   1 - True (hide).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1519,11 +1573,6 @@ ms.date: 11/17/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allows IT Admins to configure the taskbar by disabling pinning and unpinning apps on the taskbar.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – False (pinning enabled).
--   1 - True (pinning disabled).
-
 <p style="margin-left: 20px">To validate on Desktop, do the following:
 
 1.   Enable policy.
@@ -1533,6 +1582,13 @@ ms.date: 11/17/2017
 5.   Verify that More->Pin to taskbar menu does not show.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – False (pinning enabled).
+-   1 - True (pinning disabled).
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

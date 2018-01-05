@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: DaniHalfin
 ms.author: daniha
-ms.date: 11/30/2017
+ms.date: 12/13/2017
 ---
 
 # Overview of Windows AutoPilot
@@ -29,24 +29,6 @@ From the users' perspective, it only takes a few simple operations to make their
 
 From the IT pros' perspective, the only interaction required from the end user, is to connect to a network and to verify their credentials. Everything past that is automated.
 
-Windows AutoPilot allows you to:
-* Automatically join devices to Azure Active Directory (Azure AD)
-* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription*](#prerequisites))
-* Restrict the Administrator account creation
-* Create and auto-assign devices to configuration groups based on a device's profile
-* Customize OOBE content specific to the organization
-
-### Prerequisites
-
-* [Devices must be registered to the organization](#registering-devices-to-your-organization)
-* [Company branding needs to be configured](#configure-company-branding-for-oobe)
-* [Network connectivity to cloud services used by Windows AutoPilot](#network-connectivity-requirements)
-* Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
-* Devices must have access to the internet
-* [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
-* [Users must be allowed to join devices into Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/device-management-azure-portal)
-* Microsoft Intune or other MDM services to manage your devices
-
 ## Windows AutoPilot Scenarios
 
 ### Cloud-Driven
@@ -55,7 +37,25 @@ The Cloud-Driven scenario enables you to pre-register devices through the Window
 
 #### The Windows AutoPilot Deployment Program experience
 
-The end user unboxes and turns on a new device. What follows are a few simple configuration steps:
+The Windows AutoPilot Deployment Program enables you to:
+* Automatically join devices to Azure Active Directory (Azure AD)
+* Auto-enroll devices into MDM services, such as Microsoft Intune ([*Requires an Azure AD Premium subscription*](#prerequisites))
+* Restrict the Administrator account creation
+* Create and auto-assign devices to configuration groups based on a device's profile
+* Customize OOBE content specific to the organization
+
+##### Prerequisites
+
+* [Devices must be registered to the organization](#device-registration-and-oobe-customization)
+* [Company branding needs to be configured](#configure-company-branding-for-oobe)
+* [Network connectivity to cloud services used by Windows AutoPilot](#network-connectivity-requirements)
+* Devices have to be pre-installed with Windows 10 Professional, Enterprise or Education, of version 1703 or later
+* Devices must have access to the internet
+* [Azure AD Premium P1 or P2](https://www.microsoft.com/cloud-platform/azure-active-directory-features)
+* [Users must be allowed to join devices into Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-azure-portal)
+* Microsoft Intune or other MDM services to manage your devices
+
+The end-user unboxes and turns on a new device. What follows are a few simple configuration steps:
 * Select a language and keyboard layout
 * Connect to the network
 * Provide email address (the email address of the user's Azure AD account) and password
@@ -67,34 +67,20 @@ MDM enrollment ensures policies are applied, apps are installed and setting are 
 </br>
 <iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/4K4hC5NchbE" frameborder="0" allowfullscreen></iframe>
 
-#### Registering devices to your organization
+#### Device registration and OOBE customization
 
 In order to register devices, you will need to acquire their hardware ID and register it. We are actively working with various hardware vendors to enable them to provide the required information to you, or upload it on your behalf. 
 
 If you would like to capture that information by yourself, you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo), which will generate a .csv file with the device's hardware ID.
 
->[!NOTE]
->This PowerShell script requires elevated permissions.
-
-By uploading this information to the Microsoft Store for Business or Partner Center admin portal, you'll be able to assign devices to your organization.
-Additional options and customization is available through these portals to pre-configure the devices.
-
-For information on how to upload device information, see [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#add-devices-and-apply-autopilot-deployment-profile) or [Partner Center](https://msdn.microsoft.com/partner-center/autopilot) guidance.
-
-#### OOBE customization
-
-Deployment profiles are used to configure the Out-Of-the-Box-Experience (OOBE) on devices deployed through the Windows AutoPilot Deployment Program.
-
-These are the OOBE customization options available for Windows 10, starting with version 1703:
+Once devices are registered, these are the OOBE customization options available for Windows 10, starting with version 1703:
 * Skipping Work or Home usage selection (*Automatic*)
 * Skipping OEM registration, OneDrive and Cortana (*Automatic*)
 * Skipping privacy settings
 * Skipping EULA (*staring with Windows 10, version 1709*)
 * Preventing the account used to set-up the device from getting local administrator permissions
 
-We are working to add additional options to further personalize and streamline the setup experience in future releases.
-
-To configure and apply deployment profiles, see guidance for the various available administration options:
+For guidance on how to register devices, configure and apply deployment profiles, follow one of the available administration options:
 * [Microsoft Store for Business](https://docs.microsoft.com/microsoft-store/add-profile-to-devices#manage-autopilot-deployment-profiles)
 * [Microsoft Intune](https://docs.microsoft.com/intune/enrollment-autopilot)
 * [Microsoft 365 Business & Office 365 Admin](https://support.office.com/article/Create-and-edit-AutoPilot-profiles-5cf7139e-cfa1-4765-8aad-001af1c74faa)
@@ -104,7 +90,14 @@ To configure and apply deployment profiles, see guidance for the various availab
 
 In order for your company branding to appear during the OOBE, you'll need to configure it in Azure Active Directory first.
 
-See [Add company branding to your directory](https://docs.microsoft.com/azure/active-directory/customize-branding#add-company-branding-to-your-directory), to configure these settings. 
+See [Add company branding to your directory](https://docs.microsoft.com/azure/active-directory/customize-branding#add-company-branding-to-your-directory), to configure these settings.
+
+##### Configure MDM auto-enrollment in Microsoft Intune
+
+In order for your devices to be auto-enrolled into MDM management, MDM auto-enrollment needs to be configured in Azure AD. To do that with Microsoft Intune, please see [Enroll Windows devices for Microsoft Intune](https://docs.microsoft.com/intune/windows-enroll). For other MDM vendors, please consult your vendor for further details.
+
+>[!NOTE]
+>MDM auto-enrollment requires an Azure AD Premium P1 or P2 subscription.
 
 #### Network connectivity requirements
 
@@ -136,11 +129,5 @@ If you are planning to configure devices with traditional on-premises or cloud-b
 
 If you're an IT pro or a technical staff member at a school, your scenario might be simpler. The [Set Up School PCs](http://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) app can be used to quickly set up PCs for students and will get you to a productive state faster and simpler. Please see [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app) for all the details.
 
-## Ensuring your device can be auto-enrolled to MDM
-
-In order for your devices to be auto-enrolled into MDM management, MDM auto-enrollment needs to be configured in Azure AD. To do that with Intune, please see [Enroll Windows devices for Microsoft Intune](https://docs.microsoft.com/intune/windows-enroll). For other MDM vendors, please consult your vendor for further details.
-
->[!NOTE]
->MDM auto-enrollment requires an Azure AD Premium P1 or P2 subscription.
 
 Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-auto-pilot.md). 

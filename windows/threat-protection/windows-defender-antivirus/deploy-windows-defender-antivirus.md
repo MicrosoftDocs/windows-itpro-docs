@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/26/2017
+ms.date: 12/12/2017
 ---
 
 # Deploy and enable Windows Defender Antivirus
@@ -33,7 +33,7 @@ See the table in the [Deploy, manage, and report on Windows Defender AV](deploy-
 
 Some scenarios require additional guidance on how to successfully deploy or configure Windows Defender AV protection, such as Virtual Desktop Infrastructure (VDI) environments.
 
-The remaining topic in this section provides end-to-end advice and best practices for [setting up Windows Defender AV ion virtual machines (VMs) in a VDI or Remote Desktop Services (RDS) environment](deployment-vdi-windows-defender-antivirus.md).
+The remaining topic in this section provides end-to-end advice and best practices for [setting up Windows Defender AV on virtual machines (VMs) in a VDI or Remote Desktop Services (RDS) environment](deployment-vdi-windows-defender-antivirus.md).
 
 ## Related topics
 

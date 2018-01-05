@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: high
-ms.date: 10/20/2017
+ms.date: 12/13/2017
 author: greg-lindsay
 ---
 
@@ -28,7 +28,7 @@ Windows 10 upgrade options are discussed and information is provided about plann
 
 |Topic |Description |
 |------|------------|
-|[Overview of Windows AutoPilot](windows-10-auto-pilot.md) |Windows AutoPilot deployment is a new cloud service from Microsoft that provides a zero touch experience for deploying Windows 10 devices. |
+|[Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md) |Windows AutoPilot deployment is a new cloud service from Microsoft that provides a zero touch experience for deploying Windows 10 devices. |
 |[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md) |This topic provides information about support for upgrading directly to Windows 10 from a previous operating system. |
 |[Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) |This topic provides information about support for upgrading from one edition of Windows 10 to another. |
 |[Windows 10 volume license media](windows-10-media.md) |This topic provides information about media available in the Microsoft Volume Licensing Service Center. |

@@ -10,7 +10,9 @@
 ## [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md)
 
 ## [Deploy Windows 10](deploy.md)
-### [Overview of Windows AutoPilot](windows-10-auto-pilot.md)
+
+### [Overview of Windows AutoPilot](windows-autopilot/windows-10-autopilot.md)
+
 ### [Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md)
 ### [Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md)
 ### [Windows 10 volume license media](windows-10-media.md)

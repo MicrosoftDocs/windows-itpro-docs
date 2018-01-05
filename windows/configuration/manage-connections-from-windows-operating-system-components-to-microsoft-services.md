@@ -359,9 +359,12 @@ If you're running Windows 10, version 1507 or Windows 10, version 1511, create a
 ### <a href="" id="bkmk-previewbuilds"></a>7. Insider Preview builds
 
 The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10.
+This setting stops communication with the Windows Insider Preview service that checks for new builds. 
+Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+
 
 > [!NOTE]  
-> This setting stops communication with the Windows Insider Preview service that checks for new builds. Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+> If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for zero exhaust) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Full**. Although the telemetry level may initially appear as **Basic**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Full**.
 
 To turn off Insider Preview builds for a released version of Windows 10:
 
@@ -577,7 +580,7 @@ For a complete list of the Microsoft Edge policies, see [Available policies for 
 
 Network Connection Status Indicator (NCSI) detects Internet connectivity and corporate network connectivity status. NCSI sends a DNS request and HTTP query to http://www.msftconnecttest.com/connecttest.txt to determine if the device can communicate with the Internet. For more info about NCSI, see [The Network Connection Status Icon](http://blogs.technet.com/b/networking/archive/2012/12/20/the-network-connection-status-icon.aspx).
 
-In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was http://www.msftncsi.com. 
+In versions of Windows 10 prior to Windows 10, version 1607 and Windows Server 2016, the URL was [http://www.msftncsi.com](). 
 
 You can turn off NCSI by doing one of the following:
 

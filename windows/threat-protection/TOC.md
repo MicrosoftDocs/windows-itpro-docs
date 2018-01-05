@@ -315,7 +315,7 @@
 
 ## [Secure the Windows 10 boot process](secure-the-windows-10-boot-process.md)
 
-## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-instrusion-detection.md)
+## [Use Windows Event Forwarding to help with intrusion detection](use-windows-event-forwarding-to-assist-in-intrusion-detection.md)
 
 ## [Block untrusted fonts in an enterprise](block-untrusted-fonts-in-enterprise.md)
 

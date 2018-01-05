@@ -9,14 +9,14 @@ ms.sitesec: library
 ms.pagetype: security
 author: mjcaparas
 localizationpriority: high
-ms.date: 11/10/2017
+ms.date: 12/12/2017
 ---
 
 # Configure non-Windows endpoints
 
 **Applies to:**
 
-- Mac OS X
+- macOS X
 - Linux
 - Windows Defender Advanced Threat Protection (Windows Defender ATP)
 
@@ -26,7 +26,7 @@ ms.date: 11/10/2017
 
 Windows Defender ATP provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in the Windows Defender ATP portal and better protect your organization's network. This experience leverages on a third-party security products’ sensor data. 
 
-You'll need to know the exact Linux distros and Mac OS X versions that are compatible with Windows Defender ATP for the integration to work. 
+You'll need to know the exact Linux distros and macOS X versions that are compatible with Windows Defender ATP for the integration to work. 
 
 ## Onboard non-Windows endpoints
 You'll need to take the following steps to oboard non-Windows endpoints:
@@ -41,7 +41,7 @@ You'll need to take the following steps to oboard non-Windows endpoints:
 
 3. 	Click **Generate access token** button and then **Copy**.
 
-4. 	Depending on the third-party implementation you're using, the implementation might vary. Refer to the third-party solution documentation for guidance on how to use the token.
+4. 	You’ll need to copy and paste the token to the third-party solution you’re using. The implementation may vary depending on the solution. 
 
 
 >[!WARNING] 

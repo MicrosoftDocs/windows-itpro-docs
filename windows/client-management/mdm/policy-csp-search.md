@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/13/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Search
@@ -146,14 +146,16 @@ ms.date: 11/13/2017
 
 <p style="margin-left: 20px">When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are a lot of WIP protected media files on the device.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -194,19 +196,30 @@ ms.date: 11/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether search can leverage location information.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
 <a href="" id="search-allowstoringimagesfromvisionsearch"></a>**Search/AllowStoringImagesFromVisionSearch**  
 
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">This policy has been deprecated.
 
@@ -287,9 +300,17 @@ ms.date: 11/13/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow Windows indexer. Value type is integer.
-
 
 <!--EndDescription-->
 <!--EndPolicy-->

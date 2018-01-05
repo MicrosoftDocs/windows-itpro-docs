@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 01/03/2018
 ---
 
 # Policy CSP - Browser
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -80,6 +82,9 @@ ms.date: 11/01/2017
     <a href="#browser-disablelockdownofstartpages">Browser/DisableLockdownOfStartPages</a>
   </dd>
   <dd>
+    <a href="#browser-enableextendedbookstelemetry">Browser/EnableExtendedBooksTelemetry</a>
+  </dd>
+  <dd>
     <a href="#browser-enterprisemodesitelist">Browser/EnterpriseModeSiteList</a>
   </dd>
   <dd>
@@ -127,6 +132,9 @@ ms.date: 11/01/2017
   <dd>
     <a href="#browser-syncfavoritesbetweenieandmicrosoftedge">Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</a>
   </dd>
+  <dd>
+    <a href="#browser-usesharedfolderforbooks">Browser/UseSharedFolderForBooks</a>
+  </dd>
 </dl>
 
 <hr/>
@@ -172,14 +180,16 @@ ms.date: 11/01/2017
 > [!NOTE]
 > Disabling this setting turns off the address bar drop-down functionality. Because search suggestions are shown in the drop-down list, this setting takes precedence over the Browser/AllowSearchSuggestionsinAddressBar setting.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed. Address bar drop-down is disabled, which also disables the user-defined setting, "Show search and site suggestions as I type." 
 -   1 (default) – Allowed. Address bar drop-down is enabled.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -221,11 +231,6 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether autofill on websites is allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <p style="margin-left: 20px">To verify AllowAutofill is set to 0 (not allowed):
@@ -236,6 +241,13 @@ ms.date: 11/01/2017
 4.  Verify the setting **Save form entries** is greyed out.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -281,16 +293,18 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Specifies whether the browser is allowed on the device.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <p style="margin-left: 20px">When this policy is set to 0 (not allowed), the Microsoft Edge for Windows 10 Mobile tile will appear greyed out, and clicking on the tile will display a message indicating theat Internet browsing has been disabled by your administrator.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -392,14 +406,16 @@ ms.date: 11/01/2017
 
 <p style="margin-left: 20px">Specifies whether employees can use F12 Developer Tools on Microsoft Edge. Turning this setting on, or not configuring it, lets employees use F12 Developer Tools. Turning this setting off stops employees from using F12 Developer Tools.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -441,11 +457,6 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether Do Not Track headers are allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – Not allowed.
--   1 – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <p style="margin-left: 20px">To verify AllowDoNotTrack is set to 0 (not allowed):
@@ -456,6 +467,13 @@ ms.date: 11/01/2017
 4.  Verify the setting **Send Do Not Track requests** is greyed out.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Not allowed.
+-   1 – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -497,12 +515,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether Microsoft Edge extensions are allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -544,12 +564,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10. Specifies whether Adobe Flash can run in Microsoft Edge.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -591,12 +613,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether users must take an action, such as clicking the content or a Click-to-Run button, before seeing content in Adobe Flash.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Adobe Flash content is automatically loaded and run by Microsoft Edge.
 -   1 (default) – Users must click the content, click a Click-to-Run button, or have the site appear on an auto-allow list before Microsoft Edge loads and runs Adobe Flash content.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -638,14 +662,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether InPrivate browsing is allowed on corporate networks.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -690,14 +716,16 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 
 <p style="margin-left: 20px">If you enable or don’t configure this setting, Microsoft Edge periodically downloads the latest version of the compatibility list from Microsoft, applying the updates during browser navigation. Visiting any site on the compatibility list prompts the employee to use Internet Explorer 11 (or enables/disables certain browser features on mobile), where the site is automatically rendered as though it’s run in the version of Internet Explorer necessary for it to display properly. If you disable this setting, the compatibility list isn’t used during browser navigation.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not enabled.
 -   1 (default) – Enabled.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -739,11 +767,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether saving and managing passwords locally on the device is allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 <p style="margin-left: 20px">To verify AllowPasswordManager is set to 0 (not allowed):
@@ -754,6 +777,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 4.  Verify the settings **Offer to save password** and **Manage my saved passwords** are greyed out.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -795,11 +825,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether pop-up blocker is allowed or enabled.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – Pop-up blocker is not allowed. It means that pop-up browser windows are allowed.
--   1 – Pop-up blocker is allowed or enabled. It means that pop-up browser windows are blocked.
-
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <p style="margin-left: 20px">To verify AllowPopups is set to 0 (not allowed):
@@ -810,6 +835,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 4.  Verify the setting **Block pop-ups** is greyed out.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Pop-up blocker is not allowed. It means that pop-up browser windows are allowed.
+-   1 – Pop-up blocker is allowed or enabled. It means that pop-up browser windows are blocked.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -853,14 +885,16 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
   
 <p style="margin-left: 20px">If this setting is turned on or not configured, users can add new search engines and change the default used in the address bar from within Microsoft Edge settings. If this setting is disabled, users will be unable to add search engines or change the default used in the address bar. This policy applies only on domain-joined machines or when the device is MDM-enrolled. For more information, see Microsoft browser extension policy (aka.ms/browserpolicy). 
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -902,14 +936,16 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether search suggestions are allowed in the address bar.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -951,11 +987,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether Windows Defender SmartScreen is allowed.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – Not allowed.
--   1 (default) – Allowed.
-
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <p style="margin-left: 20px">To verify AllowSmartScreen is set to 0 (not allowed):
@@ -966,6 +997,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 4.  Verify the setting **Help protect me from malicious sites and download with SmartScreen Filter** is greyed out.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – Not allowed.
+-   1 (default) – Allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -987,6 +1025,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <p style="margin-left: 20px">This is only a placeholder.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - TBD.
+-   1 - TBD.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1028,11 +1073,6 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to clear browsing data on exiting Microsoft Edge.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – (default) Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.
--   1 – Browsing data is cleared on exit.
-
 <p style="margin-left: 20px">Most restricted value is 1.
 
 <p style="margin-left: 20px">To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set to 1): 
@@ -1042,6 +1082,13 @@ By default, the Microsoft compatibility list is enabled and can be viewed by vis
 3.  Open Microsoft Edge and start typing the same URL in address bar. Verify that it does not auto-complete from history.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – (default) Browsing data is not cleared on exit. The type of browsing data to clear can be configured by the employee in the Clear browsing data options under Settings.
+-   1 – Browsing data is cleared on exit.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1146,14 +1193,72 @@ Employees cannot remove these search engines, but they can set any one as the de
 > [!IMPORTANT]
 > This setting can be used only with domain-joined or MDM-enrolled devices. For more information, see the Microsoft browser extension policy (aka.ms/browserpolicy).
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Enable lockdown of the Start pages according to the settings specified in the Browser/HomePages policy. Users cannot change the Start pages. 
 -   1  – Disable lockdown of the Start pages and allow users to modify them.  
 
-<p style="margin-left: 20px">Most restricted value is 0.
+<!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+This setting allows organizations to send extended telemetry on book usage from the Books Library.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disable. Telemetry does not contain the ProductId in regular books telemetry events.
+-   1 - Enable. Activating this setting allows Microsoft Edge to send the ProductId of Store books purchased from the Store through the telemetry for regular books telemetry events.
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1396,16 +1501,18 @@ Employees cannot remove these search engines, but they can set any one as the de
 > [!Important]  
 > Don't enable both this setting and the Keep favorites in sync between Internet Explorer and Microsoft Edge setting. Enabling both settings stops employees from syncing their favorites between Internet Explorer and Microsoft Edge.
 
-<ul>
-<li> 0 - Disabled. Do not lockdown Favorites.</li>
-<li> 1 - Enabled. Lockdown Favorites.</li>
-</ul>
-
 <p style="margin-left: 20px">If you disable or don't configure this setting (default), employees can add, import and make changes to the Favorites list.
 
 <p style="margin-left: 20px">Data type is integer.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Disabled. Do not lockdown Favorites.
+-   1 - Enabled. Lockdown Favorites.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1447,12 +1554,14 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether users can access the about:flags page, which is used to change developer settings and to enable experimental features.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Users can access the about:flags page in Microsoft Edge.
 -   1 – Users can't access the about:flags page in Microsoft Edge.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1494,14 +1603,16 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether to enable or disable the First Run webpage. On the first explicit user-launch of Microsoft Edge, a First Run webpage hosted on Microsoft.com opens automatically via a FWLINK. This policy allows enterprises (such as those enrolled in a zero-emissions configuration) to prevent this page from opening.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 1.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Employees see the First Run webpage. 
 -   1 – Employees don't see the First Run webpage.
 
-<p style="margin-left: 20px">Most restricted value is 1.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1543,14 +1654,16 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Specifies whether Microsoft can collect information to create a Live Tile when pinning a site to Start from Microsoft Edge.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 1.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Microsoft servers will be contacted if a site is pinned to Start from Microsoft Edge.
 -   1 – Microsoft servers will not be contacted if a site is pinned to Start from Microsoft Edge.
 
-<p style="margin-left: 20px">Most restricted value is 1.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1592,14 +1705,16 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about potentially malicious websites.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Off.
 -   1 – On.
 
-<p style="margin-left: 20px">Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from going to the site. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about potentially malicious websites and to continue to the site.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1641,12 +1756,14 @@ Employees cannot remove these search engines, but they can set any one as the de
 <!--StartDescription-->
 <p style="margin-left: 20px">Specifies whether users can override the Windows Defender SmartScreen Filter warnings about downloading unverified files. Turning this setting on stops users from ignoring the Windows Defender SmartScreen Filter warnings and blocks them from downloading unverified files. Turning this setting off, or not configuring it, lets users ignore the Windows Defender SmartScreen Filter warnings about unverified files and lets them continue the download process.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Off.
 -   1 – On.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1692,12 +1809,14 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Specifies whether a user's localhost IP address is displayed while making phone calls using the WebRTC protocol. Turning this setting on hides an user’s localhost IP address while making phone calls using WebRTC. Turning this setting off, or not configuring it, shows an <p style="margin-left: 20px">user’s localhost IP address while making phone calls using WebRTC.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – The localhost IP address is shown.
 -   1 – The localhost IP address is hidden.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1798,14 +1917,16 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Specifies whether to send intranet traffic over to Internet Explorer.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Intranet traffic is sent to Internet Explorer.
 -   1 – Intranet traffic is sent to Microsoft Edge.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1907,14 +2028,16 @@ Employees cannot remove these search engines, but they can set any one as the de
 
 <p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies whether users should see a full interstitial page in Microsoft Edge when opening sites that are configured to open in Internet Explorer using the Enterprise Site List.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) – Interstitial pages are not shown.
 -   1 – Interstitial pages are shown.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -1961,11 +2084,6 @@ Employees cannot remove these search engines, but they can set any one as the de
 >
 > Enabling this setting stops Microsoft Edge favorites from syncing between connected Windows 10 devices.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 (default) – Synchronization is off.
--   1 – Synchronization is on.
-
 <p style="margin-left: 20px">To verify that favorites are in synchronized between Internet Explorer and Microsoft Edge:
 
 <ol>
@@ -1975,6 +2093,69 @@ Employees cannot remove these search engines, but they can set any one as the de
 </ol>
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) – Synchronization is off.
+-   1 – Synchronization is on.
+
+<!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+This setting specifies whether organizations should use a folder shared across users to store books from the Books Library.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - No shared folder.
+-   1 - Use a shared folder.
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

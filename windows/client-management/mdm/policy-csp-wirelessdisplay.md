@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/13/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - WirelessDisplay
@@ -72,14 +72,26 @@ ms.date: 11/13/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to turn off the Wireless Display multicast DNS service advertisement from a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS advertisement.  
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 - 0 - Do not allow
 - 1 - Allow
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -108,14 +120,26 @@ ms.date: 11/13/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
 
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver. If the network administrator is concerned about network congestion, they may set this policy to 0, disabling mDNS discovery.  
 
-- 0 - Do not allow
-- 1 - Allow
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Do not allow
+-   1 - Allow
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -156,10 +180,14 @@ ms.date: 11/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC.  
 
-- 0 - your PC cannot discover or project to other devices.
-- 1 - your PC can discover and project to other devices
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - your PC cannot discover or project to other devices.
+-   1 - your PC can discover and project to other devices
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -200,10 +228,14 @@ ms.date: 11/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy allows you to turn off projection from a PC over infrastructure.  
 
-- 0 - your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct.
-- 1 - your PC can discover and project to other devices over infrastructure.
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - your PC cannot discover or project to other infrastructure devices, although it is possible to discover and project over WiFi Direct.
+-   1 - your PC can discover and project to other devices over infrastructure.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -246,12 +278,16 @@ ms.date: 11/13/2017
 
 <p style="margin-left: 20px">If you set it to 0 (zero), your PC is not discoverable and you cannot project to it. If you set it to 1, your PC is discoverable and you can project to it above the lock screen. The user has an option to turn it always on or always off except for manual launch. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-<p style="margin-left: 20px">Value type is integer. Valid value:
+<p style="margin-left: 20px">Value type is integer.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 - projection to PC is not allowed. Always off and the user cannot enable it.
 -   1 (default) - projection to PC is allowed. Enabled only above the lock screen.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -292,10 +328,14 @@ ms.date: 11/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. This policy setting allows you to turn off projection to a PC over infrastructure.  
 
-- 0 - your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct.
-- 1 - your PC is discoverable and other devices can project to it over infrastructure.
-
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - your PC is not discoverable and other devices cannot project to it over infrastructure, although it is possible to project to it over WiFi Direct.
+-   1 - your PC is discoverable and other devices can project to it over infrastructure.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -313,12 +353,14 @@ ms.date: 11/13/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Setting this policy controls whether or not the wireless display can send input&#8212;keyboard, mouse, pen, and touch input if the display supports it&#8212;back to the source device.
 
-<p style="margin-left: 20px">Allowed values:
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 - Wireless display input disabled.
 -   1 (default) - Wireless display input enabled.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -361,12 +403,16 @@ ms.date: 11/13/2017
 
 <p style="margin-left: 20px">If you turn this on, the pairing ceremony for new devices will always require a PIN. If you turn this off or do not configure it, a PIN is not required for pairing. In PCs that support Miracast, after the policy is applied you can verify the setting from the user interface in **Settings** &gt; **System** &gt; **Projecting to this PC**.
 
-<p style="margin-left: 20px">Value type is integer. Valid value:
+<p style="margin-left: 20px">Value type is integer.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 (default) - PIN is not required.
 -   1 - PIN is required.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 
