@@ -1,6 +1,6 @@
 ---
-title: Policy CSP - KioskBrowser
-description: Policy CSP - KioskBrowser
+title: Policy CSP - SystemServices
+description: Policy CSP - SystemServices
 ms.author: maricia
 ms.topic: article
 ms.prod: w10
@@ -9,7 +9,7 @@ author: nickbrower
 ms.date: 01/03/2018
 ---
 
-# Policy CSP - KioskBrowser
+# Policy CSP - SystemServices
 
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -18,32 +18,32 @@ ms.date: 01/03/2018
 <hr/>
 
 <!--StartPolicies-->
-## KioskBrowser policies  
+## SystemServices policies  
 
 <dl>
   <dd>
-    <a href="#kioskbrowser-blockedurlexceptions">KioskBrowser/BlockedUrlExceptions</a>
+    <a href="#systemservices-configurehomegrouplistenerservicestartupmode">SystemServices/ConfigureHomeGroupListenerServiceStartupMode</a>
   </dd>
   <dd>
-    <a href="#kioskbrowser-blockedurls">KioskBrowser/BlockedUrls</a>
+    <a href="#systemservices-configurehomegroupproviderservicestartupmode">SystemServices/ConfigureHomeGroupProviderServiceStartupMode</a>
   </dd>
   <dd>
-    <a href="#kioskbrowser-defaulturl">KioskBrowser/DefaultURL</a>
+    <a href="#systemservices-configurexboxaccessorymanagementservicestartupmode">SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</a>
   </dd>
   <dd>
-    <a href="#kioskbrowser-enablehomebutton">KioskBrowser/EnableHomeButton</a>
+    <a href="#systemservices-configurexboxliveauthmanagerservicestartupmode">SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode</a>
   </dd>
   <dd>
-    <a href="#kioskbrowser-enablenavigationbuttons">KioskBrowser/EnableNavigationButtons</a>
+    <a href="#systemservices-configurexboxlivegamesaveservicestartupmode">SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode</a>
   </dd>
   <dd>
-    <a href="#kioskbrowser-restartonidletime">KioskBrowser/RestartOnIdleTime</a>
+    <a href="#systemservices-configurexboxlivenetworkingservicestartupmode">SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</a>
   </dd>
 </dl>
 
 <hr/>
 <!--StartPolicy-->
-<a href="" id="kioskbrowser-blockedurlexceptions"></a>**KioskBrowser/BlockedUrlExceptions**  
+<a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
 
 <!--StartSKU-->
 <table>
@@ -72,14 +72,13 @@ ms.date: 01/03/2018
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs.
+Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -94,7 +93,7 @@ Added in Windows 10, next major update. List of exceptions to the blocked websit
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="kioskbrowser-blockedurls"></a>**KioskBrowser/BlockedUrls**  
+<a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
 
 <!--StartSKU-->
 <table>
@@ -123,14 +122,13 @@ Added in Windows 10, next major update. List of exceptions to the blocked websit
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to.
+Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -145,7 +143,7 @@ Added in Windows 10, next major update. List of blocked website URLs (with wildc
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="kioskbrowser-defaulturl"></a>**KioskBrowser/DefaultURL**  
+<a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
 
 <!--StartSKU-->
 <table>
@@ -174,14 +172,13 @@ Added in Windows 10, next major update. List of blocked website URLs (with wildc
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. Configures the default URL kiosk browsers to navigate on launch and restart.
+Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -196,7 +193,7 @@ Added in Windows 10, next major update. Configures the default URL kiosk browser
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="kioskbrowser-enablehomebutton"></a>**KioskBrowser/EnableHomeButton**  
+<a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
 
 <!--StartSKU-->
 <table>
@@ -225,14 +222,13 @@ Added in Windows 10, next major update. Configures the default URL kiosk browser
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. Enable/disable kiosk browser's home button.
+Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -247,7 +243,7 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's home butt
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="kioskbrowser-enablenavigationbuttons"></a>**KioskBrowser/EnableNavigationButtons**  
+<a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
 
 <!--StartSKU-->
 <table>
@@ -276,14 +272,13 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's home butt
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. Enable/disable kiosk browser's navigation buttons (forward/back).
+Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--EndDescription-->
 <!--SupportedValues-->
@@ -298,7 +293,7 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's navigatio
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
-<a href="" id="kioskbrowser-restartonidletime"></a>**KioskBrowser/RestartOnIdleTime**  
+<a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
 
 <!--StartSKU-->
 <table>
@@ -327,16 +322,13 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's navigatio
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * User
 > * Device
 
 <hr/>
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  
-
-The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser.
+Added in Windows 10, next major update. This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.
 
 <!--EndDescription-->
 <!--SupportedValues-->
