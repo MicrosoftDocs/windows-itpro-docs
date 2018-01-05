@@ -334,7 +334,9 @@ Added in Windows 10, next major update. Enable/disable kiosk browser's navigatio
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.
+Added in Windows 10, next major update. Amount of time in minutes the session is idle until the kiosk browser restarts in a fresh state.  
+
+The value is an int 1-1440 that specifies the amount of minutes the session is idle until the kiosk browser restarts in a fresh state. The default value is empty which means there is no idle timeout within the kiosk browser.
 
 <!--EndDescription-->
 <!--SupportedValues-->
