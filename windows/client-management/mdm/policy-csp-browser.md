@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/03/2018
 ---
 
 # Policy CSP - Browser
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -80,6 +82,9 @@ ms.date: 12/14/2017
     <a href="#browser-disablelockdownofstartpages">Browser/DisableLockdownOfStartPages</a>
   </dd>
   <dd>
+    <a href="#browser-enableextendedbookstelemetry">Browser/EnableExtendedBooksTelemetry</a>
+  </dd>
+  <dd>
     <a href="#browser-enterprisemodesitelist">Browser/EnterpriseModeSiteList</a>
   </dd>
   <dd>
@@ -126,6 +131,9 @@ ms.date: 12/14/2017
   </dd>
   <dd>
     <a href="#browser-syncfavoritesbetweenieandmicrosoftedge">Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</a>
+  </dd>
+  <dd>
+    <a href="#browser-usesharedfolderforbooks">Browser/UseSharedFolderForBooks</a>
   </dd>
 </dl>
 
@@ -1198,6 +1206,62 @@ The following list shows the supported values:
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
+<a href="" id="browser-enableextendedbookstelemetry"></a>**Browser/EnableExtendedBooksTelemetry**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+This setting allows organizations to send extended telemetry on book usage from the Books Library.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Disable. Telemetry does not contain the ProductId in regular books telemetry events.
+-   1 - Enable. Activating this setting allows Microsoft Edge to send the ProductId of Store books purchased from the Store through the telemetry for regular books telemetry events.
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
 <a href="" id="browser-enterprisemodesitelist"></a>**Browser/EnterpriseModeSiteList**  
 
 <!--StartSKU-->
@@ -2036,6 +2100,62 @@ The following list shows the supported values:
 -   1 – Synchronization is on.
 
 <!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="browser-usesharedfolderforbooks"></a>**Browser/UseSharedFolderForBooks**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+This setting specifies whether organizations should use a folder shared across users to store books from the Books Library.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - No shared folder.
+-   1 - Use a shared folder.
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 

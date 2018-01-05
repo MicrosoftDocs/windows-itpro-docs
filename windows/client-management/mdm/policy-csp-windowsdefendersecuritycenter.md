@@ -776,9 +776,12 @@ Valid values:
 
 <!--EndScope-->
 <!--StartDescription-->
-Added in Windows 10, next major update. Use this policy setting to hide the Ransomware data recovery area in Windows Defender Security Center. If you enable or do not configure this setting, the Ransomware data recovery area will be visible and actionable for users.
+Added in Windows 10, next major update. Use this policy setting to hide the Ransomware data recovery area in Windows Defender Security Center.
 
- If you disable (same as not configured) this setting, the Ransomware data protection area will not be visible and any related toast notifications will not be active on the device.
+Valid values:
+
+- 0 - (Disable or not configured) The Ransomware data recovery area will be visible.
+- 1 - (Enable) The Ransomware data recovery area is hidden. 
 <!--EndDescription-->
 <!--SupportedValues-->
 
