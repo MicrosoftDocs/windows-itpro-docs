@@ -1835,6 +1835,29 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### KioskBrowser policies
+
+<dl>
+  <dd>
+    <a href="policy-csp-kioskbrowser.md#kioskbrowser-blockedurlexceptions" id="kioskbrowser-blockedurlexceptions">KioskBrowser/BlockedUrlExceptions</a>
+  </dd>
+  <dd>
+    <a href="policy-csp-kioskbrowser.md#kioskbrowser-blockedurls" id="kioskbrowser-blockedurls">KioskBrowser/BlockedUrls</a>
+  </dd>
+  <dd>
+    <a href="policy-csp-kioskbrowser.md#kioskbrowser-defaulturl" id="kioskbrowser-defaulturl">KioskBrowser/DefaultURL</a>
+  </dd>
+  <dd>
+    <a href="policy-csp-kioskbrowser.md#kioskbrowser-enablehomebutton" id="kioskbrowser-enablehomebutton">KioskBrowser/EnableHomeButton</a>
+  </dd>
+  <dd>
+    <a href="policy-csp-kioskbrowser.md#kioskbrowser-enablenavigationbuttons" id="kioskbrowser-enablenavigationbuttons">KioskBrowser/EnableNavigationButtons</a>
+  </dd>
+  <dd>
+    <a href="policy-csp-kioskbrowser.md#kioskbrowser-restartonidletime" id="kioskbrowser-restartonidletime">KioskBrowser/RestartOnIdleTime</a>
+  </dd>
+</dl>
+
 ### Licensing policies
 
 <dl>
