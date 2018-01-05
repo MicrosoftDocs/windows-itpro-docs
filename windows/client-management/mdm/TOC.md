@@ -233,6 +233,8 @@
 #### [Start](policy-csp-start.md)
 #### [Storage](policy-csp-storage.md)
 #### [System](policy-csp-system.md)
+#### [SystemServices](policy-csp-systemservices.md)
+#### [TaskScheduler](policy-csp-taskscheduler.md)
 #### [TextInput](policy-csp-textinput.md)
 #### [TimeLanguageSettings](policy-csp-timelanguagesettings.md)
 #### [Update](policy-csp-update.md)
