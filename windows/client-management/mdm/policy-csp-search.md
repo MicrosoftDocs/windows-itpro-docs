@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/08/2018
 ---
 
 # Policy CSP - Search
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -21,6 +23,9 @@ ms.date: 12/14/2017
 <dl>
   <dd>
     <a href="#search-allowcloudsearch">Search/AllowCloudSearch</a>
+  </dd>
+  <dd>
+    <a href="#search-allowcortanainaad">Search/AllowCortanaInAAD</a>
   </dd>
   <dd>
     <a href="#search-allowindexingencryptedstoresoritems">Search/AllowIndexingEncryptedStoresOrItems</a>
@@ -45,6 +50,9 @@ ms.date: 12/14/2017
   </dd>
   <dd>
     <a href="#search-disableremovabledriveindexing">Search/DisableRemovableDriveIndexing</a>
+  </dd>
+  <dd>
+    <a href="#search-donotusewebresults">Search/DoNotUseWebResults</a>
   </dd>
   <dd>
     <a href="#search-preventindexinglowdiskspacemb">Search/PreventIndexingLowDiskSpaceMB</a>
@@ -102,6 +110,61 @@ ms.date: 12/14/2017
 -   1 (default) – Allowed.
 
 <!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+Added in Windows 10, next major update. This specifies whether the Cortana consent page can appear in the Azure Active Directory (AAD) device out-of-box-experience (OOBE) flow. If this policy is left in its default state, Cortana will not be shown in the AAD OOBE flow. If you opt-in to this policy, then the Cortana consent page will appear in the AAD OOBE flow..
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 (default) - Not allowed. The Cortana consent page will not appear in AAD OOBE during setup.
+-   1 - Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup.
+
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -457,6 +520,65 @@ The following list shows the supported values:
 -   1 – Enable.
 
 <!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="search-donotusewebresults"></a>**Search/DoNotUseWebResults**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+Added in Windows 10, next major update. Don't search the web or display web results in Search.
+
+This policy setting allows you to control whether or not Search can perform queries on the web, and if the web results are displayed in Search.
+If you enable this policy setting, queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
+
+If you disable this policy setting, queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 - Not allowed. Queries won't be performed on the web and web results won't be displayed when a user performs a query in Search.
+- 1 (default) - Allowed. Queries will be performed on the web and web results will be displayed when a user performs a query in Search.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
