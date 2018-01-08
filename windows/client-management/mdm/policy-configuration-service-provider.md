@@ -148,6 +148,20 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### AccountPoliciesAccountLockoutPolicy policies
+
+<dl>
+  <dd>
+    <a href="policy-csp-accountpoliciesaccountlockoutpolicy.md#accountpoliciesaccountlockoutpolicy-accountlockoutduration" id="accountpoliciesaccountlockoutpolicy-accountlockoutduration">AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</a>
+  </dd>
+  <dd>
+    <a href="policy-csp-accountpoliciesaccountlockoutpolicy.md#accountpoliciesaccountlockoutpolicy-accountlockoutthreshold" id="accountpoliciesaccountlockoutpolicy-accountlockoutthreshold">AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</a>
+  </dd>
+  <dd>
+    <a href="policy-csp-accountpoliciesaccountlockoutpolicy.md#accountpoliciesaccountlockoutpolicy-resetaccountlockoutcounterafter" id="accountpoliciesaccountlockoutpolicy-resetaccountlockoutcounterafter">AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</a>
+  </dd>
+</dl>
+
 ### Accounts policies
 
 <dl>
@@ -781,11 +795,25 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-doallowvpnpeercaching" id="deliveryoptimization-doallowvpnpeercaching">DeliveryOptimization/DOAllowVPNPeerCaching</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-docachehost" id="deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelaybackgrounddownloadfromhttp" id="deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodelayforegrounddownloadfromhttp" id="deliveryoptimization-dodelayforegrounddownloadfromhttp">DeliveryOptimization/DODelayForegroundDownloadFromHttp</a>
+  </dd>
+  <dd>
+  <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dodownloadmode" id="deliveryoptimization-dodownloadmode">DeliveryOptimization/DODownloadMode</a>
   </dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dogroupid" id="deliveryoptimization-dogroupid">DeliveryOptimization/DOGroupId</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dogroupidsource" id="deliveryoptimization-dogroupidsource">DeliveryOptimization/DOGroupIdSource</a>
+  </dd>
+  <dd>
   <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domaxcacheage" id="deliveryoptimization-domaxcacheage">DeliveryOptimization/DOMaxCacheAge</a>
   </dd>
@@ -820,7 +848,22 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-domonthlyuploaddatacap" id="deliveryoptimization-domonthlyuploaddatacap">DeliveryOptimization/DOMonthlyUploadDataCap</a>
   </dd>
   <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxbackdownloadbandwidth" id="deliveryoptimization-dopercentagemaxbackdownloadbandwidth">DeliveryOptimization/DOPercentageMaxBackDownloadBandwidth</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth" id="deliveryoptimization-dopercentagemaxdownloadbandwidth">DeliveryOptimization/DOPercentageMaxDownloadBandwidth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxforedownloadbandwidth" id="deliveryoptimization-dopercentagemaxforedownloadbandwidth">DeliveryOptimization/DOPercentageMaxForeDownloadBandwidth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dorestrictpeerselectionby" id="deliveryoptimization-dorestrictpeerselectionby">DeliveryOptimization/DORestrictPeerSelectionBy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth" id="deliveryoptimization-dosethourstolimitbackgrounddownloadbandwidth">DeliveryOptimization/DOSetHoursToLimitBackgroundDownloadBandwidth</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-deliveryoptimization.md#deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth" id="deliveryoptimization-dosethourstolimitforegrounddownloadbandwidth">DeliveryOptimization/DOSetHoursToLimitForegroundDownloadBandwidth</a>
   </dd>
 </dl>
 
