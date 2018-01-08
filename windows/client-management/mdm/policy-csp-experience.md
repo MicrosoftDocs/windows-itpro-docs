@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 12/19/2017
 ---
 
 # Policy CSP - Experience
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -38,7 +40,13 @@ ms.date: 12/14/2017
     <a href="#experience-allowsimerrordialogpromptwhennosim">Experience/AllowSIMErrorDialogPromptWhenNoSIM</a>
   </dd>
   <dd>
+    <a href="#experience-allowsaveasofofficefiles">Experience/AllowSaveAsOfOfficeFiles</a>
+  </dd>
+  <dd>
     <a href="#experience-allowscreencapture">Experience/AllowScreenCapture</a>
+  </dd>
+  <dd>
+    <a href="#experience-allowsharingofofficefiles">Experience/AllowSharingOfOfficeFiles</a>
   </dd>
   <dd>
     <a href="#experience-allowsyncmysettings">Experience/AllowSyncMySettings</a>
@@ -393,6 +401,14 @@ The following list shows the supported values:
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
+<a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
+
+<!--StartDescription-->
+This policy is deprecated.
+<!--EndDescription-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
 <a href="" id="experience-allowscreencapture"></a>**Experience/AllowScreenCapture**  
 
 <!--StartSKU-->
@@ -444,6 +460,14 @@ The following list shows the supported values:
 -   1 (default) – Allowed.
 
 <!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="experience-allowsharingofofficefiles"></a>**Experience/AllowSharingOfOfficeFiles**  
+
+<!--StartDescription-->
+This policy is deprecated.
+<!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
