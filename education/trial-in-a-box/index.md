@@ -54,7 +54,7 @@ Trial in a Box puts the Microsoft education technology into an easy package so y
 2. Turn on **Device A**.
 3. Connect **Device A** to your school's Wi-Fi network or connect with a local Ethernet connection.
 4. Log in using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
-5. Please immediately register both devices with your hardware manufacturer to activate the manufacturer's warranty.
+5. Register both devices with the hardware manufacturer to activate the manufacturer's warranty.
 6. Click the IT Administrator image or follow the instructions in [Get started for IT Admins](itadmin-tib-get-started.md).
 
     [![Get started for IT Admins](images/itadmin_rotated.png)](itadmin-tib-get-started.md)

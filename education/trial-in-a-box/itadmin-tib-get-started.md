@@ -29,26 +29,26 @@ Hello, IT administrators! In this guide, we'll show you how to quickly and easil
 5. [Add new folders to all devices in your tenant](#task5)
 
 > [!NOTE]
-> To get the most out of Microsoft Education, we've pre-configured your tenant for you so you don't need to set it up. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
+> To get the most out of Microsoft Education, we've pre-configured your tenant for you so you don't need to set it up. A tenant is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
 If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education support](support-options.md).
 
 ## <a name="task1"></a>1. Log in
 To try out the IT admin tasks, start by logging in as an IT admin.
 
-1. If you're logged in to **Device A** with the teacher account, log off.
-2. Use the IT admin credentials included in your Trial in a Box to log in to the device.
+1. Connect **Device A** to your school's Wi-Fi network or connect with a local Ethernet connection.
+2. Log in using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+3. Register both devices with the hardware manufacturer to activate the manufacturer's warranty.
 
 ## <a name="task2"></a>2. Configure a new device with Set up School PCs
-Quickly set up **Device B** using the **Set up School PCs** app. A PC that's been set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
+Set up **Device B** using the **Set up School PCs** app. A PC that's been set up using the app is tailored to provide students with the tools they need for learning while removing apps and features that they don't need.
 
 If you've previously used Set up School PCs to provision student devices, you can follow the instructions in this section to quickly configure **Device B**. Otherwise, we recommend you follow the instructions in [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app) for more detailed information, including tips for successfully running Set up School PCs.
 
-### Download, install, and get ready
+### Connect, download, and install Set up School PCs app
 
 1. Download the latest <a href="https://educationstore.microsoft.com/en-us/store/details/set-up-school-pcs/9nblggh4ls40" target="_blank">Set up School PCs app from the Microsoft Store for Education</a>. 
-2. Install the app on the Trial in a Box **Device A**, or install the app on your work PC.
-3. Make sure you're connected to your school's network.
+2. Install the app on the Trial in a Box **Device A**.
 
 ### Create the provisioning package
 
@@ -61,21 +61,17 @@ If you've previously used Set up School PCs to provision student devices, you ca
 4. In **Let's get you signed in**, choose your Trial in a Box admin account. If you don't see it on the list, follow these steps:
     1. Select **Work or school account > Use another account** and then enter your Trial in a Box admin account email and password. 
     2. Click **Accept**.
-5. Follow the instructions in the app to select your school's wireless network, or add one manually. 
 
-    > [!NOTE]
-    > For Trial in a Box, we recommend plugging in an Ethernet or wired connection to your device.
-
-6. Add a short name that Set up School PCs will use as a prefix to identify and easily manage the group of devices, apps, and other settings through Intune for Education.
+5. Add a short name that Set up School PCs will use as a prefix to identify and easily manage the group of devices, apps, and other settings through Intune for Education.
   
     > [!NOTE]  
     > The name must be five (5) characters or less. Set up School PCs automatically appends `_%SERIAL%` to the prefix that you specify. `_%SERIAL%` ensures that all device names are unique. For example, if you add *Math4* as the prefix, the device names will be *Math4* followed by a random string of letters and numbers. 
 
-7. In **Configure student PC settings**, you can specify other settings for the student PC.
+6. In **Configure student PC settings**, you can specify other settings for the student PC.
 
-    We recommend these settings:
+    We recommend the highlighted settings:
 
-    ![Configure student PC settings](images/suspc_configure_pcsettings2.png)
+    ![Configure student PC settings](images/suspc_configure_pcsettings_selected.png)
 
   - **Remove apps pre-installed by the device manufacturer** installs only the base Windows 10 image.
 
@@ -90,7 +86,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
   - **Enable Windows 10 Automatic Redeployment** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Windows Automatic Redeployment](https://docs.microsoft.com/en-us/education/windows/windows-automatic-redeployment).
   - **Lock screen background** shows the default backgroudn used for student PCs provisioned by Set up School PCs. Select **Browse** to change the default.
 
-8. **Set up the Take a Test app** configures the device for taking quizzes and high-stakes assessments by some providers like Smarter Balanced. Windows will lock down the student PC so that students can't access anything else while taking the test.
+7. **Set up the Take a Test app** configures the device for taking quizzes and high-stakes assessments by some providers like Smarter Balanced. Windows will lock down the student PC so that students can't access anything else while taking the test.
 
     ![Configure the Take a Test app](images/suspc_takeatest.png)
 
@@ -102,35 +98,32 @@ If you've previously used Set up School PCs to provision student devices, you ca
 
   3. Enter the assessment URL. 
 
-9. **Add recommended apps** lets you choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
+8. **Add recommended apps** lets you choose from a set of recommended Microsoft Store apps to provision. The recommended apps include the following:
   * **Office 365 for Windows 10 S (Education Preview)** - This is perfect for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail.
   * **Minecraft: Education Edition** - Don't select this. This is already provisioned as part of your tenant.
   * **Other apps fit for the classroom** - Optional. Choose other recommended apps to install on the PC.
 
-10. **Review package summary**. 
+9. **Review package summary**. 
 
     To change any of the settings, select the page or section (such as **Sign-in** or **Settings**) to go back to that page and make your changes.
 
     ![Select the section or page name to make a change](images/suspc_review_summary.png)
 
-11. Accept the summary and then insert a USB drive in **Device A**. Use the USB drive that came in the Trial in a Box accessories box to save the provisioning package.
-12. Select the drive and then **Save** to create the provisioning package. 
+10. Accept the summary and then insert a USB drive in **Device A**. Use the USB drive that came in the Trial in a Box accessories box to save the provisioning package.
+11. Select the drive and then **Save** to create the provisioning package. 
 
     The provisioning package on your USB drive will be named SetUpSchoolPCs_*ABCDE* (Expires *MM-DD-YYYY*).ppkg, where *ABCDE* is the device name you added (if any), and *MM-DD-YYYY* is the month, day, and year when the package will expire.
     
     > [!NOTE]
-    > If you selected **Office 365 for Windows 10 S (Education Preview)**, it will take longer for Set up School PCs to create the provisioning package. During this time, you can jump ahead to task 3, [Intune for Education express configuration](#task3), and then finish the rest of task 2 afterwards.
+    > If you selected **Office 365 for Windows 10 S (Education Preview)**, it will take longer for Set up School PCs to create the provisioning package as the app downloads Office 365 for Windows 10 S (Education Preview) from the Microsoft Store. During this time, you can jump ahead to task 3, [Intune for Education express configuration](#task3), and then finish the rest of task 2 afterwards.
 
-13. Follow the instructions in the **Get the student PCs ready** page to start setting up **Device B**. 
-14. Follow the instructions in the **Install the package** page to apply the provisioning package to **Device B**. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).
+12. Follow the instructions in the **Get the student PCs ready** page to start setting up **Device B**. 
+13. Follow the instructions in the **Install the package** page to apply the provisioning package to **Device B**. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).
 
     Select **Create new package** if you need to create a new provisioning package. Otherwise, remove the USB drive.
 
 ### Apply the provisioning package
 A provisioning package is a method for applying settings to Windows 10 without needing to reimage the device. 
-
-> [!NOTE]
-> We recommend connecting **Device B** to an Ethernet or wired connection for the best provisioning experience.
 
 **Set up Device B using the Set up School PCs provisioning package**
 
