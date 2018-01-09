@@ -20,14 +20,6 @@ Hello, IT administrators! In this guide, we'll show you how to quickly and easil
 
 ![Complete these 5 easy IT admin tasks](images/msedu_tib_adminsteps_nologo.png)
 
-## Try out Microsoft Education in 5 easy steps
-
-1. [Log in with your IT admin credentials](#task1)
-2. [Configure a new device with Set up School PCs](#task2)
-3. [Go through Intune for Education express configuration](#task3)
-4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#task4)
-5. [Add new folders to all devices in your tenant](#task5)
-
 > [!NOTE]
 > To get the most out of Microsoft Education, we've pre-configured your tenant for you so you don't need to set it up. A tenant is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
