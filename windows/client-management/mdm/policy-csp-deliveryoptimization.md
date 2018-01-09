@@ -28,9 +28,6 @@ ms.date: 01/03/2018
     <a href="#deliveryoptimization-doallowvpnpeercaching">DeliveryOptimization/DOAllowVPNPeerCaching</a>
   </dd>
   <dd>
-    <a href="#deliveryoptimization-docachehost">DeliveryOptimization/DOCacheHost</a>
-  </dd>
-  <dd>
     <a href="#deliveryoptimization-dodelaybackgrounddownloadfromhttp">DeliveryOptimization/DODelayBackgroundDownloadFromHttp</a>
   </dd>
   <dd>
@@ -196,55 +193,6 @@ The following list shows the supported values:
 -   1 - Allowed.
 
 <!--/SupportedValues-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="deliveryoptimization-docachehost"></a>**DeliveryOptimization/DOCacheHost**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--EndScope-->
-<!--StartDescription-->
-Added in Windows 10, next major update. TBD
-<!--EndDescription-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
