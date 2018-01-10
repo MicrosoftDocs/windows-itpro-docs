@@ -17,7 +17,7 @@ ms.date: 01/09/2018
 **Applies to**
 
 -   Windows 10, version 1709
--   Windows Server <!--does this apply to server? What build?-->
+-   Windows Server
 
 [This information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
@@ -37,7 +37,7 @@ Before you can use this tool, you must turn on data viewing in the **Settings** 
 
     ![Location to turn on data viewing](images/ddv-data-viewing.png)
 
-    By turning on data viewing, Windows can temporarily keep a copy of your diagnostic data after it's sent to Microsoft.  <!--We need to clarify what we mean by temporarily. Is this only until they turn data viewing off? Does the file get deleted at that point? People aren't going to like how vague this is.-->
+    By turning on data viewing, Windows can temporarily keep a copy of your diagnostic data after it's sent to Microsoft.
 
 ### Download the Diagnostic Data Viewer
 Download the app from the [Windows Store Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
@@ -86,5 +86,4 @@ Microsoft collects your diagnostic data based on a sample population of Windows 
 
 - **Event-level sampling.** If your device is part of the random group sending additional data to Microsoft, you will see this icon (Fig. 2) next to every specific event being sent to Microsoft. All of this data is used to help improve the Windows platform.
 
-    ![Icon to review the event-level sampling](images/ddv-event-sample.png)<br>
-    **Fig. 2: Event-level sampling icon**
+    ![Icon to review the event-level sampling](images/ddv-event-sample.png)<br>**Fig. 2: Event-level sampling icon**
