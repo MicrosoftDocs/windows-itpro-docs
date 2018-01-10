@@ -25,6 +25,8 @@ Hello, IT administrators! In this guide, we'll show you how to quickly and easil
 1. [Log in with your IT admin credentials](#task1)
 2. [Configure a new device with Set up School PCs](#task2)
 3. [Go through Intune for Education express configuration](#task3)
+> [!NOTE]
+> It may take some time before some apps are pushed down to your device from Intune for Education. Check again later if you don't see some of the apps you provisioned for the user.
 4. [Buy an app from Microsoft Store for Education and deploy it to devices in your tenant](#task4)
 5. [Add new folders to all devices in your tenant](#task5)
 
@@ -232,4 +234,5 @@ Looking for other IT admin tasks to try?
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) 
 
 ## Get more info
+[Microsoft Education documentation and resources](https://docs.microsoft.com/education/)
 [Microsoft Education Trial in a Box](index.md)
