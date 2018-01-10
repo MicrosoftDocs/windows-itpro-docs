@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 10/19/2017
+ms.date: 01/10/2018
 ms.localizationpriority: medium
 ---
 
@@ -29,6 +29,14 @@ PowerShell scripts to help set up and manage your Microsoft Surface Hub.
     -   [Auto-accepting and declining meeting requests](#auto-accept-meetings-cmdlet)
     -   [Accepting external meeting requests](#accept-ext-meetings-cmdlet)
 
+
+## Prerequisites
+
+To successfully execute these PowerShell scripts, you will need to install the following prerequisites:
+
+- [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://www.microsoft.com/download/details.aspx?id=41950) 
+- [Microsoft Azure Active Directory Module for Windows PowerShell (64-bit version)](http://connect.microsoft.com/site1164/Downloads/DownloadDetails.aspx?DownloadID=59185) 
+- [Windows PowerShell Module for Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)  
 
 ## <a href="" id="scripts-for-admins"></a>PowerShell scripts for Surface Hub administrators
 
