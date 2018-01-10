@@ -17,26 +17,9 @@ ms.date: 01/09/2018
 **Applies to**
 
 -   Windows 10, version 1709
--   Windows Server
-
-<!--does this apply to server? What build?-->
+-   Windows Server <!--does this apply to server? What build?-->
 
 The Diagnostic Data Viewer is a Windows app that lets you review the diagnostic data your device is sending to Microsoft, grouping the info into simple categories based on how it's used by Microsoft.
-
-## Diagnostic Data Viewer features
-The Diagnostic Data Viewer provides you with the following features to view and filter your device's diagnostic data.
-
-### View Events
-The Diagnostic Data Viewer shows diagnostic events in the left column. An event signifies that an some activity occurred and some information was packaged together to sent to Microsoft. 
-Clicking on an event opens up a detailed JSON view which is the exact details uploaded to Microsoft. The information helps Microsoft to continually improve the Windows platform.
-
-### Search 
-There is a search box above the list of diagnostics events. You can enter text you want to search among all the diagnostic event details. The result below will be all the diagnostic events 
-which contain the matching text. Clicking on a resulting event will open the detailed JSON view with the matching text highlighted.
-
-### Filter Categories
-Clicking the 3-line menu icon in the top left of the applicaiton will open the detailed menu. Here you can find a list of categories which signify what these events are used for at Microsoft. You can use
-the check-boxes to filter between the categories.
 
 ## Install and Use the Diagnostic Data Viewer
 You must turn on data viewing and download the app before you can use the Diagnostic Data Viewer to review your device's diagnostic data.
@@ -69,7 +52,24 @@ You must start this app from the **Settings** panel.
     -OR-
 3. Go to **Start** and search for the Diagnostic Data Viewer app.
 
- 
+## Diagnostic Data Viewer features
+The Diagnostic Data Viewer provides you with the following features to view and filter your device's diagnostic data.
+
+### View your diagnostic events
+In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft.
+
+Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows platform.
+
+### Search your diagnostic events
+The **Search** box at the top of the screen lets you search amongst all of the diagnostic event details. The returned search results include any diagnostic event that contains the matching text. 
+
+Selecting an event opens the detailed JSON view, with the matching text highlighted.
+
+### Filter your diagnostic event categories
+The **Menu** icon, located in the top left corner, opens the detailed menu. In here you'll find a list of the categories used by Microsoft 
+
+Clicking the 3-line menu icon in the top left of the applicaiton will open the detailed menu. Here you can find a list of categories which signify what these events are used for at Microsoft. You can use
+the check-boxes to filter between the categories.
 	
 ## Event Feedback
 At the top right of the Diagnostic Data Viewer, there is an icon to provide feedback via the Feedback Hub application. If you selected a certain event in the Diagnostic Data Viewer, the event name will be pre-filled
