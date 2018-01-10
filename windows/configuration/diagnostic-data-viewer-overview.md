@@ -19,6 +19,9 @@ ms.date: 01/09/2018
 -   Windows 10, version 1709
 -   Windows Server <!--does this apply to server? What build?-->
 
+[This information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
+
+## Introduction
 The Diagnostic Data Viewer is a Windows app that lets you review the diagnostic data your device is sending to Microsoft, grouping the info into simple categories based on how it's used by Microsoft.
 
 ## Install and Use the Diagnostic Data Viewer
