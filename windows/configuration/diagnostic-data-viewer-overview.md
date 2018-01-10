@@ -52,49 +52,50 @@ You must start this app from the **Settings** panel.
     -OR-
 3. Go to **Start** and search for the Diagnostic Data Viewer app.
 
-## Diagnostic Data Viewer features
+## Use the Diagnostic Data Viewer
 The Diagnostic Data Viewer provides you with the following features to view and filter your device's diagnostic data.
 
-### View your diagnostic events
-In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft.
+- **View your diagnostic events.** In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
 
-Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows platform.
+    Selecting an event opens the detailed JSON view, which provides the exact details uploaded to Microsoft. Microsoft uses this info to continually improve the Windows platform.
 
-### Search your diagnostic events
-The **Search** box at the top of the screen lets you search amongst all of the diagnostic event details. The returned search results include any diagnostic event that contains the matching text. 
+- **Search your diagnostic events.** The **Search** box at the top of the screen lets you search amongst all of the diagnostic event details. The returned search results include any diagnostic event that contains the matching text. 
 
-Selecting an event opens the detailed JSON view, with the matching text highlighted.
+    Selecting an event opens the detailed JSON view, with the matching text highlighted.
 
-### Filter your diagnostic event categories
-The **Menu** icon, located in the top left corner, opens the detailed menu. In here you'll find a list of the categories used by Microsoft 
+- **Filter your diagnostic event categories.** The 3-line **Menu** icon opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft.
 
-Clicking the 3-line menu icon in the top left of the applicaiton will open the detailed menu. Here you can find a list of categories which signify what these events are used for at Microsoft. You can use
-the check-boxes to filter between the categories.
+    Selecting a check box lets you filter between the diagnostic event categories.
+
+- **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
+
+    >[!Important]
+    >All content in the Feedback Hub is publicly viewable. Therefore, make sure you don't put any personal info into your feedback comments.
+
+    Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
 	
-## Event Feedback
-At the top right of the Diagnostic Data Viewer, there is an icon to provide feedback via the Feedback Hub application. If you selected a certain event in the Diagnostic Data Viewer, the event name will be pre-filled
-in the Feedback Hub template. Please add specific details in the next field labeled "Give us more detail (optional)". 
+## Understand Microsoft sampling processes
+Microsoft collects your diagnostic data based on a sample population of Windows devices. This sampling data is shown in the Diagnostic Data Viewer in 2 ways:
 
-> **Please be Careful When Submitting Feedback!**
-> **Your feedback in the Feedback Hub application is publicly viewable**
-> **Do not put any personal information in your feedback response**
+- **Device-level sampling.**
+
+    ![Icon to review the device-level sampling](ddv-device-sample.png)
+
+- **Event-level sampling.**
+
+    ![Icon to review the event-level sampling](ddv-event-sample.png)
 
 
 
-## Windows Sampling
-Microsoft collects Diagnostic Data from a sample population of Windows devices. This sampling behavior is seen in the application in 2 ways:
-1. Device level sampling
-2. Event level sampling
 
 ### Device level sampling
 If windows device has a chance to be part of group which sends additional diagnostic data to Microsoft. Devices are chosen using a random number. If your device is part of this group, you will see the icon 
 below in the 3-line menu in the Diagnostic Data Viewer. 
 
-![alt text](device_sample.jpg "Device Sampling")
+
 
 
 ### Event level sampling
 If you're device is part of this group sending additional diagnostic data, you will see the icon below next to each event that is up-sampled. This icon indicates that the event is sent to Microsoft
 as part of the additional diagnostic data to help improve the Windows platform.
 
-![alt text](event_sample.jpg "Event Sampling")
