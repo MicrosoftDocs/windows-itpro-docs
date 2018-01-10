@@ -77,25 +77,10 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 ## Understand Microsoft sampling processes
 Microsoft collects your diagnostic data based on a sample population of Windows devices. This sampling data is shown in the Diagnostic Data Viewer in 2 ways:
 
-- **Device-level sampling.**
+- **Device-level sampling.** Windows devices are chosen by random number to be part of the group that sends additional data to Microsoft. If your device is part of this group, you'll see this icon in the Diagnostic Data Viewer:
 
-    ![Icon to review the device-level sampling](ddv-device-sample.png)
+    ![Icon to review the device-level sampling](images/ddv-device-sample.png) 
 
-- **Event-level sampling.**
+- **Event-level sampling.** If your device is part of the random group sending additional data to Microsoft, you will see this icon next to every specific event being sent to Microsoft. All of this data is used to help improve the Windows platform.
 
-    ![Icon to review the event-level sampling](ddv-event-sample.png)
-
-
-
-
-### Device level sampling
-If windows device has a chance to be part of group which sends additional diagnostic data to Microsoft. Devices are chosen using a random number. If your device is part of this group, you will see the icon 
-below in the 3-line menu in the Diagnostic Data Viewer. 
-
-
-
-
-### Event level sampling
-If you're device is part of this group sending additional diagnostic data, you will see the icon below next to each event that is up-sampled. This icon indicates that the event is sent to Microsoft
-as part of the additional diagnostic data to help improve the Windows platform.
-
+    ![Icon to review the event-level sampling](images/ddv-event-sample.png) 
