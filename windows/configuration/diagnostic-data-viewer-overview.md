@@ -55,7 +55,7 @@ You must start this app from the **Settings** panel.
     -OR-
 3. Go to **Start** and search for the Diagnostic Data Viewer app.
 
-## Use the Diagnostic Data Viewer
+### Use the Diagnostic Data Viewer
 The Diagnostic Data Viewer provides you with the following features to view and filter your device's diagnostic data.
 
 - **View your diagnostic events.** In the left column, you can review your diagnostic events. These events reflect activities that occurred and were sent to Microsoft. 
