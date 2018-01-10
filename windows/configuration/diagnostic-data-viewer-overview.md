@@ -16,8 +16,8 @@ ms.date: 01/09/2018
 
 **Applies to**
 
--   Windows 10, version 1709
--   Windows Server
+-   Windows 10, Windows Insider Preview
+-   Windows Server, Windows Insider Preview
 
 [This information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
