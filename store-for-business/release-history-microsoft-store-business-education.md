@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 11/30/2017
+ms.date: 1/8/2018
 ---
 
 # Microsoft Store for Business and Education release history
@@ -14,6 +14,10 @@ ms.date: 11/30/2017
 Microsoft Store for Business and Education regularly releases new and improved feaures. Here's a summary of new or updated features in previous releases. 
 
 Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+
+## November 2017
+
+- **Export list of Minecraft: Education Edition users** - Admins and teachers can now export a list of users who have Minecraft: Education Edition licenses assigned to them. Click **Export users**, and Store for Education creates an Excel spreadsheet for you, and saves it as a .csv file.
 
 ## October 2017
 
