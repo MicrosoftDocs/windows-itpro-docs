@@ -73,23 +73,16 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 
     Selecting a check box lets you filter between the diagnostic event categories.
 
+**•	Help to make your Windows experience better.** Microsoft only needs diagnostic data from a small amount of devices to make big improvements to the Windows operating system and ultimately, your experience. If you’re a part of this small device group and you experience issues, Microsoft will collect the associated event diagnostic data, allowing your info to potentially help fix the issue for others.
+
+To signify your contribution, you’ll see this icon (![Icon to review the device-level sampling](images/ddv-device-sample.png)) if your device is part of the group. In addition, if any of your diagnostic data events are sent from your device to Microsoft to help make improvements, you’ll see this icon (![Icon to review the event-level sampling](images/ddv-event-sample.png)). 
+
 - **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
 
     Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
 	
     >[!Important]
     >All content in the Feedback Hub is publicly viewable. Therefore, make sure you don't put any personal info into your feedback comments.
-
-### Microsoft sampling processes
-Microsoft collects your diagnostic data based on a sample population of Windows devices. This sampling data is shown in the Diagnostic Data Viewer in 2 ways:
-
-- **Device-level sampling.** Windows devices are chosen by random number to be part of the group that sends additional data to Microsoft. If your device is part of this group, you'll see this icon (Fig. 1) in the Diagnostic Data Viewer.
-
-    ![Icon to review the device-level sampling](images/ddv-device-sample.png)<br>**Fig. 1: Device-level sampling icon**
-
-- **Event-level sampling.** If your device is part of the random group sending additional data to Microsoft, you might see this icon (Fig. 2) next to specific events. This icon means that the event is part of the additional diagnostic data your device is sending to Microsoft. All of this data is used to help improve the Windows operating system.
-
-    ![Icon to review the event-level sampling](images/ddv-event-sample.png)<br>**Fig. 2: Event-level sampling icon**
 
 ## Turn off data viewing
 When you're done reviewing your diagnostic data, you should turn of data viewing.
