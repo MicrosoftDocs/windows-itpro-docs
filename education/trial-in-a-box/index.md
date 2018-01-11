@@ -22,7 +22,7 @@ ms.date: 12/11/2017
 </br>
 </br>
 
-| ![Get started for Educators](images/teacher_rotated.png) | ![Get started for IT Admins](images/itadmin_rotated.png) |
+| ![Get started for Educators](images/teacher_rotated_resized.png) | ![Get started for IT Admins](images/itadmin_rotated_resized.png) |
 | :---: | :---: | 
 | <span style="font-size: 1.5em">**Educator**</span></br>Enhance students of all abilities by unleashing their creativity, collaboration, and improving problem-solving skills. </br>[Get started](educator-tib-get-started.md) | <span style="font-size: 1.5em">**IT Admin**</span></br>Quickly implement and deploy a full cloud infrastructure that's secure and easy to manage. </br> [Get started](itadmin-tib-get-started.md) |
 

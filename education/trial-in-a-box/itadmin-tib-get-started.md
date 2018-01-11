@@ -37,7 +37,7 @@ If you run into any problems while following the steps in this guide, or you hav
 </br>
 
 ![Log in to Device A](images/admin-TIB-setp-1-jump.png)
-## <a name="it-task1"></a>Step 1. Log in to Device A with your IT Admin credentials
+## <a name="it-task1"></a>Step 1. Log in to Device A with your IT Admin credentials and connect to the school network
 To try out the IT admin tasks, start by logging in as an IT admin.
 
 1. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
@@ -56,7 +56,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
 
 1. From the **Start** menu, find and then click **Microsoft Store** to launch the Store.
 
-    ![Microsoft Store from the Start menu](images/start_microsoft_store)
+    ![Microsoft Store from the Start menu](images/start_microsoft_store.png)
 
 2. Search for the **Set up School PCs** app.
 
