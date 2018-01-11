@@ -25,11 +25,11 @@ Hello, IT administrators! In this guide, we'll show you how to quickly and easil
 
 If you run into any problems while following the steps in this guide, or you have questions about Microsoft Education, see [Microsoft Education support](support-options.md).
 
-## <a name="task1"></a>1. Log in
+## <a name="task1"></a>1. Log in 
 To try out the IT admin tasks, start by logging in as an IT admin.
 
-1. Connect **Device A** to your school's Wi-Fi network or connect with a local Ethernet connection.
-2. Log in using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+1. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
 3. Register both devices with the hardware manufacturer to activate the manufacturer's warranty.
 
 ## <a name="task2"></a>2. Configure a new device with Set up School PCs
@@ -40,7 +40,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
 ### Connect, download, and install Set up School PCs app
 
 1. Download the latest <a href="https://educationstore.microsoft.com/en-us/store/details/set-up-school-pcs/9nblggh4ls40" target="_blank">Set up School PCs app from the Microsoft Store for Education</a>. 
-2. Install the app on the Trial in a Box **Device A**.
+2. Install the app on **Device A**.
 
 ### Create the provisioning package
 
@@ -202,12 +202,19 @@ Update settings for all devices in your tenant by adding the **Documents** and *
 
 4. **Save** your changes.
 
-## <a name="othertasks"></a>Other tasks
-Looking for other IT admin tasks to try? 
+## <a name="othertasks"></a>Verify correct device setup and other IT admin tasks
+Follow these instructions to confirm if you configured your tenant correctly and the right apps and settings were applied to all users or devices on your tenant:
+
 * [Verify correct device setup](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) 
+
     1. Confirm that the apps you bought from the Microsoft Store for Education appear in the Windows Start screen's **Recently added** section.
+
+        > [!NOTE]
+        > It may take some time before the apps appear on your devices. When you select **Start**, some apps may show up under **Recently added** while others may say that **Add is in progress**. Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps down to your devices. 
+
     2. Confirm that the folders you added, if you chose to customize the Windows interface from Intune for Education, appear in the Start menu.
     3. If you added **Office 365 for Windows 10 S (Education Preview)** to the package and provisioned **Device B** with it, you need to click on one of the Office apps in the **Start** menu to complete app registration. 
+
 * [Verify the device is Azure AD joined](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
 * [Add more users](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Office 365 admin center to add more users.
 * Get app updates (including updates for Office 365 for Windows 10 S)
@@ -217,4 +224,5 @@ Looking for other IT admin tasks to try?
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) 
 
 ## Get more info
+[Microsoft Education documentation and resources](https://docs.microsoft.com/education/)
 [Microsoft Education Trial in a Box](index.md)

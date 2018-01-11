@@ -6,6 +6,11 @@
 "redirect_document_id": true
 },
 {
+"source_path": "devices/surface/surface-device-compatibility-with-windows-10-ltsb.md",
+"redirect_url": "/devices/surface/surface-device-compatibility-with-windows-10-ltsc",
+"redirect_document_id": true
+},
+{
 "source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
 "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
 "redirect_document_id": true
