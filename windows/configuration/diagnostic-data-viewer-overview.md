@@ -69,7 +69,7 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 
     Selecting an event opens the detailed JSON view, with the matching text highlighted.
 
-- **Filter your diagnostic event categories.** The 3-line **Menu** icon opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft.
+- **Filter your diagnostic event categories.** The apps Menu button opens the detailed menu. In here, you'll find a list of diagnostic event categories, which define how the events are used by Microsoft.
 
     Selecting a check box lets you filter between the diagnostic event categories.
 
