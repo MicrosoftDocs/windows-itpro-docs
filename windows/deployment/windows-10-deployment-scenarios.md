@@ -146,15 +146,9 @@ Modern deployment methods embrace both traditional on-prem and cloud services to
 ### Windows AutoPilot
 
 Windows AutoPilot is a new suite of capabilities designed to simplify and modernize the deployment and management of new Windows 10 PCs. Windows AutoPilot enables IT professionals to customize the Out of Box Experience (OOBE) for Windows 10 PCs and provide end users with a fully configured new Windows 10 device after just a few clicks. There are no images to deploy, no drivers to inject, and no infrastructure to manage. Users can go through the deployment process independently, without the need consult their IT administrator.
-<<<<<<< HEAD
 
 For more information about Windows AutoPilot, see [Overview of Windows AutoPilot](https://docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot) and [Modernizing Windows deployment with Windows AutoPilot](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/).
 
-=======
-
-For more information about Windows AutoPilot, see [Overview of Windows AutoPilot](https://docs.microsoft.com/en-us/windows/deployment/windows-10-auto-pilot) and [Modernizing Windows deployment with Windows AutoPilot](https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/).
-
->>>>>>> 241cf4ccaccc0d9f3fb395c2bed11796951d7d69
 ### In-place upgrade
 
 For existing computers running Windows 7, Windows 8, or Windows 8.1, the recommended path for organizations deploying Windows 10 leverages the Windows installation program (Setup.exe) to perform an in-place upgrade, which automatically preserves all data, settings, applications, and drivers from the existing operating system version. This requires the least IT effort, because there is no need for any complex deployment infrastructure.
