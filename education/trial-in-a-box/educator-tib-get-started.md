@@ -107,7 +107,15 @@ Learn about Code Builder for Minecraft: Education Edition.
 5. Double click on the world to launch it in Minecraft: Education Edition.
 6. Once inside the world, click **Play** and use the guide to walk around and click on the different subject area examples to learn more about teaching and learning with Minecraft: Education Edition. 
 
-  To visit a specific subject area section, right click on the button under the name of that subject area. Remember that the mouse works as your “eyes” in the game. Simply move your mouse around to look around the world. Use the Minecraft Controls key included below to walk forwards, backwards, left, and right in the game. Explore and have fun!
+  To visit a specific subject area section, right click on the button under the name of that subject area. Remember that the mouse works as your “eyes” in the game. Simply move your mouse around to look around the world. 
+* To move forward, use the W key.  
+* To move left, use the A key. 
+* To move right, The D key. 
+* And to move backward, use the S key.
+* Want to get a bird’s eye view of the world? Double tap the space bar.
+* To safely land, hold the shift key
+
+To try more advanced movements or building within Minecraft, use the Minecraft Controls Diagram.
 
   ![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
 
