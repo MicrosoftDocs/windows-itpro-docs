@@ -1,5 +1,5 @@
 ---
-title: Get started for Educators
+title: Educator Trial in a Box Guide
 description: Need help or have a question about using Microsoft Education? Start here. 
 keywords: support, troubleshooting, education, Microsoft Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
@@ -11,24 +11,31 @@ ms.pagetype: edu
 ROBOTS: noindex,nofollow
 author: CelesteDG
 ms.author: celested
-ms.date: 12/11/2017
+ms.date: 01/12/2017
 ---
 
-# Get started for Educators
-Hello, Teachers! In this guide we'll show you how you can quickly and easily try out a few transformational tools in Microsoft Education.
+# Educator Trial in a Box Guide
 
-Connect the device to your school's Wi-Fi and then log-in with your teacher credentials included with your Trial in a Box.
+![Welcome, Educators!](images/Welocme-Educators.png)
 
-![Explore these four tools for educators](images/msedu_tib_teachersteps_nologo.png)
+<span style="font-size: 1.5em">This guide shows you how to quickly and easily try a few transformational tools from Microsoft Education in 5 quick steps.</span>
 
-## Explore these four tools in Microsoft Education
+|  |  |
+| :---: |:--- |
+| ![Connect the device to Wi-Fi](images/edu-TIB-setp-1.png) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
+| ![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2.png) | **Interested in dramatically improving your students' reading speed and comprehension?** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
+| ![Launch Microsoft Teams](images/edu-TIB-setp-3.png) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
+| ![Open OneNote](images/edu-TIB-setp-4.png) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
+| ![Play with Minecraft: Education Edition](images/edu-TIB-setp-5.png) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+|  |  |
 
-1. [Microsoft Learning Tools](#1-microsoft-learning-tools)
-2. [Microsoft Teams](#2-microsoft-teams)
-3. [OneNote](#3-onenote)
-4. [Minecraft: Education Edition](#4-minecraft-education-edition)
+## <a name="edu-task1"></a>Step 1. Log in
+To try out the educator tasks, start by logging in as a teacher.
 
-## 1. Microsoft Learning Tools
+1. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
+2. Connect to your school's Wi-Fi network or connect with a local Ethernet connection.
+
+## <a name="edu-task2"></a>Step 2. Improve student reading speed and comprehension
 Learning Tools is a set of features available in Word, OneNote, and the Edge browser that helps:
 * Increase fluency for English language learners
 * Build confidence for emerging readers
@@ -52,7 +59,7 @@ See how Microsoft Learning Tools change lives.
   | :------------: | :--------------: | :-------------: | :--------: |
   | ![Word Online Text to Speech](images/wordonline_tts.png) | ![Word Online Text Preferences](images/wordonline_text_preferences.png) | ![Word Online Grammar Options](images/wordonline_grammar_options.png) | ![Word Online Line Focus](images/wordonline_line_focus.png) |
 
-## 2. Microsoft Teams
+## <a name="edu-task3"></a>Step 3. Spark communication, critical thinking, and creativity in the classroom
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
 
 See how Microsoft Teams for Education works in the classroom.
@@ -64,7 +71,7 @@ See how Microsoft Teams for Education works in the classroom.
 1. Open your browser and visit <a href="https://msteamsdemo.azurewebsites.net/" target="_blank">https://msteamsdemo.azurewebsites.net/</a>.
 2. Follow along with the guide.
 
-## 3. OneNote
+## <a name="edu-task4"></a>Step 4. Expand classroom collaboration and interaction between students
 OneNote acts as an unlimited digital canvas for the whole class to store text, images, handwritten drawings, attachments, links, voice, video, and more. See how a group project comes together with opportunities to interact with other students, multimedia, and sophisticated drawing tools. This one works best with your digital pen! 
 
 Watch how OneNote allows teachers to differentiate instruction to allow for collaboration.
@@ -88,7 +95,7 @@ Watch how OneNote allows teachers to differentiate instruction to allow for coll
 
     ![OneNote Researcher](images/onenote_researcher.png)
 
-## 4. Minecraft: Education Edition
+## <a name="edu-task5"></a>Step 5. Get kids to further collaborate and problem solve
 Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
 
 Learn about Code Builder for Minecraft: Education Edition.
