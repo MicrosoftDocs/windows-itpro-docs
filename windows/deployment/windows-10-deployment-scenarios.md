@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
-ms.date: 12/18/2017
+ms.date: 01/10/2018
 author: greg-lindsay
 ---
 
@@ -22,20 +22,6 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
 - Modern deployment methods are recommended unless you have a specific need to use a different procedure. 
 - Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
 - Traditional deployment methods use tools such as Microsoft Deployment Toolkit (MDT) and System Center Configuration Manager.<br>&nbsp;
-
-<table cellspacing="0" cellpadding="0">
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
-<tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
-
-[Analyze log files](#analyze-log-files) in order to determine the files or registry entires that are blocking data migration. 
-
-This error can be due to a problem with user profiles. It can occur due to corrupt registry entries under **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList** or invalid files in the **\\Users** directory. 
-
-Note: If a previous upgrade did not complete, invalid profiles might exist in the **Windows.old\\Users** directory.
-
-To repair this error, ensure that deleted accounts are not still present in the Windows registry and that files under the \\Users directory are valid. Delete the invalid files or user profiles that are causing this error. The specific files and profiles that are causing the error will be recorded in the Windows setup log files.  
-
-</table>
 
 <table border="1">
   <tr><td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Category</b></td>
@@ -228,7 +214,7 @@ The traditional deployment scenario can be divided into different sub-scenarios.
 
 ### New computer
 
-This scenario occurs when you have a blank machine you need to deploy, or an existing machine you want to wipe and redeploy without needing to preserve any existing data. The setup starts from a boot media, using CD, USB, ISO, or Pre-Boot Execution Environment (PXE). You can also generate a full offline media that includes all the files needed for a client deployment, allowing you to deploy without having to connect to a central deployment share. The target can be a physical computer, a virtual machine, or a Virtual Hard Disk (VHD) running on a physical computer (boot from VHD).
+Also called a "bare metal" deployment. This scenario occurs when you have a blank machine you need to deploy, or an existing machine you want to wipe and redeploy without needing to preserve any existing data. The setup starts from a boot media, using CD, USB, ISO, or Pre-Boot Execution Environment (PXE). You can also generate a full offline media that includes all the files needed for a client deployment, allowing you to deploy without having to connect to a central deployment share. The target can be a physical computer, a virtual machine, or a Virtual Hard Disk (VHD) running on a physical computer (boot from VHD).
 
 The deployment process for the new machine scenario is as follows:
 
