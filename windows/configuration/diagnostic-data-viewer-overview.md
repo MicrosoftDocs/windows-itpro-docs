@@ -53,7 +53,7 @@ You must start this app from the **Settings** panel.
 
     Go to **Start** and search for _Diagnostic Data Viewer_.
 
-3. Close the Diagnostic Data Viewer app, use your device as you normally would for a few days, and then open Diganostic Data Viewer again to review the updated list of diagnostic data.
+3. Close the Diagnostic Data Viewer app, use your device as you normally would for a few days, and then open Diagnostic Data Viewer again to review the updated list of diagnostic data.
 
     >[!Important]
     >Turning on data viewing can use up to 1GB of disk space on your system drive. We strongly recommend that your turn off data viewing when you're done using the Diagnostic Data Viewer. For info about turning off data viewing, see the [Turn off data viewing](#turn-off-data-viewing) section in this article.
@@ -111,6 +111,6 @@ You can review additional Windows Error Reporting diagnostic data in the **View 
 
     Go to **Start** and search for _Problem Reports_.
 
-    The **Review problem reports** sceen opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.
+    The **Review problem reports** tool opens, showing you your Windows Error Reporting reports, along with a status about whether it was sent to Microsoft.
 
     ![View problem reports tool with report statuses](images/ddv-problem-reports-screen.png)
