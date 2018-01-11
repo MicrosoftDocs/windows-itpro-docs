@@ -22,12 +22,12 @@ ms.date: 01/12/2017
 
 |  |  |
 | :---: |:--- |
-| ![Connect the device to Wi-Fi](images/edu-TIB-setp-1.png) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
-| ![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2.png) | **Interested in dramatically improving your students' reading speed and comprehension?** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
-| ![Launch Microsoft Teams](images/edu-TIB-setp-3.png) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
-| ![Open OneNote](images/edu-TIB-setp-4.png) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
-| ![Play with Minecraft: Education Edition](images/edu-TIB-setp-5.png) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
-| ![Inspire with the Photos app](images/edu-TIB-setp-6.png) | **Want to inspire your students to tell better stories?** </br>Use the [Photos](#edu-task6) app to create movies with photos, videos, music, 3D models, and special effects. |
+| [![Connect the device to Wi-Fi](images/edu-TIB-setp-1.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
+| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2.png)](#edu-task2) | **Interested in dramatically improving your students' reading speed and comprehension?** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
+| [![Launch Microsoft Teams](images/edu-TIB-setp-3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
+| [![Open OneNote](images/edu-TIB-setp-4.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
+| [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5.png)](#edu-task5) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+| [![Inspire with the Photos app](images/edu-TIB-setp-6.png)](#edu-task6) | **Want to inspire your students to tell better stories?** </br>Use the [Photos](#edu-task6) app to create movies with photos, videos, music, 3D models, and special effects. |
 |  |  |
 
 </br>
