@@ -20,6 +20,12 @@ ms.date: 12/11/2017
 
 </br>
 </br>
+
+**TBD - Placeholder video**
+<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+</br>
+</br>
 </br>
 
 | ![Get started for Educators](images/teacher_rotated_resized.png) | ![Get started for IT Admins](images/itadmin_rotated_resized.png) |
