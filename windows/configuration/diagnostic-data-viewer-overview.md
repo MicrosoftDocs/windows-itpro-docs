@@ -32,7 +32,7 @@ Before you can use this tool, you must turn on data viewing in the **Settings** 
 **To turn on data viewing**
 1. Go to **Start**, select **Settings** > **Privacy** > **Feedback & diagnostics**.
 
-2. Under **Diagnostic data**, turn on the **If data viewing is enabled, you can syour diagnostics data** option.
+2. Under **Diagnostic data**, turn on the **If data viewing is enabled, you can see your diagnostics data** option.
 
     ![Location to turn on data viewing](images/ddv-data-viewing.png)
 
@@ -75,15 +75,15 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 
 - **Provide diagnostic event feedback.** The **Feedback** icon opens the Feedback Hub app, letting you provide feedback about the Diagnostic Data Viewer and the diagnostic events.
 
+    Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
+	
     >[!Important]
     >All content in the Feedback Hub is publicly viewable. Therefore, make sure you don't put any personal info into your feedback comments.
 
-    Selecting a specific event in the Diagnostic Data Viewer automatically fills in the field in the Feedback Hub. You can add your comments to the box labeled, **Give us more detail (optional)**.
-	
 ## Microsoft sampling processes
 Microsoft collects your diagnostic data based on a sample population of Windows devices. This sampling data is shown in the Diagnostic Data Viewer in 2 ways:
 
-- **Device-level sampling.** Windows devices are chosen by random number to be part of the group that sends additional data to Microsoft. If your device is part of this group, you'll see this icon (Fig. 1) in the Diagnostic Data Viewer:
+- **Device-level sampling.** Windows devices are chosen by random number to be part of the group that sends additional data to Microsoft. If your device is part of this group, you'll see this icon (Fig. 1) in the Diagnostic Data Viewer.
 
     ![Icon to review the device-level sampling](images/ddv-device-sample.png)<br>**Fig. 1: Device-level sampling icon**
 
@@ -97,7 +97,7 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
 **To turn off data viewing**
 1. Go to **Start**, select **Settings** > **Privacy** > **Feedback & diagnostics**.
 
-2. Under **Diagnostic data**, turn off the **If data viewing is enabled, you can syour diagnostics data** option.
+2. Under **Diagnostic data**, turn off the **If data viewing is enabled, you can see your diagnostics data** option.
 
     ![Location to turn off data viewing](images/ddv-settings-off.png)
 
