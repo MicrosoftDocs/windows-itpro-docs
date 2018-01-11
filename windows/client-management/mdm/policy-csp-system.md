@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 12/19/2017
 ---
 
 # Policy CSP - System
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -47,10 +49,16 @@ ms.date: 12/14/2017
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
   </dd>
   <dd>
+    <a href="#system-disableenterpriseauthproxy">System/DisableEnterpriseAuthProxy</a>
+  </dd>
+  <dd>
     <a href="#system-disableonedrivefilesync">System/DisableOneDriveFileSync</a>
   </dd>
   <dd>
     <a href="#system-disablesystemrestore">System/DisableSystemRestore</a>
+  </dd>
+  <dd>
+    <a href="#system-feedbackhubalwayssavediagnosticslocally">System/FeedbackHubAlwaysSaveDiagnosticsLocally</a>
   </dd>
   <dd>
     <a href="#system-limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
@@ -603,6 +611,50 @@ ADMX Info:
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
+<a href="" id="system-disableenterpriseauthproxy"></a>**System/DisableEnterpriseAuthProxy**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+This policy setting blocks the Connected User Experience and Telemetry service from automatically using an authenticated proxy to send data back to Microsoft on Windows 10. If you disable or do not configure this policy setting, the Connected User Experience and Telemetry service will automatically use an authenticated proxy to send data back to Microsoft. Enabling this policy will block the Connected User Experience and Telemetry service from automatically using an authenticated proxy.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
 <a href="" id="system-disableonedrivefilesync"></a>**System/DisableOneDriveFileSync**  
 
 <!--StartSKU-->
@@ -728,6 +780,56 @@ ADMX Info:
 -   GP ADMX file name: *systemrestore.admx*
 
 <!--EndADMX-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="system-feedbackhubalwayssavediagnosticslocally"></a>**System/FeedbackHubAlwaysSaveDiagnosticsLocally**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+Added in Windows 10, next major update. When filing feedback in the Feedback Hub, diagnostic logs are collected for certain types of feedback. We now offer the option for users to save it locally, in addition to sending it to Microsoft. This policy will allow enterprises to mandate that all diagnostics are saved locally for use in internal investigations.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:  
+
+- 0 (default) - False. The Feedback Hub will not always save a local copy of diagnostics that may be created when a feedback is submitted. The user will have the option to do so.
+- 1 - True. The Feedback Hub should always save a local copy of diagnostics that may be created when a feedback is submitted.
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

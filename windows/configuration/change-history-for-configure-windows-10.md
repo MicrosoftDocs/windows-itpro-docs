@@ -19,6 +19,7 @@ This topic lists new and updated topics in the [Configure Windows 10](index.md) 
 
 New or changed topic | Description
 --- | ---
+[ConnectivityProfiles](wcd/wcd-connectivityprofiles.md) | Added settings for VPN **Native** and **Third Party** profile types.
 [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Clarified that the TopMFUApps elements in layoutmodification.xml are not supported in Windows 10, version 1709.
 
 ## November 2017
