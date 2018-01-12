@@ -32,12 +32,11 @@ ms.date: 12/11/2017
 </br>
 To get the most out of Microsoft Education, we've pre-configured your tenant for you so you don't need to set it up. A tenant is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
-If you run into any problems while following the steps in this guide, or you have questions about Trial in a Box, see [Trial in a Box Support](support-options.md).
+If you run into any problems while following the steps in this guide, or you have questions about Trial in a Box or Microsoft Education, see [Microsoft Education Support](support-options.md).
 
 </br>
 
-![Log in to Device A](images/admin-TIB-setp-1-jump.png)
-## <a name="it-task1"></a>Step 1. Log in to Device A with your IT Admin credentials and connect to the school network
+## ![Log in to Device A](images/admin-TIB-setp-1-jump.png) <a name="it-task1"></a>Step 1. Log in to Device A with your IT Admin credentials and connect to the school network
 To try out the IT admin tasks, start by logging in as an IT admin.
 
 1. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
@@ -46,8 +45,7 @@ To try out the IT admin tasks, start by logging in as an IT admin.
 
 </br>
 
-![Configure Device B with Set up School PCs](images/admin-TIB-setp-2-jump.png)
-## <a name="it-task2"></a>Step 2. Configure Device B with Set up School PCs
+## ![Configure Device B with Set up School PCs](images/admin-TIB-setp-2-jump.png) <a name="it-task2"></a>Step 2. Configure Device B with Set up School PCs
 Now you're ready to learn how to configure a brand new device. You will start on **Device A** by downloading and running the Set up School PCs app. Then, you will configure **Device B**.
 
 If you've previously used Set up School PCs to provision student devices, you can follow the instructions in this section to quickly configure **Device B**. Otherwise, we recommend you follow the instructions in [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app) for more detailed information, including tips for successfully running Set up School PCs.
@@ -83,7 +81,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
 
 6. In **Configure student PC settings**, you can specify other settings for the student PC.
 
-    We recommend the highlighted settings:
+    We recommend checking the highlighted settings below:
 
     ![Configure student PC settings](images/suspc_configure_pcsettings_selected.png)
 
@@ -109,6 +107,8 @@ If you've previously used Set up School PCs to provision student devices, you ca
   3. Enter the assessment URL. 
 
 8. **Add recommended apps** lets you choose from a set of recommended Microsoft Store apps to provision. 
+
+    ![Recommended apps in Set up School PCs package configuration](images/suspc_configure_recommendedapps.png)
 
     The recommended apps include the following:
     * **Office 365 for Windows 10 S (Education Preview)** - This is perfect for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail.
@@ -154,8 +154,7 @@ You can complete the rest of the IT admin tasks using **Device A**.
 
 </br>
 
-![Express configure Intune for Education](images/admin-TIB-setp-3-jump.png)
-## <a name="it-task3"></a>Step 3. Express configure Intune for Education to manage devices, users, and policies
+## ![Express configure Intune for Education](images/admin-TIB-setp-3-jump.png) <a name="it-task3"></a>Step 3. Express configure Intune for Education to manage devices, users, and policies
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. 
@@ -185,8 +184,7 @@ Intune for Education provides an **Express configuration** option so you can get
 
 </br>
 
-![Find apps from the Microsoft Store for Education](images/admin-TIB-setp-4-jump.png)
-## <a name="it-task4"></a>Step 4. Find apps from the Microsoft Store for Education and deploy them to managed devices in your tenant
+## ![Find apps from the Microsoft Store for Education](images/admin-TIB-setp-4-jump.png) <a name="it-task4"></a>Step 4. Find apps from the Microsoft Store for Education and deploy them to managed devices in your tenant
 The Microsoft Store for Education is where you can shop for more apps for your school.
 
 1. In Intune for Education, select **Apps**. 
@@ -219,8 +217,7 @@ The Microsoft Store for Education is where you can shop for more apps for your s
 
 </br>
 
-![Create custom folders that appear on managed devices](images/admin-TIB-setp-5-jump.png)
-## <a name="it-task5"></a>Step 5. Create custom folders that will appear on each managed device's Start menu
+## ![Create custom folders that appear on managed devices](images/admin-TIB-setp-5-jump.png) <a name="it-task5"></a>Step 5. Create custom folders that will appear on each managed device's Start menu
 Update settings for all devices in your tenant by adding the **Documents** and **Downloads** folders to all devices managed in Intune for Education.
 
 1. Go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.
@@ -252,6 +249,8 @@ Follow these instructions to confirm if you configured your tenant correctly and
     3. In the **Downloads and updates** page, click **Get updates**.
 * [Try the BYOD scenario](https://docs.microsoft.com/en-us/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) 
 
+
 ## Get more info
-[Microsoft Education documentation and resources](https://docs.microsoft.com/education/)
-[Microsoft Education Trial in a Box](index.md)
+* Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>
+* Find out if your school is eligible for a device trial at <a href="https://aka.ms/EDUTrialInABox" target="_blank">aka.ms/EDUTrialInABox</a>
+* <a href="https://www.microsoft.com/en-us/education/devices/default.aspx" target="_blank">Buy Windows 10 devices</a>

@@ -23,7 +23,7 @@ ms.date: 01/12/2017
 |  |  |
 | :---: |:--- |
 | [![Connect the device to Wi-Fi](images/edu-TIB-setp-1.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
-| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2.png)](#edu-task2) | **Interested in dramatically improving your students' reading speed and comprehension?** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
+| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2.png)](#edu-task2) | **Interested in drastically improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
 | [![Launch Microsoft Teams](images/edu-TIB-setp-3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
 | [![Open OneNote](images/edu-TIB-setp-4.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
 | [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5.png)](#edu-task5) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
@@ -31,8 +31,7 @@ ms.date: 01/12/2017
 
 </br>
 
-![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png)
-## <a name="edu-task1"></a>Step 1. Log in and connect to the school network
+## ![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) <a name="edu-task1"></a>Step 1. Log in and connect to the school network
 To try out the educator tasks, start by logging in as a teacher.
 
 1. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
@@ -40,23 +39,16 @@ To try out the educator tasks, start by logging in as a teacher.
 
 </br>
 
-![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png)
-## <a name="edu-task2"></a>Step 2. Improve student reading speed and comprehension
+## ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) <a name="edu-task2"></a>Step 2. Drastically improve student reading speed and comprehension
 
 **TBD - Placeholder video. Replace with Learning Tools how-to video**
 <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
-Learning Tools and the Immersive Reader can be used in the Microsoft Edge browser, Microsoft Word, and Microsoft Ontenote to:
+Learning Tools and the Immersive Reader can be used in the Microsoft Edge browser, Microsoft Word, and Microsoft OneNote to:
 * Increase fluency for English language learners
 * Build confidence for emerging readers
 * Provide text decoding solutions for students with learning differences such as dyslexia 
-
-<!--
-See how Microsoft Learning Tools change lives.
-</br>
-<iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c?rel=0" frameborder="0" allowfullscreen></iframe>
--->
 
 **Try this!**
 
@@ -67,7 +59,7 @@ See how Microsoft Learning Tools change lives.
   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
 
 4. Press the **Play** button to hear text read aloud.
-5. Select these different settings to see different ways to configure Immersive Reader for your students.
+5. Select these various settings to see different ways to configure Immersive Reader for your students.
 
   | Text to Speech | Text Preferences | Grammar Options | Line Focus |
   | :------------: | :--------------: | :-------------: | :--------: |
@@ -75,20 +67,15 @@ See how Microsoft Learning Tools change lives.
 
 </br>
 
-![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png)
-## <a name="edu-task3"></a>Step 3. Spark communication, critical thinking, and creativity in the classroom
+## ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) <a name="edu-task3"></a>Step 3. Spark communication, critical thinking, and creativity in the classroom
 
 **TBD - Placeholder video. Replace with Microsoft Teams how-to video**
 <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
-Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark classroom digital discussions, respond to student questions, organize content, and more!  
+Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark digital classroom discussions, respond to student questions, organize content, and more!  
 
-<!--
-See how Microsoft Teams for Education works in the classroom.
-</br>
-<iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg?rel=0" frameborder="0" allowfullscreen></iframe>
--->
+Take a guided tour of Microsoft Teams and test drive this digital hub.
 
 **Try this!**
 
@@ -97,20 +84,13 @@ See how Microsoft Teams for Education works in the classroom.
 
 </br>
 
-![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png)
-## <a name="edu-task4"></a>Step 4. Expand classroom collaboration and interaction between students
+## ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) <a name="edu-task4"></a>Step 4. Expand classroom collaboration and interaction between students
 
 **TBD - Placeholder video. Replace with OneNote how-to video**
 <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 Microsoft OneNote organizes curriculum and lesson plans for teachers and students to work together and at their own pace. It provides a digital canvas to store text, images, handwritten drawings, attachments, links, voice, and video.
-
-<!--
-Watch how OneNote allows teachers to differentiate instruction to allow for collaboration.
-</br>
-<iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o?rel=0" frameborder="0" allowfullscreen></iframe>
--->
 
 **Try this!**
 See how a group project comes together with opportunities to interact with other students and collaborate with peers. This one works best with the digital pen, included with your Trial in a Box.
@@ -133,20 +113,13 @@ See how a group project comes together with opportunities to interact with other
 
 </br>
 
-![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png)
-## <a name="edu-task5"></a>Step 5. Get kids to further collaborate and problem solve
+## ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) <a name="edu-task5"></a>Step 5. Get kids to further collaborate and problem solve
 
 **TBD - Placeholder video. Replace with Minecraft how-to video**
 <center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
-
-<!--
-Learn about Code Builder for Minecraft: Education Edition.
-</br>
-<iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/3rKuSlgqePo?rel=0" frameborder="0" allowfullscreen></iframe>
--->
 
 **Try this!**
 Today, we'll explore a Minecraft world through the eyes of a student.
@@ -175,11 +148,9 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 
 10. Access and adapt over 300 lesson plans, spanning all grades and subjects, to meet your needs. Enjoy exploring new worlds and happy crafting.
 
-  ![Access and adapt over 300 Minecraft lesson plans](images/minecraft_lesson_plans)
-
+  ![Access and adapt over 300 Minecraft lesson plans](images/minecraft_lesson_plans.png)
 
 </br>
-
 
 **Watch what Educators say about Microsoft Education delivering better learning outcomes**
 Bring out the best in students by providing a platform for collaborating, exploring, personalized learning, and getting things done across all devices.
@@ -190,9 +161,16 @@ Bring out the best in students by providing a platform for collaborating, explor
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/CcEIlD4VHUM?rel=0" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
 |  |  |
 
-Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>.</br>
-Find out if your school is eligible for a device trial at <a href="https://aka.ms/EDUTrialInABox" target="_blank">aka.ms/EDUTrialInABox</a>.
-
 
 ## Get more info
-[Education help center](https://support.office.com/en-us/education)</br>
+* Learn more at <a href="https://www.microsoft.com/education" target="_blank">microsoft.com/education</a>
+* Find out if your school is eligible for a device trial at <a href="https://aka.ms/EDUTrialInABox" target="_blank">aka.ms/EDUTrialInABox</a>
+* <a href="https://www.microsoft.com/en-us/education/devices/default.aspx" target="_blank">Buy Windows 10 devices</a>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<a name="footnote1"></a><sup>1</sup> <small>OneNote in Education Learning Tools transform the student experience.</small>
