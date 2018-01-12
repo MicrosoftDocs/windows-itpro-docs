@@ -31,6 +31,11 @@ ms.date: 01/12/2017
 
 </br>
 
+**Coming soon - Educator Get Started video**
+<center><iframe width="560" height="315" src="https://aka.ms/EDU-Get-Started" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+</br>
+
 ## ![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) <a name="edu-task1"></a>Step 1. Log in and connect to the school network
 To try out the educator tasks, start by logging in as a teacher.
 
@@ -41,8 +46,8 @@ To try out the educator tasks, start by logging in as a teacher.
 
 ## ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) <a name="edu-task2"></a>Step 2. Drastically improve student reading speed and comprehension
 
-**TBD - Placeholder video. Replace with Learning Tools how-to video**
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+**Coming soon - Learning Tools how-to video**
+<center><iframe width="560" height="315" src="https://aka.ms/EDU-Learning-Tools" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 Learning Tools and the Immersive Reader can be used in the Microsoft Edge browser, Microsoft Word, and Microsoft OneNote to:
@@ -53,13 +58,14 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 **Try this!**
 
 1. On the **Start** menu, click the Word document titled **Design Think**.
-2. Select the **View** menu.
-3. Select the **Immersive Reader** button.  
+2. Click **Edit Document** and select **Edit in Browser**.
+3. Select the **View** menu.
+4. Select the **Immersive Reader** button.  
 
   ![Word Online's Immersive Reader](images/word_online_immersive_reader.png)
 
-4. Press the **Play** button to hear text read aloud.
-5. Select these various settings to see different ways to configure Immersive Reader for your students.
+5. Press the **Play** button to hear text read aloud.
+6. Select these various settings to see different ways to configure Immersive Reader for your students.
 
   | Text to Speech | Text Preferences | Grammar Options | Line Focus |
   | :------------: | :--------------: | :-------------: | :--------: |
@@ -69,8 +75,8 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 ## ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) <a name="edu-task3"></a>Step 3. Spark communication, critical thinking, and creativity in the classroom
 
-**TBD - Placeholder video. Replace with Microsoft Teams how-to video**
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+**Coming soon - Microsoft Teams how-to video**
+<center><iframe width="560" height="315" src="https://aka.ms/EDU-Teams" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark digital classroom discussions, respond to student questions, organize content, and more!  
@@ -86,8 +92,8 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 
 ## ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) <a name="edu-task4"></a>Step 4. Expand classroom collaboration and interaction between students
 
-**TBD - Placeholder video. Replace with OneNote how-to video**
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+**Coming soon - OneNote how-to video**
+<center><iframe width="560" height="315" src="https://aka.ms/EDU-OneNote" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 Microsoft OneNote organizes curriculum and lesson plans for teachers and students to work together and at their own pace. It provides a digital canvas to store text, images, handwritten drawings, attachments, links, voice, and video.
@@ -115,8 +121,8 @@ See how a group project comes together with opportunities to interact with other
 
 ## ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) <a name="edu-task5"></a>Step 5. Get kids to further collaborate and problem solve
 
-**TBD - Placeholder video. Replace with Minecraft how-to video**
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/c7_3_MukBjQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+**Coming soon - Minecraft how-to video**
+<center><iframe width="560" height="315" src="https://aka.ms/EDU-Minecraft-EE" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
 
 Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
@@ -124,7 +130,7 @@ Minecraft: Education Edition provides an immersive environment to develop creati
 **Try this!**
 Today, we'll explore a Minecraft world through the eyes of a student.
 
-1. First, connect the included mouse to your computer for optimal interaction. 
+1. Connect the included mouse to your computer for optimal interaction. 
 2. Open Microsoft Edge and visit <a href="https://aka.ms/lessonhub" target="_blank">https://aka.ms/lessonhub</a>.
 3. Scroll down to the **Details** section and select **Download World**.
 
@@ -132,21 +138,29 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 
 4. When prompted, save the world.
 5. Enter your same teacher username and password and click **Accept**.
-6. Click **Play** to enter the world.
-7. Explore the world by using the keys on your keyboard.
+6. Click **OK** on the **Minecraft: Education Edition Free Trial** box.
+7. Click **Play**.
+8. Click **Lesson Hub Vol 1** to enter the downloaded world.
+9. Explore the world by using the keys on your keyboard.
   * **W** moves forward.
   * **A** moves left.
   * **D** moves right.
   * **S** moves backward
 
-8. Use your mouse as your "eyes". Just move it to look around.
-9. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.
+10. Use your mouse as your "eyes". Just move it to look around.
+11. For a bird's eye view, double-tap the SPACE BAR. Now press the SPACE BAR to fly higher. And then hold the SHIFT key to safely land.
 
   To try more advanced movements or building within Minecraft, use the Minecraft Controls Diagram.
 
   ![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
 
-10. Access and adapt over 300 lesson plans, spanning all grades and subjects, to meet your needs. Enjoy exploring new worlds and happy crafting.
+12. Access and adapt over 300 lesson plans, spanning all grades and subjects, to meet your needs. Enjoy exploring new worlds and happy crafting.
+
+  **Try this!**
+
+  1. Go to <a href="https://education.minecraft.net" target="_blank">education.minecraft.net/</a>.
+  2. Click **Class Resources**.
+  3. Click **Find a Lesson**.
 
   ![Access and adapt over 300 Minecraft lesson plans](images/minecraft_lesson_plans.png)
 

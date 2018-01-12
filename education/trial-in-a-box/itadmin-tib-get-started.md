@@ -36,6 +36,11 @@ If you run into any problems while following the steps in this guide, or you hav
 
 </br>
 
+**Coming soon - IT Admin Get Started video**
+<center><iframe width="560" height="315" src="https://aka.ms/EDU-IT-Admin-Setup" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+
+</br>
+
 ## ![Log in to Device A](images/admin-TIB-setp-1-jump.png) <a name="it-task1"></a>Step 1. Log in to Device A with your IT Admin credentials and connect to the school network
 To try out the IT admin tasks, start by logging in as an IT admin.
 
