@@ -123,9 +123,9 @@ DG_Readiness_Tool_v3.2.ps1 -Ready
 
 > [!NOTE]
 
-For client machines that are running Windows 10 1703, LSAIso is running whenever Virtualization based security is enabled for other features.
+For client machines that are running Windows 10 1703, LsaIso.exe is running whenever virtualization-based security is enabled for other features.
 
--   If Windows Defender Credential Guard is enabled on a device after it's joined to a domain, the user and device secrets may already be compromised. We recommend that Windows Defender Credential Guard should be enabled before the PC is joined to a domain.
+-   We recommend enabling Windows Defender Credential Guard before a device is joined to a domain. If Windows Defender Credential Guard is enabled after domain join, the user and device secrets may already be compromised. In other words, enabling Credential Guard will not help to secure a device or identity that has already been compromised.  
 
 -   You should perform regular reviews of the PCs that have Windows Defender Credential Guard enabled. This can be done with security audit policies or WMI queries. Here's a list of WinInit event IDs to look for:
     -   **Event ID 13** Windows Defender Credential Guard (LsaIso.exe) was started and will protect LSA credentials.
