@@ -94,7 +94,7 @@ When you're done reviewing your diagnostic data, you should turn of data viewing
 
     ![Location to turn off data viewing](images/ddv-settings-off.png)
 
-## View additional diagnostic data in the Problem Reports tool
+## View additional diagnostic data in the View problem reports tool
 You can review additional Windows Error Reporting diagnostic data in the **View problem reports** tool. This tool provides you with a summary of various crash reports that are sent to Microsoft as part of Windows Error Reporting. We use this data to find and fix specific issues that are hard to replicate and to improve the Windows operating system.
 
 **To view your Windows Error Reporting diagnostic data**
