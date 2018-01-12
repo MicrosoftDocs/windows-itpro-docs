@@ -2583,6 +2583,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-settings.md#settings-allowlanguage" id="settings-allowlanguage">Settings/AllowLanguage</a>
   </dd>
   <dd>
+    <a href="./policy-csp-settings.md#settings-allowonlinetips" id="settings-allowonlinetips">Settings/AllowOnlineTips</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-settings.md#settings-allowpowersleep" id="settings-allowpowersleep">Settings/AllowPowerSleep</a>
   </dd>
   <dd>
