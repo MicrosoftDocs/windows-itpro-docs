@@ -42,7 +42,7 @@ Trial in a Box puts the Microsoft education technology into an easy package so y
 **If you want to try the Educator Experience**
 
 1. Turn on **Device A**.
-2. Connect **Device A** to your school's Wi-Fi network.
+2. Connect **Device A** to your school's Wi-Fi network or connect with a local Ethernet connection.
 3. Log in using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
 4. Click the Educator image or follow the instructions in [Get started for Educators](educator-tib-get-started.md).
 
@@ -50,10 +50,12 @@ Trial in a Box puts the Microsoft education technology into an easy package so y
     
 **If you want to try the IT Administrator Experience**
 
-1. Turn on **Device A**.
-2. Connect **Device A** to your school's Wi-Fi network.
-3. Log in using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
-4. Click the IT Administrator image or follow the instructions in [Get started for IT Admins](itadmin-tib-get-started.md).
+1. Set up **Device A** first.  Setup **Device B** after you have completed setup of **Device A**.
+2. Turn on **Device A**.
+3. Connect **Device A** to your school's Wi-Fi network or connect with a local Ethernet connection.
+4. Log in using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
+5. Please immediately register both devices with your hardware manufacturer to activate the manufacturer's warranty.
+6. Click the IT Administrator image or follow the instructions in [Get started for IT Admins](itadmin-tib-get-started.md).
 
     [![Get started for IT Admins](images/itadmin_rotated.png)](itadmin-tib-get-started.md)
 

@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 11/30/2017
+ms.date: 1/8/2018
 ---
 
 # What's new in Microsoft Store for Business and Education
@@ -15,11 +15,9 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 ## Latest updates for Store for Business and Education
 
-**November 2017**
+**December 2017**
 
-|  |  |
-|-----------------------|---------------------------------|
-| ![Microsoft Store for Business Edcucation, Export users link.](images/msfb-wn-1711-export-user.png) |**Export list of Minecraft: Education Edition users**<br /><br />Admins and teachers can now export a list of users who have Minecraft: Education Edition licenses assigned to them. Click **Export users**, and Store for Education creates an Excel spreadsheet for you, and saves it as a .csv file.<br /><br />**Applies to**:<br /> Microsoft Store for Education |
+We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
@@ -32,8 +30,12 @@ We’ve been working on bug fixes and performance improvements to provide you a 
 
 ## Previous releases and updates
 
+[November 2017](release-history-microsoft-store-business-education.md#november-2017)
+- Export list of Minecraft: Education Edition users
+- Bug fixes and performance improvements
+
 [October 2017](release-history-microsoft-store-business-education.md#october-2017)
-- Bug fixes and permformance improvements. 
+- Bug fixes and permformance improvements 
 
 [September 2017](release-history-microsoft-store-business-education.md#september-2017)
 - Manage Windows device deployment with Windows AutoPilot Deployment
