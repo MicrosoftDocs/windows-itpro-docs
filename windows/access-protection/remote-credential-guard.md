@@ -6,7 +6,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
-ms.date: 08/28/2017
+ms.date: 01/12/2018
 ---
 #  Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
 

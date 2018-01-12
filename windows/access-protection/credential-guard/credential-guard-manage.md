@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
-ms.date: 08/17/2017
+ms.date: 01/12/2018
 ---
 
 # Manage Windows Defender Credential Guard
