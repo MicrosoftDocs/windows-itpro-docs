@@ -617,6 +617,14 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ControlPolicyConflict policies
+
+<dl>
+  <dd>
+    <a href="policy-csp-controlpolicyconflict.md#controlpolicyconflict-mdmwinsovergp" id="controlpolicyconflict-mdmwinsovergp">ControlPolicyConflict/MDMWinsOverGP</a>
+  </dd>
+</dl>
+
 ### CredentialProviders policies
 
 <dl>
