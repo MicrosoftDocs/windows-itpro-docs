@@ -187,6 +187,7 @@
 #### [Camera](policy-csp-camera.md)
 #### [Cellular](policy-csp-cellular.md)
 #### [Connectivity](policy-csp-connectivity.md)
+#### [ControlPolicyConflict](policy-csp-controlpolicyconflict.md)
 #### [CredentialProviders](policy-csp-credentialproviders.md)
 #### [CredentialsUI](policy-csp-credentialsui.md)
 #### [Cryptography](policy-csp-cryptography.md)
