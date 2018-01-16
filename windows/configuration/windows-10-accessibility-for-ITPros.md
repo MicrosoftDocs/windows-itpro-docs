@@ -70,7 +70,7 @@ This topic helps IT administrators learn about built-in accessibility features, 
 
 
 
-## Built into Windows 10 – assistive technology devices. 
+## Assistive technology devices built into Windows 10
 | Assistive technology | How it helps |
 |---------------------------|------------|
 | [Hear text read aloud with Narrator](https://support.microsoft.com/help/17173) | Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.|
@@ -79,6 +79,8 @@ This topic helps IT administrators learn about built-in accessibility features, 
 Narrator is the screen-reading app built into Windows 10. To learn more about using Narrator, read [Get started with Narrator]( https://support.microsoft.com/help/22798/windows-10-narrator-get-started). 
 
 ## Additional resources
-[Designing accessible software]( https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software) 
-[Inclusive Design](https://www.microsoft.com/design/inclusive )
+[Designing accessible software]( https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
+ 
+[Inclusive Design](https://www.microsoft.com/design/inclusive)
+
 [Microsoft Enable](http://enable) 
