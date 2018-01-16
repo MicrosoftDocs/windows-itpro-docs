@@ -2554,6 +2554,9 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-security.md#security-cleartpmifnotready" id="security-cleartpmifnotready">Security/ClearTPMIfNotReady</a>
   </dd>
   <dd>
+    <a href="#./policy-csp-security.mdsecurity-configurewindowspasswords" id="security.mdsecurity-configurewindowspasswords">Security/ConfigureWindowsPasswords</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-security.md#security-preventautomaticdeviceencryptionforazureadjoineddevices" id="security-preventautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
   </dd>
   <dd>
