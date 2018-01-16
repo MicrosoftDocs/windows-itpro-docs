@@ -32,7 +32,7 @@ This topic helps IT administrators learn about built-in accessibility features, 
 | [Customize the size](https://support.microsoft.com/help/27928/windows-10-make-windows-easier-to-see) of screen items | You can adjust the size of text, icons, and other screen items to make them easier to see.|
 | [Improve contrast](https://support.microsoft.com/help/27928/windows-10-make-windows-easier-to-see) | A number of high-contrast themes are available to suit your needs.|
 | [Simplify for focus](https://support.microsoft.com/help/27930) | Reducing animations and turning off background images and transparency can minimize distractions.|
-| [Keep notifications around longer](https://support.microsoft.com/help/27933/windows-10-make-windows-easier-to-hear) | If notifications aren't staying visible long for you to notice them, you can increase the time a notification will be displayed up to five minutes.|
+| [Keep notifications around longer](https://support.microsoft.com/help/27933/windows-10-make-windows-easier-to-hear) | If notifications aren't staying visible long enough for you to notice them, you can increase the time a notification will be displayed up to five minutes.|
 | [Read in Braille](https://support.microsoft.com/help/4004263) | Narrator supports braille displays from more than 35 manufacturers using more than 40 languages and multiple braille variants.|
 
 ## Hearing
@@ -42,7 +42,7 @@ This topic helps IT administrators learn about built-in accessibility features, 
 | [Transcribe with Translator](https://www.skype.com/en/features/skype-translator) | Translator can transcribe voice to text so you won’t miss what’s being said. |
 | [Use Skype for sign language](https://www.skype.com/en/) | Skype is available on a variety of platforms and devices, so you don’t have to worry about whether your co-workers, friends and family can communicate with you.|
 | [Get visual notifications for sounds](https://support.microsoft.com/help/27933/windows-10-make-windows-easier-to-hear) | You can replace audible alerts with visual alerts.|
-| [Keep notifications around longer](https://support.microsoft.com/help/27933/windows-10-make-windows-easier-to-hear)|If notifications aren't staying visible long for you to notice them, you can increase the time a notification will be displayed up to five minutes.|
+| [Keep notifications around longer](https://support.microsoft.com/help/27933/windows-10-make-windows-easier-to-hear)|If notifications aren't staying visible long enough for you to notice them, you can increase the time a notification will be displayed up to five minutes.|
 | [Read spoken words with closed captioning](https://support.microsoft.com/help/21055/windows-10-closed-caption-settings) | You can customize things like color, size, and background transparency to suit your needs and tastes.|
 | [Switch to mono audio](https://support.microsoft.com/help/27933/) | Sending all sounds to both left and right channels is helpful for those with partial hearing loss or deafness in one ear.|
 
@@ -76,11 +76,11 @@ This topic helps IT administrators learn about built-in accessibility features, 
 | [Hear text read aloud with Narrator](https://support.microsoft.com/help/17173) | Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.|
 | [Use Speech Recognition]( https://support.microsoft.com/help/17208 ) | Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.|
 | [Save time with keyboard shortcuts]( https://support.microsoft.com/help/17189) | Keyboard shortcuts for apps and desktops.|
-Narrator is the screen-reading app built into Windows 10. To learn more about using Narrator, read [Get started with Narrator]( https://support.microsoft.com/help/22798/windows-10-narrator-get-started). 
 
 ## Additional resources
+[Windows accessibility](https://www.microsoft.com/Accessibility/windows)
+
 [Designing accessible software]( https://msdn.microsoft.com/windows/uwp/accessibility/designing-inclusive-software)
  
 [Inclusive Design](https://www.microsoft.com/design/inclusive)
 
-[Microsoft Enable](http://enable) 
