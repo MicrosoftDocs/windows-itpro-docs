@@ -82,7 +82,7 @@ Value: DisableRegistration
 The following scenarios do not allow MDM enrollments:
 
 -   Built-in administrator accounts on Windows desktop cannot enroll into MDM.
--   Prior to Windows 10, version 1709, standard users on Windows desktop cannot enroll into MDM via the Work access page in **Settings**. Only admin users can enroll. To enroll a standard user into MDM, we recommend using a provisioning package or joining the device to Azure AD from **Settings** -&gt; **System** -&gt; **About**. Starting in Windows 10, version 1709, standard users can enroll in MDM.
+-   Standard users cannot enroll in MDM. Only admin users can enroll.
 -   Windows 8.1 devices enrolled into MDM via enroll-on-behalf-of (EOBO) can upgrade to Windows 10, but the enrollment is not supported. We recommend performing a server initiated unenroll to remove these enrollments and then enrolling after the upgrade to Windows 10 is completed.
 
 ## Enrollment migration
