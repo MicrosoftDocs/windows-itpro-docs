@@ -58,6 +58,9 @@ ms.date: 12/19/2017
     <a href="#update-branchreadinesslevel">Update/BranchReadinessLevel</a>
   </dd>
   <dd>
+    <a href="#update-configurefeatureupdateuninstallperiod">Update/ConfigureFeatureUpdateUninstallPeriod</a>
+  </dd>
+  <dd>
     <a href="#update-deferfeatureupdatesperiodindays">Update/DeferFeatureUpdatesPeriodInDays</a>
   </dd>
   <dd>
@@ -750,6 +753,42 @@ The following list shows the supported values:
 -  8  {0x8}  - Release Windows Insider build (added in Windows 10, version 1709)
 -  16 {0x10} - (default) Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted).
 -  32 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel.
+
+<!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="update-configurefeatureupdateuninstallperiod"></a>**Update/ConfigureFeatureUpdateUninstallPeriod**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, next major update. Enable IT admin to configure feature update uninstall period. Values range 2 - 60 days. Default is 10 days.
+
+<!--EndDescription-->
+<!--SupportedValues-->
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
@@ -2393,7 +2432,7 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips the check for battery level to ensure that the reboot will happen at ScheduledInstallTime.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips all restart checks to ensure that the reboot will happen at ScheduledInstallTime.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 

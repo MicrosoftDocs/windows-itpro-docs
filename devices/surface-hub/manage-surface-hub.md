@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub
 author: jdeckerms
 ms.author: jdecker
-ms.date: 11/15/2017
+ms.date: 01/17/2018
 ms.localizationpriority: medium
 ---
 
@@ -32,6 +32,7 @@ Learn about managing and updating Surface Hub.
 | [Remote Surface Hub management](remote-surface-hub-management.md) |Topics related to managing your Surface Hub remotely. Include install apps, managing settings with MDM and monitoring with Operations Management Suite. |
 | [Manage Surface Hub settings](manage-surface-hub-settings.md) |Topics related to managing Surface Hub settings: accessibility, device account, device reset, fully qualified domain name, Windows Update settings, and wireless network |
 | [Install apps on your Surface Hub]( https://technet.microsoft.com/itpro/surface-hub/install-apps-on-surface-hub) | Admins can install apps can from either the Microsoft Store or the Microsoft Store for Business.|
+[Configure Surface Hub Start menu](surface-hub-start-menu.md) | Use MDM to customize the Start menu for Surface Hub.
 | [Set up and use Whiteboard to Whiteboard collaboration](whiteboard-collaboration.md)  | Microsoft Whiteboard’s latest update includes the capability for two Surface Hubs to collaborate in real time on the same board.   |
 | [End a meeting with End session](https://technet.microsoft.com/itpro/surface-hub/i-am-done-finishing-your-surface-hub-meeting) | At the end of a meeting, users can tap **End session** to clean up any sensitive data and prepare the device for the next meeting.|
 | [Sign in to Surface Hub with Microsoft Authenticator](surface-hub-authenticator-app.md) | You can sign in to a Surface Hub without a password using the Microsoft Authenticator app, available on Android and iOS.   |

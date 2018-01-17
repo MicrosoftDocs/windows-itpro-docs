@@ -138,7 +138,7 @@ This is an example script with logging that shows how to run a powershell script
 set LOGFILE=%SystemDrive%\my_powershell_script.log
 echo Running my_powershell_script.ps1 in system context >> %LOGFILE%
 echo Executing "PsExec.exe -accepteula -i -s cmd.exe /c powershell.exe my_powershell_script.ps1" >> %LOGFILE%
-PsExec.exe -accepteula -i -s cmd.exe /c powershell.exe my_powershell_script.ps1' >> %LOGFILE%
+PsExec.exe -accepteula -i -s cmd.exe /c 'powershell.exe my_powershell_script.ps1' >> %LOGFILE%
 echo result: %ERRORLEVEL% >> %LOGFILE%
 ```
 
