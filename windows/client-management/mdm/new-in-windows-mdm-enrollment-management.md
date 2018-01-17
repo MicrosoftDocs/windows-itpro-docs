@@ -1465,6 +1465,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</li>
 <li>TaskScheduler/EnableXboxGameSaveTask</li>
 <li>TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</li>
+<li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
 <li>UserRights/ActAsPartOfTheOperatingSystem</li> 
