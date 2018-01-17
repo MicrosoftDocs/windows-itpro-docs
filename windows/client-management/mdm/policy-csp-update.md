@@ -2393,7 +2393,7 @@ Supported values are 2, 4, 8, 12, or 24 (hours).
 
 <!--EndScope-->
 <!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips the check for battery level to ensure that the reboot will happen at ScheduledInstallTime.
+<p style="margin-left: 20px">Added in Windows 10, version 1703. For devices in a cart, this policy skips all restart checks to ensure that the reboot will happen at ScheduledInstallTime.
 
 <p style="margin-left: 20px">The following list shows the supported values:
 
