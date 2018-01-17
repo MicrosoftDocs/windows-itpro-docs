@@ -37,7 +37,7 @@ Before you can use this tool, you must turn on data viewing in the **Settings** 
     ![Location to turn on data viewing](images/ddv-data-viewing.png)
 
 ### Download the Diagnostic Data Viewer
-Download the app from the [Windows Store Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
+Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.microsoft.com/en-us/store/p/diagnostic-data-viewer/9n8wtrrsq8f7?rtc=1) page.
 
 ### Start the Diagnostic Data Viewer
 You must start this app from the **Settings** panel.
