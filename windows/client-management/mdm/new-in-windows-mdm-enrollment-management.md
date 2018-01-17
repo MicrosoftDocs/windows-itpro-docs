@@ -1405,6 +1405,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
+<li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
 <li>Browser/UseSharedFolderForBooks</li>
 <li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</li>
@@ -1455,6 +1456,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
+<li>Security/ConfigureWindowsPasswords</li>
 <li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
 <li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</li>

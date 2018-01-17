@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 10/17/2017
+ms.date: 01/15/2018
 ---
 
 # Configure Windows 10
@@ -33,6 +33,7 @@ Enterprises often need to apply custom configurations to devices for their users
 | [Configure Start, taskbar, and lock screen](start-taskbar-lockscreen.md) | A standard, customized Start layout can be useful on devices that are common to multiple users and devices that are locked down for specialized purposes. Configuring the taskbar allows the organization to pin useful apps for their employees and to remove apps that are pinned by default. |
 | [Cortana integration in your business or enterprise](cortana-at-work/cortana-at-work-overview.md) | The world’s first personal digital assistant helps users get things done, even at work. Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.  |
 | [Configure access to Microsoft Store](stop-employees-from-using-the-windows-store.md) | IT Pros can configure access to Microsoft Store for client computers in their organization. For some organizations, business policies require blocking access to Microsoft Store. |
+| [Accessibility information for IT Pros](windows-10-accessibility-for-ITPros.md) | Windows 10 includes accessibility features that benefit all users. These features make it easier to customize the computer and give users with different abilities options to improve their experience with Windows. This topic helps IT administrators learn about built-in accessibility features. |
 | [Provisioning packages for Windows 10](provisioning-packages/provisioning-packages.md) | Learn how to use the Windows Configuration Designer and provisioning packages to easily configure multiple devices. |
 | [Lockdown features from Windows Embedded 8.1 Industry](lockdown-features-windows-10.md) | Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. |
 | [Change history for Configure Windows 10](change-history-for-configure-windows-10.md) | This topic lists new and updated topics in the Configure Windows 10 documentation for Windows 10 and Windows 10 Mobile. |
