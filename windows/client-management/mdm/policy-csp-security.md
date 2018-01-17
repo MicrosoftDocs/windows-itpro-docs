@@ -6,11 +6,13 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/14/2017
+ms.date: 01/16/2018
 ---
 
 # Policy CSP - Security
 
+> [!WARNING]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 <hr/>
@@ -36,6 +38,9 @@ ms.date: 12/14/2017
   </dd>
   <dd>
     <a href="#security-cleartpmifnotready">Security/ClearTPMIfNotReady</a>
+  </dd>
+  <dd>
+    <a href="#security-configurewindowspasswords">Security/ConfigureWindowsPasswords</a>
   </dd>
   <dd>
     <a href="#security-preventautomaticdeviceencryptionforazureadjoineddevices">Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices</a>
@@ -349,6 +354,63 @@ The following list shows the supported values:
 -   1 – Will prompt to clear the TPM if the TPM is in a non-ready state (or reduced functionality) which can be remediated with a TPM Clear.
 
 <!--/SupportedValues-->
+<!--EndPolicy-->
+<hr/>
+<!--StartPolicy-->
+<a href="" id="security-configurewindowspasswords"></a>**Security/ConfigureWindowsPasswords**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+Added in Windows 10, next major update. Configures the use of passwords for Windows features.
+
+> [!Note]
+> This policy is only supported in Windows 10 S.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-  0 -Disallow passwords (Asymmetric credentials will be promoted to replace passwords on Windows features)
+-  1- Allow passwords (Passwords continue to be allowed to be used for Windows features)
+-  2- Default (Feature defaults as per SKU and device capabilities. Windows 10 S devices will exhibit "Disallow passwords" default, and all other devices will default to "Allow passwords")
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
