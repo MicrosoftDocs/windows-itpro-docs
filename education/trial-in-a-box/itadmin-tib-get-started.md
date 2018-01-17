@@ -22,26 +22,27 @@ ms.date: 12/11/2017
 
 |  |  |
 | :---: |:--- |
-| [![Log in to Device A](images/admin-TIB-setp-1.png)](#it-task1) | [Log in](#it-task1) to **Device A** with your IT Admin credentials and connect to your school's network. |
-| [![Configure Device B with Set up School PCs](images/admin-TIB-setp-2.png)](#it-task2) | [Configure Device B](#it-task2) with the Set up School PCs app. |
-| [![Configure Intune for Education](images/admin-TIB-setp-3.png)](#it-task3) | [Express configure Intune for Education](#it-task3) to manage devices, users, and policies. |
-| [![Buy and deploy apps](images/admin-TIB-setp-4.png)](#it-task4) | [Buy apps from the Microsoft Store for Education](#it-task4) and deploy them to manage devices in your tenant. |
-| [![Create custom folders](images/admin-TIB-setp-5.png)](#it-task5) | [Create custom folders](#it-task5) that will appear on each managed device's **Start** menu. |
+| [![Log in to Device A](images/admin-TIB-setp-1-v2.png)](#it-task1) | [Log in](#it-task1) to **Device A** with your IT Admin credentials and connect to your school's network. |
+| [![Configure Device B with Set up School PCs](images/admin-TIB-setp-2-v2.png)](#it-task2) | [Configure Device B](#it-task2) with the Set up School PCs app. |
+| [![Configure Intune for Education](images/admin-TIB-setp-3-v2.png)](#it-task3) | [Express configure Intune for Education](#it-task3) to manage devices, users, and policies. |
+| [![Buy and deploy apps](images/admin-TIB-setp-4-v2.png)](#it-task4) | [Buy apps from the Microsoft Store for Education](#it-task4) and deploy them to manage devices in your tenant. |
+| [![Create custom folders](images/admin-TIB-setp-5-v2.png)](#it-task5) | [Create custom folders](#it-task5) that will appear on each managed device's **Start** menu. |
 |  |  |
 
 </br>
 To get the most out of Microsoft Education, we've pre-configured your tenant for you so you don't need to set it up. A tenant is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. We've also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
 
-If you run into any problems while following the steps in this guide, or you have questions about Trial in a Box or Microsoft Education, see [Microsoft Education Support](support-options.md).
+If you run into any problems while following the steps in this guide, or you have questions about Trial in a Box or Microsoft Education, see [Microsoft Education Trial in a Box Support](support-options.md).
 
 </br>
-
-**Coming soon - IT Admin Get Started video**
+<!-- hiding placeholder
 <center><iframe width="560" height="315" src="https://aka.ms/EDU-IT-Admin-Setup" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+-->
 
 </br>
 
-## ![Log in to Device A](images/admin-TIB-setp-1-jump.png) <a name="it-task1"></a>Step 1. Log in to Device A with your IT Admin credentials and connect to the school network
+![Log in to Device A](images/admin-TIB-setp-1-jump.png) 
+## <a name="it-task1"></a>1. Log in to Device A with your IT Admin credentials and connect to the school network
 To try out the IT admin tasks, start by logging in as an IT admin.
 
 1. Log in to **Device A** using the **Administrator Username** and **Administrator Password** included in the **Credentials Sheet** located in your kit.
@@ -50,7 +51,8 @@ To try out the IT admin tasks, start by logging in as an IT admin.
 
 </br>
 
-## ![Configure Device B with Set up School PCs](images/admin-TIB-setp-2-jump.png) <a name="it-task2"></a>Step 2. Configure Device B with Set up School PCs
+![Configure Device B with Set up School PCs](images/admin-TIB-setp-2-jump.png) 
+## <a name="it-task2"></a>2. Configure Device B with Set up School PCs
 Now you're ready to learn how to configure a brand new device. You will start on **Device A** by downloading and running the Set up School PCs app. Then, you will configure **Device B**.
 
 If you've previously used Set up School PCs to provision student devices, you can follow the instructions in this section to quickly configure **Device B**. Otherwise, we recommend you follow the instructions in [Use the Set up School PCs app](https://docs.microsoft.com/en-us/education/windows/use-set-up-school-pcs-app) for more detailed information, including tips for successfully running Set up School PCs.
@@ -159,7 +161,8 @@ You can complete the rest of the IT admin tasks using **Device A**.
 
 </br>
 
-## ![Express configure Intune for Education](images/admin-TIB-setp-3-jump.png) <a name="it-task3"></a>Step 3. Express configure Intune for Education to manage devices, users, and policies
+![Express configure Intune for Education](images/admin-TIB-setp-3-jump.png) 
+## <a name="it-task3"></a>3. Express configure Intune for Education to manage devices, users, and policies
 Intune for Education provides an **Express configuration** option so you can get going right away. We'll use that option here.
 
 1. Log into the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>. 
@@ -189,7 +192,8 @@ Intune for Education provides an **Express configuration** option so you can get
 
 </br>
 
-## ![Find apps from the Microsoft Store for Education](images/admin-TIB-setp-4-jump.png) <a name="it-task4"></a>Step 4. Find apps from the Microsoft Store for Education and deploy them to managed devices in your tenant
+![Find apps from the Microsoft Store for Education](images/admin-TIB-setp-4-jump.png) 
+## <a name="it-task4"></a>4. Find apps from the Microsoft Store for Education and deploy them to managed devices in your tenant
 The Microsoft Store for Education is where you can shop for more apps for your school.
 
 1. In Intune for Education, select **Apps**. 
@@ -222,7 +226,8 @@ The Microsoft Store for Education is where you can shop for more apps for your s
 
 </br>
 
-## ![Create custom folders that appear on managed devices](images/admin-TIB-setp-5-jump.png) <a name="it-task5"></a>Step 5. Create custom folders that will appear on each managed device's Start menu
+![Create custom folders that appear on managed devices](images/admin-TIB-setp-5-jump.png) 
+## <a name="it-task5"></a>5. Create custom folders that will appear on each managed device's Start menu
 Update settings for all devices in your tenant by adding the **Documents** and **Downloads** folders to all devices managed in Intune for Education.
 
 1. Go to the <a href="https://intuneeducation.portal.azure.com/" target="_blank">Intune for Education console</a>.

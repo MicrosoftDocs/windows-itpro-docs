@@ -1,5 +1,5 @@
 ---
-title: Trial in a Box Support
+title: Microsoft Education Trial in a Box Support
 description: Need help or have a question about using Microsoft Education Trial in a Box? Start here. 
 keywords: support, troubleshooting, education, Microsoft 365 Education, full cloud IT solution, school, deploy, setup, manage, Windows 10, Intune for Education, Office 365 for Education, Microsoft Store for Education, Set up School PCs
 ms.prod: w10
@@ -14,13 +14,10 @@ ms.author: celested
 ms.date: 12/11/2017
 ---
 
-# Trial in a Box Support
+# Microsoft Education Trial in a Box Support
 Need help or have a question about using Microsoft Education? Start here.
 
-## Troubleshooting tips
-
-### Update your admin contact info
-Update your admin contact info in the Office 365 admin center to help recover your account if you lose access.
+## 1. Confirm your admin contact information is current
 
 1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
 2. In the admin center dashboard, select your profile on the upper righthand corner and select **My account** from the options.
@@ -31,7 +28,30 @@ Update your admin contact info in the Office 365 admin center to help recover yo
 
   ![Complete your contact details](images/o365_adminaccountinfo.png)
 
-### Recover your password
+4. Click **Save**.
+
+## 2. Request a call back
+
+1. Click the **Need help?** button in the lower right-hand corner of the Office 365 console.
+
+  ![Select Need help to get support](images/o365_needhelp.png)
+
+  You will see a sidebar window open up on the right-hand side of the screen.
+
+  ![Option to have a support representative call you](images/o365_needhelp_callingoption.png)
+
+  If you chose to have a support representative call you, a new support ticket will be opened and you can track these in **Support tickets**.
+
+  ![Track your support tickets](images/o365_needhelp_supporttickets.png)
+
+2. Click the **question button** ![Question button](images/o365_needhelp_questionbutton.png) in the top navigation of the sidebar window.
+3. In the field below **Need help?**, enter a description of your help request.
+4. Click the **Get help button**.
+5. In the **Let us call you** section, enter a phone number where you can be reached.
+6. Click the **Call me** button.
+7. A Microsoft Education support representative will call you back.
+
+## Forgot your password?
 Forget your password? Follow these steps to recover it.
 
 1. Go to <a href="https://portal.office.com/" target="_blank">https://portal.office.com</a>
@@ -39,23 +59,8 @@ Forget your password? Follow these steps to recover it.
 
   ![Recover your account](images/officeportal_cantaccessaccount.png)
 
-## Microsoft Education support
-When you need help setting up your device or have a question about using Microsoft Education, follow these steps.
 
-1. Go to the <a href="https://portal.office.com/adminportal/home" target="_blank">Office 365 admin center</a> and sign in with your Office 365 admin credentials.
-2. Select **Need help?** at the bottom of the page.
 
-  ![Select Need help to get support](images/o365_needhelp.png)
-
-3. Choose how you want to get help.
-  * To see available solutions or answers to your question, type your question in the **Need help?** field and select **Get help** to see a list of available solutions including articles.
-  * To talk directly to a support representative, in **Let us call you**, enter the phone number where you can be reached. This section also shows you the expected wait time.
-
-    ![Option to have a support representative call you](images/o365_needhelp_callingoption.png)
-
-    If you chose to have a support representative call you, a new support ticket will be opened and you can track these in **Support tickets**.
-
-    ![Track your support tickets](images/o365_needhelp_supporttickets.png)
 
 ## Get more info
 [Microsoft Education Trial in a Box](index.md)

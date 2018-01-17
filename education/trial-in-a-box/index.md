@@ -19,13 +19,11 @@ ms.date: 12/11/2017
 ![Microsoft Education Trial in a Box - Unlock Limitless Learning](images/Unlock-Limitless-Learning.png)
 
 </br>
-</br>
 
-**Coming soon - Welcome to Trial in a Box video**
+<!-- hiding placeholder
 <center><iframe width="560" height="315" src="https://aka.ms/edu-welcome" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+-->
 
-</br>
-</br>
 </br>
 
 | ![Get started for Educators](images/teacher_rotated_resized.png) | ![Get started for IT Admins](images/itadmin_rotated_resized.png) |

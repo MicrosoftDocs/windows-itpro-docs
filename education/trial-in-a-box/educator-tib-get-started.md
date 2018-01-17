@@ -22,21 +22,22 @@ ms.date: 01/12/2017
 
 |  |  |
 | :---: |:--- |
-| [![Connect the device to Wi-Fi](images/edu-TIB-setp-1.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
-| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2.png)](#edu-task2) | **Interested in drastically improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
-| [![Launch Microsoft Teams](images/edu-TIB-setp-3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
-| [![Open OneNote](images/edu-TIB-setp-4.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
-| [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5.png)](#edu-task5) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+| [![Connect the device to Wi-Fi](images/edu-TIB-setp-1-v2.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
+| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v2.png)](#edu-task2) | **Interested in drastically improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
+| [![Launch Microsoft Teams](images/edu-TIB-setp-3-v2.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
+| [![Open OneNote](images/edu-TIB-setp-4-v2.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
+| [![Play with Minecraft: Education Edition](images/edu-TIB-setp-5-v2.png)](#edu-task5) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task5) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
 |  |  |
 
 </br>
 
-**Coming soon - Educator Get Started video**
+<!-- hiding placeholder
 <center><iframe width="560" height="315" src="https://aka.ms/EDU-Get-Started" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
-
 </br>
+-->
 
-## ![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) <a name="edu-task1"></a>Step 1. Log in and connect to the school network
+![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png) 
+## <a name="edu-task1"></a>1. Log in and connect to the school network
 To try out the educator tasks, start by logging in as a teacher.
 
 1. Log in to **Device A** using the **Teacher Username** and **Teacher Password** included in the **Credentials Sheet** located in your kit.
@@ -44,11 +45,13 @@ To try out the educator tasks, start by logging in as a teacher.
 
 </br>
 
-## ![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) <a name="edu-task2"></a>Step 2. Drastically improve student reading speed and comprehension
+![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png) 
+## <a name="edu-task2"></a>2. Drastically improve student reading speed and comprehension
 
-**Coming soon - Learning Tools how-to video**
+<!-- hiding placeholder
 <center><iframe width="560" height="315" src="https://aka.ms/EDU-Learning-Tools" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
+-->
 
 Learning Tools and the Immersive Reader can be used in the Microsoft Edge browser, Microsoft Word, and Microsoft OneNote to:
 * Increase fluency for English language learners
@@ -73,11 +76,13 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 </br>
 
-## ![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) <a name="edu-task3"></a>Step 3. Spark communication, critical thinking, and creativity in the classroom
+![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png) 
+## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
-**Coming soon - Microsoft Teams how-to video**
+<!-- hiding placeholder
 <center><iframe width="560" height="315" src="https://aka.ms/EDU-Teams" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
+-->
 
 Microsoft Teams is a digital hub that brings conversations, content, and apps together in one place. This guided tour walks you through the essential teaching features of the app. Then, through interactive prompts, experience how you can use this tool in your own classroom to spark digital classroom discussions, respond to student questions, organize content, and more!  
 
@@ -90,11 +95,13 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 
 </br>
 
-## ![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) <a name="edu-task4"></a>Step 4. Expand classroom collaboration and interaction between students
+![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png) 
+## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
 
-**Coming soon - OneNote how-to video**
+<!-- hiding placeholder
 <center><iframe width="560" height="315" src="https://aka.ms/EDU-OneNote" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
+-->
 
 Microsoft OneNote organizes curriculum and lesson plans for teachers and students to work together and at their own pace. It provides a digital canvas to store text, images, handwritten drawings, attachments, links, voice, and video.
 
@@ -119,11 +126,13 @@ See how a group project comes together with opportunities to interact with other
 
 </br>
 
-## ![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) <a name="edu-task5"></a>Step 5. Get kids to further collaborate and problem solve
+![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png) 
+## <a name="edu-task5"></a>5. Get kids to further collaborate and problem solve
 
-**Coming soon - Minecraft how-to video**
+<!-- hiding placeholder
 <center><iframe width="560" height="315" src="https://aka.ms/EDU-Minecraft-EE" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 </br>
+-->
 
 Minecraft: Education Edition provides an immersive environment to develop creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.   
 
@@ -172,7 +181,7 @@ Bring out the best in students by providing a platform for collaborating, explor
 |  |  |
 |:--- |:--- |
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c" frameborder="0" allowfullscreen></iframe></br>See how one school improves reading skills using Learning Tools Immersive Reader | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg" frameborder="0" allowfullscreen></iframe></br>Here's how Microsoft Teams creates more robust classroom experiences at all ages. |
-| <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/CcEIlD4VHUM?rel=0" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
+| <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
 |  |  |
 
 
