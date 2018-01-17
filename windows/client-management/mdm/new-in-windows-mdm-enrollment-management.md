@@ -1456,6 +1456,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
+<li>Security/ConfigureWindowsPasswords</li>
 <li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
 <li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</li>
