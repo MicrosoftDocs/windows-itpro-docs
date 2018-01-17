@@ -32,7 +32,7 @@ Your environment needs the following hardware to run Windows Defender Applicatio
 |Input/Output Memory Management Unit (IOMMU) support|Not required, but strongly recommended|
 
 ## Software requirements
-Your environment needs the following hardware to run Windows Defender Application Guard.
+Your environment needs the following software to run Windows Defender Application Guard.
 
 |Software|Description|
 |--------|-----------|
