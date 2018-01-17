@@ -30,7 +30,7 @@ You must turn on data viewing and download the app before you can use the Diagno
 Before you can use this tool, you must turn on data viewing in the **Settings** panel. Turning on data viewing lets Windows store your device's diagnostic data until you turn it off. Turning off data viewing stops Windows from collecting your diagnostic data and clears the existing diagnostic data from your device.
 
 **To turn on data viewing**
-1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & Feedback**.
+1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
 
 2. Under **Diagnostic data**, turn on the **If data viewing is enabled, you can see your diagnostics data** option.
 
@@ -43,7 +43,7 @@ Download the app from the [Microsoft Store Diagnostic Data Viewer](https://www.m
 You must start this app from the **Settings** panel.
 
 **To start the Diagnostic Data Viewer**
-1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & Feedback**.
+1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
 
 2. Under **Diagnostic data**, select the **Diagnostic Data Viewer** button.
 
@@ -88,7 +88,7 @@ The Diagnostic Data Viewer provides you with the following features to view and 
 When you're done reviewing your diagnostic data, you should turn of data viewing.
 
 **To turn off data viewing**
-1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & Feedback**.
+1. Go to **Start**, select **Settings** > **Privacy** > **Diagnostics & feedback**.
 
 2. Under **Diagnostic data**, turn off the **If data viewing is enabled, you can see your diagnostics data** option.
 
