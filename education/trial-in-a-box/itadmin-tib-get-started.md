@@ -118,7 +118,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
     ![Recommended apps in Set up School PCs package configuration](images/suspc_configure_recommended_apps.png)
 
     The recommended apps include the following:
-    * **Office 365 for Windows 10 S (Education Preview)** - This is perfect for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail.
+    * **Office 365 for Windows 10 S (Education Preview)** - This is optional, but works well for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail. Also note that if you select **Office 365 for Windows 10 S (Education Preview)**, it will take about 30-45 minutes longer for Set up School PCs to create the provisioning package as the app downloads Office 365 for Windows 10 S (Education Preview) from the Microsoft Store.
     * **Minecraft: Education Edition** - Don't select this. This is already provisioned as part of your tenant.
     * **Other apps fit for the classroom** - Optional. Choose other recommended apps to install on the PC.
 
@@ -134,7 +134,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
     The provisioning package on your USB drive will be named SetUpSchoolPCs_*ABCDE* (Expires *MM-DD-YYYY*).ppkg, where *ABCDE* is the device name you added (if any), and *MM-DD-YYYY* is the month, day, and year when the package will expire.
     
     > [!NOTE]
-    > If you selected **Office 365 for Windows 10 S (Education Preview)**, it will take longer for Set up School PCs to create the provisioning package as the app downloads Office 365 for Windows 10 S (Education Preview) from the Microsoft Store. During this time, you can jump ahead to task 3, [Intune for Education express configuration](#task3), and then finish the rest of task 2 afterwards.
+    > If you selected **Office 365 for Windows 10 S (Education Preview)**, this step will take about 30-45 minutes. You can jump ahead to task 3, [Express configure Intune for Education to manage devices, users, and policies](#task3), and then finish the rest of task 2 afterwards.
 
 12. Follow the instructions in the **Get the student PCs ready** page to start setting up **Device B**. 
 13. Follow the instructions in the **Install the package** page to apply the provisioning package to **Device B**. For more guidance, you can follow the steps in [Apply the provisioning package](#apply-the-provisioning-package).
