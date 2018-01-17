@@ -7,9 +7,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-author: eross-msft
-ms.author: lizross
-ms.date: 01/11/2018
+author: brianlic-msft
+ms.author: brianlic
+ms.date: 01/17/2018
 ---
 
 # Diagnostic Data Viewer Overview
