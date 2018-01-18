@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 01/08/2018
+ms.date: 01/12/2018
 ---
 
 # What's new in MDM enrollment and management
@@ -1037,6 +1037,7 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>DeviceGuard/EnableVirtualizationBasedSecurity</li>
 <li>DeviceGuard/RequirePlatformSecurityFeatures</li>
 <li>DeviceGuard/LsaCfgFlags</li>
+<li>DeviceLock/MinimumPasswordAge</li>
 <li>ExploitGuard/ExploitProtectionSettings</li>
 <li>Games/AllowAdvancedGamingServices</li>
 <li>Handwriting/PanelDefaultModeDocked</li>
@@ -1085,8 +1086,10 @@ For details about Microsoft mobile device management protocols for Windows 10 s
 <li>Education/PrinterNames</li>
 <li>Search/AllowCloudSearch</li>
 <li>Security/ClearTPMIfNotReady</li>
+<li>Settings/AllowOnlineTips</li>
 <li>Start/HidePeopleBar</li>
 <li>Storage/AllowDiskHealthModelUpdates</li>
+<li>System/DisableEnterpriseAuthProxy </li>
 <li>System/LimitEnhancedDiagnosticDataWindowsAnalytics</li>
 <li>Update/AllowAutoWindowsUpdateDownloadOverMeteredNetwork</li>
 <li>Update/DisableDualScan</li>
@@ -1402,6 +1405,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <ul>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration</li>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold</li>
+<li>Browser/AlwaysEnableBooksLibrary</li>
 <li>Browser/EnableExtendedBooksTelemetry</li>
 <li>Browser/UseSharedFolderForBooks</li>
 <li>AccountPoliciesAccountLockoutPolicy/ResetAccountLockoutCounterAfter</li>
@@ -1452,6 +1456,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode</li> 
 <li>Search/AllowCortanaInAAD</li>
 <li>Search/DoNotUseWebResults</li>
+<li>Security/ConfigureWindowsPasswords</li>
 <li>SystemServices/ConfigureHomeGroupListenerServiceStartupMode</li>
 <li>SystemServices/ConfigureHomeGroupProviderServiceStartupMode</li>
 <li>SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</li>
@@ -1460,6 +1465,7 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</li>
 <li>TaskScheduler/EnableXboxGameSaveTask</li>
 <li>TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode</li>
+<li>Update/ConfigureFeatureUpdateUninstallPeriod</li>
 <li>UserRights/AccessCredentialManagerAsTrustedCaller</li>
 <li>UserRights/AccessFromNetwork</li>
 <li>UserRights/ActAsPartOfTheOperatingSystem</li> 
@@ -1494,6 +1500,12 @@ The DM agent for [push-button reset](https://msdn.microsoft.com/windows/hardware
 <li>WindowsDefenderSecurityCenter/HideRansomwareDataRecovery</li>
 <li>WindowsDefenderSecurityCenter/HideSecureBoot</li>
 <li>WindowsDefenderSecurityCenter/HideTPMTroubleshooting</li> 
+</ul>
+<p>Added the following policies the were added in Windows 10, version 1709</p>
+<ul>
+<li>DeviceLock/MinimumPasswordAge</li>
+<li>Settings/AllowOnlineTips</li>
+<li>System/DisableEnterpriseAuthProxy </li>
 </ul>
 </tbody>
 </table>

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: surfacehub, mobility
 author: jdeckerms
 ms.author: jdecker
-ms.date: 11/29/2017
+ms.date: 01/17/2018
 ms.localizationpriority: medium
 ---
 
@@ -185,7 +185,12 @@ The following tables include info on Windows 10 settings that have been validate
 | Set Network proxy | Use to configure a proxy server for ethernet and Wi-Fi connections. | [NetworkProxy CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
 \*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
+#### Configure Start menu
 
+| Setting | Details | CSP reference | Supported with<br>Intune? | Supported with<br>Configuration Manager? | Supported with<br>SyncML*? |
+| --- | ---- | --- |---- | --- | --- |
+| Configure Start menu | Use to configure which apps are displayed on the Start menu. For more information, see [Configure Surface Hub Start menu](surface-hub-start-menu.md) | [Policy CSP: Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout) | Yes <br> [Use a custom policy.](#example-intune)  |  Yes.<br> [Use a custom setting.](#example-sccm) | Yes |
+\*Settings supported with SyncML can also be configured in a Windows Configuration Designer provisioning package.
 
 ### Generate OMA URIs for settings 
 You need to use a setting’s OMA URI to create a custom policy in Intune, or a custom setting in System Center Configuration Manager.

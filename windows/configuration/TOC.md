@@ -55,6 +55,7 @@
 ### [Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization](cortana-at-work/cortana-at-work-policy-settings.md)
 ### [Send feedback about Cortana at work back to Microsoft](cortana-at-work/cortana-at-work-feedback.md)
 ## [Configure access to Microsoft Store](stop-employees-from-using-microsoft-store.md)
+## [Accessibility information for IT Pros](windows-10-accessibility-for-ITPros.md)
 ## [Provisioning packages for Windows 10](provisioning-packages/provisioning-packages.md)
 ### [How provisioning works in Windows 10](provisioning-packages/provisioning-how-it-works.md)
 ### [Introduction to configuration service providers (CSPs)](provisioning-packages/how-it-pros-can-use-configuration-service-providers.md)
