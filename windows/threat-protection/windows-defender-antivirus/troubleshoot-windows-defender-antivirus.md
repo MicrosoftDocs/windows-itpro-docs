@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 06/13/2017
+ms.date: 11/20/2017
 ---
 
 # Review event logs and error codes to troubleshoot issues with Windows Defender AV
@@ -37,7 +37,7 @@ The tables list:
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
 >- Cloud-delivered protection
->- Fast learning (including Black at first sight)
+>- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
 <a id="windows-defender-av-ids"></a>

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerMS
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Configure cellular settings for tablets and PCs

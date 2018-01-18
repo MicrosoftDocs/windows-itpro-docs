@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - CredentialProviders
@@ -197,10 +197,14 @@ Added in Windows 10, version 1709. Boolean policy to disable the visibility of t
 
 The Windows 10 Automatic ReDeployment feature allows admin to reset devices to a known good managed state while preserving the management enrollment. After the automatic redeployment is triggered the devices are for ready for use by information workers or students.
 
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
 - 0 - Enable the visibility of the credentials for Windows 10 Automatic ReDeployment
 - 1 - Disable visibility of the credentials for Windows 10 Automatic ReDeployment
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

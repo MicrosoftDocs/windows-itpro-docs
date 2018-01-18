@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 08/17/2017
 ---
 
 # How Windows Defender Credential Guard works

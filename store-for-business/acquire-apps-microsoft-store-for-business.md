@@ -6,7 +6,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
-ms.date: 10/01/2017
+ms.date: 11/01/2017
 ms.localizationpriority: high
 ---
 

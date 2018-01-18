@@ -6,24 +6,30 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
 ms.sitesec: library
-author: jobotto
+author: brecords
+ms.author: jdecker
+ms.date: 01/03/2018
 ---
 
 # Wake On LAN for Surface devices
 
-Surface devices that run Windows 10, version 1607 (also known as Windows 10 Anniversary Update) or later and use a Surface Ethernet adapter to connect to a wired network, are capable of Wake On LAN (WOL) from Connected Standby. With WOL, you can remotely wake up devices to perform management or maintenance tasks or enable management solutions (such as System Center Configuration Manager) automatically – even if the devices are powered down. For example, you can deploy applications to Surface devices left docked with a Surface Dock or Surface Pro 3 Docking Station by using System Center Configuration Manager during a window in the middle of the night, when the office is empty.
+Surface devices that run Windows 10, version 1607 (also known as Windows 10 Anniversary Update) or later and use a Surface Ethernet adapter to connect to a wired network, are capable of Wake On LAN (WOL) from Connected Standby. With WOL, you can remotely wake up devices to perform management or maintenance tasks or enable management solutions (such as System Center Configuration Manager) automatically. For example, you can deploy applications to Surface devices left docked with a Surface Dock or Surface Pro 3 Docking Station by using System Center Configuration Manager during a window in the middle of the night, when the office is empty.
 
 >[!NOTE]
->Surface devices must be connected to AC power to support WOL.
+>Surface devices must be connected to AC power and in Connected Standby (Sleep) to support WOL. WOL is not possible from devices that are in hibernation or powered off.
 
 ## Supported devices
 
 The following devices are supported for WOL:
 
+* Surface Book 2
+* Surface Pro with LTE Advanced (Model 1807)
+* Surface Pro (Model 1796)
+* Surface Laptop
 * Surface Book
 * Surface Pro 4
-* Surface Pro 3
 * Surface 3
+* Surface Pro 3
 * Surface Ethernet adapter
 * Surface Dock
 * Surface Docking Station for Surface Pro 3

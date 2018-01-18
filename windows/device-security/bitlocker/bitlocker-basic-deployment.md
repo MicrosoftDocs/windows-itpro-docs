@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 04/19/2017
 ---
 
 # BitLocker basic deployment
@@ -522,7 +523,7 @@ Decryption with Windows PowerShell cmdlets is straightforward, similar to manage
 Using the Disable-BitLocker command, they can remove all protectors and encryption at the same time without the need for additional commands. An example of this command is:
 
 ``` syntax
-DisableBitLocker
+Disable-BitLocker
 ```
 If a user did not want to input each mount point individually, using the `-MountPoint` parameter in an array can sequence the same command into one line without requiring additional user input. An example command is:
 

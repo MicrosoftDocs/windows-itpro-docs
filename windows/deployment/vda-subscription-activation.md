@@ -7,7 +7,11 @@ ms.mktglfcycl: deploy
 localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mdt
+<<<<<<< HEAD
 ms.date: 12/5/2017
+=======
+ms.date: 12/05/2017
+>>>>>>> 35f6a9e278818c838a9a2affe064b3c0989697bc
 author: greg-lindsay
 ---
 

@@ -10,10 +10,17 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 12/08/2017
 ---
 
-# Find machine information by interal IP 
+# Find machine information by interal IP API
+
+**Applies to:**
+
+- Windows Defender Advanced Threat Protection (Windows Defender ATP)
+
+[!include[Prerelease information](prerelease.md)]
+
 Find a machine entity around a specific timestamp by FQDN or internal IP.
 
 ## Permissions

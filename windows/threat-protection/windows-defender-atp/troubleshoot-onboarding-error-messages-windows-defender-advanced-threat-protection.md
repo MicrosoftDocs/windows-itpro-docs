@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: v-tanewt
 author: tbit0001
 ms.localizationpriority: high
-ms.date: 11/22/2017
+ms.date: 11/28/2017
 ---
 
 # Troubleshoot subscription and portal access issues

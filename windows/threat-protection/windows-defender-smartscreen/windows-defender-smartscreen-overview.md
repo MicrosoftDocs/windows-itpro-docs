@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Windows Defender SmartScreen

@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: security, mobile
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Configure Windows 10 Mobile using Lockdown XML

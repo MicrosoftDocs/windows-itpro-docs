@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Games
@@ -63,12 +63,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1709. Specifies whether advanced gaming services can be used. These services may send data to Microsoft or publishers of games that use these services. Value type is integer.
 
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
 - 0 - Not Allowed
 - 1 (default) - Allowed
 
-<p style="margin-left: 20px">This policy can only be turned off in Windows 10 Education and Enterprise editions.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 

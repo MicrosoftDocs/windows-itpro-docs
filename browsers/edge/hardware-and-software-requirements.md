@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: appcompat
 title: Microsoft Edge requirements and language support (Microsoft Edge for IT Pros)
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Microsoft Edge requirements and language support

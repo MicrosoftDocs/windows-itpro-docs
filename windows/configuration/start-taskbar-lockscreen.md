@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
+ms.date: 07/27/2017
 ---
 
 # Configure Start layout, taskbar, and lock screen for Windows 10 PCs 

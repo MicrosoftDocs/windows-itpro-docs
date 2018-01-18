@@ -9,13 +9,13 @@ author: brianlic-msft
 ms.date: 10/20/2017
 ---
 
-# Optional: Create a code signing certificate for code integrity policies
+# Optional: Create a code signing certificate for Windows Defender Application Control
 
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
 
-As you deploy code integrity policies (part of Windows Defender Device Guard), you might need to sign catalog files or code integrity policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in [Deploy Windows Defender Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md). 
+As you deploy Windows Defender Application Control (WDAC) (also part of Windows Defender Device Guard), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md). 
 
 If you have an internal CA, complete these steps to create a code signing certificate. 
 Only RSA algorithm is supported for the code signing certificate, and signatures must be PKCS 1.5 padded. 
@@ -33,7 +33,7 @@ ECDSA is not supported.
 
 4.  On the **Compatibility** tab, clear the **Show resulting changes** check box. Select **Windows Server 2012** from the **Certification Authority** list, and then select **Windows 8 / Windows Server 2012** from the **Certificate recipient** list.
 
-5.  On the **General** tab, specify the **Template display name** and **Template name**. This example uses the name **DG Catalog Signing Certificate**.
+5.  On the **General** tab, specify the **Template display name** and **Template name**. This example uses the name **WDAC Catalog Signing Certificate**.
 
 6.  On the **Request Handling** tab, select the **Allow private key to be exported** check box.
 
@@ -63,7 +63,7 @@ When this certificate template has been created, you must publish it to the CA p
 
     A list of available templates to issue appears, including the template you just created.
 
-2.  Select the DG Catalog signing certificate, and then click **OK**.
+2.  Select the WDAC Catalog signing certificate, and then click **OK**.
 
 Now that the template is available to be issued, you must request one from the computer running Windows 10 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
 
@@ -93,13 +93,13 @@ This certificate must be installed in the user’s personal store on the compute
 
 3.  Choose the default settings, and then select **Export all extended properties**.
 
-4.  Set a password, select an export path, and then select **DGCatSigningCert.pfx** as the file name.
+4.  Set a password, select an export path, and then select **WDACCatSigningCert.pfx** as the file name.
 
 When the certificate has been exported, import it into the personal store for the user who will be signing the catalog files or code integrity policies on the specific computer that will be signing them.
 
 ## Related topics
 
-- [Introduction to Windows Defender Device Guard: virtualization-based security and code integrity policies](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
+- [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control](introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies.md)
 
-- [Deploy Windows Defender Device Guard: deploy code integrity policies](deploy-device-guard-deploy-code-integrity-policies.md)
+- [Deploy Windows Defender Application Control](deploy-device-guard-deploy-code-integrity-policies.md)
 

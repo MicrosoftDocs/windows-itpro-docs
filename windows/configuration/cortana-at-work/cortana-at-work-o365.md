@@ -7,6 +7,7 @@ ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: high
 ms.author: lizross
+ms.date: 10/05/2017
 ---
 
 # Set up and test Cortana with Office 365 in your organization

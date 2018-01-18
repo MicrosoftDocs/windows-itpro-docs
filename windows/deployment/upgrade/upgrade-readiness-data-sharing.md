@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
+ms.date: 04/19/2017
 ---
 
 # Upgrade Readiness data sharing

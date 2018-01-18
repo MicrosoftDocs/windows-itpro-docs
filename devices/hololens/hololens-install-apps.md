@@ -7,16 +7,14 @@ ms.pagetype: hololens, devices
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: medium
+ms.date: 12/20/2017
 ---
 
 # Install apps on HoloLens
 
 The recommended way to install Universal Windows Platform (UWP) apps on HoloLens is to use Microsoft Store for Business. You can make your own [line-of-business application](https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps) available through Microsoft Store for Business.
 
-You can also deploy apps using your mobile device management (MDM) provider or use the Windows Device Portal to install apps, if you enable **Developer Mode** on the HoloLens device.
-
->[!IMPORTANT]
-    >When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device.**Developer Mode** on a device that has been upgraded to Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). [Learn more about Developer Mode.](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+You can also deploy apps using your mobile device management (MDM) provider or use the Windows Device Portal to install apps.
 
 ## Use Microsoft Store for Business to deploy apps to HoloLens
 
@@ -45,23 +43,32 @@ In your Microsoft Store for Business dashboard, you can also download apps to di
 
 ### Install apps on HoloLens from Microsoft Store for Business
 
-The method that you use to install an app from your Microsoft Store for Business on HoloLens depends on the the distribution method that you choose.
+The method that you use to install an app from your Microsoft Store for Business on HoloLens depends on the distribution method that you choose.
 
 | Distribution method | To install on HoloLens|
 | --- | --- |
-| Using private store | Open the Store app and select the tab for your organization to choose from available apps.  |
-| Using MDM | [You can configure MDM to synchronize your Store for Business inventory.](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-with-management-tool)  |
+| [Using private store](https://docs.microsoft.com/microsoft-store/distribute-apps-from-your-private-store) | Open the Store app and select the tab for your organization to choose from available apps.  |
+| Using MDM | [You can configure MDM to synchronize your Store for Business inventory.](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-with-management-tool)</br></br> See the **Important** note in [Use MDM to deploy apps to HoloLens.](#use-mdm-to-deploy-apps-to-hololens) |
 
 
 
 ## Use MDM to deploy apps to HoloLens
+
+>[!IMPORTANT]
+>Online-licensed apps cannot be deployed with Microsoft Store for Business on HoloLens via an MDM provider. If attempted, apps will remain in “downloading” state. Instead, you can use your MDM provider to deploy MDM-hosted apps to HoloLens, or deploy offline-licensed apps to HoloLens via Store for Business
+
 
 You can deploy UWP apps to HoloLens using your MDM provider. For Intune instructions, see [Deploy apps in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/add-apps).
 
 Using Intune, you can also [monitor your app deployment](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune).
 
 
-## Use the Windows Device Portal to install apps on HoloLens.
+
+## Use the Windows Device Portal to install apps on HoloLens
+
+>[!IMPORTANT]
+>When you set up HoloLens to use the Device Portal, you must enable **Developer Mode** on the device. **Developer Mode** on a device that has been upgraded to Windows Holographic for Business enables side-loading of apps, which risks the installation of apps that have not been certified by the Microsoft Store. Administrators can block the ability to enable **Developer Mode** using the **ApplicationManagement/AllowDeveloper Unlock** setting in the [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). [Learn more about Developer Mode.](https://msdn.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+
 1. [Set up the HoloLens to use the Windows Device Portal](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal). The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. 
 
 2. On a PC, connect to the HoloLens using [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#connecting_over_wi-fi) or [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal.html#connecting_over_usb).

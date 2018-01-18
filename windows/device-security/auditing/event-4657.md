@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh
+ms.date: 04/19/2017
 ---
 
 # 4657(S): A registry value was modified.

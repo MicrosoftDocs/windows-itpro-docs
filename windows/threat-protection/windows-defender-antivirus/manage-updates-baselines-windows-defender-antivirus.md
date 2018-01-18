@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 12/12/2017
 ---
 
 # Manage Windows Defender Antivirus updates and apply baselines
@@ -40,7 +40,7 @@ The cloud-delivered protection is always on and requires an active connection to
 
 ## Product updates
 
-Windows Defender AV requires monthly updates (known as "engine updates"), and will receive major feature updates alongside Windows 10 releases.
+Windows Defender AV requires [monthly updates](https://support.microsoft.com/en-us/help/4052623/update-for-windows-defender-antimalware-platform) (known as "engine updates" and "platform updates"), and will receive major feature updates alongside Windows 10 releases.
 
 You can manage the distribution of updates through Windows Server Update Service (WSUS), with [System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/sum/understand/software-updates-introduction), or in the normal manner that you deploy Microsoft and Windows updates to endpoints in your network.
 

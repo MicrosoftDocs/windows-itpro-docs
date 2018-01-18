@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/13/2017
 ---
 
 # Policy CSP - Storage
@@ -20,13 +20,62 @@ ms.date: 11/01/2017
 
 <dl>
   <dd>
-    <a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
-  </dd>
-    <dd>
     <a href="#storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
+  </dd>
+  <dd>
+    <a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
   </dd>
 </dl>
 
+<hr/>
+<!--StartPolicy-->
+<a href="" id="storage-allowdiskhealthmodelupdates"></a>**Storage/AllowDiskHealthModelUpdates**  
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
+<!--StartDescription-->
+<p style="margin-left: 20px">Added in Windows 10, version 1709.  Allows disk health model updates.
+
+
+<p style="margin-left: 20px">The following list shows the supported values:
+
+-   0 - Do not allow
+-   1 (default) - Allow
+
+<p style="margin-left: 20px">Value type is integer.
+
+<!--EndDescription-->
+<!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
 <a href="" id="storage-enhancedstoragedevices"></a>**Storage/EnhancedStorageDevices**  
@@ -86,46 +135,6 @@ ADMX Info:
 -   GP ADMX file name: *enhancedstorage.admx*
 
 <!--EndADMX-->
-<!--EndPolicy-->
-<hr/>
-<!--StartPolicy-->
-<a href="" id="storage-allowdiskhealthmodelupdates"></a>**Storage/AllowDiskHealthModelUpdates**  
-
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartDescription-->
-<p style="margin-left: 20px">Added in Windows 10, version 1709.  Allows disk health model updates.
-
-
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 - Do not allow
--   1 (default) - Allow
-
-<p style="margin-left: 20px">Value type is integer.
-
-<!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
 

@@ -9,7 +9,7 @@ ms.pagetype: security, mobile
 author: mikestephens-MS
 ms.author: mstephen
 localizationpriority: high
-ms.date: 10/08/2017
+ms.date: 10/23/2017
 ---
 # On Premises Key Trust Deployment
 

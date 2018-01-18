@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 11/13/2017
 ---
 
 # Windows Defender Advanced Threat Protection
@@ -102,6 +102,7 @@ Topic | Description
 [Create and build Power BI reports using Windows Defender ATP data](powerbi-reports-windows-defender-advanced-threat-protection.md) | Understand the security status of your organization, including the status of machines, alerts, and investigations using the Windows Defender ATP reporting feature that integrates with Power BI. 
 [Check sensor state](check-sensor-status-windows-defender-advanced-threat-protection.md) | Check the sensor health state on endpoints to verify that they are providing sensor data and communicating with the Windows Defender ATP service.
 [Configure Windows Defender ATP preferences settings](preferences-setup-windows-defender-advanced-threat-protection.md) | Use the Preferences setup menu to modify general settings, advanced features, enable the preview experience, email notifications, and the custom threat intelligence feature.
+[Access the Windows Defender ATP Community Center](community-windows-defender-advanced-threat-protection.md)| The Windows Defender ATP Community Center is a place where community members can learn, collaborate, and share experiences about the product. 
 [Windows Defender ATP settings](settings-windows-defender-advanced-threat-protection.md) | Configure time zone settings and view license information.
 [Windows Defender ATP service health](service-status-windows-defender-advanced-threat-protection.md) | Verify that the service health is running properly or if there are current issues.
 [Troubleshoot Windows Defender Advanced Threat Protection](troubleshoot-windows-defender-advanced-threat-protection.md) | This topic contains information to help IT Pros find workarounds for the known issues and troubleshoot issues in Windows Defender ATP.

@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: high
-ms.date: 10/17/2017
+ms.date: 10/16/2017
 ---
 # Investigate a file associated with a Windows Defender ATP alert
 
@@ -55,7 +55,7 @@ The **File in organization** section provides details on the prevalence of the f
 
 ![Image of file in organization](images/atp-file-in-org.png)
 
-## Most recent observed machinew with the file
+## Most recent observed machines with the file
 The **Most recent observed machines with the file** section allows you to specify a date range to see which machines have been observed with the file.
 
 ![Image of most recent observed machine with the file](images/atp-observed-machines.png)

@@ -8,6 +8,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 09/21/2017
 ---
 
 # Join Windows 10 Mobile to Azure Active Directory

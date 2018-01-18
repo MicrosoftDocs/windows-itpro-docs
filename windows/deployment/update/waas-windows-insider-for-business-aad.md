@@ -7,6 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 10/16/2017
 ---
 
 # Windows Insider Program for Business using Azure Active Directory

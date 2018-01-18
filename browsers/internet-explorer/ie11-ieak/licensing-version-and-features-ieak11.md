@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 69d25451-08af-4db0-9daa-44ab272acc15
 title: Determine the licensing version and features to use in IEAK 11 (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

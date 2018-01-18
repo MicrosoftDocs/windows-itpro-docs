@@ -1,6 +1,31 @@
 {
 "redirections": [
 {
+"source_path": "windows/threat-protection/use-windows-event-forwarding-to-assist-in-instrusion-detection.md",
+"redirect_url": "/windows/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection",
+"redirect_document_id": true
+},
+{
+"source_path": "devices/surface/surface-device-compatibility-with-windows-10-ltsb.md",
+"redirect_url": "/devices/surface/surface-device-compatibility-with-windows-10-ltsc",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
+"redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/windows-diagnostic-data-1709.md",
+"redirect_url": "/windows/configuration/windows-diagnostic-data",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/configuration/EventName.md",
+"redirect_url": "/windows/configuration/enhanced-telemetry-windows-analytics-events-and-fields",
+"redirect_document_id": true
+},
+{
 "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
 "redirect_url": "/education/windows/switch-to-pro-education",
 "redirect_document_id": true
@@ -1201,7 +1226,7 @@
 "redirect_document_id": false
 },
 {
-"source_path": "windows/configure/basic-level-windows-diagnostic-events-and-fields.md",
+"source_path": "windows/configure/basic-level-windows-diagnostic-events-and-fields-1703.md",
 "redirect_url": "/windows/configuration/basic-level-windows-diagnostic-events-and-fields",
 "redirect_document_id": true
 },
@@ -1526,7 +1551,7 @@
 "redirect_document_id": true
 },
 {
-"source_path": "windows/configure/windows-diagnostic-data.md",
+"source_path": "windows/configure/windows-diagnostic-data-1703.md",
 "redirect_url": "/windows/configuration/windows-diagnostic-data",
 "redirect_document_id": true
 },
@@ -8383,6 +8408,11 @@
 {
 "source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
 "redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
+"redirect_document_id": true
+},
+{
+"source_path": "windows/deployment/windows-10-auto-pilot.md",
+"redirect_url": "/windows/deployment/windows-autopilot/windows-10-autopilot",
 "redirect_document_id": true
 }
 ]

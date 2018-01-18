@@ -6,6 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: Mir0sh
+ms.date: 04/19/2017
 ---
 
 # 4937(S): A lingering object was removed from a replica.

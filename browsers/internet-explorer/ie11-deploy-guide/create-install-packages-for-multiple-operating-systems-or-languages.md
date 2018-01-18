@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: 44051f9d-63a7-43bf-a427-d0a0a1c717da
 title: Create packages for multiple operating systems or languages (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

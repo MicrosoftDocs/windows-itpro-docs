@@ -5,11 +5,26 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: jdeckerms
+ms.date: 11/03/2017
 ---
 
 # Change history for Surface documentation
 
 This topic lists new and updated topics in the Surface documentation library.
+
+## January 2018
+
+|New or changed topic | Description |
+| --- | --- |
+|[Microsoft Surface Data Eraser](microsoft-surface-data-eraser.md) | Added version 3.2.45 information  |
+|[Surface device compatibility with Windows 10 Long-Term Servicing Channel (LTSC)](surface-device-compatibility-with-windows-10-ltsc.md) | Updated Current Branch (CB) or Current Branch for Business (CBB) servicing options with Semi-Annual Channel (SAC) information  |
+|[Wake On LAN for Surface devices](wake-on-lan-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, Surface Pro with LTE Advanced, and Surface Pro information  |
+
+## December 2017
+
+|New or changed topic | Description |
+| --- | --- |
+|[Download the latest firmware and drivers for Surface devices](deploy-the-latest-firmware-and-drivers-for-surface-devices.md) | Added Surface Book 2, Surface Laptop, Surface Pro, and Surface Pro with LTE Advanced information  |
 
 ## November 2017
 
@@ -42,7 +57,7 @@ New or changed topic | Description
 
 |New or changed topic | Description |
 | --- | --- |
-|[Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsb.md) | New (supersedes [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md))|
+|[Surface device compatibility with Windows 10 Long-Term Servicing Branch](surface-device-compatibility-with-windows-10-ltsc.md) | New (supersedes [Long-Term Servicing Branch for Surface devices](ltsb-for-surface.md))|
 
 
 ## January 2017

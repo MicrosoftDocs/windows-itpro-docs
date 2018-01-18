@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: f51224bd-3371-4551-821d-1d62310e3384
 title: Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS) (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 # Deploy Internet Explorer 11 using Automatic Version Synchronization (AVS)

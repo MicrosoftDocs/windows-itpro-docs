@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 12/04/2017
+ms.date: 12/05/2017
 ---
 
 # eUICCs DDF file

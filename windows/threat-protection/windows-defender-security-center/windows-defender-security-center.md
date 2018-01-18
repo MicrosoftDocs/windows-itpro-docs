@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 10/12/2017
+ms.date: 10/17/2017
 ---
 
 
@@ -55,7 +55,10 @@ You can find more information about each section, including options for configur
 - [Family options](wdsc-family-options.md), which includes access to parental controls along with tips and information for keeping kids safe online
 
 
-
+>[!NOTE]
+>If you hide all sections then the app will show a restricted interface, as in the following screenshot:
+>  
+>![Windows Defender Security Center app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
 
 
 

@@ -6,6 +6,7 @@ ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
+ms.date: 04/19/2017
 ---
 
 # Upgrading to App-V for Windows 10 from an existing installation

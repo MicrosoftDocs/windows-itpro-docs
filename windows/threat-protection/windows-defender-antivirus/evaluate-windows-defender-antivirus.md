@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: iaanw
 ms.author: iawilt
-ms.date: 08/25/2017
+ms.date: 11/20/2017
 ---
 
 # Evaluate Windows Defender Antivirus protection
@@ -31,7 +31,7 @@ If you're an enterprise security administrator, and you want to determine how we
 >[!TIP]
 >You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
 >- Cloud-delivered protection
->- Fast learning (including Black at first sight)
+>- Fast learning (including Block at first sight)
 >- Potentially unwanted application blocking
 
 

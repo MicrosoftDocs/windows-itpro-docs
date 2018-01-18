@@ -9,6 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 09/11/2017
 ---
 
 # Testing scenarios for Windows Information Protection (WIP)

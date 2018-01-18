@@ -5,7 +5,7 @@ keywords: Device Health, oms, operations management suite, prerequisites, requir
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.date: 10/17/2017
+ms.date: 11/14/2017
 ms.pagetype: deploy
 author: jaimeo
 ---

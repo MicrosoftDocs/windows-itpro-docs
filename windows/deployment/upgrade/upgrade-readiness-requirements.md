@@ -3,6 +3,7 @@ title: Upgrade Readiness requirements (Windows 10)
 description: Provides requirements for Upgrade Readiness.
 ms.prod: w10
 author: greg-lindsay
+ms.date: 11/08/2017
 ---
 
 # Upgrade Readiness requirements

@@ -8,6 +8,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
+ms.date: 10/17/2017
 ---
 
 # Windows 10 edition upgrade
@@ -40,7 +41,7 @@ X = unsupported <BR>
 -->
 
 | Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Using Microsoft Store for Business or PC | Entering a product key manually | Purchasing a license from the Microsoft Store |
-|-----------------| ------------------------------------ | ---- ----------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |
+|-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |
 | **Home > Pro** | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) |
 | **Home > Pro for Workstations** | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) |
 | **Home > Pro Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |

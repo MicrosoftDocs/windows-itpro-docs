@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/01/2017
+ms.date: 12/14/2017
 ---
 
 # Policy CSP - Wifi
@@ -90,14 +90,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow the device to automatically connect to Wi-Fi hotspots.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -138,14 +140,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow internet sharing.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – Do not allow the use of Internet Sharing.
 -   1 (default) – Allow the use of Internet Sharing.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -186,17 +190,19 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks.
 
-<p style="margin-left: 20px">The following list shows the supported values:
-
--   0 – No Wi-Fi connection outside of MDM provisioned network is allowed.
--   1 (default) – Adding new network SSIDs beyond the already MDM provisioned ones is allowed.
-
 <p style="margin-left: 20px">Most restricted value is 0.
 
 > [!NOTE]
 > Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 
 <!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 – No Wi-Fi connection outside of MDM provisioned network is allowed.
+-   1 (default) – Adding new network SSIDs beyond the already MDM provisioned ones is allowed.
+
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -237,14 +243,16 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Allow or disallow WiFi connection.
 
-<p style="margin-left: 20px">The following list shows the supported values:
+<p style="margin-left: 20px">Most restricted value is 0.
+
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
 
 -   0 – WiFi connection is not allowed.
 -   1 (default) – WiFi connection is allowed.
 
-<p style="margin-left: 20px">Most restricted value is 0.
-
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->
@@ -285,10 +293,14 @@ ms.date: 11/01/2017
 <!--StartDescription-->
 <p style="margin-left: 20px">Added in Windows 10, version 1703. Allow WiFi Direct connection..
 
+<!--EndDescription-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
 - 0 - WiFi Direct connection is not allowed.
 - 1 - WiFi Direct connection is allowed.
 
-<!--EndDescription-->
+<!--/SupportedValues-->
 <!--EndPolicy-->
 <hr/>
 <!--StartPolicy-->

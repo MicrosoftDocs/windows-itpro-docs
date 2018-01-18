@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: aaaac88a-2022-4d0b-893c-b2404b45cabc
 title: Use the Wizard Complete - Next Steps page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

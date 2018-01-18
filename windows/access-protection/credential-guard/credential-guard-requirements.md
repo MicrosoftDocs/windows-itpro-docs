@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: brianlic-msft
+ms.date: 01/12/2018
 ---
 
 # Windows Defender Credential Guard: Requirements
@@ -71,6 +72,8 @@ Applications will prompt and expose credentials to risk if they require:
 - MS-CHAPv2
 
 Applications may cause performance issues when they attempt to hook the isolated Windows Defender Credential Guard process. 
+
+Services or protocols that rely on Kerberos, such as file shares, remote desktop, or BranchCache, continue to work and are not affected by Windows Defender Credential Guard. 
 
 See this video: [Credentials Protected by Windows Defender Credential Guard](https://mva.microsoft.com/en-us/training-courses/deep-dive-into-credential-guard-16651?l=pdc37LJyC_1204300474)
 

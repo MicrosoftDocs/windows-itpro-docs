@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
-ms.date: 10/10/2017
+ms.date: 01/11/2018
 ms.localizationpriority: high
 ---
 
@@ -571,7 +571,7 @@ For more information, see [How to perform a clean boot in Windows](https://suppo
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Code</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-800040005 - 0x20007
+80040005 - 0x20007
 
 </table>
 

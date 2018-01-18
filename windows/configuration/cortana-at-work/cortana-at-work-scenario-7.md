@@ -7,6 +7,7 @@ ms.sitesec: library
 author: eross-msft
 ms.localizationpriority: high
 ms.author: lizross
+ms.date: 10/05/2017
 ---
 
 # Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device

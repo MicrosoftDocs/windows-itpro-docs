@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 10/16/2017
 ---
 
 # Install Windows Configuration Designer

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: jdeckerms
 ms.author: jdecker
-ms.date: 10/24/2017
+ms.date: 11/09/2017
 ---
 
 # Enable or block Windows Mixed Reality apps in the enterprise
@@ -25,9 +25,9 @@ Windows 10, version 1709 (also known as the Fall Creators Update), introduces [W
 
 To enable users to download the Windows Mixed Reality software, enterprises using WSUS can approve Windows Mixed Reality package by unblocking the following KBs:
   
-- KB4016509
-- KB3180030
-- KB3197985
+- KB4016509: FeatureOnDemandOasis - Windows 10 version 1703 for x64-based Systems
+- KB3180030: language packs
+- KB3197985: language packs
  
 Enterprises devices running Windows 10, version 1709, will not be able to install Windows Mixed Reality Feature on Demand (FOD) directly from WSUS. Instead, use one of the following options to install Windows Mixed Reality software:
 

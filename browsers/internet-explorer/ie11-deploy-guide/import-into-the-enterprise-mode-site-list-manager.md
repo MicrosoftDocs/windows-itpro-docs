@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: cacd5d68-700b-4a96-b4c9-ca2c40c1ac5f
 title: Import your Enterprise Mode site list to the Enterprise Mode Site List Manager (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

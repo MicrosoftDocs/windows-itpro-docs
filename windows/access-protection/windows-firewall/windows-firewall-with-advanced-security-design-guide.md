@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: brianlic-msft
+ms.date: 10/05/2017
 ---
 
 # Windows Defender Firewall with Advanced Security

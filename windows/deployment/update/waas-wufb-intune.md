@@ -7,6 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Walkthrough: use Microsoft Intune to configure Windows Update for Business

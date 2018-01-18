@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: eross-msft
 ms.localizationpriority: medium
+ms.date: 09/11/2017
 ---
 
 # How to collect Windows Information Protection (WIP) audit event logs

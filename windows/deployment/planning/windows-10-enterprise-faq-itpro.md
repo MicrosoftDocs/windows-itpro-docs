@@ -7,6 +7,7 @@ ms.mktglfcycl: plan
 ms.localizationpriority: high
 ms.sitesec: library
 author: 
+ms.date: 08/18/2017
 ---
 
 # Windows 10 Enterprise: FAQ for IT professionals
@@ -42,6 +43,7 @@ For many devices, drivers will be automatically installed in Windows 10 and ther
     - [HP driver pack](http://www8.hp.com/us/en/ads/clientmanagement/drivers-pack.html)
     - [Dell driver packs for enterprise client OS deployment](http://en.community.dell.com/techcenter/enterprise-client/w/wiki/2065.dell-command-deploy-driver-packs-for-enterprise-client-os-deployment)
     - [Lenovo Configuration Manager and MDT package index](https://support.lenovo.com/us/en/documents/ht074984)
+    - [Panasonic Driver Pack for Enterprise](http://pc-dl.panasonic.co.jp/itn/drivers/driver_packages.html)
 
 ### Where can I find out if an application or device is compatible with Windows 10?
 

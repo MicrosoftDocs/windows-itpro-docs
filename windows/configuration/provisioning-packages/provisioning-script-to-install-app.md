@@ -6,6 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: jdeckerms
 ms.localizationpriority: high
+ms.date: 07/27/2017
 ---
 
 # Use a script to install a desktop app in provisioning packages
@@ -137,7 +138,7 @@ This is an example script with logging that shows how to run a powershell script
 set LOGFILE=%SystemDrive%\my_powershell_script.log
 echo Running my_powershell_script.ps1 in system context >> %LOGFILE%
 echo Executing "PsExec.exe -accepteula -i -s cmd.exe /c powershell.exe my_powershell_script.ps1" >> %LOGFILE%
-PsExec.exe -accepteula -i -s cmd.exe /c powershell.exe my_powershell_script.ps1' >> %LOGFILE%
+PsExec.exe -accepteula -i -s cmd.exe /c 'powershell.exe my_powershell_script.ps1' >> %LOGFILE%
 echo result: %ERRORLEVEL% >> %LOGFILE%
 ```
 

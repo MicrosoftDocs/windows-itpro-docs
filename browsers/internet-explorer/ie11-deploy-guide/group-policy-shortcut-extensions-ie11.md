@@ -8,6 +8,7 @@ ms.prod: ie11
 ms.assetid: c6fbf990-13e4-4be7-9f08-5bdd43179b3b
 title: Group Policy, Shortcut Extensions, and Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 

@@ -7,6 +7,7 @@ ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
 ms.sitesec: library
 author: Scottmca
+ms.date: 10/16/2017
 ---
 
 # Considerations for Surface and System Center Configuration Manager

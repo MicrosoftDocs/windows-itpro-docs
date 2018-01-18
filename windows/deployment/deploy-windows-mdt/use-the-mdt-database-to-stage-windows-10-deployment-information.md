@@ -9,6 +9,7 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: high
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Use the MDT database to stage Windows 10 deployment information

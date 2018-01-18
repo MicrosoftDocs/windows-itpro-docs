@@ -7,6 +7,7 @@ ms.sitesec: library
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile

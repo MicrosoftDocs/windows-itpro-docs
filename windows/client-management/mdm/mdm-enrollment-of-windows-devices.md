@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 09/19/2017
+ms.date: 11/15/2017
 ---
 
 # MDM enrollment of Windows-based devices
@@ -112,7 +112,7 @@ All Windows devices can be connected to an Azure AD domain. These devices can be
 
     If the tenant is a cloud-only tenant, this page will change to show the organization's custom branding, and you will be able to enter your password directly on this page. If the tenant is part of a federated domain, you will be redirected to the organization's on-premises federation server, such as Active Directory Federation Services (AD FS) for authentication.
 
-    Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant is not configured for auto-enrollment, you will have to go through the enrollment flow a second time to connect your device to MDM. After you complete the flow, your device will be connected to your organization’s Azure AD domain.
+    Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant is not configured for auto-enrollment, you will have to go through the enrollment flow a second time to connect your device to MDM. After you complete the flow, your device will be connected to your organization’s Azure AD domain.
 
     ![azure ad signin](images/unifiedenrollment-rs1-13.png)
 
@@ -309,6 +309,7 @@ The deep link used for connecting your device to work will always use the follow
 
 ### Connecting to MDM using a deep link
 
+> **Note** Deep links only work with Internet Explorer or Edge browsers.
 When connecting to MDM using a deep link, the URI you should use is
 
 **ms-device-enrollment:?mode=mdm**

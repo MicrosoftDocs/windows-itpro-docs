@@ -9,6 +9,7 @@ ms.pagetype: edu
 ms.localizationpriority: high
 author: CelesteDG
 ms.author: celested
+ms.date: 12/12/2017
 ---
 
 # Technical reference for the Set up School PCs app 
@@ -189,17 +190,17 @@ The Set up School PCs app produces a specialized provisioning package that makes
 </tr> 
 <tr><td><p>Require a password when a computer wakes (on battery)</p></td><td><p>Enabled</p></td>
 </tr>
-<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p>1 hour</p></td>
+<tr><td><p>Specify the system sleep timeout (plugged in)</p></td><td><p> 5 minutes</p></td>
 </tr> 
-<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p>1 hour</p></td>
+<tr><td><p>Specify the system sleep timeout (on battery)</p></td><td><p> 5 minutes</p></td>
 </tr> 
 <tr> <td> <p> Turn off hybrid sleep (plugged in) </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
 <tr> <td> <p> Turn off hybrid sleep (on battery) </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 1 hour</p> </td>
+<tr> <td> <p> Specify the unattended sleep timeout (plugged in) </p> </td> <td> <p> 5 minutes </p> </td>
 </tr> 
-<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> 1 hour</p> </td> 
+<tr> <td> <p> Specify the unattended sleep timeout (on battery) </p> </td> <td> <p> 5 minutes</p> </td> 
 </tr> 
 <tr> <td> <p> Allow standby states (S1-S3) when sleeping (plugged in) </p> </td> <td> <p> Enabled</p> </td>
 </tr> 
@@ -210,9 +211,9 @@ The Set up School PCs app produces a specialized provisioning package that makes
 <tr> <td> <p> Specify the system hibernate timeout (on battery) </p> </td> <td> <p> Enabled, 0</p> </td> 
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Video and Display Settings</strong></p> </td> </tr> 
-<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> 1 hour</p> </td> 
+<tr> <td> <p> Turn off the display (plugged in) </p> </td> <td> <p> 5 minutes</p> </td> 
 </tr>
- <tr> <td> <p> Turn off the display (on battery </p> </td> <td> <p> 1 hour</p> </td>
+ <tr> <td> <p> Turn off the display (on battery) </p> </td> <td> <p> 5 minutes</p> </td>
 </tr> 
 <tr> <td colspan="2"> <p> <strong>Admin Templates</strong>><strong>System</strong>><strong>Power Management</strong>><strong>Energy Saver Settings</strong></p> </td> </tr> 
 <tr> <td> <p> Energy Saver Battery Threshold (on battery) </p> </td> <td> <p> 70</p> </td> 

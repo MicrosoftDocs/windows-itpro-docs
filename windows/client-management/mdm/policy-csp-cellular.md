@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nickbrower
-ms.date: 11/16/2017
+ms.date: 12/13/2017
 ---
 
 # Policy CSP - Cellular
@@ -63,6 +63,15 @@ ms.date: 11/16/2017
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. This policy setting specifies whether Windows apps can access cellular data.
 
@@ -83,7 +92,7 @@ Suported values:
 - 0 - User is in control
 - 1 - Force Allow
 - 2 - Force Deny
- 
+
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -113,8 +122,18 @@ Suported values:
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
+
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -144,8 +163,18 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied access to cellular data. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
+
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -175,8 +204,18 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 </table>
 
 <!--EndSKU-->
+<!--StartScope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--EndScope-->
 <!--StartDescription-->
 Added in Windows 10, version 1709. List of semi-colon delimited Package Family Names of Windows Store Apps. The user is able to control the cellular data access setting for the listed apps. This setting overrides the default LetAppsAccessCellularData policy setting for the specified apps. Value type is string.
+
 <!--EndDescription-->
 <!--EndPolicy-->
 <hr/>
@@ -226,6 +265,7 @@ Supported values:
 
 - 0 - Hide
 - 1 - Show
+
 <!--EndDescription-->
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).

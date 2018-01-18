@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: deploy
 keywords: deployment, automate, tools, configure, mdt
 ms.localizationpriority: high
-ms.date: 10/10/2017
+ms.date: 10/11/2017
 author: greg-lindsay
 ---
 

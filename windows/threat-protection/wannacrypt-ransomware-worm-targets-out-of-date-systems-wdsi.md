@@ -9,6 +9,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
 author: iaanw
+ms.date: 07/27/2017
 ---
 
 #   WannaCrypt ransomware worm targets out-of-date systems

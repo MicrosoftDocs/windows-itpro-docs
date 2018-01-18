@@ -7,6 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.localizationpriority: high
+ms.date: 11/10/2017
 ---
 
 # Manage app orders in Microsoft Store for Business and Education

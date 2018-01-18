@@ -9,6 +9,7 @@ ms.localizationpriority: high
 ms.pagetype: mdt
 ms.sitesec: library
 author: mtniehaus
+ms.date: 07/27/2017
 ---
 
 # Use web services in MDT

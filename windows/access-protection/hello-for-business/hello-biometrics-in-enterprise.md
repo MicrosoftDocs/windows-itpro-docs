@@ -10,6 +10,7 @@ ms.pagetype: security
 author: DaniHalfin
 ms.localizationpriority: high
 ms.author: daniha
+ms.date: 07/27/2017
 ---
 
 # Windows Hello biometrics in the enterprise
@@ -49,21 +50,17 @@ We’ve been working with the device manufacturers to help ensure a high-level o
 -   **False Reject Rate (FRR).** Represents the instances a biometric identification solution fails to verify an authorized person correctly. Usually represented as a percentage, the sum of the True Accept Rate and False Reject Rate is 1. Can be with or without anti-spoofing or liveness detection.
 
 ### Fingerprint sensor requirements
-To allow fingerprint matching, you must have devices with fingerprint sensors and software. Fingerprint sensors, or sensors that use an employee’s unique fingerprint as an alternative log on option, can be touch sensors (large area or small area) or swipe sensors. Each type of sensor has its own set of detailed requirements that must be implemented by the manufacturer, but all of the sensors must include anti-spoofing measures (required) and a way to configure them (optional).
+To allow fingerprint matching, you must have devices with fingerprint sensors and software. Fingerprint sensors, or sensors that use an employee’s unique fingerprint as an alternative log on option, can be touch sensors (large area or small area) or swipe sensors. Each type of sensor has its own set of detailed requirements that must be implemented by the manufacturer, but all of the sensors must include anti-spoofing measures (required).
 
 **Acceptable performance range for small to large size touch sensors**
 
 -   False Accept Rate (FAR): &lt;0.001 – 0.002%
-
--   False Reject Rate (FRR) without Anti-spoofing or liveness detection: &lt;5%
 
 -   Effective, real world FRR with Anti-spoofing or liveness detection: &lt;10%
 
 **Acceptable performance range for swipe sensors**
 
 -   False Accept Rate (FAR): &lt;0.002%
-
--   False Reject Rate (FRR) without Anti-spoofing or liveness detection: &lt;5%
 
 -   Effective, real world FRR with Anti-spoofing or liveness detection: &lt;10%
 

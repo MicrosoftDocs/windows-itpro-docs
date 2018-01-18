@@ -3,6 +3,7 @@ title: Upgrade Readiness - Resolve application and driver issues (Windows 10)
 description: Describes how to resolve application and driver issues that can occur during an upgrade with Upgrade Readiness.
 ms.prod: w10
 author: jaimeo
+ms.date: 08/31/2017
 ---
 
 # Upgrade Readiness - Step 2: Resolve app and driver issues

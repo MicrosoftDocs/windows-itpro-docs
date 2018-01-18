@@ -9,6 +9,7 @@ ms.localizationpriority: high
 audience: microsoft-business 
 title: Microsoft 365 Business documentation and resources
 description: Learn about the product documentation and resources available for Microsoft 365 Business partners, IT admins, information workers, and business owners.
+ms.date: 11/01/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -732,7 +733,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2_1280x720_3400.mp4" target="_blank">
+                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -751,7 +752,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="http://videoplayercdn.osi.office.net/embed/a5734146-620a-4cec-8618-536b3ca37972_1280x720_3400.mp4" target="_blank">
+                                <a href="http://videoplayercdn.osi.office.net/embed/a5734146-620a-4cec-8618-536b3ca37972" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -770,7 +771,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li> 
                             <li>
-                                <a href="http://videoplayercdn.osi.office.net/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9_1280x720_3400.mp4" target="_blank">
+                                <a href="http://videoplayercdn.osi.office.net/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1703,7 +1704,7 @@ description: Learn about the product documentation and resources available for M
                                 </div>
                             </li>
                             <li>
-                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2_1280x720_3400.mp4" target="_blank">
+                                <a href="http://videoplayercdn.osi.office.net/embed/0705c337-f3e8-4d28-bb6c-530cd28e99f2" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1722,7 +1723,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li>
                             <li>
-                                <a href="http://videoplayercdn.osi.office.net/embed/a5734146-620a-4cec-8618-536b3ca37972_1280x720_3400.mp4" target="_blank">
+                                <a href="http://videoplayercdn.osi.office.net/embed/a5734146-620a-4cec-8618-536b3ca37972" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -1741,7 +1742,7 @@ description: Learn about the product documentation and resources available for M
                                 </a>
                             </li> 
                             <li>
-                                <a href="http://videoplayercdn.osi.office.net/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9_1280x720_3400.mp4" target="_blank">
+                                <a href="http://videoplayercdn.osi.office.net/embed/e0ee7052-e0f4-4c42-a4f1-5e91b9776ce9" target="_blank">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

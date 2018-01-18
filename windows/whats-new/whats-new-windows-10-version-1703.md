@@ -8,6 +8,7 @@ ms.sitesec: library
 author: JasonGerend
 ms.localizationpriority: high
 ms.assetid: dca7c655-c4f6-45f8-aa02-64187b202617
+ms.date: 10/16/2017
 ---
 
 # What's new in Windows 10, version 1703 IT pro content
@@ -262,8 +263,8 @@ For more info, see the following topics:
 
 Learn more about the diagnostic data that's collected at the Basic level and some examples of the types of data that is collected at the Full level.
 
-- [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/configuration/basic-level-windows-diagnostic-events-and-fields)
-- [Windows 10, version 1703 Diagnostic Data](/windows/configuration/windows-diagnostic-data)
+- [Windows 10, version 1703 basic level Windows diagnostic events and fields](/windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703)
+- [Windows 10, version 1703 Diagnostic Data](/windows/configuration/windows-diagnostic-data-1703)
 
 ### Group Policy spreadsheet
 

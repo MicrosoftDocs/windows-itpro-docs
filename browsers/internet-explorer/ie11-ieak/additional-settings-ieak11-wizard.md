@@ -7,6 +7,7 @@ ms.prod: ie11
 ms.assetid: c90054af-7b7f-4b00-b55b-5e5569f65f25
 title: Use the Additional Settings page in the IEAK 11 Wizard (Internet Explorer Administration Kit 11 for IT Pros)
 ms.sitesec: library
+ms.date: 07/27/2017
 ---
 
 
