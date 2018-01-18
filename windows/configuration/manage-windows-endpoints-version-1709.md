@@ -48,14 +48,19 @@ If you [turn off traffic to this endpoint](manage-connections-from-windows-opera
 |----------------|----------|------------|
 | explorer        | HTTP     | tile-service.weather.microsoft.com/en-US/livetile/preinstall?region=US&appid=C98EA5B0842DBB9405BBF071E1DA76512D21FE36&FORM=Threshold  |
 
-The following endpoint is used for OneNote Live Tile. To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
+The following endpoint is used for OneNote Live Tile. 
+To turn off traffic for this endpoint, either uninstall OneNote or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
+If you disable the Microsoft store, other Store apps cannot be installed or updated. 
+Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 |  | HTTPS   | cdn.onenote.net/livetile/?Language=en-US |
 
-The following endpoints are used for the Twitter Live Tile. 
-If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore), apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
+The following endpoints are used for Twitter updates. 
+To turn off traffic for these endpoints, either uninstall Twitter or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
+If you disable the Microsoft store, other Store apps cannot be installed or updated. 
+Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
@@ -63,33 +68,43 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 | svchost.exe |             | oem.twimg.com/windows/tile.xml |
 
 The following endpoint is used for Facebook updates. 
-To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
+To turn off traffic for this endpoint, either uninstall Facebook or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
+If you disable the Microsoft store, other Store apps cannot be installed or updated. 
+Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 |  |    | star-mini.c10r.facebook.com |
 
 The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office Online. 
-To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
+To turn off traffic for this endpoint, either uninstall the Photos app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
+If you disable the Microsoft store, other Store apps cannot be installed or updated. 
+dditionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | WindowsApps\Microsoft.Windows.Photos | HTTPS | evoke-windowsservices-tas.msedge.net |
 
 The following endpoint is used for Candy Crush Saga updates. 
-To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
+To turn off traffic for this endpoint, either uninstall Candy Crush Saga or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
+If you disable the Microsoft store, other Store apps cannot be installed or updated. 
+Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 |  | TLS v1.2    | candycrushsoda.king.com |
 
-The following endpoint is used for by the Microsoft Wallet app.  To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
+The following endpoint is used for by the Microsoft Wallet app. 
+To turn off traffic for this endpoint, either uninstall the Wallet app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
+If you disable the Microsoft store, other Store apps cannot be installed or updated. 
+Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
 | system32\AppHostRegistrationVerifier.exe | HTTPS | wallet.microsoft.com |
 
-The following endpoint is used by the Groove Music app for update HTTP handler status. If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-apps-for-websites), apps for websites won't work and customers who visit websites (such as mediaredirect.microsoft.com) that are registered with their associated app (such as Groove Music) will stay at the website and won't be able to directly launch the app.
+The following endpoint is used by the Groove Music app for update HTTP handler status. 
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-apps-for-websites), apps for websites won't work and customers who visit websites (such as mediaredirect.microsoft.com) that are registered with their associated app (such as Groove Music) will stay at the website and won't be able to directly launch the app.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
