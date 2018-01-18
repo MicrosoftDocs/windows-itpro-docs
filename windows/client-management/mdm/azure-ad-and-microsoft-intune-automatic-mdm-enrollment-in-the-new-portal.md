@@ -1,3 +1,14 @@
+---
+title: Azure AD and Microsoft Intune - Automatic MDM enrollment in the new Portal
+description: Azure AD and Microsoft Intune - Automatic MDM enrollment in the new Portal
+ms.author: maricia
+ms.topic: article
+ms.prod: w10
+ms.technology: windows
+author: nickbrower
+ms.date: 01/17/2018
+---
+
 # Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal 
 
 Go to your Azure AD Blade, select the Mobility (MDM and MAM) and there should be the Microsoft Intune "App" Visible, select the Microsoft Intune and configure the Blade 
