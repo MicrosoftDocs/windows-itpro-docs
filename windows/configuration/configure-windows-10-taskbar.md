@@ -148,6 +148,21 @@ By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you
 
 If you only want to remove some of the default pinned apps, you would use this method to remove all default pinned apps and then include the default app that you want to keep in your list of pinned apps.
 
+[!Tip] It is not possible to let the String empty between:
+```xml
+<taskbar:TaskbarPinList>
+</taskbar:TaskbarPinList>
+```
+
+It is Possible to get this string instead:
+```xml
+ <taskbar:TaskbarPinList>
+     		
+ 		<taskbar:DesktopApp DesktopApplicationLinkPath="#leavemeempty" />
+
+ </taskbar:TaskbarPinList>
+```
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LayoutModificationTemplate
