@@ -46,7 +46,7 @@ Parameter |	Type	| Description
 Comment |	String | Comment to associate with the action. **Required**.
 ScanType|	ScanType	| Defines the type of the Scan. **Required**.
 
-**ScanType** controls the type of isolation to perform and can be one of the following:
+**ScanType** controls the type of scan to perform and can be one of the following:
 
 - **Quick** – Perform quick scan on the machine
 - **Full** – Perform full scan on the machine
