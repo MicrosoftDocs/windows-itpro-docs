@@ -24,6 +24,8 @@ ms.date: 12/11/2017
 <center><iframe width="560" height="315" src="https://aka.ms/edu-welcome" frameborder="3" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 -->
 
+Welcome to Microsoft Education Trial in a Box. We built this trial to make it easy to try our latest classroom technologies. We have two scenarios for you to try: one for educators and one for IT. We recommend starting with Educators. To begin, click **Get started** below. 
+
 </br>
 
 | ![Get started for Educators](images/teacher_rotated_resized.png) | ![Get started for IT Admins](images/itadmin_rotated_resized.png) |
