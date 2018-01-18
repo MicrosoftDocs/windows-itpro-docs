@@ -1009,6 +1009,30 @@ The following list shows the supported values:
 <!--StartPolicy-->
 <a href="" id="browser-alwaysenablebookslibrary"></a>**Browser/AlwaysEnableBooksLibrary**  
 
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+
 <!--StartScope-->
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
@@ -1022,14 +1046,14 @@ The following list shows the supported values:
 <!--StartDescription-->
 <p style="margin-left: 20px">
 
-<p style="margin-left: 20px">This is only a placeholder.
+<p style="margin-left: 20px">Added in Windows 10, next majot update. Always show the Books Library in Microsoft Edge
 
 <!--EndDescription-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 - TBD.
--   1 - TBD.
+-   0 (default) - Disable. Use default visibility of the Books Library. The Library will be only visible in countries or regions where it’s available.
+-   1 - Enable. Always show the Books Library, regardless of countries or region of activation.
 
 <!--/SupportedValues-->
 <!--EndPolicy-->
@@ -1242,14 +1266,16 @@ The following list shows the supported values:
 
 <!--EndScope-->
 <!--StartDescription-->
-This setting allows organizations to send extended telemetry on book usage from the Books Library.
+This policy setting lets you decide how much data to send to Microsoft about the book you're reading from the Books tab in Microsoft Edge.
+
+If you enable this setting, Microsoft Edge sends additional telemetry data, on top of the basic telemetry data, from the Books tab. If you disable or don't configure this setting, Microsoft Edge only sends basic telemetry data, depending on your device configuration.
 
 <!--EndDescription-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
--   0 (default) - Disable. Telemetry does not contain the ProductId in regular books telemetry events.
--   1 - Enable. Activating this setting allows Microsoft Edge to send the ProductId of Store books purchased from the Store through the telemetry for regular books telemetry events.
+-   0 (default) - Disable. No additional telemetry.
+-   1 - Enable. Additional telemetry for schools.
 
 
 <!--/SupportedValues-->

@@ -287,7 +287,7 @@ Added in Windows 10, next major update. This policy allows you to delay the use 
 
 After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers.
 
-Value of 0 equals "unlimited" which means the download will not progress unless a peer source is found. Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
+Note that a download that is waiting for peer sources, will appear to be stuck for the end user.
 
 The recommended value is 1 minute (60).
 
@@ -1049,46 +1049,8 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <!--StartPolicy-->
 <a href="" id="deliveryoptimization-dopercentagemaxdownloadbandwidth"></a>**DeliveryOptimization/DOPercentageMaxDownloadBandwidth**  
 
-<!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
-
-<!--EndSKU-->
-<!--StartScope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--EndScope-->
 <!--StartDescription-->
-> [!NOTE]
-> This policy is only enforced in Windows 10 Pro, Enterprise, and Education editions and not supported in Windows 10 Mobile.
-
- 
-<p style="margin-left: 20px">Added in Windows 10, version 1607. Specifies the maximum download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.
-
-<p style="margin-left: 20px">The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for downloads.
+This policy is deprecated. Use [DOPercentageMaxForeDownloadBandwidth](#deliveryoptimization-dopercentagemaxforedownloadbandwidth) and [DOPercentageMaxBackDownloadBandwidth](#deliveryoptimization-dopercentagemaxbackdownloadbandwidth) policies instead.
 
 <!--EndDescription-->
 <!--EndPolicy-->
