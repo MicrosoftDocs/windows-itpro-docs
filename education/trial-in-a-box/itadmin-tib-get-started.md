@@ -115,7 +115,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
 
 8. **Add recommended apps** lets you choose from a set of recommended Microsoft Store apps to provision. 
 
-    ![Recommended apps in Set up School PCs package configuration](images/suspc_configure_recommended_apps.png)
+    ![Recommended apps in Set up School PCs package configuration](images/suspc_configure_recommendedapps_v2.png)
 
     The recommended apps include the following:
     * **Office 365 for Windows 10 S (Education Preview)** - This is optional, but works well for the Trial in a Box PCs. If you try to install this app on other editions of Windows 10, setup will fail. Also note that if you select **Office 365 for Windows 10 S (Education Preview)**, it will take about 30-45 minutes longer for Set up School PCs to create the provisioning package as the app downloads Office 365 for Windows 10 S (Education Preview) from the Microsoft Store.
