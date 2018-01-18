@@ -79,7 +79,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office Online. 
 To turn off traffic for this endpoint, either uninstall the Photos app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). 
 If you disable the Microsoft store, other Store apps cannot be installed or updated. 
-dditionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
+Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.
 
 | Source process | Protocol | Destination |
 |----------------|----------|------------|
