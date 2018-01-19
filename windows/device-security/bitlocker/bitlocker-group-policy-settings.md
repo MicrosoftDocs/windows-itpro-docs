@@ -1856,7 +1856,7 @@ This policy controls how BitLocker-enabled system volumes are handled in conjunc
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Conflicts</strong></p></td>
-<td align="left"><p>If you enable**Allow Secure Boot for integrity validation**, make sure the <strong>Configure TPM platform validation profile for native UEFI firmware configurations</strong> Group Policy setting is not enabled or include PCR 7 to allow BitLocker to use Secure Boot for platform or BCD integrity validation.</p>
+<td align="left"><p>If you enable **Allow Secure Boot for integrity validation**, make sure the <strong>Configure TPM platform validation profile for native UEFI firmware configurations</strong> Group Policy setting is not enabled or include PCR 7 to allow BitLocker to use Secure Boot for platform or BCD integrity validation.</p>
 <p>For more information about PCR 7, see [Platform Configuration Register (PCR)](#bkmk-pcr) in this topic.</p></td>
 </tr>
 <tr class="even">
