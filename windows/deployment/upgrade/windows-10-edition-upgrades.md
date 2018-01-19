@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 10/17/2017
+ms.date: 01/18/2018
 ---
 
 # Windows 10 edition upgrade
@@ -63,7 +63,7 @@ X = unsupported <BR>
 | **Mobile > Mobile Enterprise** | ![supported, no reboot](../images/check_blu.png) |![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) |
 
 > [!NOTE]
-> Each desktop edition in the table also has an N and KN edition. These editions have had media-related functionality removed. Devices with N or KN editions installed can be upgraded to corresponding N or KN editions using the same methods.
+> Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 
 
 ## Upgrade using mobile device management (MDM)

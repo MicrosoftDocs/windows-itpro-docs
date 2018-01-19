@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 author: jdeckerms
-ms.date: 01/02/2018
+ms.date: 01/18/2018
 ---
 
 # Change history for Configure Windows 10
@@ -21,7 +21,7 @@ New or changed topic | Description
 --- | ---
 [ConnectivityProfiles](wcd/wcd-connectivityprofiles.md) | Added settings for VPN **Native** and **Third Party** profile types.
 [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Clarified that the TopMFUApps elements in layoutmodification.xml are not supported in Windows 10, version 1709.
-[Manage Windows 10 connection endpoints](manage-windows-endpoints-version-1709.md) | New guidance for managing connections from Windows 10 to Microsoft services. |
+[Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Added section for removing default apps from the taskbar.
 
 ## November 2017
 
