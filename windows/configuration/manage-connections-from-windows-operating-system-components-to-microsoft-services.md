@@ -68,7 +68,7 @@ Here's a list of changes that were made to this article for Windows 10, version 
     - Accounts: Block Microsoft Accounts
     - Do not use diagnostic data for tailored experiences
 
-## <a href="" id="bkmk-othersettings"></a>Settings
+## <a href="" id="bkmk-othersettings"></a>Management options for each setting
 
 
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure telemetry at the Security level, turn off Windows Defender telemetry and MSRT reporting, and turn off all of these connections.
@@ -184,7 +184,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [21. Teredo](#bkmk-teredo) | | ![Check mark](images/checkmark.png) |
 | [28. Windows Update](#bkmk-wu) | ![Check mark](images/checkmark.png) | |
 
-## Settings
+## How to configure each setting
 
 Use the following sections for more information about how to configure each setting.
 
