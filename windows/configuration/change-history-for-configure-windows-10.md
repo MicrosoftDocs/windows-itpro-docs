@@ -22,6 +22,7 @@ New or changed topic | Description
 [ConnectivityProfiles](wcd/wcd-connectivityprofiles.md) | Added settings for VPN **Native** and **Third Party** profile types.
 [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md) | Clarified that the TopMFUApps elements in layoutmodification.xml are not supported in Windows 10, version 1709.
 [Configure Windows 10 taskbar](configure-windows-10-taskbar.md) | Added section for removing default apps from the taskbar.
+[Manage Windows 10 connection endpoints](manage-windows-endpoints-version-1709.md) | New topic for Windows 10, version 1709 that explains the purpose for connections to Microsoft services and how to manage them.  
 
 ## November 2017
 
