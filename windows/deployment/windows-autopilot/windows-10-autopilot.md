@@ -129,5 +129,3 @@ If you are planning to configure devices with traditional on-premises or cloud-b
 
 If you're an IT pro or a technical staff member at a school, your scenario might be simpler. The [Set Up School PCs](http://www.microsoft.com/store/p/set-up-school-pcs/9nblggh4ls40) app can be used to quickly set up PCs for students and will get you to a productive state faster and simpler. Please see [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app) for all the details.
 
-
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=windows-10-auto-pilot.md). 

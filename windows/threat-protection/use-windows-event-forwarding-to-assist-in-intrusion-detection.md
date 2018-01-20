@@ -651,4 +651,4 @@ You can get more info with the following links:
 -   [Event Query Schema](http://msdn.microsoft.com/library/aa385760.aspx)
 -   [Windows Event Collector](http://msdn.microsoft.com/library/windows/desktop/bb427443.aspx)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub://?referrer=techDocsUcPage&tabid=2&contextid=897&newFeedback=true&topic=use-windows-event-forwarding-to-assist-in-instrusion-detection.md). 
+
