@@ -317,4 +317,3 @@ If you want to use Windows Hello for Business with certificates, you’ll need a
 - [Event ID 300 - Windows Hello successfully created](hello-event-300.md)
 - [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md)
 
-Not finding content you need? Windows 10 users, tell us what you want on [Feedback Hub](feedback-hub:?tabid=2&contextid=897).
