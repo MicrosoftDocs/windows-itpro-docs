@@ -88,7 +88,7 @@ AllowMmsIfDataIsOffWhileRoaming | **True** allows MMS if data is off while roami
 ### AllowSelectAllContacts
 
 >[!NOTE]
->This setting is removed in Windows 10, version 1709.
+>This setting is removed in Windows 10, version 1709, and later.
 
 Set to **True** to show the select all contacts/unselect all menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks.
 
