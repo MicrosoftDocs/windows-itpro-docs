@@ -335,6 +335,7 @@ Files to gather when troubleshooting BitLocker Network Unlock include:
 ## <a href="" id="bkmk-unsupportedsystems"></a>Configure Network Unlock Group Policy settings on earlier versions
 
 Network Unlock and the accompanying Group Policy settings were introduced in Windows Server 2012 but can be deployed using operating systems running Windows Server 2008 R2 and Windows Server 2008.
+
 **Requirements**
 
 -   The server hosting WDS must be running any of the server operating systems designated in the **Applies To** list at the beginning of this topic.
