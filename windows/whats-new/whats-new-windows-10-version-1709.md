@@ -19,12 +19,7 @@ Below is a list of some of the new and updated content that discusses IT Pro fea
 
 A brief description of new or updated features in this version of Windows 10 is provided, with links to content with more detailed information. The following 3-minute video summarizes these features.
 
-<iframe class="video-iframe" 
-style="width: 960px; 
-height: 540px;" 
-frameborder="0" 
-allowfullscreen="true" 
-src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
+<iframe class="video-iframe" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
 </iframe>
 
 
