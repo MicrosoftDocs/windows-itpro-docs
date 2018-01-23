@@ -21,7 +21,7 @@ A brief description of new or updated features in this version of Windows 10 is 
 
 &nbsp;
 
-<iframe class="video-iframe" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
+<iframe class="video-iframe" style="width: 600px; height: 340px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/43942201-bec9-4f8b-8ba7-2d9bfafa8bba?autoplay=false"> 
 </iframe>
 
 
