@@ -19,7 +19,7 @@ Use this setting to configure single use (kiosk) devices.
 | Setting | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
 | [AssignedAccessSettings](#assignedaccesssettings)  | X |  |  | X |  |
-| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | X |  |  |  |  |
+| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | X |  |  | X |  |
 
 
 ## AssignedAccessSettings

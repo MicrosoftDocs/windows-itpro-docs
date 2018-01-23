@@ -18,6 +18,6 @@ Use to add files to the device.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| PublicDocuments | X  | X | X | X |  |
+| PublicDocuments | X  | X | X |  |  |
 
 Browse to and select a file or files that will be included in the provisioning package and added to the public profile documents folder on the target device. You can use the **Relative path to directory on target device** field to create a new folder within the public profile documents folder.
