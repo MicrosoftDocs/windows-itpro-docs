@@ -69,7 +69,7 @@ The following steps can resolve many Windows upgrade problems.
 <LI>chkdsk /F</LI>
 </UL>
 </LI>
-<LI>Attept to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image).
+<LI>Attempt to restore and repair system files by typing the following commands at an elevated command prompt. It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/repair-a-windows-image).
 <UL>
 <LI>DISM.exe /Online /Cleanup-image /Restorehealth</LI>
 <LI>sfc /scannow</LI>
@@ -105,7 +105,7 @@ Note: If only a result code is returned, this can be because a tool is being use
 
 Result codes can be matched to the type of error encountered. To match a result code to an error:
 
-1. Identify the error code type, either Win32 or NTSTATUS, using the first hexidecimal digit:
+1. Identify the error code type, either Win32 or NTSTATUS, using the first hexadecimal digit:
         <br>8 = Win32 error code (ex: 0x**8**0070070)
         <br>C = NTSTATUS value (ex: 0x**C**1900107)
 2. Write down the last 4 digits of the error code (ex: 0x8007**0070** = 0070). These digits correspond to the last 16 bits of the [HRESULT](https://msdn.microsoft.com/en-us/library/cc231198.aspx) or the [NTSTATUS](https://msdn.microsoft.com/en-us/library/cc231200.aspx) structure.
@@ -412,7 +412,7 @@ The device install log is particularly helpful if rollback occurs during the sys
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Cause</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>A driver has caused an illegal operation.
 <br>Windows was not able to migrate the driver, resulting in a rollback of the operating system.
-<br>This is a safeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software. 
+<br>This is a SafeOS boot failure, typically caused by drivers or non-Microsoft disk encryption software. 
 </table>
 </td>
 
@@ -515,7 +515,7 @@ Disconnect all peripheral devices that are connected to the system, except for t
 <br>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.
 
 
-<br>Typically there is a a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>
+<br>Typically, there is a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>
 
 1. Make sure you have enough disk space.<br>
 2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<br>
@@ -684,7 +684,7 @@ The installation failed in the FIRST_BOOT phase with an error during MIGRATE_DAT
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'><b>Mitigation</b>
 <tr><td style='padding:0in 4pt 0in 4pt;border:dotted #FFFFFF 0.0pt;'>
 
-[Analyze log files](#analyze-log-files) in order to determine the files or registry entires that are blocking data migration. 
+[Analyze log files](#analyze-log-files) in order to determine the files or registry entries that are blocking data migration. 
 
 This error can be due to a problem with user profiles. It can occur due to corrupt registry entries under **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList** or invalid files in the **\\Users** directory. 
 
@@ -878,8 +878,8 @@ Download and run the media creation tool. See [Download windows 10](https://www.
 
 <tr>
 <td>0x8007007E</td>
-<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downlaoded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with System Center Configuration Manager.</td>
-<td> Use the following steps to repair Windows Server Update Services. You must run these steps on each WSUS server that synched metadate before you installed the hotfix.
+<td>Occurs when update synchronization fails because you do not have <a href="https://support.microsoft.com/help/3095113/en-us">hotfix 3095113</a> installed before you enable update synchronization. Specifically, the CopyToCache operation fails on clients that have already downloaded the upgrade because Windows Server Update Services has bad metadata related to the upgrade. It can occur when you are using standalone Windows Server Update Services or when WSUS is integrated with System Center Configuration Manager.</td>
+<td> Use the following steps to repair Windows Server Update Services. You must run these steps on each WSUS server that synched metadata before you installed the hotfix.
 
 <ol>
 <li>Stop the Windows Update service. Sign in as a user with administrative privileges, and then do the following:
