@@ -38,7 +38,7 @@ The HoloLens wizard helps you configure the following settings in a provisioning
 
     >[!NOTE]
     >Settings in a provisioning package will only be applied if the provisioning package includes an edition upgrade license to Windows Holographic for Business or if [the device has already been upgraded to Windows Holographic for Business](hololens-upgrade-enterprise.md).
-    
+
 - Configure the HoloLens first experience (OOBE)
 - Configure Wi-Fi network 
 - Enroll device in Azure Active Directory or create a local account
@@ -63,11 +63,11 @@ Use the Windows Configuration Designer tool to create a provisioning package.
 
 2. Click **Provision HoloLens devices**.
 
-  ![ICD start options](/images/icd-create-options-1703.png)   
+  ![ICD start options](images/icd-create-options-1703.png)   
 
 3. Name your project and click **Finish**. The pages for desktop provisioning will walk you through the following steps.
 
-  ![ICD desktop provisioning](/images/wizard-steps.png)
+  ![ICD desktop provisioning](images/wizard-steps.png)
   
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
