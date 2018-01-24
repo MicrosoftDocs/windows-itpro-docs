@@ -1,5 +1,6 @@
 # [Configure Windows 10](index.md)
 ## [Configure Windows telemetry in your organization](configure-windows-telemetry-in-your-organization.md)
+## [Diagnostic Data Viewer Overview](diagnostic-data-viewer-overview.md)
 ## [Windows 10, version 1709 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields.md)
 ## [Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](enhanced-telemetry-windows-analytics-events-and-fields.md)
 ## [Windows 10, version 1703 basic level Windows diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1703.md)
